@@ -1,24 +1,50 @@
-name: Refresh records
+name: Build and deploy
 on:
   schedule:
     - cron: '*/30 * * * *'
+  push:
+    branches: [main]
   workflow_dispatch:
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
 jobs:
-  refresh:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python build_data.py
+      - name: Restore profile cache
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache
+          key: profiles-${{ github.run_id }}
+          restore-keys: profiles-
+      - name: Build
+        run: python build.py
         env:
           HWD_MASK_KEY: ${{ secrets.HWD_MASK_KEY }}
-      - name: Commit if changed
-        run: |
-          git config user.name "watchdog-bot"
-          git config user.email "watchdog-bot@users.noreply.github.com"
-          git add data.json
-          git diff --cached --quiet || (git commit -m "Refresh records" && git push)
+      - name: Save profile cache
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: .cache
+          key: profiles-${{ github.run_id }}
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

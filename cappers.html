@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Every Tracked Capper | Handicapper Watchdog</title>
+<meta name="description" content="Thousands of sports betting handicappers on X, Covers, Reddit and the betting forums, harvested daily and graded pick by pick. Full records, ROI, units and advanced stats for every capper.">
+<link rel="canonical" href="https://handicapperwatchdog.com/cappers.html">
+<meta property="og:title" content="Handicapper Watchdog: check the receipts before you pay a capper">
+<meta property="og:description" content="Every public capper we track, graded pick by pick. Records, ROI, units and advanced stats.">
+<meta property="og:url" content="https://handicapperwatchdog.com/">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="cappers">
+<header class="top">
+  <a class="brand" href="./"><img src="favicon.svg" alt="" width="28" height="28"><span>Handicapper <b>Watchdog</b></span></a>
+  <nav><a href="cappers.html">All cappers</a><a href="#how">How it works</a><a class="btn sm" href="https://trustmyrecord.com/premium/">Unlock names</a></nav>
+</header>
+<main>
+  <section class="board pt">
+    <div class="head"><div><h1 class="h1s">Every tracked capper</h1><p class="muted" data-k="fresh">Loading records</p></div></div>
+    <div class="filters card">
+      <select id="fSport" aria-label="Sport"><option value="">All sports</option></select>
+      <select id="fSource" aria-label="Source"><option value="">All sources</option></select>
+      <select id="fMin" aria-label="Minimum picks"><option value="1">Any sample</option><option value="20" selected>20+ picks</option><option value="50">50+ picks</option><option value="100">100+ picks</option><option value="250">250+ picks</option></select>
+      <select id="fSort" aria-label="Sort"><option value="units">Units won</option><option value="roi">ROI</option><option value="win_pct">Win %</option><option value="picks">Most picks</option><option value="streak">Hot streak</option><option value="last_pick">Most recent</option><option value="worst">Biggest losers</option></select>
+    </div>
+    <p class="muted small" id="count"></p>
+    <div class="tablewrap"><table>
+      <thead><tr><th class="l">#</th><th class="l">Capper</th><th class="hm">Picks</th><th>Record</th><th class="hm">Win %</th><th>Units</th><th class="hm">ROI</th><th class="hm">Streak</th></tr></thead>
+      <tbody id="rows"><tr><td colspan="8" class="muted">Loading</td></tr></tbody>
+    </table></div>
+    <div class="pager"><button class="btn sm ghost" id="prev">Previous</button><span id="pg" class="muted"></span><button class="btn sm ghost" id="next">Next</button></div>
+  </section>
+  <section class="unlock wide">
+    <div><h3>Names are blurred. TMR Pro shows them.</h3><p>Unlock every capper's name, the link to every original post, their full pick log, search and side by side comparisons.</p></div>
+    <a class="btn" href="https://trustmyrecord.com/premium/">Get TMR Pro, $49.99 a month</a>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>Records cover picks captured from monitored public posts. They are past results, not predictions or guarantees. Held, duplicate and unreviewed picks are not counted. A <a href="https://trustmyrecord.com/">TrustMyRecord</a> product.</p>
+  <p>21+. Gambling problem? Call 1 800 GAMBLER.</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

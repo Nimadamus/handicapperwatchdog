@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Handicapper Watchdog | Verified Records of Sports Betting Cappers</title>
-<meta name="description" content="Before you pay a capper, check the receipts. Handicapper Watchdog tracks and grades thousands of public sports betting handicappers so you can see who actually wins.">
+<title>Handicapper Watchdog | Verified Records of Every Public Capper</title>
+<meta name="description" content="Thousands of sports betting handicappers on X, Covers, Reddit and the betting forums, harvested daily and graded pick by pick. Full records, ROI, units and advanced stats for every capper.">
 <link rel="canonical" href="https://handicapperwatchdog.com/">
 <meta property="og:title" content="Handicapper Watchdog: check the receipts before you pay a capper">
-<meta property="og:description" content="Thousands of public handicappers, every pick graded. See who actually wins.">
+<meta property="og:description" content="Every public capper we track, graded pick by pick. Records, ROI, units and advanced stats.">
 <meta property="og:url" content="https://handicapperwatchdog.com/">
 <meta property="og:type" content="website">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -15,50 +15,60 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-page="home">
 <header class="top">
-  <a class="brand" href="#top"><img src="favicon.svg" alt="" width="28" height="28"><span>Handicapper <b>Watchdog</b></span></a>
-  <nav><a href="#board">Leaderboard</a><a href="#how">How it works</a><a class="btn sm" href="https://trustmyrecord.com/premium/">Unlock names</a></nav>
+  <a class="brand" href="./"><img src="favicon.svg" alt="" width="28" height="28"><span>Handicapper <b>Watchdog</b></span></a>
+  <nav><a href="cappers.html">All cappers</a><a href="#how">How it works</a><a class="btn sm" href="https://trustmyrecord.com/premium/">Unlock names</a></nav>
 </header>
 
-<main id="top">
+<main>
   <section class="hero">
-    <p class="eyebrow">Independent capper tracking</p>
-    <h1>Check the receipts before you pay a capper.</h1>
-    <p class="lead">We track handicappers who post picks in public on X, Covers, Reddit and the betting forums, then grade every pick. No screenshots, no self reported records. Just what they posted and how it finished.</p>
-    <div class="cta"><a class="btn" href="https://trustmyrecord.com/premium/">See every name</a><a class="btn ghost" href="#board">View the leaderboard</a></div>
-    <div class="stats" id="stats">
-      <div><b data-k="tracked">&nbsp;</b><span>handicappers tracked</span></div>
+    <p class="eyebrow"><span class="dot"></span> Records updated every day</p>
+    <h1>Thousands of cappers post picks online. We grade every one.</h1>
+    <p class="lead">We harvest picks from thousands of handicappers across X, Covers, Reddit, TheRX, SBR and Predictem every day, grade every one against the final score, and keep a full profile on each capper. No screenshots. No self reported records. Just what they posted and how it finished.</p>
+    <div class="cta"><a class="btn" href="cappers.html">Browse every capper</a><a class="btn ghost" href="https://trustmyrecord.com/premium/">See who they are</a></div>
+    <div class="stats">
+      <div><b data-k="tracked">&nbsp;</b><span>cappers tracked</span></div>
       <div><b data-k="graded_picks">&nbsp;</b><span>picks graded</span></div>
-      <div><b data-k="qualified">&nbsp;</b><span>with <span data-k="min_graded">20</span>+ graded picks</span></div>
-      <div><b data-k="pct">&nbsp;</b><span>of those are up money</span></div>
+      <div><b data-k="profiles">&nbsp;</b><span>in depth profiles</span></div>
+      <div><b data-k="pct">&nbsp;</b><span>of cappers with 20+ picks are up money</span></div>
     </div>
   </section>
 
-  <section class="board" id="board">
+  <section class="board">
     <div class="head">
-      <div><h2>Top 25 by units won</h2><p class="muted" id="fresh">Loading records</p></div>
-      <a class="btn sm" href="https://trustmyrecord.com/premium/">Unlock names</a>
+      <div><h2>Top cappers by units won</h2><p class="muted" data-k="fresh">Loading records</p></div>
+      <a class="btn sm ghost" href="cappers.html">View all</a>
     </div>
-    <div class="tablewrap">
-      <table>
-        <thead><tr><th class="l">#</th><th class="l">Handicapper</th><th class="hm">Picks</th><th>Record</th><th class="hm">Win %</th><th>Units</th><th class="hm">ROI</th><th class="hm">Streak</th></tr></thead>
-        <tbody id="rows"><tr><td colspan="8" class="muted">Loading</td></tr></tbody>
-      </table>
-    </div>
-    <div class="unlock">
-      <div><h3>Who are they?</h3><p>Names, links to every original post, sport by sport records, search across every tracked capper and side by side comparisons are part of TMR Pro.</p></div>
-      <a class="btn" href="https://trustmyrecord.com/premium/">Get TMR Pro, $49.99 a month</a>
+    <div class="tablewrap"><table>
+      <thead><tr><th class="l">#</th><th class="l">Capper</th><th class="hm">Picks</th><th>Record</th><th class="hm">Win %</th><th>Units</th><th class="hm">ROI</th><th class="hm">Streak</th></tr></thead>
+      <tbody id="rows"><tr><td colspan="8" class="muted">Loading</td></tr></tbody>
+    </table></div>
+    <p class="note">Tap any capper for their full profile: sport by sport records, markets, favorites and dogs, odds ranges, overs and unders, teams, days of the week, form, drawdowns and more.</p>
+  </section>
+
+  <section class="features">
+    <h2>A full scouting report on every capper</h2>
+    <div class="grid four">
+      <div class="card"><h3>Sport by sport</h3><p>Record, units and ROI in every sport they bet, with markets, odds ranges and form inside each one.</p></div>
+      <div class="card"><h3>Advanced metrics</h3><p>Max drawdown, peak, volatility, z score against a coin flip, break even gap and closing line value.</p></div>
+      <div class="card"><h3>Where they win</h3><p>Favorites against dogs, overs against unders, home against away, plus money, team by team.</p></div>
+      <div class="card"><h3>When they win</h3><p>Last 10, 25 and 50 picks, last 7 and 30 days, by weekday, by month and after a win or a loss.</p></div>
     </div>
   </section>
 
   <section class="how" id="how">
     <h2>How it works</h2>
     <div class="grid">
-      <div class="card"><span class="n">1</span><h3>We watch public posts</h3><p>Picks are captured from the public places cappers post them, with the time they were posted.</p></div>
-      <div class="card"><span class="n">2</span><h3>Every pick gets graded</h3><p>Straight bets are graded against final scores. Units assume 1 unit risked per pick, at the posted price.</p></div>
-      <div class="card"><span class="n">3</span><h3>You see who really wins</h3><p>Records, units, ROI and streaks you can trust, before you spend a dollar on anyone's picks.</p></div>
+      <div class="card"><span class="n">1</span><h3>We harvest public picks daily</h3><p>Picks are captured from the public places cappers post them, with the time they were posted, before the game starts.</p></div>
+      <div class="card"><span class="n">2</span><h3>Every pick gets graded</h3><p>Straight bets are graded against final scores. Units assume 1 unit risked per pick at the posted price.</p></div>
+      <div class="card"><span class="n">3</span><h3>Every record stays current</h3><p>Profiles update automatically as new picks are posted and graded, so a hot streak or a cold one shows up fast.</p></div>
     </div>
+  </section>
+
+  <section class="unlock wide">
+    <div><h3>Names are blurred. TMR Pro shows them.</h3><p>Unlock every capper's name, the link to every original post, their full pick log, search and side by side comparisons.</p></div>
+    <a class="btn" href="https://trustmyrecord.com/premium/">Get TMR Pro, $49.99 a month</a>
   </section>
 </main>
 
