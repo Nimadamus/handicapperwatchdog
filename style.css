@@ -21,7 +21,7 @@ h1,h2,h3{margin:0;letter-spacing:-.015em}
 .eyebrow{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
 
 /* nav */
-.top{position:sticky;top:0;z-index:20;background:rgba(7,13,23,.97);border-bottom:1px solid var(--line)}
+.top{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
 .top .wrap{display:flex;align-items:center;gap:22px;height:58px}
 .brand{display:flex;align-items:center;gap:9px;font-weight:700;font-size:15px;white-space:nowrap}.brand b{color:var(--accent2);font-weight:700}
 .navlinks{display:flex;gap:2px;flex:1}
@@ -156,7 +156,7 @@ select:disabled{opacity:.45}
 .kpi{padding:13px 14px;border-right:1px solid var(--line)}.kpi:last-child{border-right:0}
 .kpi b{display:block;font-size:19px;font-weight:750;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
 .kpi>span{color:var(--muted);font-size:11.5px}
-.snav{position:sticky;top:58px;z-index:10;background:rgba(7,13,23,.97);border-bottom:1px solid var(--line);margin:18px 0 18px}
+.snav{position:sticky;top:58px;z-index:10;background:var(--bg);border-bottom:1px solid var(--line);margin:18px 0 18px}
 .snav .tabs{padding:8px 0}
 .pgrid{display:grid;grid-template-columns:1.45fr 1fr;gap:16px;margin-bottom:16px}
 .g2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
@@ -242,3 +242,24 @@ select:disabled{opacity:.45}
 input.pick{width:16px;height:16px;accent-color:var(--accent);cursor:pointer}
 .cmpt th{text-align:right;white-space:normal;vertical-align:bottom}.cmpt td{text-align:right}
 @media (max-width:640px){.plans,.faq .g2{grid-template-columns:1fr}.profilters{grid-template-columns:1fr 1fr}}
+
+@media (max-width:640px){.top .btn.ghost{display:none}.brand span{font-size:13.5px}.top .btn.sm.pro{padding:0 10px}}
+.acct h1{font-size:15px;font-weight:650}
+
+/* pick log as cards on phones: game on top, then pick, price, result, units and the post link */
+@media (max-width:640px){
+  .plog thead{display:none}
+  .plog tr{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;padding:11px 14px;border-bottom:1px solid var(--line)}
+  .plog td{border:0;padding:0;white-space:normal;text-align:left}
+  .plog td:first-child{flex:1 0 100%}
+  .plog td:nth-child(2){flex:1 0 100%}
+  .plog td.hm{display:none}
+  .plog td:last-child{margin-left:auto}
+}
+
+.proband.slim{grid-template-columns:1fr auto}
+@media (max-width:900px){.proband.slim{grid-template-columns:1fr}}
+@media (max-width:640px){.hp{display:none}.cap .nm small{white-space:normal}}
+.cmpt td:first-child,.cmpt th:first-child{text-align:left;width:220px;color:var(--muted)}
+.cmpt thead th:not(:first-child){text-transform:none;letter-spacing:0;font-size:13.5px;color:var(--ink)}
+.cmpt thead th .dim{text-transform:none}

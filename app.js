@@ -164,7 +164,7 @@
     M.sources.forEach(function (s) { $('fSource').insertAdjacentHTML('beforeend', '<option>' + esc(s) + '</option>'); });
     var map = { q: 'q', sport: 'fSport', src: 'fSource', t: 'fTime', sort: 'fSort', min: 'fMin', roi: 'fRoi', win: 'fWin', u: 'fUnits' };
     Object.keys(map).forEach(function (k) { if (P.has(k)) $(map[k]).value = P.get(k); });
-    var cols = [['l', '#', ''], ['l', 'Handicapper', ''], ['hm l', 'Trend', ''], ['', 'Picks', 'picks'], ['', 'Record', ''], ['hm', 'Win %', 'win_pct'], ['', 'Units', 'units'], ['', 'ROI', 'roi'], ['hm', 'Streak', 'streak'], ['hm', 'Last pick', 'last_pick']];
+    var cols = [['l', '#', ''], ['l', 'Handicapper', ''], ['hm l', 'Trend', ''], ['hp', 'Picks', 'picks'], ['', 'Record', ''], ['hm', 'Win %', 'win_pct'], ['', 'Units', 'units'], ['hp', 'ROI', 'roi'], ['hm', 'Streak', 'streak'], ['hm', 'Last pick', 'last_pick']];
 
     function head() {
       var s = $('fSort').value;
@@ -208,8 +208,8 @@
       var start = (pageNo - 1) * PER, rows = view.slice(start, start + PER), lifetime = !$('fSport').value && $('fTime').value === 'all';
       $('rows').innerHTML = rows.length ? rows.map(function (o, i) {
         var r = o.r, x = o.x, h = link(r);
-        return '<tr' + (h ? ' class="go" data-href="' + h + '"' : '') + '><td class="l rk">' + (PRO ? '<input type="checkbox" class="pick" data-id="' + r.id + '"' + (picked.indexOf(r.id) >= 0 ? ' checked' : '') + ' aria-label="Compare">' : start + i + 1) + '</td><td class="l">' + capCell(r) + '</td><td class="hm l">' + (lifetime ? spark(r.spark) : '<span class="dim small">all sports only</span>') + '</td><td>' + fmt(x.picks) +
-          '</td><td>' + recTxt(x) + '</td><td class="hm">' + pct(x.win_pct) + '</td><td>' + sgn(x.units, 2) + '</td><td>' + sgn(x.roi, 1, '%') + '</td><td class="hm">' + strk(r.streak) + '</td><td class="hm muted">' + ago(r.last_pick) + '</td></tr>';
+        return '<tr' + (h ? ' class="go" data-href="' + h + '"' : '') + '><td class="l rk">' + (PRO ? '<input type="checkbox" class="pick" data-id="' + r.id + '"' + (picked.indexOf(r.id) >= 0 ? ' checked' : '') + ' aria-label="Compare">' : start + i + 1) + '</td><td class="l">' + capCell(r) + '</td><td class="hm l">' + (lifetime ? spark(r.spark) : '<span class="dim small">all sports only</span>') + '</td><td class="hp">' + fmt(x.picks) +
+          '</td><td>' + recTxt(x) + '</td><td class="hm">' + pct(x.win_pct) + '</td><td>' + sgn(x.units, 2) + '</td><td class="hp">' + sgn(x.roi, 1, '%') + '</td><td class="hm">' + strk(r.streak) + '</td><td class="hm muted">' + ago(r.last_pick) + '</td></tr>';
       }).join('') : '<tr><td colspan="10" class="empty">No handicappers match these filters. Try a smaller minimum or another timeframe.</td></tr>';
       var pages = Math.max(1, Math.ceil(view.length / PER));
       $('count').textContent = fmt(view.length) + ' handicappers' + ($('fSport').value ? ' · ' + $('fSport').value + ' records only' : $('fTime').value !== 'all' ? ' · ' + $('fTime').selectedOptions[0].text : '');

@@ -1,0 +1,22 @@
+# Watchdog Pro API on Cloudflare Workers (free plan).
+# The static site stays on GitHub Pages; this Worker only answers handicapperwatchdog.com/api/*.
+# Deploy:  npx wrangler@3 deploy        (needs CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID, see docs/CLOUDFLARE.md)
+name = "hwd-api"
+main = "backend/worker.mjs"
+compatibility_date = "2025-09-01"
+workers_dev = false
+
+routes = [
+  { pattern = "handicapperwatchdog.com/api/*", zone_name = "handicapperwatchdog.com" },
+]
+
+# Filled in by tools/cf_setup.sh after it creates the namespace.
+kv_namespaces = [
+  { binding = "HWD", id = "REPLACE_WITH_KV_NAMESPACE_ID" },
+]
+
+[vars]
+SITE_URL = "https://handicapperwatchdog.com"
+STRIPE_API_VERSION = "2025-03-31.basil"
+# Secrets (wrangler secret put NAME): STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET, STRIPE_PRICE_MONTHLY, STRIPE_PRICE_ANNUAL,
+# SESSION_SECRET, HWD_PRO_KEY, BREVO_API_KEY, MAIL_FROM. BILLING_LIVE stays unset until the owner approves live billing.

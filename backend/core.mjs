@@ -15,6 +15,7 @@ const GRACE_DAYS = 3;          // past_due keeps access this long past the perio
 const SESSION_DAYS = 30;
 const LOGIN_TTL = 15 * 60;
 const KEY_RATE = 400;          // capper keys per account per hour
+const KEY_COUNTS = new Map();
 
 // ---------- small helpers ----------
 const now = () => Math.floor(Date.now() / 1000);
@@ -180,6 +181,18 @@ async function onWebhook(req, env, deps) {
 
 // ---------- email (magic link) ----------
 async function sendLogin(env, deps, email, link) {
+  const text = `Sign in to Handicapper Watchdog:
+
+${link}
+
+The link works once and expires in 15 minutes. If you did not ask for it, ignore this email.`;
+  const subject = 'Your Handicapper Watchdog sign in link';
+  if (env.BREVO_API_KEY) { // Brevo transactional email (free tier: 300 emails a day)
+    const r = await deps.fetch('https://api.brevo.com/v3/smtp/email', {
+      method: 'POST', headers: { 'api-key': env.BREVO_API_KEY, 'content-type': 'application/json', accept: 'application/json' },
+      body: JSON.stringify({ sender: { email: env.MAIL_FROM, name: 'Handicapper Watchdog' }, to: [{ email }], subject, textContent: text }) });
+    return r.ok;
+  }
   if (env.RESEND_API_KEY) {
     const r = await deps.fetch('https://api.resend.com/emails', {
       method: 'POST', headers: { authorization: 'Bearer ' + env.RESEND_API_KEY, 'content-type': 'application/json' },
@@ -250,7 +263,7 @@ export async function handle(req, env, deps = { fetch }) {
       if (!acct) return err(401, 'Sign in first.');
       if (!acct.customer) return err(400, 'No billing account yet.');
       if (liveBlocked(env)) return err(503, 'Live billing has not been approved.');
-      const p = await stripe(env, deps, 'POST', 'billing_portal/sessions', { customer: acct.customer, return_url: site + '/account.html' });
+      const p = await stripe(env, deps, 'POST', 'billing_portal/sessions', { customer: acct.customer, return_url: site + '/account.html', configuration: env.STRIPE_PORTAL_CONFIG || undefined });
       return json({ url: p.url });
     }
 
@@ -292,9 +305,12 @@ export async function handle(req, env, deps = { fetch }) {
       if (!entitlement(acct).pro) return err(402, 'Watchdog Pro is required.');
       const id = url.searchParams.get('id') || '';
       if (!/^([0-9a-f]{10}|names)$/.test(id)) return err(400, 'Bad id.');
-      const rk = 'rl:key:' + acct.id + ':' + Math.floor(now() / 3600), n = +(await env.KV.get(rk) || 0);
-      if (n >= KEY_RATE) return err(429, 'Too many requests. Try again later.');
-      await env.KV.put(rk, String(n + 1), { expirationTtl: 3700 });
+      // Counted in memory per Worker instance, not in KV: KV's free tier allows 1,000 writes a day and every
+      // profile a subscriber opens asks for a key. A best effort cap per instance is enough to stop bulk copying.
+      const rk = acct.id + ':' + Math.floor(now() / 3600), n = (KEY_COUNTS.get(rk) || 0) + 1;
+      if (KEY_COUNTS.size > 5000) KEY_COUNTS.clear();
+      KEY_COUNTS.set(rk, n);
+      if (n > KEY_RATE) return err(429, 'Too many requests. Try again later.');
       const key = await hmac(env.HWD_PRO_KEY, id === 'names' ? 'names' : 'capper:' + id);
       return json({ key: b64(key) });
     }

@@ -110,9 +110,9 @@
       var sec = document.getElementById('picks'), picks = d.picks || [], sports = {}, page = 0, PER = 50, f = { sport: '', res: '' };
       picks.forEach(function (p) { sports[p.sport] = 1; });
       sec.innerHTML = '<div class="sech"><h2>Pick log</h2><span class="muted small">' + fmt(picks.length) + ' graded picks, newest first</span></div><div class="panel">' +
-        '<div class="ph" style="gap:10px;justify-content:flex-start"><select id="plS" style="width:auto"><option value="">All sports</option>' + Object.keys(sports).sort().map(function (x) { return '<option>' + esc(x) + '</option>'; }).join('') + '</select>' +
-        '<select id="plR" style="width:auto"><option value="">All results</option><option value="won">Wins</option><option value="lost">Losses</option><option value="push">Pushes</option></select></div>' +
-        '<div class="tw"><table class="mini"><thead><tr><th class="l">Game</th><th class="l">Pick</th><th>Price</th><th>Result</th><th>Units</th><th class="hm">Final</th><th class="hm">Posted</th><th class="l">Post</th></tr></thead><tbody id="plB"></tbody></table></div>' +
+        '<div class="ph" style="gap:10px;justify-content:flex-start"><select id="plS" style="width:auto" aria-label="Filter picks by sport"><option value="">All sports</option>' + Object.keys(sports).sort().map(function (x) { return '<option>' + esc(x) + '</option>'; }).join('') + '</select>' +
+        '<select id="plR" style="width:auto" aria-label="Filter picks by result"><option value="">All results</option><option value="won">Wins</option><option value="lost">Losses</option><option value="push">Pushes</option></select></div>' +
+        '<div class="tw"><table class="mini plog"><thead><tr><th class="l">Game</th><th class="l">Pick</th><th>Price</th><th>Result</th><th>Units</th><th class="hm">Final</th><th class="hm">Posted</th><th class="l">Post</th></tr></thead><tbody id="plB"></tbody></table></div>' +
         '<div class="tfoot"><span id="plC"></span><div class="pager"><button class="btn sm ghost" id="plP" type="button">Newer</button><button class="btn sm ghost" id="plN" type="button">Older</button></div></div></div>';
       var when = function (iso) { return iso ? new Date(iso).toLocaleString('en-US', { timeZone: 'America/Los_Angeles', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) : ''; };
       function draw() {

@@ -7,7 +7,7 @@
   var clean = function () { history.replaceState(null, '', location.pathname); };
 
   function signedOut(msg) {
-    box.innerHTML = '<div class="ph"><h3>Sign in to Watchdog Pro</h3></div><div class="pb">' + (msg ? '<div class="notice">' + esc(msg) + '</div>' : '') +
+    box.innerHTML = '<div class="ph"><h1>Sign in to Watchdog Pro</h1></div><div class="pb">' + (msg ? '<div class="notice">' + esc(msg) + '</div>' : '') +
       '<p class="muted" style="margin:0 0 14px">Enter the email you subscribed with and we will send you a sign in link. New here? <a href="pricing.html" style="text-decoration:underline">See Watchdog Pro</a>.</p>' +
       '<form id="lf" class="row"><input id="em" type="email" required placeholder="you@example.com" autocomplete="email" aria-label="Email"><button class="btn" type="submit">Email me a link</button></form><p class="muted small" id="lm"></p></div>';
     document.getElementById('lf').addEventListener('submit', function (e) {
@@ -29,7 +29,7 @@
     nav(s);
     var status = s.pro ? (s.cancel_at_period_end ? 'Active, ends ' + day(s.period_end) : s.payment_failed ? 'Payment failed, Stripe is retrying' : 'Active, renews ' + day(s.period_end)) :
       (s.status && s.status !== 'none' ? 'Not active (' + esc(s.status) + ')' : 'No subscription');
-    box.innerHTML = '<div class="ph"><h3>Your account</h3><span class="lock">' + (s.pro ? 'Watchdog Pro' : 'Free') + '</span></div><div class="pb">' +
+    box.innerHTML = '<div class="ph"><h1>Your account</h1><span class="lock">' + (s.pro ? 'Watchdog Pro' : 'Free') + '</span></div><div class="pb">' +
       (msg ? '<div class="notice ok">' + esc(msg) + '</div>' : '') +
       '<ul class="facts"><li><span>Email</span><b>' + esc(s.email) + '</b></li><li><span>Plan</span><b>' + (s.plan === 'annual' ? '$149 a year' : s.plan === 'monthly' ? '$19.99 a month' : 'None') + '</b></li>' +
       '<li><span>Status</span><b>' + status + '</b></li></ul>' +
@@ -43,10 +43,10 @@
   function alertBox(m) { var n = document.createElement('div'); n.className = 'notice'; n.textContent = m || 'Billing is not available right now.'; box.querySelector('.pb').prepend(n); }
 
   HWD.ready.then(function (s) {
-    if (!s.api) { box.innerHTML = '<div class="ph"><h3>Watchdog Pro accounts</h3></div><div class="pb"><p class="muted" style="margin:0">Accounts open with Watchdog Pro. <a href="pricing.html" style="text-decoration:underline">See plans</a>.</p></div>'; return; }
+    if (!s.api) { box.innerHTML = '<div class="ph"><h1>Watchdog Pro accounts</h1></div><div class="pb"><p class="muted" style="margin:0">Accounts open with Watchdog Pro. <a href="pricing.html" style="text-decoration:underline">See plans</a>.</p></div>'; return; }
     var sid = P.get('session_id'), tok = P.get('login');
     if (sid) {
-      box.innerHTML = '<div class="pb"><p class="muted">Confirming your subscription...</p></div>';
+      box.innerHTML = '<div class="ph"><h1>Confirming your subscription</h1></div><div class="pb"><p class="muted" style="margin:0">One moment.</p></div>';
       return HWD.complete(sid).then(function (d) {
         clean();
         if (d._status !== 200) return s.signed_in ? signedIn(s, d.error) : signedOut(d.error);

@@ -33,7 +33,7 @@ function fakeStripe(env) {
   S.fetch = async (url, init) => {
     const u = new URL(url), method = init.method || 'GET';
     S.calls.push(method + ' ' + u.pathname);
-    assert.equal(init.headers.authorization, 'Bearer ' + env.STRIPE_SECRET_KEY);
+    if (u.hostname === 'api.stripe.com') assert.equal(init.headers.authorization, 'Bearer ' + env.STRIPE_SECRET_KEY);
     const p = new URLSearchParams(method === 'GET' ? u.search : init.body);
     const ok = (d) => new Response(JSON.stringify(d), { status: 200 });
     let m;
@@ -49,7 +49,7 @@ function fakeStripe(env) {
     }
     if ((m = u.pathname.match(/^\/v1\/subscriptions\/(sub_\w+)$/))) return ok(S.subs[m[1]]);
     if (u.pathname === '/v1/billing_portal/sessions') { S.portal++; return ok({ url: 'https://billing.stripe.com/p/session/test_' + p.get('customer') }); }
-    if (u.hostname === 'api.resend.com') return ok({ id: 'mail' });
+    if (u.hostname === 'api.resend.com' || u.hostname === 'api.brevo.com') { S.mails = (S.mails || []).concat([{ host: u.hostname, body: JSON.parse(init.body) }]); return ok({ id: 'mail' }); }
     return new Response('{"error":{"message":"unexpected ' + u.pathname + '"}}', { status: 400 });
   };
   // what Stripe does when the customer pays on the hosted page
@@ -296,4 +296,27 @@ test('a Pro member cannot start a second subscription', async () => {
   const t = setup();
   await subscribe(t);
   assert.equal((await t.call('POST', '/api/checkout', { plan: 'annual' })).status, 409);
+});
+
+test('sign in email goes through Brevo when configured, with the one time link and no echo', async () => {
+  const t = setup({ BREVO_API_KEY: 'xkeysib-test', MAIL_FROM: 'login@handicapperwatchdog.com', DEV_MAIL_ECHO: '' });
+  await subscribe(t, 'monthly', 'mailme@example.com');
+  t.setCookie('');
+  const r = await t.call('POST', '/api/login', { email: 'mailme@example.com' });
+  assert.equal(r.status, 200); assert.equal(r.body.dev_link, undefined);
+  const m = t.S.mails.pop();
+  assert.equal(m.host, 'api.brevo.com'); assert.equal(m.body.to[0].email, 'mailme@example.com');
+  const tok = m.body.textContent.match(/login=([A-Za-z0-9_-]+)/)[1];
+  assert.equal((await t.call('POST', '/api/login/verify', { token: tok })).body.pro, true);
+});
+
+test('Pro key requests do not write to KV (free tier allows 1,000 writes a day) and are capped per hour', async () => {
+  const t = setup();
+  await subscribe(t);
+  const before = t.env.KV.m.size;
+  for (let i = 0; i < 5; i++) assert.equal((await t.call('GET', '/api/pro/key?id=0123456789')).status, 200);
+  assert.equal(t.env.KV.m.size, before);
+  let last;
+  for (let i = 0; i < 400; i++) last = await t.call('GET', '/api/pro/key?id=0123456789');
+  assert.equal(last.status, 429);
 });

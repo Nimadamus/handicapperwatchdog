@@ -46,7 +46,17 @@ PT = timezone(timedelta(hours=-7))  # display only; weekday buckets use Pacific 
 DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 
 
-def get(url):
+def get(url, tries=3):
+    for i in range(tries):
+        try:
+            return _get(url)
+        except Exception:
+            if i == tries - 1:
+                raise
+            time.sleep(2 * (i + 1))
+
+
+def _get(url):
     req = urllib.request.Request(url, headers={'User-Agent': 'HandicapperWatchdog/1.0 (+https://handicapperwatchdog.com)',
                                                'Accept-Encoding': 'gzip'})
     with urllib.request.urlopen(req, timeout=60) as r:
@@ -371,7 +381,16 @@ def main():
         meta['pro_data'] = True
     with open(os.path.join(SITE, 'data', 'index.json'), 'w', encoding='utf-8') as f:
         json.dump({'meta': meta, 'cappers': index}, f, separators=(',', ':'))
+    # Build health, published for monitoring: a profile only counts once it reconciles with the source record.
+    status = {'built_at': meta['built_at'], 'tracked': len(index), 'profiles_published': published,
+              'profiles_missing': len(index) - published, 'complete': published == len(index),
+              'fetched_this_run': fetched, 'fetch_failures_this_run': failed, 'unreconciled': unreconciled,
+              'fetch_cap_per_run': MAX_FETCH, 'live_counters': bool(meta.get('live')), 'newest_pick': meta['newest_pick']}
+    with open(os.path.join(SITE, 'data', 'status.json'), 'w', encoding='utf-8') as f:
+        json.dump(status, f, indent=1)
     print('tracked %d, fetched %d, failed %d, profiles %d, unreconciled %d' % (len(index), fetched, failed, published, unreconciled))
+    if failed > max(25, fetched // 2):
+        sys.exit('too many profile fetch failures this run: %d' % failed)
 
 
 if __name__ == '__main__':
