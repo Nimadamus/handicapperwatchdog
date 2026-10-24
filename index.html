@@ -20,9 +20,9 @@
 <body data-page="home">
 <header class="top"><div class="wrap">
   <a class="brand" href="./"><img src="favicon.svg" alt="" width="24" height="24"><span>Handicapper <b>Watchdog</b></span></a>
-  <nav class="navlinks"><a href="cappers.html">Rankings</a><a href="./#sports">By sport</a><a href="./#method">Methodology</a><a href="./#pro">Pricing</a></nav>
+  <nav class="navlinks"><a href="cappers.html">Rankings</a><a href="./#sports">By sport</a><a href="./#method">Methodology</a><a href="pricing.html">Pricing</a></nav>
   <form class="navsearch" action="cappers.html" role="search"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input name="q" placeholder="Search capper ID, sport or platform" aria-label="Search cappers"></form>
-  <a class="btn sm pro" href="./#pro">Watchdog Pro</a>
+  <a class="btn sm pro" href="pricing.html">Watchdog Pro</a>
 </div></header>
 <main class="wrap">
   <section class="intro">
@@ -38,7 +38,7 @@
     <div class="panel live" id="live">
       <div class="ph"><h3><span class="dot"></span>Live tracking</h3><span class="muted small" id="liveAt"></span></div>
       <div class="kvgrid" id="liveGrid"><div class="kv"><div class="skel"></div></div><div class="kv"><div class="skel"></div></div><div class="kv"><div class="skel"></div></div><div class="kv"><div class="skel"></div></div></div>
-      <div class="pf"><span>Counters read from the Watchdog database</span><a class="lock" href="#pro">Pro</a></div>
+      <div class="pf"><span>Counters read from the Watchdog database at our last update</span></div>
     </div>
   </section>
 
@@ -63,15 +63,16 @@
   <section class="proband" id="pro">
     <div>
       <span class="lock">Watchdog Pro</span>
-      <h2>See who they are and what they are betting.</h2>
-      <p class="muted" style="margin:0">The free rankings show who is winning. Watchdog Pro will show the names behind every record and the picks they post before the games start.</p>
-      <div class="price"><b>Launching soon</b></div>
+      <h2>See who they are. See every pick.</h2>
+      <p class="muted" style="margin:0">The free rankings show who is winning. Watchdog Pro reveals the handicapper behind every record and every graded pick they made.</p>
+      <div class="price"><b>$19.99</b> a month, or <b style="font-size:16px">$149</b> a year</div>
+      <a class="btn pro" href="pricing.html">See Watchdog Pro</a>
     </div>
     <div class="feats">
-      <div class="feat"><b>Pending picks before kickoff</b><span id="featPending">Picks graded handicappers post for upcoming games, from Covers, X, Reddit and the forums.</span></div>
       <div class="feat"><b>Names and original posts</b><span>The handicapper behind every record, with a link to every post we graded.</span></div>
-      <div class="feat"><b>Complete pick logs</b><span>Every graded pick: game, line, price, result and when it was posted.</span></div>
-      <div class="feat"><b>Search and compare</b><span>Find any handicapper by name and put records side by side.</span></div>
+      <div class="feat"><b>Complete pick logs</b><span>Every graded pick: game, pick, price, result, units and when it was posted.</span></div>
+      <div class="feat"><b>Search by name and compare</b><span>Find any handicapper by handle and put up to four records side by side.</span></div>
+      <div class="feat"><b>Advanced filters</b><span>Rank by closing line value, z score, drawdown and profitable months.</span></div>
     </div>
   </section>
 
@@ -87,8 +88,9 @@
 <footer class="foot"><div class="wrap">
   <div><p><b>Handicapper Watchdog</b> grades picks captured from public posts on X, Covers, Reddit, TheRX, Sportsbook Review and Predictem. Records are past results, not predictions or guarantees. Held, duplicate and unreviewed picks are not counted.</p>
   <p>21+. Gambling problem? Call 1 800 GAMBLER.</p></div>
-  <div><p><a href="cappers.html">Rankings</a></p><p><a href="./#method">Methodology</a></p><p><a href="./#pro">Watchdog Pro</a></p></div>
+  <div><p><a href="cappers.html">Rankings</a></p><p><a href="./#method">Methodology</a></p><p><a href="pricing.html">Watchdog Pro</a></p><p><a href="terms.html">Terms</a></p><p><a href="privacy.html">Privacy</a></p></div>
 </div></footer>
+<script src="pro.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

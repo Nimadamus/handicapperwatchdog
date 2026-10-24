@@ -214,3 +214,31 @@ select:disabled{opacity:.45}
 
 .g2 .bc,.g2 .ao,.pgrid .bc,.pgrid .ao{display:none}
 .mini th,.mini td{padding:8px 9px}
+
+/* pricing, account, compare, legal */
+.center{text-align:center}
+.pricehead{text-align:center;padding:34px 0 18px}
+.pricehead h1{font-size:clamp(26px,3.6vw,36px);font-weight:800;letter-spacing:-.025em;margin:8px 0}
+.pricehead .sub{color:var(--ink2);font-size:15.5px;margin:0 auto;max-width:560px}
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:760px;margin:10px auto 12px}
+.plan{position:relative;padding:22px;border-radius:14px;background:var(--s1);border:1px solid var(--line);display:flex;flex-direction:column;gap:8px}
+.plan.best{border-color:rgba(245,196,81,.45);background:linear-gradient(160deg,rgba(245,196,81,.08),transparent 60%),var(--s1)}
+.plan .amt b{font-size:36px;font-weight:800;letter-spacing:-.02em}.plan .amt span{color:var(--muted);margin-left:6px}
+.plan p{margin:0 0 6px;flex:1}
+.save{margin-left:6px;color:var(--pro);background:rgba(245,196,81,.12);border:1px solid rgba(245,196,81,.3);border-radius:99px;padding:1px 7px;letter-spacing:.04em}
+.btn.full{width:100%}.btn:disabled{opacity:.55;cursor:not-allowed}
+.notice{margin:14px auto 0;max-width:620px;padding:10px 14px;border-radius:9px;background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.3);color:#fde68a;font-size:13.5px;text-align:left}
+.notice.ok{background:var(--accent-bg);border-color:var(--accent-line);color:var(--accent2)}
+.pb .notice{margin:0 0 14px;max-width:none}
+.cmp td,.cmp th{text-align:center}.cmp .l{text-align:left;white-space:normal}
+.yes{color:var(--accent2);display:inline-flex}.no{color:var(--dim)}
+.faq .pb b{display:block;margin-bottom:6px}.faq .pb p{margin:0;color:var(--muted);font-size:13.5px}
+.faq .g2{grid-template-columns:1fr 1fr}
+.acct{max-width:620px;margin:34px auto 40px;min-height:52vh}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.row input[type=email]{flex:1;min-width:220px;height:38px;background:var(--bg2);border:1px solid var(--line2);border-radius:8px;padding:0 12px}
+.legal{max-width:760px;margin:30px auto 40px}.legal h1{font-size:26px;margin-bottom:4px}.legal h3{margin:20px 0 6px;font-size:15px}.legal p{color:var(--ink2);margin:0}
+.profilters{padding-top:14px}.profilters .lock{font-size:9.5px;padding:1px 6px;margin-left:4px;vertical-align:1px}
+input.pick{width:16px;height:16px;accent-color:var(--accent);cursor:pointer}
+.cmpt th{text-align:right;white-space:normal;vertical-align:bottom}.cmpt td{text-align:right}
+@media (max-width:640px){.plans,.faq .g2{grid-template-columns:1fr}.profilters{grid-template-columns:1fr 1fr}}

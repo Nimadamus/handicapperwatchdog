@@ -20,16 +20,16 @@
 <body data-page="rank">
 <header class="top"><div class="wrap">
   <a class="brand" href="./"><img src="favicon.svg" alt="" width="24" height="24"><span>Handicapper <b>Watchdog</b></span></a>
-  <nav class="navlinks"><a href="cappers.html" class="on">Rankings</a><a href="./#sports">By sport</a><a href="./#method">Methodology</a><a href="./#pro">Pricing</a></nav>
+  <nav class="navlinks"><a href="cappers.html" class="on">Rankings</a><a href="./#sports">By sport</a><a href="./#method">Methodology</a><a href="pricing.html">Pricing</a></nav>
   <form class="navsearch" action="cappers.html" role="search"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input name="q" placeholder="Search capper ID, sport or platform" aria-label="Search cappers"></form>
-  <a class="btn sm pro" href="./#pro">Watchdog Pro</a>
+  <a class="btn sm pro" href="pricing.html">Watchdog Pro</a>
 </div></header>
 <main class="wrap">
   <div class="pagehead"><div><div class="eyebrow">Rankings</div><h1>Every tracked handicapper</h1><p class="muted small" id="fresh" style="margin:4px 0 0"></p></div>
-    <a class="btn sm pro" href="./#pro">Watchdog Pro</a></div>
+    <a class="btn sm pro" href="pricing.html">Watchdog Pro</a></div>
   <section class="panel">
     <div class="fbar">
-      <div class="fld"><label for="q">Search</label><input id="q" placeholder="Capper ID, sport or platform"></div>
+      <div class="fld"><label for="q">Search</label><input id="q" placeholder="Capper ID, sport or platform (Pro: handle)"></div>
       <div class="fld"><label for="fSport">Sport</label><select id="fSport"><option value="">All sports</option></select></div>
       <div class="fld"><label for="fSource">Platform</label><select id="fSource"><option value="">All platforms</option></select></div>
       <div class="fld"><label for="fTime">Timeframe</label><select id="fTime"><option value="all">All tracked</option><option value="r30">Last 30 days</option><option value="r7">Last 7 days</option></select></div>
@@ -42,19 +42,27 @@
       <div class="fld"><label for="fUnits">Minimum units</label><select id="fUnits"><option value="">Any</option><option value="0">Positive</option><option value="5">+5</option><option value="10">+10</option><option value="20">+20</option></select></div>
       <div class="fld" style="justify-content:flex-end"><button class="btn sm ghost" id="reset" type="button">Reset</button></div>
     </div>
+    <div class="fbar2 profilters" id="proF">
+      <div class="fld"><label for="fClv">Beat the closing line <span class="lock">Pro</span></label><select id="fClv" disabled><option value="">Any</option><option value="50">50%+ of picks</option><option value="55">55%+</option><option value="60">60%+</option></select></div>
+      <div class="fld"><label for="fZ">Z score vs break even <span class="lock">Pro</span></label><select id="fZ" disabled><option value="">Any</option><option value="0">Above 0</option><option value="1">1 or more</option><option value="2">2 or more</option></select></div>
+      <div class="fld"><label for="fDd">Max drawdown <span class="lock">Pro</span></label><select id="fDd" disabled><option value="">Any</option><option value="-5">Better than -5u</option><option value="-10">Better than -10u</option><option value="-20">Better than -20u</option></select></div>
+      <div class="fld"><label for="fMo">Consistency <span class="lock">Pro</span></label><select id="fMo" disabled><option value="">Any</option><option value="half">Up in half or more of months</option><option value="all">Up every month</option></select></div>
+      <div class="fld" style="justify-content:flex-end"><a class="btn sm pro" id="cmpBtn" href="pricing.html">Compare</a></div>
+    </div>
     <div class="tw"><table><thead id="head"></thead><tbody id="rows"><tr><td colspan="11"><div class="skel"></div></td></tr></tbody></table></div>
     <div class="tfoot"><span id="count"></span><div class="pager"><button class="btn sm ghost" id="prev" type="button">Previous</button><span id="pg"></span><button class="btn sm ghost" id="next" type="button">Next</button></div></div>
   </section>
   <section class="proband" style="grid-template-columns:1fr auto">
-    <div><span class="lock">Watchdog Pro</span><h2>Found someone worth following?</h2><p class="muted" style="margin:0">Watchdog Pro will show the names behind these records and the picks they post before kickoff. <span id="pendNote"></span></p></div>
-    <a class="btn pro" href="./#pro">Launching soon</a>
+    <div><span class="lock">Watchdog Pro</span><h2>Found someone worth following?</h2><p class="muted" style="margin:0">Watchdog Pro reveals the names behind these records, every graded pick, name search, side by side comparisons and advanced filters.</p></div>
+    <a class="btn pro" href="pricing.html">$19.99 a month</a>
   </section>
 </main>
 <footer class="foot"><div class="wrap">
   <div><p><b>Handicapper Watchdog</b> grades picks captured from public posts on X, Covers, Reddit, TheRX, Sportsbook Review and Predictem. Records are past results, not predictions or guarantees. Held, duplicate and unreviewed picks are not counted.</p>
   <p>21+. Gambling problem? Call 1 800 GAMBLER.</p></div>
-  <div><p><a href="cappers.html">Rankings</a></p><p><a href="./#method">Methodology</a></p><p><a href="./#pro">Watchdog Pro</a></p></div>
+  <div><p><a href="cappers.html">Rankings</a></p><p><a href="./#method">Methodology</a></p><p><a href="pricing.html">Watchdog Pro</a></p><p><a href="terms.html">Terms</a></p><p><a href="privacy.html">Privacy</a></p></div>
 </div></footer>
+<script src="pro.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

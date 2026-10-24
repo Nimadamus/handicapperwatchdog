@@ -20,9 +20,10 @@
     return '<svg class="spark" width="' + W + '" height="' + H + '" viewBox="0 0 ' + W + ' ' + H + '" aria-hidden="true"><line x1="0" x2="' + W + '" y1="' + z + '" y2="' + z + '" stroke="var(--line2)" stroke-dasharray="2 3"/><path d="' + d + '" fill="none" stroke="' + c + '" stroke-width="1.6"/></svg>';
   }
 
+  var NAMES = null; // id -> [id, handle, source] once a Pro member's names file is decrypted
   function capCell(r) {
-    var t = TIER[r.tier] || TIER.small;
-    return '<div class="cap"><span class="av">' + esc(code(r.id).slice(0, 2)) + '</span><span class="nm"><b><span class="blur" aria-label="Name hidden">Hidden name</span></b>' +
+    var t = TIER[r.tier] || TIER.small, n = NAMES && NAMES[r.id];
+    return '<div class="cap"><span class="av">' + esc(code(r.id).slice(0, 2)) + '</span><span class="nm"><b>' + (n ? esc(n[1]) : '<span class="blur" aria-label="Name hidden">Hidden name</span>') + '</b>' +
       '<small>ID ' + esc(code(r.id)) + ' · ' + esc(r.source) + ' <span class="badge ' + t[0] + '">' + t[1] + '</span></small></span></div>';
   }
 
@@ -45,7 +46,7 @@
 
   document.addEventListener('click', function (e) {
     var tr = e.target.closest && e.target.closest('tr.go');
-    if (tr && !e.target.closest('a')) location.href = tr.getAttribute('data-href');
+    if (tr && !e.target.closest('a') && !e.target.closest('input')) location.href = tr.getAttribute('data-href');
   });
 
   fetch('data/index.json?v=' + Math.floor(Date.now() / 6e4)).then(function (r) { return r.json(); }).then(function (d) {
@@ -63,13 +64,13 @@
   // ---------------- home ----------------
   function home(d) {
     var M = d.meta, all = d.cappers, L = M.live, built = new Date(M.built_at);
+    HWD.ready.then(function (s) { if (s.pro) HWD.names().then(function (list) { NAMES = {}; list.forEach(function (n) { NAMES[n[0]] = n; }); draw(); }).catch(function () {}); });
     // live panel: every figure read from the Watchdog stats endpoint at build time
     if (L) {
       var kv = [[fmt(L.accounts_discovered), 'Accounts discovered'], [fmt(L.accounts_monitored), 'Accounts monitored'], [fmt(L.posts_captured), 'Posts scanned'],
-        [fmt(L.picks_captured_today), 'Picks captured today'], [fmt(L.graded_picks), 'Picks graded'], [fmt(L.pending_picks), 'Pending picks right now', 1]];
-      $('liveGrid').innerHTML = kv.map(function (k) { return '<div class="kv' + (k[2] ? ' hl' : '') + '"><b>' + k[0] + '</b><span>' + k[1] + (k[2] ? ' <a class="lock" href="#pro">Pro</a>' : '') + '</span></div>'; }).join('');
+        [fmt(L.picks_captured_today), 'Picks captured today'], [fmt(L.graded_picks), 'Picks graded'], [fmt(L.pending_picks), 'Pending picks awaiting games']];
+      $('liveGrid').innerHTML = kv.map(function (k) { return '<div class="kv' + (k[2] ? ' hl' : '') + '"><b>' + k[0] + '</b><span>' + k[1] + '' + '</span></div>'; }).join('');
       $('liveAt').textContent = 'Last capture ' + new Date(L.last_capture_at).toLocaleTimeString('en-US', { timeZone: 'America/Los_Angeles', hour: 'numeric', minute: '2-digit' }) + ' PT';
-      $('featPending').textContent = fmt(L.pending_picks) + ' pending picks were on the board at our last update, from Covers, X, Reddit and the forums.';
     } else {
       $('liveGrid').innerHTML = '<div class="kv"><b>' + fmt(M.tracked) + '</b><span>Handicappers with a record</span></div><div class="kv"><b>' + fmt(M.graded_picks) + '</b><span>Picks graded</span></div>';
     }
@@ -154,11 +155,11 @@
   }
 
   // ---------------- rankings ----------------
+  var PRO = false;
   function rankings(d) {
-    var M = d.meta, all = d.cappers, PER = 50, pageNo = 1, view = [];
+    var M = d.meta, all = d.cappers, PER = 50, pageNo = 1, view = [], picked = [];
     var P = new URLSearchParams(location.search);
     $('fresh').textContent = fmt(M.tracked) + ' handicappers with graded picks. Updated ' + new Date(M.built_at).toLocaleString('en-US', { timeZone: 'America/Los_Angeles', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) + ' PT.';
-    if (M.live) $('pendNote').textContent = fmt(M.live.pending_picks) + ' pending picks were on the board at our last update.';
     sportsByDepth(all, 5).forEach(function (s) { $('fSport').insertAdjacentHTML('beforeend', '<option>' + esc(s) + '</option>'); });
     M.sources.forEach(function (s) { $('fSource').insertAdjacentHTML('beforeend', '<option>' + esc(s) + '</option>'); });
     var map = { q: 'q', sport: 'fSport', src: 'fSource', t: 'fTime', sort: 'fSort', min: 'fMin', roi: 'fRoi', win: 'fWin', u: 'fUnits' };
@@ -179,8 +180,16 @@
       all.forEach(function (r) {
         if (so && r.source !== so) return;
         if (q && !(r.id.indexOf(q) === 0 || code(r.id).toLowerCase() === q || r.source.toLowerCase().indexOf(q) >= 0 ||
+          (NAMES && NAMES[r.id] && String(NAMES[r.id][1]).toLowerCase().indexOf(q.replace(/^@/, '')) >= 0) ||
           r.sports.some(function (s) { return s.toLowerCase().indexOf(q) >= 0; }))) return;
         var x = m(r, t, sp); if (!x || x.picks < min) return;
+        if (PRO) {
+          var clv = $('fClv').value, z = $('fZ').value, dd = $('fDd').value, mo = $('fMo').value;
+          if (clv !== '' && !(r.clv_beat != null && r.clv_n >= 10 && r.clv_beat >= +clv)) return;
+          if (z !== '' && !(r.z != null && (+z === 0 ? r.z > 0 : r.z >= +z))) return;
+          if (dd !== '' && !(r.mdd != null && r.mdd > +dd)) return;
+          if (mo !== '' && !(r.months && (mo === 'all' ? r.months_up === r.months : r.months_up * 2 >= r.months))) return;
+        }
         if (roi !== '' && !(x.roi != null && x.roi >= +roi && (+roi > 0 || x.roi > 0))) return;
         if (win !== '' && !(x.win_pct != null && x.win_pct >= +win)) return;
         if (un !== '' && !(x.units != null && x.units >= +un && (+un > 0 || x.units > 0))) return;
@@ -199,7 +208,7 @@
       var start = (pageNo - 1) * PER, rows = view.slice(start, start + PER), lifetime = !$('fSport').value && $('fTime').value === 'all';
       $('rows').innerHTML = rows.length ? rows.map(function (o, i) {
         var r = o.r, x = o.x, h = link(r);
-        return '<tr' + (h ? ' class="go" data-href="' + h + '"' : '') + '><td class="l rk">' + (start + i + 1) + '</td><td class="l">' + capCell(r) + '</td><td class="hm l">' + (lifetime ? spark(r.spark) : '<span class="dim small">all sports only</span>') + '</td><td>' + fmt(x.picks) +
+        return '<tr' + (h ? ' class="go" data-href="' + h + '"' : '') + '><td class="l rk">' + (PRO ? '<input type="checkbox" class="pick" data-id="' + r.id + '"' + (picked.indexOf(r.id) >= 0 ? ' checked' : '') + ' aria-label="Compare">' : start + i + 1) + '</td><td class="l">' + capCell(r) + '</td><td class="hm l">' + (lifetime ? spark(r.spark) : '<span class="dim small">all sports only</span>') + '</td><td>' + fmt(x.picks) +
           '</td><td>' + recTxt(x) + '</td><td class="hm">' + pct(x.win_pct) + '</td><td>' + sgn(x.units, 2) + '</td><td>' + sgn(x.roi, 1, '%') + '</td><td class="hm">' + strk(r.streak) + '</td><td class="hm muted">' + ago(r.last_pick) + '</td></tr>';
       }).join('') : '<tr><td colspan="10" class="empty">No handicappers match these filters. Try a smaller minimum or another timeframe.</td></tr>';
       var pages = Math.max(1, Math.ceil(view.length / PER));
@@ -208,7 +217,23 @@
       $('prev').disabled = pageNo <= 1; $('next').disabled = pageNo >= pages;
     }
 
-    ['fSport', 'fSource', 'fTime', 'fSort', 'fMin', 'fRoi', 'fWin', 'fUnits'].forEach(function (id) { $(id).addEventListener('change', apply); });
+    ['fSport', 'fSource', 'fTime', 'fSort', 'fMin', 'fRoi', 'fWin', 'fUnits', 'fClv', 'fZ', 'fDd', 'fMo'].forEach(function (id) { $(id).addEventListener('change', apply); });
+    $('rows').addEventListener('click', function (e) {
+      var c = e.target.closest('input.pick'); if (!c) return;
+      e.stopPropagation();
+      var id = c.getAttribute('data-id'), i = picked.indexOf(id);
+      if (c.checked && i < 0) { if (picked.length >= 4) { c.checked = false; return; } picked.push(id); } else if (!c.checked && i >= 0) picked.splice(i, 1);
+      $('cmpBtn').textContent = 'Compare' + (picked.length ? ' (' + picked.length + ')' : '');
+      $('cmpBtn').href = 'compare.html' + (picked.length ? '?ids=' + picked.join(',') : '');
+    });
+    HWD.ready.then(function (s) {
+      if (!s.pro) return;
+      PRO = true;
+      ['fClv', 'fZ', 'fDd', 'fMo'].forEach(function (id) { $(id).disabled = false; });
+      document.querySelectorAll('#proF .lock').forEach(function (l) { l.remove(); });
+      $('cmpBtn').className = 'btn sm ghost'; $('cmpBtn').href = 'compare.html';
+      HWD.names().then(function (list) { NAMES = {}; list.forEach(function (n) { NAMES[n[0]] = n; }); apply(); }).catch(apply);
+    });
     var tmr; $('q').addEventListener('input', function () { clearTimeout(tmr); tmr = setTimeout(apply, 150); });
     $('reset').onclick = function () { ['q', 'fSport', 'fSource', 'fRoi', 'fWin', 'fUnits'].forEach(function (id) { $(id).value = ''; }); $('fTime').value = 'all'; $('fSort').value = 'units'; $('fMin').value = '20'; apply(); };
     $('prev').onclick = function () { if (pageNo > 1) { pageNo--; draw(); scrollTo({ top: 0, behavior: 'smooth' }); } };

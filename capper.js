@@ -2,7 +2,7 @@
   'use strict';
   var root = document.getElementById('prof');
   var id = new URLSearchParams(location.search).get('id') || '';
-  var PRO = './#pro';
+  var PRO = 'pricing.html';
   var fmt = function (n) { return n == null ? 'n/a' : Number(n).toLocaleString('en-US'); };
   var esc = function (s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
   var sgn = function (v, d, suf) { if (v == null) return '<span class="dim">n/a</span>'; var n = +v; return '<span class="' + (n > 0 ? 'pos' : n < 0 ? 'neg' : '') + '">' + (n > 0 ? '+' : '') + n.toFixed(d) + (suf || '') + '</span>'; };
@@ -65,7 +65,8 @@
       '<div class="xl"><span>' + esc(first || 'First graded pick') + '</span><span>' + esc(last || 'Latest') + '</span></div><div class="tip" hidden></div></div>';
   }
   function hookCharts() {
-    root.querySelectorAll('.chart').forEach(function (c) {
+    root.querySelectorAll('.chart:not([data-h])').forEach(function (c) {
+      c.setAttribute('data-h', '1');
       var pts = charts[+c.getAttribute('data-c')], svg = c.querySelector('svg'), tip = c.querySelector('.tip'), hx = c.querySelector('.hx');
       c.addEventListener('mousemove', function (e) {
         var b = svg.getBoundingClientRect(), fx = (e.clientX - b.left) / b.width;
@@ -90,9 +91,52 @@
       '<div class="g2">' + panel('By day of the week', table(s.weekday, 'Day'), '<span class="muted small">Game day, Pacific</span>') + panel('By month', table(s.month, 'Month')) + '</div>';
   }
 
+  // Panes may be functions: only the first is built up front, the rest when their tab is opened (keeps the DOM small).
+  var lazy = {};
   function tabs(name, items) {
+    lazy[name] = items.map(function (t) { return t[1]; });
     return '<div class="tabs" data-tabs="' + name + '" style="margin-bottom:14px">' + items.map(function (t, i) { return '<button class="tab' + (i ? '' : ' on') + '" data-i="' + i + '">' + t[0] + '</button>'; }).join('') + '</div>' +
-      items.map(function (t, i) { return '<div data-pane="' + name + '" data-i="' + i + '"' + (i ? ' hidden' : '') + '>' + t[1] + '</div>'; }).join('');
+      items.map(function (t, i) { return '<div data-pane="' + name + '" data-i="' + i + '"' + (i ? ' hidden' : '') + '>' + (i ? '' : typeof t[1] === 'function' ? t[1]() : t[1]) + '</div>'; }).join('');
+  }
+
+  // ---------- Watchdog Pro: name and pick log, decrypted in the browser with a key only a subscriber can get ----------
+  function unlock(s, o) {
+    HWD.capper(s.id).then(function (d) {
+      document.getElementById('pname').textContent = d.handle;
+      document.title = d.handle + ' betting record: ' + rec(o) + ' | Handicapper Watchdog';
+      var unl = root.querySelector('.unl');
+      if (unl) unl.innerHTML = '<span class="lock">Watchdog Pro</span><b>' + esc(d.handle) + ' on ' + esc(d.source) + '</b><p>Every graded pick is below with a link to the original post.</p>' +
+        '<a class="btn ghost" style="width:100%" href="compare.html?ids=' + s.id + '">Compare with others</a>';
+      var sec = document.getElementById('picks'), picks = d.picks || [], sports = {}, page = 0, PER = 50, f = { sport: '', res: '' };
+      picks.forEach(function (p) { sports[p.sport] = 1; });
+      sec.innerHTML = '<div class="sech"><h2>Pick log</h2><span class="muted small">' + fmt(picks.length) + ' graded picks, newest first</span></div><div class="panel">' +
+        '<div class="ph" style="gap:10px;justify-content:flex-start"><select id="plS" style="width:auto"><option value="">All sports</option>' + Object.keys(sports).sort().map(function (x) { return '<option>' + esc(x) + '</option>'; }).join('') + '</select>' +
+        '<select id="plR" style="width:auto"><option value="">All results</option><option value="won">Wins</option><option value="lost">Losses</option><option value="push">Pushes</option></select></div>' +
+        '<div class="tw"><table class="mini"><thead><tr><th class="l">Game</th><th class="l">Pick</th><th>Price</th><th>Result</th><th>Units</th><th class="hm">Final</th><th class="hm">Posted</th><th class="l">Post</th></tr></thead><tbody id="plB"></tbody></table></div>' +
+        '<div class="tfoot"><span id="plC"></span><div class="pager"><button class="btn sm ghost" id="plP" type="button">Newer</button><button class="btn sm ghost" id="plN" type="button">Older</button></div></div></div>';
+      var when = function (iso) { return iso ? new Date(iso).toLocaleString('en-US', { timeZone: 'America/Los_Angeles', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) : ''; };
+      function draw() {
+        var rows = picks.filter(function (p) { return (!f.sport || p.sport === f.sport) && (!f.res || p.result === f.res); });
+        var pages = Math.max(1, Math.ceil(rows.length / PER)); page = Math.min(page, pages - 1);
+        document.getElementById('plB').innerHTML = rows.slice(page * PER, page * PER + PER).map(function (p) {
+          var r = p.result === 'won' ? '<span class="pos">Won</span>' : p.result === 'lost' ? '<span class="neg">Lost</span>' : '<span class="dim">Push</span>';
+          var safe = /^https:\/\/[^\s"<>]+$/.test(p.url || '') ? p.url : '';
+          return '<tr><td class="l"><span class="dim small">' + esc(p.sport) + '</span> ' + esc(p.matchup) + '<br><span class="dim small">' + when(p.game) + '</span></td><td class="l"><b>' + esc(p.pick) + '</b><br><span class="dim small">' + esc(p.market) + '</span></td>' +
+            '<td>' + (p.odds == null ? '<span class="dim">n/a</span>' : (p.odds > 0 ? '+' : '') + p.odds) + '</td><td>' + r + '</td><td>' + sgn(p.pl, 2) + '</td><td class="hm">' + esc(p.final || '') + '</td><td class="hm muted">' + when(p.posted) + '</td>' +
+            '<td class="l">' + (safe ? '<a href="' + esc(safe) + '" target="_blank" rel="nofollow noopener noreferrer" title="' + esc((p.text || '').slice(0, 200)) + '" style="text-decoration:underline">Open</a>' : '<span class="dim">n/a</span>') + '</td></tr>';
+        }).join('') || '<tr><td colspan="8" class="empty">No picks match.</td></tr>';
+        document.getElementById('plC').textContent = fmt(rows.length) + ' picks · page ' + (page + 1) + ' of ' + pages;
+        document.getElementById('plP').disabled = page === 0; document.getElementById('plN').disabled = page >= pages - 1;
+      }
+      document.getElementById('plS').onchange = function () { f.sport = this.value; page = 0; draw(); };
+      document.getElementById('plR').onchange = function () { f.res = this.value; page = 0; draw(); };
+      document.getElementById('plP').onclick = function () { page--; draw(); };
+      document.getElementById('plN').onclick = function () { page++; draw(); };
+      draw();
+    }).catch(function () {
+      var sec = document.getElementById('picks');
+      if (sec) sec.insertAdjacentHTML('afterbegin', '<div class="notice">Pro data for this handicapper is not available yet. It is added on the next update.</div>');
+    });
   }
 
   // ---------- page ----------
@@ -104,11 +148,11 @@
     var h = '';
 
     h += '<section class="phero"><div><div class="pid"><div class="pav">' + esc(c.slice(0, 2)) + '</div><div><div class="eyebrow">Handicapper profile · ID ' + esc(c) + '</div>' +
-      '<h1><span class="blur" aria-label="Name hidden">Hidden handle</span></h1>' +
+      '<h1 id="pname"><span class="blur" aria-label="Name hidden">Hidden handle</span></h1>' +
       '<div class="pmeta"><span class="badge">' + esc(s.source) + '</span><span class="badge ' + t[0] + '" title="' + t[2] + '">' + t[1] + '</span>' +
       s.sports.slice(0, 4).map(function (x) { return '<span class="badge">' + esc(x) + '</span>'; }).join('') + '</div>' +
       '<p class="muted small" style="margin:8px 0 0">Tracked since ' + day(s.first_pick) + ' · last pick ' + day(s.last_pick) + ' · verified through ' + day(p.generated_at) + '</p></div></div></div>' +
-      '<div class="unl"><span class="lock">Watchdog Pro</span><b>See who this is and what they are betting</b><p>Watchdog Pro will show this handicapper&rsquo;s name, every graded pick with the original post, and their pending picks before kickoff.</p><a class="btn pro" style="width:100%" href="' + PRO + '">Launching soon</a></div></section>';
+      '<div class="unl"><span class="lock">Watchdog Pro</span><b>See who this is and what they are betting</b><p>Watchdog Pro shows this handicapper&rsquo;s name, every graded pick with the original post, and side by side comparisons.</p><a class="btn pro" style="width:100%" href="' + PRO + '">Unlock for $19.99 a month</a></div></section>';
 
     h += kpis([[rec(o), 'Record'], [sgn(o.net, 2), 'Units won'], [sgn(o.roi, 1, '%'), 'ROI'], [pct(o.win_pct), 'Win %'], [fmt(o.picks), 'Graded picks'],
       [odds(o.avg_odds), 'Avg odds'], [strk(ost.current), 'Current streak'], [s.r30 ? sgn(s.r30.net, 2) : '<span class="dim">n/a</span>', 'Last 30 days']]);
@@ -133,7 +177,7 @@
       panel('After a win or a loss', table(p.after, 'Situation')) + '</section>';
 
     h += '<section class="sec" id="sports"><div class="sech"><h2>Sport by sport</h2><span class="muted small">' + sportNames.length + ' sports</span></div>' +
-      (sportNames.length ? tabs('sp', sportNames.map(function (n) { return [esc(n) + ' <span class="dim">' + p.sport_detail[n].overall.picks + '</span>', sportPane(n, p.sport_detail[n])]; })) : '<div class="empty">No sport data yet.</div>') + '</section>';
+      (sportNames.length ? tabs('sp', sportNames.map(function (n) { return [esc(n) + ' <span class="dim">' + p.sport_detail[n].overall.picks + '</span>', function () { return sportPane(n, p.sport_detail[n]); }]; })) : '<div class="empty">No sport data yet.</div>') + '</section>';
 
     h += '<section class="sec" id="markets"><div class="sech"><h2>Markets</h2></div><div class="g2">' + panel('By market', table(p.markets, 'Market', { sort: 1 })) + panel('By sport and market', table(p.market_detail, 'Sport · market', { sort: 1, limit: 14 })) + '</div></section>';
     h += '<section class="sec" id="situations"><div class="sech"><h2>Sides and prices</h2></div><div class="g2">' + panel('Favorites and underdogs', table(p.fav_dog, 'Side')) + panel('Plus money', table(p.plus_money, 'Price')) + '</div>' +
@@ -145,15 +189,19 @@
     // pick log: locked; no pick rows are ever published on this site
     var sk = '<tr><td class="l"><div class="skel" style="width:180px"></div></td><td class="l"><div class="skel" style="width:110px"></div></td><td><div class="skel" style="width:40px;margin-left:auto"></div></td><td><div class="skel" style="width:36px;margin-left:auto"></div></td><td><div class="skel" style="width:44px;margin-left:auto"></div></td><td class="hm"><div class="skel" style="width:70px;margin-left:auto"></div></td></tr>';
     h += '<section class="sec" id="picks"><div class="sech"><h2>Pick log</h2><span class="lock">Watchdog Pro</span></div><div class="panel locked"><div class="ghost"><div class="tw"><table class="mini"><thead><tr><th class="l">Game</th><th class="l">Pick</th><th>Price</th><th>Result</th><th>Units</th><th class="hm">Posted</th></tr></thead><tbody>' +
-      sk + sk + sk + sk + sk + '</tbody></table></div></div><div class="over"><b style="font-size:16px">' + fmt(o.picks) + ' graded picks, each with the original post</b><p class="muted small" style="margin:0;max-width:440px">See every game, line, price and result, plus this handicapper&rsquo;s pending picks before kickoff.</p><a class="btn pro" href="' + PRO + '">Launching soon</a></div></div></section>';
+      sk + sk + sk + sk + sk + '</tbody></table></div></div><div class="over"><b style="font-size:16px">' + fmt(o.picks) + ' graded picks, each with the original post</b><p class="muted small" style="margin:0;max-width:440px">See every game, pick, price, result and units, with a link to the post it came from.</p><a class="btn pro" href="' + PRO + '">Unlock with Watchdog Pro</a></div></div></section>';
 
     root.innerHTML = h;
     hookCharts();
+    HWD.ready.then(function (st) { if (st.pro) unlock(s, o); });
     root.addEventListener('click', function (e) {
       var b = e.target.closest('button.tab'); if (!b) return;
       var box = b.parentNode, name = box.getAttribute('data-tabs'), i = b.getAttribute('data-i');
       box.querySelectorAll('.tab').forEach(function (x) { x.classList.toggle('on', x === b); });
-      root.querySelectorAll('[data-pane="' + name + '"]').forEach(function (pn) { pn.hidden = pn.getAttribute('data-i') !== i; });
+      root.querySelectorAll('[data-pane="' + name + '"]').forEach(function (pn) {
+        pn.hidden = pn.getAttribute('data-i') !== i;
+        if (!pn.hidden && !pn.childElementCount && lazy[name]) { var c = lazy[name][+i]; pn.innerHTML = typeof c === 'function' ? c() : c; hookCharts(); }
+      });
     });
     var links = [].slice.call(document.querySelectorAll('#snav a'));
     if ('IntersectionObserver' in window) {

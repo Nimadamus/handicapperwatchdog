@@ -13,6 +13,7 @@ The raw research is cached in .cache/ (Actions cache, never published) and a pro
 the capper has posted since and the cached copy is older than PROFILE_TTL, so TMR serves each profile a few times
 a day at most, gzipped.
 """
+import base64
 import gzip
 import hashlib
 import hmac
@@ -30,10 +31,15 @@ from datetime import datetime, timezone, timedelta
 BASE = 'https://trustmyrecord.com/around-the-web/'
 ALLOWED = {'x', 'reddit', 'covers', 'therx', 'sbr', 'predictem'}  # outside handicappers only, never TMR members
 KEY = (os.environ.get('HWD_MASK_KEY') or secrets.token_hex(16)).encode()
+# Watchdog Pro data (names, pick logs) is published only encrypted. Each capper file has its own AES-GCM key,
+# HMAC(HWD_PRO_KEY, 'capper:' + id); the API hands a key to a signed in subscriber for one capper at a time.
+# Without HWD_PRO_KEY nothing Pro is written at all.
+PRO_KEY = os.environ.get('HWD_PRO_KEY', '').encode()
 HERE = os.path.dirname(os.path.abspath(__file__))
 CACHE = os.path.join(HERE, '.cache', 'profiles')
 SITE = os.path.join(HERE, '_site')
-STATIC = ('index.html', 'capper.html', 'cappers.html', 'style.css', 'app.js', 'capper.js', 'favicon.svg', 'CNAME', 'robots.txt', 'sitemap.xml')
+STATIC = ('index.html', 'capper.html', 'cappers.html', 'pricing.html', 'account.html', 'compare.html', 'terms.html', 'privacy.html',
+          'style.css', 'app.js', 'capper.js', 'pro.js', 'compare.js', 'pricing.js', 'account.js', 'favicon.svg', 'CNAME', 'robots.txt', 'sitemap.xml')
 PROFILE_TTL = int(os.environ.get('HWD_PROFILE_TTL', str(6 * 3600)))
 MAX_FETCH = int(os.environ.get('HWD_MAX_FETCH', '400'))
 PT = timezone(timedelta(hours=-7))  # display only; weekday buckets use Pacific time like the rest of TMR
@@ -55,6 +61,25 @@ def extract(html, var):
     if not m:
         return None
     return json.JSONDecoder().raw_decode(html[m.end():].lstrip())[0]
+
+
+def pro_key(label):
+    return hmac.new(PRO_KEY, label.encode(), hashlib.sha256).digest()
+
+
+def seal(label, obj):
+    from cryptography.hazmat.primitives.ciphers.aead import AESGCM
+    iv = secrets.token_bytes(12)
+    data = json.dumps(obj, separators=(',', ':')).encode()
+    return base64.b64encode(iv + AESGCM(pro_key(label)).encrypt(iv, data, None)).decode()
+
+
+def pro_payload(x, research):
+    hist = [h for h in (research.get('history') or []) if h.get('result') in ('won', 'lost', 'push')]
+    hist.sort(key=lambda h: h.get('game') or '', reverse=True)
+    keep = ('game', 'posted', 'sport', 'matchup', 'pick', 'market', 'line', 'odds', 'result', 'pl', 'final', 'url', 'text')
+    return {'handle': x.get('handle') or x.get('username'), 'source': x.get('source_label') or x['source'],
+            'picks': [{k: h.get(k) for k in keep} for h in hist]}
 
 
 def mask(slug):
@@ -219,7 +244,11 @@ def build_profile(row, research):
         'r7': trim(fd.get('Last 7 days')), 'r30': trim(fd.get('Last 30 days')), 'first_pick': first,
         'spark': [round(v, 1) for v in curve(hist, 24)],
         'months': len(months), 'months_up': sum(1 for m in months if (m.get('net') or 0) > 0),
-        'unpriced': (research.get('overview') or {}).get('unpriced') or 0}
+        'unpriced': (research.get('overview') or {}).get('unpriced') or 0,
+        'clv_beat': ((research.get('advanced') or {}).get('clv') or {}).get('beat_pct'),
+        'clv_n': ((research.get('advanced') or {}).get('clv') or {}).get('n') or 0,
+        'z': ((research.get('advanced') or {}).get('z') or {}).get('z'),
+        'mdd': (research.get('advanced') or {}).get('max_drawdown')}
     prof['extra']['monitored_since'] = first
     # Reconcile: the pick history must reproduce TMR's headline record, or the profile is not published.
     ov, a = research.get('overview') or {}, agg(hist)
@@ -275,6 +304,8 @@ def main():
         path = os.path.join(SITE, name)
         shutil.rmtree(path) if os.path.isdir(path) else os.remove(path)
     os.makedirs(os.path.join(SITE, 'data', 'p'))
+    if PRO_KEY:
+        os.makedirs(os.path.join(SITE, 'data', 'x'))
     for f in STATIC:
         if os.path.exists(os.path.join(HERE, f)):
             shutil.copy(os.path.join(HERE, f), SITE)
@@ -314,6 +345,9 @@ def main():
                     json.dump(prof, f, separators=(',', ':'))
                 s['profile'] = True
                 published += 1
+                if PRO_KEY:
+                    with open(os.path.join(SITE, 'data', 'x', s['id'] + '.bin'), 'w') as f:
+                        f.write(seal('capper:' + s['id'], pro_payload(x, cached['research'])))
             else:
                 unreconciled += 1
         s['tier'] = tier(s['picks'])
@@ -330,6 +364,11 @@ def main():
             'established': sum(1 for s in index if s['picks'] >= 100 and s['units'] is not None),
             'established_up': sum(1 for s in index if s['picks'] >= 100 and (s['units'] or 0) > 0),
             'live': live_stats()}
+    if PRO_KEY:
+        names = [[mask(x['slug']), x.get('handle') or x.get('username'), x.get('source_label') or x['source']] for x in rows]
+        with open(os.path.join(SITE, 'data', 'x', 'names.bin'), 'w') as f:
+            f.write(seal('names', names))
+        meta['pro_data'] = True
     with open(os.path.join(SITE, 'data', 'index.json'), 'w', encoding='utf-8') as f:
         json.dump({'meta': meta, 'cappers': index}, f, separators=(',', ':'))
     print('tracked %d, fetched %d, failed %d, profiles %d, unreconciled %d' % (len(index), fetched, failed, published, unreconciled))
