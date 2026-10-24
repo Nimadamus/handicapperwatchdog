@@ -1,0 +1,34 @@
+# Keeps the site refreshing every ~30 minutes without depending on GitHub's cron, which fired only once in the first
+# three and a half hours on this repo, or on any computer being switched on.
+#
+# Each run waits 25 minutes, starts "Build and deploy", then starts the next scheduler run (a chain). Runs started
+# with the workflow token are allowed to dispatch workflows. Only one chain can exist: the concurrency group keeps one
+# running tick and one waiting tick, and a newer waiting tick replaces an older one. If the chain ever breaks, the hourly cron below (whenever GitHub fires it) or a manual run restarts it.
+# Public repository, so Actions minutes are free.
+name: Refresh scheduler
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 * * * *'
+permissions:
+  actions: write
+  contents: read
+concurrency:
+  group: refresh-scheduler
+  cancel-in-progress: false
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Wait
+        run: sleep 1500
+      - name: Start the build and the next tick
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -e
+          busy=$(gh run list -R "$GITHUB_REPOSITORY" -w refresh.yml --json status -q '[.[] | select(.status=="queued" or .status=="in_progress")] | length')
+          if [ "$busy" = "0" ]; then gh workflow run refresh.yml -R "$GITHUB_REPOSITORY" --ref main; echo "build started"; else echo "build already running"; fi
+          gh workflow run scheduler.yml -R "$GITHUB_REPOSITORY" --ref main
+          echo "next tick queued"
