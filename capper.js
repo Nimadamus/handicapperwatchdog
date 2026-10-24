@@ -152,7 +152,7 @@
       '<div class="pmeta"><span class="badge">' + esc(s.source) + '</span><span class="badge ' + t[0] + '" title="' + t[2] + '">' + t[1] + '</span>' +
       s.sports.slice(0, 4).map(function (x) { return '<span class="badge">' + esc(x) + '</span>'; }).join('') + '</div>' +
       '<p class="muted small" style="margin:8px 0 0">Tracked since ' + day(s.first_pick) + ' · last pick ' + day(s.last_pick) + ' · verified through ' + day(p.generated_at) + '</p></div></div></div>' +
-      '<div class="unl"><span class="lock">Watchdog Pro</span><b>See who this is and what they are betting</b><p>Watchdog Pro shows this handicapper&rsquo;s name, every graded pick with the original post, and side by side comparisons.</p><a class="btn pro" style="width:100%" href="' + PRO + '">Unlock for $19.99 a month</a></div></section>';
+      '<div class="unl"><span class="lock">Watchdog Pro</span><b>See who this is and what they are betting</b><p>Watchdog Pro shows this handicapper&rsquo;s name, every graded pick with the original post, and side by side comparisons.</p><a class="btn pro" style="width:100%" href="' + PRO + '">See Watchdog Pro plans</a></div></section>';
 
     h += kpis([[rec(o), 'Record'], [sgn(o.net, 2), 'Units won'], [sgn(o.roi, 1, '%'), 'ROI'], [pct(o.win_pct), 'Win %'], [fmt(o.picks), 'Graded picks'],
       [odds(o.avg_odds), 'Avg odds'], [strk(ost.current), 'Current streak'], [s.r30 ? sgn(s.r30.net, 2) : '<span class="dim">n/a</span>', 'Last 30 days']]);

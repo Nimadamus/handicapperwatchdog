@@ -22,7 +22,7 @@ const env = {
   KV: { get: async (k) => { const v = kv.get(k); return v && (!v.exp || v.exp > Date.now()) ? v.val : null; },
         put: async (k, val, o) => kv.set(k, { val, exp: o && o.expirationTtl ? Date.now() + o.expirationTtl * 1000 : 0 }), delete: async (k) => kv.delete(k) },
   SITE_URL: SITE, SESSION_SECRET: 'dev_session_secret', HWD_PRO_KEY: process.env.HWD_PRO_KEY || '',
-  STRIPE_SECRET_KEY: 'sk_test_dev', STRIPE_WEBHOOK_SECRET: 'whsec_dev', STRIPE_PRICE_MONTHLY: 'price_month_1999', STRIPE_PRICE_ANNUAL: 'price_year_149',
+  STRIPE_SECRET_KEY: 'sk_test_dev', STRIPE_WEBHOOK_SECRET: 'whsec_dev', STRIPE_PRICE_MONTHLY: 'price_month_5999', STRIPE_PRICE_ANNUAL: 'price_year_49900',
   DEV_MAIL_ECHO: '1',
 };
 const DAY = 86400, T = () => Math.floor(Date.now() / 1000);
@@ -80,7 +80,7 @@ http.createServer(async (req, res) => {
         await webhook('checkout.session.completed', { ...s });
         res.writeHead(303, { location: s.success_url }); res.end(); return;
       }
-      const amt = s.price === env.STRIPE_PRICE_ANNUAL ? '$149.00 per year' : '$19.99 per month';
+      const amt = s.price === env.STRIPE_PRICE_ANNUAL ? '$499.00 per year' : '$59.99 per month';
       res.writeHead(200, { 'content-type': 'text/html' });
       res.end(PAGE('Checkout', `<h2>Subscribe to Watchdog Pro</h2><p style="font-size:22px;margin:4px 0 18px"><b>${amt}</b></p>
         <form><input type="hidden" name="s" value="${s.id}"><input type="hidden" name="pay" value="1"><label>Email<br><input name="email" value="${s.customer_email || 'tester@example.com'}" style="width:100%;padding:9px;margin:4px 0 12px;border:1px solid #ccd"></label>

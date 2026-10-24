@@ -70,6 +70,15 @@ with sync_playwright() as pw:
         check(vname + ' no script errors', not errors, errors[:3])
         ctx.close()
 
+    # ---------- pricing content ----------
+    ctx = browser.new_context(viewport={'width': 1440, 'height': 900}); page = ctx.new_page()
+    page.goto(BASE + '/pricing.html'); page.wait_for_selector('#pvRows tr')
+    txt = page.inner_text('main')
+    check('pricing shows $59.99 a month and $499 a year', '$59.99' in txt and '$499' in txt and '$41.58' in txt and '$220.88' in txt, txt[:200])
+    check('no canceled prices anywhere on pricing', '19.99' not in txt and '$149' not in txt and '12.42' not in txt)
+    check('preview rows are real and nameless', page.locator('#pvRows tr').count() == 5 and page.locator('#pvRows .blur').count() == 5)
+    ctx.close()
+
     # ---------- rankings filters ----------
     ctx = browser.new_context(viewport={'width': 1440, 'height': 900}); page = ctx.new_page()
     page.goto(BASE + '/cappers.html'); page.wait_for_selector('#rows tr td:nth-child(5)')
@@ -109,7 +118,7 @@ with sync_playwright() as pw:
         page.fill('input[name=email]', 'ui-%s@example.com' % vname)
         page.click('button'); page.wait_for_url(re.compile(r'/account\.html$'), timeout=15000)
         page.wait_for_selector('#acct .notice.ok')
-        check(vname + ' checkout lands on account as Pro', 'watchdog pro' in page.inner_text('#acct').lower() and '$19.99 a month' in page.inner_text('#acct'))
+        check(vname + ' checkout lands on account as Pro', 'watchdog pro' in page.inner_text('#acct').lower() and '$59.99 a month' in page.inner_text('#acct'))
         shot(page, '%s_account_pro' % vname)
         page.goto(BASE + '/capper.html?id=' + target); page.wait_for_selector('#plB tr', timeout=15000)
         name = page.inner_text('#pname')

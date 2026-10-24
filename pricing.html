@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Watchdog Pro Pricing | Handicapper Watchdog</title>
-<meta name="description" content="Watchdog Pro: the names behind every handicapper record, complete pick logs, search and comparisons. $19.99 a month or $149 a year.">
+<meta name="description" content="Watchdog Pro: the handicapper behind every record, complete graded pick histories, advanced filters and side by side comparisons. $59.99 a month or $499 a year.">
 <link rel="canonical" href="https://handicapperwatchdog.com/pricing.html">
 <meta property="og:title" content="Watchdog Pro Pricing | Handicapper Watchdog">
-<meta property="og:description" content="Watchdog Pro: the names behind every handicapper record, complete pick logs, search and comparisons. $19.99 a month or $149 a year.">
+<meta property="og:description" content="Watchdog Pro: the handicapper behind every record, complete graded pick histories, advanced filters and side by side comparisons. $59.99 a month or $499 a year.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#070d17">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -27,39 +27,59 @@
 <main class="wrap">
   <section class="pricehead">
     <div class="eyebrow">Watchdog Pro</div>
-    <h1>Know exactly who you are following.</h1>
-    <p class="sub">The free rankings show who is winning. Pro shows who they are and every pick behind the record.</p>
+    <h1>Know exactly who you are following, and every pick behind the record.</h1>
+    <p class="sub">The free site shows who is winning. Pro shows who they are, every graded pick they made, and the research tools to compare them before you follow anyone.</p>
     <div class="notice" id="notice" hidden></div>
   </section>
+
   <section class="plans">
+    <div class="plan best" id="planAnnual">
+      <div class="eyebrow">Annual <span class="save">Best value</span></div>
+      <div class="amt"><b>$499</b><span>per year</span></div>
+      <p class="per"><b>$41.58</b> a month, billed once a year. You save <b>$220.88</b> compared with paying monthly.</p>
+      <button class="btn pro full" data-plan="annual" type="button">Start annual</button>
+      <p class="muted small">Cancel any time. Pro stays on to the end of the year you paid for.</p>
+    </div>
     <div class="plan">
       <div class="eyebrow">Monthly</div>
-      <div class="amt"><b>$19.99</b><span>per month</span></div>
-      <p class="muted small">Billed every month. Cancel any time and keep Pro to the end of the month you paid for.</p>
-      <button class="btn ghost full" data-plan="monthly" type="button">Choose monthly</button>
-    </div>
-    <div class="plan best">
-      <div class="eyebrow">Annual <span class="save">Save 38%</span></div>
-      <div class="amt"><b>$149</b><span>per year</span></div>
-      <p class="muted small">$12.42 a month, billed once a year. Cancel any time and keep Pro to the end of the year you paid for.</p>
-      <button class="btn pro full" data-plan="annual" type="button">Choose annual</button>
+      <div class="amt"><b>$59.99</b><span>per month</span></div>
+      <p class="per">Billed every month. Best if you want to try Pro first.</p>
+      <button class="btn ghost full" data-plan="monthly" type="button">Start monthly</button>
+      <p class="muted small">Cancel any time. Pro stays on to the end of the month you paid for.</p>
     </div>
   </section>
-  <p class="muted small center" id="planNote">Payments are handled by Stripe. We never see your card.</p>
+  <p class="muted small center" id="planNote">Secure checkout by Stripe. We never see your card. Prices in US dollars.</p>
+
+  <section class="panel preview" id="preview" style="margin:26px 0">
+    <div class="ph"><h3>What Pro unlocks right now</h3><span class="muted small" id="pvAt"></span></div>
+    <div class="pb">
+      <div class="pvstats" id="pvStats"></div>
+      <div class="eyebrow" style="margin:18px 0 8px">Top 5 by units won, 50+ graded picks</div>
+      <div class="tw"><table class="mini"><thead><tr><th class="l">Handicapper</th><th class="hp">Picks</th><th>Record</th><th>Units</th><th class="hp">ROI</th><th class="l hp">With Pro</th></tr></thead><tbody id="pvRows"></tbody></table></div>
+      <p class="note" style="margin:10px 0 0">Real records from the current rankings. Names and pick histories are hidden until you subscribe.</p>
+    </div>
+  </section>
 
   <section class="panel" style="margin:26px 0">
     <div class="ph"><h3>Free and Pro</h3><span class="muted small">Every figure comes from graded public picks</span></div>
-    <div class="tw"><table class="cmp"><thead><tr><th class="l">Feature</th><th>Free</th><th>Pro</th></tr></thead><tbody><tr><td class="l">Rankings for every tracked handicapper</td><td><span class="yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td><span class="yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr><tr><td class="l">Records, units, ROI and win rate</td><td><span class="yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td><span class="yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr><tr><td class="l">Sport by sport, market and price breakdowns</td><td><span class="yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td><span class="yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr><tr><td class="l">Advanced metrics on every profile</td><td><span class="yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td><span class="yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr><tr><td class="l">Handicapper names and source platform links</td><td><span class="no">&mdash;</span></td><td><span class="yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr><tr><td class="l">Every graded pick with the original post</td><td><span class="no">&mdash;</span></td><td><span class="yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr><tr><td class="l">Search by handle</td><td><span class="no">&mdash;</span></td><td><span class="yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr><tr><td class="l">Compare up to four handicappers side by side</td><td><span class="no">&mdash;</span></td><td><span class="yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr><tr><td class="l">Filter by closing line value, z score, drawdown and consistency</td><td><span class="no">&mdash;</span></td><td><span class="yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr></tbody></table></div>
+    <div class="tw"><table class="cmp"><thead><tr><th class="l">Feature</th><th>Free</th><th>Pro</th></tr></thead><tbody><tr><td class="l">Rankings of every tracked handicapper</td><td><span class="yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td><span class="yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr><tr><td class="l">Records, units, ROI, win rate and streaks</td><td><span class="yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td><span class="yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr><tr><td class="l">Sport by sport, market, price and calendar breakdowns</td><td><span class="yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td><span class="yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr><tr><td class="l">Advanced metrics: closing line value, z score, drawdown, volatility</td><td><span class="yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td><span class="yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr><tr><td class="l">Grading and verification details on every record</td><td><span class="yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td><span class="yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr><tr><td class="l"><b>The handicapper behind every record</b> and their platform</td><td><span class="no">&mdash;</span></td><td><span class="yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr><tr><td class="l"><b>Complete graded pick history</b>: game, pick, price, result, units, post time</td><td><span class="no">&mdash;</span></td><td><span class="yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr><tr><td class="l"><b>A link to the original post</b> for every graded pick</td><td><span class="no">&mdash;</span></td><td><span class="yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr><tr><td class="l"><b>Search by handle</b> across every tracked handicapper</td><td><span class="no">&mdash;</span></td><td><span class="yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr><tr><td class="l"><b>Advanced filters</b>: closing line value, z score, drawdown, profitable months</td><td><span class="no">&mdash;</span></td><td><span class="yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr><tr><td class="l"><b>Side by side comparison</b> of up to four handicappers</td><td><span class="no">&mdash;</span></td><td><span class="yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr></tbody></table></div>
   </section>
 
   <section class="faq">
     <div class="sech"><h2>Questions</h2></div>
     <div class="g2">
-      <div class="panel pb"><b>Where do the records come from?</b><p>We capture picks that handicappers post in public on X, Covers, Reddit, TheRX, Sportsbook Review and Predictem, and grade each one against the final score. We track thousands of handicappers, not every one on the internet.</p></div>
-      <div class="panel pb"><b>What counts as a pick?</b><p>Straight bets posted before the game started. Held, duplicate and unreviewed posts are left out. Units assume one unit risked per pick at the posted price.</p></div>
-      <div class="panel pb"><b>How do I cancel?</b><p>From your account page, open billing and cancel. Pro stays on until the end of the period you already paid for, and you are not charged again.</p></div>
-      <div class="panel pb"><b>Is this betting advice?</b><p>No. Records are past results, not predictions or guarantees. Bet only what you can afford to lose. 21+.</p></div>
+      <div class="panel pb"><b>Where do the records come from?</b><p>We capture picks handicappers post in public on X, Covers, Reddit, TheRX, Sportsbook Review and Predictem, and grade each one against the final score. We track thousands of handicappers, not every one on the internet.</p></div>
+      <div class="panel pb"><b>What counts as a graded pick?</b><p>Straight bets posted before the game started. Held, duplicate and unreviewed posts are left out. Units assume one unit risked per pick at the posted price.</p></div>
+      <div class="panel pb"><b>How do I cancel?</b><p>From your account page, open billing and cancel. Pro stays on until the end of the period you already paid for and you are not charged again.</p></div>
+      <div class="panel pb"><b>Can I switch from monthly to annual?</b><p>Yes. Open billing from your account page and change your plan there.</p></div>
+      <div class="panel pb"><b>Do past results predict future results?</b><p>No. Records are past results, not predictions or guarantees. Pro gives you the full history so you can judge for yourself. Bet only what you can afford to lose. 21+.</p></div>
+      <div class="panel pb"><b>Is my payment secure?</b><p>Checkout and billing run on Stripe. Your card details go straight to Stripe and never touch our servers.</p></div>
     </div>
+  </section>
+
+  <section class="proband slim" style="margin-bottom:34px">
+    <div><span class="lock">Watchdog Pro</span><h2>Research the handicapper before you follow the pick.</h2><p class="muted" style="margin:0">$499 a year or $59.99 a month. Cancel any time.</p></div>
+    <button class="btn pro" data-plan="annual" type="button">Start annual</button>
   </section>
 </main>
 <footer class="foot"><div class="wrap">

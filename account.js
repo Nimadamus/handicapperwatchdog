@@ -31,7 +31,7 @@
       (s.status && s.status !== 'none' ? 'Not active (' + esc(s.status) + ')' : 'No subscription');
     box.innerHTML = '<div class="ph"><h1>Your account</h1><span class="lock">' + (s.pro ? 'Watchdog Pro' : 'Free') + '</span></div><div class="pb">' +
       (msg ? '<div class="notice ok">' + esc(msg) + '</div>' : '') +
-      '<ul class="facts"><li><span>Email</span><b>' + esc(s.email) + '</b></li><li><span>Plan</span><b>' + (s.plan === 'annual' ? '$149 a year' : s.plan === 'monthly' ? '$19.99 a month' : 'None') + '</b></li>' +
+      '<ul class="facts"><li><span>Email</span><b>' + esc(s.email) + '</b></li><li><span>Plan</span><b>' + (s.plan === 'annual' ? '$499 a year' : s.plan === 'monthly' ? '$59.99 a month' : 'None') + '</b></li>' +
       '<li><span>Status</span><b>' + status + '</b></li></ul>' +
       (s.payment_failed ? '<div class="notice">Your last payment did not go through. Update your card in billing to keep Pro.</div>' : '') +
       '<div class="row" style="margin-top:16px">' + (s.pro || s.status && s.status !== 'none' ? '<button class="btn" id="bill" type="button">Manage billing</button>' : '<a class="btn pro" href="pricing.html">Get Watchdog Pro</a>') +

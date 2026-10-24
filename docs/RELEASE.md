@@ -6,7 +6,7 @@ Branch `pro-staging`. Nothing here is live. `main` (the live site) is unchanged 
 
 | Piece | File | Notes |
 |---|---|---|
-| Pricing page | `pricing.html`, `pricing.js` | $19.99 a month, $149 a year. Buttons say "Opening soon" until the API reports billing ready. |
+| Pricing page | `pricing.html`, `pricing.js` | $59.99 a month, $499 a year. Buttons say "Opening soon" until the API reports billing ready. |
 | Account page | `account.html`, `account.js` | Checkout return, email sign in link, plan and status, Stripe billing portal, sign out. |
 | Compare | `compare.html`, `compare.js` | Pro only. Up to four handicappers side by side. |
 | Pro unlock | `pro.js`, `capper.js`, `app.js` | Names, pick logs with original post links, name search, CLV / z score / drawdown / consistency filters, compare picks. |
