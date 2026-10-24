@@ -28,8 +28,9 @@ A live Stripe key is refused unless `BILLING_LIVE=yes`.
 
 ## Owner steps (need you)
 1. **Stripe**: create a separate Stripe account for Handicapper Watchdog (business, bank and tax details are yours).
-   Then give me its **test** secret key; `backend/stripe_setup.mjs` creates the product, both prices, the customer portal
-   setup and the webhook endpoint, and prints the IDs to store.
+   Store its **test** key locally with `python tools/hwd_secrets.py set STRIPE_SECRET_KEY` (never in chat); then
+   `backend/stripe_setup.mjs` creates the product, both prices, the customer portal setup and the webhook endpoint.
+   Full owner checklist: `docs/LAUNCH_HANDOFF.md`.
 2. **Cloudflare**: add handicapperwatchdog.com on the Free plan, switch nameservers at GoDaddy, create the minimum token.
    Details and free tier fit: `docs/CLOUDFLARE.md`. Then `tools/cf_setup.sh` does the rest.
 3. **Email**: use the existing Brevo account (free tier, 300 emails a day, no upgrade). Add handicapperwatchdog.com as a sender
