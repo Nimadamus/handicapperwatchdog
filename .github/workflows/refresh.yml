@@ -1,0 +1,24 @@
+name: Refresh records
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python build_data.py
+        env:
+          HWD_MASK_KEY: ${{ secrets.HWD_MASK_KEY }}
+      - name: Commit if changed
+        run: |
+          git config user.name "watchdog-bot"
+          git config user.email "watchdog-bot@users.noreply.github.com"
+          git add data.json
+          git diff --cached --quiet || (git commit -m "Refresh records" && git push)
