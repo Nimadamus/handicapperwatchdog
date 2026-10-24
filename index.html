@@ -3,81 +3,92 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Handicapper Watchdog | Verified Records of Every Public Capper</title>
-<meta name="description" content="Thousands of sports betting handicappers on X, Covers, Reddit and the betting forums, harvested daily and graded pick by pick. Full records, ROI, units and advanced stats for every capper.">
+<title>Handicapper Watchdog | Who Is Actually Winning? Graded Records of Public Cappers</title>
+<meta name="description" content="Real picks, independently graded. Rankings, records, units, ROI and in depth stats for thousands of sports betting handicappers on X, Covers, Reddit and the betting forums.">
 <link rel="canonical" href="https://handicapperwatchdog.com/">
-<meta property="og:title" content="Handicapper Watchdog: check the receipts before you pay a capper">
-<meta property="og:description" content="Every public capper we track, graded pick by pick. Records, ROI, units and advanced stats.">
-<meta property="og:url" content="https://handicapperwatchdog.com/">
+<meta property="og:title" content="Handicapper Watchdog | Who Is Actually Winning? Graded Records of Public Cappers">
+<meta property="og:description" content="Real picks, independently graded. Rankings, records, units, ROI and in depth stats for thousands of sports betting handicappers on X, Covers, Reddit and the betting forums.">
 <meta property="og:type" content="website">
+<meta name="theme-color" content="#070d17">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700;750;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SC607ZYK1F"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-SC607ZYK1F');</script>
 </head>
 <body data-page="home">
-<header class="top">
-  <a class="brand" href="./"><img src="favicon.svg" alt="" width="28" height="28"><span>Handicapper <b>Watchdog</b></span></a>
-  <nav><a href="cappers.html">All cappers</a><a href="#how">How it works</a><a class="btn sm" href="https://trustmyrecord.com/premium/">Unlock names</a></nav>
-</header>
-
-<main>
-  <section class="hero">
-    <p class="eyebrow"><span class="dot"></span> Records updated every day</p>
-    <h1>Thousands of cappers post picks online. We grade every one.</h1>
-    <p class="lead">We harvest picks from thousands of handicappers across X, Covers, Reddit, TheRX, SBR and Predictem every day, grade every one against the final score, and keep a full profile on each capper. No screenshots. No self reported records. Just what they posted and how it finished.</p>
-    <div class="cta"><a class="btn" href="cappers.html">Browse every capper</a><a class="btn ghost" href="https://trustmyrecord.com/premium/">See who they are</a></div>
-    <div class="stats">
-      <div><b data-k="tracked">&nbsp;</b><span>cappers tracked</span></div>
-      <div><b data-k="graded_picks">&nbsp;</b><span>picks graded</span></div>
-      <div><b data-k="profiles">&nbsp;</b><span>in depth profiles</span></div>
-      <div><b data-k="pct">&nbsp;</b><span>of cappers with 20+ picks are up money</span></div>
+<header class="top"><div class="wrap">
+  <a class="brand" href="./"><img src="favicon.svg" alt="" width="24" height="24"><span>Handicapper <b>Watchdog</b></span></a>
+  <nav class="navlinks"><a href="cappers.html">Rankings</a><a href="./#sports">By sport</a><a href="./#method">Methodology</a><a href="./#pro">Pricing</a></nav>
+  <form class="navsearch" action="cappers.html" role="search"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input name="q" placeholder="Search capper ID, sport or platform" aria-label="Search cappers"></form>
+  <a class="btn sm pro" href="./#pro">Watchdog Pro</a>
+</div></header>
+<main class="wrap">
+  <section class="intro">
+    <div>
+      <div class="eyebrow">Independent handicapper tracking</div>
+      <h1>Find out who&rsquo;s actually winning.</h1>
+      <p class="sub">Real picks. Independently graded. Every handicapper&rsquo;s record in one place.</p>
+      <form class="bigsearch" action="cappers.html" role="search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input name="q" placeholder="Search by capper ID, sport or platform" aria-label="Search cappers"><button class="btn" type="submit">Search</button></form>
+      <div class="chips" id="quick"></div>
+      <div class="hl3" id="highlights"></div>
+      <div class="introfoot"><span>Graded on the final score</span><span>Posted before the game starts</span><span>No self reported records</span></div>
+    </div>
+    <div class="panel live" id="live">
+      <div class="ph"><h3><span class="dot"></span>Live tracking</h3><span class="muted small" id="liveAt"></span></div>
+      <div class="kvgrid" id="liveGrid"><div class="kv"><div class="skel"></div></div><div class="kv"><div class="skel"></div></div><div class="kv"><div class="skel"></div></div><div class="kv"><div class="skel"></div></div></div>
+      <div class="pf"><span>Counters read from the Watchdog database</span><a class="lock" href="#pro">Pro</a></div>
     </div>
   </section>
 
-  <section class="board">
-    <div class="head">
-      <div><h2>Top cappers by units won</h2><p class="muted" data-k="fresh">Loading records</p></div>
-      <a class="btn sm ghost" href="cappers.html">View all</a>
-    </div>
-    <div class="tablewrap"><table>
-      <thead><tr><th class="l">#</th><th class="l">Capper</th><th class="hm">Picks</th><th>Record</th><th class="hm">Win %</th><th>Units</th><th class="hm">ROI</th><th class="hm">Streak</th></tr></thead>
-      <tbody id="rows"><tr><td colspan="8" class="muted">Loading</td></tr></tbody>
-    </table></div>
-    <p class="note">Tap any capper for their full profile: sport by sport records, markets, favorites and dogs, odds ranges, overs and unders, teams, days of the week, form, drawdowns and more.</p>
+  <section class="panel" id="board">
+    <div class="ph"><div class="tabs" id="boardTabs"></div>
+      <select id="boardSport" aria-label="Sport" style="width:auto;min-width:130px"><option value="">All sports</option></select></div>
+    <div class="tw"><table><thead id="boardHead"></thead><tbody id="boardRows"><tr><td colspan="10"><div class="skel"></div></td></tr></tbody></table></div>
+    <div class="tfoot"><span id="boardNote"></span><a class="btn sm ghost" href="cappers.html">Full rankings</a></div>
   </section>
 
-  <section class="features">
-    <h2>A full scouting report on every capper</h2>
-    <div class="grid four">
-      <div class="card"><h3>Sport by sport</h3><p>Record, units and ROI in every sport they bet, with markets, odds ranges and form inside each one.</p></div>
-      <div class="card"><h3>Advanced metrics</h3><p>Max drawdown, peak, volatility, z score against a coin flip, break even gap and closing line value.</p></div>
-      <div class="card"><h3>Where they win</h3><p>Favorites against dogs, overs against unders, home against away, plus money, team by team.</p></div>
-      <div class="card"><h3>When they win</h3><p>Last 10, 25 and 50 picks, last 7 and 30 days, by weekday, by month and after a win or a loss.</p></div>
+  <section class="row2" id="sports">
+    <div>
+      <div class="sech"><h2>Top performers by sport</h2><a class="muted small" href="cappers.html">All sports</a></div>
+      <div class="sportgrid" id="sportGrid"></div>
+    </div>
+    <div class="panel reality">
+      <div class="ph"><h3>The reality check</h3><span class="muted small">All tracked cappers</span></div>
+      <div class="pb" id="reality"></div>
     </div>
   </section>
 
-  <section class="how" id="how">
-    <h2>How it works</h2>
-    <div class="grid">
-      <div class="card"><span class="n">1</span><h3>We harvest public picks daily</h3><p>Picks are captured from the public places cappers post them, with the time they were posted, before the game starts.</p></div>
-      <div class="card"><span class="n">2</span><h3>Every pick gets graded</h3><p>Straight bets are graded against final scores. Units assume 1 unit risked per pick at the posted price.</p></div>
-      <div class="card"><span class="n">3</span><h3>Every record stays current</h3><p>Profiles update automatically as new picks are posted and graded, so a hot streak or a cold one shows up fast.</p></div>
+  <section class="proband" id="pro">
+    <div>
+      <span class="lock">Watchdog Pro</span>
+      <h2>See who they are and what they are betting.</h2>
+      <p class="muted" style="margin:0">The free rankings show who is winning. Watchdog Pro will show the names behind every record and the picks they post before the games start.</p>
+      <div class="price"><b>Launching soon</b></div>
+    </div>
+    <div class="feats">
+      <div class="feat"><b>Pending picks before kickoff</b><span id="featPending">Picks graded handicappers post for upcoming games, from Covers, X, Reddit and the forums.</span></div>
+      <div class="feat"><b>Names and original posts</b><span>The handicapper behind every record, with a link to every post we graded.</span></div>
+      <div class="feat"><b>Complete pick logs</b><span>Every graded pick: game, line, price, result and when it was posted.</span></div>
+      <div class="feat"><b>Search and compare</b><span>Find any handicapper by name and put records side by side.</span></div>
     </div>
   </section>
 
-  <section class="unlock wide">
-    <div><h3>Names are blurred. TMR Pro shows them.</h3><p>Unlock every capper's name, the link to every original post, their full pick log, search and side by side comparisons.</p></div>
-    <a class="btn" href="https://trustmyrecord.com/premium/">Get TMR Pro, $49.99 a month</a>
+  <section id="method" class="sec">
+    <div class="sech"><h2>Methodology</h2></div>
+    <div class="how">
+      <div class="panel pb"><span class="n">01</span><b>Captured from public posts</b><p>Picks are harvested daily from the public places handicappers post them, with the time each was posted. Picks posted after the game starts are not counted.</p></div>
+      <div class="panel pb"><span class="n">02</span><b>Graded on the final score</b><p>Straight bets are graded against final scores. Units assume 1 unit risked per pick at the posted price, or a reference price when none was posted.</p></div>
+      <div class="panel pb"><span class="n">03</span><b>Sample size on every record</b><p><span class="badge sm">Small sample</span> under 20 picks, <span class="badge dev">Developing</span> 20 to 99, <span class="badge est">Established</span> 100 or more. Pending picks are never mixed into records.</p></div>
+    </div>
   </section>
 </main>
-
-<footer class="foot">
-  <p>Records cover picks captured from monitored public posts. They are past results, not predictions or guarantees. Held, duplicate and unreviewed picks are not counted. A <a href="https://trustmyrecord.com/">TrustMyRecord</a> product.</p>
-  <p>21+. Gambling problem? Call 1 800 GAMBLER.</p>
-</footer>
+<footer class="foot"><div class="wrap">
+  <div><p><b>Handicapper Watchdog</b> grades picks captured from public posts on X, Covers, Reddit, TheRX, Sportsbook Review and Predictem. Records are past results, not predictions or guarantees. Held, duplicate and unreviewed picks are not counted.</p>
+  <p>21+. Gambling problem? Call 1 800 GAMBLER.</p></div>
+  <div><p><a href="cappers.html">Rankings</a></p><p><a href="./#method">Methodology</a></p><p><a href="./#pro">Watchdog Pro</a></p></div>
+</div></footer>
 <script src="app.js"></script>
 </body>
 </html>

@@ -212,11 +212,44 @@ def build_profile(row, research):
     prof['last_results'] = ['W' if h['result'] == 'won' else 'L' if h['result'] == 'lost' else 'P' for h in hist[::-1][:20]]
     prof['sport_detail'] = {s: sport_detail(v) for s, v in sorted(by_sport.items(), key=lambda kv: -len(kv[1]))}
     prof['generated_at'] = research.get('generated_at')
+    fd = {r.get('key'): r for r in (research.get('form_days') or [])}
+    months = research.get('month') or []
+    first = min((h.get('posted') or h.get('game') or '' for h in hist), default='')[:10] or None
+    prof['extra'] = {
+        'r7': trim(fd.get('Last 7 days')), 'r30': trim(fd.get('Last 30 days')), 'first_pick': first,
+        'spark': [round(v, 1) for v in curve(hist, 24)],
+        'months': len(months), 'months_up': sum(1 for m in months if (m.get('net') or 0) > 0),
+        'unpriced': (research.get('overview') or {}).get('unpriced') or 0}
+    prof['extra']['monitored_since'] = first
     # Reconcile: the pick history must reproduce TMR's headline record, or the profile is not published.
     ov, a = research.get('overview') or {}, agg(hist)
     prof['reconciled'] = bool(ov) and (a['w'], a['l'], a['p']) == (ov.get('w'), ov.get('l'), ov.get('p')) and \
         abs(a['net'] - float(ov.get('net') or 0)) < 0.05
     return prof
+
+
+def trim(r):
+    if not r or not r.get('picks'):
+        return None
+    return {k: r.get(k) for k in ('picks', 'w', 'l', 'p', 'net', 'roi', 'win_pct')}
+
+
+def tier(n):
+    return 'established' if n >= 100 else 'developing' if n >= 20 else 'small'
+
+
+def live_stats():
+    """Platform wide counters TMR's Pro page reads live (same endpoint, fetched here because it is CORS locked)."""
+    try:
+        d = json.loads(get('https://trustmyrecord-api.onrender.com/api/pro/watchdog/stats'))
+        keep = ('generated_at', 'last_capture_at', 'last_graded_at', 'accounts_discovered', 'accounts_monitored', 'graded_picks',
+                'pending_picks', 'platforms', 'communities', 'posts_captured', 'new_accounts_today', 'picks_captured_today')
+        out = {k: d.get(k) for k in keep}
+        out['sources'] = [{k: x.get(k) for k in ('label', 'accounts_monitored', 'graded_picks', 'pending_picks')} for x in d.get('sources') or []]
+        return out
+    except Exception as e:
+        print('live stats unavailable', type(e).__name__, file=sys.stderr)
+        return None
 
 
 def summary(x):
@@ -273,21 +306,30 @@ def main():
         if cached:
             prof = build_profile(x, cached['research'])
             if prof['reconciled']:
-                prof['summary'] = s
+                prof['summary'] = {k: v for k, v in s.items() if k != 'by_sport'}
+                prof['summary']['tier'] = tier(s['picks'])
+                s.update({k: v for k, v in prof.pop('extra').items()})
+                prof['summary'].update({k: s[k] for k in ('r7', 'r30', 'first_pick', 'months', 'months_up', 'unpriced')})
                 with open(os.path.join(SITE, 'data', 'p', s['id'] + '.json'), 'w', encoding='utf-8') as f:
                     json.dump(prof, f, separators=(',', ':'))
                 s['profile'] = True
                 published += 1
             else:
                 unreconciled += 1
-        index.append({k: v for k, v in s.items() if k != 'by_sport'})
+        s['tier'] = tier(s['picks'])
+        s['bs'] = {k: [v['picks'], None if v['units'] is None else round(float(v['units']), 2), v['roi'], v['win_pct'], v['record']]
+                   for k, v in s.pop('by_sport').items() if (v['picks'] or 0) >= 5}
+        index.append(s)
 
     qual = [s for s in index if s['picks'] >= 20 and s['units'] is not None]
     meta = {'built_at': datetime.now(timezone.utc).isoformat(timespec='seconds'),
             'newest_pick': max((s['last_pick'] or '' for s in index), default=None),
             'tracked': len(index), 'graded_picks': sum(s['picks'] for s in index), 'qualified': len(qual),
             'profitable': sum(1 for s in qual if s['units'] > 0), 'min_graded': 20, 'profiles': published,
-            'sources': sorted({s['source'] for s in index})}
+            'sources': sorted({s['source'] for s in index}),
+            'established': sum(1 for s in index if s['picks'] >= 100 and s['units'] is not None),
+            'established_up': sum(1 for s in index if s['picks'] >= 100 and (s['units'] or 0) > 0),
+            'live': live_stats()}
     with open(os.path.join(SITE, 'data', 'index.json'), 'w', encoding='utf-8') as f:
         json.dump({'meta': meta, 'cappers': index}, f, separators=(',', ':'))
     print('tracked %d, fetched %d, failed %d, profiles %d, unreconciled %d' % (len(index), fetched, failed, published, unreconciled))
