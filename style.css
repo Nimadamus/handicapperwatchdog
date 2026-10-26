@@ -214,3 +214,5 @@ select:disabled{opacity:.45}
 
 .g2 .bc,.g2 .ao,.pgrid .bc,.pgrid .ao{display:none}
 .mini th,.mini td{padding:8px 9px}
+.crumbs{display:flex;flex-wrap:wrap;gap:6px;align-items:center;color:var(--muted);font-size:12.5px;margin:18px 0 0}
+.crumbs a{color:var(--muted)}

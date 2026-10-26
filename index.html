@@ -9,6 +9,11 @@
 <meta property="og:title" content="Handicapper Watchdog | Who Is Actually Winning? Graded Records of Public Cappers">
 <meta property="og:description" content="Real picks, independently graded. Rankings, records, units, ROI and in depth stats for thousands of sports betting handicappers on X, Covers, Reddit and the betting forums.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://handicapperwatchdog.com/">
+<meta property="og:site_name" content="Handicapper Watchdog">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"Handicapper Watchdog","url":"https://handicapperwatchdog.com/","description":"Independently graded records of public sports handicappers.","potentialAction":{"@type":"SearchAction","target":"https://handicapperwatchdog.com/cappers.html?q={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"Organization","name":"Handicapper Watchdog","url":"https://handicapperwatchdog.com/"}]}</script>
+<!--seo:jsonld--><!--/seo:jsonld-->
 <meta name="theme-color" content="#070d17">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,7 +42,7 @@
     </div>
     <div class="panel live" id="live">
       <div class="ph"><h3><span class="dot"></span>Live tracking</h3><span class="muted small" id="liveAt"></span></div>
-      <div class="kvgrid" id="liveGrid"><div class="kv"><div class="skel"></div></div><div class="kv"><div class="skel"></div></div><div class="kv"><div class="skel"></div></div><div class="kv"><div class="skel"></div></div></div>
+      <div class="kvgrid" id="liveGrid"><!--seo:live--><div class="kv"><div class="skel"></div></div><div class="kv"><div class="skel"></div></div><div class="kv"><div class="skel"></div></div><div class="kv"><div class="skel"></div></div><!--/seo:live--></div>
       <div class="pf"><span>Counters read from the Watchdog database</span><a class="lock" href="#pro">Pro</a></div>
     </div>
   </section>
@@ -45,18 +50,18 @@
   <section class="panel" id="board">
     <div class="ph"><div class="tabs" id="boardTabs"></div>
       <select id="boardSport" aria-label="Sport" style="width:auto;min-width:130px"><option value="">All sports</option></select></div>
-    <div class="tw"><table><thead id="boardHead"></thead><tbody id="boardRows"><tr><td colspan="10"><div class="skel"></div></td></tr></tbody></table></div>
-    <div class="tfoot"><span id="boardNote"></span><a class="btn sm ghost" href="cappers.html">Full rankings</a></div>
+    <div class="tw"><table><thead id="boardHead"><tr><th class="l">#</th><th class="l">Handicapper</th><th class="hm l">Trend</th><th class="hm">Picks</th><th>Record</th><th class="hm">Win %</th><th>Units</th><th class="hm">ROI</th><th class="hm">Streak</th><th class="hm">Last pick</th></tr></thead><tbody id="boardRows"><!--seo:board--><tr><td colspan="10"><div class="skel"></div></td></tr><!--/seo:board--></tbody></table></div>
+    <div class="tfoot"><span id="boardNote">Handicappers with 20 or more graded picks, ranked by units won.</span><a class="btn sm ghost" href="cappers.html">Full rankings</a></div>
   </section>
 
   <section class="row2" id="sports">
     <div>
       <div class="sech"><h2>Top performers by sport</h2><a class="muted small" href="cappers.html">All sports</a></div>
-      <div class="sportgrid" id="sportGrid"></div>
+      <div class="sportgrid" id="sportGrid"><!--seo:sports--><!--/seo:sports--></div>
     </div>
     <div class="panel reality">
       <div class="ph"><h3>The reality check</h3><span class="muted small">All tracked cappers</span></div>
-      <div class="pb" id="reality"></div>
+      <div class="pb" id="reality"><!--seo:reality--><!--/seo:reality--></div>
     </div>
   </section>
 
