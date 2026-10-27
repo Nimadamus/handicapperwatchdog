@@ -93,8 +93,11 @@ def check(label, extra):
         book = open(os.path.join(tmp, 'sportsbooks', 'justbet.html'), encoding='utf-8').read()
         editorial = review + book + open(os.path.join(tmp, 'reviews', 'index.html'), encoding='utf-8').read()
         assert 'Not rated' in review and 'aff=' not in editorial and 'BETLEGEND' not in editorial
+        assert 'justbet-logo' not in book and '<h1>JustBet</h1>' in book
+        assert book.count('Registration link not enabled') == 2
+        assert '<span class="btn disabled' in book and 'aria-disabled="true"' in book
+        assert 'revshare.ag' not in book and 'href="https://www.justbet.co/?aff=' not in book
         assert 'aggregateRating' not in editorial and 'ratingValue' not in editorial
-        assert '<span class="btn disabled"' in book and 'Registration link not enabled' in book
         assert '100 counties' in book and 'affiliates.justbet' not in book.lower()
         assert SECRET not in editorial and SLUG not in editorial
         bob = open(os.path.join(tmp, 'reviews', 'dr-bob-sports.html'), encoding='utf-8').read()
@@ -112,6 +115,13 @@ def check(label, extra):
         assert '11,383' in open(os.path.join(tmp, 'reviews', 'cappertek.html'), encoding='utf-8').read()
         assert '22,990' in open(os.path.join(tmp, 'reviews', 'docs-sports-ai.html'), encoding='utf-8').read()
         assert '637-544' in open(os.path.join(tmp, 'reviews', 'big-al.html'), encoding='utf-8').read()
+        for slug in (
+            'docs-sports', 'dr-bob-sports', 'pregame', 'cappertek', 'jimmy-boyd', 'jim-feist',
+            'scott-spreitzer', 'robert-ferringo', 'docs-sports-ai', 'big-al',
+        ):
+            page = open(os.path.join(tmp, 'reviews', slug + '.html'), encoding='utf-8').read()
+            assert page.count('<h1') == 1 and 'Not rated' in page and 'aff=' not in page, slug
+            assert 'noindex' not in page.lower()
         for name, digest in before.items():
             now = hashlib.sha256(open(os.path.join(tmp, name), 'rb').read()).hexdigest()
             assert now == digest, name
@@ -297,6 +307,66 @@ def check_live():
         raise
 
 
+def check_menu():
+    import threading
+    from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
+    from playwright.sync_api import sync_playwright
+
+    tmp = tempfile.mkdtemp(prefix='hwd-menu-')
+    try:
+        for name in ('index.html', 'cappers.html', 'style.css'):
+            shutil.copy(os.path.join(ROOT, name), tmp)
+
+        class Quiet(SimpleHTTPRequestHandler):
+            def __init__(self, *args, **kwargs):
+                super().__init__(*args, directory=tmp, **kwargs)
+
+            def log_message(self, fmt, *args):
+                pass
+
+        httpd = ThreadingHTTPServer(('127.0.0.1', 0), Quiet)
+        port = httpd.server_address[1]
+        threading.Thread(target=httpd.serve_forever, daemon=True).start()
+        origin = 'http://127.0.0.1:%d' % port
+        try:
+            with sync_playwright() as pw:
+                browser = pw.chromium.launch(headless=True)
+                page = browser.new_page(viewport={'width': 390, 'height': 844})
+                for path in ('/', '/cappers.html'):
+                    page.goto(origin + path, wait_until='domcontentloaded', timeout=30000)
+                    closed = page.evaluate("() => getComputedStyle(document.querySelector('.navlinks')).display")
+                    assert closed == 'none', (path, closed)
+                    page.locator('label.navbtn').click()
+                    opened = page.evaluate("() => getComputedStyle(document.querySelector('.navlinks')).display")
+                    assert opened == 'flex', (path, opened)
+                    scroll = page.evaluate("() => document.documentElement.scrollWidth - document.documentElement.clientWidth")
+                    assert scroll <= 1, (path, scroll)
+                page.goto(origin + '/', wait_until='domcontentloaded')
+                contrast = page.evaluate('''() => {
+                  function lin(c){c/=255;return c<=0.03928?c/12.92:Math.pow((c+0.055)/1.055,2.4)}
+                  function L(rgb){const m=rgb.match(/\\d+/g).map(Number);return 0.2126*lin(m[0])+0.7152*lin(m[1])+0.0722*lin(m[2])}
+                  function ratio(a,b){const x=L(a),y=L(b);const hi=Math.max(x,y),lo=Math.min(x,y);return (hi+0.05)/(lo+0.05)}
+                  const bg=getComputedStyle(document.body).backgroundColor;
+                  const h1=document.querySelector('h1');
+                  const sub=document.querySelector('.sub');
+                  return {
+                    h1: ratio(getComputedStyle(h1).color, bg),
+                    sub: ratio(getComputedStyle(sub).color, bg),
+                    bare: [...document.images].filter(i => i.getAttribute('alt') === null).length,
+                    h1n: document.querySelectorAll('h1').length
+                  };
+                }''')
+                assert contrast['h1'] >= 4.5 and contrast['sub'] >= 4.5, contrast
+                assert contrast['h1n'] == 1 and contrast['bare'] == 0, contrast
+                print('a11y PASS', round(contrast['h1'], 2), round(contrast['sub'], 2))
+                browser.close()
+        finally:
+            httpd.shutdown()
+        print('menu PASS')
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
 def check_browser(tmp):
     import threading
     from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
@@ -381,6 +451,7 @@ if __name__ == '__main__':
     check('fixture', extra)
     check_refresh()
     check_pipeline()
+    check_menu()
     if '--live' in sys.argv:
         site = check_live()
         try:

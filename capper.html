@@ -20,9 +20,11 @@
 <body data-page="capper">
 <header class="top"><div class="wrap">
   <a class="brand" href="./"><img src="favicon.svg" alt="" width="24" height="24"><span>Handicapper <b>Watchdog</b></span></a>
-  <nav class="navlinks"><a href="cappers.html" class="on">Rankings</a><a href="reviews/index.html">Reviews</a><a href="sportsbooks/justbet.html">JustBet</a><a href="pricing.html">Pricing</a></nav>
+  <input id="navtoggle" class="navtoggle" type="checkbox">
+  <label class="navbtn" for="navtoggle">Menu</label>
+  <nav class="navlinks" id="sitenav"><a href="cappers.html" class="on">Rankings</a><a href="reviews/index.html">Reviews</a><a href="sportsbooks/justbet.html">JustBet</a><a href="pricing.html">Pricing</a></nav>
   <form class="navsearch" action="cappers.html" role="search"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input name="q" placeholder="Search capper ID or sport" aria-label="Search cappers"></form>
-  <a class="btn sm pro" href="./#pro">Watchdog Pro</a>
+  <a class="btn sm pro" href="pricing.html">Watchdog Pro</a>
 </div></header>
 <main class="wrap" id="prof"><div class="skel" style="max-width:420px;margin:60px auto"></div></main>
 <footer class="foot"><div class="wrap">

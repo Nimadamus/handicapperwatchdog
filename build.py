@@ -566,6 +566,46 @@ def _write_sitemap(site, lastmod):
         f.write('\n'.join(lines) + '\n')
 
 
+def _name_parts(name):
+    return [p for p in re.findall(r'[A-Za-z0-9]+', name) if len(p) > 1 or p.isupper()]
+
+
+def _base_mark(name):
+    compact = re.sub(r'[^A-Za-z0-9]', '', name)
+    caps = [c for c in compact if c.isupper()]
+    if ' ' not in name and len(caps) >= 2:
+        return caps[0] + caps[1]
+    parts = _name_parts(name)
+    if len(parts) >= 2:
+        return (parts[0][0] + parts[1][0]).upper()
+    if parts:
+        return parts[0][:2].upper()
+    return 'NR'
+
+
+def _marks(names):
+    bases = {name: _base_mark(name) for name in names}
+    used = {}
+    for mark in bases.values():
+        used[mark] = used.get(mark, 0) + 1
+    out = {}
+    for name, mark in bases.items():
+        parts = _name_parts(name)
+        if used[mark] > 1 and len(parts) >= 3:
+            mark = (parts[0][0] + parts[1][0] + parts[2][0]).upper()
+        out[name] = mark
+    return out
+
+
+def _mark(initials):
+    return (
+        '<svg class="mono" viewBox="0 0 88 88" role="img" aria-label="%s">'
+        '<rect width="88" height="88" rx="18" fill="#122033" stroke="#f5c451" stroke-opacity=".7"/>'
+        '<text x="44" y="56" text-anchor="middle" fill="#f5c451" font-family="Inter,Arial,sans-serif" '
+        'font-size="28" font-weight="800">%s</text></svg>'
+    ) % (_esc(initials), _esc(initials))
+
+
 def _rel(depth, href):
     if href.startswith('http') or href.startswith('#'):
         return href
@@ -579,7 +619,7 @@ def _nav(depth, current):
         ('sportsbooks/justbet.html', 'JustBet'),
         ('pricing.html', 'Pricing'),
     )
-    return '<nav class="navlinks">%s</nav>' % ''.join(
+    return '<nav class="navlinks" id="sitenav">%s</nav>' % ''.join(
         '<a href="%s"%s>%s</a>' % (_rel(depth, href), ' class="on"' if href == current else '', label)
         for href, label in items)
 
@@ -590,6 +630,8 @@ def _header(depth, current):
     return (
         '<header class="top"><div class="wrap">'
         '<a class="brand" href="%s"><img src="%sfavicon.svg" alt="" width="24" height="24"><span>Handicapper <b>Watchdog</b></span></a>'
+        '<input id="navtoggle" class="navtoggle" type="checkbox">'
+        '<label class="navbtn" for="navtoggle">Menu</label>'
         '%s'
         '<form class="navsearch" action="%scappers.html" role="search">'
         '<input name="q" placeholder="Search capper ID or sport" aria-label="Search cappers"></form>'
@@ -818,22 +860,24 @@ def _write_editorial(site):
         return '<ul class="src">%s</ul>' % ''.join(lis)
 
     names = {r['slug']: r['name'] for r in reviews['reviews']}
+    marks = _marks(names.values())
 
     def related(rev):
         bits = []
         for slug in rev.get('related') or []:
             if slug not in names:
                 raise SystemExit('review %s links an unknown slug %s' % (rev['slug'], slug))
-            bits.append('<a href="%s.html">%s</a>' % (slug, _esc(names[slug])))
+            bits.append((slug, _esc(names[slug])))
         if not bits:
             return ''
-        return '<h2>Related reviews</h2><p class="related">%s</p>' % ''.join(bits)
+        return '<section class="edsec"><h2>Related reviews</h2><div class="relrow">%s</div></section>' % ''.join(
+            '<a class="rel" href="%s.html"><span>Not rated</span><b>%s</b></a>' % pair for pair in bits)
 
-    missing = '''<h2>What is still missing</h2>
+    missing = '''<section class="edsec miss"><h2>What is still missing</h2>
 <ul><li>No Watchdog graded record is attached, so the verified record points stay empty.</li>
 <li>Figures in the advertise section are quotes from the pages named below.</li>
 <li>A price is included only when a page opened on the check date showed it. A reseller price is labeled as one.</li>
-<li>There is no independent sample of buyers, so this page stays Not rated.</li></ul>'''
+<li>There is no independent sample of buyers, so this page stays Not rated.</li></ul></section>'''
 
     cards = []
     written = []
@@ -857,30 +901,51 @@ def _write_editorial(site):
             ],
         }
         cards.append(
-            '<a class="rev" data-name="%s" href="%s.html"><span class="badge unrated">Not rated</span>'
-            '<b>%s</b><span class="muted small">%s</span></a>' % (
-                _esc(rev['name'].lower()), rev['slug'], _esc(rev['name']), _esc(rev['kind'])))
+            '<a class="rev" data-name="%s" href="%s.html">'
+            '<span class="badge unrated">Not rated</span><span class="muted small">%s</span><b>%s</b>'
+            '<span class="dekline">%s</span></a>' % (
+                _esc(rev['name'].lower()), rev['slug'],
+                _esc(rev['kind']), _esc(rev['name']), _esc(rev['dek'])))
         body = '''<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><a href="index.html">Reviews</a><span aria-hidden="true">/</span><span aria-current="page">%s</span></nav>
-<div class="pagehead"><div><div class="eyebrow">%s</div><h1>%s</h1>
-<p class="muted">%s</p><p><span class="badge unrated">Not rated</span></p></div></div>
-<div class="disclosure"><b>How to read this page</b><p class="muted" style="margin:0">%s</p></div>
-<section class="panel" style="margin-bottom:16px"><div class="pb prose">
-<h2>What they advertise</h2>%s
-<h2>What Watchdog has graded</h2><p>%s</p>
-<h2>Pricing</h2>%s
-<h2>Transparency</h2><p>%s</p>
-<h2>Customer experience</h2><p>%s</p>
-<h2>Strengths</h2>%s
-<h2>Weaknesses</h2>%s
+<header class="edhero">
+<div>
+<div class="eyebrow">%s</div>
+<h1>%s</h1>
+<p class="lede">%s</p>
+</div>
+<aside class="plate">
+<div class="seal" aria-hidden="true"><b>NR</b><span>Not rated</span></div>
+<p class="plate-k">Watchdog status</p>
+<p class="plate-v">Not rated</p>
+<p class="muted small">Checked %s. The four items below are why this page has no number.</p>
+<ul class="checks">
+<li><span>Graded record</span><b>Not in the file</b></li>
+<li><span>Advertised record</span><b>Quoted below</b></li>
+<li><span>Opened price</span><b>Pricing section</b></li>
+<li><span>Buyer sample</span><b>Not in the file</b></li>
+</ul>
+</aside>
+</header>
+<div class="disclosure"><b>How to read this page</b><p class="muted">%s</p></div>
+<div class="edstack">
+<section class="panel edcard"><h2>What they advertise</h2><div class="prose">%s</div></section>
+<section class="panel edcard"><h2>What Watchdog has graded</h2><div class="prose"><p>%s</p></div></section>
+<section class="panel edcard"><h2>Pricing</h2><div class="prose">%s</div></section>
+<section class="panel edcard"><h2>Transparency</h2><div class="prose"><p>%s</p></div></section>
+<section class="panel edcard"><h2>Customer experience</h2><div class="prose"><p>%s</p></div></section>
+<div class="split">
+<section class="panel edsec good"><h2>Strengths</h2><div class="prose">%s</div></section>
+<section class="panel edsec bad"><h2>Weaknesses</h2><div class="prose">%s</div></section>
+</div>
 %s
 %s
-</div></section>
-<section class="panel" style="margin-bottom:28px"><div class="pb prose"><h2>Sources checked %s</h2>%s
+</div>
+<section class="panel srcpanel"><div class="pb prose"><h2>Sources checked %s</h2>%s
 <p class="muted small">A 100 point score is not shown. The rubric is on the <a href="how-we-rate.html">ratings page</a>. Past results are not predictions. 21+.</p>
 </div></section>
 <script type="application/ld+json">%s</script>''' % (
             _esc(rev['name']), _esc(rev['kind']), _esc(rev['name']), _esc(rev['dek']),
-            _esc(reviews['unrated_note']),
+            _esc(reviews['checked']), _esc(reviews['unrated_note']),
             paras(rev['advertised']), _esc(rev['watchdog']), paras(rev['pricing']),
             _esc(rev['transparency']), _esc(rev['customers']),
             paras(rev['strengths']), paras(rev['weaknesses']),
@@ -911,12 +976,23 @@ def _write_editorial(site):
         f.write(rate_html)
 
     index_body = '''<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><span aria-current="page">Reviews</span></nav>
-<div class="pagehead"><div><div class="eyebrow">Investigations</div><h1>Handicapper reviews</h1>
-<p class="muted">%s</p></div></div>
-<div class="disclosure"><b>No score on this edition</b><p class="muted" style="margin:0">%s</p></div>
-<div class="fld" style="max-width:420px;margin-bottom:14px"><label for="revq">Search reviews</label><input id="revq" placeholder="Search a name or a site" aria-label="Search reviews"></div>
+<header class="edhero">
+<div>
+<div class="eyebrow">Investigations</div>
+<h1>Handicapper reviews</h1>
+<p class="lede">%s</p>
+</div>
+<aside class="plate">
+<div class="seal" aria-hidden="true"><b>NR</b><span>Not rated</span></div>
+<p class="plate-k">This edition</p>
+<p class="plate-v">No scores</p>
+<p class="muted small">Checked %s. <a href="how-we-rate.html">How the 100 point rating works</a>.</p>
+</aside>
+</header>
+<div class="disclosure"><b>No score on this edition</b><p class="muted">%s</p></div>
+<div class="fld revsearch"><label for="revq">Search reviews</label><input id="revq" placeholder="Search a name or a site" aria-label="Search reviews"></div>
 <div class="revgrid" id="revgrid">%s</div>
-<p class="muted small" style="margin:16px 0 28px"><a href="how-we-rate.html">How the 100 point rating works</a>. Checked %s.</p>
+<p class="muted small revfoot">Ten public names. The free rankings stay anonymous.</p>
 <script>
 document.getElementById('revq').addEventListener('input', function () {
   var q = this.value.trim().toLowerCase();
@@ -924,7 +1000,7 @@ document.getElementById('revq').addEventListener('input', function () {
     el.style.display = !q || el.getAttribute('data-name').indexOf(q) >= 0 || el.textContent.toLowerCase().indexOf(q) >= 0 ? '' : 'none';
   });
 });
-</script>''' % (_esc(reviews['intro']), _esc(reviews['unrated_note']), ''.join(cards), _esc(reviews['checked']))
+</script>''' % (_esc(reviews['intro']), _esc(reviews['checked']), _esc(reviews['unrated_note']), ''.join(cards))
     index_html = _document(1, 'reviews/index.html',
                            'Handicapper Reviews and Investigations | Handicapper Watchdog',
                            reviews['description'],
@@ -937,37 +1013,78 @@ document.getElementById('revq').addEventListener('input', function () {
         '<tr><td class="l">%s</td><td class="l">%s</td><td class="l">%s</td></tr>' % (
             _esc(o['name']), _esc(o['terms']), _esc(o['status']))
         for o in book['offers'])
-    feature_rows = ''.join('<li>%s</li>' % _esc(x) for x in book['features'])
+    feature_rows = ''.join(
+        '<article class="featcard"><span>%02d</span><p>%s</p></article>' % (i, _esc(x))
+        for i, x in enumerate(book['features'], 1))
+    ready = book.get('affiliate_url') or ''
+    if book.get('affiliate_enabled'):
+        if ready != 'https://www.justbet.co/?aff=BETLEGEND':
+            raise SystemExit('refusing an unapproved JustBet URL')
+        cta = ('<a class="btn lg pro" href="%s" target="_blank" rel="sponsored nofollow noopener">Join JustBet</a>'
+               % ready)
+        cta_note = ('This button uses the confirmed JustBet affiliate link. 21+. '
+                    'It does not check your age or your location. The quotations below are not a bonus from this site.')
+    else:
+        cta = '<span class="btn disabled lg" aria-disabled="true">Registration link not enabled</span>'
+        cta_note = ('This button stays off until JustBet eligibility and marketing permission for this domain are confirmed. '
+                    'Nothing on this page tracks a click. The quotations below are not a bonus from this site.')
     book_body = '''<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><span aria-current="page">JustBet</span></nav>
-<div class="pagehead"><div><div class="eyebrow">Sportsbook</div><h1>JustBet review</h1>
-<p class="muted">%s</p></div></div>
-<div class="disclosure"><b>Affiliate disclosure</b><p class="muted" style="margin:0">%s</p></div>
-<p><span class="btn disabled" aria-disabled="true">Registration link not enabled</span></p>
-<section class="panel" style="margin-bottom:16px"><div class="pb prose">
-<h2>Overview</h2>%s
-<h2>What JustBet publishes</h2><ul>%s</ul>
-<h2>Quotations from JustBet on 27 Oct 2026</h2>
-<p>None of these is an offer from Handicapper Watchdog. None is confirmed still available. This page has no registration link and no tracking link.</p>
-<div class="tw"><table class="mini"><thead><tr><th class="l">Offer</th><th class="l">Terms we could read</th><th class="l">Status</th></tr></thead><tbody>%s</tbody></table></div>
-<h2>Pros</h2>%s
-<h2>Cons</h2>%s
-<h2>Jurisdictions</h2><p>%s</p>
-<h2>Questions</h2>%s
-<h2>Responsible gambling</h2><p>%s</p>
-</div></section>
-<section class="panel" style="margin-bottom:28px"><div class="pb prose"><h2>Sources</h2>%s
+<header class="bookhero">
+<div class="bookintro">
+<p class="eyebrow">Sportsbook review</p>
+<h1>JustBet</h1>
+<p class="lede">%s</p>
+<div class="trustrow"><span>Checked 27 Oct 2026</span><span>21+</span><span>No signup link</span></div>
+<div class="ctaslot">
+%s
+<p>%s</p>
+</div>
+</div>
+</header>
+<div class="disclosure"><b>Affiliate disclosure</b><p class="muted">%s</p></div>
+<section class="edsec"><h2>Overview</h2><div class="prose">%s</div></section>
+<section class="edsec"><h2>What JustBet publishes</h2><div class="featgrid">%s</div></section>
+<section class="edsec"><h2>Quotations from JustBet on 27 Oct 2026</h2>
+<p class="lede tight">None of these is an offer from Handicapper Watchdog. None is confirmed still available.</p>
+<div class="tw"><table class="mini offers"><thead><tr><th class="l">Offer</th><th class="l">Terms we could read</th><th class="l">Status</th></tr></thead><tbody>%s</tbody></table></div>
+</section>
+<div class="split">
+<section class="panel edsec good"><h2>Pros</h2><div class="prose">%s</div></section>
+<section class="panel edsec bad"><h2>Cons</h2><div class="prose">%s</div></section>
+</div>
+<section class="panel edsec"><h2>Jurisdictions</h2><div class="prose"><p>%s</p></div></section>
+<section class="edsec"><h2>Questions</h2><div class="faqs">%s</div></section>
+<section class="panel care"><h2>Responsible gambling</h2><p>%s</p></section>
+<section class="ctaband">
+<div>
+<p class="eyebrow">Account link</p>
+<h2>Registration is not turned on</h2>
+<p>%s</p>
+</div>
+%s
+</section>
+<section class="panel srcpanel"><div class="pb prose"><h2>Sources</h2>%s
 <p class="muted small">This page is not a handicapper rating and it is not legal advice. 21+. Gambling problem? Call 1 800 GAMBLER.</p></div></section>''' % (
-        _esc(book['dek']), _esc(book['disclosure']), paras(book['overview']), feature_rows, offer_rows,
+        _esc(book['dek']), cta, _esc(cta_note), _esc(book['disclosure']), paras(book['overview']), feature_rows, offer_rows,
         paras(book['pros']), paras(book['cons']), _esc(book['jurisdictions']),
-        ''.join('<p><b>%s</b> %s</p>' % (_esc(q['q']), _esc(q['a'])) for q in book['faq']),
-        _esc(book['responsible']), sources(book['sources']))
+        ''.join('<details class="faq"><summary>%s</summary><p>%s</p></details>' % (_esc(q['q']), _esc(q['a'])) for q in book['faq']),
+        _esc(book['responsible']), _esc(cta_note), cta, sources(book['sources']))
     book_html = _document(1, 'sportsbooks/justbet.html', book['title'], book['description'],
                           'https://handicapperwatchdog.com/sportsbooks/justbet.html', book_body)
     written.append(book_html)
     with open(os.path.join(out_books, 'justbet.html'), 'w', encoding='utf-8', newline='\n') as f:
         f.write(book_html)
     blob = ''.join(written)
-    if 'aff=' in blob or 'BETLEGEND' in blob:
+    justbet_join = 'https://www.justbet.co/?aff=BETLEGEND'
+    if book.get('affiliate_enabled'):
+        cleaned = blob.replace(justbet_join, '')
+        if blob.count(justbet_join) != 2:
+            raise SystemExit('JustBet join link must be the two approved buttons')
+    else:
+        cleaned = blob
+        if justbet_join in blob:
+            raise SystemExit('JustBet join link was written while the button is off')
+    if 'aff=' in cleaned or 'BETLEGEND' in cleaned or 'revshare.ag' in cleaned or 'affiliates.justbet' in cleaned.lower():
         raise SystemExit('affiliate tracking URL leaked into the editorial pages')
     if 'aggregateRating' in blob or 'ratingValue' in blob:
         raise SystemExit('a review page carried a numeric rating')

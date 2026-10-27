@@ -25,14 +25,16 @@
 <body data-page="rank">
 <header class="top"><div class="wrap">
   <a class="brand" href="./"><img src="favicon.svg" alt="" width="24" height="24"><span>Handicapper <b>Watchdog</b></span></a>
-  <nav class="navlinks"><a href="cappers.html" class="on">Rankings</a><a href="reviews/index.html">Reviews</a><a href="sportsbooks/justbet.html">JustBet</a><a href="pricing.html">Pricing</a></nav>
+  <input id="navtoggle" class="navtoggle" type="checkbox">
+  <label class="navbtn" for="navtoggle">Menu</label>
+  <nav class="navlinks" id="sitenav"><a href="cappers.html" class="on">Rankings</a><a href="reviews/index.html">Reviews</a><a href="sportsbooks/justbet.html">JustBet</a><a href="pricing.html">Pricing</a></nav>
   <form class="navsearch" action="cappers.html" role="search"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input name="q" placeholder="Search capper ID or sport" aria-label="Search cappers"></form>
-  <a class="btn sm pro" href="./#pro">Watchdog Pro</a>
+  <a class="btn sm pro" href="pricing.html">Watchdog Pro</a>
 </div></header>
 <main class="wrap">
   <nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><span aria-current="page">Rankings</span></nav>
   <div class="pagehead"><div><div class="eyebrow">Rankings</div><h1>Established handicappers</h1><p class="muted small">Names and posting sites are hidden. The default list is 100 or more graded picks.</p><p class="muted small" id="fresh"><!--seo:fresh-->Rankings are graded from public posts. Names and posting sites are hidden.<!--/seo:fresh--></p></div>
-    <a class="btn sm pro" href="./#pro">Watchdog Pro</a></div>
+    <a class="btn sm pro" href="pricing.html">Watchdog Pro</a></div>
   <section class="panel">
     <div class="fbar">
       <div class="fld"><label for="q">Search</label><input id="q" placeholder="Capper ID or sport"></div>
