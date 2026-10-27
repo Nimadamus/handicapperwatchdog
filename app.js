@@ -23,7 +23,7 @@
   function capCell(r) {
     var t = TIER[r.tier] || TIER.small;
     return '<div class="cap"><span class="av">' + esc(code(r.id).slice(0, 2)) + '</span><span class="nm"><b><span class="blur" aria-label="Name hidden">Hidden name</span></b>' +
-      '<small>ID ' + esc(code(r.id)) + ' · ' + esc(r.source) + ' <span class="badge ' + t[0] + '">' + t[1] + '</span></small></span></div>';
+      '<small>ID ' + esc(code(r.id)) + ' · <span class="badge ' + t[0] + '">' + t[1] + '</span></small></span></div>';
   }
 
   // metrics for a capper in a view: lifetime, a timeframe (r7/r30) or one sport
@@ -59,6 +59,12 @@
     all.forEach(function (r) { Object.keys(r.bs || {}).forEach(function (s) { if (r.bs[s][0] >= min) c[s] = (c[s] || 0) + 1; }); });
     return Object.keys(c).sort(function (a, b) { return c[b] - c[a]; });
   }
+  function sportSlug(s) { return String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''); }
+  function sportPages(all) {
+    var c = {};
+    all.forEach(function (r) { Object.keys(r.bs || {}).forEach(function (s) { if (r.bs[s][0] >= 30) c[s] = (c[s] || 0) + 1; }); });
+    return Object.keys(c).filter(function (s) { return c[s] >= 5; }).sort(function (a, b) { return c[b] - c[a]; });
+  }
 
   // ---------------- home ----------------
   function home(d) {
@@ -69,15 +75,15 @@
         [fmt(L.picks_captured_today), 'Picks captured today'], [fmt(L.graded_picks), 'Picks graded'], [fmt(L.pending_picks), 'Pending picks right now', 1]];
       $('liveGrid').innerHTML = kv.map(function (k) { return '<div class="kv' + (k[2] ? ' hl' : '') + '"><b>' + k[0] + '</b><span>' + k[1] + (k[2] ? ' <a class="lock" href="#pro">Pro</a>' : '') + '</span></div>'; }).join('');
       $('liveAt').textContent = 'Last capture ' + new Date(L.last_capture_at).toLocaleTimeString('en-US', { timeZone: 'America/Los_Angeles', hour: 'numeric', minute: '2-digit' }) + ' PT';
-      $('featPending').textContent = fmt(L.pending_picks) + ' pending picks were on the board at our last update, from Covers, X, Reddit and the forums.';
+      $('featPending').textContent = fmt(L.pending_picks) + ' picks are up for games that have not started. Names are locked.';
     } else {
       $('liveGrid').innerHTML = '<div class="kv"><b>' + fmt(M.tracked) + '</b><span>Handicappers with a record</span></div><div class="kv"><b>' + fmt(M.graded_picks) + '</b><span>Picks graded</span></div>';
     }
 
     // quick chips
     var sports = sportsByDepth(all, 10).slice(0, 6);
-    $('quick').innerHTML = sports.map(function (s) { return '<a class="chip" href="cappers.html?sport=' + encodeURIComponent(s) + '">' + esc(s) + '</a>'; }).join('') +
-      ['X', 'Covers', 'Reddit'].map(function (s) { return '<a class="chip" href="cappers.html?src=' + encodeURIComponent(s) + '">' + s + '</a>'; }).join('');
+    var pages = sportPages(all);
+    $('quick').innerHTML = pages.slice(0, 6).map(function (s) { return '<a class="chip" href="sports/' + sportSlug(s) + '.html">' + esc(s) + '</a>'; }).join('');
 
     // hero highlights: three real leaders, each linked to its profile
     var best = function (f, key) { var c = all.filter(f).map(function (r) { return { r: r, v: key(r) }; }).filter(function (o) { return o.v != null; }); c.sort(function (a, b) { return b.v - a.v; }); return c[0]; };
@@ -87,13 +93,13 @@
       ['Best ROI, 100+ picks', best(function (r) { return r.picks >= 100; }, function (r) { return r.roi; }), function (o) { return sgn(o.v, 1, '%'); }, function (o) { return fmt(o.r.picks) + ' graded picks'; }]];
     $('highlights').innerHTML = H.filter(function (x) { return x[1]; }).map(function (x) {
       var o = x[1], h = link(o.r);
-      return '<a class="hl" ' + (h ? 'href="' + h + '"' : '') + '><div class="eyebrow">' + x[0] + '</div><b>' + x[2](o) + '</b><span>ID ' + esc(code(o.r.id)) + ' · ' + esc(o.r.source) + ' · ' + x[3](o) + '</span></a>';
+      return '<a class="hl" ' + (h ? 'href="' + h + '"' : '') + '><div class="eyebrow">' + x[0] + '</div><b>' + x[2](o) + '</b><span>ID ' + esc(code(o.r.id)) + ' · ' + x[3](o) + '</span></a>';
     }).join('');
 
     // leaderboard tabs
     var cut = new Date(built - 21 * DAY).toISOString().slice(0, 10);
     var TABS = [
-      ['overall', 'Overall', 'all', function (r) { return r.picks >= 20 && r.units != null; }, 'units', 'Handicappers with 20+ graded picks, ranked by units won since tracking began.'],
+      ['overall', 'Established', 'all', function (r) { return r.picks >= 100 && r.units != null; }, 'units', 'Established records, 100 or more graded picks, ranked by units won.'],
       ['r30', 'Last 30 days', 'r30', function (r) { return r.r30 && r.r30.picks >= 10; }, 'units', 'Units won over the last 30 days, 10+ graded picks in that window.'],
       ['r7', 'Last 7 days', 'r7', function (r) { return r.r7 && r.r7.picks >= 5; }, 'units', 'Units won over the last 7 days, 5+ graded picks in that window.'],
       ['roi', 'Best ROI', 'all', function (r) { return r.picks >= 50 && r.roi != null; }, 'roi', 'Highest return on units risked, 50+ graded picks.'],
@@ -128,10 +134,10 @@
     draw();
 
     // top performers by sport
-    $('sportGrid').innerHTML = sportsByDepth(all, 15).slice(0, 6).map(function (s) {
-      var top = all.map(function (r) { return { r: r, x: m(r, null, s) }; }).filter(function (o) { return o.x && o.x.picks >= 15 && o.x.units > 0; })
+    $('sportGrid').innerHTML = sportPages(all).slice(0, 6).map(function (s) {
+      var top = all.map(function (r) { return { r: r, x: m(r, null, s) }; }).filter(function (o) { return o.x && o.x.picks >= 30 && o.x.units > 0; })
         .sort(function (a, b) { return b.x.units - a.x.units; }).slice(0, 3);
-      return !top.length ? '' : '<div class="sc"><h4><span>' + esc(s) + '</span><a class="muted small" href="cappers.html?sport=' + encodeURIComponent(s) + '">View all</a></h4><ol>' + top.map(function (o) {
+      return !top.length ? '' : '<div class="sc"><h4><span>' + esc(s) + '</span><a class="muted small" href="sports/' + sportSlug(s) + '.html">View all</a></h4><ol>' + top.map(function (o) {
         var h = link(o.r);
         return '<li><a ' + (h ? 'href="' + h + '"' : '') + '><span class="badge">' + esc(code(o.r.id)) + '</span><span class="muted">' + recTxt(o.x) + '</span></a>' + sgn(o.x.units, 1, 'u') + '</li>';
       }).join('') + '</ol></div>';
@@ -142,15 +148,24 @@
     var up = function (a) { return a.filter(function (r) { return r.units > 0; }).length; };
     var roiSorted = q.map(function (r) { return r.roi; }).filter(function (v) { return v != null; }).sort(function (a, b) { return a - b; });
     var med = roiSorted.length ? roiSorted[Math.floor(roiSorted.length / 2)] : null;
-    var bySrc = {}; q.forEach(function (r) { var b = bySrc[r.source] = bySrc[r.source] || [0, 0]; b[0]++; if (r.units > 0) b[1]++; });
-    $('reality').innerHTML = '<div class="eyebrow">Established records, 100+ picks</div><div class="big">' + (e.length ? Math.round(100 * up(e) / e.length) : 0) + '%</div>' +
-      '<p class="muted small" style="margin:2px 0 14px">are up money: ' + fmt(up(e)) + ' of ' + fmt(e.length) + ' handicappers. With 20+ picks it is ' + fmt(up(q)) + ' of ' + fmt(q.length) +
+    var roll = M.by_platform;
+    if (!roll) {
+      var tmp = {};
+      q.forEach(function (r) {
+        if (!r.source) return;
+        var b = tmp[r.source] = tmp[r.source] || { name: r.source, n: 0, up: 0 };
+        b.n++; if (r.units > 0) b.up++;
+      });
+      roll = Object.keys(tmp).map(function (k) { return tmp[k]; }).sort(function (a, b) { return b.n - a.n; });
+    }
+    var bars = (roll || []).map(function (s) {
+      var p = s.n ? Math.round(100 * s.up / s.n) : 0;
+      return '<div class="srcrow"><span>' + esc(s.name) + ' <span class="dim small">' + fmt(s.n) + '</span></span><span class="bar" style="width:90px"><i style="width:' + p + '%"></i></span><b class="num">' + p + '%</b></div>';
+    }).join('');
+    $('reality').innerHTML = '<div class="eyebrow">Established records, 100 or more picks</div><div class="big">' + (e.length ? Math.round(100 * up(e) / e.length) : 0) + '%</div>' +
+      '<p class="muted small" style="margin:2px 0 14px">are up money: ' + fmt(up(e)) + ' of ' + fmt(e.length) + ' handicappers. With 20 or more picks it is ' + fmt(up(q)) + ' of ' + fmt(q.length) +
       ', and the median ROI is ' + (med == null ? 'n/a' : (med > 0 ? '+' : '') + med.toFixed(1) + '%') + '.</p>' +
-      '<div class="eyebrow" style="margin-bottom:4px">Up money by platform, 20+ picks</div>' +
-      Object.keys(bySrc).sort(function (a, b) { return bySrc[b][0] - bySrc[a][0]; }).map(function (s) {
-        var b = bySrc[s], p = Math.round(100 * b[1] / b[0]);
-        return '<div class="srcrow"><span>' + esc(s) + ' <span class="dim small">' + fmt(b[0]) + '</span></span><span class="bar" style="width:90px"><i style="width:' + p + '%"></i></span><b class="num">' + p + '%</b></div>';
-      }).join('');
+      (bars ? '<div class="eyebrow" style="margin-bottom:4px">Up money by posting site, 20 or more picks</div>' + bars : '');
   }
 
   // ---------------- rankings ----------------
@@ -158,10 +173,9 @@
     var M = d.meta, all = d.cappers, PER = 50, pageNo = 1, view = [];
     var P = new URLSearchParams(location.search);
     $('fresh').textContent = fmt(M.tracked) + ' handicappers with graded picks. Updated ' + new Date(M.built_at).toLocaleString('en-US', { timeZone: 'America/Los_Angeles', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) + ' PT.';
-    if (M.live) $('pendNote').textContent = fmt(M.live.pending_picks) + ' pending picks were on the board at our last update.';
+    if (M.live) $('pendNote').textContent = fmt(M.live.pending_picks) + ' picks are up for games that have not started. Names are locked.';
     sportsByDepth(all, 5).forEach(function (s) { $('fSport').insertAdjacentHTML('beforeend', '<option>' + esc(s) + '</option>'); });
-    M.sources.forEach(function (s) { $('fSource').insertAdjacentHTML('beforeend', '<option>' + esc(s) + '</option>'); });
-    var map = { q: 'q', sport: 'fSport', src: 'fSource', t: 'fTime', sort: 'fSort', min: 'fMin', roi: 'fRoi', win: 'fWin', u: 'fUnits' };
+    var map = { q: 'q', sport: 'fSport', t: 'fTime', sort: 'fSort', min: 'fMin', roi: 'fRoi', win: 'fWin', u: 'fUnits' };
     Object.keys(map).forEach(function (k) { if (P.has(k)) $(map[k]).value = P.get(k); });
     var cols = [['l', '#', ''], ['l', 'Handicapper', ''], ['hm l', 'Trend', ''], ['', 'Picks', 'picks'], ['', 'Record', ''], ['hm', 'Win %', 'win_pct'], ['', 'Units', 'units'], ['', 'ROI', 'roi'], ['hm', 'Streak', 'streak'], ['hm', 'Last pick', 'last_pick']];
 
@@ -172,15 +186,16 @@
     $('head').addEventListener('click', function (e) { var th = e.target.closest('th.sortable'); if (!th) return; $('fSort').value = th.getAttribute('data-k'); apply(); });
 
     function apply() {
-      var q = $('q').value.trim().toLowerCase(), sp = $('fSport').value, so = $('fSource').value, t = sp ? 'all' : $('fTime').value;
+      var q = $('q').value.trim().toLowerCase(), sp = $('fSport').value, t = sp ? 'all' : $('fTime').value;
       $('fTime').disabled = !!sp;
       var min = +$('fMin').value || 1, roi = $('fRoi').value, win = $('fWin').value, un = $('fUnits').value, sort = $('fSort').value;
       view = [];
       all.forEach(function (r) {
-        if (so && r.source !== so) return;
-        if (q && !(r.id.indexOf(q) === 0 || code(r.id).toLowerCase() === q || r.source.toLowerCase().indexOf(q) >= 0 ||
-          r.sports.some(function (s) { return s.toLowerCase().indexOf(q) >= 0; }))) return;
-        var x = m(r, t, sp); if (!x || x.picks < min) return;
+        if (q && !(r.id.indexOf(q) === 0 || code(r.id).toLowerCase() === q ||
+          (r.sports || []).some(function (s) { return s.toLowerCase().indexOf(q) >= 0; }))) return;
+        var x = m(r, t, sp); if (!x) return;
+        if (sp) { if (r.picks < min || x.picks < 30) return; }
+        else if (x.picks < min) return;
         if (roi !== '' && !(x.roi != null && x.roi >= +roi && (+roi > 0 || x.roi > 0))) return;
         if (win !== '' && !(x.win_pct != null && x.win_pct >= +win)) return;
         if (un !== '' && !(x.units != null && x.units >= +un && (+un > 0 || x.units > 0))) return;
@@ -190,7 +205,7 @@
       var val = function (o) { return key === 'streak' ? o.r.streak : key === 'last_pick' ? (o.r.last_pick || '') : o.x[key]; };
       view.sort(function (a, b) { var x = val(a), y = val(b); if (x == null) return 1; if (y == null) return -1; return (x < y ? -1 : x > y ? 1 : 0) * dir; });
       var qs = new URLSearchParams();
-      Object.keys(map).forEach(function (k) { var v = $(map[k]).value; if (v && !(k === 'min' && v === '20') && !(k === 't' && v === 'all') && !(k === 'sort' && v === 'units')) qs.set(k, v); });
+      Object.keys(map).forEach(function (k) { var v = $(map[k]).value; if (v && !(k === 'min' && v === '100') && !(k === 't' && v === 'all') && !(k === 'sort' && v === 'units')) qs.set(k, v); });
       history.replaceState(null, '', location.pathname + (qs.toString() ? '?' + qs : ''));
       pageNo = 1; head(); draw();
     }
@@ -208,9 +223,9 @@
       $('prev').disabled = pageNo <= 1; $('next').disabled = pageNo >= pages;
     }
 
-    ['fSport', 'fSource', 'fTime', 'fSort', 'fMin', 'fRoi', 'fWin', 'fUnits'].forEach(function (id) { $(id).addEventListener('change', apply); });
+    ['fSport', 'fTime', 'fSort', 'fMin', 'fRoi', 'fWin', 'fUnits'].forEach(function (id) { $(id).addEventListener('change', apply); });
     var tmr; $('q').addEventListener('input', function () { clearTimeout(tmr); tmr = setTimeout(apply, 150); });
-    $('reset').onclick = function () { ['q', 'fSport', 'fSource', 'fRoi', 'fWin', 'fUnits'].forEach(function (id) { $(id).value = ''; }); $('fTime').value = 'all'; $('fSort').value = 'units'; $('fMin').value = '20'; apply(); };
+    $('reset').onclick = function () { ['q', 'fSport', 'fRoi', 'fWin', 'fUnits'].forEach(function (id) { $(id).value = ''; }); $('fTime').value = 'all'; $('fSort').value = 'units'; $('fMin').value = '100'; apply(); };
     $('prev').onclick = function () { if (pageNo > 1) { pageNo--; draw(); scrollTo({ top: 0, behavior: 'smooth' }); } };
     $('next').onclick = function () { if (pageNo * PER < view.length) { pageNo++; draw(); scrollTo({ top: 0, behavior: 'smooth' }); } };
     apply();

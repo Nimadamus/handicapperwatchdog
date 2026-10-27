@@ -2,7 +2,7 @@
   'use strict';
   var root = document.getElementById('prof');
   var id = new URLSearchParams(location.search).get('id') || '';
-  var PRO = './#pro';
+  var PRO = 'pricing.html';
   var fmt = function (n) { return n == null ? 'n/a' : Number(n).toLocaleString('en-US'); };
   var esc = function (s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
   var sgn = function (v, d, suf) { if (v == null) return '<span class="dim">n/a</span>'; var n = +v; return '<span class="' + (n > 0 ? 'pos' : n < 0 ? 'neg' : '') + '">' + (n > 0 ? '+' : '') + n.toFixed(d) + (suf || '') + '</span>'; };
@@ -105,10 +105,10 @@
 
     h += '<section class="phero"><div><div class="pid"><div class="pav">' + esc(c.slice(0, 2)) + '</div><div><div class="eyebrow">Handicapper profile · ID ' + esc(c) + '</div>' +
       '<h1><span class="blur" aria-label="Name hidden">Hidden handle</span></h1>' +
-      '<div class="pmeta"><span class="badge">' + esc(s.source) + '</span><span class="badge ' + t[0] + '" title="' + t[2] + '">' + t[1] + '</span>' +
+      '<div class="pmeta"><span class="badge ' + t[0] + '" title="' + t[2] + '">' + t[1] + '</span>' +
       s.sports.slice(0, 4).map(function (x) { return '<span class="badge">' + esc(x) + '</span>'; }).join('') + '</div>' +
       '<p class="muted small" style="margin:8px 0 0">Tracked since ' + day(s.first_pick) + ' · last pick ' + day(s.last_pick) + ' · verified through ' + day(p.generated_at) + '</p></div></div></div>' +
-      '<div class="unl"><span class="lock">Watchdog Pro</span><b>See who this is and what they are betting</b><p>Watchdog Pro will show this handicapper&rsquo;s name, every graded pick with the original post, and their pending picks before kickoff.</p><a class="btn pro" style="width:100%" href="' + PRO + '">Launching soon</a></div></section>';
+      '<div class="unl"><span class="lock">Watchdog Pro</span><b>See who this is and what they are betting</b><p>Watchdog Pro will show this handicapper&rsquo;s name, every graded pick with the original post, and their pending picks before kickoff.</p><a class="btn pro" style="width:100%" href="' + PRO + '">$59.99 a month</a></div></section>';
 
     h += kpis([[rec(o), 'Record'], [sgn(o.net, 2), 'Units won'], [sgn(o.roi, 1, '%'), 'ROI'], [pct(o.win_pct), 'Win %'], [fmt(o.picks), 'Graded picks'],
       [odds(o.avg_odds), 'Avg odds'], [strk(ost.current), 'Current streak'], [s.r30 ? sgn(s.r30.net, 2) : '<span class="dim">n/a</span>', 'Last 30 days']]);
@@ -145,7 +145,7 @@
     // pick log: locked; no pick rows are ever published on this site
     var sk = '<tr><td class="l"><div class="skel" style="width:180px"></div></td><td class="l"><div class="skel" style="width:110px"></div></td><td><div class="skel" style="width:40px;margin-left:auto"></div></td><td><div class="skel" style="width:36px;margin-left:auto"></div></td><td><div class="skel" style="width:44px;margin-left:auto"></div></td><td class="hm"><div class="skel" style="width:70px;margin-left:auto"></div></td></tr>';
     h += '<section class="sec" id="picks"><div class="sech"><h2>Pick log</h2><span class="lock">Watchdog Pro</span></div><div class="panel locked"><div class="ghost"><div class="tw"><table class="mini"><thead><tr><th class="l">Game</th><th class="l">Pick</th><th>Price</th><th>Result</th><th>Units</th><th class="hm">Posted</th></tr></thead><tbody>' +
-      sk + sk + sk + sk + sk + '</tbody></table></div></div><div class="over"><b style="font-size:16px">' + fmt(o.picks) + ' graded picks, each with the original post</b><p class="muted small" style="margin:0;max-width:440px">See every game, line, price and result, plus this handicapper&rsquo;s pending picks before kickoff.</p><a class="btn pro" href="' + PRO + '">Launching soon</a></div></div></section>';
+      sk + sk + sk + sk + sk + '</tbody></table></div></div><div class="over"><b style="font-size:16px">' + fmt(o.picks) + ' graded picks, each with the original post</b><p class="muted small" style="margin:0;max-width:440px">See every game, line, price and result, plus this handicapper&rsquo;s pending picks before kickoff.</p><a class="btn pro" href="' + PRO + '">$59.99 a month</a></div></div></section>';
 
     root.innerHTML = h;
     hookCharts();

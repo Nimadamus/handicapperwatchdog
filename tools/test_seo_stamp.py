@@ -18,14 +18,19 @@ SLUG = 'zzz-real-slug-should-not-leak'
 def fixture():
     def row(n, units, handle=''):
         return {
-            'id': '%010x' % n, 'source': 'Covers', 'w': 20, 'l': 10, 'p': 1, 'picks': 40,
-            'win_pct': 66.6, 'units': units, 'roi': 8.5, 'streak': 3, 'last_pick': '2026-10-25',
-            'profile': True, 'bs': {'NFL': [20, 12.0, 5.0, 60.0, '12-8']},
+            'id': '%010x' % n, 'source': 'Covers', 'w': 70, 'l': 49, 'p': 1, 'picks': 120,
+            'win_pct': 58.8, 'units': units, 'roi': 8.5, 'streak': 3, 'last_pick': '2026-10-25',
+            'profile': True, 'bs': {'NFL': [31, 8.0, 4.0, 58.0, '18-13']},
             'handle': handle, 'slug': SLUG if handle else '',
         }
     rows = [row(n, 50 - n) for n in range(1, 30)]
     rows.append(row(99, 100, SECRET))
     rows.append({'id': 'not-an-id', 'handle': SECRET, 'units': 999, 'picks': 100, 'source': 'X'})
+    rows.append({
+        'id': 'abc0000021', 'source': 'X', 'w': 18, 'l': 3, 'p': 0, 'picks': 21,
+        'win_pct': 85.7, 'units': 9000, 'roi': 420, 'streak': 8, 'last_pick': '2026-10-25',
+        'profile': True, 'handle': SECRET, 'slug': SLUG,
+    })
     return {'meta': {
         'built_at': '2026-10-26T18:00:00+00:00', 'tracked': 2653, 'graded_picks': 100000,
         'profiles': 2500, 'qualified': 800, 'profitable': 300, 'established': 100, 'established_up': 40,
@@ -72,13 +77,41 @@ def check(label, extra):
         assert 'https://handicapperwatchdog.com/index.html' not in found
         assert all(u.startswith('https://handicapperwatchdog.com/') and 'www.' not in u for u in found)
         assert not any(x in sm for x in ('capper.html', 'account.html', 'compare.html', 'privacy.html', 'terms.html'))
-        if 'pricing.html' in extra:
-            assert 'https://handicapperwatchdog.com/pricing.html' in found
-        else:
-            assert all(u in (
-                'https://handicapperwatchdog.com/',
-                'https://handicapperwatchdog.com/cappers.html',
-            ) for u in found)
+        for url in (
+            'https://handicapperwatchdog.com/how-we-grade.html',
+            'https://handicapperwatchdog.com/the-board.html',
+            'https://handicapperwatchdog.com/pricing.html',
+            'https://handicapperwatchdog.com/reviews/index.html',
+            'https://handicapperwatchdog.com/reviews/how-we-rate.html',
+            'https://handicapperwatchdog.com/reviews/docs-sports.html',
+            'https://handicapperwatchdog.com/sportsbooks/justbet.html',
+            'https://handicapperwatchdog.com/sports/nfl.html',
+        ):
+            assert url in found, url
+        assert '+9000.00' not in home and ' on Covers' not in home
+        review = open(os.path.join(tmp, 'reviews', 'docs-sports.html'), encoding='utf-8').read()
+        book = open(os.path.join(tmp, 'sportsbooks', 'justbet.html'), encoding='utf-8').read()
+        editorial = review + book + open(os.path.join(tmp, 'reviews', 'index.html'), encoding='utf-8').read()
+        assert 'Not rated' in review and 'aff=' not in editorial and 'BETLEGEND' not in editorial
+        assert 'aggregateRating' not in editorial and 'ratingValue' not in editorial
+        assert '<span class="btn disabled"' in book and 'Registration link not enabled' in book
+        assert '100 counties' in book and 'affiliates.justbet' not in book.lower()
+        assert SECRET not in editorial and SLUG not in editorial
+        bob = open(os.path.join(tmp, 'reviews', 'dr-bob-sports.html'), encoding='utf-8').read()
+        feist = open(os.path.join(tmp, 'reviews', 'jim-feist.html'), encoding='utf-8').read()
+        boyd = open(os.path.join(tmp, 'reviews', 'jimmy-boyd.html'), encoding='utf-8').read()
+        pre = open(os.path.join(tmp, 'reviews', 'pregame.html'), encoding='utf-8').read()
+        assert '522-386-13' in bob and 'Not rated' in bob and 'not a verified current offer' in bob.lower()
+        assert '$495' not in bob and '$1,045' not in bob and '$1,495' not in bob
+        assert '$174.95' not in feist and '$199.95' not in feist and '$399.95' not in feist and '$1,999.95' not in feist
+        assert 'not a verified current offer' in feist.lower() and '30 years' in feist
+        assert '$23.20' not in boyd and '$29' not in boyd and 'Invalid access' in boyd
+        assert 'not a current offer' in boyd.lower()
+        assert 'not an offer from handicapper watchdog' in book.lower()
+        assert 'free $25' in pre.lower() and 'not a verified current offer' in pre.lower() and '$1,995' in pre
+        assert '11,383' in open(os.path.join(tmp, 'reviews', 'cappertek.html'), encoding='utf-8').read()
+        assert '22,990' in open(os.path.join(tmp, 'reviews', 'docs-sports-ai.html'), encoding='utf-8').read()
+        assert '637-544' in open(os.path.join(tmp, 'reviews', 'big-al.html'), encoding='utf-8').read()
         for name, digest in before.items():
             now = hashlib.sha256(open(os.path.join(tmp, name), 'rb').read()).hexdigest()
             assert now == digest, name
@@ -92,9 +125,9 @@ FORBIDDEN_KEYS = ('handle', 'username', 'slug', 'email', 'screen_name', 'user_id
 
 
 def ranked(cappers, limit):
-    """Same order the rankings page uses: 20+ picks, units descending, JSON order on ties."""
+    """Same order the rankings page uses: 100+ picks, units descending, JSON order on ties."""
     rows = [r for r in cappers if isinstance(r, dict) and re.fullmatch(r'[0-9a-f]{10}', str(r.get('id') or ''))
-            and int(r.get('picks') or 0) >= 20 and r.get('units') is not None]
+            and int(r.get('picks') or 0) >= 100 and r.get('units') is not None]
     rows.sort(key=lambda r: float(r['units']), reverse=True)
     return rows[:limit]
 
@@ -140,7 +173,7 @@ def assert_table(html, element_id, expect):
         assert ('ID ' + code) in cells[1], (n, cells[1])
         assert 'Hidden name' in cells[1]
         source = r.get('source') or ''
-        assert source in PLATFORMS and source in cells[1], source
+        assert source in PLATFORMS and source not in cells[1], (source, cells[1])
         assert cells[3].replace(',', '') == str(int(r['picks']))
         pushes = int(r.get('p') or 0)
         rec = '%d-%d' % (int(r['w']), int(r['l'])) + ('-%d' % pushes if pushes else '')
@@ -180,8 +213,8 @@ def check_refresh():
         build.stamp_public_pages(tmp)
         first = tbody(open(os.path.join(tmp, 'index.html'), encoding='utf-8').read(), 'boardRows')[0][1][0]
         doc['cappers'].append({
-            'id': 'abcde12345', 'source': 'Reddit', 'w': 30, 'l': 10, 'p': 0, 'picks': 40,
-            'win_pct': 75.0, 'units': 500, 'roi': 20, 'streak': 1, 'last_pick': '2026-10-26',
+            'id': 'abcde12345', 'source': 'Reddit', 'w': 100, 'l': 50, 'p': 0, 'picks': 150,
+            'win_pct': 66.7, 'units': 500, 'roi': 20, 'streak': 1, 'last_pick': '2026-10-26',
             'profile': True, 'handle': SECRET, 'slug': SLUG, 'bs': {'NBA': [20, 9, 4, 60, '12-8']},
         })
         doc['meta']['built_at'] = '2026-10-26T20:00:00+00:00'
@@ -245,12 +278,17 @@ def check_live():
         assert_table(home, 'boardRows', top10)
         assert_table(rank, 'rows', top50)
         found = locs(sm)
-        base = ['https://handicapperwatchdog.com/', 'https://handicapperwatchdog.com/cappers.html']
-        if os.path.isfile(os.path.join(ROOT, 'pricing.html')):
-            assert found[:2] == base and 'https://handicapperwatchdog.com/pricing.html' in found
-            assert 'privacy.html' not in sm and 'terms.html' not in sm
-        else:
-            assert found == base
+        for url in (
+            'https://handicapperwatchdog.com/',
+            'https://handicapperwatchdog.com/cappers.html',
+            'https://handicapperwatchdog.com/how-we-grade.html',
+            'https://handicapperwatchdog.com/the-board.html',
+            'https://handicapperwatchdog.com/pricing.html',
+            'https://handicapperwatchdog.com/reviews/index.html',
+            'https://handicapperwatchdog.com/sportsbooks/justbet.html',
+        ):
+            assert url in found, url
+        assert 'privacy.html' not in sm and 'terms.html' not in sm and 'capper.html' not in sm
         print('live PASS', 'bytes', len(payload), 'home', len(top10), 'rank', len(top50),
               'leader_units', show_num(top10[0]['units'], 2), 'row50_units', show_num(top50[-1]['units'], 2))
         return tmp
