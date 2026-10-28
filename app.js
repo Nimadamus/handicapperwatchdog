@@ -76,6 +76,16 @@
       $('liveGrid').innerHTML = kv.map(function (k) { return '<div class="kv' + (k[2] ? ' hl' : '') + '"><b>' + k[0] + '</b><span>' + k[1] + (k[2] ? ' <a class="lock" href="#pro">Pro</a>' : '') + '</span></div>'; }).join('');
       $('liveAt').textContent = 'Last capture ' + new Date(L.last_capture_at).toLocaleTimeString('en-US', { timeZone: 'America/Los_Angeles', hour: 'numeric', minute: '2-digit' }) + ' PT';
       $('featPending').textContent = fmt(L.pending_picks) + ' picks are up for games that have not started. Names are locked.';
+      var mix = $('liveMix'), sources = (L.sources || []).filter(function (s) { return s && s.label && s.graded_picks > 0; })
+        .slice().sort(function (a, b) { return b.graded_picks - a.graded_picks; });
+      if (mix && sources.length) {
+        var peak = sources[0].graded_picks;
+        mix.hidden = false;
+        mix.innerHTML = '<p class="mixlabel">Graded picks by source</p>' + sources.map(function (s) {
+          var w = Math.max(4, Math.round(100 * s.graded_picks / peak));
+          return '<div class="mixrow"><span>' + esc(s.label) + '</span><span class="mixbar" role="presentation"><i style="width:' + w + '%"></i></span><b>' + fmt(s.graded_picks) + '</b></div>';
+        }).join('');
+      }
     } else {
       $('liveGrid').innerHTML = '<div class="kv"><b>' + fmt(M.tracked) + '</b><span>Handicappers with a record</span></div><div class="kv"><b>' + fmt(M.graded_picks) + '</b><span>Picks graded</span></div>';
     }
@@ -91,9 +101,14 @@
       ['Best last 7 days', best(function (r) { return r.r7 && r.r7.picks >= 5; }, function (r) { return r.r7.net; }), function (o) { return sgn(o.v, 2, 'u'); }, function (o) { return o.r.r7.w + '-' + o.r.r7.l + ' in ' + o.r.r7.picks + ' picks'; }],
       ['Hottest current streak', best(function (r) { return r.picks >= 20; }, function (r) { return r.streak > 0 ? r.streak : null; }), function (o) { return '<span class="pos">W' + o.v + '</span>'; }, function (o) { return o.r.w + '-' + o.r.l + ' overall'; }],
       ['Best ROI, 100+ picks', best(function (r) { return r.picks >= 100; }, function (r) { return r.roi; }), function (o) { return sgn(o.v, 1, '%'); }, function (o) { return fmt(o.r.picks) + ' graded picks'; }]];
-    $('highlights').innerHTML = H.filter(function (x) { return x[1]; }).map(function (x) {
+    var icons = [
+      '<svg class="hlico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 16l5-5 3.5 3.5L20 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 7h6v6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>',
+      '<svg class="hlico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5l1.7 4.8 5.1.4-3.9 3.3 1.2 5-4.1-2.6-4.1 2.6 1.2-5L4.2 8.7l5.1-.4z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>',
+      '<svg class="hlico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="7.2" cy="8" r="2.1" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="16.8" cy="16" r="2.1" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M17 6.5L7 17.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>'];
+    $('highlights').innerHTML = H.map(function (x, i) {
+      if (!x[1]) return '';
       var o = x[1], h = link(o.r);
-      return '<a class="hl" ' + (h ? 'href="' + h + '"' : '') + '><div class="eyebrow">' + x[0] + '</div><b>' + x[2](o) + '</b><span>ID ' + esc(code(o.r.id)) + ' · ' + x[3](o) + '</span></a>';
+      return '<a class="hl" ' + (h ? 'href="' + h + '"' : '') + '>' + icons[i] + '<div class="eyebrow">' + x[0] + '</div><b>' + x[2](o) + '</b><span>ID ' + esc(code(o.r.id)) + ' · ' + x[3](o) + '</span></a>';
     }).join('');
 
     // leaderboard tabs

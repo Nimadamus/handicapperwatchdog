@@ -34,7 +34,7 @@ KEY = (os.environ.get('HWD_MASK_KEY') or secrets.token_hex(16)).encode()
 HERE = os.path.dirname(os.path.abspath(__file__))
 CACHE = os.path.join(HERE, '.cache', 'profiles')
 SITE = os.path.join(HERE, '_site')
-STATIC = ('index.html', 'capper.html', 'cappers.html', 'style.css', 'app.js', 'capper.js', 'favicon.svg', 'CNAME', 'robots.txt', 'sitemap.xml')
+STATIC = ('index.html', 'capper.html', 'cappers.html', 'style.css', 'app.js', 'capper.js', 'favicon.svg', 'stadium.svg', 'CNAME', 'robots.txt', 'sitemap.xml')
 PROFILE_TTL = int(os.environ.get('HWD_PROFILE_TTL', str(6 * 3600)))
 MAX_FETCH = int(os.environ.get('HWD_MAX_FETCH', '400'))
 PT = timezone(timedelta(hours=-7))  # display only; weekday buckets use Pacific time like the rest of TMR
