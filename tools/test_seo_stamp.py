@@ -95,6 +95,15 @@ def check(label, extra):
         assert 'Not rated' in review and 'aff=' not in editorial and 'BETLEGEND' not in editorial
         assert 'justbet-logo' not in book and '<h1>JustBet</h1>' in book
         assert book.count('Registration link not enabled') == 2
+        assert 'new account form' in book and 'be.justbet.co/front/signup' in book
+        assert 'href="https://be.justbet.co' not in book and 'Registration is not turned on' not in book
+        moved = open(os.path.join(tmp, 'sportsbooks', 'reviews', 'how-we-rate.html'), encoding='utf-8').read()
+        real_rate = open(os.path.join(tmp, 'reviews', 'how-we-rate.html'), encoding='utf-8').read()
+        assert 'name="robots" content="noindex"' in moved
+        assert 'rel="canonical" href="https://handicapperwatchdog.com/reviews/how-we-rate.html"' in moved
+        assert 'rel="canonical" href="https://handicapperwatchdog.com/reviews/how-we-rate.html"' in real_rate
+        assert 'noindex' not in real_rate.lower()
+        assert 'sportsbooks/reviews/' not in sm
         assert '<span class="btn disabled' in book and 'aria-disabled="true"' in book
         assert 'revshare.ag' not in book and 'href="https://www.justbet.co/?aff=' not in book
         assert 'aggregateRating' not in editorial and 'ratingValue' not in editorial
@@ -228,7 +237,16 @@ def assert_table(html, element_id, expect):
         assert ('ID ' + code) in cells[1], (n, cells[1])
         assert 'Hidden name' in cells[1]
         source = r.get('source') or ''
-        assert source in PLATFORMS and source not in cells[1], (source, cells[1])
+        # Public rows drop source on purpose. A present source must be a real
+        # platform and must stay out of the identity cell. An absent source
+        # must not be invented back into that cell.
+        if source:
+            assert source in PLATFORMS and source not in cells[1], (source, cells[1])
+        else:
+            for platform in PLATFORMS:
+                if len(platform) < 2:
+                    continue
+                assert platform not in cells[1], (platform, cells[1])
         assert cells[3].replace(',', '') == str(int(r['picks']))
         pushes = int(r.get('p') or 0)
         rec = '%d-%d' % (int(r['w']), int(r['l'])) + ('-%d' % pushes if pushes else '')
@@ -360,7 +378,7 @@ def check_menu():
 
     tmp = tempfile.mkdtemp(prefix='hwd-menu-')
     try:
-        for name in ('index.html', 'cappers.html', 'style.css'):
+        for name in ('index.html', 'cappers.html', 'style.css', 'stadium.svg', 'favicon.svg'):
             shutil.copy(os.path.join(ROOT, name), tmp)
 
         class Quiet(SimpleHTTPRequestHandler):
@@ -375,6 +393,10 @@ def check_menu():
         threading.Thread(target=httpd.serve_forever, daemon=True).start()
         origin = 'http://127.0.0.1:%d' % port
         try:
+            import urllib.request
+            with urllib.request.urlopen(origin + '/stadium.svg', timeout=10) as stadium:
+                stadium_body = stadium.read()
+            assert stadium.status == 200 and stadium_body.startswith(b'<'), len(stadium_body)
             with sync_playwright() as pw:
                 browser = pw.chromium.launch(headless=True)
                 page = browser.new_page(viewport={'width': 390, 'height': 844})

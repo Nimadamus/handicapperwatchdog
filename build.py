@@ -541,6 +541,29 @@ def _fill(page, html, name, inner, required):
     return pre + start + inner + end + post
 
 
+def _write_retired_rating(site):
+    """The old sportsbook-relative rating address was never a page. Send readers
+    to the real guide without adding a sitemap URL or a second canonical target."""
+    folder = os.path.join(site, 'sportsbooks', 'reviews')
+    os.makedirs(folder, exist_ok=True)
+    html = '''<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>How we rate</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://handicapperwatchdog.com/reviews/how-we-rate.html">
+<meta http-equiv="refresh" content="0; url=/reviews/how-we-rate.html">
+</head>
+<body>
+<p>This address is not a page. The rating guide is <a href="/reviews/how-we-rate.html">how we rate</a>.</p>
+</body>
+</html>
+'''
+    with open(os.path.join(folder, 'how-we-rate.html'), 'w', encoding='utf-8', newline='\n') as f:
+        f.write(html)
+
+
 def _noindex(path):
     with open(path, encoding='utf-8') as f:
         head = f.read(8000).lower()
@@ -1097,15 +1120,15 @@ document.getElementById('revq').addEventListener('input', function () {
                     'It does not check your age or your location. The quotations below are not a bonus from this site.')
     else:
         cta = '<span class="btn disabled lg" aria-disabled="true">Registration link not enabled</span>'
-        cta_note = ('This button stays off until JustBet eligibility and marketing permission for this domain are confirmed. '
-                    'Nothing on this page tracks a click. The quotations below are not a bonus from this site.')
+        cta_note = ('This page does not publish a registration link. JustBet\'s own site still has a new account form, '
+                    'checked 28 Oct 2026. Nothing here tracks a click. The quotations below are not a bonus from this site.')
     book_body = '''<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><span aria-current="page">JustBet</span></nav>
 <header class="bookhero">
 <div class="bookintro">
 <p class="eyebrow">Sportsbook review</p>
 <h1>JustBet</h1>
 <p class="lede">%s</p>
-<div class="trustrow"><span>Checked 27 Oct 2026</span><span>21+</span><span>No signup link</span></div>
+<div class="trustrow"><span>Offers checked 27 Oct 2026</span><span>Signup path checked 28 Oct 2026</span><span>21+</span><span>No signup link</span></div>
 <div class="ctaslot">
 %s
 <p>%s</p>
@@ -1129,13 +1152,13 @@ document.getElementById('revq').addEventListener('input', function () {
 <section class="ctaband">
 <div>
 <p class="eyebrow">Account link</p>
-<h2>Registration is not turned on</h2>
+<h2>No registration link on this page</h2>
 <p>%s</p>
 </div>
 %s
 </section>
 <section class="panel srcpanel"><div class="pb prose"><h2>Sources</h2>%s
-<p><a href="index.html">Sportsbook research</a> is the wider section. This JustBet page is unchanged: the registration button stays off.</p>
+<p><a href="index.html">Sportsbook research</a> is the wider section. This page does not link a signup. JustBet's own new account form was still up on 28 Oct 2026.</p>
 <p class="muted small">This page is not a handicapper rating and it is not legal advice. 21+. Gambling problem? Call 1 800 GAMBLER.</p></div></section>''' % (
         _esc(book['dek']), cta, _esc(cta_note), _esc(book['disclosure']), paras(book['overview']), feature_rows, offer_rows,
         paras(book['pros']), paras(book['cons']), _esc(book['jurisdictions']),
@@ -1505,6 +1528,7 @@ def stamp_public_pages(site):
     _write_sport_pages(site, cappers)
     _write_editorial(site)
     _write_legal(site)
+    _write_retired_rating(site)
     _write_sitemap(site, lastmod)
 
 

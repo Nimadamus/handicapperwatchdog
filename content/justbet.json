@@ -3,8 +3,8 @@
   "affiliate_url": "https://www.justbet.co/?aff=BETLEGEND",
   "affiliate_enabled": false,
   "description": "JustBet sportsbook review from pages JustBet publishes. Dated quotations only. The registration button is off. The quoted bonuses are not an offer from Handicapper Watchdog.",
-  "dek": "Checked 27 Oct 2026 against JustBet's own site. The registration button is off until eligibility and marketing permission for this domain are confirmed. The quoted bonuses are not a handicapper rating and not an offer from Handicapper Watchdog.",
-  "disclosure": "Registration is disabled. There is no tracking link on this page. The button stays off until JustBet eligibility and marketing permission for this domain are confirmed. A commission, if one is added later, would not change a handicapper rating. The lines below quote JustBet on the check date. They are not an offer from Handicapper Watchdog and they are not confirmed still available.",
+  "dek": "Signup path checked 28 Oct 2026. Quoted pages checked 27 Oct 2026. This page does not publish a registration link. JustBet's own site still opens a new account form. The quoted bonuses are not a handicapper rating and not an offer from Handicapper Watchdog.",
+  "disclosure": "This page has no registration link and no tracking link. On 28 Oct 2026 JustBet's Sign Up control opened a new account form at be.justbet.co/front/signup, asking for a first name, last name, email, password, country, and phone. The homepage Sign Up address landed on the login page first. The older join, register, and signup.aspx addresses returned not found. Watchdog did not create an account. The lines below quote JustBet on the check date. They are not an offer from Handicapper Watchdog and they are not confirmed still available.",
   "overview": [
     "JustBet describes itself as an online sportsbook, racebook and casino. The about page says the company traces its roots to the mid 1990s and that it serves customers in over 56 countries. The sportsbook page says it has been satisfying bettors in more than 100 counties since the 1990s. The word on that page is counties. The two sentences are not the same, and the about page does not name a regulator or a licence.",
     "The house rules say clients must be 18. Handicapper Watchdog's own line is 21. The rules also say JustBet can refuse a wager from anyone, including clients in a state or province that prohibits sports wagering, and that the client is responsible for their own tax reporting."
@@ -63,7 +63,7 @@
   "faq": [
     {
       "q": "Where is the signup button?",
-      "a": "It is not on. The registration button stays off until JustBet eligibility and marketing permission for this domain are confirmed."
+      "a": "There is no registration link on this page, and nothing here tracks a click. JustBet's own site still has a new account form. Watchdog did not open an account."
     },
     {
       "q": "Is JustBet legal for me?",
