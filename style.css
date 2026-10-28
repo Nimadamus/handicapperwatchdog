@@ -309,6 +309,8 @@ a.rev b{display:block;font-family:var(--display);font-size:28px;font-weight:560;
 .badge.scam{color:#ffd4d4;background:rgba(176,48,48,.22);border:1px solid rgba(240,122,122,.55);border-radius:99px;padding:2px 8px;font-size:11px;font-weight:750;letter-spacing:.08em;text-transform:uppercase}
 .plate.scam{border-color:rgba(240,122,122,.45)}
 .plate.scam .plate-v{color:#ffb4b4}
+.answer{border-color:rgba(240,122,122,.45);background:rgba(176,48,48,.08)}
+.answer p{font-size:17.5px;line-height:1.55}
 .disclosure{padding:16px 18px;border-radius:14px;border:1px solid rgba(228,195,122,.35);background:linear-gradient(180deg,rgba(228,195,122,.1),rgba(228,195,122,.03));margin:0 0 18px}
 .disclosure b{display:block;margin-bottom:4px}
 .prose p{margin:0 0 12px;color:var(--ink2);font-size:16.5px;line-height:1.7;max-width:74ch}

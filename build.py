@@ -753,9 +753,10 @@ def _write_guides(site, meta, cappers):
 <h2>What the free board shows</h2>
 <p>Rank, record, units, ROI, win rate and sample size are public. The name, the handle and the posting site are not. A record next to a posting site is often enough to go find that person and follow them for free, so that pairing stays inside Watchdog Pro.</p>
 <p>A handicapper cannot pay for a higher rank, a feature, or a verified label. Rank is the graded record. Watchdog Pro is access to the name and the log, not a badge that the record is legitimate.</p>
+<p>People looking for a verified handicapper record are looking for a timestamp and a sample, not a badge. On this site a pick counts only when it was posted in public before the start, and the free board opens at 100 graded picks. A directory can still print the word verified and show the pick after the start. The <a href="reviews/cappertek.html">CapperTek review</a> is that case. CapperTek says the public reveal is 30 minutes after the event starts.</p>
 <p>Pending picks are not mixed into a record. %s</p>
 <p class="muted small">%s handicappers have a graded record. %s picks have been graded. Of the established records, %s of %s are up money.</p>
-<p><a href="cappers.html">Established rankings</a> · <a href="the-board.html">The board</a> · <a href="pricing.html">Watchdog Pro</a></p>
+<p><a href="cappers.html">Established rankings</a> · <a href="the-board.html">The board</a> · <a href="pricing.html">Watchdog Pro</a> · <a href="reviews/index.html">Handicapper reviews</a> · <a href="sportsbooks/">Sportsbook research</a></p>
 </div></section>''' % (pending, f'{tracked:,}', f'{graded:,}', f'{up:,}', f'{est:,}'))
     board = _document(0, 'the-board.html',
                       'How Many Handicappers Are Actually Up | Handicapper Watchdog',
@@ -773,7 +774,7 @@ def _write_guides(site, meta, cappers):
 <section class="panel" style="margin-bottom:18px"><div class="pb">
 <p>Established means 100 or more graded picks. The median ROI on those records is %s. A record with 20 picks can still be a hot streak, which is why the free rankings open on the established list.</p>
 <p>%s</p>
-<p>These are past results, not predictions. Names and posting sites stay off this page.</p>
+<p>These are past results, not predictions. Names and posting sites stay off this page. <a href="how-we-grade.html">How a record is graded</a>. Named services are reviewed apart from this board: <a href="reviews/index.html">handicapper reviews</a>.</p>
 <p><a class="btn" href="cappers.html">See the established rankings</a></p>
 </div></section>
 <section class="proband"><div><span class="lock">Watchdog Pro</span><h2>The names behind the records that are up</h2>
@@ -808,7 +809,7 @@ def _write_guides(site, meta, cappers):
 <p>%s</p>
 <p>Watchdog Pro is not a verified badge. A handicapper cannot pay to be ranked higher, to be featured, or to receive a label that the record is legitimate. Pro is access to the name, the posting site, and the pick log on records this site already grades from public posts. This edition does not show a checkout button.</p>
 <p class="muted small">Prices are in US dollars. Records are past results, not predictions or a guarantee. 21+. Gambling problem? Call 1 800 GAMBLER.</p>
-<p><a href="cappers.html">Look at the free board first</a></p>
+<p><a href="cappers.html">Look at the free board first</a> · <a href="how-we-grade.html">How a record is graded</a> · <a href="reviews/index.html">Handicapper reviews</a></p>
 </div></section>''' % pending)
     for name, html in (('how-we-grade.html', grade), ('the-board.html', board), ('pricing.html', price)):
         with open(os.path.join(site, name), 'w', encoding='utf-8', newline='\n') as f:
@@ -842,7 +843,7 @@ def _write_sport_pages(site, cappers):
         body = '''<div class="sportband s-%s" aria-hidden="true"></div>
 <nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><a href="../cappers.html">Rankings</a><span aria-hidden="true">/</span><span aria-current="page">%s</span></nav>
 <div class="pagehead"><div><div class="eyebrow">%s records</div><h1>%s handicapper records</h1>
-<p class="muted">%d handicappers with %d or more graded %s picks, ranked by units won in %s. Names and posting sites are hidden. A short sample can still swing, so the all sports board opens on records with 100 or more picks. <a href="../how-we-grade.html">How records are graded</a>.</p></div>
+<p class="muted">%d handicappers with %d or more graded %s picks, ranked by units won in %s. Names and posting sites are hidden. A short sample can still swing, so the all sports board opens on records with 100 or more picks. <a href="../how-we-grade.html">How records are graded</a>. Named services are a different file: <a href="../reviews/index.html">handicapper reviews</a>.</p></div>
 <a class="btn sm pro" href="../pricing.html">Watchdog Pro</a></div>
 <section class="panel"><div class="tw"><table><thead><tr><th class="l">#</th><th class="l">Handicapper</th><th>Picks</th><th>Record</th><th>Win %%</th><th>Units</th><th>ROI</th></tr></thead>
 <tbody>%s</tbody></table></div></section>
@@ -963,6 +964,23 @@ def _write_editorial(site):
             note = reviews['unrated_note']
             tail = missing
             good_h, bad_h = 'Strengths', 'Weaknesses'
+        if verdict == 'Scam':
+            answer = (
+                '<section class="panel edcard essay answer" id="short-answer"><h2>Is CapperTek a scam?</h2>'
+                '<div class="prose"><p>Yes. CapperTek is a scam. This review is of the directory, not of one seller in it. '
+                'The green check at the top is a paid advertisement. CapperTek says a public pick is revealed 30 minutes after the event starts, '
+                'and the board a new reader sees is the last 30 days. Checked 28 Oct 2026. Watchdog did not buy a pass.</p></div></section>'
+            )
+        else:
+            answer = ''
+        bridge = (
+            '<section class="panel edcard"><h2>Where this sits</h2><div class="prose">'
+            '<p>A named service review is not a Watchdog grade. A pick counts here only when it was posted in public before the start, '
+            'and the free board opens at 100 graded picks. <a href="../how-we-grade.html">How a record is graded</a>.</p>'
+            '<p><a href="index.html">All handicapper reviews</a> · <a href="how-we-rate.html">How a rating would be built</a> · '
+            '<a href="../cappers.html">Established rankings</a> · <a href="../the-board.html">How many are up</a> · '
+            '<a href="../sportsbooks/">Sportsbook research</a></p></div></section>'
+        )
         essay = ''.join(
             '<section class="panel edcard essay"><h2>%s</h2><div class="prose">%s</div></section>' % (
                 _esc(sec['h']), paras(sec['p']))
@@ -979,6 +997,7 @@ def _write_editorial(site):
 <div class="disclosure"><b>How to read this page</b><p class="muted">%s</p></div>
 <div class="edstack">
 %s
+%s
 <section class="panel edcard"><h2>What they advertise</h2><div class="prose">%s</div></section>
 <section class="panel edcard"><h2>What Watchdog has graded</h2><div class="prose"><p>%s</p></div></section>
 <section class="panel edcard"><h2>Pricing</h2><div class="prose">%s</div></section>
@@ -990,17 +1009,18 @@ def _write_editorial(site):
 </div>
 %s
 %s
+%s
 </div>
 <section class="panel srcpanel"><div class="pb prose"><h2>Sources checked %s</h2>%s
 <p class="muted small">A 100 point score is not shown. The rubric is on the <a href="how-we-rate.html">ratings page</a>. Past results are not predictions. 21+.</p>
 </div></section>
 <script type="application/ld+json">%s</script>''' % (
-            _esc(rev['name']), _esc(rev['kind']), _esc(rev['name']), _esc(rev['dek']),
-            plate, note, essay,
+            _esc(rev['name']), _esc(rev['kind']), _esc(rev.get('h1') or rev['name']), _esc(rev['dek']),
+            plate, note, answer, essay,
             paras(rev['advertised']), _esc(rev['watchdog']), paras(rev['pricing']),
             _esc(rev['transparency']), _esc(rev['customers']),
             good_h, paras(rev['strengths']), bad_h, paras(rev['weaknesses']),
-            related(rev), tail,
+            related(rev), tail, bridge,
             _esc(reviews['checked']), sources(rev['sources']),
             json.dumps(ld, ensure_ascii=True).replace('<', '\\u003c'))
         html = _document(1, 'reviews/index.html', rev['title'], rev['description'],
@@ -1016,7 +1036,7 @@ def _write_editorial(site):
 <div class="pagehead"><div><div class="eyebrow">Ratings</div><h1>The 100 point Watchdog rating</h1>
 <p class="muted">%s</p></div></div>
 <section class="panel" style="margin-bottom:18px"><div class="tw"><table class="mini"><thead><tr><th class="l">Part</th><th>Points</th><th class="l">What has to be in the file first</th></tr></thead><tbody>%s</tbody></table></div></section>
-<section class="panel" style="margin-bottom:28px"><div class="pb prose"><p>%s</p><p>Sportsbook pages are not given this score. A book is not a handicapper. The sportsbook file has its own method, and a commercial relationship cannot buy a rating. <a href="../sportsbooks/how-we-score/">How a sportsbook score would be built</a>.</p></div></section>''' % (
+<section class="panel" style="margin-bottom:28px"><div class="pb prose"><p>%s</p><p>Sportsbook pages are not given this score. A book is not a handicapper. The sportsbook file has its own method, and a commercial relationship cannot buy a rating. <a href="../sportsbooks/how-we-score/">How a sportsbook score would be built</a>. Records on the free board are graded separately. <a href="../how-we-grade.html">How a record is graded</a>. <a href="../cappers.html">Established rankings</a>.</p></div></section>''' % (
         _esc(reviews['unrated_note']), rubric_rows, _esc(reviews['independence']))
     rate_html = _document(1, 'reviews/how-we-rate.html',
                           'How Handicapper Watchdog Rates a Service',
@@ -1043,7 +1063,7 @@ def _write_editorial(site):
 <div class="disclosure"><b>No score on this edition</b><p class="muted">%s</p></div>
 <div class="fld revsearch"><label for="revq">Search reviews</label><input id="revq" placeholder="Search a name or a site" aria-label="Search reviews"></div>
 <div class="revgrid" id="revgrid">%s</div>
-<p class="muted small revfoot">Ten public names. The free rankings stay anonymous. <a href="../sportsbooks/">Sportsbook research</a> is a separate section.</p>
+<p class="muted small revfoot">Ten public names. The free rankings stay anonymous. <a href="../how-we-grade.html">How a record is graded</a> · <a href="../cappers.html">Established rankings</a> · <a href="../the-board.html">The board</a> · <a href="../sportsbooks/">Sportsbook research</a>.</p>
 <script>
 document.getElementById('revq').addEventListener('input', function () {
   var q = this.value.trim().toLowerCase();
@@ -1237,7 +1257,8 @@ def _write_sportsbook_pages(site, written):
             '<section class="panel srcpanel"><div class="pb prose"><h2>Sources checked %s</h2>%s'
             '<p class="muted small">Operator names belong to the operators. Watchdog did not copy logo artwork. '
             '<a href="../">All sportsbook research</a> · <a href="../comparison/">Compare</a> · <a href="../how-we-score/">Scoring method</a> · '
-            '<a href="../justbet.html">JustBet</a>. 21+. Gambling problem? Call 1 800 GAMBLER.</p></div></section>%s%s'
+            '<a href="../justbet.html">JustBet</a> · <a href="../../reviews/index.html">Handicapper reviews</a> · '
+            '<a href="../../how-we-grade.html">How records are graded</a>. 21+. Gambling problem? Call 1 800 GAMBLER.</p></div></section>%s%s'
         ) % (
             _esc(book['name']),
             'Status' if book['kind'] == 'status' else 'Sportsbook research',
@@ -1257,8 +1278,8 @@ def _write_sportsbook_pages(site, written):
         '<p>A documented fact is not converted into points. A license mentioned by the operator, a state on the operator\'s own list, or a help-center article about limits can be reported as a finding. It does not become an 8 out of 10.</p>'
         '<p>Hands-on testing is labeled as hands-on testing. This edition has none. If a page says the reading is documented research, that is the whole test.</p>'
         '<p>No operator pays for a higher score. A later sponsorship would be labeled on the page and would not move these weights. There is no referral link in this edition. Promotions are quoted only when the operator\'s own terms were read on the check date, and they are the operator\'s offer, not Watchdog\'s.</p>'
-        '<p>This is separate from the <a href="../reviews/how-we-rate.html">handicapper rating</a>. A book is not a handicapper. The handicapper pages stay unrated for their own reasons.</p>'
-        '<p><a href="../">Sportsbook research</a> · <a href="../comparison/">Compare the books</a></p>'
+        '<p>This is separate from the <a href="../../reviews/how-we-rate.html">handicapper rating</a>, and from <a href="../../how-we-grade.html">how a handicapper record is graded</a>. A book is not a handicapper. The handicapper pages stay unrated for their own reasons.</p>'
+        '<p><a href="../">Sportsbook research</a> · <a href="../comparison/">Compare the books</a> · <a href="../../reviews/index.html">Handicapper reviews</a> · <a href="../../cappers.html">Rankings</a></p>'
         '</div></section>'
     ) % (_esc(checked), weight_rows)
     save('how-we-score',
@@ -1343,7 +1364,7 @@ def _write_sportsbook_pages(site, written):
         '<p class="muted small" id="sbstatehelp">A partial list stays on screen. Missing from that list is not a finding that the book is absent.</p></div>'
         '<div class="sbgrid" id="sbgrid">%s</div>'
         '<section class="panel" style="margin-bottom:18px"><div class="pb prose"><h2>Checked, and not given a review</h2><ul>%s</ul>'
-        '<p><a href="comparison/">Compare the five reviews</a> · <a href="how-we-score/">Scoring method</a> · <a href="justbet.html">JustBet</a> · <a href="../reviews/index.html">Handicapper reviews</a></p>'
+        '<p><a href="comparison/">Compare the five reviews</a> · <a href="how-we-score/">Scoring method</a> · <a href="justbet.html">JustBet</a> · <a href="../reviews/index.html">Handicapper reviews</a> · <a href="../how-we-grade.html">How handicapper records are graded</a> · <a href="../cappers.html">Rankings</a></p>'
         '</div></section>'
         '<script>'
         '(function () {'
@@ -1398,7 +1419,7 @@ def _write_legal(site):
 <p>Sportsbook pages are research notes. They are not signup offers. JustBet registration on this site stays off.</p>
 <h2>What this site is not</h2>
 <p>Handicapper Watchdog is not a sportsbook and does not take bets. It does not sell picks. It does not sell a green check, a featured row, or protection from a bad review. Past results are not predictions. 21+.</p>
-<p><a href="how-we-grade.html">How a record is graded</a> · <a href="pricing.html">Watchdog Pro</a> · <a href="contact.html">Corrections</a></p>
+<p><a href="how-we-grade.html">How a record is graded</a> · <a href="reviews/index.html">Handicapper reviews</a> · <a href="reviews/cappertek.html">CapperTek review</a> · <a href="cappers.html">Rankings</a> · <a href="pricing.html">Watchdog Pro</a> · <a href="contact.html">Corrections</a></p>
 </div></section>'''),
         ('privacy.html',
          'Privacy Policy | Handicapper Watchdog',
