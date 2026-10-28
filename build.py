@@ -286,7 +286,7 @@ _SITEMAP = (
 )
 _MARKERS = {
     'index.html': ('live', 'board', 'sports', 'reality', 'pending', 'jsonld'),
-    'cappers.html': ('fresh', 'rows', 'pending', 'jsonld'),
+    'cappers.html': ('fresh', 'rows', 'pending', 'jsonld', 'sportnav'),
 }
 # Sport pages need a real sample. A 21 pick hot streak never leads a sport page.
 _SPORT_MIN = 30
@@ -474,6 +474,10 @@ def _sport_leaders(cappers, sport):
     return top
 
 
+def _sport_nav(cappers):
+    return ''.join('<a href="sports/%s.html">%s</a>' % (_sport_slug(sport), _esc(sport)) for sport in _sport_pages(cappers))
+
+
 def _sports(cappers):
     blocks = []
     for sport in _sport_pages(cappers)[:6]:
@@ -488,8 +492,8 @@ def _sports(cappers):
             if len(items) == 3:
                 break
         if items:
-            blocks.append('<div class="sc"><h4><span>%s</span><a class="muted small" href="sports/%s.html">View all</a></h4><ol>%s</ol></div>' % (
-                _esc(sport), _sport_slug(sport), ''.join(items)))
+            blocks.append('<div class="sc s-%s"><p class="sptitle"><span>%s</span><a class="muted small" href="sports/%s.html">View all</a></p><ol>%s</ol></div>' % (
+                _sport_slug(sport), _esc(sport), _sport_slug(sport), ''.join(items)))
     return ''.join(blocks)
 
 
@@ -634,6 +638,7 @@ def _header(depth, current):
         '<label class="navbtn" for="navtoggle">Menu</label>'
         '%s'
         '<form class="navsearch" action="%scappers.html" role="search">'
+        '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>'
         '<input name="q" placeholder="Search capper ID or sport" aria-label="Search cappers"></form>'
         '<a class="btn sm pro" href="%spricing.html">Watchdog Pro</a>'
         '</div></header>'
@@ -679,7 +684,7 @@ def _document(depth, current, title, description, canonical, body):
 <meta name="theme-color" content="#070d17">
 <link rel="icon" href="%sfavicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700;750;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,680&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="%sstyle.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SC607ZYK1F"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-SC607ZYK1F');</script>
@@ -816,16 +821,17 @@ def _write_sport_pages(site, cappers):
         title = '%s Handicapper Records | Handicapper Watchdog' % sport
         desc = 'Graded %s records for public handicappers. Names and posting sites are hidden. Ranked by units, %d or more %s picks.' % (
             sport, _SPORT_MIN, sport)
-        body = '''<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><span aria-current="page">%s</span></nav>
+        body = '''<div class="sportband s-%s" aria-hidden="true"></div>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><a href="../cappers.html">Rankings</a><span aria-hidden="true">/</span><span aria-current="page">%s</span></nav>
 <div class="pagehead"><div><div class="eyebrow">%s records</div><h1>%s handicapper records</h1>
-<p class="muted">%d handicappers with %d or more graded %s picks, ranked by units won in %s. Names and posting sites are hidden. A short sample can still swing, so the all sports board opens on records with 100 or more picks.</p></div>
+<p class="muted">%d handicappers with %d or more graded %s picks, ranked by units won in %s. Names and posting sites are hidden. A short sample can still swing, so the all sports board opens on records with 100 or more picks. <a href="../how-we-grade.html">How records are graded</a>.</p></div>
 <a class="btn sm pro" href="../pricing.html">Watchdog Pro</a></div>
 <section class="panel"><div class="tw"><table><thead><tr><th class="l">#</th><th class="l">Handicapper</th><th>Picks</th><th>Record</th><th>Win %%</th><th>Units</th><th>ROI</th></tr></thead>
 <tbody>%s</tbody></table></div></section>
 <section class="proband" style="grid-template-columns:1fr auto"><div><span class="lock">Watchdog Pro</span><h2>Found a %s record worth following?</h2>
 <p class="muted" style="margin:0">Pro shows the name, the posting site, and the picks posted before the game. $59.99 a month, or $499 a year.</p></div>
 <a class="btn pro" href="../pricing.html">See pricing</a></section>''' % (
-            _esc(sport), _esc(sport), _esc(sport), len(leaders), _SPORT_MIN, _esc(sport), _esc(sport),
+            _sport_slug(sport), _esc(sport), _esc(sport), _esc(sport), len(leaders), _SPORT_MIN, _esc(sport), _esc(sport),
             _sport_table(cappers, sport), _esc(sport))
         html = _document(1, '', title, desc, 'https://handicapperwatchdog.com/sports/%s.html' % slug, body)
         with open(os.path.join(dest, slug + '.html'), 'w', encoding='utf-8', newline='\n') as f:
@@ -1110,6 +1116,7 @@ def stamp_public_pages(site):
         },
         'cappers.html': {
             'fresh': _fresh(meta), 'rows': _ranked(cappers, 50), 'pending': _esc(_pending(meta)),
+            'sportnav': _sport_nav(cappers),
             'jsonld': _itemlist(cappers, 'https://handicapperwatchdog.com/cappers.html', 'Established handicapper rankings'),
         },
     }

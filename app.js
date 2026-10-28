@@ -137,7 +137,7 @@
     $('sportGrid').innerHTML = sportPages(all).slice(0, 6).map(function (s) {
       var top = all.map(function (r) { return { r: r, x: m(r, null, s) }; }).filter(function (o) { return o.x && o.x.picks >= 30 && o.x.units > 0; })
         .sort(function (a, b) { return b.x.units - a.x.units; }).slice(0, 3);
-      return !top.length ? '' : '<div class="sc"><h4><span>' + esc(s) + '</span><a class="muted small" href="sports/' + sportSlug(s) + '.html">View all</a></h4><ol>' + top.map(function (o) {
+      return !top.length ? '' : '<div class="sc s-' + sportSlug(s) + '"><p class="sptitle"><span>' + esc(s) + '</span><a class="muted small" href="sports/' + sportSlug(s) + '.html">View all</a></p><ol>' + top.map(function (o) {
         var h = link(o.r);
         return '<li><a ' + (h ? 'href="' + h + '"' : '') + '><span class="badge">' + esc(code(o.r.id)) + '</span><span class="muted">' + recTxt(o.x) + '</span></a>' + sgn(o.x.units, 1, 'u') + '</li>';
       }).join('') + '</ol></div>';

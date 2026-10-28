@@ -102,11 +102,17 @@
     document.title = 'Handicapper ' + c + ': ' + rec(o) + ', ' + (o.net > 0 ? '+' : '') + (+o.net).toFixed(2) + ' units | Handicapper Watchdog';
     var sportNames = Object.keys(p.sport_detail || {});
     var h = '';
+    var sportHref = function (name) {
+      var slug = String(name).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+      var known = { nfl: 1, mlb: 1, nhl: 1, ncaaf: 1 };
+      return known[slug] ? ('sports/' + slug + '.html') : ('cappers.html?q=' + encodeURIComponent(name));
+    };
 
+    h += '<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><a href="cappers.html">Rankings</a><span aria-hidden="true">/</span><span aria-current="page">ID ' + esc(c) + '</span></nav>';
     h += '<section class="phero"><div><div class="pid"><div class="pav">' + esc(c.slice(0, 2)) + '</div><div><div class="eyebrow">Handicapper profile · ID ' + esc(c) + '</div>' +
       '<h1><span class="blur" aria-label="Name hidden">Hidden handle</span></h1>' +
       '<div class="pmeta"><span class="badge ' + t[0] + '" title="' + t[2] + '">' + t[1] + '</span>' +
-      s.sports.slice(0, 4).map(function (x) { return '<span class="badge">' + esc(x) + '</span>'; }).join('') + '</div>' +
+      (s.sports || []).slice(0, 4).map(function (x) { return '<a class="badge" href="' + sportHref(x) + '">' + esc(x) + '</a>'; }).join('') + '</div>' +
       '<p class="muted small" style="margin:8px 0 0">Tracked since ' + day(s.first_pick) + ' · last pick ' + day(s.last_pick) + ' · verified through ' + day(p.generated_at) + '</p></div></div></div>' +
       '<div class="unl"><span class="lock">Watchdog Pro</span><b>See who this is and what they are betting</b><p>Watchdog Pro will show this handicapper&rsquo;s name, every graded pick with the original post, and their pending picks before kickoff.</p><a class="btn pro" style="width:100%" href="' + PRO + '">$59.99 a month</a></div></section>';
 
