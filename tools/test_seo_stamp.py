@@ -76,7 +76,7 @@ def check(label, extra):
         assert 'https://handicapperwatchdog.com/cappers.html' in found
         assert 'https://handicapperwatchdog.com/index.html' not in found
         assert all(u.startswith('https://handicapperwatchdog.com/') and 'www.' not in u for u in found)
-        assert not any(x in sm for x in ('capper.html', 'account.html', 'compare.html', 'privacy.html', 'terms.html'))
+        assert not any(x in sm for x in ('capper.html', 'account.html', 'compare.html'))
         for url in (
             'https://handicapperwatchdog.com/how-we-grade.html',
             'https://handicapperwatchdog.com/the-board.html',
@@ -99,6 +99,36 @@ def check(label, extra):
         assert 'revshare.ag' not in book and 'href="https://www.justbet.co/?aff=' not in book
         assert 'aggregateRating' not in editorial and 'ratingValue' not in editorial
         assert '100 counties' in book and 'affiliates.justbet' not in book.lower()
+        dk = open(os.path.join(tmp, 'sportsbooks', 'draftkings-review', 'index.html'), encoding='utf-8').read()
+        fd = open(os.path.join(tmp, 'sportsbooks', 'fanduel-review', 'index.html'), encoding='utf-8').read()
+        directory = open(os.path.join(tmp, 'sportsbooks', 'index.html'), encoding='utf-8').read()
+        method = open(os.path.join(tmp, 'sportsbooks', 'how-we-score', 'index.html'), encoding='utf-8').read()
+        compare = open(os.path.join(tmp, 'sportsbooks', 'comparison', 'index.html'), encoding='utf-8').read()
+        espn = open(os.path.join(tmp, 'sportsbooks', 'espn-bet', 'index.html'), encoding='utf-8').read()
+        for page in (dk, fd, directory, method, compare, espn):
+            assert page.count('<h1') == 1 and 'aff=' not in page and 'ratingValue' not in page and 'aggregateRating' not in page
+            assert 'noindex' not in page.lower()
+        assert 'href="../../style.css"' in dk and 'href="../style.css"' in directory
+        assert 'rel="canonical" href="https://handicapperwatchdog.com/sportsbooks/draftkings-review/"' in dk
+        assert 'rel="canonical" href="https://handicapperwatchdog.com/sportsbooks/"' in directory
+        assert 'Not scored' in dk and 'Documented research' in dk and 'Not scored' in directory
+        assert 'Puerto Rico' in fd and 'FanDuel Predicts' in fd
+        assert '23 Nov 2026' in open(os.path.join(tmp, 'sportsbooks', 'bet365-review', 'index.html'), encoding='utf-8').read()
+        assert '1 Dec 2025' in espn and 'Not a live book' in espn
+        for url in (
+            'https://handicapperwatchdog.com/sportsbooks/',
+            'https://handicapperwatchdog.com/sportsbooks/draftkings-review/',
+            'https://handicapperwatchdog.com/sportsbooks/fanduel-review/',
+            'https://handicapperwatchdog.com/sportsbooks/bet365-review/',
+            'https://handicapperwatchdog.com/sportsbooks/fanatics-review/',
+            'https://handicapperwatchdog.com/sportsbooks/betmgm-review/',
+            'https://handicapperwatchdog.com/sportsbooks/espn-bet/',
+            'https://handicapperwatchdog.com/sportsbooks/how-we-score/',
+            'https://handicapperwatchdog.com/sportsbooks/comparison/',
+        ):
+            assert url in found, url
+        assert 'https://handicapperwatchdog.com/sportsbooks/index.html' not in found
+        assert 'draftkings-review.html' not in sm
         assert SECRET not in editorial and SLUG not in editorial
         bob = open(os.path.join(tmp, 'reviews', 'dr-bob-sports.html'), encoding='utf-8').read()
         feist = open(os.path.join(tmp, 'reviews', 'jim-feist.html'), encoding='utf-8').read()
@@ -112,7 +142,22 @@ def check(label, extra):
         assert 'not a current offer' in boyd.lower()
         assert 'not an offer from handicapper watchdog' in book.lower()
         assert 'free $25' in pre.lower() and 'not a verified current offer' in pre.lower() and '$1,995' in pre
-        assert '11,383' in open(os.path.join(tmp, 'reviews', 'cappertek.html'), encoding='utf-8').read()
+        ct = open(os.path.join(tmp, 'reviews', 'cappertek.html'), encoding='utf-8').read()
+        assert 'CapperTek is a scam' in ct and '11,386' in ct and '11,384' in ct and '30 minutes' in ct and 'non-refundable' in ct
+        assert 'Domains By Proxy' in ct and 'protect against' in ct and '750' in ct
+        assert 'Loading picks' in ct and '232' in ct and '229' in ct and '11,387' in ct and '139' in ct
+        assert '32,037' in ct and '15 days' in ct and '28 Oct 2026' in ct and 'id="corrections"' in ct and 'contact.html' in ct
+        assert 'trustmyrecord' not in ct.lower() and 'ratingValue' not in ct and 'aggregateRating' not in ct
+        for legal in ('about.html', 'privacy.html', 'terms.html', 'contact.html'):
+            page = open(os.path.join(tmp, legal), encoding='utf-8').read()
+            assert 'noindex' not in page.lower() and 'mailto:' not in page.lower(), legal
+            assert 'trustmyrecord' not in page.lower()
+            assert 'rel="canonical" href="https://handicapperwatchdog.com/%s"' % legal in page
+        assert 'not a verified badge' in open(os.path.join(tmp, 'pricing.html'), encoding='utf-8').read().lower()
+        sm_legal = open(os.path.join(tmp, 'sitemap.xml'), encoding='utf-8').read()
+        for legal in ('about.html', 'privacy.html', 'terms.html', 'contact.html'):
+            assert 'https://handicapperwatchdog.com/' + legal in sm_legal
+        assert 'capper.html' not in sm_legal and 'account.html' not in sm_legal
         assert '22,990' in open(os.path.join(tmp, 'reviews', 'docs-sports-ai.html'), encoding='utf-8').read()
         assert '637-544' in open(os.path.join(tmp, 'reviews', 'big-al.html'), encoding='utf-8').read()
         for slug in (
@@ -298,7 +343,8 @@ def check_live():
             'https://handicapperwatchdog.com/sportsbooks/justbet.html',
         ):
             assert url in found, url
-        assert 'privacy.html' not in sm and 'terms.html' not in sm and 'capper.html' not in sm
+        assert 'privacy.html' in sm and 'terms.html' in sm and 'about.html' in sm and 'contact.html' in sm
+        assert 'capper.html' not in sm and 'account.html' not in sm
         print('live PASS', 'bytes', len(payload), 'home', len(top10), 'rank', len(top50),
               'leader_units', show_num(top10[0]['units'], 2), 'row50_units', show_num(top50[-1]['units'], 2))
         return tmp

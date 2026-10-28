@@ -1,0 +1,509 @@
+{
+  "checked": "27 Oct 2026",
+  "checked_iso": "2026-10-27",
+  "intro": "This section reads what sportsbook operators publish about themselves, then says what that record does and does not prove. Handicapper Watchdog did not open accounts, place bets, or time a withdrawal. Nothing here is a signup offer, and no operator paid for a position.",
+  "weights": [
+    {"label": "Odds and pricing", "weight": 25, "needs": "A dated sample of the same markets at the same time, against other licensed books, with the hold written down."},
+    {"label": "Betting market selection", "weight": 20, "needs": "A counted menu from the operator, not a slogan that says every sport."},
+    {"label": "Mobile experience", "weight": 15, "needs": "Hands-on use of the current app, or a published build review with the version and date."},
+    {"label": "Deposits and withdrawals", "weight": 15, "needs": "The operator's own method list and posted timing, checked on the same date as the page."},
+    {"label": "Customer service", "weight": 10, "needs": "A tested contact path, with the channel and the wait written down. A help-center URL is not a quality score."},
+    {"label": "Security and consumer protections", "weight": 10, "needs": "The license record from the regulator, plus the tools the operator actually offers in that jurisdiction."},
+    {"label": "Features and usability", "weight": 5, "needs": "A checked product surface. A marketing line about parlays is not enough."}
+  ],
+  "compare_keys": [
+    "Operating status",
+    "States the operator named",
+    "Live betting",
+    "Mobile",
+    "Deposit methods",
+    "Withdrawal methods",
+    "Customer support",
+    "Responsible gambling tools",
+    "Promotion quoted",
+    "Editorial score"
+  ],
+  "withheld": [
+    {"name": "Caesars Sportsbook", "reason": "The Caesars retail locator opened and listed hundreds of in-person books. It does not say where the mobile sportsbook takes bets. Third-party state lists were not used. No review is published."},
+    {"name": "BetRivers", "reason": "No BetRivers availability page returned a citable jurisdiction list on this check. Secondary writeups did not agree with each other. No review is published."},
+    {"name": "theScore Bet", "reason": "PENN said it would rebrand the U.S. book to theScore Bet on 1 Dec 2025, subject to approval. The transition article is not a 2026 availability page, so the target list is not repeated here as a current map. See the ESPN BET note."}
+  ],
+  "books": [
+    {
+      "slug": "draftkings-review",
+      "name": "DraftKings",
+      "mark": "DK",
+      "kind": "review",
+      "title": "DraftKings Sportsbook Research | Handicapper Watchdog",
+      "description": "What DraftKings publishes about where its sportsbook is live, which limits exist, and what Watchdog did not measure. No numeric score. Checked 27 Oct 2026.",
+      "dek": "DraftKings is operating a U.S. sportsbook. The availability page names a long list of jurisdictions, and this check did not capture every heading on it.",
+      "status": "Operating. State list partial.",
+      "filters": ["partial"],
+      "states_complete": false,
+      "states": ["Arizona", "Arkansas", "Colorado", "Connecticut", "Washington, D.C.", "Illinois", "Maine", "Maryland", "Missouri", "New Hampshire", "New Jersey", "Ohio", "Oregon", "Pennsylvania", "Tennessee", "Vermont", "Virginia", "West Virginia", "Wyoming"],
+      "pros": [
+        "The operator keeps a public page that says online betting is limited to listed states, and that the bettor has to be physically in the state.",
+        "DraftKings help articles describe deposit limits, wager limits, time limits, and self exclusion on sportsbook products.",
+        "Oregon copy on that availability page ties the sportsbook to the Oregon Lottery, which is a specific public claim rather than a vague national license line."
+      ],
+      "cons": [
+        "This check could not read the availability page as one continuous list, so the states below are not a complete map and must not be treated as one.",
+        "No deposit or withdrawal method list was opened on the help center during this check.",
+        "Welcome headlines on state landing pages were not the same from state to state, so no promotion is quoted.",
+        "Odds, app usability, and support speed were not measured."
+      ],
+      "sections": [
+        {"title": "Overview", "body": [
+          "This page is a reading of DraftKings' own pages on 27 Oct 2026. Watchdog did not open a DraftKings account, did not place a bet, and did not test the app. The assessment is documented research.",
+          "DraftKings is still offering an online sportsbook. Its availability page tells readers that online sports betting is offered in the states listed on that page, that residency is not required, and that the person has to be located in the state when the bet is placed. State landing pages for Arizona, Massachusetts, Connecticut, Ohio, and New Hampshire also returned a live sportsbook surface the same day. A landing page is evidence that the brand is selling bets in that market. It is not a substitute for the full list."
+        ]},
+        {"title": "Betting markets", "body": [
+          "The state landing pages that opened were selling the usual American menu in the form of spreads, totals, moneylines, and same game parlays, including NFL and college football examples. That shows those market types exist on the product. It does not count how many leagues, player props, or alternate lines DraftKings posts. Market selection stays Not scored until someone counts the menu."
+        ]},
+        {"title": "Live betting", "body": [
+          "Several of those same landing pages labeled bets as live, including live same game parlays. Live betting is therefore something DraftKings was presenting on 27 Oct 2026. How fast the board updates, and whether a live bet can be cashed out, was not tested."
+        ]},
+        {"title": "Odds and pricing", "body": [
+          "No line was saved against another book. A single posted price on a landing page is not a hold, and it is not a comparison. Odds and pricing stay Not scored. That category is a quarter of the proposed weight, which is one reason this page has no overall number."
+        ]},
+        {"title": "Mobile application", "body": [
+          "DraftKings tells readers to download the sportsbook app, and the help center gives separate steps for the app and for desktop. The promo pages that were opened also pointed at the app. None of that is a usability test. Screen size, bet slip errors, and location failures were not checked. Mobile experience stays Not scored. The documented fact is that an app is part of the published product."
+        ]},
+        {"title": "Deposits and withdrawals", "body": [
+          "A payment-method guide exists in the DraftKings help center, but the method list and the posted timing were not opened on this check. Deposit and withdrawal categories stay Not scored. What was opened, and what belongs under responsible gambling rather than cashier speed, is the limit tool: daily, weekly, and monthly deposit limits apply at the account level across daily fantasy, sportsbook, and casino, and a limit cannot be raised until the jurisdiction's waiting period has run."
+        ]},
+        {"title": "Customer support", "body": [
+          "DraftKings publishes a help center at help.draftkings.com with sportsbook articles. That is a real support surface. Watchdog did not open a chat, send a ticket, or record a wait. Customer service stays Not scored."
+        ]},
+        {"title": "Security and licensing", "body": [
+          "The availability page presents the product as legal online sports betting in the jurisdictions it lists. Illinois is described there as DraftKings at Casino Queen Sportsbook. Oregon is described as DraftKings Sportsbook, official provider of the Oregon Lottery. Those are operator statements, not license certificates read from the state. No license number was copied. Security and consumer protections stay Not scored. Readers who need the license should use the state regulator's licensee list, not this summary."
+        ]},
+        {"title": "Geographic availability", "body": [
+          "Headings captured from the DraftKings availability page on 27 Oct 2026 named Arizona, Arkansas, Colorado, Connecticut, Washington, D.C., Illinois, Maine, Maryland, Missouri, New Hampshire, New Jersey, Ohio, Oregon, Pennsylvania, Tennessee, Vermont, Virginia, West Virginia, and Wyoming. Vermont's line said mobile sports betting is live. A block above the Maine heading said availability varies by parish, and the heading for that block was not in the captured text, so the state is not named here.",
+          "The page is longer than the text this check captured. States that are missing from the list above are not a finding that DraftKings is absent. Indiana, Iowa, Kansas, Kentucky, Louisiana, Massachusetts, Michigan, New York, North Carolina, and Puerto Rico are examples of names this check did not lock to a heading, even where a state landing page or a third-party roundup may mention them. Until the full page is read in one pass, Watchdog will not publish a complete DraftKings map."
+        ]},
+        {"title": "Responsible gambling", "body": [
+          "The sportsbook responsible gaming page says players can set deposit limits, wagering limits, and time limits, that a decrease takes effect immediately, and that an increase waits until the prior limit expires. It also says self exclusion is offered on all DraftKings products. Help articles match the deposit and time tools and say the deposit cap is shared with daily fantasy and casino.",
+          "A DraftKings casino page describes a cool off from three days to four weeks, and self exclusion for one year or five years, with a note that Pennsylvania players request self exclusion through the state gaming board rather than the website. That page is the casino site. It is cited as the operator's description of those windows, not as a sportsbook screenshot.",
+          "The public line on the sportsbook help page points readers who want help to 1-800-GAMBLER. Limits vary by jurisdiction. The help articles say not every option is offered everywhere."
+        ]},
+        {"title": "Promotions", "body": [
+          "No DraftKings promotion is quoted. On 27 Oct 2026 the Arizona and Ohio landing pages carried a new-customer headline with one figure, and the Massachusetts and Connecticut pages carried a different figure. A bonus that changes by state, and that was not read as a full terms page, is not safe to reprint. Watchdog is not offering a bonus and does not have a DraftKings referral link."
+        ]},
+        {"title": "Who it may suit", "body": [
+          "A reader who is physically in a state DraftKings has actually named, and who wants a book that publishes shared deposit limits across its products, can use this file as a starting map. A reader who needs a complete state list, a measured price comparison, or a tested payout time cannot. This is not a suggestion that betting at DraftKings will win money."
+        ]},
+        {"title": "Verdict", "body": [
+          "DraftKings is a live U.S. sportsbook with a public availability page, public limit tools, and a help center. The availability reading is incomplete, the cashier was not opened, and the three categories that need measurement were not measured. The editorial score is Not scored. A commercial deal would not change that."
+        ]}
+      ],
+      "compare": {
+        "Operating status": "Live sportsbook pages opened 27 Oct 2026",
+        "States the operator named": "19 headings captured. Page not fully read. Not a complete map.",
+        "Live betting": "Live markets were on state landing pages. Speed not tested.",
+        "Mobile": "App download is part of the published product. Usability not tested.",
+        "Deposit methods": "Not documented on this check",
+        "Withdrawal methods": "Not documented on this check",
+        "Customer support": "Public help center. Wait time not tested.",
+        "Responsible gambling tools": "Deposit, wager, and time limits. Self exclusion. Cool off windows are from the casino page.",
+        "Promotion quoted": "None. State headlines did not match.",
+        "Editorial score": "Not scored"
+      },
+      "sources": [
+        {"title": "DraftKings: where online sports betting is legal", "url": "https://sportsbook.draftkings.com/help/sports-betting/where-is-sports-betting-legal"},
+        {"title": "DraftKings help: deposit limits (US)", "url": "https://help.draftkings.com/hc/en-us/articles/4405162386067-Can-I-apply-a-limit-to-the-amount-I-deposit-US"},
+        {"title": "DraftKings help: time limits on sportsbook and casino (US)", "url": "https://help.draftkings.com/hc/en-us/articles/4406378761747-How-do-I-limit-the-amount-of-time-I-spend-on-DraftKings-Sportsbook-and-Casino-US"},
+        {"title": "DraftKings Sportsbook responsible gaming", "url": "https://sportsbook.draftkings.com/help/responsible-gaming"},
+        {"title": "DraftKings casino note on cool off and self exclusion", "url": "https://casino.draftkings.com/responsible-gaming-on-draftkings"}
+      ],
+      "related": ["fanduel-review", "bet365-review", "fanatics-review"]
+    },
+    {
+      "slug": "fanduel-review",
+      "name": "FanDuel",
+      "mark": "FD",
+      "kind": "review",
+      "title": "FanDuel Sportsbook Research | Handicapper Watchdog",
+      "description": "FanDuel's own map of sportsbook states versus FanDuel Predicts, plus the limit tools and cashier rules its help center publishes. No numeric score. Checked 27 Oct 2026.",
+      "dek": "FanDuel publishes a state table that separates the sportsbook from its prediction-market product. The cashier and the limit tools are documented. The price of a bet is not.",
+      "status": "Operating. Operator state table read.",
+      "filters": ["mapped"],
+      "states_complete": true,
+      "states": ["Arizona", "Arkansas", "Colorado", "Connecticut", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maryland", "Massachusetts", "Michigan", "Missouri", "New Jersey", "New York", "North Carolina", "Ohio", "Pennsylvania", "Tennessee", "Vermont", "Virginia", "Washington, D.C.", "West Virginia", "Wyoming", "Puerto Rico"],
+      "pros": [
+        "FanDuel's own map separates sportsbook states from Predicts states, and it says the two products are regulated differently.",
+        "The help center documents deposit, loss, wager, and time limits, and says a timeout on one product applies to other eligible FanDuel products.",
+        "Withdrawal timing is posted by method, and U.S. credit card deposits are stated as not accepted on the sportsbook."
+      ],
+      "cons": [
+        "Predicts is easy to confuse with sports betting. The same app opens a different product by location.",
+        "Posted withdrawal windows are maximums from the help center, not times Watchdog clocked.",
+        "Odds, in-play quality, and support wait were not measured. No current promotion is quoted."
+      ],
+      "sections": [
+        {"title": "Overview", "body": [
+          "This page is a reading of FanDuel's legal map and help center on 27 Oct 2026. Watchdog did not open an account or place a bet. The assessment is documented research.",
+          "FanDuel's map says the company is available nationwide only in the sense that the app opens something in most places. In sportsbook states the product is a state-regulated sports bet. In most other places the map says eligible customers get FanDuel Predicts, which the same page describes as event-contract trading under the CFTC, not a sportsbook wager. The app is supposed to label which product is open. Two wallets are used, one for the sportsbook and one for Predicts."
+        ]},
+        {"title": "Betting markets", "body": [
+          "On the sportsbook side, the map does not list leagues. The help articles assume a sportsbook with wagers, bonus bets, and a bet slip. That is not a counted menu. Same-game parlays, player props, and futures were not inventoried. Market selection stays Not scored.",
+          "On the Predicts side, the map says sports event contracts are not offered in every place the app opens, and that non-sports contracts also depend on the location. A reader who wants a point spread should not assume Predicts is that product."
+        ]},
+        {"title": "Live betting", "body": [
+          "The pages opened for this check do not describe the in-play board, a cash-out control, or how live markets are suspended. Live betting stays Not scored. Absence from the legal map is not proof the feature is missing. It is proof this file does not contain it."
+        ]},
+        {"title": "Odds and pricing", "body": [
+          "No FanDuel price was saved against another book. Odds and pricing stay Not scored."
+        ]},
+        {"title": "Mobile application", "body": [
+          "FanDuel says there is one national app, on the Apple App Store and Google Play, and that an older sportsbook app becomes that app after an update. The app chooses the sportsbook or Predicts from the phone's location. Travel between a sportsbook state and a Predicts state changes what opens. That is a documented product fact. It is not a usability score. Mobile experience stays Not scored."
+        ]},
+        {"title": "Deposits and withdrawals", "body": [
+          "FanDuel's withdrawal help page, as opened on 27 Oct 2026, says most withdrawals go back to a method already used for a deposit, and that unused deposits can be returned to the original method. Posted U.S. windows on that page were: debit card up to 24 hours, PayPal or Venmo up to 24 hours, online banking 3 to 5 business days, FanDuel Prepaid Play+ up to 24 hours, cash at the counter typically within 1 hour with large withdrawals up to 48 hours, and check 7 to 10 business days. Those are the operator's ceilings, not a test.",
+          "The same help center says credit card deposits are not accepted in the United States for FanDuel Sportsbook, Casino, Racing, Predicts, or PokerStars on FanDuel. It also says some banks decline gaming charges, names Capital One among banks that may do so, and says gift cards and prepaid cards are blocked in a list of states that includes Massachusetts, Connecticut, Illinois, Indiana, North Carolina, Tennessee, Vermont, and Washington, D.C. Colorado sportsbook and racing deposits are limited to six in a rolling 24 hours. Play+ is not accepted in Connecticut or Iowa, among other places named on that page.",
+          "A method list for what is accepted, as opposed to what is refused, was not copied as a single national menu. Visa, debit, PayPal, Venmo, online banking, and Play+ appear because the withdrawal and decline articles discuss them. They are not a promise that every method is open in every sportsbook state."
+        ]},
+        {"title": "Customer support", "body": [
+          "The responsible gaming article tells a logged-in reader to open the chat bubble to reach an agent, and the help center has a contact path. Hours and wait time were not tested. Customer service stays Not scored."
+        ]},
+        {"title": "Security and licensing", "body": [
+          "FanDuel says sportsbook wagers are placed with a state-regulated sportsbook, and that Predicts is federally regulated as event contracts. The map is the company's statement of where each product is offered. Watchdog did not pull each state license from the regulator. Security and consumer protections stay Not scored. The useful consumer fact is the split itself: a person in a Predicts state is not holding a sportsbook bet, even if the icon is the same."
+        ]},
+        {"title": "Geographic availability", "body": [
+          "On the FanDuel legal map opened 27 Oct 2026, the sportsbook column covered Arizona, Arkansas, Colorado, Connecticut, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maryland, Massachusetts, Michigan, Missouri, New Jersey, New York, North Carolina, Ohio, Pennsylvania, Tennessee, Vermont, Virginia, Washington, D.C., West Virginia, Wyoming, and Puerto Rico.",
+          "The same table marked Alabama, Alaska, California, Delaware, Florida, Georgia, Hawaii, Idaho, Maine, Minnesota, Mississippi, Montana, Nebraska, Nevada, New Hampshire, New Mexico, North Dakota, Oklahoma, Oregon, Rhode Island, South Carolina, South Dakota, Texas, Utah, Washington, and Wisconsin as FanDuel Predicts rather than FanDuel Sportsbook. That is the operator's table, not a finding that sports betting is illegal in every one of those states. Other books may be licensed where FanDuel is not. Maine, New Hampshire, and Oregon are the obvious examples inside this section."
+        ]},
+        {"title": "Responsible gambling", "body": [
+          "FanDuel's help center says deposit, loss, and wager limits can be daily, weekly, or monthly, and that a maximum wager size can be set per bet slip. A daily time limit can cover sportsbook, casino, racing, and poker, and a limit set on one eligible product applies to the others. Raising or removing a daily limit waits 3 days, a weekly limit 7 days, and a monthly limit 31 days. Massachusetts, Indiana, and Louisiana are called out for a 90 day wait.",
+          "A timeout is described as a short break, up to 365 days in most jurisdictions, shorter in Kansas where the stated maximum is 89 days, and different again in Louisiana, Alberta, and Ontario. Pending sports wagers stay up during a timeout. Logging in is blocked. Withdrawals during a timeout go through support.",
+          "Once lifetime deposits pass $2,500, FanDuel requires a responsible play statement before the account can continue, then again each year, or every six months in Connecticut. Self exclusion exists and the duration depends on the location. The national line Watchdog prints on every page is 1-800-GAMBLER. FanDuel also points readers at state hotlines inside the product."
+        ]},
+        {"title": "Promotions", "body": [
+          "No FanDuel promotion is quoted. Offer pages move, and this check did not open a single current bonus with its full terms. Bonus bets are mentioned in the help center only as a limit and cashier rule: they can count toward a spending or loss limit, and playthrough can apply before winnings are withdrawable. That is not an offer."
+        ]},
+        {"title": "Who it may suit", "body": [
+          "A reader who wants a book that prints its sportsbook map separately from a prediction market, and who wants posted cashier windows and cross-product limits, can start here. A reader who wants a measured price, a counted prop menu, or a tested live bet cannot. Being in a Predicts state is not the same as being in a sportsbook state. Nothing on this page is a prediction that a bet will win."
+        ]},
+        {"title": "Verdict", "body": [
+          "FanDuel gave this check the clearest operator map in the set, plus a real cashier page and a real limit page. The categories that require a stopwatch or a line sample are still empty. The editorial score is Not scored."
+        ]}
+      ],
+      "compare": {
+        "Operating status": "Sportsbook map opened 27 Oct 2026",
+        "States the operator named": "24 states, Washington, D.C., and Puerto Rico for the sportsbook. Other places are marked Predicts.",
+        "Live betting": "Not documented on the pages checked",
+        "Mobile": "One national app. Location picks sportsbook or Predicts. Usability not tested.",
+        "Deposit methods": "Credit cards refused in the U.S. sportsbook. Other methods vary and some prepaid cards are blocked by state.",
+        "Withdrawal methods": "Posted windows for debit, PayPal, Venmo, online banking, Play+, cash at counter, and check.",
+        "Customer support": "Help center and a chat bubble are documented. Wait time not tested.",
+        "Responsible gambling tools": "Deposit, loss, wager, bet size, and time limits. Timeout. Self exclusion. $2,500 deposit acknowledgement.",
+        "Promotion quoted": "None",
+        "Editorial score": "Not scored"
+      },
+      "sources": [
+        {"title": "FanDuel: where the sportsbook and Predicts are offered", "url": "https://www.fanduel.com/legal-sports-betting-us-map"},
+        {"title": "FanDuel help: withdrawal timing", "url": "https://support.fanduel.com/s/article/Withdraw-help"},
+        {"title": "FanDuel help: why a deposit was declined", "url": "https://support.fanduel.com/s/article/Why-Was-My-Deposit-Declined-sportsbook"},
+        {"title": "FanDuel help: account limits", "url": "https://support.fanduel.com/s/article/How-do-I-set-account-limits"},
+        {"title": "FanDuel help: timeout", "url": "https://support.fanduel.com/s/article/How-do-I-put-a-Timeout-on-My-Account"},
+        {"title": "FanDuel help: responsible gaming tools", "url": "https://support.fanduel.com/s/article/What-is-FanDuel-Responsible-Gaming"},
+        {"title": "FanDuel help: lifetime deposit acknowledgement", "url": "https://support.fanduel.com/s/article/What-is-the-lifetime-deposit-acknowledgement"}
+      ],
+      "related": ["draftkings-review", "bet365-review", "fanatics-review"]
+    },
+    {
+      "slug": "bet365-review",
+      "name": "bet365",
+      "mark": "365",
+      "kind": "review",
+      "title": "bet365 Sportsbook Research | Handicapper Watchdog",
+      "description": "The 18 states and D.C. on bet365's own U.S. state page, what that page says about live betting and a current new-customer offer, and what was not measured. Checked 27 Oct 2026.",
+      "dek": "bet365 publishes a shorter U.S. map than FanDuel, with launch dates and a new-customer offer that closes 23 Nov 2026. The offer is the operator's, not ours.",
+      "status": "Operating. Operator state page read.",
+      "filters": ["mapped", "promo"],
+      "states_complete": true,
+      "states": ["Arizona", "Colorado", "Washington, D.C.", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maryland", "Michigan", "Missouri", "New Jersey", "North Carolina", "Ohio", "Pennsylvania", "Tennessee", "Virginia", "West Virginia"],
+      "pros": [
+        "The operator's state page names each live jurisdiction and a launch date, and it says the bettor must be physically there.",
+        "The same page shows a sports menu that includes NFL, college football, NBA, MLB, NHL, WNBA, tennis, UFC, and MLS, plus live betting and same game parlays in some state blurbs.",
+        "One new-customer offer was readable in full enough to summarize, with an end time."
+      ],
+      "cons": [
+        "The U.S. footprint is narrower. New York, Massachusetts, and several other legal-betting states are not on this page.",
+        "Louisiana is limited to permitted parishes. D.C. is listed at 18+ for the offer, while the other named places are 21+.",
+        "Cashier methods, support wait, license numbers, and prices were not documented on this check. The offer has heavy exclusions and is app only."
+      ],
+      "sections": [
+        {"title": "Overview", "body": [
+          "This page is a reading of bet365's U.S. states hub on 27 Oct 2026. Watchdog did not open an account or place a bet. The assessment is documented research.",
+          "bet365 says its sportsbook is live across 18 U.S. states and Washington, D.C. The page is a launch history as much as a map. New Jersey is described as the oldest U.S. market, opened 30 Aug 2019. West Virginia is described as open for sports betting and online casino from 27 Aug 2026. D.C. is described as open from 8 Sep 2026. Michigan's blurb still calls that state the 17th live state on 17 Apr 2026. That sentence is the page's launch wording. The current count is the page's own summary, 18 states and D.C., which matches the jurisdiction list printed above the blurbs."
+        ]},
+        {"title": "Betting markets", "body": [
+          "The states hub links odds pages for the NFL, the Super Bowl, college football, UFC, the NBA, MLB, the NHL, the WNBA, tennis, and MLS. Maryland's blurb mentions live wagering and same game parlays. Louisiana's blurb says the book is built for pregame and live betting. That is a published menu of leagues, not a count of props or alternate lines. Market selection stays Not scored. It is enough to say the major U.S. leagues are on the public site, along with tennis, UFC, and MLS."
+        ]},
+        {"title": "Live betting", "body": [
+          "Live betting is named in the Louisiana and Maryland blurbs, and the offer rules talk about live in-game bets, including when a push does not count toward releasing bonus bets. The feature is part of the published product. Board speed and cash out were not tested, so live betting is not given a quality score."
+        ]},
+        {"title": "Odds and pricing", "body": [
+          "The hub links to odds pages. Those prices were not saved or compared. Odds and pricing stay Not scored."
+        ]},
+        {"title": "Mobile application", "body": [
+          "The new-customer offer on this page is claimed in the bet365 app, and the page says the app is on iOS and Android. A web sportsbook exists. The offer itself is not available as a desktop claim. Usability was not tested. Mobile experience stays Not scored. The documented fact is that at least one current offer is app only."
+        ]},
+        {"title": "Deposits and withdrawals", "body": [
+          "The offer requires a deposit of at least $10 in the seven days before it is claimed. No national list of deposit brands, withdrawal methods, or payout times was opened. Deposits and withdrawals stay Not scored, apart from that minimum on this one promotion and the location rule attached to it."
+        ]},
+        {"title": "Customer support", "body": [
+          "A support channel, hours, and a wait time were not opened on this check. Customer service stays Not scored."
+        ]},
+        {"title": "Security and licensing", "body": [
+          "bet365 describes the listed states as licensed states and names some partnerships, including the Ak-Chin Indian Community in Arizona and club deals in several states. A partnership is not the license. No certificate was read from a regulator. Security and consumer protections stay Not scored. The consumer protection that is on the page is geographic: a deposit or a bet on this offer requires the person to be physically in a listed jurisdiction, and people on an exclusion list are not eligible."
+        ]},
+        {"title": "Geographic availability", "body": [
+          "The live list on bet365.com on 27 Oct 2026 was Arizona, Colorado, Washington, D.C., Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maryland, Michigan, Missouri, New Jersey, North Carolina, Ohio, Pennsylvania, Tennessee, Virginia, and West Virginia.",
+          "The offer block says Louisiana is permitted parishes only. It also says the customer has to be 21 or older, except 18 or older in D.C., and physically in one of those jurisdictions to deposit or bet under that promotion. New York is not on the list. Massachusetts, Connecticut, Vermont, Wyoming, and Puerto Rico are not on it either. A reader in those places should not treat a national ad as access."
+        ]},
+        {"title": "Responsible gambling", "body": [
+          "The pages read for this check did not inventory bet365 limit tools, cool off periods, or self exclusion steps. The offer excludes anyone on an exclusion list. That is not a description of the tool. Responsible gambling tools stay Not documented here. The sitewide line still applies: 21 or older, and 1-800-GAMBLER. D.C.'s 18+ line is the operator's age for that jurisdiction, not a Watchdog rule. This site does not tell anyone under 21 to open an account."
+        ]},
+        {"title": "Promotions", "body": [
+          "The states hub was carrying one new-customer offer on 27 Oct 2026: bet $10 and get $200 in bonus bets, win or lose. It is the operator's offer. Watchdog does not pay it and has no bet365 referral link.",
+          "The terms that were readable say a new customer has to deposit at least $10 in the prior seven days, claim the offer in the app within 30 days of registration, and have at least $10 in qualifying bets settle within 30 days of the claim. The bonus is $200 in bonus bets. The stake is not returned with bonus-bet winnings. Straight bets shorter than -500 do not count, and at least one leg of a parlay has to be -500 or longer. Bets on both sides of a market are restricted so only the largest side counts. Cashed out bets, boosts, and some pushes do not count. Bonus bets cannot be used on teasers or boosts. The offer closes to new customers at 8:59 a.m. on 23 Nov 2026. Illinois and any other state exception that is not in this block were not given a separate reading. If the app shows different terms, the app is the offer."
+        ]},
+        {"title": "Who it may suit", "body": [
+          "A reader who is in one of the 18 states or in D.C., and who wants a book that prints launch dates and a single readable new-customer offer, can use this page as a map. A reader outside that list, or a reader who wants a tested cashier and a measured price, cannot. The offer is not a reason to bet, and the bonus stake is not cash."
+        ]},
+        {"title": "Verdict", "body": [
+          "bet365 gave this check a complete operator list and one current offer with an end time. The cashier, the support desk, the license file, and the price comparison are still empty. The editorial score is Not scored."
+        ]}
+      ],
+      "compare": {
+        "Operating status": "Operator state hub opened 27 Oct 2026. 18 states and D.C.",
+        "States the operator named": "AZ, CO, DC, IL, IN, IA, KS, KY, LA, MD, MI, MO, NJ, NC, OH, PA, TN, VA, WV. Louisiana parishes only.",
+        "Live betting": "Named on the state page. Quality not tested.",
+        "Mobile": "iOS and Android app. This offer is claimed in the app. Usability not tested.",
+        "Deposit methods": "Not documented, except a $10 minimum on this offer",
+        "Withdrawal methods": "Not documented on this check",
+        "Customer support": "Not documented on this check",
+        "Responsible gambling tools": "Exclusion list is mentioned. Tools were not inventoried.",
+        "Promotion quoted": "Operator offer: bet $10, get $200 in bonus bets. Closes 8:59 a.m. 23 Nov 2026. Not a Watchdog offer.",
+        "Editorial score": "Not scored"
+      },
+      "sources": [
+        {"title": "bet365 U.S. available states", "url": "https://www.bet365.com/hub/en-us/states"}
+      ],
+      "related": ["fanduel-review", "draftkings-review", "fanatics-review"]
+    },
+    {
+      "slug": "fanatics-review",
+      "name": "Fanatics Sportsbook",
+      "mark": "FN",
+      "kind": "review",
+      "title": "Fanatics Sportsbook Research | Handicapper Watchdog",
+      "description": "Where Fanatics says its sportsbook is live, how FanCash is described, and why two welcome headlines on the same marketing site were not quoted as one offer. Checked 27 Oct 2026.",
+      "dek": "Fanatics publishes a live-state list and a rewards currency called FanCash. Missouri was listed and also marked as pre-registration, so it is not treated as confirmed.",
+      "status": "Operating. Missouri unresolved.",
+      "filters": ["mapped"],
+      "states_complete": true,
+      "states": ["Arizona", "Colorado", "Connecticut", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maryland", "Massachusetts", "Michigan", "New Jersey", "New York", "North Carolina", "Ohio", "Pennsylvania", "Tennessee", "Vermont", "Virginia", "Washington, D.C.", "West Virginia", "Wyoming"],
+      "pros": [
+        "The sportsbook homepage prints a live-state list and a 21+ line, with 1-800-GAMBLER and several state helplines.",
+        "FanCash is explained on the marketing site as a dollar-denominated rewards balance that can be used on bets and on Fanatics merchandise, not as a vague point system.",
+        "The same page says the sportsbook app includes time or wager limits and a way to pause the account."
+      ],
+      "cons": [
+        "Missouri appears on the live list and in a pre-registration module. This page does not call Missouri confirmed.",
+        "The marketing homepage showed more than one welcome headline. They were not the same offer, so none is quoted as the bonus.",
+        "Cashier methods, license numbers, odds, and support speed were not documented."
+      ],
+      "sections": [
+        {"title": "Overview", "body": [
+          "This page is a reading of Fanatics' sportsbook homepage and the Fanatics Sports and Casino marketing site on 27 Oct 2026. Watchdog did not open an account or place a bet. The assessment is documented research.",
+          "Fanatics is operating a U.S. sportsbook and, in some states, a casino. The marketing site also describes Fanatics Markets, a separate event-contract product run by Morton St. Trading Investments, LLC, which the page says is a CFTC-registered futures commission merchant. That product is not the sportsbook. The page says trading event contracts is risky and is not a bet at the sportsbook. This review is about the sportsbook."
+        ]},
+        {"title": "Betting markets", "body": [
+          "The marketing site names NFL, college football, MLB, and NBA as sports a customer can bet, and it links onward for more. A parlay tool is advertised as picking a market, setting a target, and combining players. That is a feature claim, not a counted board. Market selection stays Not scored."
+        ]},
+        {"title": "Live betting", "body": [
+          "The pages read for this check do not describe an in-play board or cash out. Live betting stays Not scored."
+        ]},
+        {"title": "Odds and pricing", "body": [
+          "No Fanatics price was saved against another book. The marketing site says FanCash earn on a bet now depends on the odds. That is a rewards rule, not a measure of whether the line is short or long. Odds and pricing stay Not scored."
+        ]},
+        {"title": "Mobile application", "body": [
+          "The pages checked push the sportsbook app for download, for promos, and for responsible gambling tools. A desktop product was not described on the pages that were read. Usability was not tested. Mobile experience stays Not scored."
+        ]},
+        {"title": "Deposits and withdrawals", "body": [
+          "No cashier page was opened. Deposit and withdrawal methods stay Not documented. FanCash is not a deposit method. The site describes it as rewards value that can be redeemed on bets, apparel, and collectibles."
+        ]},
+        {"title": "Customer support", "body": [
+          "A support channel and a wait time were not opened. Customer service stays Not scored. A responsible disclosure program for security reports is linked from the marketing site. That is a security contact, not a betting help desk."
+        ]},
+        {"title": "Security and licensing", "body": [
+          "The sportsbook homepage tells customers to use the app only where the book is live and prints state helplines, which is what a licensed U.S. book does in its footer. Individual license numbers were not copied from regulators. The Markets affiliate is a different company with a different regulator, and the page says so. Security and consumer protections stay Not scored."
+        ]},
+        {"title": "Geographic availability", "body": [
+          "The Fanatics sportsbook homepage, under the heading for states where it is live, named Arizona, Colorado, Connecticut, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maryland, Massachusetts, Michigan, New Jersey, New York, North Carolina, Ohio, Pennsylvania, Tennessee, Vermont, Virginia, Washington, D.C., West Virginia, Wyoming, and Missouri.",
+          "The same homepage also carried a Missouri pre-registration module. A marketing-site footnote for a new-customer promotion also named Missouri. Those three statements do not settle whether a Missouri customer can bet today. Missouri is left off the confirmed list on this page. Anyone in Missouri should look at the app, not at this summary.",
+          "A cloud of state names on the marketing site includes California, Texas, Florida, and other places with no statewide online sportsbook. That cloud is the combined sportsbook, casino, and markets footprint. It is not a sportsbook map, and it is not repeated here as one."
+        ]},
+        {"title": "Responsible gambling", "body": [
+          "The marketing site says the sportsbook app includes responsible gambling tools, including time or wager limits and a way to pause the account, and it links a responsible gaming page. The exact menu was not opened state by state. The footer on the pages checked says customers must be 21 or older and prints 1-800-GAMBLER, plus Maryland, Massachusetts, New York, Connecticut, North Carolina, and West Virginia lines.",
+          "Must be 21 or older. If gambling is a problem, call 1-800-GAMBLER."
+        ]},
+        {"title": "Promotions", "body": [
+          "No Fanatics bonus is quoted as a current offer. On 27 Oct 2026 the marketing homepage headline talked about up to $350 in FanCash across seven days. A different block on the same site talked about earning up to 10 percent FanCash on every bet. The legal footnote described yet another pattern: a $1 cash wager at odds of -200 or longer, once a day for 10 days, matched in FanCash up to $100 a day, expiring seven days later, for new customers in a named list of states. Those are three different sentences. Reprinting one of them as the bonus would mislead. The footnote is the operator's terms if a reader is shown that promotion in the app. Watchdog has no Fanatics referral link and is not paying FanCash."
+        ]},
+        {"title": "Who it may suit", "body": [
+          "A reader who is in a state on the confirmed list, and who cares that rewards are described as spendable value rather than as a closed points club, can start here. A reader who needs Missouri confirmed, a cashier page, or a measured line cannot. Fanatics Markets is not a substitute sportsbook in a state where the sportsbook is dark."
+        ]},
+        {"title": "Verdict", "body": [
+          "Fanatics is a live sportsbook with a public state list, a documented rewards currency, and in-app limit language. The Missouri line is unresolved, the welcome copy is not one offer, and the measured categories are empty. The editorial score is Not scored."
+        ]}
+      ],
+      "compare": {
+        "Operating status": "Sportsbook homepage live list, 27 Oct 2026. Missouri not confirmed.",
+        "States the operator named": "23 jurisdictions confirmed. Missouri left unresolved.",
+        "Live betting": "Not documented on the pages checked",
+        "Mobile": "App is the published path. Usability not tested.",
+        "Deposit methods": "Not documented on this check",
+        "Withdrawal methods": "Not documented on this check",
+        "Customer support": "Not documented on this check",
+        "Responsible gambling tools": "App offers time or wager limits and a pause. Full menu not opened.",
+        "Promotion quoted": "None. The homepage showed more than one welcome headline.",
+        "Editorial score": "Not scored"
+      },
+      "sources": [
+        {"title": "Fanatics Sportsbook homepage, live states", "url": "https://sportsbook.fanatics.com/"},
+        {"title": "Fanatics Sports and Casino marketing site", "url": "https://betfanatics.com/"},
+        {"title": "Fanatics responsible gaming page linked from the marketing site", "url": "https://sportsbook.fanatics.com/legal/pa/responsible-gaming"}
+      ],
+      "related": ["fanduel-review", "draftkings-review", "bet365-review"]
+    },
+    {
+      "slug": "betmgm-review",
+      "name": "BetMGM",
+      "mark": "MG",
+      "kind": "review",
+      "title": "BetMGM Sportsbook Research | Handicapper Watchdog",
+      "description": "What BetMGM's own pages confirmed on 27 Oct 2026, and why Watchdog is not publishing a state map or a score. Documented research only.",
+      "dek": "BetMGM is still publishing as a live U.S. sportsbook. Its public pages did not yield a complete, citable jurisdiction list on this check.",
+      "status": "Operating. Full state list not cited.",
+      "filters": ["partial"],
+      "states_complete": false,
+      "states": [],
+      "pros": [
+        "Company pages from December 2025 and September 2026 still present BetMGM as an operating mobile and retail sportsbook.",
+        "An account FAQ describes one login and one cash balance across states, with Nevada called out as not included in that consolidation.",
+        "The company says responsible gaming limits carry across the consolidated account."
+      ],
+      "cons": [
+        "No complete availability list was captured from an operator page, so this review names no state map.",
+        "A December 2025 line about 30 markets is a year old and is not reused as a current count.",
+        "Cashier methods, a counted market menu, odds, app usability, and support speed were not documented. No promotion is quoted."
+      ],
+      "sections": [
+        {"title": "Overview", "body": [
+          "This page is a reading of BetMGM pages that could be opened as text on 27 Oct 2026. Watchdog did not open an account or place a bet. The assessment is documented research.",
+          "BetMGM is not a closed brand. On 1 Dec 2025 the company posted that mobile and retail betting had launched in Missouri with Century Casinos. On 16 Sep 2026 a BetMGM page for the sportsbook at State Farm Stadium in Glendale, Arizona, was still telling readers they could bet online by downloading the app. Those are signs of a live operator. They are not a national map."
+        ]},
+        {"title": "Betting markets", "body": [
+          "The pages opened did not inventory leagues or prop menus. Market selection stays Not scored."
+        ]},
+        {"title": "Live betting", "body": [
+          "The State Farm Stadium FAQ says certain sports offer live betting. That answer sits on a retail venue page. It is not a description of the mobile in-play product, and it was not tested. Live betting stays Not scored."
+        ]},
+        {"title": "Odds and pricing", "body": [
+          "No BetMGM price was saved. Odds and pricing stay Not scored."
+        ]},
+        {"title": "Mobile application", "body": [
+          "BetMGM tells readers to use its sportsbook app on iOS and Android, and the Missouri post said the app and the desktop site were both available. An account FAQ describes one login across states. Usability was not tested. Mobile experience stays Not scored."
+        ]},
+        {"title": "Deposits and withdrawals", "body": [
+          "The account FAQ says payment methods saved on the account become available in the states where the consolidated account works, and that Nevada accounts were not part of that consolidation. It does not name the brands. Deposit and withdrawal methods stay Not documented."
+        ]},
+        {"title": "Customer support", "body": [
+          "The stadium page prints a venue phone number for that Glendale sportsbook. That is a building, not the national help desk. A national support channel and a wait time were not opened. Customer service stays Not scored."
+        ]},
+        {"title": "Security and licensing", "body": [
+          "The Missouri post describes a market-access launch with Century Casinos. The stadium page describes a retail book in Arizona. Neither is a license certificate. A May 2026 casino article on BetMGM's casino site says online casino play was available in Michigan, New Jersey, Pennsylvania, and West Virginia. That sentence is about the casino, not the sportsbook, and it is included so the two products are not merged. Security and consumer protections stay Not scored."
+        ]},
+        {"title": "Geographic availability", "body": [
+          "No state list is published on this page. The Discover BetMGM map did not return a readable jurisdiction table on this check. The 1 Dec 2025 Missouri post said BetMGM operated in 30 markets with mobile and retail offerings. That number is the company's figure on that day. It is not a 27 Oct 2026 census, and it mixes retail with mobile. Using it as today's footprint would be a guess.",
+          "What can be said is narrower. Missouri mobile and retail were announced as open on 1 Dec 2025. A Washington, D.C. article from 20 Sep 2025 said citywide mobile betting had been opened on 17 Jul 2024 after an earlier limit around Nationals Park, and that one account could be used in D.C., Maryland, and Virginia. Those are dated operator statements. They are not reconfirmed here as a 2026 license list. Arizona retail at State Farm Stadium was still being described on 16 Sep 2026."
+        ]},
+        {"title": "Responsible gambling", "body": [
+          "The account FAQ says existing responsible gaming limits, including session and deposit limits, apply in every state the consolidated account covers. It does not list every tool or every waiting period. The Missouri launch post says responsible gaming remains a focus, which is a slogan, not a tool list. Must be 21 or older. If gambling is a problem, call 1-800-GAMBLER."
+        ]},
+        {"title": "Promotions", "body": [
+          "No BetMGM promotion is quoted. The Missouri post and the stadium page both mentioned a new-customer offer. The full terms were not the thing being checked, the posts are not a single current national offer, and Watchdog does not have a BetMGM referral link. An unread bonus is not reprinted."
+        ]},
+        {"title": "Who it may suit", "body": [
+          "A reader who already knows BetMGM is licensed where they are standing, and who wants to know that the company has described a single balance outside Nevada, can use the account note. A reader who wants Watchdog to say whether BetMGM is legal in their state cannot use this page for that. Check the app or the state regulator."
+        ]},
+        {"title": "Verdict", "body": [
+          "BetMGM is being treated as a live brand because its own pages still say so. The file is too thin for a map and far too thin for a score. The editorial score is Not scored. Publishing a star here would have meant inventing one."
+        ]}
+      ],
+      "compare": {
+        "Operating status": "Operator pages in Dec 2025 and Sep 2026 present a live book. Re-read 27 Oct 2026.",
+        "States the operator named": "No complete list captured. Missouri, D.C., Maryland, Virginia, and Arizona retail are dated mentions only.",
+        "Live betting": "Retail FAQ says some sports have it. Mobile product not reviewed.",
+        "Mobile": "iOS, Android, and desktop described. Usability not tested.",
+        "Deposit methods": "Not documented. Saved methods follow the consolidated account. Nevada excluded.",
+        "Withdrawal methods": "Not documented on this check",
+        "Customer support": "A venue phone was published. National desk not tested.",
+        "Responsible gambling tools": "Session and deposit limits carry across the consolidated account. Full menu not opened.",
+        "Promotion quoted": "None",
+        "Editorial score": "Not scored"
+      },
+      "sources": [
+        {"title": "BetMGM: Missouri launch, 1 Dec 2025", "url": "https://sports.betmgm.com/en/blog/betmgm-launches-sports-betting-missouri/"},
+        {"title": "BetMGM account FAQ, consolidated balance", "url": "https://www.betmgm.com/en/p/account-faqs"},
+        {"title": "BetMGM sportsbook at State Farm Stadium, 16 Sep 2026", "url": "https://sports.betmgm.com/en/blog/betmgm-sportsbook-at-state-farm-stadium-arizona/"},
+        {"title": "BetMGM: Washington, D.C. mobile betting", "url": "https://sports.betmgm.com/en/blog/how-to-bet-online-betmgm-washington-dc-bm03/"},
+        {"title": "BetMGM casino: where online casino was described, 6 May 2026", "url": "https://casino.betmgm.com/en/blog/what-states-is-betmgm-casino-legal-in/"}
+      ],
+      "related": ["draftkings-review", "fanduel-review", "espn-bet"]
+    },
+    {
+      "slug": "espn-bet",
+      "name": "ESPN BET",
+      "mark": "EB",
+      "kind": "status",
+      "title": "What Happened to ESPN BET | Handicapper Watchdog",
+      "description": "ESPN and PENN ended the U.S. online sportsbook deal effective 1 Dec 2025. ESPN BET is not reviewed here as a live book. Checked 27 Oct 2026.",
+      "dek": "ESPN BET stopped being PENN's U.S. sportsbook brand on 1 Dec 2025. The successor name is theScore Bet. This page does not publish a current state map for that book.",
+      "status": "Not a live ESPN sportsbook.",
+      "filters": ["status"],
+      "states_complete": false,
+      "states": [],
+      "pros": [],
+      "cons": [],
+      "sections": [
+        {"title": "What changed", "body": [
+          "This is a status note, not a review of a book you can open under the ESPN BET name. Watchdog did not test an app. The record comes from ESPN and from PENN's transition article.",
+          "On 6 Nov 2025, PENN and ESPN said they had agreed to end their exclusive U.S. online sports betting agreement effective 1 Dec 2025. The joint release is on PENN's investor site. The 2023 deal had ESPN providing media and the ESPN BET trademark in exchange for cash payments of $150 million a year and warrants. The release said those payments would stop in the fourth quarter of 2025. PENN said it planned to rebrand the U.S. sportsbook to theScore Bet, targeting 1 Dec 2025, subject to regulatory approval, alongside the Missouri launch. The release said ESPN would help customers move from ESPN BET to theScore Bet, and that PENN would remain an ESPN advertising client."
+        ]},
+        {"title": "What ESPN says now", "body": [
+          "ESPN's own support article says ESPN BET rebranded to theScore Bet on 1 Dec 2025, that PENN operates that book, and that ESPN BET as a betting product is no longer the PENN deal. The same article says DraftKings is the official sportsbook and odds provider of ESPN, with a fuller product rollout described as still coming through 2026. DraftKings' role is an ESPN media deal. It does not mean every ESPN reader has a DraftKings account, and it does not mean DraftKings inherited PENN's licenses."
+        ]},
+        {"title": "What this page will not say", "body": [
+          "theScore Bet's help article for the rebrand said the change was scheduled for 1 Dec 2025, that existing accounts and logins were expected to carry over, and that no new app download was required because the ESPN BET app would become theScore Bet. It also named a target list of U.S. jurisdictions, subject to regulatory approval, and noted that theScore Bet was already live in Ontario.",
+          "That article is a transition notice. It is not a 27 Oct 2026 availability page. The target list is not repeated here, because printing it would look like a current map. Watchdog did not open a theScore Bet state page that confirms where bets are accepted today. Until that page is read, there is no theScore Bet review and no score.",
+          "Do not send an ESPN BET signup. There is no ESPN BET offer on this site, and there is no referral link."
+        ]},
+        {"title": "Verdict", "body": [
+          "If you are looking for an ESPN BET review in 2026, the researched answer is that the U.S. betting brand ended with the PENN contract on 1 Dec 2025. The company said the same accounts were meant to continue under theScore Bet. DraftKings is ESPN's odds partner, which is a different fact. Neither fact is a rating."
+        ]}
+      ],
+      "compare": {},
+      "sources": [
+        {"title": "PENN investor release, 6 Nov 2025: early end of the ESPN BET agreement", "url": "https://investors.pennentertainment.com/news-releases/news-release-details/penn-entertainment-and-espn-mutually-agree-early-termination-us"},
+        {"title": "ESPN support: what ESPN BET is", "url": "https://support.espn.com/hc/en-us/articles/19990992084116-What-is-ESPN-BET"},
+        {"title": "theScore Bet help: ESPN BET rebrand", "url": "https://thescorebethelp.zendesk.com/hc/en-us/articles/40514453048333-ESPN-BET-Rebrand-to-theScore-Bet"}
+      ],
+      "related": ["draftkings-review"]
+    }
+  ]
+}

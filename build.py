@@ -281,8 +281,10 @@ _SITEMAP = (
     ('the-board.html', 'https://handicapperwatchdog.com/the-board.html', 'daily', '0.8'),
     ('how-we-grade.html', 'https://handicapperwatchdog.com/how-we-grade.html', 'monthly', '0.6'),
     ('pricing.html', 'https://handicapperwatchdog.com/pricing.html', 'monthly', '0.5'),
+    ('about.html', 'https://handicapperwatchdog.com/about.html', 'yearly', '0.3'),
     ('privacy.html', 'https://handicapperwatchdog.com/privacy.html', 'yearly', '0.2'),
     ('terms.html', 'https://handicapperwatchdog.com/terms.html', 'yearly', '0.2'),
+    ('contact.html', 'https://handicapperwatchdog.com/contact.html', 'yearly', '0.3'),
 )
 _MARKERS = {
     'index.html': ('live', 'board', 'sports', 'reality', 'pending', 'jsonld'),
@@ -558,8 +560,15 @@ def _write_sitemap(site, lastmod):
         if not os.path.isdir(folder_dir):
             continue
         for name in sorted(os.listdir(folder_dir)):
-            if name.endswith('.html'):
-                entries.append((folder + '/' + name, 'https://handicapperwatchdog.com/' + folder + '/' + name, freq, priority))
+            path = os.path.join(folder_dir, name)
+            if name.endswith('.html') and os.path.isfile(path):
+                loc = 'https://handicapperwatchdog.com/' + folder + '/' + name
+                if folder == 'sportsbooks' and name == 'index.html':
+                    loc = 'https://handicapperwatchdog.com/sportsbooks/'
+                entries.append((folder + '/' + name, loc, freq, priority))
+            elif folder == 'sportsbooks' and os.path.isdir(path) and os.path.isfile(os.path.join(path, 'index.html')):
+                entries.append((folder + '/' + name + '/index.html',
+                                'https://handicapperwatchdog.com/sportsbooks/' + name + '/', freq, priority))
     for filename, loc, freq, priority in entries:
         path = os.path.join(site, filename.replace('/', os.sep))
         if not os.path.isfile(path) or _noindex(path):
@@ -620,7 +629,7 @@ def _nav(depth, current):
     items = (
         ('cappers.html', 'Rankings'),
         ('reviews/index.html', 'Reviews'),
-        ('sportsbooks/justbet.html', 'JustBet'),
+        ('sportsbooks/', 'Sportsbooks'),
         ('pricing.html', 'Pricing'),
     )
     return '<nav class="navlinks" id="sitenav">%s</nav>' % ''.join(
@@ -650,10 +659,15 @@ def _footer(depth):
     links = (
         ('cappers.html', 'Rankings'),
         ('reviews/index.html', 'Reviews'),
+        ('sportsbooks/', 'Sportsbooks'),
         ('sportsbooks/justbet.html', 'JustBet'),
         ('the-board.html', 'The board'),
         ('how-we-grade.html', 'How we grade'),
         ('pricing.html', 'Watchdog Pro'),
+        ('about.html', 'About'),
+        ('privacy.html', 'Privacy'),
+        ('terms.html', 'Terms'),
+        ('contact.html', 'Contact'),
     )
     return (
         '<footer class="foot"><div class="wrap"><div>'
@@ -664,10 +678,11 @@ def _footer(depth):
     ) % ''.join('<p><a href="%s%s">%s</a></p>' % (prefix, href, label) for href, label in links)
 
 
-def _document(depth, current, title, description, canonical, body):
+def _document(depth, current, title, description, canonical, body, robots=''):
     prefix = '../' * depth
     crumb = ''
-    return '''<!doctype html>
+    robots_meta = ('<meta name="robots" content="%s">\n' % _esc(robots)) if robots else ''
+    return ('''<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -675,6 +690,7 @@ def _document(depth, current, title, description, canonical, body):
 <title>%s</title>
 <meta name="description" content="%s">
 <link rel="canonical" href="%s">
+''' + robots_meta + '''
 <meta property="og:title" content="%s">
 <meta property="og:description" content="%s">
 <meta property="og:type" content="website">
@@ -697,7 +713,7 @@ def _document(depth, current, title, description, canonical, body):
 %s
 </body>
 </html>
-''' % (_esc(title), _esc(description), canonical, _esc(title), _esc(description), canonical,
+''') % (_esc(title), _esc(description), canonical, _esc(title), _esc(description), canonical,
        prefix, prefix, _header(depth, current), body, _footer(depth))
 
 
@@ -736,6 +752,7 @@ def _write_guides(site, meta, cappers):
 <section class="panel" style="margin-bottom:18px"><div class="pb">
 <h2>What the free board shows</h2>
 <p>Rank, record, units, ROI, win rate and sample size are public. The name, the handle and the posting site are not. A record next to a posting site is often enough to go find that person and follow them for free, so that pairing stays inside Watchdog Pro.</p>
+<p>A handicapper cannot pay for a higher rank, a feature, or a verified label. Rank is the graded record. Watchdog Pro is access to the name and the log, not a badge that the record is legitimate.</p>
 <p>Pending picks are not mixed into a record. %s</p>
 <p class="muted small">%s handicappers have a graded record. %s picks have been graded. Of the established records, %s of %s are up money.</p>
 <p><a href="cappers.html">Established rankings</a> · <a href="the-board.html">The board</a> · <a href="pricing.html">Watchdog Pro</a></p>
@@ -789,6 +806,7 @@ def _write_guides(site, meta, cappers):
 </tbody></table></div></section>
 <section class="panel" style="margin-bottom:28px"><div class="pb">
 <p>%s</p>
+<p>Watchdog Pro is not a verified badge. A handicapper cannot pay to be ranked higher, to be featured, or to receive a label that the record is legitimate. Pro is access to the name, the posting site, and the pick log on records this site already grades from public posts. This edition does not show a checkout button.</p>
 <p class="muted small">Prices are in US dollars. Records are past results, not predictions or a guarantee. 21+. Gambling problem? Call 1 800 GAMBLER.</p>
 <p><a href="cappers.html">Look at the free board first</a></p>
 </div></section>''' % pending)
@@ -868,16 +886,19 @@ def _write_editorial(site):
     names = {r['slug']: r['name'] for r in reviews['reviews']}
     marks = _marks(names.values())
 
+    by_slug = {r['slug']: r for r in reviews['reviews']}
+
     def related(rev):
         bits = []
         for slug in rev.get('related') or []:
             if slug not in names:
                 raise SystemExit('review %s links an unknown slug %s' % (rev['slug'], slug))
-            bits.append((slug, _esc(names[slug])))
+            label = by_slug[slug].get('verdict') or 'Not rated'
+            bits.append((slug, _esc(label), _esc(names[slug])))
         if not bits:
             return ''
         return '<section class="edsec"><h2>Related reviews</h2><div class="relrow">%s</div></section>' % ''.join(
-            '<a class="rel" href="%s.html"><span>Not rated</span><b>%s</b></a>' % pair for pair in bits)
+            '<a class="rel" href="%s.html"><span>%s</span><b>%s</b></a>' % pair for pair in bits)
 
     missing = '''<section class="edsec miss"><h2>What is still missing</h2>
 <ul><li>No Watchdog graded record is attached, so the verified record points stay empty.</li>
@@ -900,18 +921,52 @@ def _write_editorial(site):
                     {'@type': 'ListItem', 'position': 3, 'name': rev['name'], 'item': canonical},
                 ]},
                 {'@type': 'Article', 'headline': rev['title'], 'description': rev['description'],
-                 'dateModified': reviews.get('checked_iso') or '',
+                 'dateModified': rev.get('checked_iso') or reviews.get('checked_iso') or '',
                  'author': {'@type': 'Organization', 'name': 'Handicapper Watchdog'},
                  'publisher': {'@type': 'Organization', 'name': 'Handicapper Watchdog'},
                  'mainEntityOfPage': canonical},
             ],
         }
+        verdict = rev.get('verdict') or 'Not rated'
+        badge_class = 'scam' if verdict == 'Scam' else 'unrated'
         cards.append(
             '<a class="rev" data-name="%s" href="%s.html">'
-            '<span class="badge unrated">Not rated</span><span class="muted small">%s</span><b>%s</b>'
+            '<span class="badge %s">%s</span><span class="muted small">%s</span><b>%s</b>'
             '<span class="dekline">%s</span></a>' % (
-                _esc(rev['name'].lower()), rev['slug'],
+                _esc(rev['name'].lower()), rev['slug'], badge_class, _esc(verdict),
                 _esc(rev['kind']), _esc(rev['name']), _esc(rev['dek'])))
+        if verdict == 'Scam':
+            plate = (
+                '<aside class="plate scam"><div class="seal" aria-hidden="true"><b>!</b><span>Scam</span></div>'
+                '<p class="plate-k">Watchdog verdict</p><p class="plate-v">Scam</p>'
+                '<p class="muted small">Checked %s. A verdict on this directory. Not a star rating.</p></aside>'
+            ) % _esc(rev.get('checked') or reviews['checked'])
+            note = rev.get('disclosure') or reviews['unrated_note']
+            tail = (
+                '<section class="panel edcard essay" id="corrections"><h2>Corrections</h2><div class="prose">'
+                '<p>Three kinds of sentence appear on this page. A documented sentence is what a CapperTek page says, and the page is named. An observed sentence is a count or a label from a page that opened, such as the default leaderboard span. An allegation is another person\'s post. An allegation is not a finding, and a dollar figure or an owner story from those posts is not repeated as fact.</p>'
+                '<p>The word scam is Watchdog\'s reading of the documented pages. It is not a statement that a named person committed a crime, and it is not a finding about one seller in the directory.</p>'
+                '<p>If a number, a date, or a description of a CapperTek page is wrong, send the correction through the <a href="../contact.html">contact page</a> and point at the CapperTek page that shows otherwise. The article should change when the page it describes has changed.</p>'
+                '</div></section>'
+            )
+            good_h, bad_h = 'What their pages admit', 'Why it is a scam'
+        else:
+            plate = (
+                '<aside class="plate"><div class="seal" aria-hidden="true"><b>NR</b><span>Not rated</span></div>'
+                '<p class="plate-k">Watchdog status</p><p class="plate-v">Not rated</p>'
+                '<p class="muted small">Checked %s. The four items below are why this page has no number.</p>'
+                '<ul class="checks"><li><span>Graded record</span><b>Not in the file</b></li>'
+                '<li><span>Advertised record</span><b>Quoted below</b></li>'
+                '<li><span>Opened price</span><b>Pricing section</b></li>'
+                '<li><span>Buyer sample</span><b>Not in the file</b></li></ul></aside>'
+            ) % _esc(reviews['checked'])
+            note = reviews['unrated_note']
+            tail = missing
+            good_h, bad_h = 'Strengths', 'Weaknesses'
+        essay = ''.join(
+            '<section class="panel edcard essay"><h2>%s</h2><div class="prose">%s</div></section>' % (
+                _esc(sec['h']), paras(sec['p']))
+            for sec in (rev.get('sections') or []))
         body = '''<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><a href="index.html">Reviews</a><span aria-hidden="true">/</span><span aria-current="page">%s</span></nav>
 <header class="edhero">
 <div>
@@ -919,29 +974,19 @@ def _write_editorial(site):
 <h1>%s</h1>
 <p class="lede">%s</p>
 </div>
-<aside class="plate">
-<div class="seal" aria-hidden="true"><b>NR</b><span>Not rated</span></div>
-<p class="plate-k">Watchdog status</p>
-<p class="plate-v">Not rated</p>
-<p class="muted small">Checked %s. The four items below are why this page has no number.</p>
-<ul class="checks">
-<li><span>Graded record</span><b>Not in the file</b></li>
-<li><span>Advertised record</span><b>Quoted below</b></li>
-<li><span>Opened price</span><b>Pricing section</b></li>
-<li><span>Buyer sample</span><b>Not in the file</b></li>
-</ul>
-</aside>
+%s
 </header>
 <div class="disclosure"><b>How to read this page</b><p class="muted">%s</p></div>
 <div class="edstack">
+%s
 <section class="panel edcard"><h2>What they advertise</h2><div class="prose">%s</div></section>
 <section class="panel edcard"><h2>What Watchdog has graded</h2><div class="prose"><p>%s</p></div></section>
 <section class="panel edcard"><h2>Pricing</h2><div class="prose">%s</div></section>
 <section class="panel edcard"><h2>Transparency</h2><div class="prose"><p>%s</p></div></section>
 <section class="panel edcard"><h2>Customer experience</h2><div class="prose"><p>%s</p></div></section>
 <div class="split">
-<section class="panel edsec good"><h2>Strengths</h2><div class="prose">%s</div></section>
-<section class="panel edsec bad"><h2>Weaknesses</h2><div class="prose">%s</div></section>
+<section class="panel edsec good"><h2>%s</h2><div class="prose">%s</div></section>
+<section class="panel edsec bad"><h2>%s</h2><div class="prose">%s</div></section>
 </div>
 %s
 %s
@@ -951,11 +996,11 @@ def _write_editorial(site):
 </div></section>
 <script type="application/ld+json">%s</script>''' % (
             _esc(rev['name']), _esc(rev['kind']), _esc(rev['name']), _esc(rev['dek']),
-            _esc(reviews['checked']), _esc(reviews['unrated_note']),
+            plate, note, essay,
             paras(rev['advertised']), _esc(rev['watchdog']), paras(rev['pricing']),
             _esc(rev['transparency']), _esc(rev['customers']),
-            paras(rev['strengths']), paras(rev['weaknesses']),
-            related(rev), missing,
+            good_h, paras(rev['strengths']), bad_h, paras(rev['weaknesses']),
+            related(rev), tail,
             _esc(reviews['checked']), sources(rev['sources']),
             json.dumps(ld, ensure_ascii=True).replace('<', '\\u003c'))
         html = _document(1, 'reviews/index.html', rev['title'], rev['description'],
@@ -971,7 +1016,7 @@ def _write_editorial(site):
 <div class="pagehead"><div><div class="eyebrow">Ratings</div><h1>The 100 point Watchdog rating</h1>
 <p class="muted">%s</p></div></div>
 <section class="panel" style="margin-bottom:18px"><div class="tw"><table class="mini"><thead><tr><th class="l">Part</th><th>Points</th><th class="l">What has to be in the file first</th></tr></thead><tbody>%s</tbody></table></div></section>
-<section class="panel" style="margin-bottom:28px"><div class="pb prose"><p>%s</p><p>Sportsbook pages are not given this score. A book is not a handicapper, and a commercial relationship cannot buy a rating.</p></div></section>''' % (
+<section class="panel" style="margin-bottom:28px"><div class="pb prose"><p>%s</p><p>Sportsbook pages are not given this score. A book is not a handicapper. The sportsbook file has its own method, and a commercial relationship cannot buy a rating. <a href="../sportsbooks/how-we-score/">How a sportsbook score would be built</a>.</p></div></section>''' % (
         _esc(reviews['unrated_note']), rubric_rows, _esc(reviews['independence']))
     rate_html = _document(1, 'reviews/how-we-rate.html',
                           'How Handicapper Watchdog Rates a Service',
@@ -998,7 +1043,7 @@ def _write_editorial(site):
 <div class="disclosure"><b>No score on this edition</b><p class="muted">%s</p></div>
 <div class="fld revsearch"><label for="revq">Search reviews</label><input id="revq" placeholder="Search a name or a site" aria-label="Search reviews"></div>
 <div class="revgrid" id="revgrid">%s</div>
-<p class="muted small revfoot">Ten public names. The free rankings stay anonymous.</p>
+<p class="muted small revfoot">Ten public names. The free rankings stay anonymous. <a href="../sportsbooks/">Sportsbook research</a> is a separate section.</p>
 <script>
 document.getElementById('revq').addEventListener('input', function () {
   var q = this.value.trim().toLowerCase();
@@ -1070,16 +1115,18 @@ document.getElementById('revq').addEventListener('input', function () {
 %s
 </section>
 <section class="panel srcpanel"><div class="pb prose"><h2>Sources</h2>%s
+<p><a href="index.html">Sportsbook research</a> is the wider section. This JustBet page is unchanged: the registration button stays off.</p>
 <p class="muted small">This page is not a handicapper rating and it is not legal advice. 21+. Gambling problem? Call 1 800 GAMBLER.</p></div></section>''' % (
         _esc(book['dek']), cta, _esc(cta_note), _esc(book['disclosure']), paras(book['overview']), feature_rows, offer_rows,
         paras(book['pros']), paras(book['cons']), _esc(book['jurisdictions']),
         ''.join('<details class="faq"><summary>%s</summary><p>%s</p></details>' % (_esc(q['q']), _esc(q['a'])) for q in book['faq']),
         _esc(book['responsible']), _esc(cta_note), cta, sources(book['sources']))
-    book_html = _document(1, 'sportsbooks/justbet.html', book['title'], book['description'],
+    book_html = _document(1, 'sportsbooks/', book['title'], book['description'],
                           'https://handicapperwatchdog.com/sportsbooks/justbet.html', book_body)
     written.append(book_html)
     with open(os.path.join(out_books, 'justbet.html'), 'w', encoding='utf-8', newline='\n') as f:
         f.write(book_html)
+    _write_sportsbook_pages(site, written)
     blob = ''.join(written)
     justbet_join = 'https://www.justbet.co/?aff=BETLEGEND'
     if book.get('affiliate_enabled'):
@@ -1094,6 +1141,309 @@ document.getElementById('revq').addEventListener('input', function () {
         raise SystemExit('affiliate tracking URL leaked into the editorial pages')
     if 'aggregateRating' in blob or 'ratingValue' in blob:
         raise SystemExit('a review page carried a numeric rating')
+
+
+def _write_sportsbook_pages(site, written):
+    """Sportsbook research pages. Facts come from content/sportsbooks.json. No numeric score."""
+    import pathlib
+    path = pathlib.Path(HERE) / 'content' / 'sportsbooks.json'
+    if not path.is_file():
+        return
+    doc = json.loads(path.read_text(encoding='utf-8'))
+    out = os.path.join(site, 'sportsbooks')
+    os.makedirs(out, exist_ok=True)
+    books = doc['books']
+    by_slug = {b['slug']: b for b in books}
+    checked = doc['checked']
+
+    def paras(items):
+        return ''.join('<p>%s</p>' % _esc(x) for x in items or [])
+
+    def source_list(rows):
+        return '<ul class="src">%s</ul>' % ''.join(
+            '<li><a href="%s" rel="noopener noreferrer">%s</a></li>' % (_esc(r['url']), _esc(r['title']))
+            for r in rows)
+
+    def schema(title, description, canonical, crumb):
+        data = {
+            '@context': 'https://schema.org',
+            '@graph': [
+                {'@type': 'BreadcrumbList', 'itemListElement': [
+                    {'@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://handicapperwatchdog.com/'},
+                    {'@type': 'ListItem', 'position': 2, 'name': 'Sportsbooks', 'item': 'https://handicapperwatchdog.com/sportsbooks/'},
+                    {'@type': 'ListItem', 'position': 3, 'name': crumb, 'item': canonical},
+                ]},
+                {'@type': 'Article', 'headline': title, 'description': description,
+                 'dateModified': doc.get('checked_iso') or '',
+                 'author': {'@type': 'Organization', 'name': 'Handicapper Watchdog'},
+                 'publisher': {'@type': 'Organization', 'name': 'Handicapper Watchdog'},
+                 'mainEntityOfPage': canonical},
+            ],
+        }
+        return '<script type="application/ld+json">%s</script>' % json.dumps(data, ensure_ascii=True).replace('<', '\\u003c')
+
+    def save(folder, title, description, body):
+        """folder is empty for /sportsbooks/, or a slug for /sportsbooks/<slug>/index.html."""
+        if folder:
+            canonical = 'https://handicapperwatchdog.com/sportsbooks/%s/' % folder
+            dest_dir = os.path.join(out, folder)
+            os.makedirs(dest_dir, exist_ok=True)
+            dest = os.path.join(dest_dir, 'index.html')
+            depth = 2
+        else:
+            canonical = 'https://handicapperwatchdog.com/sportsbooks/'
+            dest = os.path.join(out, 'index.html')
+            depth = 1
+        html = _document(depth, 'sportsbooks/', title, description, canonical, body)
+        written.append(html)
+        with open(dest, 'w', encoding='utf-8', newline='\n') as f:
+            f.write(html)
+
+    weight_rows = ''.join(
+        '<tr><td class="l">%s</td><td>%d%%</td><td class="l">%s</td></tr>' % (_esc(w['label']), w['weight'], _esc(w['needs']))
+        for w in doc['weights'])
+    for book in books:
+        if book['kind'] == 'review' and sum(w['weight'] for w in doc['weights']) != 100:
+            raise SystemExit('sportsbook weights must add to 100')
+        sections = ''.join(
+            '<section class="edsec"><h2>%s</h2><div class="prose">%s</div></section>' % (_esc(sec['title']), paras(sec['body']))
+            for sec in book['sections'])
+        split = ''
+        if book.get('pros') or book.get('cons'):
+            split = (
+                '<div class="split"><section class="panel edsec good"><h2>What the record supports</h2><div class="prose">%s</div></section>'
+                '<section class="panel edsec bad"><h2>What it does not</h2><div class="prose">%s</div></section></div>'
+            ) % (paras(book.get('pros')), paras(book.get('cons')))
+        rels = []
+        for slug in book.get('related') or []:
+            other = by_slug.get(slug)
+            if not other:
+                raise SystemExit('sportsbook %s links an unknown slug %s' % (book['slug'], slug))
+            label = 'Status' if other['kind'] == 'status' else 'Not scored'
+            rels.append('<a class="rel" href="../%s/"><span>%s</span><b>%s</b></a>' % (slug, label, _esc(other['name'])))
+        related = '<section class="edsec"><h2>Related</h2><div class="relrow">%s</div></section>' % ''.join(rels) if rels else ''
+        plate = 'Not scored' if book['kind'] == 'review' else 'Not a live book'
+        canonical = 'https://handicapperwatchdog.com/sportsbooks/%s/' % book['slug']
+        body = (
+            '<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">Home</a><span aria-hidden="true">/</span>'
+            '<a href="../">Sportsbooks</a><span aria-hidden="true">/</span><span aria-current="page">%s</span></nav>'
+            '<header class="edhero"><div><div class="eyebrow">%s</div><h1>%s</h1><p class="lede">%s</p>'
+            '<div class="trustrow"><span>Checked %s</span><span>21+</span><span>No signup link</span><span>Documented research</span></div></div>'
+            '<aside class="plate">%s<p class="plate-k">Editorial score</p><p class="plate-v">%s</p>'
+            '<p class="muted small">%s <a href="../how-we-score/">How a score would be built</a>.</p></aside></header>'
+            '<div class="disclosure"><b>Independent research</b><p class="muted">No operator paid for this page. There is no referral link. '
+            'The reading is from the sources at the bottom, checked %s. It is not a hands-on test, and a bet is not a plan to make money.</p></div>'
+            '%s%s'
+            '<section class="panel srcpanel"><div class="pb prose"><h2>Sources checked %s</h2>%s'
+            '<p class="muted small">Operator names belong to the operators. Watchdog did not copy logo artwork. '
+            '<a href="../">All sportsbook research</a> · <a href="../comparison/">Compare</a> · <a href="../how-we-score/">Scoring method</a> · '
+            '<a href="../justbet.html">JustBet</a>. 21+. Gambling problem? Call 1 800 GAMBLER.</p></div></section>%s%s'
+        ) % (
+            _esc(book['name']),
+            'Status' if book['kind'] == 'status' else 'Sportsbook research',
+            _esc(book['name']), _esc(book['dek']), _esc(checked), _mark(book['mark']), plate, _esc(book['status']),
+            _esc(checked), split, sections, _esc(checked), source_list(book['sources']), related,
+            schema(book['title'], book['description'], canonical, book['name']))
+        save(book['slug'], book['title'], book['description'], body)
+
+    method = (
+        '<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">Home</a><span aria-hidden="true">/</span>'
+        '<a href="../">Sportsbooks</a><span aria-hidden="true">/</span><span aria-current="page">How we score</span></nav>'
+        '<div class="pagehead"><div><div class="eyebrow">Method</div><h1>How a sportsbook score would be built</h1>'
+        '<p class="muted">The weights below are the proposed split. They are not scores. A category stays Not scored until the file contains the evidence in the last column. Checked %s.</p></div></div>'
+        '<section class="panel" style="margin-bottom:18px"><div class="tw"><table class="cmp"><thead><tr><th class="l">Category</th><th>Weight</th><th class="l">Evidence required before any number</th></tr></thead><tbody>%s</tbody></table></div></section>'
+        '<section class="panel" style="margin-bottom:18px"><div class="pb prose">'
+        '<p>Odds and pricing are a quarter of the weight, and that category was not measured for any book in this edition. Mobile usability and support speed were not measured either. An overall number would hide those blanks, so no overall number is published.</p>'
+        '<p>A documented fact is not converted into points. A license mentioned by the operator, a state on the operator\'s own list, or a help-center article about limits can be reported as a finding. It does not become an 8 out of 10.</p>'
+        '<p>Hands-on testing is labeled as hands-on testing. This edition has none. If a page says the reading is documented research, that is the whole test.</p>'
+        '<p>No operator pays for a higher score. A later sponsorship would be labeled on the page and would not move these weights. There is no referral link in this edition. Promotions are quoted only when the operator\'s own terms were read on the check date, and they are the operator\'s offer, not Watchdog\'s.</p>'
+        '<p>This is separate from the <a href="../reviews/how-we-rate.html">handicapper rating</a>. A book is not a handicapper. The handicapper pages stay unrated for their own reasons.</p>'
+        '<p><a href="../">Sportsbook research</a> · <a href="../comparison/">Compare the books</a></p>'
+        '</div></section>'
+    ) % (_esc(checked), weight_rows)
+    save('how-we-score',
+         'How Handicapper Watchdog Scores a Sportsbook',
+         'The proposed sportsbook weights, and why this edition publishes findings instead of an overall number.',
+         method)
+
+    reviews = [b for b in books if b['kind'] == 'review']
+    head = '<tr><th class="l">Factor</th>' + ''.join('<th>%s</th>' % _esc(b['name']) for b in reviews) + '</tr>'
+    body_rows = []
+    for key in doc['compare_keys']:
+        cells = ''.join('<td>%s</td>' % _esc((b.get('compare') or {}).get(key) or 'Not documented') for b in reviews)
+        body_rows.append('<tr><th class="l">%s</th>%s</tr>' % (_esc(key), cells))
+    picks = ''.join(
+        '<label><input type="checkbox" checked data-col="%d"> %s</label>' % (i, _esc(b['name']))
+        for i, b in enumerate(reviews, 1))
+    compare = (
+        '<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">Home</a><span aria-hidden="true">/</span>'
+        '<a href="../">Sportsbooks</a><span aria-hidden="true">/</span><span aria-current="page">Compare</span></nav>'
+        '<div class="pagehead"><div><div class="eyebrow">Comparison</div><h1>Side by side, from the same check</h1>'
+        '<p class="muted">Every cell is a finding from the operator pages cited on the review. Last checked %s. Uncheck a book to hide its column. The full table is in the page either way.</p></div></div>'
+        '<div class="cmpicks" id="cmpicks">%s</div>'
+        '<section class="panel"><div class="tw"><table class="cmp" id="cmptable"><thead>%s</thead><tbody>%s</tbody></table></div></section>'
+        '<p class="muted small" style="margin:14px 0 28px">No overall score is shown because the weighted categories that need a measurement are still Not scored. '
+        '<a href="../how-we-score/">The method</a> · <a href="../">Directory</a>. 21+. Gambling problem? Call 1 800 GAMBLER.</p>'
+        '<script>'
+        'document.querySelectorAll("#cmpicks input").forEach(function (box) {'
+        '  box.addEventListener("change", function () {'
+        '    var col = box.getAttribute("data-col");'
+        '    document.querySelectorAll("#cmptable tr").forEach(function (row) {'
+        '      var cell = row.children[Number(col)];'
+        '      if (cell) cell.hidden = !box.checked;'
+        '    });'
+        '  });'
+        '});'
+        '</script>'
+    ) % (_esc(checked), picks, head, ''.join(body_rows))
+    save('comparison',
+         'Sportsbook Comparison | Handicapper Watchdog',
+         'Compare DraftKings, FanDuel, bet365, Fanatics, and BetMGM on the facts Watchdog could verify. Last checked 27 Oct 2026. No numeric scores.',
+         compare)
+
+    cards = []
+    for book in books:
+        states = '|'.join(book.get('states') or [])
+        promo = '1' if 'promo' in (book.get('filters') or []) else '0'
+        partial = '0' if book.get('states_complete') else '1'
+        kind = book['kind']
+        cards.append(
+            '<a class="sbcard panel" href="%s/" data-kind="%s" data-partial="%s" data-promo="%s" data-states="%s" data-name="%s">'
+            '%s<div><b>%s</b><span class="muted small">%s</span><p>%s</p></div></a>' % (
+                book['slug'], kind, partial, promo, _esc(states), _esc(book['name'].lower()),
+                _mark(book['mark']), _esc(book['name']), _esc(book['status']), _esc(book['dek'])))
+    state_names = []
+    seen = set()
+    for book in books:
+        for name in book.get('states') or []:
+            if name not in seen:
+                seen.add(name)
+                state_names.append(name)
+    options = ''.join('<option>%s</option>' % _esc(n) for n in sorted(state_names))
+    withheld = ''.join('<li><b>%s.</b> %s</li>' % (_esc(w['name']), _esc(w['reason'])) for w in doc['withheld'])
+    index = (
+        '<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span>'
+        '<span aria-current="page">Sportsbooks</span></nav>'
+        '<header class="edhero"><div><div class="eyebrow">Sportsbook research</div><h1>What the books actually publish</h1>'
+        '<p class="lede">%s</p>'
+        '<div class="trustrow"><span>Checked %s</span><span>No scores</span><span>No signup links</span><span>21+</span></div></div>'
+        '<aside class="plate">%s<p class="plate-k">This edition</p><p class="plate-v">Not scored</p>'
+        '<p class="muted small"><a href="how-we-score/">Why there is no overall number</a></p></aside></header>'
+        '<div class="disclosure"><b>Editorial, not an ad</b><p class="muted">These pages are research. They are not placements. A later paid placement would be labeled, and it would not change a score. There are no scores to change. '
+        'JustBet remains a separate page, and its registration button is still off.</p></div>'
+        '<div class="sbfilters" role="group" aria-label="Filter sportsbooks">'
+        '<button type="button" class="on" data-filter="all">All</button>'
+        '<button type="button" data-filter="mapped">Operator list read</button>'
+        '<button type="button" data-filter="partial">List incomplete</button>'
+        '<button type="button" data-filter="promo">Promotion quoted</button>'
+        '<button type="button" data-filter="status">Status notes</button>'
+        '</div>'
+        '<div class="fld" style="max-width:320px;margin:0 0 14px"><label for="sbstate">State on a verified list</label>'
+        '<select id="sbstate"><option value="">Any state</option>%s</select>'
+        '<p class="muted small" id="sbstatehelp">A partial list stays on screen. Missing from that list is not a finding that the book is absent.</p></div>'
+        '<div class="sbgrid" id="sbgrid">%s</div>'
+        '<section class="panel" style="margin-bottom:18px"><div class="pb prose"><h2>Checked, and not given a review</h2><ul>%s</ul>'
+        '<p><a href="comparison/">Compare the five reviews</a> · <a href="how-we-score/">Scoring method</a> · <a href="justbet.html">JustBet</a> · <a href="../reviews/index.html">Handicapper reviews</a></p>'
+        '</div></section>'
+        '<script>'
+        '(function () {'
+        '  var filter = "all";'
+        '  var state = "";'
+        '  function apply() {'
+        '    document.querySelectorAll("#sbgrid .sbcard").forEach(function (card) {'
+        '      var kind = card.getAttribute("data-kind");'
+        '      var partial = card.getAttribute("data-partial") === "1";'
+        '      var promo = card.getAttribute("data-promo") === "1";'
+        '      var states = (card.getAttribute("data-states") || "").split("|");'
+        '      var ok = filter === "all"'
+        '        || (filter === "mapped" && kind === "review" && !partial)'
+        '        || (filter === "partial" && partial && kind === "review")'
+        '        || (filter === "promo" && promo)'
+        '        || (filter === "status" && kind === "status");'
+        '      if (state && kind === "review" && !partial && states.indexOf(state) < 0) ok = false;'
+        '      card.hidden = !ok;'
+        '    });'
+        '  }'
+        '  document.querySelectorAll(".sbfilters button").forEach(function (btn) {'
+        '    btn.addEventListener("click", function () {'
+        '      filter = btn.getAttribute("data-filter");'
+        '      document.querySelectorAll(".sbfilters button").forEach(function (b) { b.classList.toggle("on", b === btn); b.setAttribute("aria-pressed", b === btn ? "true" : "false"); });'
+        '      apply();'
+        '    });'
+        '  });'
+        '  document.getElementById("sbstate").addEventListener("change", function () { state = this.value; apply(); });'
+        '})();'
+        '</script>'
+    ) % (_esc(doc['intro']), _esc(checked), _mark('SB'), options, ''.join(cards), withheld)
+    save('',
+         'Sportsbook Research and Comparison | Handicapper Watchdog',
+         'Original sportsbook research for DraftKings, FanDuel, bet365, Fanatics, and BetMGM. Findings only where a source was checked. No numeric scores and no signup links.',
+         index)
+
+
+def _write_legal(site):
+    """About, privacy, terms, and contact. Indexable. Profiles stay noindex."""
+    robots = ''
+    pages = (
+        ('about.html',
+         'About Handicapper Watchdog',
+         'Handicapper Watchdog grades public picks. It does not sell picks, and it does not sell a verified badge.',
+         '''<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><span aria-current="page">About</span></nav>
+<div class="pagehead"><div><div class="eyebrow">About</div><h1>A record site, not a tout directory</h1>
+<p class="muted">Handicapper Watchdog grades picks that were posted in public before the game started. A handicapper does not send a record, and a handicapper cannot pay for a rank.</p></div></div>
+<section class="panel" style="margin-bottom:18px"><div class="pb prose">
+<h2>What this site is</h2>
+<p>The free board shows rank, record, units, ROI, win rate, and sample size. The name, the handle, and the posting site stay off that board. Watchdog Pro, at the price on the pricing page, is access to those names and to the pick log. It is not a badge that a record is legitimate, and it is not a placement a seller can buy.</p>
+<p>Reviews quote what a service publishes about itself. A numeric score stays off until a full evidence file exists. A text verdict is used only when the service's own pages support it, and the page says which sentences are documented, which were observed, and which are someone else's allegation.</p>
+<p>Sportsbook pages are research notes. They are not signup offers. JustBet registration on this site stays off.</p>
+<h2>What this site is not</h2>
+<p>Handicapper Watchdog is not a sportsbook and does not take bets. It does not sell picks. It does not sell a green check, a featured row, or protection from a bad review. Past results are not predictions. 21+.</p>
+<p><a href="how-we-grade.html">How a record is graded</a> · <a href="pricing.html">Watchdog Pro</a> · <a href="contact.html">Corrections</a></p>
+</div></section>'''),
+        ('privacy.html',
+         'Privacy Policy | Handicapper Watchdog',
+         'What Handicapper Watchdog collects on this static site, including the analytics tag, and what it does not collect.',
+         '''<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><span aria-current="page">Privacy</span></nav>
+<div class="pagehead"><div><div class="eyebrow">Privacy</div><h1>Privacy policy</h1>
+<p class="muted">This edition is a static site. There is no account form on these pages.</p></div></div>
+<section class="panel" style="margin-bottom:18px"><div class="pb prose">
+<p>Pages are files. The site does not ask for a name, an email, or a payment card on the pages in this edition. Watchdog Pro prices are published. A checkout button is not on this edition, so no card data is collected here.</p>
+<p>Each page loads Google Analytics with the measurement id G-SC607ZYK1F. Google can receive the usual analytics fields for that tag, including the page address, a rough location, and the device. That tag is how visits are counted. Google's own policy is at <a href="https://policies.google.com/privacy" rel="noopener noreferrer">policies.google.com/privacy</a>.</p>
+<p>The public domain registration uses a privacy service. It does not list a personal name. This policy does not publish a home address.</p>
+<p>Handicapper Watchdog does not sell personal information. There is no email list on this edition.</p>
+<p>Questions and corrections go through the <a href="contact.html">contact page</a>. A public inbox is not listed yet.</p>
+<p class="muted small">Domain registration checked 28 Oct 2026. 21+.</p>
+</div></section>'''),
+        ('terms.html',
+         'Terms of Use | Handicapper Watchdog',
+         'Handicapper Watchdog publishes past results. It is not a sportsbook, not betting advice, and not a guarantee.',
+         '''<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><span aria-current="page">Terms</span></nav>
+<div class="pagehead"><div><div class="eyebrow">Terms</div><h1>Terms of use</h1>
+<p class="muted">Records on this site are past results. They are not a promise about the next game.</p></div></div>
+<section class="panel" style="margin-bottom:18px"><div class="pb prose">
+<p>You may read the public pages. You may not scrape them in a way that knocks the site over, and you may not present a Watchdog record as your own grade.</p>
+<p>Handicapper Watchdog is not a sportsbook, not a pick seller, and not a financial adviser. Nothing on the site is an instruction to bet. Gambling has a cost. 21+. If gambling is a problem, call 1 800 GAMBLER.</p>
+<p>Watchdog Pro prices are the prices on the pricing page. This edition does not show a checkout button, so this page does not invent a refund rule for a payment the site is not taking.</p>
+<p>Reviews are opinions grounded in the sources named on each page. A correction path is on the <a href="contact.html">contact page</a>.</p>
+</div></section>'''),
+        ('contact.html',
+         'Contact and Corrections | Handicapper Watchdog',
+         'How to send a correction to Handicapper Watchdog. A public inbox is not listed on this edition.',
+         '''<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><span aria-current="page">Contact</span></nav>
+<div class="pagehead"><div><div class="eyebrow">Contact</div><h1>Corrections</h1>
+<p class="muted">A public email address is not on this edition. One will be added when it is a site address, not a personal mailbox.</p></div></div>
+<section class="panel" style="margin-bottom:18px"><div class="pb prose">
+<p>If a page states a number, a date, or a description of someone else's site, and that description is wrong, the correction needs three things: the Watchdog page, the sentence, and the source page that shows otherwise.</p>
+<p>An allegation from a forum stays labeled as that person's post. A correction can ask for a clearer label. It does not turn the post into a finding, and it does not turn a denial into a finding either, unless a document is attached.</p>
+<p>The CapperTek page separates documented sentences, observed sentences, and allegations. That split is the standard for the other reviews as well.</p>
+<p>There is no form on this page that sends a message. Publishing an inbox is waiting on an address. Until then, this page is the corrections policy, and the article should not pretend a reader can already reach a desk.</p>
+<p><a href="reviews/cappertek.html#corrections">CapperTek corrections</a> · <a href="about.html">About</a> · <a href="privacy.html">Privacy</a></p>
+</div></section>'''),
+    )
+    for name, title, desc, body in pages:
+        html = _document(0, name, title, desc, 'https://handicapperwatchdog.com/' + name, body, robots)
+        with open(os.path.join(site, name), 'w', encoding='utf-8', newline='\n') as f:
+            f.write(html)
 
 
 def stamp_public_pages(site):
@@ -1133,6 +1483,7 @@ def stamp_public_pages(site):
     _write_guides(site, meta, cappers)
     _write_sport_pages(site, cappers)
     _write_editorial(site)
+    _write_legal(site)
     _write_sitemap(site, lastmod)
 
 
