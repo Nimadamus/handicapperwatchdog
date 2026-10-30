@@ -1,0 +1,170 @@
+{
+  "updated": "2026-10-29",
+  "hub": {
+    "title": "Sports Betting Guides: Handicappers, Records and the Math | Handicapper Watchdog",
+    "description": "Plain guides to judging a sports handicapper: break even win rates, units and ROI, sample size, closing line value, verified records and the red flags of a scam tout.",
+    "h1": "Judge a handicapper like an auditor",
+    "dek": "Short guides built on the math of betting and on {{graded}} graded public picks. No hype, no locks."
+  },
+  "articles": [
+    {
+      "slug": "are-sports-handicappers-legit",
+      "title": "Are Sports Handicappers Legit? What {{graded}} Graded Picks Show",
+      "description": "We graded {{graded}} public picks from {{tracked}} handicappers. Here is how many are actually up money, and how to tell the real ones from the noise.",
+      "eyebrow": "The evidence",
+      "h1": "Are sports handicappers legit?",
+      "dek": "It depends on the handicapper. Here is what a large sample of public, timestamped picks says, and how to tell the difference before you pay anyone.",
+      "answer": "Some do, over a real sample. Of the {{est}} handicappers on this site with 100 or more graded picks, {{up}} are up money ({{est_pct}}%). The median ROI on those established records is {{med_est}}. A record only means something when every pick was posted in public before the game started.",
+      "sections": [
+        {"h": "What the graded records show", "html": "<p>Handicapper Watchdog reads picks from public posts on X, Covers, Reddit, TheRX, Sportsbook Review and Predictem, keeps the time each one was posted, and grades it on the final score. A pick posted after the start does not count. Today that is {{graded}} graded picks from {{tracked}} handicappers.</p><p>Among records with 20 or more graded picks, {{prof}} of {{qual}} are up money ({{qual_pct}}%). Among established records with 100 or more, {{up}} of {{est}} are up ({{est_pct}}%). The live numbers are on <a href='../the-board.html'>the board</a>.</p>"},
+        {"h": "Why winning is harder than it looks", "html": "<p>A standard bet at minus 110 risks 110 to win 100, so a bettor must win 52.38% of the time just to break even. The sportsbook's margin works against every handicapper on every pick. Picking winners at a coin flip rate is a slow, certain loss. Records that reach 100 picks also skew toward people who kept posting because they were winning, and followers often get a worse price than the one that was graded. Our guide to <a href='break-even-win-rate.html'>break even win rates</a> shows the math for every common price.</p>"},
+        {"h": "Why some winners are luck", "html": "<p>Over 50 picks, a bettor with no edge at all wins 60% or more fairly often. Over 1,000 picks, that almost never happens. Short hot streaks are how many paid services are sold, which is why the free rankings open on established records. See <a href='sample-size.html'>how many picks a record needs</a>.</p>"},
+        {"h": "What a legitimate handicapper looks like", "html": "<ul><li>Every pick is posted in public, with a timestamp, before the game starts.</li><li>The record includes the losses, at the price that was available.</li><li>Results are shown in units and ROI, not only wins and losses.</li><li>The sample runs to hundreds of picks, across seasons.</li><li>Claims are modest. A long term ROI of a few percent is strong.</li></ul><p>Our list of <a href='scam-handicapper-red-flags.html'>red flags</a> covers the opposite.</p>"}
+      ],
+      "faq": [
+        {"q": "Do any sports handicappers make money long term?", "a": "Yes. On this site {{up}} of {{est}} handicappers with 100 or more graded public picks are up money at the posted price. Followers often get worse prices, so the margin that matters is the size of the edge. A real edge is usually a small ROI over a large sample, not a 70% win rate."},
+        {"q": "What win rate does a handicapper need to be profitable?", "a": "At the standard minus 110 price, 52.38%. Plus money and minus money prices change the break even point, which is why units and ROI matter more than win percentage."},
+        {"q": "Are paid picks better than free picks?", "a": "Price is not evidence. A record of public, timestamped picks over a large sample is the only evidence that matters, whether the picks are free or paid."}
+      ],
+      "related": ["scam-handicapper-red-flags", "break-even-win-rate", "verified-handicapper-records"]
+    },
+    {
+      "slug": "scam-handicapper-red-flags",
+      "title": "How to Spot a Scam Sports Handicapper: 12 Red Flags",
+      "description": "The warning signs of a sports betting tout: lock of the year claims, 80% win rates, records without timestamps, deleted losses, guarantees and pressure sales.",
+      "eyebrow": "Buyer beware",
+      "h1": "How to spot a scam sports handicapper",
+      "dek": "Tout services follow a script. Once you know the script, the red flags are easy to see.",
+      "answer": "The biggest red flag is a record you cannot audit: no public, timestamped picks posted before each game. After that, watch for claims no real bettor can sustain, such as win rates above 60% over hundreds of picks, guaranteed winners, and pressure to buy a premium play right now.",
+      "sections": [
+        {"h": "Red flags in the record", "html": "<ul><li><b>No timestamps.</b> A pick list without the time it was posted, or posted after the start, proves nothing.</li><li><b>Wins and losses only.</b> A 60 to 40 record means little until you know the prices. Look for units and ROI.</li><li><b>Impossible win rates.</b> Sustained win rates far above 60% against the spread over hundreds of picks are not realistic.</li><li><b>Missing losses.</b> Records that show only winning days, or that start fresh every month.</li><li><b>Changing unit sizes.</b> Losers graded as 1 unit and winners as 5 units after the fact.</li><li><b>Tiny samples.</b> A great week, or a great month, sold as a career.</li></ul>"},
+        {"h": "Red flags in the sales pitch", "html": "<ul><li><b>Lock, guaranteed, can not lose.</b> No game is a lock. Anyone who says so is selling, not betting.</li><li><b>Inside information claims.</b> Fixed games and insider tips are a common hook for outright fraud.</li><li><b>Pay to see the record.</b> A real record should be visible before you pay.</li><li><b>Free next week if we lose.</b> This guarantee costs the seller nothing and keeps you buying.</li><li><b>Pressure and countdowns.</b> Limited spots, last chance, game starts in 20 minutes.</li><li><b>Paid verification badges.</b> A badge that a seller can buy is advertising, not an audit. Our <a href='../reviews/cappertek.html'>CapperTek review</a> shows how a directory can print verified on picks revealed after the start.</li></ul>"},
+        {"h": "What to do instead", "html": "<p>Check whether the handicapper posts picks publicly before games, and whether an independent site has graded them. The free <a href='../cappers.html'>rankings</a> show records from public posts, graded on the final score. Read our <a href='../reviews/index.html'>handicapper reviews</a> before paying any service.</p>"}
+      ],
+      "faq": [
+        {"q": "Is paying for sports picks a scam?", "a": "Not always, but most paid services cannot show a public, timestamped record over a large sample. Treat any claim you cannot audit as advertising."},
+        {"q": "What is a realistic win rate for a sports handicapper?", "a": "Against the spread at minus 110, long term winners usually land in the mid 50s. A sustained 54% to 56% over a large sample is strong."},
+        {"q": "Can a handicapper fake a record?", "a": "Yes, when picks are not posted publicly before the game. Records built from private messages, screenshots or post game updates cannot be verified."}
+      ],
+      "related": ["verified-handicapper-records", "sample-size", "are-sports-handicappers-legit"]
+    },
+    {
+      "slug": "break-even-win-rate",
+      "title": "Sports Betting Break Even Win Rate: 52.38% at -110 Explained",
+      "description": "The win rate you need to break even at every common price, from -200 to +200, how to calculate it, and why it matters when you judge a handicapper.",
+      "eyebrow": "The math",
+      "h1": "Break even win rate: why 52.38% is the number to beat",
+      "dek": "Every price implies a win rate you need just to break even. Here is the formula and a table for common prices.",
+      "answer": "At the standard price of minus 110, you need to win 52.38% of your bets to break even, because you risk 110 to win 100. For any minus price, break even equals the price divided by the price plus 100. For any plus price, it equals 100 divided by the price plus 100.",
+      "sections": [
+        {"h": "The formula", "html": "<p>For a minus price such as minus 110: break even = 110 / (110 + 100) = 52.38%.</p><p>For a plus price such as plus 150: break even = 100 / (150 + 100) = 40.00%.</p><p>The idea is simple. You need enough wins that the money won equals the money lost.</p>"},
+        {"h": "Break even at common prices", "html": "<div class='tw'><table class='mini'><thead><tr><th class='l'>Price</th><th>Risk to win 100</th><th>Break even win rate</th></tr></thead><tbody><tr><td class='l'>-200</td><td>200</td><td>66.67%</td></tr><tr><td class='l'>-150</td><td>150</td><td>60.00%</td></tr><tr><td class='l'>-120</td><td>120</td><td>54.55%</td></tr><tr><td class='l'>-115</td><td>115</td><td>53.49%</td></tr><tr><td class='l'>-110</td><td>110</td><td>52.38%</td></tr><tr><td class='l'>-105</td><td>105</td><td>51.22%</td></tr><tr><td class='l'>+100</td><td>100</td><td>50.00%</td></tr><tr><td class='l'>+120</td><td>100 (wins 120)</td><td>45.45%</td></tr><tr><td class='l'>+150</td><td>100 (wins 150)</td><td>40.00%</td></tr><tr><td class='l'>+200</td><td>100 (wins 200)</td><td>33.33%</td></tr></tbody></table></div>"},
+        {"h": "Why win rate alone misleads", "html": "<p>A handicapper who bets favorites at minus 200 can win 64% of the time and still lose money. One who bets underdogs at plus 150 can win 42% of the time and make money. That is why Handicapper Watchdog ranks records by units and ROI at the posted price, not by win percentage. See <a href='units-and-roi.html'>units and ROI explained</a>.</p>"},
+        {"h": "Shopping for better prices", "html": "<p>Moving from minus 110 to minus 105 lowers your break even from 52.38% to 51.22%. Over a season that difference is large. Comparing prices across books is the cheapest edge in betting. Our <a href='../sportsbooks/comparison/'>sportsbook comparison</a> covers the major US books.</p>"}
+      ],
+      "faq": [
+        {"q": "What win percentage do you need to make money betting at -110?", "a": "More than 52.38%. At exactly 52.38% you break even before any bonuses."},
+        {"q": "What is the break even rate at -115?", "a": "53.49%, calculated as 115 divided by 215."},
+        {"q": "Does a 55% win rate make money?", "a": "At minus 110, yes. A 55% win rate over 100 bets of 1.1 units to win 1 unit returns about 5.5 units, roughly a 5% ROI."}
+      ],
+      "related": ["units-and-roi", "sample-size", "closing-line-value"]
+    },
+    {
+      "slug": "units-and-roi",
+      "title": "Units and ROI in Sports Betting Explained, With Examples",
+      "description": "What a betting unit is, how units won and ROI are calculated, and why ROI over a large sample is the fairest way to compare handicappers.",
+      "eyebrow": "The math",
+      "h1": "Units and ROI in sports betting, explained",
+      "dek": "Dollar results depend on bet size. Units and ROI let you compare any two bettors on the same scale.",
+      "answer": "A unit is a standard bet size, often 1% to 2% of a bankroll. Units won is the net result in those units. ROI is units won divided by units risked. On Handicapper Watchdog every pick risks 1 unit at the posted price.",
+      "sections": [
+        {"h": "What a unit is", "html": "<p>A unit is a fixed bet size that lets bettors talk about results without revealing their bankroll. If your unit is $50, a 1 unit bet is $50 and a result of plus 10 units is plus $500.</p>"},
+        {"h": "How units won is calculated", "html": "<p>Suppose a handicapper goes 55 and 45 at minus 110, risking 1 unit on each pick. Each win returns 100/110 = 0.909 units. Wins: 55 × 0.909 = 50.0 units. Losses: 45 × 1 = 45 units. Net: plus 5.0 units.</p>"},
+        {"h": "How ROI is calculated", "html": "<p>ROI = units won / units risked. In the example, 100 picks at 1 unit each risk 100 units, so ROI = 5.0 / 100 = 5.0%. ROI lets you compare a handicapper with 300 picks to one with 3,000, and a favorite bettor to an underdog bettor.</p>"},
+        {"h": "Traps in how results are reported", "html": "<ul><li><b>To win versus to risk.</b> Some services grade every pick to win 1 unit, which makes favorites look cheaper than they are. Always ask which method is used.</li><li><b>Variable units.</b> A 5 unit play that wins and 1 unit plays that lose can hide a losing record.</li><li><b>Missing prices.</b> Units won is only real at a price that was available when the pick was posted.</li></ul><p>Handicapper Watchdog risks 1 unit on every pick at the posted price. <a href='../how-we-grade.html'>How we grade</a> explains the rest.</p>"}
+      ],
+      "faq": [
+        {"q": "What is a good ROI in sports betting?", "a": "Over a large sample, a sustained ROI of 3% to 5% at standard prices is very good. Double digit ROI over hundreds of picks is rare."},
+        {"q": "Is units won or ROI more important?", "a": "ROI shows quality, units won shows volume. A handicapper with a high ROI over a small sample may simply be lucky, so read both alongside the number of picks."},
+        {"q": "How big should a betting unit be?", "a": "Many bettors use 1% to 2% of their bankroll. Only bet money you can afford to lose."}
+      ],
+      "related": ["break-even-win-rate", "sample-size", "are-sports-handicappers-legit"]
+    },
+    {
+      "slug": "sample-size",
+      "title": "How Many Picks Before a Handicapper Record Means Something?",
+      "description": "Why 50 picks can be pure luck, what changes at 100, 500 and 1,000 picks, and how to read any betting record with sample size in mind.",
+      "eyebrow": "The math",
+      "h1": "How many picks before a record means something?",
+      "dek": "Hot streaks are normal, even for bettors with no edge. Sample size is how you tell a streak from skill.",
+      "answer": "At least 100 picks before a record says much, and several hundred before it says a lot. At minus 110, the normal swing in win rate from luck alone is about 5 points over 100 picks and about 1.6 points over 1,000 picks.",
+      "sections": [
+        {"h": "Luck is bigger than you think", "html": "<p>The typical swing from luck in a win rate is roughly the square root of p times (1 minus p), divided by n, where p is the true win rate and n is the number of picks. With p near 50%:</p><div class='tw'><table class='mini'><thead><tr><th class='l'>Picks</th><th>Typical swing from luck</th><th>A no edge bettor often shows</th></tr></thead><tbody><tr><td class='l'>25</td><td>about 10 points</td><td>40% to 60%</td></tr><tr><td class='l'>100</td><td>about 5 points</td><td>45% to 55%</td></tr><tr><td class='l'>500</td><td>about 2.2 points</td><td>48% to 52%</td></tr><tr><td class='l'>1,000</td><td>about 1.6 points</td><td>48.4% to 51.6%</td></tr></tbody></table></div><p>A 56% record over 100 picks is well within what luck produces. A 56% record over 1,000 picks is not.</p>"},
+        {"h": "How Handicapper Watchdog uses sample size", "html": "<p>Records under 20 picks are a small sample. From 20 to 99 they are developing. At 100 or more they are established, and the free <a href='../cappers.html'>rankings</a> open on that list. Today there are {{est}} established records, and {{up}} of them are up money.</p>"},
+        {"h": "Reading any record", "html": "<ul><li>Ask how many picks, not how many wins.</li><li>Prefer records that span more than one season and more than one sport.</li><li>Check whether results are steady or come from one hot month.</li><li>Pair sample size with <a href='closing-line-value.html'>closing line value</a>, which shows skill faster than wins and losses.</li></ul>"}
+      ],
+      "faq": [
+        {"q": "Is 100 picks enough to judge a handicapper?", "a": "It is a starting point. Over 100 picks luck alone moves a win rate by about 5 points, so a strong 100 pick record is promising, not proof."},
+        {"q": "Why do so many hot handicappers cool off?", "a": "Many were never as good as their streak. With thousands of people posting picks, some will have great months by chance, and those are the records that get advertised."}
+      ],
+      "related": ["closing-line-value", "units-and-roi", "are-sports-handicappers-legit"]
+    },
+    {
+      "slug": "closing-line-value",
+      "title": "Closing Line Value (CLV) Explained: The Best Test of a Bettor",
+      "description": "What closing line value is, how to calculate it, and why beating the closing line is the fastest signal that a handicapper has real skill.",
+      "eyebrow": "The math",
+      "h1": "Closing line value: the fastest test of a handicapper",
+      "dek": "Wins and losses take years to separate skill from luck. Closing line value starts telling the story in weeks.",
+      "answer": "Closing line value, or CLV, compares the price a bettor got with the final price before the game started. Consistently getting better prices than the close is the strongest sign of a real edge, because the closing line is the market's most informed number.",
+      "sections": [
+        {"h": "How CLV works", "html": "<p>Suppose you bet a team at minus 3 and the line closes at minus 4.5. You beat the close by 1.5 points. Or you bet at plus 140 and it closes at plus 120. You got a better price than the final market.</p><p>Markets move as money and information arrive. The closing line reflects the most of both, so beating it again and again is hard to do by luck.</p>"},
+        {"h": "Why CLV beats win rate as a signal", "html": "<p>A single game result is noisy. Price movement is not. A bettor who beats the close over a few hundred bets is very likely to be a long term winner, even if a cold stretch hides it for a while. A bettor who regularly gets worse prices than the close will usually lose, even during a hot streak.</p>"},
+        {"h": "CLV and handicappers", "html": "<p>When a popular handicapper posts a pick and the line moves right away, followers often get a worse price than the handicapper did. A record graded at the handicapper's price can be better than what a follower can actually get. That is one more reason to compare <a href='../sportsbooks/comparison/'>sportsbook prices</a> before you bet.</p>"}
+      ],
+      "faq": [
+        {"q": "What is a good closing line value?", "a": "Any consistent positive CLV over a large number of bets is good. Small, steady price advantages add up."},
+        {"q": "Can you win long term without beating the closing line?", "a": "It is unlikely. Over a large sample, bettors who consistently get worse prices than the close tend to lose."}
+      ],
+      "related": ["break-even-win-rate", "sample-size", "units-and-roi"]
+    },
+    {
+      "slug": "verified-handicapper-records",
+      "title": "What a Verified Handicapper Record Should Mean (and Usually Does Not)",
+      "description": "Verified is the most abused word in sports picks. The five things a record needs before it means anything, and how to check them yourself.",
+      "eyebrow": "Buyer beware",
+      "h1": "What a verified handicapper record should mean",
+      "dek": "Many services call their record verified. Few meet the standard that word implies.",
+      "answer": "A verified record should show every pick, posted in public before the game started, with a timestamp, a price and a fixed unit size, graded by someone who is not paid by the handicapper. If any of those five is missing, verified is a marketing word.",
+      "sections": [
+        {"h": "The five tests", "html": "<ul><li><b>Public.</b> The pick was visible to anyone, not sent privately to buyers and reported later.</li><li><b>Before the start.</b> The timestamp is before the game began. A reveal after the start can not be checked.</li><li><b>Priced.</b> The odds are recorded, so units and ROI are real.</li><li><b>Complete.</b> Every pick counts, including the losses and the deleted posts.</li><li><b>Independent.</b> The grader is not paid by the handicapper, and no one can buy a better rank.</li></ul>"},
+        {"h": "How Handicapper Watchdog applies them", "html": "<p>Picks are read from public posts on six platforms, timestamped, and graded on the final score at the posted price, 1 unit each. A pick posted after the start does not count, and a handicapper can not pay for rank or a label. The full method is on <a href='../how-we-grade.html'>how we grade</a>. Today that covers {{tracked}} handicappers and {{graded}} graded picks.</p>"},
+        {"h": "Questions to ask any service", "html": "<ul><li>Where are the picks posted, and can I see them before the game?</li><li>Who grades the record, and are they paid by you?</li><li>Do you grade to risk or to win, and at what prices?</li><li>Can I see every pick from last season, including losses?</li></ul><p>Our <a href='../reviews/index.html'>handicapper reviews</a> ask these questions of named services.</p>"}
+      ],
+      "faq": [
+        {"q": "Are verified handicapper sites trustworthy?", "a": "Only when the verification is independent and based on public picks posted before the start. A badge a seller can pay for is advertising."},
+        {"q": "How can I verify a handicapper myself?", "a": "Follow their public posts for a few weeks, record each pick with its time and price before the game, and grade it yourself. If they will not post publicly before games, the record can not be verified."}
+      ],
+      "related": ["scam-handicapper-red-flags", "are-sports-handicappers-legit", "sample-size"]
+    },
+    {
+      "slug": "should-you-pay-for-sports-picks",
+      "title": "Should You Pay for Sports Picks? Do the Math First",
+      "description": "How much you need to bet for a pick subscription to pay for itself, what ROI to expect, and the questions to answer before you buy any picks.",
+      "eyebrow": "Buyer beware",
+      "h1": "Should you pay for sports picks? Do the math first",
+      "dek": "A subscription is a cost that has to be beaten before you make a dollar. Here is how to check whether it can be.",
+      "answer": "Only if the handicapper has a public, timestamped record over hundreds of picks, and you bet enough for their edge to cover the fee. At a 4% ROI, a $100 a month service needs about $2,500 a month in wagers just to break even on the fee.",
+      "sections": [
+        {"h": "The break even math for a subscription", "html": "<p>Expected profit = total wagered × ROI. To cover a fee: total wagered = fee / ROI.</p><div class='tw'><table class='mini'><thead><tr><th class='l'>Monthly fee</th><th>At 2% ROI</th><th>At 4% ROI</th><th>At 6% ROI</th></tr></thead><tbody><tr><td class='l'>$50</td><td>$2,500</td><td>$1,250</td><td>$833</td></tr><tr><td class='l'>$100</td><td>$5,000</td><td>$2,500</td><td>$1,667</td></tr><tr><td class='l'>$250</td><td>$12,500</td><td>$6,250</td><td>$4,167</td></tr></tbody></table></div><p>These are monthly wagers needed just to cover the fee, assuming the past ROI holds and you get the same prices. Most of the time, neither is guaranteed.</p>"},
+        {"h": "Before you buy any picks", "html": "<ul><li>Is the record public, timestamped and over at least a few hundred picks? See <a href='verified-handicapper-records.html'>what verified should mean</a>.</li><li>Can you get the same prices after the pick is released? See <a href='closing-line-value.html'>closing line value</a>.</li><li>Does the seller use any of the <a href='scam-handicapper-red-flags.html'>red flags</a>?</li><li>Is your bankroll large enough that the fee is small next to your wagers?</li></ul>"},
+        {"h": "Free records first", "html": "<p>The free <a href='../cappers.html'>Handicapper Watchdog rankings</a> show graded records from public posts, so you can see what real long term results look like before you pay anyone. Watchdog Pro adds the names and pick logs, and it is held to the same math.</p>"}
+      ],
+      "faq": [
+        {"q": "Are sports pick subscriptions worth it?", "a": "For most bettors, no. The fee usually costs more than the handicapper's edge earns at normal bet sizes. They can make sense only for proven records and larger bankrolls."},
+        {"q": "What should a sports picks service show before I pay?", "a": "A public, timestamped record of every pick, with prices, over a large sample, graded by someone independent."}
+      ],
+      "related": ["are-sports-handicappers-legit", "units-and-roi", "verified-handicapper-records"]
+    }
+  ]
+}

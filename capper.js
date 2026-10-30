@@ -146,13 +146,19 @@
     document.title = 'Handicapper ' + c + ': ' + rec(o) + ', ' + (o.net > 0 ? '+' : '') + (+o.net).toFixed(2) + ' units | Handicapper Watchdog';
     var sportNames = Object.keys(p.sport_detail || {});
     var h = '';
+    var sportHref = function (name) {
+      var slug = String(name).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+      var known = { nfl: 1, mlb: 1, nhl: 1, ncaaf: 1 };
+      return known[slug] ? ('sports/' + slug + '.html') : ('cappers.html?q=' + encodeURIComponent(name));
+    };
 
+    h += '<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><a href="cappers.html">Rankings</a><span aria-hidden="true">/</span><span aria-current="page">ID ' + esc(c) + '</span></nav>';
     h += '<section class="phero"><div><div class="pid"><div class="pav">' + esc(c.slice(0, 2)) + '</div><div><div class="eyebrow">Handicapper profile · ID ' + esc(c) + '</div>' +
       '<h1 id="pname"><span class="blur" aria-label="Name hidden">Hidden handle</span></h1>' +
-      '<div class="pmeta"><span class="badge">' + esc(s.source) + '</span><span class="badge ' + t[0] + '" title="' + t[2] + '">' + t[1] + '</span>' +
-      s.sports.slice(0, 4).map(function (x) { return '<span class="badge">' + esc(x) + '</span>'; }).join('') + '</div>' +
+      '<div class="pmeta"><span class="badge ' + t[0] + '" title="' + t[2] + '">' + t[1] + '</span>' +
+      (s.sports || []).slice(0, 4).map(function (x) { return '<a class="badge" href="' + sportHref(x) + '">' + esc(x) + '</a>'; }).join('') + '</div>' +
       '<p class="muted small" style="margin:8px 0 0">Tracked since ' + day(s.first_pick) + ' · last pick ' + day(s.last_pick) + ' · verified through ' + day(p.generated_at) + '</p></div></div></div>' +
-      '<div class="unl"><span class="lock">Watchdog Pro</span><b>See who this is and what they are betting</b><p>Watchdog Pro shows this handicapper&rsquo;s name, every graded pick with the original post, and side by side comparisons.</p><a class="btn pro" style="width:100%" href="' + PRO + '">See Watchdog Pro plans</a></div></section>';
+      '<div class="unl"><span class="lock">Watchdog Pro</span><b>See who this is and what they are betting</b><p>Watchdog Pro shows this handicapper&rsquo;s name and posting site, every graded pick with the original post, and side by side comparisons.</p><a class="btn pro" style="width:100%" href="' + PRO + '">$59.99 a month</a></div></section>';
 
     h += kpis([[rec(o), 'Record'], [sgn(o.net, 2), 'Units won'], [sgn(o.roi, 1, '%'), 'ROI'], [pct(o.win_pct), 'Win %'], [fmt(o.picks), 'Graded picks'],
       [odds(o.avg_odds), 'Avg odds'], [strk(ost.current), 'Current streak'], [s.r30 ? sgn(s.r30.net, 2) : '<span class="dim">n/a</span>', 'Last 30 days']]);
@@ -189,7 +195,7 @@
     // pick log: locked; no pick rows are ever published on this site
     var sk = '<tr><td class="l"><div class="skel" style="width:180px"></div></td><td class="l"><div class="skel" style="width:110px"></div></td><td><div class="skel" style="width:40px;margin-left:auto"></div></td><td><div class="skel" style="width:36px;margin-left:auto"></div></td><td><div class="skel" style="width:44px;margin-left:auto"></div></td><td class="hm"><div class="skel" style="width:70px;margin-left:auto"></div></td></tr>';
     h += '<section class="sec" id="picks"><div class="sech"><h2>Pick log</h2><span class="lock">Watchdog Pro</span></div><div class="panel locked"><div class="ghost"><div class="tw"><table class="mini"><thead><tr><th class="l">Game</th><th class="l">Pick</th><th>Price</th><th>Result</th><th>Units</th><th class="hm">Posted</th></tr></thead><tbody>' +
-      sk + sk + sk + sk + sk + '</tbody></table></div></div><div class="over"><b style="font-size:16px">' + fmt(o.picks) + ' graded picks, each with the original post</b><p class="muted small" style="margin:0;max-width:440px">See every game, pick, price, result and units, with a link to the post it came from.</p><a class="btn pro" href="' + PRO + '">Unlock with Watchdog Pro</a></div></div></section>';
+      sk + sk + sk + sk + sk + '</tbody></table></div></div><div class="over"><b style="font-size:16px">' + fmt(o.picks) + ' graded picks, each with the original post</b><p class="muted small" style="margin:0;max-width:440px">See every game, pick, price, result and units, with a link to the post it came from.</p><a class="btn pro" href="' + PRO + '">$59.99 a month</a></div></div></section>';
 
     root.innerHTML = h;
     hookCharts();

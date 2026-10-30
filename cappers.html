@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Handicapper Rankings | Handicapper Watchdog</title>
-<meta name="description" content="Rank every tracked sports betting handicapper by units won, ROI, win rate and recent form. Filter by sport, platform, timeframe and sample size.">
+<meta name="description" content="Established handicapper rankings by units won, ROI, win rate and recent form. Names and posting sites stay hidden. Filter by sport, timeframe and sample size.">
 <link rel="canonical" href="https://handicapperwatchdog.com/cappers.html">
 <meta property="og:title" content="Handicapper Rankings | Handicapper Watchdog">
-<meta property="og:description" content="Rank every tracked sports betting handicapper by units won, ROI, win rate and recent form. Filter by sport, platform, timeframe and sample size.">
+<meta property="og:description" content="Established handicapper rankings by units won, ROI, win rate and recent form. Names and posting sites stay hidden.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://handicapperwatchdog.com/cappers.html">
 <meta property="og:site_name" content="Handicapper Watchdog">
@@ -17,7 +17,7 @@
 <meta name="theme-color" content="#070d17">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700;750;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,680&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SC607ZYK1F"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-SC607ZYK1F');</script>
@@ -25,24 +25,26 @@
 <body data-page="rank">
 <header class="top"><div class="wrap">
   <a class="brand" href="./"><img src="favicon.svg" alt="" width="24" height="24"><span>Handicapper <b>Watchdog</b></span></a>
-  <nav class="navlinks"><a href="cappers.html" class="on">Rankings</a><a href="./#sports">By sport</a><a href="./#method">Methodology</a><a href="pricing.html">Pricing</a></nav>
-  <form class="navsearch" action="cappers.html" role="search"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input name="q" placeholder="Search capper ID, sport or platform" aria-label="Search cappers"></form>
+  <input id="navtoggle" class="navtoggle" type="checkbox">
+  <label class="navbtn" for="navtoggle">Menu</label>
+  <nav class="navlinks" id="sitenav"><a href="cappers.html" class="on">Rankings</a><a href="reviews/index.html">Reviews</a><a href="sportsbooks/">Sportsbooks</a><a href="pricing.html">Pricing</a></nav>
+  <form class="navsearch" action="cappers.html" role="search"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input name="q" placeholder="Search capper ID or sport" aria-label="Search cappers"></form>
   <a class="btn sm pro" href="pricing.html">Watchdog Pro</a>
 </div></header>
 <main class="wrap">
   <nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><span aria-current="page">Rankings</span></nav>
-  <div class="pagehead"><div><div class="eyebrow">Rankings</div><h1>Every tracked handicapper</h1><p class="muted small">Names are hidden. Records are graded from public posts, not self reported.</p><p class="muted small" id="fresh"><!--seo:fresh-->Rankings are graded from public posts. Names are hidden on this page.<!--/seo:fresh--></p></div>
+  <div class="pagehead"><div><div class="eyebrow">Rankings</div><h1>Established handicappers</h1><p class="muted small">Names and posting sites are hidden. The default list is 100 or more graded picks. <a href="how-we-grade.html">How a record is graded</a>. <a href="reviews/index.html">Named service reviews</a> are a separate file.</p><p class="muted small" id="fresh"><!--seo:fresh-->Rankings are graded from public posts. Names and posting sites are hidden.<!--/seo:fresh--></p></div>
     <a class="btn sm pro" href="pricing.html">Watchdog Pro</a></div>
+  <nav class="sportlinks" aria-label="Sport rankings"><!--seo:sportnav--><!--/seo:sportnav--></nav>
   <section class="panel">
     <div class="fbar">
-      <div class="fld"><label for="q">Search</label><input id="q" placeholder="Capper ID, sport or platform (Pro: handle)"></div>
+      <div class="fld"><label for="q">Search</label><input id="q" placeholder="Capper ID or sport"></div>
       <div class="fld"><label for="fSport">Sport</label><select id="fSport"><option value="">All sports</option></select></div>
-      <div class="fld"><label for="fSource">Platform</label><select id="fSource"><option value="">All platforms</option></select></div>
       <div class="fld"><label for="fTime">Timeframe</label><select id="fTime"><option value="all">All tracked</option><option value="r30">Last 30 days</option><option value="r7">Last 7 days</option></select></div>
       <div class="fld"><label for="fSort">Sort by</label><select id="fSort"><option value="units">Units won</option><option value="roi">ROI</option><option value="win_pct">Win %</option><option value="picks">Most picks</option><option value="streak">Current streak</option><option value="last_pick">Most recent pick</option><option value="worst">Biggest losers</option></select></div>
     </div>
     <div class="fbar2">
-      <div class="fld"><label for="fMin">Minimum picks</label><select id="fMin"><option value="1">Any</option><option value="10">10+</option><option value="20" selected>20+</option><option value="50">50+</option><option value="100">100+</option><option value="250">250+</option></select></div>
+      <div class="fld"><label for="fMin">Minimum picks</label><select id="fMin"><option value="1">Any</option><option value="10">10+</option><option value="20">20+</option><option value="50">50+</option><option value="100" selected>100+</option><option value="250">250+</option></select></div>
       <div class="fld"><label for="fRoi">Minimum ROI</label><select id="fRoi"><option value="">Any</option><option value="0">Positive</option><option value="5">5%+</option><option value="10">10%+</option><option value="20">20%+</option></select></div>
       <div class="fld"><label for="fWin">Minimum win %</label><select id="fWin"><option value="">Any</option><option value="50">50%+</option><option value="53">53%+</option><option value="55">55%+</option><option value="60">60%+</option></select></div>
       <div class="fld"><label for="fUnits">Minimum units</label><select id="fUnits"><option value="">Any</option><option value="0">Positive</option><option value="5">+5</option><option value="10">+10</option><option value="20">+20</option></select></div>
@@ -58,15 +60,15 @@
     <div class="tw"><table><thead id="head"><tr><th class="l">#</th><th class="l">Handicapper</th><th class="hm l">Trend</th><th class="hm">Picks</th><th>Record</th><th class="hm">Win %</th><th>Units</th><th class="hm">ROI</th><th class="hm">Streak</th><th class="hm">Last pick</th></tr></thead><tbody id="rows"><!--seo:rows--><tr><td colspan="10"><div class="skel"></div></td></tr><!--/seo:rows--></tbody></table></div>
     <div class="tfoot"><span id="count"></span><div class="pager"><button class="btn sm ghost" id="prev" type="button">Previous</button><span id="pg"></span><button class="btn sm ghost" id="next" type="button">Next</button></div></div>
   </section>
-  <section class="proband slim">
-    <div><span class="lock">Watchdog Pro</span><h2>Found someone worth following?</h2><p class="muted" style="margin:0">Watchdog Pro reveals the names behind these records, every graded pick, name search, side by side comparisons and advanced filters.</p></div>
-    <a class="btn pro" href="pricing.html">See Watchdog Pro</a>
+  <section class="proband" style="grid-template-columns:1fr auto">
+    <div><span class="lock">Watchdog Pro</span><h2>Found someone worth following?</h2><p class="muted" style="margin:0">$59.99 a month, or $499 a year. Pro shows the name, the posting site, every graded pick with the original post, side by side comparisons and advanced filters. <span id="pendNote"><!--seo:pending-->Picks posted for games that have not started stay locked. The names stay locked too.<!--/seo:pending--></span></p></div>
+    <a class="btn pro" href="pricing.html">See pricing</a>
   </section>
 </main>
 <footer class="foot"><div class="wrap">
   <div><p><b>Handicapper Watchdog</b> grades picks captured from public posts on X, Covers, Reddit, TheRX, Sportsbook Review and Predictem. Records are past results, not predictions or guarantees. Held, duplicate and unreviewed picks are not counted.</p>
   <p>21+. Gambling problem? Call 1 800 GAMBLER.</p></div>
-  <div><p><a href="cappers.html">Rankings</a></p><p><a href="./#method">Methodology</a></p><p><a href="pricing.html">Watchdog Pro</a></p><p><a href="account.html">Account</a></p><p><a href="terms.html">Terms</a></p><p><a href="privacy.html">Privacy</a></p></div>
+  <div><p><a href="cappers.html">Rankings</a></p><p><a href="reviews/index.html">Reviews</a></p><p><a href="sportsbooks/">Sportsbooks</a></p><p><a href="sportsbooks/justbet.html">JustBet</a></p><p><a href="the-board.html">The board</a></p><p><a href="how-we-grade.html">How we grade</a></p><p><a href="pricing.html">Watchdog Pro</a></p><p><a href="account.html">Account</a></p><p><a href="about.html">About</a></p><p><a href="privacy.html">Privacy</a></p><p><a href="terms.html">Terms</a></p><p><a href="contact.html">Contact</a></p></div>
 </div></footer>
 <script src="pro.js"></script>
 <script src="app.js"></script>

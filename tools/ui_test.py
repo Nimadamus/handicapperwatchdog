@@ -60,7 +60,7 @@ with sync_playwright() as pw:
         for name, path, ready in [('home', '/', '#boardRows tr td:nth-child(5)'), ('rankings', '/cappers.html', '#rows tr td:nth-child(5)'),
                                   ('profile', '/capper.html?id=' + target, '.kpis'), ('pricing', '/pricing.html', '.plans'),
                                   ('account', '/account.html', '#acct .ph'), ('compare', '/compare.html', '#cmp .lock'),
-                                  ('terms', '/terms.html', '.legal'), ('privacy', '/privacy.html', '.legal')]:
+                                  ('terms', '/pro-terms.html', '.legal'), ('privacy', '/pro-privacy.html', '.legal')]:
             page.goto(BASE + path, wait_until='domcontentloaded')
             page.wait_for_selector(ready, timeout=15000)
             page.wait_for_timeout(400)

@@ -33,7 +33,7 @@ def main():
         print('WAIT staging KV id is still a placeholder')
     if 'handicapperwatchdog.com' in prod and 'routes' in prod:
         print('PASS production route stays in wrangler.toml only')
-    for page in ('terms.html', 'privacy.html'):
+    for page in ('pro-terms.html', 'pro-privacy.html'):
         text = read(page)
         if 'noindex' not in text or 'Draft for your review' not in text:
             bad += 1

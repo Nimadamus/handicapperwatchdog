@@ -34,9 +34,10 @@ const withProfile = idx.cappers.filter((c) => c.profile);
 const target = withProfile[0];
 
 await step('pages load (home, rankings, profile, pricing, account, compare, terms, privacy)', async () => {
-  for (const p of ['/', '/cappers.html', '/capper.html?id=' + target.id, '/pricing.html', '/account.html', '/compare.html', '/terms.html', '/privacy.html']) {
+  for (const p of ['/', '/cappers.html', '/capper.html?id=' + target.id, '/pricing.html', '/account.html', '/compare.html', '/terms.html', '/privacy.html', '/pro-terms.html', '/pro-privacy.html']) {
     const r = await req(p); assert.equal(r.status, 200, p);
-    const h = await r.text(); assert.ok(h.includes('pro.js'), p + ' loads pro.js');
+    const h = await r.text();
+    if (!['/terms.html', '/privacy.html'].includes(p)) assert.ok(h.includes('pro.js'), p + ' loads pro.js');
     assert.ok(!/trustmyrecord|tmr pro/i.test(h), p + ' has no TMR branding');
   }
 });

@@ -1,0 +1,577 @@
+{
+  "checked": "27 Oct 2026",
+  "checked_iso": "2026-10-27",
+  "description": "Reviews of public handicappers and pick marketplaces. Records they advertise, prices we could read, and why Watchdog has not scored them yet.",
+  "intro": "These are public names people search. The free rankings on this site stay anonymous on purpose. A review is a different page: it names a service that already sells itself, and it says what we could and could not check.",
+  "unrated_note": "A review stays unrated until four things are in the file: a record Watchdog graded from posts, the record the service advertises, a price from a page we opened, and a real sample of customer experience. A hot streak on a sales page is not that file. None of these ten clear that bar, so none of them get a number.",
+  "independence": "The 100 point score is editorial. It is not for sale. A sportsbook relationship, if one is added later, does not move a handicapper's score.",
+  "rubric": [
+    {
+      "label": "Verified record",
+      "max": 25,
+      "needs": "Picks Watchdog captured before the game and graded on the final score, matched to this service."
+    },
+    {
+      "label": "Advertised record",
+      "max": 15,
+      "needs": "The record the service publishes, quoted from a page we opened, set next to the graded one."
+    },
+    {
+      "label": "Sample and longevity",
+      "max": 15,
+      "needs": "Enough settled picks, over enough time, to tell a career from a streak."
+    },
+    {
+      "label": "Pricing clarity",
+      "max": 15,
+      "needs": "A current price on a page we opened, including what the package actually contains."
+    },
+    {
+      "label": "Transparency",
+      "max": 15,
+      "needs": "Posts a reader can find, with the time, the price and the result, including the losses."
+    },
+    {
+      "label": "Customer experience",
+      "max": 15,
+      "needs": "A real sample of buyers, not a star widget on the sales page."
+    }
+  ],
+  "reviews": [
+    {
+      "slug": "docs-sports",
+      "name": "Doc's Sports",
+      "kind": "Pick service",
+      "title": "Doc's Sports Review | Handicapper Watchdog",
+      "description": "Doc's Sports review: the 1971 unit system claim, the roster of handicappers, and why there is no Watchdog score yet.",
+      "dek": "A long running pick shop. The roster page advertises short dollar runs. We did not get a settled log we could grade.",
+      "advertised": [
+        "On 27 Oct 2026 the Doc's Sports expert page said Doc (Morey Moseman) has been the sole owner since the service opened in 1971. A heading on that page calls the unit system a tradition since 1971. The paragraph under it says the company was the first to develop a unit system over 38 years ago. Those spans are not the same, and this review does not pick one.",
+        "The same page sells a roster, not one person. The blurbs we read were short and promotional. Scott Spreitzer was listed with a 7 star Sunday NFL sweep, a college and pro football October line of 69% and +3,660, a 7-1 football week at +15,260, and an all sports line of 128-82 at 61%. Robert Ferringo was listed at 99-57, +28,800 on 8 unit games of the year. Doc's Sports AI-v3 was listed at +22,990 since inception and +18,430 in 2026. Those lines do not show the losses around them, the prices, or the post times."
+      ],
+      "watchdog": "Not matched to a Watchdog graded record in this edition. The public board hides names, and this service was not confirmed inside the public posts we grade.",
+      "pricing": [
+        "The roster page we opened did not state a package price. Individual capper pages are where Doc's sells the plays. A price from a third party shop is not quoted here as if Doc's had published it."
+      ],
+      "transparency": "The roster we opened was headline runs, not a full card with the line, the price and the time of the post. The page also offers a weekly email of free picks. That email was not opened.",
+      "customers": "This edition does not include a verified sample of buyers. A guarantee slogan on a sales page is not that sample.",
+      "strengths": [
+        "The owner is named, and the founding claim is on their own page rather than only on a reseller.",
+        "They publish a unit system and a free weekly note, so a reader can see the pitch before paying."
+      ],
+      "weaknesses": [
+        "The numbers on the roster are marketing lines. They are not a record Watchdog graded.",
+        "Several handicappers share one storefront, so a win posted under Doc's Sports is not automatically the founder's win."
+      ],
+      "related": [
+        "scott-spreitzer",
+        "robert-ferringo",
+        "docs-sports-ai",
+        "big-al",
+        "cappertek"
+      ],
+      "sources": [
+        {
+          "title": "Doc's Sports expert roster",
+          "url": "https://www.docsports.com/expert-handicappers.html"
+        }
+      ]
+    },
+    {
+      "slug": "dr-bob-sports",
+      "name": "Dr. Bob Sports",
+      "kind": "Pick service",
+      "title": "Dr. Bob Sports Review | Handicapper Watchdog",
+      "description": "Dr. Bob Sports review: Bob Stoll's published NFL records, a dated price snapshot that is not a verified current offer, and no Watchdog score.",
+      "dek": "Bob Stoll publishes long NFL records on his own site. On 27 Oct 2026 the NFL page did not agree with itself on the record. The dollar figures below are a snapshot of two pages, not a verified current offer.",
+      "advertised": [
+        "The NFL page opened on 27 Oct 2026 printed three 2016 to 2026 lines. The top line was Best Bets 522-386-13 (57.5%) and Strong Opinions 408-334-16 (55.0%). The package box on that page was Best Bets 520-386-12 (57.4%) and Strong Opinions 404-333-16 (54.8%). Lower on the same page the Strong Opinions line was 408-334-15 (55.0%). The 2025 recap on that page was 97-69-3, Best Bets 46-32-3 for +12.55 stars, Strong Opinions 51-37 for +4.95 stars.",
+        "The same page's season to date line was Best Bets 7-7-1, Strong Opinions 13-9-1, and all plays 20-16-2 for +0.375 units. Week 7 on that page was 6-1-1 for +3.45 units. Best Bets are his 1.0 unit plays. Strong Opinions are his 0.5 unit plays.",
+        "The about page names Bob Stoll. He writes that he started the business in 1987, ran a print publication for 11 years, and launched the website in the late 1990s. The page says this is his 33rd year, and that NFL plays won 59% since 2016 through 2020. That 59% line is not the record on the NFL page. He also posts free analysis for games outside the paid package."
+      ],
+      "watchdog": "Not matched to a Watchdog graded record. The records above are the ones his pages publish, and those pages do not agree. We have not regraded the card from timestamped posts.",
+      "pricing": [
+        "Price snapshot, not a verified current offer. On 27 Oct 2026 the NFL page and the NFL season product page displayed $995 for the season, and the NFL page displayed $375 for four weeks. Those numbers are what those two addresses showed that day. They are not confirmed as the price on any other page, or on a later day. Dollar figures seen only in an index of his site are omitted, because those pages were not opened."
+      ],
+      "transparency": "The NFL page posts the week's plays with a unit size, including losses, and it posts a season recap. Upcoming plays sit behind the subscription. His unit is not a flat one unit at a posted price.",
+      "customers": "No independent sample of buyers was opened for this edition.",
+      "strengths": [
+        "The long NFL record is on his site with a win, loss and push count, not only a dollar claim.",
+        "He writes about the fee as a cost, and he posts some analysis for free."
+      ],
+      "weaknesses": [
+        "The NFL page does not agree with itself on the long record, and the about page's 59% line is a third document.",
+        "The record is self published. Until the posts are graded from the outside, none of those percentages is a Watchdog record."
+      ],
+      "sources": [
+        {
+          "title": "Dr. Bob NFL page",
+          "url": "https://drbobsports.com/nfl/"
+        },
+        {
+          "title": "Dr. Bob NFL season product",
+          "url": "https://drbobsports.com/allbestbets/dr-bob-nfl-season/"
+        },
+        {
+          "title": "Dr. Bob about",
+          "url": "https://drbobsports.com/about/"
+        }
+      ]
+    },
+    {
+      "slug": "pregame",
+      "name": "Pregame",
+      "kind": "Pick marketplace",
+      "title": "Pregame Review | Handicapper Watchdog",
+      "description": "Pregame review: a cart of other handicappers, the prices on the pros page, and no Watchdog score.",
+      "dek": "Pregame sells other people's plays from one cart. The prices below are what that page displayed. The streak lines next to them were not regraded.",
+      "advertised": [
+        "On 27 Oct 2026 the pros page was a cart. It told a reader to open a profile and add plays to the cart. Rows on that page carried streak lines beside an add to cart button. A streak line is not a log, and this review does not repeat those records as facts."
+      ],
+      "watchdog": "Not matched. Pregame is a store, and the people inside it were not confirmed one by one against the posts Watchdog grades.",
+      "pricing": [
+        "Price snapshot, not a verified current offer. On 27 Oct 2026 the pros page displayed individual plays at $25 and at $5. Several pro cards displayed a one month football all access package at $195 shown reduced from $400. One card, Dave Essler's, displayed a one year all access all sports package at $1,995 shown reduced from $2,988. The same page displayed a join line, Free $25 when you join, to use on a pick. Those are the asks that page showed that day. They are not an offer from Handicapper Watchdog. A checkout was not completed, and a later price can differ."
+      ],
+      "transparency": "Showing a record on a profile is better than hiding it. It is still the marketplace's record until someone grades the posts from outside.",
+      "customers": "No buyer sample in this edition.",
+      "strengths": [
+        "You can see more than one handicapper before you pay. The join line on the page is their advertisement, not an offer from this site."
+      ],
+      "weaknesses": [
+        "A marketplace record can be the seller's own accounting. Watchdog has not confirmed it.",
+        "There is no one record called Pregame. A review of the site is not a review of every pro in the cart."
+      ],
+      "sources": [
+        {
+          "title": "Pregame pros",
+          "url": "https://pregame.com/pros"
+        }
+      ]
+    },
+    {
+      "slug": "cappertek",
+      "name": "CapperTek",
+      "kind": "Directory",
+      "verdict": "Scam",
+      "checked": "28 Oct 2026",
+      "checked_iso": "2026-10-28",
+      "h1": "CapperTek review",
+      "title": "CapperTek Review: Is CapperTek a Scam? | Handicapper Watchdog",
+      "description": "CapperTek review. Watchdog calls CapperTek a scam: the green check is a paid ad, and public picks are shown 30 minutes after the start. Checked 28 Oct 2026.",
+      "dek": "CapperTek is a scam. It sells handicappers a green check, puts those paid names first, and calls the directory an unbiased record.",
+      "disclosure": "This page calls CapperTek a scam because of what CapperTek publishes, plus scam warnings posted about the site since 2015. Nothing here is copied from those posts. There is no star rating and no referral link. 21+.",
+      "advertised": [
+        "Homepage on 27 Oct 2026: 11,386 handicappers, 111 profitable over the last 30 days, and a history line of 2,430,611 documented picks. The directory opened the same night said 11,384, and its picks-available label said 9. On 28 Oct 2026 the homepage said 11,387 and 107 profitable. The about page said 11,386 and 2,442 or more. Two opens of the directory the same morning did not match each other, and the picks-available page said it had found 139.",
+        "The FAQ says the directory is totally unbiased and exists to expose scammers. The same FAQ says Pro Featured services pay a monthly advertising fee to be highlighted in green. Those green rows were first on the default directory. Eighteen of the 32 featured names used a cappertek.com address.",
+        "Verified means a banner plus a way to reach the owner about complaints. A directory page tells owners that verification protects against negative reviews. The buy page calls a reveal 30 minutes after the start the reason a customer will not get scammed."
+      ],
+      "watchdog": "CapperTek is not a bettor. There is no card to grade. The scam is the directory: it sells the look of verification, and its own pages describe the sale.",
+      "pricing": [
+        "Sellers set access pass prices for 1, 7, 14, 30, or 60 days. No single pick package price was on the pages opened, so none is quoted. Own PayPal goes to the seller. If CapperTek takes the payment and mails a check, the FAQ says the commission is 30 percent, the minimum is 250 dollars, and a United States photo ID is required.",
+        "A search marketing page offers 750 dollars a month, with a 250 dollar setup fee described as waived. The terms, last updated 8 Dec 2022, say fees are non-refundable unless a page says otherwise. A featured handicapper subscription can be canceled at any time without notice or a refund. The operator named in the terms is Sports Media, LLC."
+      ],
+      "transparency": "CapperTek says the public reveal is 30 minutes after the start. A later open of a featured profile left the pick table on Loading picks, so no timestamp was compared with a game start. The same buy page also promises alerts in time to bet. Watchdog did not buy a pass. The default leaderboard opened on Last 30-Days: 232 handicappers on 27 Oct 2026, and 229 on 28 Oct 2026, sorted by units, including records that were down. The FAQ's day-31 example then calls the same loss a 15 day loss. That example was not replayed against a saved board.",
+      "customers": "Public posts have called CapperTek a scam since 2015, on Sportsbook Review, Bitcointalk, a betting blog, Sitejabber, and TheRX. Watchdog is not copying those posts and is not adopting their stories about a hidden owner or a drained card. The dollar figures in the two 2022 posts do not match, so neither number is printed. The part that matches CapperTek's own FAQ is the paid green label and the offer of protection from bad reviews.",
+      "strengths": [
+        "The proof is on CapperTek's own site. The homepage, the directory, the FAQ, the about page, the buy page, the search sales page, and the 8 Dec 2022 terms opened on 27 Oct 2026 and again on 28 Oct 2026."
+      ],
+      "weaknesses": [
+        "They say the directory is unbiased and exists to expose scammers. The same FAQ says Pro Featured services pay to be painted green, and those rows were first.",
+        "Verified is a banner and a complaint channel. They also tell owners it protects against negative reviews. They warn that other people paste the banner without being verified.",
+        "The public transparency they advertise is a pick shown 30 minutes after the event starts. That is too late to bet and too late to prove the pick was real.",
+        "The board a new reader sees is 30 days. Their FAQ says an old loss falls out overnight and the record goes up, then calls that same loss a 15 day loss.",
+        "They build sites, host free sites on their own domain, take 30 percent when they handle the payment, and sell 750 dollar monthly search work for the names they rank.",
+        "On 27 Oct the homepage said 11,386 names and the directory said 11,384. On 28 Oct those counters still did not agree, and two opens of the directory did not agree with each other. The about page, the verified filter, the 1998 claim, and the two decade claim do not describe one history.",
+        "The terms let them keep the fees. A featured subscription can be canceled with no notice and no refund. The public registration hides the person behind Domains By Proxy, while the terms name only Sports Media, LLC."
+      ],
+      "related": [
+        "docs-sports",
+        "big-al"
+      ],
+      "sources": [
+        {
+          "title": "CapperTek handicapper directory",
+          "url": "https://www.cappertek.com/directory.asp"
+        },
+        {
+          "title": "CapperTek default leaderboard, Last 30-Days",
+          "url": "https://www.cappertek.com/leaderboard.asp"
+        },
+        {
+          "title": "CapperTek profile that led that board, picks table did not render",
+          "url": "https://www.cappertek.com/picks.asp?shs=MrSoccer.cappertek.com"
+        },
+        {
+          "title": "CapperTek about",
+          "url": "https://www.cappertek.com/about.asp"
+        },
+        {
+          "title": "CapperTek FAQ",
+          "url": "https://www.cappertek.com/faq.asp"
+        },
+        {
+          "title": "CapperTek terms, updated 8 Dec 2022",
+          "url": "https://www.cappertek.com/termsOfService.asp"
+        },
+        {
+          "title": "CapperTek, why buy picks",
+          "url": "https://www.cappertek.com/whyBuyPicks.asp"
+        },
+        {
+          "title": "Sportsbook Review forum, 15 Aug 2015",
+          "url": "https://www.sportsbookreview.com/forum/players-talk/1526750-scam-alert-cappertek-and-verifiedtipsters"
+        },
+        {
+          "title": "TheRX forum, 23 Nov 2022",
+          "url": "https://www.therx.com/threads/stay-way-from-the-scamming-website-cappertek-com.1222286/"
+        },
+        {
+          "title": "Betting blog, June 2015, account deletion allegation",
+          "url": "https://www.betmma.tips/mma_betting_blog/2015/06/deleted-from-cappertek-for-reporting-a-fake-pick-why-cappertek-isnt-remotely-trustworthy/"
+        },
+        {
+          "title": "CapperTek homepage",
+          "url": "https://www.cappertek.com/"
+        },
+        {
+          "title": "CapperTek directory, services with picks available",
+          "url": "https://www.cappertek.com/directory.asp?filter=picks-available"
+        },
+        {
+          "title": "CapperTek search marketing offer",
+          "url": "https://www.cappertek.com/seo.asp"
+        },
+        {
+          "title": "CapperTek public registration lookup",
+          "url": "https://lookup.icann.org/en/lookup?name=cappertek.com"
+        },
+        {
+          "title": "Better Business Bureau profile, not accredited",
+          "url": "https://www.bbb.org/us/az/scottsdale/profile/online-gaming/cappertek-0241-236039435"
+        },
+        {
+          "title": "Sitejabber reviews of cappertek.com",
+          "url": "https://www.sitejabber.com/reviews/cappertek.com"
+        },
+        {
+          "title": "Bitcointalk thread opened by CapperTek, 24 Aug 2014",
+          "url": "https://bitcointalk.org/index.php?topic=755417.0"
+        }
+      ],
+      "sections": [
+        {
+          "h": "CapperTek is a scam",
+          "p": [
+            "Handicapper Watchdog calls CapperTek a scam. The call is not a star rating, and it is not a guess about one seller in a long list. It is a reading of CapperTek's own pages, checked 27 Oct 2026, set beside public warnings that go back to 2015. CapperTek sells the look of an independent record. The same pages that do the selling also describe the fee, the late reveal, the short board, and the refund rules.",
+            "A directory can be incomplete and still be honest. This one is not incomplete in a way that more data would fix. The costume is the business."
+          ]
+        },
+        {
+          "h": "What this page will not pretend",
+          "p": [
+            "Watchdog did not open a CapperTek account, buy an access pass, or audit a full pick history. A number in this article is a number printed on a CapperTek page, or a count taken from a page that opened. Where two of their pages disagree, both numbers are printed. Where a stranger on a forum tells a story Watchdog could not check, the story stays that person's post.",
+            "Two of those posts name an owner and a card charge. The dollar figures in the two posts do not match each other, and neither figure is repeated here as a fact. A search of public web results for this article did not turn up an FTC case or a court judgment naming CapperTek. That is the limit of the search. It is not a clearance."
+          ]
+        },
+        {
+          "h": "The directory is the product",
+          "p": [
+            "CapperTek is not a bettor. There is no card here for Watchdog to grade. A row in the directory is not a record. The terms, last updated Thursday 8 Dec 2022, say the site is owned and operated by Sports Media, LLC, and that CapperTek is a registered trademark. Watchdog did not confirm a registration number. The public domain record, read the same night from the registrar, does not name a person. It names Domains By Proxy, LLC, the GoDaddy privacy service. The domain was created 20 Aug 2013 and the registration runs to 20 Aug 2029. The company name in the terms and the name on the public registration are not the same public fact.",
+            "The about page calls the site the largest and most trusted handicapping directory and marketplace. The FAQ says the purpose is an unbiased overview of every service on the planet, and that the point is to expose scammers. The directory page says the list is every sports handicapping service that has done business on the web since 1998, including shops that have closed, and that a crawler adds new names whether the service asked to be listed. The FAQ says a listing will not be removed on request. A closed shop is marked not active.",
+            "Those sentences describe a phone book the subject cannot leave. A phone book is not a grade."
+          ]
+        },
+        {
+          "h": "The counters do not agree with each other",
+          "p": [
+            "On 27 Oct 2026 the homepage said the directory held 11,386 handicappers and was growing daily. The directory itself, opened the same night, said 11,384. Its filters were 9 with picks available, 32 pro featured verified, 120 pro verified, 2,440 verified, 4,918 active, and 6,466 inactive. Active plus inactive is 11,384. That matches that directory open. It does not match that homepage.",
+            "Opened again on 28 Oct 2026, the counters still did not sit still. The homepage said 11,387 handicappers and 107 profitable over the last 30 days, with the same history line of 2,430,611 picks by 2,443 or more. The about page said 11,386 handicappers and 2,442 or more. One open of the main directory said 11,387, with a picks-available label of 8, 2,443 verified, 4,921 active, and 6,466 inactive. A later open of the same directory said 11,384, with a picks-available label of 9, 2,440 verified, 4,918 active, and 6,466 inactive. The picks-available page itself said the directory was 11,386 and that it had found 139 handicappers with picks available, with 2,442 verified and 4,920 active. Featured stayed 32 and pro verified stayed 120. On each page, active plus inactive matched that page's own total. The pages did not match each other. These are labels CapperTek printed. Watchdog does not have their database.",
+            "The about page on 27 Oct said 2,430,611 documented picks by 2,442 or more handicappers since 2013. The verified filter that night said 2,440. A 30 day profit flag is not a shop you can buy from tonight, and the picks-available label is not the same number as the page that lists those shops. A shop you can buy from tonight is not a career record.",
+            "The buy page said the service was established in early 2013. A full read showed 32,033 registered customers. The 28 Oct open of that page showed 32,037. The footer copyright runs 2013 to 2026. The FAQ says CapperTek is also a web development and marketing firm with over two decades of experience. The search marketing page says over ten years as a sports betting search agency. The domain exists from August 2013. The 1998 line, the 2013 line, the ten year line, and the two decade line are all theirs. They are not one history."
+          ]
+        },
+        {
+          "h": "The green check is a paid ad",
+          "p": [
+            "The FAQ says Pro Featured services are already verified and reputable, and that they pay a nominal monthly advertising fee to be highlighted in green so they get more exposure. The fee amount is not printed. On the default directory view those green rows were the first rows on the page. Thirty two names were in that set. Eighteen of those thirty two used a website on cappertek.com rather than a domain of their own. That count is from the first screen of the directory on this visit.",
+            "The same FAQ that calls the directory totally unbiased is the FAQ that describes the fee. Unbiased, and pay to be painted first, cannot both be the product. The fee is the product. Reputable, in that answer, is CapperTek's adjective for the customer who pays."
+          ]
+        },
+        {
+          "h": "Verified is a graphic, and they sell it as cover",
+          "p": [
+            "Verified, in the FAQ, means CapperTek placed a banner on the service site and has a way to reach the owner so complaints can be resolved. It does not mean a regulator, an independent grader, or Watchdog checked the picks. The FAQ warns that other sites paste the banner without being verified, and tells the reader to click the banner through to a real CapperTek profile. That warning admits the badge is a picture someone can copy.",
+            "On the directory view of services with picks available, CapperTek tells an owner to get verified in three steps. The stated reasons are to document picks, to sell picks, and to protect against negative reviews that can ruin the service. That page says the verification is free. A free badge advertised as protection from bad reviews is not an audit. It is a reason for the seller to want the relationship.",
+            "The get verified page says verification will improve the service's legitimacy and send traffic from the directory. Legitimacy, in that sentence, is something the badge is supposed to produce."
+          ]
+        },
+        {
+          "h": "The public record arrives after the bet is dead",
+          "p": [
+            "The buy page and the homepage say every pick is revealed 30 minutes after the event starts. They call that full transparency, and they call it the reason you will not get scammed. A pick the public can see only after the start is a result. It is not a bet the public can still place. It is not proof the pick existed before the number moved.",
+            "The same buy page promises instant text or email alerts when a handicapper you already have access to posts a pick, so you can get the bet in on time. Those two promises are not the same clock. One is after the start. One is in time to bet. Watchdog did not buy a pass, so this page does not claim to know which clock a paying customer actually gets. What the public is offered, in their own headline, is the late one.",
+            "They also say handicappers cannot alter, hide, or delete picks, and that records cannot be forged. The FAQ says a pick can only be voided, so a mistake stays on the record as a void. That is a stronger rule than a site that lets a seller delete a loser. It is not a rule Watchdog tested by posting a pick. A void is still a decision someone at the account can make.",
+            "A later open of the profile that led the default leaderboard left the pick table on the words Loading picks. No row was there to compare with a start time. The 30 minute rule remains what CapperTek prints. It is not a stopwatch reading from this investigation. Contact details on that profile sat behind a free customer login. Watchdog did not log in and did not buy a pass."
+          ]
+        },
+        {
+          "h": "The board a new reader sees is 30 days",
+          "p": [
+            "The FAQ says the picks page and the leaderboard default to the last 30 days, and that day 31 falls off overnight. The gain example is coherent. A service that was up 20 units 31 days ago wakes up 20 units poorer on the default view. The loss example is not. It says a service that was down 20 units 31 days ago wakes up 20 units better because that 20 unit loss from 15 days ago would no longer show. A loss from 15 days ago is still inside a 30 day window. The FAQ says this can look like something fishy is going on, then says the numbers are legitimate and that a reader can widen the filter. Watchdog is quoting their explanation, including the slip. It was not replayed against a saved board.",
+            "On 27 Oct 2026 the default leaderboard was set to Last 30-Days. The page said it had found 232 handicappers, sorted by units, and rows further down were down units. On 28 Oct 2026 the same default was still Last 30-Days, the page said 229, and down records were still on it. MrSoccer.cappertek.com carried the label Pro Featured Verified at the top of the featured block. Watchdog did not grade those picks. The 232 count and the 229 count are everyone on that board on those opens. Neither one is the homepage's count of profitable names, which was 111 on 27 Oct and 107 on 28 Oct.",
+            "Watchdog did not run the longer filter through a paid account, and did not watch a record change at midnight. The default is still the short window, and they still lead with it.",
+            "A hot month at the top of a directory is how a seller looks like a career."
+          ]
+        },
+        {
+          "h": "They build and sell the names they rank",
+          "p": [
+            "The footer says every listed service is a private business, and that CapperTek has no direct affiliation with any of them. The rest of the site describes the relationship.",
+            "The FAQ says CapperTek designs, markets, and operates handicapping websites, monitors, and landing pages, and that it works with known handicappers on technology and marketing. The picks directory says that if you have no website, CapperTek will set one up inside the directory for free. Eighteen of the 32 paid green names were already sitting on a cappertek.com address.",
+            "A separate sales page offers one search package at 750 dollars a month. A 250 dollar setup fee is described as waived. The package covers up to four keywords, one custom article each week posted onto other sports betting sites, posts on X, and one permanent link inserted into existing sports betting pages each week. The page says a large in house team does the work, that nothing is outsourced, and that the first results are always visible in five to eight months. Always is their word. Watchdog did not buy the package and did not test the claim.",
+            "If the directory takes a fee to paint you green, hosts the site, writes pages that point at you, and sells the picks, the sentence about no affiliation is a legal line. It is not a description of the business.",
+            "Payment has two doors. If the seller connects a personal PayPal, the FAQ says the sale goes to that PayPal. If CapperTek takes the payment and mails a check, the commission is 30 percent, the seller keeps 70 percent, the minimum check is 250 dollars, checks go out on the 25th, and only a United States photo ID will do. The check is payable only to the name and address on that ID. Either door leaves CapperTek in the listing, the badge, and the ads. Sellers set their own prices for 1, 7, 14, 30, or 60 day access. No single CapperTek package price for picks was on the pages opened, so none is quoted."
+          ]
+        },
+        {
+          "h": "The terms keep the money",
+          "p": [
+            "The terms say fees and charges, including subscription fees, are non-refundable unless some other page says otherwise. A featured handicapper subscription can be canceled at any time, for any reason, by CapperTek, without notice and without a refund. If CapperTek ends someone's access, there is no full refund and no prorated refund. PayPal is the processor they name. Those terms were last updated 8 Dec 2022. A buyer who wanted a refund rule has already been told there is not one.",
+            "The terms also say a submission can be posted with the submitter's name, IP address, and the date. Pages opened for this article printed a visitor address in the footer under the label IPA, and that address changed from reader to reader. That is a visible habit. It is not a leaked database."
+          ]
+        },
+        {
+          "h": "The paperwork does not name a person",
+          "p": [
+            "Sports Media, LLC is the operator named in the terms. The public registration is a privacy proxy in Tempe, Arizona, at the Domains By Proxy address, with a GoDaddy contact form instead of a person. A Better Business Bureau profile, file opened 9 Dec 2016, lists the business as started 1 Jan 2013, not accredited, with an A+ mark, at 14747 N Northsight Blvd, Scottsdale, Arizona. The bureau named on that profile serves the Washington and Philadelphia region. Watchdog did not visit a Scottsdale office. BBB says a profile does not verify third party information and is not an endorsement. The profile text read for this article did not include a complaint count, so none is stated. Other company databases print revenue, staff size, and street addresses for CapperTek. Those figures were not checked against a filing, and they are not used here."
+          ]
+        },
+        {
+          "h": "What people have said out loud since 2015",
+          "p": [
+            "This section is other people's posts. The wording is not copied. The posts are not treated as findings, except where they match what CapperTek now prints about itself.",
+            "On 15 Aug 2015 a Sportsbook Review thread told readers to stay away from CapperTek. The poster said reviews that do not fit the favored services come down, and that paying services get the flattering picture. On 30 Jul 2015 a reply on Bitcointalk, under a thread CapperTek had opened to promote the directory, said sham accounts were being run from inside the site. In June 2015 a betting blogger wrote that his accounts were removed after he flagged picks. He later wrote that winning stake sizes on that profile were cut, that the site marked him a scam, and that CapperTek afterward blamed a former staffer. Watchdog did not see a before and after of that record. The account is his.",
+            "On 31 Jan 2021 a review on Sitejabber said a seller was banned and labeled a scam for refusing to pay what the reviewer called royalties. On 9 Nov 2022 another Sitejabber review called the site a fraud and tied it to one handicapping brand, along with a card story. On 23 Nov 2022 a TheRX thread said stay away and told a card story of its own. The two 2022 posts sit close together in time, and they do not agree on the amount. Watchdog is not choosing a number, and it is not adopting the story about who owns the site. What is fair to say is that strangers have used the word scam about this directory, in public, since 2015, and that the shape they describe is the paid green label and the offer of protection from bad reviews, which CapperTek now explains in its own pages.",
+            "CapperTek's own review index contains buyer posts that call individual sellers scams. Those posts are about the sellers. They are mentioned here because the directory hosts the accusation on one page and, on another, offers sellers a way to protect against negative reviews."
+          ]
+        },
+        {
+          "h": "Why the word is scam",
+          "p": [
+            "The pages already say the quiet part. The check at the top of the directory is for sale. CapperTek says the public pick shows up 30 minutes after the event starts. This investigation did not get a pick row to time that sentence. CapperTek says the board that greets a new reader forgets day 31, and the default leaderboard did open on the last 30 days. A loss outside that window making the record look better is their example, not a change Watchdog filmed. The same company will build the shop, host it, rank it, and sell the marketing that points at it. The terms let them end a featured subscription and keep the fee. People have been warning buyers since 2015, and the current FAQ matches the shape of that warning without any need to borrow the forum's sentences.",
+            "That is a scam of presentation. The directory sells trust it does not earn, and it charges the people being trusted for the costume. The testimonials on the buy page are first names, a state, and a line that CapperTek reformatted them. They are not evidence.",
+            "There is no star on this page. There is no referral. There is no commercial relationship with CapperTek. 21+."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "jimmy-boyd",
+      "name": "Jimmy Boyd",
+      "kind": "Pick service",
+      "title": "Jimmy Boyd Review | Handicapper Watchdog",
+      "description": "Jimmy Boyd review: the marketplace page that would not open, the season board that did, and no Watchdog score.",
+      "dek": "No package price is printed here. The sales address would not open on 27 Oct 2026, so older prices are omitted. Nothing on this page is a verified current offer.",
+      "advertised": [
+        "A direct request on 27 Oct 2026 for the SportsCapping export address returned Invalid access. This edition does not quote a package price, a since 2002 line, or a guarantee from a page that did not open."
+      ],
+      "watchdog": "Not matched to a graded Watchdog record.",
+      "pricing": [
+        "No package price is stated. Any price from a page that did not open is unverified and is not a current offer."
+      ],
+      "transparency": "SportsCapping's season profit board opened the same day and says its profit column uses a flat $100 stake. That $100 is the board's scoring unit, not a price Jimmy Boyd charges. He was not in the top 20 of that board on this visit. A missing row is not a record, and the board is not a Watchdog grade.",
+      "customers": "No buyer sample in this edition.",
+      "strengths": [
+        "The shop states the stake behind its profit column, which is more than a bare dollar claim."
+      ],
+      "weaknesses": [
+        "A price that cannot be reopened is not a price we will print.",
+        "There is still no outside grade, so there is no score."
+      ],
+      "related": [
+        "jim-feist"
+      ],
+      "sources": [
+        {
+          "title": "SportsCapping season profit board",
+          "url": "https://www.sportscapping.com/all-season-cappers-leaderboard.html?min_picks=1&sort=profit&direction=DESC"
+        }
+      ]
+    },
+    {
+      "slug": "jim-feist",
+      "name": "Jim Feist",
+      "kind": "Pick service",
+      "title": "Jim Feist Review | Handicapper Watchdog",
+      "description": "Jim Feist review: a reseller page that names subscriptions and does not print a dollar price in the text, and no Watchdog score.",
+      "dek": "Jim Feist is sold through a reseller that says it is part of the SportsCapping network. On 27 Oct 2026 that page did not print a package price in the text we could read.",
+      "advertised": [
+        "The Capper Reviews page says Jim Feist sells picks through the SportsCapping network, and that Capper Reviews is part of that network. The service bio says more than 30 years. The page does not print a measured start year.",
+        "The page also prints streak lines, such as MLB money lines 1016-879 since a 2018 date. A selected streak on a sales page is not the whole card, and it is not repeated here as a Watchdog record."
+      ],
+      "watchdog": "Not matched to a Watchdog graded record. Big Al's own article, checked the same day, also prints a Jim Feist line. That line is linked from the Big Al review and is still the seller's number.",
+      "pricing": [
+        "No package dollar amount was in the text we could read on 27 Oct 2026. This is not a verified current offer, and it is not a Feist owned checkout. The reseller page named a 3 day all sports subscription, a college football season subscription, and an NFL and college football season pass, and it said the sale goes through SportsCapping. Older dollar figures are omitted because they were not on the page."
+      ],
+      "transparency": "The packages say you get the plays released during the window. The page showed a yesterday table for three games. That is a sample, not an archive.",
+      "customers": "The star line was 3.91 out of 5 from 55 votes on that reseller. That is a widget, not an investigation, so it does not fill the customer part of the rubric.",
+      "strengths": [
+        "The page names the subscription windows and says SportsCapping processes the sale."
+      ],
+      "weaknesses": [
+        "The 3 day subscription carries a profit guarantee slogan. A slogan on a sales page is not a graded record.",
+        "The bio says more than 30 years and does not show the start of the log. No Watchdog record is attached."
+      ],
+      "related": [
+        "big-al",
+        "jimmy-boyd"
+      ],
+      "sources": [
+        {
+          "title": "Capper Reviews page for Jim Feist",
+          "url": "https://capperreviews.com/capper/jim-feist/"
+        }
+      ]
+    },
+    {
+      "slug": "scott-spreitzer",
+      "name": "Scott Spreitzer",
+      "kind": "Pick service",
+      "title": "Scott Spreitzer Review | Handicapper Watchdog",
+      "description": "Scott Spreitzer review: the football runs advertised on the Doc's Sports roster, and no Watchdog score.",
+      "dek": "Spreitzer is sold on the Doc's Sports roster. The only numbers we opened were the headlines on that roster.",
+      "advertised": [
+        "On the Doc's Sports expert page opened 27 Oct 2026 he was billed with a 7 star Sunday NFL sweep, a college and pro football October line of 69% and +3,660, a 7-1 football week at +15,260, and an all sports line of 128-82 at 61%. His roster row did not show a soccer record."
+      ],
+      "watchdog": "Not matched. Those figures are the store's headlines.",
+      "pricing": [
+        "No standalone price was on the roster row. Buying him means buying through Doc's Sports, and that price was not on the page we opened."
+      ],
+      "transparency": "A plus dollar figure without the losing plays next to it is not a record a reader can audit.",
+      "customers": "No buyer sample in this edition.",
+      "strengths": [
+        "The pitch is tied to a named person on an established store, not an anonymous account."
+      ],
+      "weaknesses": [
+        "Headline runs are how tout shops sell a hot week. They are the wrong document for a score.",
+        "Until the posts are public and graded, the 128-82 line is an ad."
+      ],
+      "related": [
+        "docs-sports"
+      ],
+      "sources": [
+        {
+          "title": "Doc's Sports expert roster",
+          "url": "https://www.docsports.com/expert-handicappers.html"
+        }
+      ]
+    },
+    {
+      "slug": "robert-ferringo",
+      "name": "Robert Ferringo",
+      "kind": "Pick service",
+      "title": "Robert Ferringo Review | Handicapper Watchdog",
+      "description": "Robert Ferringo review: the 8 unit game of the year claim on Doc's Sports, and no Watchdog score.",
+      "dek": "Ferringo is on the Doc's roster with a large advertised dollar run on his biggest plays. The log was not on the page.",
+      "advertised": [
+        "The Doc's Sports roster listed him at 99-57, +28,800 on 8 unit games of the year, plus shorter football lines including 5-2, +1,680 on plays rated 5 units and up."
+      ],
+      "watchdog": "Not matched to a graded record.",
+      "pricing": [
+        "No price on the roster row we read. The purchase path is Doc's Sports."
+      ],
+      "transparency": "An 8 unit game of the year is a selected subset. A subset of the biggest plays is not the whole card, and the page did not show the whole card.",
+      "customers": "No buyer sample in this edition.",
+      "strengths": [
+        "The claim is narrow enough to check later: games of the year, at 8 units, with a win loss count."
+      ],
+      "weaknesses": [
+        "Selected big plays will look better than the rest of the card. That is the weakness of the way it is advertised.",
+        "No outside grade yet, so no score."
+      ],
+      "related": [
+        "docs-sports"
+      ],
+      "sources": [
+        {
+          "title": "Doc's Sports expert roster",
+          "url": "https://www.docsports.com/expert-handicappers.html"
+        }
+      ]
+    },
+    {
+      "slug": "docs-sports-ai",
+      "name": "Doc's Sports AI-v3",
+      "kind": "Model picks",
+      "title": "Doc's Sports AI-v3 Review | Handicapper Watchdog",
+      "description": "Doc's Sports AI-v3 review: the inception profit claimed on the roster, and why a model still needs a graded log.",
+      "dek": "A model sold next to the human roster at Doc's. The page gave a profit since inception and a 2026 profit. It did not give the picks.",
+      "advertised": [
+        "On the expert page opened 27 Oct 2026, Doc's Sports AI-v3 was listed at +22,990 since inception, +18,430 profit in 2026, seven winning months in 2026, and 5-0 over the last 5 AI picks."
+      ],
+      "watchdog": "Not matched. A model is graded the same way as a person: from the posts, not from the slogan.",
+      "pricing": [
+        "No separate price was on the roster row."
+      ],
+      "transparency": "Since inception is only meaningful if the first pick and every later pick are still in the file. That file was not on the page.",
+      "customers": "No buyer sample in this edition.",
+      "strengths": [
+        "A model can be checked cleanly once the picks are public, because there is no memory of a deleted play if the archive is complete."
+      ],
+      "weaknesses": [
+        "Seven winning months and a last 5 record are teasers. They are not the archive.",
+        "Calling it AI does not change the evidence we still do not have."
+      ],
+      "related": [
+        "docs-sports"
+      ],
+      "sources": [
+        {
+          "title": "Doc's Sports expert roster",
+          "url": "https://www.docsports.com/expert-handicappers.html"
+        }
+      ]
+    },
+    {
+      "slug": "big-al",
+      "name": "Big Al",
+      "kind": "Pick service",
+      "title": "Big Al Review | Handicapper Watchdog",
+      "description": "Big Al review: a site that ranks other handicappers in dollars, including its own pages, with no Watchdog score.",
+      "dek": "BigAl.com publishes shop rankings and sells picks. The article checked here is not Big Al's own graded card, and it is not an outside audit.",
+      "advertised": [
+        "The article opened on 27 Oct 2026 is by Rod Pearson and dated Thursday, Jun 25, 2026. Its 365 day all sports list ranks Kyle Hunter first at 368-296-7 and +$40,330, and Jim Feist second at 729-639-13 and +$25,130. Doc's Sports appears in shorter windows on the same page, including 29-21 and +$5,610 over 30 days and 8-3 and +$4,800 over 7 days. The page then points readers to shop picks.",
+        "The article names Al McMordie at 183-153-2 and +$14,340 for an NBA season. That is the site's figure for one sport window, not a career log. A copyright line naming him was not on the article text we read.",
+        "A separate marketplace, SportsCapping, listed Big Al McMordie 11th on its season profit board the same day: 637-544, $2,686, 53.9% wins, 2.0% ROI, average odds -113, at flat $100 a bet. That row is the marketplace's accounting. This review does not treat it as proof that every Big Al page is the same business, and it does not treat either dollar figure as a Watchdog grade."
+      ],
+      "watchdog": "Not matched. Profit rankings published by a pick shop, and a marketplace board, are those sites' numbers.",
+      "pricing": [
+        "The article did not state a subscription price. It displayed a line about $90 in coupons and a buy 3 get 1 free line. That is the site's own promotion on that date. It is not verified as still available, and this review is not offering it."
+      ],
+      "transparency": "The article shows wins, losses and dollars in the same table, which is the minimum shape of a record. It does not define the stake behind a BigAl.com dollar. SportsCapping does define its column as flat $100 bets. The two documents are not the same record.",
+      "customers": "No buyer sample in this edition.",
+      "strengths": [
+        "Losing records sit in the same table as winning ones, and the article names its author and date."
+      ],
+      "weaknesses": [
+        "A shop ranking handicappers, then asking you to buy, is not an independent board.",
+        "Two sites, two dollar figures, and no Watchdog grade. That is why this page stays Not rated."
+      ],
+      "related": [
+        "jim-feist",
+        "docs-sports",
+        "cappertek"
+      ],
+      "sources": [
+        {
+          "title": "Big Al, who is the best handicapper",
+          "url": "https://www.bigal.com/articles/who-is-the-best-sports-handicapper-d7ca64dc-14a9-487a-ac94-69aea40efcfe"
+        },
+        {
+          "title": "SportsCapping season profit board",
+          "url": "https://www.sportscapping.com/all-season-cappers-leaderboard.html?min_picks=1&sort=profit&direction=DESC"
+        }
+      ]
+    }
+  ]
+}

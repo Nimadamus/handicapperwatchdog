@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Handicapper Watchdog | Who Is Actually Winning? Graded Records of Public Cappers</title>
-<meta name="description" content="Real picks, independently graded. Rankings, records, units, ROI and in depth stats for thousands of sports betting handicappers on X, Covers, Reddit and the betting forums.">
+<meta name="description" content="Independently graded handicapper records. A pick counts only if posted in public before the start. Rankings, units, and ROI. Names stay off the free board.">
 <link rel="canonical" href="https://handicapperwatchdog.com/">
 <meta property="og:title" content="Handicapper Watchdog | Who Is Actually Winning? Graded Records of Public Cappers">
-<meta property="og:description" content="Real picks, independently graded. Rankings, records, units, ROI and in depth stats for thousands of sports betting handicappers on X, Covers, Reddit and the betting forums.">
+<meta property="og:description" content="Independently graded handicapper records. A pick counts only if posted in public before the start. Rankings, units, and ROI. Names stay off the free board.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://handicapperwatchdog.com/">
 <meta property="og:site_name" content="Handicapper Watchdog">
@@ -17,7 +17,7 @@
 <meta name="theme-color" content="#070d17">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700;750;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,680&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SC607ZYK1F"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-SC607ZYK1F');</script>
@@ -25,33 +25,38 @@
 <body data-page="home">
 <header class="top"><div class="wrap">
   <a class="brand" href="./"><img src="favicon.svg" alt="" width="24" height="24"><span>Handicapper <b>Watchdog</b></span></a>
-  <nav class="navlinks"><a href="cappers.html">Rankings</a><a href="./#sports">By sport</a><a href="./#method">Methodology</a><a href="pricing.html">Pricing</a></nav>
-  <form class="navsearch" action="cappers.html" role="search"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input name="q" placeholder="Search capper ID, sport or platform" aria-label="Search cappers"></form>
+  <input id="navtoggle" class="navtoggle" type="checkbox">
+  <label class="navbtn" for="navtoggle">Menu</label>
+  <nav class="navlinks" id="sitenav"><a href="cappers.html">Rankings</a><a href="reviews/index.html">Reviews</a><a href="sportsbooks/">Sportsbooks</a><a href="pricing.html">Pricing</a></nav>
+  <form class="navsearch" action="cappers.html" role="search"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input name="q" placeholder="Search capper ID or sport" aria-label="Search cappers"></form>
   <a class="btn sm pro" href="pricing.html">Watchdog Pro</a>
 </div></header>
 <main class="wrap">
   <section class="intro">
+    <div class="night" aria-hidden="true"></div>
     <div>
       <div class="eyebrow">Independent handicapper tracking</div>
       <h1>Find out who&rsquo;s actually winning.</h1>
-      <p class="sub">Real picks. Independently graded. Every handicapper&rsquo;s record in one place.</p>
-      <form class="bigsearch" action="cappers.html" role="search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input name="q" placeholder="Search by capper ID, sport or platform" aria-label="Search cappers"><button class="btn" type="submit">Search</button></form>
+      <p class="sub">Real picks. Independently graded. No self-reported records.</p>
+      <form class="bigsearch" action="cappers.html" role="search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input name="q" placeholder="Search by capper ID or sport" aria-label="Search cappers"><button class="btn" type="submit">Search</button></form>
       <div class="chips" id="quick"></div>
       <div class="hl3" id="highlights"></div>
       <div class="introfoot"><span>Graded on the final score</span><span>Posted before the game starts</span><span>No self reported records</span></div>
     </div>
     <div class="panel live" id="live">
-      <div class="ph"><h3><span class="dot"></span>Live tracking</h3><span class="muted small" id="liveAt"></span></div>
+      <div class="ph"><p class="phtitle"><span class="dot"></span>Live tracking</p><span class="muted small" id="liveAt"></span></div>
       <div class="kvgrid" id="liveGrid"><!--seo:live--><div class="kv"><div class="skel"></div></div><div class="kv"><div class="skel"></div></div><div class="kv"><div class="skel"></div></div><div class="kv"><div class="skel"></div></div><!--/seo:live--></div>
-      <div class="pf"><span>Counters read from the Watchdog database at our last update</span></div>
+      <div class="mix" id="liveMix" hidden></div>
+      <div class="pf"><span>Counters read from the Watchdog database</span><a class="lock" href="#pro">Pro</a></div>
     </div>
   </section>
 
+  <div class="sech" id="rankings"><h2>Established rankings</h2><a href="cappers.html">Full rankings</a></div>
   <section class="panel" id="board">
     <div class="ph"><div class="tabs" id="boardTabs"></div>
       <select id="boardSport" aria-label="Sport" style="width:auto;min-width:130px"><option value="">All sports</option></select></div>
     <div class="tw"><table><thead id="boardHead"><tr><th class="l">#</th><th class="l">Handicapper</th><th class="hm l">Trend</th><th class="hm">Picks</th><th>Record</th><th class="hm">Win %</th><th>Units</th><th class="hm">ROI</th><th class="hm">Streak</th><th class="hm">Last pick</th></tr></thead><tbody id="boardRows"><!--seo:board--><tr><td colspan="10"><div class="skel"></div></td></tr><!--/seo:board--></tbody></table></div>
-    <div class="tfoot"><span id="boardNote">Handicappers with 20 or more graded picks, ranked by units won.</span><a class="btn sm ghost" href="cappers.html">Full rankings</a></div>
+    <div class="tfoot"><span id="boardNote">Established records, 100 or more graded picks, ranked by units won.</span><a class="btn sm ghost" href="cappers.html">Full rankings</a></div>
   </section>
 
   <section class="row2" id="sports">
@@ -68,32 +73,39 @@
   <section class="proband" id="pro">
     <div>
       <span class="lock">Watchdog Pro</span>
-      <h2>See who they are. See every pick.</h2>
-      <p class="muted" style="margin:0">The free rankings show who is winning. Watchdog Pro reveals the handicapper behind every record and every graded pick they made.</p>
-      <div class="price"><b>$59.99</b> a month, or <b style="font-size:16px">$499</b> a year</div>
+      <h2>See who they are and what they are betting.</h2>
+      <p class="muted" style="margin:0">The free board shows the record. The name and the posting site stay locked. Pro is not a verified badge, and a handicapper cannot pay for a higher rank.</p>
+      <div class="price"><b>$59.99</b> a month, or $499 a year.</div>
       <a class="btn pro" href="pricing.html">See Watchdog Pro</a>
     </div>
     <div class="feats">
       <div class="feat"><b>Names and original posts</b><span>The handicapper behind every record, with a link to every post we graded.</span></div>
-      <div class="feat"><b>Complete pick logs</b><span>Every graded pick: game, pick, price, result, units and when it was posted.</span></div>
-      <div class="feat"><b>Search by name and compare</b><span>Find any handicapper by handle and put up to four records side by side.</span></div>
+      <div class="feat"><b>Complete pick logs</b><span>Every graded pick: game, line, price, result and when it was posted.</span></div>
+      <div class="feat"><b>Search and compare</b><span>Find any handicapper by name and put up to four records side by side.</span></div>
       <div class="feat"><b>Advanced filters</b><span>Rank by closing line value, z score, drawdown and profitable months.</span></div>
     </div>
   </section>
 
+  <section class="guides" id="editorial">
+    <a class="panel pb guide" href="reviews/index.html"><div class="eyebrow">Reviews</div><b>Handicapper reviews</b><p>Public services checked against what they advertise. A score is withheld when the evidence is not there.</p></a>
+    <a class="panel pb guide" href="sportsbooks/"><div class="eyebrow">Sportsbooks</div><b>Sportsbook research</b><p>What DraftKings, FanDuel, bet365, Fanatics, and BetMGM publish. No score without a measurement. No signup links. JustBet stays a separate page.</p></a>
+    <a class="panel pb guide" href="how-we-grade.html"><div class="eyebrow">Methodology</div><b>How a record is graded</b><p>Public posts, final scores, and sample size. The free board opens on 100 or more graded picks. <span class="dim">Read the method.</span></p></a>
+  </section>
+  <p class="muted small" style="margin:-6px 0 22px">The long investigation is the <a href="reviews/cappertek.html">CapperTek review</a>. The free board stays anonymous. <a href="the-board.html">How many records are up</a>.</p>
+
   <section id="method" class="sec">
-    <div class="sech"><h2>Methodology</h2></div>
+    <div class="sech"><h2>Methodology</h2><a href="the-board.html">The board</a></div>
     <div class="how">
       <div class="panel pb"><span class="n">01</span><b>Captured from public posts</b><p>Picks are harvested daily from the public places handicappers post them, with the time each was posted. Picks posted after the game starts are not counted.</p></div>
       <div class="panel pb"><span class="n">02</span><b>Graded on the final score</b><p>Straight bets are graded against final scores. Units assume 1 unit risked per pick at the posted price, or a reference price when none was posted.</p></div>
-      <div class="panel pb"><span class="n">03</span><b>Sample size on every record</b><p><span class="badge sm">Small sample</span> under 20 picks, <span class="badge dev">Developing</span> 20 to 99, <span class="badge est">Established</span> 100 or more. Pending picks are never mixed into records.</p></div>
+      <div class="panel pb"><span class="n">03</span><b>Sample size on every record</b><p><span class="badge sm">Small sample</span> under 20 picks, <span class="badge dev">Developing</span> 20 to 99, <span class="badge est">Established</span> 100 or more. Pending picks are never mixed into records. <span id="featPending"><!--seo:pending-->Picks posted for games that have not started stay locked. The names stay locked too.<!--/seo:pending--></span></p></div>
     </div>
   </section>
 </main>
 <footer class="foot"><div class="wrap">
   <div><p><b>Handicapper Watchdog</b> grades picks captured from public posts on X, Covers, Reddit, TheRX, Sportsbook Review and Predictem. Records are past results, not predictions or guarantees. Held, duplicate and unreviewed picks are not counted.</p>
   <p>21+. Gambling problem? Call 1 800 GAMBLER.</p></div>
-  <div><p><a href="cappers.html">Rankings</a></p><p><a href="./#method">Methodology</a></p><p><a href="pricing.html">Watchdog Pro</a></p><p><a href="account.html">Account</a></p><p><a href="terms.html">Terms</a></p><p><a href="privacy.html">Privacy</a></p></div>
+  <div><p><a href="cappers.html">Rankings</a></p><p><a href="reviews/index.html">Reviews</a></p><p><a href="sportsbooks/">Sportsbooks</a></p><p><a href="sportsbooks/justbet.html">JustBet</a></p><p><a href="the-board.html">The board</a></p><p><a href="how-we-grade.html">How we grade</a></p><p><a href="pricing.html">Watchdog Pro</a></p><p><a href="account.html">Account</a></p><p><a href="about.html">About</a></p><p><a href="privacy.html">Privacy</a></p><p><a href="terms.html">Terms</a></p><p><a href="contact.html">Contact</a></p></div>
 </div></footer>
 <script src="pro.js"></script>
 <script src="app.js"></script>

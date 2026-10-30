@@ -1,7 +1,8 @@
 (function () {
   'use strict';
   var page = document.body.getAttribute('data-page');
-  var PRO = './#pro';
+  var PRO = false; // true once /api/me confirms an active Watchdog Pro membership
+  var NAMES = null; // id -> [id, handle, source] once a Pro member's names file is decrypted
   var $ = function (id) { return document.getElementById(id); };
   var fmt = function (n) { return n == null ? 'n/a' : Number(n).toLocaleString('en-US'); };
   var esc = function (s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
@@ -20,11 +21,10 @@
     return '<svg class="spark" width="' + W + '" height="' + H + '" viewBox="0 0 ' + W + ' ' + H + '" aria-hidden="true"><line x1="0" x2="' + W + '" y1="' + z + '" y2="' + z + '" stroke="var(--line2)" stroke-dasharray="2 3"/><path d="' + d + '" fill="none" stroke="' + c + '" stroke-width="1.6"/></svg>';
   }
 
-  var NAMES = null; // id -> [id, handle, source] once a Pro member's names file is decrypted
   function capCell(r) {
     var t = TIER[r.tier] || TIER.small, n = NAMES && NAMES[r.id];
     return '<div class="cap"><span class="av">' + esc(code(r.id).slice(0, 2)) + '</span><span class="nm"><b>' + (n ? esc(n[1]) : '<span class="blur" aria-label="Name hidden">Hidden name</span>') + '</b>' +
-      '<small>ID ' + esc(code(r.id)) + ' · ' + esc(r.source) + ' <span class="badge ' + t[0] + '">' + t[1] + '</span></small></span></div>';
+      '<small>ID ' + esc(code(r.id)) + ' · ' + (n && n[2] ? esc(n[2]) + ' ' : '') + '<span class="badge ' + t[0] + '">' + t[1] + '</span></small></span></div>';
   }
 
   // metrics for a capper in a view: lifetime, a timeframe (r7/r30) or one sport
@@ -60,6 +60,12 @@
     all.forEach(function (r) { Object.keys(r.bs || {}).forEach(function (s) { if (r.bs[s][0] >= min) c[s] = (c[s] || 0) + 1; }); });
     return Object.keys(c).sort(function (a, b) { return c[b] - c[a]; });
   }
+  function sportSlug(s) { return String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''); }
+  function sportPages(all) {
+    var c = {};
+    all.forEach(function (r) { Object.keys(r.bs || {}).forEach(function (s) { if (r.bs[s][0] >= 30) c[s] = (c[s] || 0) + 1; }); });
+    return Object.keys(c).filter(function (s) { return c[s] >= 5; }).sort(function (a, b) { return c[b] - c[a]; });
+  }
 
   // ---------------- home ----------------
   function home(d) {
@@ -69,16 +75,27 @@
     if (L) {
       var kv = [[fmt(L.accounts_discovered), 'Accounts discovered'], [fmt(L.accounts_monitored), 'Accounts monitored'], [fmt(L.posts_captured), 'Posts scanned'],
         [fmt(L.picks_captured_today), 'Picks captured today'], [fmt(L.graded_picks), 'Picks graded'], [fmt(L.pending_picks), 'Pending picks awaiting games']];
-      $('liveGrid').innerHTML = kv.map(function (k) { return '<div class="kv' + (k[2] ? ' hl' : '') + '"><b>' + k[0] + '</b><span>' + k[1] + '' + '</span></div>'; }).join('');
+      $('liveGrid').innerHTML = kv.map(function (k) { return '<div class="kv' + (k[2] ? ' hl' : '') + '"><b>' + k[0] + '</b><span>' + k[1] + (k[2] ? ' <a class="lock" href="#pro">Pro</a>' : '') + '</span></div>'; }).join('');
       $('liveAt').textContent = 'Last capture ' + new Date(L.last_capture_at).toLocaleTimeString('en-US', { timeZone: 'America/Los_Angeles', hour: 'numeric', minute: '2-digit' }) + ' PT';
+      $('featPending').textContent = fmt(L.pending_picks) + ' picks are up for games that have not started. Names are locked.';
+      var mix = $('liveMix'), sources = (L.sources || []).filter(function (s) { return s && s.label && s.graded_picks > 0; })
+        .slice().sort(function (a, b) { return b.graded_picks - a.graded_picks; });
+      if (mix && sources.length) {
+        var peak = sources[0].graded_picks;
+        mix.hidden = false;
+        mix.innerHTML = '<p class="mixlabel">Graded picks by source</p>' + sources.map(function (s) {
+          var w = Math.max(4, Math.round(100 * s.graded_picks / peak));
+          return '<div class="mixrow"><span>' + esc(s.label) + '</span><span class="mixbar" role="presentation"><i style="width:' + w + '%"></i></span><b>' + fmt(s.graded_picks) + '</b></div>';
+        }).join('');
+      }
     } else {
       $('liveGrid').innerHTML = '<div class="kv"><b>' + fmt(M.tracked) + '</b><span>Handicappers with a record</span></div><div class="kv"><b>' + fmt(M.graded_picks) + '</b><span>Picks graded</span></div>';
     }
 
     // quick chips
     var sports = sportsByDepth(all, 10).slice(0, 6);
-    $('quick').innerHTML = sports.map(function (s) { return '<a class="chip" href="cappers.html?sport=' + encodeURIComponent(s) + '">' + esc(s) + '</a>'; }).join('') +
-      ['X', 'Covers', 'Reddit'].map(function (s) { return '<a class="chip" href="cappers.html?src=' + encodeURIComponent(s) + '">' + s + '</a>'; }).join('');
+    var pages = sportPages(all);
+    $('quick').innerHTML = pages.slice(0, 6).map(function (s) { return '<a class="chip" href="sports/' + sportSlug(s) + '.html">' + esc(s) + '</a>'; }).join('');
 
     // hero highlights: three real leaders, each linked to its profile
     var best = function (f, key) { var c = all.filter(f).map(function (r) { return { r: r, v: key(r) }; }).filter(function (o) { return o.v != null; }); c.sort(function (a, b) { return b.v - a.v; }); return c[0]; };
@@ -86,15 +103,20 @@
       ['Best last 7 days', best(function (r) { return r.r7 && r.r7.picks >= 5; }, function (r) { return r.r7.net; }), function (o) { return sgn(o.v, 2, 'u'); }, function (o) { return o.r.r7.w + '-' + o.r.r7.l + ' in ' + o.r.r7.picks + ' picks'; }],
       ['Hottest current streak', best(function (r) { return r.picks >= 20; }, function (r) { return r.streak > 0 ? r.streak : null; }), function (o) { return '<span class="pos">W' + o.v + '</span>'; }, function (o) { return o.r.w + '-' + o.r.l + ' overall'; }],
       ['Best ROI, 100+ picks', best(function (r) { return r.picks >= 100; }, function (r) { return r.roi; }), function (o) { return sgn(o.v, 1, '%'); }, function (o) { return fmt(o.r.picks) + ' graded picks'; }]];
-    $('highlights').innerHTML = H.filter(function (x) { return x[1]; }).map(function (x) {
+    var icons = [
+      '<svg class="hlico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 16l5-5 3.5 3.5L20 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 7h6v6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>',
+      '<svg class="hlico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5l1.7 4.8 5.1.4-3.9 3.3 1.2 5-4.1-2.6-4.1 2.6 1.2-5L4.2 8.7l5.1-.4z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>',
+      '<svg class="hlico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="7.2" cy="8" r="2.1" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="16.8" cy="16" r="2.1" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M17 6.5L7 17.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>'];
+    $('highlights').innerHTML = H.map(function (x, i) {
+      if (!x[1]) return '';
       var o = x[1], h = link(o.r);
-      return '<a class="hl" ' + (h ? 'href="' + h + '"' : '') + '><div class="eyebrow">' + x[0] + '</div><b>' + x[2](o) + '</b><span>ID ' + esc(code(o.r.id)) + ' · ' + esc(o.r.source) + ' · ' + x[3](o) + '</span></a>';
+      return '<a class="hl" ' + (h ? 'href="' + h + '"' : '') + '>' + icons[i] + '<div class="eyebrow">' + x[0] + '</div><b>' + x[2](o) + '</b><span>ID ' + esc(code(o.r.id)) + ' · ' + x[3](o) + '</span></a>';
     }).join('');
 
     // leaderboard tabs
     var cut = new Date(built - 21 * DAY).toISOString().slice(0, 10);
     var TABS = [
-      ['overall', 'Overall', 'all', function (r) { return r.picks >= 20 && r.units != null; }, 'units', 'Handicappers with 20+ graded picks, ranked by units won since tracking began.'],
+      ['overall', 'Established', 'all', function (r) { return r.picks >= 100 && r.units != null; }, 'units', 'Established records, 100 or more graded picks, ranked by units won.'],
       ['r30', 'Last 30 days', 'r30', function (r) { return r.r30 && r.r30.picks >= 10; }, 'units', 'Units won over the last 30 days, 10+ graded picks in that window.'],
       ['r7', 'Last 7 days', 'r7', function (r) { return r.r7 && r.r7.picks >= 5; }, 'units', 'Units won over the last 7 days, 5+ graded picks in that window.'],
       ['roi', 'Best ROI', 'all', function (r) { return r.picks >= 50 && r.roi != null; }, 'roi', 'Highest return on units risked, 50+ graded picks.'],
@@ -129,10 +151,10 @@
     draw();
 
     // top performers by sport
-    $('sportGrid').innerHTML = sportsByDepth(all, 15).slice(0, 6).map(function (s) {
-      var top = all.map(function (r) { return { r: r, x: m(r, null, s) }; }).filter(function (o) { return o.x && o.x.picks >= 15 && o.x.units > 0; })
+    $('sportGrid').innerHTML = sportPages(all).slice(0, 6).map(function (s) {
+      var top = all.map(function (r) { return { r: r, x: m(r, null, s) }; }).filter(function (o) { return o.x && o.x.picks >= 30 && o.x.units > 0; })
         .sort(function (a, b) { return b.x.units - a.x.units; }).slice(0, 3);
-      return !top.length ? '' : '<div class="sc"><h4><span>' + esc(s) + '</span><a class="muted small" href="cappers.html?sport=' + encodeURIComponent(s) + '">View all</a></h4><ol>' + top.map(function (o) {
+      return !top.length ? '' : '<div class="sc s-' + sportSlug(s) + '"><p class="sptitle"><span>' + esc(s) + '</span><a class="muted small" href="sports/' + sportSlug(s) + '.html">View all</a></p><ol>' + top.map(function (o) {
         var h = link(o.r);
         return '<li><a ' + (h ? 'href="' + h + '"' : '') + '><span class="badge">' + esc(code(o.r.id)) + '</span><span class="muted">' + recTxt(o.x) + '</span></a>' + sgn(o.x.units, 1, 'u') + '</li>';
       }).join('') + '</ol></div>';
@@ -143,28 +165,36 @@
     var up = function (a) { return a.filter(function (r) { return r.units > 0; }).length; };
     var roiSorted = q.map(function (r) { return r.roi; }).filter(function (v) { return v != null; }).sort(function (a, b) { return a - b; });
     var med = roiSorted.length ? roiSorted[Math.floor(roiSorted.length / 2)] : null;
-    var bySrc = {}; q.forEach(function (r) { var b = bySrc[r.source] = bySrc[r.source] || [0, 0]; b[0]++; if (r.units > 0) b[1]++; });
-    $('reality').innerHTML = '<div class="eyebrow">Established records, 100+ picks</div><div class="big">' + (e.length ? Math.round(100 * up(e) / e.length) : 0) + '%</div>' +
-      '<p class="muted small" style="margin:2px 0 14px">are up money: ' + fmt(up(e)) + ' of ' + fmt(e.length) + ' handicappers. With 20+ picks it is ' + fmt(up(q)) + ' of ' + fmt(q.length) +
+    var roll = M.by_platform;
+    if (!roll) {
+      var tmp = {};
+      q.forEach(function (r) {
+        if (!r.source) return;
+        var b = tmp[r.source] = tmp[r.source] || { name: r.source, n: 0, up: 0 };
+        b.n++; if (r.units > 0) b.up++;
+      });
+      roll = Object.keys(tmp).map(function (k) { return tmp[k]; }).sort(function (a, b) { return b.n - a.n; });
+    }
+    var bars = (roll || []).map(function (s) {
+      var p = s.n ? Math.round(100 * s.up / s.n) : 0;
+      return '<div class="srcrow"><span>' + esc(s.name) + ' <span class="dim small">' + fmt(s.n) + '</span></span><span class="bar" style="width:90px"><i style="width:' + p + '%"></i></span><b class="num">' + p + '%</b></div>';
+    }).join('');
+    $('reality').innerHTML = '<div class="eyebrow">Established records, 100 or more picks</div><div class="big">' + (e.length ? Math.round(100 * up(e) / e.length) : 0) + '%</div>' +
+      '<p class="muted small" style="margin:2px 0 14px">are up money: ' + fmt(up(e)) + ' of ' + fmt(e.length) + ' handicappers. With 20 or more picks it is ' + fmt(up(q)) + ' of ' + fmt(q.length) +
       ', and the median ROI is ' + (med == null ? 'n/a' : (med > 0 ? '+' : '') + med.toFixed(1) + '%') + '.</p>' +
-      '<div class="eyebrow" style="margin-bottom:4px">Up money by platform, 20+ picks</div>' +
-      Object.keys(bySrc).sort(function (a, b) { return bySrc[b][0] - bySrc[a][0]; }).map(function (s) {
-        var b = bySrc[s], p = Math.round(100 * b[1] / b[0]);
-        return '<div class="srcrow"><span>' + esc(s) + ' <span class="dim small">' + fmt(b[0]) + '</span></span><span class="bar" style="width:90px"><i style="width:' + p + '%"></i></span><b class="num">' + p + '%</b></div>';
-      }).join('');
+      (bars ? '<div class="eyebrow" style="margin-bottom:4px">Up money by posting site, 20 or more picks</div>' + bars : '');
   }
 
   // ---------------- rankings ----------------
-  var PRO = false;
   function rankings(d) {
     var M = d.meta, all = d.cappers, PER = 50, pageNo = 1, view = [], picked = [];
     var P = new URLSearchParams(location.search);
     $('fresh').textContent = fmt(M.tracked) + ' handicappers with graded picks. Updated ' + new Date(M.built_at).toLocaleString('en-US', { timeZone: 'America/Los_Angeles', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) + ' PT.';
+    if (M.live) $('pendNote').textContent = fmt(M.live.pending_picks) + ' picks are up for games that have not started. Names are locked.';
     sportsByDepth(all, 5).forEach(function (s) { $('fSport').insertAdjacentHTML('beforeend', '<option>' + esc(s) + '</option>'); });
-    M.sources.forEach(function (s) { $('fSource').insertAdjacentHTML('beforeend', '<option>' + esc(s) + '</option>'); });
-    var map = { q: 'q', sport: 'fSport', src: 'fSource', t: 'fTime', sort: 'fSort', min: 'fMin', roi: 'fRoi', win: 'fWin', u: 'fUnits' };
+    var map = { q: 'q', sport: 'fSport', t: 'fTime', sort: 'fSort', min: 'fMin', roi: 'fRoi', win: 'fWin', u: 'fUnits' };
     Object.keys(map).forEach(function (k) { if (P.has(k)) $(map[k]).value = P.get(k); });
-    var cols = [['l', '#', ''], ['l', 'Handicapper', ''], ['hm l', 'Trend', ''], ['hp', 'Picks', 'picks'], ['', 'Record', ''], ['hm', 'Win %', 'win_pct'], ['', 'Units', 'units'], ['hp', 'ROI', 'roi'], ['hm', 'Streak', 'streak'], ['hm', 'Last pick', 'last_pick']];
+    var cols = [['l', '#', ''], ['l', 'Handicapper', ''], ['hm l', 'Trend', ''], ['', 'Picks', 'picks'], ['', 'Record', ''], ['hm', 'Win %', 'win_pct'], ['', 'Units', 'units'], ['', 'ROI', 'roi'], ['hm', 'Streak', 'streak'], ['hm', 'Last pick', 'last_pick']];
 
     function head() {
       var s = $('fSort').value;
@@ -173,16 +203,17 @@
     $('head').addEventListener('click', function (e) { var th = e.target.closest('th.sortable'); if (!th) return; $('fSort').value = th.getAttribute('data-k'); apply(); });
 
     function apply() {
-      var q = $('q').value.trim().toLowerCase(), sp = $('fSport').value, so = $('fSource').value, t = sp ? 'all' : $('fTime').value;
+      var q = $('q').value.trim().toLowerCase(), sp = $('fSport').value, t = sp ? 'all' : $('fTime').value;
       $('fTime').disabled = !!sp;
       var min = +$('fMin').value || 1, roi = $('fRoi').value, win = $('fWin').value, un = $('fUnits').value, sort = $('fSort').value;
       view = [];
       all.forEach(function (r) {
-        if (so && r.source !== so) return;
-        if (q && !(r.id.indexOf(q) === 0 || code(r.id).toLowerCase() === q || r.source.toLowerCase().indexOf(q) >= 0 ||
+        if (q && !(r.id.indexOf(q) === 0 || code(r.id).toLowerCase() === q ||
           (NAMES && NAMES[r.id] && String(NAMES[r.id][1]).toLowerCase().indexOf(q.replace(/^@/, '')) >= 0) ||
-          r.sports.some(function (s) { return s.toLowerCase().indexOf(q) >= 0; }))) return;
-        var x = m(r, t, sp); if (!x || x.picks < min) return;
+          (r.sports || []).some(function (s) { return s.toLowerCase().indexOf(q) >= 0; }))) return;
+        var x = m(r, t, sp); if (!x) return;
+        if (sp) { if (r.picks < min || x.picks < 30) return; }
+        else if (x.picks < min) return;
         if (PRO) {
           var clv = $('fClv').value, z = $('fZ').value, dd = $('fDd').value, mo = $('fMo').value;
           if (clv !== '' && !(r.clv_beat != null && r.clv_n >= 10 && r.clv_beat >= +clv)) return;
@@ -199,7 +230,7 @@
       var val = function (o) { return key === 'streak' ? o.r.streak : key === 'last_pick' ? (o.r.last_pick || '') : o.x[key]; };
       view.sort(function (a, b) { var x = val(a), y = val(b); if (x == null) return 1; if (y == null) return -1; return (x < y ? -1 : x > y ? 1 : 0) * dir; });
       var qs = new URLSearchParams();
-      Object.keys(map).forEach(function (k) { var v = $(map[k]).value; if (v && !(k === 'min' && v === '20') && !(k === 't' && v === 'all') && !(k === 'sort' && v === 'units')) qs.set(k, v); });
+      Object.keys(map).forEach(function (k) { var v = $(map[k]).value; if (v && !(k === 'min' && v === '100') && !(k === 't' && v === 'all') && !(k === 'sort' && v === 'units')) qs.set(k, v); });
       history.replaceState(null, '', location.pathname + (qs.toString() ? '?' + qs : ''));
       pageNo = 1; head(); draw();
     }
@@ -208,8 +239,8 @@
       var start = (pageNo - 1) * PER, rows = view.slice(start, start + PER), lifetime = !$('fSport').value && $('fTime').value === 'all';
       $('rows').innerHTML = rows.length ? rows.map(function (o, i) {
         var r = o.r, x = o.x, h = link(r);
-        return '<tr' + (h ? ' class="go" data-href="' + h + '"' : '') + '><td class="l rk">' + (PRO ? '<input type="checkbox" class="pick" data-id="' + r.id + '"' + (picked.indexOf(r.id) >= 0 ? ' checked' : '') + ' aria-label="Compare">' : start + i + 1) + '</td><td class="l">' + capCell(r) + '</td><td class="hm l">' + (lifetime ? spark(r.spark) : '<span class="dim small">all sports only</span>') + '</td><td class="hp">' + fmt(x.picks) +
-          '</td><td>' + recTxt(x) + '</td><td class="hm">' + pct(x.win_pct) + '</td><td>' + sgn(x.units, 2) + '</td><td class="hp">' + sgn(x.roi, 1, '%') + '</td><td class="hm">' + strk(r.streak) + '</td><td class="hm muted">' + ago(r.last_pick) + '</td></tr>';
+        return '<tr' + (h ? ' class="go" data-href="' + h + '"' : '') + '><td class="l rk">' + (PRO ? '<input type="checkbox" class="pick" data-id="' + r.id + '"' + (picked.indexOf(r.id) >= 0 ? ' checked' : '') + ' aria-label="Compare">' : start + i + 1) + '</td><td class="l">' + capCell(r) + '</td><td class="hm l">' + (lifetime ? spark(r.spark) : '<span class="dim small">all sports only</span>') + '</td><td>' + fmt(x.picks) +
+          '</td><td>' + recTxt(x) + '</td><td class="hm">' + pct(x.win_pct) + '</td><td>' + sgn(x.units, 2) + '</td><td>' + sgn(x.roi, 1, '%') + '</td><td class="hm">' + strk(r.streak) + '</td><td class="hm muted">' + ago(r.last_pick) + '</td></tr>';
       }).join('') : '<tr><td colspan="10" class="empty">No handicappers match these filters. Try a smaller minimum or another timeframe.</td></tr>';
       var pages = Math.max(1, Math.ceil(view.length / PER));
       $('count').textContent = fmt(view.length) + ' handicappers' + ($('fSport').value ? ' · ' + $('fSport').value + ' records only' : $('fTime').value !== 'all' ? ' · ' + $('fTime').selectedOptions[0].text : '');
@@ -217,7 +248,7 @@
       $('prev').disabled = pageNo <= 1; $('next').disabled = pageNo >= pages;
     }
 
-    ['fSport', 'fSource', 'fTime', 'fSort', 'fMin', 'fRoi', 'fWin', 'fUnits', 'fClv', 'fZ', 'fDd', 'fMo'].forEach(function (id) { $(id).addEventListener('change', apply); });
+    ['fSport', 'fTime', 'fSort', 'fMin', 'fRoi', 'fWin', 'fUnits', 'fClv', 'fZ', 'fDd', 'fMo'].forEach(function (id) { $(id).addEventListener('change', apply); });
     $('rows').addEventListener('click', function (e) {
       var c = e.target.closest('input.pick'); if (!c) return;
       e.stopPropagation();
@@ -235,7 +266,7 @@
       HWD.names().then(function (list) { NAMES = {}; list.forEach(function (n) { NAMES[n[0]] = n; }); apply(); }).catch(apply);
     });
     var tmr; $('q').addEventListener('input', function () { clearTimeout(tmr); tmr = setTimeout(apply, 150); });
-    $('reset').onclick = function () { ['q', 'fSport', 'fSource', 'fRoi', 'fWin', 'fUnits'].forEach(function (id) { $(id).value = ''; }); $('fTime').value = 'all'; $('fSort').value = 'units'; $('fMin').value = '20'; apply(); };
+    $('reset').onclick = function () { ['q', 'fSport', 'fRoi', 'fWin', 'fUnits'].forEach(function (id) { $(id).value = ''; }); $('fTime').value = 'all'; $('fSort').value = 'units'; $('fMin').value = '100'; apply(); };
     $('prev').onclick = function () { if (pageNo > 1) { pageNo--; draw(); scrollTo({ top: 0, behavior: 'smooth' }); } };
     $('next').onclick = function () { if (pageNo * PER < view.length) { pageNo++; draw(); scrollTo({ top: 0, behavior: 'smooth' }); } };
     apply();

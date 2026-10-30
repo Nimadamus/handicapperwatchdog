@@ -18,14 +18,19 @@ SLUG = 'zzz-real-slug-should-not-leak'
 def fixture():
     def row(n, units, handle=''):
         return {
-            'id': '%010x' % n, 'source': 'Covers', 'w': 20, 'l': 10, 'p': 1, 'picks': 40,
-            'win_pct': 66.6, 'units': units, 'roi': 8.5, 'streak': 3, 'last_pick': '2026-10-25',
-            'profile': True, 'bs': {'NFL': [20, 12.0, 5.0, 60.0, '12-8']},
+            'id': '%010x' % n, 'source': 'Covers', 'w': 70, 'l': 49, 'p': 1, 'picks': 120,
+            'win_pct': 58.8, 'units': units, 'roi': 8.5, 'streak': 3, 'last_pick': '2026-10-25',
+            'profile': True, 'bs': {'NFL': [31, 8.0, 4.0, 58.0, '18-13']},
             'handle': handle, 'slug': SLUG if handle else '',
         }
     rows = [row(n, 50 - n) for n in range(1, 30)]
     rows.append(row(99, 100, SECRET))
     rows.append({'id': 'not-an-id', 'handle': SECRET, 'units': 999, 'picks': 100, 'source': 'X'})
+    rows.append({
+        'id': 'abc0000021', 'source': 'X', 'w': 18, 'l': 3, 'p': 0, 'picks': 21,
+        'win_pct': 85.7, 'units': 9000, 'roi': 420, 'streak': 8, 'last_pick': '2026-10-25',
+        'profile': True, 'handle': SECRET, 'slug': SLUG,
+    })
     return {'meta': {
         'built_at': '2026-10-26T18:00:00+00:00', 'tracked': 2653, 'graded_picks': 100000,
         'profiles': 2500, 'qualified': 800, 'profitable': 300, 'established': 100, 'established_up': 40,
@@ -71,14 +76,115 @@ def check(label, extra):
         assert 'https://handicapperwatchdog.com/cappers.html' in found
         assert 'https://handicapperwatchdog.com/index.html' not in found
         assert all(u.startswith('https://handicapperwatchdog.com/') and 'www.' not in u for u in found)
-        assert not any(x in sm for x in ('capper.html', 'account.html', 'compare.html', 'privacy.html', 'terms.html'))
-        if 'pricing.html' in extra:
-            assert 'https://handicapperwatchdog.com/pricing.html' in found
-        else:
-            assert all(u in (
-                'https://handicapperwatchdog.com/',
-                'https://handicapperwatchdog.com/cappers.html',
-            ) for u in found)
+        assert not any(x in sm for x in ('capper.html', 'account.html', 'compare.html'))
+        for url in (
+            'https://handicapperwatchdog.com/how-we-grade.html',
+            'https://handicapperwatchdog.com/the-board.html',
+            'https://handicapperwatchdog.com/pricing.html',
+            'https://handicapperwatchdog.com/reviews/index.html',
+            'https://handicapperwatchdog.com/reviews/how-we-rate.html',
+            'https://handicapperwatchdog.com/reviews/docs-sports.html',
+            'https://handicapperwatchdog.com/sportsbooks/justbet.html',
+            'https://handicapperwatchdog.com/sports/nfl.html',
+        ):
+            assert url in found, url
+        assert '+9000.00' not in home and ' on Covers' not in home
+        review = open(os.path.join(tmp, 'reviews', 'docs-sports.html'), encoding='utf-8').read()
+        book = open(os.path.join(tmp, 'sportsbooks', 'justbet.html'), encoding='utf-8').read()
+        editorial = review + book + open(os.path.join(tmp, 'reviews', 'index.html'), encoding='utf-8').read()
+        assert 'Not rated' in review and 'aff=' not in editorial and 'BETLEGEND' not in editorial
+        assert 'justbet-logo' not in book and '<h1>JustBet</h1>' in book
+        assert book.count('Registration link not enabled') == 2
+        assert 'new account form' in book and 'be.justbet.co/front/signup' in book
+        assert 'href="https://be.justbet.co' not in book and 'Registration is not turned on' not in book
+        moved = open(os.path.join(tmp, 'sportsbooks', 'reviews', 'how-we-rate.html'), encoding='utf-8').read()
+        real_rate = open(os.path.join(tmp, 'reviews', 'how-we-rate.html'), encoding='utf-8').read()
+        assert 'name="robots" content="noindex"' in moved
+        assert 'rel="canonical" href="https://handicapperwatchdog.com/reviews/how-we-rate.html"' in moved
+        assert 'rel="canonical" href="https://handicapperwatchdog.com/reviews/how-we-rate.html"' in real_rate
+        assert 'noindex' not in real_rate.lower()
+        assert 'sportsbooks/reviews/' not in sm
+        assert '<span class="btn disabled' in book and 'aria-disabled="true"' in book
+        assert 'revshare.ag' not in book and 'href="https://www.justbet.co/?aff=' not in book
+        assert 'aggregateRating' not in editorial and 'ratingValue' not in editorial
+        assert '100 counties' in book and 'affiliates.justbet' not in book.lower()
+        dk = open(os.path.join(tmp, 'sportsbooks', 'draftkings-review', 'index.html'), encoding='utf-8').read()
+        fd = open(os.path.join(tmp, 'sportsbooks', 'fanduel-review', 'index.html'), encoding='utf-8').read()
+        directory = open(os.path.join(tmp, 'sportsbooks', 'index.html'), encoding='utf-8').read()
+        method = open(os.path.join(tmp, 'sportsbooks', 'how-we-score', 'index.html'), encoding='utf-8').read()
+        compare = open(os.path.join(tmp, 'sportsbooks', 'comparison', 'index.html'), encoding='utf-8').read()
+        espn = open(os.path.join(tmp, 'sportsbooks', 'espn-bet', 'index.html'), encoding='utf-8').read()
+        for page in (dk, fd, directory, method, compare, espn):
+            assert page.count('<h1') == 1 and 'aff=' not in page and 'ratingValue' not in page and 'aggregateRating' not in page
+            assert 'noindex' not in page.lower()
+        assert 'href="../../style.css"' in dk and 'href="../style.css"' in directory
+        assert 'rel="canonical" href="https://handicapperwatchdog.com/sportsbooks/draftkings-review/"' in dk
+        assert 'rel="canonical" href="https://handicapperwatchdog.com/sportsbooks/"' in directory
+        assert 'Not scored' in dk and 'Documented research' in dk and 'Not scored' in directory
+        assert 'Puerto Rico' in fd and 'FanDuel Predicts' in fd
+        assert '23 Nov 2026' in open(os.path.join(tmp, 'sportsbooks', 'bet365-review', 'index.html'), encoding='utf-8').read()
+        assert '1 Dec 2025' in espn and 'Not a live book' in espn
+        for url in (
+            'https://handicapperwatchdog.com/sportsbooks/',
+            'https://handicapperwatchdog.com/sportsbooks/draftkings-review/',
+            'https://handicapperwatchdog.com/sportsbooks/fanduel-review/',
+            'https://handicapperwatchdog.com/sportsbooks/bet365-review/',
+            'https://handicapperwatchdog.com/sportsbooks/fanatics-review/',
+            'https://handicapperwatchdog.com/sportsbooks/betmgm-review/',
+            'https://handicapperwatchdog.com/sportsbooks/espn-bet/',
+            'https://handicapperwatchdog.com/sportsbooks/how-we-score/',
+            'https://handicapperwatchdog.com/sportsbooks/comparison/',
+        ):
+            assert url in found, url
+        assert 'https://handicapperwatchdog.com/sportsbooks/index.html' not in found
+        assert 'draftkings-review.html' not in sm
+        assert SECRET not in editorial and SLUG not in editorial
+        bob = open(os.path.join(tmp, 'reviews', 'dr-bob-sports.html'), encoding='utf-8').read()
+        feist = open(os.path.join(tmp, 'reviews', 'jim-feist.html'), encoding='utf-8').read()
+        boyd = open(os.path.join(tmp, 'reviews', 'jimmy-boyd.html'), encoding='utf-8').read()
+        pre = open(os.path.join(tmp, 'reviews', 'pregame.html'), encoding='utf-8').read()
+        assert '522-386-13' in bob and 'Not rated' in bob and 'not a verified current offer' in bob.lower()
+        assert '$495' not in bob and '$1,045' not in bob and '$1,495' not in bob
+        assert '$174.95' not in feist and '$199.95' not in feist and '$399.95' not in feist and '$1,999.95' not in feist
+        assert 'not a verified current offer' in feist.lower() and '30 years' in feist
+        assert '$23.20' not in boyd and '$29' not in boyd and 'Invalid access' in boyd
+        assert 'not a current offer' in boyd.lower()
+        assert 'not an offer from handicapper watchdog' in book.lower()
+        assert 'free $25' in pre.lower() and 'not a verified current offer' in pre.lower() and '$1,995' in pre
+        ct = open(os.path.join(tmp, 'reviews', 'cappertek.html'), encoding='utf-8').read()
+        assert 'CapperTek is a scam' in ct and '11,386' in ct and '11,384' in ct and '30 minutes' in ct and 'non-refundable' in ct
+        assert 'Domains By Proxy' in ct and 'protect against' in ct and '750' in ct
+        assert 'Loading picks' in ct and '232' in ct and '229' in ct and '11,387' in ct and '139' in ct
+        assert '32,037' in ct and '15 days' in ct and '28 Oct 2026' in ct and 'id="corrections"' in ct and 'contact.html' in ct
+        assert 'trustmyrecord' not in ct.lower() and 'ratingValue' not in ct and 'aggregateRating' not in ct
+        for legal in ('about.html', 'privacy.html', 'terms.html', 'contact.html'):
+            page = open(os.path.join(tmp, legal), encoding='utf-8').read()
+            assert 'noindex' not in page.lower() and 'mailto:' not in page.lower(), legal
+            assert 'trustmyrecord' not in page.lower()
+            assert 'rel="canonical" href="https://handicapperwatchdog.com/%s"' % legal in page
+        assert 'not a verified badge' in open(os.path.join(tmp, 'pricing.html'), encoding='utf-8').read().lower()
+        sm_legal = open(os.path.join(tmp, 'sitemap.xml'), encoding='utf-8').read()
+        for legal in ('about.html', 'privacy.html', 'terms.html', 'contact.html'):
+            assert 'https://handicapperwatchdog.com/' + legal in sm_legal
+        assert 'capper.html' not in sm_legal and 'account.html' not in sm_legal
+        for draft in ('pro-terms.html', 'pro-privacy.html'):
+            page = open(os.path.join(tmp, draft), encoding='utf-8').read()
+            assert 'name="robots" content="noindex"' in page and draft not in sm_legal, draft
+            assert 'class="legal' in page and 'trustmyrecord' not in page.lower(), draft
+        price = open(os.path.join(tmp, 'pricing.html'), encoding='utf-8').read()
+        assert 'data-plan="annual"' in price and 'data-plan="monthly"' in price and 'id="pvRows"' in price
+        assert 'src="pro.js"' in price and 'src="pricing.js"' in price and 'noindex' not in price.lower()
+        assert '$59.99' in price and '$499' in price and not re.search(r'\$(?!59\.99|499|41\.58|719\.88|220\.88)\d', price)
+        assert 'does not show a checkout button' not in price
+        assert '22,990' in open(os.path.join(tmp, 'reviews', 'docs-sports-ai.html'), encoding='utf-8').read()
+        assert '637-544' in open(os.path.join(tmp, 'reviews', 'big-al.html'), encoding='utf-8').read()
+        for slug in (
+            'docs-sports', 'dr-bob-sports', 'pregame', 'cappertek', 'jimmy-boyd', 'jim-feist',
+            'scott-spreitzer', 'robert-ferringo', 'docs-sports-ai', 'big-al',
+        ):
+            page = open(os.path.join(tmp, 'reviews', slug + '.html'), encoding='utf-8').read()
+            assert page.count('<h1') == 1 and 'Not rated' in page and 'aff=' not in page, slug
+            assert 'noindex' not in page.lower()
         for name, digest in before.items():
             now = hashlib.sha256(open(os.path.join(tmp, name), 'rb').read()).hexdigest()
             assert now == digest, name
@@ -92,9 +198,9 @@ FORBIDDEN_KEYS = ('handle', 'username', 'slug', 'email', 'screen_name', 'user_id
 
 
 def ranked(cappers, limit):
-    """Same order the rankings page uses: 20+ picks, units descending, JSON order on ties."""
+    """Same order the rankings page uses: 100+ picks, units descending, JSON order on ties."""
     rows = [r for r in cappers if isinstance(r, dict) and re.fullmatch(r'[0-9a-f]{10}', str(r.get('id') or ''))
-            and int(r.get('picks') or 0) >= 20 and r.get('units') is not None]
+            and int(r.get('picks') or 0) >= 100 and r.get('units') is not None]
     rows.sort(key=lambda r: float(r['units']), reverse=True)
     return rows[:limit]
 
@@ -140,7 +246,16 @@ def assert_table(html, element_id, expect):
         assert ('ID ' + code) in cells[1], (n, cells[1])
         assert 'Hidden name' in cells[1]
         source = r.get('source') or ''
-        assert source in PLATFORMS and source in cells[1], source
+        # Public rows drop source on purpose. A present source must be a real
+        # platform and must stay out of the identity cell. An absent source
+        # must not be invented back into that cell.
+        if source:
+            assert source in PLATFORMS and source not in cells[1], (source, cells[1])
+        else:
+            for platform in PLATFORMS:
+                if len(platform) < 2:
+                    continue
+                assert platform not in cells[1], (platform, cells[1])
         assert cells[3].replace(',', '') == str(int(r['picks']))
         pushes = int(r.get('p') or 0)
         rec = '%d-%d' % (int(r['w']), int(r['l'])) + ('-%d' % pushes if pushes else '')
@@ -180,8 +295,8 @@ def check_refresh():
         build.stamp_public_pages(tmp)
         first = tbody(open(os.path.join(tmp, 'index.html'), encoding='utf-8').read(), 'boardRows')[0][1][0]
         doc['cappers'].append({
-            'id': 'abcde12345', 'source': 'Reddit', 'w': 30, 'l': 10, 'p': 0, 'picks': 40,
-            'win_pct': 75.0, 'units': 500, 'roi': 20, 'streak': 1, 'last_pick': '2026-10-26',
+            'id': 'abcde12345', 'source': 'Reddit', 'w': 100, 'l': 50, 'p': 0, 'picks': 150,
+            'win_pct': 66.7, 'units': 500, 'roi': 20, 'streak': 1, 'last_pick': '2026-10-26',
             'profile': True, 'handle': SECRET, 'slug': SLUG, 'bs': {'NBA': [20, 9, 4, 60, '12-8']},
         })
         doc['meta']['built_at'] = '2026-10-26T20:00:00+00:00'
@@ -245,18 +360,88 @@ def check_live():
         assert_table(home, 'boardRows', top10)
         assert_table(rank, 'rows', top50)
         found = locs(sm)
-        base = ['https://handicapperwatchdog.com/', 'https://handicapperwatchdog.com/cappers.html']
-        if os.path.isfile(os.path.join(ROOT, 'pricing.html')):
-            assert found[:2] == base and 'https://handicapperwatchdog.com/pricing.html' in found
-            assert 'privacy.html' not in sm and 'terms.html' not in sm
-        else:
-            assert found == base
+        for url in (
+            'https://handicapperwatchdog.com/',
+            'https://handicapperwatchdog.com/cappers.html',
+            'https://handicapperwatchdog.com/how-we-grade.html',
+            'https://handicapperwatchdog.com/the-board.html',
+            'https://handicapperwatchdog.com/pricing.html',
+            'https://handicapperwatchdog.com/reviews/index.html',
+            'https://handicapperwatchdog.com/sportsbooks/justbet.html',
+        ):
+            assert url in found, url
+        assert 'privacy.html' in sm and 'terms.html' in sm and 'about.html' in sm and 'contact.html' in sm
+        assert 'capper.html' not in sm and 'account.html' not in sm
         print('live PASS', 'bytes', len(payload), 'home', len(top10), 'rank', len(top50),
               'leader_units', show_num(top10[0]['units'], 2), 'row50_units', show_num(top50[-1]['units'], 2))
         return tmp
     except Exception:
         shutil.rmtree(tmp, ignore_errors=True)
         raise
+
+
+def check_menu():
+    import threading
+    from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
+    from playwright.sync_api import sync_playwright
+
+    tmp = tempfile.mkdtemp(prefix='hwd-menu-')
+    try:
+        for name in ('index.html', 'cappers.html', 'style.css', 'stadium.svg', 'favicon.svg'):
+            shutil.copy(os.path.join(ROOT, name), tmp)
+
+        class Quiet(SimpleHTTPRequestHandler):
+            def __init__(self, *args, **kwargs):
+                super().__init__(*args, directory=tmp, **kwargs)
+
+            def log_message(self, fmt, *args):
+                pass
+
+        httpd = ThreadingHTTPServer(('127.0.0.1', 0), Quiet)
+        port = httpd.server_address[1]
+        threading.Thread(target=httpd.serve_forever, daemon=True).start()
+        origin = 'http://127.0.0.1:%d' % port
+        try:
+            import urllib.request
+            with urllib.request.urlopen(origin + '/stadium.svg', timeout=10) as stadium:
+                stadium_body = stadium.read()
+            assert stadium.status == 200 and stadium_body.startswith(b'<'), len(stadium_body)
+            with sync_playwright() as pw:
+                browser = pw.chromium.launch(headless=True)
+                page = browser.new_page(viewport={'width': 390, 'height': 844})
+                for path in ('/', '/cappers.html'):
+                    page.goto(origin + path, wait_until='domcontentloaded', timeout=30000)
+                    closed = page.evaluate("() => getComputedStyle(document.querySelector('.navlinks')).display")
+                    assert closed == 'none', (path, closed)
+                    page.locator('label.navbtn').click()
+                    opened = page.evaluate("() => getComputedStyle(document.querySelector('.navlinks')).display")
+                    assert opened == 'flex', (path, opened)
+                    scroll = page.evaluate("() => document.documentElement.scrollWidth - document.documentElement.clientWidth")
+                    assert scroll <= 1, (path, scroll)
+                page.goto(origin + '/', wait_until='domcontentloaded')
+                contrast = page.evaluate('''() => {
+                  function lin(c){c/=255;return c<=0.03928?c/12.92:Math.pow((c+0.055)/1.055,2.4)}
+                  function L(rgb){const m=rgb.match(/\\d+/g).map(Number);return 0.2126*lin(m[0])+0.7152*lin(m[1])+0.0722*lin(m[2])}
+                  function ratio(a,b){const x=L(a),y=L(b);const hi=Math.max(x,y),lo=Math.min(x,y);return (hi+0.05)/(lo+0.05)}
+                  const bg=getComputedStyle(document.body).backgroundColor;
+                  const h1=document.querySelector('h1');
+                  const sub=document.querySelector('.sub');
+                  return {
+                    h1: ratio(getComputedStyle(h1).color, bg),
+                    sub: ratio(getComputedStyle(sub).color, bg),
+                    bare: [...document.images].filter(i => i.getAttribute('alt') === null).length,
+                    h1n: document.querySelectorAll('h1').length
+                  };
+                }''')
+                assert contrast['h1'] >= 4.5 and contrast['sub'] >= 4.5, contrast
+                assert contrast['h1n'] == 1 and contrast['bare'] == 0, contrast
+                print('a11y PASS', round(contrast['h1'], 2), round(contrast['sub'], 2))
+                browser.close()
+        finally:
+            httpd.shutdown()
+        print('menu PASS')
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
 
 
 def check_browser(tmp):
@@ -343,6 +528,7 @@ if __name__ == '__main__':
     check('fixture', extra)
     check_refresh()
     check_pipeline()
+    check_menu()
     if '--live' in sys.argv:
         site = check_live()
         try:
