@@ -22,7 +22,7 @@ function memKV() {
 }
 
 function fakeStripe(env) {
-  const S = { customers: {}, subs: {}, sessions: {}, portal: 0, calls: [] };
+  const S = { customers: {}, subs: {}, sessions: {}, portal: 0, calls: [], refunds: [], invoicePayments: {} };
   const priceObj = (id) => ({ id });
   S.makeSub = (customer, price, status = 'active', extra = {}) => {
     const id = 'sub_' + Math.random().toString(36).slice(2, 10);
@@ -47,9 +47,31 @@ function fakeStripe(env) {
       const s = S.sessions[m[1]]; if (!s) return new Response('{"error":{"message":"No such session"}}', { status: 404 });
       return ok({ ...s, subscription: s.subscription ? S.subs[s.subscription] : null });
     }
-    if ((m = u.pathname.match(/^\/v1\/subscriptions\/(sub_\w+)$/))) return ok(S.subs[m[1]]);
+    if (u.pathname === '/v1/customers' && method === 'GET') {
+      const email = (p.get('email') || '').toLowerCase();
+      return ok({ data: Object.values(S.customers).filter((c) => (c.email || '').toLowerCase() === email) });
+    }
+    if (u.pathname === '/v1/subscriptions' && method === 'GET') {
+      const customer = p.get('customer');
+      return ok({ data: Object.values(S.subs).filter((s) => !customer || s.customer === customer) });
+    }
+    if ((m = u.pathname.match(/^\/v1\/subscriptions\/(sub_\w+)$/)) && method === 'GET') return ok(S.subs[m[1]] || null);
+    if ((m = u.pathname.match(/^\/v1\/subscriptions\/(sub_\w+)$/)) && method === 'DELETE') {
+      if (S.subs[m[1]]) S.subs[m[1]].status = 'canceled';
+      return ok(S.subs[m[1]] || { id: m[1], status: 'canceled' });
+    }
+    if ((m = u.pathname.match(/^\/v1\/checkout\/sessions\/(cs_test_\w+)\/expire$/)) && method === 'POST') {
+      if (S.sessions[m[1]]) S.sessions[m[1]].status = 'expired';
+      return ok(S.sessions[m[1]] || { id: m[1], status: 'expired' });
+    }
+    if (u.pathname === '/v1/refunds' && method === 'POST') { S.refunds.push(p.get('payment_intent')); return ok({ id: 're_test', status: 'succeeded' }); }
+    if (u.pathname === '/v1/invoice_payments' && method === 'GET') return ok({ data: S.invoicePayments[p.get('invoice')] || [] });
     if (u.pathname === '/v1/billing_portal/sessions') { S.portal++; return ok({ url: 'https://billing.stripe.com/p/session/test_' + p.get('customer') }); }
-    if (u.hostname === 'api.resend.com' || u.hostname === 'api.brevo.com') { S.mails = (S.mails || []).concat([{ host: u.hostname, body: JSON.parse(init.body) }]); return ok({ id: 'mail' }); }
+    if (u.hostname === 'api.resend.com' || u.hostname === 'api.brevo.com') {
+      if ((S.mailStatus || 200) >= 400) return new Response('{}', { status: S.mailStatus });
+      S.mails = (S.mails || []).concat([{ host: u.hostname, body: JSON.parse(init.body) }]);
+      return ok({ id: 'mail' });
+    }
     return new Response('{"error":{"message":"unexpected ' + u.pathname + '"}}', { status: 400 });
   };
   // what Stripe does when the customer pays on the hosted page
@@ -57,7 +79,9 @@ function fakeStripe(env) {
     const s = S.sessions[sessionId];
     const customer = s.customer || 'cus_' + Math.random().toString(36).slice(2, 10);
     const sub = S.makeSub(customer, s.price);
-    Object.assign(s, { status: 'complete', customer, subscription: sub.id, customer_details: { email } });
+    sub.latest_invoice = { id: 'in_' + sub.id, payment_intent: 'pi_' + sub.id };
+    S.customers[customer] = { id: customer, email };
+    Object.assign(s, { status: 'complete', customer, subscription: sub.id, customer_details: { email }, payment_status: 'paid' });
     return { s, sub };
   };
   return S;
@@ -319,4 +343,166 @@ test('Pro key requests do not write to KV (free tier allows 1,000 writes a day) 
   let last;
   for (let i = 0; i < 400; i++) last = await t.call('GET', '/api/pro/key?id=0123456789');
   assert.equal(last.status, 429);
+});
+
+test('purchase confirmation goes to the customer once and the owner is notified once', async () => {
+  const t = setup({ PURCHASE_NOTIFY_EMAIL: 'owner@example.com' });
+  const { sub } = await subscribe(t, 'monthly', 'fan@example.com');
+  await t.hook({ id: 'evt_cs_mail', type: 'checkout.session.completed', data: { object: { mode: 'subscription', metadata: { app: 'hwd' }, customer: sub.customer, customer_details: { email: 'fan@example.com' }, subscription: sub.id } } });
+  const mails = (await t.call('GET', '/api/dev/mails')).body.mails;
+  assert.equal(mails.filter((m) => m.to === 'fan@example.com' && m.subject === 'Your Watchdog Pro subscription').length, 1);
+  assert.equal(mails.filter((m) => m.to === 'owner@example.com' && m.subject === 'New Watchdog Pro subscription').length, 1);
+  assert.match(mails.find((m) => m.to === 'fan@example.com').text, /\$59\.99/);
+  assert.match(mails.find((m) => m.to === 'owner@example.com').text, /fan@example.com/);
+});
+
+test('a renewal does not send another purchase notice', async () => {
+  const t = setup({ PURCHASE_NOTIFY_EMAIL: 'owner@example.com' });
+  const { sub } = await subscribe(t);
+  const before = (await t.call('GET', '/api/dev/mails')).body.mails.length;
+  await t.hook({ id: 'evt_renew_mail', type: 'invoice.paid', data: { object: { id: 'in_renew', customer: sub.customer, subscription: sub.id, billing_reason: 'subscription_cycle', status_transitions: { paid_at: T() } } } });
+  assert.equal((await t.call('GET', '/api/dev/mails')).body.mails.length, before);
+  assert.equal((await t.call('GET', '/api/me')).body.pro, true);
+});
+
+test('the same email cannot start a second subscription after signing out', async () => {
+  const t = setup();
+  await subscribe(t, 'monthly', 'fan@example.com');
+  t.setCookie('');
+  const sessions = Object.keys(t.S.sessions).length;
+  const again = await t.call('POST', '/api/checkout', { plan: 'annual', email: 'Fan@Example.com' });
+  assert.equal(again.status, 409);
+  assert.equal(Object.keys(t.S.sessions).length, sessions);
+});
+
+test('two clicks for the same plan reuse one checkout, and switching plan expires the first', async () => {
+  const t = setup();
+  const a = await t.call('POST', '/api/checkout', { plan: 'monthly', email: 'new@example.com' });
+  const b = await t.call('POST', '/api/checkout', { plan: 'monthly', email: 'new@example.com' });
+  assert.equal(a.status, 200); assert.equal(b.body.url, a.body.url); assert.equal(Object.keys(t.S.sessions).length, 1);
+  const c = await t.call('POST', '/api/checkout', { plan: 'annual', email: 'new@example.com' });
+  assert.equal(c.status, 200); assert.notEqual(c.body.url, a.body.url);
+  assert.equal(t.S.sessions[a.body.url.split('/').pop()].status, 'expired');
+});
+
+test('a second paid subscription for the same customer is canceled and refunded', async () => {
+  const t = setup();
+  const { sub } = await subscribe(t, 'monthly', 'fan@example.com');
+  const extra = t.S.makeSub(sub.customer, 'price_m');
+  extra.latest_invoice = { id: 'in_' + extra.id, payment_intent: 'pi_' + extra.id };
+  const r = await t.hook({ id: 'evt_dup_sub', type: 'checkout.session.completed', data: { object: { mode: 'subscription', metadata: { app: 'hwd' }, customer: sub.customer, customer_details: { email: 'fan@example.com' }, subscription: extra.id } } });
+  assert.equal(r.status, 200);
+  assert.equal(t.S.subs[extra.id].status, 'canceled');
+  assert.ok(t.S.refunds.includes('pi_' + extra.id));
+  assert.equal((await t.call('GET', '/api/me')).body.plan, 'monthly');
+  assert.ok((await t.call('GET', '/api/dev/mails')).body.mails.some((m) => m.subject === 'Duplicate Watchdog Pro checkout canceled'));
+});
+
+test('another product on the same Stripe customer does not block or get canceled', async () => {
+  const t = setup();
+  t.S.customers.cus_other = { id: 'cus_other', email: 'fan@example.com' };
+  const foreign = t.S.makeSub('cus_other', 'price_other_product');
+  const c = await t.call('POST', '/api/checkout', { plan: 'monthly', email: 'fan@example.com' });
+  assert.equal(c.status, 200);
+  assert.equal(t.S.subs[foreign.id].status, 'active');
+});
+
+test('failed payment and expiration each email the customer once', async () => {
+  const t = setup();
+  const { sub } = await subscribe(t, 'annual', 'fan@example.com');
+  t.S.subs[sub.id].status = 'past_due';
+  await t.hook({ id: 'evt_fail_mail', type: 'invoice.payment_failed', data: { object: { id: 'in_fail', customer: sub.customer, subscription: sub.id } } });
+  await t.hook({ id: 'evt_fail_mail_2', type: 'invoice.payment_failed', data: { object: { id: 'in_fail', customer: sub.customer, subscription: sub.id } } });
+  t.S.subs[sub.id].status = 'canceled';
+  await t.hook({ id: 'evt_end_mail', type: 'customer.subscription.deleted', data: { object: { ...t.S.subs[sub.id], status: 'canceled' } } });
+  const mails = (await t.call('GET', '/api/dev/mails')).body.mails.filter((m) => m.to === 'fan@example.com');
+  assert.equal(mails.filter((m) => m.subject === 'Watchdog Pro payment failed').length, 1);
+  assert.match(mails.find((m) => m.subject === 'Watchdog Pro payment failed').text, /3 days/);
+  assert.equal(mails.filter((m) => m.subject === 'Your Watchdog Pro subscription has ended').length, 1);
+  assert.equal((await t.call('GET', '/api/me')).body.pro, false);
+});
+
+test('an ended subscriber can start a new subscription', async () => {
+  const t = setup();
+  const { sub } = await subscribe(t, 'monthly', 'fan@example.com');
+  t.S.subs[sub.id].status = 'canceled';
+  await t.hook({ id: 'evt_end_resub', type: 'customer.subscription.deleted', data: { object: { ...t.S.subs[sub.id], status: 'canceled' } } });
+  const c = await t.call('POST', '/api/checkout', { plan: 'annual' });
+  assert.equal(c.status, 200);
+  assert.equal(t.S.sessions[c.body.url.split('/').pop()].price, 'price_a');
+});
+
+test('an unpaid checkout does not grant Pro', async () => {
+  const t = setup();
+  const c = await t.call('POST', '/api/checkout', { plan: 'monthly' });
+  const sid = c.body.url.split('/').pop();
+  t.S.pay(sid, 'fan@example.com');
+  t.S.sessions[sid].payment_status = 'unpaid';
+  assert.equal((await t.call('GET', '/api/checkout/complete?session_id=' + sid)).status, 400);
+  assert.equal((await t.call('GET', '/api/me')).body.pro, false);
+});
+
+test('dev mail log is hidden unless DEV_MAIL_ECHO is on', async () => {
+  const t = setup({ DEV_MAIL_ECHO: '' });
+  assert.equal((await t.call('GET', '/api/dev/mails')).status, 404);
+});
+
+test('an invoice that is not Watchdog Pro does not change the account', async () => {
+  const t = setup();
+  const { sub } = await subscribe(t, 'monthly', 'fan@example.com');
+  const foreign = t.S.makeSub(sub.customer, 'price_other_product');
+  await t.hook({ id: 'evt_foreign_fail', type: 'invoice.payment_failed', data: { object: { id: 'in_foreign', customer: sub.customer, subscription: foreign.id } } });
+  await t.hook({ id: 'evt_nosub_fail', type: 'invoice.payment_failed', data: { object: { id: 'in_nosub', customer: sub.customer } } });
+  const me = await t.call('GET', '/api/me');
+  assert.equal(me.body.payment_failed, false);
+  assert.equal(me.body.status, 'active');
+  assert.equal(me.body.pro, true);
+  assert.equal(t.S.subs[foreign.id].status, 'active');
+});
+
+test('a basil invoice still marks a failed Watchdog renewal', async () => {
+  const t = setup();
+  const { sub } = await subscribe(t);
+  t.S.subs[sub.id].status = 'past_due';
+  await t.hook({ id: 'evt_basil_parent', type: 'invoice.payment_failed', data: { object: { id: 'in_parent', customer: sub.customer, parent: { subscription_details: { subscription: sub.id } } } } });
+  assert.equal((await t.call('GET', '/api/me')).body.payment_failed, true);
+  const t2 = setup();
+  const again = await subscribe(t2);
+  t2.S.subs[again.sub.id].status = 'past_due';
+  await t2.hook({ id: 'evt_basil_line', type: 'invoice.payment_failed', data: { object: { id: 'in_line', customer: again.sub.customer, lines: { data: [{ parent: { subscription_item_details: { subscription: again.sub.id } } }] } } } });
+  assert.equal((await t2.call('GET', '/api/me')).body.pro, true);
+  assert.equal((await t2.call('GET', '/api/me')).body.payment_failed, true);
+});
+
+test('a duplicate basil invoice refunds through invoice payments', async () => {
+  const t = setup();
+  const { sub } = await subscribe(t, 'monthly', 'fan@example.com');
+  const extra = t.S.makeSub(sub.customer, 'price_m');
+  extra.latest_invoice = { id: 'in_basil_' + extra.id, payments: { data: [{ payment: { type: 'payment_intent', payment_intent: 'pi_basil_' + extra.id } }] } };
+  await t.hook({ id: 'evt_dup_basil', type: 'checkout.session.completed', data: { object: { mode: 'subscription', metadata: { app: 'hwd' }, customer: sub.customer, customer_details: { email: 'fan@example.com' }, subscription: extra.id } } });
+  assert.equal(t.S.subs[extra.id].status, 'canceled');
+  assert.ok(t.S.refunds.includes('pi_basil_' + extra.id));
+  const fetched = t.S.makeSub(sub.customer, 'price_m');
+  fetched.latest_invoice = { id: 'in_fetch_' + fetched.id };
+  t.S.invoicePayments[fetched.latest_invoice.id] = [{ payment: { payment_intent: 'pi_fetch_' + fetched.id } }];
+  await t.hook({ id: 'evt_dup_fetch', type: 'checkout.session.completed', data: { object: { mode: 'subscription', metadata: { app: 'hwd' }, customer: sub.customer, customer_details: { email: 'fan@example.com' }, subscription: fetched.id } } });
+  assert.ok(t.S.refunds.includes('pi_fetch_' + fetched.id));
+  const mail = (await t.call('GET', '/api/dev/mails')).body.mails.find((m) => m.subject === 'Duplicate Watchdog Pro checkout canceled');
+  assert.match(mail.text, /charge was refunded/);
+});
+
+test('a failed payment email is retried and then sent once', async () => {
+  const t = setup({ BREVO_API_KEY: 'xkeysib-test', MAIL_FROM: 'login@handicapperwatchdog.com', DEV_MAIL_ECHO: '' });
+  const { sub } = await subscribe(t, 'annual', 'fan@example.com');
+  t.S.subs[sub.id].status = 'past_due';
+  t.S.mailStatus = 500;
+  const evt = { id: 'evt_fail_retry', type: 'invoice.payment_failed', data: { object: { id: 'in_retry', customer: sub.customer, subscription: sub.id } } };
+  assert.equal((await t.hook(evt)).status, 502);
+  assert.equal((await t.call('GET', '/api/me')).body.payment_failed, true);
+  t.S.mailStatus = 200;
+  assert.equal((await t.hook(evt)).status, 200);
+  assert.equal((await t.hook(evt)).body.duplicate, true);
+  const fails = t.S.mails.filter((m) => m.body.subject === 'Watchdog Pro payment failed');
+  assert.equal(fails.length, 1);
+  assert.equal(fails[0].body.to[0].email, 'fan@example.com');
 });

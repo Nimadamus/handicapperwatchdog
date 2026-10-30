@@ -113,7 +113,8 @@ with sync_playwright() as pw:
         ctx = browser.new_context(viewport={'width': w, 'height': h}); page = ctx.new_page()
         errors = []
         page.on('pageerror', lambda e: errors.append(str(e)))
-        page.goto(BASE + '/pricing.html'); page.wait_for_selector('[data-plan=monthly]:not([disabled])')
+        page.goto(BASE + '/pricing.html'); page.wait_for_selector('#buyerEmail', state='visible')
+        page.fill('#buyerEmail', 'ui-%s@example.com' % vname)
         page.click('[data-plan=monthly]'); page.wait_for_url(re.compile(r'/__stripe/checkout'))
         page.fill('input[name=email]', 'ui-%s@example.com' % vname)
         page.click('button'); page.wait_for_url(re.compile(r'/account\.html$'), timeout=15000)

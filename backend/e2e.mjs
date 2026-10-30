@@ -77,6 +77,18 @@ await step('Pro: names index decrypts and covers every board row', async () => {
 await step('second checkout refused while Pro', async () => {
   assert.equal((await j('/api/checkout', { method: 'POST', body: JSON.stringify({ plan: 'annual' }) })).status, 409);
 });
+await step('purchase confirmation and owner notice are sent once', async () => {
+  const mails = (await j('/api/dev/mails')).body.mails;
+  assert.equal(mails.filter((m) => m.to === 'e2e@example.com' && m.subject === 'Your Watchdog Pro subscription').length, 1);
+  assert.equal(mails.filter((m) => m.to === 'owner@example.com' && m.subject === 'New Watchdog Pro subscription').length, 1);
+  assert.match(mails.find((m) => m.to === 'e2e@example.com').text, /\$59\.99/);
+});
+await step('signed out, the same email cannot open another checkout', async () => {
+  const saved = cookie; cookie = '';
+  const c = await j('/api/checkout', { method: 'POST', body: JSON.stringify({ plan: 'annual', email: 'e2e@example.com' }) });
+  assert.equal(c.status, 409);
+  cookie = saved;
+});
 await step('portal: cancel at period end keeps Pro', async () => { const me = await portal('cancel'); assert.equal(me.pro, true); assert.equal(me.cancel_at_period_end, true); });
 await step('portal: resume', async () => { const me = await portal('resume'); assert.equal(me.cancel_at_period_end, false); assert.equal(me.pro, true); });
 await step('failed renewal: past_due keeps Pro in grace and flags payment', async () => { const me = await portal('fail'); assert.equal(me.status, 'past_due'); assert.equal(me.pro, true); assert.equal(me.payment_failed, true); });

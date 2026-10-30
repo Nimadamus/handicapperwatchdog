@@ -1,0 +1,24 @@
+# Test-mode staging only. No production route, no BILLING_LIVE.
+# URL will be https://hwd-staging.<account>.workers.dev
+# Deploy with: python tools/staging_deploy.py
+name = "hwd-staging"
+main = "backend/worker.mjs"
+compatibility_date = "2025-09-01"
+workers_dev = true
+
+[assets]
+directory = "_site"
+binding = "ASSETS"
+run_worker_first = true
+
+# Filled by tools/staging_deploy.py. Do not point this at production.
+kv_namespaces = [
+  { binding = "HWD", id = "REPLACE_WITH_STAGING_KV_ID" },
+]
+
+[vars]
+STAGING = "yes"
+STRIPE_API_VERSION = "2025-03-31.basil"
+# Secrets, test key only: STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET, STRIPE_PRICE_MONTHLY,
+# STRIPE_PRICE_ANNUAL, SESSION_SECRET, HWD_PRO_KEY, BREVO_API_KEY, MAIL_FROM, PURCHASE_NOTIFY_EMAIL.
+# BILLING_LIVE must stay unset.

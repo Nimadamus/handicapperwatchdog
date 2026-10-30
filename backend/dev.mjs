@@ -23,10 +23,10 @@ const env = {
         put: async (k, val, o) => kv.set(k, { val, exp: o && o.expirationTtl ? Date.now() + o.expirationTtl * 1000 : 0 }), delete: async (k) => kv.delete(k) },
   SITE_URL: SITE, SESSION_SECRET: 'dev_session_secret', HWD_PRO_KEY: process.env.HWD_PRO_KEY || '',
   STRIPE_SECRET_KEY: 'sk_test_dev', STRIPE_WEBHOOK_SECRET: 'whsec_dev', STRIPE_PRICE_MONTHLY: 'price_month_5999', STRIPE_PRICE_ANNUAL: 'price_year_49900',
-  DEV_MAIL_ECHO: '1',
+  DEV_MAIL_ECHO: '1', PURCHASE_NOTIFY_EMAIL: 'owner@example.com',
 };
 const DAY = 86400, T = () => Math.floor(Date.now() / 1000);
-const S = { sessions: {}, subs: {} };
+const S = { sessions: {}, subs: {}, customers: {} };
 const ok = (d) => new Response(JSON.stringify(d), { status: 200, headers: { 'content-type': 'application/json' } });
 
 async function fakeStripeFetch(url, init) {
@@ -40,7 +40,24 @@ async function fakeStripeFetch(url, init) {
     return ok(S.sessions[id]);
   }
   if ((x = u.pathname.match(/^\/v1\/checkout\/sessions\/(\w+)$/))) { const s = S.sessions[x[1]]; return s ? ok({ ...s, subscription: s.subscription ? S.subs[s.subscription] : null }) : new Response('{"error":{"message":"no such session"}}', { status: 404 }); }
-  if ((x = u.pathname.match(/^\/v1\/subscriptions\/(\w+)$/))) return ok(S.subs[x[1]]);
+  if (u.pathname === '/v1/customers' && m === 'GET') {
+    const email = (p.get('email') || '').toLowerCase();
+    return ok({ data: Object.values(S.customers).filter((c) => (c.email || '').toLowerCase() === email) });
+  }
+  if (u.pathname === '/v1/subscriptions' && m === 'GET') {
+    const customer = p.get('customer');
+    return ok({ data: Object.values(S.subs).filter((s) => !customer || s.customer === customer) });
+  }
+  if ((x = u.pathname.match(/^\/v1\/subscriptions\/(\w+)$/)) && m === 'GET') return ok(S.subs[x[1]]);
+  if ((x = u.pathname.match(/^\/v1\/subscriptions\/(\w+)$/)) && m === 'DELETE') {
+    if (S.subs[x[1]]) S.subs[x[1]].status = 'canceled';
+    return ok(S.subs[x[1]] || { id: x[1], status: 'canceled' });
+  }
+  if ((x = u.pathname.match(/^\/v1\/checkout\/sessions\/(\w+)\/expire$/)) && m === 'POST') {
+    if (S.sessions[x[1]]) S.sessions[x[1]].status = 'expired';
+    return ok(S.sessions[x[1]] || { id: x[1], status: 'expired' });
+  }
+  if (u.pathname === '/v1/refunds' && m === 'POST') return ok({ id: 're_dev', status: 'succeeded' });
   if (u.pathname === '/v1/billing_portal/sessions') return ok({ url: SITE + '/__stripe/portal?c=' + p.get('customer') });
   return new Response('{"error":{"message":"unhandled"}}', { status: 400 });
 }
@@ -73,10 +90,13 @@ http.createServer(async (req, res) => {
       const s = S.sessions[u.searchParams.get('s')];
       if (u.searchParams.get('pay')) {
         const customer = s.customer || 'cus_' + Math.random().toString(36).slice(2, 10);
+        const email = u.searchParams.get('email') || s.customer_email || 'tester@example.com';
         const sub = { id: 'sub_' + Math.random().toString(36).slice(2, 10), object: 'subscription', customer, status: 'active', cancel_at_period_end: false,
-          items: { data: [{ price: { id: s.price }, current_period_end: T() + (s.price === env.STRIPE_PRICE_ANNUAL ? 365 : 30) * DAY }] } };
+          items: { data: [{ price: { id: s.price }, current_period_end: T() + (s.price === env.STRIPE_PRICE_ANNUAL ? 365 : 30) * DAY }] },
+          latest_invoice: { id: 'in_dev', payment_intent: 'pi_dev_' + customer } };
         S.subs[sub.id] = sub;
-        Object.assign(s, { status: 'complete', customer, subscription: sub.id, customer_details: { email: u.searchParams.get('email') || 'tester@example.com' } });
+        S.customers[customer] = { id: customer, email };
+        Object.assign(s, { status: 'complete', customer, subscription: sub.id, customer_details: { email }, payment_status: 'paid' });
         await webhook('checkout.session.completed', { ...s });
         res.writeHead(303, { location: s.success_url }); res.end(); return;
       }

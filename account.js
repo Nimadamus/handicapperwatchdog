@@ -50,7 +50,7 @@
       return HWD.complete(sid).then(function (d) {
         clean();
         if (d._status !== 200) return s.signed_in ? signedIn(s, d.error) : signedOut(d.error);
-        return fetch('/api/me', { credentials: 'same-origin' }).then(function (r) { return r.json(); }).then(function (me) { signedIn(me, 'Welcome to Watchdog Pro. Names and pick logs are now unlocked on every profile.'); });
+        return fetch('/api/me', { credentials: 'same-origin' }).then(function (r) { return r.json(); }).then(function (me) { signedIn(me, d.duplicate ? 'You already had Watchdog Pro. The extra checkout was canceled.' : 'Welcome to Watchdog Pro. Names and pick logs are now unlocked on every profile.'); });
       });
     }
     if (tok) {

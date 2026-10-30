@@ -29,11 +29,15 @@
       document.getElementById('planNote').textContent = 'Checkout opens shortly. Payments will be handled by Stripe.';
       return;
     }
+    var box = document.getElementById('buyerBox'), email = document.getElementById('buyerEmail');
+    if (box && !s.signed_in) box.style.display = 'block';
     btns.forEach(function (b) {
       b.addEventListener('click', function () {
+        var addr = email && box && box.style.display !== 'none' ? email.value.trim() : '';
+        if (box && box.style.display !== 'none' && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(addr)) { show('Enter your email to open secure checkout.'); email && email.focus(); return; }
         btns.forEach(function (x) { x.disabled = true; });
         b.textContent = 'Opening secure checkout';
-        HWD.checkout(b.getAttribute('data-plan')).then(function (d) {
+        HWD.checkout(b.getAttribute('data-plan'), addr).then(function (d) {
           if (!d.url) { show(d.error || 'Checkout is not available right now.'); btns.forEach(function (x) { x.disabled = false; }); b.textContent = 'Try again'; }
         });
       });

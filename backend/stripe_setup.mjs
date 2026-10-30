@@ -29,7 +29,17 @@ async function api(method, path, params) {
   return d;
 }
 
-const found = await api('GET', 'prices', { 'lookup_keys[]': undefined, limit: 100, active: 'true', expand: ['data.product'] });
+const account = await api('GET', 'account');
+const shown = `${account.settings && account.settings.dashboard && account.settings.dashboard.display_name || ''} ${account.business_profile && account.business_profile.name || ''}`;
+if (/trustmyrecord|realai|betlegend|bet legend/i.test(shown)) {
+  console.error('Refused: this Stripe account is ' + shown.trim() + '. Handicapper Watchdog needs its own account.');
+  process.exit(1);
+}
+const balance = await api('GET', 'balance');
+if (balance.livemode && !args.includes('--live')) { console.error('Live account refused. Live billing needs the owner\'s approval and --live.'); process.exit(1); }
+console.log('Stripe account:', shown.trim() || '(unnamed)', balance.livemode ? 'live' : 'test');
+
+const found = await api('GET', 'prices', { limit: 100, active: 'true', expand: ['data.product'] });
 const byKey = Object.fromEntries(found.data.filter((p) => p.lookup_key).map((p) => [p.lookup_key, p]));
 let product = (byKey.hwd_pro_monthly_5999 || byKey.hwd_pro_annual_49900 || {}).product;
 if (!product) product = await api('POST', 'products', { name: 'Watchdog Pro', description: 'Names, complete pick logs, search, comparisons and advanced filters on Handicapper Watchdog.', metadata: { app: 'hwd' } });
@@ -59,10 +69,19 @@ if (webhookUrl) {
     const h = await api('POST', 'webhook_endpoints', { url: webhookUrl, enabled_events: ['checkout.session.completed', 'customer.subscription.created',
       'customer.subscription.updated', 'customer.subscription.deleted', 'invoice.paid', 'invoice.payment_failed'], metadata: { app: 'hwd' } });
     secret = h.secret;
-  } else console.log('Webhook endpoint already exists; its signing secret is shown once in the Stripe dashboard.');
+  } else console.log('Webhook endpoint already exists. Copy its signing secret from the Stripe dashboard.');
 }
 console.log('\nStore these as Worker secrets (wrangler secret put NAME):');
 console.log('STRIPE_PRICE_MONTHLY =', monthly.id, '($59.99 / month)');
 console.log('STRIPE_PRICE_ANNUAL  =', annual.id, '($499 / year)');
-if (secret) console.log('STRIPE_WEBHOOK_SECRET = (printed once below, store it now)\n' + secret);
-console.log('Portal configuration:', portal.id, '(set as the default in the Stripe dashboard if it is not already)');
+if (secret) {
+  const fs = await import('node:fs');
+  const os = await import('node:os');
+  const path = await import('node:path');
+  const dest = path.join(os.homedir(), '.hwd', 'stripe_webhook_once.txt');
+  fs.mkdirSync(path.dirname(dest), { recursive: true });
+  fs.writeFileSync(dest, secret, { encoding: 'utf8', flag: 'w' });
+  console.log('STRIPE_WEBHOOK_SECRET was written to', dest);
+  console.log('It was not printed. Store it, then delete that file.');
+}
+console.log('Portal configuration:', portal.id);

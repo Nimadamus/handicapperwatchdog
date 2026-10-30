@@ -25,6 +25,7 @@ import shutil
 import sys
 import time
 import urllib.request
+from urllib.parse import quote
 from collections import defaultdict
 from datetime import datetime, timezone, timedelta
 
@@ -303,6 +304,251 @@ def summary(x):
             'last_pick': lp[:10] or None}
 
 
+_ID = re.compile(r'^[0-9a-f]{10}$')
+_REC = re.compile(r'^\d+-\d+(?:-\d+)?$')
+# Only pages that return 200 on the apex host. http, www, and github.io 301
+# to these URLs and must stay out of the sitemap. noindex files are skipped.
+_SITEMAP = (
+    ('index.html', 'https://handicapperwatchdog.com/', 'daily', '1.0'),
+    ('cappers.html', 'https://handicapperwatchdog.com/cappers.html', 'daily', '0.8'),
+    ('pricing.html', 'https://handicapperwatchdog.com/pricing.html', 'monthly', '0.5'),
+    ('privacy.html', 'https://handicapperwatchdog.com/privacy.html', 'yearly', '0.2'),
+    ('terms.html', 'https://handicapperwatchdog.com/terms.html', 'yearly', '0.2'),
+)
+_MARKERS = {
+    'index.html': ('live', 'board', 'sports', 'reality', 'jsonld'),
+    'cappers.html': ('fresh', 'rows', 'jsonld'),
+}
+
+
+def _esc(s):
+    return str(s).replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;').replace('"', '&quot;')
+
+
+def _num(v):
+    try:
+        return float(v)
+    except (TypeError, ValueError):
+        return None
+
+
+def _public(rows):
+    return [r for r in rows if isinstance(r, dict) and _ID.fullmatch(str(r.get('id') or ''))]
+
+
+def _signed(v, digits, suffix=''):
+    n = _num(v)
+    if n is None:
+        return '<span class="dim">n/a</span>'
+    body = '%.*f' % (digits, n)
+    if n > 0:
+        body = '+' + body
+        return '<span class="pos">%s%s</span>' % (body, suffix)
+    if n < 0:
+        return '<span class="neg">%s%s</span>' % (body, suffix)
+    return body + suffix
+
+
+def _record(r):
+    pushes = int(r.get('p') or 0)
+    text = '%d-%d' % (int(r.get('w') or 0), int(r.get('l') or 0))
+    return text + ('-%d' % pushes if pushes else '')
+
+
+def _tier(picks):
+    if picks >= 100:
+        return 'est', 'Established'
+    if picks >= 20:
+        return 'dev', 'Developing'
+    return 'sm', 'Small sample'
+
+
+def _cap_cell(r):
+    code = r['id'][:4].upper()
+    kind, label = _tier(int(r.get('picks') or 0))
+    source = r.get('source') if isinstance(r.get('source'), str) else ''
+    inner = ('<div class="cap"><span class="av">%s</span><span class="nm"><b>'
+             '<span class="blur" aria-label="Name hidden">Hidden name</span></b>'
+             '<small>ID %s · %s <span class="badge %s">%s</span></small></span></div>') % (
+                 _esc(code[:2]), _esc(code), _esc(source), kind, label)
+    if r.get('profile'):
+        return '<a href="capper.html?id=%s">%s</a>' % (r['id'], inner)
+    return inner
+
+
+def _row(r, n):
+    picks = int(r.get('picks') or 0)
+    streak = int(r.get('streak') or 0)
+    if streak > 0:
+        streak_html = '<span class="st pos">W%d</span>' % streak
+    elif streak < 0:
+        streak_html = '<span class="st neg">L%d</span>' % -streak
+    else:
+        streak_html = '<span class="dim">0</span>'
+    last = r.get('last_pick') if isinstance(r.get('last_pick'), str) and re.fullmatch(r'\d{4}-\d{2}-\d{2}', r.get('last_pick') or '') else 'n/a'
+    win = r.get('win_pct')
+    win_html = 'n/a' if _num(win) is None else '%.1f%%' % float(win)
+    cells = (
+        '<td class="l rk">%d</td>' % n,
+        '<td class="l">%s</td>' % _cap_cell(r),
+        '<td class="hm l"><span class="dim small">lifetime</span></td>',
+        '<td class="hm">%s</td>' % f'{picks:,}',
+        '<td>%s</td>' % _record(r),
+        '<td class="hm">%s</td>' % win_html,
+        '<td>%s</td>' % _signed(r.get('units'), 2),
+        '<td class="hm">%s</td>' % _signed(r.get('roi'), 1, '%'),
+        '<td class="hm">%s</td>' % streak_html,
+        '<td class="hm muted">%s</td>' % _esc(last),
+    )
+    return '<tr>%s</tr>' % ''.join(cells)
+
+
+def _ranked(cappers, limit):
+    rows = [r for r in _public(cappers) if int(r.get('picks') or 0) >= 20 and _num(r.get('units')) is not None]
+    rows.sort(key=lambda r: float(r['units']), reverse=True)
+    body = ''.join(_row(r, i) for i, r in enumerate(rows[:limit], 1))
+    return body or '<tr><td colspan="10" class="empty">No handicappers with 20 or more graded picks yet.</td></tr>'
+
+
+def _live(meta):
+    qual = int(meta.get('qualified') or 0)
+    up = int(meta.get('profitable') or 0)
+    share = '%d%%' % round(100 * up / qual) if qual else 'n/a'
+    cells = (
+        (f'{int(meta.get("tracked") or 0):,}', 'Handicappers with a record'),
+        (f'{int(meta.get("graded_picks") or 0):,}', 'Picks graded'),
+        (f'{int(meta.get("profiles") or 0):,}', 'Profiles published'),
+        (share, 'Of 20+ pick records are up money'),
+    )
+    return ''.join('<div class="kv"><b>%s</b><span>%s</span></div>' % (_esc(n), _esc(label)) for n, label in cells)
+
+
+def _reality(meta):
+    est = int(meta.get('established') or 0)
+    up = int(meta.get('established_up') or 0)
+    qual = int(meta.get('qualified') or 0)
+    prof = int(meta.get('profitable') or 0)
+    pct = round(100 * up / est) if est else 0
+    return ('<div class="eyebrow">Established records, 100+ picks</div><div class="big">%d%%</div>'
+            '<p class="muted small">are up money: %s of %s handicappers. Among records with 20 or more picks, %s of %s are up money. '
+            'Names are not published. These are past results, not predictions.</p>') % (
+                pct, f'{up:,}', f'{est:,}', f'{prof:,}', f'{qual:,}')
+
+
+def _sports(cappers):
+    depth = {}
+    for r in _public(cappers):
+        bs = r.get('bs') if isinstance(r.get('bs'), dict) else {}
+        for sport, raw in bs.items():
+            if isinstance(sport, str) and isinstance(raw, list) and raw and int(raw[0] or 0) >= 15:
+                depth[sport] = depth.get(sport, 0) + 1
+    blocks = []
+    for sport in sorted(depth, key=lambda s: depth[s], reverse=True)[:6]:
+        top = []
+        for r in _public(cappers):
+            raw = (r.get('bs') or {}).get(sport)
+            if not isinstance(raw, list) or len(raw) < 2 or int(raw[0] or 0) < 15 or _num(raw[1]) is None or float(raw[1]) <= 0:
+                continue
+            top.append((float(raw[1]), r, raw))
+        top.sort(key=lambda item: item[0], reverse=True)
+        items = []
+        for units, r, raw in top[:3]:
+            rec = raw[4] if len(raw) > 4 and isinstance(raw[4], str) and _REC.fullmatch(raw[4]) else ''
+            label = '<span class="badge">%s</span><span class="muted">%s</span>' % (_esc(r['id'][:4].upper()), _esc(rec))
+            linked = '<a href="capper.html?id=%s">%s</a>' % (r['id'], label) if r.get('profile') else label
+            items.append('<li>%s%s</li>' % (linked, _signed(units, 1, 'u')))
+        if items:
+            blocks.append('<div class="sc"><h4><span>%s</span><a class="muted small" href="cappers.html?sport=%s">View all</a></h4><ol>%s</ol></div>' % (
+                _esc(sport), quote(sport), ''.join(items)))
+    return ''.join(blocks)
+
+
+def _fresh(meta):
+    when = 'recently'
+    raw = meta.get('built_at') or ''
+    try:
+        dt = datetime.fromisoformat(str(raw).replace('Z', '+00:00')).astimezone(PT)
+        when = '%s %d, %d PT' % ('Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec'.split()[dt.month - 1], dt.day, dt.year)
+    except (TypeError, ValueError):
+        pass
+    return '%s handicappers with graded picks. Names are hidden. Updated %s.' % (f'{int(meta.get("tracked") or 0):,}', when)
+
+
+def _itemlist(cappers, page_url, name):
+    rows = [r for r in _public(cappers) if int(r.get('picks') or 0) >= 20 and _num(r.get('units')) is not None]
+    rows.sort(key=lambda r: float(r['units']), reverse=True)
+    items = []
+    for i, r in enumerate(rows[:10], 1):
+        source = r.get('source') if isinstance(r.get('source'), str) else 'public posts'
+        items.append({'@type': 'ListItem', 'position': i, 'name': 'Handicapper %s on %s, %+.2f units' % (r['id'][:4].upper(), source, float(r['units']))})
+    data = {'@context': 'https://schema.org', '@type': 'ItemList', 'name': name, 'url': page_url, 'itemListElement': items}
+    return '<script type="application/ld+json">%s</script>' % json.dumps(data, ensure_ascii=True).replace('<', '\\u003c')
+
+
+def _fill(page, html, name, inner, required):
+    start, end = '<!--seo:%s-->' % name, '<!--/seo:%s-->' % name
+    if start not in html or end not in html or html.find(end, html.find(start)) < 0:
+        if name in required:
+            raise SystemExit('seo marker %s missing in %s' % (name, page))
+        return html
+    pre, rest = html.split(start, 1)
+    _, post = rest.split(end, 1)
+    return pre + start + inner + end + post
+
+
+def _noindex(path):
+    with open(path, encoding='utf-8') as f:
+        head = f.read(8000).lower()
+    return 'name="robots"' in head and 'noindex' in head
+
+
+def _write_sitemap(site, lastmod):
+    lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for filename, loc, freq, priority in _SITEMAP:
+        path = os.path.join(site, filename)
+        if not os.path.isfile(path) or _noindex(path):
+            continue
+        lines.append('  <url><loc>%s</loc><lastmod>%s</lastmod><changefreq>%s</changefreq><priority>%s</priority></url>' % (loc, lastmod, freq, priority))
+    lines.append('</urlset>')
+    with open(os.path.join(site, 'sitemap.xml'), 'w', encoding='utf-8', newline='\n') as f:
+        f.write('\n'.join(lines) + '\n')
+
+
+def stamp_public_pages(site):
+    """Fill the public pages with masked rankings so Google can read them without JavaScript.
+
+    Profile, account, and compare pages stay noindex and out of the sitemap.
+    Handles, slugs, and post text are never written.
+    """
+    with open(os.path.join(site, 'data', 'index.json'), encoding='utf-8') as f:
+        doc = json.load(f)
+    meta, cappers = doc.get('meta') or {}, doc.get('cappers') or []
+    lastmod = str(meta.get('built_at') or '')[:10]
+    if not re.fullmatch(r'\d{4}-\d{2}-\d{2}', lastmod):
+        lastmod = datetime.now(timezone.utc).date().isoformat()
+    pages = {
+        'index.html': {
+            'live': _live(meta), 'board': _ranked(cappers, 10), 'sports': _sports(cappers),
+            'reality': _reality(meta), 'jsonld': _itemlist(cappers, 'https://handicapperwatchdog.com/', 'Top handicappers by units'),
+        },
+        'cappers.html': {
+            'fresh': _fresh(meta), 'rows': _ranked(cappers, 50),
+            'jsonld': _itemlist(cappers, 'https://handicapperwatchdog.com/cappers.html', 'Handicapper rankings'),
+        },
+    }
+    for filename, slots in pages.items():
+        path = os.path.join(site, filename)
+        if not os.path.isfile(path):
+            continue
+        with open(path, encoding='utf-8', newline='') as f:
+            html = f.read()
+        for name, inner in slots.items():
+            html = _fill(filename, html, name, inner, _MARKERS[filename])
+        with open(path, 'w', encoding='utf-8', newline='') as f:
+            f.write(html)
+    _write_sitemap(site, lastmod)
+
+
 def main():
     raw = extract(get(BASE + '?cb=' + secrets.token_hex(4)), '__ATW_DATA')
     rows = [x for x in raw.get('handicappers', []) if x.get('source') in ALLOWED and int(x.get('graded') or 0) > 0]
@@ -381,6 +627,7 @@ def main():
         meta['pro_data'] = True
     with open(os.path.join(SITE, 'data', 'index.json'), 'w', encoding='utf-8') as f:
         json.dump({'meta': meta, 'cappers': index}, f, separators=(',', ':'))
+    stamp_public_pages(SITE)
     # Build health, published for monitoring: a profile only counts once it reconciles with the source record.
     status = {'built_at': meta['built_at'], 'tracked': len(index), 'profiles_published': published,
               'profiles_missing': len(index) - published, 'complete': published == len(index),

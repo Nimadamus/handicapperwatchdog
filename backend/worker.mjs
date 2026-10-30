@@ -5,6 +5,14 @@ import { handle } from './core.mjs';
 
 export default {
   async fetch(request, env) {
-    return handle(request, { ...env, KV: env.HWD }, { fetch });
+    const url = new URL(request.url);
+    if (url.pathname.startsWith('/api/')) {
+      // Staging uses the worker's own origin so the cookie and checkout stay on that host.
+      // Production keeps SITE_URL on handicapperwatchdog.com. BILLING_LIVE is never set here.
+      const siteEnv = env.STAGING === 'yes' ? { ...env, SITE_URL: url.origin } : env;
+      return handle(request, { ...siteEnv, KV: env.HWD }, { fetch });
+    }
+    if (env.ASSETS) return env.ASSETS.fetch(request);
+    return new Response('Not found', { status: 404 });
   },
 };
