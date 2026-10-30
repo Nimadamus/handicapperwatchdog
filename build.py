@@ -578,7 +578,7 @@ def _write_sitemap(site, lastmod):
         for name in sorted(os.listdir(sport_dir)):
             if name.endswith('.html'):
                 entries.append(('sports/' + name, 'https://handicapperwatchdog.com/sports/' + name, 'daily', '0.7'))
-    for folder, freq, priority in (('reviews', 'weekly', '0.6'), ('sportsbooks', 'weekly', '0.6')):
+    for folder, freq, priority in (('reviews', 'weekly', '0.6'), ('sportsbooks', 'weekly', '0.6'), ('learn', 'weekly', '0.7')):
         folder_dir = os.path.join(site, folder)
         if not os.path.isdir(folder_dir):
             continue
@@ -586,8 +586,8 @@ def _write_sitemap(site, lastmod):
             path = os.path.join(folder_dir, name)
             if name.endswith('.html') and os.path.isfile(path):
                 loc = 'https://handicapperwatchdog.com/' + folder + '/' + name
-                if folder == 'sportsbooks' and name == 'index.html':
-                    loc = 'https://handicapperwatchdog.com/sportsbooks/'
+                if folder in ('sportsbooks', 'learn') and name == 'index.html':
+                    loc = 'https://handicapperwatchdog.com/%s/' % folder
                 entries.append((folder + '/' + name, loc, freq, priority))
             elif folder == 'sportsbooks' and os.path.isdir(path) and os.path.isfile(os.path.join(path, 'index.html')):
                 entries.append((folder + '/' + name + '/index.html',
@@ -653,6 +653,7 @@ def _nav(depth, current):
         ('cappers.html', 'Rankings'),
         ('reviews/index.html', 'Reviews'),
         ('sportsbooks/', 'Sportsbooks'),
+        ('learn/', 'Guides'),
         ('pricing.html', 'Pricing'),
     )
     return '<nav class="navlinks" id="sitenav">%s</nav>' % ''.join(
@@ -684,6 +685,7 @@ def _footer(depth):
         ('reviews/index.html', 'Reviews'),
         ('sportsbooks/', 'Sportsbooks'),
         ('sportsbooks/justbet.html', 'JustBet'),
+        ('learn/', 'Betting guides'),
         ('the-board.html', 'The board'),
         ('how-we-grade.html', 'How we grade'),
         ('pricing.html', 'Watchdog Pro'),
@@ -881,6 +883,92 @@ def _write_sport_pages(site, cappers):
     for name in os.listdir(dest):
         if name.endswith('.html') and name not in keep:
             os.remove(os.path.join(dest, name))
+
+
+def _write_learn(site, meta, cappers):
+    """Evergreen guides from content/learn.json. {{key}} placeholders take the live board numbers."""
+    path = os.path.join(HERE, 'content', 'learn.json')
+    if not os.path.isfile(path):
+        return
+    with open(path, encoding='utf-8') as f:
+        learn = json.load(f)
+    est = int(meta.get('established') or 0)
+    up = int(meta.get('established_up') or 0)
+    qual = int(meta.get('qualified') or 0)
+    prof = int(meta.get('profitable') or 0)
+    med = _median_roi(cappers, 100)
+    stats = {
+        'tracked': f"{int(meta.get('tracked') or 0):,}", 'graded': f"{int(meta.get('graded_picks') or 0):,}",
+        'est': f'{est:,}', 'up': f'{up:,}', 'qual': f'{qual:,}', 'prof': f'{prof:,}',
+        'est_pct': str(round(100 * up / est) if est else 0), 'qual_pct': str(round(100 * prof / qual) if qual else 0),
+        'med_est': 'n/a' if med is None else '%+.1f%%' % med,
+    }
+
+    def fill(s):
+        return re.sub(r'\{\{(\w+)\}\}', lambda m: stats[m.group(1)], s)
+
+    def ld(data):
+        return '<script type="application/ld+json">%s</script>' % json.dumps(data, ensure_ascii=True).replace('<', '\\u003c')
+
+    base = 'https://handicapperwatchdog.com/learn/'
+    org = {'@type': 'Organization', 'name': 'Handicapper Watchdog', 'url': 'https://handicapperwatchdog.com/'}
+    arts = learn['articles']
+    by_slug = {a['slug']: a for a in arts}
+    folder = os.path.join(site, 'learn')
+    os.makedirs(folder, exist_ok=True)
+    for a in arts:
+        url = base + a['slug'] + '.html'
+        h1, answer = fill(a['h1']), fill(a['answer'])
+        faq = [(fill(x['q']), fill(x['a'])) for x in a.get('faq') or []]
+        sections = ''.join('<section class="panel edcard essay"><h2>%s</h2><div class="prose">%s</div></section>' % (
+            _esc(fill(s['h'])), fill(s['html'])) for s in a['sections'])
+        faq_html = ('<section class="panel edcard"><h2>Common questions</h2><div class="faqs">%s</div></section>' % ''.join(
+            '<details class="faq"><summary>%s</summary><p>%s</p></details>' % (_esc(q), _esc(ans)) for q, ans in faq)) if faq else ''
+        rel = [by_slug[s] for s in a.get('related') or [] if s in by_slug]
+        rel_html = ('<section class="edsec"><h2>Related guides</h2><div class="relrow">%s</div></section>' % ''.join(
+            '<a class="rel" href="%s.html"><span>%s</span><b>%s</b></a>' % (r['slug'], _esc(r['eyebrow']), _esc(fill(r['h1'])))
+            for r in rel)) if rel else ''
+        graph = [
+            {'@type': 'Article', 'headline': h1, 'description': fill(a['description']), 'mainEntityOfPage': url,
+             'dateModified': learn['updated'], 'author': org, 'publisher': org},
+            {'@type': 'BreadcrumbList', 'itemListElement': [
+                {'@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://handicapperwatchdog.com/'},
+                {'@type': 'ListItem', 'position': 2, 'name': 'Guides', 'item': base},
+                {'@type': 'ListItem', 'position': 3, 'name': h1, 'item': url}]},
+        ]
+        if faq:
+            graph.append({'@type': 'FAQPage', 'mainEntity': [
+                {'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': ans}} for q, ans in faq]})
+        body = '''<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><a href="./">Guides</a><span aria-hidden="true">/</span><span aria-current="page">%s</span></nav>
+<div class="pagehead"><div><div class="eyebrow">%s</div><h1>%s</h1>
+<p class="muted">%s</p></div></div>
+<div class="edstack">
+<section class="panel edcard answer"><h2>The short answer</h2><div class="prose"><p>%s</p></div></section>
+%s
+%s
+<section class="ctaband"><div><h2>See the graded records</h2><p class="muted">%s handicappers, %s picks graded from public posts made before the game.</p></div><p><a class="btn" href="../cappers.html">Open the free rankings</a> <a class="btn sm pro" href="../pricing.html">Watchdog Pro</a></p></section>
+%s
+</div>
+<p class="muted small">Updated %s. Past results are not predictions. 21+. Gambling problem? Call 1 800 GAMBLER.</p>
+%s''' % (_esc(h1), _esc(a['eyebrow']), _esc(h1), _esc(fill(a['dek'])), _esc(answer), sections, faq_html,
+         stats['tracked'], stats['graded'], rel_html, time.strftime('%B %d, %Y', time.strptime(learn['updated'], '%Y-%m-%d')).replace(' 0', ' '), ld({'@context': 'https://schema.org', '@graph': graph}))
+        html = _document(1, 'learn/', fill(a['title']), fill(a['description']), url, body)
+        with open(os.path.join(folder, a['slug'] + '.html'), 'w', encoding='utf-8', newline='\n') as f:
+            f.write(html)
+    hub = learn['hub']
+    cards = ''.join('<a class="featcard" href="%s.html" style="text-decoration:none;color:inherit"><span>%02d</span><p><b>%s</b><br>%s</p></a>' % (
+        a['slug'], i, _esc(fill(a['h1'])), _esc(fill(a['description']))) for i, a in enumerate(arts, 1))
+    body = '''<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><span aria-current="page">Guides</span></nav>
+<div class="pagehead"><div><div class="eyebrow">Guides</div><h1>%s</h1>
+<p class="muted">%s</p></div></div>
+<section class="featgrid" style="margin-bottom:18px">%s</section>
+<p class="muted small">Also read: <a href="../how-we-grade.html">How we grade</a> · <a href="../the-board.html">How many handicappers are up</a> · <a href="../reviews/index.html">Handicapper reviews</a> · <a href="../sportsbooks/">Sportsbook research</a></p>
+%s''' % (_esc(hub['h1']), _esc(fill(hub['dek'])), cards, ld({
+        '@context': 'https://schema.org', '@type': 'CollectionPage', 'name': 'Handicapper Watchdog guides', 'url': base,
+        'hasPart': [{'@type': 'Article', 'headline': fill(a['h1']), 'url': base + a['slug'] + '.html'} for a in arts]}))
+    html = _document(1, 'learn/', hub['title'], fill(hub['description']), base, body)
+    with open(os.path.join(folder, 'index.html'), 'w', encoding='utf-8', newline='\n') as f:
+        f.write(html)
 
 
 def _write_editorial(site):
@@ -1525,6 +1613,7 @@ def stamp_public_pages(site):
         with open(path, 'w', encoding='utf-8', newline='') as f:
             f.write(html)
     _write_guides(site, meta, cappers)
+    _write_learn(site, meta, cappers)
     _write_sport_pages(site, cappers)
     _write_editorial(site)
     _write_legal(site)
