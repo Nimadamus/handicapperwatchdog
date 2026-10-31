@@ -34,7 +34,7 @@ KEY = (os.environ.get('HWD_MASK_KEY') or secrets.token_hex(16)).encode()
 HERE = os.path.dirname(os.path.abspath(__file__))
 CACHE = os.path.join(HERE, '.cache', 'profiles')
 SITE = os.path.join(HERE, '_site')
-STATIC = ('index.html', 'capper.html', 'cappers.html', 'style.css', 'app.js', 'capper.js', 'favicon.svg', 'stadium.svg', 'CNAME', 'robots.txt', 'sitemap.xml')
+STATIC = ('index.html', 'capper.html', 'cappers.html', 'style.css', 'app.js', 'capper.js', 'favicon.svg', 'stadium.svg', 'og-card.png', 'CNAME', 'robots.txt', 'sitemap.xml')
 PROFILE_TTL = int(os.environ.get('HWD_PROFILE_TTL', str(6 * 3600)))
 MAX_FETCH = int(os.environ.get('HWD_MAX_FETCH', '400'))
 PT = timezone(timedelta(hours=-7))  # display only; weekday buckets use Pacific time like the rest of TMR
@@ -721,7 +721,12 @@ def _document(depth, current, title, description, canonical, body, robots=''):
 <meta property="og:type" content="website">
 <meta property="og:url" content="%s">
 <meta property="og:site_name" content="Handicapper Watchdog">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://handicapperwatchdog.com/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Handicapper Watchdog: who is actually winning? Independently graded records of public handicappers.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://handicapperwatchdog.com/og-card.png">
 <meta name="theme-color" content="#070d17">
 <link rel="icon" href="%sfavicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
