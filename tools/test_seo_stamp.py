@@ -233,9 +233,9 @@ def assert_table(html, element_id, expect):
         assert record_ok(r), n
         assert len(cells) == 10, n
         assert cells[0] == str(n), (n, cells[0])
-        code = r['id'][:4].upper()
-        assert ('ID ' + code) in cells[1], (n, cells[1])
-        assert 'Hidden name' in cells[1]
+        code = r['id'][:6].upper()
+        assert ('#' + code) in cells[1], (n, cells[1])
+        assert 'Hidden name' not in cells[1]
         source = r.get('source') or ''
         # Public rows drop source on purpose. A present source must be a real
         # platform and must stay out of the identity cell. An absent source

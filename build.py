@@ -338,11 +338,10 @@ def _tier(picks):
 
 
 def _cap_cell(r, href_prefix=''):
-    code = r['id'][:4].upper()
+    code = r['id'][:6].upper()
     kind, label = _tier(int(r.get('picks') or 0))
-    inner = ('<div class="cap"><span class="av">%s</span><span class="nm"><b>'
-             '<span class="blur" aria-label="Name hidden">Hidden name</span></b>'
-             '<small>ID %s · <span class="badge %s">%s</span></small></span></div>') % (
+    inner = ('<div class="cap"><span class="av">%s</span><span class="nm"><b class="idc">#%s</b>'
+             '<small><span class="badge %s">%s</span></small></span></div>') % (
                  _esc(code[:2]), _esc(code), kind, label)
     if r.get('profile'):
         return '<a href="%scapper.html?id=%s">%s</a>' % (href_prefix, r['id'], inner)
@@ -488,7 +487,7 @@ def _sports(cappers):
             if units <= 0:
                 continue
             rec = raw[4] if len(raw) > 4 and isinstance(raw[4], str) and _REC.fullmatch(raw[4]) else ''
-            label = '<span class="badge">%s</span><span class="muted">%s</span>' % (_esc(r['id'][:4].upper()), _esc(rec))
+            label = '<span class="badge">#%s</span><span class="muted">%s</span>' % (_esc(r['id'][:6].upper()), _esc(rec))
             linked = '<a href="capper.html?id=%s">%s</a>' % (r['id'], label) if r.get('profile') else label
             items.append('<li>%s%s</li>' % (linked, _signed(units, 1, 'u')))
             if len(items) == 3:
@@ -507,25 +506,25 @@ def _fresh(meta):
         when = '%s %d, %d PT' % ('Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec'.split()[dt.month - 1], dt.day, dt.year)
     except (TypeError, ValueError):
         pass
-    return '%s handicappers with graded picks. Names and posting sites are hidden. Updated %s.' % (f'{int(meta.get("tracked") or 0):,}', when)
+    return '%s handicappers with graded picks. Every account is an anonymous Watchdog ID. Updated %s.' % (f'{int(meta.get("tracked") or 0):,}', when)
 
 
 def _pending(meta):
     live = meta.get('live') if isinstance(meta.get('live'), dict) else {}
     n = _num(live.get('pending_picks')) if live else None
     if n is None:
-        return 'Picks posted for games that have not started stay locked. The names stay locked too.'
+        return 'Tracked picks waiting on a result are never counted in a record.'
     count = f'{int(n):,}'
-    noun = 'pick is' if int(n) == 1 else 'picks are'
-    return '%s %s up for games that have not started. Names are locked.' % (count, noun)
+    noun = 'tracked pick is' if int(n) == 1 else 'tracked picks are'
+    return '%s %s waiting on a result right now. A pick waiting on a result is never counted in a record.' % (count, noun)
 
 
 def _itemlist(cappers, page_url, name):
     rows = _established(cappers)
     items = []
     for i, r in enumerate(rows[:10], 1):
-        items.append({'@type': 'ListItem', 'position': i, 'name': 'Handicapper %s, %+.2f units, %d graded picks' % (
-            r['id'][:4].upper(), float(r['units']), int(r.get('picks') or 0))})
+        items.append({'@type': 'ListItem', 'position': i, 'name': 'Handicapper #%s, %+.2f units, %d graded picks' % (
+            r['id'][:6].upper(), float(r['units']), int(r.get('picks') or 0))})
     data = {'@context': 'https://schema.org', '@type': 'ItemList', 'name': name, 'url': page_url, 'itemListElement': items}
     return '<script type="application/ld+json">%s</script>' % json.dumps(data, ensure_ascii=True).replace('<', '\\u003c')
 
@@ -769,7 +768,7 @@ def _write_guides(site, meta, cappers):
     pending = _esc(_pending(meta))
     grade = _document(0, 'how-we-grade.html',
                       'How Handicapper Watchdog Grades a Record',
-                      'How public handicapper picks are captured, graded on the final score, and ranked. Names and posting sites stay off the free board.',
+                      'How public handicapper picks are captured, graded on the final score, and ranked. Every account is an anonymous Watchdog ID.',
                       'https://handicapperwatchdog.com/how-we-grade.html',
                       '''<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><span aria-current="page">How we grade</span></nav>
 <div class="pagehead"><div><div class="eyebrow">Methodology</div><h1>How a record gets graded</h1>
@@ -781,8 +780,8 @@ def _write_guides(site, meta, cappers):
 </div>
 <section class="panel" style="margin-bottom:18px"><div class="pb">
 <h2>What the free board shows</h2>
-<p>Rank, record, units, ROI, win rate and sample size are public. The name, the handle and the posting site are not. A record next to a posting site is often enough to go find that person and follow them for free, so that pairing stays inside Watchdog Pro.</p>
-<p>A handicapper cannot pay for a higher rank, a feature, or a verified label. Rank is the graded record. Watchdog Pro is access to the name and the log, not a badge that the record is legitimate.</p>
+<p>Rank, record, units, ROI, win rate and sample size are public. The name, the handle and the link to the account are not published anywhere on this site, Watchdog Pro included. Each account is a permanent anonymous Watchdog ID. A published name would let anyone copy the list of accounts worth following and use it without paying, which would end the research that keeps these records.</p>
+<p>A handicapper cannot pay for a higher rank, a feature, or a verified label. Rank is the graded record. Watchdog Pro adds eligible pending picks and the full graded pick log. It is not a badge that a record is legitimate.</p>
 <p>People looking for a verified handicapper record are looking for a timestamp and a sample, not a badge. On this site a pick counts only when it was posted in public before the start, and the free board opens at 100 graded picks. A directory can still print the word verified and show the pick after the start. The <a href="reviews/cappertek.html">CapperTek review</a> is that case. CapperTek says the public reveal is 30 minutes after the event starts.</p>
 <p>Pending picks are not mixed into a record. %s</p>
 <p class="muted small">%s handicappers have a graded record. %s picks have been graded. Of the established records, %s of %s are up money.</p>
@@ -790,7 +789,7 @@ def _write_guides(site, meta, cappers):
 </div></section>''' % (pending, f'{tracked:,}', f'{graded:,}', f'{up:,}', f'{est:,}'))
     board = _document(0, 'the-board.html',
                       'How Many Handicappers Are Actually Up | Handicapper Watchdog',
-                      'The share of tracked handicappers who are up money, split by sample size. Names and posting sites stay hidden.',
+                      'The share of tracked handicappers who are up money, split by sample size. Every account is an anonymous Watchdog ID.',
                       'https://handicapperwatchdog.com/the-board.html',
                       '''<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><span aria-current="page">The board</span></nav>
 <div class="pagehead"><div><div class="eyebrow">The board</div><h1>How many handicappers are actually up</h1>
@@ -804,22 +803,23 @@ def _write_guides(site, meta, cappers):
 <section class="panel" style="margin-bottom:18px"><div class="pb">
 <p>Established means 100 or more graded picks. The median ROI on those records is %s. A record with 20 picks can still be a hot streak, which is why the free rankings open on the established list.</p>
 <p>%s</p>
-<p>These are past results, not predictions. Names and posting sites stay off this page. <a href="how-we-grade.html">How a record is graded</a>. Named services are reviewed apart from this board: <a href="reviews/index.html">handicapper reviews</a>.</p>
+<p>These are past results, not predictions. Names are not published, here or in Watchdog Pro. <a href="how-we-grade.html">How a record is graded</a>. Named services are reviewed apart from this board: <a href="reviews/index.html">handicapper reviews</a>.</p>
 <p><a class="btn" href="cappers.html">See the established rankings</a></p>
 </div></section>
-<section class="proband"><div><span class="lock">Watchdog Pro</span><h2>The names behind the records that are up</h2>
-<p class="muted" style="margin:0">$59.99 a month, or $499 a year. Pro shows the handicapper, the posting site, and the picks posted before the game.</p></div>
-<div class="feats"><div class="feat"><b>Why the name is locked</b><span>Publish the name and the posting site and anyone can follow that person without paying.</span></div>
-<div class="feat"><b>What you are paying for</b><span>Who is still winning across the whole board, and which of their picks are up for games that have not started.</span></div></div>
+<section class="proband"><div><span class="lock">Watchdog Pro</span><h2>Act on the records that are up</h2>
+<p class="muted" style="margin:0">$59.99 a month, or $499 a year, at launch. Checkout is not open yet.</p></div>
+<div class="feats"><div class="feat"><b>Eligible pending picks</b><span>Picks from tracked accounts, captured before their games start, with the Watchdog ID and record beside each one.</span></div>
+<div class="feat"><b>Why accounts stay anonymous</b><span>Names are not published in any plan. A name list could be copied in one month and used for free forever.</span></div></div>
 </section>''' % (pending, f'{tracked:,}', f'{graded:,}', est_pct, f'{up:,}', f'{est:,}',
                  qual_pct, f'{prof:,}', f'{qual:,}', med_txt, pending))
     price = _document(0, 'pricing.html',
                       'Watchdog Pro Pricing | Handicapper Watchdog',
-                      'Watchdog Pro is $59.99 a month or $499 a year. The name, the posting site, the graded pick log and the picks posted before the game.',
+                      'Watchdog Pro will be $59.99 a month or $499 a year: eligible pending picks before the start, full graded pick logs and research tools. Accounts stay anonymous in every plan.',
                       'https://handicapperwatchdog.com/pricing.html',
                       '''<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><span aria-current="page">Pricing</span></nav>
-<div class="pagehead"><div><div class="eyebrow">Watchdog Pro</div><h1>See who is winning, and what they are betting</h1>
-<p class="muted">The free board shows the record. Pro shows the name, the posting site, and the picks posted before the game. Both plans include the same features.</p></div></div>
+<div class="pagehead"><div><div class="eyebrow">Watchdog Pro</div><h1>Research the record, then see what comes next</h1>
+<p class="muted">The free site is the full public record. Watchdog Pro adds eligible pending picks from tracked accounts before their games start, and the complete graded pick log behind every profile. Both plans include the same features.</p>
+<p class="pcnote" style="margin:10px 0 0"><span class="statusdot"></span>Checkout is not open yet. These are the launch prices.</p></div></div>
 <section class="plans">
 <div class="plan best"><div class="eyebrow">Annual</div><div class="amt"><b>$499</b><span>a year</span></div>
 <p>Twelve months at $59.99 is $719.88. Annual is $499, so the year costs $220.88 less. That is $41.58 a month, billed once.</p></div>
@@ -829,15 +829,17 @@ def _write_guides(site, meta, cappers):
 <section class="panel" style="margin:0 0 18px"><div class="ph"><h3>Free and Pro</h3></div>
 <div class="tw"><table class="mini"><thead><tr><th class="l">Feature</th><th>Free</th><th>Pro</th></tr></thead><tbody>
 <tr><td class="l">Rank, record, units, ROI, win rate, streak</td><td>Yes</td><td>Yes</td></tr>
-<tr><td class="l">Established board and sport records</td><td>Yes</td><td>Yes</td></tr>
-<tr><td class="l">The handicapper's name and posting site</td><td>No</td><td>Yes</td></tr>
-<tr><td class="l">Graded pick log and the original post</td><td>No</td><td>Yes</td></tr>
-<tr><td class="l">Picks posted for games that have not started</td><td>No</td><td>Yes</td></tr>
-<tr><td class="l">Search by handle, and compare up to four</td><td>No</td><td>Yes</td></tr>
+<tr><td class="l">Every ranking list, sport records and profile breakdowns</td><td>Yes</td><td>Yes</td></tr>
+<tr><td class="l">Eligible pending picks before the game starts</td><td>No</td><td>Yes</td></tr>
+<tr><td class="l">Complete graded pick log: game, pick, odds, result, units, post time</td><td>No</td><td>Yes</td></tr>
+<tr><td class="l">Advanced filters, and compare up to four records</td><td>No</td><td>Yes</td></tr>
+<tr><td class="l">Handicapper names, handles or links to accounts</td><td>No</td><td>No</td></tr>
 </tbody></table></div></section>
 <section class="panel" style="margin-bottom:28px"><div class="pb">
+<h2>Why names are not included</h2>
+<p>Every tracked account is a permanent anonymous Watchdog ID. If Pro revealed names, one month of access would be enough to copy the whole list of accounts worth following and use it for free from then on. So names, handles and account links stay out of every plan. Pro gives you the research and the eligible pending picks tied to those IDs.</p>
 <p>%s</p>
-<p>Watchdog Pro is not a verified badge. A handicapper cannot pay to be ranked higher, to be featured, or to receive a label that the record is legitimate. Pro is access to the name, the posting site, and the pick log on records this site already grades from public posts. This edition does not show a checkout button.</p>
+<p>Watchdog Pro is not a verified badge. A handicapper cannot pay to be ranked higher, to be featured, or to receive a label that the record is legitimate.</p>
 <p class="muted small">Prices are in US dollars. Records are past results, not predictions or a guarantee. 21+. Gambling problem? Call 1 800 GAMBLER.</p>
 <p><a href="cappers.html">Look at the free board first</a> · <a href="how-we-grade.html">How a record is graded</a> · <a href="reviews/index.html">Handicapper reviews</a></p>
 </div></section>''' % pending)
@@ -868,17 +870,17 @@ def _write_sport_pages(site, cappers):
         keep.add(slug + '.html')
         leaders = _sport_leaders(cappers, sport)
         title = '%s Handicapper Records | Handicapper Watchdog' % sport
-        desc = 'Graded %s records for public handicappers. Names and posting sites are hidden. Ranked by units, %d or more %s picks.' % (
+        desc = 'Graded %s records for public handicappers, each an anonymous Watchdog ID. Ranked by units, %d or more %s picks.' % (
             sport, _SPORT_MIN, sport)
         body = '''<div class="sportband s-%s" aria-hidden="true"></div>
 <nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><a href="../cappers.html">Rankings</a><span aria-hidden="true">/</span><span aria-current="page">%s</span></nav>
 <div class="pagehead"><div><div class="eyebrow">%s records</div><h1>%s handicapper records</h1>
-<p class="muted">%d handicappers with %d or more graded %s picks, ranked by units won in %s. Names and posting sites are hidden. A short sample can still swing, so the all sports board opens on records with 100 or more picks. <a href="../how-we-grade.html">How records are graded</a>. Named services are a different file: <a href="../reviews/index.html">handicapper reviews</a>.</p></div>
+<p class="muted">%d handicappers with %d or more graded %s picks, ranked by units won in %s. Every account is an anonymous Watchdog ID. A short sample can still swing, so the all sports board opens on records with 100 or more picks. <a href="../how-we-grade.html">How records are graded</a>. Named services are a different file: <a href="../reviews/index.html">handicapper reviews</a>.</p></div>
 <a class="btn sm pro" href="../pricing.html">Watchdog Pro</a></div>
 <section class="panel"><div class="tw"><table><thead><tr><th class="l">#</th><th class="l">Handicapper</th><th>Picks</th><th>Record</th><th>Win %%</th><th>Units</th><th>ROI</th></tr></thead>
 <tbody>%s</tbody></table></div></section>
 <section class="proband" style="grid-template-columns:1fr auto"><div><span class="lock">Watchdog Pro</span><h2>Found a %s record worth following?</h2>
-<p class="muted" style="margin:0">Pro shows the name, the posting site, and the picks posted before the game. $59.99 a month, or $499 a year.</p></div>
+<p class="muted" style="margin:0">Pro adds eligible pending picks before the start and the full graded pick log. Accounts stay anonymous. $59.99 a month or $499 a year at launch.</p></div>
 <a class="btn pro" href="../pricing.html">See pricing</a></section>''' % (
             _sport_slug(sport), _esc(sport), _esc(sport), _esc(sport), len(leaders), _SPORT_MIN, _esc(sport), _esc(sport),
             _sport_table(cappers, sport), _esc(sport))
@@ -1530,11 +1532,11 @@ def _write_legal(site):
 <p class="muted">Handicapper Watchdog grades picks that were posted in public before the game started. A handicapper does not send a record, and a handicapper cannot pay for a rank.</p></div></div>
 <section class="panel" style="margin-bottom:18px"><div class="pb prose">
 <h2>What this site is</h2>
-<p>The free board shows rank, record, units, ROI, win rate, and sample size. The name, the handle, and the posting site stay off that board. Watchdog Pro, at the price on the pricing page, is access to those names and to the pick log. It is not a badge that a record is legitimate, and it is not a placement a seller can buy.</p>
+<p>The free board shows rank, record, units, ROI, win rate, and sample size. The name, the handle, and the account link are not published anywhere, Watchdog Pro included. Watchdog Pro, at the price on the pricing page, adds eligible pending picks and the full graded pick log. It is not a badge that a record is legitimate, and it is not a placement a seller can buy.</p>
 <p>Reviews quote what a service publishes about itself. A numeric score stays off until a full evidence file exists. A text verdict is used only when the service's own pages support it, and the page says which sentences are documented, which were observed, and which are someone else's allegation.</p>
 <p>Sportsbook pages are research notes. They are not signup offers. JustBet registration on this site stays off.</p>
 <h2>What this site is not</h2>
-<p>Handicapper Watchdog is not a sportsbook and does not take bets. It does not sell picks. It does not sell a green check, a featured row, or protection from a bad review. Past results are not predictions. 21+.</p>
+<p>Handicapper Watchdog is not a sportsbook and does not take bets. It does not make picks of its own. It does not sell a green check, a featured row, or protection from a bad review. Past results are not predictions. 21+.</p>
 <p><a href="how-we-grade.html">How a record is graded</a> · <a href="reviews/index.html">Handicapper reviews</a> · <a href="reviews/cappertek.html">CapperTek review</a> · <a href="cappers.html">Rankings</a> · <a href="pricing.html">Watchdog Pro</a> · <a href="contact.html">Corrections</a></p>
 </div></section>'''),
         ('privacy.html',
@@ -1559,7 +1561,7 @@ def _write_legal(site):
 <p class="muted">Records on this site are past results. They are not a promise about the next game.</p></div></div>
 <section class="panel" style="margin-bottom:18px"><div class="pb prose">
 <p>You may read the public pages. You may not scrape them in a way that knocks the site over, and you may not present a Watchdog record as your own grade.</p>
-<p>Handicapper Watchdog is not a sportsbook, not a pick seller, and not a financial adviser. Nothing on the site is an instruction to bet. Gambling has a cost. 21+. If gambling is a problem, call 1 800 GAMBLER.</p>
+<p>Handicapper Watchdog is not a sportsbook, not a handicapper, and not a financial adviser. Nothing on the site is an instruction to bet. Gambling has a cost. 21+. If gambling is a problem, call 1 800 GAMBLER.</p>
 <p>Watchdog Pro prices are the prices on the pricing page. This edition does not show a checkout button, so this page does not invent a refund rule for a payment the site is not taking.</p>
 <p>Reviews are opinions grounded in the sources named on each page. A correction path is on the <a href="contact.html">contact page</a>.</p>
 </div></section>'''),
