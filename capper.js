@@ -197,7 +197,7 @@
     // pick ledger: the most recent graded picks. Never the post text, post link or account.
     var L = p.ledger || [];
     var opt = function (arr) { var seen = {}; return arr.filter(function (v) { if (!v || seen[v]) return false; seen[v] = 1; return true; }).sort().map(function (v) { return '<option>' + esc(v) + '</option>'; }).join(''); };
-    h += '<section class="sec" id="picks"><div class="sech"><h2>Pick ledger</h2><span class="muted small">' + fmt(L.length) + ' most recent of ' + fmt(o.picks) + ' graded picks</span></div><div class="panel">' +
+    h += '<section class="sec" id="picks"><div id="ppend"></div><div class="sech"><h2>Pick ledger</h2><span class="muted small" id="lhead">' + fmt(L.length) + ' most recent of ' + fmt(o.picks) + ' graded picks</span></div><div class="panel">' +
       (L.length ? '<div class="fbar lfbar"><div class="fld"><label for="lq">Search</label><input id="lq" placeholder="Team or pick"></div>' +
         '<div class="fld"><label for="lsp">Sport</label><select id="lsp"><option value="">All</option>' + opt(L.map(function (r) { return r.sp; })) + '</select></div>' +
         '<div class="fld"><label for="lmk">Bet type</label><select id="lmk"><option value="">All</option>' + opt(L.map(function (r) { return r.mk; })) + '</select></div>' +
@@ -206,12 +206,13 @@
         '<div class="tw"><table class="mini ledger"><thead><tr><th class="l">Date</th><th class="l hg">Sport</th><th class="l hg">Game</th><th class="l">Pick</th><th>Odds</th><th class="hm">Risk</th><th>Result</th><th class="hm">Final</th><th>Units</th><th class="hm">Before start</th></tr></thead><tbody id="lrows"></tbody></table></div>' +
         '<div class="tfoot"><span id="lcount" class="muted small"></span><div class="pager"><button class="btn sm ghost" id="lprev" type="button">Previous</button><span id="lpg"></span><button class="btn sm ghost" id="lnext" type="button">Next</button></div></div>'
         : '<div class="empty small">No graded picks to list yet.</div>') +
-      '<div class="lockfoot"><span class="lock">Watchdog Pro</span><span>The complete log of all ' + fmt(o.picks) + ' graded picks and this account&rsquo;s eligible pending picks before the start are in Watchdog Pro.</span><a class="btn sm pro" href="' + PRO + '">View Watchdog Pro</a></div></div>' +
+      '<div class="lockfoot" id="lockfoot"><span class="lock">Watchdog Pro</span><span>The complete log of all ' + fmt(o.picks) + ' graded picks and this account&rsquo;s eligible pending picks before the start are in Watchdog Pro.</span><a class="btn sm pro" href="' + PRO + '">View Watchdog Pro</a></div></div>' +
       '<p class="note">Posted shows how long before the start the pick was captured. Odds are the posted price when the post had one; picks without a price count in the record but not in units.</p></section>';
 
     root.innerHTML = h;
     hookCharts();
     ledger(L);
+    if (window.HWD) HWD.ready.then(function (st) { if (st.pro) unlock(s, o); });
     root.addEventListener('click', function (e) {
       var b = e.target.closest('button.tab'); if (!b) return;
       var box = b.parentNode, name = box.getAttribute('data-tabs'), i = b.getAttribute('data-i');
@@ -239,7 +240,9 @@
     }
     return '<div class="g2">' + card('Best and worst sports', p.best_sport) + card('Best and worst bet types', p.best_market) + '</div>';
   }
+  var ledgerSet = null;
   function ledger(L) {
+    if (ledgerSet) return ledgerSet(L);
     var tb = document.getElementById('lrows'); if (!tb) return;
     var PER = 10, pg = 1, view = L;
     var g = function (id) { return document.getElementById(id); };
@@ -268,7 +271,38 @@
     g('lq').addEventListener('input', apply);
     g('lprev').onclick = function () { if (pg > 1) { pg--; draw(); } };
     g('lnext').onclick = function () { if (pg * PER < view.length) { pg++; draw(); } };
+    ledgerSet = function (next) {
+      L = next;
+      var fill = function (id, vals) { var el = g(id), cur = el.value, seen = {}; el.innerHTML = '<option value="">All</option>' + vals.filter(function (v) { if (!v || seen[v]) return false; seen[v] = 1; return true; }).sort().map(function (v) { return '<option>' + esc(v) + '</option>'; }).join(''); el.value = cur; };
+      fill('lsp', L.map(function (r) { return r.sp; })); fill('lmk', L.map(function (r) { return r.mk; }));
+      apply();
+    };
     draw();
+  }
+  // Watchdog Pro: this account's eligible pending picks, from the one encrypted pending feed
+  function pendingFor(id) {
+    var box = document.getElementById('ppend'); if (!box) return;
+    var when = function (iso) { return iso ? new Date(iso).toLocaleString('en-US', { timeZone: 'America/Los_Angeles', weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) + ' PT' : 'n/a'; };
+    var draw = function (body) { box.innerHTML = '<div class="sech"><h2>Eligible pending picks</h2><span class="lock">Watchdog Pro</span></div><div class="panel" style="margin-bottom:18px">' + body + '</div>'; };
+    HWD.pending().then(function (d) {
+      var live = (d.picks || []).filter(function (p) { return p.id === id && p.start && new Date(p.start) > new Date(); });
+      draw(!live.length ? '<div class="empty small">No eligible pending picks from this account right now. Picks appear here after capture and leave when the game starts.</div>'
+        : '<div class="tw"><table class="mini"><thead><tr><th class="l">Starts</th><th class="l">Game</th><th class="l">Pick</th><th>Odds</th><th class="hm">Units</th></tr></thead><tbody>' +
+          live.map(function (p) { return '<tr><td class="l nowrap">' + when(p.start) + '</td><td class="l">' + esc(p.league) + ' &middot; ' + esc(p.matchup) + '</td><td class="l"><b>' + esc(p.selection) + '</b> <span class="dim small">' + esc(p.bet_type) + '</span></td><td>' + odds(p.odds) + '</td><td class="hm">' + (p.units == null ? '<span class="dim">n/a</span>' : esc(p.units)) + '</td></tr>'; }).join('') +
+          '</tbody></table></div>');
+    }).catch(function () { draw('<div class="empty small">The pending pick feed is not available at this update. Graded records are unaffected.</div>'); });
+  }
+  // Watchdog Pro: the full anonymous ledger and this account's eligible pending picks, decrypted in the browser
+  function unlock(s, o) {
+    pendingFor(s.id);
+    HWD.capper(s.id).then(function (d) {
+      ledger(d.ledger || []);
+      var hd = document.getElementById('lhead'); if (hd) hd.textContent = 'All ' + fmt((d.ledger || []).length) + ' graded picks';
+      var lf = document.getElementById('lockfoot'); if (lf) lf.innerHTML = '<span class="lock">Watchdog Pro</span><span>Full graded log unlocked for your account.</span>';
+    }).catch(function () {
+      var lf = document.getElementById('lockfoot');
+      if (lf) lf.innerHTML = '<span class="lock">Watchdog Pro</span><span>The full log did not load. Refresh the page; if it keeps failing, sign in again from your account page.</span>';
+    });
   }
   function renderBasic(p) {
     var s = p.summary, c = s.id.slice(0, 6).toUpperCase(), t = TIER[s.tier] || TIER.small;
@@ -284,6 +318,7 @@
       '<div class="unl"><span class="lock">Watchdog Pro</span><b>See what this account bets next</b><p>Watchdog Pro adds eligible pending picks before their games start. The name is not published in any plan.</p><a class="btn pro" style="width:100%" href="' + PRO + '">View Watchdog Pro</a></div></section>' +
       kpis([[rec(s), 'Record'], [sgn(s.units, 2), 'Units won'], [sgn(s.roi, 1, '%'), 'ROI'], [pct(s.win_pct), 'Win %'], [fmt(s.picks), 'Graded picks'], [s.streak > 0 ? '<span class="pos">W' + s.streak + '</span>' : s.streak < 0 ? '<span class="neg">L' + (-s.streak) + '</span>' : '<span class="dim">n/a</span>', 'Current streak']]) +
       '<div class="disclosure" style="margin:16px 0"><b>Detailed analytics not shown</b><p class="muted">' + why + '</p></div>' +
-      panel('By sport', table(bs, 'Sport', { sort: 1 }));
+      panel('By sport', table(bs, 'Sport', { sort: 1 })) + '<div id="ppend" style="margin-top:18px"></div>';
+    if (window.HWD) HWD.ready.then(function (st) { if (st.pro) pendingFor(s.id); });
   }
 })();

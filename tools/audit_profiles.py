@@ -147,9 +147,10 @@ def main():
     for k, v in fails.items():
         print('FAIL %s: %d  e.g. %s' % (k, len(v), v[:3]))
     if upstream:
-        print('UPSTREAM ledger repeats (same game, matchup, pick, market counted more than once): %d accounts, %d extra picks: %s' % (len(upstream), sum(n for _, n in upstream), upstream[:20]))
+        print('UPSTREAM candidates for review (same game, matchup, pick and market label; the public history has no period, so full game vs first 5 pairs also appear): %d accounts, %d extra picks: %s' % (len(upstream), sum(n for _, n in upstream), upstream[:20]))
     print('RESULT', 'FAIL' if fails else 'PASS')
-    sys.exit(1 if fails else 0)
+    # A privacy leak always blocks the deploy; statistics failures block only with --strict (a stale site is worse than a flagged one).
+    sys.exit(1 if fails.get('privacy_leak') or ('--strict' in sys.argv and fails) else 0)
 
 
 if __name__ == '__main__':

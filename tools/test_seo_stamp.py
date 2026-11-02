@@ -167,6 +167,15 @@ def check(label, extra):
         for legal in ('about.html', 'privacy.html', 'terms.html', 'contact.html'):
             assert 'https://handicapperwatchdog.com/' + legal in sm_legal
         assert 'capper.html' not in sm_legal and 'account.html' not in sm_legal
+        for draft in ('pro-terms.html', 'pro-privacy.html'):
+            page = open(os.path.join(tmp, draft), encoding='utf-8').read()
+            assert 'name="robots" content="noindex"' in page and draft not in sm_legal, draft
+            assert 'class="legal' in page and 'trustmyrecord' not in page.lower(), draft
+        price = open(os.path.join(tmp, 'pricing.html'), encoding='utf-8').read()
+        assert 'data-plan="annual"' in price and 'data-plan="monthly"' in price and 'id="planNote"' in price and 'pvRows' not in price
+        assert 'src="pro.js"' in price and 'src="pricing.js"' in price and 'noindex' not in price.lower()
+        assert '$59.99' in price and '$499' in price and not re.search(r'\$(?!59\.99|499|41\.58|719\.88|220\.88)\d', price)
+        assert 'does not show a checkout button' not in price
         assert '22,990' in open(os.path.join(tmp, 'reviews', 'docs-sports-ai.html'), encoding='utf-8').read()
         assert '637-544' in open(os.path.join(tmp, 'reviews', 'big-al.html'), encoding='utf-8').read()
         for slug in (

@@ -26,8 +26,16 @@ jobs:
           path: .cache
           key: profiles-${{ github.run_id }}
           restore-keys: profiles-
+      - name: Install build dependencies
+        run: pip install --quiet cryptography
       - name: Build
         run: python build.py
+        env:
+          HWD_MASK_KEY: ${{ secrets.HWD_MASK_KEY }}
+          HWD_PRO_KEY: ${{ secrets.HWD_PRO_KEY }}
+          HWD_EXPORT_TOKEN: ${{ secrets.HWD_EXPORT_TOKEN }}
+      - name: Integrity and privacy audit (a privacy leak blocks the deploy)
+        run: python tools/audit_profiles.py --live
         env:
           HWD_MASK_KEY: ${{ secrets.HWD_MASK_KEY }}
       - name: Save profile cache

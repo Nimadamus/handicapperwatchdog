@@ -1,3 +1,7 @@
 __pycache__/
 _site/
 .cache/
+tools/*.log
+.dev.vars
+.wrangler/
+node_modules/

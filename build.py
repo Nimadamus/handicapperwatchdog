@@ -13,6 +13,7 @@ The raw research is cached in .cache/ (Actions cache, never published) and a pro
 the capper has posted since and the cached copy is older than PROFILE_TTL, so TMR serves each profile a few times
 a day at most, gzipped.
 """
+import base64
 import gzip
 import hashlib
 import hmac
@@ -34,11 +35,55 @@ KEY = (os.environ.get('HWD_MASK_KEY') or secrets.token_hex(16)).encode()
 HERE = os.path.dirname(os.path.abspath(__file__))
 CACHE = os.path.join(HERE, '.cache', 'profiles')
 SITE = os.path.join(HERE, '_site')
-STATIC = ('index.html', 'capper.html', 'cappers.html', 'style.css', 'app.js', 'capper.js', 'favicon.svg', 'stadium.svg', 'og-card.png', 'CNAME', 'robots.txt', 'sitemap.xml')
+STATIC = ('index.html', 'capper.html', 'cappers.html', 'account.html', 'compare.html', 'picks.html', 'style.css', 'app.js', 'capper.js',
+          'pro.js', 'compare.js', 'pricing.js', 'account.js', 'picks.js', 'favicon.svg', 'stadium.svg', 'og-card.png', 'CNAME', 'robots.txt', 'sitemap.xml')
 PROFILE_TTL = int(os.environ.get('HWD_PROFILE_TTL', str(6 * 3600)))
 MAX_FETCH = int(os.environ.get('HWD_MAX_FETCH', '400'))
 PT = timezone(timedelta(hours=-7))  # display only; weekday buckets use Pacific time like the rest of TMR
 DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+
+
+# Watchdog Pro data (full graded pick ledgers, eligible pending picks) is published only encrypted, never names or links.
+# Each capper file has its own AES-GCM key HMAC(HWD_PRO_KEY, 'capper:' + id); the pending feed uses HMAC(HWD_PRO_KEY, 'pending').
+# The API hands a key only to a signed in Pro account. Without HWD_PRO_KEY nothing Pro is written at all.
+PRO_KEY = os.environ.get('HWD_PRO_KEY', '').encode()
+# Anonymous pending export from the Watchdog (derived token, opens only /api/hwd/pending). Without it there is no pending feed.
+EXPORT_URL = os.environ.get('HWD_EXPORT_URL', 'https://tmr-watchdog.onrender.com/api/hwd/pending')
+EXPORT_TOKEN = os.environ.get('HWD_EXPORT_TOKEN', '')
+
+
+def pro_key(label):
+    return hmac.new(PRO_KEY, label.encode(), hashlib.sha256).digest()
+
+
+def seal(label, obj):
+    from cryptography.hazmat.primitives.ciphers.aead import AESGCM
+    iv = secrets.token_bytes(12)
+    data = json.dumps(obj, separators=(',', ':')).encode()
+    return base64.b64encode(iv + AESGCM(pro_key(label)).encrypt(iv, data, None)).decode()
+
+
+def fetch_pending():
+    """Eligible pending picks keyed by masked id, or None when the export is not configured or not reachable."""
+    if not EXPORT_TOKEN:
+        return None
+    try:
+        if EXPORT_URL.startswith('file:'):  # local tests only: a saved export
+            with open(EXPORT_URL[5:], encoding='utf-8') as f:
+                d = json.load(f)
+        else:
+            req = urllib.request.Request(EXPORT_URL, headers={'x-watchdog-token': EXPORT_TOKEN, 'User-Agent': 'HandicapperWatchdog/1.0'})
+            with urllib.request.urlopen(req, timeout=180) as r:
+                d = json.loads(r.read().decode('utf-8'))
+    except Exception as e:
+        print('pending export unavailable', type(e).__name__, file=sys.stderr)
+        return None
+    keep = ('league', 'matchup', 'bet_type', 'selection', 'odds', 'line', 'units', 'start', 'lead_min')
+    by_id = defaultdict(list)
+    for p in d.get('picks') or []:
+        if re.fullmatch(r'th-\d{4}', str(p.get('slug') or '')):
+            by_id[mask(p['slug'])].append({k: p.get(k) for k in keep})
+    return {'board_baked_at': d.get('board_baked_at'), 'by_id': by_id}
 
 
 def get(url):
@@ -227,6 +272,7 @@ def build_profile(row, research):
         prof['extra'][k] = trim(prof['windows'].get(k))
     # Reconcile: the pick history must reproduce TMR's headline record, or the profile is not published.
     ov, a = research.get('overview') or {}, agg(hist)
+    prof['_hist'] = hist
     prof['reconciled'] = bool(ov) and (a['w'], a['l'], a['p']) == (ov.get('w'), ov.get('l'), ov.get('p')) and \
         abs(a['net'] - float(ov.get('net') or 0)) < 0.05
     return prof
@@ -926,17 +972,22 @@ def _write_guides(site, meta, cappers):
                       '''<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><span aria-current="page">Pricing</span></nav>
 <div class="pagehead"><div><div class="eyebrow">Watchdog Pro</div><h1>Research the record, then see what comes next</h1>
 <p class="muted">The free site is the full public record. Watchdog Pro adds eligible pending picks from tracked accounts before their games start, and the complete graded pick log behind every profile. Both plans include the same features.</p>
-<p class="pcnote" style="margin:10px 0 0"><span class="statusdot"></span>Checkout is not open yet. These are the launch prices.</p></div></div>
+<p class="pcnote" style="margin:10px 0 0"><span class="statusdot"></span><span id="planNote">Checkout is not open yet. Nothing can be bought on the site today and no card is collected. These are the launch prices.</span></p></div></div>
+<p class="disclosure" id="notice" hidden></p>
+<div class="fld" id="buyerBox" style="display:none;max-width:360px;margin:0 0 14px"><label for="buyerEmail">Email for your Watchdog Pro account</label><input id="buyerEmail" type="email" autocomplete="email" placeholder="you@example.com"></div>
 <section class="plans">
 <div class="plan best"><div class="eyebrow">Annual</div><div class="amt"><b>$499</b><span>a year</span></div>
-<p>Twelve months at $59.99 is $719.88. Annual is $499, so the year costs $220.88 less. That is $41.58 a month, billed once.</p></div>
+<p>Twelve months at $59.99 is $719.88. Annual is $499, so the year costs $220.88 less. That is $41.58 a month, billed once.</p>
+<button class="btn pro full" type="button" data-plan="annual" disabled>Opening soon</button></div>
 <div class="plan"><div class="eyebrow">Monthly</div><div class="amt"><b>$59.99</b><span>a month</span></div>
-<p>Same Pro access, billed every month. Cancel and access runs through the month already paid.</p></div>
+<p>Same Pro access, billed every month. Cancel and access runs through the month already paid.</p>
+<button class="btn ghost full" type="button" data-plan="monthly" disabled>Opening soon</button></div>
 </section>
 <section class="panel" style="margin:0 0 18px"><div class="ph"><h3>Free and Pro</h3></div>
 <div class="tw"><table class="mini"><thead><tr><th class="l">Feature</th><th>Free</th><th>Pro</th></tr></thead><tbody>
 <tr><td class="l">Rank, record, units, ROI, win rate, streak</td><td>Yes</td><td>Yes</td></tr>
-<tr><td class="l">Every ranking list, sport records and profile breakdowns</td><td>Yes</td><td>Yes</td></tr>
+<tr><td class="l">Every ranking list, sport records, profile breakdowns and charts</td><td>Yes</td><td>Yes</td></tr>
+<tr><td class="l">Ledger of the 50 most recent graded picks on each profile</td><td>Yes</td><td>Yes</td></tr>
 <tr><td class="l">Eligible pending picks before the game starts</td><td>No</td><td>Yes</td></tr>
 <tr><td class="l">Complete graded pick log: game, pick, odds, result, units, post time</td><td>No</td><td>Yes</td></tr>
 <tr><td class="l">Advanced filters, and compare up to four records</td><td>No</td><td>Yes</td></tr>
@@ -947,9 +998,11 @@ def _write_guides(site, meta, cappers):
 <p>Every tracked account is a permanent anonymous Watchdog ID. If Pro revealed names, one month of access would be enough to copy the whole list of accounts worth following and use it for free from then on. So names, handles and account links stay out of every plan. Pro gives you the research and the eligible pending picks tied to those IDs.</p>
 <p>%s</p>
 <p>Watchdog Pro is not a verified badge. A handicapper cannot pay to be ranked higher, to be featured, or to receive a label that the record is legitimate.</p>
-<p class="muted small">Prices are in US dollars. Records are past results, not predictions or a guarantee. 21+. Gambling problem? Call 1 800 GAMBLER.</p>
-<p><a href="cappers.html">Look at the free board first</a> · <a href="how-we-grade.html">How a record is graded</a> · <a href="reviews/index.html">Handicapper reviews</a></p>
-</div></section>''' % pending)
+<p class="muted small">Prices are in US dollars. Subscribing will be covered by the <a href="pro-terms.html">Watchdog Pro subscription terms</a> and the <a href="pro-privacy.html">Watchdog Pro privacy notice</a>. Records are past results, not predictions or a guarantee. 21+. Gambling problem? Call 1 800 GAMBLER.</p>
+<p><a href="cappers.html">Look at the free board first</a> · <a href="picks.html">Today&rsquo;s Pro picks</a> · <a href="how-we-grade.html">How a record is graded</a> · <a href="reviews/index.html">Handicapper reviews</a></p>
+</div></section>
+<script src="pro.js"></script>
+<script src="pricing.js"></script>''' % pending)
     for name, html in (('how-we-grade.html', grade), ('the-board.html', board), ('pricing.html', price)):
         with open(os.path.join(site, name), 'w', encoding='utf-8', newline='\n') as f:
             f.write(html)
@@ -1692,6 +1745,29 @@ def _write_legal(site):
             f.write(html)
 
 
+def _write_pro_legal(site):
+    """Watchdog Pro subscription terms and privacy notice: drafts for owner review (docs/LEGAL_REVIEW.md), noindex and
+    out of the sitemap until approved. The public terms.html and privacy.html stay as they are."""
+    drafts = (
+        ('pro-terms.html', 'Subscription terms', 'Watchdog Pro Subscription Terms | Handicapper Watchdog',
+         'The terms for a Watchdog Pro subscription: billing, renewal, cancellation, refunds and acceptable use.'),
+        ('pro-privacy.html', 'Privacy notice', 'Watchdog Pro Privacy Notice | Handicapper Watchdog',
+         'What a Watchdog Pro subscription collects, the sign in cookie, and the providers that run the service.'),
+    )
+    for name, crumb, title, desc in drafts:
+        src = os.path.join(HERE, 'content', name)
+        if not os.path.isfile(src):
+            continue
+        with open(src, encoding='utf-8') as f:
+            article = f.read().strip()
+        body = ('<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span>'
+                '<a href="pricing.html">Watchdog Pro</a><span aria-hidden="true">/</span><span aria-current="page">%s</span></nav>\n%s'
+                '<script src="pro.js"></script>') % (crumb, article)
+        html = _document(0, name, title, desc, 'https://handicapperwatchdog.com/' + name, body, 'noindex')
+        with open(os.path.join(site, name), 'w', encoding='utf-8', newline='\n') as f:
+            f.write(html)
+
+
 def stamp_public_pages(site):
     """Fill the public pages with masked rankings so Google can read them without JavaScript.
 
@@ -1731,6 +1807,7 @@ def stamp_public_pages(site):
     _write_sport_pages(site, cappers)
     _write_editorial(site)
     _write_legal(site)
+    _write_pro_legal(site)
     _write_retired_rating(site)
     _write_sitemap(site, lastmod)
 
@@ -1746,31 +1823,56 @@ def main():
         path = os.path.join(SITE, name)
         shutil.rmtree(path) if os.path.isdir(path) else os.remove(path)
     os.makedirs(os.path.join(SITE, 'data', 'p'))
+    if PRO_KEY:
+        os.makedirs(os.path.join(SITE, 'data', 'x'))
+    pend = fetch_pending() if PRO_KEY else None
+    sealed = 0
     for f in STATIC:
         if os.path.exists(os.path.join(HERE, f)):
             shutil.copy(os.path.join(HERE, f), SITE)
 
     now = time.time()
     fetched = failed = published = unreconciled = behind = 0
-    rows.sort(key=lambda x: -int(x['graded']))
+    # Cache invalidation: a profile is refetched whenever the tracker's record for that account changed (a late grade
+    # changes it without a new post), and otherwise once a day. Changed records go first and get their own larger budget,
+    # so a busy grading night never leaves them behind routine refreshes. A small sidecar holds each entry's signature.
+    sig_path = os.path.join(os.path.dirname(CACHE), 'sigs.json')
+    try:
+        with open(sig_path, encoding='utf-8') as f:
+            sigs = json.load(f)
+    except Exception:
+        sigs = {}
+    sig_of = lambda x: [x.get('record'), int(x.get('graded') or 0), x.get('units'), x.get('last_pick_at')]
+    ckey = lambda x: hashlib.sha1(x['slug'].encode()).hexdigest()
+
+    def urgency(x):
+        e = sigs.get(ckey(x))
+        if not e or e[0] != sig_of(x):
+            return 0
+        return 1 if now - e[1] > PROFILE_TTL * 4 else 2
+    rows.sort(key=lambda x: (urgency(x), -int(x['graded'])))
     index = []
+    changed_budget = int(os.environ.get('HWD_MAX_FETCH_CHANGED', str(max(MAX_FETCH, 1000))))
     for x in rows:
         s = summary(x)
-        cpath = os.path.join(CACHE, hashlib.sha1(x['slug'].encode()).hexdigest() + '.json')
+        cpath = os.path.join(CACHE, ckey(x) + '.json')
         cached = None
         if os.path.exists(cpath):
             with open(cpath, encoding='utf-8') as f:
                 cached = json.load(f)
-        sig = [x.get('record'), int(x.get('graded') or 0), x.get('units'), x.get('last_pick_at')]
-        # Refetch whenever the tracker's record moved (a late grade changes it without a new post), else after the TTL.
-        stale = cached is None or cached.get('sig') != sig or now - cached.get('fetched', 0) > PROFILE_TTL * 4
-        if stale and fetched < MAX_FETCH:
+            if cached.get('sig') and ckey(x) not in sigs:
+                sigs[ckey(x)] = [cached['sig'], cached.get('fetched', 0)]
+        sig = sig_of(x)
+        changed = cached is None or cached.get('sig') != sig
+        stale = changed or now - cached.get('fetched', 0) > PROFILE_TTL * 4
+        if stale and fetched < (changed_budget if changed else MAX_FETCH):
             try:
                 research = extract(get(BASE + x['slug'] + '/'), '__WD_RESEARCH')
                 if research:
                     cached = {'last_pick_at': x.get('last_pick_at'), 'sig': sig, 'fetched': now, 'research': research}
                     with open(cpath, 'w', encoding='utf-8') as f:
                         json.dump(cached, f, separators=(',', ':'))
+                    sigs[ckey(x)] = [sig, now]
                 fetched += 1
                 time.sleep(0.15)
             except Exception as e:
@@ -1778,6 +1880,7 @@ def main():
                 print('fetch failed', type(e).__name__, file=sys.stderr)
         if cached:
             prof = build_profile(x, cached['research'])
+            hist = prof.pop('_hist')
             ov = cached['research'].get('overview') or {}
             # The detailed profile must describe the same record the rankings show right now.
             current = (ov.get('w'), ov.get('l'), ov.get('p'), ov.get('picks')) == (s['w'], s['l'], s['p'], s['picks']) and                 (s['units'] is None or abs(float(ov.get('net') or 0) - s['units']) < 0.06)
@@ -1789,6 +1892,10 @@ def main():
                 s.update({k: v for k, v in prof.pop('extra').items()})
                 prof['summary'].update({k: s[k] for k in ('r7', 'r30', 'r90', 'r365', 'first_pick', 'months', 'months_up', 'unpriced')})
                 prof['detail'] = True
+                if PRO_KEY:
+                    with open(os.path.join(SITE, 'data', 'x', s['id'] + '.bin'), 'w') as f:
+                        f.write(seal('capper:' + s['id'], {'ledger': [ledger_row(h) for h in hist[::-1]]}))
+                    sealed += 1
                 with open(os.path.join(SITE, 'data', 'p', s['id'] + '.json'), 'w', encoding='utf-8') as f:
                     json.dump(prof, f, separators=(',', ':'))
                 s['profile'] = True
@@ -1805,6 +1912,12 @@ def main():
                    for k, v in s.pop('by_sport').items() if (v['picks'] or 0) >= 5}
         index.append(s)
 
+    try:
+        with open(sig_path, 'w', encoding='utf-8') as f:
+            json.dump(sigs, f, separators=(',', ':'))
+    except OSError:
+        pass
+    index.sort(key=lambda s: -s['picks'])  # fetch order is by urgency; the published index keeps the size order
     qual = [s for s in index if s['picks'] >= 20 and s['units'] is not None]
     roll = {}
     for s in index:
@@ -1822,7 +1935,24 @@ def main():
             'by_platform': by_platform,
             'established': sum(1 for s in index if s['picks'] >= 100 and s['units'] is not None),
             'established_up': sum(1 for s in index if s['picks'] >= 100 and (s['units'] or 0) > 0),
-            'live': live_stats()}
+            'live': live_stats(),
+            'pro': {'ledgers': sealed, 'pending_feed': pend is not None,
+                    'pending_count': sum(len(v) for v in pend['by_id'].values()) if pend else None,
+                    'pending_baked_at': pend['board_baked_at'] if pend else None}}
+    if PRO_KEY and pend is not None:
+        ctx = {s['id']: s for s in index}
+        board = []
+        for cid, picks in pend['by_id'].items():
+            c = ctx.get(cid)
+            if not c:
+                continue
+            for p in picks:
+                board.append(dict(p, id=cid, cw=c['w'], cl=c['l'], cp=c['p'], cpicks=c['picks'], cu=c['units'], croi=c['roi'],
+                                  tier=c['tier'], r30=c.get('r30'), sport=(c.get('bs') or {}).get(p.get('league'))))
+        board.sort(key=lambda r: (r.get('start') or '', -(r.get('cu') or -1e9)))
+        meta['pro']['pending_count'] = len(board)  # only picks tied to a ranked ID are published
+        with open(os.path.join(SITE, 'data', 'x', 'pending.bin'), 'w') as f:
+            f.write(seal('pending', {'baked_at': pend['board_baked_at'], 'built_at': meta['built_at'], 'picks': board}))
     with open(os.path.join(SITE, 'data', 'index.json'), 'w', encoding='utf-8') as f:
         json.dump({'meta': meta, 'cappers': index}, f, separators=(',', ':'))
     stamp_public_pages(SITE)
