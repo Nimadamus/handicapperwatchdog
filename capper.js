@@ -45,37 +45,68 @@
   function dots(list) { return '<div class="dots">' + (list || []).map(function (r) { return '<span class="d ' + (r === 'W' ? 'dw' : r === 'L' ? 'dl' : 'dp') + '">' + r + '</span>'; }).join('') + '</div>'; }
 
   var charts = [];
-  function chart(pts, first, last) {
+  // pts: numbers (nulls dropped from the front); o: {suf, dates, label, zero, digits}
+  function chart(pts, first, last, o) {
+    o = o || {};
+    var dates = o.dates || null;
+    if (pts) { var k0 = 0; while (k0 < pts.length && pts[k0] == null) k0++; pts = pts.slice(k0); if (dates) dates = dates.slice(k0); }
     if (!pts || pts.length < 2) return '<div class="empty small">Not enough graded picks to chart yet.</div>';
-    var i = charts.push(pts) - 1;
-    var W = 900, H = 240, L = 44, R = 10, T = 12, B = 26;
-    var mn = Math.min.apply(null, pts.concat(0)), mx = Math.max.apply(null, pts.concat(0)), pad = Math.max(1, (mx - mn) * 0.08); mn -= pad; mx += pad;
+    var suf = o.suf == null ? 'u' : o.suf, dg = o.digits == null ? 2 : o.digits;
+    var i = charts.push({ pts: pts, dates: dates, suf: suf, dg: dg, plain: !!o.plain }) - 1;
+    var W = 900, H = 240, L = 44, R = 10, T = 12, B = 26, base = o.zero == null ? 0 : o.zero;
+    var mn = Math.min.apply(null, pts.concat(base)), mx = Math.max.apply(null, pts.concat(base)), pad = Math.max(1, (mx - mn) * 0.08); mn -= pad; mx += pad;
     var x = function (k) { return L + k * (W - L - R) / (pts.length - 1); }, y = function (v) { return T + (mx - v) * (H - T - B) / (mx - mn); };
     var ticks = [mx - pad, (mx + mn) / 2, mn + pad].map(function (v) { return Math.round(v); }).filter(function (v, k, a) { return a.indexOf(v) === k; });
     var d = pts.map(function (v, k) { return (k ? 'L' : 'M') + x(k).toFixed(1) + ' ' + y(v).toFixed(1); }).join('');
-    var endv = pts[pts.length - 1], col = endv >= 0 ? 'var(--win)' : 'var(--loss)', hex = endv >= 0 ? '#34d399' : '#f87171', gid = 'g' + i;
-    return '<div class="chart" data-c="' + i + '"><svg viewBox="0 0 ' + W + ' ' + H + '" preserveAspectRatio="none" role="img" aria-label="Cumulative units, now ' + endv.toFixed(2) + '">' +
+    var endv = pts[pts.length - 1], up = endv >= base, col = o.plain ? 'var(--pro)' : up ? 'var(--win)' : 'var(--loss)', hex = o.plain ? '#e4c37a' : up ? '#34d399' : '#f87171', gid = 'g' + i;
+    var aria = (o.label || 'Cumulative units') + ', now ' + (+endv).toFixed(dg) + suf;
+    return '<div class="chart" data-c="' + i + '"><svg viewBox="0 0 ' + W + ' ' + H + '" preserveAspectRatio="none" role="img" aria-label="' + esc(aria) + '">' +
       '<defs><linearGradient id="' + gid + '" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="' + hex + '" stop-opacity=".22"/><stop offset="1" stop-color="' + hex + '" stop-opacity="0"/></linearGradient></defs>' +
       ticks.map(function (v) { return '<line class="gl" x1="' + L + '" x2="' + (W - R) + '" y1="' + y(v) + '" y2="' + y(v) + '" vector-effect="non-scaling-stroke"/>'; }).join('') +
-      '<line class="zl" x1="' + L + '" x2="' + (W - R) + '" y1="' + y(0) + '" y2="' + y(0) + '" vector-effect="non-scaling-stroke"/>' +
+      '<line class="zl" x1="' + L + '" x2="' + (W - R) + '" y1="' + y(base) + '" y2="' + y(base) + '" vector-effect="non-scaling-stroke"/>' +
       '<path d="' + d + 'L' + x(pts.length - 1) + ' ' + (H - B) + 'L' + L + ' ' + (H - B) + 'Z" fill="url(#' + gid + ')"/>' +
       '<path d="' + d + '" fill="none" stroke="' + col + '" stroke-width="2.2" vector-effect="non-scaling-stroke" stroke-linejoin="round"/>' +
       '<line class="hx" x1="0" x2="0" y1="' + T + '" y2="' + (H - B) + '" stroke="var(--dim)" stroke-width="1" vector-effect="non-scaling-stroke" opacity="0"/></svg>' +
-      ticks.map(function (v) { return '<span class="yl" style="top:' + (y(v) / H * 100).toFixed(2) + '%">' + (v > 0 ? '+' : '') + v + 'u</span>'; }).join('') +
-      '<div class="xl"><span>' + esc(first || 'First graded pick') + '</span><span>' + esc(last || 'Latest') + '</span></div><div class="tip" hidden></div></div>';
+      ticks.map(function (v) { return '<span class="yl" style="top:' + (y(v) / H * 100).toFixed(2) + '%">' + (v > 0 && !o.plain ? '+' : '') + v + esc(suf) + '</span>'; }).join('') +
+      '<div class="xl"><span>' + esc(first || (dates && dates[0] ? day(dates[0]) : 'First graded pick')) + '</span><span>' + esc(last || (dates && dates[dates.length - 1] ? day(dates[dates.length - 1]) : 'Latest')) + '</span></div><div class="tip" hidden></div></div>';
   }
   function hookCharts() {
     root.querySelectorAll('.chart').forEach(function (c) {
-      var pts = charts[+c.getAttribute('data-c')], svg = c.querySelector('svg'), tip = c.querySelector('.tip'), hx = c.querySelector('.hx');
-      c.addEventListener('mousemove', function (e) {
-        var b = svg.getBoundingClientRect(), fx = (e.clientX - b.left) / b.width;
+      if (c.getAttribute('data-hooked')) return; c.setAttribute('data-hooked', '1');
+      var m = charts[+c.getAttribute('data-c')], pts = m.pts, svg = c.querySelector('svg'), tip = c.querySelector('.tip'), hx = c.querySelector('.hx');
+      function show(clientX) {
+        var b = svg.getBoundingClientRect(), fx = (clientX - b.left) / b.width;
         var k = Math.max(0, Math.min(pts.length - 1, Math.round((fx * 900 - 44) / (900 - 54) * (pts.length - 1))));
         var sx = 44 + k * (900 - 54) / (pts.length - 1);
         hx.setAttribute('x1', sx); hx.setAttribute('x2', sx); hx.setAttribute('opacity', '.6');
-        tip.hidden = false; tip.style.left = (sx / 900 * b.width) + 'px'; tip.style.top = '40px'; tip.innerHTML = sgn(pts[k], 2, 'u');
-      });
+        tip.hidden = false; tip.style.left = Math.max(40, Math.min(b.width - 40, sx / 900 * b.width)) + 'px'; tip.style.top = '40px';
+        tip.innerHTML = (m.plain ? (+pts[k]).toFixed(m.dg) + esc(m.suf) : sgn(pts[k], m.dg, m.suf)) + (m.dates && m.dates[k] ? '<br><span class="dim small">' + day(m.dates[k]) + '</span>' : '');
+      }
+      c.addEventListener('mousemove', function (e) { show(e.clientX); });
+      c.addEventListener('touchmove', function (e) { if (e.touches[0]) show(e.touches[0].clientX); }, { passive: true });
       c.addEventListener('mouseleave', function () { tip.hidden = true; hx.setAttribute('opacity', '0'); });
     });
+  }
+  // horizontal bars: items [{k, v, sub}], value in units unless suf given
+  function hbars(items, o) {
+    o = o || {};
+    items = (items || []).filter(function (it) { return it && it.v != null; });
+    if (!items.length) return '<div class="empty small">Not enough graded picks yet.</div>';
+    var peak = Math.max.apply(null, items.map(function (it) { return Math.abs(it.v); }).concat(0.01));
+    return '<div class="hbars" role="list">' + items.map(function (it) {
+      var w = Math.max(1, Math.round(50 * Math.abs(it.v) / peak)), pos = it.v >= 0;
+      return '<div class="hbr' + (it.small ? ' hsm' : '') + '" role="listitem"' + (it.small ? ' title="Fewer than 10 picks"' : '') + '><span class="hbk">' + label(it.k) + (it.sub ? ' <span class="dim small">' + it.sub + '</span>' : '') + '</span>' +
+        '<span class="hbt" aria-hidden="true"><i class="' + (pos ? 'up' : 'dn') + '" style="' + (pos ? 'left:50%' : 'right:50%') + ';width:' + w + '%"></i></span>' +
+        '<b class="num">' + sgn(it.v, o.digits == null ? 2 : o.digits, o.suf == null ? 'u' : o.suf) + '</b></div>';
+    }).join('') + '</div>';
+  }
+  // weekly pick counts as small vertical bars
+  function activity(series) {
+    if (!series || series.length < 2) return '<div class="empty small">Not enough weeks of activity yet.</div>';
+    var W = 900, H = 160, n = series.length, peak = Math.max.apply(null, series.map(function (x) { return x[1]; }).concat(1)), bw = W / n;
+    return '<div class="chart act"><svg viewBox="0 0 ' + W + ' ' + H + '" preserveAspectRatio="none" role="img" aria-label="Graded picks per week, ' + n + ' weeks, peak ' + peak + '">' +
+      series.map(function (x, k) { var h = Math.round((H - 6) * x[1] / peak); return '<rect x="' + (k * bw + bw * 0.15).toFixed(1) + '" y="' + (H - h) + '" width="' + (bw * 0.7).toFixed(1) + '" height="' + h + '" rx="1.5" fill="var(--ink2)" opacity=".55"><title>Week of ' + day(x[0]) + ': ' + x[1] + ' picks</title></rect>'; }).join('') +
+      '</svg><div class="xl"><span>Week of ' + day(series[0][0]) + '</span><span>Peak ' + peak + ' picks a week</span><span>Week of ' + day(series[n - 1][0]) + '</span></div></div>';
   }
 
   function kpis(list) { return '<div class="kpis">' + list.map(function (k) { return '<div class="kpi"><b>' + k[0] + '</b><span>' + k[1] + '</span></div>'; }).join('') + '</div>'; }
@@ -97,6 +128,7 @@
 
   // ---------- page ----------
   function render(p) {
+    if (p.detail === false) return renderBasic(p);
     var s = p.summary, o = p.overview || {}, a = p.advanced || {}, c = s.id.slice(0, 6).toUpperCase(), t = TIER[s.tier] || TIER.small;
     var z = a.z || {}, be = a.break_even || {}, clv = a.clv || {}, ost = o.streaks || {};
     document.title = 'Handicapper #' + c + ': ' + rec(o) + ', ' + (o.net > 0 ? '+' : '') + (+o.net).toFixed(2) + ' units | Handicapper Watchdog';
@@ -113,13 +145,13 @@
       '<h1 class="idc">#' + esc(c) + '</h1>' +
       '<div class="pmeta"><span class="badge ' + t[0] + '" title="' + t[2] + '">' + t[1] + '</span>' +
       (s.sports || []).slice(0, 4).map(function (x) { return '<a class="badge" href="' + sportHref(x) + '">' + esc(x) + '</a>'; }).join('') + '</div>' +
-      '<p class="muted small" style="margin:8px 0 0">Tracked since ' + day(s.first_pick) + ' · last pick ' + day(s.last_pick) + ' · verified through ' + day(p.generated_at) + '</p></div></div></div>' +
+      '<p class="muted small" style="margin:8px 0 0">' + statusTag(p.status) + ' Tracked since ' + day(s.first_pick) + ' · last graded game ' + day(p.last_game || s.last_pick) + ' · verified through ' + day(p.generated_at) + '</p></div></div></div>' +
       '<div class="unl"><span class="lock">Watchdog Pro</span><b>See what this account bets next</b><p>Watchdog Pro adds this account&rsquo;s eligible pending picks before their games start and its complete graded pick log. The name is not published in any plan.</p><a class="btn pro" style="width:100%" href="' + PRO + '">View Watchdog Pro</a></div></section>';
 
     h += kpis([[rec(o), 'Record'], [sgn(o.net, 2), 'Units won'], [sgn(o.roi, 1, '%'), 'ROI'], [pct(o.win_pct), 'Win %'], [fmt(o.picks), 'Graded picks'],
       [odds(o.avg_odds), 'Avg odds'], [strk(ost.current), 'Current streak'], [s.r30 ? sgn(s.r30.net, 2) : '<span class="dim">n/a</span>', 'Last 30 days']]);
 
-    var secs = [['overview', 'Overview'], ['sports', 'Sports'], ['markets', 'Markets'], ['situations', 'Sides and prices'], ['teams', 'Teams'], ['calendar', 'Calendar'], ['picks', 'Pick log']];
+    var secs = [['overview', 'Overview'], ['charts', 'Charts'], ['sports', 'Sports'], ['markets', 'Markets'], ['situations', 'Sides and prices'], ['teams', 'Teams'], ['calendar', 'Calendar'], ['picks', 'Pick ledger']];
     h += '<nav class="snav"><div class="tabs" id="snav">' + secs.map(function (x, i) { return '<a class="tab' + (i ? '' : ' on') + '" href="#' + x[0] + '" style="display:inline-flex;align-items:center">' + x[1] + '</a>'; }).join('') + '</div></nav>';
 
     var months = s.months || 0;
@@ -128,6 +160,11 @@
       '<div class="stack">' + panel('Last 20 results', '<div class="pb">' + dots(p.last_results) + '<p class="note" style="margin:10px 0 0">Newest first. Pushes shown as P.</p></div>') +
       panel('Consistency', '<div class="pb">' + facts([['Profitable months', months ? (s.months_up || 0) + ' of ' + months : 'n/a'], ['Longest win run', fmt(ost.longest_win)], ['Longest losing run', fmt(ost.longest_loss)],
         ['Max drawdown', sgn(a.max_drawdown, 2, 'u')], ['Peak', sgn(a.peak_units, 2, 'u')]]) + '</div>') + '</div></div>' +
+      '<div class="g2">' + panel('Performance by period', table(p.form_days, 'Window'), '<span class="muted small">By game date</span>') +
+        panel('Tracking', '<div class="pb">' + facts([['Watchdog ID', '#' + esc(c)], ['First tracked pick', day(s.first_pick)], ['Most recent graded game', day(p.last_game || s.last_pick)], ['Monitoring status', statusTag(p.status, 1)],
+          ['Graded picks', fmt(o.picks)], ['Picks per week', p.per_week == null ? 'n/a' : (+p.per_week).toFixed(1)], ['Avg units risked', p.avg_risk == null ? 'n/a' : (+p.avg_risk).toFixed(2)], ['Pending picks', '<span class="dim">Watchdog Pro</span>']]) +
+          '<p class="note" style="margin:10px 0 0">The account name, link and posting site are never published. The ID is permanent.</p></div>') + '</div>' +
+      strengths(p) +
       '<div class="g2">' + panel('Advanced metrics', '<div class="pb">' + facts([['Z score vs break even', z.z == null ? 'n/a' : sgn(z.z, 2)], ['Win % needed at their prices', be.needed_pct == null ? 'n/a' : pct(be.needed_pct)],
         ['Gap to break even', be.gap_pts == null ? 'n/a' : sgn(be.gap_pts, 2, ' pts')], ['Avg closing line value', clv.avg_pts == null ? 'n/a' : sgn(clv.avg_pts, 2, ' pts')], ['Beat the closing line', clv.beat_pct == null ? 'n/a' : pct(clv.beat_pct)],
         ['Volatility per pick', a.volatility == null ? 'n/a' : (+a.volatility).toFixed(2)]]) +
@@ -135,8 +172,17 @@
       panel('Verification', '<div class="pb">' + facts([['Graded picks in this record', fmt(o.picks)], ['Picks without a price', fmt(o.unpriced || 0) + ' <span class="dim small">(in W-L, not units)</span>'], ['Pending picks', '<span class="dim">never counted</span>'],
         ['Sample size', '<span class="badge ' + t[0] + '">' + t[1] + '</span>'], ['Record verified through', day(p.generated_at)]]) +
         '<p class="note" style="margin:10px 0 0">' + t[2] + ' Every pick was captured from a public post made before the game started and graded on the final score.</p></div>') + '</div>' +
-      '<div class="g2">' + panel('Form by recent picks', table(p.form_picks, 'Window')) + panel('Form by days', table(p.form_days, 'Window')) + '</div>' +
-      panel('After a win or a loss', table(p.after, 'Situation')) + '</section>';
+      '<div class="g2">' + panel('Form by recent picks', table(p.form_picks, 'Window')) + panel('After a win or a loss', table(p.after, 'Situation')) + '</div>' + '</section>';
+
+    var sportBars = sportNames.map(function (n) { var x = p.sport_detail[n].overall; return { k: n, v: x.net, sub: rec(x) + ', ' + fmt(x.picks) + ' picks', small: x.picks < 10 }; });
+    var monthBars = (p.month || []).slice().sort(function (a, b) { return String(a.key) < String(b.key) ? -1 : 1; }).slice(-12).map(function (x) { return { k: x.key, v: x.net, sub: rec(x) }; });
+    var rn = p.rolling_n || 50;
+    h += '<section class="sec" id="charts"><div class="sech"><h2>Charts</h2><span class="muted small">Every point is computed from graded picks</span></div>' + panel('Performance over time', '<div class="pb">' + tabs('ch', [
+      ['Cumulative units', chart(p.curve, null, null, { dates: p.curve_dates, label: 'Cumulative units' }) + '<p class="note">Profit if 1 unit had been risked on every priced pick.</p>'],
+      ['ROI over time', chart(p.roi_curve, null, null, { dates: p.curve_dates, suf: '%', digits: 1, label: 'Lifetime ROI' }) + '<p class="note">Lifetime ROI after each graded pick. Starts once 10 units have been risked.</p>'],
+      ['Rolling win %', chart(p.rolling_win, null, null, { suf: '%', digits: 1, zero: 50, plain: 1, label: 'Rolling win rate' }) + '<p class="note">Win rate over each run of ' + rn + ' decided picks. The center line is 50%. Break even at -110 is 52.4%.</p>'],
+      ['Picks per week', activity(p.activity) + '<p class="note">Graded picks by game week, Pacific time.</p>']]) + '</div>') +
+      '<div class="g2">' + panel('Units by sport', '<div class="pb">' + hbars(sportBars) + '</div>') + panel('Units by month', '<div class="pb">' + hbars(monthBars) + '</div>', '<span class="muted small">Last 12 months</span>') + '</div></section>';
 
     h += '<section class="sec" id="sports"><div class="sech"><h2>Sport by sport</h2><span class="muted small">' + sportNames.length + ' sports</span></div>' +
       (sportNames.length ? tabs('sp', sportNames.map(function (n) { return [esc(n) + ' <span class="dim">' + p.sport_detail[n].overall.picks + '</span>', sportPane(n, p.sport_detail[n])]; })) : '<div class="empty">No sport data yet.</div>') + '</section>';
@@ -148,13 +194,24 @@
       '<div class="g2">' + panel('Conferences backed', table(p.conference_backing, 'Conference', { sort: 1, limit: 10 })) + panel('Divisions backed', table(p.division_backing, 'Division', { sort: 1, limit: 10 })) + '</div></section>';
     h += '<section class="sec" id="calendar"><div class="sech"><h2>Calendar</h2></div><div class="g2">' + panel('By day of the week', table(p.weekday, 'Day')) + '<div class="stack">' + panel('By month', table(p.month, 'Month')) + panel('By season', table(p.season, 'Season')) + '</div></div></section>';
 
-    // pick log: locked; no pick rows are ever published on this site
-    var sk = '<tr><td class="l"><div class="skel" style="width:180px"></div></td><td class="l"><div class="skel" style="width:110px"></div></td><td><div class="skel" style="width:40px;margin-left:auto"></div></td><td><div class="skel" style="width:36px;margin-left:auto"></div></td><td><div class="skel" style="width:44px;margin-left:auto"></div></td><td class="hm"><div class="skel" style="width:70px;margin-left:auto"></div></td></tr>';
-    h += '<section class="sec" id="picks"><div class="sech"><h2>Pick log</h2><span class="lock">Watchdog Pro</span></div><div class="panel locked"><div class="ghost"><div class="tw"><table class="mini"><thead><tr><th class="l">Game</th><th class="l">Pick</th><th>Price</th><th>Result</th><th>Units</th><th class="hm">Posted</th></tr></thead><tbody>' +
-      sk + sk + sk + sk + sk + '</tbody></table></div></div><div class="over"><b style="font-size:16px">' + fmt(o.picks) + ' graded picks in the full log</b><p class="muted small" style="margin:0;max-width:440px">Watchdog Pro shows every game, pick, odds, result and post time, plus this account&rsquo;s eligible pending picks before the start.</p><a class="btn pro" href="' + PRO + '">View Watchdog Pro</a></div></div></section>';
+    // pick ledger: the most recent graded picks. Never the post text, post link or account.
+    var L = p.ledger || [];
+    var opt = function (arr) { var seen = {}; return arr.filter(function (v) { if (!v || seen[v]) return false; seen[v] = 1; return true; }).sort().map(function (v) { return '<option>' + esc(v) + '</option>'; }).join(''); };
+    h += '<section class="sec" id="picks"><div class="sech"><h2>Pick ledger</h2><span class="muted small">' + fmt(L.length) + ' most recent of ' + fmt(o.picks) + ' graded picks</span></div><div class="panel">' +
+      (L.length ? '<div class="fbar lfbar"><div class="fld"><label for="lq">Search</label><input id="lq" placeholder="Team or pick"></div>' +
+        '<div class="fld"><label for="lsp">Sport</label><select id="lsp"><option value="">All</option>' + opt(L.map(function (r) { return r.sp; })) + '</select></div>' +
+        '<div class="fld"><label for="lmk">Bet type</label><select id="lmk"><option value="">All</option>' + opt(L.map(function (r) { return r.mk; })) + '</select></div>' +
+        '<div class="fld"><label for="lr">Result</label><select id="lr"><option value="">All</option><option value="W">Wins</option><option value="L">Losses</option><option value="P">Pushes</option></select></div>' +
+        '<div class="fld"><label for="lfrom">From</label><input id="lfrom" type="date"></div><div class="fld"><label for="lto">To</label><input id="lto" type="date"></div></div>' +
+        '<div class="tw"><table class="mini ledger"><thead><tr><th class="l">Date</th><th class="l hg">Sport</th><th class="l hg">Game</th><th class="l">Pick</th><th>Odds</th><th class="hm">Risk</th><th>Result</th><th class="hm">Final</th><th>Units</th><th class="hm">Before start</th></tr></thead><tbody id="lrows"></tbody></table></div>' +
+        '<div class="tfoot"><span id="lcount" class="muted small"></span><div class="pager"><button class="btn sm ghost" id="lprev" type="button">Previous</button><span id="lpg"></span><button class="btn sm ghost" id="lnext" type="button">Next</button></div></div>'
+        : '<div class="empty small">No graded picks to list yet.</div>') +
+      '<div class="lockfoot"><span class="lock">Watchdog Pro</span><span>The complete log of all ' + fmt(o.picks) + ' graded picks and this account&rsquo;s eligible pending picks before the start are in Watchdog Pro.</span><a class="btn sm pro" href="' + PRO + '">View Watchdog Pro</a></div></div>' +
+      '<p class="note">Posted shows how long before the start the pick was captured. Odds are the posted price when the post had one; picks without a price count in the record but not in units.</p></section>';
 
     root.innerHTML = h;
     hookCharts();
+    ledger(L);
     root.addEventListener('click', function (e) {
       var b = e.target.closest('button.tab'); if (!b) return;
       var box = b.parentNode, name = box.getAttribute('data-tabs'), i = b.getAttribute('data-i');
@@ -168,5 +225,65 @@
       }, { rootMargin: '-130px 0px -65% 0px' });
       secs.forEach(function (x) { var el = document.getElementById(x[0]); if (el) io.observe(el); });
     }
+  }
+  function statusTag(st, long) {
+    if (st === 'active') return '<span class="badge est">Active</span>' + (long ? ' <span class="dim small">graded game in the last 14 days</span>' : '');
+    if (st === 'quiet') return '<span class="badge sm">Quiet</span>' + (long ? ' <span class="dim small">no graded game in 14 days</span>' : '');
+    return '';
+  }
+  function strengths(p) {
+    function card(t, x, min) {
+      if (!x) return panel(t, '<div class="pb"><p class="muted small" style="margin:0">Not enough data: this needs at least two groups with ' + (min || 20) + ' or more graded picks each.</p></div>');
+      var row = function (lab, r) { return '<li><span>' + lab + ': <b>' + label(r.key) + '</b> <span class="dim small">' + rec(r) + ', ' + fmt(r.picks) + ' picks</span></span><b class="num">' + sgn(r.roi, 1, '%') + '</b></li>'; };
+      return panel(t, '<div class="pb"><ul class="facts">' + row('Best', x.best) + row('Worst', x.worst) + '</ul><p class="note" style="margin:10px 0 0">By ROI, groups with ' + x.min + ' or more graded picks. Past results only.</p></div>');
+    }
+    return '<div class="g2">' + card('Best and worst sports', p.best_sport) + card('Best and worst bet types', p.best_market) + '</div>';
+  }
+  function ledger(L) {
+    var tb = document.getElementById('lrows'); if (!tb) return;
+    var PER = 10, pg = 1, view = L;
+    var g = function (id) { return document.getElementById(id); };
+    var lead = function (m) { if (m == null) return '<span class="dim">n/a</span>'; if (m < 60) return m + 'm'; if (m < 2880) return Math.floor(m / 60) + 'h ' + (m % 60) + 'm'; return Math.floor(m / 1440) + 'd'; };
+    var yr = new Date().getFullYear();
+    var sday = function (d) { if (!d) return 'n/a'; var t = new Date(d + 'T12:00:00Z'); return t.toLocaleDateString('en-US', t.getUTCFullYear() === yr ? { month: 'short', day: 'numeric', timeZone: 'UTC' } : { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' }); };
+    var res = { W: '<span class="st pos">Win</span>', L: '<span class="st neg">Loss</span>', P: '<span class="dim">Push</span>' };
+    function apply() {
+      var q = g('lq').value.trim().toLowerCase(), sp = g('lsp').value, mk = g('lmk').value, r = g('lr').value, f = g('lfrom').value, t = g('lto').value;
+      view = L.filter(function (x) {
+        return (!sp || x.sp === sp) && (!mk || x.mk === mk) && (!r || x.r === r) && (!f || (x.d && x.d >= f)) && (!t || (x.d && x.d <= t)) &&
+          (!q || (String(x.m || '') + ' ' + String(x.pk || '')).toLowerCase().indexOf(q) >= 0);
+      });
+      pg = 1; draw();
+    }
+    function draw() {
+      var pages = Math.max(1, Math.ceil(view.length / PER)), rows = view.slice((pg - 1) * PER, pg * PER);
+      tb.innerHTML = rows.length ? rows.map(function (x) {
+        return '<tr><td class="l nowrap">' + sday(x.d) + '</td><td class="l hg">' + esc(x.sp) + '</td><td class="l hg">' + esc(x.m) + '</td><td class="l"><b>' + esc(x.pk) + '</b> <span class="dim small">' + esc(x.mk) + '</span><span class="sg dim small">' + esc(x.sp) + ' &middot; ' + esc(x.m) + '</span></td>' +
+          '<td>' + odds(x.o) + '</td><td class="hm">' + (x.u ? (+x.u).toFixed(2) : '<span class="dim">unpriced</span>') + '</td><td>' + (res[x.r] || esc(x.r)) + '</td><td class="hm">' + esc(x.f || '') + '</td><td>' + (x.u ? sgn(x.pl, 2) : '<span class="dim">0</span>') + '</td><td class="hm">' + lead(x.lead) + '</td></tr>';
+      }).join('') : '<tr><td colspan="10" class="empty">No picks match these filters.</td></tr>';
+      g('lcount').textContent = fmt(view.length) + ' of ' + fmt(L.length) + ' listed picks';
+      g('lpg').textContent = pg + ' / ' + pages; g('lprev').disabled = pg <= 1; g('lnext').disabled = pg >= pages;
+    }
+    ['lsp', 'lmk', 'lr', 'lfrom', 'lto'].forEach(function (id) { g(id).addEventListener('change', apply); });
+    g('lq').addEventListener('input', apply);
+    g('lprev').onclick = function () { if (pg > 1) { pg--; draw(); } };
+    g('lnext').onclick = function () { if (pg * PER < view.length) { pg++; draw(); } };
+    draw();
+  }
+  function renderBasic(p) {
+    var s = p.summary, c = s.id.slice(0, 6).toUpperCase(), t = TIER[s.tier] || TIER.small;
+    document.title = 'Handicapper #' + c + ': ' + rec(s) + ' | Handicapper Watchdog';
+    var why = p.reason === 'unreconciled'
+      ? 'The detailed breakdown is held back because the pick history did not reproduce this record exactly at the last update. Watchdog does not publish analytics it cannot reconcile. The headline record below comes straight from the grading ledger.'
+      : p.reason === 'updating' ? 'New grades arrived for this account since its detailed breakdown was built, so the breakdown is being rebuilt. It returns at a coming update. The headline record below is current.'
+      : 'The detailed breakdown for this account is still being built. The headline record below comes straight from the grading ledger.';
+    var bs = (p.by_sport || []).map(function (b) { var r = String(b.record || '').split('-').map(Number); return { key: b.key, picks: b.picks, w: r[0] || 0, l: r[1] || 0, p: r[2] || 0, net: b.units, roi: b.roi, win_pct: b.win_pct }; });
+    root.innerHTML = '<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><a href="cappers.html">Rankings</a><span aria-hidden="true">/</span><span aria-current="page">#' + esc(c) + '</span></nav>' +
+      '<section class="phero"><div><div class="pid"><div class="pav">' + esc(c.slice(0, 2)) + '</div><div><div class="eyebrow">Anonymous Watchdog ID</div><h1 class="idc">#' + esc(c) + '</h1>' +
+      '<div class="pmeta"><span class="badge ' + t[0] + '" title="' + t[2] + '">' + t[1] + '</span></div><p class="muted small" style="margin:8px 0 0">Last pick ' + day(s.last_pick) + '</p></div></div></div>' +
+      '<div class="unl"><span class="lock">Watchdog Pro</span><b>See what this account bets next</b><p>Watchdog Pro adds eligible pending picks before their games start. The name is not published in any plan.</p><a class="btn pro" style="width:100%" href="' + PRO + '">View Watchdog Pro</a></div></section>' +
+      kpis([[rec(s), 'Record'], [sgn(s.units, 2), 'Units won'], [sgn(s.roi, 1, '%'), 'ROI'], [pct(s.win_pct), 'Win %'], [fmt(s.picks), 'Graded picks'], [s.streak > 0 ? '<span class="pos">W' + s.streak + '</span>' : s.streak < 0 ? '<span class="neg">L' + (-s.streak) + '</span>' : '<span class="dim">n/a</span>', 'Current streak']]) +
+      '<div class="disclosure" style="margin:16px 0"><b>Detailed analytics not shown</b><p class="muted">' + why + '</p></div>' +
+      panel('By sport', table(bs, 'Sport', { sort: 1 }));
   }
 })();

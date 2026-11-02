@@ -119,10 +119,63 @@
         '<div class="exk"><div><b>' + recTxt(r) + '</b><span>Record</span></div><div><b>' + sgn(r.units, 2) + '</b><span>Units</span></div><div><b>' + sgn(r.roi, 1, '%') + '</b><span>ROI</span></div><div><b>' + pct(r.win_pct) + '</b><span>Win rate</span></div><div><b>' + strk(r.streak) + '</b><span>Streak</span></div></div>' +
         '<p class="exp">' + explain(r) + '</p>' + (h ? '<a class="btn sm ghost" href="' + h + '">Open the full profile</a>' : '') + '</article>';
     }
+    var big = est.slice().sort(function (a, b) { return b.picks - a.picks; })[0];
     if (top) {
-      set('exGrid', exCard(top, 'Most units won', 'up') + (low && low.units < 0 ? exCard(low, 'Most units lost', 'down') : ''));
-      set('gUnits', 'The top example above at ' + sgn(top.units, 2) + ' units won ' + Math.abs(top.units).toFixed(1) + ' times its standard stake overall.');
-      set('gRoi', 'Its ' + sgn(top.roi, 1, '%') + ' ROI means about ' + Math.abs(top.roi).toFixed(0) + ' cents of profit per dollar risked.');
+      set('exGrid', exCard(big, 'Most graded picks', big.units >= 0 ? 'up' : 'down') + (low && low.units < 0 ? exCard(low, 'Most units lost', 'down') : ''));
+      set('gUnits', 'The most traded record above at ' + sgn(big.units, 2) + ' units ' + (big.units >= 0 ? 'won ' : 'lost ') + Math.abs(big.units).toFixed(1) + ' times its standard stake overall.');
+      set('gRoi', 'Its ' + sgn(big.roi, 1, '%') + ' ROI means about ' + Math.abs(big.roi).toFixed(0) + ' cents of ' + (big.roi >= 0 ? 'profit' : 'loss') + ' per dollar risked.');
+    }
+
+    // featured: four fixed rules, each card links to its profile
+    var weekCut = new Date(built - 7 * DAY).toISOString().slice(0, 10);
+    var best = function (arr, f) { return arr.slice().sort(f)[0] || null; };
+    var feat = [
+      ['Best established performer', 'Most units won, 100 or more graded picks.', est[0], function (r) { return [sgn(r.units, 2), 'units']; }],
+      ['Best recent ROI', 'Highest ROI in the last 30 days, 20 or more picks in that window.',
+        best(all.filter(function (r) { return r.r30 && r.r30.picks >= 20 && r.r30.roi != null; }), function (a, b) { return b.r30.roi - a.r30.roi; }),
+        function (r) { return [sgn(r.r30.roi, 1, '%'), 'ROI, last 30 days (' + recTxt(r.r30) + ')']; }],
+      ['Longest active win streak', 'Longest current run of wins, 20 or more graded picks, a pick in the last 7 days.',
+        best(all.filter(function (r) { return r.streak > 0 && r.picks >= 20 && r.last_pick && r.last_pick >= weekCut; }), function (a, b) { return b.streak - a.streak || b.picks - a.picks; }),
+        function (r) { return ['W' + r.streak, 'straight wins right now']; }],
+      ['Most consistent', 'Highest share of profitable months, 3 or more months, 100 or more picks, up overall.',
+        best(all.filter(function (r) { return r.months >= 3 && r.picks >= 100 && r.units > 0; }), function (a, b) { return (b.months_up / b.months) - (a.months_up / a.months) || b.months - a.months || b.units - a.units; }),
+        function (r) { return [r.months_up + ' of ' + r.months, 'months up money']; }]];
+    set('featGrid', feat.map(function (f) {
+      var r = f[2];
+      if (!r) return '<article class="panel fcard"><span class="eyebrow">' + f[0] + '</span><p class="muted small">No account qualifies today. Rule: ' + f[1] + '</p></article>';
+      var k = f[3](r), h = link(r), t = TIER[r.tier] || TIER.small;
+      return '<a class="panel fcard" href="' + (h || 'cappers.html') + '"><span class="eyebrow">' + f[0] + '</span>' +
+        '<div class="exid"><span class="av">' + esc(code(r.id).slice(0, 2)) + '</span><b class="idc">#' + esc(code(r.id)) + '</b><span class="badge ' + t[0] + '">' + t[1] + '</span></div>' +
+        '<div class="fck"><b>' + k[0] + '</b><span>' + k[1] + '</span></div>' + spark(r.spark, 240, 44) +
+        '<div class="fcrow"><span>' + recTxt(r) + '</span><span>' + sgn(r.units, 2, 'u') + '</span><span>' + sgn(r.roi, 1, '%') + ' ROI</span><span>' + fmt(r.picks) + ' picks</span></div>' +
+        '<p class="dim small">' + f[1] + '</p><span class="fcgo">Open full profile &rarr;</span></a>';
+    }).join(''));
+
+    // explore the data: one real profile, fetched as is
+    var showcase = est.filter(function (r) { return !r.basic && r.profile; })[0];
+    if (showcase) {
+      $('exploreLink').href = link(showcase);
+      fetch('data/p/' + showcase.id + '.json').then(function (r) { return r.json(); }).then(function (p) {
+        var c = code(showcase.id);
+        set('exSub', '#' + c + ', ' + fmt(p.overview ? p.overview.picks : showcase.picks) + ' graded picks');
+        var pts = p.curve || [];
+        if (pts.length > 1) {
+          var mn = Math.min.apply(null, pts.concat(0)), mx = Math.max.apply(null, pts.concat(0)), sp = (mx - mn) || 1, W = 600, H = 200;
+          var y = function (v) { return 8 + (mx - v) * (H - 16) / sp; };
+          var d = pts.map(function (v, i) { return (i ? 'L' : 'M') + (i * W / (pts.length - 1)).toFixed(1) + ' ' + y(v).toFixed(1); }).join('');
+          var col = pts[pts.length - 1] >= 0 ? 'var(--win)' : 'var(--loss)';
+          set('exChart', '<svg viewBox="0 0 ' + W + ' ' + H + '" preserveAspectRatio="none" style="width:100%;height:200px" role="img" aria-label="Cumulative units for #' + c + ', now ' + (+pts[pts.length - 1]).toFixed(2) + '">' +
+            '<line x1="0" x2="' + W + '" y1="' + y(0) + '" y2="' + y(0) + '" stroke="var(--line2)" stroke-dasharray="3 4" vector-effect="non-scaling-stroke"/>' +
+            '<path d="' + d + '" fill="none" stroke="' + col + '" stroke-width="2.2" vector-effect="non-scaling-stroke"/></svg>' +
+            '<p class="note" style="margin:8px 0 0">Now ' + sgn(pts[pts.length - 1], 2, ' units') + '. The profile adds ROI over time, rolling win rate, weekly activity, and units by sport and month.</p>');
+        }
+        var W2 = p.windows || {};
+        set('exPeriods', '<div class="tw"><table class="mini"><thead><tr><th class="l">Window</th><th>Picks</th><th>Record</th><th>Units</th><th>ROI</th></tr></thead><tbody>' +
+          ['r7', 'r30', 'r90', 'all'].map(function (k) { var x = W2[k]; return x && x.picks ? '<tr><td class="l">' + esc(x.key) + '</td><td>' + fmt(x.picks) + '</td><td>' + recTxt(x) + '</td><td>' + sgn(x.net, 2) + '</td><td>' + sgn(x.roi, 1, '%') + '</td></tr>' : ''; }).join('') + '</tbody></table></div>');
+        var res = { W: '<span class="st pos">W</span>', L: '<span class="st neg">L</span>', P: '<span class="dim">P</span>' };
+        set('exLedger', '<div class="tw"><table class="mini"><thead><tr><th class="l">Date</th><th class="l">Pick</th><th>Result</th><th>Units</th></tr></thead><tbody>' +
+          (p.ledger || []).slice(0, 5).map(function (x) { return '<tr><td class="l">' + esc(x.d ? new Date(x.d + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) : '') + '</td><td class="l">' + esc(x.pk) + ' <span class="dim small">' + esc(x.sp) + '</span></td><td>' + (res[x.r] || '') + '</td><td>' + (x.u ? sgn(x.pl, 2) : '<span class="dim">0</span>') + '</td></tr>'; }).join('') + '</tbody></table></div>');
+      }).catch(function () {});
     }
 
     // leaderboard tabs
@@ -218,7 +271,7 @@
     $('fresh').textContent = fmt(M.tracked) + ' handicappers with graded picks. Updated ' + new Date(M.built_at).toLocaleString('en-US', { timeZone: 'America/Los_Angeles', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) + ' PT.';
     if (M.live && $('pendNote')) $('pendNote').textContent = fmt(M.live.pending_picks) + ' tracked picks are waiting on a result right now.';
     sportsByDepth(all, 5).forEach(function (s) { $('fSport').insertAdjacentHTML('beforeend', '<option>' + esc(s) + '</option>'); });
-    var map = { q: 'q', sport: 'fSport', t: 'fTime', sort: 'fSort', min: 'fMin', roi: 'fRoi', win: 'fWin', u: 'fUnits' };
+    var map = { q: 'q', sport: 'fSport', t: 'fTime', sort: 'fSort', min: 'fMin', roi: 'fRoi', win: 'fWin', u: 'fUnits', act: 'fAct' };
     Object.keys(map).forEach(function (k) { if (P.has(k)) $(map[k]).value = P.get(k); });
     var cols = [['l', '#', ''], ['l', 'Handicapper', ''], ['hm l', 'Trend', ''], ['', 'Picks', 'picks'], ['', 'Record', ''], ['hm', 'Win %', 'win_pct'], ['', 'Units', 'units'], ['', 'ROI', 'roi'], ['hm', 'Streak', 'streak'], ['hm', 'Last pick', 'last_pick']];
 
@@ -231,11 +284,13 @@
     function apply() {
       var q = $('q').value.trim().toLowerCase().replace(/^#/, ''), sp = $('fSport').value, t = sp ? 'all' : $('fTime').value;
       $('fTime').disabled = !!sp;
+      var act = +$('fAct').value || 0, actCut = act ? new Date(new Date(M.built_at) - act * DAY).toISOString().slice(0, 10) : '';
       var min = +$('fMin').value || 1, roi = $('fRoi').value, win = $('fWin').value, un = $('fUnits').value, sort = $('fSort').value;
       view = [];
       all.forEach(function (r) {
         if (q && !(r.id.indexOf(q) === 0 || code(r.id).toLowerCase() === q || r.id.slice(0, 4) === q ||
           (r.sports || []).some(function (s) { return s.toLowerCase().indexOf(q) >= 0; }))) return;
+        if (actCut && !(r.last_pick && r.last_pick >= actCut)) return;
         var x = m(r, t, sp); if (!x) return;
         if (sp) { if (r.picks < min || x.picks < 30) return; }
         else if (x.picks < min) return;
@@ -245,7 +300,7 @@
         view.push({ r: r, x: x });
       });
       var key = sort === 'worst' ? 'units' : sort, dir = sort === 'worst' ? 1 : -1;
-      var val = function (o) { return key === 'streak' ? o.r.streak : key === 'last_pick' ? (o.r.last_pick || '') : o.x[key]; };
+      var val = function (o) { return key === 'streak' ? o.r.streak : key === 'last_pick' ? (o.r.last_pick || '') : key === 'active' ? (o.r.r30 ? o.r.r30.picks : 0) : o.x[key]; };
       view.sort(function (a, b) { var x = val(a), y = val(b); if (x == null) return 1; if (y == null) return -1; return (x < y ? -1 : x > y ? 1 : 0) * dir; });
       var qs = new URLSearchParams();
       Object.keys(map).forEach(function (k) { var v = $(map[k]).value; if (v && !(k === 'min' && v === '100') && !(k === 't' && v === 'all') && !(k === 'sort' && v === 'units')) qs.set(k, v); });
@@ -266,9 +321,9 @@
       $('prev').disabled = pageNo <= 1; $('next').disabled = pageNo >= pages;
     }
 
-    ['fSport', 'fTime', 'fSort', 'fMin', 'fRoi', 'fWin', 'fUnits'].forEach(function (id) { $(id).addEventListener('change', apply); });
+    ['fSport', 'fTime', 'fSort', 'fMin', 'fRoi', 'fWin', 'fUnits', 'fAct'].forEach(function (id) { $(id).addEventListener('change', apply); });
     var tmr; $('q').addEventListener('input', function () { clearTimeout(tmr); tmr = setTimeout(apply, 150); });
-    $('reset').onclick = function () { ['q', 'fSport', 'fRoi', 'fWin', 'fUnits'].forEach(function (id) { $(id).value = ''; }); $('fTime').value = 'all'; $('fSort').value = 'units'; $('fMin').value = '100'; apply(); };
+    $('reset').onclick = function () { ['q', 'fSport', 'fRoi', 'fWin', 'fUnits', 'fAct'].forEach(function (id) { $(id).value = ''; }); $('fTime').value = 'all'; $('fSort').value = 'units'; $('fMin').value = '100'; apply(); };
     $('prev').onclick = function () { if (pageNo > 1) { pageNo--; draw(); scrollTo({ top: 0, behavior: 'smooth' }); } };
     $('next').onclick = function () { if (pageNo * PER < view.length) { pageNo++; draw(); scrollTo({ top: 0, behavior: 'smooth' }); } };
     apply();

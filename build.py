@@ -203,8 +203,8 @@ def strip_items(v):
 
 
 def build_profile(row, research):
-    hist = [h for h in (research.get('history') or []) if h.get('result') in ('won', 'lost', 'push')]
-    hist.sort(key=lambda h: h.get('game') or '')
+    # The tracker lists history newest first; its order (not a re-sort) is what its streaks and curve use.
+    hist = [h for h in (research.get('history') or []) if h.get('result') in ('won', 'lost', 'push')][::-1]
     by_sport = defaultdict(list)
     for h in hist:
         by_sport[h.get('sport') or 'Other'].append(h)
@@ -222,11 +222,118 @@ def build_profile(row, research):
         'months': len(months), 'months_up': sum(1 for m in months if (m.get('net') or 0) > 0),
         'unpriced': (research.get('overview') or {}).get('unpriced') or 0}
     prof['extra']['monitored_since'] = first
+    prof.update(profile_extras(hist, research))
+    for k in ('r7', 'r30', 'r90', 'r365'):
+        prof['extra'][k] = trim(prof['windows'].get(k))
     # Reconcile: the pick history must reproduce TMR's headline record, or the profile is not published.
     ov, a = research.get('overview') or {}, agg(hist)
     prof['reconciled'] = bool(ov) and (a['w'], a['l'], a['p']) == (ov.get('w'), ov.get('l'), ov.get('p')) and \
         abs(a['net'] - float(ov.get('net') or 0)) < 0.05
     return prof
+
+
+# ---------- extra analytics computed from the graded history ----------
+
+LEDGER_N = 50  # free profiles show this many most recent graded picks; never the post text, link or post id
+
+
+def _ts(iso):
+    try:
+        return datetime.fromisoformat(str(iso).replace('Z', '+00:00'))
+    except Exception:
+        return None
+
+
+def _series(values, points):
+    if len(values) > points:
+        step = len(values) / points
+        return [values[int(i * step)] for i in range(points)] + [values[-1]]
+    return values
+
+
+def ledger_row(h):
+    g, p = _ts(h.get('game')), _ts(h.get('posted'))
+    lead = int((g - p).total_seconds() // 60) if g and p and g >= p else None
+    return {'d': g.astimezone(PT).strftime('%Y-%m-%d') if g else None, 'sp': h.get('sport'), 'm': h.get('matchup'),
+            'pk': h.get('pick'), 'mk': h.get('market'), 'o': h.get('odds'), 'u': h.get('risk'), 'r': (h.get('result') or '')[:1].upper(),
+            'pl': h.get('pl'), 'f': h.get('final'), 'lead': lead}
+
+
+def profile_extras(hist, research):
+    """hist: graded picks oldest first. Everything here is recomputed from those rows."""
+    out = {}
+    asof = _ts(research.get('generated_at')) or datetime.now(timezone.utc)
+    win = {}
+    for key, days in (('r7', 7), ('r30', 30), ('r90', 90), ('r365', 365)):
+        cut = asof - timedelta(days=days)
+        rows = [h for h in hist if (_ts(h.get('game')) or asof) >= cut]
+        win[key] = dict(agg(rows), key='Last %d days' % days) if rows else {'picks': 0, 'key': 'Last %d days' % days}
+    win['all'] = dict(agg(hist), key='All time')
+    out['windows'] = win
+    priced = [h for h in hist if float(h.get('risk') or 0) > 0]
+    out['avg_risk'] = round(sum(float(h['risk']) for h in priced) / len(priced), 2) if priced else None
+    out['streaks'] = streaks(hist)
+    # cumulative ROI and rolling win rate for the charts (sampled so a profile file stays small)
+    cum_pl = cum_risk = 0.0
+    roi_pts, dates = [], []
+    for h in hist:
+        cum_pl += float(h.get('pl') or 0)
+        cum_risk += float(h.get('risk') or 0)
+        roi_pts.append(round(100 * cum_pl / cum_risk, 1) if cum_risk >= 10 else None)
+        g = _ts(h.get('game'))
+        dates.append(g.astimezone(PT).strftime('%Y-%m-%d') if g else None)
+    out['roi_curve'] = _series(roi_pts, 200)
+    out['curve_dates'] = _series(dates, 200)
+    decided = [h for h in hist if h['result'] in ('won', 'lost')]
+    roll = []
+    if len(decided) >= 25:
+        n = min(50, max(25, len(decided) // 4))
+        for i in range(n, len(decided) + 1):
+            w = sum(1 for h in decided[i - n:i] if h['result'] == 'won')
+            roll.append(round(100 * w / n, 1))
+        out['rolling_n'] = n
+    out['rolling_win'] = _series(roll, 200)
+    # weekly activity, Monday weeks in Pacific time
+    weeks = defaultdict(int)
+    for h in hist:
+        g = _ts(h.get('game'))
+        if g:
+            d = g.astimezone(PT).date()
+            weeks[(d - timedelta(days=d.weekday())).isoformat()] += 1
+    if weeks:
+        first = datetime.fromisoformat(min(weeks)).date()
+        last = datetime.fromisoformat(max(weeks)).date()
+        series, d = [], first
+        while d <= last:
+            series.append([d.isoformat(), weeks.get(d.isoformat(), 0)])
+            d += timedelta(days=7)
+        out['activity'] = series[-104:]
+        span_days = max(7, (asof.astimezone(PT).date() - first).days + 1)
+        out['per_week'] = round(7 * len(hist) / span_days, 1)
+
+    # best and worst, only from groups with a real sample
+    def extremes(rows, minimum):
+        ok = [r for r in rows if r['picks'] >= minimum and r.get('roi') is not None and (r.get('risked') or 0) >= minimum / 2]
+        if len(ok) < 2:
+            return None
+        ok.sort(key=lambda r: r['roi'])
+        keep = ('key', 'picks', 'w', 'l', 'p', 'net', 'roi', 'win_pct')
+        return {'best': {k: ok[-1].get(k) for k in keep}, 'worst': {k: ok[0].get(k) for k in keep}, 'min': minimum}
+    out['best_sport'] = extremes(grouped(hist, lambda h: h.get('sport') or 'Other'), 20)
+    out['best_market'] = extremes(grouped(hist, lambda h: h.get('market')), 20)
+    out['ledger'] = [ledger_row(h) for h in hist[::-1][:LEDGER_N]]
+    last = _ts(hist[-1].get('game')) if hist else None
+    out['last_game'] = last.astimezone(PT).strftime('%Y-%m-%d') if last else None
+    out['status'] = 'active' if last and (asof - last).days <= 14 else 'quiet' if last else None
+    return out
+
+
+def minimal_profile(s, reason):
+    """Headline only, straight from the tracker record, for accounts whose history is not reconciled or not fetched yet."""
+    keep = ('id', 'w', 'l', 'p', 'picks', 'win_pct', 'units', 'roi', 'streak', 'sports', 'last_pick')
+    return {'detail': False, 'reason': reason, 'summary': dict({k: s.get(k) for k in keep}, tier=tier(s['picks'])),
+            'by_sport': [{'key': k, 'picks': v['picks'], 'record': v['record'], 'units': v['units'], 'roi': v['roi'], 'win_pct': v['win_pct']}
+                         for k, v in (s.get('by_sport') or {}).items() if (v.get('picks') or 0) > 0]}
 
 
 def trim(r):
@@ -1644,7 +1751,7 @@ def main():
             shutil.copy(os.path.join(HERE, f), SITE)
 
     now = time.time()
-    fetched = failed = published = unreconciled = 0
+    fetched = failed = published = unreconciled = behind = 0
     rows.sort(key=lambda x: -int(x['graded']))
     index = []
     for x in rows:
@@ -1654,12 +1761,14 @@ def main():
         if os.path.exists(cpath):
             with open(cpath, encoding='utf-8') as f:
                 cached = json.load(f)
-        stale = cached is None or (cached.get('last_pick_at') != x.get('last_pick_at') and now - cached.get('fetched', 0) > PROFILE_TTL)
+        sig = [x.get('record'), int(x.get('graded') or 0), x.get('units'), x.get('last_pick_at')]
+        # Refetch whenever the tracker's record moved (a late grade changes it without a new post), else after the TTL.
+        stale = cached is None or cached.get('sig') != sig or now - cached.get('fetched', 0) > PROFILE_TTL * 4
         if stale and fetched < MAX_FETCH:
             try:
                 research = extract(get(BASE + x['slug'] + '/'), '__WD_RESEARCH')
                 if research:
-                    cached = {'last_pick_at': x.get('last_pick_at'), 'fetched': now, 'research': research}
+                    cached = {'last_pick_at': x.get('last_pick_at'), 'sig': sig, 'fetched': now, 'research': research}
                     with open(cpath, 'w', encoding='utf-8') as f:
                         json.dump(cached, f, separators=(',', ':'))
                 fetched += 1
@@ -1669,17 +1778,28 @@ def main():
                 print('fetch failed', type(e).__name__, file=sys.stderr)
         if cached:
             prof = build_profile(x, cached['research'])
-            if prof['reconciled']:
+            ov = cached['research'].get('overview') or {}
+            # The detailed profile must describe the same record the rankings show right now.
+            current = (ov.get('w'), ov.get('l'), ov.get('p'), ov.get('picks')) == (s['w'], s['l'], s['p'], s['picks']) and                 (s['units'] is None or abs(float(ov.get('net') or 0) - s['units']) < 0.06)
+            if prof['reconciled'] and not current:
+                behind += 1
+            if prof['reconciled'] and current:
                 prof['summary'] = {k: v for k, v in s.items() if k not in ('by_sport', 'source', 'handle', 'slug')}
                 prof['summary']['tier'] = tier(s['picks'])
                 s.update({k: v for k, v in prof.pop('extra').items()})
-                prof['summary'].update({k: s[k] for k in ('r7', 'r30', 'first_pick', 'months', 'months_up', 'unpriced')})
+                prof['summary'].update({k: s[k] for k in ('r7', 'r30', 'r90', 'r365', 'first_pick', 'months', 'months_up', 'unpriced')})
+                prof['detail'] = True
                 with open(os.path.join(SITE, 'data', 'p', s['id'] + '.json'), 'w', encoding='utf-8') as f:
                     json.dump(prof, f, separators=(',', ':'))
                 s['profile'] = True
                 published += 1
             else:
                 unreconciled += 1
+        if not s.get('profile'):
+            with open(os.path.join(SITE, 'data', 'p', s['id'] + '.json'), 'w', encoding='utf-8') as f:
+                json.dump(minimal_profile(s, 'queued' if not cached else 'updating' if prof['reconciled'] else 'unreconciled'), f, separators=(',', ':'))
+            s['profile'] = True
+            s['basic'] = 1
         s['tier'] = tier(s['picks'])
         s['bs'] = {k: [v['picks'], None if v['units'] is None else round(float(v['units']), 2), v['roi'], v['win_pct'], v['record']]
                    for k, v in s.pop('by_sport').items() if (v['picks'] or 0) >= 5}
@@ -1706,7 +1826,7 @@ def main():
     with open(os.path.join(SITE, 'data', 'index.json'), 'w', encoding='utf-8') as f:
         json.dump({'meta': meta, 'cappers': index}, f, separators=(',', ':'))
     stamp_public_pages(SITE)
-    print('tracked %d, fetched %d, failed %d, profiles %d, unreconciled %d' % (len(index), fetched, failed, published, unreconciled))
+    print('tracked %d, fetched %d, failed %d, profiles %d, unreconciled %d, behind %d' % (len(index), fetched, failed, published, unreconciled, behind))
 
 
 if __name__ == '__main__':
