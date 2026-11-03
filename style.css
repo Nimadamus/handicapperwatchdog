@@ -606,3 +606,6 @@ a.fcard:hover{border-color:var(--accent-line);transform:translateY(-2px)}
 .kpis.k4{grid-template-columns:repeat(4,1fr)}.kpis.k4 .kpi:nth-child(4n){border-right:0}
 .dayhead{padding:0;overflow:hidden}.dayhead .kpis{border:0;border-radius:0}.daylead{margin:0;padding:14px 16px;border-top:1px solid var(--line);color:var(--ink2);line-height:1.6}
 @media (max-width:600px){.kpis.k4{grid-template-columns:1fr 1fr}.kpis.k4 .kpi:nth-child(2n){border-right:0}.daytab .hx{display:none}}
+
+.navlinks a{white-space:nowrap}
+@media (max-width:1320px){.navlinks a{padding:8px 9px}.navsearch{width:190px}}
