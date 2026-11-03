@@ -2,7 +2,7 @@
 //
 //   STRIPE_SECRET_KEY=sk_test_... node backend/stripe_setup.mjs [--webhook https://handicapperwatchdog.com/api/webhook]
 //
-// Creates (or finds, by lookup key) the "Watchdog Pro" product with a $59.99 monthly and a $499 yearly price,
+// Creates (or finds, by lookup key) the "Watchdog Pro" product with a $49.99 monthly and a $499 yearly price,
 // a customer portal configuration (cancel at period end, update card, invoice history), and optionally the
 // webhook endpoint. Prints the values to store as Worker secrets. Safe to run twice. Refuses live keys unless
 // --live is passed, which is for the day live billing is approved.
@@ -41,12 +41,12 @@ console.log('Stripe account:', shown.trim() || '(unnamed)', balance.livemode ? '
 
 const found = await api('GET', 'prices', { limit: 100, active: 'true', expand: ['data.product'] });
 const byKey = Object.fromEntries(found.data.filter((p) => p.lookup_key).map((p) => [p.lookup_key, p]));
-let product = (byKey.hwd_pro_monthly_5999 || byKey.hwd_pro_annual_49900 || {}).product;
+let product = (byKey.hwd_pro_monthly_4999 || byKey.hwd_pro_annual_49900 || {}).product;
 if (!product) product = await api('POST', 'products', { name: 'Watchdog Pro', description: 'Names, complete pick logs, search, comparisons and advanced filters on Handicapper Watchdog.', metadata: { app: 'hwd' } });
-const monthly = byKey.hwd_pro_monthly_5999 || await api('POST', 'prices', { product: product.id, currency: 'usd', unit_amount: 5999, lookup_key: 'hwd_pro_monthly_5999', 'recurring[interval]': 'month', metadata: { app: 'hwd' } });
+const monthly = byKey.hwd_pro_monthly_4999 || await api('POST', 'prices', { product: product.id, currency: 'usd', unit_amount: 4999, lookup_key: 'hwd_pro_monthly_4999', 'recurring[interval]': 'month', metadata: { app: 'hwd' } });
 const annual = byKey.hwd_pro_annual_49900 || await api('POST', 'prices', { product: product.id, currency: 'usd', unit_amount: 49900, lookup_key: 'hwd_pro_annual_49900', 'recurring[interval]': 'year', metadata: { app: 'hwd' } });
 
-if (monthly.unit_amount !== 5999 || monthly.recurring.interval !== 'month') throw new Error('monthly price is not $59.99 a month');
+if (monthly.unit_amount !== 4999 || monthly.recurring.interval !== 'month') throw new Error('monthly price is not $49.99 a month');
 if (annual.unit_amount !== 49900 || annual.recurring.interval !== 'year') throw new Error('annual price is not $499 a year');
 // Older test prices ($19.99 / $149, canceled 2026-10-24) must never be sold: archive any that exist.
 for (const old of found.data.filter((p) => ['hwd_pro_monthly', 'hwd_pro_annual'].includes(p.lookup_key))) await api('POST', 'prices/' + old.id, { active: 'false' });
@@ -72,7 +72,7 @@ if (webhookUrl) {
   } else console.log('Webhook endpoint already exists. Copy its signing secret from the Stripe dashboard.');
 }
 console.log('\nStore these as Worker secrets (wrangler secret put NAME):');
-console.log('STRIPE_PRICE_MONTHLY =', monthly.id, '($59.99 / month)');
+console.log('STRIPE_PRICE_MONTHLY =', monthly.id, '($49.99 / month)');
 console.log('STRIPE_PRICE_ANNUAL  =', annual.id, '($499 / year)');
 if (secret) {
   const fs = await import('node:fs');

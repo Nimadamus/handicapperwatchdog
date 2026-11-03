@@ -87,7 +87,7 @@ await step('purchase confirmation and owner notice are sent once', async () => {
   const mails = (await j('/api/dev/mails')).body.mails;
   assert.equal(mails.filter((m) => m.to === 'e2e@example.com' && m.subject === 'Your Watchdog Pro subscription').length, 1);
   assert.equal(mails.filter((m) => m.to === 'owner@example.com' && m.subject === 'New Watchdog Pro subscription').length, 1);
-  assert.match(mails.find((m) => m.to === 'e2e@example.com').text, /\$59\.99/);
+  assert.match(mails.find((m) => m.to === 'e2e@example.com').text, /\$49\.99/);
 });
 await step('signed out, the same email cannot open another checkout', async () => {
   const saved = cookie; cookie = '';

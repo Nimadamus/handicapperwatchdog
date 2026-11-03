@@ -133,7 +133,7 @@ function invoiceSubscriptionId(o) {
   }
   return '';
 }
-const planLabel = (plan) => plan === 'annual' ? 'annual ($499 a year)' : plan === 'monthly' ? 'monthly ($59.99 a month)' : (plan || 'Watchdog Pro');
+const planLabel = (plan) => plan === 'annual' ? 'annual ($499 a year)' : plan === 'monthly' ? 'monthly ($49.99 a month)' : (plan || 'Watchdog Pro');
 const pacificNow = () => new Date().toLocaleString('en-US', { timeZone: 'America/Los_Angeles', month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit' });
 
 async function customersByEmail(env, deps, email) {

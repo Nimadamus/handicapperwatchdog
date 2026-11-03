@@ -174,7 +174,7 @@ def check(label, extra):
         price = open(os.path.join(tmp, 'pricing.html'), encoding='utf-8').read()
         assert 'data-plan="annual"' in price and 'data-plan="monthly"' in price and 'id="planNote"' in price and 'pvRows' not in price
         assert 'src="pro.js"' in price and 'src="pricing.js"' in price and 'noindex' not in price.lower()
-        assert '$59.99' in price and '$499' in price and not re.search(r'\$(?!59\.99|499|41\.58|719\.88|220\.88)\d', price)
+        assert '$49.99' in price and '$499' in price and not re.search(r'\$(?!49.99|499|41\.58|599.88|100.88)\d', price)
         assert 'does not show a checkout button' not in price
         assert '22,990' in open(os.path.join(tmp, 'reviews', 'docs-sports-ai.html'), encoding='utf-8').read()
         assert '637-544' in open(os.path.join(tmp, 'reviews', 'big-al.html'), encoding='utf-8').read()

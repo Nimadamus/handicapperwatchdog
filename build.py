@@ -960,14 +960,14 @@ def _write_guides(site, meta, cappers):
 <p><a class="btn" href="cappers.html">See the established rankings</a></p>
 </div></section>
 <section class="proband"><div><span class="lock">Watchdog Pro</span><h2>Act on the records that are up</h2>
-<p class="muted" style="margin:0">$59.99 a month, or $499 a year, at launch. Checkout is not open yet.</p></div>
+<p class="muted" style="margin:0">$49.99 a month, or $499 a year, at launch. Checkout is not open yet.</p></div>
 <div class="feats"><div class="feat"><b>Eligible pending picks</b><span>Picks from tracked accounts, captured before their games start, with the Watchdog ID and record beside each one.</span></div>
 <div class="feat"><b>Why accounts stay anonymous</b><span>Names are not published in any plan. A name list could be copied in one month and used for free forever.</span></div></div>
 </section>''' % (pending, f'{tracked:,}', f'{graded:,}', est_pct, f'{up:,}', f'{est:,}',
                  qual_pct, f'{prof:,}', f'{qual:,}', med_txt, pending))
     price = _document(0, 'pricing.html',
                       'Watchdog Pro Pricing | Handicapper Watchdog',
-                      'Watchdog Pro will be $59.99 a month or $499 a year: eligible pending picks before the start, full graded pick logs and research tools. Accounts stay anonymous in every plan.',
+                      'Watchdog Pro will be $49.99 a month or $499 a year: eligible pending picks before the start, full graded pick logs and research tools. Accounts stay anonymous in every plan.',
                       'https://handicapperwatchdog.com/pricing.html',
                       '''<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><span aria-current="page">Pricing</span></nav>
 <div class="pagehead"><div><div class="eyebrow">Watchdog Pro</div><h1>Research the record, then see what comes next</h1>
@@ -977,9 +977,9 @@ def _write_guides(site, meta, cappers):
 <div class="fld" id="buyerBox" style="display:none;max-width:360px;margin:0 0 14px"><label for="buyerEmail">Email for your Watchdog Pro account</label><input id="buyerEmail" type="email" autocomplete="email" placeholder="you@example.com"></div>
 <section class="plans">
 <div class="plan best"><div class="eyebrow">Annual</div><div class="amt"><b>$499</b><span>a year</span></div>
-<p>Twelve months at $59.99 is $719.88. Annual is $499, so the year costs $220.88 less. That is $41.58 a month, billed once.</p>
+<p>Twelve months at $49.99 is $599.88. Annual is $499, so the year costs $100.88 less. That is $41.58 a month, billed once.</p>
 <button class="btn pro full" type="button" data-plan="annual" disabled>Opening soon</button></div>
-<div class="plan"><div class="eyebrow">Monthly</div><div class="amt"><b>$59.99</b><span>a month</span></div>
+<div class="plan"><div class="eyebrow">Monthly</div><div class="amt"><b>$49.99</b><span>a month</span></div>
 <p>Same Pro access, billed every month. Cancel and access runs through the month already paid.</p>
 <button class="btn ghost full" type="button" data-plan="monthly" disabled>Opening soon</button></div>
 </section>
@@ -1040,7 +1040,7 @@ def _write_sport_pages(site, cappers):
 <section class="panel"><div class="tw"><table><thead><tr><th class="l">#</th><th class="l">Handicapper</th><th>Picks</th><th>Record</th><th>Win %%</th><th>Units</th><th>ROI</th></tr></thead>
 <tbody>%s</tbody></table></div></section>
 <section class="proband" style="grid-template-columns:1fr auto"><div><span class="lock">Watchdog Pro</span><h2>Found a %s record worth following?</h2>
-<p class="muted" style="margin:0">Pro adds eligible pending picks before the start and the full graded pick log. Accounts stay anonymous. $59.99 a month or $499 a year at launch.</p></div>
+<p class="muted" style="margin:0">Pro adds eligible pending picks before the start and the full graded pick log. Accounts stay anonymous. $49.99 a month or $499 a year at launch.</p></div>
 <a class="btn pro" href="../pricing.html">See pricing</a></section>''' % (
             _sport_slug(sport), _esc(sport), _esc(sport), _esc(sport), len(leaders), _SPORT_MIN, _esc(sport), _esc(sport),
             _sport_table(cappers, sport), _esc(sport))

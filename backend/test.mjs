@@ -354,7 +354,7 @@ test('purchase confirmation goes to the customer once and the owner is notified 
   const mails = (await t.call('GET', '/api/dev/mails')).body.mails;
   assert.equal(mails.filter((m) => m.to === 'fan@example.com' && m.subject === 'Your Watchdog Pro subscription').length, 1);
   assert.equal(mails.filter((m) => m.to === 'owner@example.com' && m.subject === 'New Watchdog Pro subscription').length, 1);
-  assert.match(mails.find((m) => m.to === 'fan@example.com').text, /\$59\.99/);
+  assert.match(mails.find((m) => m.to === 'fan@example.com').text, /\$49\.99/);
   assert.match(mails.find((m) => m.to === 'owner@example.com').text, /fan@example.com/);
 });
 

@@ -16,7 +16,7 @@
   function intro(meta, s) {
     var n = meta && meta.pro && meta.pro.pending_count;
     var status = s.pro ? '' : (!s.api || !s.billing)
-      ? '<p class="pcnote" style="margin:12px 0 0"><span class="statusdot"></span><span><b>Checkout is not open yet.</b> Watchdog Pro launches at $59.99 a month or $499 a year. Nothing can be bought on the site today, and no card is collected.</span></p>'
+      ? '<p class="pcnote" style="margin:12px 0 0"><span class="statusdot"></span><span><b>Checkout is not open yet.</b> Watchdog Pro launches at $49.99 a month or $499 a year. Nothing can be bought on the site today, and no card is collected.</span></p>'
       : '<p style="margin:14px 0 0"><a class="btn pro" href="pricing.html">Subscribe to Watchdog Pro</a> <a class="btn ghost" href="account.html">' + (s.signed_in ? 'Account' : 'Sign in') + '</a></p>';
     return head + '<div class="pagehead"><div><div class="eyebrow">Watchdog Pro</div><h1>Today&rsquo;s eligible picks</h1>' +
       '<p class="muted">Picks captured from tracked public accounts before their games start, each shown beside that account&rsquo;s graded record. A pick appears once captured and leaves when its game starts; after the final score it moves into the record.' +

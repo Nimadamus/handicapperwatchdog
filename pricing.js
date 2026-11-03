@@ -14,7 +14,7 @@
       document.getElementById('planNote').textContent = 'Checkout is not open yet. Nothing can be bought on the site today and no card is collected. Payments will be handled by Stripe at launch.';
       return;
     }
-    var label = { annual: 'Subscribe yearly, $499', monthly: 'Subscribe monthly, $59.99' };
+    var label = { annual: 'Subscribe yearly, $499', monthly: 'Subscribe monthly, $49.99' };
     btns.forEach(function (b) { b.disabled = false; b.textContent = label[b.getAttribute('data-plan')] || 'Subscribe'; });
     document.getElementById('planNote').textContent = 'Secure checkout by Stripe. Cancel any time from your account page.';
     var box = document.getElementById('buyerBox'), email = document.getElementById('buyerEmail');
