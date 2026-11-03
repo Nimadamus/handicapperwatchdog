@@ -968,6 +968,14 @@ def _write_guides(site, meta, cappers):
 <p>Pending picks are not mixed into a record. %s</p>
 <p class="muted small">%s handicappers have a graded record. %s picks have been graded. Of the established records, %s of %s are up money.</p>
 <p><a href="cappers.html">Established rankings</a> · <a href="the-board.html">The board</a> · <a href="pricing.html">Watchdog Pro</a> · <a href="reviews/index.html">Handicapper reviews</a> · <a href="sportsbooks/">Sportsbook research</a></p>
+</div></section>
+<section class="panel" style="margin-bottom:18px" id="integrity"><div class="pb">
+<h2>Integrity log: what we hold out and why</h2>
+<p>A record is only as good as the reading of each post. When a check finds picks whose stored bet does not match the post, they are held out of every public record until reviewed. The post, the price and the grade are kept exactly as they were, and nothing is regraded without review.</p>
+<ul>
+<li><b>November 3, 2026.</b> Every price of plus 150 or longer was compared with the market price when it was posted and with the original post. 278 picks were held, mostly player props, futures and combined bets that had been read as a team moneyline (a post like &ldquo;Darnell Washington +300&rdquo; is a player bet, not the Washington Huskies). The same check recomputed the long shot grades from final scores: every one that could be recomputed was correct under the grading rules. The problem was reading the post, not grading it.</li>
+</ul>
+<p><a href="research/odds-and-profit.html">How the price decides profit</a></p>
 </div></section>''' % (pending, f'{tracked:,}', f'{graded:,}', f'{up:,}', f'{est:,}'))
     board = _document(0, 'the-board.html',
                       'How Many Handicappers Are Actually Up | Handicapper Watchdog',
