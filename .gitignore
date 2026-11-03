@@ -5,3 +5,4 @@ tools/*.log
 .dev.vars
 .wrangler/
 node_modules/
+tools/hwd_metrics_weekly.log
