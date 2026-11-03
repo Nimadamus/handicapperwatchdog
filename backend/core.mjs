@@ -421,7 +421,9 @@ async function route(req, env, deps) {
       const s = await stripe(env, deps, 'POST', 'checkout/sessions', {
         mode: 'subscription', 'line_items[0][price]': price, 'line_items[0][quantity]': 1,
         success_url: site + '/account.html?session_id={CHECKOUT_SESSION_ID}', cancel_url: site + '/pricing.html?canceled=1',
-        allow_promotion_codes: 'true', 'metadata[app]': 'hwd', 'subscription_data[metadata][app]': 'hwd',
+        allow_promotion_codes: 'true', 'metadata[app]': 'hwd',
+        // Shared Stripe account: show the Watchdog name and colors on Checkout, not the account's business name.
+        'branding_settings[display_name]': 'Handicapper Watchdog', 'branding_settings[background_color]': '#0b1220', 'branding_settings[button_color]': '#e7c675', 'subscription_data[metadata][app]': 'hwd',
         customer: customerId || undefined, customer_email: !customerId && email ? email : undefined,
         client_reference_id: acct ? 'hwd_' + acct.id : undefined });
       if (email) await kvPut(env, 'openchk:' + email, { id: s.id, url: s.url, plan }, 30 * 60);
