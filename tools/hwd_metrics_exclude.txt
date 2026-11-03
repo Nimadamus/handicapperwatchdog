@@ -1,0 +1,3 @@
+# our own probe checkout sessions (expired by us), excluded from funnel numbers
+cs_live_b1jxlGMT7RTx8dooTlfeQVxFGur1AyVEsEiw2THybyQF01tnBrzoAG4sof
+cs_live_b1VBuoAftBlZKnqJP95LNWm5TMMH0plqX8y0EKkKnLhvtHpODVm6hsNcj6

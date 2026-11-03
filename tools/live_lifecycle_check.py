@@ -5,14 +5,16 @@ Creates a one-use 100%-off coupon limited to the Watchdog Pro product, a $0 chec
 checks: provisioning, Pro key access, webhook delivery, cancel at period end, billing portal, immediate end, access
 removed. Deletes the coupon and the QA subscription at the end. No money moves.
 
-    python tools/live_lifecycle_check.py qa-email@example.com
+    python tools/live_lifecycle_check.py qa-hwd-probe+N@handicapperwatchdog.com [monthly|annual]
 """
 import json, os, sys, time, urllib.parse, urllib.request
 sys.path.insert(0, os.path.dirname(__file__))
 import hwd_secrets as H
 from playwright.sync_api import sync_playwright
 
-S = H.load(); KEY = S['STRIPE_SECRET_KEY']; PRICE = S['STRIPE_PRICE_MONTHLY']
+S = H.load(); KEY = S['STRIPE_SECRET_KEY']
+PLAN = sys.argv[2] if len(sys.argv) > 2 else 'monthly'
+PRICE = S['STRIPE_PRICE_ANNUAL'] if PLAN == 'annual' else S['STRIPE_PRICE_MONTHLY']
 # Cloudflare KV is eventually consistent (edge reads cached up to 60 s), so webhook driven changes are read after 75 s.
 SITE = 'https://handicapperwatchdog.com'; API = 'https://api.handicapperwatchdog.com'
 EMAIL = sys.argv[1]
@@ -59,7 +61,7 @@ try:
         p.screenshot(path=os.path.join(os.environ.get('TEMP', '.'), 'hwd_qa_account.png'), full_page=True)
         check('after checkout the account page shows Watchdog Pro', 'watchdog pro' in txt.lower(), txt[:300])
         me = p.evaluate("fetch('%s/api/me',{credentials:'include'}).then(r=>r.json())" % API)
-        check('/api/me: signed in, pro, monthly plan', me.get('signed_in') and me.get('pro') and me.get('plan') == 'monthly', me)
+        check('/api/me: signed in, pro, %s plan' % PLAN, me.get('signed_in') and me.get('pro') and me.get('plan') == PLAN, me)
         k = p.evaluate("fetch('%s/api/pro/key?id=pending',{credentials:'include'}).then(r=>r.status)" % API)
         check('Pro member gets the pending picks key', k == 200, k)
         picks = p.goto(SITE + '/picks.html'); p.wait_for_timeout(6000)

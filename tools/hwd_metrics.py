@@ -14,6 +14,8 @@ import hwd_secrets as H
 S = H.load(); KEY = S['STRIPE_SECRET_KEY']
 PRICES = {S['STRIPE_PRICE_MONTHLY']: ('monthly', 4999), S['STRIPE_PRICE_ANNUAL']: ('annual', 49900)}
 QA = ('hwdqa', 'qa-hwd-probe')
+_ex = os.path.join(os.path.dirname(__file__), 'hwd_metrics_exclude.txt')
+EXCLUDE = {l.strip() for l in open(_ex) if l.strip() and not l.startswith('#')} if os.path.exists(_ex) else set()
 
 
 def get(path, params):
@@ -36,7 +38,7 @@ subs = [s for s in get('subscriptions', {'status': 'all', 'expand[]': 'data.cust
 subs = [s for s in subs if not is_qa((s.get('customer') or {}).get('email') if isinstance(s.get('customer'), dict) else '')]
 paying = [s for s in subs if s['status'] in ('active', 'trialing', 'past_due')]
 mrr = sum(PRICES[s['items']['data'][0]['price']['id']][1] / (12 if PRICES[s['items']['data'][0]['price']['id']][0] == 'annual' else 1) for s in paying if s['status'] != 'trialing') / 100
-sessions = [c for c in get('checkout/sessions', {'created[gte]': d30}) if (c.get('metadata') or {}).get('app') == 'hwd' and not is_qa(c.get('customer_email') or (c.get('customer_details') or {}).get('email'))]
+sessions = [c for c in get('checkout/sessions', {'created[gte]': d30}) if (c.get('metadata') or {}).get('app') == 'hwd' and c['id'] not in EXCLUDE and not is_qa(c.get('customer_email') or (c.get('customer_details') or {}).get('email'))]
 inv_failed = [e for e in get('events', {'type': 'invoice.payment_failed', 'created[gte]': d30})
               if any(l.get('pricing', {}).get('price_details', {}).get('price') in PRICES or (l.get('price') or {}).get('id') in PRICES
                      for l in e['data']['object'].get('lines', {}).get('data', []))]
@@ -57,6 +59,7 @@ rep = {
     'new_7d': sum(1 for s in subs if s['created'] >= d7), 'new_30d': sum(1 for s in subs if s['created'] >= d30),
     'ended_30d': sum(1 for s in subs if s['status'] == 'canceled' and (s.get('ended_at') or 0) >= d30),
     'checkout_starts_30d': len(sessions), 'checkouts_completed_30d': sum(1 for c in sessions if c['status'] == 'complete'),
+    'checkouts_abandoned_30d': sum(1 for c in sessions if c['status'] == 'expired'), 'checkouts_open_now': sum(1 for c in sessions if c['status'] == 'open'),
     'failed_payments_30d': len(inv_failed),
     'renewals_30d': sum(1 for i in paid if i.get('billing_reason') == 'subscription_cycle'),
     'first_payments_30d': sum(1 for i in paid if i.get('billing_reason') == 'subscription_create' and (i.get('amount_paid') or 0) > 0),

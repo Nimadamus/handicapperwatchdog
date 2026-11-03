@@ -1335,11 +1335,15 @@ def _sg(v, d=2):
     return ('%+.' + str(d) + 'f') % v
 
 
+_PHONE_HIDE = ('Record size', 'Win rate', 'Lifetime picks', 'Graded picks', 'Lifetime ROI', 'Picks')
+
+
 def _mover_table(rows, cols):
     if not rows:
         return '<div class="empty small">Nothing to show for this window yet.</div>'
-    return ('<div class="tw"><table class="mini"><thead><tr>' + ''.join('<th%s>%s</th>' % (' class="l"' if j == 0 else '', c) for j, c in enumerate(cols))
-            + '</tr></thead><tbody>' + ''.join('<tr>' + ''.join('<td%s>%s</td>' % (' class="l"' if j == 0 else '', c) for j, c in enumerate(r)) + '</tr>' for r in rows)
+    cls = lambda j: ' class="l"' if j == 0 else (' class="hx"' if cols[j] in _PHONE_HIDE else '')
+    return ('<div class="tw"><table class="mini daytab"><thead><tr>' + ''.join('<th%s>%s</th>' % (cls(j), c) for j, c in enumerate(cols))
+            + '</tr></thead><tbody>' + ''.join('<tr>' + ''.join('<td%s>%s</td>' % (cls(j), c) for j, c in enumerate(r)) + '</tr>' for r in rows)
             + '</tbody></table></div>')
 
 
@@ -1454,6 +1458,26 @@ def _write_today(site, meta, cappers):
                   + ', '.join('%s (%s, %s picks)' % (_plink(r['id']), _sg(v[1]), '{:,}'.format(int(v[0]))) for r, v in lead) + '.' + more + '</p></div>')
     if lg:
         sec.append('<section class="panel edcard"><h2>By league</h2><div class="featgrid" style="margin-top:10px">' + ''.join(lg) + '</div></section>')
+    # the top of the page: four verified figures and one plain sentence
+    up_est = sum(1 for r in est if (r.get('units') or 0) > 0)
+    wk = [r['r7'] for r in _public(cappers) if isinstance(r.get('r7'), dict) and r['r7'].get('picks')]
+    wk_picks = sum(int(x['picks']) for x in wk)
+    wk_units = round(sum(float(x.get('net') or 0) for x in wk), 2)
+    lead_bits = []
+    if r7:
+        b0 = best[0]
+        lead_bits.append('The best week on the board: %s, %s units on %d picks, on a lifetime record of %s units.' % (
+            _plink(b0[0]['id']), _sg(b0[1]['net']), b0[1]['picks'], _sg(b0[0]['units'])))
+    if hot:
+        lead_bits.append('The longest active win streak is %s straight wins by %s. By chance alone, a record that size at that win rate would produce a run that long %s.' % (
+            hot[0][1][1:], hot[0][0], hot[0][4] + ' time' + ('' if hot[0][4] in ('about 1', 'about 1.0') else 's')))
+    summary = ('<section class="panel dayhead"><div class="kpis k4">'
+               '<div class="kpi"><b>' + '{:,}'.format(len(est)) + '</b><span>Established records (100+ picks)</span></div>'
+               '<div class="kpi"><b>' + ('%d%%' % round(100 * up_est / len(est)) if est else 'n/a') + '</b><span>Of them up money, lifetime</span></div>'
+               '<div class="kpi"><b>' + '{:,}'.format(wk_picks) + '</b><span>Picks graded, last 7 days of verified history</span></div>'
+               '<div class="kpi"><b>' + _sg(wk_units) + '</b><span>Units, all of those picks combined</span></div></div>'
+               + ('<p class="daylead">' + ' '.join(lead_bits) + '</p>' if lead_bits else '') + '</section>')
+    sec.insert(0, summary)
     weekly = sorted(man.get('weekly') or [], reverse=True)
     wl = ''.join('<li><a href="weekly-%s.html">Week ending %s</a></li>' % (d, datetime.fromisoformat(d).strftime('%B %d, %Y').replace(' 0', ' ')) for d in weekly[:6])
     body = (

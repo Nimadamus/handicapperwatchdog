@@ -2,7 +2,7 @@
   'use strict';
   var note = document.getElementById('notice'), btns = document.querySelectorAll('[data-plan]');
   function show(msg) { note.hidden = false; note.textContent = msg; }
-  if (/canceled=1/.test(location.search)) show('Checkout was canceled. You have not been charged.');
+  if (/canceled=1/.test(location.search)) { show('Checkout was canceled. You have not been charged.'); if (window.gtag) gtag('event', 'checkout_canceled', { items: [{ item_id: 'watchdog_pro' }] }); }
   if (window.gtag) gtag('event', 'view_item', { currency: 'USD', value: 49.99, items: [{ item_id: 'watchdog_pro', item_name: 'Watchdog Pro' }] });
   HWD.ready.then(function (s) {
     if (s.pro) {
