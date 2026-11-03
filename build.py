@@ -1131,7 +1131,8 @@ def _write_persist(site, meta, nice, org):
         '<div class="edstack">\n'
         '<section class="panel edcard answer"><h2>The finding</h2><div class="prose"><p>' + lead + ' Across all ' + '{:,}'.format(len(pairs))
         + ' accounts the two halves are ' + verdict + ' (correlation ' + '%.2f' % corr + ', where 0 means no relationship and 1 means the second half matches the first).</p>'
-        '<p>A strong start is not evidence of an edge. Judge a handicapper on a long record at the posted odds, and expect a hot run to cool.</p></div></section>\n'
+        '<p>' + ('Hot starts cooled sharply: from an average first half ROI of ' + sg(hot['h1']) + ' to a median second half of ' + sg(hot['med']) + '. ' if hot['med'] < hot['h1'] / 2 else '')
+        + 'A strong start is weak evidence of an edge. Judge a handicapper on a long record at the posted odds.</p></div></section>\n'
         '<section class="panel"><div class="ph"><h2 style="font-size:18px">Second half results by first half ROI</h2></div><div class="tw"><table class="mini"><thead><tr><th class="l">First half ROI</th><th>Accounts</th><th>Average first half ROI</th><th>Up in second half</th><th>Median second half ROI</th></tr></thead><tbody>'
         + rows + '</tbody></table></div></section>\n'
         '<section class="panel edcard"><h2>Method and limits</h2><div class="prose"><ul>'
@@ -1144,7 +1145,7 @@ def _write_persist(site, meta, nice, org):
         '<script type="application/ld+json">' + ldj + '</script>')
     with open(os.path.join(site, 'research', 'do-hot-handicappers-stay-hot.html'), 'w', encoding='utf-8', newline='\n') as f:
         f.write(_document(1, 'research/', 'Do Hot Handicappers Stay Hot? | Handicapper Watchdog',
-                          'We split %s established handicapper records in half. A hot first half barely predicts the second. Updated from live data.' % '{:,}'.format(len(pairs)),
+                          'We split %s established handicapper records in half and compared the halves. The first half is %s to the second. Updated from live data.' % ('{:,}'.format(len(pairs)), verdict),
                           url, body))
     return True
 
