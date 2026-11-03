@@ -67,6 +67,22 @@ def seal(label, obj):
     return base64.b64encode(iv + AESGCM(pro_key(label)).encrypt(iv, data, None)).decode()
 
 
+def fetch_research(slug):
+    """One account's research object. Public profile pages stopped carrying it on Nov 2, 2026, so the Watchdog serves it to this
+    build behind the derived export token (/api/hwd/research); the public page is only a fallback."""
+    if EXPORT_TOKEN and not EXPORT_URL.startswith('file:'):
+        try:
+            url = EXPORT_URL.rsplit('/api/', 1)[0] + '/api/hwd/research?slug=' + quote(slug)
+            req = urllib.request.Request(url, headers={'x-watchdog-token': EXPORT_TOKEN, 'User-Agent': 'HandicapperWatchdog/1.0'})
+            with urllib.request.urlopen(req, timeout=120) as r:
+                d = json.loads(r.read().decode('utf-8'))
+            if isinstance(d, dict) and d.get('history') is not None:
+                return d
+        except Exception:
+            pass
+    return extract(get(BASE + slug + '/'), '__WD_RESEARCH')
+
+
 def fetch_pending():
     """Eligible pending picks keyed by masked id, or None when the export is not configured or not reachable."""
     if not EXPORT_TOKEN:
@@ -2651,7 +2667,7 @@ def main():
         stale = changed or now - cached.get('fetched', 0) > PROFILE_TTL * 4
         if stale and fetched < (changed_budget if changed else MAX_FETCH):
             try:
-                research = extract(get(BASE + x['slug'] + '/'), '__WD_RESEARCH')
+                research = fetch_research(x['slug'])
                 if research:
                     cached = {'last_pick_at': x.get('last_pick_at'), 'sig': sig, 'fetched': now, 'research': research}
                     with open(cpath, 'w', encoding='utf-8') as f:
