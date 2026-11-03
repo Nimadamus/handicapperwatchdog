@@ -730,7 +730,7 @@ def _write_sitemap(site, lastmod):
         for name in sorted(os.listdir(sport_dir)):
             if name.endswith('.html'):
                 entries.append(('sports/' + name, 'https://handicapperwatchdog.com/sports/' + name, 'daily', '0.7'))
-    for folder, freq, priority in (('reviews', 'weekly', '0.6'), ('sportsbooks', 'weekly', '0.6'), ('learn', 'weekly', '0.7')):
+    for folder, freq, priority in (('reviews', 'weekly', '0.6'), ('sportsbooks', 'weekly', '0.6'), ('learn', 'weekly', '0.7'), ('research', 'daily', '0.7')):
         folder_dir = os.path.join(site, folder)
         if not os.path.isdir(folder_dir):
             continue
@@ -738,7 +738,7 @@ def _write_sitemap(site, lastmod):
             path = os.path.join(folder_dir, name)
             if name.endswith('.html') and os.path.isfile(path):
                 loc = 'https://handicapperwatchdog.com/' + folder + '/' + name
-                if folder in ('sportsbooks', 'learn') and name == 'index.html':
+                if folder in ('sportsbooks', 'learn', 'research') and name == 'index.html':
                     loc = 'https://handicapperwatchdog.com/%s/' % folder
                 entries.append((folder + '/' + name, loc, freq, priority))
             elif folder == 'sportsbooks' and os.path.isdir(path) and os.path.isfile(os.path.join(path, 'index.html')):
@@ -806,6 +806,7 @@ def _nav(depth, current):
         ('reviews/index.html', 'Reviews'),
         ('sportsbooks/', 'Sportsbooks'),
         ('learn/', 'Guides'),
+        ('research/', 'Research'),
         ('pricing.html', 'Pricing'),
     )
     return '<nav class="navlinks" id="sitenav">%s</nav>' % ''.join(
@@ -838,6 +839,7 @@ def _footer(depth):
         ('sportsbooks/', 'Sportsbooks'),
         ('sportsbooks/justbet.html', 'JustBet'),
         ('learn/', 'Betting guides'),
+        ('research/', 'Research'),
         ('the-board.html', 'The board'),
         ('how-we-grade.html', 'How we grade'),
         ('pricing.html', 'Watchdog Pro'),
@@ -1051,6 +1053,102 @@ def _write_sport_pages(site, cappers):
         if name.endswith('.html') and name not in keep:
             os.remove(os.path.join(dest, name))
 
+
+
+def _research_stats(cappers):
+    """Sample size research from the published board rows only (the same numbers anyone can recount from data/index.json)."""
+    rows = [c for c in cappers if c.get('roi') is not None and c.get('picks')]
+
+    def q(v, p):
+        v = sorted(v)
+        return v[int(round(p * (len(v) - 1)))] if v else None
+
+    def med(v):
+        v = sorted(v)
+        n = len(v)
+        return None if not n else (v[n // 2] if n % 2 else (v[n // 2 - 1] + v[n // 2]) / 2)
+    bands = []
+    for lo, hi, label in ((20, 49, '20 to 49 picks'), (50, 99, '50 to 99 picks'), (100, 249, '100 to 249 picks'), (250, None, '250 or more picks')):
+        g = [c for c in rows if c['picks'] >= lo and (hi is None or c['picks'] <= hi)]
+        r = [c['roi'] for c in g]
+        bands.append({'label': label, 'n': len(g), 'up': (sum(1 for c in g if (c.get('units') or 0) > 0) / len(g)) if g else None,
+                      'med': med(r), 'p10': q(r, .1), 'p90': q(r, .9), 'wild': (sum(1 for x in r if abs(x) > 20) / len(g)) if g else None})
+    est = [c for c in rows if c['picks'] >= 100]
+    win_down = sum(1 for c in est if (c.get('win_pct') or 0) >= 52.4 and (c.get('units') or 0) < 0)
+    lose_up = sum(1 for c in est if (c.get('win_pct') or 100) < 50 and (c.get('units') or 0) > 0)
+    sports = {}
+    for c in rows:
+        for sp, v in (c.get('bs') or {}).items():
+            if isinstance(v, list) and len(v) >= 3 and v[0] >= 50 and v[2] is not None:
+                sports.setdefault(sp, []).append(v[2])
+    sp_rows = sorted(((sp, len(v), sum(1 for x in v if x > 0) / len(v), med(v), q(v, .25), q(v, .75)) for sp, v in sports.items() if len(v) >= 10),
+                     key=lambda t: -t[1])
+    return {'bands': bands, 'est': len(est), 'win_down': win_down, 'lose_up': lose_up, 'sports': sp_rows, 'rows': len(rows)}
+
+
+def _write_research(site, meta, cappers):
+    """Original research rebuilt from the live board at every build, so every number is current and recountable."""
+    st = _research_stats(cappers)
+    if not st['rows']:
+        return
+    folder = os.path.join(site, 'research')
+    os.makedirs(folder, exist_ok=True)
+    built = str(meta.get('built_at') or '')[:10] or datetime.now(timezone.utc).date().isoformat()
+    nice = time.strftime('%B %d, %Y', time.strptime(built, '%Y-%m-%d')).replace(' 0', ' ')
+    pct = lambda v: '' if v is None else '%d%%' % round(v * 100)
+    sg = lambda v: '' if v is None else ('%+.1f%%' % v)
+    org = {'@type': 'Organization', 'name': 'Handicapper Watchdog', 'url': 'https://handicapperwatchdog.com/'}
+    url = 'https://handicapperwatchdog.com/research/roi-and-sample-size.html'
+    b = st['bands']
+    small = b[0]
+    big = next((x for x in reversed(b) if x['n'] >= 50), b[-1])  # a band of a dozen accounts is too thin to quote
+    trows = ''.join('<tr><td class="l">%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s to %s</td><td>%s</td></tr>' % (
+        x['label'], '{:,}'.format(x['n']), pct(x['up']), sg(x['med']), sg(x['p10']), sg(x['p90']), pct(x['wild'])) for x in b if x['n'])
+    srows = ''.join('<tr><td class="l">%s</td><td>%d</td><td>%s</td><td>%s</td><td>%s to %s</td></tr>' % (
+        _esc(sp), n, pct(up), sg(m), sg(a), sg(z)) for sp, n, up, m, a, z in st['sports'][:8])
+    ldj = json.dumps({'@context': 'https://schema.org', '@graph': [
+        {'@type': 'Article', 'headline': "How much does a handicapper's ROI mean after 30 picks?", 'url': url, 'dateModified': built,
+         'author': org, 'publisher': org, 'isBasedOn': 'https://handicapperwatchdog.com/data/index.json'},
+        {'@type': 'Dataset', 'name': 'Handicapper Watchdog public board', 'url': 'https://handicapperwatchdog.com/data/index.json',
+         'description': 'Independently graded records of public handicapper accounts under anonymous IDs.', 'creator': org, 'dateModified': built}]}).replace('<', '\\u003c')
+    body = (
+        '<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><a href="./">Research</a><span aria-hidden="true">/</span><span aria-current="page">ROI and sample size</span></nav>\n'
+        '<div class="pagehead"><div><div class="eyebrow">Watchdog research</div><h1>How much does a handicapper&rsquo;s ROI mean after 30 picks?</h1>\n'
+        '<p class="muted">Every independently graded account on the board, grouped by how many picks it has. Recounted from the live board at each site update. Last update ' + nice + '.</p></div></div>\n'
+        '<div class="edstack">\n'
+        '<section class="panel edcard answer"><h2>The finding</h2><div class="prose"><p>Small samples swing wildly. Among accounts with 20 to 49 graded picks, '
+        + pct(small['wild']) + ' show an ROI beyond plus or minus 20%, and the middle 80% runs from ' + sg(small['p10']) + ' to ' + sg(small['p90'])
+        + '. Among accounts with ' + big['label'] + ', ' + pct(big['wild']) + ' are that extreme and the middle 80% narrows to ' + sg(big['p10']) + ' to ' + sg(big['p90'])
+        + '. A big ROI on a short record mostly measures luck, not skill.</p></div></section>\n'
+        '<section class="panel"><div class="ph"><h2 style="font-size:18px">ROI by sample size</h2></div><div class="tw"><table class="mini"><thead><tr><th class="l">Graded picks</th><th>Accounts</th><th>Up money</th><th>Median ROI</th><th>Middle 80% of ROI</th><th>ROI beyond &plusmn;20%</th></tr></thead><tbody>'
+        + trows + '</tbody></table></div></section>\n'
+        '<section class="panel edcard"><h2>Win rate is not the same as profit</h2><div class="prose"><p>Of ' + '{:,}'.format(st['est'])
+        + ' accounts with 100 or more graded picks, ' + str(st['win_down']) + ' win at least 52.4% of their bets and are still down money, and ' + str(st['lose_up'])
+        + ' win less than half of their bets and are up. Odds decide that: a record built on favorites needs a higher win rate to profit, and plus money bettors can lose more often than not and still come out ahead. Judge a record by units and ROI at the posted odds, not by wins and losses alone.</p></div></section>\n'
+        '<section class="panel"><div class="ph"><h2 style="font-size:18px">By sport, accounts with 50 or more picks in that sport</h2></div><div class="tw"><table class="mini"><thead><tr><th class="l">Sport</th><th>Accounts</th><th>Up money</th><th>Median ROI</th><th>Middle half of ROI</th></tr></thead><tbody>'
+        + srows + '</tbody></table></div></section>\n'
+        '<section class="panel edcard"><h2>Method and limits</h2><div class="prose"><ul>'
+        '<li>Source: the public Watchdog board (<a href="../data/index.json">data/index.json</a>), ' + '{:,}'.format(st['rows']) + ' accounts with graded picks. Anyone can recount these numbers from that file.</li>'
+        '<li>A pick counts only if it was posted in public before the game started, graded against the final score at the odds posted. Held, duplicate and unreviewed picks are excluded.</li>'
+        '<li>These are accounts that post picks in public on the platforms Watchdog monitors. They are not a random sample of all bettors, and accounts that stop posting keep their record in the data.</li>'
+        '<li>Past results are not predictions. Nothing here is betting advice.</li></ul></div></section>\n'
+        '<section class="ctaband"><div><h2>Check a record yourself</h2><p class="muted">Sort the free rankings by sample size, units and ROI.</p></div><p><a class="btn" href="../cappers.html">Open the rankings</a> <a class="btn pro" href="../pricing.html">Watchdog Pro</a></p></section>\n'
+        '</div>\n<p class="muted small">Updated ' + nice + '. 21+. Gambling problem? Call 1 800 GAMBLER.</p>\n'
+        '<script type="application/ld+json">' + ldj + '</script>')
+    title = 'Handicapper ROI and Sample Size: What the Data Shows | Handicapper Watchdog'
+    desc = 'How ROI spreads by sample size across %s independently graded handicapper accounts. Short records swing wildly. Updated from live data.' % '{:,}'.format(st['rows'])
+    with open(os.path.join(folder, 'roi-and-sample-size.html'), 'w', encoding='utf-8', newline='\n') as f:
+        f.write(_document(1, 'research/', title, desc, url, body))
+    hub = (
+        '<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><span aria-current="page">Research</span></nav>\n'
+        '<div class="pagehead"><div><div class="eyebrow">Research</div><h1>Watchdog research</h1>\n'
+        '<p class="muted">Original findings from independently graded public picks. Each page is rebuilt from the live board, with the method and limits stated.</p></div></div>\n'
+        '<section class="featgrid" style="margin-bottom:18px"><a class="featcard" href="roi-and-sample-size.html" style="text-decoration:none;color:inherit"><span>01</span><p><b>How much does a handicapper&rsquo;s ROI mean after 30 picks?</b><br>ROI spread by sample size, win rate versus profit, and sport by sport results.</p></a>\n'
+        '<a class="featcard" href="../the-board.html" style="text-decoration:none;color:inherit"><span>02</span><p><b>How many handicappers are up?</b><br>The share of established accounts with a winning record.</p></a></section>')
+    with open(os.path.join(folder, 'index.html'), 'w', encoding='utf-8', newline='\n') as f:
+        f.write(_document(1, 'research/', 'Handicapper Research | Handicapper Watchdog',
+                          'Original research on public handicapper records: sample size, ROI, win rate and sport results, from independently graded picks.',
+                          'https://handicapperwatchdog.com/research/', hub))
 
 def _write_learn(site, meta, cappers):
     """Evergreen guides from content/learn.json. {{key}} placeholders take the live board numbers."""
@@ -1817,6 +1915,7 @@ def stamp_public_pages(site):
             f.write(html)
     _write_guides(site, meta, cappers)
     _write_learn(site, meta, cappers)
+    _write_research(site, meta, cappers)
     _write_sport_pages(site, cappers)
     _write_editorial(site)
     _write_legal(site)
