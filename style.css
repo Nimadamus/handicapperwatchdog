@@ -595,3 +595,5 @@ a.fcard:hover{border-color:var(--accent-line);transform:translateY(-2px)}
 @media (max-width:900px){.fbar.f5{grid-template-columns:1fr 1fr}}
 .alertbox{margin-top:16px;padding:14px;border:1px solid var(--line);border-radius:12px;background:var(--bg2);display:grid;gap:6px}
 .tog{display:flex;gap:10px;align-items:flex-start;cursor:pointer}.tog input{width:18px;height:18px;margin-top:2px;accent-color:#e7c675;flex:none}
+
+@media (max-width:600px){.ph{flex-wrap:wrap;row-gap:4px}.ph>span.muted{flex-basis:100%}}
