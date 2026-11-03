@@ -36,10 +36,14 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CACHE = os.path.join(HERE, '.cache', 'profiles')
 SITE = os.path.join(HERE, '_site')
 STATIC = ('index.html', 'capper.html', 'cappers.html', 'account.html', 'compare.html', 'picks.html', 'style.css', 'app.js', 'capper.js',
-          'pro.js', 'compare.js', 'pricing.js', 'account.js', 'picks.js', 'contact.js', 'favicon.svg', 'stadium.svg', 'og-card.png', 'CNAME', 'robots.txt', 'sitemap.xml')
+          'pro.js', 'track.js', 'compare.js', 'pricing.js', 'account.js', 'picks.js', 'contact.js', 'favicon.svg', 'stadium.svg', 'og-card.png', 'CNAME', 'robots.txt', 'sitemap.xml')
 PROFILE_TTL = int(os.environ.get('HWD_PROFILE_TTL', str(6 * 3600)))
 MAX_FETCH = int(os.environ.get('HWD_MAX_FETCH', '400'))
-PT = timezone(timedelta(hours=-7))  # display only; weekday buckets use Pacific time like the rest of TMR
+try:  # Pacific time with daylight saving; the fixed offset is a fallback only
+    from zoneinfo import ZoneInfo
+    PT = ZoneInfo('America/Los_Angeles')
+except Exception:
+    PT = timezone(timedelta(hours=-8))
 DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 
 
@@ -888,6 +892,7 @@ def _document(depth, current, title, description, canonical, body, robots=''):
 <link rel="stylesheet" href="%sstyle.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SC607ZYK1F"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-SC607ZYK1F');</script>
+<script src="%strack.js" defer></script>
 </head>
 <body>
 %s
@@ -898,7 +903,7 @@ def _document(depth, current, title, description, canonical, body, robots=''):
 </body>
 </html>
 ''') % (_esc(title), _esc(description), canonical, _esc(title), _esc(description), canonical,
-       prefix, prefix, _header(depth, current), body, _footer(depth))
+       prefix, prefix, prefix, _header(depth, current), body, _footer(depth))
 
 
 def _median_roi(cappers, minimum):
@@ -993,6 +998,7 @@ def _write_guides(site, meta, cappers):
 <tr><td class="l">Eligible pending picks before the game starts</td><td>No</td><td>Yes</td></tr>
 <tr><td class="l">Complete graded pick log: game, pick, odds, result, units, post time</td><td>No</td><td>Yes</td></tr>
 <tr><td class="l">Advanced filters, and compare up to four records</td><td>No</td><td>Yes</td></tr>
+<tr><td class="l">Follow accounts and get an email when one posts a pick before the game</td><td>No</td><td>Yes</td></tr>
 <tr><td class="l">Handicapper names, handles or links to accounts</td><td>No</td><td>No</td></tr>
 </tbody></table></div></section>
 <section class="panel" style="margin-bottom:28px"><div class="pb">
@@ -1000,7 +1006,7 @@ def _write_guides(site, meta, cappers):
 <p>Every tracked account is a permanent anonymous Watchdog ID. If Pro revealed names, one month of access would be enough to copy the whole list of accounts worth following and use it for free from then on. So names, handles and account links stay out of every plan. Pro gives you the research and the eligible pending picks tied to those IDs.</p>
 <p>%s</p>
 <p>Watchdog Pro is not a verified badge. A handicapper cannot pay to be ranked higher, to be featured, or to receive a label that the record is legitimate.</p>
-<p class="muted small">Prices are in US dollars. Subscribing will be covered by the <a href="pro-terms.html">Watchdog Pro subscription terms</a> and the <a href="pro-privacy.html">Watchdog Pro privacy notice</a>. Records are past results, not predictions or a guarantee. 21+. Gambling problem? Call 1 800 GAMBLER.</p>
+<p class="muted small">Prices are in US dollars. Handicapper Watchdog is operated by TrustMyRecord, so Stripe receipts and the billing portal show the TrustMyRecord business name. Cancel any time from your account page. Subscriptions are covered by the <a href="pro-terms.html">Watchdog Pro subscription terms</a> and the <a href="pro-privacy.html">Watchdog Pro privacy notice</a>. Records are past results, not predictions or a guarantee. 21+. Gambling problem? Call 1 800 GAMBLER.</p>
 <p><a href="cappers.html">Look at the free board first</a> · <a href="picks.html">Today&rsquo;s Pro picks</a> · <a href="how-we-grade.html">How a record is graded</a> · <a href="reviews/index.html">Handicapper reviews</a></p>
 </div></section>
 <script src="pro.js"></script>
@@ -1189,6 +1195,384 @@ def _write_persist(site, meta, nice, org, cappers):
                           url, body))
     return True
 
+
+# ---------- daily board and weekly report (snapshots of the public board, ids only) ----------
+
+SNAP_KEEP_DAYS = 9
+LIVE_SITE = 'https://handicapperwatchdog.com/'
+SNAP_CACHE = os.path.join(HERE, '.cache', 'snap')
+
+
+def _pt_now(meta):
+    try:
+        from zoneinfo import ZoneInfo
+        tz = ZoneInfo('America/Los_Angeles')
+    except Exception:
+        tz = PT
+    try:
+        t = datetime.fromisoformat(str(meta.get('built_at')).replace('Z', '+00:00'))
+    except Exception:
+        t = datetime.now(timezone.utc)
+    return t.astimezone(tz)
+
+
+def _live_get(path):
+    if os.environ.get('HWD_NO_CARRY') == '1':
+        return None
+    try:
+        req = urllib.request.Request(LIVE_SITE + path, headers={'User-Agent': 'hwd-build'})
+        return urllib.request.urlopen(req, timeout=20).read()
+    except Exception:
+        return None
+
+
+def _carry(rel):
+    """A file a previous build published: the CI cache first, then the live site. None when neither has it."""
+    local = os.path.join(SNAP_CACHE, rel.replace('/', '_'))
+    if os.path.isfile(local):
+        with open(local, 'rb') as f:
+            return f.read()
+    data = _live_get(rel)
+    if data:
+        os.makedirs(SNAP_CACHE, exist_ok=True)
+        with open(local, 'wb') as f:
+            f.write(data)
+    return data
+
+
+def _snap_of(cappers):
+    est = _established(cappers)
+    rank = {r['id']: i for i, r in enumerate(est, 1)}
+    out = {}
+    for r in _public(cappers):
+        u = _num(r.get('units'))
+        if u is None or not r.get('id'):
+            continue
+        bs = r.get('bs') if isinstance(r.get('bs'), dict) else {}
+        out[r['id']] = [int(r.get('picks') or 0), round(u, 2), rank.get(r['id']), int(r.get('w') or 0), int(r.get('l') or 0),
+                        {k: [int(v[0] or 0), v[1]] for k, v in bs.items() if isinstance(v, list) and len(v) > 1 and v[1] is not None}]
+    return out
+
+
+def _snapshots(site, meta, cappers):
+    """Write today's snapshot, carry the recent ones forward, return {date: snap} including today."""
+    now = _pt_now(meta)
+    today = now.date().isoformat()
+    folder = os.path.join(site, 'data', 'snap')
+    os.makedirs(folder, exist_ok=True)
+    os.makedirs(SNAP_CACHE, exist_ok=True)
+    snaps = {}
+    man = {}
+    raw = _carry('data/snap/index.json') if not os.path.isfile(os.path.join(SNAP_CACHE, 'data_snap_index.json')) else None
+    try:
+        man = json.loads(raw or open(os.path.join(SNAP_CACHE, 'data_snap_index.json'), encoding='utf-8').read())
+    except Exception:
+        man = {}
+    days = sorted(set(man.get('days') or []) | {f[len('data_snap_'):-5] for f in os.listdir(SNAP_CACHE)
+                                                     if re.fullmatch(r'data_snap_\d{4}-\d{2}-\d{2}\.json', f)})
+    keep_from = (now.date() - timedelta(days=SNAP_KEEP_DAYS)).isoformat()
+    for d in days:
+        if d < keep_from or d == today:
+            continue
+        data = _carry('data/snap/%s.json' % d)
+        try:
+            snaps[d] = json.loads(data)['r']
+        except Exception:
+            continue
+        with open(os.path.join(folder, d + '.json'), 'wb') as f:
+            f.write(data)
+    cur = _snap_of(cappers)
+    body = json.dumps({'d': today, 'built_at': meta.get('built_at'), 'r': cur}, separators=(',', ':')).encode()
+    for path in (os.path.join(folder, today + '.json'), os.path.join(SNAP_CACHE, 'data_snap_%s.json' % today)):
+        with open(path, 'wb') as f:
+            f.write(body)
+    snaps[today] = cur
+    for f in os.listdir(SNAP_CACHE):
+        m = re.fullmatch(r'data_snap_(\d{4}-\d{2}-\d{2})\.json', f)
+        if m and m.group(1) < keep_from:
+            os.remove(os.path.join(SNAP_CACHE, f))
+    man = {'days': sorted(snaps), 'weekly': sorted(set(man.get('weekly') or []))}
+    return snaps, man, now
+
+
+def _write_snap_manifest(site, man):
+    body = json.dumps(man, separators=(',', ':')).encode()
+    for path in (os.path.join(site, 'data', 'snap', 'index.json'), os.path.join(SNAP_CACHE, 'data_snap_index.json')):
+        with open(path, 'wb') as f:
+            f.write(body)
+
+
+def _streak_chance(n, p, k):
+    """Expected number of runs of at least k in a row in n picks at rate p (a standard approximation)."""
+    if not n or p <= 0 or p >= 1 or k <= 0:
+        return None
+    return max(0.0, (n - k + 1) * (1 - p) * p ** k + p ** k)
+
+
+def _cid(i):
+    return _esc(str(i)[:6].upper())
+
+
+def _plink(i, up='../'):
+    return '<a href="%scapper.html?id=%s">#%s</a>' % (up, _esc(i), _cid(i))
+
+
+def _diff(cur, old, by_rank=False):
+    """Per account change between two snapshots: [id, dpicks, dunits, rank_now, rank_then]."""
+    out = []
+    for i, v in cur.items():
+        o = old.get(i)
+        if not o:
+            continue
+        dp, du = v[0] - o[0], round(v[1] - o[1], 2)
+        if dp < 0:
+            continue  # a regrade or a removed pick, not new activity
+        out.append([i, dp, du, v[2], o[2]])
+    return out
+
+
+def _sg(v, d=2):
+    return ('%+.' + str(d) + 'f') % v
+
+
+def _mover_table(rows, cols):
+    if not rows:
+        return '<div class="empty small">Nothing to show for this window yet.</div>'
+    return ('<div class="tw"><table class="mini"><thead><tr>' + ''.join('<th%s>%s</th>' % (' class="l"' if j == 0 else '', c) for j, c in enumerate(cols))
+            + '</tr></thead><tbody>' + ''.join('<tr>' + ''.join('<td%s>%s</td>' % (' class="l"' if j == 0 else '', c) for j, c in enumerate(r)) + '</tr>' for r in rows)
+            + '</tbody></table></div>')
+
+
+def _rank_moves(cur, old, n=5):
+    moves = [m for m in _diff(cur, old) if m[3] and m[4] and m[3] != m[4]]
+    ups = sorted(moves, key=lambda m: (m[3] - m[4], -m[2]))[:n]
+    downs = sorted(moves, key=lambda m: (m[4] - m[3], m[2]))[:n]
+    fmt = lambda m: [_plink(m[0]), '%d to %d' % (m[4], m[3]), '{:,}'.format(m[1]), _sg(m[2])]
+    return [fmt(m) for m in ups if m[3] < m[4]], [fmt(m) for m in downs if m[3] > m[4]]
+
+
+def _write_today(site, meta, cappers):
+    """research/today.html: what changed on the board, rebuilt at every site update from real graded data."""
+    snaps, man, now = _snapshots(site, meta, cappers)
+    today = now.date().isoformat()
+    cur = snaps[today]
+    prior = sorted(d for d in snaps if d < today)
+    yday = prior[-1] if prior else None
+    week = next((d for d in reversed(prior) if d <= (now.date() - timedelta(days=7)).isoformat()), None)
+    nice = '%s %d, %d' % (now.strftime('%B'), now.day, now.year)
+    stamp = now.strftime('%I:%M %p').lstrip('0') + (' PST' if now.utcoffset() == timedelta(hours=-8) else ' PDT')
+    est = _established(cappers)
+    rows = {r['id']: r for r in _public(cappers)}
+    sec = []
+    # 1. since yesterday's close
+    if yday:
+        d = _diff(cur, snaps[yday])
+        new_accts = [i for i in cur if i not in snaps[yday]]
+        graded = sum(m[1] for m in d) + sum(cur[i][0] for i in new_accts)
+        active = [m for m in d if m[1] > 0]
+        crowd = round(sum(m[2] for m in active), 2)
+        top_new = sorted((m for m in active if m[1] >= 3), key=lambda m: -m[1])[:8]
+        sec.append(
+            '<section class="panel edcard"><h2>Since the end of ' + datetime.fromisoformat(yday).strftime('%A') + '</h2>'
+            '<div class="kpis" style="margin:10px 0 14px">'
+            '<div class="kpi"><b>' + '{:,}'.format(graded) + '</b><span>Picks graded</span></div>'
+            '<div class="kpi"><b>' + '{:,}'.format(len(active) + len(new_accts)) + '</b><span>Accounts with new grades</span></div>'
+            '<div class="kpi"><b>' + _sg(crowd) + '</b><span>Units, all those picks combined</span></div>'
+            '<div class="kpi"><b>' + '{:,}'.format(len(new_accts)) + '</b><span>New accounts on the board</span></div></div>'
+            + _mover_table([[_plink(m[0]), '{:,}'.format(m[1]), _sg(m[2]), '{:,}'.format(cur[m[0]][0])] for m in top_new],
+                           ['Most picks graded today', 'New picks', 'Units today', 'Record size'])
+            + '<p class="muted small" style="margin:10px 0 0">One day of results is noise. These tables show activity, not skill.</p></section>')
+        ups, downs = _rank_moves(cur, snaps[yday])
+        if ups or downs:
+            sec.append('<section class="panel"><div class="ph"><h2 style="font-size:18px">Biggest ranking moves today</h2><span class="muted small">Established records, ranked by units</span></div>'
+                       '<div class="g2" style="gap:12px">' + _mover_table(ups, ['Climbed', 'Rank', 'New picks', 'Units']) + _mover_table(downs, ['Dropped', 'Rank', 'New picks', 'Units']) + '</div></section>')
+    if week:
+        ups, downs = _rank_moves(cur, snaps[week])
+        if ups or downs:
+            sec.append('<section class="panel"><div class="ph"><h2 style="font-size:18px">Biggest ranking moves this week</h2><span class="muted small">Since ' + datetime.fromisoformat(week).strftime('%b %d').replace(' 0', ' ') + '</span></div>'
+                       '<div class="g2" style="gap:12px">' + _mover_table(ups, ['Climbed', 'Rank', 'New picks', 'Units']) + _mover_table(downs, ['Dropped', 'Rank', 'New picks', 'Units']) + '</div></section>')
+    # 2. seven day swings from each account's verified history
+    r7 = [(r, r['r7']) for r in est if isinstance(r.get('r7'), dict) and (r['r7'].get('picks') or 0) >= 10 and r['r7'].get('net') is not None]
+    if r7:
+        best = sorted(r7, key=lambda x: -x[1]['net'])[:5]
+        worst = sorted(r7, key=lambda x: x[1]['net'])[:5]
+        f7 = lambda x: [_plink(x[0]['id']), '{:,}'.format(x[1]['picks']), _sg(x[1]['net']), _sg(x[0]['units'])]
+        sec.append('<section class="panel"><div class="ph"><h2 style="font-size:18px">Biggest seven day swings</h2><span class="muted small">Established records, 10 or more picks in the last 7 days of verified history</span></div>'
+                   '<div class="g2" style="gap:12px">' + _mover_table([f7(x) for x in best], ['Best week', 'Picks', '7 day units', 'Lifetime units'])
+                   + _mover_table([f7(x) for x in worst], ['Worst week', 'Picks', '7 day units', 'Lifetime units']) + '</div>'
+                   '<p class="muted small" style="margin:10px 0 0">Compare the week with the lifetime column. A big week on top of a losing record is usually a good run, not a turnaround. Our research found a hot first half <a href="do-hot-handicappers-stay-hot.html">only weakly predicts</a> the second.</p></section>')
+    # 3. streaks with the chance of seeing them by luck
+    def streak_rows(sign):
+        pool = [r for r in est if (int(r.get('streak') or 0) * sign) >= 4 and r.get('last_pick') and r['last_pick'] >= (now.date() - timedelta(days=7)).isoformat()]
+        pool.sort(key=lambda r: -abs(int(r['streak'])))
+        out = []
+        for r in pool[:6]:
+            k = abs(int(r['streak']))
+            w, l = int(r.get('w') or 0), int(r.get('l') or 0)
+            p = w / (w + l) if w + l else 0.5
+            e = _streak_chance(w + l, p if sign > 0 else 1 - p, k)
+            out.append([_plink(r['id']), ('W' if sign > 0 else 'L') + str(k), '{:,}'.format(r['picks']), '%.1f%%' % (r.get('win_pct') or 0),
+                        'about %s' % ('%.1f' % e if e < 10 else '%d' % round(e)) if e is not None else 'n/a'])
+        return out
+    hot, cold = streak_rows(1), streak_rows(-1)
+    if hot or cold:
+        sec.append('<section class="panel"><div class="ph"><h2 style="font-size:18px">Current streaks, with the odds of luck</h2><span class="muted small">Established records with a pick in the last 7 days</span></div>'
+                   '<div class="g2" style="gap:12px">' + _mover_table(hot, ['Win streaks', 'Run', 'Record size', 'Win rate', 'Runs this long expected by chance'])
+                   + _mover_table(cold, ['Losing streaks', 'Run', 'Record size', 'Win rate', 'Runs this long expected by chance']) + '</div>'
+                   '<p class="muted small" style="margin:10px 0 0">The last column estimates how many runs at least this long a record of this size would produce by chance at its own win rate. When it is 1 or more, the streak is ordinary for that record and says nothing about the next pick.</p></section>')
+    # 4. recently active
+    cut = (now.date() - timedelta(days=1)).isoformat()
+    recent = [r for r in est if (r.get('last_pick') or '') >= cut]
+    busy = sorted((r for r in est if isinstance(r.get('r7'), dict) and r['r7'].get('picks')), key=lambda r: -r['r7']['picks'])[:8]
+    sec.append('<section class="panel"><div class="ph"><h2 style="font-size:18px">Most active established accounts</h2><span class="muted small">'
+               + '{:,}'.format(len(recent)) + ' established records had a graded game since ' + datetime.fromisoformat(cut).strftime('%A') + '</span></div>'
+               + _mover_table([[_plink(r['id']), '{:,}'.format(r['r7']['picks']), _sg(r['r7']['net']), '{:,}'.format(r['picks']), _sg(r['units']), '%+.1f%%' % r['roi']] for r in busy],
+                              ['Account', 'Picks last 7 days', '7 day units', 'Graded picks', 'Lifetime units', 'Lifetime ROI']) + '</section>')
+    # 5. by league
+    lg = []
+    for sport in ('NFL', 'NCAAF', 'NBA', 'NCAAB', 'NHL', 'MLB'):
+        pool = [(r, r['bs'][sport]) for r in _public(cappers) if isinstance(r.get('bs'), dict) and isinstance(r['bs'].get(sport), list)
+                and int(r['bs'][sport][0] or 0) >= 50 and r['bs'][sport][1] is not None]
+        if len(pool) < 5:
+            continue
+        up = sum(1 for _, v in pool if v[1] > 0)
+        lead = sorted(pool, key=lambda x: -x[1][1])[:3]
+        day = ''
+        if yday:
+            dp = du = 0
+            for i, v in cur.items():
+                o = snaps[yday].get(i)
+                a, b = v[5].get(sport), (o[5].get(sport) if o else None)
+                if a and b and a[0] >= b[0]:
+                    dp += a[0] - b[0]
+                    du += (a[1] or 0) - (b[1] or 0)
+            day = ' Today: %s picks graded, %s units combined.' % ('{:,}'.format(dp), _sg(du))
+        page = os.path.join(site, 'sports', _sport_slug(sport) + '.html')
+        more = (' <a href="../sports/%s.html">%s research</a>' % (_sport_slug(sport), sport)) if os.path.isfile(page) else ''
+        lg.append('<div class="featcard" style="grid-template-columns:1fr"><p><b>' + sport + '</b><br>' + '{:,}'.format(len(pool)) + ' accounts with 50 or more ' + sport + ' picks; '
+                  + '%d%%' % round(100 * up / len(pool)) + ' are up in ' + sport + '.' + day + ' Leaders by units: '
+                  + ', '.join('%s (%s, %s picks)' % (_plink(r['id']), _sg(v[1]), '{:,}'.format(int(v[0]))) for r, v in lead) + '.' + more + '</p></div>')
+    if lg:
+        sec.append('<section class="panel edcard"><h2>By league</h2><div class="featgrid" style="margin-top:10px">' + ''.join(lg) + '</div></section>')
+    weekly = sorted(man.get('weekly') or [], reverse=True)
+    wl = ''.join('<li><a href="weekly-%s.html">Week ending %s</a></li>' % (d, datetime.fromisoformat(d).strftime('%B %d, %Y').replace(' 0', ' ')) for d in weekly[:6])
+    body = (
+        '<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><a href="./">Research</a><span aria-hidden="true">/</span><span aria-current="page">Today on the board</span></nav>\n'
+        '<div class="pagehead"><div><div class="eyebrow">Updated through the day</div><h1>Today on the board</h1>\n'
+        '<p class="muted">What changed among independently graded handicapper records. Every account is an anonymous Watchdog ID. Last update ' + nice + ', ' + stamp + '.</p></div></div>\n'
+        '<div class="edstack">\n' + '\n'.join(sec) + '\n'
+        + ('<section class="panel edcard"><h2>Weekly report</h2><div class="prose"><ul>' + wl + '</ul></div></section>\n' if wl else '')
+        + '<section class="panel edcard"><h2>How to read this page</h2><div class="prose"><ul>'
+        '<li>Every number comes from picks posted in public before the game started and graded on the final score at the posted odds.</li>'
+        '<li>Daily and weekly moves are short samples. They describe what happened. They do not predict the next pick.</li>'
+        '<li>Rank is by lifetime units among records with 100 or more graded picks, the same order as the <a href="../cappers.html">rankings</a>.</li></ul></div></section>\n'
+        '<section class="ctaband"><div><h2>Pending picks from these accounts</h2><p class="muted">Watchdog Pro shows eligible pending picks before the start, the complete graded log, and pick alerts for accounts you follow. Names stay private in every plan.</p></div><p><a class="btn pro" href="../pricing.html">See Watchdog Pro</a></p></section>\n'
+        '</div>\n<p class="muted small">21+. Gambling problem? Call 1 800 GAMBLER.</p>')
+    with open(os.path.join(site, 'research', 'today.html'), 'w', encoding='utf-8', newline='\n') as f:
+        f.write(_document(1, 'research/', 'Today on the Board: Handicapper Ranking Moves and Streaks | Handicapper Watchdog',
+                          'Daily ranking moves, newly graded picks, streaks with the odds of luck, and league notes from independently graded handicapper records.',
+                          'https://handicapperwatchdog.com/research/today.html', body))
+    _write_weekly(site, meta, cappers, snaps, man, now)
+    _write_snap_manifest(site, man)
+    return man
+
+
+def _write_weekly(site, meta, cappers, snaps, man, now):
+    """One report per week, written on the first update of each Monday (PT) once a snapshot from 7 days earlier exists.
+    Earlier reports are carried forward unchanged."""
+    folder = os.path.join(site, 'research')
+    for d in list(man.get('weekly') or []):
+        data = _carry('research/weekly-%s.html' % d)
+        if data:
+            with open(os.path.join(folder, 'weekly-%s.html' % d), 'wb') as f:
+                f.write(data)
+        else:
+            man['weekly'].remove(d)
+    end = now.date()
+    if now.weekday() != 0:
+        return
+    key = (end - timedelta(days=1)).isoformat()  # the week ending Sunday: end of the previous Sunday to end of this one
+    if key in (man.get('weekly') or []):
+        return
+    start = (end - timedelta(days=8)).isoformat()
+    base, cur = snaps.get(start), snaps.get(key)
+    if not base or not cur:
+        return
+    d = _diff(cur, base)
+    act = [m for m in d if m[1] > 0]
+    if len(act) < 20:
+        return
+    graded = sum(m[1] for m in act)
+    crowd = round(sum(m[2] for m in act), 2)
+    sports = {}
+    for i, v in cur.items():
+        o = base.get(i)
+        if not o:
+            continue
+        for sp, a in v[5].items():
+            b = o[5].get(sp)
+            if b and a[0] > b[0]:
+                s = sports.setdefault(sp, [0, 0.0, 0])
+                s[0] += a[0] - b[0]
+                s[1] += (a[1] or 0) - (b[1] or 0)
+                s[2] += 1
+    sp_rows = [[_esc(sp), '{:,}'.format(v[2]), '{:,}'.format(v[0]), _sg(v[1])] for sp, v in sorted(sports.items(), key=lambda kv: -kv[1][0]) if v[0] >= 50][:8]
+    big = [m for m in act if m[1] >= 10]
+    best = sorted(big, key=lambda m: -m[2])[:5]
+    worst = sorted(big, key=lambda m: m[2])[:5]
+    life = {i: v for i, v in cur.items()}
+    fm = lambda m: [_plink(m[0]), '{:,}'.format(m[1]), _sg(m[2]), '{:,}'.format(life[m[0]][0]), _sg(life[m[0]][1])]
+    # win rate trap: winning more often than not this week and still losing units
+    trap = 0
+    trap_pool = 0
+    for m in big:
+        o, v = base[m[0]], cur[m[0]]
+        w, l = v[3] - o[3], v[4] - o[4]
+        if w + l >= 10:
+            trap_pool += 1
+            if w / (w + l) >= 0.55 and m[2] < 0:
+                trap += 1
+    top10 = sorted(big, key=lambda m: -m[2])[:10]
+    roi_of = {r['id']: _num(r.get('roi')) for r in _public(cappers)}
+    rois = sorted(roi_of[m[0]] for m in top10 if roi_of.get(m[0]) is not None)
+    med_life = rois[len(rois) // 2] if rois else None
+    ups, downs = _rank_moves(cur, base)
+    label = datetime.fromisoformat(key).strftime('%B %d, %Y').replace(' 0', ' ')
+    since = (datetime.fromisoformat(start) + timedelta(days=1)).strftime('%B %d').replace(' 0', ' ')
+    base_day = datetime.fromisoformat(start).strftime('%B %d').replace(' 0', ' ')
+    url = 'https://handicapperwatchdog.com/research/weekly-%s.html' % key
+    body = (
+        '<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><a href="./">Research</a><span aria-hidden="true">/</span><span aria-current="page">Week ending ' + label + '</span></nav>\n'
+        '<div class="pagehead"><div><div class="eyebrow">Weekly report</div><h1>The graded week ending ' + label + '</h1>\n'
+        '<p class="muted">Every pick graded on the Watchdog board from ' + since + ' to ' + label + ', from public posts captured before the start. Accounts are anonymous Watchdog IDs.</p></div></div>\n'
+        '<div class="edstack">\n'
+        '<section class="panel edcard answer"><h2>The week in numbers</h2><div class="prose"><p>'
+        + '{:,}'.format(graded) + ' picks from ' + '{:,}'.format(len(act)) + ' accounts were graded. All of them together finished ' + _sg(crowd) + ' units at the posted odds. '
+        + ('Of the ' + '{:,}'.format(trap_pool) + ' accounts with at least 10 decided picks this week, ' + str(trap) + ' won 55% or more of them and still lost units, mostly because the prices they took paid less than even money. ' if trap_pool else '')
+        + ('The ten best weeks belonged to accounts with a median lifetime ROI of ' + '%+.1f%%' % med_life + ', a reminder that one week is a small sample. ' if med_life is not None else '')
+        + '</p></div></section>\n'
+        + ('<section class="panel"><div class="ph"><h2 style="font-size:18px">By league</h2><span class="muted small">Leagues with 50 or more graded picks this week</span></div>'
+           + _mover_table(sp_rows, ['League', 'Accounts', 'Picks graded', 'Combined units']) + '</section>\n' if sp_rows else '')
+        + '<section class="panel"><div class="ph"><h2 style="font-size:18px">Best and worst weeks</h2><span class="muted small">Accounts with 10 or more picks graded this week</span></div>'
+        '<div class="g2" style="gap:12px">' + _mover_table([fm(m) for m in best], ['Best week', 'Picks', 'Week units', 'Lifetime picks', 'Lifetime units'])
+        + _mover_table([fm(m) for m in worst], ['Worst week', 'Picks', 'Week units', 'Lifetime picks', 'Lifetime units']) + '</div></section>\n'
+        + ('<section class="panel"><div class="ph"><h2 style="font-size:18px">Biggest ranking moves</h2><span class="muted small">Established records, ranked by lifetime units</span></div>'
+           '<div class="g2" style="gap:12px">' + _mover_table(ups, ['Climbed', 'Rank', 'Picks this week', 'Week units']) + _mover_table(downs, ['Dropped', 'Rank', 'Picks this week', 'Week units']) + '</div></section>\n' if ups or downs else '')
+        + '<section class="panel edcard"><h2>Method</h2><div class="prose"><ul>'
+        '<li>Change between the public board at the end of ' + base_day + ' and at the end of ' + label + ' (Pacific time). Accounts new this week are not in the account tables.</li>'
+        '<li>A pick counts only if it was posted in public before the game started. It is graded on the final score, one unit risked at the posted odds.</li>'
+        '<li>One week is a short sample. Nothing here predicts the next pick or is betting advice. See <a href="do-hot-handicappers-stay-hot.html">do hot handicappers stay hot</a> and <a href="roi-and-sample-size.html">ROI and sample size</a>.</li></ul></div></section>\n'
+        + _research_paths(cappers) +
+        '</div>\n<p class="muted small">21+. Gambling problem? Call 1 800 GAMBLER.</p>')
+    with open(os.path.join(folder, 'weekly-%s.html' % key), 'w', encoding='utf-8', newline='\n') as f:
+        f.write(_document(1, 'research/', 'Handicapper Report: Week Ending %s | Handicapper Watchdog' % label,
+                          '%s picks graded from %s public handicapper accounts in the week ending %s: league results, best and worst weeks, ranking moves.' % ('{:,}'.format(graded), '{:,}'.format(len(act)), label),
+                          url, body))
+    os.makedirs(SNAP_CACHE, exist_ok=True)
+    with open(os.path.join(folder, 'weekly-%s.html' % key), 'rb') as src, open(os.path.join(SNAP_CACHE, 'research_weekly-%s.html' % key), 'wb') as dst:
+        dst.write(src.read())
+    man['weekly'] = sorted(set(man.get('weekly') or []) | {key})
+
 def _write_research(site, meta, cappers):
     """Original research rebuilt from the live board at every build, so every number is current and recountable."""
     st = _research_stats(cappers)
@@ -1244,11 +1628,15 @@ def _write_research(site, meta, cappers):
     with open(os.path.join(folder, 'roi-and-sample-size.html'), 'w', encoding='utf-8', newline='\n') as f:
         f.write(_document(1, 'research/', title, desc, url, body))
     persisted = _write_persist(site, meta, nice, org, cappers)
+    man = _write_today(site, meta, cappers)
+    weeks = sorted(man.get('weekly') or [], reverse=True)
     hub = (
         '<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><span aria-current="page">Research</span></nav>\n'
         '<div class="pagehead"><div><div class="eyebrow">Research</div><h1>Watchdog research</h1>\n'
         '<p class="muted">Original findings from independently graded public picks. Each page is rebuilt from the live board, with the method and limits stated.</p></div></div>\n'
-        '<section class="featgrid" style="margin-bottom:18px"><a class="featcard" href="roi-and-sample-size.html" style="text-decoration:none;color:inherit"><span>01</span><p><b>How much does a handicapper&rsquo;s ROI mean after 30 picks?</b><br>ROI spread by sample size, win rate versus profit, and sport by sport results.</p></a>\n'
+        '<section class="featgrid" style="margin-bottom:18px"><a class="featcard" href="today.html" style="text-decoration:none;color:inherit"><span>&#9679;</span><p><b>Today on the board</b><br>Ranking moves, newly graded picks, streaks with the odds of luck, and league notes. Updated through the day.</p></a>\n'
+        + ''.join('<a class="featcard" href="weekly-%s.html" style="text-decoration:none;color:inherit"><span>W</span><p><b>Weekly report: week ending %s</b><br>League results, best and worst weeks, and ranking moves.</p></a>\n' % (w, datetime.fromisoformat(w).strftime('%B %d, %Y').replace(' 0', ' ')) for w in weeks[:4]) +
+        '<a class="featcard" href="roi-and-sample-size.html" style="text-decoration:none;color:inherit"><span>01</span><p><b>How much does a handicapper&rsquo;s ROI mean after 30 picks?</b><br>ROI spread by sample size, win rate versus profit, and sport by sport results.</p></a>\n'
         + (('<a class="featcard" href="do-hot-handicappers-stay-hot.html" style="text-decoration:none;color:inherit"><span>02</span><p><b>Do hot handicappers stay hot?</b><br>First half of each record against the second half, for every account with 100 or more graded picks.</p></a>\n') if persisted else '') +
         '<a class="featcard" href="../the-board.html" style="text-decoration:none;color:inherit"><span>' + ('03' if persisted else '02') + '</span><p><b>How many handicappers are up?</b><br>The share of established accounts with a winning record.</p></a></section>')
     with open(os.path.join(folder, 'index.html'), 'w', encoding='utf-8', newline='\n') as f:

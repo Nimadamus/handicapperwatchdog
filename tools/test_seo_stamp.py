@@ -170,7 +170,10 @@ def check(label, extra):
         for draft in ('pro-terms.html', 'pro-privacy.html'):
             page = open(os.path.join(tmp, draft), encoding='utf-8').read()
             assert 'name="robots" content="noindex"' in page and draft not in sm_legal, draft
-            assert 'class="legal' in page and 'trustmyrecord' not in page.lower(), draft
+            # The only allowed mention: the billing disclosure (Stripe receipts carry the operator's name). Never a link.
+            disclosure = 'handicapper watchdog is operated by trustmyrecord, so receipts and the billing portal show the trustmyrecord business name.'
+            assert 'class="legal' in page and 'trustmyrecord' not in page.lower().replace(disclosure, ''), draft
+            assert 'trustmyrecord.com' not in page.lower(), draft
         price = open(os.path.join(tmp, 'pricing.html'), encoding='utf-8').read()
         assert 'data-plan="annual"' in price and 'data-plan="monthly"' in price and 'id="planNote"' in price and 'pvRows' not in price
         assert 'src="pro.js"' in price and 'src="pricing.js"' in price and 'noindex' not in price.lower()

@@ -40,6 +40,12 @@ sessions = [c for c in get('checkout/sessions', {'created[gte]': d30}) if (c.get
 inv_failed = [e for e in get('events', {'type': 'invoice.payment_failed', 'created[gte]': d30})
               if any(l.get('pricing', {}).get('price_details', {}).get('price') in PRICES or (l.get('price') or {}).get('id') in PRICES
                      for l in e['data']['object'].get('lines', {}).get('data', []))]
+def hwd_line(l):
+    return l.get('pricing', {}).get('price_details', {}).get('price') in PRICES or (l.get('price') or {}).get('id') in PRICES
+
+
+paid = [i for i in get('invoices', {'status': 'paid', 'created[gte]': d30}) if any(hwd_line(l) for l in i.get('lines', {}).get('data', []))
+        and not is_qa(i.get('customer_email'))]
 rep = {
     'as_of_pt': time.strftime('%Y-%m-%d %I:%M %p', time.localtime(now)),
     'active_paying': sum(1 for s in paying if s['status'] == 'active'),
@@ -52,6 +58,10 @@ rep = {
     'ended_30d': sum(1 for s in subs if s['status'] == 'canceled' and (s.get('ended_at') or 0) >= d30),
     'checkout_starts_30d': len(sessions), 'checkouts_completed_30d': sum(1 for c in sessions if c['status'] == 'complete'),
     'failed_payments_30d': len(inv_failed),
+    'renewals_30d': sum(1 for i in paid if i.get('billing_reason') == 'subscription_cycle'),
+    'first_payments_30d': sum(1 for i in paid if i.get('billing_reason') == 'subscription_create' and (i.get('amount_paid') or 0) > 0),
+    'revenue_collected_30d_usd': round(sum(i.get('amount_paid') or 0 for i in paid) / 100, 2),
+    'trials': 'none offered (Watchdog Pro has no trial)',
 }
 rep['checkout_conversion_30d'] = round(rep['checkouts_completed_30d'] / rep['checkout_starts_30d'], 3) if rep['checkout_starts_30d'] else None
 start = rep['active_paying'] + rep['ended_30d']
