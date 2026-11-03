@@ -7,14 +7,14 @@ follow the community's self promotion rule, no TrustMyRecord mention, no names o
 
 ### 1. TwoPlusTwo, Sports Betting forum
 Rule check before posting: 2+2 allows on topic analysis; commercial promotion is not allowed, so the post stands on its data.
-Title: We graded 69,000 public picks by price. Heavy favorites won 71% and still lost money.
+Title: We graded 52,000 public picks by price. Heavy favorites won 71% and still lost money.
 Body:
 We track picks that handicappers post in public (X, Covers, Reddit, TheRX and others), saved before the game starts and graded on the final score at the posted price. Grouping every graded pick by the odds taken:
-- 200 or shorter: won 70.9%, needed 73.8% to break even, ROI minus 4.0%
-- 150 to 199: won 59.4%, needed 62.3%, ROI minus 4.7%
-- Standard spread and total prices (105 to 120): won 53.4%, needed 52.7%, ROI plus 1.4%
-- Plus 121 to plus 149: won 45.4%, needed 43.1%, ROI plus 5.2%
-Across the accounts with 100+ priced picks, 15 win 52.4% or more and are still losing money. Of the accounts that beat the win rate their own prices required, 98% are up; of those that did not, none are.
+- 200 or shorter: won 71.0%, needed 73.9% to break even, ROI minus 3.9%
+- 150 to 199: won 59.0%, needed 62.4%, ROI minus 5.3%
+- Standard spread and total prices (105 to 120): won 53.5%, needed 52.7%, ROI plus 1.6%
+- Plus 121 to plus 149: won 46.5%, needed 43.1%, ROI plus 7.7%
+Across the accounts with 100+ priced picks, 5 win 52.4% or more and are still losing money. Of the accounts that beat the win rate their own prices required, 95% are up; of those that did not, none are.
 Method, limits and charts: https://handicapperwatchdog.com/research/odds-and-profit.html
 Happy to answer questions about the method.
 (Numbers are refreshed from the live page on the day of posting.)

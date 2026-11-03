@@ -1723,7 +1723,7 @@ def _write_odds_report(site, meta, nice, org, cappers):
         + ' accounts with at least 100 decided, priced picks:</p><ul>'
         '<li><b>' + str(len(trap)) + (' account wins' if len(trap) == 1 else ' accounts win') + ' 52.4% or more and ' + ('is' if len(trap) == 1 else 'are') + ' still down money.</b> 52.4% is the break even rate at the standard minus 110. '
         + str(len(trap_fav)) + ' of them took prices that needed more than that.</li>'
-        '<li><b>' + str(under50_up) + (' account wins less than half of its picks and is up money</b>' if under50_up == 1 else ' accounts win less than half their picks and are up money</b>') + ', because of the plus money prices taken.</li>'
+        + (('<li><b>' + str(under50_up) + (' account wins less than half of its picks and is up money</b>' if under50_up == 1 else ' accounts win less than half their picks and are up money</b>') + ', because of the plus money prices taken.</li>') if under50_up else '') +
         '<li>Of the ' + str(len(above)) + ' accounts that beat the win rate their own prices required, ' + pct(above_up, len(above)) + ' are up money. Of the '
         + str(len(below)) + ' that did not, ' + pct(below_up, len(below)) + ' are up.</li></ul>'
         '<p>So the question to ask about any record is not how often it wins. It is whether it wins more often than its prices require, over enough picks to matter. Every Watchdog profile shows the win rate needed at that account&rsquo;s own prices next to the win rate it achieved.</p></div></section>\n'
