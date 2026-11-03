@@ -297,6 +297,8 @@ select:disabled{opacity:.45}
 .mini th,.mini td{padding:8px 9px}
 .plans{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 0 18px}
 .plan{padding:22px;border-radius:16px;background:var(--s1);border:1px solid var(--line)}
+.plans>*{min-width:0}.plan .btn{white-space:normal}
+@media (max-width:900px){.plans{grid-template-columns:1fr}}
 .plan.best{border-color:rgba(228,195,122,.5);background:linear-gradient(180deg,rgba(228,195,122,.08),var(--s1) 46%)}
 .plan .amt b{font-family:var(--display);font-size:48px;font-weight:560;letter-spacing:-.04em}
 .plan .amt span,.plan p{color:var(--muted)}
