@@ -531,3 +531,16 @@ test('contact form mails the owner with the customer as reply-to, acknowledges, 
   const cross = await handle(new Request(SITE + '/api/contact', { method: 'POST', headers: { origin: 'https://evil.example', 'content-type': 'application/json' }, body: '{}' }), t.env, { fetch: fetchSpy });
   assert.equal(cross.status, 403);
 });
+
+test('follows: signed out refused, free member refused to add, Pro member adds and removes, list survives', async () => {
+  const t = setup();
+  assert.equal((await t.call('GET', '/api/follows')).status, 401);
+  await subscribe(t);
+  assert.equal((await t.call('POST', '/api/follows', { id: 'zz' })).status, 400);
+  assert.deepEqual((await t.call('POST', '/api/follows', { id: 'A1B2C3', on: true })).body.ids, ['a1b2c3']);
+  assert.deepEqual((await t.call('POST', '/api/follows', { id: 'd4e5f6' })).body.ids, ['a1b2c3', 'd4e5f6']);
+  assert.deepEqual((await t.call('POST', '/api/follows', { id: 'a1b2c3', on: false })).body.ids, ['d4e5f6']);
+  assert.deepEqual((await t.call('GET', '/api/follows')).body.ids, ['d4e5f6']);
+  const cross = await t.call('POST', '/api/follows', { id: 'a1b2c3' }, { origin: 'https://evil.example' });
+  assert.equal(cross.status, 403);
+});

@@ -588,3 +588,5 @@ a.fcard:hover{border-color:var(--accent-line);transform:translateY(-2px)}
 .cform .fld select{height:38px}
 .cform .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 .cfout{font-size:14px;min-height:20px;color:var(--dim)}.cfout.ok{color:#3fd49b}.cfout.err{color:#f08a8a}
+.fbar.f5{grid-template-columns:2fr repeat(4,1fr)}
+@media (max-width:900px){.fbar.f5{grid-template-columns:1fr 1fr}}

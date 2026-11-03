@@ -16,6 +16,7 @@ S = H.load(); KEY = S['STRIPE_SECRET_KEY']; PRICE = S['STRIPE_PRICE_MONTHLY']
 # Cloudflare KV is eventually consistent (edge reads cached up to 60 s), so webhook driven changes are read after 75 s.
 SITE = 'https://handicapperwatchdog.com'; API = 'https://api.handicapperwatchdog.com'
 EMAIL = sys.argv[1]
+if 'hwdqa' not in EMAIL and 'qa-hwd-probe' not in EMAIL: sys.exit('Use a QA address containing +hwdqa or qa-hwd-probe: the API sends no mail for those (owner rule, no test emails).')
 results = []
 
 

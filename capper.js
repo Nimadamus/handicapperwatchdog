@@ -281,6 +281,7 @@
   }
   // Watchdog Pro: this account's eligible pending picks, from the one encrypted pending feed
   function pendingFor(id) {
+    if (window.HWD && HWD.followButton) HWD.followButton(id);
     var box = document.getElementById('ppend'); if (!box) return;
     var when = function (iso) { return iso ? new Date(iso).toLocaleString('en-US', { timeZone: 'America/Los_Angeles', weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) + ' PT' : 'n/a'; };
     var draw = function (body) { box.innerHTML = '<div class="sech"><h2>Eligible pending picks</h2><span class="lock">Watchdog Pro</span></div><div class="panel" style="margin-bottom:18px">' + body + '</div>'; };

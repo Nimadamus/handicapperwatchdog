@@ -278,6 +278,8 @@ async function onWebhook(req, env, deps) {
 // ---------- email ----------
 async function sendMail(env, deps, to, subject, text, replyTo) {
   if (!validEmail(to) || !subject || !text) return false;
+  // QA accounts never send real mail (owner asked 2026-11-02: no test emails to his inbox).
+  if (env.DEV_MAIL_ECHO !== '1' && /\+hwdqa|qa-hwd-probe/i.test(to + ' ' + text + ' ' + (replyTo || ''))) return true;
   if (env.DEV_MAIL_ECHO === '1') {
     const log = (await kvGet(env, 'dev:mails')) || [];
     log.push({ to, subject, text, replyTo });
@@ -457,6 +459,23 @@ async function route(req, env, deps) {
       if (liveBlocked(env)) return err(503, 'Live billing has not been approved.');
       const p = await stripe(env, deps, 'POST', 'billing_portal/sessions', { customer: acct.customer, return_url: site + '/account.html', configuration: env.STRIPE_PORTAL_CONFIG || undefined });
       return json({ url: p.url });
+    }
+
+    // Followed handicappers (anonymous Watchdog IDs), stored on the account. Pro feature; list kept even if Pro lapses.
+    if (path === '/api/follows') {
+      if (!acct) return err(401, 'Sign in to follow handicappers.');
+      if (req.method === 'GET') return json({ ids: acct.follows || [] });
+      if (req.method === 'POST') {
+        if (!entitlement(acct).pro) return err(402, 'Following is part of Watchdog Pro.');
+        const b = await req.json().catch(() => ({}));
+        const id = String(b.id || '').toLowerCase();
+        if (!/^[0-9a-f]{6,16}$/.test(id)) return err(400, 'Unknown Watchdog ID.');
+        const set = new Set(acct.follows || []);
+        if (b.on === false) set.delete(id); else { if (!set.has(id) && set.size >= 100) return err(400, 'You can follow up to 100 handicappers.'); set.add(id); }
+        acct.follows = [...set];
+        await saveAccount(env, acct);
+        return json({ ids: acct.follows });
+      }
     }
 
     // Support: the site has no inbox, so the form mails the owner with the customer as reply-to and keeps a copy in KV.

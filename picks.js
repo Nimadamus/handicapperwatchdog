@@ -40,28 +40,31 @@
     var now = new Date(), all = (d.picks || []).filter(function (p) { return p.start && new Date(p.start) > now; });
     var leagues = {}; all.forEach(function (p) { leagues[p.league] = (leagues[p.league] || 0) + 1; });
     var opts = Object.keys(leagues).sort(function (a, b) { return leagues[b] - leagues[a]; }).map(function (l) { return '<option>' + esc(l) + '</option>'; }).join('');
-    root.insertAdjacentHTML('beforeend', '<section class="panel" style="margin-bottom:28px"><div class="fbar"><div class="fld"><label for="pq">Search</label><input id="pq" placeholder="Team, pick or Watchdog ID"></div>' +
+    root.insertAdjacentHTML('beforeend', '<section class="panel" style="margin-bottom:28px"><div class="fbar f5"><div class="fld"><label for="pq">Search</label><input id="pq" placeholder="Team, pick or Watchdog ID"></div>' +
       '<div class="fld"><label for="pl">League</label><select id="pl"><option value="">All</option>' + opts + '</select></div>' +
       '<div class="fld"><label for="pt">Record</label><select id="pt"><option value="">Any sample</option><option value="100">Established (100+ picks)</option><option value="20">20+ picks</option></select></div>' +
+      '<div class="fld"><label for="pf">Show</label><select id="pf"><option value="">All accounts</option><option value="f">Accounts I follow</option></select></div>' +
       '<div class="fld"><label for="pu">Units</label><select id="pu"><option value="">Any</option><option value="0">Up money</option><option value="10">+10 or more</option></select></div></div>' +
       '<div class="tw"><table class="mini pboard"><thead><tr><th class="l hs">Starts (PT)</th><th class="l">Pick</th><th>Odds</th><th class="l">Watchdog ID</th><th class="hr">Record</th><th>Units</th><th class="hm">ROI</th><th class="hm">Before start</th></tr></thead><tbody id="prows"></tbody></table></div>' +
       '<div class="tfoot"><span id="pcount"></span><span class="muted small">Feed baked ' + (d.baked_at ? new Date(d.baked_at).toLocaleString('en-US', { timeZone: 'America/Los_Angeles', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) + ' PT' : 'n/a') + '</span></div></section>');
     var $ = function (id) { return document.getElementById(id); };
+    var follows = [];
     function draw() {
-      var q = $('pq').value.trim().toLowerCase().replace(/^#/, ''), lg = $('pl').value, mn = +$('pt').value || 0, un = $('pu').value;
+      var q = $('pq').value.trim().toLowerCase().replace(/^#/, ''), fo = $('pf').value === 'f', lg = $('pl').value, mn = +$('pt').value || 0, un = $('pu').value;
       var rows = all.filter(function (p) {
-        return (!lg || p.league === lg) && p.cpicks >= mn && (un === '' || (p.cu != null && p.cu > +un)) &&
+        return (!fo || follows.indexOf(p.id) >= 0) && (!lg || p.league === lg) && p.cpicks >= mn && (un === '' || (p.cu != null && p.cu > +un)) &&
           (!q || (p.matchup + ' ' + p.selection + ' ' + p.id.slice(0, 6)).toLowerCase().indexOf(q) >= 0);
       });
       $('prows').innerHTML = rows.length ? rows.map(function (p) {
         var t = TIER[p.tier] || TIER.small;
         return '<tr><td class="l nowrap hs">' + when(p.start) + '</td><td class="l"><span class="ps small">' + when(p.start) + ' PT</span><b>' + esc(p.selection) + '</b> <span class="dim small">' + esc(p.bet_type) + '</span><span class="pg dim small">' + esc(p.league) + ' &middot; ' + esc(p.matchup) + '</span></td><td>' + odds(p.odds) +
-          '</td><td class="l"><a href="capper.html?id=' + esc(p.id) + '"><b class="idc">#' + esc(p.id.slice(0, 6).toUpperCase()) + '</b></a><span class="pt"><span class="badge ' + t[0] + '">' + t[1] + '</span></span></td><td class="hr">' + p.cw + '-' + p.cl + (p.cp ? '-' + p.cp : '') +
+          '</td><td class="l"><a href="capper.html?id=' + esc(p.id) + '"><b class="idc">#' + esc(p.id.slice(0, 6).toUpperCase()) + '</b></a>' + (follows.indexOf(p.id) >= 0 ? ' <span class="pos" title="You follow this account">★</span>' : '') + '<span class="pt"><span class="badge ' + t[0] + '">' + t[1] + '</span></span></td><td class="hr">' + p.cw + '-' + p.cl + (p.cp ? '-' + p.cp : '') +
           '</td><td>' + sgn(p.cu, 2) + '</td><td class="hm">' + sgn(p.croi, 1, '%') + '</td><td class="hm">' + lead(p.lead_min) + '</td></tr>';
-      }).join('') : '<tr><td colspan="8" class="empty">No eligible picks match these filters right now.</td></tr>';
+      }).join('') : '<tr><td colspan="8" class="empty">' + ($('pf').value === 'f' && !follows.length ? 'You are not following anyone yet. Open a profile and press Follow.' : 'No eligible picks match these filters right now.') + '</td></tr>';
       $('pcount').textContent = fmt(rows.length) + ' of ' + fmt(all.length) + ' eligible picks';
     }
-    ['pl', 'pt', 'pu'].forEach(function (id) { $(id).addEventListener('change', draw); });
+    ['pf', 'pl', 'pt', 'pu'].forEach(function (id) { $(id).addEventListener('change', draw); });
+    HWD.follows().then(function (ids) { follows = ids; draw(); });
     $('pq').addEventListener('input', draw);
     draw();
   }

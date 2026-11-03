@@ -45,6 +45,28 @@
     api: API,
     logout: function () { return post('/api/logout').then(function () { location.href = './'; }); },
     capper: function (id) { return open('data/x/' + id + '.bin', id); },
+    follows: function () {
+      if (!this._follows) this._follows = fetch(API + '/api/follows', { credentials: 'include', cache: 'no-store' }).then(function (r) { return r.ok ? r.json() : { ids: [] }; })
+        .then(function (d) { return d.ids || []; }).catch(function () { return []; });
+      return this._follows;
+    },
+    follow: function (id, on) {
+      var self = this;
+      return post('/api/follows', { id: id, on: on }).then(function (d) { if (d.ids) self._follows = Promise.resolve(d.ids); if (window.gtag) gtag('event', on ? 'follow' : 'unfollow'); return d; });
+    },
+    // Follow toggle for a profile header (Pro members only)
+    followButton: function (id) {
+      var host = document.querySelector('.pid > div:last-child'); if (!host || document.getElementById('fbtn')) return;
+      var u = document.querySelector('.phero .unl');
+      if (u) u.innerHTML = '<span class="lock">Watchdog Pro</span><b>You have Watchdog Pro</b><p>Follow this account to filter today&rsquo;s eligible picks to the accounts you track.</p><a class="btn pro" style="width:100%" href="picks.html">Today&rsquo;s Pro picks</a>';
+      var self = this, b = document.createElement('button');
+      b.id = 'fbtn'; b.type = 'button'; b.className = 'btn sm ghost'; b.style.marginTop = '10px';
+      var paint = function (on) { b.setAttribute('aria-pressed', on ? 'true' : 'false'); b.textContent = on ? '★ Following' : '☆ Follow'; };
+      host.appendChild(b);
+      self.follows().then(function (ids) { var on = ids.indexOf(id) >= 0; paint(on);
+        b.onclick = function () { b.disabled = true; on = !on; self.follow(id, on).then(function (d) { b.disabled = false; if (d.error) { on = !on; } paint(on); }); };
+      });
+    },
     pending: function () { if (!this._pending) this._pending = open('data/x/pending.bin', 'pending'); return this._pending; }
   };
 
