@@ -83,6 +83,8 @@ if days is not None:
     for day in days.values():
         for k, n in day.items():
             ev, src, detail = (k.split(' ', 2) + ['', ''])[:3]
+            if any(q in src for q in QA + ('journey-audit',)):
+                continue   # our own QA probes
             tot[ev] = tot.get(ev, 0) + n
             if ev == 'land':
                 by_src[src] = by_src.get(src, 0) + n; by_land[detail] = by_land.get(detail, 0) + n
