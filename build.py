@@ -2062,12 +2062,16 @@ def main():
             current = (ov.get('w'), ov.get('l'), ov.get('p'), ov.get('picks')) == (s['w'], s['l'], s['p'], s['picks']) and                 (s['units'] is None or abs(float(ov.get('net') or 0) - s['units']) < 0.06)
             if prof['reconciled'] and not current:
                 behind += 1
-            if prof['reconciled'] and current:
+            # A reconciled snapshot is published even when newer grades have landed since (active accounts are always a few
+            # picks ahead of the tracker's research page); the page says how many newer picks the breakdown does not cover yet.
+            if prof['reconciled']:
                 prof['summary'] = {k: v for k, v in s.items() if k not in ('by_sport', 'source', 'handle', 'slug')}
                 prof['summary']['tier'] = tier(s['picks'])
                 s.update({k: v for k, v in prof.pop('extra').items()})
                 prof['summary'].update({k: s[k] for k in ('r7', 'r30', 'r90', 'r365', 'first_pick', 'months', 'months_up', 'unpriced')})
                 prof['detail'] = True
+                if not current:
+                    prof['newer'] = max(0, int(s['picks'] or 0) - int(ov.get('picks') or 0))
                 if len(hist) >= 100:  # anonymous research input: first half vs second half ROI, no ids kept
                     h1, h2 = agg(hist[:len(hist) // 2]), agg(hist[len(hist) // 2:])
                     if h1['roi'] is not None and h2['roi'] is not None:

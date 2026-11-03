@@ -145,7 +145,7 @@
       '<h1 class="idc">#' + esc(c) + '</h1>' +
       '<div class="pmeta"><span class="badge ' + t[0] + '" title="' + t[2] + '">' + t[1] + '</span>' +
       (s.sports || []).slice(0, 4).map(function (x) { return '<a class="badge" href="' + sportHref(x) + '">' + esc(x) + '</a>'; }).join('') + '</div>' +
-      '<p class="muted small" style="margin:8px 0 0">' + statusTag(p.status) + ' Tracked since ' + day(s.first_pick) + ' · last graded game ' + day(p.last_game || s.last_pick) + ' · verified through ' + day(p.generated_at) + '</p></div></div></div>' +
+      '<p class="muted small" style="margin:8px 0 0">' + statusTag(p.status) + ' Tracked since ' + day(s.first_pick) + ' · last graded game ' + day(p.last_game || s.last_pick) + ' · verified through ' + day(p.generated_at) + (p.newer > 0 ? ' · ' + fmt(p.newer) + ' newer graded pick' + (p.newer === 1 ? '' : 's') + ' in the rankings join this breakdown at a coming update' : '') + '</p></div></div></div>' +
       '<div class="unl"><span class="lock">Watchdog Pro</span><b>See what this account bets next</b><p>Watchdog Pro adds this account&rsquo;s eligible pending picks before their games start and its complete graded pick log. The name is not published in any plan.</p><a class="btn pro" style="width:100%" href="' + PRO + '">View Watchdog Pro</a></div></section>';
 
     h += kpis([[rec(o), 'Record'], [sgn(o.net, 2), 'Units won'], [sgn(o.roi, 1, '%'), 'ROI'], [pct(o.win_pct), 'Win %'], [fmt(o.picks), 'Graded picks'],
