@@ -1086,6 +1086,68 @@ def _research_stats(cappers):
     return {'bands': bands, 'est': len(est), 'win_down': win_down, 'lose_up': lose_up, 'sports': sp_rows, 'rows': len(rows)}
 
 
+
+def _write_persist(site, meta, nice, org):
+    """Do hot records stay hot? Each established record split in half by pick order; aggregate only, no ids."""
+    pairs = [p for p in (meta.get('halves') or []) if isinstance(p, list) and len(p) == 2]
+    if len(pairs) < 50:
+        return False
+    import statistics as st
+    xs, ys = [p[0] for p in pairs], [p[1] for p in pairs]
+    mx, my = st.mean(xs), st.mean(ys)
+    den = (sum((x - mx) ** 2 for x in xs) * sum((y - my) ** 2 for y in ys)) ** .5
+    corr = sum((x - mx) * (y - my) for x, y in zip(xs, ys)) / den if den else 0
+    pct = lambda v: '%d%%' % round(v * 100)
+    sg = lambda v: '%+.1f%%' % v
+    bands = []
+    for lo, hi, label in ((None, -10, 'Cold: below minus 10%'), (-10, 0, 'Slightly down: minus 10% to 0%'),
+                          (0, 10, 'Slightly up: 0% to plus 10%'), (10, None, 'Hot: above plus 10%')):
+        g = [p for p in pairs if (lo is None or p[0] >= lo) and (hi is None or p[0] < hi)]
+        if g:
+            bands.append({'label': label, 'n': len(g), 'h1': st.mean(p[0] for p in g), 'up': sum(1 for p in g if p[1] > 0) / len(g),
+                          'med': st.median(p[1] for p in g)})
+    hot, cold = bands[-1], bands[0]
+    if abs(corr) < 0.15:
+        verdict = 'barely related'
+        lead = ('A hot first half told us almost nothing about the second half. Accounts that opened above plus 10% ROI (average '
+                + sg(hot['h1']) + ') had a median second half ROI of ' + sg(hot['med']) + ', and ' + pct(hot['up'])
+                + ' of them stayed up. Accounts that opened below minus 10% had a median second half of ' + sg(cold['med'])
+                + ', with ' + pct(cold['up']) + ' up.')
+    else:
+        verdict = 'somewhat related' if abs(corr) < 0.35 else 'clearly related'
+        lead = ('Accounts that opened above plus 10% ROI had a median second half ROI of ' + sg(hot['med']) + ', and ' + pct(hot['up'])
+                + ' stayed up, against ' + sg(cold['med']) + ' and ' + pct(cold['up']) + ' for accounts that opened below minus 10%.')
+    url = 'https://handicapperwatchdog.com/research/do-hot-handicappers-stay-hot.html'
+    built = str(meta.get('built_at') or '')[:10]
+    ldj = json.dumps({'@context': 'https://schema.org', '@type': 'Article', 'headline': 'Do hot handicappers stay hot?', 'url': url,
+                      'dateModified': built, 'author': org, 'publisher': org,
+                      'isBasedOn': 'https://handicapperwatchdog.com/data/index.json'}).replace('<', '\\u003c')
+    rows = ''.join('<tr><td class="l">%s</td><td>%d</td><td>%s</td><td>%s</td><td>%s</td></tr>' % (
+        b['label'], b['n'], sg(b['h1']), pct(b['up']), sg(b['med'])) for b in bands)
+    body = (
+        '<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><a href="./">Research</a><span aria-hidden="true">/</span><span aria-current="page">Do hot handicappers stay hot?</span></nav>\n'
+        '<div class="pagehead"><div><div class="eyebrow">Watchdog research</div><h1>Do hot handicappers stay hot?</h1>\n'
+        '<p class="muted">We split every established record in half by pick order and compared the two halves. Recounted at each site update. Last update ' + nice + '.</p></div></div>\n'
+        '<div class="edstack">\n'
+        '<section class="panel edcard answer"><h2>The finding</h2><div class="prose"><p>' + lead + ' Across all ' + '{:,}'.format(len(pairs))
+        + ' accounts the two halves are ' + verdict + ' (correlation ' + '%.2f' % corr + ', where 0 means no relationship and 1 means the second half matches the first).</p>'
+        '<p>A strong start is not evidence of an edge. Judge a handicapper on a long record at the posted odds, and expect a hot run to cool.</p></div></section>\n'
+        '<section class="panel"><div class="ph"><h2 style="font-size:18px">Second half results by first half ROI</h2></div><div class="tw"><table class="mini"><thead><tr><th class="l">First half ROI</th><th>Accounts</th><th>Average first half ROI</th><th>Up in second half</th><th>Median second half ROI</th></tr></thead><tbody>'
+        + rows + '</tbody></table></div></section>\n'
+        '<section class="panel edcard"><h2>Method and limits</h2><div class="prose"><ul>'
+        '<li>Accounts with 100 or more graded picks whose full record matches the public board. Each record is split into its older half and its newer half by pick count.</li>'
+        '<li>ROI is units won divided by units risked at the posted odds. A pick counts only if it was posted in public before the game started and graded against the final score.</li>'
+        '<li>These accounts post in public on the platforms Watchdog monitors. They are not a random sample of all bettors. Accounts that stop posting keep their record.</li>'
+        '<li>Past results are not predictions. Nothing here is betting advice.</li></ul></div></section>\n'
+        '<section class="ctaband"><div><h2>See the long record, not the hot week</h2><p class="muted">The free rankings sort by sample size, units and ROI.</p></div><p><a class="btn" href="../cappers.html">Open the rankings</a> <a class="btn pro" href="../pricing.html">Watchdog Pro</a></p></section>\n'
+        '</div>\n<p class="muted small">Updated ' + nice + '. 21+. Gambling problem? Call 1 800 GAMBLER.</p>\n'
+        '<script type="application/ld+json">' + ldj + '</script>')
+    with open(os.path.join(site, 'research', 'do-hot-handicappers-stay-hot.html'), 'w', encoding='utf-8', newline='\n') as f:
+        f.write(_document(1, 'research/', 'Do Hot Handicappers Stay Hot? | Handicapper Watchdog',
+                          'We split %s established handicapper records in half. A hot first half barely predicts the second. Updated from live data.' % '{:,}'.format(len(pairs)),
+                          url, body))
+    return True
+
 def _write_research(site, meta, cappers):
     """Original research rebuilt from the live board at every build, so every number is current and recountable."""
     st = _research_stats(cappers)
@@ -1139,12 +1201,14 @@ def _write_research(site, meta, cappers):
     desc = 'How ROI spreads by sample size across %s independently graded handicapper accounts. Short records swing wildly. Updated from live data.' % '{:,}'.format(st['rows'])
     with open(os.path.join(folder, 'roi-and-sample-size.html'), 'w', encoding='utf-8', newline='\n') as f:
         f.write(_document(1, 'research/', title, desc, url, body))
+    persisted = _write_persist(site, meta, nice, org)
     hub = (
         '<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><span aria-current="page">Research</span></nav>\n'
         '<div class="pagehead"><div><div class="eyebrow">Research</div><h1>Watchdog research</h1>\n'
         '<p class="muted">Original findings from independently graded public picks. Each page is rebuilt from the live board, with the method and limits stated.</p></div></div>\n'
         '<section class="featgrid" style="margin-bottom:18px"><a class="featcard" href="roi-and-sample-size.html" style="text-decoration:none;color:inherit"><span>01</span><p><b>How much does a handicapper&rsquo;s ROI mean after 30 picks?</b><br>ROI spread by sample size, win rate versus profit, and sport by sport results.</p></a>\n'
-        '<a class="featcard" href="../the-board.html" style="text-decoration:none;color:inherit"><span>02</span><p><b>How many handicappers are up?</b><br>The share of established accounts with a winning record.</p></a></section>')
+        + (('<a class="featcard" href="do-hot-handicappers-stay-hot.html" style="text-decoration:none;color:inherit"><span>02</span><p><b>Do hot handicappers stay hot?</b><br>First half of each record against the second half, for every account with 100 or more graded picks.</p></a>\n') if persisted else '') +
+        '<a class="featcard" href="../the-board.html" style="text-decoration:none;color:inherit"><span>' + ('03' if persisted else '02') + '</span><p><b>How many handicappers are up?</b><br>The share of established accounts with a winning record.</p></a></section>')
     with open(os.path.join(folder, 'index.html'), 'w', encoding='utf-8', newline='\n') as f:
         f.write(_document(1, 'research/', 'Handicapper Research | Handicapper Watchdog',
                           'Original research on public handicapper records: sample size, ROI, win rate and sport results, from independently graded picks.',
@@ -1963,7 +2027,7 @@ def main():
             return 0
         return 1 if now - e[1] > PROFILE_TTL * 4 else 2
     rows.sort(key=lambda x: (urgency(x), -int(x['graded'])))
-    index = []
+    index, halves = [], []
     changed_budget = int(os.environ.get('HWD_MAX_FETCH_CHANGED', str(max(MAX_FETCH, 1000))))
     for x in rows:
         s = summary(x)
@@ -2004,6 +2068,10 @@ def main():
                 s.update({k: v for k, v in prof.pop('extra').items()})
                 prof['summary'].update({k: s[k] for k in ('r7', 'r30', 'r90', 'r365', 'first_pick', 'months', 'months_up', 'unpriced')})
                 prof['detail'] = True
+                if len(hist) >= 100:  # anonymous research input: first half vs second half ROI, no ids kept
+                    h1, h2 = agg(hist[:len(hist) // 2]), agg(hist[len(hist) // 2:])
+                    if h1['roi'] is not None and h2['roi'] is not None:
+                        halves.append([h1['roi'], h2['roi']])
                 if PRO_KEY:
                     with open(os.path.join(SITE, 'data', 'x', s['id'] + '.bin'), 'w') as f:
                         f.write(seal('capper:' + s['id'], {'ledger': [ledger_row(h) for h in hist[::-1]]}))
@@ -2047,6 +2115,7 @@ def main():
             'by_platform': by_platform,
             'established': sum(1 for s in index if s['picks'] >= 100 and s['units'] is not None),
             'established_up': sum(1 for s in index if s['picks'] >= 100 and (s['units'] or 0) > 0),
+            'halves': sorted(halves),
             'live': live_stats(),
             'pro': {'ledgers': sealed, 'pending_feed': pend is not None,
                     'pending_count': sum(len(v) for v in pend['by_id'].values()) if pend else None,
