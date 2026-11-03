@@ -508,3 +508,26 @@ test('a failed payment email is retried and then sent once', async () => {
   assert.equal(fails.length, 1);
   assert.equal(fails[0].body.to[0].email, 'fan@example.com');
 });
+
+test('contact form mails the owner with the customer as reply-to, acknowledges, and rate limits', async () => {
+  const t = setup();
+  const mails = [];
+  const f = t.S.fetch;
+  const fetchSpy = async (url, init) => { if (String(url).includes('api.brevo.com')) { mails.push(JSON.parse(init.body)); return new Response('{}', { status: 201 }); } return f(url, init); };
+  Object.assign(t.env, { BREVO_API_KEY: 'k', MAIL_FROM: 'pro@handicapperwatchdog.com', PURCHASE_NOTIFY_EMAIL: 'owner@example.com' });
+  const post = (body, ip = '1.1.1.1') => handle(new Request(SITE + '/api/contact', { method: 'POST', headers: { origin: SITE, 'content-type': 'application/json', 'cf-connecting-ip': ip }, body: JSON.stringify(body) }), t.env, { fetch: fetchSpy });
+  assert.equal((await post({ email: 'bad', message: 'hello there friend' })).status, 400);
+  assert.equal((await post({ email: 'fan@example.com', message: 'short' })).status, 400);
+  const ok = await post({ email: 'fan@example.com', topic: 'Billing', message: 'How do I switch to annual?' });
+  assert.equal(ok.status, 200);
+  assert.equal(mails.length, 2);
+  assert.equal(mails[0].to[0].email, 'owner@example.com'); assert.equal(mails[0].replyTo.email, 'fan@example.com');
+  assert.match(mails[0].textContent, /switch to annual/);
+  assert.equal(mails[1].to[0].email, 'fan@example.com'); assert.equal(mails[1].replyTo, undefined);
+  assert.equal((await post({ email: 'x@example.com', message: 'bot text here', website: 'spam.example' })).status, 200);
+  assert.equal(mails.length, 2); // honeypot sends nothing
+  for (let i = 0; i < 4; i++) await post({ email: 'fan@example.com', message: 'another message here' }, '2.2.2.' + i);
+  assert.equal((await post({ email: 'fan@example.com', message: 'another message here' }, '3.3.3.3')).status, 429);
+  const cross = await handle(new Request(SITE + '/api/contact', { method: 'POST', headers: { origin: 'https://evil.example', 'content-type': 'application/json' }, body: '{}' }), t.env, { fetch: fetchSpy });
+  assert.equal(cross.status, 403);
+});

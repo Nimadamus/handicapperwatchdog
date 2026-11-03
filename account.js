@@ -50,6 +50,7 @@
       return HWD.complete(sid).then(function (d) {
         clean();
         if (d._status !== 200) return s.signed_in ? signedIn(s, d.error) : signedOut(d.error);
+        if (window.gtag && !d.duplicate) { var annual = /annual/.test(d.plan || ''); gtag('event', 'purchase', { transaction_id: sid, currency: 'USD', value: annual ? 499 : 49.99, items: [{ item_id: 'watchdog_pro_' + (annual ? 'annual' : 'monthly'), item_name: 'Watchdog Pro', quantity: 1 }] }); }
         return fetch(HWD.api + '/api/me', { credentials: 'include' }).then(function (r) { return r.json(); }).then(function (me) { signedIn(me, d.duplicate ? 'You already had Watchdog Pro. The extra checkout was canceled.' : 'Welcome to Watchdog Pro. Full pick ledgers are unlocked on every profile, and today’s eligible picks are on the picks page.'); });
       });
     }

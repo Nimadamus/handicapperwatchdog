@@ -581,3 +581,10 @@ a.fcard:hover{border-color:var(--accent-line);transform:translateY(-2px)}
 .pboard td{vertical-align:top}
 .pboard .ps{display:none;color:var(--accent2);font-weight:700;margin-bottom:3px}
 @media (max-width:760px){.pboard .hm,.pboard .hs,.pboard .hr{display:none}.pboard td,.pboard th{padding:10px 6px}.pboard .pt{display:none}.pboard .ps{display:block}}
+
+/* contact form */
+.cform{display:grid;gap:12px;max-width:640px}
+.cform .fld textarea{min-height:150px;background:var(--bg2);border:1px solid var(--line);border-radius:9px;padding:10px;font:inherit;font-size:14px;color:var(--ink);width:100%;resize:vertical}
+.cform .fld select{height:38px}
+.cform .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.cfout{font-size:14px;min-height:20px;color:var(--dim)}.cfout.ok{color:#3fd49b}.cfout.err{color:#f08a8a}

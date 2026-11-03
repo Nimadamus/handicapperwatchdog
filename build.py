@@ -36,7 +36,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CACHE = os.path.join(HERE, '.cache', 'profiles')
 SITE = os.path.join(HERE, '_site')
 STATIC = ('index.html', 'capper.html', 'cappers.html', 'account.html', 'compare.html', 'picks.html', 'style.css', 'app.js', 'capper.js',
-          'pro.js', 'compare.js', 'pricing.js', 'account.js', 'picks.js', 'favicon.svg', 'stadium.svg', 'og-card.png', 'CNAME', 'robots.txt', 'sitemap.xml')
+          'pro.js', 'compare.js', 'pricing.js', 'account.js', 'picks.js', 'contact.js', 'favicon.svg', 'stadium.svg', 'og-card.png', 'CNAME', 'robots.txt', 'sitemap.xml')
 PROFILE_TTL = int(os.environ.get('HWD_PROFILE_TTL', str(6 * 3600)))
 MAX_FETCH = int(os.environ.get('HWD_MAX_FETCH', '400'))
 PT = timezone(timedelta(hours=-7))  # display only; weekday buckets use Pacific time like the rest of TMR
@@ -1704,13 +1704,13 @@ def _write_legal(site):
          'What Handicapper Watchdog collects on this static site, including the analytics tag, and what it does not collect.',
          '''<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><span aria-current="page">Privacy</span></nav>
 <div class="pagehead"><div><div class="eyebrow">Privacy</div><h1>Privacy policy</h1>
-<p class="muted">This edition is a static site. There is no account form on these pages.</p></div></div>
+<p class="muted">The free site needs no account. Watchdog Pro accounts are covered by the <a href="pro-privacy.html">Watchdog Pro privacy notice</a>.</p></div></div>
 <section class="panel" style="margin-bottom:18px"><div class="pb prose">
-<p>Pages are files. The site does not ask for a name, an email, or a payment card on the pages in this edition. Watchdog Pro prices are published. A checkout button is not on this edition, so no card data is collected here.</p>
+<p>Reading the free pages needs no account, name or email. Watchdog Pro asks for an email address. Payments run on Stripe, so card numbers never reach this site. What a Pro account keeps is listed in the <a href="pro-privacy.html">Watchdog Pro privacy notice</a>.</p>
 <p>Each page loads Google Analytics with the measurement id G-SC607ZYK1F. Google can receive the usual analytics fields for that tag, including the page address, a rough location, and the device. That tag is how visits are counted. Google's own policy is at <a href="https://policies.google.com/privacy" rel="noopener noreferrer">policies.google.com/privacy</a>.</p>
 <p>The public domain registration uses a privacy service. It does not list a personal name. This policy does not publish a home address.</p>
-<p>Handicapper Watchdog does not sell personal information. There is no email list on this edition.</p>
-<p>Questions and corrections go through the <a href="contact.html">contact page</a>. A public inbox is not listed yet.</p>
+<p>Handicapper Watchdog does not sell personal information and does not run a marketing list. Pro members get account emails only: sign in links, receipts and billing notices.</p>
+<p>Questions, data requests and corrections go through the <a href="contact.html">contact page</a>, which reaches us by email.</p>
 <p class="muted small">Domain registration checked 28 Oct 2026. 21+.</p>
 </div></section>'''),
         ('terms.html',
@@ -1722,22 +1722,35 @@ def _write_legal(site):
 <section class="panel" style="margin-bottom:18px"><div class="pb prose">
 <p>You may read the public pages. You may not scrape them in a way that knocks the site over, and you may not present a Watchdog record as your own grade.</p>
 <p>Handicapper Watchdog is not a sportsbook, not a handicapper, and not a financial adviser. Nothing on the site is an instruction to bet. Gambling has a cost. 21+. If gambling is a problem, call 1 800 GAMBLER.</p>
-<p>Watchdog Pro prices are the prices on the pricing page. This edition does not show a checkout button, so this page does not invent a refund rule for a payment the site is not taking.</p>
+<p>Watchdog Pro is a subscription sold on the <a href="pricing.html">pricing page</a> and covered by the <a href="pro-terms.html">Watchdog Pro subscription terms</a>, including billing, cancellation and refunds.</p>
 <p>Reviews are opinions grounded in the sources named on each page. A correction path is on the <a href="contact.html">contact page</a>.</p>
 </div></section>'''),
         ('contact.html',
-         'Contact and Corrections | Handicapper Watchdog',
-         'How to send a correction to Handicapper Watchdog. A public inbox is not listed on this edition.',
+         'Contact and Support | Handicapper Watchdog',
+         'Contact Handicapper Watchdog for Watchdog Pro support, billing questions and corrections. We reply by email.',
          '''<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><span aria-current="page">Contact</span></nav>
-<div class="pagehead"><div><div class="eyebrow">Contact</div><h1>Corrections</h1>
-<p class="muted">A public email address is not on this edition. One will be added when it is a site address, not a personal mailbox.</p></div></div>
+<div class="pagehead"><div><div class="eyebrow">Contact</div><h1>Support and corrections</h1>
+<p class="muted">Questions about Watchdog Pro, billing, your account, or a record on the site. We reply by email, usually within one business day.</p></div></div>
+<section class="panel" style="margin:16px 0 18px"><div class="pb">
+<form id="cf" class="cform" novalidate>
+<div class="fld"><label for="cfe">Your email</label><input id="cfe" name="email" type="email" required autocomplete="email" placeholder="you@example.com"></div>
+<div class="fld"><label for="cft">Topic</label><select id="cft" name="topic"><option>Watchdog Pro question</option><option>Billing or cancellation</option><option>Sign in problem</option><option>Correction to a record</option><option>Something else</option></select></div>
+<div class="fld"><label for="cfm">Message</label><textarea id="cfm" name="message" required maxlength="4000" placeholder="For a correction, include the Watchdog page, the sentence, and the source that shows otherwise."></textarea></div>
+<div class="hp" aria-hidden="true"><label for="cfw">Leave this empty</label><input id="cfw" name="website" tabindex="-1" autocomplete="off"></div>
+<div><button class="btn" type="submit">Send message</button></div>
+<p id="cfout" class="cfout" role="status" aria-live="polite"></p>
+</form>
+</div></section>
 <section class="panel" style="margin-bottom:18px"><div class="pb prose">
+<h2>Billing, fast</h2>
+<p>Manage or cancel Watchdog Pro any time from <a href="account.html">your account</a>. That opens Stripe's billing portal, where you can switch plans, update your card and download invoices. Canceling keeps Pro until the end of the period you paid for.</p>
+<h2>Corrections</h2>
 <p>If a page states a number, a date, or a description of someone else's site, and that description is wrong, the correction needs three things: the Watchdog page, the sentence, and the source page that shows otherwise.</p>
 <p>An allegation from a forum stays labeled as that person's post. A correction can ask for a clearer label. It does not turn the post into a finding, and it does not turn a denial into a finding either, unless a document is attached.</p>
-<p>The CapperTek page separates documented sentences, observed sentences, and allegations. That split is the standard for the other reviews as well.</p>
-<p>There is no form on this page that sends a message. Publishing an inbox is waiting on an address. Until then, this page is the corrections policy, and the article should not pretend a reader can already reach a desk.</p>
 <p><a href="reviews/cappertek.html#corrections">CapperTek corrections</a> · <a href="about.html">About</a> · <a href="privacy.html">Privacy</a></p>
-</div></section>'''),
+</div></section>
+<script src="pro.js"></script>
+<script src="contact.js"></script></div></section>'''),
     )
     for name, title, desc, body in pages:
         html = _document(0, name, title, desc, 'https://handicapperwatchdog.com/' + name, body, robots)

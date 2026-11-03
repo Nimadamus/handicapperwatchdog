@@ -276,23 +276,23 @@ async function onWebhook(req, env, deps) {
 }
 
 // ---------- email ----------
-async function sendMail(env, deps, to, subject, text) {
+async function sendMail(env, deps, to, subject, text, replyTo) {
   if (!validEmail(to) || !subject || !text) return false;
   if (env.DEV_MAIL_ECHO === '1') {
     const log = (await kvGet(env, 'dev:mails')) || [];
-    log.push({ to, subject, text });
+    log.push({ to, subject, text, replyTo });
     await kvPut(env, 'dev:mails', log);
   }
   if (env.BREVO_API_KEY && env.MAIL_FROM) {
     const r = await deps.fetch('https://api.brevo.com/v3/smtp/email', {
       method: 'POST', headers: { 'api-key': env.BREVO_API_KEY, 'content-type': 'application/json', accept: 'application/json' },
-      body: JSON.stringify({ sender: { email: env.MAIL_FROM, name: 'Handicapper Watchdog' }, to: [{ email: to }], subject, textContent: text }) });
+      body: JSON.stringify({ sender: { email: env.MAIL_FROM, name: 'Handicapper Watchdog' }, to: [{ email: to }], subject, textContent: text, ...(replyTo && validEmail(replyTo) ? { replyTo: { email: replyTo } } : {}) }) });
     return r.ok;
   }
   if (env.RESEND_API_KEY && env.MAIL_FROM) {
     const r = await deps.fetch('https://api.resend.com/emails', {
       method: 'POST', headers: { authorization: 'Bearer ' + env.RESEND_API_KEY, 'content-type': 'application/json' },
-      body: JSON.stringify({ from: env.MAIL_FROM, to: [to], subject, text }) });
+      body: JSON.stringify({ from: env.MAIL_FROM, to: [to], subject, text, ...(replyTo && validEmail(replyTo) ? { reply_to: replyTo } : {}) }) });
     return r.ok;
   }
   return env.DEV_MAIL_ECHO === '1';
@@ -448,7 +448,7 @@ async function route(req, env, deps) {
       } else await saveAccount(env, a);
       if (a.email) await env.KV.delete('openchk:' + a.email);
       await env.KV.put('cs:' + sid, a.id, { expirationTtl: 90 * DAY });
-      return json({ ok: true, pro: entitlement(a).pro, email: a.email, duplicate }, 200, { 'set-cookie': await makeCookie(env, a.id) });
+      return json({ ok: true, pro: entitlement(a).pro, email: a.email, plan: a.plan || null, duplicate }, 200, { 'set-cookie': await makeCookie(env, a.id) });
     }
 
     if (path === '/api/portal' && req.method === 'POST') {
@@ -457,6 +457,43 @@ async function route(req, env, deps) {
       if (liveBlocked(env)) return err(503, 'Live billing has not been approved.');
       const p = await stripe(env, deps, 'POST', 'billing_portal/sessions', { customer: acct.customer, return_url: site + '/account.html', configuration: env.STRIPE_PORTAL_CONFIG || undefined });
       return json({ url: p.url });
+    }
+
+    // Support: the site has no inbox, so the form mails the owner with the customer as reply-to and keeps a copy in KV.
+    if (path === '/api/contact' && req.method === 'POST') {
+      const b = await req.json().catch(() => ({}));
+      if (b.website) return json({ ok: true }); // honeypot
+      const email = String(b.email || '').trim().toLowerCase(), topic = String(b.topic || 'Question').slice(0, 60);
+      const message = String(b.message || '').trim();
+      if (!validEmail(email)) return err(400, 'Enter a valid email so we can reply.');
+      if (message.length < 10) return err(400, 'Add a few more words so we can help.');
+      if (message.length > 4000) return err(400, 'Keep the message under 4,000 characters.');
+      const ip = req.headers.get('cf-connecting-ip') || 'x';
+      for (const k of ['rl:contact:ip:' + ip, 'rl:contact:em:' + email]) {
+        const n = +(await env.KV.get(k) || 0);
+        if (n >= 5) return err(429, 'Too many messages. Try again in an hour.');
+        await env.KV.put(k, String(n + 1), { expirationTtl: 3600 });
+      }
+      const ent = acct ? entitlement(acct) : null;
+      const id = Date.now().toString(36) + randomId(4);
+      await kvPut(env, 'contact:' + id, { email, topic, message, pro: !!(ent && ent.pro), at: now() }, 180 * DAY);
+      const owner = env.SUPPORT_EMAIL || env.PURCHASE_NOTIFY_EMAIL;
+      const sent = owner && await sendMail(env, deps, owner, 'Watchdog support: ' + topic,
+        `From: ${email}${acct ? (ent && ent.pro ? ' (Watchdog Pro member)' : ' (signed in, not Pro)') : ''}
+Topic: ${topic}
+Ref: ${id}
+
+${message}
+
+Reply to this email to answer the customer.`, email);
+      await sendMail(env, deps, email, 'We received your message',
+        `Thanks for writing to Handicapper Watchdog. Your message (ref ${id}) reached us and we reply by email, usually within one business day.
+
+Billing: manage or cancel Watchdog Pro any time at ${site}/account.html
+
+Your message:
+${message}`);
+      return sent ? json({ ok: true, ref: id }) : err(503, 'The message could not be sent right now. Please try again shortly.');
     }
 
     if (path === '/api/login' && req.method === 'POST') {
