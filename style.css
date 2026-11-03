@@ -590,3 +590,5 @@ a.fcard:hover{border-color:var(--accent-line);transform:translateY(-2px)}
 .cfout{font-size:14px;min-height:20px;color:var(--dim)}.cfout.ok{color:#3fd49b}.cfout.err{color:#f08a8a}
 .fbar.f5{grid-template-columns:2fr repeat(4,1fr)}
 @media (max-width:900px){.fbar.f5{grid-template-columns:1fr 1fr}}
+.alertbox{margin-top:16px;padding:14px;border:1px solid var(--line);border-radius:12px;background:var(--bg2);display:grid;gap:6px}
+.tog{display:flex;gap:10px;align-items:flex-start;cursor:pointer}.tog input{width:18px;height:18px;margin-top:2px;accent-color:#e7c675;flex:none}

@@ -33,9 +33,15 @@
       (msg ? '<div class="notice ok">' + esc(msg) + '</div>' : '') +
       '<ul class="facts"><li><span>Email</span><b>' + esc(s.email) + '</b></li><li><span>Plan</span><b>' + (s.plan === 'annual' ? '$499 a year' : s.plan === 'monthly' ? '$49.99 a month' : 'None') + '</b></li>' +
       '<li><span>Status</span><b>' + status + '</b></li></ul>' +
+      (s.pro ? '<div class="alertbox"><label class="tog"><input type="checkbox" id="alrt"' + (s.alerts ? ' checked' : '') + '> <span><b>Pick alerts by email</b><br><span class="muted small">When an account you follow posts an eligible pick before the start. At most ' + 8 + ' emails a day. You follow ' + (s.follows || 0) + (s.follows === 1 ? ' account' : ' accounts') + '; use Follow on any profile.</span></span></label><span id="alrtmsg" class="small muted"></span></div>' : '') +
       (s.payment_failed ? '<div class="notice">Your last payment did not go through. Update your card in billing to keep Pro.</div>' : '') +
       '<div class="row" style="margin-top:16px">' + (s.pro || s.status && s.status !== 'none' ? '<button class="btn" id="bill" type="button">Manage billing</button>' : '<a class="btn pro" href="pricing.html">Get Watchdog Pro</a>') +
       '<a class="btn ghost" href="cappers.html">Open rankings</a><button class="btn ghost" id="out" type="button">Sign out</button></div></div>';
+    var al = document.getElementById('alrt');
+    if (al) al.onchange = function () { al.disabled = true; var m = document.getElementById('alrtmsg');
+      fetch(HWD.api + '/api/alerts', { method: 'POST', credentials: 'include', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ on: al.checked }) })
+        .then(function (r) { return r.json(); }).then(function (d) { al.disabled = false; if (d.error) { al.checked = !al.checked; m.textContent = d.error; } else { m.textContent = d.alerts ? 'Alerts on.' : 'Alerts off.'; if (window.gtag) gtag('event', d.alerts ? 'alerts_on' : 'alerts_off'); } })
+        .catch(function () { al.disabled = false; al.checked = !al.checked; m.textContent = 'Could not save. Try again.'; }); };
     var bill = document.getElementById('bill');
     if (bill) bill.onclick = function () { bill.disabled = true; HWD.portal().then(function (d) { if (!d.url) { bill.disabled = false; alertBox(d.error); } }); };
     document.getElementById('out').onclick = function () { HWD.logout(); };

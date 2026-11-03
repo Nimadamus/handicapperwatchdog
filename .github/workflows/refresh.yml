@@ -56,3 +56,16 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+  alerts:
+    # Opt-in pick alerts for Pro members, sent after the new pending feed is live. Never blocks the site.
+    needs: deploy
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - name: Send pick alerts
+        env:
+          T: ${{ secrets.HWD_ALERTS_TOKEN }}
+        run: |
+          [ -z "$T" ] && { echo "no alerts token"; exit 0; }
+          sleep 60
+          curl -sS -m 120 -X POST -H "x-alerts-token: $T" https://api.handicapperwatchdog.com/api/alerts/run || true

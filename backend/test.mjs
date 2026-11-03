@@ -544,3 +544,43 @@ test('follows: signed out refused, free member refused to add, Pro member adds a
   const cross = await t.call('POST', '/api/follows', { id: 'a1b2c3' }, { origin: 'https://evil.example' });
   assert.equal(cross.status, 403);
 });
+
+test('pregame alerts: opt-in, followed accounts only, one mail per new pick, no repeats, signed unsubscribe', async () => {
+  const t = setup({ ALERTS_TOKEN: 'tok123', SESSION_SECRET: 'sess-secret-for-tests', HWD_PRO_KEY: t0key() });
+  function t0key() { return 'pro-key-for-alert-tests'; }
+  const mails = [];
+  const start = new Date(Date.now() + 3 * 3600e3).toISOString(), past = new Date(Date.now() - 3600e3).toISOString();
+  const feed = { picks: [
+    { id: 'a1b2c3d4e5', league: 'NFL', matchup: 'Jets at Bills', selection: 'Bills -3.5', odds: -110, start, cw: 120, cl: 100, cp: 3, cu: 12.5 },
+    { id: 'a1b2c3d4e5', league: 'NFL', matchup: 'Old game', selection: 'Over 44', odds: -110, start: past, cw: 120, cl: 100, cp: 3, cu: 12.5 },
+    { id: 'ffffffffff', league: 'NBA', matchup: 'Not followed', selection: 'Lakers +2', odds: -105, start, cw: 1, cl: 1, cp: 0, cu: 0 }] };
+  const key = await crypto.subtle.importKey('raw', await crypto.subtle.sign('HMAC', await crypto.subtle.importKey('raw', enc.encode(t.env.HWD_PRO_KEY), { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']), enc.encode('pending')), 'AES-GCM', false, ['encrypt']);
+  const iv = crypto.getRandomValues(new Uint8Array(12));
+  const ct = new Uint8Array(await crypto.subtle.encrypt({ name: 'AES-GCM', iv }, key, enc.encode(JSON.stringify(feed))));
+  const blob = Buffer.from(new Uint8Array([...iv, ...ct])).toString('base64');
+  const f = t.S.fetch;
+  t.S.fetch = async (url, init) => {
+    if (String(url).includes('/data/x/pending.bin')) return new Response(blob);
+    if (String(url).includes('api.brevo.com')) { mails.push(JSON.parse(init.body)); return new Response('{}', { status: 201 }); }
+    return f(url, init);
+  };
+  Object.assign(t.env, { BREVO_API_KEY: 'k', MAIL_FROM: 'pro@handicapperwatchdog.com', DEV_MAIL_ECHO: '' });
+  const run = async (tok = 'tok123') => (await handle(new Request(SITE + '/api/alerts/run', { method: 'POST', headers: { 'x-alerts-token': tok } }), t.env, { fetch: t.S.fetch }));
+  assert.equal((await run('wrong')).status, 401);
+  await subscribe(t);
+  mails.length = 0;
+  await t.call('POST', '/api/follows', { id: 'a1b2c3d4e5' });
+  assert.equal((await (await run()).json()).emails, 0); // not opted in
+  assert.equal((await t.call('POST', '/api/alerts', { on: true })).body.alerts, true);
+  assert.equal((await t.call('GET', '/api/me')).body.alerts, true);
+  const r1 = await (await run()).json();
+  assert.equal(r1.emails, 1); assert.equal(r1.picks, 1);
+  assert.equal(mails.length, 1); assert.match(mails[0].textContent, /Bills -3\.5/); assert.doesNotMatch(mails[0].textContent, /Lakers|Over 44/);
+  assert.equal((await (await run()).json()).emails, 0); // no repeat
+  const link = mails[0].textContent.match(/alerts\/off\?a=([^&\s]+)&s=(\S+)/);
+  const bad = await handle(new Request(SITE + '/api/alerts/off?a=' + link[1] + '&s=0000'), t.env, { fetch: t.S.fetch });
+  assert.equal(bad.status, 400);
+  const off = await handle(new Request(SITE + '/api/alerts/off?a=' + link[1] + '&s=' + link[2]), t.env, { fetch: t.S.fetch });
+  assert.equal(off.status, 200);
+  assert.equal((await t.call('GET', '/api/me')).body.alerts, false);
+});

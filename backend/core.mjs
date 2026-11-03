@@ -344,6 +344,70 @@ async function adoptSubscription(env, deps, a, sub) {
   return { account: base, duplicate: false };
 }
 
+
+// ---------- pregame alerts ----------
+// Opt-in email when a followed anonymous account posts an eligible pending pick. The scheduler (GitHub Actions, after
+// each site build) calls POST /api/alerts/run with ALERTS_TOKEN; the API decrypts the same pending.bin the site serves.
+const ALERT_MAX_PER_DAY = 8;
+async function unsubSig(env, id) { return hex(await hmac(env.SESSION_SECRET, 'unsub:' + id)).slice(0, 32); }
+async function setAlerts(env, a, on) {
+  a.alerts = !!on;
+  const set = new Set((await kvGet(env, 'alertset')) || []);
+  if (on) set.add(a.id); else set.delete(a.id);
+  await kvPut(env, 'alertset', [...set]);
+  await saveAccount(env, a);
+}
+async function loadPending(env, deps) {
+  const site = env.SITE_URL || 'https://handicapperwatchdog.com';
+  const r = await deps.fetch(site + '/data/x/pending.bin?alerts=' + Date.now(), { cache: 'no-store' });
+  if (!r.ok) throw new Error('pending.bin ' + r.status);
+  const raw = Uint8Array.from(atob((await r.text()).trim()), (c) => c.charCodeAt(0));
+  const key = await crypto.subtle.importKey('raw', await hmac(env.HWD_PRO_KEY, 'pending'), 'AES-GCM', false, ['decrypt']);
+  const plain = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: raw.slice(0, 12) }, key, raw.slice(12));
+  return JSON.parse(new TextDecoder().decode(plain));
+}
+async function runAlerts(env, deps, nowMs = Date.now()) {
+  const d = await loadPending(env, deps);
+  const picks = (d.picks || []).filter((p) => p.id && p.start && Date.parse(p.start) > nowMs);
+  const site = env.SITE_URL || 'https://handicapperwatchdog.com';
+  const out = { accounts: 0, emails: 0, picks: 0 };
+  for (const id of (await kvGet(env, 'alertset')) || []) {
+    const a = await kvGet(env, 'acct:' + id);
+    if (!a || !a.alerts || !entitlement(a).pro || !(a.follows || []).length) continue;
+    out.accounts++;
+    const fresh = [];
+    for (const p of picks.filter((x) => a.follows.includes(x.id))) {
+      const k = 'al:' + a.id + ':' + hex(await crypto.subtle.digest('SHA-256', enc.encode([p.id, p.matchup, p.selection, p.start].join('|')))).slice(0, 24);
+      if (await env.KV.get(k)) continue;
+      fresh.push([k, p]);
+    }
+    if (!fresh.length) continue;
+    const day = new Date(nowMs).toISOString().slice(0, 10), rk = 'alday:' + a.id + ':' + day, n = +(await env.KV.get(rk) || 0);
+    if (n >= ALERT_MAX_PER_DAY) continue;
+    const when = (iso) => new Date(iso).toLocaleString('en-US', { timeZone: 'America/Los_Angeles', weekday: 'short', hour: 'numeric', minute: '2-digit' }) + ' PT';
+    const lines = fresh.slice(0, 20).map(([, p]) => `#${p.id.slice(0, 6).toUpperCase()} (${p.cw}-${p.cl}${p.cp ? '-' + p.cp : ''}, ${p.cu > 0 ? '+' : ''}${p.cu} units)
+  ${p.league}: ${p.matchup}
+  ${p.selection}${p.odds != null ? ' (' + (p.odds > 0 ? '+' : '') + p.odds + ')' : ''}, starts ${when(p.start)}`);
+    const unsub = `${env.API_URL || 'https://api.handicapperwatchdog.com'}/api/alerts/off?a=${a.id}&s=${await unsubSig(env, a.id)}`;
+    const ok = await sendMail(env, deps, a.email, fresh.length === 1 ? 'New pick from an account you follow' : fresh.length + ' new picks from accounts you follow',
+      `Accounts you follow on Handicapper Watchdog posted ${fresh.length === 1 ? 'an eligible pick' : 'eligible picks'} before the start:
+
+${lines.join('\n\n')}${fresh.length > 20 ? '\n\n...and ' + (fresh.length - 20) + ' more' : ''}
+
+All of today's picks: ${site}/picks.html
+
+Records are past results, not predictions or a guarantee. 21+. Gambling problem? Call 1 800 GAMBLER.
+
+Stop these alerts: ${unsub}
+Or turn them off from ${site}/account.html`);
+    if (!ok) continue;
+    for (const [k] of fresh) await env.KV.put(k, '1', { expirationTtl: 4 * DAY });
+    await env.KV.put(rk, String(n + 1), { expirationTtl: 2 * DAY });
+    out.emails++; out.picks += fresh.length;
+  }
+  return out;
+}
+
 // ---------- router ----------
 // The site is static on GitHub Pages and the API answers on api.handicapperwatchdog.com, so the site's own origin gets
 // credentialed CORS. Any other origin gets no CORS headers (and its POSTs are refused below).
@@ -371,6 +435,17 @@ async function route(req, env, deps) {
   const site = env.SITE_URL || url.origin;
   try {
     if (path === '/api/webhook' && req.method === 'POST') return await onWebhook(req, env, deps);
+    if (path === '/api/alerts/run' && req.method === 'POST') {
+      const t = req.headers.get('x-alerts-token') || '';
+      if (!env.ALERTS_TOKEN || !safeEqual(t, env.ALERTS_TOKEN)) return err(401, 'no');
+      return json(await runAlerts(env, deps));
+    }
+    if (path === '/api/alerts/off' && req.method === 'GET') {
+      const id = url.searchParams.get('a') || '', sig = url.searchParams.get('s') || '';
+      const a = /^[A-Za-z0-9_-]{8,40}$/.test(id) && safeEqual(sig, await unsubSig(env, id)) ? await kvGet(env, 'acct:' + id) : null;
+      if (a) await setAlerts(env, a, false);
+      return new Response(`<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Alerts</title><body style="font:16px system-ui;background:#0b1220;color:#e6edf6;padding:40px"><h1 style="font-size:22px">${a ? 'Pick alerts are off' : 'That link is not valid'}</h1><p>${a ? 'You will not get more pick alert emails. Turn them back on any time from your account page.' : 'Turn alerts off from your account page instead.'}</p><p><a style="color:#e7c675" href="${env.SITE_URL || 'https://handicapperwatchdog.com'}/account.html">Your account</a></p></body>`, { status: a ? 200 : 400, headers: { 'content-type': 'text/html; charset=utf-8' } });
+    }
 
     // every other POST must come from our own pages
     if (req.method === 'POST') {
@@ -389,7 +464,7 @@ async function route(req, env, deps) {
     if (path === '/api/me' && req.method === 'GET') {
       const e = entitlement(acct);
       return json({ signed_in: !!acct, email: acct && acct.email, pro: e.pro, reason: e.reason, plan: acct && acct.plan || null,
-        status: acct && acct.status || null, period_end: acct && acct.period_end || null, cancel_at_period_end: !!(acct && acct.cancel_at_period_end),
+        status: acct && acct.status || null, period_end: acct && acct.period_end || null, cancel_at_period_end: !!(acct && acct.cancel_at_period_end), alerts: !!(acct && acct.alerts), follows: acct && acct.follows ? acct.follows.length : 0,
         payment_failed: !!(acct && acct.payment_failed), billing: billingReady(env) && !liveBlocked(env) });
     }
 
@@ -459,6 +534,14 @@ async function route(req, env, deps) {
       if (liveBlocked(env)) return err(503, 'Live billing has not been approved.');
       const p = await stripe(env, deps, 'POST', 'billing_portal/sessions', { customer: acct.customer, return_url: site + '/account.html', configuration: env.STRIPE_PORTAL_CONFIG || undefined });
       return json({ url: p.url });
+    }
+
+    if (path === '/api/alerts' && req.method === 'POST') {
+      if (!acct) return err(401, 'Sign in first.');
+      const b = await req.json().catch(() => ({}));
+      if (b.on && !entitlement(acct).pro) return err(402, 'Pick alerts are part of Watchdog Pro.');
+      await setAlerts(env, acct, !!b.on);
+      return json({ alerts: acct.alerts });
     }
 
     // Followed handicappers (anonymous Watchdog IDs), stored on the account. Pro feature; list kept even if Pro lapses.
