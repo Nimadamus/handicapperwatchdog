@@ -989,31 +989,31 @@ def _write_guides(site, meta, cappers):
 <p><a class="btn" href="cappers.html">See the established rankings</a></p>
 </div></section>
 <section class="proband"><div><span class="lock">Watchdog Pro</span><h2>Act on the records that are up</h2>
-<p class="muted" style="margin:0">$49.99 a month, or $499 a year, at launch. Checkout is not open yet.</p></div>
+<p class="muted" style="margin:0">$49.99 a month, or $499 a year. Cancel any time. <a href="pricing.html">See Watchdog Pro</a></p></div>
 <div class="feats"><div class="feat"><b>Eligible pending picks</b><span>Picks from tracked accounts, captured before their games start, with the Watchdog ID and record beside each one.</span></div>
 <div class="feat"><b>Why accounts stay anonymous</b><span>Names are not published in any plan. A name list could be copied in one month and used for free forever.</span></div></div>
 </section>''' % (pending, f'{tracked:,}', f'{graded:,}', est_pct, f'{up:,}', f'{est:,}',
                  qual_pct, f'{prof:,}', f'{qual:,}', med_txt, pending))
     price = _document(0, 'pricing.html',
                       'Watchdog Pro Pricing | Handicapper Watchdog',
-                      'Watchdog Pro will be $49.99 a month or $499 a year: eligible pending picks before the start, full graded pick logs and research tools. Accounts stay anonymous in every plan.',
+                      'Watchdog Pro is $49.99 a month or $499 a year: eligible pending picks before the start, full graded pick logs and research tools. Accounts stay anonymous in every plan.',
                       'https://handicapperwatchdog.com/pricing.html',
                       '''<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><span aria-current="page">Pricing</span></nav>
 <div class="pagehead"><div><div class="eyebrow">Watchdog Pro</div><h1>Research the record, then see what comes next</h1>
 <p class="muted">The free site is the full public record. Watchdog Pro adds eligible pending picks from tracked accounts before their games start, and the complete graded pick log behind every profile. Both plans include the same features.</p>
-<p class="pcnote" style="margin:10px 0 0"><span class="statusdot"></span><span id="planNote">Checkout is not open yet. Nothing can be bought on the site today and no card is collected. These are the launch prices.</span></p></div></div>
+<p class="pcnote" style="margin:10px 0 0"><span class="statusdot"></span><span id="planNote">Secure checkout by Stripe. Cancel any time from your account page.</span></p></div></div>
 <p class="disclosure" id="notice" hidden></p>
 <div class="fld" id="buyerBox" style="display:none;max-width:360px;margin:0 0 14px"><label for="buyerEmail">Email for your Watchdog Pro account</label><input id="buyerEmail" type="email" autocomplete="email" placeholder="you@example.com"></div>
 <section class="plans">
 <div class="plan best"><div class="eyebrow">Annual</div><div class="amt"><b>$499</b><span>a year</span></div>
 <p>Twelve months at $49.99 is $599.88. Annual is $499, so the year costs $100.88 less. That is $41.58 a month, billed once.</p>
-<button class="btn pro full" type="button" data-plan="annual" disabled>Opening soon</button></div>
+<button class="btn pro full" type="button" data-plan="annual" disabled>Subscribe yearly, $499</button></div>
 <div class="plan"><div class="eyebrow">Monthly</div><div class="amt"><b>$49.99</b><span>a month</span></div>
 <p>Same Pro access, billed every month. Cancel and access runs through the month already paid.</p>
-<button class="btn ghost full" type="button" data-plan="monthly" disabled>Opening soon</button></div>
+<button class="btn ghost full" type="button" data-plan="monthly" disabled>Subscribe monthly, $49.99</button></div>
 </section>
 <section class="panel" style="margin:0 0 18px"><div class="ph"><h3>Free and Pro</h3></div>
-<div class="tw"><table class="mini"><thead><tr><th class="l">Feature</th><th>Free</th><th>Pro</th></tr></thead><tbody>
+<div class="tw"><table class="mini plancmp"><thead><tr><th class="l">Feature</th><th>Free</th><th>Pro</th></tr></thead><tbody>
 <tr><td class="l">Rank, record, units, ROI, win rate, streak</td><td>Yes</td><td>Yes</td></tr>
 <tr><td class="l">Every ranking list, sport records, profile breakdowns and charts</td><td>Yes</td><td>Yes</td></tr>
 <tr><td class="l">Ledger of the 50 most recent graded picks on each profile</td><td>Yes</td><td>Yes</td></tr>

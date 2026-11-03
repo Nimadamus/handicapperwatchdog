@@ -616,3 +616,5 @@ a.fcard:hover{border-color:var(--accent-line);transform:translateY(-2px)}
 .chartkey{display:flex;gap:16px;flex-wrap:wrap;margin:0 0 8px;font-size:13px;color:var(--ink2)}.chartkey i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px}
 
 .chartwrap{overflow-x:auto}@media (max-width:600px){.chartwrap .chart{min-width:560px}}
+
+.plancmp td.l{white-space:normal;font-family:inherit;line-height:1.4}.plancmp td:not(.l),.plancmp th:not(.l){width:56px;text-align:center}
