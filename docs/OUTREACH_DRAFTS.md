@@ -36,7 +36,8 @@ when I checked them against the market, a lot of them turned out to be player pr
 been read as team moneylines (Darnell Washington +300 is not the Huskies). Those are held out until each is
 checked against its post.
 
-Happy to share the method or run a cut someone is curious about.
+Happy to share the method or run a cut someone is curious about. Disclosure: I run the project that collects and
+grades this data.
 
 (If someone asks where it lives: https://handicapperwatchdog.com/research/odds-and-profit.html)
 
