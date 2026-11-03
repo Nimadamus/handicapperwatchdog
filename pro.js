@@ -35,8 +35,8 @@
   window.HWD = {
     ready: ready,
     state: function () { return state; },
-    checkout: function (plan, email) {
-      return post('/api/checkout', { plan: plan, email: email || undefined }).then(function (d) { if (d.url) location.href = d.url; return d; });
+    checkout: function (plan, email, attr) {
+      return post('/api/checkout', { plan: plan, email: email || undefined, attr: attr }).then(function (d) { if (d.url) location.href = d.url; return d; });
     },
     portal: function () { return post('/api/portal').then(function (d) { if (d.url) location.href = d.url; return d; }); },
     login: function (email) { return post('/api/login', { email: email }); },

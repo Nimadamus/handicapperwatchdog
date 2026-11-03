@@ -2,6 +2,8 @@
   'use strict';
   var note = document.getElementById('notice'), btns = document.querySelectorAll('[data-plan]');
   function show(msg) { note.hidden = false; note.textContent = msg; }
+  var T = function (e) { if (window.HWDT) HWDT.ev(e); else document.addEventListener('DOMContentLoaded', function () { if (window.HWDT) HWDT.ev(e); }); };
+  T(/canceled=1/.test(location.search) ? 'cancel' : 'pricing');
   if (/canceled=1/.test(location.search)) { show('Checkout was canceled. You have not been charged.'); if (window.gtag) gtag('event', 'checkout_canceled', { items: [{ item_id: 'watchdog_pro' }] }); }
   if (window.gtag) gtag('event', 'view_item', { currency: 'USD', value: 49.99, items: [{ item_id: 'watchdog_pro', item_name: 'Watchdog Pro' }] });
   HWD.ready.then(function (s) {
@@ -28,7 +30,8 @@
         b.textContent = 'Opening secure checkout';
         var plan = b.getAttribute('data-plan'), val = plan === 'annual' ? 499 : 49.99;
         if (window.gtag) gtag('event', 'begin_checkout', { currency: 'USD', value: val, items: [{ item_id: 'watchdog_pro_' + plan, item_name: 'Watchdog Pro ' + plan, price: val, quantity: 1 }] });
-        HWD.checkout(b.getAttribute('data-plan'), addr).then(function (d) {
+        T('checkout');
+        HWD.checkout(b.getAttribute('data-plan'), addr, window.HWDT ? HWDT.attr() : undefined).then(function (d) {
           if (!d.url) { show(d.error || 'Checkout is not available right now.'); btns.forEach(function (x) { x.disabled = false; }); b.textContent = 'Try again'; }
         });
       });

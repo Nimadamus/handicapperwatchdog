@@ -39,7 +39,7 @@ function fakeStripe(env) {
     let m;
     if (u.pathname === '/v1/checkout/sessions' && method === 'POST') {
       const id = 'cs_test_' + Math.random().toString(36).slice(2, 12);
-      S.sessions[id] = { id, mode: p.get('mode'), metadata: { app: p.get('metadata[app]') }, status: 'open', price: p.get('line_items[0][price]'),
+      S.sessions[id] = { id, mode: p.get('mode'), metadata: { app: p.get('metadata[app]'), src: p.get('metadata[src]'), landing: p.get('metadata[landing]'), slot: p.get('metadata[slot]'), sub_src: p.get('subscription_data[metadata][src]') }, status: 'open', price: p.get('line_items[0][price]'),
         customer: p.get('customer'), customer_email: p.get('customer_email'), success_url: p.get('success_url'), url: 'https://checkout.stripe.com/c/pay/' + id };
       return ok(S.sessions[id]);
     }
@@ -583,4 +583,33 @@ test('pregame alerts: opt-in, followed accounts only, one mail per new pick, no 
   const off = await handle(new Request(SITE + '/api/alerts/off?a=' + link[1] + '&s=' + link[2]), t.env, { fetch: t.S.fetch });
   assert.equal(off.status, 200);
   assert.equal((await t.call('GET', '/api/me')).body.alerts, false);
+});
+
+test('funnel counters: allowed events counted by source, bots and unknown events ignored, other origins refused, summary needs the token', async () => {
+  const t = setup({ ALERTS_TOKEN: 'alerts_token_for_tests' });
+  const ev = (b, h = {}) => t.call('POST', '/api/ev', JSON.stringify(b), { 'content-type': 'text/plain', ...h });
+  assert.equal((await ev({ e: 'land', s: 'chatgpt.com', l: '/research/odds-and-profit' })).body.ok, true);
+  assert.equal((await ev({ e: 'land', s: 'chatgpt.com', l: '/research/odds-and-profit' })).body.ok, true);
+  assert.equal((await ev({ e: 'offer_click', s: 'chatgpt.com', slot: '/index|hero' })).body.ok, true);
+  assert.equal((await ev({ e: 'purchase', s: 'x' })).body.ok, false);
+  assert.equal((await ev({ e: 'pricing', s: 'google.com' }, { 'user-agent': 'Googlebot/2.1' })).body.ok, false);
+  assert.equal((await ev({ e: 'pricing', s: '<script>' })).body.ok, true);
+  assert.equal((await ev({ e: 'pricing' }, { origin: 'https://evil.example' })).status, 403);
+  assert.equal((await t.call('GET', '/api/ev/summary')).status, 401);
+  const sum = await t.call('GET', '/api/ev/summary?days=2', undefined, { 'x-alerts-token': 'alerts_token_for_tests' });
+  const day = Object.values(sum.body.days)[0];
+  assert.equal(day['land chatgpt.com /research/odds-and-profit'], 2);
+  assert.equal(day['offer_click chatgpt.com /index|hero'], 1);
+  assert.equal(day['pricing script -'], 1);
+  assert.equal(Object.keys(day).length, 3);
+});
+
+test('checkout carries first party attribution (source, landing page, offer slot) into Stripe metadata, sanitized', async () => {
+  const t = setup();
+  const c = await t.call('POST', '/api/checkout', { plan: 'monthly', attr: { s: 'Forums.TwoPlusTwo.com', l: '/research/odds-and-profit', slot: '/capper|unl"><x' } });
+  const s = t.S.sessions[c.body.url.split('/').pop()];
+  assert.equal(s.metadata.src, 'forums.twoplustwo.com'); assert.equal(s.metadata.landing, '/research/odds-and-profit');
+  assert.equal(s.metadata.slot, '/capper|unlx'); assert.equal(s.metadata.sub_src, 'forums.twoplustwo.com'); assert.equal(s.metadata.app, 'hwd');
+  const d = await t.call('POST', '/api/checkout', { plan: 'annual', email: 'other@example.com' });
+  assert.equal(t.S.sessions[d.body.url.split('/').pop()].metadata.src, 'unknown');
 });

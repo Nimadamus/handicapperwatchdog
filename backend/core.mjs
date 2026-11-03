@@ -44,6 +44,27 @@ const validEmail = (e) => typeof e === 'string' && e.length <= 254 && /^[^\s@]+@
 const kvGet = async (env, k) => { const v = await env.KV.get(k); return v ? JSON.parse(v) : null; };
 const kvPut = (env, k, v, ttl) => env.KV.put(k, JSON.stringify(v), ttl ? { expirationTtl: ttl } : undefined);
 
+// ---------- first party funnel counters (no personal data: event, traffic source host, landing path, offer slot) ----------
+// Aggregate daily counts only, keyed by Pacific date, kept 120 days. Read back with GET /api/ev/summary (alerts token).
+const EVENTS = new Set(['land', 'pricing', 'offer_click', 'checkout', 'cancel']);
+const BOTS = /bot|crawl|spider|slurp|headless|lighthouse|preview|facebookexternalhit|embedly|monitor/i;
+const tag = (v, n) => String(v || '').toLowerCase().replace(/[^a-z0-9./|_-]/g, '').slice(0, n);
+const ptDate = (t = Date.now()) => new Date(t).toLocaleDateString('en-CA', { timeZone: 'America/Los_Angeles' });
+export function attribution(a) {
+  a = a && typeof a === 'object' ? a : {};
+  return { src: tag(a.s, 40) || 'unknown', landing: tag(a.l, 60) || 'unknown', slot: tag(a.slot, 60) || 'none' };
+}
+async function countEvent(env, body, ua) {
+  if (!body || !EVENTS.has(body.e) || BOTS.test(ua || '')) return false;
+  const a = attribution(body), key = 'ev:' + ptDate();
+  const day = (await kvGet(env, key)) || {};
+  const k = [body.e, a.src, body.e === 'land' ? a.landing : body.e === 'offer_click' ? a.slot : '-'].join(' ');
+  if (!(k in day) && Object.keys(day).length >= 600) return false;   // a flood of made up sources cannot grow the record without limit
+  day[k] = (day[k] || 0) + 1;
+  await kvPut(env, key, day, 120 * 86400);
+  return true;
+}
+
 async function accountByEmail(env, email, create) {
   email = email.trim().toLowerCase();
   const id = await env.KV.get('email:' + email);
@@ -447,6 +468,14 @@ async function route(req, env, deps) {
       return new Response(`<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Alerts</title><body style="font:16px system-ui;background:#0b1220;color:#e6edf6;padding:40px"><h1 style="font-size:22px">${a ? 'Pick alerts are off' : 'That link is not valid'}</h1><p>${a ? 'You will not get more pick alert emails. Turn them back on any time from your account page.' : 'Turn alerts off from your account page instead.'}</p><p><a style="color:#e7c675" href="${env.SITE_URL || 'https://handicapperwatchdog.com'}/account.html">Your account</a></p></body>`, { status: a ? 200 : 400, headers: { 'content-type': 'text/html; charset=utf-8' } });
     }
 
+    if (path === '/api/ev/summary' && req.method === 'GET') {
+      const t = req.headers.get('x-alerts-token') || '';
+      if (!env.ALERTS_TOKEN || !safeEqual(t, env.ALERTS_TOKEN)) return err(401, 'no');
+      const n = Math.min(120, Math.max(1, parseInt(url.searchParams.get('days') || '30', 10) || 30)), out = {};
+      for (let i = 0; i < n; i++) { const d = ptDate(Date.now() - i * 86400000); const v = await kvGet(env, 'ev:' + d); if (v) out[d] = v; }
+      return json({ days: out });
+    }
+
     // every other POST must come from our own pages
     if (req.method === 'POST') {
       const origin = req.headers.get('origin');
@@ -459,6 +488,12 @@ async function route(req, env, deps) {
     if (path === '/api/dev/mails' && req.method === 'GET') {
       if (env.DEV_MAIL_ECHO !== '1') return err(404, 'Not found.');
       return json({ mails: (await kvGet(env, 'dev:mails')) || [] });
+    }
+
+    if (path === '/api/ev' && req.method === 'POST') {
+      let body = null;
+      try { body = JSON.parse((await req.text()).slice(0, 2000)); } catch { body = null; }
+      return json({ ok: await countEvent(env, body, req.headers.get('user-agent')) });
     }
 
     if (path === '/api/me' && req.method === 'GET') {
@@ -495,7 +530,10 @@ async function route(req, env, deps) {
           }
         }
       }
+      const at = attribution(body.attr);
       const s = await stripe(env, deps, 'POST', 'checkout/sessions', {
+        'metadata[src]': at.src, 'metadata[landing]': at.landing, 'metadata[slot]': at.slot,
+        'subscription_data[metadata][src]': at.src, 'subscription_data[metadata][landing]': at.landing, 'subscription_data[metadata][slot]': at.slot,
         mode: 'subscription', 'line_items[0][price]': price, 'line_items[0][quantity]': 1,
         success_url: site + '/account.html?session_id={CHECKOUT_SESSION_ID}', cancel_url: site + '/pricing.html?canceled=1',
         allow_promotion_codes: 'true', 'metadata[app]': 'hwd',

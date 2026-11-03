@@ -4,8 +4,10 @@
     python tools/hwd_metrics.py --json     # machine readable
 
 Counts only Watchdog Pro objects (the two Watchdog price ids, metadata app=hwd) on the shared Stripe account.
-Visits and page funnel live in GA4 (property "Handicapper Watchdog", G-SC607ZYK1F): events view_item (pricing),
-begin_checkout (Subscribe click), purchase (checkout confirmed), contact_submit.
+Funnel, no extra permissions: first party daily counters from our own API (/api/ev/summary, alerts token): visits by
+source and landing page, offer clicks by placement, pricing views, checkout starts and cancels. Checkout sessions carry
+the buyer's first visit source, landing page and last offer clicked in metadata (src, landing, slot), so purchases are
+attributed from Stripe itself. GA4 (G-SC607ZYK1F) keeps the same events for the owner's own reports.
 """
 import json, os, sys, time, urllib.parse, urllib.request
 sys.path.insert(0, os.path.dirname(__file__))
@@ -69,6 +71,34 @@ rep = {
 rep['checkout_conversion_30d'] = round(rep['checkouts_completed_30d'] / rep['checkout_starts_30d'], 3) if rep['checkout_starts_30d'] else None
 start = rep['active_paying'] + rep['ended_30d']
 rep['churn_30d'] = round(rep['ended_30d'] / start, 3) if start else None
+
+# first party funnel (aggregate counts by Pacific day), joined with Stripe attribution
+try:
+    r = urllib.request.Request('https://api.handicapperwatchdog.com/api/ev/summary?days=30', headers={'x-alerts-token': S['ALERTS_TOKEN'], 'user-agent': 'hwd-metrics'})
+    days = json.load(urllib.request.urlopen(r, timeout=60))['days']
+except Exception as e:
+    days = None; rep['funnel_error'] = str(e)[:120]
+if days is not None:
+    tot, by_src, by_land, by_slot = {}, {}, {}, {}
+    for day in days.values():
+        for k, n in day.items():
+            ev, src, detail = (k.split(' ', 2) + ['', ''])[:3]
+            tot[ev] = tot.get(ev, 0) + n
+            if ev == 'land':
+                by_src[src] = by_src.get(src, 0) + n; by_land[detail] = by_land.get(detail, 0) + n
+            if ev == 'offer_click':
+                by_slot[detail] = by_slot.get(detail, 0) + n
+    top = lambda d, n=8: dict(sorted(d.items(), key=lambda x: -x[1])[:n])
+    rep['funnel_days_counted'] = len(days)
+    rep['funnel_30d'] = {'visits': tot.get('land', 0), 'offer_clicks': tot.get('offer_click', 0), 'pricing_views': tot.get('pricing', 0),
+                         'checkout_starts': tot.get('checkout', 0), 'checkout_cancels': tot.get('cancel', 0),
+                         'purchases_stripe': rep['first_payments_30d']}
+    rep['visits_by_source'] = top(by_src); rep['visits_by_landing'] = top(by_land); rep['offer_clicks_by_slot'] = top(by_slot)
+won = [c for c in sessions if c['status'] == 'complete']
+rep['purchases_by_source_30d'] = {}
+for c in won:
+    k = (c.get('metadata') or {}).get('src') or 'before attribution'
+    rep['purchases_by_source_30d'][k] = rep['purchases_by_source_30d'].get(k, 0) + 1
 if '--json' in sys.argv: print(json.dumps(rep, indent=1))
 else:
     for k, v in rep.items(): print(f'{k:28} {v}')
