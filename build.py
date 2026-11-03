@@ -1101,7 +1101,7 @@ def _research_paths(cappers, depth=1):
     big = sorted((c for c in cappers if (c.get('picks') or 0) >= 100 and c.get('roi') is not None and c.get('profile') and not c.get('basic')),
                  key=lambda c: -c['picks'])[:4]
     cards = ''.join(
-        '<a class="featcard" href="%scapper.html?id=%s" style="text-decoration:none;color:inherit"><span>#%s</span><p><b>%s graded picks</b><br>%s units, %s ROI. Full breakdown by sport, market, odds and month.</p></a>' % (
+        '<a class="featcard" href="%scapper.html?id=%s" style="text-decoration:none;color:inherit;grid-template-columns:1fr"><p><b>#%s</b><br><b>%s graded picks</b><br>%s units, %s ROI. Full breakdown by sport, market, odds and month.</p></a>' % (
             up, _esc(c['id']), _esc(c['id'][:6].upper()), '{:,}'.format(c['picks']), '%+.2f' % (c.get('units') or 0), '%+.1f%%' % c['roi'])
         for c in big)
     return (
