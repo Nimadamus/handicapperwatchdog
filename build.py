@@ -1087,16 +1087,48 @@ def _research_stats(cappers):
 
 
 
-def _write_persist(site, meta, nice, org):
-    """Do hot records stay hot? Each established record split in half by pick order; aggregate only, no ids."""
-    pairs = [p for p in (meta.get('halves') or []) if isinstance(p, list) and len(p) == 2]
-    if len(pairs) < 50:
-        return False
+def _corr(pairs):
     import statistics as st
     xs, ys = [p[0] for p in pairs], [p[1] for p in pairs]
     mx, my = st.mean(xs), st.mean(ys)
     den = (sum((x - mx) ** 2 for x in xs) * sum((y - my) ** 2 for y in ys)) ** .5
-    corr = sum((x - mx) * (y - my) for x, y in zip(xs, ys)) / den if den else 0
+    return sum((x - mx) * (y - my) for x, y in zip(xs, ys)) / den if den else 0.0
+
+
+def _research_paths(cappers, depth=1):
+    """Pathways from a research page into anonymous profiles, the method page and Pro. IDs only, never names."""
+    up = '../' * depth
+    big = sorted((c for c in cappers if (c.get('picks') or 0) >= 100 and c.get('roi') is not None and c.get('profile') and not c.get('basic')),
+                 key=lambda c: -c['picks'])[:4]
+    cards = ''.join(
+        '<a class="featcard" href="%scapper.html?id=%s" style="text-decoration:none;color:inherit"><span>#%s</span><p><b>%s graded picks</b><br>%s units, %s ROI. Full breakdown by sport, market, odds and month.</p></a>' % (
+            up, _esc(c['id']), _esc(c['id'][:6].upper()), '{:,}'.format(c['picks']), '%+.2f' % (c.get('units') or 0), '%+.1f%%' % c['roi'])
+        for c in big)
+    return (
+        '<section class="panel edcard"><h2>Look at real records</h2><div class="prose"><p>The four largest independently graded records on the board. Every profile shows the record, units, ROI, sample size, sport by sport results and recent form, free. Accounts are shown by anonymous Watchdog ID only.</p></div>'
+        '<div class="featgrid" style="margin-top:12px">' + cards + '</div></section>\n'
+        '<section class="panel edcard"><h2>What Watchdog Pro adds</h2><div class="prose"><ul>'
+        '<li>Eligible pending picks from tracked accounts before their games start, with each account&rsquo;s graded record beside the pick.</li>'
+        '<li>The complete graded pick log for every account, not only the 50 most recent picks.</li>'
+        '<li>Follow accounts and get an email when one of them posts a pick before the game.</li></ul>'
+        '<p>Pro never reveals who an account is. Free visitors keep the rankings, the research and every profile breakdown. See <a href="' + up + 'how-we-grade.html">how Watchdog grades a pick</a>.</p></div>'
+        '<p><a class="btn pro" href="' + up + 'pricing.html">See Watchdog Pro plans</a></p></section>\n')
+
+
+def _write_persist(site, meta, nice, org, cappers):
+    """Do hot records stay hot? Each established record split in half by pick order; aggregate only, no ids."""
+    pairs = [p for p in (meta.get('halves') or []) if isinstance(p, list) and len(p) == 2]
+    if len(pairs) < 50:
+        return False
+    import random
+    import statistics as st
+    corr = _corr(pairs)
+    rnd = random.Random(20261103)  # fixed seed: the interval is reproducible from the published pairs
+    boot = sorted(_corr([rnd.choice(pairs) for _ in pairs]) for _ in range(2000))
+    lo95, hi95 = boot[50], boot[1949]
+    m1, m2 = st.mean(p[0] for p in pairs), st.mean(p[1] for p in pairs)
+    up2 = sum(1 for p in pairs if p[1] > 0) / len(pairs)
+    on_board = sum(1 for c in cappers if (c.get('picks') or 0) >= 100 and c.get('roi') is not None)
     pct = lambda v: '%d%%' % round(v * 100)
     sg = lambda v: '%+.1f%%' % v
     bands = []
@@ -1105,41 +1137,49 @@ def _write_persist(site, meta, nice, org):
         g = [p for p in pairs if (lo is None or p[0] >= lo) and (hi is None or p[0] < hi)]
         if g:
             bands.append({'label': label, 'n': len(g), 'h1': st.mean(p[0] for p in g), 'up': sum(1 for p in g if p[1] > 0) / len(g),
-                          'med': st.median(p[1] for p in g)})
+                          'med': st.median(p[1] for p in g), 'm2': st.mean(p[1] for p in g)})
     hot, cold = bands[-1], bands[0]
-    if abs(corr) < 0.15:
-        verdict = 'barely related'
-        lead = ('A hot first half told us almost nothing about the second half. Accounts that opened above plus 10% ROI (average '
-                + sg(hot['h1']) + ') had a median second half ROI of ' + sg(hot['med']) + ', and ' + pct(hot['up'])
-                + ' of them stayed up. Accounts that opened below minus 10% had a median second half of ' + sg(cold['med'])
-                + ', with ' + pct(cold['up']) + ' up.')
-    else:
-        verdict = 'somewhat related' if abs(corr) < 0.35 else 'clearly related'
-        lead = ('Accounts that opened above plus 10% ROI had a median second half ROI of ' + sg(hot['med']) + ', and ' + pct(hot['up'])
-                + ' stayed up, against ' + sg(cold['med']) + ' and ' + pct(cold['up']) + ' for accounts that opened below minus 10%.')
+    verdict = 'barely related' if abs(corr) < 0.15 else 'somewhat related' if abs(corr) < 0.35 else 'clearly related'
+    lead = ('Accounts that opened above plus 10% ROI (average ' + sg(hot['h1']) + ') had a median second half ROI of ' + sg(hot['med'])
+            + ', and ' + pct(hot['up']) + ' of them were up in the second half. Accounts that opened below minus 10% (average ' + sg(cold['h1'])
+            + ') had a median second half of ' + sg(cold['med']) + ', with ' + pct(cold['up']) + ' up.')
+    cool = ('Hot starts cooled sharply: from an average first half ROI of ' + sg(hot['h1']) + ' to a median second half of ' + sg(hot['med']) + '. '
+            if hot['med'] < hot['h1'] / 2 else '')
     url = 'https://handicapperwatchdog.com/research/do-hot-handicappers-stay-hot.html'
     built = str(meta.get('built_at') or '')[:10]
     ldj = json.dumps({'@context': 'https://schema.org', '@type': 'Article', 'headline': 'Do hot handicappers stay hot?', 'url': url,
                       'dateModified': built, 'author': org, 'publisher': org,
                       'isBasedOn': 'https://handicapperwatchdog.com/data/index.json'}).replace('<', '\\u003c')
-    rows = ''.join('<tr><td class="l">%s</td><td>%d</td><td>%s</td><td>%s</td><td>%s</td></tr>' % (
-        b['label'], b['n'], sg(b['h1']), pct(b['up']), sg(b['med'])) for b in bands)
+    rows = ''.join('<tr><td class="l">%s</td><td>%d</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>' % (
+        b['label'], b['n'], sg(b['h1']), pct(b['up']), sg(b['med']), sg(b['m2'])) for b in bands)
+    small_n = min(b['n'] for b in bands)
     body = (
         '<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><a href="./">Research</a><span aria-hidden="true">/</span><span aria-current="page">Do hot handicappers stay hot?</span></nav>\n'
         '<div class="pagehead"><div><div class="eyebrow">Watchdog research</div><h1>Do hot handicappers stay hot?</h1>\n'
         '<p class="muted">We split every established record in half by pick order and compared the two halves. Recounted at each site update. Last update ' + nice + '.</p></div></div>\n'
         '<div class="edstack">\n'
-        '<section class="panel edcard answer"><h2>The finding</h2><div class="prose"><p>' + lead + ' Across all ' + '{:,}'.format(len(pairs))
-        + ' accounts the two halves are ' + verdict + ' (correlation ' + '%.2f' % corr + ', where 0 means no relationship and 1 means the second half matches the first).</p>'
-        '<p>' + ('Hot starts cooled sharply: from an average first half ROI of ' + sg(hot['h1']) + ' to a median second half of ' + sg(hot['med']) + '. ' if hot['med'] < hot['h1'] / 2 else '')
-        + 'A strong start is weak evidence of an edge. Judge a handicapper on a long record at the posted odds.</p></div></section>\n'
-        '<section class="panel"><div class="ph"><h2 style="font-size:18px">Second half results by first half ROI</h2></div><div class="tw"><table class="mini"><thead><tr><th class="l">First half ROI</th><th>Accounts</th><th>Average first half ROI</th><th>Up in second half</th><th>Median second half ROI</th></tr></thead><tbody>'
-        + rows + '</tbody></table></div></section>\n'
-        '<section class="panel edcard"><h2>Method and limits</h2><div class="prose"><ul>'
-        '<li>Accounts with 100 or more graded picks whose full record matches the public board. Each record is split into its older half and its newer half by pick count.</li>'
-        '<li>ROI is units won divided by units risked at the posted odds. A pick counts only if it was posted in public before the game started and graded against the final score.</li>'
-        '<li>These accounts post in public on the platforms Watchdog monitors. They are not a random sample of all bettors. Accounts that stop posting keep their record.</li>'
-        '<li>Past results are not predictions. Nothing here is betting advice.</li></ul></div></section>\n'
+        '<section class="panel edcard answer"><h2>The finding</h2><div class="prose"><p>' + lead + '</p>'
+        '<p>' + cool + 'Across all ' + '{:,}'.format(len(pairs)) + ' accounts the two halves are ' + verdict + ': the correlation is '
+        + '%.2f' % corr + ' (95% interval ' + '%.2f to %.2f' % (lo95, hi95) + '), where 0 means no relationship and 1 means the second half repeats the first. '
+        'The average account went from ' + sg(m1) + ' ROI in its first half to ' + sg(m2) + ' in its second, and ' + pct(up2) + ' of accounts were up in their second half.</p>'
+        '<p>A strong start is weak evidence of an edge. A record moves toward break even as it grows, so judge a handicapper on a long record graded at the posted odds.</p></div></section>\n'
+        '<section class="panel"><div class="ph"><h2 style="font-size:18px">Second half results by first half ROI</h2></div><div class="tw"><table class="mini"><thead><tr><th class="l">First half ROI</th><th>Accounts</th><th>Average first half ROI</th><th>Up in second half</th><th>Median second half ROI</th><th>Average second half ROI</th></tr></thead><tbody>'
+        + rows + '</tbody></table></div><p class="muted small" style="margin:10px 0 0">The smallest group has ' + str(small_n) + ' accounts, so a single account moves its percentages by several points. Read the groups as direction, not precise rates.</p></section>\n'
+        '<section class="panel edcard"><h2>What this shows and what it does not</h2><div class="prose"><ul>'
+        '<li><b>It describes the past.</b> These are measured results for accounts already on the board. They are not a forecast for any account and not a betting system.</li>'
+        '<li><b>It does not say good handicappers do not exist.</b> A small positive relationship is consistent with a few accounts holding a real edge and many hot starts being luck.</li>'
+        '<li><b>Past ROI never guarantees future profit.</b> Even the accounts that stayed up in their second half may not stay up in the next one.</li></ul></div></section>\n'
+        '<section class="panel edcard"><h2>Method, sample and bias checks</h2><div class="prose"><ul>'
+        '<li><b>Source:</b> the full graded pick history of each account in the most recent verified snapshot, the same history Watchdog Pro members see. Every pick was posted in public before its game started and graded against the final score at the posted odds. Held, duplicate, repost and parlay leg picks are excluded.</li>'
+        '<li><b>Selection:</b> accounts with at least 100 graded picks in that verified history whose history reproduces the headline record exactly: '
+        + '{:,}'.format(len(pairs)) + ' accounts. The rankings show ' + '{:,}'.format(on_board) + ' accounts at 100 or more picks; the difference is accounts that crossed 100 with picks graded after the last verified snapshot.</li>'
+        '<li><b>Split:</b> each history in pick order, oldest half against newest half (odd counts put the extra pick in the newer half). ROI is units won divided by units risked.</li>'
+        '<li><b>No look ahead in the grouping:</b> accounts are grouped by their first half only, and the outcome is measured on picks made after that half ended.</li>'
+        '<li><b>Survivorship:</b> to be included an account had to keep posting until it reached 100 picks. Accounts that quit after a bad or a lucky start are missing, so the cold group may look better than all cold starts really do. The study speaks for accounts that keep posting, which are the accounts a bettor can actually follow.</li>'
+        '<li><b>Uncertainty:</b> the 95% interval comes from 2,000 bootstrap resamples of the published pairs with a fixed seed, so anyone can reproduce it.</li>'
+        '<li><b>Population:</b> accounts that post picks in public on the platforms Watchdog monitors. They are not a random sample of all bettors.</li>'
+        '<li>Nothing here is betting advice.</li></ul></div></section>\n'
+        + _research_paths(cappers) +
         '<section class="ctaband"><div><h2>See the long record, not the hot week</h2><p class="muted">The free rankings sort by sample size, units and ROI.</p></div><p><a class="btn" href="../cappers.html">Open the rankings</a> <a class="btn pro" href="../pricing.html">Watchdog Pro</a></p></section>\n'
         '</div>\n<p class="muted small">Updated ' + nice + '. 21+. Gambling problem? Call 1 800 GAMBLER.</p>\n'
         '<script type="application/ld+json">' + ldj + '</script>')
@@ -1195,6 +1235,7 @@ def _write_research(site, meta, cappers):
         '<li>A pick counts only if it was posted in public before the game started, graded against the final score at the odds posted. Held, duplicate and unreviewed picks are excluded.</li>'
         '<li>These are accounts that post picks in public on the platforms Watchdog monitors. They are not a random sample of all bettors, and accounts that stop posting keep their record in the data.</li>'
         '<li>Past results are not predictions. Nothing here is betting advice.</li></ul></div></section>\n'
+        + _research_paths(cappers) +
         '<section class="ctaband"><div><h2>Check a record yourself</h2><p class="muted">Sort the free rankings by sample size, units and ROI.</p></div><p><a class="btn" href="../cappers.html">Open the rankings</a> <a class="btn pro" href="../pricing.html">Watchdog Pro</a></p></section>\n'
         '</div>\n<p class="muted small">Updated ' + nice + '. 21+. Gambling problem? Call 1 800 GAMBLER.</p>\n'
         '<script type="application/ld+json">' + ldj + '</script>')
@@ -1202,7 +1243,7 @@ def _write_research(site, meta, cappers):
     desc = 'How ROI spreads by sample size across %s independently graded handicapper accounts. Short records swing wildly. Updated from live data.' % '{:,}'.format(st['rows'])
     with open(os.path.join(folder, 'roi-and-sample-size.html'), 'w', encoding='utf-8', newline='\n') as f:
         f.write(_document(1, 'research/', title, desc, url, body))
-    persisted = _write_persist(site, meta, nice, org)
+    persisted = _write_persist(site, meta, nice, org, cappers)
     hub = (
         '<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><span aria-current="page">Research</span></nav>\n'
         '<div class="pagehead"><div><div class="eyebrow">Research</div><h1>Watchdog research</h1>\n'
