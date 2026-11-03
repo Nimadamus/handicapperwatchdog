@@ -10,7 +10,7 @@ export default {
       // Staging uses the worker's own origin so the cookie and checkout stay on that host.
       // Production keeps SITE_URL on handicapperwatchdog.com. BILLING_LIVE is never set here.
       const siteEnv = env.STAGING === 'yes' ? { ...env, SITE_URL: url.origin } : env;
-      return handle(request, { ...siteEnv, KV: env.HWD }, { fetch });
+      return handle(request, { ...siteEnv, KV: env.HWD }, { fetch: (...a) => fetch(...a) });
     }
     if (env.ASSETS) return env.ASSETS.fetch(request);
     return new Response('Not found', { status: 404 });
