@@ -31,7 +31,9 @@ async function api(method, path, params) {
 
 const account = await api('GET', 'account');
 const shown = `${account.settings && account.settings.dashboard && account.settings.dashboard.display_name || ''} ${account.business_profile && account.business_profile.name || ''}`;
-if (/trustmyrecord|realai|betlegend|bet legend/i.test(shown)) {
+// Owner decision 2026-11-02: Watchdog Pro bills through the existing TrustMyRecord Stripe account (pass --shared-account).
+// Watchdog objects are tagged metadata app=hwd, client_reference_id hwd_<id>, and its own statement descriptor.
+if (/realai|betlegend|bet legend/i.test(shown) || (/trustmyrecord/i.test(shown) && !args.includes('--shared-account'))) {
   console.error('Refused: this Stripe account is ' + shown.trim() + '. Handicapper Watchdog needs its own account.');
   process.exit(1);
 }
@@ -42,7 +44,7 @@ console.log('Stripe account:', shown.trim() || '(unnamed)', balance.livemode ? '
 const found = await api('GET', 'prices', { limit: 100, active: 'true', expand: ['data.product'] });
 const byKey = Object.fromEntries(found.data.filter((p) => p.lookup_key).map((p) => [p.lookup_key, p]));
 let product = (byKey.hwd_pro_monthly_4999 || byKey.hwd_pro_annual_49900 || {}).product;
-if (!product) product = await api('POST', 'products', { name: 'Watchdog Pro', description: 'Names, complete pick logs, search, comparisons and advanced filters on Handicapper Watchdog.', metadata: { app: 'hwd' } });
+if (!product) product = await api('POST', 'products', { name: 'Watchdog Pro', description: 'Complete graded pick logs, eligible pending picks before the start and comparisons on Handicapper Watchdog. Handicappers stay anonymous.', statement_descriptor: 'HANDICAPPER WATCHDOG', metadata: { app: 'hwd' } });
 const monthly = byKey.hwd_pro_monthly_4999 || await api('POST', 'prices', { product: product.id, currency: 'usd', unit_amount: 4999, lookup_key: 'hwd_pro_monthly_4999', 'recurring[interval]': 'month', metadata: { app: 'hwd' } });
 const annual = byKey.hwd_pro_annual_49900 || await api('POST', 'prices', { product: product.id, currency: 'usd', unit_amount: 49900, lookup_key: 'hwd_pro_annual_49900', 'recurring[interval]': 'year', metadata: { app: 'hwd' } });
 

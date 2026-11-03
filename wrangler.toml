@@ -20,4 +20,4 @@ SITE_URL = "https://handicapperwatchdog.com"
 STRIPE_API_VERSION = "2025-03-31.basil"
 # Secrets (wrangler secret put NAME): STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET, STRIPE_PRICE_MONTHLY, STRIPE_PRICE_ANNUAL,
 # SESSION_SECRET, HWD_PRO_KEY, BREVO_API_KEY, MAIL_FROM, PURCHASE_NOTIFY_EMAIL.
-# BILLING_LIVE stays unset until the owner approves live billing. Do not point these secrets at the TrustMyRecord Stripe account.
+# BILLING_LIVE stays unset until the owner approves live billing. Owner 2026-11-02: billing uses the existing TrustMyRecord Stripe account (Watchdog objects tagged app=hwd).

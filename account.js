@@ -50,14 +50,14 @@
       return HWD.complete(sid).then(function (d) {
         clean();
         if (d._status !== 200) return s.signed_in ? signedIn(s, d.error) : signedOut(d.error);
-        return fetch('/api/me', { credentials: 'same-origin' }).then(function (r) { return r.json(); }).then(function (me) { signedIn(me, d.duplicate ? 'You already had Watchdog Pro. The extra checkout was canceled.' : 'Welcome to Watchdog Pro. Full pick ledgers are unlocked on every profile, and today’s eligible picks are on the picks page.'); });
+        return fetch(HWD.api + '/api/me', { credentials: 'include' }).then(function (r) { return r.json(); }).then(function (me) { signedIn(me, d.duplicate ? 'You already had Watchdog Pro. The extra checkout was canceled.' : 'Welcome to Watchdog Pro. Full pick ledgers are unlocked on every profile, and today’s eligible picks are on the picks page.'); });
       });
     }
     if (tok) {
       return HWD.verify(tok).then(function (d) {
         clean();
         if (d._status !== 200) return signedOut(d.error);
-        return fetch('/api/me', { credentials: 'same-origin' }).then(function (r) { return r.json(); }).then(function (me) { signedIn(me, 'You are signed in.'); });
+        return fetch(HWD.api + '/api/me', { credentials: 'include' }).then(function (r) { return r.json(); }).then(function (me) { signedIn(me, 'You are signed in.'); });
       });
     }
     return s.signed_in ? signedIn(s) : signedOut();

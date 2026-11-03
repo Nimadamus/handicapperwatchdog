@@ -1,0 +1,13 @@
+# Watchdog Pro API as a Cloudflare Pages project, served at api.handicapperwatchdog.com (GoDaddy CNAME api -> hwd-api.pages.dev).
+# Deploy: cd api-pages && npx wrangler@3 pages deploy   (secrets: npx wrangler@3 pages secret put NAME --project-name hwd-api)
+name = "hwd-api"
+pages_build_output_dir = "public"
+compatibility_date = "2025-09-01"
+
+kv_namespaces = [
+  { binding = "HWD", id = "765ffd836cdb491aa5bc4c18a4399e26" },
+]
+
+[vars]
+SITE_URL = "https://handicapperwatchdog.com"
+STRIPE_API_VERSION = "2025-03-31.basil"

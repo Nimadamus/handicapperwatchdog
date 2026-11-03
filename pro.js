@@ -3,12 +3,14 @@
 // HWD.ready resolves with api:false and every Pro control shows that checkout is not open yet.
 (function () {
   'use strict';
+  // Production API lives on its own subdomain (static site is on GitHub Pages); staging and dev serve /api on the same host.
+  var API = /^(www\.)?handicapperwatchdog\.com$/.test(location.hostname) ? 'https://api.handicapperwatchdog.com' : '';
   var state = { api: false, pro: false, signed_in: false, billing: false };
   var post = function (path, body) {
-    return fetch(path, { method: 'POST', credentials: 'same-origin', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body || {}) })
+    return fetch(API + path, { method: 'POST', credentials: 'include', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body || {}) })
       .then(function (r) { return r.json().then(function (d) { d._status = r.status; return d; }); });
   };
-  var ready = fetch('/api/me', { credentials: 'same-origin', cache: 'no-store' })
+  var ready = fetch(API + '/api/me', { credentials: 'include', cache: 'no-store' })
     .then(function (r) { if (!r.ok || !/json/.test(r.headers.get('content-type') || '')) throw 0; return r.json(); })
     .then(function (d) { state = Object.assign({ api: true }, d); return state; })
     .catch(function () { return state; });
@@ -16,7 +18,7 @@
   function b64bytes(s) { var b = atob(s), u = new Uint8Array(b.length); for (var i = 0; i < b.length; i++) u[i] = b.charCodeAt(i); return u; }
   var keys = {};
   function key(id) {
-    if (!keys[id]) keys[id] = fetch('/api/pro/key?id=' + encodeURIComponent(id), { credentials: 'same-origin', cache: 'no-store' })
+    if (!keys[id]) keys[id] = fetch(API + '/api/pro/key?id=' + encodeURIComponent(id), { credentials: 'include', cache: 'no-store' })
       .then(function (r) { if (!r.ok) throw new Error('key ' + r.status); return r.json(); })
       .then(function (d) { return crypto.subtle.importKey('raw', b64bytes(d.key), 'AES-GCM', false, ['decrypt']); });
     return keys[id];
@@ -39,7 +41,8 @@
     portal: function () { return post('/api/portal').then(function (d) { if (d.url) location.href = d.url; return d; }); },
     login: function (email) { return post('/api/login', { email: email }); },
     verify: function (token) { return post('/api/login/verify', { token: token }); },
-    complete: function (sid) { return fetch('/api/checkout/complete?session_id=' + encodeURIComponent(sid), { credentials: 'same-origin' }).then(function (r) { return r.json().then(function (d) { d._status = r.status; return d; }); }); },
+    complete: function (sid) { return fetch(API + '/api/checkout/complete?session_id=' + encodeURIComponent(sid), { credentials: 'include' }).then(function (r) { return r.json().then(function (d) { d._status = r.status; return d; }); }); },
+    api: API,
     logout: function () { return post('/api/logout').then(function () { location.href = './'; }); },
     capper: function (id) { return open('data/x/' + id + '.bin', id); },
     pending: function () { if (!this._pending) this._pending = open('data/x/pending.bin', 'pending'); return this._pending; }

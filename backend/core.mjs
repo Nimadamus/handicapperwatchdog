@@ -343,7 +343,27 @@ async function adoptSubscription(env, deps, a, sub) {
 }
 
 // ---------- router ----------
+// The site is static on GitHub Pages and the API answers on api.handicapperwatchdog.com, so the site's own origin gets
+// credentialed CORS. Any other origin gets no CORS headers (and its POSTs are refused below).
 export async function handle(req, env, deps = { fetch }) {
+  const origin = req.headers.get('origin');
+  const site = new URL(env.SITE_URL || req.url).origin;
+  const cors = origin && origin === site && origin !== new URL(req.url).origin;
+  if (req.method === 'OPTIONS') {
+    if (!cors) return new Response(null, { status: 403 });
+    return new Response(null, { status: 204, headers: { 'access-control-allow-origin': origin, 'access-control-allow-credentials': 'true',
+      'access-control-allow-methods': 'GET, POST', 'access-control-allow-headers': 'content-type', 'access-control-max-age': '600', vary: 'Origin' } });
+  }
+  const res = await route(req, env, deps);
+  if (!cors) return res;
+  const out = new Response(res.body, res);
+  out.headers.set('access-control-allow-origin', origin);
+  out.headers.set('access-control-allow-credentials', 'true');
+  out.headers.append('vary', 'Origin');
+  return out;
+}
+
+async function route(req, env, deps) {
   const url = new URL(req.url);
   const path = url.pathname.replace(/\/+$/, '');
   const site = env.SITE_URL || url.origin;
@@ -403,7 +423,7 @@ export async function handle(req, env, deps = { fetch }) {
         success_url: site + '/account.html?session_id={CHECKOUT_SESSION_ID}', cancel_url: site + '/pricing.html?canceled=1',
         allow_promotion_codes: 'true', 'metadata[app]': 'hwd', 'subscription_data[metadata][app]': 'hwd',
         customer: customerId || undefined, customer_email: !customerId && email ? email : undefined,
-        client_reference_id: acct ? acct.id : undefined });
+        client_reference_id: acct ? 'hwd_' + acct.id : undefined });
       if (email) await kvPut(env, 'openchk:' + email, { id: s.id, url: s.url, plan }, 30 * 60);
       return json({ url: s.url });
     }
