@@ -609,3 +609,10 @@ a.fcard:hover{border-color:var(--accent-line);transform:translateY(-2px)}
 
 .navlinks a{white-space:nowrap}
 @media (max-width:1320px){.navlinks a{padding:8px 9px}.navsearch{width:190px}}
+
+.chart{display:block;width:100%;height:auto;max-width:760px}.chart .cg{stroke:var(--line);stroke-width:1}.chart .cz{stroke:var(--line2);stroke-width:1.5}
+.chart .cs{stroke:var(--line2);stroke-width:2}.chart .cr{stroke:var(--s1);stroke-width:2}
+.chart text{fill:var(--muted);font:12px var(--mono,monospace)}.chart .cl{fill:var(--ink2);font-family:inherit;font-size:12.5px}.chart .cv{fill:var(--ink);font-weight:600}
+.chartkey{display:flex;gap:16px;flex-wrap:wrap;margin:0 0 8px;font-size:13px;color:var(--ink2)}.chartkey i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+
+.chartwrap{overflow-x:auto}@media (max-width:600px){.chartwrap .chart{min-width:560px}}

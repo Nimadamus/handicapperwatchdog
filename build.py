@@ -159,6 +159,28 @@ def drawdown(rows):
     return {'max_drawdown': round(mdd, 2), 'peak_units': round(peak, 2), 'final_units': round(cum, 2)}
 
 
+PRICE_BANDS = (('-200 or shorter', None, -200), ('-150 to -199', -199, -150), ('-121 to -149', -149, -121),
+               ('-105 to -120', -120, -105), ('-104 to +120', -104, 120), ('+121 to +149', 121, 149),
+               ('+150 to +249', 150, 249), ('+250 or longer', 250, None))
+
+
+def price_band(o):
+    if o is None:
+        return None
+    o = float(o)
+    if -100 < o < 100:
+        return None
+    for label, lo, hi in PRICE_BANDS:
+        if (lo is None or o >= lo) and (hi is None or o <= hi):
+            return label
+    return None
+
+
+def implied(o):
+    o = float(o)
+    return 100.0 / (o + 100.0) if o > 0 else -o / (-o + 100.0)
+
+
 def odds_bucket(o):
     if o is None:
         return None
@@ -1597,6 +1619,128 @@ def _write_weekly(site, meta, cappers, snaps, man, now):
         dst.write(src.read())
     man['weekly'] = sorted(set(man.get('weekly') or []) | {key})
 
+
+_C_ACT, _C_NEED = '#3f86d8', '#d07a2c'  # validated pair (dark surface #101a2a): blue = actual / positive, orange = needed / negative
+
+
+def _svg_winrate(rows):
+    """Dot plot: actual win rate vs the win rate the prices required, one row per price band."""
+    W, rh, left, right, top = 640, 34, 128, 24, 30
+    H = top + rh * len(rows) + 30
+    lo, hi = 20, 80
+    x = lambda v: left + (W - left - right) * (max(lo, min(hi, v)) - lo) / (hi - lo)
+    g = ['<svg class="chart" viewBox="0 0 %d %d" role="img" aria-label="Actual win rate compared with the win rate needed to break even, by price band">' % (W, H)]
+    for t in range(lo, hi + 1, 10):
+        g.append('<line x1="%.1f" x2="%.1f" y1="%d" y2="%d" class="cg"/><text x="%.1f" y="%d" class="ct" text-anchor="middle">%d%%</text>' % (x(t), x(t), top - 8, H - 26, x(t), H - 10, t))
+    for i, r in enumerate(rows):
+        y = top + rh * i + rh / 2
+        a, n = r['win'], r['need']
+        g.append('<text x="%d" y="%.1f" class="cl" text-anchor="end">%s</text>' % (left - 10, y + 4, _esc(r['label'])))
+        g.append('<line x1="%.1f" x2="%.1f" y1="%.1f" y2="%.1f" class="cs"/>' % (x(min(a, n)), x(max(a, n)), y, y))
+        g.append('<g><title>%s: needed %.1f%%</title><circle cx="%.1f" cy="%.1f" r="6" fill="%s" class="cr"/></g>' % (_esc(r['label']), n, x(n), y, _C_NEED))
+        g.append('<g><title>%s: won %.1f%% of %s decided picks</title><circle cx="%.1f" cy="%.1f" r="6" fill="%s" class="cr"/></g>' % (_esc(r['label']), a, '{:,}'.format(r['dec']), x(a), y, _C_ACT))
+    g.append('</svg>')
+    return ''.join(g)
+
+
+def _svg_roi(rows):
+    """Bars from zero: ROI by price band. Blue up, orange down, every bar labeled with its value."""
+    W, rh, left, right, top = 640, 34, 128, 70, 14
+    H = top + rh * len(rows) + 14
+    m = max(6.0, max(abs(r['roi']) for r in rows))
+    mid = left + (W - left - right) / 2
+    sc = (W - left - right) / 2 / m
+    g = ['<svg class="chart" viewBox="0 0 %d %d" role="img" aria-label="Return on investment by price band">' % (W, H),
+         '<line x1="%.1f" x2="%.1f" y1="%d" y2="%d" class="cz"/>' % (mid, mid, top - 4, H - 8)]
+    for i, r in enumerate(rows):
+        y = top + rh * i + 7
+        w = abs(r['roi']) * sc
+        x0 = mid if r['roi'] >= 0 else mid - w
+        g.append('<text x="%d" y="%.1f" class="cl" text-anchor="end">%s</text>' % (left - 10, y + 14, _esc(r['label'])))
+        g.append('<g><title>%s: %+.1f%% ROI on %s picks</title><rect x="%.1f" y="%.1f" width="%.1f" height="20" rx="4" fill="%s"/></g>' % (
+            _esc(r['label']), r['roi'], '{:,}'.format(r['n']), x0, y, max(w, 2), _C_ACT if r['roi'] >= 0 else _C_NEED))
+        tx = mid + w + 8 if r['roi'] >= 0 else mid - w - 8
+        g.append('<text x="%.1f" y="%.1f" class="cv" text-anchor="%s">%+.1f%%</text>' % (tx, y + 14, 'start' if r['roi'] >= 0 else 'end', r['roi']))
+    g.append('</svg>')
+    return ''.join(g)
+
+
+def _write_odds_report(site, meta, nice, org, cappers):
+    """Research: how the price a handicapper takes decides whether a win rate makes money. Aggregates only."""
+    od = meta.get('odds_study') or {}
+    bands = od.get('bands') or {}
+    rows, tail = [], None
+    for label, _, _ in PRICE_BANDS:
+        v = bands.get(label)
+        if not v or v[1] + v[2] < 100 or not v[4]:
+            continue
+        dec = v[1] + v[2]
+        r = {'label': label, 'n': v[0], 'dec': dec, 'win': 100 * v[1] / dec, 'need': 100 * v[3] / dec, 'roi': 100 * v[5] / v[4]}
+        if label == '+250 or longer':
+            tail = r
+            continue
+        rows.append(r)
+    accts = od.get('accts') or []
+    if len(rows) < 5 or len(accts) < 50:
+        return False
+    heavy = rows[0]
+    std = next((r for r in rows if r['label'] == '-105 to -120'), None)
+    trap = [a for a in accts if a[1] >= 52.4 and a[3] < 0]
+    trap_fav = [a for a in trap if a[2] > 52.4]
+    above = [a for a in accts if a[1] > a[2]]
+    above_up = sum(1 for a in above if a[3] > 0)
+    below = [a for a in accts if a[1] <= a[2]]
+    below_up = sum(1 for a in below if a[3] > 0)
+    under50_up = sum(1 for a in accts if a[1] < 50 and a[3] > 0)
+    total = sum(r['n'] for r in rows)
+    pct = lambda a, b: '%d%%' % round(100 * a / b) if b else 'n/a'
+    url = 'https://handicapperwatchdog.com/research/odds-and-profit.html'
+    built = str(meta.get('built_at') or '')[:10]
+    ldj = json.dumps({'@context': 'https://schema.org', '@type': 'Article', 'headline': 'Why a 70% win rate can lose money', 'url': url,
+                      'dateModified': built, 'author': org, 'publisher': org, 'isBasedOn': 'https://handicapperwatchdog.com/data/index.json'}).replace('<', '\\u003c')
+    trows = ''.join('<tr><td class="l">%s</td><td>%s</td><td>%.1f%%</td><td>%.1f%%</td><td>%+.1f pts</td><td>%+.1f%%</td></tr>' % (
+        _esc(r['label']), '{:,}'.format(r['n']), r['win'], r['need'], r['win'] - r['need'], r['roi']) for r in rows)
+    lead = ('Picks priced at %s won %.1f%% of the time and still lost money: %+.1f%% ROI, because those prices needed %.1f%% wins to break even. '
+            % (heavy['label'], heavy['win'], heavy['roi'], heavy['need']))
+    if std:
+        lead += ('At standard spread and total prices (%s) the same crowd won %.1f%% against %.1f%% needed, %+.1f%% ROI. '
+                 % (std['label'], std['win'], std['need'], std['roi']))
+    lead += 'Win rate alone says almost nothing. Win rate against the price says nearly everything.'
+    body = (
+        '<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><a href="./">Research</a><span aria-hidden="true">/</span><span aria-current="page">Odds and profit</span></nav>\n'
+        '<div class="pagehead"><div><div class="eyebrow">Watchdog research</div><h1>Why a 70% win rate can lose money</h1>\n'
+        '<p class="muted">' + '{:,}'.format(total) + ' independently graded public picks, grouped by the price the handicapper took. Recounted at each site update. Last update ' + nice + '.</p></div></div>\n'
+        '<div class="edstack">\n'
+        '<section class="panel edcard answer"><h2>The finding</h2><div class="prose"><p>' + lead + '</p></div></section>\n'
+        '<section class="panel"><div class="ph"><h2 style="font-size:18px">Win rate against the win rate the price required</h2></div><div class="pb">'
+        '<div class="chartkey"><span><i style="background:' + _C_ACT + '"></i>Actual win rate</span><span><i style="background:' + _C_NEED + '"></i>Needed to break even</span></div>'
+        + '<div class="chartwrap">' + _svg_winrate(rows) + '</div>' + '<p class="muted small" style="margin:8px 0 0">Pushes are left out of win rates. Needed win rate is the average break even rate implied by each posted price.</p></div></section>\n'
+        '<section class="panel"><div class="ph"><h2 style="font-size:18px">Return on investment by price</h2><span class="muted small">Units won per unit risked</span></div><div class="pb">'
+        + '<div class="chartwrap">' + _svg_roi(rows) + '</div>' + '</div></section>\n'
+        '<section class="panel"><div class="ph"><h2 style="font-size:18px">The numbers</h2></div><div class="tw"><table class="mini"><thead><tr><th class="l">Price taken</th><th>Picks</th><th>Won</th><th>Needed</th><th>Edge</th><th>ROI</th></tr></thead><tbody>'
+        + trows + '</tbody></table></div></section>\n'
+        '<section class="panel edcard"><h2>What it means for a handicapper&rsquo;s record</h2><div class="prose"><p>Across ' + '{:,}'.format(len(accts))
+        + ' accounts with at least 100 decided, priced picks:</p><ul>'
+        '<li><b>' + str(len(trap)) + (' account wins' if len(trap) == 1 else ' accounts win') + ' 52.4% or more and ' + ('is' if len(trap) == 1 else 'are') + ' still down money.</b> 52.4% is the break even rate at the standard minus 110. '
+        + str(len(trap_fav)) + ' of them took prices that needed more than that.</li>'
+        '<li><b>' + str(under50_up) + (' account wins less than half of its picks and is up money</b>' if under50_up == 1 else ' accounts win less than half their picks and are up money</b>') + ', because of the plus money prices taken.</li>'
+        '<li>Of the ' + str(len(above)) + ' accounts that beat the win rate their own prices required, ' + pct(above_up, len(above)) + ' are up money. Of the '
+        + str(len(below)) + ' that did not, ' + pct(below_up, len(below)) + ' are up.</li></ul>'
+        '<p>So the question to ask about any record is not how often it wins. It is whether it wins more often than its prices require, over enough picks to matter. Every Watchdog profile shows the win rate needed at that account&rsquo;s own prices next to the win rate it achieved.</p></div></section>\n'
+        '<section class="panel edcard"><h2>Method and limits</h2><div class="prose"><ul>'
+        '<li>Source: the full graded history of every account whose history reproduces its headline record, the same history Watchdog Pro members see. Picks were posted in public before the start and graded on the final score at the posted price, one unit risked.</li>'
+        '<li>Price bands use the posted American odds. Picks without a posted price, and prices between minus 100 and plus 100, are left out.</li>'
+        + ('<li>Picks priced at plus 250 or longer (' + '{:,}'.format(tail['n']) + ' picks) are left out of the charts. A handful of very long prices dominate their total, and their prices are being rechecked against the original posts.</li>' if tail else '')
+        + '<li>These are accounts that post in public on the platforms Watchdog monitors, not all bettors. Results describe the past. They are not a prediction or betting advice.</li></ul></div></section>\n'
+        + _research_paths(cappers) +
+        '</div>\n<p class="muted small">Updated ' + nice + '. 21+. Gambling problem? Call 1 800 GAMBLER.</p>\n'
+        '<script type="application/ld+json">' + ldj + '</script>')
+    with open(os.path.join(site, 'research', 'odds-and-profit.html'), 'w', encoding='utf-8', newline='\n') as f:
+        f.write(_document(1, 'research/', 'Why a 70% Win Rate Can Lose Money: Handicapper Odds and ROI | Handicapper Watchdog',
+                          'How the odds a handicapper takes decide profit. %s graded public picks by price: win rate, break even rate and ROI.' % '{:,}'.format(total),
+                          url, body))
+    return True
+
 def _write_research(site, meta, cappers):
     """Original research rebuilt from the live board at every build, so every number is current and recountable."""
     st = _research_stats(cappers)
@@ -1653,6 +1797,7 @@ def _write_research(site, meta, cappers):
         f.write(_document(1, 'research/', title, desc, url, body))
     persisted = _write_persist(site, meta, nice, org, cappers)
     man = _write_today(site, meta, cappers)
+    odds_ok = _write_odds_report(site, meta, nice, org, cappers)
     weeks = sorted(man.get('weekly') or [], reverse=True)
     hub = (
         '<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><span aria-current="page">Research</span></nav>\n'
@@ -1660,6 +1805,7 @@ def _write_research(site, meta, cappers):
         '<p class="muted">Original findings from independently graded public picks. Each page is rebuilt from the live board, with the method and limits stated.</p></div></div>\n'
         '<section class="featgrid" style="margin-bottom:18px"><a class="featcard" href="today.html" style="text-decoration:none;color:inherit"><span>&#9679;</span><p><b>Today on the board</b><br>Ranking moves, newly graded picks, streaks with the odds of luck, and league notes. Updated through the day.</p></a>\n'
         + ''.join('<a class="featcard" href="weekly-%s.html" style="text-decoration:none;color:inherit"><span>W</span><p><b>Weekly report: week ending %s</b><br>League results, best and worst weeks, and ranking moves.</p></a>\n' % (w, datetime.fromisoformat(w).strftime('%B %d, %Y').replace(' 0', ' ')) for w in weeks[:4]) +
+        ('<a class="featcard" href="odds-and-profit.html" style="text-decoration:none;color:inherit"><span>New</span><p><b>Why a 70% win rate can lose money</b><br>How the price a handicapper takes decides profit, across every graded public pick.</p></a>\n' if odds_ok else '') +
         '<a class="featcard" href="roi-and-sample-size.html" style="text-decoration:none;color:inherit"><span>01</span><p><b>How much does a handicapper&rsquo;s ROI mean after 30 picks?</b><br>ROI spread by sample size, win rate versus profit, and sport by sport results.</p></a>\n'
         + (('<a class="featcard" href="do-hot-handicappers-stay-hot.html" style="text-decoration:none;color:inherit"><span>02</span><p><b>Do hot handicappers stay hot?</b><br>First half of each record against the second half, for every account with 100 or more graded picks.</p></a>\n') if persisted else '') +
         '<a class="featcard" href="../the-board.html" style="text-decoration:none;color:inherit"><span>' + ('03' if persisted else '02') + '</span><p><b>How many handicappers are up?</b><br>The share of established accounts with a winning record.</p></a></section>')
@@ -2481,7 +2627,7 @@ def main():
             return 0
         return 1 if now - e[1] > PROFILE_TTL * 4 else 2
     rows.sort(key=lambda x: (urgency(x), -int(x['graded'])))
-    index, halves = [], []
+    index, halves, odds_study, odds_accts = [], [], {}, []
     changed_budget = int(os.environ.get('HWD_MAX_FETCH_CHANGED', str(max(MAX_FETCH, 1000))))
     for x in rows:
         s = summary(x)
@@ -2526,6 +2672,30 @@ def main():
                 prof['detail'] = True
                 if not current:
                     prof['newer'] = max(0, int(s['picks'] or 0) - int(ov.get('picks') or 0))
+                acct = [0, 0, 0, 0.0, 0.0, 0.0]  # decided, wins, priced decided, implied sum, risk, pl
+                for h in hist:
+                    band = price_band(h.get('odds'))
+                    if band is None or h.get('result') not in ('won', 'lost', 'push'):
+                        continue
+                    tail = band == '+250 or longer'
+                    b = odds_study.setdefault(band, [0, 0, 0, 0.0, 0.0, 0.0])  # picks, wins, losses, implied sum, risk, pl
+                    b[0] += 1
+                    risk, pl = float(h.get('risk') or 0), float(h.get('pl') or 0)
+                    b[4] += risk
+                    b[5] += pl
+                    if h['result'] != 'push':
+                        b[1 if h['result'] == 'won' else 2] += 1
+                        b[3] += implied(h['odds'])
+                    if tail:
+                        continue
+                    if h['result'] != 'push':
+                        acct[0] += 1
+                        acct[1] += h['result'] == 'won'
+                        acct[3] += implied(h['odds'])
+                    acct[4] += risk
+                    acct[5] += pl
+                if acct[0] >= 100 and acct[4] > 0:
+                    odds_accts.append([acct[0], round(100 * acct[1] / acct[0], 1), round(100 * acct[3] / acct[0], 1), round(100 * acct[5] / acct[4], 2)])
                 if len(hist) >= 100:  # anonymous research input: first half vs second half ROI, no ids kept
                     h1, h2 = agg(hist[:len(hist) // 2]), agg(hist[len(hist) // 2:])
                     if h1['roi'] is not None and h2['roi'] is not None:
@@ -2574,6 +2744,8 @@ def main():
             'established': sum(1 for s in index if s['picks'] >= 100 and s['units'] is not None),
             'established_up': sum(1 for s in index if s['picks'] >= 100 and (s['units'] or 0) > 0),
             'halves': sorted(halves),
+            'odds_study': {'bands': {k: [v[0], v[1], v[2], round(v[3], 3), round(v[4], 2), round(v[5], 2)] for k, v in odds_study.items()},
+                           'accts': sorted(odds_accts)},
             'live': live_stats(),
             'pro': {'ledgers': sealed, 'pending_feed': pend is not None,
                     'pending_count': sum(len(v) for v in pend['by_id'].values()) if pend else None,
