@@ -428,7 +428,7 @@ def check_menu():
                   function ratio(a,b){const x=L(a),y=L(b);const hi=Math.max(x,y),lo=Math.min(x,y);return (hi+0.05)/(lo+0.05)}
                   const bg=getComputedStyle(document.body).backgroundColor;
                   const h1=document.querySelector('h1');
-                  const sub=document.querySelector('.herocopy');
+                  const sub=document.querySelector('.herosub');
                   return {
                     h1: ratio(getComputedStyle(h1).color, bg),
                     sub: ratio(getComputedStyle(sub).color, bg),

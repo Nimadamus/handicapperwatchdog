@@ -31,6 +31,38 @@
       '<path d="' + d + '" fill="none" stroke="' + c + '" stroke-width="2" vector-effect="non-scaling-stroke"/></svg>';
   }
 
+  // buyer tools: every figure computed from the published index, nothing typed in
+  function buyerTools(all, est, M) {
+    var act = all.filter(function (r) { return r.r30 && r.r30.picks >= 20 && r.r30.net != null; });
+    var med = function (a) { var s = a.slice().sort(function (x, y) { return x - y; }); return s.length ? s[Math.floor(s.length / 2)] : null; };
+    var nets = act.map(function (r) { return r.r30.net; }), mid = med(nets), price = 100, unit = 50, out = $('calcOut');
+    function calc() {
+      if (!out || !act.length) return;
+      var need = price / unit, n = nets.filter(function (v) { return v >= need; }).length, p = Math.round(100 * n / act.length);
+      out.innerHTML = '<div class="cneed"><b>+' + need.toFixed(1) + ' units</b><span>needed in a month to cover $' + price + ' at $' + unit + ' a pick</span></div>' +
+        '<div class="cbig">' + fmt(n) + ' <small>of ' + fmt(act.length) + '</small></div><p class="cdesc">active accounts made that much in the last 30 days.</p>' +
+        '<div class="cbar" role="img" aria-label="' + p + ' percent of active accounts"><i style="width:' + p + '%"></i></div>' +
+        '<p class="cnote">The median active account finished at ' + (mid > 0 ? '+' : '') + mid.toFixed(2) + ' units. Active means 20 or more graded picks in 30 days. Knowing which accounts will do it next month is the hard part.</p>' +
+        '<a class="herolink" href="cappers.html?t=r30&amp;min=20">See last 30 days <span aria-hidden="true">&rarr;</span></a>';
+    }
+    document.querySelectorAll('.pchip').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var k = b.hasAttribute('data-price') ? 'price' : 'unit';
+        if (k === 'price') price = +b.getAttribute('data-price'); else unit = +b.getAttribute('data-unit');
+        document.querySelectorAll('.pchip[data-' + k + ']').forEach(function (c) { c.classList.toggle('on', c === b); c.setAttribute('aria-pressed', c === b ? 'true' : 'false'); });
+        calc();
+      });
+    });
+    calc();
+    var hv = M.halves || [], hot = hv.filter(function (x) { return x[0] > 0; }), kept = hot.filter(function (x) { return x[1] > 0; }).length;
+    var f = function (v) { return (v > 0 ? '+' : '') + v.toFixed(1) + '%'; }, upE = est.filter(function (r) { return r.units > 0; }).length;
+    var card = function (q, big, line, href, cta) { return '<article><p class="cq">' + q + '</p><div class="cs">' + big + '</div><p>' + line + '</p><a href="' + href + '">' + cta + '</a></article>'; };
+    set2('claims', (hot.length ? card('&ldquo;On a heater right now.&rdquo;', Math.round(100 * kept / hot.length) + '%', 'of established accounts that were up in their first half stayed up in their second. Median ROI went from ' + f(med(hot.map(function (x) { return x[0]; }))) + ' to ' + f(med(hot.map(function (x) { return x[1]; }))) + '.', 'research/do-hot-handicappers-stay-hot.html', 'Do hot handicappers stay hot?') : '') +
+      card('&ldquo;Proven long term winner.&rdquo;', fmt(upE) + ' of ' + fmt(est.length), 'accounts with 100 or more graded picks are up money. Being up so far does not mean being up next week.', 'the-board.html', 'See the full board') +
+      (act.length ? card('&ldquo;We crush it every month.&rdquo;', (mid > 0 ? '+' : '') + mid.toFixed(2) + 'u', 'was the median result for active accounts in the last 30 days, across ' + fmt(act.length) + ' accounts.', 'cappers.html?t=r30&amp;min=20', 'See last 30 days') : ''));
+    function set2(id, html) { var el = $(id); if (el) el.innerHTML = html; }
+  }
+
   function verifySearch(all) {
     var input = $('vq'), box = $('vlist'), form = $('vsearch'), services = [], items = [], on = -1;
     if (!input) return;
@@ -135,10 +167,9 @@
         [fmt(L.pending_picks), 'Picks waiting on a result', 'Never counted in a record until graded.']];
       set('liveGrid', kv.map(function (k) { return '<div class="kv"><b>' + k[0] + '</b><span>' + k[1] + '</span><small>' + k[2] + '</small></div>'; }).join(''));
       var pt = function (s) { return new Date(s).toLocaleString('en-US', { timeZone: 'America/Los_Angeles', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) + ' PT'; };
-      $('liveAt').innerHTML = 'Last pick captured ' + pt(L.last_capture_at) + (L.last_graded_at ? '<br>Last pick graded ' + pt(L.last_graded_at) : '') + '<br>Site updated ' + pt(M.built_at);
+      $('liveAt').textContent = 'From the Watchdog database. Last pick captured ' + pt(L.last_capture_at) + '.';
       var estAll = all.filter(function (r) { return r.picks >= 100 && r.units != null; });
-      set('heroProof', [[fmt(L.graded_picks), 'Picks graded against final scores'], [fmt(L.accounts_monitored), 'Public accounts monitored'], [fmt(L.posts_captured), 'Public posts scanned'],
-        [fmt(estAll.filter(function (r) { return r.units > 0; }).length) + ' of ' + fmt(estAll.length), 'Established records up money']].map(function (k) { return '<div><dt>' + k[1] + '</dt><dd>' + k[0] + '</dd></div>'; }).join(''));
+      set('heroProof', [[fmt(L.graded_picks), 'Picks graded'], [fmt(L.accounts_monitored), 'Accounts monitored'], [fmt(L.posts_captured), 'Public posts scanned']].map(function (k) { return '<div><dt>' + k[1] + '</dt><dd>' + k[0] + '</dd></div>'; }).join(''));
       set('featPending', fmt(L.pending_picks) + ' tracked picks are waiting on a result right now. A pick waiting on a result is never counted in a record.');
       set('stepDiscover', fmt(L.accounts_discovered) + ' accounts found so far, ' + fmt(L.accounts_monitored) + ' monitored for picks.');
       var mix = $('liveMix'), sources = (L.sources || []).filter(function (s) { return s && s.label && s.graded_picks > 0; })
@@ -159,7 +190,8 @@
     var est = all.filter(function (r) { return r.picks >= 100 && r.units != null; }).sort(function (a, b) { return b.units - a.units; });
     var top = est[0], low = est.length > 1 ? est[est.length - 1] : null;
     var since = function (r) { var f = r.first_pick || r.monitored_since; return f ? new Date(f + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : 'n/a'; };
-    if (top) {
+    buyerTools(all, est, M);
+    if (top && $('idCode')) {
       $('idCode').textContent = '#' + code(top.id);
       set('idPicks', fmt(top.picks)); set('idRec', recTxt(top)); set('idUnits', sgn(top.units, 2)); set('idSince', since(top));
       if (link(top)) $('idLink').href = link(top);
@@ -223,7 +255,7 @@
     }).join(''));
 
     // explore the data: one real profile, fetched as is
-    var showcase = est.filter(function (r) { return !r.basic && r.profile; })[0];
+    var showcase = $('exChart') ? est.filter(function (r) { return !r.basic && r.profile; })[0] : null;
     if (showcase) {
       set('exHead', '<p class="bigrec">' + recTxt(showcase) + '</p><div class="wk"><div><b>' + pct(showcase.win_pct) + '</b><span>Win %</span></div><div><b>' + sgn(showcase.units, 2) + '</b><span>Units</span></div><div><b>' + sgn(showcase.roi, 1, '%') + '</b><span>ROI</span></div></div>' +
         '<p class="nt">Wins, losses and pushes from ' + fmt(showcase.picks) + ' graded picks.</p>');
@@ -296,7 +328,7 @@
         rows.sort(function (a, b) { return (b.x[t[4]] == null ? -1e9 : b.x[t[4]]) - (a.x[t[4]] == null ? -1e9 : a.x[t[4]]); });
         $('boardNote').textContent = t[5];
       }
-      rows = rows.slice(0, 10);
+      rows = rows.slice(0, 5);
       $('boardRows').innerHTML = rows.length ? rows.map(function (o, i) {
         var r = o.r, x = o.x, h = link(r);
         return '<tr class="fade' + (h ? ' go" data-href="' + h : '') + '"><td class="l rk">' + (i + 1) + '</td><td class="l">' + capCell(r) + '</td><td class="hm l">' + (!state.sport && t[2] === 'all' ? spark(r.spark) : '<span class="dim small">all sports only</span>') + '</td><td class="hm">' + fmt(x.picks) +
@@ -333,7 +365,7 @@
     var MOCK = ['NFL', 'NCAAF', 'NBA', 'NHL'], mrows = [];
     MOCK.forEach(function (sp) {
       all.filter(function (r) { return r.picks >= 100 && r.bs && r.bs[sp] && r.bs[sp][0] >= 20; })
-        .sort(function (a, b) { return (b.bs[sp][1] || 0) - (a.bs[sp][1] || 0); }).slice(0, 2)
+        .sort(function (a, b) { return (b.bs[sp][1] || 0) - (a.bs[sp][1] || 0); }).slice(0, 1)
         .forEach(function (r) { mrows.push({ r: r, sp: sp, b: r.bs[sp] }); });
     });
     var lockCell = '<span class="lockcell"><svg width="11" height="11" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2" fill="currentColor"/><path d="M8 11V8a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2"/></svg><span class="blur">Away at Home</span></span>';

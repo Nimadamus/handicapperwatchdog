@@ -483,7 +483,7 @@ _SITEMAP = (
     ('contact.html', 'https://handicapperwatchdog.com/contact.html', 'yearly', '0.3'),
 )
 _MARKERS = {
-    'index.html': ('live', 'board', 'sports', 'reality', 'pending', 'jsonld'),
+    'index.html': ('board', 'pending', 'jsonld'),
     'cappers.html': ('fresh', 'rows', 'pending', 'jsonld', 'sportnav'),
 }
 # Sport pages need a real sample. A 21 pick hot streak never leads a sport page.
