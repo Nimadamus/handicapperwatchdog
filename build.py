@@ -540,7 +540,7 @@ def _cap_cell(r, href_prefix=''):
              '<small><span class="badge %s">%s</span></small></span></div>') % (
                  _esc(code[:2]), _esc(code), kind, label)
     if r.get('profile'):
-        return '<a href="%scapper.html?id=%s">%s</a>' % (href_prefix, r['id'], inner)
+        return '<a href="%shandicappers/%s.html">%s</a>' % (href_prefix, r['id'], inner)
     return inner
 
 
@@ -684,7 +684,7 @@ def _sports(cappers):
                 continue
             rec = raw[4] if len(raw) > 4 and isinstance(raw[4], str) and _REC.fullmatch(raw[4]) else ''
             label = '<span class="badge">#%s</span><span class="muted">%s</span>' % (_esc(r['id'][:6].upper()), _esc(rec))
-            linked = '<a href="capper.html?id=%s">%s</a>' % (r['id'], label) if r.get('profile') else label
+            linked = '<a href="handicappers/%s.html">%s</a>' % (r['id'], label) if r.get('profile') else label
             items.append('<li>%s%s</li>' % (linked, _signed(units, 1, 'u')))
             if len(items) == 3:
                 break
@@ -773,7 +773,8 @@ def _write_sitemap(site, lastmod):
         for name in sorted(os.listdir(sport_dir)):
             if name.endswith('.html'):
                 entries.append(('sports/' + name, 'https://handicapperwatchdog.com/sports/' + name, 'daily', '0.7'))
-    for folder, freq, priority in (('reviews', 'weekly', '0.6'), ('sportsbooks', 'weekly', '0.6'), ('learn', 'weekly', '0.7'), ('research', 'daily', '0.7')):
+    for folder, freq, priority in (('reviews', 'weekly', '0.6'), ('sportsbooks', 'weekly', '0.6'), ('learn', 'weekly', '0.7'), ('research', 'daily', '0.7'),
+                                   ('handicappers', 'daily', '0.5')):
         folder_dir = os.path.join(site, folder)
         if not os.path.isdir(folder_dir):
             continue
@@ -781,7 +782,7 @@ def _write_sitemap(site, lastmod):
             path = os.path.join(folder_dir, name)
             if name.endswith('.html') and os.path.isfile(path):
                 loc = 'https://handicapperwatchdog.com/' + folder + '/' + name
-                if folder in ('sportsbooks', 'learn', 'research') and name == 'index.html':
+                if folder in ('sportsbooks', 'learn', 'research', 'handicappers') and name == 'index.html':
                     loc = 'https://handicapperwatchdog.com/%s/' % folder
                 entries.append((folder + '/' + name, loc, freq, priority))
             elif folder == 'sportsbooks' and os.path.isdir(path) and os.path.isfile(os.path.join(path, 'index.html')):
@@ -883,6 +884,7 @@ def _footer(depth):
         ('sportsbooks/justbet.html', 'JustBet'),
         ('learn/', 'Betting guides'),
         ('learn/what-bettors-say-about-handicappers.html', 'What bettors say'),
+        ('handicappers/', 'Handicapper directory'),
         ('research/', 'Research'),
         ('the-board.html', 'The board'),
         ('how-we-grade.html', 'How we grade'),
@@ -1155,7 +1157,7 @@ def _research_paths(cappers, depth=1):
     big = sorted((c for c in cappers if (c.get('picks') or 0) >= 100 and c.get('roi') is not None and c.get('profile') and not c.get('basic')),
                  key=lambda c: -c['picks'])[:4]
     cards = ''.join(
-        '<a class="featcard" href="%scapper.html?id=%s" style="text-decoration:none;color:inherit;grid-template-columns:1fr"><p><b>#%s</b><br><b>%s graded picks</b><br>%s units, %s ROI. Full breakdown by sport, market, odds and month.</p></a>' % (
+        '<a class="featcard" href="%shandicappers/%s.html" style="text-decoration:none;color:inherit;grid-template-columns:1fr"><p><b>#%s</b><br><b>%s graded picks</b><br>%s units, %s ROI. Full breakdown by sport, market, odds and month.</p></a>' % (
             up, _esc(c['id']), _esc(c['id'][:6].upper()), '{:,}'.format(c['picks']), '%+.2f' % (c.get('units') or 0), '%+.1f%%' % c['roi'])
         for c in big)
     return (
@@ -1362,7 +1364,7 @@ def _cid(i):
 
 
 def _plink(i, up='../'):
-    return '<a href="%scapper.html?id=%s">#%s</a>' % (up, _esc(i), _cid(i))
+    return '<a href="%shandicappers/%s.html">#%s</a>' % (up, _esc(i), _cid(i))
 
 
 def _diff(cur, old, by_rank=False):
@@ -2648,6 +2650,104 @@ def stamp_public_pages(site):
     _write_sitemap(site, lastmod)
 
 
+PROFILE_INDEX_MIN = 20  # thinner profiles still get a page, but stay out of search until they have a real sample
+
+
+def _write_profile_pages(site, index):
+    """One real URL per account: handicappers/<id>.html. capper.js fills the page in; the headline record is in the HTML for search."""
+    root = 'https://handicapperwatchdog.com/'
+    folder = os.path.join(site, 'handicappers')
+    os.makedirs(folder, exist_ok=True)
+    with open(os.path.join(HERE, 'capper.html'), encoding='utf-8') as f:
+        shell = f.read().replace('\r\n', '\n')
+    ranked = sorted((r for r in index if r['picks'] >= PROFILE_INDEX_MIN), key=lambda r: -r['picks'])
+    if not ranked:
+        return
+    place = {r['id']: i for i, r in enumerate(ranked)}
+
+    def code(r):
+        return r['id'][:6].upper()
+
+    def record(r):
+        return '%d-%d%s' % (r['w'], r['l'], '-%d' % r['p'] if r['p'] else '')
+
+    def units(r):
+        return 'n/a' if r.get('units') is None else '%+.2f' % r['units']
+
+    def roi(r):
+        return 'n/a' if r.get('roi') is None else '%+.1f%%' % r['roi']
+
+    for n, r in enumerate(index):
+        cid, c = r['id'], code(r)
+        graded = r['picks'] > 0
+        url = root + 'handicappers/%s.html' % cid
+        sports = ', '.join((r.get('sports') or [])[:4])
+        if graded:
+            title = 'Handicapper #%s Record: %s, %s Units' % (c, record(r), units(r))
+            desc = 'Handicapper #%s: %s graded picks, record %s, %s units, %s ROI%s. Graded by Handicapper Watchdog.'
+            full = desc % (c, f"{r['picks']:,}", record(r), units(r), roi(r), ' in ' + sports if sports else '')
+            desc = full if len(full) <= 158 else desc % (c, f"{r['picks']:,}", record(r), units(r), roi(r), '')
+        else:
+            title = 'Handicapper #%s: No Graded Picks Yet' % c
+            desc = 'Anonymous handicapper #%s is monitored by Handicapper Watchdog. No pick has been graded yet.' % c
+        start = place.get(cid, 0)
+        peers = [ranked[(start + k) % len(ranked)] for k in range(1, 7)]
+        peers = [p for p in peers if p['id'] != cid]
+        rows = ''.join('<tr><td class="l">%s</td><td>%s</td><td>%s</td><td>%s</td></tr>' % (
+            _esc(s), _esc(str(v[4])), v[0], '' if v[1] is None else '%+.2f' % v[1]) for s, v in (r.get('bs') or {}).items())
+        kpis = ''.join('<div class="kv"><b>%s</b><span>%s</span></div>' % (_esc(a), b) for a, b in (
+            (record(r), 'Record'), (units(r), 'Units won'), (roi(r), 'ROI'), (f"{r['picks']:,}", 'Graded picks')))
+        body = ('<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><a href="handicappers/">Handicappers</a>'
+                '<span aria-hidden="true">/</span><span aria-current="page">#%s</span></nav>'
+                '<div class="pagehead"><div><div class="eyebrow">Anonymous Watchdog ID</div><h1 class="idc">Handicapper #%s</h1><p class="muted">%s</p></div></div>'
+                '<div class="kvgrid">%s</div>%s') % (
+                    c, c, _esc(desc), kpis,
+                    '<table><thead><tr><th class="l">Sport</th><th>Record</th><th>Picks</th><th>Units</th></tr></thead><tbody>%s</tbody></table>' % rows if rows else '')
+        more = ('<section class="wrap profmore" aria-label="More handicapper records"><h2>More graded records</h2><p>%s</p>'
+                '<p><a href="handicappers/">Handicapper directory</a> · <a href="cappers.html">Rankings</a> · <a href="how-we-grade.html">How we grade</a></p></section>') % ' '.join(
+                    '<a href="handicappers/%s.html">#%s (%s)</a>' % (p['id'], code(p), record(p)) for p in peers)
+        graph = [{'@type': 'ProfilePage', 'url': url, 'name': title, 'description': desc,
+                  'isPartOf': {'@type': 'WebSite', 'name': 'Handicapper Watchdog', 'url': root},
+                  'mainEntity': {'@type': 'Person', 'name': 'Handicapper #' + c, 'identifier': cid}},
+                 {'@type': 'BreadcrumbList', 'itemListElement': [
+                     {'@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': root},
+                     {'@type': 'ListItem', 'position': 2, 'name': 'Handicappers', 'item': root + 'handicappers/'},
+                     {'@type': 'ListItem', 'position': 3, 'name': '#' + c, 'item': url}]}]
+        if r.get('last_pick'):
+            graph[0]['dateModified'] = r['last_pick']
+        ld = '<script type="application/ld+json">%s</script>' % json.dumps({'@context': 'https://schema.org', '@graph': graph}, ensure_ascii=True).replace('<', '\\u003c')
+        robots = '' if r['picks'] >= PROFILE_INDEX_MIN else '<meta name="robots" content="noindex,follow">\n'
+        page = shell
+        page = page.replace('<meta charset="utf-8">', '<meta charset="utf-8">\n<base href="../">', 1)
+        page = re.sub(r'<title>.*?</title>', lambda m: '<title>%s</title>' % _esc(title), page, count=1)
+        page = re.sub(r'<meta name="robots" content="noindex">\n', lambda m: robots, page, count=1)
+        page = re.sub(r'(<meta name="description" content=")[^"]*', lambda m: m.group(1) + _esc(desc), page, count=1)
+        page = re.sub(r'(<meta property="og:title" content=")[^"]*', lambda m: m.group(1) + _esc(title), page, count=1)
+        page = re.sub(r'(<meta property="og:description" content=")[^"]*', lambda m: m.group(1) + _esc(desc), page, count=1)
+        page = page.replace('<meta property="og:type" content="website">', '<meta property="og:type" content="profile">\n<meta property="og:url" content="%s">\n<link rel="canonical" href="%s">' % (url, url), 1)
+        page = page.replace('</head>', ld + '\n</head>', 1)
+        page = page.replace('<body data-page="capper">', '<body data-page="capper" data-cid="%s">' % cid, 1)
+        page = page.replace('<main class="wrap" id="prof"><div class="skel" style="max-width:420px;margin:60px auto"></div></main>',
+                            '<main class="wrap" id="prof">%s</main>\n%s' % (body, more), 1)
+        assert 'data-cid' in page and more in page
+        with open(os.path.join(folder, cid + '.html'), 'w', encoding='utf-8', newline='\n') as f:
+            f.write(page)
+
+    trs = ''.join('<tr><td class="l">%d</td><td class="l"><a href="%s.html">#%s</a></td><td>%s</td><td>%s</td><td>%s</td><td class="hm">%s</td></tr>' % (
+        i + 1, r['id'], code(r), record(r), f"{r['picks']:,}", units(r), roi(r)) for i, r in enumerate(ranked))
+    body = ('<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><span aria-current="page">Handicappers</span></nav>'
+            '<div class="pagehead"><div><div class="eyebrow">Directory</div><h1>Handicapper directory</h1>'
+            '<p class="muted">Every account here has %s or more graded picks, listed by sample size, not by results. %s accounts qualify. '
+            'All %s monitored accounts have a profile, and you can find the rest in <a href="../cappers.html?min=0">the rankings</a>.</p></div></div>'
+            '<div class="tw"><table><thead><tr><th class="l">#</th><th class="l">Watchdog ID</th><th>Record</th><th>Picks</th><th>Units</th><th class="hm">ROI</th></tr></thead><tbody>%s</tbody></table></div>') % (
+                PROFILE_INDEX_MIN, f'{len(ranked):,}', f'{len(index):,}', trs)
+    html = _document(1, 'cappers.html', 'Handicapper Directory: Graded Records | Watchdog',
+                     'Directory of anonymous sports handicappers with 20 or more graded picks. Open any record for its profile, sport splits and recent results.',
+                     root + 'handicappers/', body)
+    with open(os.path.join(folder, 'index.html'), 'w', encoding='utf-8', newline='\n') as f:
+        f.write(html)
+
+
 SEO_TITLES = {
     'index.html': 'Handicapper Watchdog | Independent Handicapper Records',
     'learn/index.html': 'Sports Betting Guides: Judging Handicappers | Watchdog',
@@ -2915,6 +3015,7 @@ def main():
             f.write(seal('pending', {'baked_at': pend['board_baked_at'], 'built_at': meta['built_at'], 'picks': board}))
     with open(os.path.join(SITE, 'data', 'index.json'), 'w', encoding='utf-8') as f:
         json.dump({'meta': meta, 'cappers': index}, f, separators=(',', ':'))
+    _write_profile_pages(SITE, index)
     stamp_public_pages(SITE)
     _seo_finish(SITE)
     no_page = [s['id'] for s in index if not os.path.exists(os.path.join(SITE, 'data', 'p', s['id'] + '.json'))]

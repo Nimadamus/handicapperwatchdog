@@ -1,7 +1,7 @@
 (function () {
   'use strict';
   var root = document.getElementById('prof');
-  var id = new URLSearchParams(location.search).get('id') || '';
+  var id = new URLSearchParams(location.search).get('id') || document.body.getAttribute('data-cid') || '';
   var PRO = 'pricing.html';
   var fmt = function (n) { return n == null ? 'n/a' : Number(n).toLocaleString('en-US'); };
   var esc = function (s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
@@ -152,7 +152,7 @@
       [odds(o.avg_odds), 'Avg odds'], [strk(ost.current), 'Current streak'], [s.r30 ? sgn(s.r30.net, 2) : '<span class="dim">n/a</span>', 'Last 30 days']]);
 
     var secs = [['overview', 'Overview'], ['charts', 'Charts'], ['sports', 'Sports'], ['markets', 'Markets'], ['situations', 'Sides and prices'], ['teams', 'Teams'], ['calendar', 'Calendar'], ['picks', 'Pick ledger']];
-    h += '<nav class="snav"><div class="tabs" id="snav">' + secs.map(function (x, i) { return '<a class="tab' + (i ? '' : ' on') + '" href="#' + x[0] + '" style="display:inline-flex;align-items:center">' + x[1] + '</a>'; }).join('') + '</div></nav>';
+    h += '<nav class="snav"><div class="tabs" id="snav">' + secs.map(function (x, i) { return '<a class="tab' + (i ? '' : ' on') + '" href="' + location.pathname + location.search + '#' + x[0] + '" style="display:inline-flex;align-items:center">' + x[1] + '</a>'; }).join('') + '</div></nav>';
 
     var months = s.months || 0;
     h += '<section class="sec" id="overview"><div class="pgrid">' +
@@ -222,7 +222,7 @@
     var links = [].slice.call(document.querySelectorAll('#snav a'));
     if ('IntersectionObserver' in window) {
       var io = new IntersectionObserver(function (en) {
-        en.forEach(function (x) { if (x.isIntersecting) links.forEach(function (l) { l.classList.toggle('on', l.getAttribute('href') === '#' + x.target.id); }); });
+        en.forEach(function (x) { if (x.isIntersecting) links.forEach(function (l) { l.classList.toggle('on', l.hash === '#' + x.target.id); }); });
       }, { rootMargin: '-130px 0px -65% 0px' });
       secs.forEach(function (x) { var el = document.getElementById(x[0]); if (el) io.observe(el); });
     }

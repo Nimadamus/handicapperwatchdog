@@ -41,7 +41,7 @@
   }
   var recTxt = function (x) { return x.w + '-' + x.l + (x.p ? '-' + x.p : ''); };
   var ago = function (d) { if (!d) return 'n/a'; var n = Math.round((Date.now() - new Date(d + 'T12:00:00Z')) / DAY); return n <= 0 ? 'Today' : n === 1 ? 'Yesterday' : n + 'd ago'; };
-  var link = function (r) { return r.profile ? 'capper.html?id=' + encodeURIComponent(r.id) : ''; };
+  var link = function (r) { return r.profile ? 'handicappers/' + encodeURIComponent(r.id) + '.html' : ''; };
 
   document.addEventListener('click', function (e) {
     var tr = e.target.closest && e.target.closest('tr.go');

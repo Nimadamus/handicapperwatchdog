@@ -77,8 +77,8 @@ def main():
             check(label + ' rankings 90 day + activity filter', page.locator('#rows tr.go').count() > 0, page.inner_text('#count'))
             check(label + ' rankings no horizontal scroll', overflow() <= 1, str(overflow()))
             page.locator('#rows tr.go').first.click()
-            page.wait_for_url('**/capper.html?id=*', timeout=10000)
-            check(label + ' row click opens profile', 'capper.html?id=' in page.url)
+            page.wait_for_url('**/handicappers/*.html', timeout=10000)
+            check(label + ' row click opens profile', '/handicappers/' in page.url)
 
             page.goto(base + 'capper.html?id=' + detail['id'])
             page.wait_for_selector('#lrows tr', timeout=15000)

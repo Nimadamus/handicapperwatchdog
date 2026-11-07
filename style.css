@@ -658,3 +658,4 @@ a.fcard:hover{border-color:var(--accent-line);transform:translateY(-2px)}
 .vquote cite{display:block;margin-top:5px;color:var(--muted);font-size:12.5px;font-style:normal}
 @media (max-width:900px){.wi-do,.bsay{grid-template-columns:1fr 1fr}}
 @media (max-width:640px){.whatis{padding:18px 16px}.wi-cols,.bsay{grid-template-columns:1fr}.vstats{grid-template-columns:repeat(2,1fr)}.vstats>div:last-child{grid-column:1/-1}}
+.profmore{margin-top:26px;margin-bottom:26px}.profmore h2{font-size:18px;margin:0 0 8px}.profmore p{display:flex;flex-wrap:wrap;gap:6px 14px;margin:0 0 8px;font-size:14px}

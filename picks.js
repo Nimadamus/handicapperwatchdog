@@ -58,7 +58,7 @@
       $('prows').innerHTML = rows.length ? rows.map(function (p) {
         var t = TIER[p.tier] || TIER.small;
         return '<tr><td class="l nowrap hs">' + when(p.start) + '</td><td class="l"><span class="ps small">' + when(p.start) + ' PT</span><b>' + esc(p.selection) + '</b> <span class="dim small">' + esc(p.bet_type) + '</span><span class="pg dim small">' + esc(p.league) + ' &middot; ' + esc(p.matchup) + '</span></td><td>' + odds(p.odds) +
-          '</td><td class="l"><a href="capper.html?id=' + esc(p.id) + '"><b class="idc">#' + esc(p.id.slice(0, 6).toUpperCase()) + '</b></a>' + (follows.indexOf(p.id) >= 0 ? ' <span class="pos" title="You follow this account">★</span>' : '') + '<span class="pt"><span class="badge ' + t[0] + '">' + t[1] + '</span></span></td><td class="hr">' + p.cw + '-' + p.cl + (p.cp ? '-' + p.cp : '') +
+          '</td><td class="l"><a href="handicappers/' + esc(p.id) + '.html"><b class="idc">#' + esc(p.id.slice(0, 6).toUpperCase()) + '</b></a>' + (follows.indexOf(p.id) >= 0 ? ' <span class="pos" title="You follow this account">★</span>' : '') + '<span class="pt"><span class="badge ' + t[0] + '">' + t[1] + '</span></span></td><td class="hr">' + p.cw + '-' + p.cl + (p.cp ? '-' + p.cp : '') +
           '</td><td>' + sgn(p.cu, 2) + '</td><td class="hm">' + sgn(p.croi, 1, '%') + '</td><td class="hm">' + lead(p.lead_min) + '</td></tr>';
       }).join('') : '<tr><td colspan="8" class="empty">' + ($('pf').value === 'f' && !follows.length ? 'You are not following anyone yet. Open a profile and press Follow.' : 'No eligible picks match these filters right now.') + '</td></tr>';
       $('pcount').textContent = fmt(rows.length) + ' of ' + fmt(all.length) + ' eligible picks';
