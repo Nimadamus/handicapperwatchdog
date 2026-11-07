@@ -63,6 +63,54 @@
     function set2(id, html) { var el = $(id); if (el) el.innerHTML = html; }
   }
 
+  // sample profile: one real account's published file, rendered tab by tab
+  function sampleProfile(r) {
+    var box = $('sdash');
+    if (!box || !r) return;
+    fetch('data/p/' + r.id + '.json').then(function (x) { return x.json(); }).then(function (p) {
+      var o = p.overview || {}, a = p.advanced || {}, st = p.streaks || {}, z = a.z || {}, be = a.break_even || {}, W = p.windows || {}, c = code(r.id);
+      var name = function (k) { return esc(String(k).replace('|', ' · ')); };
+      var tbl = function (head, rows, n) {
+        return '<div class="st"><h4>' + head + '</h4><table><thead><tr><th class="l"></th><th>Picks</th><th>Record</th><th>Win %</th><th>Units</th><th>ROI</th></tr></thead><tbody>' +
+          (rows || []).slice(0, n || 8).map(function (x) { return '<tr><td class="l">' + name(x.key) + '</td><td>' + fmt(x.picks) + '</td><td>' + recTxt(x) + '</td><td>' + pct(x.win_pct) + '</td><td>' + sgn(x.net, 2) + '</td><td>' + sgn(x.roi, 1, '%') + '</td></tr>'; }).join('') + '</tbody></table></div>';
+      };
+      var byPicks = function (l) { return (l || []).slice().sort(function (x, y) { return y.picks - x.picks || y.net - x.net; }); };
+      var fact = function (l, v) { return '<div><b>' + v + '</b><span>' + l + '</span></div>'; };
+      var pts = p.curve || [], chart = '';
+      if (pts.length > 1) {
+        var mn = Math.min.apply(null, pts.concat(0)), mx = Math.max.apply(null, pts.concat(0)), sp = (mx - mn) || 1, w = 900, h = 220;
+        var y = function (v) { return 8 + (mx - v) * (h - 16) / sp; };
+        chart = '<svg viewBox="0 0 ' + w + ' ' + h + '" preserveAspectRatio="none" role="img" aria-label="Cumulative units for #' + c + '"><line x1="0" x2="' + w + '" y1="' + y(0) + '" y2="' + y(0) + '" stroke="var(--line2)" stroke-dasharray="3 4" vector-effect="non-scaling-stroke"/><path d="' +
+          pts.map(function (v, i) { return (i ? 'L' : 'M') + (i * w / (pts.length - 1)).toFixed(1) + ' ' + y(v).toFixed(1); }).join('') + '" fill="none" stroke="' + (pts[pts.length - 1] >= 0 ? 'var(--win)' : 'var(--loss)') + '" stroke-width="2.2" vector-effect="non-scaling-stroke"/></svg>';
+      }
+      var wins = ['r7', 'r30', 'r90', 'all'].map(function (k) { return W[k]; }).filter(function (x) { return x && x.picks; });
+      var tabs = [
+        ['Overview', '<div class="schart">' + chart + '</div>' + tbl('Performance by period', wins)],
+        ['Sports', tbl('Record by sport', p.sports) + tbl('Record by season', p.season)],
+        ['Bet types', tbl('Market', p.markets) + tbl('Sport and market', p.market_detail, 8)],
+        ['Prices and sides', tbl('Favorites and underdogs', p.fav_dog) + tbl('Odds ranges', p.odds_buckets) + tbl('Overs and unders', p.over_under) + tbl('Home and away', p.home_away)],
+        ['Teams', tbl('Most backed teams', byPicks(p.teams_backing), 6) + tbl('Most faded teams', byPicks(p.teams_fading), 6)],
+        ['Advanced metrics', '<div class="sfacts">' +
+          fact('Z score vs break even', z.z == null ? 'n/a' : sgn(z.z, 2)) + fact('Win % needed at their prices', be.needed_pct == null ? 'n/a' : pct(be.needed_pct)) + fact('Win % actually hit', be.actual_pct == null ? 'n/a' : pct(be.actual_pct)) +
+          fact('Max drawdown', sgn(a.max_drawdown, 2, 'u')) + fact('Peak units', sgn(a.peak_units, 2, 'u')) + fact('Volatility', a.volatility == null ? 'n/a' : (+a.volatility).toFixed(2)) +
+          fact('Longest win streak', fmt(st.longest_win)) + fact('Longest losing streak', fmt(st.longest_loss)) + fact('Picks per week', p.per_week == null ? 'n/a' : (+p.per_week).toFixed(1)) + '</div>' +
+          tbl('After a win or a loss', p.after, 6) + tbl('By weekday', p.weekday, 7)],
+        ['Pro only', '<div class="slock"><div><span class="lock">Watchdog Pro</span><h4>Pending picks from #' + c + '</h4><p>Eligible picks before the game starts, with this whole file beside them.</p><div class="sl"><span class="blur">Away at Home</span><span class="blur">Side 3.5</span><span class="blur">Sun 1:05</span></div><div class="sl"><span class="blur">Away at Home</span><span class="blur">Total 44.5</span><span class="blur">Sun 4:25</span></div></div>' +
+          '<div><span class="lock">Watchdog Pro</span><h4>The complete pick log</h4><p>All ' + fmt(o.picks || r.picks) + ' graded picks with game, pick, odds, result, units and post time. Free profiles show the latest 50.</p><a class="btn pro" href="pricing.html">View Watchdog Pro</a></div></div>']];
+      box.innerHTML = '<div class="shead"><div><span class="eyebrow">Sample profile</span><b class="sid">#' + esc(c) + '</b></div>' +
+        '<div class="skpi">' + fact('Record', recTxt(o)) + fact('Units', sgn(o.net, 2)) + fact('ROI', sgn(o.roi, 1, '%')) + fact('Win rate', pct(o.win_pct)) + fact('Avg odds', o.avg_odds == null ? 'n/a' : (o.avg_odds > 0 ? '+' : '') + o.avg_odds) + '</div></div>' +
+        '<div class="stabs" role="tablist" aria-label="Profile sections">' + tabs.map(function (t, i) { return '<button type="button" role="tab" id="st' + i + '" aria-selected="' + (i ? 'false' : 'true') + '" aria-controls="sp">' + t[0] + '</button>'; }).join('') + '</div>' +
+        '<div class="spanel" id="sp" role="tabpanel">' + tabs[0][1] + '</div>' +
+        '<a class="herolink sgo" href="' + link(r) + '">Open this entire profile <span aria-hidden="true">&rarr;</span></a>';
+      box.querySelector('.stabs').addEventListener('click', function (e) {
+        var b = e.target.closest('button'); if (!b) return;
+        var i = +b.id.slice(2);
+        [].forEach.call(this.children, function (x, k) { x.setAttribute('aria-selected', k === i ? 'true' : 'false'); });
+        $('sp').innerHTML = tabs[i][1];
+      });
+    }).catch(function () { box.innerHTML = '<p class="muted">The sample profile did not load. <a href="cappers.html">Open the rankings</a>.</p>'; });
+  }
+
   function verifySearch(all) {
     var input = $('vq'), box = $('vlist'), form = $('vsearch'), services = [], items = [], on = -1;
     if (!input) return;
@@ -200,6 +248,7 @@
     var top = est[0], low = est.length > 1 ? est[est.length - 1] : null;
     var since = function (r) { var f = r.first_pick || r.monitored_since; return f ? new Date(f + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : 'n/a'; };
     buyerTools(all, est, M);
+    sampleProfile(est.filter(function (r) { return !r.basic && r.profile; })[0]);
     if (top && $('idCode')) {
       $('idCode').textContent = '#' + code(top.id);
       set('idPicks', fmt(top.picks)); set('idRec', recTxt(top)); set('idUnits', sgn(top.units, 2)); set('idSince', since(top));
