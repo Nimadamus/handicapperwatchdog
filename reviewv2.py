@@ -29,7 +29,14 @@ def paras(items):
 
 
 def tag(kind):
-    return '<span class="evt %s">%s</span>' % (TAG.get(kind.split(',')[0], 'seller'), E(kind))
+    k = kind.lower()
+    if k.startswith(('confirmed', 'win confirmed', 'reported by', 'verified')):
+        cls = 'ver'
+    elif k.startswith('contradicted'):
+        cls = 'alleg'
+    else:
+        cls = TAG.get(kind.split(',')[0].split(';')[0], 'seller')
+    return '<span class="evt %s">%s</span>' % (cls, E(kind))
 
 
 def render(rev, st, names, document):
