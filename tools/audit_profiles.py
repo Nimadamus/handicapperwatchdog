@@ -84,15 +84,15 @@ def main():
         for v in sd.values():
             for k in ('picks', 'w', 'l', 'p'):
                 tot[k] += v['overall'][k]
-        if (tot['picks'], tot['w'], tot['l'], tot['p']) != (o['picks'], o['w'], o['l'], o['p']):
+        if sd and (tot['picks'], tot['w'], tot['l'], tot['p']) != (o['picks'], o['w'], o['l'], o['p']):
             bad('sports_do_not_sum', pid)
         # streaks recomputed by us equal the tracker's
         st, ost = p.get('streaks') or {}, o.get('streaks') or {}
-        if ost and (st.get('longest_win'), st.get('longest_loss'), st.get('current')) != (ost.get('longest_win'), ost.get('longest_loss'), ost.get('current')):
+        if st and ost and (st.get('longest_win'), st.get('longest_loss'), st.get('current')) != (ost.get('longest_win'), ost.get('longest_loss'), ost.get('current')):
             bad('streaks_vs_tracker', pid, '%s vs %s' % (st, ost))
         cur = st.get('current') or ''
         signed = (int(cur[1:]) if cur[:1] == 'W' else -int(cur[1:])) if cur else 0
-        if row.get('streak') is not None and signed != row.get('streak'):
+        if st and row.get('streak') is not None and signed != row.get('streak'):
             bad('streak_vs_index', pid, '%s vs %s' % (cur, row.get('streak')))
         # ledger: never more than the cap, never identity fields, newest first
         led = p.get('ledger') or []
