@@ -92,7 +92,7 @@ def check(label, extra):
         review = open(os.path.join(tmp, 'reviews', 'docs-sports.html'), encoding='utf-8').read()
         book = open(os.path.join(tmp, 'sportsbooks', 'justbet.html'), encoding='utf-8').read()
         editorial = review + book + open(os.path.join(tmp, 'reviews', 'index.html'), encoding='utf-8').read()
-        assert 'Not rated' in review and 'aff=' not in editorial and 'BETLEGEND' not in editorial
+        assert ('Not rated' in review or 'Not verified' in review) and 'aff=' not in editorial and 'BETLEGEND' not in editorial
         assert 'justbet-logo' not in book and '<h1>JustBet</h1>' in book
         assert book.count('Registration link not enabled') == 2
         assert 'new account form' in book and 'be.justbet.co/front/signup' in book
@@ -186,7 +186,7 @@ def check(label, extra):
             'scott-spreitzer', 'robert-ferringo', 'docs-sports-ai', 'big-al',
         ):
             page = open(os.path.join(tmp, 'reviews', slug + '.html'), encoding='utf-8').read()
-            assert page.count('<h1') == 1 and 'Not rated' in page and 'aff=' not in page, slug
+            assert page.count('<h1') == 1 and ('Not rated' in page or 'Not verified' in page) and 'aff=' not in page, slug
             assert 'noindex' not in page.lower()
         for name, digest in before.items():
             now = hashlib.sha256(open(os.path.join(tmp, name), 'rb').read()).hexdigest()

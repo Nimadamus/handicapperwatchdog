@@ -37,7 +37,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CACHE = os.path.join(HERE, '.cache', 'profiles')
 SITE = os.path.join(HERE, '_site')
 STATIC = ('index.html', 'home.css', 'sportsbook-bg.jpg', 'sportsbook-bg-sm.jpg', 'capper.html', 'cappers.html', 'account.html', 'compare.html', 'picks.html', 'style.css', 'app.js', 'capper.js',
-          'pro.js', 'track.js', 'compare.js', 'pricing.js', 'account.js', 'picks.js', 'contact.js', 'favicon.svg', 'stadium.svg', 'og-card.png', 'CNAME', 'robots.txt', 'sitemap.xml')
+          'pro.js', 'track.js', 'compare.js', 'pricing.js', 'account.js', 'picks.js', 'contact.js', 'favicon.svg', 'stadium.svg', 'og-card.png', 'review2.css', 'CNAME', 'robots.txt', 'sitemap.xml')
 PROFILE_TTL = int(os.environ.get('HWD_PROFILE_TTL', str(6 * 3600)))
 MAX_FETCH = int(os.environ.get('HWD_MAX_FETCH', '400'))
 try:  # Pacific time with daylight saving; the fixed offset is a fallback only
@@ -1938,7 +1938,7 @@ def _write_learn(site, meta, cappers):
         f.write(html)
 
 
-def _write_editorial(site):
+def _write_editorial(site, cappers=None):
     """Reviews and the JustBet page. Facts come from content/*.json. No score without evidence. No affiliate URL."""
     import pathlib
     root = pathlib.Path(HERE) / 'content'
@@ -1947,6 +1947,25 @@ def _write_editorial(site):
     if not reviews_path.is_file() or not book_path.is_file():
         return
     reviews = json.loads(reviews_path.read_text(encoding='utf-8'))
+    import reviewv2
+    v2 = {}
+    v2_dir = root / 'reviews_v2'
+    if v2_dir.is_dir():
+        for fp in sorted(v2_dir.glob('*.json')):
+            r2 = json.loads(fp.read_text(encoding='utf-8'))
+            v2[r2['slug']] = r2
+    have = {r['slug'] for r in reviews['reviews']}
+    for slug, r2 in v2.items():  # a v2 only review still needs a directory card and services entry
+        if slug not in have:
+            reviews['reviews'].append({'slug': slug, 'name': r2['name'], 'kind': r2['kind'], 'title': r2['title'], 'description': r2['description'],
+                                       'dek': r2['dek'], 'advertised': r2['claims_note'], 'watchdog': r2['our_data']['text'], 'pricing': [r2['pricing_intro']],
+                                       'transparency': r2['record'][0], 'customers': r2['customers_intro'], 'strengths': r2['strengths'],
+                                       'weaknesses': r2['concerns'], 'related': [], 'sources': r2['sources']})
+    for r in reviews['reviews']:
+        if r['slug'] in v2:
+            r['verdict'] = v2[r['slug']]['status']['label']
+            r['dek'] = v2[r['slug']]['dek']
+    v2_stats = reviewv2.board_stats(cappers or [])
     book = json.loads(book_path.read_text(encoding='utf-8'))
     out_reviews = os.path.join(site, 'reviews')
     out_books = os.path.join(site, 'sportsbooks')
@@ -2138,6 +2157,8 @@ def _write_editorial(site):
             json.dumps(ld, ensure_ascii=True).replace('<', '\\u003c'))
         html = _document(1, 'reviews/index.html', rev['title'], rev['description'],
                          'https://handicapperwatchdog.com/reviews/%s.html' % rev['slug'], body)
+        if rev['slug'] in v2:
+            html = reviewv2.render(v2[rev['slug']], v2_stats, names, _document)
         written.append(html)
         with open(os.path.join(out_reviews, rev['slug'] + '.html'), 'w', encoding='utf-8', newline='\n') as f:
             f.write(html)
@@ -2655,7 +2676,7 @@ def stamp_public_pages(site):
     _write_learn(site, meta, cappers)
     _write_research(site, meta, cappers)
     _write_sport_pages(site, cappers)
-    _write_editorial(site)
+    _write_editorial(site, cappers)
     _write_legal(site)
     _write_pro_legal(site)
     _write_retired_rating(site)
