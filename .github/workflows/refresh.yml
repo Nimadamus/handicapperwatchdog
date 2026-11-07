@@ -56,6 +56,9 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          # Pages sat in syncing_files past the 10 minute default on 7 Nov 2026 (5 timed out deploys); allow 30 minutes.
+          timeout: 1800000
   alerts:
     # Opt-in pick alerts for Pro members, sent after the new pending feed is live. Never blocks the site.
     needs: deploy
