@@ -1,0 +1,357 @@
+{
+  "slug": "dubclub",
+  "name": "DubClub",
+  "legal_name": "DubClub, Inc.",
+  "kind": "Marketplace where handicappers sell picks by subscription",
+  "checked": "7 Nov 2026",
+  "checked_iso": "2026-11-07",
+  "updated_iso": "2026-11-07",
+  "title": "DubClub Review 2026: Pricing, Record, Is It Worth It?",
+  "description": "DubClub review, checked 7 Nov 2026: what clubs cost, the no refund policy, how seller records can be hidden, and what buyers say about billing.",
+  "h1": "DubClub review",
+  "dek": "A Chicago company that lets anyone open a paid pick club and deliver plays by text, push, email or Discord. Each seller sets the price, DubClub adds a service fee, every sale is final, and the seller decides how much of its record you get to see.",
+  "status": {
+    "label": "Not verified",
+    "note": "Watchdog has not graded a full, time stamped record for any seller on DubClub. DubClub is a platform, not a single handicapper, so this page reviews the platform's rules and what it shows buyers."
+  },
+  "glance": [
+    [
+      "Operator",
+      "DubClub, Inc., Chicago, IL (Terms of Service)"
+    ],
+    [
+      "Launched",
+      "2021, Chicago (TechCrunch, Sep 2024)"
+    ],
+    [
+      "Price range seen",
+      "Set by each seller. Two clubs checked: $9 a week to $500 lifetime, plus a DubClub service fee"
+    ],
+    [
+      "Refunds",
+      "\"All sales are final\" (Refund Policy). Plans and trials auto renew"
+    ],
+    [
+      "Full public record",
+      "Not required. Sellers may show a Hotzone or a tracker link, and can hide it"
+    ],
+    [
+      "Watchdog graded record",
+      "None yet"
+    ]
+  ],
+  "short_answer": [
+    "DubClub is a real, venture backed company. It names its operator, DubClub, Inc., publishes its terms and refund policy, and takes payments through Stripe. In that sense it is legitimate: it is a working checkout and delivery service for people who sell picks.",
+    "It is not a referee. Its terms call the picks informational and entertainment content and make no warranty about their accuracy, and each seller controls what record is shown. A seller can turn off its Hotzone, the highlight reel of hot runs, and can mark posts so they are not graded. The \"Third-Party Tracked\" badge only means the seller linked a tracking page.",
+    "So judge the seller, not the platform. Every sale is final, plans auto renew, and one club can cost from a few dollars a week to hundreds a year. If you buy, start with the shortest plan, turn off auto renewal the day you join, and record every play yourself with the line and the time it arrived."
+  ],
+  "pricing_intro": "DubClub has no single price. Each seller sets its own plans. Below are the plans shown on two large clubs on 7 Nov 2026, chosen because DubClub features both sellers in its own partner testimonials, plus DubClub's own app prices. Other clubs charge different amounts.",
+  "pricing": [
+    [
+      "HydroParlay Plays (plays only, no Discord)",
+      "Week $9 · month $25 · 3 months $70 · 6 months $130 · year $250",
+      "No refund. Auto renews"
+    ],
+    [
+      "HydroParlay Full Membership (includes Discord)",
+      "Week $15 · month $55 · 3 months $150 · 6 months $290 · year $400",
+      "No refund. Auto renews"
+    ],
+    [
+      "Hydro Mentorship",
+      "$100 a month",
+      "No refund. Auto renews"
+    ],
+    [
+      "MattyCovers Membership",
+      "Week $20 · month $34.99 · 2 months $69.99 · 3 months $85.99 · 6 months $149.99 · year $275",
+      "No refund. Auto renews"
+    ],
+    [
+      "MattyCovers Lifetime",
+      "$500 once",
+      "No refund. Lasts while the seller's account stays active"
+    ],
+    [
+      "DubClub service fee",
+      "A percentage of each charge, shown at checkout, may vary by seller",
+      "Non refundable except as required by law"
+    ],
+    [
+      "DubClub app (Apple in app purchases)",
+      "Community Access Monthly $14.99 · DubBucks packs $14.99 to $249.99",
+      "DubBucks cannot be redeemed for cash"
+    ]
+  ],
+  "guarantee": [
+    "DubClub offers no guarantee on results, and its refund policy is blunt: \"ALL SALES ARE FINAL AND NON-REFUNDABLE.\" It names dissatisfaction with the content and undelivered messages among the cases that get no refund. DubClub or a seller may give a refund, discount or credit at its own discretion, but one exception does not create a right to another.",
+    "Plans and free trials renew automatically. The terms say you must switch off renewal at least one calendar day before the trial or period ends, and the help center says trials that renew are not refunded. If you cancel mid period you keep access but still pay for that period. A lifetime plan is a single charge that lasts only while the seller's account stays active on DubClub.",
+    "Some sellers hand out free days instead of refunds. The help center shows sellers can extend subscribers by 1 to 31 days, and some clubs give a 7 day extension when you refer a friend. Those are extra days of the same picks, never money back, and betting losses are never covered."
+  ],
+  "claims": [
+    {
+      "claim": "\"Win more together.\"",
+      "where": "Homepage headline",
+      "status": "Platform slogan"
+    },
+    {
+      "claim": "\"15+ MILLIONAIRES MADE\"",
+      "where": "Partner signup page",
+      "status": "Platform claim, not explained"
+    },
+    {
+      "claim": "\"People make more money and more informed sports betting decisions with DubClub.\"",
+      "where": "About page",
+      "status": "Platform claim, no evidence shown"
+    },
+    {
+      "claim": "\"10,353,889 Purchases on DubClub\" and \"11,057,000+ PURCHASES ON DUBCLUB\"",
+      "where": "About page and partner signup page",
+      "status": "Platform claim, numbers differ"
+    },
+    {
+      "claim": "HydroParlay: \"1700U+ since 2023 tracked on @pikkitsports\", with a \"Third-Party Tracked\" badge",
+      "where": "HydroParlay club page",
+      "status": "Seller claim, tracker not checked by us"
+    },
+    {
+      "claim": "MattyCovers: \"5+ year profitable bettor\" and \"Lotto King\"",
+      "where": "MattyCovers club page",
+      "status": "Seller claim, no record shown"
+    },
+    {
+      "claim": "\"DubClub says it vets these sports content creators.\"",
+      "where": "TechCrunch, 4 Sep 2024",
+      "status": "Platform claim, vetting rules not shown"
+    }
+  ],
+  "claims_note": [
+    "The platform's numbers describe sales, not results. Purchase counts, member counts and \"millionaires made\" tell you how much money moves through DubClub. They say nothing about whether buyers profit, and the page does not say who the millionaires are or how they were counted. The two purchase counts also differ, which may only mean the pages were updated at different times.",
+    "Seller pages lean on streaks and nicknames. A unit total such as 1700U means little without the unit size, the prices taken and every losing run, and a claim like \"5+ year profitable bettor\" comes with no log at all on the club page we opened."
+  ],
+  "record": [
+    "What DubClub shows is controlled by the seller. The help center calls the Hotzone a \"highlight reel\" of where a seller is \"on fire,\" and a seller can switch it off so it disappears from the profile, Discover, leaderboards and share graphics. It only counts plays that include odds. In the app, sellers can mark a post as Recap or Info so it is not graded, and public play history shows \"when a capper chooses to share it.\" Free plays are graded automatically, with a form to report a wrong grade.",
+    "The \"Third-Party Tracked\" badge means the seller added a link to a tracking page. DubClub's badge text says the partner \"tracks their performance on a third-party platform.\" We found no DubClub page saying it checks that the linked tracker holds every paid play, posted before the game. That part a buyer has to check personally.",
+    "What would be independently verifiable: a third party log of every paid play with the line, the price and a time stamp before the game, covering the whole history rather than a chosen run. We found no court or regulator record about DubClub, and no platform wide audited record of its sellers. Everything else on a club page, including streaks, unit totals and reviews, is the seller's own marketing."
+  ],
+  "our_data": {
+    "matched": false,
+    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no DubClub seller is matched to a Watchdog graded record, so we make no claim about how sellers on DubClub perform.",
+    "context": "For scale: DubClub club pages promote hot streaks. On the Watchdog board on 7 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+  },
+  "customers_intro": "Customer evidence on DubClub is large but split. App users rate the app well, while recent Trustpilot reviews and older CapperTek reviews complain about billing and about the sellers' results. Below is what we read and how much weight it can carry.",
+  "customers": [
+    {
+      "type": "Customer report",
+      "tone": "Positive",
+      "date": "Checked 7 Nov 2026",
+      "text": "The Apple App Store page shows 4.7 out of 5 from 2.2K ratings. The featured reviews from 2023 praise fast notifications, having every followed seller in one feed, and quick support. Store ratings mostly judge the app, not the sellers' picks.",
+      "source": 7
+    },
+    {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "12 Feb (year not shown)",
+      "text": "A one star App Store review titled \"Borderline scam\" says the buyer kept being charged for months after changing plans and cancelling, and was told he could be banned for asking for his money back.",
+      "source": 7
+    },
+    {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "Mar to Sep 2026",
+      "text": "Trustpilot shows 648 reviews and a 4.1 score, with 92% five stars, but Trustpilot counts only 8 reviews in the last 12 months, and 7 of the 8 most recent reviews are one star. They describe repeat charges (one says $50 three times in 4 days), charges after a discounted month or a trial, trouble cancelling, refunds refused and poor support. One calls the sellers misleading. Trustpilot notes DubClub has not replied to negative reviews and has not invited customers recently.",
+      "source": 14
+    },
+    {
+      "type": "Customer report",
+      "tone": "Positive",
+      "date": "15 Feb 2026",
+      "text": "The one recent positive Trustpilot review praises a named support agent for fixing a problem.",
+      "source": 14
+    },
+    {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "Apr 2022 to Nov 2025",
+      "text": "CapperTek lists nine anonymous reviews and one complaint, all negative. The common story is a seller who looks hot on social media and then loses once the buyer subscribes. Several say the platform does not track or document seller records, and a June 2022 reviewer says joining one seller led to unwanted texts from other sellers, sometimes at 3 am. CapperTek hosts handicapper pages of its own, so it is not a neutral venue, and the reviewers are unverified.",
+      "source": 15
+    },
+    {
+      "type": "Seller curated",
+      "tone": "Neutral",
+      "date": "Checked 7 Nov 2026",
+      "text": "Sellers can show subscriber reviews on their club page once they have five, and can switch them off. DubClub's help center tells sellers to ask for reviews \"during hot streaks or big wins.\" Reviews on a club page are shaped by timing and by the seller.",
+      "source": 18
+    },
+    {
+      "type": "Not found",
+      "tone": "Neutral",
+      "date": "Checked 7 Nov 2026",
+      "text": "We found no Reddit thread with a substantial discussion of DubClub, no Better Business Bureau profile we could confirm belongs to DubClub, Inc., and no court or regulator action involving the company.",
+      "source": null
+    }
+  ],
+  "conflicts": [
+    "Sellers on DubClub can attach sportsbook and prediction market affiliate links to their plays. The help center lists venues including DraftKings, FanDuel, BetMGM, Caesars, bet365, PrizePicks, Underdog, Kalshi and Polymarket, and shows sellers a monthly count of sign ups credited to their own promo codes. A seller paid for sign ups has a reason to push you to bet, whatever the picks are worth. The same pages mention a shared \"DUBCLUB\" code; we did not find who is paid for it.",
+    "DubClub earns a service fee on every charge, and its partner page sells growth tools: sellers over $5K a month in sales unlock front page promotion and a \"Boost\" button to \"drive more purchases.\" Placement on DubClub can reflect sales and promotion, not results.",
+    "The app's \"Find Best Odds\" and Compare tools send you to outside platforms to place the play. DubClub itself takes no bets."
+  ],
+  "strengths": [
+    "A named operator, published terms, a written refund policy and a public help center, so the rules are clear before you pay.",
+    "Plans are listed per seller with weekly, monthly and longer options, so you can buy short.",
+    "Cancelling renewal is self serve, and you keep access to the end of the period you paid for.",
+    "Free plays are graded automatically, and some sellers link an outside tracker you can check."
+  ],
+  "concerns": [
+    "Every sale is final, plans and trials auto renew, and the service fee is non refundable.",
+    "No full record is required. Sellers can hide their Hotzone and keep posts out of grading.",
+    "Recent Trustpilot and App Store complaints describe repeat charges and refunds refused.",
+    "Sellers can earn sign up credit from sportsbooks and betting apps through promo codes on their plays.",
+    "Promotion on the platform is tied to sales volume, not results."
+  ],
+  "checklist": [
+    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
+    "Count units, not wins. A 60% record at heavy favorites can still lose money.",
+    "Read the guarantee for the words refund, credit and extension. Most \"guarantees\" in this business are credits.",
+    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
+    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+  ],
+  "faq": [
+    [
+      "Is DubClub legit?",
+      "DubClub is a real company, DubClub, Inc. of Chicago, that runs checkout and delivery for paid pick clubs and publishes its terms and refund policy. It does not vouch for the sellers' results, and its terms make no warranty about the accuracy of their picks."
+    ],
+    [
+      "How much does DubClub cost?",
+      "Each seller sets its own price, and DubClub adds a service fee shown at checkout. On 7 Nov 2026 two large clubs charged $9 to $20 a week, $25 to $55 a month, $250 to $400 a year, and $500 for one lifetime plan. All sales are final and plans auto renew."
+    ],
+    [
+      "Does DubClub have a verified record?",
+      "No platform wide verified record exists for DubClub sellers. Sellers choose whether to show their Hotzone or a third party tracker link, and can hide it, so check any linked tracker yourself and ask for every play with a time stamp."
+    ],
+    [
+      "Is DubClub worth it?",
+      "You get fast delivery of one seller's plays by text, push, email or Discord, and you can switch off renewal yourself. You do not get proof the seller wins, a refund, or any cover for betting losses, so the value rests entirely on a seller whose record DubClub does not verify."
+    ]
+  ],
+  "related": [
+    "cappertek",
+    "wagertalk",
+    "vegas-dave",
+    "nobrainerwagers",
+    "pregame"
+  ],
+  "sources": [
+    {
+      "title": "DubClub homepage",
+      "url": "https://dubclub.win/",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "DubClub about page (founders, CEO, purchase count, payment claims)",
+      "url": "https://dubclub.win/about-dubclub/",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "DubClub partner signup page (members, purchases, millionaires claims, Boost and promotion features)",
+      "url": "https://dubclub.win/partners/signup/",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "DubClub Terms of Service (operator, service fee, auto renewal, disclaimers), last updated 25 Aug 2026",
+      "url": "https://dubclub.win/terms-of-service/",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "DubClub Refund Policy, last updated 26 Jan 2024",
+      "url": "https://dubclub.win/refund-policy/",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "HydroParlay club page on DubClub (plans and prices, Third-Party Tracked badge)",
+      "url": "https://dubclub.win/r/HydroParlay/",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "MattyCovers club page on DubClub (plans and prices, lifetime plan)",
+      "url": "https://dubclub.win/r/MattyCovers/",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "DubClub on the Apple App Store (rating, in app purchase prices, reviews)",
+      "url": "https://apps.apple.com/us/app/dubclub-plays/id6446815936",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "DubClub Help Center: Refund Requests",
+      "url": "https://dubclub.zendesk.com/hc/en-us/articles/4947922959892-Refund-Requests",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "DubClub Help Center: Will free trials renew and charge me?",
+      "url": "https://dubclub.zendesk.com/hc/en-us/articles/26418704315668-Will-free-trials-renew-and-charge-me",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "DubClub Help Center: How to Add a Third-party Tracking Link?",
+      "url": "https://dubclub.zendesk.com/hc/en-us/articles/43261911036820-How-to-Add-a-Third-party-Tracking-Link",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "DubClub Help Center: How to Turn Off Your Hotzone",
+      "url": "https://dubclub.zendesk.com/hc/en-us/articles/55059975593236-How-to-Turn-Off-Your-Hotzone",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "DubClub Help Center: How to set up Partnership links?",
+      "url": "https://dubclub.zendesk.com/hc/en-us/articles/45082502393492-How-to-set-up-Partnership-links",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "DubClub Help Center: How to See Your Partner Activations",
+      "url": "https://dubclub.zendesk.com/hc/en-us/articles/55266862623380-How-to-See-Your-Partner-Activations",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Trustpilot: DubClub reviews",
+      "url": "https://www.trustpilot.com/review/dubclub.win",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "CapperTek: DubClub.win customer reviews",
+      "url": "https://www.cappertek.com/reviews.asp?shs=DubClub.win",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "TechCrunch, 4 Sep 2024: DubClub wants amateur sports bettors to win more",
+      "url": "https://techcrunch.com/2024/09/04/dubclub-wants-amateur-sports-betters-to-win-more/",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "DubClub Help Center: Reporting a Free Play Not Graded Accurately",
+      "url": "https://dubclub.zendesk.com/hc/en-us/articles/52123369732628-Reporting-a-Free-Play-Not-Graded-Accurately",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "DubClub Help Center: How to Receive Subscriber Reviews?",
+      "url": "https://dubclub.zendesk.com/hc/en-us/articles/36531959646100-How-to-Receive-Subscriber-Reviews",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "DubClub Help Center: How to Process Self-Serve Extensions?",
+      "url": "https://dubclub.zendesk.com/hc/en-us/articles/36462154567444-How-to-Process-Self-Serve-Extensions",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "DubClub Help Center: My subscription just renewed and I forgot to cancel. Can I receive a refund?",
+      "url": "https://dubclub.zendesk.com/hc/en-us/articles/26251403574420-My-subscription-just-renewed-and-I-forgot-to-cancel-Can-I-receive-a-refund",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "DubClub Help Center: How to Earn a 7 Day Extension on Any Subscription?",
+      "url": "https://dubclub.zendesk.com/hc/en-us/articles/27153846173588-How-to-Earn-a-7-Day-Extension-on-Any-Subscription",
+      "accessed": "7 Nov 2026"
+    }
+  ],
+  "pricing_source": 5
+}

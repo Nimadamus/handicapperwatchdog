@@ -60,7 +60,7 @@ def render(rev, st, names, document):
               '<tbody>%s</tbody></table></div><p class="muted small">Source: <a href="%s" rel="nofollow noopener">%s</a>, checked %s.</p></section>') % (
         tag('Verified'), E(rev['pricing_intro']), rows, E(src[ps]['url']), E(src[ps]['title']), E(src[ps]['accessed']))
     guar = '<section class="panel edcard essay" id="guarantee"><h2>How the guarantee really works</h2><div class="prose">%s</div></section>' % paras(rev['guarantee'])
-    crow = ''.join('<li><div>%s%s</div><span class="muted small">%s</span></li>' % (tag(c['status']), ('<q>%s</q>' % E(c['claim'][1:-1])) if c['claim'].count('"') == 2 and c['claim'].startswith('"') else '<p class="cq">%s</p>' % E(c['claim']), E(c['where'])) for c in rev['claims'])
+    crow = ''.join('<li><div>%s%s</div><span class="muted small">%s</span></li>' % (tag(c['status']), ('<q>%s</q>' % E(c['claim'][1:-1])) if c['claim'].count('"') == 2 and c['claim'].startswith('"') and c['claim'].endswith('"') else '<p class="cq">%s</p>' % E(c['claim']), E(c['where'])) for c in rev['claims'])
     claims = ('<section class="panel edcard" id="claims"><h2>What they advertise</h2><p class="lede tight">Quoted from %s pages on %s. '
               'A quote here is not a finding that it is true.</p><ul class="claims">%s</ul><div class="prose">%s</div></section>') % (
         E(rev['name']), E(rev['checked']), crow, paras(rev['claims_note']))
