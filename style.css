@@ -647,3 +647,4 @@ body{background:#0a1120}
 .pagehead{background:linear-gradient(120deg,rgba(217,184,113,.09),transparent 46%),linear-gradient(180deg,#121c2e,#0e1626);border-color:rgba(217,184,113,.22)}
 .btn:not(.ghost):not(.pro):not(.sm.ghost){background:#1c2a40;border-color:rgba(217,184,113,.5);color:#f0d48f}
 .btn:not(.ghost):not(.pro):hover{background:#24344f}
+.billnote{margin:0 0 12px;padding:12px 14px;border-radius:10px;background:var(--s1);border:1px solid rgba(217,184,113,.3);color:var(--ink2);font-size:14px;line-height:1.5}

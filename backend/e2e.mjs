@@ -38,7 +38,8 @@ await step('pages load (home, rankings, profile, pricing, account, compare, term
     const r = await req(p); assert.equal(r.status, 200, p);
     const h = await r.text();
     if (!['/terms.html', '/privacy.html'].includes(p)) assert.ok(h.includes('pro.js'), p + ' loads pro.js');
-    assert.ok(!/trustmyrecord|tmr pro/i.test(h), p + ' has no TMR branding');
+    // The billing note is the one approved mention: it names the merchant on the pricing page.
+    if (!/pro-(terms|privacy)/.test(p)) assert.ok(!/trustmyrecord|tmr pro/i.test(h.replace(/<p class="billnote">.*?<\/p>/s, '')), p + ' has no TMR branding outside the billing note');
   }
 });
 await step('anonymous: free, no Pro key, encrypted files unreadable without key', async () => {

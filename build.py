@@ -1062,7 +1062,8 @@ def _write_guides(site, meta, cappers):
 <p>Every tracked account is a permanent anonymous Watchdog ID. If Pro revealed names, one month of access would be enough to copy the whole list of accounts worth following and use it for free from then on. So names, handles and account links stay out of every plan. Pro gives you the research and the eligible pending picks tied to those IDs.</p>
 <p>%s</p>
 <p>Watchdog Pro is not a verified badge. A handicapper cannot pay to be ranked higher, to be featured, or to receive a label that the record is legitimate.</p>
-<p class="muted small">Prices are in US dollars. Handicapper Watchdog is operated by TrustMyRecord, so Stripe receipts and the billing portal show the TrustMyRecord business name. Cancel any time from your account page. Subscriptions are covered by the <a href="pro-terms.html">Watchdog Pro subscription terms</a> and the <a href="pro-privacy.html">Watchdog Pro privacy notice</a>. Records are past results, not predictions or a guarantee. 21+. Gambling problem? Call 1 800 GAMBLER.</p>
+<p class="billnote"><b>Who bills you:</b> Handicapper Watchdog is operated by TrustMyRecord. Stripe receipts and the billing portal show the TrustMyRecord business name, and it may appear on your card statement.</p>
+<p class="muted small">Prices are in US dollars. Cancel any time from your account page. Subscriptions are covered by the <a href="pro-terms.html">Watchdog Pro subscription terms</a> and the <a href="pro-privacy.html">Watchdog Pro privacy notice</a>. Records are past results, not predictions or a guarantee. 21+. Gambling problem? Call 1 800 GAMBLER.</p>
 <p><a href="cappers.html">Look at the free board first</a> · <a href="picks.html">Today&rsquo;s Pro picks</a> · <a href="how-we-grade.html">How a record is graded</a> · <a href="reviews/index.html">Handicapper reviews</a></p>
 </div></section>
 <script src="pro.js"></script>

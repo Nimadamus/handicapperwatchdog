@@ -48,6 +48,10 @@ for f in bins[:300] + [os.path.join(SITE, 'data', 'x', 'pending.bin')]:
         fails.append((f, 'not ciphertext'))
 print('sealed files', len(bins))
 
+for f in glob.glob(os.path.join(SITE, 'sports', '*.html')):
+    rows = len(re.findall(r'<td class="l rk">', open(f, encoding='utf-8').read()))
+    if rows > 25:
+        fails.append((f, 'sport page rows %d' % rows))
 leak = re.compile(r'th-\d{4}|"handle"|"username"|teams_backing|sport_detail')
 pages = glob.glob(os.path.join(SITE, '**', '*.html'), recursive=True)
 for f in pages:
