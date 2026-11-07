@@ -3,7 +3,7 @@
   "checked_iso": "2026-10-27",
   "description": "Reviews of public handicappers and pick marketplaces. Records they advertise, prices we could read, and why Watchdog has not scored them yet.",
   "intro": "These are public names people search. The free rankings on this site stay anonymous on purpose. A review is a different page: it names a service that already sells itself, and it says what we could and could not check.",
-  "unrated_note": "A review stays unrated until four things are in the file: a record Watchdog graded from posts, the record the service advertises, a price from a page we opened, and a real sample of customer experience. A hot streak on a sales page is not that file. None of these ten clear that bar, so none of them get a number.",
+  "unrated_note": "A review stays unrated until four things are in the file: a record Watchdog graded from posts, the record the service advertises, a price from a page we opened, and a real sample of customer experience. A hot streak on a sales page is not that file. None of the services here clear that bar, so none of them get a number.",
   "independence": "The 100 point score is editorial. It is not for sale. A sportsbook relationship, if one is added later, does not move a handicapper's score.",
   "rubric": [
     {
@@ -572,6 +572,678 @@
           "url": "https://www.sportscapping.com/all-season-cappers-leaderboard.html?min_picks=1&sort=profit&direction=DESC"
         }
       ]
+    },
+    {
+      "slug": "nobrainerwagers",
+      "name": "NoBrainerWagers",
+      "kind": "Pick service",
+      "checked": "6 Nov 2026",
+      "checked_iso": "2026-11-06",
+      "title": "NoBrainerWagers Review: What 45 Customer Reviews Say | Handicapper Watchdog",
+      "h1": "NoBrainerWagers review: what customers say",
+      "description": "NoBrainerWagers review from 45 customer reviews: praise for support and results, 19 reviews on two dates, and refund complaints. What Watchdog could and could not check.",
+      "dek": "NoBrainerWagers has one of the largest review files we found, and most of it is glowing. It also has 19 reviews dated on just two days, and complaints about refunds.",
+      "advertised": [
+        "The home page opened on 6 Nov 2026 showed a tracker with a record of 434-307-22 and $16,975 at $100 a unit. The same page showed 40.0% across the last 10 graded picks.",
+        "It says picks are posted before the game and locked until graded, that wins and losses stay on the public record, and that the service has run since 2017.",
+        "It describes a daily MAX bet of 6% to 12% of total bankroll, and plays sent when its algorithm projects an edge of 70% or higher."
+      ],
+      "watchdog": "Not matched to a Watchdog graded record. Tracked accounts stay anonymous, and this page does not say whether this service is one of them.",
+      "pricing": [
+        "No price was opened for this edition. Reviewers call it expensive, and one describes paying over $27,000 in total. That figure is the reviewer's."
+      ],
+      "transparency": "The site publishes a running record, which is more than many sellers do. It is the seller's own tracker. Watchdog has not regraded it. The page also carried a sportsbook sign up offer, so the site may earn from bettors in more than one way.",
+      "customers": "Mostly positive on volume, with a pattern worth weighing. Bursts of same day reviews do not prove anything is fake. They do mean the raw count overstates how many separate moments of praise there were.",
+      "testimonials": {
+        "count": 45,
+        "positive": 39,
+        "negative": 5,
+        "mixed": 1,
+        "span": "2020 to 2025",
+        "points": [
+          "Happy members praise fast replies, the bankroll system, and results posted win or lose. Several say the entry price scared them and then paid for itself.",
+          "Thirteen of the 45 reviews are dated 30 Sep 2024, and six more are dated 15 Dec 2022. That is 19 reviews on two days. One 30 Sep 2024 review opens with the same words as a Trustpilot review from that date, which could simply be one member posting twice.",
+          "One reviewer says free picks are offered for good reviews and that a member who complained lost access after spending over $27,000 in total. We could not confirm that.",
+          "Two complaints describe refunds that never came, one for a guaranteed play in 2024 and one for a service that stopped in 2020.",
+          "A mixed 2023 review calls the reporting about 90% accurate and says some losses were counted as pushes."
+        ],
+        "quote": {
+          "text": "90% accuracy with reporting, even though they say 100% it's not",
+          "when": "CapperTek reviewer, Aug 2023"
+        },
+        "other": "Trustpilot showed 88 reviews and a 4.0 score on 6 Nov 2026. A one star review dated 5 Nov 2026 describes unwanted subscription charges."
+      },
+      "strengths": [
+        "It publishes a record with losses, not just winning tickets.",
+        "Many long term reviewers describe quick replies and clear bankroll rules."
+      ],
+      "weaknesses": [
+        "A 6% to 12% single bet is a very large share of a bankroll.",
+        "Refund complaints and a claim about rewarded reviews are in the file, and neither is resolved here.",
+        "The tracker is self published."
+      ],
+      "sources": [
+        {
+          "title": "NoBrainerWagers customer reviews on CapperTek",
+          "url": "https://www.cappertek.com/reviews.asp?shs=NoBrainerWagers.com"
+        },
+        {
+          "title": "NoBrainerWagers home page",
+          "url": "https://nobrainerwagers.com/"
+        },
+        {
+          "title": "NoBrainerWagers on Trustpilot",
+          "url": "https://www.trustpilot.com/review/nobrainerwagers.com"
+        }
+      ],
+      "related": [
+        "the-cashman-wins",
+        "sportscappro"
+      ]
+    },
+    {
+      "slug": "the-cashman-wins",
+      "name": "The Cashman Wins",
+      "kind": "Pick service",
+      "checked": "6 Nov 2026",
+      "checked_iso": "2026-11-06",
+      "title": "The Cashman Wins Review: What 33 Customer Reviews Say | Handicapper Watchdog",
+      "h1": "The Cashman Wins review: what customers say",
+      "description": "The Cashman Wins review from 33 customer reviews: low price, loyal members, two non delivery complaints, and no outside record. What Watchdog found.",
+      "dek": "Alan Cashman sells cheap access and his reviewers love him for it. Most of the praise comes from a small, loyal group, and two buyers say they got nothing.",
+      "advertised": [
+        "The site opened on 6 Nov 2026 promotes affordable picks from Alan Cashman, with sections for pick history, systems and models, power ratings, props and futures.",
+        "Reviewers repeat claims of 65% to 70% in some stretches. Those are reviewer statements, and we did not confirm them."
+      ],
+      "watchdog": "Not matched to a Watchdog graded record. Tracked accounts stay anonymous, and this page does not say whether this service is one of them.",
+      "pricing": [
+        "The home page banner showed an All Access Monthly Membership at $10 on 6 Nov 2026. The site also says there are no refunds once picks are sent."
+      ],
+      "transparency": "The site has a pick history section, which we did not regrade. Its menu also includes a sportsbook sign up link, so a reader should know the site can earn from a bettor joining a book.",
+      "customers": "Warm and consistent, with a low price removing most of the risk that drives anger elsewhere. The sample leans on repeat writers, so 33 reviews are not 33 independent opinions.",
+      "testimonials": {
+        "count": 33,
+        "positive": 30,
+        "negative": 2,
+        "mixed": 1,
+        "span": "2022 to 2026",
+        "points": [
+          "The most repeated praise is the price, followed by few picks a week and a plain, honest tone.",
+          "Many reviews read like notes to the owner after a good run. The 33 reviews come from 16 reviewer names, so a small group of loyal members writes most of the file.",
+          "Two reviewers say they paid and got nothing, one in 2023 through Patreon and one in 2026 who says emails went unanswered.",
+          "The one mixed review likes the service and wishes there were more plays, saying days can pass without one."
+        ],
+        "quote": {
+          "text": "charges for a year what a lot of these guys charge for a week",
+          "when": "CapperTek reviewer, Dec 2022"
+        }
+      },
+      "strengths": [
+        "$10 a month is a small cost to clear, compared with most sellers here.",
+        "Reviewers describe few picks and no pressure to bet every day."
+      ],
+      "weaknesses": [
+        "Two reviewers report paying and receiving nothing.",
+        "Win rate claims come from reviewers and the seller, not from an outside grade.",
+        "No refunds once picks are sent."
+      ],
+      "sources": [
+        {
+          "title": "The Cashman Wins customer reviews on CapperTek",
+          "url": "https://www.cappertek.com/reviews.asp?shs=TheCashmanWins.com"
+        },
+        {
+          "title": "The Cashman Wins home page",
+          "url": "https://www.thecashmanwins.com/"
+        }
+      ],
+      "related": [
+        "nobrainerwagers",
+        "bender-wins"
+      ]
+    },
+    {
+      "slug": "dimers",
+      "name": "Dimers",
+      "kind": "Betting data and picks site",
+      "checked": "6 Nov 2026",
+      "checked_iso": "2026-11-06",
+      "title": "Dimers Review: What 17 Customer Reviews Say | Handicapper Watchdog",
+      "h1": "Dimers review: what customers say",
+      "description": "Dimers review from 17 customer reviews: useful free tools for some, and repeated complaints about parlays and sportsbook incentives.",
+      "dek": "Dimers is a data and picks site, not a classic tout. Its CapperTek reviews are mostly angry, and the complaint is about incentives more than about one bad run.",
+      "advertised": [
+        "Dimers presents itself as a sports betting analytics site with predictions and tools. No record claim was opened for this edition."
+      ],
+      "watchdog": "Not matched to a Watchdog graded record. Tracked accounts stay anonymous, and this page does not say whether this service is one of them.",
+      "pricing": [
+        "No price was opened. Our request for a subscribe page returned page not found on 6 Nov 2026. Reviewers mainly discuss its free content."
+      ],
+      "transparency": "Reviewers raise the sportsbook question more than the record. Any site that earns from sign ups has a reason to send readers to bet, and readers should weigh free picks with that in mind.",
+      "customers": "Mostly negative, and much of it from 2022. One unhappy writer accounts for several entries, so the file is smaller than its count.",
+      "testimonials": {
+        "count": 17,
+        "positive": 4,
+        "negative": 13,
+        "mixed": 0,
+        "span": "2021 to 2025",
+        "points": [
+          "The main complaint is that free parlays and long shots are poor bets, pushed to send readers to sportsbooks.",
+          "Several reviewers say the site earns when readers sign up at books, which is how they explain its picks. That is their reading of the business.",
+          "Positive reviewers like the free tools, trends and reasoning. One calls the site part of their daily routine.",
+          "One reviewer posted several times and says earlier reviews were removed from CapperTek. Thirteen names wrote the 17 reviews."
+        ],
+        "quote": {
+          "text": "They're \"FREE\" for a reason.",
+          "when": "CapperTek reviewer, Nov 2022"
+        },
+        "other": "Dimers had a claimed Trustpilot profile with 0 reviews on 6 Nov 2026."
+      },
+      "strengths": [
+        "Reviewers who like it value the free tools and the reasons shown with picks."
+      ],
+      "weaknesses": [
+        "Long shot parlays are a recurring complaint.",
+        "A reviewer says linking an account is unsafe. We have no evidence for or against that, and we did not test it."
+      ],
+      "sources": [
+        {
+          "title": "Dimers customer reviews on CapperTek",
+          "url": "https://www.cappertek.com/reviews.asp?shs=Dimers.com"
+        },
+        {
+          "title": "Dimers on Trustpilot",
+          "url": "https://www.trustpilot.com/review/dimers.com"
+        }
+      ],
+      "related": [
+        "wagertalk",
+        "dubclub"
+      ]
+    },
+    {
+      "slug": "wagertalk",
+      "name": "WagerTalk",
+      "kind": "Pick marketplace",
+      "checked": "6 Nov 2026",
+      "checked_iso": "2026-11-06",
+      "title": "WagerTalk Review: What 13 Customer Reviews Say | Handicapper Watchdog",
+      "h1": "WagerTalk review: what customers say",
+      "description": "WagerTalk review from 13 customer reviews: all negative, centered on records that cooled after purchase. What the sales pages show and what Watchdog could check.",
+      "dek": "WagerTalk sells packages from many handicappers. Every review we read is negative, and most say the same thing: the record looked better before they paid.",
+      "advertised": [
+        "The home page opened on 6 Nov 2026 sold plays with short window records, such as 16-5 (76%) over the last 21 in one category and 4-0 (100%) in another.",
+        "A short window can be chosen after the fact. A 4-0 run tells a buyer almost nothing about the next pick."
+      ],
+      "watchdog": "Not matched to a Watchdog graded record. Tracked accounts stay anonymous, and this page does not say whether this service is one of them.",
+      "pricing": [
+        "Prices vary by package and handicapper. We did not record a single price for this edition. One 2021 reviewer describes a $2 package."
+      ],
+      "transparency": "Records on the site are presented in many slices by sport, play size and streak. We have not regraded them, and the slices make it hard to see one lifetime number per handicapper.",
+      "customers": "Uniformly negative, in a small sample. Unhappy buyers are the likeliest to write, so this is not a rate of unhappy customers. It is a clear description of what goes wrong for those who are.",
+      "testimonials": {
+        "count": 13,
+        "positive": 0,
+        "negative": 13,
+        "mixed": 0,
+        "span": "2021 to 2026",
+        "points": [
+          "All 13 reviews we read are negative. Two are from 2026.",
+          "The steady complaint is that hot records on sales pages cool off the moment a buyer pays.",
+          "One 2026 buyer says they followed six handicappers for almost four months and all lost overall. Another 2026 reviewer says reward points are hard to use.",
+          "One 2021 reviewer claims results are changed and losses removed. We could not confirm that.",
+          "One reviewer says they charged back most of what they spent on a credit card."
+        ],
+        "quote": {
+          "text": "they are just guessing along with the rest of us",
+          "when": "CapperTek reviewer, Jun 2022"
+        },
+        "other": "WagerTalk had an unclaimed Trustpilot profile with 0 reviews on 6 Nov 2026, so this file rests on one site."
+      },
+      "strengths": [
+        "A wide choice of handicappers, and some packages are cheap to try."
+      ],
+      "weaknesses": [
+        "Short window records dominate the sales copy.",
+        "No positive buyer review was found on the sites we checked.",
+        "A claim that results are altered sits in the file and is unresolved."
+      ],
+      "sources": [
+        {
+          "title": "WagerTalk customer reviews on CapperTek",
+          "url": "https://www.cappertek.com/reviews.asp?shs=WagerTalk.com"
+        },
+        {
+          "title": "WagerTalk home page",
+          "url": "https://www.wagertalk.com/"
+        },
+        {
+          "title": "WagerTalk on Trustpilot",
+          "url": "https://www.trustpilot.com/review/wagertalk.com"
+        }
+      ],
+      "related": [
+        "dubclub",
+        "dimers"
+      ]
+    },
+    {
+      "slug": "dubclub",
+      "name": "DubClub",
+      "kind": "Pick marketplace",
+      "checked": "6 Nov 2026",
+      "checked_iso": "2026-11-06",
+      "title": "DubClub Review: What 9 Customer Reviews Say | Handicapper Watchdog",
+      "h1": "DubClub review: what customers say",
+      "description": "DubClub review: 9 negative CapperTek reviews against 648 Trustpilot reviews at 4.1. What buyers say about untracked records and what Watchdog could check.",
+      "dek": "DubClub is the platform many social media sellers use to charge for picks. Two review sites disagree sharply, and the gap tells you something about both.",
+      "advertised": [
+        "DubClub markets itself as premium picks from expert handicappers, where anyone can start a club and bettors can browse clubs.",
+        "The pages we opened showed no platform wide graded record for sellers."
+      ],
+      "watchdog": "Not matched to a Watchdog graded record. Tracked accounts stay anonymous, and this page does not say whether this service is one of them.",
+      "pricing": [
+        "Each club sets its own price, so there is no single price. We did not record one for this edition. DubClub links a refund policy in its footer."
+      ],
+      "transparency": "DubClub is a payment and delivery platform. Reviewers want it to be a referee as well. Unless a seller's record is graded elsewhere, the buyer is relying on the seller.",
+      "customers": "Split by venue. Trustpilot reviewers often rate the app and checkout. CapperTek reviewers rate the results of the sellers. Both can be sincere, because they are reviewing different things.",
+      "testimonials": {
+        "count": 9,
+        "positive": 0,
+        "negative": 9,
+        "mixed": 0,
+        "span": "2022 to 2025",
+        "points": [
+          "All nine CapperTek reviews are negative, and they are aimed at the sellers on the platform as much as the platform.",
+          "The main complaint is that the platform does not track seller records, so a seller can show wins and skip losses.",
+          "Several buyers describe the same thing: a seller looks hot on social media, then cools after they subscribe.",
+          "One reviewer says signing up led to unwanted texts from other sellers at all hours.",
+          "On Trustpilot, one star reviews in 2026 describe poor support and a claim of repeat $50 charges with no refund."
+        ],
+        "quote": {
+          "text": "as soon as I subscribe they can't win any more",
+          "when": "CapperTek reviewer, Dec 2022"
+        },
+        "other": "Trustpilot showed 648 reviews and a 4.1 score on 6 Nov 2026, far warmer than CapperTek. Five star reviews there praise the app and the support."
+      },
+      "strengths": [
+        "Trustpilot reviewers call the app easy to use.",
+        "The refund policy is linked from the footer."
+      ],
+      "weaknesses": [
+        "No seller record is graded by the platform on the pages we opened.",
+        "Billing and support complaints appear in 2026 reviews."
+      ],
+      "sources": [
+        {
+          "title": "DubClub customer reviews on CapperTek",
+          "url": "https://www.cappertek.com/reviews.asp?shs=DubClub.win"
+        },
+        {
+          "title": "DubClub home page",
+          "url": "https://dubclub.win/"
+        },
+        {
+          "title": "DubClub on Trustpilot",
+          "url": "https://www.trustpilot.com/review/dubclub.win"
+        }
+      ],
+      "related": [
+        "wagertalk",
+        "dynamic-sports-plays"
+      ]
+    },
+    {
+      "slug": "the-machines-picks",
+      "name": "The Machine's Picks",
+      "kind": "Pick service",
+      "checked": "6 Nov 2026",
+      "checked_iso": "2026-11-06",
+      "title": "The Machine's Picks Review: What 14 Customer Reviews Say | Handicapper Watchdog",
+      "h1": "The Machine's Picks review: what customers say",
+      "description": "The Machine's Picks review from 14 customer reviews: streak stories, a cancellation complaint, and a 2026 reviewer who questions the file.",
+      "dek": "The reviews span twelve years and most are happy. The newest one is not, and it raises the question every reader should ask of old praise.",
+      "advertised": [
+        "The site refused our request on 6 Nov 2026, so no claim was read from it. Reviewers mention rated plays called Hammer Plays and day passes."
+      ],
+      "watchdog": "Not matched to a Watchdog graded record. Tracked accounts stay anonymous, and this page does not say whether this service is one of them.",
+      "pricing": [
+        "No price was opened. A 2026 reviewer calls the price a bit high."
+      ],
+      "transparency": "We could not open the site for this edition, so we cannot say what record it publishes. One 2014 reviewer says picks were posted on the site after the game started.",
+      "customers": "Mostly positive and mostly short term. A streak in a review is the kind of thing that gets written down, and a cold month is the kind of thing that does not.",
+      "testimonials": {
+        "count": 14,
+        "positive": 12,
+        "negative": 2,
+        "mixed": 0,
+        "span": "2014 to 2026",
+        "points": [
+          "Positive reviewers praise big rated plays and streaks, some quoting records like 26-4 or 56-29.",
+          "Many positive reviews describe short runs, often weeks, not years.",
+          "A 2026 reviewer says constant ads led them to try the free picks, which won once or twice in about twelve weeks. That reviewer also questions the older review dates.",
+          "A 2022 reviewer says they emailed for over a week trying to cancel without a reply."
+        ],
+        "quote": {
+          "text": "Maybe the best way is to fade the free picks!",
+          "when": "CapperTek reviewer, Oct 2026"
+        }
+      },
+      "strengths": [
+        "Long presence: reviews go back to 2014."
+      ],
+      "weaknesses": [
+        "Reviews quote streaks, which say little about a long run.",
+        "One unanswered cancellation complaint.",
+        "Site could not be checked."
+      ],
+      "sources": [
+        {
+          "title": "The Machine's Picks customer reviews on CapperTek",
+          "url": "https://www.cappertek.com/reviews.asp?shs=TheMachinesPicks.com"
+        },
+        {
+          "title": "The Machine's Picks site (refused our request)",
+          "url": "https://themachinespicks.com/"
+        }
+      ],
+      "related": [
+        "dynamic-sports-plays",
+        "the-jewish-sharp"
+      ]
+    },
+    {
+      "slug": "the-jewish-sharp",
+      "name": "The Jewish Sharp",
+      "kind": "Pick service",
+      "checked": "6 Nov 2026",
+      "checked_iso": "2026-11-06",
+      "title": "The Jewish Sharp Review: What 8 Customer Reviews Say | Handicapper Watchdog",
+      "h1": "The Jewish Sharp review: what customers say",
+      "description": "The Jewish Sharp review from 8 customer reviews: all positive, prices of $34.95 and $39.95 seen on the site, no outside record.",
+      "dek": "A small file of nothing but praise. That is pleasant to read and hard to use, because no reviewer gives a record a buyer could check.",
+      "advertised": [
+        "The site opened on 6 Nov 2026 calls its offerings sharp picks and expert sports picks. Its own page title includes the word reviews. No full record was read on the page we opened."
+      ],
+      "watchdog": "Not matched to a Watchdog graded record. Tracked accounts stay anonymous, and this page does not say whether this service is one of them.",
+      "pricing": [
+        "On 6 Nov 2026 the page listed a single game play at $34.95 and an all sports day pass at $39.95."
+      ],
+      "transparency": "The site says plays do not appear on the account page and buyers should email for access. That leaves a buyer with no site record of what was sent, so saving each pick yourself matters.",
+      "customers": "Uniformly happy, in a sample too small to mean much. No complaint here is not evidence that none exist.",
+      "testimonials": {
+        "count": 8,
+        "positive": 8,
+        "negative": 0,
+        "mixed": 0,
+        "span": "2022 to 2025",
+        "points": [
+          "All eight reviews are positive, and most describe long betting experience and trying many other sellers first.",
+          "Praise centers on results and on how clients are treated. Renewals are mentioned.",
+          "Five of the eight are from 2022, two of them on the same day.",
+          "None gives a full record over a defined period. One cites 2 losses in 18 picks."
+        ],
+        "quote": {
+          "text": "he only lost 2 picks out of 18",
+          "when": "CapperTek reviewer, Sep 2022"
+        }
+      },
+      "strengths": [
+        "Prices are shown on the page.",
+        "Single day purchases limit how much a buyer risks on the fee."
+      ],
+      "weaknesses": [
+        "No checkable record in the reviews or on the page we opened.",
+        "Picks are delivered outside the account page."
+      ],
+      "sources": [
+        {
+          "title": "The Jewish Sharp customer reviews on CapperTek",
+          "url": "https://www.cappertek.com/reviews.asp?shs=TheJSharp.com"
+        },
+        {
+          "title": "The Jewish Sharp site",
+          "url": "https://thejsharp.com/"
+        }
+      ],
+      "related": [
+        "dannys-vip-sports-picks",
+        "the-machines-picks"
+      ]
+    },
+    {
+      "slug": "dannys-vip-sports-picks",
+      "name": "Danny's VIP Sports Picks",
+      "kind": "Pick service",
+      "checked": "6 Nov 2026",
+      "checked_iso": "2026-11-06",
+      "title": "Danny's VIP Sports Picks Review: What 7 Customer Reviews Say | Handicapper Watchdog",
+      "h1": "Danny's VIP Sports Picks review: what customers say",
+      "description": "Danny's VIP Sports Picks review from 7 customer reviews: all positive, short, and limited to one directory.",
+      "dek": "A seller who lives on a CapperTek profile page, with seven short, happy reviews. The directory is the whole file.",
+      "advertised": [
+        "No independent site responded at the address we tried on 6 Nov 2026. The seller's public presence we could read is a CapperTek profile."
+      ],
+      "watchdog": "Not matched to a Watchdog graded record. Tracked accounts stay anonymous, and this page does not say whether this service is one of them.",
+      "pricing": [
+        "No price was opened."
+      ],
+      "transparency": "CapperTek says a public pick is revealed 30 minutes after the event starts, which we cover in our CapperTek review. A win rate on that board is not the same as a timestamped public record.",
+      "customers": "Positive and thin. Five names, no losing month described, and no second source.",
+      "testimonials": {
+        "count": 7,
+        "positive": 7,
+        "negative": 0,
+        "mixed": 0,
+        "span": "2024 to 2026",
+        "points": [
+          "All seven reviews are positive and short, mostly about a hot stretch.",
+          "Seven reviews come from five names, and two share a date.",
+          "One reviewer says the NFL picks hit 80%. Another says they only stay with a sure thing, which no bet is."
+        ],
+        "quote": {
+          "text": "Won me a bunch of money just this weekend",
+          "when": "CapperTek reviewer, Feb 2024"
+        }
+      },
+      "strengths": [
+        "Recent reviews, including two in Aug 2026."
+      ],
+      "weaknesses": [
+        "One site holds the entire file.",
+        "Percent claims come with no sample size."
+      ],
+      "sources": [
+        {
+          "title": "Danny's VIP Sports Picks customer reviews on CapperTek",
+          "url": "https://www.cappertek.com/reviews.asp?shs=DannysVIPSportsPicks.cappertek.com"
+        },
+        {
+          "title": "Watchdog review of CapperTek",
+          "url": "https://handicapperwatchdog.com/reviews/cappertek.html"
+        }
+      ],
+      "related": [
+        "cappertek",
+        "the-jewish-sharp"
+      ]
+    },
+    {
+      "slug": "dynamic-sports-plays",
+      "name": "Dynamic Sports Plays",
+      "kind": "Pick service",
+      "checked": "6 Nov 2026",
+      "checked_iso": "2026-11-06",
+      "title": "Dynamic Sports Plays Review: What 7 Customer Reviews Say | Handicapper Watchdog",
+      "h1": "Dynamic Sports Plays review: what customers say",
+      "description": "Dynamic Sports Plays review from 7 customer reviews: all positive, unit heavy, short tenures, and large claims on the site that Watchdog could not check.",
+      "dek": "The site claims 125,000 members served. The reviews read like its marketing, full of unit totals from people only weeks in.",
+      "advertised": [
+        "The home page opened on 6 Nov 2026 claims 125,000+ members served, 12+ years, 50+ countries, and a winning edge since 2013. It displays parlay wins such as +7495.",
+        "We could not confirm any of those figures."
+      ],
+      "watchdog": "Not matched to a Watchdog graded record. Tracked accounts stay anonymous, and this page does not say whether this service is one of them.",
+      "pricing": [
+        "A pricing page exists. No price was read for this edition."
+      ],
+      "transparency": "The home page shows winning tickets. Tickets show that a bet won, not what the record is.",
+      "customers": "Glowing, short term and number heavy. Reviewers use the seller's unit totals, so these are not separate measurements.",
+      "testimonials": {
+        "count": 7,
+        "positive": 7,
+        "negative": 0,
+        "mixed": 0,
+        "span": "2023 to 2025",
+        "points": [
+          "All seven reviews are positive and heavy with unit totals, such as over 240 units in part of a year.",
+          "Most reviewers had been with the service for days to a few months.",
+          "Several praise the unit system and big parlays, including a four leg parlay at +1348.",
+          "Seven reviews come from six names."
+        ],
+        "quote": {
+          "text": "I've already doubled my bankroll",
+          "when": "CapperTek reviewer, Mar 2025"
+        }
+      },
+      "strengths": [
+        "Reviewers say the unit structure is easy to follow."
+      ],
+      "weaknesses": [
+        "Parlays and winning tickets lead the pitch.",
+        "Large membership claims with no outside support on the page we read."
+      ],
+      "sources": [
+        {
+          "title": "Dynamic Sports Plays customer reviews on CapperTek",
+          "url": "https://www.cappertek.com/reviews.asp?shs=DynamicSportsPlays.com"
+        },
+        {
+          "title": "Dynamic Sports Plays home page",
+          "url": "https://www.dynamicsportsplays.com/"
+        }
+      ],
+      "related": [
+        "the-machines-picks",
+        "dubclub"
+      ]
+    },
+    {
+      "slug": "bender-wins",
+      "name": "Bender Wins",
+      "kind": "Pick service",
+      "checked": "6 Nov 2026",
+      "checked_iso": "2026-11-06",
+      "title": "Bender Wins Review: What 6 Customer Reviews Say | Handicapper Watchdog",
+      "h1": "Bender Wins review: what customers say",
+      "description": "Bender Wins review from 6 customer reviews: what subscribers say about volume, line movement and bankroll, plus one disputed record.",
+      "dek": "A small file with an unusually practical review in it. Ten to twenty plays a day and fast moving lines are what buyers should plan around.",
+      "advertised": [
+        "Our reader could not pull text from the home page on 6 Nov 2026, so no claim is quoted. Reviewers describe a systems approach and daily videos."
+      ],
+      "watchdog": "Not matched to a Watchdog graded record. Tracked accounts stay anonymous, and this page does not say whether this service is one of them.",
+      "pricing": [
+        "No price was opened. A reviewer says annual plans are cheaper and that holiday specials have run."
+      ],
+      "transparency": "Fast moving lines matter. If a buyer gets a worse price than the posted one, the seller's record overstates what that buyer earns.",
+      "customers": "Mostly positive, with a real dispute in a small sample. The practical details are worth more than the verdicts.",
+      "testimonials": {
+        "count": 6,
+        "positive": 5,
+        "negative": 1,
+        "mixed": 0,
+        "span": "2022 to 2026",
+        "points": [
+          "The most useful review in the file is a former subscriber in 2026 who says the service is pretty good, not the best, and profits slowly.",
+          "Reviewers describe ten to twenty bets a day, a need to bet quickly before lines move, and a bankroll of at least a few thousand dollars.",
+          "A former subscriber says people who left could be kept from rejoining for a time.",
+          "One 2026 reviewer disputes the record and says the positive reviews are written by the seller. We could not confirm that.",
+          "Six reviews come from four names."
+        ],
+        "quote": {
+          "text": "I won't say he's the best, but he is pretty good",
+          "when": "CapperTek reviewer, Oct 2026"
+        }
+      },
+      "strengths": [
+        "Reviewers describe bankroll discipline and free daily content."
+      ],
+      "weaknesses": [
+        "High volume and timing needs do not suit every schedule.",
+        "The record is disputed by one reviewer, and we have not graded it."
+      ],
+      "sources": [
+        {
+          "title": "Bender Wins customer reviews on CapperTek",
+          "url": "https://www.cappertek.com/reviews.asp?shs=BenderWins.com"
+        },
+        {
+          "title": "Bender Wins site",
+          "url": "https://benderwins.com/"
+        }
+      ],
+      "related": [
+        "the-cashman-wins",
+        "nobrainerwagers"
+      ]
+    },
+    {
+      "slug": "sportscappro",
+      "name": "SportsCapPro",
+      "kind": "Pick service",
+      "checked": "6 Nov 2026",
+      "checked_iso": "2026-11-06",
+      "title": "SportsCapPro Review: What 6 Customer Reviews Say | Handicapper Watchdog",
+      "h1": "SportsCapPro review: what customers say",
+      "description": "SportsCapPro review from 6 customer reviews: a nine day cluster of praise and a $149 complaint that was resolved a day later.",
+      "dek": "All six reviews came in one year. One complaint was withdrawn a day later, which is rarer than the complaint.",
+      "advertised": [
+        "The site refused our request on 6 Nov 2026, so no claim was read from it."
+      ],
+      "watchdog": "Not matched to a Watchdog graded record. Tracked accounts stay anonymous, and this page does not say whether this service is one of them.",
+      "pricing": [
+        "No price was opened. A reviewer mentions $149 and another mentions a one week package."
+      ],
+      "transparency": "We could not open the site for this edition. The record, if published, has not been checked.",
+      "customers": "Positive overall, clustered in time, and small. The complaint and its reversal are the most informative entries.",
+      "testimonials": {
+        "count": 6,
+        "positive": 4,
+        "negative": 1,
+        "mixed": 1,
+        "span": "2025",
+        "points": [
+          "Four long positive reviews landed within nine days, 28 Feb to 8 Mar 2025.",
+          "A June 2025 complaint says $149 was paid and no pick or reply followed.",
+          "The next day that reviewer posted again, saying the company responded and made it right.",
+          "Positive reviewers describe past losses with other sellers before finding this one, a theme in many pick reviews."
+        ],
+        "quote": {
+          "text": "They did the right thing and made it right.",
+          "when": "CapperTek reviewer, Jun 2025"
+        }
+      },
+      "strengths": [
+        "A complaint was answered and the reviewer said so publicly."
+      ],
+      "weaknesses": [
+        "Reviews cluster in a short window.",
+        "Site could not be checked."
+      ],
+      "sources": [
+        {
+          "title": "SportsCapPro customer reviews on CapperTek",
+          "url": "https://www.cappertek.com/reviews.asp?shs=SportsCapPro.com"
+        },
+        {
+          "title": "SportsCapPro site (refused our request)",
+          "url": "https://sportscappro.com/"
+        }
+      ],
+      "related": [
+        "nobrainerwagers",
+        "bender-wins"
+      ]
     }
-  ]
+  ],
+  "customer_note": "Customer reviews on this page were read on 6 Nov 2026. They are anonymous and unverified. Most come from CapperTek, a directory Watchdog has rated a scam for what it sells to pick sellers, so we treat its review pages as raw material, not proof. Reviewer names are left out. Claims belong to the reviewers. Watchdog has not confirmed any of them."
 }

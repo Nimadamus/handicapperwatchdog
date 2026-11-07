@@ -2024,9 +2024,14 @@ def _write_editorial(site):
                 '<li><span>Advertised record</span><b>Quoted below</b></li>'
                 '<li><span>Opened price</span><b>Pricing section</b></li>'
                 '<li><span>Buyer sample</span><b>Not in the file</b></li></ul></aside>'
-            ) % _esc(reviews['checked'])
+            ) % _esc(rev.get('checked') or reviews['checked'])
             note = reviews['unrated_note']
             tail = missing
+            if rev.get('testimonials'):
+                note = reviews['customer_note']
+                tail = missing.replace('There is no independent sample of buyers, so this page stays Not rated.',
+                                       'The customer reviews above are anonymous and unverified, so this page stays Not rated.')
+                plate = plate.replace('<span>Buyer sample</span><b>Not in the file</b>', '<span>Buyer sample</span><b>Unverified reviews</b>')
             good_h, bad_h = 'Strengths', 'Weaknesses'
         if verdict == 'Scam':
             answer = (
@@ -2049,6 +2054,18 @@ def _write_editorial(site):
             '<section class="panel edcard essay"><h2>%s</h2><div class="prose">%s</div></section>' % (
                 _esc(sec['h']), paras(sec['p']))
             for sec in (rev.get('sections') or []))
+        t = rev.get('testimonials')
+        if t:
+            voices = ('<section class="panel edcard voices" id="customers"><h2>What customers say</h2>'
+                      '<div class="vstats"><div><b>%d</b><span>Reviews read</span></div><div><b class="pos">%d</b><span>Positive</span></div>'
+                      '<div><b class="neg">%d</b><span>Negative</span></div><div><b>%d</b><span>Mixed</span></div><div><b class="vspan">%s</b><span>Dates</span></div></div>'
+                      '<blockquote class="vquote"><p>&ldquo;%s&rdquo;</p><cite>%s</cite></blockquote>'
+                      '<div class="prose"><ul>%s</ul>%s<p>%s</p></div></section>') % (
+                          t['count'], t['positive'], t['negative'], t['mixed'], _esc(t['span']), _esc(t['quote']['text']), _esc(t['quote']['when']),
+                          ''.join('<li>%s</li>' % _esc(x) for x in t['points']),
+                          '<p>%s</p>' % _esc(t['other']) if t.get('other') else '', _esc(rev['customers']))
+        else:
+            voices = '<section class="panel edcard"><h2>Customer experience</h2><div class="prose"><p>%s</p></div></section>' % _esc(rev['customers'])
         body = '''<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><a href="index.html">Reviews</a><span aria-hidden="true">/</span><span aria-current="page">%s</span></nav>
 <header class="edhero">
 <div>
@@ -2066,7 +2083,7 @@ def _write_editorial(site):
 <section class="panel edcard"><h2>What Watchdog has graded</h2><div class="prose"><p>%s</p></div></section>
 <section class="panel edcard"><h2>Pricing</h2><div class="prose">%s</div></section>
 <section class="panel edcard"><h2>Transparency</h2><div class="prose"><p>%s</p></div></section>
-<section class="panel edcard"><h2>Customer experience</h2><div class="prose"><p>%s</p></div></section>
+%s
 <div class="split">
 <section class="panel edsec good"><h2>%s</h2><div class="prose">%s</div></section>
 <section class="panel edsec bad"><h2>%s</h2><div class="prose">%s</div></section>
@@ -2082,10 +2099,10 @@ def _write_editorial(site):
             _esc(rev['name']), _esc(rev['kind']), _esc(rev.get('h1') or rev['name']), _esc(rev['dek']),
             plate, note, answer, essay,
             paras(rev['advertised']), _esc(rev['watchdog']), paras(rev['pricing']),
-            _esc(rev['transparency']), _esc(rev['customers']),
+            _esc(rev['transparency']), voices,
             good_h, paras(rev['strengths']), bad_h, paras(rev['weaknesses']),
             related(rev), tail, bridge,
-            _esc(reviews['checked']), sources(rev['sources']),
+            _esc(rev.get('checked') or reviews['checked']), sources(rev['sources']),
             json.dumps(ld, ensure_ascii=True).replace('<', '\\u003c'))
         html = _document(1, 'reviews/index.html', rev['title'], rev['description'],
                          'https://handicapperwatchdog.com/reviews/%s.html' % rev['slug'], body)
@@ -2126,6 +2143,7 @@ def _write_editorial(site):
 </header>
 <div class="disclosure"><b>No score on this edition</b><p class="muted">%s</p></div>
 <div class="fld revsearch"><label for="revq">Search reviews</label><input id="revq" placeholder="Search a name or a site" aria-label="Search reviews"></div>
+<p class="muted"><a href="../learn/what-bettors-say-about-handicappers.html">What bettors say about online handicappers</a>: our report on 165 customer reviews of 11 services.</p>
 <div class="revgrid" id="revgrid">%s</div>
 <p class="muted small revfoot">Ten public names. The free rankings stay anonymous. <a href="../how-we-grade.html">How a record is graded</a> · <a href="../cappers.html">Established rankings</a> · <a href="../the-board.html">The board</a> · <a href="../sportsbooks/">Sportsbook research</a>.</p>
 <script>
