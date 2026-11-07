@@ -1,0 +1,59 @@
+outlier                    base=10 intent=48 outlier ai recording; outlier ai scam or legit; outlier ai scam reddit; outlier inn recording; outlier inn recording studio; outlier legit
+oddsjam                    base=10 intent=23 oddsjam api reddit; oddsjam arbitrage review; oddsjam arbitrage reviews; oddsjam australia reddit; oddsjam betting reddit; oddsjam fantasy optimizer review
+sportsline                 base=10 intent=18 sportsline bracket reddit; sportsline discount reddit; sportsline kasaragod reviews; sportsline legit; sportsline lindsay reviews; sportsline mangalore reviews
+bettingpros                base=10 intent=18 bettingpros affiliate code reddit; bettingpros app reddit; bettingpros app review; bettingpros app review reddit; bettingpros legit; bettingpros offer code reddit
+pregame                    base=10 intent=16 pregame bangalore reviews; pregame bengaluru reviews; pregame coffee reviews; pregame drinks reddit; pregame dyckman reviews; pregame koramangala reviews
+dimers                     base=10 intent=16 dimers app review; dimers betting reddit; dimers betting review; dimers legit; dimers platinum reviews; dimers pro reddit
+joe duffy                  base=10 intent=15 joe duffy bmw reviews; joe duffy body shop reviews; joe duffy leasing reviews; joe duffy mazda reviews; joe duffy mini reviews; joe duffy mma record
+unabated                   base=10 intent=15 unabated api reddit; unabated app review; unabated betting reddit; unabated betting review; unabated promo code reddit; unabated reddit
+jimmy boyd                 base=10 intent=12 jimmy boyd forest review; jimmy boyd lavender review; jimmy boyd net worth; jimmy boyd pa reviews; jimmy boyd perfume reddit; jimmy boyd perfume review
+winning edge               base=10 intent=11 winning edge academy reviews; winning edge carburetor review; winning edge inc reviews; winning edge india reviews; winning edge investments reddit; winning edge investments reviews
+kevin thomas               base=10 intent=10 kevin thomas md reviews; kevin thomas motorcycles reviews; kevin thomas movie reviews; kevin thomas parle reddit; kevin thomas pharmacy reviews; kevin thomas pharmacy swansea reviews
+juice reel                 base=10 intent= 9 juice reel app reddit; juice reel app review; juice reel legit; juice reel promo code reddit; juice reel reddit; juice reel review
+dubclub                    base=10 intent= 8 dubclub legit; dubclub reddit; dubclub reviews; dubclub reviews complaints; dubclub reviews reddit; dubclub win legit
+stu feiner                 base=10 intent= 8 stu feiner all time record; stu feiner barstool reddit; stu feiner betting record; stu feiner net worth; stu feiner picks record; stu feiner picks review
+wunderdog                  base=10 intent= 7 wunderdog picks review; wunderdog reddit; wunderdog rescue reviews; wunderdog reviews; wunderdog reviews complaints; wunderdog sports picks review
+tony george                base=10 intent= 7 tony george cleveland net worth; tony george do reviews; tony george king's school reddit; tony george net worth; tony george photography reviews; tony george reddit
+leans ai                   base=10 intent= 7 leans ai legit; leans ai reddit; leans ai reddit review; leans ai review; leans ai review reddit; leans ai reviews
+rithmm                     base=10 intent= 7 rithmm ai review; rithmm ai reviews; rithmm app reviews; rithmm premium review; rithmm reviews; rithmm reviews reddit
+wagertalk                  base=10 intent= 6 wagertalk coupon code reddit; wagertalk free picks reddit; wagertalk reddit; wagertalk reviews; wagertalk reviews complaints; wagertalk scam
+action network pro         base=10 intent= 5 action network pro promo code reddit; action network pro reddit; action network pro review; action network pro review reddit; action network pro reviews
+betql                      base=10 intent= 5 betql reddit; betql review reddit; betql reviews; betql reviews complaints; betql reviews reddit
+covers                     base=10 intent= 5 covers & all legit; covers for all reviews; covers record; covers reddit; covers reviews
+pickswise                  base=10 intent= 5 pickswise legit; pickswise record; pickswise reddit; pickswise review; pickswise reviews
+brandon lang               base=10 intent= 4 brandon lang net worth; brandon lang record; brandon lang reddit; brandon lang super bowl record
+the jewish sharp           base= 9 intent= 4 the jewish sharp reddit; the jewish sharp reviews; the jewish sharp reviews complaints; the jewish sharp reviews reddit
+vegas dave                 base=10 intent= 3 vegas dave reddit; vegas dave review journal; vegas dave reviews
+steve fezzik               base=10 intent= 3 steve fezzik net worth; steve fezzik record; steve fezzik reddit
+sharp football analysis    base=10 intent= 3 sharp football analysis reddit; sharp football analysis review; sharp football analysis reviews
+sports insights            base=10 intent= 3 sports insights reddit; sports insights review; sports insights reviews
+marc lawrence              base=10 intent= 2 marc lawrence playbook review; marc lawrence reddit
+winners and whiners        base=10 intent= 2 winners and whiners reddit; winners and whiners review
+vegasinsider               base=10 intent= 2 vegasinsider reddit; vegasinsider reviews
+dr bob sports              base=10 intent= 2 dr bob sports reddit; dr bob sports reviews
+kyle hunter                base=10 intent= 2 kyle hunter reddit; kyle hunter reviews
+bender wins                base=10 intent= 2 bender wins reddit; bender wins reviews reddit
+cappertek                  base= 8 intent= 2 cappertek reviews; cappertek reviews complaints
+teddy covers               base=10 intent= 1 teddy covers reddit
+bill krackomberger         base=10 intent= 1 bill krackomberger reddit
+sports gambling podcast    base=10 intent= 1 sports gambling podcast reddit
+the machines picks         base= 9 intent= 1 the machines picks reddit
+big al mcmordie            base= 4 intent= 1 big al mcmordie reviews
+docs sports                base=10 intent= 0 
+jim feist                  base=10 intent= 0 
+scott spreitzer            base=10 intent= 0 
+sean higgs                 base=10 intent= 0 
+pick dawgz                 base=10 intent= 0 
+danny's vip                base=10 intent= 0 
+betmgm picks               base=10 intent= 0 
+capper tek                 base=10 intent= 0 
+cashman wins               base= 4 intent= 0 
+dynamic sports plays       base= 4 intent= 0 
+robert ferringo            base= 3 intent= 0 
+spanky kyrollos            base= 2 intent= 0 
+rob vinciletti             base= 1 intent= 0 
+doc's sports ai            base= 1 intent= 0 
+nobrainerwagers            base= 0 intent= 0 
+sportscappro               base= 0 intent= 0 
+pickstrax                  base= 0 intent= 0 
+daily dose of picks        base= 0 intent= 0 
