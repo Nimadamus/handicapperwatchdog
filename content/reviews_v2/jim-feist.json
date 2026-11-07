@@ -9,7 +9,7 @@
   "title": "Jim Feist Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Jim Feist review, checked 7 Nov 2026: real prices on two storefronts, a credit only guarantee, seller picked streaks and what bettors report.",
   "h1": "Jim Feist review",
-  "dek": "A Las Vegas pick seller who says he started in 1968, sold through his own store at $149 for 30 days and through the SportsCapping network at $29 a pick to $1,999.95 a year. The network guarantee pays in free time, not cash, and every record we saw is a streak chosen by the seller.",
+  "dek": "A Las Vegas pick seller who says he started in 1968. His own store sold 30 days of all sports for $149, and a reseller network lists many more packages. The network guarantee pays in free time, not cash, and every record we saw is a streak chosen by the seller.",
   "status": {
     "label": "Not verified",
     "note": "Watchdog has not graded a full, time stamped record of Jim Feist picks. This page reports what we could check on 7 Nov 2026 and labels everything else."
@@ -24,8 +24,8 @@
       "1968 in Florida, Las Vegas from 1970 (About page)"
     ],
     [
-      "Price range seen",
-      "$29 a pick to $1,999.95 for 365 days"
+      "Price seen on his own store",
+      "$149 for 30 days of all sports (jimfeist.com)"
     ],
     [
       "Guarantee",
@@ -45,7 +45,7 @@
     "Whether the picks make money is a separate question, and nothing we could open answers it. The sales pages show streaks such as \"MLB Money Lines (+6710) 1016-879\" and \"62-46 run with my last 111 Football picks,\" chosen by the seller, and a table of the previous day's plays. We found no full, time stamped log of every pick that we could check.",
     "Treat Jim Feist as a famous seller with marketing records, not a proven winner. Prices for similar packages differ a lot between the two storefronts, so compare before you pay, and record every pick yourself with the line and time you got it."
   ],
-  "pricing_intro": "The first row was on jimfeist.com on 7 Nov 2026. All other rows were on the Capper Reviews Jim Feist page the same day, where checkout runs through SportsCapping.com. Guarantee notes come from the Capper Reviews package text and its guarantee policy page.",
+  "pricing_intro": "The first row was on jimfeist.com on 7 Nov 2026. Capper Reviews, a reseller that says it is part of the SportsCapping network, lists more Jim Feist packages and single plays, but a reseller listing is not a verified current offer from Jim Feist, so we do not quote those prices.",
   "pricing": [
     [
       "jimfeist.com: 30 Days of ALL sports",
@@ -53,29 +53,9 @@
       "No guarantee or refund terms found on the product page"
     ],
     [
-      "Single plays (Saturday college football)",
-      "$29, $35 (two picks) and $39",
-      "A losing pick earns the next available pick in that sport, per the network policy"
-    ],
-    [
-      "Short packages",
-      "1 day NBA $39.95 · 3 day all sports $99.95 · 7 day all sports $199.95 · 7 day NHL $79.00 · 7 day NBA $125.00 · 7 day NFL $249.95",
-      "Equal period free if the package does not show a profit"
-    ],
-    [
-      "30 day packages",
-      "All sports $499.95 · NBA $225.00 (its blurb says $399) · NFL $499.95",
-      "Equal period free if not profitable"
-    ],
-    [
-      "Long all sports packages",
-      "180 days $1,499.95 · 365 days $1,999.95",
-      "Equal period free if not profitable"
-    ],
-    [
-      "Season passes",
-      "College football $299.95 · NFL and college football $549.99 · college basketball $699.95 · NBA $750.00 · full NFL $799.99 · NBA and college basketball $899.99",
-      "No guarantee on seasonal subscriptions, per the network policy"
+      "Reseller listings (Capper Reviews, SportsCapping network)",
+      "Single plays, short packages and season passes listed by the reseller; not a verified current offer",
+      "Free extra time only, and no guarantee on season passes, per the network policy"
     ]
   ],
   "guarantee": [
@@ -175,12 +155,12 @@
   "strengths": [
     "A named seller with a Las Vegas mailing address, a phone number and written site terms.",
     "Prices are published for every package on both storefronts, and the network guarantee rules are written out in detail.",
-    "The jimfeist.com 30 day all sports package at $149 is far cheaper than the $499.95 30 day all sports package on the reseller page."
+    "His own store shows one clear price: $149 for 30 days of all sports."
   ],
   "concerns": [
     "No full public record. Every number we saw is a streak or total chosen by the seller.",
     "The guarantee gives more picks, never money back, and season passes have no guarantee at all.",
-    "Prices for similar packages differ widely between storefronts, and the jimfeist.com product title and price disagree ($199 versus $149).",
+    "The jimfeist.com product title and price disagree ($199 versus $149), and the reseller lists its own, different package range.",
     "Experience claims change from page to page, and contest wins are claimed without being named.",
     "The reseller page that hosts the rating also carries an offshore sportsbook affiliate banner."
   ],
@@ -198,7 +178,7 @@
     ],
     [
       "How much does Jim Feist cost?",
-      "On 7 Nov 2026 jimfeist.com sold 30 days of all sports for $149. Through Capper Reviews and SportsCapping, prices ran from $29 for one pick and $39.95 for one day of NBA to $1,999.95 for 365 days, with season passes from $299.95 to $899.99."
+      "On 7 Nov 2026 jimfeist.com sold 30 days of all sports for $149. A reseller network lists other Jim Feist packages, but a reseller listing is not a verified current offer from Jim Feist."
     ],
     [
       "Does Jim Feist have a verified record?",
@@ -278,5 +258,5 @@
       "accessed": "7 Nov 2026"
     }
   ],
-  "pricing_source": 5
+  "pricing_source": 2
 }

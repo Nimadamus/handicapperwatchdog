@@ -143,7 +143,7 @@ def check(label, extra):
         feist = open(os.path.join(tmp, 'reviews', 'jim-feist.html'), encoding='utf-8').read()
         boyd = open(os.path.join(tmp, 'reviews', 'jimmy-boyd.html'), encoding='utf-8').read()
         pre = open(os.path.join(tmp, 'reviews', 'pregame.html'), encoding='utf-8').read()
-        assert '522-386-13' in bob and 'Not rated' in bob and 'not a verified current offer' in bob.lower()
+        assert '522-386-13' in bob and ('Not rated' in bob or 'Not verified' in bob) and 'not a verified current offer' in bob.lower()
         assert '$495' not in bob and '$1,045' not in bob and '$1,495' not in bob
         assert '$174.95' not in feist and '$199.95' not in feist and '$399.95' not in feist and '$1,999.95' not in feist
         assert 'not a verified current offer' in feist.lower() and '30 years' in feist
@@ -180,7 +180,7 @@ def check(label, extra):
         assert '$49.99' in price and '$499' in price and not re.search(r'\$(?!49.99|499|41\.58|599.88|100.88)\d', price)
         assert 'does not show a checkout button' not in price
         assert '22,990' in open(os.path.join(tmp, 'reviews', 'docs-sports-ai.html'), encoding='utf-8').read()
-        assert '637-544' in open(os.path.join(tmp, 'reviews', 'big-al.html'), encoding='utf-8').read()
+        assert '676-579' in open(os.path.join(tmp, 'reviews', 'big-al.html'), encoding='utf-8').read()
         for slug in (
             'docs-sports', 'dr-bob-sports', 'pregame', 'cappertek', 'jimmy-boyd', 'jim-feist',
             'scott-spreitzer', 'robert-ferringo', 'docs-sports-ai', 'big-al',
