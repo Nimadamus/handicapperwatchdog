@@ -13,6 +13,7 @@ The raw research is cached in .cache/ (Actions cache, never published) and a pro
 the capper has posted since and the cached copy is older than PROFILE_TTL, so TMR serves each profile a few times
 a day at most, gzipped.
 """
+from html import unescape
 import base64
 import gzip
 import hashlib
@@ -881,6 +882,7 @@ def _footer(depth):
         ('sportsbooks/', 'Sportsbooks'),
         ('sportsbooks/justbet.html', 'JustBet'),
         ('learn/', 'Betting guides'),
+        ('learn/what-bettors-say-about-handicappers.html', 'What bettors say'),
         ('research/', 'Research'),
         ('the-board.html', 'The board'),
         ('how-we-grade.html', 'How we grade'),
@@ -1994,6 +1996,19 @@ def _write_editorial(site):
         }
         verdict = rev.get('verdict') or 'Not rated'
         badge_class = 'scam' if verdict == 'Scam' else 'unrated'
+        rev_faq = []
+        tm = rev.get('testimonials')
+        if tm:
+            ld['@graph'][1]['about'] = {'@type': 'Organization', 'name': rev['name']}
+            rev_faq = [
+                ('Is %s legit?' % rev['name'],
+                 'Watchdog has not rated %s. We have not graded its picks, so we cannot say whether it wins. Of the %d customer reviews we read, %d were positive, %d negative and %d mixed, and those reviews are anonymous and unverified.' % (
+                     rev['name'], tm['count'], tm['positive'], tm['negative'], tm['mixed'])),
+                ('What do customers say about %s?' % rev['name'], tm['points'][0] + ' ' + rev['customers']),
+                ('Does Watchdog track %s?' % rev['name'], 'Tracked accounts stay anonymous, so this page does not match %s to a Watchdog record.' % rev['name']),
+            ]
+            ld['@graph'].append({'@type': 'FAQPage', 'mainEntity': [
+                {'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in rev_faq]})
         cards.append(
             '<a class="rev" data-name="%s" href="%s.html">'
             '<span class="badge %s">%s</span><span class="muted small">%s</span><b>%s</b>'
@@ -2042,11 +2057,14 @@ def _write_editorial(site):
             )
         else:
             answer = ''
-        bridge = (
+        faq_html = ('<section class="panel edcard"><h2>Common questions</h2><div class="faqs">%s</div></section>' % ''.join(
+            '<details class="faq"><summary>%s</summary><p>%s</p></details>' % (_esc(q), _esc(a)) for q, a in rev_faq)) if rev_faq else ''
+        bridge = faq_html + (
             '<section class="panel edcard"><h2>Where this sits</h2><div class="prose">'
             '<p>A named service review is not a Watchdog grade. A pick counts here only when it was posted in public before the start, '
             'and the free board opens at 100 graded picks. <a href="../how-we-grade.html">How a record is graded</a>.</p>'
-            '<p><a href="index.html">All handicapper reviews</a> · <a href="how-we-rate.html">How a rating would be built</a> · '
+            '<p><a href="index.html">All handicapper reviews</a> · <a href="../learn/what-bettors-say-about-handicappers.html">What bettors say about handicappers</a> · '
+            '<a href="../learn/scam-handicapper-red-flags.html">Scam red flags</a> · <a href="how-we-rate.html">How a rating would be built</a> · '
             '<a href="../cappers.html">Established rankings</a> · <a href="../the-board.html">How many are up</a> · '
             '<a href="../sportsbooks/">Sportsbook research</a></p></div></section>'
         )
@@ -2630,6 +2648,86 @@ def stamp_public_pages(site):
     _write_sitemap(site, lastmod)
 
 
+SEO_TITLES = {
+    'index.html': 'Handicapper Watchdog | Independent Handicapper Records',
+    'learn/index.html': 'Sports Betting Guides: Judging Handicappers | Watchdog',
+    'learn/closing-line-value.html': 'Closing Line Value (CLV): The Best Test of a Bettor',
+    'learn/verified-handicapper-records.html': 'What a Verified Handicapper Record Should Really Mean',
+    'learn/what-bettors-say-about-handicappers.html': 'What Bettors Say About Online Handicappers: 165 Reviews',
+    'research/odds-and-profit.html': 'Why a 70% Win Rate Can Lose Money: Odds and ROI Data',
+    'research/roi-and-sample-size.html': 'Handicapper ROI and Sample Size: What the Data Shows',
+    'research/today.html': 'Today on the Board: Handicapper Moves and Streaks',
+    'reviews/cappertek.html': 'CapperTek Review: Is CapperTek a Scam? | Watchdog',
+    'reviews/index.html': 'Handicapper Reviews and Customer Reports | Watchdog',
+}
+SEO_DESCRIPTIONS = {
+    'index.html': "Handicapper Watchdog tracks public sports picks from X, Reddit, Covers and forums, grades every result and publishes each account's real record. Free to read.",
+    'cappers.html': 'Handicapper rankings by units won, ROI, win rate and recent form. Every account is an anonymous Watchdog ID. Filter by sport, timeframe and sample size.',
+    'pricing.html': 'Watchdog Pro is $49.99 a month or $499 a year: eligible pending picks before the start, full graded pick logs and research tools. Accounts stay anonymous.',
+    'learn/index.html': 'Plain guides to judging a sports handicapper: break even win rates, units and ROI, sample size, closing line value, verified records and scam red flags.',
+    'reviews/index.html': 'Reviews of named handicappers and pick marketplaces: what they advertise, prices we could read, what customers say, and why Watchdog has not scored them.',
+    'sportsbooks/index.html': 'Original sportsbook research for DraftKings, FanDuel, bet365, Fanatics and BetMGM. Findings only where a source was checked. No scores and no signup links.',
+    'sportsbooks/justbet.html': 'JustBet sportsbook review from pages JustBet publishes. Dated quotations only. Registration is off, and quoted bonuses are not a Watchdog offer.',
+    'sportsbooks/bet365-review/index.html': "The 18 states and D.C. on bet365's U.S. state page, what it says about live betting and a new customer offer, and what was not measured. Checked 27 Oct 2026.",
+    'sportsbooks/fanatics-review/index.html': 'Where Fanatics says its sportsbook is live, how FanCash is described, and why two welcome headlines were not quoted as one offer. Checked 27 Oct 2026.',
+    'sportsbooks/fanduel-review/index.html': "FanDuel's map of sportsbook states versus FanDuel Predicts, plus limit tools and cashier rules from its help center. No numeric score. Checked 27 Oct 2026.",
+}
+SEO_PAGE_TYPES = {'about.html': 'AboutPage', 'contact.html': 'ContactPage', 'research/index.html': 'CollectionPage', 'sportsbooks/index.html': 'CollectionPage',
+                  'reviews/index.html': 'CollectionPage', 'the-board.html': 'CollectionPage', 'picks.html': 'CollectionPage'}
+SEO_SECTIONS = {'reviews': 'Reviews', 'learn': 'Guides', 'research': 'Research', 'sports': 'Sports', 'sportsbooks': 'Sportsbooks'}
+
+
+def _seo_finish(site):
+    """Last pass over every indexable page: length limits on titles and descriptions, article og type, and schema where a page has none."""
+    root = 'https://handicapperwatchdog.com/'
+    org = {'@type': 'Organization', 'name': 'Handicapper Watchdog', 'url': root}
+    for folder, _dirs, names in os.walk(site):
+        for name in names:
+            path = os.path.join(folder, name)
+            rel = os.path.relpath(path, site).replace(os.sep, '/')
+            if not name.endswith('.html') or _noindex(path):
+                continue
+            with open(path, encoding='utf-8', newline='') as f:
+                html = f.read()
+            title, desc = SEO_TITLES.get(rel), SEO_DESCRIPTIONS.get(rel)
+            if title:
+                html = re.sub(r'<title>.*?</title>', lambda m: '<title>%s</title>' % _esc(title), html, count=1, flags=re.S)
+                html = re.sub(r'(<meta (?:property="og:title"|name="twitter:title") content=")[^"]*', lambda m: m.group(1) + _esc(title), html)
+            if desc:
+                html = re.sub(r'(<meta (?:name="description"|property="og:description"|name="twitter:description") content=")[^"]*', lambda m: m.group(1) + _esc(desc), html)
+            parts = rel.split('/')
+            article = len(parts) > 1 and parts[0] in ('reviews', 'learn', 'research', 'sportsbooks') and parts[-1] != 'index.html' or rel.endswith('-review/index.html')
+            if article:
+                html = html.replace('<meta property="og:type" content="website">', '<meta property="og:type" content="article">', 1)
+            if 'application/ld+json' not in html:
+                t = re.search(r'<title>(.*?)</title>', html, re.S)
+                d = re.search(r'<meta name="description" content="([^"]*)"', html)
+                c = re.search(r'<link rel="canonical" href="([^"]*)"', html)
+                if t and c:
+                    name_ = unescape(t.group(1)).split(' | ')[0]
+                    page = {'@type': SEO_PAGE_TYPES.get(rel, 'WebPage'), 'name': name_, 'url': c.group(1), 'publisher': org,
+                            'isPartOf': {'@type': 'WebSite', 'name': 'Handicapper Watchdog', 'url': root}}
+                    if d:
+                        page['description'] = unescape(d.group(1))
+                    crumbs = [('Home', root)]
+                    if parts[0] in SEO_SECTIONS and rel != parts[0] + '/index.html':
+                        crumbs.append((SEO_SECTIONS[parts[0]], root + parts[0] + ('/index.html' if parts[0] == 'reviews' else '/')))
+                    crumbs.append((name_, c.group(1)))
+                    graph = [page, {'@type': 'BreadcrumbList', 'itemListElement': [
+                        {'@type': 'ListItem', 'position': i + 1, 'name': n, 'item': u} for i, (n, u) in enumerate(crumbs)]}]
+                    if rel == 'reviews/index.html':
+                        links = re.findall(r'<a class="rev" data-name="[^"]*" href="([^"]+)"', html)
+                        names_ = re.findall(r'<a class="rev"[^>]*>.*?<b>(.*?)</b>', html, re.S)
+                        graph.append({'@type': 'ItemList', 'itemListElement': [
+                            {'@type': 'ListItem', 'position': i + 1, 'name': unescape(n), 'url': root + 'reviews/' + h}
+                            for i, (h, n) in enumerate(zip(links, names_))]})
+                    tag = '<script type="application/ld+json">%s</script>' % json.dumps(
+                        {'@context': 'https://schema.org', '@graph': graph}, ensure_ascii=True).replace('<', '\\u003c')
+                    html = html.replace('</head>', tag + '\n</head>', 1)
+            with open(path, 'w', encoding='utf-8', newline='') as f:
+                f.write(html)
+
+
 def main():
     raw = extract(get(BASE + '?cb=' + secrets.token_hex(4)), '__ATW_DATA')
     rows = [x for x in raw.get('handicappers', []) if x.get('source') in ALLOWED]  # every account gets a profile page
@@ -2818,6 +2916,7 @@ def main():
     with open(os.path.join(SITE, 'data', 'index.json'), 'w', encoding='utf-8') as f:
         json.dump({'meta': meta, 'cappers': index}, f, separators=(',', ':'))
     stamp_public_pages(SITE)
+    _seo_finish(SITE)
     no_page = [s['id'] for s in index if not os.path.exists(os.path.join(SITE, 'data', 'p', s['id'] + '.json'))]
     if no_page:
         sys.exit('%d accounts have no profile page: refusing to publish' % len(no_page))
