@@ -268,7 +268,7 @@
   function rankings(d) {
     var M = d.meta, all = d.cappers, PER = 50, pageNo = 1, view = [];
     var P = new URLSearchParams(location.search);
-    $('fresh').textContent = fmt(M.tracked) + ' handicappers with graded picks. Updated ' + new Date(M.built_at).toLocaleString('en-US', { timeZone: 'America/Los_Angeles', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) + ' PT.';
+    $('fresh').textContent = fmt(M.tracked) + ' handicappers with graded picks' + (M.monitored > M.tracked ? ', ' + fmt(M.monitored - M.tracked) + ' more monitored with none graded yet' : '') + '. Updated ' + new Date(M.built_at).toLocaleString('en-US', { timeZone: 'America/Los_Angeles', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) + ' PT.';
     if (M.live && $('pendNote')) $('pendNote').textContent = fmt(M.live.pending_picks) + ' tracked picks are waiting on a result right now.';
     sportsByDepth(all, 5).forEach(function (s) { $('fSport').insertAdjacentHTML('beforeend', '<option>' + esc(s) + '</option>'); });
     var map = { q: 'q', sport: 'fSport', t: 'fTime', sort: 'fSort', min: 'fMin', roi: 'fRoi', win: 'fWin', u: 'fUnits', act: 'fAct' };
@@ -285,7 +285,7 @@
       var q = $('q').value.trim().toLowerCase().replace(/^#/, ''), sp = $('fSport').value, t = sp ? 'all' : $('fTime').value;
       $('fTime').disabled = !!sp;
       var act = +$('fAct').value || 0, actCut = act ? new Date(new Date(M.built_at) - act * DAY).toISOString().slice(0, 10) : '';
-      var min = +$('fMin').value || 1, roi = $('fRoi').value, win = $('fWin').value, un = $('fUnits').value, sort = $('fSort').value;
+      var min = $('fMin').value === '' ? 1 : +$('fMin').value, roi = $('fRoi').value, win = $('fWin').value, un = $('fUnits').value, sort = $('fSort').value;
       view = [];
       all.forEach(function (r) {
         if (q && !(r.id.indexOf(q) === 0 || code(r.id).toLowerCase() === q || r.id.slice(0, 4) === q ||
@@ -293,7 +293,7 @@
         if (actCut && !(r.last_pick && r.last_pick >= actCut)) return;
         var x = m(r, t, sp); if (!x) return;
         if (sp) { if (r.picks < min || x.picks < 30) return; }
-        else if (x.picks < min) return;
+        else if (x.picks < min && !(q && r.id.indexOf(q) === 0)) return;
         if (roi !== '' && !(x.roi != null && x.roi >= +roi && (+roi > 0 || x.roi > 0))) return;
         if (win !== '' && !(x.win_pct != null && x.win_pct >= +win)) return;
         if (un !== '' && !(x.units != null && x.units >= +un && (+un > 0 || x.units > 0))) return;

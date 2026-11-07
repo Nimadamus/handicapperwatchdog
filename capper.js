@@ -306,20 +306,22 @@
     });
   }
   function renderBasic(p) {
-    var s = p.summary, c = s.id.slice(0, 6).toUpperCase(), t = TIER[s.tier] || TIER.small;
-    document.title = 'Handicapper #' + c + ': ' + rec(s) + ' | Handicapper Watchdog';
-    var why = p.reason === 'unreconciled'
+    var s = p.summary, c = s.id.slice(0, 6).toUpperCase(), t = TIER[s.tier] || TIER.small, none = p.reason === 'no_grades';
+    document.title = 'Handicapper #' + c + ': ' + (none ? 'no graded picks yet' : rec(s)) + ' | Handicapper Watchdog';
+    var why = none
+      ? 'Watchdog monitors this public account, but none of its picks have been graded yet. A record starts with the first pick posted before a game and graded from the final score. This page fills in on its own when that happens.'
+      : p.reason === 'unreconciled'
       ? 'The detailed breakdown is held back because the pick history did not reproduce this record exactly at the last update. Watchdog does not publish analytics it cannot reconcile. The headline record below comes straight from the grading ledger.'
       : p.reason === 'updating' ? 'New grades arrived for this account since its detailed breakdown was built, so the breakdown is being rebuilt. It returns at a coming update. The headline record below is current.'
       : 'The detailed breakdown for this account is still being built. The headline record below comes straight from the grading ledger.';
     var bs = (p.by_sport || []).map(function (b) { var r = String(b.record || '').split('-').map(Number); return { key: b.key, picks: b.picks, w: r[0] || 0, l: r[1] || 0, p: r[2] || 0, net: b.units, roi: b.roi, win_pct: b.win_pct }; });
     root.innerHTML = '<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><a href="cappers.html">Rankings</a><span aria-hidden="true">/</span><span aria-current="page">#' + esc(c) + '</span></nav>' +
       '<section class="phero"><div><div class="pid"><div class="pav">' + esc(c.slice(0, 2)) + '</div><div><div class="eyebrow">Anonymous Watchdog ID</div><h1 class="idc">#' + esc(c) + '</h1>' +
-      '<div class="pmeta"><span class="badge ' + t[0] + '" title="' + t[2] + '">' + t[1] + '</span></div><p class="muted small" style="margin:8px 0 0">Last pick ' + day(s.last_pick) + '</p></div></div></div>' +
-      '<div class="unl"><span class="lock">Watchdog Pro</span><b>See what this account bets next</b><p>Watchdog Pro adds eligible pending picks before their games start. The name is not published in any plan.</p><a class="btn pro" style="width:100%" href="' + PRO + '">View Watchdog Pro</a></div></section>' +
+      '<div class="pmeta"><span class="badge ' + t[0] + '" title="' + t[2] + '">' + t[1] + '</span></div><p class="muted small" style="margin:8px 0 0">' + (s.last_pick ? 'Last pick ' + day(s.last_pick) : 'No graded picks yet') + '</p></div></div></div>' +
+      (none ? '' : '<div class="unl"><span class="lock">Watchdog Pro</span><b>See what this account bets next</b><p>Watchdog Pro adds eligible pending picks before their games start. The name is not published in any plan.</p><a class="btn pro" style="width:100%" href="' + PRO + '">View Watchdog Pro</a></div>') + '</section>' +
       kpis([[rec(s), 'Record'], [sgn(s.units, 2), 'Units won'], [sgn(s.roi, 1, '%'), 'ROI'], [pct(s.win_pct), 'Win %'], [fmt(s.picks), 'Graded picks'], [s.streak > 0 ? '<span class="pos">W' + s.streak + '</span>' : s.streak < 0 ? '<span class="neg">L' + (-s.streak) + '</span>' : '<span class="dim">n/a</span>', 'Current streak']]) +
-      '<div class="disclosure" style="margin:16px 0"><b>Detailed analytics not shown</b><p class="muted">' + why + '</p></div>' +
-      panel('By sport', table(bs, 'Sport', { sort: 1 })) + '<div id="ppend" style="margin-top:18px"></div>';
+      '<div class="disclosure" style="margin:16px 0"><b>' + (none ? 'No graded picks yet' : 'Detailed analytics not shown') + '</b><p class="muted">' + why + '</p></div>' +
+       (bs.length ? panel('By sport', table(bs, 'Sport', { sort: 1 })) : '') + '<div id="ppend" style="margin-top:18px"></div>';
     if (window.HWD) HWD.ready.then(function (st) { if (st.pro) pendingFor(s.id); });
   }
 })();

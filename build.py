@@ -2614,9 +2614,10 @@ def stamp_public_pages(site):
 
 def main():
     raw = extract(get(BASE + '?cb=' + secrets.token_hex(4)), '__ATW_DATA')
-    rows = [x for x in raw.get('handicappers', []) if x.get('source') in ALLOWED and int(x.get('graded') or 0) > 0]
-    if len(rows) < 100:
-        sys.exit('only %d rows: refusing to publish a short board' % len(rows))
+    rows = [x for x in raw.get('handicappers', []) if x.get('source') in ALLOWED]  # every account gets a profile page
+    graded_rows = sum(1 for x in rows if int(x.get('graded') or 0) > 0)
+    if graded_rows < 100:
+        sys.exit('only %d rows: refusing to publish a short board' % graded_rows)
     os.makedirs(CACHE, exist_ok=True)
     os.makedirs(SITE, exist_ok=True)
     for name in os.listdir(SITE):  # empty it in place: a preview server may be holding the folder open
@@ -2655,6 +2656,13 @@ def main():
     changed_budget = int(os.environ.get('HWD_MAX_FETCH_CHANGED', str(max(MAX_FETCH, 1000))))
     for x in rows:
         s = summary(x)
+        if not s['picks']:  # monitored, nothing graded: no research to fetch, the page says so and fills in on the first grade
+            s.update(units=None, roi=None, win_pct=None, profile=True, basic=1, tier=tier(0), bs={})
+            with open(os.path.join(SITE, 'data', 'p', s['id'] + '.json'), 'w', encoding='utf-8') as f:
+                json.dump(minimal_profile(s, 'no_grades'), f, separators=(',', ':'))
+            s.pop('by_sport')
+            index.append(s)
+            continue
         cpath = os.path.join(CACHE, ckey(x) + '.json')
         cached = None
         if os.path.exists(cpath):
@@ -2762,8 +2770,9 @@ def main():
     index = [public_row(s) for s in index]
     meta = {'built_at': datetime.now(timezone.utc).isoformat(timespec='seconds'),
             'newest_pick': max((s['last_pick'] or '' for s in index), default=None),
-            'tracked': len(index), 'graded_picks': sum(s['picks'] for s in index), 'qualified': len(qual),
-            'profitable': sum(1 for s in qual if s['units'] > 0), 'min_graded': 100, 'profiles': published,
+            'tracked': sum(1 for s in index if s['picks'] > 0), 'monitored': len(index),
+            'graded_picks': sum(s['picks'] for s in index), 'qualified': len(qual),
+            'profitable': sum(1 for s in qual if s['units'] > 0), 'min_graded': 100, 'profiles': len(index),
             'by_platform': by_platform,
             'established': sum(1 for s in index if s['picks'] >= 100 and s['units'] is not None),
             'established_up': sum(1 for s in index if s['picks'] >= 100 and (s['units'] or 0) > 0),
@@ -2779,7 +2788,7 @@ def main():
         board = []
         for cid, picks in pend['by_id'].items():
             c = ctx.get(cid)
-            if not c:
+            if not c or not c['picks']:
                 continue
             for p in picks:
                 board.append(dict(p, id=cid, cw=c['w'], cl=c['l'], cp=c['p'], cpicks=c['picks'], cu=c['units'], croi=c['roi'],
@@ -2791,7 +2800,10 @@ def main():
     with open(os.path.join(SITE, 'data', 'index.json'), 'w', encoding='utf-8') as f:
         json.dump({'meta': meta, 'cappers': index}, f, separators=(',', ':'))
     stamp_public_pages(SITE)
-    print('tracked %d, fetched %d, failed %d, profiles %d, unreconciled %d, behind %d' % (len(index), fetched, failed, published, unreconciled, behind))
+    no_page = [s['id'] for s in index if not os.path.exists(os.path.join(SITE, 'data', 'p', s['id'] + '.json'))]
+    if no_page:
+        sys.exit('%d accounts have no profile page: refusing to publish' % len(no_page))
+    print('accounts %d, graded %d, fetched %d, failed %d, detailed %d, unreconciled %d, behind %d' % (len(index), meta['tracked'], fetched, failed, published, unreconciled, behind))
 
 
 if __name__ == '__main__':
