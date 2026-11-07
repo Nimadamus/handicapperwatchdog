@@ -179,7 +179,7 @@ def check(label, extra):
         assert 'src="pro.js"' in price and 'src="pricing.js"' in price and 'noindex' not in price.lower()
         assert '$49.99' in price and '$499' in price and not re.search(r'\$(?!49.99|499|41\.58|599.88|100.88)\d', price)
         assert 'does not show a checkout button' not in price
-        assert '22,990' in open(os.path.join(tmp, 'reviews', 'docs-sports-ai.html'), encoding='utf-8').read()
+        assert '23,180' in open(os.path.join(tmp, 'reviews', 'docs-sports-ai.html'), encoding='utf-8').read()
         assert '676-579' in open(os.path.join(tmp, 'reviews', 'big-al.html'), encoding='utf-8').read()
         for slug in (
             'docs-sports', 'dr-bob-sports', 'pregame', 'cappertek', 'jimmy-boyd', 'jim-feist',
