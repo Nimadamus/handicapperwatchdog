@@ -169,7 +169,11 @@
       var pt = function (s) { return new Date(s).toLocaleString('en-US', { timeZone: 'America/Los_Angeles', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) + ' PT'; };
       $('liveAt').textContent = 'From the Watchdog database. Last pick captured ' + pt(L.last_capture_at) + '.';
       var estAll = all.filter(function (r) { return r.picks >= 100 && r.units != null; });
-      set('heroProof', [[fmt(L.graded_picks), 'Picks graded'], [fmt(L.accounts_monitored), 'Accounts monitored'], [fmt(L.posts_captured), 'Public posts scanned']].map(function (k) { return '<div><dt>' + k[1] + '</dt><dd>' + k[0] + '</dd></div>'; }).join(''));
+      var firsts = all.map(function (r) { return r.first_pick; }).filter(Boolean).sort();
+      var sinceTxt = firsts[0] ? new Date(firsts[0] + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }) : '';
+      if (sinceTxt) document.querySelectorAll('.tsince').forEach(function (el) { el.textContent = sinceTxt; });
+      set('mFind', fmt(L.accounts_discovered) + ' accounts discovered and ' + fmt(L.accounts_monitored) + ' monitored for picks across ' + fmt(L.platforms) + ' platforms. If a public account posts picks there, the system goes after it.');
+      set('heroProof', [[sinceTxt ? new Date(firsts[0] + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : 'n/a', 'Tracking since'], [fmt(L.graded_picks), 'Picks graded'], [fmt(L.accounts_monitored), 'Accounts monitored'], [fmt(L.posts_captured), 'Public posts scanned']].map(function (k) { return '<div><dt>' + k[1] + '</dt><dd>' + k[0] + '</dd></div>'; }).join(''));
       set('featPending', fmt(L.pending_picks) + ' tracked picks are waiting on a result right now. A pick waiting on a result is never counted in a record.');
       set('stepDiscover', fmt(L.accounts_discovered) + ' accounts found so far, ' + fmt(L.accounts_monitored) + ' monitored for picks.');
       var mix = $('liveMix'), sources = (L.sources || []).filter(function (s) { return s && s.label && s.graded_picks > 0; })
