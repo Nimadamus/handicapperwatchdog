@@ -773,12 +773,6 @@ def _noindex(path):
 def _write_sitemap(site, lastmod):
     lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     entries = list(_SITEMAP)
-    established = None
-    try:
-        with open(os.path.join(site, 'data', 'index.json'), encoding='utf-8') as f:
-            established = {r['id'] for r in json.load(f)['cappers'] if (r.get('picks') or 0) >= PROFILE_SITEMAP_MIN}
-    except (OSError, ValueError, KeyError):
-        pass
     sport_dir = os.path.join(site, 'sports')
     if os.path.isdir(sport_dir):
         for name in sorted(os.listdir(sport_dir)):
@@ -792,8 +786,8 @@ def _write_sitemap(site, lastmod):
         for name in sorted(os.listdir(folder_dir)):
             path = os.path.join(folder_dir, name)
             if name.endswith('.html') and os.path.isfile(path):
-                if folder == 'handicappers' and name != 'index.html' and established is not None and name[:-5] not in established:
-                    continue
+                if folder == 'handicappers' and name != 'index.html':
+                    continue  # profile pages are templated records; only the directory goes in the sitemap
                 loc ='https://handicapperwatchdog.com/' + folder + '/' + name
                 if folder in ('sportsbooks', 'learn', 'research', 'handicappers') and name == 'index.html':
                     loc = 'https://handicapperwatchdog.com/%s/' % folder
@@ -2713,7 +2707,6 @@ def _publish_light_data(site):
 
 
 PROFILE_INDEX_MIN = 20  # thinner profiles still get a page, but stay out of search until they have a real sample
-PROFILE_SITEMAP_MIN = 100  # only established records go in the sitemap so crawlers spend their time on the strongest pages
 
 
 def _day(iso):
