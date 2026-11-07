@@ -163,7 +163,7 @@ body[data-page="home"] main{display:block;max-width:none;padding:0;margin:0}
 /* sportsbook look */
 .hero{position:relative;padding:92px 0 0;background:linear-gradient(180deg,rgba(7,12,22,.5),rgba(7,12,22,.66) 50%,rgba(10,17,32,.94) 92%,var(--hn)),radial-gradient(900px 480px at 50% 22%,rgba(7,12,22,.55),transparent 72%),url(sportsbook-bg.jpg) 62% center/cover no-repeat}
 .hero h1,.herosub{text-shadow:0 2px 24px rgba(0,0,0,.75)}
-.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:52px 0 0;text-align:left}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:52px 0 0;text-align:left}
 .facts>div{padding:20px;border-radius:14px;background:rgba(10,17,32,.82);border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(6px)}
 .facts b{display:block;color:#fff;font-size:17.5px;line-height:1.28;font-weight:750;margin-bottom:8px}
 .facts p{color:var(--ink2);font-size:14px;line-height:1.45;margin:0}
@@ -220,3 +220,20 @@ body[data-page="home"] main{display:block;max-width:none;padding:0;margin:0}
 .sl{flex-wrap:wrap}
 .slock>div{min-width:0}
 @media (max-width:700px){.st th:nth-child(4),.st td:nth-child(4){display:none}.st td,.st th{padding:7px 4px}}
+
+/* A+ pass */
+.facts a{color:var(--gold2);font-weight:700}
+.facts>div{min-height:138px}
+.proof{min-height:66px}
+.stamp{min-height:20px;max-width:64em;margin-left:auto;margin-right:auto}
+.cres{min-height:372px}
+#claims{min-height:220px}
+.sdash{min-height:560px}
+.mission{padding:84px 0}
+.mission h2{max-width:none;font-size:clamp(34px,4.4vw,60px)}
+.mlead{margin-bottom:0}
+.ticker:hover .ltick{animation-play-state:paused}
+.band a:focus-visible,.band button:focus-visible{outline:2px solid var(--gold2);outline-offset:3px;border-radius:4px}
+.pchip,.stabs button{transition:background .15s,color .15s,border-color .15s}
+@media (max-width:700px){.facts>div{min-height:0}.cres,.sdash,#claims{min-height:0}.mission{padding:56px 0}}
+

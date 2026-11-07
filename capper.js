@@ -15,7 +15,13 @@
   var TIER = { established: ['est', 'Established record', '100 or more graded picks.'], developing: ['dev', 'Developing record', '20 to 99 graded picks. Results can still swing a lot.'], small: ['sm', 'Small sample', 'Under 20 graded picks. Too few to judge skill.'] };
 
   if (!/^[0-9a-f]{10}$/.test(id)) { root.innerHTML = missing(); return; }
-  fetch('data/p/' + id + '.json?v=' + Math.floor(Date.now() / 6e4)).then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(render).catch(function () { root.innerHTML = missing(); });
+  fetch('data/p/' + id + '.json?v=' + Math.floor(Date.now() / 6e4)).then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (p) {
+    if (!p.gated || !window.HWD) return p;
+    return HWD.ready.then(function (st) {
+      if (!st.pro) return p;
+      return HWD.capper(id).then(function (d) { Object.assign(p, d.deep || {}); p.unlocked = true; return p; }).catch(function () { return p; });
+    });
+  }).then(render).catch(function () { root.innerHTML = missing(); });
 
   function missing() {
     return '<div class="empty" style="padding:70px 20px"><h1 style="font-size:22px;margin-bottom:8px">Profile not available yet</h1><p class="muted">Profiles are built as records come in. This capper may still be in the queue.</p><a class="btn" href="cappers.html">Browse the rankings</a></div>';
@@ -127,8 +133,34 @@
   }
 
   // ---------- page ----------
+  var DEEP_DEFAULTS = { sport_detail: {}, month: [], weekday: [], season: [], after: [], form_picks: [], fav_dog: [], plus_money: [], odds_buckets: [], over_under: [], home_away: [],
+    teams_backing: [], teams_fading: [], conference_backing: [], division_backing: [], market_detail: [], roi_curve: [], rolling_win: [], activity: [] };
+  // free profiles carry no deep data at all: it is sealed for Pro at build time, so this only tidies the page around what is absent
+  function lockDeep(p) {
+    ['charts', 'situations', 'teams', 'calendar'].forEach(function (k) {
+      var el = document.getElementById(k); if (el) el.remove();
+      var a = document.querySelector('#snav a[href$="#' + k + '"]'); if (a) a.remove();
+    });
+    [].forEach.call(root.querySelectorAll('.panel'), function (el) {
+      var h = el.querySelector('h2,h3,.phtitle'), txt = h ? h.textContent : '';
+      if (/Advanced metrics|Form by recent|After a win|Best and worst|Consistency/.test(txt)) el.remove();
+    });
+    [].forEach.call(root.querySelectorAll('.g2'), function (g) { if (!g.children.length) g.remove(); });
+    var sp = document.getElementById('sports');
+    if (sp) sp.innerHTML = '<div class="sech"><h2>Sport by sport</h2></div>' + panel('Record by sport', table(p.sports, 'Sport', { sort: 1 }));
+    var mk = document.getElementById('markets');
+    if (mk) mk.innerHTML = '<div class="sech"><h2>Markets</h2></div>' + panel('By market', table(p.markets, 'Market', { sort: 1 }));
+    var items = [['Advanced metrics', 'Z score, break even gap, drawdown, volatility'], ['Sport detail', 'Streaks, markets and form inside each sport'], ['Teams', 'Teams backed and faded, conferences, divisions'],
+      ['Prices and sides', 'Favorites, underdogs, odds ranges, overs, unders, home and away'], ['Calendar', 'Weekday, month and season splits'], ['Charts', 'ROI over time, rolling win rate, weekly activity']];
+    var box = document.createElement('section');
+    box.className = 'sec prolock'; box.id = 'pro-file';
+    box.innerHTML = '<div><span class="lock">Watchdog Pro</span><h2>The rest of this file is in Watchdog Pro</h2><p class="muted">Free profiles show the headline record, recent form and the latest graded picks. Pro opens everything below on every tracked profile, plus eligible pending picks before the start.</p></div>' +
+      '<ul>' + items.map(function (i) { return '<li><b>' + i[0] + '</b><span>' + i[1] + '</span></li>'; }).join('') + '</ul><a class="btn pro" href="pricing.html">View Watchdog Pro</a>';
+    if (mk) mk.after(box);
+  }
   function render(p) {
     if (p.detail === false) return renderBasic(p);
+    if (p.gated && !p.unlocked) { Object.keys(DEEP_DEFAULTS).forEach(function (k) { if (p[k] == null) p[k] = DEEP_DEFAULTS[k]; }); p.locked = true; }
     var s = p.summary, o = p.overview || {}, a = p.advanced || {}, c = s.id.slice(0, 6).toUpperCase(), t = TIER[s.tier] || TIER.small;
     var z = a.z || {}, be = a.break_even || {}, clv = a.clv || {}, ost = o.streaks || {};
     document.title = 'Handicapper #' + c + ': ' + rec(o) + ', ' + (o.net > 0 ? '+' : '') + (+o.net).toFixed(2) + ' units | Handicapper Watchdog';
@@ -146,7 +178,7 @@
       '<div class="pmeta"><span class="badge ' + t[0] + '" title="' + t[2] + '">' + t[1] + '</span>' +
       (s.sports || []).slice(0, 4).map(function (x) { return '<a class="badge" href="' + sportHref(x) + '">' + esc(x) + '</a>'; }).join('') + '</div>' +
       '<p class="muted small" style="margin:8px 0 0">' + statusTag(p.status) + ' Tracked since ' + day(s.first_pick) + ' · last graded game ' + day(p.last_game || s.last_pick) + ' · verified through ' + day(p.generated_at) + (p.newer > 0 ? ' · ' + fmt(p.newer) + ' newer graded pick' + (p.newer === 1 ? '' : 's') + ' in the rankings join this breakdown at a coming update' : '') + '</p></div></div></div>' +
-      '<div class="unl"><span class="lock">Watchdog Pro</span><b>See what this account bets next</b><p>Free: this full breakdown and the 50 most recent graded picks. Watchdog Pro adds:</p><ul><li>This account&rsquo;s eligible pending picks before the games start</li><li>The complete log of all ' + fmt(o.picks) + ' graded picks</li><li>Follow it and get an email when it posts a pick</li></ul><p>$49.99 a month or $499 a year. The name is not published in any plan.</p><a class="btn pro" style="width:100%" href="' + PRO + '">View Watchdog Pro</a></div></section>';
+      '<div class="unl"><span class="lock">Watchdog Pro</span><b>See what this account bets next</b><p>Free: the headline record, recent form and the latest 10 graded picks. Watchdog Pro adds:</p><ul><li>This account&rsquo;s eligible pending picks before the games start</li><li>The complete log of all ' + fmt(o.picks) + ' graded picks</li><li>Follow it and get an email when it posts a pick</li></ul><p>$49.99 a month or $499 a year. The name is not published in any plan.</p><a class="btn pro" style="width:100%" href="' + PRO + '">View Watchdog Pro</a></div></section>';
 
     h += kpis([[rec(o), 'Record'], [sgn(o.net, 2), 'Units won'], [sgn(o.roi, 1, '%'), 'ROI'], [pct(o.win_pct), 'Win %'], [fmt(o.picks), 'Graded picks'],
       [odds(o.avg_odds), 'Avg odds'], [strk(ost.current), 'Current streak'], [s.r30 ? sgn(s.r30.net, 2) : '<span class="dim">n/a</span>', 'Last 30 days']]);
@@ -212,6 +244,7 @@
     root.innerHTML = h;
     hookCharts();
     ledger(L);
+    afterRender(p);
     if (window.HWD) HWD.ready.then(function (st) { if (st.pro) unlock(s, o); });
     root.addEventListener('click', function (e) {
       var b = e.target.closest('button.tab'); if (!b) return;
@@ -227,6 +260,7 @@
       secs.forEach(function (x) { var el = document.getElementById(x[0]); if (el) io.observe(el); });
     }
   }
+  function afterRender(p) { if (p.locked) lockDeep(p); }
   function statusTag(st, long) {
     if (st === 'active') return '<span class="badge est">Active</span>' + (long ? ' <span class="dim small">graded game in the last 14 days</span>' : '');
     if (st === 'quiet') return '<span class="badge sm">Quiet</span>' + (long ? ' <span class="dim small">no graded game in 14 days</span>' : '');

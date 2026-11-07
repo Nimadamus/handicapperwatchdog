@@ -323,7 +323,11 @@ def build_profile(row, research):
 
 # ---------- extra analytics computed from the graded history ----------
 
-LEDGER_N = 50  # free profiles show this many most recent graded picks; never the post text, link or post id
+LEDGER_N = 10  # free profiles show this many most recent graded picks; never the post text, link or post id
+# Deep analytics are sealed for Pro with the full log. They are never in the public profile file.
+DEEP_KEYS = ('advanced', 'after', 'form_picks', 'market_detail', 'fav_dog', 'plus_money', 'odds_buckets', 'over_under', 'home_away', 'teams_backing', 'teams_fading',
+             'conference_backing', 'division_backing', 'weekday', 'month', 'season', 'recent_vs_lifetime', 'sport_detail', 'roi_curve', 'rolling_n', 'rolling_win', 'activity',
+             'best_sport', 'best_market')
 
 
 def _ts(iso):
@@ -1028,7 +1032,7 @@ def _write_guides(site, meta, cappers):
                       'https://handicapperwatchdog.com/pricing.html',
                       '''<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><span aria-current="page">Pricing</span></nav>
 <div class="pagehead"><div><div class="eyebrow">Watchdog Pro</div><h1>Research the record, then see what comes next</h1>
-<p class="muted">The free site is the full public record. Watchdog Pro adds eligible pending picks from tracked accounts before their games start, and the complete graded pick log behind every profile. Both plans include the same features.</p>
+<p class="muted">The free site shows every ranking and each account&rsquo;s headline record. Watchdog Pro adds eligible pending picks from tracked accounts before their games start, and the complete graded pick log behind every profile. Both plans include the same features.</p>
 <p class="pcnote" style="margin:10px 0 0"><span class="statusdot"></span><span id="planNote">Secure checkout by Stripe. Cancel any time from your account page.</span></p></div></div>
 <p class="disclosure" id="notice" hidden></p>
 <div class="fld" id="buyerBox" style="display:none;max-width:360px;margin:0 0 14px"><label for="buyerEmail">Email for your Watchdog Pro account</label><input id="buyerEmail" type="email" autocomplete="email" placeholder="you@example.com"></div>
@@ -1043,8 +1047,9 @@ def _write_guides(site, meta, cappers):
 <section class="panel" style="margin:0 0 18px"><div class="ph"><h3>Free and Pro</h3></div>
 <div class="tw"><table class="mini plancmp"><thead><tr><th class="l">Feature</th><th>Free</th><th>Pro</th></tr></thead><tbody>
 <tr><td class="l">Rank, record, units, ROI, win rate, streak</td><td>Yes</td><td>Yes</td></tr>
-<tr><td class="l">Every ranking list, sport records, profile breakdowns and charts</td><td>Yes</td><td>Yes</td></tr>
-<tr><td class="l">Ledger of the 50 most recent graded picks on each profile</td><td>Yes</td><td>Yes</td></tr>
+<tr><td class="l">Every ranking list, record, units, ROI and recent form</td><td>Yes</td><td>Yes</td></tr>
+<tr><td class="l">Record by sport and market, and the 10 most recent graded picks</td><td>Yes</td><td>Yes</td></tr>
+<tr><td class="l">Advanced metrics, teams, prices, sides, calendar and charts on every profile</td><td>No</td><td>Yes</td></tr>
 <tr><td class="l">Eligible pending picks before the game starts</td><td>No</td><td>Yes</td></tr>
 <tr><td class="l">Complete graded pick log: game, pick, odds, result, units, post time</td><td>No</td><td>Yes</td></tr>
 <tr><td class="l">Advanced filters, and compare up to four records</td><td>No</td><td>Yes</td></tr>
@@ -1165,9 +1170,9 @@ def _research_paths(cappers, depth=1):
         '<div class="featgrid" style="margin-top:12px">' + cards + '</div></section>\n'
         '<section class="panel edcard"><h2>What Watchdog Pro adds</h2><div class="prose"><ul>'
         '<li>Eligible pending picks from tracked accounts before their games start, with each account&rsquo;s graded record beside the pick.</li>'
-        '<li>The complete graded pick log for every account, not only the 50 most recent picks.</li>'
+        '<li>The complete graded pick log for every account, not only the 10 most recent picks.</li>'
         '<li>Follow accounts and get an email when one of them posts a pick before the game.</li></ul>'
-        '<p>Pro never reveals who an account is. Free visitors keep the rankings, the research and every profile breakdown. See <a href="' + up + 'how-we-grade.html">how Watchdog grades a pick</a>.</p></div>'
+        '<p>Pro never reveals who an account is. Free visitors keep the rankings, the research and each account&rsquo;s headline record. See <a href="' + up + 'how-we-grade.html">how Watchdog grades a pick</a>.</p></div>'
         '<p><a class="btn pro" href="' + up + 'pricing.html">See Watchdog Pro plans</a></p></section>\n')
 
 
@@ -2871,6 +2876,7 @@ def main():
         return 1 if now - e[1] > PROFILE_TTL * 4 else 2
     rows.sort(key=lambda x: (urgency(x), -int(x['graded'])))
     index, halves, odds_study, odds_accts = [], [], {}, []
+    sample_full = None
     changed_budget = int(os.environ.get('HWD_MAX_FETCH_CHANGED', str(max(MAX_FETCH, 1000))))
     for x in rows:
         s = summary(x)
@@ -2915,6 +2921,12 @@ def main():
             # A reconciled snapshot is published even when newer grades have landed since (active accounts are always a few
             # picks ahead of the tracker's research page); the page says how many newer picks the breakdown does not cover yet.
             if prof['reconciled']:
+                # The board and the profile must show one record. When the research file is ahead of the board, the board takes its numbers.
+                if int(ov.get('picks') or 0) > s['picks']:
+                    cur_st = str((ov.get('streaks') or {}).get('current') or '')
+                    s.update(w=ov.get('w'), l=ov.get('l'), p=ov.get('p'), picks=ov.get('picks'), units=round(float(ov.get('net') or 0), 2), roi=ov.get('roi'), win_pct=ov.get('win_pct'),
+                             streak=(int(cur_st[1:]) * (1 if cur_st[0] == 'W' else -1)) if re.fullmatch(r'[WL]\d+', cur_st) else s['streak'])
+                    current = True
                 prof['summary'] = {k: v for k, v in s.items() if k not in ('by_sport', 'source', 'handle', 'slug')}
                 prof['summary']['tier'] = tier(s['picks'])
                 s.update({k: v for k, v in prof.pop('extra').items()})
@@ -2950,9 +2962,15 @@ def main():
                     h1, h2 = agg(hist[:len(hist) // 2]), agg(hist[len(hist) // 2:])
                     if h1['roi'] is not None and h2['roi'] is not None:
                         halves.append([h1['roi'], h2['roi']])
+                deep = {k: prof.pop(k) for k in DEEP_KEYS if k in prof}
+                if s['picks'] >= 100 and (sample_full is None or (s['units'] or 0) > sample_full['summary']['units']):
+                    sample_full = dict(prof, **deep)
+                    sample_full['ledger'] = (prof.get('ledger') or [])[:LEDGER_N]
+                prof['gated'] = True
+                prof['ledger'] = (prof.get('ledger') or [])[:LEDGER_N]
                 if PRO_KEY:
                     with open(os.path.join(SITE, 'data', 'x', s['id'] + '.bin'), 'w') as f:
-                        f.write(seal('capper:' + s['id'], {'ledger': [ledger_row(h) for h in hist[::-1]]}))
+                        f.write(seal('capper:' + s['id'], {'ledger': [ledger_row(h) for h in hist[::-1]], 'deep': deep}))
                     sealed += 1
                 with open(os.path.join(SITE, 'data', 'p', s['id'] + '.json'), 'w', encoding='utf-8') as f:
                     json.dump(prof, f, separators=(',', ':'))
@@ -3017,6 +3035,9 @@ def main():
             f.write(seal('pending', {'baked_at': pend['board_baked_at'], 'built_at': meta['built_at'], 'picks': board}))
     with open(os.path.join(SITE, 'data', 'index.json'), 'w', encoding='utf-8') as f:
         json.dump({'meta': meta, 'cappers': index}, f, separators=(',', ':'))
+    if sample_full:  # the one fully opened account shown on the homepage as the Pro sample
+        with open(os.path.join(SITE, 'data', 'sample.json'), 'w', encoding='utf-8') as f:
+            json.dump(sample_full, f, separators=(',', ':'))
     _write_profile_pages(SITE, index)
     stamp_public_pages(SITE)
     _seo_finish(SITE)

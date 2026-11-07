@@ -67,7 +67,8 @@
   function sampleProfile(r) {
     var box = $('sdash');
     if (!box || !r) return;
-    fetch('data/p/' + r.id + '.json').then(function (x) { return x.json(); }).then(function (p) {
+    fetch('data/sample.json').then(function (x) { return x.json(); }).then(function (p) {
+      r = Object.assign({}, r, p.summary || {});
       var o = p.overview || {}, a = p.advanced || {}, st = p.streaks || {}, z = a.z || {}, be = a.break_even || {}, W = p.windows || {}, c = code(r.id);
       var name = function (k) { return esc(String(k).replace('|', ' · ')); };
       var tbl = function (head, rows, n) {
@@ -96,7 +97,7 @@
           fact('Longest win streak', fmt(st.longest_win)) + fact('Longest losing streak', fmt(st.longest_loss)) + fact('Picks per week', p.per_week == null ? 'n/a' : (+p.per_week).toFixed(1)) + '</div>' +
           tbl('After a win or a loss', p.after, 6) + tbl('By weekday', p.weekday, 7)],
         ['Pro only', '<div class="slock"><div><span class="lock">Watchdog Pro</span><h4>Pending picks from #' + c + '</h4><p>Eligible picks before the game starts, with this whole file beside them.</p><div class="sl"><span class="blur">Away at Home</span><span class="blur">Side 3.5</span><span class="blur">Sun 1:05</span></div><div class="sl"><span class="blur">Away at Home</span><span class="blur">Total 44.5</span><span class="blur">Sun 4:25</span></div></div>' +
-          '<div><span class="lock">Watchdog Pro</span><h4>The complete pick log</h4><p>All ' + fmt(o.picks || r.picks) + ' graded picks with game, pick, odds, result, units and post time. Free profiles show the latest 50.</p><a class="btn pro" href="pricing.html">View Watchdog Pro</a></div></div>']];
+          '<div><span class="lock">Watchdog Pro</span><h4>The complete pick log</h4><p>All ' + fmt(o.picks || r.picks) + ' graded picks with game, pick, odds, result, units and post time. Free profiles show the latest 10.</p><a class="btn pro" href="pricing.html">View Watchdog Pro</a></div></div>']];
       box.innerHTML = '<div class="shead"><div><span class="eyebrow">Sample profile</span><b class="sid">#' + esc(c) + '</b></div>' +
         '<div class="skpi">' + fact('Record', recTxt(o)) + fact('Units', sgn(o.net, 2)) + fact('ROI', sgn(o.roi, 1, '%')) + fact('Win rate', pct(o.win_pct)) + fact('Avg odds', o.avg_odds == null ? 'n/a' : (o.avg_odds > 0 ? '+' : '') + o.avg_odds) + '</div></div>' +
         '<div class="stabs" role="tablist" aria-label="Profile sections">' + tabs.map(function (t, i) { return '<button type="button" role="tab" id="st' + i + '" aria-selected="' + (i ? 'false' : 'true') + '" aria-controls="sp">' + t[0] + '</button>'; }).join('') + '</div>' +
@@ -111,6 +112,22 @@
     }).catch(function () { box.innerHTML = '<p class="muted">The sample profile did not load. <a href="cappers.html">Open the rankings</a>.</p>'; });
   }
 
+  // edit distance against the best matching stretch of a name, so small misspellings still find a review
+  function near(a, b) {
+    var best = 99;
+    for (var st = 0; st <= Math.max(0, b.length - a.length); st++) {
+      var w = b.substr(st, a.length + 1), prev = [], i, j;
+      for (j = 0; j <= w.length; j++) prev[j] = j;
+      for (i = 1; i <= a.length; i++) {
+        var cur = [i];
+        for (j = 1; j <= w.length; j++) cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === w[j - 1] ? 0 : 1));
+        prev = cur;
+      }
+      best = Math.min(best, Math.min.apply(null, prev.slice(Math.max(0, a.length - 1))));
+    }
+    return best;
+  }
+
   function verifySearch(all) {
     var input = $('vq'), box = $('vlist'), form = $('vsearch'), services = [], items = [], on = -1;
     if (!input) return;
@@ -120,6 +137,8 @@
       var s = q.trim().toLowerCase().replace(/^#/, ''), out = [];
       if (!s) return out;
       services.forEach(function (v) { if (v.name.toLowerCase().indexOf(s) >= 0) out.push({ href: v.page, a: v.name, b: 'Service review' }); });
+      if (!out.length && s.length >= 4) services.map(function (v) { return { v: v, d: near(s, v.name.toLowerCase()) }; }).filter(function (x) { return x.d <= 2; }).sort(function (a, b) { return a.d - b.d; }).slice(0, 3)
+        .forEach(function (x) { out.push({ href: x.v.page, a: x.v.name, b: 'Did you mean this review?' }); });
       if (/^[0-9a-f]{2,10}$/.test(s)) all.filter(function (r) { return r.id.indexOf(s) === 0; }).sort(function (a, b) { return b.picks - a.picks; }).slice(0, 5).forEach(function (r) {
         out.push({ href: link(r), a: '#' + code(r.id), b: r.picks ? recTxt(r) + ', ' + fmt(r.picks) + ' graded picks' : 'No graded picks yet' });
       });
@@ -131,7 +150,7 @@
       var q = input.value.trim();
       if (!q) { box.hidden = true; input.setAttribute('aria-expanded', 'false'); return; }
       box.innerHTML = items.length ? items.map(function (o, i) { return '<li role="option" id="vo' + i + '"><a href="' + esc(o.href) + '">' + esc(o.a) + '<span>' + esc(o.b) + '</span></a></li>'; }).join('') :
-        '<li class="vnone-li"><span class="vnone">No match. Tracked accounts are listed by Watchdog ID, not by name. Try a <a href="reviews/index.html">named service review</a> or the <a href="cappers.html">rankings</a>.</span></li>';
+        '<li class="vnone-li"><span class="vnone">No match. Tracked accounts are listed by Watchdog ID, not by name, so a person or handle will not appear here. Try a <a href="reviews/index.html">named service review</a> or the <a href="cappers.html">rankings</a>.</span></li>';
       box.hidden = false; input.setAttribute('aria-expanded', 'true');
     }
     input.addEventListener('input', show);
@@ -215,12 +234,11 @@
         [fmt(L.pending_picks), 'Picks waiting on a result', 'Never counted in a record until graded.']];
       set('liveGrid', kv.map(function (k) { return '<div class="kv"><b>' + k[0] + '</b><span>' + k[1] + '</span><small>' + k[2] + '</small></div>'; }).join(''));
       var pt = function (s) { return new Date(s).toLocaleString('en-US', { timeZone: 'America/Los_Angeles', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) + ' PT'; };
-      $('liveAt').textContent = 'From the Watchdog database. Last pick captured ' + pt(L.last_capture_at) + '.';
+      $('liveAt').textContent = 'Read from the Watchdog database. Tracking since is the first graded pick on the record. Last pick captured ' + pt(L.last_capture_at) + '.';
       var estAll = all.filter(function (r) { return r.picks >= 100 && r.units != null; });
       var firsts = all.map(function (r) { return r.first_pick; }).filter(Boolean).sort();
       var sinceTxt = firsts[0] ? new Date(firsts[0] + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }) : '';
       if (sinceTxt) document.querySelectorAll('.tsince').forEach(function (el) { el.textContent = sinceTxt; });
-      set('fStats', fmt(L.graded_picks) + ' picks graded across ' + fmt(L.accounts_monitored) + ' monitored accounts.');
       var tk = all.filter(function (r) { return r.picks >= 100 && r.units != null; }).sort(function (a, b) { return b.picks - a.picks; }).slice(0, 26).map(function (r) {
         return '<span><b>#' + esc(code(r.id)) + '</b> ' + recTxt(r) + ' <i class="' + (r.units >= 0 ? 'lu' : 'ld') + '">' + (r.units > 0 ? '+' : '') + r.units.toFixed(2) + 'u</i></span>';
       }).join('');

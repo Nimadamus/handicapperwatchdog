@@ -31,7 +31,7 @@
       '<a class="btn pro" href="pricing.html">See Watchdog Pro</a></div></section>' +
       '<section class="panel" style="margin-bottom:28px"><div class="pb prose"><h2>What Pro adds</h2><ul>' +
       '<li><b>Eligible pending picks</b> before the start: straight bets, review cleared, posted before the game.</li>' +
-      '<li><b>The complete graded pick ledger</b> on every profile, not only the 50 most recent picks.</li>' +
+      '<li><b>The complete graded pick ledger</b> on every profile, not only the 10 most recent picks.</li>' +
       '<li><b>Compare up to four records</b> side by side.</li></ul>' +
       '<p class="muted small">Records are past results, not predictions or a guarantee. 21+. Gambling problem? Call 1 800 GAMBLER.</p></div></section>';
   }

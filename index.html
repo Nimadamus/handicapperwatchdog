@@ -25,6 +25,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,680&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="home.css">
+<link rel="preload" as="image" href="sportsbook-bg.jpg">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SC607ZYK1F"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-SC607ZYK1F');</script>
 </head>
@@ -34,7 +35,7 @@
   <input id="navtoggle" class="navtoggle" type="checkbox">
   <label class="navbtn" for="navtoggle">Menu</label>
   <nav class="navlinks" id="sitenav"><a href="#calculator">Calculator</a><a href="cappers.html">Rankings</a><a href="reviews/index.html">Reviews</a><a href="sportsbooks/">Sportsbooks</a><a href="learn/">Guides</a><a href="research/">Research</a><a href="pricing.html">Pricing</a></nav>
-  <form class="navsearch" action="cappers.html" role="search"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input name="q" placeholder="Search Watchdog ID or sport" aria-label="Search handicappers"></form>
+  <form class="navsearch" action="cappers.html" role="search"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input name="q" placeholder="Search ID or sport" aria-label="Search handicappers"></form>
   <a class="btn sm pro" href="#pro">Watchdog Pro</a>
 </div></header>
 <main id="main">
@@ -47,7 +48,7 @@
         <label for="vq">Search a picks service, a Watchdog ID or a sport</label>
         <div class="vrow">
           <div class="vfield"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-            <input id="vq" name="q" type="search" placeholder="WagerTalk, #359F3B, NFL" role="combobox" aria-expanded="false" aria-controls="vlist" aria-autocomplete="list"></div>
+            <input id="vq" name="q" type="search" placeholder="Try WagerTalk, #359F3B or NFL" role="combobox" aria-expanded="false" aria-controls="vlist" aria-autocomplete="list"></div>
           <button class="btn pro vgo" type="submit">Verify a Handicapper</button>
         </div>
         <ul class="vlist" id="vlist" role="listbox" hidden></ul>
@@ -55,10 +56,9 @@
       <p class="heronote"><a class="herolink" href="cappers.html">Explore Verified Rankings <span aria-hidden="true">&rarr;</span></a></p>
       <p class="muted small ctanote" data-cta-note hidden></p>
       <div class="facts">
-        <div><b>We track the handicappers posting picks across the internet.</b><p>X, Reddit, Covers, TheRX, Sportsbook Review and Predictem, every day.</p></div>
-        <div><b>On the record since <span class="tsince">September 2026</span>.</b><p id="fStats">Every eligible pick saved before the game starts.</p></div>
-        <div><b>Accurate stats, independently graded.</b><p>Every pick checked against the final score. Losses stay on the record.</p></div>
-        <div class="gold"><b>Pro shows everybody&rsquo;s pending picks and entire record history.</b><p>Every tracked handicapper, broken down with in depth statistics.</p></div>
+        <div><b>See the records they don&rsquo;t advertise.</b><p>Sellers can show the wins and skip the losses. We capture public picks before the game starts, so the losses stay.</p></div>
+        <div><b>Graded independently.</b><p>Each captured pick is graded on the final score, never on a seller&rsquo;s recap. Held and duplicate picks are left out.</p></div>
+        <div class="gold"><b>Go deeper with Watchdog Pro.</b><p>Pending picks before the start, complete pick logs and the full breakdown on every profile. <a href="#pro">What Pro adds</a></p></div>
       </div>
       <dl class="proof" id="heroProof"></dl>
       <p class="stamp" id="liveAt"></p>
@@ -69,15 +69,8 @@
   <section class="band mission" id="what" aria-labelledby="missionH">
     <div class="in">
       <div class="eyebrow">What this site is</div>
-      <h2 id="missionH">We track the people posting picks on the internet. Every pick. Every result. Since <span class="tsince">September 2026</span>.</h2>
-      <p class="mlead">Handicapper Watchdog is an automated tracking system. Every day it scans public posts on X, Reddit, Covers, TheRX, Sportsbook Review and Predictem, finds the accounts posting picks, saves each pick before the game starts, and grades it on the final score.</p>
-      <div class="m3">
-        <div><b>Everyone we can find.</b><p id="mFind">If a public account posts picks on these platforms, the system goes after it.</p></div>
-        <div><b>Wins and losses, forever.</b><p>A pick is saved when captured. Delete the post and it still counts. Nobody can pay for a better record.</p></div>
-        <div><b>Accurate stats you can check.</b><p>No self reported records. Every stat comes from graded picks under one <a href="how-we-grade.html">published method</a>, with corrections logged in public.</p></div>
-      </div>
-      <div class="depth"><h3>Every record, broken down</h3><ul><li>Wins, losses and pushes</li><li>Units won or lost</li><li>ROI</li><li>Win rate</li><li>Sport by sport</li><li>Bet types</li><li>Odds ranges</li><li>Favorites and underdogs</li><li>Home and away</li><li>Overs and unders</li><li>Teams backed and faded</li><li>Weekday and month</li><li>Streaks</li><li>Drawdowns</li><li>7, 30, 90 and 365 day form</li><li>Rolling win rate</li></ul>
-        <a class="herolink" href="cappers.html">Open any record <span aria-hidden="true">&rarr;</span></a></div>
+      <h2 id="missionH">Don&rsquo;t buy the claims. Examine the history.</h2>
+      <p class="mlead">Handicapper Watchdog is an automated tracking system. Every day it reads public posts on X, Reddit, Covers, TheRX, Sportsbook Review and Predictem, saves picks from the accounts it monitors before the game starts, and grades them on the final score. Graded picks on the record go back to <span class="tsince">September 2026</span>. Investigate the tracked record before you trust an advertised one.</p>
     </div>
   </section>
 
@@ -126,9 +119,9 @@
 
   <section class="band sample" id="sample" aria-labelledby="sampleH">
     <div class="in">
-      <div class="eyebrow">A real profile, opened up</div>
-      <h2 id="sampleH">This is one account. Every profile has this.</h2>
-      <p class="lead3">Every tracked profile with graded picks carries this same breakdown. Put it beside a pending pick and you have an unprecedented edge: you will know what the best records are betting, and exactly how good they are at it.</p>
+      <div class="eyebrow">What Pro opens on every profile</div>
+      <h2 id="sampleH">Every tracked pick tells a story. This is one account.</h2>
+      <p class="lead3">Here is one real account, fully opened. Watchdog Pro gives you this same file on every tracked profile with graded picks, and puts it beside eligible pending picks before the game starts.</p>
       <div class="sdash" id="sdash"><div class="skel"></div></div>
       <p class="fine">Real data from one anonymous account on today&rsquo;s board. Past results are not predictions or guarantees.</p>
     </div>
@@ -141,7 +134,7 @@
         <h2 id="proH">See every pending pick. See every full record.</h2>
         <div class="p2">
           <div><b>Every eligible pending pick</b><p>From every tracked account, before the game starts, with that account&rsquo;s graded record beside it.</p></div>
-          <div><b>Every account&rsquo;s entire history</b><p>The complete graded pick log on every profile: game, pick, odds, result, units and post time.</p></div>
+          <div><b>Every account&rsquo;s entire history</b><p>The complete graded pick log and the full breakdown by team, market, price, side and calendar.</p></div>
         </div>
         <div class="price"><b>$49.99</b><span>a month, or $499 a year</span></div>
         <a class="btn pro lg" href="pricing.html">View Watchdog Pro</a>

@@ -32,8 +32,23 @@
       .then(function (plain) { return JSON.parse(new TextDecoder().decode(plain)); });
   }
 
+  // remember the profile or board a visitor was on when they headed to pricing or sign in, for one day
+  function store(k, v) { try { if (v == null) localStorage.removeItem(k); else localStorage.setItem(k, v); } catch (e) {} }
+  function read(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href]'); if (!a) return;
+    if (!/(^|\/)(pricing|account)\.html/.test(a.getAttribute('href') || '')) return;
+    if (/\/(pricing|account)\.html$/.test(location.pathname)) return;
+    store('hwd_return', JSON.stringify({ to: location.pathname + location.search, at: Date.now() }));
+  });
+
   window.HWD = {
     ready: ready,
+    returnTo: function () {
+      try { var r = JSON.parse(read('hwd_return') || 'null'); if (r && Date.now() - r.at < 864e5 && /^\/[^/]/.test(r.to) && r.to.indexOf('//') < 0) return r.to; } catch (e) {}
+      return null;
+    },
+    clearReturn: function () { store('hwd_return', null); },
     state: function () { return state; },
     checkout: function (plan, email, attr) {
       return post('/api/checkout', { plan: plan, email: email || undefined, attr: attr }).then(function (d) { if (d.url) location.href = d.url; return d; });
@@ -44,7 +59,7 @@
     complete: function (sid) { return fetch(API + '/api/checkout/complete?session_id=' + encodeURIComponent(sid), { credentials: 'include' }).then(function (r) { return r.json().then(function (d) { d._status = r.status; return d; }); }); },
     api: API,
     logout: function () { return post('/api/logout').then(function () { location.href = './'; }); },
-    capper: function (id) { return open('data/x/' + id + '.bin', id); },
+    capper: function (id) { var c = this._c || (this._c = {}); return c[id] || (c[id] = open('data/x/' + id + '.bin', id)); },
     follows: function () {
       if (!this._follows) this._follows = fetch(API + '/api/follows', { credentials: 'include', cache: 'no-store' }).then(function (r) { return r.ok ? r.json() : { ids: [] }; })
         .then(function (d) { return d.ids || []; }).catch(function () { return []; });
