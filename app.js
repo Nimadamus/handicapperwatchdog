@@ -71,7 +71,7 @@
     function find(q) {
       var s = q.trim().toLowerCase().replace(/^#/, ''), out = [];
       if (!s) return out;
-      services.forEach(function (v) { if (v.name.toLowerCase().indexOf(s) >= 0) out.push({ href: v.url, a: v.name, b: 'Service review' }); });
+      services.forEach(function (v) { if (v.name.toLowerCase().indexOf(s) >= 0) out.push({ href: v.page, a: v.name, b: 'Service review' }); });
       if (/^[0-9a-f]{2,10}$/.test(s)) all.filter(function (r) { return r.id.indexOf(s) === 0; }).sort(function (a, b) { return b.picks - a.picks; }).slice(0, 5).forEach(function (r) {
         out.push({ href: link(r), a: '#' + code(r.id), b: r.picks ? recTxt(r) + ', ' + fmt(r.picks) + ' graded picks' : 'No graded picks yet' });
       });

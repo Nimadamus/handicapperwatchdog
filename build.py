@@ -1976,7 +1976,7 @@ def _write_editorial(site):
 <li>There is no independent sample of buyers, so this page stays Not rated.</li></ul></section>'''
 
     with open(os.path.join(site, 'data', 'services.json'), 'w', encoding='utf-8') as f:
-        json.dump([{'name': r['name'], 'url': 'reviews/%s.html' % r['slug']} for r in reviews['reviews']], f, separators=(',', ':'))
+        json.dump([{'name': r['name'], 'page': 'reviews/%s.html' % r['slug']} for r in reviews['reviews']], f, separators=(',', ':'))
     cards = []
     written = []
     for rev in reviews['reviews']:
