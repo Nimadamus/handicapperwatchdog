@@ -1,0 +1,258 @@
+{
+  "slug": "juice-reel",
+  "name": "Juice Reel",
+  "legal_name": "Juice Integration, Inc.",
+  "kind": "Bet tracking app with a marketplace of paid pick sellers",
+  "checked": "7 Nov 2026",
+  "checked_iso": "2026-11-07",
+  "updated_iso": "2026-11-07",
+  "title": "Juice Reel Review 2026: Pricing, Record, Is It Worth It?",
+  "description": "Juice Reel review, checked 7 Nov 2026: seller subscription prices, how its sportsbook synced records work, refund terms, and what app users report.",
+  "h1": "Juice Reel review",
+  "dek": "A free app that syncs your sportsbook accounts to track your bets, plus a marketplace where other users sell their picks for a few dollars a week. Seller records come from synced sportsbook accounts, according to Juice Reel. Nobody outside the company audits that sync, and payments are not refunded.",
+  "status": {
+    "label": "Not verified",
+    "note": "Watchdog has not graded a full, time stamped record for any Juice Reel seller. This page reports what we could check and labels everything else."
+  },
+  "glance": [
+    [
+      "Operator",
+      "Juice Integration, Inc., 600 Third Avenue, New York, NY (terms of use)"
+    ],
+    [
+      "What it sells",
+      "Free bet tracker. Paid subscriptions to individual sellers' picks"
+    ],
+    [
+      "Price range seen",
+      "Tracker free. Seller subscriptions from $4.99 to $13.46 a week"
+    ],
+    [
+      "Guarantee",
+      "None. Terms say payments already made are non refundable"
+    ],
+    [
+      "Full public record",
+      "Seller stats synced from sportsbooks, per Juice Reel. Not independently audited"
+    ],
+    [
+      "Watchdog graded record",
+      "None yet"
+    ]
+  ],
+  "short_answer": [
+    "Juice Reel is a real company. The terms of use name Juice Integration, Inc. in New York, the app is listed on the Apple App Store and Google Play under that developer, and the bet tracker is free to use. In that sense it is legitimate.",
+    "It is not a single handicapper. It is a platform where users sell subscriptions to their own picks, and Juice Reel keeps half of standard subscription revenue. Its main selling point is that seller records come straight from synced sportsbook accounts instead of screenshots. That is a stronger setup than a hand typed list of wins, but it is Juice Reel's own description. We found no outside audit of the sync, and the pages we opened do not say how bets at books a seller has not connected are handled.",
+    "Treat a Juice Reel leaderboard as better evidence than a screenshot, not as proof. If you subscribe, start with one week, check the seller's bet count and ROI rather than dollar profit, and record every pick yourself with the price you can actually get."
+  ],
+  "pricing_intro": "Juice Reel has no single price list. Each seller sets a weekly or monthly price. The prices below were shown on the Juice Reel homepage and marketplace page, and on the Apple App Store listing, on 7 Nov 2026. They change as sellers change their prices.",
+  "pricing": [
+    [
+      "Bet tracker",
+      "Free. The tracker page calls it \"100% free\" and says no credit card is needed",
+      "Not applicable"
+    ],
+    [
+      "Seller subscriptions on the homepage",
+      "From $4.99 to $13.46 a week, set by each seller",
+      "No refund. Auto renews until cancelled"
+    ],
+    [
+      "Razorlines (rank #1)",
+      "From $12.50 a week",
+      "No refund"
+    ],
+    [
+      "Djubretar (rank #6) and JakeM (rank #13)",
+      "From $7.50 a week each",
+      "No refund"
+    ],
+    [
+      "GreekOracle (rank #14)",
+      "From $13.46 a week",
+      "No refund"
+    ],
+    [
+      "NarcocopMMA (rank #15)",
+      "From $6.25 a week, free trial shown",
+      "No refund"
+    ],
+    [
+      "App Store in app purchases",
+      "Juice Plus $8.99 · 1 Day Access $4.99 · Profile Access $1.99 to $49.99 · Juice packs $4.99 and $24.99",
+      "Terms not shown on the listing"
+    ]
+  ],
+  "guarantee": [
+    "Juice Reel offers no performance guarantee. The terms of use say subscriptions \"automatically renew for successive billing periods until cancelled,\" that cancelling takes effect at the end of the current paid period, and that \"payments already made are non-refundable and partial billing periods are not refunded.\"",
+    "In app currency, credits or tokens have \"no guaranteed cash value or redemption value\" unless Juice Reel says otherwise. The terms also say Juice \"does not control, endorse or guarantee\" any paid seller. A buyer who loses money following a seller gets nothing back, and losses on the bets themselves are never covered."
+  ],
+  "claims": [
+    {
+      "claim": "\"The world's first transparent betting marketplace.\"",
+      "where": "Homepage",
+      "status": "Seller claim"
+    },
+    {
+      "claim": "\"Every capper here is sportsbook-synced and can't edit or delete a losing bet.\"",
+      "where": "Marketplace page",
+      "status": "Seller claim, not independently audited"
+    },
+    {
+      "claim": "\"100%\" verified betting data, \"60M+\" bets tracked, \"250K+\" bettors, \"300+\" sportsbooks",
+      "where": "Homepage stats",
+      "status": "Seller claim, not checkable"
+    },
+    {
+      "claim": "Razorlines +$527,036 profit, +8.9% ROI, global rank #1; Djubretar +$122,064, +10% ROI, rank #6",
+      "where": "Marketplace leaderboard, \"past year\"",
+      "status": "Platform data, no outside audit"
+    },
+    {
+      "claim": "\"Juice Reel also solves the biggest problem in the betting picks industry: fake records.\"",
+      "where": "Apple App Store description",
+      "status": "Seller claim"
+    },
+    {
+      "claim": "\"over $4,000,000,000 of sports bets have been synced into our app\"",
+      "where": "Apple App Store description",
+      "status": "Seller claim, not checkable"
+    }
+  ],
+  "claims_note": [
+    "The leaderboard leads with dollar profit. Dollar profit mostly tells you how much a seller bets, not how well. A seller staking large amounts at a thin edge can show a bigger number than a careful bettor with a better edge. ROI is the more useful figure, and the top sellers we saw showed ROI between 3% and 16% over the past year. The marketplace page did not show how many bets sit behind each number.",
+    "The usage numbers do not all line up. The homepage showed a 4.8 app rating from \"5.5K ratings,\" while the U.S. App Store listing showed 4.8 from 4.7K ratings on the same day. The homepage figure may count other stores, but it does not say so."
+  ],
+  "record": [
+    "What Juice Reel says: seller stats and open bets are imported from connected sportsbook accounts, every pick is timestamped, and a seller cannot edit or delete a losing bet. If that works as described, it is a better record than most pick sellers offer, because losses stay on the page.",
+    "What we could not verify: we found no third party audit, contest or regulator record behind the sync. The terms of use mention verification only for identity, compliance, tax and payment purposes, and say Juice is not responsible for the accuracy of user content. The pages we opened do not explain what happens to bets a seller places at a sportsbook he has not connected, or whether a seller can choose which accounts to connect. One Google Play reviewer said in Feb 2025 that bet365 would not sync on Android and that bets could not be entered by hand, which he said made his stats inaccurate.",
+    "In short: a Juice Reel record is the platform's own data, not an independently verified log. It is still worth reading, because you can see bet volume, ROI and history before you pay."
+  ],
+  "our_data": {
+    "matched": false,
+    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Juice Reel seller is matched to a Watchdog graded record, so we make no claim about how Juice Reel sellers perform.",
+    "context": "For scale: Juice Reel ranks sellers by synced profit and ROI. On the Watchdog board on 7 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+  },
+  "customers_intro": "App store reviews are the main customer evidence for Juice Reel, and most of them are about the free tracker, not about paid sellers. We found no Reddit thread, forum thread or Trustpilot page we could read about the paid marketplace. Below is everything we found and how much weight it can carry.",
+  "customers": [
+    {
+      "type": "Customer report",
+      "tone": "Positive",
+      "date": "Checked 7 Nov 2026",
+      "text": "The U.S. Apple App Store listing showed a 4.8 rating from 4.7K ratings. A featured review from 25 Oct 2025 said a free profile was enough to use the app, and that paid daily, weekly or monthly subscriptions let the reviewer see a seller's stake, ROI, win rate and bet history before tailing. Store ratings mostly reflect the free tracker.",
+      "source": 6
+    },
+    {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "26 May 2022",
+      "text": "An older App Store review reported repeated sportsbook sync failures, round robin bets logged as parlays, and live bets that often did not load. The reviewer said the developer replied promptly. This is from 2022 and may not reflect the current app.",
+      "source": 6
+    },
+    {
+      "type": "Customer report",
+      "tone": "Neutral",
+      "date": "Checked 7 Nov 2026",
+      "text": "Google Play showed a 4.4 rating from about 1.5K reviews and 100K+ downloads. A Feb 2025 review, marked helpful by 15 people, said bet365 would not sync on Android and bets could not be entered by hand, making stats inaccurate for anyone selling picks. A Sep 2026 review praised the analytics but said copying a 6 leg parlay copied only one or two legs. A Jun 2026 review praised free syncing of many books.",
+      "source": 7
+    },
+    {
+      "type": "Not found",
+      "tone": "Neutral",
+      "date": "Checked 7 Nov 2026",
+      "text": "Our searches found no Reddit, TheRX, Covers or SBR discussion of Juice Reel. Reddit and Trustpilot blocked our direct checks, so we could not confirm whether pages exist there. We found no BBB profile, lawsuit or regulator action naming Juice Integration in our searches.",
+      "source": null
+    }
+  ],
+  "conflicts": [
+    "Juice Reel earns when you subscribe. The seller page says sellers keep \"50% of post-tax subscription revenue\" on standard in app subscriptions, and up to 80% on subscriptions that come through a seller's own referral link. The platform keeps the rest, so it has a direct interest in buyers paying sellers.",
+    "The terms of use say Juice may have commercial deals with trading platforms such as exchanges and brokers, including referral compensation and revenue sharing, and admit this can create \"an economic incentive\" to promote a particular platform. We saw no sportsbook signup links or promo codes on the pages we opened.",
+    "The terms send disputes to binding individual arbitration with a class action waiver. You can opt out by written notice within 30 days of accepting the terms."
+  ],
+  "strengths": [
+    "A named company, a street address and a published set of terms.",
+    "The bet tracker is free, and seller records come from synced sportsbook accounts rather than screenshots, according to Juice Reel. Losing bets are said to stay on the record.",
+    "Subscriptions are cheap and weekly, and buyers can see ROI and bet history before paying, so testing a seller costs little."
+  ],
+  "concerns": [
+    "No outside audit of the sync. The record is the platform's own data, and the terms do not say Juice verifies seller results.",
+    "We found no explanation of how bets at unconnected sportsbooks are handled, and some users report books that will not sync.",
+    "The leaderboard leads with dollar profit, which rewards big stakes, and did not show bet counts on the marketplace page.",
+    "No refunds, auto renewal, and Juice Reel keeps half of standard subscription revenue."
+  ],
+  "checklist": [
+    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
+    "Count units, not wins. A 60% record at heavy favorites can still lose money.",
+    "Read the guarantee for the words refund, credit and extension. Most \"guarantees\" in this business are credits.",
+    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
+    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+  ],
+  "faq": [
+    [
+      "Is Juice Reel legit?",
+      "Yes, it is a real company. Juice Integration, Inc. of New York runs it, and the app is on the Apple App Store and Google Play. Whether any seller on it wins over time is a separate question that we could not verify."
+    ],
+    [
+      "How much does Juice Reel cost?",
+      "The bet tracker is free. On 7 Nov 2026 seller subscriptions on the homepage started at $4.99 to $13.46 a week, and the App Store listed in app purchases from $1.99 to $49.99, including Juice Plus at $8.99. Subscriptions auto renew and payments are non refundable."
+    ],
+    [
+      "Does Juice Reel have a verified record?",
+      "Juice Reel says seller records are synced directly from sportsbooks and losing bets cannot be deleted. That is the platform's own data. We found no third party audit of it, and Watchdog has not matched any Juice Reel seller to a graded record."
+    ],
+    [
+      "Is Juice Reel worth it?",
+      "The free tracker costs nothing to try. A seller subscription buys a few dollars a week of picks backed by sportsbook synced history, according to Juice Reel, but past profit there is unaudited and does not predict future results."
+    ]
+  ],
+  "related": [
+    "dubclub",
+    "action-network-pro",
+    "betql",
+    "pregame",
+    "dimers"
+  ],
+  "sources": [
+    {
+      "title": "Juice Reel homepage (featured sellers, weekly prices, stats)",
+      "url": "https://juicereel.com/",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Juice Reel marketplace page (leaderboard, prices, verification wording)",
+      "url": "https://juicereel.com/best-sports-handicappers",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Juice Reel sell your picks page (revenue split, payouts)",
+      "url": "https://juicereel.com/how-to-sell-picks",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Juice Reel how it works page (sportsbook sync)",
+      "url": "https://juicereel.com/how-it-works",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Juice Reel terms of use, last updated 10 Aug 2026 (operator, renewal, refunds, arbitration, trading platform deals)",
+      "url": "https://juicereel.com/terms-of-use",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Juice Reel bet tracker page (free tracker)",
+      "url": "https://juicereel.com/sports-betting-tracker-app",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Apple App Store: Juice Reel: Bet Tracker & Tips (rating, reviews, in app purchases, description)",
+      "url": "https://apps.apple.com/us/app/id1527960097",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Google Play: Juice Reel: Bet Tracker & Tips (rating, reviews, developer address)",
+      "url": "https://play.google.com/store/apps/details?id=com.juiceintegration.juicereel",
+      "accessed": "7 Nov 2026"
+    }
+  ],
+  "pricing_source": 0
+}
