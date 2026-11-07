@@ -128,7 +128,7 @@
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition Robert Ferringo is not matched to a Watchdog graded record, so we make no claim about how his picks perform.",
     "context": "For scale: his page highlights records near 60%, such as 588-392 on college basketball plays rated 5.0 and up. On the Watchdog board on 7 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "We found almost no independent customer evidence about Robert Ferringo himself. His Doc's page carries no testimonials, and the forum discussion we found is about Doc's Sports in general. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "We found almost no independent customer evidence about Robert Ferringo himself. One old review names him; the rest is about Doc's Sports in general, which sells his picks. Below is everything we found and how much weight it can carry.",
   "customers": [
     {
       "type": "Forum allegation",
@@ -143,6 +143,20 @@
       "date": "9 Dec 2025",
       "text": "The same thread was opened by a bettor who said he had used Doc's Sports off and on for more than 10 years and asked for feedback. Nobody in the thread discussed Ferringo's picks.",
       "source": 8
+    },
+    {
+      "type": "Customer report",
+      "tone": "Mixed",
+      "date": "12 Nov 2013",
+      "text": "A Sitejabber reviewer said he had used Ferringo and another Doc's handicapper, Chad Matthews, and recommended Matthews, who he said hit about 70 percent over 30 days. He praised timely releases and customer service but said the cost was high. He said nothing about how Ferringo's picks did.",
+      "source": 10
+    },
+    {
+      "type": "Customer report",
+      "tone": "Neutral",
+      "date": "Checked 7 Nov 2026",
+      "text": "Sitejabber shows Doc's Sports at 1.8 out of 5 from 12 reviews. These reviews are about the whole service, not Ferringo in particular.",
+      "source": 10
     },
     {
       "type": "Not found",
@@ -248,6 +262,16 @@
     {
       "title": "Doc's Sports homepage BookMaker link (redirects to a BookMaker revshare promotion page)",
       "url": "https://www.docsports.com/l/t/250015.html",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Sitejabber: DocSports reviews (12 reviews, 1.8 of 5)",
+      "url": "https://www.sitejabber.com/reviews/docsports.com",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "CapperTek: DocSports.com customer reviews page",
+      "url": "https://www.cappertek.com/reviews.asp?shs=DocSports.com",
       "accessed": "7 Nov 2026"
     }
   ],

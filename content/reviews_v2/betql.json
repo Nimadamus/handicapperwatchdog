@@ -123,7 +123,7 @@
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no BetQL model or BetQL expert is matched to a Watchdog graded record, so we make no claim about how its ratings perform.",
     "context": "For scale: BetQL sells star ratings rather than a published win rate. On the Watchdog board on 7 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "Independent customer evidence on BetQL comes mostly from the two app stores, and the most visible reviews there are several years old. We found no substantial Reddit or forum discussion we could open. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent customer evidence on BetQL comes mostly from the two app stores. Apple's review feed includes recent reviews from 2024 to 2026 as well as older ones, and they split between buyers who say the star ratings win and buyers who report losses, billing and cancellation problems. We found no substantial Reddit or forum discussion we could open. Below is everything we found and how much weight it can carry.",
   "customers": [
     {
       "type": "Customer report",
@@ -152,6 +152,48 @@
       "date": "Checked 7 Nov 2026",
       "text": "A Better Business Bureau search for BetQL returned no results. Trustpilot refused our request and did not load. We found no Reddit thread or betting forum thread with a substantial discussion of BetQL.",
       "source": 8
+    },
+    {
+      "type": "Customer report",
+      "tone": "Positive",
+      "date": "21 Sep 2026",
+      "source": 9,
+      "text": "A five star App Store reviewer said BetQL helps find value on bets every day and claimed to be winning a lot more since starting to use it."
+    },
+    {
+      "type": "Customer report",
+      "tone": "Positive",
+      "date": "30 May 2026",
+      "source": 9,
+      "text": "A five star reviewer called BetQL the best subscription they had bought and claimed to win around 8 of every 10 bets placed. That win rate is the reviewer's own claim and no record was shown."
+    },
+    {
+      "type": "Customer report",
+      "tone": "Mixed",
+      "date": "21 Jul 2024",
+      "source": 9,
+      "text": "A five star reviewer said that after trying many sites and cappers, BetQL was the most affordable with the best win rate they had seen from the 3 to 5 star bets, but warned that buyers have to accept losses along the way."
+    },
+    {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "22 Mar 2025",
+      "source": 9,
+      "text": "A one star reviewer said they had emailed four times in two weeks to cancel a membership and had not received a reply."
+    },
+    {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "14 Dec 2023",
+      "source": 9,
+      "text": "A one star reviewer said a free trial turned into a $50 charge without the cancellation notice BetQL says it sends, and that a refund request the next morning was refused as too late."
+    },
+    {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "11 Jun 2022",
+      "source": 9,
+      "text": "A one star reviewer claimed BetQL changes the star ratings on plays after games start, which they said makes its published accuracy figures unreliable. This is the reviewer's allegation, and we did not test it."
     }
   ],
   "conflicts": [
@@ -246,6 +288,11 @@
     {
       "title": "Better Business Bureau search for BetQL (no results)",
       "url": "https://www.bbb.org/search?find_text=betql",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Apple App Store customer reviews feed for BetQL, most recent first (page 1)",
+      "url": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=1334825645/sortby=mostrecent/json",
       "accessed": "7 Nov 2026"
     }
   ],

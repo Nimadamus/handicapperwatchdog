@@ -134,8 +134,8 @@
       "type": "Not found",
       "tone": "Neutral",
       "date": "Checked 7 Nov 2026",
-      "text": "Web searches of Reddit, TheRX, Covers and SBR for Doc's Sports AI-v3 found no discussion of the product. Trustpilot blocked our check, and there is no app to rate, since picks arrive by text message.",
-      "source": null
+      "text": "Web searches of Covers, TheRX and SBR for Doc's Sports AI-v3 found no discussion of the product, and Reddit blocked our check. Trustpilot lists no reviews of docsports.com, and the 12 SiteJabber reviews and one PissedConsumer review of Doc's that we read never mention the AI product. There is no app to rate, since picks arrive by text message.",
+      "source": 11
     }
   ],
   "conflicts": [
@@ -235,6 +235,21 @@
     {
       "title": "Doc's Sports order page for the 3 day AI-v3 package",
       "url": "https://secure.docsports.com/order/index.php?ptag=1432282254327533",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Trustpilot: docsports.com (no reviews)",
+      "url": "https://www.trustpilot.com/review/docsports.com",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "SiteJabber: docsports.com (12 reviews, none about the AI product)",
+      "url": "https://www.sitejabber.com/reviews/docsports.com",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "PissedConsumer: DocSports (1 review, not about the AI product)",
+      "url": "https://docsports.pissedconsumer.com/review.html",
       "accessed": "7 Nov 2026"
     }
   ],

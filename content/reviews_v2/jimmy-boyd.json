@@ -148,7 +148,7 @@
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition Jimmy Boyd is not matched to a Watchdog graded record, so we make no claim about how his picks perform.",
     "context": "For scale: his SportsCapping all sports row since 9 Mar 2025 shows 53% winners. On the Watchdog board on 7 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "Independent customer evidence on Jimmy Boyd is thin. We found one BBB complaint and no large review sample. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent customer evidence on Jimmy Boyd is thin and mostly old. We found one BBB complaint, a set of buyer comments from 2013 to 2017 on HandicappingReviews.org that lean negative, and a comment section on a review site that belongs to his own sales network. Below is everything we found and how much weight it can carry.",
   "customers": [
     {
       "type": "Customer report",
@@ -170,6 +170,62 @@
       "date": "Checked 7 Nov 2026",
       "text": "His sales copy says clients \"return each fall\" and that more members return to his service every year than any other. These are the seller's own words, with no customer named, so they tell you nothing about a typical buyer.",
       "source": 0
+    },
+    {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "12 Jan 2017",
+      "text": "On HandicappingReviews.org, a reviewer said he used the service for a while, that it was never above 50 percent, and that his emails got no reply. He said he would not use it again.",
+      "source": 15
+    },
+    {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "3 Nov 2017",
+      "text": "Another HandicappingReviews.org reviewer said every pick he received had lost and that the losses were putting his rent at risk. He posted no record of the picks.",
+      "source": 15
+    },
+    {
+      "type": "Customer report",
+      "tone": "Mixed",
+      "date": "11 Sep 2014",
+      "text": "A reviewer on the same page said the picks did well at first and then got worse, leaving him about break even, and that he would keep using the service to see how it went.",
+      "source": 15
+    },
+    {
+      "type": "Customer report",
+      "tone": "Mixed",
+      "date": "13 Apr 2014",
+      "text": "A reviewer said he bought about a month of picks and found them only slightly better than picking at random. He called the service OK and \"not bad\", while saying better options might exist.",
+      "source": 15
+    },
+    {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "17 Jun 2013",
+      "text": "A reviewer complained that the business kept calling his cell phone after he had asked many times for the calls to stop. He did not say whether he had bought picks.",
+      "source": 15
+    },
+    {
+      "type": "Seller curated",
+      "tone": "Mixed",
+      "date": "No date shown",
+      "text": "Capper Reviews, which says it is part of the SportsCapping network that sells Boyd's picks, shows a 3.53 out of 5 rating from 49 votes and 9 undated comments. Most praise his consistency, write ups and a college basketball run, while two complain about a losing pick and a bad first day. Because the site belongs to the seller's own network, we give these comments little weight.",
+      "source": 16
+    },
+    {
+      "type": "Not found",
+      "tone": "Neutral",
+      "date": "Checked 7 Nov 2026",
+      "text": "CapperTek's customer review page for BoydsBets.com showed no reviews or complaints.",
+      "source": 17
+    },
+    {
+      "type": "Forum post",
+      "tone": "Neutral",
+      "date": "6 Sep 2025",
+      "text": "In a TheRX service play thread, a member asked whether anyone had used Jimmy Boyd and whether he was worth switching to. No one on that page answered the question.",
+      "source": 18
     },
     {
       "type": "Not found",
@@ -301,6 +357,26 @@
     {
       "title": "BoydsBets.com: Buy Picks page (checkout on SportsCapping, guarantee wording)",
       "url": "https://www.boydsbets.com/sports-picks/",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "HandicappingReviews.org (header says provided by Sports Wagering Association): Boyd's Bets review with dated personal reviews",
+      "url": "https://www.handicappingreviews.org/boyds-bets-handicapper-review/",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Capper Reviews: Jimmy Boyd page and comments (site says it is part of the SportsCapping network)",
+      "url": "https://capperreviews.com/capper/jimmy-boyd/",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "CapperTek: BoydsBets.com customer reviews page",
+      "url": "https://www.cappertek.com/reviews.asp?shs=BoydsBets.com",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "TheRX forum: Saturday Service Play Thread 09/06/2025",
+      "url": "https://www.therx.com/threads/saturday-service-play-thread-09-06-2025.1300524/",
       "accessed": "7 Nov 2026"
     }
   ],

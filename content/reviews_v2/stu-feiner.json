@@ -138,7 +138,7 @@
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Stu Feiner pick account is matched to a Watchdog graded record, so we make no claim about how his picks perform.",
     "context": "For scale: Stu's own homepage tier records range from about 52% to 59% winners, with no odds shown. On the Watchdog board on 7 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "Independent customer evidence on Stu Feiner's paid picks is thin. He is far better known as a media personality than as a reviewed service, and most of what we found is opinion, not buyer experience. Below is everything we read and how much weight it can carry.",
+  "customers_intro": "Independent customer evidence on Stu Feiner's paid picks is thin. He is far better known as a media personality than as a reviewed service, and most of what we found is opinion, not buyer experience. A few people say they bought his picks; their reports are below, along with forum opinion and how much weight each can carry.",
   "customers": [
     {
       "type": "Forum post",
@@ -153,6 +153,55 @@
       "date": "23 Oct 2023",
       "text": "In the same thread, another member said he had followed Feiner's picks over his whole career and wanted no part of him, and claimed that Feiner's old sales pitch told buyers to bet everything they owned. A third member replied that any capper can get hot for two weeks. None of this came with records, and we did not verify it.",
       "source": 11
+    },
+    {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "4 Nov 2020",
+      "text": "A CapperTek reviewer said he paid for Feiner's college and pro football picks one weekend, went 0-5 on Saturday and 1-4 on Sunday, found no mention of the losses on the site or videos, and got no reply to emails. He said he would ask his bank to reverse the charge.",
+      "source": 21
+    },
+    {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "7 Dec 2021",
+      "text": "Another CapperTek reviewer said he had tried the picks and followed them for years, and claimed they lose over time while one good weekend gets promoted for weeks. He gave no record.",
+      "source": 21
+    },
+    {
+      "type": "Forum post",
+      "tone": "Positive",
+      "date": "26 Mar 2016",
+      "text": "On TheRX, a member said calling the free pick line got him an offer of a $1,500 package for $299, that he bought it, and that Feiner had been \"killing it\". He posted no record, and the thread starter replied that the free line pushed him to a sales office instead of giving a free pick.",
+      "source": 18
+    },
+    {
+      "type": "Forum post",
+      "tone": "Negative",
+      "date": "3 Jan 2010",
+      "text": "A TheRX member said Feiner pressed him on the phone to put $5,000 on a baseball season package and called him cheap when he declined, then gave him a guaranteed free playoff pick that lost.",
+      "source": 19
+    },
+    {
+      "type": "Forum post",
+      "tone": "Negative",
+      "date": "30 Apr 2025",
+      "text": "On the Sportsbook Review forum, a member said he bought Feiner's service in his early betting days, received a multi team round robin, and had to mail back a signed credit card slip to the Farmingdale office. He said he wished he had bet against the picks. Other members in the thread called Feiner a scammer without giving evidence.",
+      "source": 17
+    },
+    {
+      "type": "Forum allegation",
+      "tone": "Negative",
+      "date": "7 Dec 2004",
+      "text": "In a TheRX thread, members called Feiner and another tout scam artists and said their offices kept calling people who had given a phone number. None of this came with records, and we did not verify it.",
+      "source": 20
+    },
+    {
+      "type": "Forum allegation",
+      "tone": "Negative",
+      "date": "3 Jan 2010",
+      "text": "In another TheRX thread, members said his records were not true and claimed that pricey private plays went bad once they were released. No one posted a log, and we did not verify it.",
+      "source": 19
     },
     {
       "type": "Not found",
@@ -308,6 +357,31 @@
     {
       "title": "Stu Feiner Barstool Sports Advisors episode page",
       "url": "https://www.stufeiner.com/bssa",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Sportsbook Review forum: Hey YEEZEY: One and done (Apr 2025)",
+      "url": "https://www.sportsbookreview.com/forum/players-talk/29871174-hey-yeezey-one-and-done",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "TheRX forum: Stu Feiner thread (Mar 2016)",
+      "url": "https://www.therx.com/threads/stu-feiner.1049571/",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "TheRX forum: stu feiner thread (Jan 2010)",
+      "url": "https://www.therx.com/threads/stu-feiner.740467/",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "TheRX forum: any one ever deal with stu feiner or kevin duffy? (Dec 2004)",
+      "url": "https://therx.com/threads/245275",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "CapperTek: StuFeiner.com customer reviews page",
+      "url": "https://www.cappertek.com/reviews.asp?shs=StuFeiner.com",
       "accessed": "7 Nov 2026"
     }
   ],

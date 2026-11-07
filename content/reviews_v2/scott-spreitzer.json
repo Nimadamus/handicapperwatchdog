@@ -134,7 +134,7 @@
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Scott Spreitzer pick account is matched to a Watchdog graded record, so we make no claim about how his picks perform.",
     "context": "For scale: his page advertises a 61% overall run, and Doc's own FAQ sets a goal of 60% winners. On the Watchdog board on 7 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "Independent customer evidence on Scott Spreitzer is close to nonexistent. We found no review sample, no Reddit discussion and no forum thread about buying his picks. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent customer evidence on Scott Spreitzer is close to nonexistent. We found no review sample, no Reddit discussion and no forum thread about buying his picks; the one critical forum mention is a single 2011 post with no detail. Below is everything we found and how much weight it can carry.",
   "customers": [
     {
       "type": "Forum post",
@@ -147,7 +147,7 @@
       "type": "Not found",
       "tone": "Neutral",
       "date": "Checked 7 Nov 2026",
-      "text": "A Better Business Bureau search for \"Scott Spreitzer\" returned no results. Trustpilot blocked our check of docsports.com. Web searches of Reddit, TheRX, Covers and SBR found no thread with buyers describing his picks.",
+      "text": "A Better Business Bureau search for \"Scott Spreitzer\" returned no results. Trustpilot lists no reviews of docsports.com, the store he sells through. Web searches of TheRX, Covers and SBR found no thread with buyers describing his picks, and Reddit blocked our check.",
       "source": 5
     },
     {
@@ -156,6 +156,20 @@
       "date": "Checked 7 Nov 2026",
       "text": "For buyer reports on the store he sells through, see our Doc's Sports review. Those reports cover the Doc's roster in general, not Spreitzer in particular.",
       "source": null
+    },
+    {
+      "type": "Forum allegation",
+      "tone": "Negative",
+      "date": "5 Aug 2011",
+      "text": "In a Sportsbook Review thread asking members to list the worst tout \"scammers\" they had seen, one member replied with just \"Lang and spreitzer.\" He gave no reasons, no purchase details and no record, so this is an unsupported opinion, not evidence.",
+      "source": 7
+    },
+    {
+      "type": "Not found",
+      "tone": "Neutral",
+      "date": "Checked 7 Nov 2026",
+      "text": "CapperTek, a handicapper review site, keeps a page for ScottWins.com under his name, but it shows no reviews or complaints.",
+      "source": 8
     }
   ],
   "conflicts": [
@@ -239,6 +253,21 @@
     {
       "title": "Doc's Sports contact page (operator and address)",
       "url": "https://www.docsports.com/contactus.html",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "SBR forum: List your all time tout scammers of all time (5 Aug 2011)",
+      "url": "https://www.sportsbookreview.com/forum/players-talk/724845-list-your-all-time-tout-scammers-of-all-time",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "CapperTek: ScottWins.com (Scott Spreitzer) review page (no reviews)",
+      "url": "https://www.cappertek.com/reviews.asp?shs=ScottWins.com",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Trustpilot: docsports.com (no reviews)",
+      "url": "https://www.trustpilot.com/review/docsports.com",
       "accessed": "7 Nov 2026"
     }
   ]

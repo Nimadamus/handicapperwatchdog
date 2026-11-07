@@ -140,7 +140,7 @@
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Winners and Whiners handicapper is matched to a Watchdog graded record, so we make no claim about how these handicappers perform.",
     "context": "For scale: the top five on the Winners and Whiners 7 day leaderboard were shown at 53% to 71% winners. On the Watchdog board on 7 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "Independent customer evidence on Winners and Whiners is close to nonexistent. We found no review profile, no rated reviews and no forum thread about the site. Below is what we checked.",
+  "customers_intro": "Independent customer evidence on Winners and Whiners is close to nonexistent. We found no review profile with reviews and no buyer describing its paid picks. The only independent mentions are two forum posts about its free information. Below is what we checked.",
   "customers": [
     {
       "type": "Not found",
@@ -160,8 +160,8 @@
       "type": "Not found",
       "tone": "Neutral",
       "date": "Checked 7 Nov 2026",
-      "text": "Web searches for Reddit threads, TheRX, Covers and SBR forum posts about Winners and Whiners found nothing relevant. Reddit's own search blocked our check, and TheRX forum search returned no thread about the site. We did not check app stores.",
-      "source": null
+      "text": "Web searches for Reddit threads, TheRX, Covers and SBR forum posts found no buyer discussing the paid picks; the two Covers posts below concern free information only. SiteJabber shows no reviews of winnersandwhiners.com, Reddit blocked our check, and TheRX forum search returned no thread about the site. We did not check app stores.",
+      "source": 16
     },
     {
       "type": "Seller curated",
@@ -169,6 +169,20 @@
       "date": "Checked 7 Nov 2026",
       "text": "We did not see customer testimonials on the pages we opened. What the site shows instead is handicapper sales copy and its own leaderboard, both published by the seller.",
       "source": 0
+    },
+    {
+      "type": "Forum post",
+      "tone": "Neutral",
+      "date": "9 Oct 2023",
+      "text": "In a Covers thread asking members to rank the worst paid cappers, one member said he does not use betting sites' picks and only uses the information they publish, listing winnersandwhiners.com among those sites. He did not describe buying anything.",
+      "source": 14
+    },
+    {
+      "type": "Forum post",
+      "tone": "Positive",
+      "date": "13 Nov 2025",
+      "text": "A Covers college basketball member shared a Winners and Whiners free pick page as a site he uses for stats, saying it puts a lot of information in one place. His comment is about the free previews, not the paid picks.",
+      "source": 15
     }
   ],
   "conflicts": [
@@ -287,6 +301,21 @@
     {
       "title": "Winners and Whiners experts page (handicapper roster and bios)",
       "url": "https://www.winnersandwhiners.com/experts",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Covers forum: Rank The Worst Cappers on Internet (9 Oct 2023)",
+      "url": "https://www.covers.com/forum/nfl-betting-21/rank-the-worst-cappers-on-internet-103772135",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Covers forum: Stats and info, College Basketball (13 Nov 2025)",
+      "url": "https://www.covers.com/forum/college-basketball-40/stats-and-info-103990116",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "SiteJabber: winnersandwhiners.com (no reviews)",
+      "url": "https://www.sitejabber.com/reviews/winnersandwhiners.com",
       "accessed": "7 Nov 2026"
     }
   ],

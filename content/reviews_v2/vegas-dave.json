@@ -120,7 +120,7 @@
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Vegas Dave pick service is matched to a Watchdog graded record, so we make no claim about how his picks perform.",
     "context": "For scale: he has claimed to be right 90 percent of the time. On the Watchdog board on 7 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "Independent buyer evidence on Vegas Dave is very thin. Despite his huge following, we found almost no first hand reports from people who paid for his picks. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent buyer evidence on Vegas Dave is thin. Despite his huge following, we found few first hand reports from people who paid for his picks, and most forum comments are opinions about him rather than accounts of a purchase. Below is everything we found and how much weight it can carry.",
   "customers": [
     {
       "type": "Customer report",
@@ -133,7 +133,7 @@
       "type": "Not found",
       "tone": "Neutral",
       "date": "Checked 7 Nov 2026",
-      "text": "Trustpilot had no page for vegasdave.com, Reddit blocked our search, and we found no TheRX, Covers or SBR thread with buyers describing his paid picks. We could not count any customer reviews.",
+      "text": "Trustpilot had no page for vegasdave.com, Reddit blocked our search, and we found no Covers thread about him. The TheRX and Sportsbook Review posts below are the closest we found to buyer accounts, and none gives a full record of a paid package.",
       "source": 13
     },
     {
@@ -142,6 +142,41 @@
       "date": "Checked 7 Nov 2026",
       "text": "His Instagram shows a luxury lifestyle, villas and travel, and points readers to email him about picks. Posts are chosen by the seller and say nothing about what a typical buyer earns.",
       "source": 1
+    },
+    {
+      "type": "Forum post",
+      "tone": "Negative",
+      "date": "25 Jul 2017",
+      "source": 15,
+      "text": "A TheRX member said he emailed Vegas Dave to ask whether an independent service monitored his picks. He said he was quoted about $1,500 for the pro football picks and given a claimed record of roughly 31 units up, but after three requests never got a verifiable record."
+    },
+    {
+      "type": "Forum post",
+      "tone": "Positive",
+      "date": "27 Jul 2017",
+      "source": 15,
+      "text": "In the same TheRX thread another member said he had followed Vegas Dave all baseball season and called his claimed 30 and 0 system record \"legit\". He was looking for others to split the cost of the football package and added that all such pros are \"hustlers and salesmen\"."
+    },
+    {
+      "type": "Forum allegation",
+      "tone": "Negative",
+      "date": "25 Jul 2017",
+      "source": 14,
+      "text": "When a TheRX member asked who wanted to share the cost of Vegas Dave's football package, another member replied only that he was a \"Known fraud\". No purchase or result was described."
+    },
+    {
+      "type": "Forum allegation",
+      "tone": "Negative",
+      "date": "20 Sep 2026",
+      "source": 16,
+      "text": "On the Sportsbook Review forum, a member called him the biggest \"scam capper\" and a moderator claimed he had been stiffing people for decades and sold claimed inside information for a couple of thousand dollars. The moderator said he knew only bits and pieces of the story, and none of the posters described buying picks themselves."
+    },
+    {
+      "type": "Forum post",
+      "tone": "Mixed",
+      "date": "Apr 2017",
+      "source": 17,
+      "text": "An April 2017 Sportsbook Review thread about his federal indictment drew comments from members, one saying it was clear he made money at times and another calling him a \"fraud\". The thread discussed the criminal case, not anyone's experience as a paying customer."
     }
   ],
   "conflicts": [
@@ -259,6 +294,26 @@
     {
       "title": "Trustpilot: vegasdave.com (page not found)",
       "url": "https://www.trustpilot.com/review/vegasdave.com",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "TheRX forum: Master BUY GROUPS thread, page 88 (Jul 2017)",
+      "url": "https://www.therx.com/threads/master-buy-groups-please-post-all-buy-groups-here-only.706794/page-88",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "TheRX forum: Master BUY GROUPS thread, page 89 (Jul 2017)",
+      "url": "https://www.therx.com/threads/master-buy-groups-please-post-all-buy-groups-here-only.706794/page-89",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Sportsbook Review forum thread about Vegas Dave (Sep 2026)",
+      "url": "https://www.sportsbookreview.com/forum/players-talk/29947922-vegas-dave-is-so-fukked",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Sportsbook Review forum: Vegas Dave Oancea facing up to 90 Years in Prison (Apr 2017)",
+      "url": "https://www.sportsbookreview.com/forum/boxing-mma-ufc-betting/1675619-vegas-dave-oancea-facing-up-to-90-years-in-prison",
       "accessed": "7 Nov 2026"
     }
   ]
