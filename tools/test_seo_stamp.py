@@ -67,7 +67,7 @@ def check(label, extra):
         assert 'rel="canonical" href="https://handicapperwatchdog.com/"' in home
         assert 'rel="canonical" href="https://handicapperwatchdog.com/cappers.html"' in rank
         assert 'noindex' not in home.lower() and 'noindex' not in rank.lower()
-        ids = re.findall(r'capper\.html\?id=([0-9a-zA-Z]+)', blob)
+        ids = re.findall(r'handicappers/([0-9a-zA-Z]+)\.html', blob)
         assert ids and all(re.fullmatch(r'[0-9a-f]{10}', i) for i in ids)
         assert 'WebSite' in home and 'ItemList' in home and 'BreadcrumbList' in rank
         assert 'viewport' in home and 'viewport' in rank
@@ -232,7 +232,7 @@ def tbody(html, element_id):
     rows = []
     for tr in re.findall(r'<tr>(.*?)</tr>', m.group(1), re.S):
         cells = [re.sub(r'<[^>]+>', '', c) for c in re.findall(r'<td\b[^>]*>(.*?)</td>', tr, re.S)]
-        hrefs = re.findall(r'capper\.html\?id=([0-9a-f]{10})', tr)
+        hrefs = re.findall(r'handicappers/([0-9a-f]{10})\.html', tr)
         rows.append((cells, hrefs))
     return rows
 

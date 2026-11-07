@@ -5,6 +5,8 @@ Every account has a profile page: build.py publishes all ATW accounts (3,826 liv
 
 Homepage #what and #bettors sections live; 11 customer review pages in content/reviews.json (testimonials field, 165 reviews read 6 Nov, paraphrased, one short quote per page) + learn/what-bettors-say-about-handicappers. Original 10 reviews still have no buyer sample.
 
+Profiles: real URLs handicappers/<id>.html for all accounts (noindex under 20 graded picks), directory at handicappers/, capper.html?id= still works. Next: customer reviews for the original 10 review pages.
+
 ## Resume here, in order
 1. DEPLOY the profile freshness fix: `python ~/tools/site_audit/wd_code_deploy.py` (deploys tmr-watchdog main 8eef41d).
    Last attempt was killed by laptop memory reap during drain; harvest/publish were resumed by hand (paused False).
