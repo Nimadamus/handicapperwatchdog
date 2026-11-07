@@ -1,0 +1,253 @@
+{
+  "slug": "betql",
+  "name": "BetQL",
+  "legal_name": "Skillbet Ltd",
+  "kind": "Betting data and computer model picks, sold by subscription",
+  "checked": "7 Nov 2026",
+  "checked_iso": "2026-11-07",
+  "updated_iso": "2026-11-07",
+  "title": "BetQL Review 2026: Prices, Refunds, Model Claims",
+  "description": "BetQL review, checked 7 Nov 2026: web and app prices, the free trial and refund terms, what its star model claims, and what app store reviewers say.",
+  "h1": "BetQL review",
+  "dek": "A betting data app that rates bets from 1 to 5 stars using a computer model, plus public and sharp money reports. Web plans ran from $30 a month to $300 a year. It publishes no full record of its rated bets, and refunds are at the company's discretion.",
+  "status": {
+    "label": "Not verified",
+    "note": "Watchdog has not graded a full, time stamped record of BetQL model bets. This page reports what we could check and labels everything else."
+  },
+  "glance": [
+    [
+      "Operator",
+      "Skillbet Ltd, registered in Malta (terms page)"
+    ],
+    [
+      "Other names on file",
+      "QL Gaming Group LLC (Google Play), RotoQL, Inc (App Store seller)"
+    ],
+    [
+      "Price range seen",
+      "$30 a month to $300 a year on the web"
+    ],
+    [
+      "Guarantee",
+      "None found. Refunds case by case at the company's discretion"
+    ],
+    [
+      "Full public record",
+      "Not found. Star ratings change during the day"
+    ],
+    [
+      "Watchdog graded record",
+      "None yet"
+    ]
+  ],
+  "short_answer": [
+    "BetQL is a real, working product. It has published prices, terms that name an operator, apps on both major app stores and a support email. In that narrow sense it is legitimate. It sells a data tool and model ratings rather than a single handicapper's picks.",
+    "Whether following its star ratings makes money is a different question, and nothing we could open answers it. BetQL describes a model that simulates each game 10,000 times and rates bets 1 to 5 stars, but we found no full, dated log of every rated bet with the price and the time it was posted. The ratings also change during the day as lines move, so a rating you see at noon may not be the one that is judged later.",
+    "Treat BetQL as a research tool with a marketing claim of an edge, not a proven winner. If you try it, use the trial, save a screenshot of each rating when you bet it, and judge it on your own record over a few hundred bets."
+  ],
+  "pricing_intro": "Web prices below were shown on the BetQL subscribe page on 7 Nov 2026, in both the monthly and the annual view. The iPhone app sells different plans at different prices through Apple, listed in the last row.",
+  "pricing": [
+    [
+      "Starter, 1 sport, monthly",
+      "$30 a month",
+      "No performance guarantee. Auto renews monthly"
+    ],
+    [
+      "Starter, 1 sport, annual",
+      "$75 a year, billed annually (shown as $6 a month)",
+      "No performance guarantee. Auto renews yearly"
+    ],
+    [
+      "All Access, all sports, monthly",
+      "$70 a month",
+      "No performance guarantee. Auto renews monthly"
+    ],
+    [
+      "All Access, all sports, annual",
+      "$300 a year, billed annually (shown as $25 a month)",
+      "No performance guarantee. Auto renews yearly"
+    ],
+    [
+      "iPhone app in app purchases",
+      "All Sports Day Pass $4.99 · monthly plans $24.99 to $69.99 · yearly plans $74.99 to $299.99",
+      "Billed through Apple. No performance guarantee"
+    ]
+  ],
+  "guarantee": [
+    "BetQL offers no guarantee tied to results. We found no promise of a free extension, credit or refund if the model's bets lose. The subscribe page says \"All subscriptions start with a 3 Day Free Trial\" and that cancelling is easy at any time. The terms say that if you do not cancel, you are charged automatically on the last day of the trial, and that plans renew at the end of each billing cycle until cancelled.",
+    "On refunds, the terms say only that certain requests \"may be considered\" on a case by case basis and granted at the company's sole discretion. That is not a right to a refund. One detail to watch: on 7 Nov 2026 the monthly view showed \"$0 due today\", but the annual view showed \"$74.99 due today\" next to the same free trial banner. Check the amount on the checkout screen before you enter a card.",
+    "The terms also send disputes to individual binding arbitration and waive class actions. You can opt out by mailed written notice within 30 days of accepting the terms."
+  ],
+  "claims": [
+    {
+      "claim": "\"We use our state-of-the-art computer model to analyze every bet, every day to find mis-priced lines.\"",
+      "where": "Homepage",
+      "status": "Seller claim"
+    },
+    {
+      "claim": "\"Each game or match is simulated 10,000 times based on all available data\"",
+      "where": "Homepage",
+      "status": "Seller claim, not checkable"
+    },
+    {
+      "claim": "Bets are rated 1 to 5 stars, and \"The higher the number of stars the bigger the edge.\"",
+      "where": "Homepage",
+      "status": "Seller claim, no full log"
+    },
+    {
+      "claim": "\"200k+ active bettors\" and \"4.8 App Store\"",
+      "where": "Subscribe page badges",
+      "status": "Contradicted: App Store shows 4.3"
+    },
+    {
+      "claim": "\"In the last 18 months, BetQL has converted 10,000 customers from 300,000 free users.\"",
+      "where": "Affiliate program page",
+      "status": "Seller claim, undated"
+    },
+    {
+      "claim": "\"We analyze every bet, you beat the sportsbooks\"",
+      "where": "Affiliate program page",
+      "status": "Seller claim, not a result"
+    }
+  ],
+  "claims_note": [
+    "The only percentage on the homepage is a filter, not a record. Its trending bets list requires a 3 to 5 star rating and trends with a \"55% profitable win rate over at least 10 games\". Ten games is a tiny sample, and picking trends that already hit is a selection rule that says nothing about future results.",
+    "The badges on the subscribe page do not match what we saw elsewhere. The page shows \"4.8 App Store\", while Apple's own listing showed 4.3 out of 5 from 1.8K ratings, and the Google Play listing showed 3.1 stars. The page shows \"200k+ active bettors\", while the affiliate page speaks of 300,000 free users and 10,000 paying customers over an unstated 18 months."
+  ],
+  "record": [
+    "BetQL does not publish a full, time stamped log of every model bet with the star rating, the line, the price and the post time, at least not on any page we could open without paying. The homepage says star ratings are updated throughout the day as lines move, so a buyer cannot check a rating after the fact unless they saved it at the time.",
+    "Every BetQL page we opened carried the disclaimer that the site is \"100% for entertainment purposes only\". That sits beside a homepage pitch to find mispriced lines and an offers page full of real money sportsbook and prediction market bonuses."
+  ],
+  "our_data": {
+    "matched": false,
+    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no BetQL model or BetQL expert is matched to a Watchdog graded record, so we make no claim about how its ratings perform.",
+    "context": "For scale: BetQL sells star ratings rather than a published win rate. On the Watchdog board on 7 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+  },
+  "customers_intro": "Independent customer evidence on BetQL comes mostly from the two app stores, and the most visible reviews there are several years old. We found no substantial Reddit or forum discussion we could open. Below is everything we found and how much weight it can carry.",
+  "customers": [
+    {
+      "type": "Customer report",
+      "tone": "Positive",
+      "date": "Featured reviews from Sep 2020 to Apr 2021; page checked 7 Nov 2026",
+      "text": "Apple's App Store listing showed 4.3 out of 5 from 1.8K ratings. The reviews shown on the page were positive and dated 2020 and 2021. One reviewer said the free 3 to 5 star bets seemed accurate and cheaper than paying a handicapper, but warned that ratings move a lot on late injury news. Several of these reviewers mentioned that other users had left negative reviews.",
+      "source": 5
+    },
+    {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "Reviews from Feb 2020 to Oct 2023; page checked 7 Nov 2026",
+      "text": "The Google Play listing showed 3.1 stars from 1.38K reviews and 500K+ downloads. The top reviews shown were about the app, not the picks: an October 2023 review said a pop up ad would not close, a 2020 review described trouble logging in and logging bets, and a 2021 reviewer called the betting advice \"solid\" but reported a bug that opened links in the app. The developer replied to each and said the problems were fixed.",
+      "source": 6
+    },
+    {
+      "type": "Seller curated",
+      "tone": "Positive",
+      "date": "Checked 7 Nov 2026",
+      "text": "The subscribe page shows a single testimonial credited to a social media handle described as a Pro subscriber, saying the sharp money tool has paid for itself many times over. It is chosen and published by BetQL, so it cannot tell you what a typical buyer experiences.",
+      "source": 1
+    },
+    {
+      "type": "Not found",
+      "tone": "Neutral",
+      "date": "Checked 7 Nov 2026",
+      "text": "A Better Business Bureau search for BetQL returned no results. Trustpilot refused our request and did not load. We found no Reddit thread or betting forum thread with a substantial discussion of BetQL.",
+      "source": 8
+    }
+  ],
+  "conflicts": [
+    "BetQL runs a sportsbook offers page with sign up bonuses and promo codes, including the code BETQL for Betr and a promo code for Polymarket. The homepage says it has \"partnered with the top online sportsbooks and casinos in the US\" to offer these deals. Pages like this usually earn the site a fee or a share when a reader signs up. That does not prove anything about the ratings, but it is a financial interest a buyer should know about.",
+    "Ownership is not simple. In November 2020 Entercom and RADIO.COM announced they had acquired QL Gaming Group, the company behind BetQL. On 7 Nov 2026 the BetQL terms named Skillbet Ltd, registered in Malta, as the operator, the Google Play developer was listed as QL Gaming Group LLC with a Wilmington, Delaware address, and the App Store seller was RotoQL, Inc. We could not confirm from a page we opened how these companies relate today."
+  ],
+  "strengths": [
+    "Prices are posted for every web plan, in both monthly and annual views, and the trial and auto renewal are stated before checkout.",
+    "The method is described in plain terms: a simulation model, a 1 to 5 star scale, and separate public and sharp money reports.",
+    "A free trial and free rated bets let a reader see the product before paying."
+  ],
+  "concerns": [
+    "No full public record of rated bets, and ratings change during the day.",
+    "No guarantee, and refunds are only at the company's discretion.",
+    "The annual checkout showed an amount due today next to a free trial banner.",
+    "The subscribe page claims a 4.8 App Store rating that the App Store itself did not show.",
+    "The site promotes sportsbook and prediction market sign up offers."
+  ],
+  "checklist": [
+    "Ask for every rated bet from the last 12 months with the star rating, the line, the odds and the time it was posted. A filter of hot trends is not a record.",
+    "Count units, not wins. A high hit rate on heavy favorites can still lose money.",
+    "Read the terms for the words refund, credit and extension. Here the answer is no guarantee and refunds only at the company's discretion.",
+    "Screenshot each rating the moment you bet it, with the line you can actually get, because the rating may change later.",
+    "Give any model or handicapper a few hundred picks before you call it a winner. Short runs swing hard both ways."
+  ],
+  "faq": [
+    [
+      "Is BetQL legit?",
+      "It is a real product with published prices, named operating companies and apps on both app stores. We could not verify that its star ratings win over time, because it does not publish a full record of every rated bet."
+    ],
+    [
+      "How much does BetQL cost?",
+      "On 7 Nov 2026 the website listed Starter (1 sport) at $30 a month or $75 a year, and All Access (all sports) at $70 a month or $300 a year. The iPhone app sold different plans through Apple, from a $4.99 day pass to $299.99 a year."
+    ],
+    [
+      "Does BetQL give refunds?",
+      "Its terms say refund requests may be considered case by case and granted at the company's sole discretion. Plans start with a 3 day free trial and auto renew until cancelled."
+    ],
+    [
+      "Does Watchdog track BetQL?",
+      "Not yet. No BetQL model or expert is matched to a Watchdog graded record in this edition. If that changes, this page will say so and show the record."
+    ]
+  ],
+  "related": [
+    "action-network-pro",
+    "dimers",
+    "oddsshark-picks",
+    "covers-expert-picks",
+    "pregame"
+  ],
+  "sources": [
+    {
+      "title": "BetQL homepage (model description, star ratings, trends filter, disclaimer)",
+      "url": "https://betql.co/",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "BetQL subscribe page (plans, monthly and annual prices, trial, badges, testimonial)",
+      "url": "https://betql.co/subscribe",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "BetQL terms and conditions (operator, free trial, refunds, arbitration)",
+      "url": "https://betql.co/terms-and-conditions",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "BetQL sportsbook offers page (promo codes and sign up bonuses)",
+      "url": "https://betql.co/sportsbook-offers",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "BetQL affiliate program page (customer and conversion claims)",
+      "url": "https://betql.co/become-betql-affiliate",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Apple App Store: BetQL Sports Betting (rating, reviews, in app purchases)",
+      "url": "https://apps.apple.com/us/app/betql-sports-betting/id1334825645",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Google Play: BetQL Sports Betting Data (rating, reviews, developer)",
+      "url": "https://play.google.com/store/apps/details?id=com.rotoql.betql&hl=en_US&gl=US",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Audacy: Entercom and RADIO.COM acquire sports betting app BetQL (9 Nov 2020)",
+      "url": "https://www.audacy.com/kmbz/news/entercom-and-radio-com-acquire-sports-betting-app-betql",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Better Business Bureau search for BetQL (no results)",
+      "url": "https://www.bbb.org/search?find_text=betql",
+      "accessed": "7 Nov 2026"
+    }
+  ],
+  "pricing_source": 1
+}

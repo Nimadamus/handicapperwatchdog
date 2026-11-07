@@ -1,0 +1,287 @@
+{
+  "slug": "dimers",
+  "name": "Dimers",
+  "legal_name": "iRival Media LLC (named in the terms), part of Cipher Sports Technology Group",
+  "kind": "Betting data and picks site with a paid subscription",
+  "checked": "7 Nov 2026",
+  "checked_iso": "2026-11-07",
+  "updated_iso": "2026-11-07",
+  "title": "Dimers Review 2026: Pro Prices, Refunds, Record Claims",
+  "description": "Dimers review, checked 7 Nov 2026: real Dimers Pro and Platinum prices, the no refund terms, what its win rate claims leave out, and what users report.",
+  "h1": "Dimers review",
+  "dek": "A betting data site owned by Cipher Sports Technology Group, which a 2021 trade report placed in Australia, selling Dimers Pro from $9.99 a week in its app to $199.99 a year, plus a separate $349 college football product. Payments are nonrefundable, and its record claims are strike rates and rankings chosen by the seller, mostly without odds.",
+  "status": {
+    "label": "Not verified",
+    "note": "Watchdog has not graded a full, time stamped record of Dimers picks. This page reports what we could check and labels everything else."
+  },
+  "glance": [
+    [
+      "Operator",
+      "Cipher Sports Technology Group; terms name iRival Media LLC, Middletown, DE notice address (terms page)"
+    ],
+    [
+      "Launched",
+      "1 Aug 2020 (about page)"
+    ],
+    [
+      "Price range seen",
+      "$9.99 a week (app) to $199.99 a year; Platinum $349 a season"
+    ],
+    [
+      "Guarantee",
+      "None. Terms say all payments are nonrefundable"
+    ],
+    [
+      "Full public record",
+      "Not found for Dimers Pro. Platinum shows a weekly list without odds"
+    ],
+    [
+      "Watchdog graded record",
+      "None yet"
+    ]
+  ],
+  "short_answer": [
+    "Dimers is a real business. It names its parent company, publishes its prices and terms, has an app on the Apple App Store, and has run since August 2020. In that narrow sense it is legitimate. It is a data and picks site that also earns referral fees from sportsbooks, not a classic one person tout.",
+    "Whether following its picks makes money is a different question, and nothing we could open answers it. Its marketing quotes strike rates such as \"74.9%\" on college football moneylines and rankings it says come from Pickwatch, but a strike rate on moneylines says little without the odds. The one full season list we found, for the separate Platinum college football product, finished 2025 at 88-73-1 and +1.38 units after an early season article promised big profits.",
+    "Treat Dimers as a research tool with seller chosen numbers, not a proven winner. If you try it, use the free trial or a short plan, cancel before it renews if you are not sure, and record every pick yourself with the price you could actually get."
+  ],
+  "pricing_intro": "Prices below were shown on the Dimers subscription page, the Platinum page and the Apple App Store listing on 7 Nov 2026. The subscription page showed sale prices next to its regular prices, and the app lists more options than the website.",
+  "pricing": [
+    [
+      "Dimers Pro monthly (website)",
+      "$29.99 billed monthly",
+      "No refund. Cancel anytime, access runs to the end of the period"
+    ],
+    [
+      "Dimers Pro 6 months (website)",
+      "$119.99 one payment, sale price; regular $149.99",
+      "No refund. Renews at the standard price"
+    ],
+    [
+      "Dimers Pro annual (website)",
+      "$169.99 for the first year, sale price; regular $199.99",
+      "No refund. Renews yearly at the standard price"
+    ],
+    [
+      "Dimers Pro in the iOS app",
+      "Weekly $9.99 or $14.99 · monthly $24.99 or $29.99 · 6 months $149.99 · annual $199.99",
+      "Billed through Apple"
+    ],
+    [
+      "Free trial",
+      "3 days, payment method required",
+      "Converts to a paid plan at regular price unless cancelled"
+    ],
+    [
+      "Dimers Platinum, college football (separate product)",
+      "$349 one time payment, full season access",
+      "No refund or guarantee terms found on the page"
+    ]
+  ],
+  "guarantee": [
+    "Dimers does not offer a results guarantee of any kind. The terms of service say \"All payments are nonrefundable\" and that Dimers \"will not refund or credit any partially used billing periods.\" The subscription page says each plan can be cancelled or paused anytime, and that after cancelling you keep access until the end of the period you paid for.",
+    "The free trial needs a payment method. The terms say it lasts 72 hours, and if you do not cancel before it ends you are enrolled in Dimers Pro and charged the regular price. The terms say Dimers will send a reminder before the trial converts. The Platinum page mentions no refund terms; its only \"guaranteed\" wording is about safe checkout."
+  ],
+  "claims": [
+    {
+      "claim": "\"Exclusive models made to beat the odds every time\"",
+      "where": "Dimers Pro subscription page",
+      "status": "Seller claim, not checkable"
+    },
+    {
+      "claim": "\"74.9% CFB win rate\" and \"+47 NFL units\" at a \"71.6% strike rate in 2024\"",
+      "where": "Dimers news article, 20 Aug 2026",
+      "status": "Seller claim, no odds or log"
+    },
+    {
+      "claim": "#1 rankings for MLB totals in 2026, NBA totals in 2025 to 26 and NHL puck lines, \"curated using official Pickwatch rankings\"",
+      "where": "Dimers news article, 20 Aug 2026",
+      "status": "Seller claim, not checked by us"
+    },
+    {
+      "claim": "Platinum 2024 college football: \"Overall Record: 105-46-2\", \"+42.06 units\", \"+28.38%\" ROI",
+      "where": "Dimers news article, 15 Sep 2025, and Platinum results page",
+      "status": "Seller published, no odds shown"
+    },
+    {
+      "claim": "\"$100 bettors are already up $941 on the season\" after three weeks of 2025",
+      "where": "Dimers news article, 15 Sep 2025",
+      "status": "Season ended +1.38 units"
+    },
+    {
+      "claim": "Yearly membership \"paid for itself in the first month\"",
+      "where": "Testimonial on the subscription page",
+      "status": "Seller curated testimonial"
+    }
+  ],
+  "claims_note": [
+    "Most of the numbers are strike rates, meaning the share of picks that won. On moneylines that figure is close to meaningless without the odds, because a model that picks heavy favorites can win 70% of the time and still lose money. The August 2026 article quotes win rates and rankings for many markets but gives no return on investment for most of them and links no pick by pick log.",
+    "The Platinum page headline reads 193-119-3, +43.44 units, 61.9%. Those totals are the 2024 and 2025 seasons added together. The 2025 season on its own, which the page labels as results through Week 14, was 88-73-1 and +1.38 units, a 54% strike rate. In September 2025 Dimers told readers that $100 bettors were up $941 after three weeks; by the end of the listed 2025 results, nearly all of that early profit was gone. The page does not say what odds the picks were graded at or what a unit is."
+  ],
+  "record": [
+    "For Dimers Pro, the main product, we found no full public record of every pick with the date, the line, the odds and the result. The best bets page shows a board of current bets with model probabilities and edges, most locked for Pro members, and no past results.",
+    "The separate Platinum product has a results page that lists each week of the 2024 and 2025 college football seasons, 315 picks in all. Each entry shows a team, a first quarter spread and a win or loss mark. It shows no calendar dates, no kickoff times and no odds, so a buyer cannot check the prices or confirm the picks were posted before the games."
+  ],
+  "our_data": {
+    "matched": false,
+    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Dimers model or pick feed is matched to a Watchdog graded record, so we make no claim about how Dimers picks perform.",
+    "context": "For scale: Dimers advertises strike rates near 60% to 75% on several markets. On the Watchdog board on 7 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even, and on favorites the break even rate is higher."
+  },
+  "customers_intro": "Independent customer evidence on Dimers is split by where you look. Ratings inside the Apple App Store are high, while the small CapperTek file is mostly negative, and Trustpilot and Reddit gave us nothing substantial. Below is everything we read and how much weight it can carry.",
+  "customers": [
+    {
+      "type": "Customer report",
+      "tone": "Positive",
+      "date": "Checked 7 Nov 2026",
+      "text": "The Apple App Store listing showed 4.6 out of 5 from 222 ratings. The written reviews shown on the page praise the app as organized, smooth and easy to sort, and one says it improved the writer's results. App store reviews are not audited and the visible ones did not show a year.",
+      "source": 8
+    },
+    {
+      "type": "Seller curated",
+      "tone": "Positive",
+      "date": "Checked 7 Nov 2026",
+      "text": "The subscription page carries four named testimonials, including one saying the yearly plan paid for itself in the first month and one saying the service helped turn the writer's betting around. These are chosen and published by Dimers.",
+      "source": 0
+    },
+    {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "Sep 2022 to Feb 2023",
+      "text": "On CapperTek, several reviewers said the free parlays and long shot picks were poor bets and that the picks lost them money. These are short reviews without logs.",
+      "source": 9
+    },
+    {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "Nov 2023 and Oct 2025",
+      "text": "Two later CapperTek reviewers argued the site works mainly to send readers to sportsbooks, and the October 2025 reviewer claimed its Google reviews were fake. We saw no evidence for or against that claim.",
+      "source": 9
+    },
+    {
+      "type": "Customer report",
+      "tone": "Positive",
+      "date": "Dec 2022 and Dec 2023",
+      "text": "Two CapperTek reviewers were positive: one liked the reasoning behind the picks and said he had won in several sports, the other praised the analytics tools, alerts and support.",
+      "source": 9
+    },
+    {
+      "type": "Not found",
+      "tone": "Neutral",
+      "date": "Checked 7 Nov 2026",
+      "text": "Dimers has a claimed Trustpilot profile with no reviews. We found no Reddit thread with a substantial discussion of Dimers Pro and no Better Business Bureau profile we could confirm belongs to dimers.com.",
+      "source": 10
+    }
+  ],
+  "conflicts": [
+    "Dimers earns money from sportsbooks as well as from subscribers. Its disclaimer says that when readers follow links to sites it has commercial arrangements with, such as online sportsbooks, \"we may earn referral fees.\" Its about page says it \"secures commercial partnerships with major players in the sports betting space,\" and a 2021 trade report said Dimers had commercial partnerships with 11 sportsbook partners and that iRival Media LLC held affiliate registrations in 12 North American states.",
+    "The site menus link to sportsbook reviews and promo code pages for books such as DraftKings, FanDuel, BetMGM, bet365 and Caesars, and each bet card on the best bets page has a button to compare prices across books. Referral income grows when readers bet more, whatever the picks return. That does not prove anything about the model, but a buyer should know about it."
+  ],
+  "strengths": [
+    "A named parent company, published terms of service, a working app and posted prices for every plan.",
+    "A free tier and a 3 day trial let a reader see the tools and some picks before paying.",
+    "Picks come with model probabilities and edges, and the board shows prices across many books, which helps with line shopping.",
+    "Cancellation is allowed at any time, with access kept to the end of the paid period."
+  ],
+  "concerns": [
+    "No full public record for Dimers Pro picks. The numbers in its marketing are strike rates and rankings chosen by the seller.",
+    "All payments are nonrefundable, and the free trial turns into a paid plan unless you cancel in time.",
+    "The Platinum headline record combines two seasons and hides a nearly flat 2025 season.",
+    "Dimers earns sportsbook referral fees, so it has an interest in readers betting more.",
+    "Prices differ between the website, the app and the FAQ, so check the amount at checkout."
+  ],
+  "checklist": [
+    "Ask for every pick from the last 12 months with the line, the odds and the time it was posted. A win rate or a ranking is not a record.",
+    "Count units, not wins. A 70% record on heavy favorites can still lose money.",
+    "Read the refund terms before you pay. If a trial needs a card, set a reminder to cancel before it converts.",
+    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
+    "Give any model or handicapper a few hundred picks before you call it a winner. Short runs swing hard both ways."
+  ],
+  "faq": [
+    [
+      "Is Dimers legit?",
+      "It is a real business, part of Cipher Sports Technology Group, with published prices, terms and an app. We could not verify that its picks win over time, because it does not publish a full record of every pick with the odds."
+    ],
+    [
+      "How much does Dimers Pro cost?",
+      "On 7 Nov 2026 the website showed $29.99 a month, $119.99 for six months (regular $149.99) and $169.99 for the first year (regular $199.99). The iPhone app listed weekly plans from $9.99. The separate Platinum college football product cost $349 for the season."
+    ],
+    [
+      "Does Dimers give refunds?",
+      "No. Its terms say all payments are nonrefundable and partly used billing periods are not refunded or credited. You can cancel anytime and keep access until the period ends."
+    ],
+    [
+      "Does Watchdog track Dimers?",
+      "Not yet. No Dimers model or pick feed is matched to a Watchdog graded record in this edition. If that changes, this page will say so and show the record."
+    ]
+  ],
+  "related": [
+    "action-network-pro",
+    "betql",
+    "oddsshark-picks",
+    "covers-expert-picks",
+    "dubclub"
+  ],
+  "sources": [
+    {
+      "title": "Dimers Pro subscription page (prices, features, FAQ, testimonials)",
+      "url": "https://www.dimers.com/subscription",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Dimers terms of service (refunds, trial, entity, referral fees)",
+      "url": "https://www.dimers.com/terms-of-service",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Dimers about page (launch date, parent group, partnerships)",
+      "url": "https://www.dimers.com/about-us",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Dimers best bets board (Pro lock, sportsbook price comparison)",
+      "url": "https://www.dimers.com/best-bets",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Dimers Platinum college football page (price, headline record)",
+      "url": "https://ai.dimers.com/",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Dimers Platinum past results page",
+      "url": "https://ai.dimers.com/proof",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Dimers news: Platinum AI dominating college football in 2025 (15 Sep 2025)",
+      "url": "https://www.dimers.com/news/dimers-platinum-ai-sports-betting-dominating-college-football-wagering-in-2025-ncaaf-season",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Dimers news: why this proven AI engine is primed for football betting in 2026 (20 Aug 2026)",
+      "url": "https://www.dimers.com/news/why-dimers-proven-ai-sports-predictions-engine-is-primed-to-dominate-nfl-and-college-football-betting-in-2026",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Apple App Store: Dimers: Picks, Props & Parlays",
+      "url": "https://apps.apple.com/us/app/dimers-picks-props-parlays/id6754231679",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "CapperTek: Dimers customer reviews",
+      "url": "https://www.cappertek.com/reviews.asp?shs=Dimers.com",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Trustpilot: dimers.com",
+      "url": "https://www.trustpilot.com/review/dimers.com",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Yogonet: Hypometer and iRival Media form Cipher STG (29 Nov 2021)",
+      "url": "https://www.yogonet.com/international/news/2021/11/29/60393-australia-39s-hypometer-and-irival-media-to-compete-in-us-sports-betting-market-as-cipher-stg",
+      "accessed": "7 Nov 2026"
+    }
+  ],
+  "pricing_source": 0
+}

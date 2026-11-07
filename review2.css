@@ -3,7 +3,7 @@
 .byline a{color:var(--ink2);text-decoration:underline;text-underline-offset:3px}
 .edhero .eyebrow{margin:0 0 8px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--pro);font-weight:750}
 .evlegend{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin:16px 0 0;color:var(--muted);font-size:12.5px;line-height:1.6}
-.evt{display:inline-flex;align-items:center;height:20px;padding:0 8px;border-radius:99px;font-size:10.5px;font-weight:750;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--line2);white-space:nowrap;margin-right:4px}
+.evt{display:inline-flex;align-items:center;min-height:20px;padding:2px 8px;line-height:1.25;border-radius:99px;font-size:10.5px;font-weight:750;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--line2);white-space:nowrap;margin-right:4px}
 .evt.ver{color:var(--win);border-color:rgba(61,204,160,.45);background:rgba(61,204,160,.08)}
 .evt.seller{color:var(--pro);border-color:rgba(228,195,122,.4);background:rgba(228,195,122,.08)}
 .evt.cust{color:#9ec7f5;border-color:rgba(158,199,245,.4);background:rgba(158,199,245,.08)}
@@ -73,6 +73,7 @@
   .ptab,.ptab tbody,.ptab tr,.ptab th,.ptab td{display:block;width:100%}
   .ptab tr{padding:12px 0;border-bottom:1px solid var(--line)}
   .ptab th,.ptab td{border:0;padding:3px 0}
+  .ptab tbody th{white-space:normal}
   .ptab td::before{content:attr(data-k);display:block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-top:6px}
   .edcard{padding:18px 16px}
 }

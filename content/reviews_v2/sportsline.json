@@ -1,0 +1,256 @@
+{
+  "slug": "sportsline",
+  "name": "SportsLine",
+  "legal_name": "CBS Interactive Inc.",
+  "kind": "Subscription picks site with a roster of experts and a simulation model",
+  "checked": "7 Nov 2026",
+  "checked_iso": "2026-11-07",
+  "updated_iso": "2026-11-07",
+  "title": "SportsLine Review 2026: Prices, Refunds, Expert Records",
+  "description": "SportsLine review, checked 7 Nov 2026: CBS Sports' picks subscription prices, its no refund auto renew terms, how expert records are shown and what users say.",
+  "h1": "SportsLine review",
+  "dek": "The CBS Sports picks subscription: a roster of named experts plus a computer model that it says simulates every game 10,000 times, for $13.99 a month to $139.99 a year. Plans renew automatically and cancelling never returns money. Expert records are headlined by hot streaks, though each expert page also shows recent graded picks with odds and times.",
+  "status": {
+    "label": "Not verified",
+    "note": "Watchdog has not graded a full, time stamped record for any SportsLine expert or for the SportsLine model. This page reports what we could check and labels everything else."
+  },
+  "glance": [
+    [
+      "Operator",
+      "CBS Interactive Inc. (subscription terms). SportsLine.com, Inc. holds the trademarks (site footer)"
+    ],
+    [
+      "What you get",
+      "Expert picks, model picks, a members Discord, and Paramount+ Premium for new Pro members (join page)"
+    ],
+    [
+      "Price range seen",
+      "$13.99 a month to $139.99 a year, taxes may apply"
+    ],
+    [
+      "Refunds",
+      "None on cancellation. Plans renew automatically"
+    ],
+    [
+      "Full public record",
+      "Partial. Recent graded picks per expert, headlined by chosen streaks"
+    ],
+    [
+      "Watchdog graded record",
+      "None yet"
+    ]
+  ],
+  "short_answer": [
+    "SportsLine is a real, large business run by CBS Interactive, the company behind CBS Sports. It publishes its prices, names its experts, and delivers picks to paying members. In that narrow sense it is legitimate.",
+    "Whether its picks make money is a separate question that nothing we opened answers. The site ranks experts by short streaks such as \"15-2 Last 17 NFL\" and bios quote multi season dollar totals, all chosen by the seller. The expert pages do show recent graded picks with the odds, the sportsbook and the time the pick was made, which is more than most pick sellers show, but we found no complete, audited history.",
+    "Treat SportsLine as a media product with marketing records, not a proven winner. The subscription is cheap next to a typical pick service, but it auto renews and pays no refunds. If you buy, buy the shortest plan, record every pick you follow yourself, and judge each expert or the model over a few hundred picks."
+  ],
+  "pricing_intro": "Prices below were shown on the SportsLine join page on 7 Nov 2026. No promotion was active on that page when we checked. The join page notes that taxes may apply.",
+  "pricing": [
+    [
+      "SportsLine Pro, 1 month",
+      "$13.99 per month",
+      "No refund. Renews monthly until cancelled"
+    ],
+    [
+      "SportsLine Pro, 3 months",
+      "$39.99 for 3 months",
+      "No refund. Renews for another 3 months until cancelled"
+    ],
+    [
+      "SportsLine Pro, 12 months",
+      "$139.99 per year",
+      "No refund. Renews yearly until cancelled"
+    ],
+    [
+      "Paramount+ Premium",
+      "Included with new SportsLine Pro subscriptions, per the join page",
+      "Not priced separately on the page"
+    ]
+  ],
+  "guarantee": [
+    "SportsLine offers no guarantee on results. Its subscription terms say the fee \"will automatically renew and be charged to your Payment Method at the then current rate\" unless you cancel, and that the renewal period is the same length as the first one unless disclosed otherwise at sale.",
+    "Cancelling stops the next renewal but returns nothing. The terms say that if you cancel during a period \"YOU WILL NOT RECEIVE A REFUND OF ANY FEES PAID,\" that access continues to the end of the paid period, and that cancellation is your \"sole recourse\" if you are unhappy. The terms list cancellation by phone at 888 508 3055 or by email to support@sportsline.com. Any credit is at SportsLine's \"sole discretion.\" The site footer adds that its content is \"for entertainment purposes only\" and that SportsLine makes no warranty about the outcome of any game."
+  ],
+  "claims": [
+    {
+      "claim": "\"SportsLine's advanced computer model simulates every game 10,000 times and gives you ATS, O/U, and ML picks.\"",
+      "where": "Join page",
+      "status": "Seller claim, method not published"
+    },
+    {
+      "claim": "\"Hottest Experts\" list, for example Micah Roberts \"+1297 (88%) 15-2 Last 17 NFL\" and Matt Severance \"+1096.5 (70%) 32-14 Last 46 CFB\"",
+      "where": "Homepage",
+      "status": "Selected streaks"
+    },
+    {
+      "claim": "R.J. White \"went 803-705-41 on ATS picks from 2017-25, returning more than $2,700 to $100 players\"",
+      "where": "Expert bio on the experts page",
+      "status": "Seller claim, no full log opened"
+    },
+    {
+      "claim": "Matt Severance \"has returned $4,931 to $100 bettors\" over the past five NBA seasons",
+      "where": "Expert bio on the experts page",
+      "status": "Seller claim, no full log opened"
+    },
+    {
+      "claim": "\"Our model exits the 2023 NFL season on an incredible 185-130 run on top-rated NFL picks that dates back to the 2017 season.\"",
+      "where": "Testimonials page, published 30 May 2024",
+      "status": "Seller claim, dated"
+    },
+    {
+      "claim": "\"SportsLine's experts and proven simulation models are providing huge returns for members this season\"",
+      "where": "Testimonials page",
+      "status": "Seller claim"
+    }
+  ],
+  "claims_note": [
+    "Every streak on the hot lists has its own window: last 17 NFL picks for one expert, last 46 college football picks for another, last 8 NFL moneylines for a third. A window chosen after the fact will always find a hot run somewhere on a roster of dozens of experts. The same experts also carry flat or cold streaks; on 7 Nov 2026 R.J. White's own page showed \"11-11-1 in Last 23 NFL ATS Picks\" beside his \"33-22\" props streak.",
+    "The dollar figures are stated for a bettor risking $100 a pick, but the bios do not link to the full list of picks behind them. Even the long record we could check by arithmetic is thin: 803-705-41 against the spread wins about 53% of decided picks, only a little above the roughly 52.4% needed to break even at -110. The testimonials page that carries the model claims is dated 2024 and is still linked from the site."
+  ],
+  "record": [
+    "SportsLine shows more than most pick sellers. Each expert page we opened lists past picks with the game, the market, the odds taken, the unit size, the time the pick was made, the sportsbook the price came from, and a WIN or LOSS grade, with a \"Load More Picks\" button. That lets a buyer check recent work against real prices.",
+    "What we could not confirm is that the list is complete, how far back it goes, or how the headline streaks are chosen. We found no single page with every pick for an expert or for the model, totaled in units, by sport. An App Store reviewer asked for exactly that in 2024."
+  ],
+  "our_data": {
+    "matched": false,
+    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no SportsLine expert or model is matched to a Watchdog graded record, so we make no claim about how SportsLine picks perform.",
+    "context": "For scale: SportsLine ranks experts by short hot streaks, many of them above 60%. On the Watchdog board on 7 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+  },
+  "customers_intro": "Customer evidence on SportsLine is split by where you look. The iPhone app is rated highly, while the Trustpilot page is mostly one star complaints about billing and pick quality. We found no substantial Reddit or betting forum discussion. Below is what we read and how much weight it can carry.",
+  "customers": [
+    {
+      "type": "Customer report",
+      "tone": "Positive",
+      "date": "Checked 7 Nov 2026",
+      "text": "The SportsLine iPhone app, published by CBS Interactive, showed 4.6 out of 5 from about 11K ratings. App ratings often reflect the app itself, such as scores and odds screens, as much as the picks.",
+      "source": 6
+    },
+    {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "12 Feb 2025",
+      "text": "An App Store reviewer who subscribed said the expert records like \"7-3 last ten\" misrepresent results, that some picks came at heavy prices such as -190, and that some were posted at opening numbers after the line had moved. The reviewer did not post a log.",
+      "source": 6
+    },
+    {
+      "type": "Customer report",
+      "tone": "Mixed",
+      "date": "18 Feb 2024",
+      "text": "An App Store reviewer said he tracked more than 100 games where the model gave an A or B grade before betting. He reported results no better than a coin flip in college basketball and NHL, better results in NBA and NFL, and asked SportsLine to publish full results by sport. We did not verify his tracking.",
+      "source": 6
+    },
+    {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "Checked 7 Nov 2026",
+      "text": "Trustpilot showed a TrustScore of 1.2 from 102 reviews and noted that SportsLine has not invited its customers to review it, so the sample is self selected. The two most recent reviews were one star. A 17 Sep 2026 review said a cancelled trial was extended months into the future instead of ended, and a 17 Aug 2026 review said an emailed sign up promotion was not honored. A January 2025 one star review said there was no way to cancel a discounted trial yourself before full price billing began. These are customer accounts we did not verify.",
+      "source": 7
+    },
+    {
+      "type": "Seller curated",
+      "tone": "Positive",
+      "date": "Published 30 May 2024",
+      "text": "The SportsLine testimonials page quotes unnamed members thanking its experts, including one who wrote that two weeks of picks \"paid for my SportsLine membership for three years.\" These are chosen and published by the seller.",
+      "source": 5
+    },
+    {
+      "type": "Not found",
+      "tone": "Neutral",
+      "date": "Checked 7 Nov 2026",
+      "text": "We found no Reddit thread or TheRX or Covers forum thread with a substantial discussion of SportsLine picks, and no Better Business Bureau profile we could confirm. We found no court case, regulator action or major news report about SportsLine subscriptions.",
+      "source": null
+    }
+  ],
+  "conflicts": [
+    "SportsLine earns from sportsbooks and prediction markets as well as from subscribers. On 7 Nov 2026 its homepage ran promo code stories for DraftKings, Kalshi (code SPORTSLINE55) and Polymarket (code SPORTSLINE), and its site footer says it \"may be compensated for the links provided on this site.\" Graded expert picks name the sportsbook the price came from, such as \"on DraftKings\" or \"on MGM.\" That does not prove anything about the picks, but a buyer should know the site is paid when readers sign up with sportsbooks.",
+    "SportsLine is part of CBS Sports and, per its own newsletter signup text, \"the Paramount family of companies.\" Some SportsLine experts also write and appear for CBS Sports, so CBS coverage of SportsLine is not independent."
+  ],
+  "strengths": [
+    "A large, named operator with published terms, a phone line and an email for cancelling.",
+    "Low prices next to typical pick services, with the price list on one page.",
+    "Expert pages show recent graded picks with the odds, the sportsbook, the unit size and the time the pick was made.",
+    "One subscription covers many sports, the model, a members Discord and, for new Pro members, Paramount+ Premium."
+  ],
+  "concerns": [
+    "Headline records are short streaks chosen by the seller. No complete, audited record for any expert or the model was found.",
+    "Plans renew automatically and the terms rule out any refund, even right after a renewal.",
+    "Trustpilot reviewers report billing after trials and refunds refused.",
+    "The site earns from sportsbook and prediction market promo codes."
+  ],
+  "checklist": [
+    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
+    "Count units, not wins. A 60% record at heavy favorites can still lose money.",
+    "Read the renewal and refund terms before you pay, and set a reminder to cancel before the renewal date.",
+    "Write down each pick yourself the moment you receive it, with the line you can actually get, not the opening number.",
+    "Give any expert or model a few hundred picks before you call it a winner. Short runs swing hard both ways."
+  ],
+  "faq": [
+    [
+      "Is SportsLine legit?",
+      "It is a real service run by CBS Interactive, the company behind CBS Sports, with published prices and named experts. We could not verify that its experts or its model win over time, because we found no complete record of every pick."
+    ],
+    [
+      "How much does SportsLine cost?",
+      "On 7 Nov 2026 the join page listed SportsLine Pro at $13.99 a month, $39.99 for 3 months or $139.99 a year, with taxes possibly added. New Pro members also get Paramount+ Premium, per the join page."
+    ],
+    [
+      "Can you get a refund from SportsLine?",
+      "The subscription terms say no. Cancelling stops the next renewal and you keep access to the end of the paid period, but you will not get back any fees paid. Credits are at SportsLine's discretion."
+    ],
+    [
+      "Does Watchdog track SportsLine?",
+      "Not yet. No SportsLine expert or model is matched to a Watchdog graded record in this edition. If that changes, this page will say so and show the record."
+    ]
+  ],
+  "related": [
+    "action-network-pro",
+    "betql",
+    "covers-expert-picks",
+    "vegasinsider-expert-picks",
+    "oddsshark-picks"
+  ],
+  "sources": [
+    {
+      "title": "SportsLine join page (prices, Paramount+ offer, model claim)",
+      "url": "https://www.sportsline.com/join/",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "SportsLine Site Subscription Terms of Use (auto renewal, cancellation, no refunds)",
+      "url": "https://legal.paramount.com/us/en/cbsi/sportsline-terms-of-use",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "SportsLine homepage (Hottest Experts, promo code stories, footer disclaimer)",
+      "url": "https://www.sportsline.com/",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "SportsLine experts page (expert bios and record claims)",
+      "url": "https://www.sportsline.com/experts/",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "SportsLine expert page: R.J. White (past picks with odds, times, sportsbook)",
+      "url": "https://www.sportsline.com/experts/14890/rj-white/?league=nfl",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "SportsLine: What they're saying, testimonials from members",
+      "url": "https://www.sportsline.com/insiders/what-theyre-saying-testimonials-from-sportsline-members/",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Apple App Store: SportsLine (rating, reviews, in app purchases)",
+      "url": "https://apps.apple.com/us/app/sportsline/id1038113479",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Trustpilot: SportsLine reviews",
+      "url": "https://www.trustpilot.com/review/www.sportsline.com",
+      "accessed": "7 Nov 2026"
+    }
+  ],
+  "pricing_source": 0
+}

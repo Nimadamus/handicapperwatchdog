@@ -35,6 +35,7 @@ def tag(kind):
 def render(rev, st, names, document):
     url = 'https://handicapperwatchdog.com/reviews/%s.html' % rev['slug']
     src = rev['sources']
+    ps = rev.get('pricing_source', 1)
     toc = [('answer', 'Short answer'), ('prices', 'Prices'), ('guarantee', 'Guarantee'), ('claims', 'Their claims'),
            ('record', 'Track record'), ('customers', 'What customers say'), ('conflicts', 'Conflicts of interest'),
            ('verdict', 'Strengths and concerns'), ('faq', 'FAQ'), ('sources', 'Sources')]
@@ -55,14 +56,14 @@ def render(rev, st, names, document):
         E(rev['name']), paras(rev['short_answer']))
     rows = ''.join('<tr><th scope="row">%s</th><td data-k="Packages">%s</td><td data-k="If it loses">%s</td></tr>' % tuple(E(x) for x in r) for r in rev['pricing'])
     prices = ('<section class="panel edcard" id="prices"><h2>What it costs</h2><p class="lede tight">%s %s</p>'
-              '<div class="tw"><table class="ptab"><thead><tr><th class="l">Sport</th><th class="l">Packages</th><th class="l">If it loses</th></tr></thead>'
+              '<div class="tw"><table class="ptab"><thead><tr><th class="l">Plan</th><th class="l">Packages</th><th class="l">If it loses</th></tr></thead>'
               '<tbody>%s</tbody></table></div><p class="muted small">Source: <a href="%s" rel="nofollow noopener">%s</a>, checked %s.</p></section>') % (
-        tag('Verified'), E(rev['pricing_intro']), rows, E(src[1]['url']), E(src[1]['title']), E(src[1]['accessed']))
+        tag('Verified'), E(rev['pricing_intro']), rows, E(src[ps]['url']), E(src[ps]['title']), E(src[ps]['accessed']))
     guar = '<section class="panel edcard essay" id="guarantee"><h2>How the guarantee really works</h2><div class="prose">%s</div></section>' % paras(rev['guarantee'])
     crow = ''.join('<li><div>%s%s</div><span class="muted small">%s</span></li>' % (tag(c['status']), ('<q>%s</q>' % E(c['claim'][1:-1])) if c['claim'].count('"') == 2 and c['claim'].startswith('"') else '<p class="cq">%s</p>' % E(c['claim']), E(c['where'])) for c in rev['claims'])
-    claims = ('<section class="panel edcard" id="claims"><h2>What they advertise</h2><p class="lede tight">Quoted from Doc\'s Sports pages on %s. '
+    claims = ('<section class="panel edcard" id="claims"><h2>What they advertise</h2><p class="lede tight">Quoted from %s pages on %s. '
               'A quote here is not a finding that it is true.</p><ul class="claims">%s</ul><div class="prose">%s</div></section>') % (
-        E(rev['checked']), crow, paras(rev['claims_note']))
+        E(rev['name']), E(rev['checked']), crow, paras(rev['claims_note']))
     od = rev['our_data']
     record = ('<section class="panel edcard essay" id="record"><h2>Track record: what can be verified</h2><div class="prose">%s'
               '<div class="ourdata"><p class="plate-k">Watchdog graded data</p><p><b>%s</b></p><p>%s</p></div></div></section>') % (
