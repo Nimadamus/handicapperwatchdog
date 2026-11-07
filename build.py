@@ -482,6 +482,7 @@ _SITEMAP = (
     ('the-board.html', 'https://handicapperwatchdog.com/the-board.html', 'daily', '0.8'),
     ('how-we-grade.html', 'https://handicapperwatchdog.com/how-we-grade.html', 'monthly', '0.6'),
     ('pricing.html', 'https://handicapperwatchdog.com/pricing.html', 'monthly', '0.5'),
+    ('picks.html', 'https://handicapperwatchdog.com/picks.html', 'daily', '0.6'),
     ('about.html', 'https://handicapperwatchdog.com/about.html', 'yearly', '0.3'),
     ('privacy.html', 'https://handicapperwatchdog.com/privacy.html', 'yearly', '0.2'),
     ('terms.html', 'https://handicapperwatchdog.com/terms.html', 'yearly', '0.2'),
