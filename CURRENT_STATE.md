@@ -3,6 +3,8 @@
 ## Nov 6 update
 Every account has a profile page: build.py publishes all ATW accounts (3,826 live, 850 with no graded picks, reason no_grades); meta.tracked stays graded only, meta.monitored = all. Item 1 below looks done (profiles dated Nov 6/7).
 
+Homepage #what and #bettors sections live; 11 customer review pages in content/reviews.json (testimonials field, 165 reviews read 6 Nov, paraphrased, one short quote per page) + learn/what-bettors-say-about-handicappers. Original 10 reviews still have no buyer sample.
+
 ## Resume here, in order
 1. DEPLOY the profile freshness fix: `python ~/tools/site_audit/wd_code_deploy.py` (deploys tmr-watchdog main 8eef41d).
    Last attempt was killed by laptop memory reap during drain; harvest/publish were resumed by hand (paused False).
