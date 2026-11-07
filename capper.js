@@ -133,7 +133,7 @@
   }
 
   // ---------- page ----------
-  var DEEP_DEFAULTS = { sport_detail: {}, month: [], weekday: [], season: [], after: [], form_picks: [], fav_dog: [], plus_money: [], odds_buckets: [], over_under: [], home_away: [],
+  var DEEP_DEFAULTS = { curve: [], curve_dates: [], form_days: [], sports: [], markets: [], streaks: {}, sport_detail: {}, month: [], weekday: [], season: [], after: [], form_picks: [], fav_dog: [], plus_money: [], odds_buckets: [], over_under: [], home_away: [],
     teams_backing: [], teams_fading: [], conference_backing: [], division_backing: [], market_detail: [], roi_curve: [], rolling_win: [], activity: [] };
   // free profiles carry no deep data at all: it is sealed for Pro at build time, so this only tidies the page around what is absent
   function lockDeep(p) {
@@ -146,17 +146,21 @@
       if (/Advanced metrics|Form by recent|After a win|Best and worst|Consistency/.test(txt)) el.remove();
     });
     [].forEach.call(root.querySelectorAll('.g2'), function (g) { if (!g.children.length) g.remove(); });
-    var sp = document.getElementById('sports');
-    if (sp) sp.innerHTML = '<div class="sech"><h2>Sport by sport</h2></div>' + panel('Record by sport', table(p.sports, 'Sport', { sort: 1 }));
-    var mk = document.getElementById('markets');
-    if (mk) mk.innerHTML = '<div class="sech"><h2>Markets</h2></div>' + panel('By market', table(p.markets, 'Market', { sort: 1 }));
-    var items = [['Advanced metrics', 'Z score, break even gap, drawdown, volatility'], ['Sport detail', 'Streaks, markets and form inside each sport'], ['Teams', 'Teams backed and faded, conferences, divisions'],
-      ['Prices and sides', 'Favorites, underdogs, odds ranges, overs, unders, home and away'], ['Calendar', 'Weekday, month and season splits'], ['Charts', 'ROI over time, rolling win rate, weekly activity']];
+    ['sports', 'markets'].forEach(function (k) {
+      var el = document.getElementById(k); if (el) el.remove();
+      var a = document.querySelector('#snav a[href$="#' + k + '"]'); if (a) a.remove();
+    });
+    var ov = document.getElementById('overview'), W = p.windows || {}, s = p.summary || {};
+    if (ov) ov.innerHTML = '<div class="sech"><h2>Recent record</h2></div><div class="g2">' + panel('Recent form', table([W.r7, W.r30].filter(Boolean).map(function (x) { return Object.assign({}, x, { key: x.key || '' }); }), 'Window')) +
+      panel('Last 20 results', '<div class="pb">' + dots(p.last_results) + '<p class="note" style="margin:10px 0 0">Newest first. Pushes shown as P.</p></div>') + '</div>' +
+      panel('Verification', '<div class="pb"><p class="muted" style="margin:0">Every pick in this record was captured from a public post made before the game started and graded on the final score. First tracked pick ' + day(s.first_pick) + '.</p></div>');
+    var items = [['Performance charts', 'Cumulative units, ROI over time, rolling win rate'], ['Sport by sport', 'Record, streaks, markets and form in each sport'], ['Bet types', 'Spreads, totals, moneylines and props'], ['Advanced metrics', 'Z score, break even gap, drawdown, volatility'],
+      ['Teams', 'Teams backed and faded, conferences, divisions'], ['Prices and sides', 'Favorites, underdogs, odds ranges, overs, unders, home and away'], ['Calendar', 'Weekday, month and season splits'], ['Full history', 'Every graded pick and every time window']];
     var box = document.createElement('section');
     box.className = 'sec prolock'; box.id = 'pro-file';
-    box.innerHTML = '<div><span class="lock">Watchdog Pro</span><h2>The rest of this file is in Watchdog Pro</h2><p class="muted">Free profiles show the headline record, recent form and the latest graded picks. Pro opens everything below on every tracked profile, plus eligible pending picks before the start.</p></div>' +
+    box.innerHTML = '<div><span class="lock">Watchdog Pro</span><h2>The rest of this file is in Watchdog Pro</h2><p class="muted">Free profiles show the record, ROI, recent form and the latest graded picks. Pro opens everything below on every tracked profile, plus eligible pending picks before the start.</p></div>' +
       '<ul>' + items.map(function (i) { return '<li><b>' + i[0] + '</b><span>' + i[1] + '</span></li>'; }).join('') + '</ul><a class="btn pro" href="pricing.html">View Watchdog Pro</a>';
-    if (mk) mk.after(box);
+    if (ov) ov.after(box);
   }
   function render(p) {
     if (p.detail === false) return renderBasic(p);
@@ -184,7 +188,7 @@
       [odds(o.avg_odds), 'Avg odds'], [strk(ost.current), 'Current streak'], [s.r30 ? sgn(s.r30.net, 2) : '<span class="dim">n/a</span>', 'Last 30 days']]);
 
     var secs = [['overview', 'Overview'], ['charts', 'Charts'], ['sports', 'Sports'], ['markets', 'Markets'], ['situations', 'Sides and prices'], ['teams', 'Teams'], ['calendar', 'Calendar'], ['picks', 'Pick ledger']];
-    h += '<nav class="snav"><div class="tabs" id="snav">' + secs.map(function (x, i) { return '<a class="tab' + (i ? '' : ' on') + '" href="' + location.pathname + location.search + '#' + x[0] + '" style="display:inline-flex;align-items:center">' + x[1] + '</a>'; }).join('') + '</div></nav>';
+    h += '<nav class="snav" aria-label="Profile sections"><div class="tabs" id="snav">' + secs.map(function (x, i) { return '<a class="tab' + (i ? '' : ' on') + '" href="' + location.pathname + location.search + '#' + x[0] + '" style="display:inline-flex;align-items:center">' + x[1] + '</a>'; }).join('') + '</div></nav>';
 
     var months = s.months || 0;
     h += '<section class="sec" id="overview"><div class="pgrid">' +

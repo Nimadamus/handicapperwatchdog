@@ -36,7 +36,7 @@ KEY = (os.environ.get('HWD_MASK_KEY') or secrets.token_hex(16)).encode()
 HERE = os.path.dirname(os.path.abspath(__file__))
 CACHE = os.path.join(HERE, '.cache', 'profiles')
 SITE = os.path.join(HERE, '_site')
-STATIC = ('index.html', 'home.css', 'sportsbook-bg.jpg', 'capper.html', 'cappers.html', 'account.html', 'compare.html', 'picks.html', 'style.css', 'app.js', 'capper.js',
+STATIC = ('index.html', 'home.css', 'sportsbook-bg.jpg', 'sportsbook-bg-sm.jpg', 'capper.html', 'cappers.html', 'account.html', 'compare.html', 'picks.html', 'style.css', 'app.js', 'capper.js',
           'pro.js', 'track.js', 'compare.js', 'pricing.js', 'account.js', 'picks.js', 'contact.js', 'favicon.svg', 'stadium.svg', 'og-card.png', 'CNAME', 'robots.txt', 'sitemap.xml')
 PROFILE_TTL = int(os.environ.get('HWD_PROFILE_TTL', str(6 * 3600)))
 MAX_FETCH = int(os.environ.get('HWD_MAX_FETCH', '400'))
@@ -327,7 +327,8 @@ LEDGER_N = 10  # free profiles show this many most recent graded picks; never th
 # Deep analytics are sealed for Pro with the full log. They are never in the public profile file.
 DEEP_KEYS = ('advanced', 'after', 'form_picks', 'market_detail', 'fav_dog', 'plus_money', 'odds_buckets', 'over_under', 'home_away', 'teams_backing', 'teams_fading',
              'conference_backing', 'division_backing', 'weekday', 'month', 'season', 'recent_vs_lifetime', 'sport_detail', 'roi_curve', 'rolling_n', 'rolling_win', 'activity',
-             'best_sport', 'best_market')
+             'best_sport', 'best_market', 'curve', 'curve_dates', 'form_days', 'sports', 'markets', 'streaks', 'per_week', 'avg_risk')
+FREE_SUMMARY = ('id', 'w', 'l', 'p', 'picks', 'win_pct', 'units', 'roi', 'streak', 'last_pick', 'tier', 'first_pick', 'r7', 'r30')
 
 
 def _ts(iso):
@@ -873,7 +874,7 @@ def _header(depth, current):
         '%s'
         '<form class="navsearch" action="%scappers.html" role="search">'
         '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>'
-        '<input name="q" placeholder="Search capper ID or sport" aria-label="Search cappers"></form>'
+        '<input name="q" placeholder="Search ID or sport" aria-label="Search cappers"></form>'
         '<a class="btn sm pro" href="%spricing.html">Watchdog Pro</a>'
         '</div></header>'
     ) % (home, prefix, _nav(depth, current), prefix, prefix)
@@ -1044,12 +1045,12 @@ def _write_guides(site, meta, cappers):
 <p>Same Pro access, billed every month. Cancel and access runs through the month already paid.</p>
 <button class="btn ghost full" type="button" data-plan="monthly" disabled>Subscribe monthly, $49.99</button></div>
 </section>
-<section class="panel" style="margin:0 0 18px"><div class="ph"><h3>Free and Pro</h3></div>
+<section class="panel" style="margin:0 0 18px"><div class="ph"><h2 style="font-size:15px">Free and Pro</h2></div>
 <div class="tw"><table class="mini plancmp"><thead><tr><th class="l">Feature</th><th>Free</th><th>Pro</th></tr></thead><tbody>
 <tr><td class="l">Rank, record, units, ROI, win rate, streak</td><td>Yes</td><td>Yes</td></tr>
-<tr><td class="l">Every ranking list, record, units, ROI and recent form</td><td>Yes</td><td>Yes</td></tr>
-<tr><td class="l">Record by sport and market, and the 10 most recent graded picks</td><td>Yes</td><td>Yes</td></tr>
-<tr><td class="l">Advanced metrics, teams, prices, sides, calendar and charts on every profile</td><td>No</td><td>Yes</td></tr>
+<tr><td class="l">Every ranking list, last 7 and 30 day form, the 10 most recent graded picks</td><td>Yes</td><td>Yes</td></tr>
+<tr><td class="l">Sport and market breakdowns, advanced metrics, teams, prices, sides and calendar on every profile</td><td>No</td><td>Yes</td></tr>
+<tr><td class="l">Performance charts, trends and every time window on every profile</td><td>No</td><td>Yes</td></tr>
 <tr><td class="l">Eligible pending picks before the game starts</td><td>No</td><td>Yes</td></tr>
 <tr><td class="l">Complete graded pick log: game, pick, odds, result, units, post time</td><td>No</td><td>Yes</td></tr>
 <tr><td class="l">Advanced filters, and compare up to four records</td><td>No</td><td>Yes</td></tr>
@@ -2657,6 +2658,51 @@ def stamp_public_pages(site):
     _write_sitemap(site, lastmod)
 
 
+def _publish_light_data(site):
+    """Runs after the static pages are stamped. The public index keeps what rankings need; the homepage gets a small file of its own."""
+    path = os.path.join(site, 'data', 'index.json')
+    with open(path, encoding='utf-8') as f:
+        doc = json.load(f)
+    meta, rows = doc['meta'], doc['cappers']
+    leaders = set()
+    sports = sorted({k for r in rows for k in (r.get('bs') or {})})
+    for sp in sports:
+        top = sorted((r for r in rows if sp in (r.get('bs') or {}) and r['bs'][sp][1] is not None), key=lambda r: -r['bs'][sp][1])[:25]
+        leaders |= {(r['id'], sp) for r in top}
+    keep = ('id', 'w', 'l', 'p', 'picks', 'win_pct', 'units', 'roi', 'streak', 'last_pick', 'first_pick', 'profile', 'basic', 'tier', 'r7', 'r30', 'sports')
+    slim = []
+    for r in rows:
+        s = {k: r[k] for k in keep if k in r}
+        s['bs'] = {k: v for k, v in (r.get('bs') or {}).items() if (r['id'], k) in leaders}
+        if r['picks'] >= 100 and r.get('spark'):
+            s['spark'] = r['spark']
+        slim.append(s)
+    cut = (datetime.now(timezone.utc) - timedelta(days=21)).strftime('%Y-%m-%d')
+    pick = {}
+
+    def top(rule, key, n=6):
+        for r in sorted((r for r in slim if rule(r)), key=key)[:n]:
+            pick[r['id']] = r
+    top(lambda r: r['picks'] >= 100 and r.get('units') is not None, lambda r: -r['picks'], 200)
+    top(lambda r: r.get('r30') and r['r30']['picks'] >= 10, lambda r: -r['r30']['net'])
+    top(lambda r: r.get('r7') and r['r7']['picks'] >= 5, lambda r: -r['r7']['net'])
+    top(lambda r: r['picks'] >= 50 and r.get('roi') is not None, lambda r: -r['roi'])
+    top(lambda r: (r.get('first_pick') or '') >= cut and r['picks'] >= 10 and (r.get('units') or 0) > 0, lambda r: -r['units'])
+    top(lambda r: r.get('r30') and r['r30']['picks'] > 0, lambda r: -r['r30']['picks'])
+    home_meta = {k: meta.get(k) for k in ('built_at', 'tracked', 'monitored', 'graded_picks', 'live', 'halves', 'established', 'established_up')}
+    home_meta['first_pick'] = min((r['first_pick'] for r in slim if r.get('first_pick')), default=None)
+    home = {'meta': home_meta, 'cappers': [dict(r, bs={}) for r in sorted(pick.values(), key=lambda r: -r['picks'])],
+            'nets': sorted(round(r['r30']['net'], 2) for r in slim if r.get('r30') and r['r30']['picks'] >= 20 and r['r30'].get('net') is not None)}
+    with open(os.path.join(site, 'data', 'home.json'), 'w', encoding='utf-8') as f:
+        json.dump(home, f, separators=(',', ':'))
+    with open(os.path.join(site, 'data', 'ids.json'), 'w', encoding='utf-8') as f:
+        json.dump({'sports': sports, 'ids': [[r['id'], r['picks'], '%d-%d%s' % (r['w'], r['l'], '-%d' % r['p'] if r['p'] else '')] for r in slim]}, f, separators=(',', ':'))
+    doc['cappers'] = slim
+    doc['meta'] = {k: v for k, v in meta.items() if k != 'odds_study'}
+    with open(path, 'w', encoding='utf-8') as f:
+        json.dump(doc, f, separators=(',', ':'))
+
+
 PROFILE_INDEX_MIN = 20  # thinner profiles still get a page, but stay out of search until they have a real sample
 
 
@@ -2700,8 +2746,7 @@ def _write_profile_pages(site, index):
         start = place.get(cid, 0)
         peers = [ranked[(start + k) % len(ranked)] for k in range(1, 7)]
         peers = [p for p in peers if p['id'] != cid]
-        rows = ''.join('<tr><td class="l">%s</td><td>%s</td><td>%s</td><td>%s</td></tr>' % (
-            _esc(s), _esc(str(v[4])), v[0], '' if v[1] is None else '%+.2f' % v[1]) for s, v in (r.get('bs') or {}).items())
+        rows = ''
         kpis = ''.join('<div class="kv"><b>%s</b><span>%s</span></div>' % (_esc(a), b) for a, b in (
             (record(r), 'Record'), (units(r), 'Units won'), (roi(r), 'ROI'), (f"{r['picks']:,}", 'Graded picks')))
         body = ('<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><a href="handicappers/">Handicappers</a>'
@@ -2966,8 +3011,11 @@ def main():
                 if s['picks'] >= 100 and (sample_full is None or (s['units'] or 0) > sample_full['summary']['units']):
                     sample_full = dict(prof, **deep)
                     sample_full['ledger'] = (prof.get('ledger') or [])[:LEDGER_N]
+                deep['summary'], deep['windows'] = prof['summary'], prof.get('windows')
                 prof['gated'] = True
                 prof['ledger'] = (prof.get('ledger') or [])[:LEDGER_N]
+                prof['summary'] = {k: prof['summary'].get(k) for k in FREE_SUMMARY}
+                prof['windows'] = {k: v for k, v in (prof.get('windows') or {}).items() if k in ('r7', 'r30')}
                 if PRO_KEY:
                     with open(os.path.join(SITE, 'data', 'x', s['id'] + '.bin'), 'w') as f:
                         f.write(seal('capper:' + s['id'], {'ledger': [ledger_row(h) for h in hist[::-1]], 'deep': deep}))
@@ -3036,11 +3084,16 @@ def main():
     with open(os.path.join(SITE, 'data', 'index.json'), 'w', encoding='utf-8') as f:
         json.dump({'meta': meta, 'cappers': index}, f, separators=(',', ':'))
     if sample_full:  # the one fully opened account shown on the homepage as the Pro sample
+        for k in ('teams_backing', 'teams_fading'):
+            sample_full[k] = sorted(sample_full.get(k) or [], key=lambda x: -(x.get('picks') or 0))[:6]
+        for k in ('conference_backing', 'division_backing', 'sport_detail', 'roi_curve', 'rolling_win', 'curve_dates', 'recent_vs_lifetime'):
+            sample_full.pop(k, None)
         with open(os.path.join(SITE, 'data', 'sample.json'), 'w', encoding='utf-8') as f:
             json.dump(sample_full, f, separators=(',', ':'))
     _write_profile_pages(SITE, index)
     stamp_public_pages(SITE)
     _seo_finish(SITE)
+    _publish_light_data(SITE)
     no_page = [s['id'] for s in index if not os.path.exists(os.path.join(SITE, 'data', 'p', s['id'] + '.json'))]
     if no_page:
         sys.exit('%d accounts have no profile page: refusing to publish' % len(no_page))

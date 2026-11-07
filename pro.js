@@ -32,6 +32,23 @@
       .then(function (plain) { return JSON.parse(new TextDecoder().decode(plain)); });
   }
 
+  // keyboard users can jump past the header on every page
+  (function () {
+    var m = document.querySelector('main'); if (!m) return;
+    if (!m.id) m.id = 'main';
+    m.setAttribute('tabindex', '-1');
+    var a = document.createElement('a'); a.href = location.pathname + location.search + '#' + m.id; a.className = 'skip'; a.textContent = 'Skip to content';
+    document.body.insertBefore(a, document.body.firstChild);
+  })();
+
+  // wide tables scroll by keyboard, and the main nav has a name
+  function tidy() {
+    var sn = document.getElementById('sitenav'); if (sn) sn.setAttribute('aria-label', 'Main');
+    [].forEach.call(document.querySelectorAll('.tw:not([tabindex])'), function (el) { tidy.n = (tidy.n || 0) + 1; el.setAttribute('tabindex', '0'); el.setAttribute('role', 'region'); el.setAttribute('aria-label', 'Scrollable table ' + tidy.n); });
+  }
+  tidy();
+  if (window.MutationObserver) new MutationObserver(tidy).observe(document.body, { childList: true, subtree: true });
+
   // remember the profile or board a visitor was on when they headed to pricing or sign in, for one day
   function store(k, v) { try { if (v == null) localStorage.removeItem(k); else localStorage.setItem(k, v); } catch (e) {} }
   function read(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }

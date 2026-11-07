@@ -236,4 +236,5 @@ body[data-page="home"] main{display:block;max-width:none;padding:0;margin:0}
 .band a:focus-visible,.band button:focus-visible{outline:2px solid var(--gold2);outline-offset:3px;border-radius:4px}
 .pchip,.stabs button{transition:background .15s,color .15s,border-color .15s}
 @media (max-width:700px){.facts>div{min-height:0}.cres,.sdash,#claims{min-height:0}.mission{padding:56px 0}}
-
+@media (max-width:700px){.hero{background-image:linear-gradient(180deg,rgba(7,12,22,.5),rgba(7,12,22,.66) 50%,rgba(10,17,32,.94) 92%,var(--hn)),radial-gradient(900px 480px at 50% 22%,rgba(7,12,22,.55),transparent 72%),url(sportsbook-bg-sm.jpg)}}
+.credit a{text-decoration:underline}

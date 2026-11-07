@@ -1,0 +1,39 @@
+# Release candidate check: the real build and audits with real secrets. It never uploads or deploys anything.
+name: Release candidate check
+on:
+  push:
+    branches: ['a-plus-*']
+permissions:
+  contents: read
+jobs:
+  rc:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Restore profile cache
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache
+          key: profiles-rc-${{ github.run_id }}
+          restore-keys: profiles-
+      - run: pip install --quiet cryptography
+      - name: Build
+        run: python build.py
+        env:
+          HWD_MASK_KEY: ${{ secrets.HWD_MASK_KEY }}
+          HWD_PRO_KEY: ${{ secrets.HWD_PRO_KEY }}
+          HWD_EXPORT_TOKEN: ${{ secrets.HWD_EXPORT_TOKEN }}
+          HWD_MAX_FETCH: '0'
+          HWD_MAX_FETCH_CHANGED: '0'
+      - name: Integrity and privacy audit
+        run: python tools/audit_profiles.py --live
+        env:
+          HWD_MASK_KEY: ${{ secrets.HWD_MASK_KEY }}
+      - name: Free and Pro boundary
+        run: python tools/verify_boundary.py _site
+      - name: Size report
+        run: du -sh _site _site/data/p _site/data/x _site/handicappers; ls -la _site/data/*.json

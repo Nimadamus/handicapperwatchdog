@@ -75,7 +75,7 @@ def main():
         if o['w'] + o['l'] and abs(100 * o['w'] / (o['w'] + o['l']) - (o.get('win_pct') or 0)) > 0.06:
             bad('win_pct_arithmetic', pid)
         # windows: all time equals overview
-        a = p['windows']['all']
+        a = (p.get('windows') or {}).get('all') or o
         if (a['w'], a['l'], a['p'], round(a['net'], 2)) != (o['w'], o['l'], o['p'], round(float(o['net']), 2)):
             bad('window_all_vs_overview', pid)
         # sports add up

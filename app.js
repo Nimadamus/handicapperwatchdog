@@ -33,9 +33,9 @@
 
   // buyer tools: every figure computed from the published index, nothing typed in
   function buyerTools(all, est, M) {
-    var act = all.filter(function (r) { return r.r30 && r.r30.picks >= 20 && r.r30.net != null; });
+    var act = M.nets || [];
     var med = function (a) { var s = a.slice().sort(function (x, y) { return x - y; }); return s.length ? s[Math.floor(s.length / 2)] : null; };
-    var nets = act.map(function (r) { return r.r30.net; }), mid = med(nets), price = 100, unit = 50, out = $('calcOut');
+    var nets = act, mid = med(nets), price = 100, unit = 50, out = $('calcOut');
     function calc() {
       if (!out || !act.length) return;
       var need = price / unit, n = nets.filter(function (v) { return v >= need; }).length, p = Math.round(100 * n / act.length);
@@ -67,6 +67,10 @@
   function sampleProfile(r) {
     var box = $('sdash');
     if (!box || !r) return;
+    if ('IntersectionObserver' in window && !sampleProfile.go) {
+      var io = new IntersectionObserver(function (en) { if (en[0].isIntersecting) { io.disconnect(); sampleProfile.go = 1; sampleProfile(r); } }, { rootMargin: '700px' });
+      io.observe(box); return;
+    }
     fetch('data/sample.json').then(function (x) { return x.json(); }).then(function (p) {
       r = Object.assign({}, r, p.summary || {});
       var o = p.overview || {}, a = p.advanced || {}, st = p.streaks || {}, z = a.z || {}, be = a.break_even || {}, W = p.windows || {}, c = code(r.id);
@@ -128,11 +132,18 @@
     return best;
   }
 
-  function verifySearch(all) {
-    var input = $('vq'), box = $('vlist'), form = $('vsearch'), services = [], items = [], on = -1;
+  function verifySearch() {
+    var input = $('vq'), box = $('vlist'), form = $('vsearch'), services = [], items = [], on = -1, all = [], sports = [], loaded;
     if (!input) return;
-    fetch('data/services.json').then(function (r) { return r.json(); }).then(function (d) { services = d; }).catch(function () {});
-    var sports = sportsByDepth(all, 5);
+    // the search lists load when a visitor starts searching, never with the page
+    function load() {
+      if (!loaded) loaded = Promise.all([fetch('data/services.json').then(function (r) { return r.json(); }), fetch('data/ids.json').then(function (r) { return r.json(); })]).then(function (x) {
+        services = x[0]; sports = x[1].sports || [];
+        all = (x[1].ids || []).map(function (a) { var p = a[2].split('-'); return { id: a[0], picks: a[1], w: +p[0], l: +p[1], p: +(p[2] || 0), profile: true }; });
+        if (document.activeElement === input && input.value) show();
+      }).catch(function () { loaded = null; });
+      return loaded;
+    }
     function find(q) {
       var s = q.trim().toLowerCase().replace(/^#/, ''), out = [];
       if (!s) return out;
@@ -153,8 +164,8 @@
         '<li class="vnone-li"><span class="vnone">No match. Tracked accounts are listed by Watchdog ID, not by name, so a person or handle will not appear here. Try a <a href="reviews/index.html">named service review</a> or the <a href="cappers.html">rankings</a>.</span></li>';
       box.hidden = false; input.setAttribute('aria-expanded', 'true');
     }
-    input.addEventListener('input', show);
-    input.addEventListener('focus', show);
+    input.addEventListener('input', function () { load(); show(); });
+    input.addEventListener('focus', function () { load(); show(); });
     input.addEventListener('keydown', function (e) {
       if (e.key === 'Escape') { box.hidden = true; input.setAttribute('aria-expanded', 'false'); return; }
       if (e.key !== 'ArrowDown' && e.key !== 'ArrowUp' || !items.length) return;
@@ -164,10 +175,11 @@
     });
     document.addEventListener('click', function (e) { if (!form.contains(e.target)) box.hidden = true; });
     form.addEventListener('submit', function (e) {
-      var hit = items[on >= 0 ? on : 0];
       e.preventDefault();
-      items = find(input.value); hit = items[on >= 0 ? on : 0];
-      if (hit) location.href = hit.href; else if (input.value.trim()) show(); else input.focus();
+      (load() || Promise.resolve()).then(function () {
+        items = find(input.value); var hit = items[on >= 0 ? on : 0];
+        if (hit) location.href = hit.href; else if (input.value.trim()) show(); else input.focus();
+      });
     });
     var cv = $('closeVerify');
     if (cv) cv.addEventListener('click', function (e) { e.preventDefault(); scrollTo({ top: 0, behavior: 'smooth' }); input.focus({ preventScroll: true }); });
@@ -201,7 +213,7 @@
     if (tr && !e.target.closest('a')) location.href = tr.getAttribute('data-href');
   });
 
-  fetch('data/index.json?v=' + Math.floor(Date.now() / 6e4)).then(function (r) { return r.json(); }).then(function (d) {
+  fetch('data/' + (page === 'home' ? 'home' : 'index') + '.json?v=' + Math.floor(Date.now() / 6e4)).then(function (r) { return r.json(); }).then(function (d) {
     if (page === 'home') home(d); else if (page === 'rank') rankings(d);
   }).catch(function () {
     var t = $('boardRows') || $('rows'); if (t) t.innerHTML = '<tr><td colspan="11" class="empty">Records are refreshing. Try again in a minute.</td></tr>';
@@ -222,7 +234,8 @@
   // ---------------- home ----------------
   function home(d) {
     var M = d.meta, all = d.cappers, L = M.live, built = new Date(M.built_at);
-    verifySearch(all);
+    M.nets = d.nets;
+    verifySearch();
     var set = function (id, html) { var el = $(id); if (el) el.innerHTML = html; };
     // tracker panel: every figure read from the Watchdog stats endpoint at build time
     if (L) {
@@ -236,7 +249,7 @@
       var pt = function (s) { return new Date(s).toLocaleString('en-US', { timeZone: 'America/Los_Angeles', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) + ' PT'; };
       $('liveAt').textContent = 'Read from the Watchdog database. Tracking since is the first graded pick on the record. Last pick captured ' + pt(L.last_capture_at) + '.';
       var estAll = all.filter(function (r) { return r.picks >= 100 && r.units != null; });
-      var firsts = all.map(function (r) { return r.first_pick; }).filter(Boolean).sort();
+      var firsts = [M.first_pick].filter(Boolean);
       var sinceTxt = firsts[0] ? new Date(firsts[0] + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }) : '';
       if (sinceTxt) document.querySelectorAll('.tsince').forEach(function (el) { el.textContent = sinceTxt; });
       var tk = all.filter(function (r) { return r.picks >= 100 && r.units != null; }).sort(function (a, b) { return b.picks - a.picks; }).slice(0, 26).map(function (r) {
@@ -387,7 +400,6 @@
       ['active', 'Most active', 'r30', function (r) { return r.r30 && r.r30.picks > 0; }, 'picks', 'Most active: most graded picks in the last 30 days.']];
     var state = { tab: 0, sport: '' };
     $('boardTabs').innerHTML = TABS.map(function (t, i) { return '<button class="tab' + (i ? '' : ' on') + '" data-i="' + i + '">' + t[1] + '</button>'; }).join('');
-    sportsByDepth(all, 10).forEach(function (s) { $('boardSport').insertAdjacentHTML('beforeend', '<option>' + esc(s) + '</option>'); });
     $('boardTabs').addEventListener('click', function (e) { var b = e.target.closest('.tab'); if (!b) return; state.tab = +b.getAttribute('data-i'); state.sport = ''; $('boardSport').value = ''; draw(); });
     $('boardSport').addEventListener('change', function () { state.sport = this.value; draw(); });
     $('boardHead').innerHTML = '<tr><th class="l">#</th><th class="l">Watchdog ID</th><th class="hm l">Trend</th><th class="hm"><span class="tip2" tabindex="0" data-tip="Graded picks in this view">Picks</span></th><th><span class="tip2" tabindex="0" data-tip="Wins, losses, pushes">Record</span></th><th class="hm"><span class="tip2" tabindex="0" data-tip="Wins divided by wins plus losses">Win %</span></th><th><span class="tip2" tabindex="0" data-tip="Profit risking 1 unit per pick">Units</span></th><th class="hm"><span class="tip2" tabindex="0" data-tip="Units won per unit risked">ROI</span></th><th class="hm"><span class="tip2" tabindex="0" data-tip="Current run of wins or losses">Streak</span></th><th class="hm">Last pick</th></tr>';
