@@ -36,7 +36,7 @@ KEY = (os.environ.get('HWD_MASK_KEY') or secrets.token_hex(16)).encode()
 HERE = os.path.dirname(os.path.abspath(__file__))
 CACHE = os.path.join(HERE, '.cache', 'profiles')
 SITE = os.path.join(HERE, '_site')
-STATIC = ('index.html', 'capper.html', 'cappers.html', 'account.html', 'compare.html', 'picks.html', 'style.css', 'app.js', 'capper.js',
+STATIC = ('index.html', 'home.css', 'capper.html', 'cappers.html', 'account.html', 'compare.html', 'picks.html', 'style.css', 'app.js', 'capper.js',
           'pro.js', 'track.js', 'compare.js', 'pricing.js', 'account.js', 'picks.js', 'contact.js', 'favicon.svg', 'stadium.svg', 'og-card.png', 'CNAME', 'robots.txt', 'sitemap.xml')
 PROFILE_TTL = int(os.environ.get('HWD_PROFILE_TTL', str(6 * 3600)))
 MAX_FETCH = int(os.environ.get('HWD_MAX_FETCH', '400'))
@@ -1975,6 +1975,8 @@ def _write_editorial(site):
 <li>A price is included only when a page opened on the check date showed it. A reseller price is labeled as one.</li>
 <li>There is no independent sample of buyers, so this page stays Not rated.</li></ul></section>'''
 
+    with open(os.path.join(site, 'data', 'services.json'), 'w', encoding='utf-8') as f:
+        json.dump([{'name': r['name'], 'url': 'reviews/%s.html' % r['slug']} for r in reviews['reviews']], f, separators=(',', ':'))
     cards = []
     written = []
     for rev in reviews['reviews']:
@@ -2749,7 +2751,7 @@ def _write_profile_pages(site, index):
 
 
 SEO_TITLES = {
-    'index.html': 'Handicapper Watchdog | Independent Handicapper Records',
+    'index.html': 'Verify a Handicapper Before You Pay for Picks | Watchdog',
     'learn/index.html': 'Sports Betting Guides: Judging Handicappers | Watchdog',
     'learn/closing-line-value.html': 'Closing Line Value (CLV): The Best Test of a Bettor',
     'learn/verified-handicapper-records.html': 'What a Verified Handicapper Record Should Really Mean',
@@ -2761,7 +2763,7 @@ SEO_TITLES = {
     'reviews/index.html': 'Handicapper Reviews and Customer Reports | Watchdog',
 }
 SEO_DESCRIPTIONS = {
-    'index.html': "Handicapper Watchdog tracks public sports picks from X, Reddit, Covers and forums, grades every result and publishes each account's real record. Free to read.",
+    'index.html': 'Before you pay for picks, verify the record. Handicapper Watchdog captures public picks before games start, grades them and keeps the full history.',
     'cappers.html': 'Handicapper rankings by units won, ROI, win rate and recent form. Every account is an anonymous Watchdog ID. Filter by sport, timeframe and sample size.',
     'pricing.html': 'Watchdog Pro is $49.99 a month or $499 a year: eligible pending picks before the start, full graded pick logs and research tools. Accounts stay anonymous.',
     'learn/index.html': 'Plain guides to judging a sports handicapper: break even win rates, units and ROI, sample size, closing line value, verified records and scam red flags.',

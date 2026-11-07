@@ -24,6 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,680&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="home.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SC607ZYK1F"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-SC607ZYK1F');</script>
 </head>
@@ -32,130 +33,152 @@
   <a class="brand" href="./"><img src="favicon.svg" alt="" width="24" height="24"><span>Handicapper <b>Watchdog</b></span></a>
   <input id="navtoggle" class="navtoggle" type="checkbox">
   <label class="navbtn" for="navtoggle">Menu</label>
-  <nav class="navlinks" id="sitenav"><a href="#how">How it works</a><a href="cappers.html">Rankings</a><a href="reviews/index.html">Reviews</a><a href="sportsbooks/">Sportsbooks</a><a href="research/">Research</a><a href="pricing.html">Pricing</a></nav>
+  <nav class="navlinks" id="sitenav"><a href="#verify">Verify</a><a href="cappers.html">Rankings</a><a href="reviews/index.html">Reviews</a><a href="sportsbooks/">Sportsbooks</a><a href="learn/">Guides</a><a href="research/">Research</a><a href="pricing.html">Pricing</a></nav>
   <form class="navsearch" action="cappers.html" role="search"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input name="q" placeholder="Search Watchdog ID or sport" aria-label="Search handicappers"></form>
   <a class="btn sm pro" href="#pro">Watchdog Pro</a>
 </div></header>
-<main class="wrap">
+<main id="main">
 
-  <!-- 1. Hero: what this is, in one read -->
-  <section class="intro hero2">
-    <div class="night" aria-hidden="true"></div>
-    <div>
-      <div class="eyebrow">Independent handicapper tracking</div>
-      <h1>The independent scorekeeper for <em>sports handicappers.</em></h1>
-      <p class="sub">Thousands of sports handicappers post predictions on X, Reddit, Covers, forums and other platforms. But who actually wins? Handicapper Watchdog independently discovers, captures, tracks and grades their published picks against real sporting results.</p>
-      <p class="sub2">No cherry picked winning tickets. No self reported records. No inflated claims. Just independently graded performance, transparent statistics, and what you need to evaluate a handicapper before trusting a prediction.</p>
-      <div class="ctarow">
-        <a class="btn lg" href="#rankings">Explore Verified Rankings</a>
-        <a class="btn lg pro" href="picks.html">Unlock Today&rsquo;s Picks</a>
+  <section class="band hero" aria-labelledby="heroH">
+    <div class="in herogrid">
+      <div class="herotext">
+        <div class="eyebrow">Independent accountability for sports picks</div>
+        <h1 id="heroH">Before You Pay for Picks, Verify the Record.</h1>
+        <p class="herosub">Anyone can claim to be a winning handicapper. We track what they actually predict.</p>
+        <p class="herocopy">Don&rsquo;t trust screenshots, advertised winning percentages, or selectively posted results. Handicapper Watchdog independently captures publicly posted predictions before games begin, grades them against actual results, and maintains detailed performance histories so you can make informed decisions before spending your money.</p>
+        <form class="vsearch" id="vsearch" action="cappers.html" role="search" autocomplete="off">
+          <label for="vq">Search a picks service, a Watchdog ID or a sport</label>
+          <div class="vrow">
+            <div class="vfield"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+              <input id="vq" name="q" type="search" placeholder="WagerTalk, #359F3B, NFL" role="combobox" aria-expanded="false" aria-controls="vlist" aria-autocomplete="list"></div>
+            <button class="btn pro vgo" type="submit">Verify a Handicapper</button>
+          </div>
+          <ul class="vlist" id="vlist" role="listbox" hidden></ul>
+        </form>
+        <div class="herocta"><a class="herolink" href="cappers.html">Explore Verified Rankings <span aria-hidden="true">&rarr;</span></a><span class="heronote">Free to read. No account needed.</span></div>
+        <p class="muted small ctanote" data-cta-note hidden></p>
       </div>
-      <p class="muted small ctanote" data-cta-note hidden></p>
-      <div class="offerline"><div><b>Free</b><span>Rankings, research and every profile breakdown</span></div><div><b>Watchdog Pro</b><span>Pending picks before the start, complete graded logs, pick alerts. $49.99 a month or $499 a year.</span></div><a href="pricing.html">Compare plans</a></div>
-      <div class="introfoot"><span>Captured before the game starts</span><span>Graded on the final score</span><span>No self reported records</span></div>
+      <aside class="vcard" id="heroCard" aria-label="A real graded record from the board"><div class="skel"></div></aside>
     </div>
-    <div class="panel live" id="live">
-      <div class="ph"><p class="phtitle"><span class="dot"></span>The tracker right now</p><span class="muted small" id="liveAt"></span></div>
-      <div class="kvgrid" id="liveGrid"><!--seo:live--><div class="kv"><div class="skel"></div></div><div class="kv"><div class="skel"></div></div><div class="kv"><div class="skel"></div></div><div class="kv"><div class="skel"></div></div><!--/seo:live--></div>
-      <div class="mix" id="liveMix" hidden></div>
-      <div class="pf"><span>Read from the Watchdog database at the last site update</span></div>
+    <div class="in"><dl class="proof" id="heroProof"></dl></div>
+  </section>
+
+  <section class="band trust" id="trust" aria-labelledby="trustH">
+    <div class="in">
+      <div class="sechead"><div class="eyebrow">Why this exists</div><h2 id="trustH">Their Claims. Our Records. You Decide.</h2>
+        <p>Paid picks are sold on claims that buyers cannot easily check. Independent tracking gives you a better basis for judging any service before you pay.</p></div>
+      <div class="ledger"><div class="tr"><div class="trc"><span class="trk">The claim</span><p class="trq">&ldquo;Look at this winning ticket.&rdquo;</p><p>Winning screenshots do not tell the whole story.</p></div><div class="trr"><span class="trk">The record</span><p>One ticket shows one bet. A record shows every eligible pick we captured from that account.</p></div></div><div class="tr"><div class="trc"><span class="trk">The claim</span><p class="trq">&ldquo;We hit again last night.&rdquo;</p><p>Losing picks can disappear from promotional material.</p></div><div class="trr"><span class="trk">The record</span><p>We save a pick when we capture it. Deleting the post later does not remove it from the record.</p></div></div><div class="tr"><div class="trc"><span class="trk">The claim</span><p class="trq">&ldquo;Check my record.&rdquo;</p><p>Self reported records are not independent verification.</p></div><div class="trr"><span class="trk">The record</span><p>Results are graded by us from final scores, never from the seller&rsquo;s own recap.</p></div></div><div class="tr"><div class="trc"><span class="trk">The claim</span><p class="trq">&ldquo;Ten straight winners.&rdquo;</p><p>Long term profitability matters more than a winning streak.</p></div><div class="trr"><span class="trk">The record</span><p>Units and ROI across the whole sample sit beside every streak.</p></div></div><div class="tr"><div class="trc"><span class="trk">The claim</span><p class="trq">&ldquo;70% winners this month.&rdquo;</p><p>A genuine performance history includes losses, not just wins.</p></div><div class="trr"><span class="trk">The record</span><p>Lifetime, 90, 30 and 7 day windows appear side by side, with pick counts.</p></div></div></div>
+      <p class="fine">Example claims show common marketing patterns. They are not quotes from any one seller. Named services are covered only in <a href="reviews/index.html">our reviews</a>, with sources.</p>
     </div>
   </section>
 
-  <!-- 1b. What this site is, in plain words -->
-  <section class="whatis" id="what" aria-labelledby="whatH">
-    <div class="wi-lead">
-      <div class="eyebrow">What is this site?</div>
-      <h2 id="whatH">A public scoreboard for people who sell or post sports picks.</h2>
-      <p>Anyone can call themselves a winning handicapper online. Handicapper Watchdog checks. We watch public accounts, save each pick before the game starts, grade it on the final score, and publish the full record, losses included. Every tracked account has its own profile page, free to read.</p>
-    </div>
-    <div class="wi-cols">
-      <div class="wi-col yes"><b>What we are</b><ul><li>An independent tracker of public picks</li><li>Free rankings and a profile for every account</li><li>Named reviews of pick services, with what customers say</li><li>Guides on spotting a real record</li></ul></div>
-      <div class="wi-col no"><b>What we are not</b><ul><li>Not a sportsbook. You cannot place a bet here.</li><li>Not a handicapper. We make no picks of our own.</li><li>Not paid by the accounts we grade. Rank cannot be bought.</li><li>Not a promise. Past results do not predict the next pick.</li></ul></div>
-    </div>
-    <div class="wi-do" aria-label="Where to start">
-      <a href="cappers.html"><b>Check a record</b><span>Search rankings and open any profile</span></a>
-      <a href="reviews/index.html"><b>Look up a service</b><span>Read reviews of named pick sellers</span></a>
-      <a href="learn/what-bettors-say-about-handicappers.html"><b>Hear from bettors</b><span>What 165 customer reviews say</span></a>
-      <a href="how-we-grade.html"><b>See how we grade</b><span>The rules behind every record</span></a>
+  <section class="band verify" id="verify" aria-labelledby="verifyH">
+    <div class="in">
+      <div class="sechead row"><div><div class="eyebrow">What we actually verify</div><h2 id="verifyH">A full performance file, not a headline number.</h2>
+        <p>This is real data from one account on today&rsquo;s board, the established record with the most units won that has a full breakdown. <span id="exSub"></span></p></div><a class="btn ghost" id="exploreLink" href="cappers.html">Open this profile</a></div>
+      <div class="bento">
+        <div class="tile t-chart"><h3>Historical performance</h3><p class="tk">Cumulative units, 1 unit per pick</p><div id="exChart"><div class="skel"></div></div></div>
+        <div class="tile t-win"><h3>Verified wins and losses</h3><p class="tk">Win percentage, units and ROI</p><div id="exHead"><div class="skel"></div></div></div>
+        <div class="tile t-per"><h3>Recent performance</h3><p class="tk">By time window</p><div id="exPeriods"><div class="skel"></div></div></div>
+        <div class="tile t-sport"><h3>Sport by sport records</h3><p class="tk">Units won or lost</p><div id="exSports"><div class="skel"></div></div></div>
+        <div class="tile t-dots"><h3>Streaks</h3><p class="tk">Last 20 results, newest first</p><div id="exDots"><div class="skel"></div></div></div>
+        <div class="tile t-led"><h3>Graded pick history</h3><p class="tk">Past picks only, from the ledger</p><div id="exLedger"><div class="skel"></div></div></div>
+      </div>
     </div>
   </section>
 
-  <!-- 2. Three steps -->
-  <section class="tensec three" aria-label="How Handicapper Watchdog works in three steps">
-    <div class="ts"><span class="tsn">1 &middot; We discover</span><b>We find handicappers where they post.</b><p>Our monitoring system finds accounts that post picks in public on X, Reddit, Covers, TheRX, Sportsbook Review and Predictem, then keeps watching them.</p></div>
-    <div class="ts"><span class="tsn">2 &middot; We verify</span><b>Every captured pick is graded by us.</b><p>Picks are saved with their post time, must be posted before the start, and are graded against the final score. Nobody sends us their own numbers.</p></div>
-    <div class="ts"><span class="tsn">3 &middot; You evaluate</span><b>Open the full record before you follow anyone.</b><p>Rankings, sport by sport splits, trends, charts and a pick ledger for every tracked account, under a permanent anonymous ID. <a href="cappers.html">Search the rankings</a></p></div>
-  </section>
-
-  <!-- 3. How it works -->
-  <section class="hsec" id="how">
-    <div class="hhead"><div class="eyebrow">How it works</div><h2>From a public post to a graded record</h2>
-      <p class="lead">Watchdog does the bookkeeping a handicapper&rsquo;s own promotion leaves out. Six steps, the same for every account.</p></div>
-    <ol class="steps">
-      <li><span class="sn">1</span><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="14" cy="14" r="8"/><path d="m20 20 7 7"/></svg><b>Discover</b><p>We find accounts that post picks in public on X, Reddit, Covers, TheRX, Sportsbook Review and Predictem. <span class="dim" id="stepDiscover">Thousands of accounts have been found so far.</span></p></li>
-      <li><span class="sn">2</span><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="5" y="7" width="22" height="18" rx="3"/><path d="M5 12h22M10 17h8M10 21h5"/></svg><b>Monitor</b><p>Accounts that post picks are watched. Their posts are read on a regular schedule, so the losing picks are captured along with the winners.</p></li>
-      <li><span class="sn">3</span><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="11"/><path d="M16 9v7l5 3"/></svg><b>Capture before the start</b><p>A pick is saved with the time it was posted. If that time is after the game started, it does not count.</p></li>
-      <li><span class="sn">4</span><svg viewBox="0 0 32 32" aria-hidden="true"><path d="m8 17 5 5 11-12"/></svg><b>Grade independently</b><p>When the game is final, the pick is graded against the final score: win, loss or push. Held, duplicate and unreviewed posts are left out.</p></li>
-      <li><span class="sn">5</span><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 25h20M9 21v-6M15 21V9M21 21v-9"/></svg><b>Calculate the record</b><p>Record, units, ROI, win rate, streaks and form by sport, rebuilt from the graded picks every time the site updates.</p></li>
-      <li><span class="sn">6</span><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="8" y="14" width="16" height="12" rx="2.5"/><path d="M11 14v-3a5 5 0 0 1 10 0v3"/></svg><b>Open the research</b><p>Rankings and profiles are free. Watchdog Pro adds eligible pending picks before the start and the full pick log.</p></li>
-    </ol>
-    <figure class="lifecycle" aria-labelledby="lcCap">
-      <figcaption id="lcCap"><span class="eyebrow">Example</span> How one pick moves through the tracker <span class="dim">(illustration, not a real pick)</span></figcaption>
-      <div class="lc">
+  <section class="band tracker" id="tracker" aria-labelledby="trackerH">
+    <div class="in">
+      <div class="sechead row"><div><div class="eyebrow">The tracker, live</div><h2 id="trackerH">Why the numbers matter.</h2>
+        <p>Scale is what makes a record hard to fake. Each figure below is read from the Watchdog database at the last site update.</p></div><p class="stamp" id="liveAt"></p></div>
+      <div class="trgrid">
+        <div class="kvgrid trk6" id="liveGrid"><!--seo:live--><div class="kv"><div class="skel"></div></div><div class="kv"><div class="skel"></div></div><div class="kv"><div class="skel"></div></div><div class="kv"><div class="skel"></div></div><!--/seo:live--></div>
+        <div class="trmix"><h3>Graded picks by source</h3><div class="mix" id="liveMix" hidden></div></div>
+      </div>
+      <div class="pickflow" id="how"><h3>How one pick becomes part of a record <span class="dim">(illustration, not a real pick)</span></h3>
+        <div class="lc">
         <div class="lcs"><time>Sat 9:14 AM</time><b>Posted in public</b><span>&ldquo;Home side minus 3.5, minus 110&rdquo;</span></div>
         <div class="lcs"><time>Sat 9:20 AM</time><b>Captured</b><span>Post time saved. Pick is pending.</span></div>
         <div class="lcs gate"><time>Sat 1:05 PM</time><b>Game starts</b><span>Anything posted after this is not counted.</span></div>
         <div class="lcs"><time>Sat 4:31 PM</time><b>Final score</b><span>Home side wins by 7.</span></div>
         <div class="lcs win"><time>Sat 5:10 PM</time><b>Graded: win</b><span>+0.91 units at minus 110. Added to the record.</span></div>
       </div>
-    </figure>
-  </section>
-
-  <!-- 3b. Featured handicappers -->
-  <section class="hsec" id="featured">
-    <div class="hhead row"><div><div class="eyebrow">Featured from today&rsquo;s board</div><h2>Four records worth a closer look</h2>
-      <p class="lead">Each card is chosen by a fixed rule, shown on the card, from the latest graded data. Past results only: none of this predicts the next pick.</p></div><a class="btn sm ghost" href="cappers.html">All rankings</a></div>
-    <div class="fgrid" id="featGrid"><div class="panel pb"><div class="skel"></div></div><div class="panel pb"><div class="skel"></div></div><div class="panel pb"><div class="skel"></div></div><div class="panel pb"><div class="skel"></div></div></div>
-  </section>
-
-  <!-- 4. Why independent tracking matters -->
-  <section class="hsec" id="why">
-    <div class="hhead"><div class="eyebrow">Why it matters</div><h2>A winning record is easy to advertise</h2>
-      <p class="lead">Many records you see online are kept by the person selling the picks. That is the problem this site exists to fix.</p></div>
-    <div class="pvs">
-      <div class="pv"><b>Cherry picked wins</b><p>Wins get reposted and pinned. Losses scroll away.</p><span class="fix">Every eligible pick we capture from a tracked account is graded, not just the ones shared again.</span></div>
-      <div class="pv"><b>Deleted losers</b><p>A losing post can be deleted after the game.</p><span class="fix">We save the pick when we capture it. Deleting the post later does not remove it from the record.</span></div>
-      <div class="pv"><b>Selective recordkeeping</b><p>A &ldquo;last 30 days&rdquo; window starts right after a cold streak.</p><span class="fix">Lifetime, 30 day and 7 day records sit side by side, with the sample size on each.</span></div>
-      <div class="pv"><b>Picks after the fact</b><p>Some &ldquo;records&rdquo; include picks revealed once the game is underway.</p><span class="fix">A pick only counts if its post time is before the start.</span></div>
-      <div class="pv"><b>Unverified win rates</b><p>&ldquo;68% winners&rdquo; says nothing about price or how many picks.</p><span class="fix">Units and ROI account for the odds. The number of graded picks is always shown.</span></div>
-    </div>
-    <p class="limits"><b>What we do not cover.</b> Watchdog tracks the public accounts it has found on the six sources above. It does not see private groups, paid channels, text messages or sites outside that list, and it cannot read every post on the sites it does cover. A record here covers the picks we captured, not every pick a person has ever made.</p>
-  </section>
-
-  <!-- 4b. What bettors say -->
-  <section class="hsec" id="bettors">
-    <div class="hhead row"><div><div class="eyebrow">In their own words</div><h2>What bettors say about online handicappers</h2>
-      <p class="lead">We read 165 customer reviews of 11 pick sellers and marketplaces. They are anonymous and unverified, so we report what buyers say, not what is proven.</p></div><a class="btn sm ghost" href="learn/what-bettors-say-about-handicappers.html">Read the full report</a></div>
-    <div class="bsay">
-      <div><b>The record went cold after I paid</b><p>The most repeated complaint, especially on marketplaces. People buy after hot streaks, and hot streaks end.</p></div>
-      <div><b>I paid and heard nothing</b><p>Missing picks, unanswered emails and refunds that never arrived show up across the file.</p></div>
-      <div><b>They answered and kept it simple</b><p>Happy buyers praise fast replies, bankroll rules, low prices and fewer picks.</p></div>
-      <div><b>Reviews alone cannot settle it</b><p>One seller has 19 of 45 reviews on two dates. Only a graded record shows who wins.</p></div>
-    </div>
-    <p class="bsaylinks"><span class="muted small">Service pages:</span> <a href="reviews/nobrainerwagers.html">NoBrainerWagers</a> <a href="reviews/the-cashman-wins.html">The Cashman Wins</a> <a href="reviews/wagertalk.html">WagerTalk</a> <a href="reviews/dubclub.html">DubClub</a> <a href="reviews/dimers.html">Dimers</a> <a href="reviews/index.html">All reviews</a></p>
-  </section>
-
-  <!-- 5. Why anonymous -->
-  <section class="hsec anon" id="anonymous">
-    <div class="anongrid">
-      <div>
-        <div class="eyebrow">Why are handicappers anonymous?</div>
-        <h2>The record is public. The identity is not, anywhere.</h2>
-        <p>Handicapper Watchdog tracks public predictions and evaluates their results independently. Each tracked account receives a persistent anonymous Watchdog ID that never changes, so you can follow the same record for months.</p>
-        <p>We protect the commercial value of our research by not revealing the identities behind tracked profiles. If names were published, anyone could buy one month, copy the entire list of accounts worth following, cancel, and keep using it for free.</p>
-        <p>Subscribers get the premium research and tracking, including eligible pending picks, tied to the same Watchdog IDs. <b>Subscribing does not unlock names or links to accounts.</b> No plan includes a directory of real world identities.</p>
       </div>
+      <p class="fine"><b>What we do not cover.</b> Watchdog tracks the public accounts it has found on X, Reddit, Covers, TheRX, Sportsbook Review and Predictem. It does not see private groups, paid channels or text messages, and it cannot read every post. Grading is automated and reviewed, and mistakes are possible. <a href="contact.html">Send a correction</a> or read <a href="how-we-grade.html">how we grade</a>.</p>
+    </div>
+  </section>
+
+  <section class="band five" id="before-you-buy" aria-labelledby="fiveH">
+    <div class="in fivegrid">
+      <div class="fivehead"><div class="eyebrow">Before you buy picks</div><h2 id="fiveH">Five Questions to Ask Before Paying Any Handicapper</h2>
+        <p>Any honest seller should be able to answer all five. Bring them to every service you consider.</p>
+        <a class="btn ghost" href="learn/should-you-pay-for-sports-picks.html">Should you pay for picks?</a></div>
+      <ol class="q5s"><li class="q5"><span class="q5n">1</span><div class="q5b"><h3>Who kept this record?</h3><p>If the seller keeps the books, you are reading marketing. A record only means something when someone else wrote it down at the time.</p></div><div class="q5a"><span class="q5k">How Watchdog helps</span><p>Watchdog captures public picks before the start and grades them from final scores.</p><a href="how-we-grade.html">How we grade</a></div></li><li class="q5"><span class="q5n">2</span><div class="q5b"><h3>Can you see all of it?</h3><p>A record that starts last month, or leaves out a sport, is a highlight reel. Ask for the full history, not a good stretch.</p></div><div class="q5a"><span class="q5k">How Watchdog helps</span><p>Lifetime, 90, 30 and 7 day windows sit side by side on every profile.</p><a href="cappers.html">Open the rankings</a></div></li><li class="q5"><span class="q5n">3</span><div class="q5b"><h3>Is it profitable after the odds?</h3><p>Win rate is not profit. At minus 110 a bettor needs about 52.4% just to break even, so ask for units and ROI.</p></div><div class="q5a"><span class="q5k">How Watchdog helps</span><p>Every record shows units won or lost and return on investment.</p><a href="learn/break-even-win-rate.html">Break even math</a></div></li><li class="q5"><span class="q5n">4</span><div class="q5b"><h3>Is the sample big enough?</h3><p>Thirty picks can be luck in either direction. A hot month says little until there are hundreds of graded picks behind it.</p></div><div class="q5a"><span class="q5k">How Watchdog helps</span><p>Every record carries a sample size label: small, developing or established.</p><a href="learn/sample-size.html">Why sample size matters</a></div></li><li class="q5"><span class="q5n">5</span><div class="q5b"><h3>Where are the losses?</h3><p>Every real bettor loses often. If you can only find winning tickets, you are not seeing the record.</p></div><div class="q5a"><span class="q5k">How Watchdog helps</span><p>Graded pick ledgers show the losses with the wins.</p><a href="learn/scam-handicapper-red-flags.html">Scam red flags</a></div></li></ol>
+    </div>
+  </section>
+
+  <section class="band ranks" id="rankings" aria-labelledby="ranksH">
+    <div class="in">
+      <div class="sechead row"><div><div class="eyebrow">Rankings</div><h2 id="ranksH">Who is winning on the record.</h2>
+        <p>Each list has its own rule, shown under the table. Accounts appear under permanent anonymous Watchdog IDs. Open any row for the full profile.</p></div><a class="btn ghost" href="cappers.html">Full rankings and filters</a></div>
+      <section class="panel" id="board">
+      <div class="ph"><div class="tabs" id="boardTabs"></div>
+        <select id="boardSport" aria-label="Sport" style="width:auto;min-width:130px"><option value="">All sports</option></select></div>
+      <div class="tw"><table><thead id="boardHead"><tr><th class="l">#</th><th class="l">Watchdog ID</th><th class="hm l">Trend</th><th class="hm">Picks</th><th>Record</th><th class="hm">Win %</th><th>Units</th><th class="hm">ROI</th><th class="hm">Streak</th><th class="hm">Last pick</th></tr></thead><tbody id="boardRows"><!--seo:board--><tr><td colspan="10"><div class="skel"></div></td></tr><!--/seo:board--></tbody></table></div>
+      <div class="tfoot"><span id="boardNote">Established records, 100 or more graded picks, ranked by units won.</span><a class="btn sm ghost" href="cappers.html">Full rankings</a></div>
+    </section>
+      <div class="rkgrid" id="sports">
+        <div><h3 class="subh">Top performers by sport</h3><div class="sportgrid" id="sportGrid"><!--seo:sports--><!--/seo:sports--></div></div>
+        <div class="reality"><h3 class="subh">The reality check</h3><div id="reality"><!--seo:reality--><!--/seo:reality--></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band voices2" id="bettors" aria-labelledby="bettorsH">
+    <div class="in">
+      <div class="sechead row"><div><div class="eyebrow">In their own words</div><h2 id="bettorsH">What bettors say about online handicappers.</h2>
+        <p>We read 165 customer reviews of 11 pick sellers and marketplaces. They are anonymous and unverified, so we report what buyers say, not what is proven.</p></div><a class="btn ghost" href="learn/what-bettors-say-about-handicappers.html">Read the full report</a></div>
+      <div class="bsay">
+        <div><b>The record went cold after I paid</b><p>The most repeated complaint, especially on marketplaces. People buy after hot streaks, and hot streaks end.</p></div>
+        <div><b>I paid and heard nothing</b><p>Missing picks, unanswered emails and refunds that never arrived show up across the file.</p></div>
+        <div><b>They answered and kept it simple</b><p>Happy buyers praise fast replies, bankroll rules, low prices and fewer picks.</p></div>
+        <div><b>Reviews alone cannot settle it</b><p>One seller has 19 of 45 reviews on two dates. Only a graded record shows who wins.</p></div>
+      </div>
+      <p class="bsaylinks"><span class="muted small">Service pages:</span> <a href="reviews/nobrainerwagers.html">NoBrainerWagers</a> <a href="reviews/the-cashman-wins.html">The Cashman Wins</a> <a href="reviews/wagertalk.html">WagerTalk</a> <a href="reviews/dubclub.html">DubClub</a> <a href="reviews/dimers.html">Dimers</a> <a href="reviews/index.html">All reviews</a></p>
+    </div>
+  </section>
+
+  <section class="band pro2" id="pro" aria-labelledby="proH">
+    <div class="in progrid">
+      <div class="protext">
+        <span class="lock">Watchdog Pro</span>
+        <h2 id="proH">The research is free. The edge in time is Pro.</h2>
+        <p>Free records tell you who has been right. Watchdog Pro shows what those same tracked accounts are posting on games that have not started yet, with each account&rsquo;s graded record beside the pick.</p>
+        <ul class="proval">
+          <li><b>Eligible pending picks before the start</b><span>Captured from tracked public accounts while the game is still open.</span></li>
+          <li><b>The complete graded pick log</b><span>Every graded pick on every profile, beyond the free 50.</span></li>
+          <li><b>Follows and email alerts</b><span>Follow an ID and get an email when it posts a pick.</span></li>
+          <li><b>Advanced filters and comparison</b><span>Filter by sport and record. Compare up to four records side by side.</span></li>
+        </ul>
+        <div class="price"><div><b>$49.99</b><span>a month</span></div><div><b>$499</b><span>a year, about $41.58 a month</span></div></div>
+        <div class="procta"><a class="btn pro lg" href="pricing.html">View Watchdog Pro</a><a class="herolink" href="cappers.html">Keep using the free records</a></div>
+        <p class="fine">Secure checkout by Stripe. Cancel any time from your account page. No plan includes handicapper names or account links. <span id="featPending"><!--seo:pending-->Tracked picks waiting on a result are never counted in a record.<!--/seo:pending--></span></p>
+      </div>
+      <div class="mock" aria-label="Preview of the Watchdog Pro pending picks screen">
+        <div class="mockbar"><span class="lock">Watchdog Pro</span><b>Pending picks</b><span class="mocktag">Preview</span></div>
+        <div class="mockf" id="mockF" role="group" aria-label="Sport filter (preview)"><button class="chip on" data-s="">All</button><button class="chip" data-s="NFL">NFL</button><button class="chip" data-s="NCAAF">NCAAF</button><button class="chip" data-s="NBA">NBA</button><button class="chip" data-s="NHL">NHL</button></div>
+        <div class="tw"><table class="mini mockt"><thead><tr><th class="l">Watchdog ID</th><th class="l">Record</th><th class="l">Game</th><th class="l">Pick</th><th class="hp">Starts</th></tr></thead><tbody id="mockRows"></tbody></table></div>
+        <p class="mockfoot">Handicapper records in this preview are real rows from today&rsquo;s board. Games and picks are placeholders. Real pending picks are shown only inside Watchdog Pro.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band anon2" id="anonymous" aria-labelledby="anonH">
+    <div class="in anongrid2">
+      <div><div class="eyebrow">Why tracked accounts are anonymous</div>
+        <h2 id="anonH">The record is public. The identity is not.</h2>
+        <p>Each tracked account gets a permanent Watchdog ID, so you can follow the same record for months. Names and account links are not published on the free site or in any plan, which protects the research behind the records.</p>
+        <p>Commercial pick services that sell to the public are a different case. <a href="reviews/index.html">Our named reviews</a> cover what they advertise, what customers say, and what we could and could not check.</p></div>
       <div class="idcard" aria-label="Example of an anonymous Watchdog profile" id="idCard">
         <div class="idtop"><span class="av big">WD</span><div><span class="eyebrow">Watchdog ID</span><b class="idc" id="idCode">#000000</b></div><span class="badge est">Established</span></div>
         <dl class="iddl">
@@ -172,136 +195,10 @@
     </div>
   </section>
 
-  <!-- 6. Real performance examples -->
-  <section class="hsec" id="examples">
-    <div class="hhead"><div class="eyebrow">Real records</div><h2>What a graded record looks like</h2>
-      <p class="lead">Two records from today&rsquo;s board, chosen by rule: the established record with the most graded picks, and the established record with the most units lost. Both are real and both keep changing.</p></div>
-    <div class="exgrid" id="exGrid"><div class="panel pb"><div class="skel"></div></div><div class="panel pb"><div class="skel"></div></div></div>
-    <div class="gloss" id="gloss">
-      <div><b>Units</b><p>Profit counted as if 1 unit were risked on every pick at the posted odds. <span id="gUnits">+5 units means 5 times the standard stake was won overall.</span></p></div>
-      <div><b>ROI</b><p>Units won divided by units risked. <span id="gRoi">+5% means 5 cents of profit for every dollar risked.</span> It lets small and large samples be compared fairly.</p></div>
-      <div><b>Win rate</b><p>Wins divided by wins plus losses. At typical odds of minus 110 a bettor needs about 52.4% just to break even, so a high win rate alone proves little.</p></div>
-      <div><b>Streak</b><p>The current run of straight wins (W) or losses (L). Streaks are fun to watch and mean very little on their own.</p></div>
-      <div><b>Sample size</b><p><span class="badge sm">Small sample</span> under 20 graded picks, <span class="badge dev">Developing</span> 20 to 99, <span class="badge est">Established</span> 100 or more. Small samples swing on luck.</p></div>
-    </div>
-  </section>
-
-  <!-- 6b. Explore the data -->
-  <section class="hsec" id="explore">
-    <div class="hhead row"><div><div class="eyebrow">Explore the data</div><h2>Every tracked account has a full research profile</h2>
-      <p class="lead">Free for every handicapper on the board: performance by period, sport by sport splits, bet types, odds ranges, home and away, streaks, drawdowns, charts and a filterable ledger of recent graded picks.</p></div><a class="btn sm ghost" id="exploreLink" href="cappers.html">Open this profile</a></div>
-    <div class="explore" id="exploreGrid">
-      <div class="panel"><div class="ph"><h3 id="exTitle">Cumulative units</h3><span class="muted small" id="exSub"></span></div><div class="pb" id="exChart"><div class="skel"></div></div></div>
-      <div class="stack">
-        <div class="panel"><div class="ph"><h3>Performance by period</h3></div><div id="exPeriods"><div class="pb"><div class="skel"></div></div></div></div>
-        <div class="panel"><div class="ph"><h3>Recent graded picks</h3><span class="muted small">From the ledger</span></div><div id="exLedger"><div class="pb"><div class="skel"></div></div></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 7. Rankings -->
-  <section class="hsec" id="rankings">
-    <div class="hhead row"><div><div class="eyebrow">Rankings</div><h2>Who is winning on the record</h2>
-      <p class="lead">Pick a list. Each one has its own rule for who qualifies, shown under the table. Click any row to open the full profile.</p></div><a class="btn sm ghost" href="cappers.html">Full rankings and filters</a></div>
-    <div class="cats" id="cats">
-      <div><b>Established</b><span>100+ graded picks, ranked by units won. The most reliable list.</span></div>
-      <div><b>Last 30 / 7 days</b><span>Units won in the window, with a minimum of 10 or 5 picks in it.</span></div>
-      <div><b>Best ROI</b><span>Return per unit risked, 50+ graded picks.</span></div>
-      <div><b>Emerging</b><span>First graded pick in the last 21 days, 10+ picks, up so far. Early signals only.</span></div>
-      <div><b>Most active</b><span>Most graded picks in the last 30 days.</span></div>
-    </div>
-    <section class="panel" id="board">
-      <div class="ph"><div class="tabs" id="boardTabs"></div>
-        <select id="boardSport" aria-label="Sport" style="width:auto;min-width:130px"><option value="">All sports</option></select></div>
-      <div class="tw"><table><thead id="boardHead"><tr><th class="l">#</th><th class="l">Watchdog ID</th><th class="hm l">Trend</th><th class="hm">Picks</th><th>Record</th><th class="hm">Win %</th><th>Units</th><th class="hm">ROI</th><th class="hm">Streak</th><th class="hm">Last pick</th></tr></thead><tbody id="boardRows"><!--seo:board--><tr><td colspan="10"><div class="skel"></div></td></tr><!--/seo:board--></tbody></table></div>
-      <div class="tfoot"><span id="boardNote">Established records, 100 or more graded picks, ranked by units won.</span><a class="btn sm ghost" href="cappers.html">Full rankings</a></div>
-    </section>
-  </section>
-
-  <section class="guides" id="research">
-    <a class="panel pb guide" href="research/today.html"><div class="eyebrow">Updated through the day</div><b>Today on the board</b><p>Ranking moves, newly graded picks, streaks with the odds of luck, and league notes.</p></a>
-    <a class="panel pb guide" href="research/do-hot-handicappers-stay-hot.html"><div class="eyebrow">Research</div><b>Do hot handicappers stay hot?</b><p>Every established record split in half. How much a strong start tells you about what comes next.</p></a>
-    <a class="panel pb guide" href="research/roi-and-sample-size.html"><div class="eyebrow">Research</div><b>What ROI means after 30 picks</b><p>How far a record can swing on luck alone, by sample size and by sport.</p></a>
-  </section>
-  <section class="row2" id="sports">
-    <div>
-      <div class="sech"><h2>Top performers by sport</h2><a class="muted small" href="cappers.html">All sports</a></div>
-      <div class="sportgrid" id="sportGrid"><!--seo:sports--><!--/seo:sports--></div>
-    </div>
-    <div class="panel reality">
-      <div class="ph"><h3>The reality check</h3><span class="muted small">All tracked handicappers</span></div>
-      <div class="pb" id="reality"><!--seo:reality--><!--/seo:reality--></div>
-    </div>
-  </section>
-
-  <!-- 8. Pending picks preview -->
-  <section class="hsec" id="pending">
-    <div class="pendgrid">
-      <div>
-        <div class="eyebrow">Watchdog Pro feature</div>
-        <h2>See eligible picks before the games start</h2>
-        <p>Records tell you who has been right. Pending picks show what those same accounts are betting on games that have not started yet.</p>
-        <ul class="ticks">
-          <li><b>Eligible picks only.</b> A pick appears after we capture it from a tracked public account, and only while its game has not started.</li>
-          <li><b>Context on every pick.</b> Each one carries its Watchdog ID, lifetime record, sport record and recent form.</li>
-          <li><b>Filter by sport and record.</b> Focus on established records, a single sport, or accounts that are up money.</li>
-          <li><b>Graded like everything else.</b> After the final score the pick moves into the record.</li>
-        </ul>
-        <p class="muted small" id="pendCount"><span id="featPending"><!--seo:pending-->Tracked picks waiting on a result are never counted in a record.<!--/seo:pending--></span></p>
-      </div>
-      <div class="mock" aria-label="Preview of the Watchdog Pro pending picks screen">
-        <div class="mockbar"><span class="lock">Watchdog Pro</span><b>Pending picks</b><span class="mocktag">Preview</span></div>
-        <div class="mockf" id="mockF" role="group" aria-label="Sport filter (preview)"><button class="chip on" data-s="">All</button><button class="chip" data-s="NFL">NFL</button><button class="chip" data-s="NCAAF">NCAAF</button><button class="chip" data-s="NBA">NBA</button><button class="chip" data-s="NHL">NHL</button></div>
-        <div class="tw"><table class="mini mockt"><thead><tr><th class="l">Watchdog ID</th><th class="l">Record</th><th class="l">Game</th><th class="l">Pick</th><th class="hp">Starts</th></tr></thead><tbody id="mockRows"></tbody></table></div>
-        <p class="mockfoot">Handicapper records in this preview are real rows from today&rsquo;s board. Games and picks are placeholders. Real pending picks are shown only inside Watchdog Pro.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- 9. Free vs Pro -->
-  <section class="hsec" id="pro">
-    <div class="hhead"><div class="eyebrow">Plans</div><h2>What is free, and what Watchdog Pro adds</h2>
-      <p class="lead">The free site is a complete public record. Pro is for people who want to act on that research before the games are played.</p></div>
-    <div class="plancmp">
-      <div class="pc"><div class="pchead"><b>Free</b><span class="amt2">$0</span><span class="dim small">No account needed</span></div>
-        <ul>
-          <li>Rankings: established, 30 day, 7 day, ROI, emerging, most active</li>
-          <li>A full profile for every tracked account: record, units, ROI, streaks, drawdowns, 7, 30, 90 and 365 day form</li>
-          <li>Sport, bet type, odds range, home and away splits, with interactive charts</li>
-          <li>Ledger of the 50 most recent graded picks, with filters</li>
-          <li>Reality check and per sport leader boards</li>
-        </ul>
-        <a class="btn ghost full" href="cappers.html">Open the free rankings</a></div>
-      <div class="pc best"><div class="pchead"><b>Watchdog Pro</b><span class="amt2">$49.99<small> a month</small></span><span class="small">or $499 a year, about $41.58 a month</span></div>
-        <ul>
-          <li><b>Eligible pending picks</b> from tracked accounts before the games start</li>
-          <li><b>Complete graded pick log</b> on every profile: game, pick, odds, result, units and post time</li>
-          <li>Advanced filters and side by side comparison of up to four records</li>
-          <li>Everything in Free</li>
-        </ul>
-        <a class="btn pro full" href="pricing.html">View Watchdog Pro</a>
-        <p class="pcnote"><span class="statusdot"></span>Secure checkout by Stripe. Cancel any time from your account page.</p></div>
-    </div>
-    <p class="muted small" style="margin:12px 0 0">Neither plan includes handicapper names, account names or links to their accounts. A handicapper cannot pay for a rank, a feature or a verified label.</p>
-  </section>
-
-  <!-- 10. Why our data is different -->
-  <section class="hsec" id="data">
-    <div class="hhead"><div class="eyebrow">Our data</div><h2>Why these records are different</h2></div>
-    <div class="diffs">
-      <div><b>Graded by us</b><p>Results come from final scores, not from the handicapper&rsquo;s recap. Units use the posted odds, or a reference price when no odds were posted.</p></div>
-      <div><b>Timestamp checked</b><p>Every pick carries its post time. Picks posted after the start are excluded before grading.</p></div>
-      <div><b>History kept</b><p>Records build from the first capture forward. Old picks are not quietly dropped when a cold streak arrives.</p></div>
-      <div><b>Tracked by sport</b><p>An NFL bettor who also loses on hockey shows both. Sport records are split on every profile.</p></div>
-      <div><b>Analysis, not hype</b><p>Sample size labels, ROI, drawdowns and form windows sit beside the headline number.</p></div>
-    </div>
-    <p class="limits">Grading is automated and reviewed, and mistakes are possible. If you see one, <a href="contact.html">send a correction</a>. Coverage is limited to the sources listed above.</p>
-  </section>
-
-  <!-- 11. FAQ and responsible play -->
-  <section class="hsec" id="faq">
-    <div class="hhead"><div class="eyebrow">Questions</div><h2>Before you rely on a record</h2></div>
-    <div class="faqs">
+  <section class="band faq2" id="faq" aria-labelledby="faqH">
+    <div class="in faqgrid">
+      <div><div class="eyebrow">Questions</div><h2 id="faqH">Before you rely on a record.</h2></div>
+      <div><div class="faqs">
       <details class="faq"><summary>Can I find out who a handicapper is?</summary><p>No. Names, account names and account links are not published on the free site or in Watchdog Pro. Each account is a permanent Watchdog ID instead.</p></details>
       <details class="faq"><summary>Does Watchdog track every handicapper?</summary><p>No. It tracks public accounts it has found on X, Reddit, Covers, TheRX, Sportsbook Review and Predictem. Private groups, paid channels and other sites are not covered.</p></details>
       <details class="faq"><summary>Does a good record mean future winners?</summary><p>No. A record is history. Results swing, especially on small samples, and a handicapper who is up today can lose tomorrow. Nothing on this site is a promise of profit.</p></details>
@@ -309,19 +206,13 @@
       <details class="faq"><summary>What does a pending pick include in Pro?</summary><p>The sport, game, pick and odds as posted, the post time, and the Watchdog ID with its record. Not the name or the original post.</p></details>
       <details class="faq"><summary>How often does the site update?</summary><p>The board and profiles rebuild from the tracker about every 30 minutes. The time of the last capture is shown at the top of this page.</p></details>
     </div>
-    <div class="care2"><b>Bet responsibly.</b> Past results are not predictions or guarantees. Only risk money you can afford to lose. 21+. Gambling problem? Call 1 800 GAMBLER.</div>
+    <div class="care2"><b>Bet responsibly.</b> Past results are not predictions or guarantees. Only risk money you can afford to lose. 21+. Gambling problem? Call 1 800 GAMBLER.</div></div>
+    </div>
   </section>
 
-  <section class="guides" id="editorial">
-    <a class="panel pb guide" href="how-we-grade.html"><div class="eyebrow">Methodology</div><b>How a record is graded</b><p>Public posts, final scores and sample size, in full detail.</p></a>
-    <a class="panel pb guide" href="reviews/index.html"><div class="eyebrow">Reviews</div><b>Handicapper reviews</b><p>Public services checked against what they advertise. A score is withheld when the evidence is not there.</p></a>
-    <a class="panel pb guide" href="sportsbooks/"><div class="eyebrow">Sportsbooks</div><b>Sportsbook research</b><p>What the major books publish. No score without a measurement. No signup links.</p></a>
-  </section>
-
-  <section class="proband final">
-    <div><span class="lock">Watchdog Pro</span><h2>Check the record before you follow the pick.</h2>
-      <p class="muted" style="margin:0">Free rankings for everyone. Pro adds eligible pending picks and full pick logs, with every account kept anonymous.</p></div>
-    <div class="ctarow"><a class="btn" href="#rankings">Explore the rankings</a><a class="btn pro" href="pricing.html">View Watchdog Pro</a></div>
+  <section class="band closer">
+    <div class="in closein"><h2>Check the record before you pay for the pick.</h2>
+      <div class="procta"><a class="btn pro lg" href="#heroH" id="closeVerify">Verify a Handicapper</a><a class="btn ghost lg" href="cappers.html">Explore Verified Rankings</a></div></div>
   </section>
 </main>
 <footer class="foot"><div class="wrap">
