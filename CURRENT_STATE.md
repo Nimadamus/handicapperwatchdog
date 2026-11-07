@@ -1,5 +1,8 @@
 # Handicapper Watchdog: CURRENT STATE (saved 2026-11-03 ~7:15 AM PST)
 
+## Nov 6 update
+Every account has a profile page: build.py publishes all ATW accounts (3,826 live, 850 with no graded picks, reason no_grades); meta.tracked stays graded only, meta.monitored = all. Item 1 below looks done (profiles dated Nov 6/7).
+
 ## Resume here, in order
 1. DEPLOY the profile freshness fix: `python ~/tools/site_audit/wd_code_deploy.py` (deploys tmr-watchdog main 8eef41d).
    Last attempt was killed by laptop memory reap during drain; harvest/publish were resumed by hand (paused False).
