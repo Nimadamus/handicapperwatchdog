@@ -36,7 +36,7 @@ KEY = (os.environ.get('HWD_MASK_KEY') or secrets.token_hex(16)).encode()
 HERE = os.path.dirname(os.path.abspath(__file__))
 CACHE = os.path.join(HERE, '.cache', 'profiles')
 SITE = os.path.join(HERE, '_site')
-STATIC = ('index.html', 'home.css', 'capper.html', 'cappers.html', 'account.html', 'compare.html', 'picks.html', 'style.css', 'app.js', 'capper.js',
+STATIC = ('index.html', 'home.css', 'sportsbook-bg.jpg', 'capper.html', 'cappers.html', 'account.html', 'compare.html', 'picks.html', 'style.css', 'app.js', 'capper.js',
           'pro.js', 'track.js', 'compare.js', 'pricing.js', 'account.js', 'picks.js', 'contact.js', 'favicon.svg', 'stadium.svg', 'og-card.png', 'CNAME', 'robots.txt', 'sitemap.xml')
 PROFILE_TTL = int(os.environ.get('HWD_PROFILE_TTL', str(6 * 3600)))
 MAX_FETCH = int(os.environ.get('HWD_MAX_FETCH', '400'))
