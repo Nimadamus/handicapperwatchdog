@@ -773,6 +773,12 @@ def _noindex(path):
 def _write_sitemap(site, lastmod):
     lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     entries = list(_SITEMAP)
+    established = None
+    try:
+        with open(os.path.join(site, 'data', 'index.json'), encoding='utf-8') as f:
+            established = {r['id'] for r in json.load(f)['cappers'] if (r.get('picks') or 0) >= PROFILE_SITEMAP_MIN}
+    except (OSError, ValueError, KeyError):
+        pass
     sport_dir = os.path.join(site, 'sports')
     if os.path.isdir(sport_dir):
         for name in sorted(os.listdir(sport_dir)):
@@ -786,7 +792,9 @@ def _write_sitemap(site, lastmod):
         for name in sorted(os.listdir(folder_dir)):
             path = os.path.join(folder_dir, name)
             if name.endswith('.html') and os.path.isfile(path):
-                loc = 'https://handicapperwatchdog.com/' + folder + '/' + name
+                if folder == 'handicappers' and name != 'index.html' and established is not None and name[:-5] not in established:
+                    continue
+                loc ='https://handicapperwatchdog.com/' + folder + '/' + name
                 if folder in ('sportsbooks', 'learn', 'research', 'handicappers') and name == 'index.html':
                     loc = 'https://handicapperwatchdog.com/%s/' % folder
                 entries.append((folder + '/' + name, loc, freq, priority))
@@ -2705,6 +2713,46 @@ def _publish_light_data(site):
 
 
 PROFILE_INDEX_MIN = 20  # thinner profiles still get a page, but stay out of search until they have a real sample
+PROFILE_SITEMAP_MIN = 100  # only established records go in the sitemap so crawlers spend their time on the strongest pages
+
+
+def _day(iso):
+    try:
+        d = datetime.strptime(iso[:10], '%Y-%m-%d')
+    except (TypeError, ValueError):
+        return None
+    return '%d %s %d' % (d.day, d.strftime('%b'), d.year)
+
+
+def _profile_read(r, c, rec_s, units_s, roi_s):
+    """Plain language read of a public record, built only from fields already public in data/index.json."""
+    if not r.get('picks'):
+        return ''
+    n, wp = r['picks'], r.get('win_pct')
+    first, last = _day(r.get('first_pick')), _day(r.get('last_pick'))
+    span = ' between %s and %s' % (first, last) if first and last and first != last else ''
+    out = ['Handicapper #%s has %s graded picks%s: a %s record%s, %s units and %s ROI.' % (
+        c, f'{n:,}', span, rec_s, ' (%.1f%% wins)' % wp if wp is not None else '', units_s, roi_s)]
+    if wp is not None:
+        gap = wp - 52.4
+        out.append('At standard -110 prices a bettor needs about 52.4%% wins to break even, so this win rate sits %.1f points %s that line. '
+                   'Plus money and favorites change the math, which is why units and ROI matter more than win rate.' % (abs(gap), 'above' if gap >= 0 else 'below'))
+    if n < 100:
+        out.append('With fewer than 100 graded picks this is still a developing sample, and short runs swing hard in both directions.')
+    else:
+        out.append('With %s graded picks this is an established sample, large enough that luck explains less of the result.' % f'{n:,}')
+    win = []
+    for key, label in (('r7', 'last 7 days'), ('r30', 'last 30 days')):
+        x = r.get(key)
+        if x and x.get('picks'):
+            win.append('%s: %d-%d%s over %d picks, %+.2f units' % (label, x['w'], x['l'], '-%d' % x['p'] if x.get('p') else '', x['picks'], x.get('net') or 0))
+    if win:
+        out.append('Recent form, %s.' % '; '.join(win))
+    paras = ''.join('<p>%s</p>' % _esc(t) for t in out)
+    return ('<section class="edsec profread"><h2>How to read this record</h2>%s'
+            '<p>Learn more: <a href="learn/break-even-win-rate.html">break even win rates</a>, '
+            '<a href="learn/sample-size.html">sample size</a> and <a href="learn/units-and-roi.html">units and ROI</a>.</p>'
+            '<p><a href="pricing.html">Watchdog Pro</a> shows this account\'s eligible pending picks before games start and its full graded pick log.</p></section>') % paras
 
 
 def _write_profile_pages(site, index):
@@ -2747,7 +2795,9 @@ def _write_profile_pages(site, index):
         start = place.get(cid, 0)
         peers = [ranked[(start + k) % len(ranked)] for k in range(1, 7)]
         peers = [p for p in peers if p['id'] != cid]
-        rows = ''
+        bs = sorted((r.get('bs') or {}).items(), key=lambda kv: -(kv[1][0] or 0))
+        rows = ''.join('<tr><td class="l">%s</td><td>%s</td><td>%s</td><td>%s</td></tr>' % (
+            _esc(k), _esc(v[4] or ''), f'{int(v[0]):,}', 'n/a' if v[1] is None else '%+.2f' % v[1]) for k, v in bs if v and v[0])
         kpis = ''.join('<div class="kv"><b>%s</b><span>%s</span></div>' % (_esc(a), b) for a, b in (
             (record(r), 'Record'), (units(r), 'Units won'), (roi(r), 'ROI'), (f"{r['picks']:,}", 'Graded picks')))
         body = ('<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><a href="handicappers/">Handicappers</a>'
@@ -2756,6 +2806,7 @@ def _write_profile_pages(site, index):
                 '<div class="kvgrid">%s</div>%s') % (
                     c, c, _esc(desc), kpis,
                     '<table><thead><tr><th class="l">Sport</th><th>Record</th><th>Picks</th><th>Units</th></tr></thead><tbody>%s</tbody></table>' % rows if rows else '')
+        body += _profile_read(r, c, record(r), units(r), roi(r))
         more = ('<section class="wrap profmore" aria-label="More handicapper records"><h2>More graded records</h2><p>%s</p>'
                 '<p><a href="handicappers/">Handicapper directory</a> · <a href="cappers.html">Rankings</a> · <a href="how-we-grade.html">How we grade</a></p></section>') % ' '.join(
                     '<a href="handicappers/%s.html">#%s (%s)</a>' % (p['id'], code(p), record(p)) for p in peers)
