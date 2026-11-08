@@ -53,7 +53,7 @@ DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sun
 # The API hands a key only to a signed in Pro account. Without HWD_PRO_KEY nothing Pro is written at all.
 PRO_KEY = os.environ.get('HWD_PRO_KEY', '').encode()
 # Anonymous pending export from the Watchdog (derived token, opens only /api/hwd/pending). Without it there is no pending feed.
-EXPORT_URL = os.environ.get('HWD_EXPORT_URL', 'https://tmr-watchdog.onrender.com/api/hwd/pending')
+EXPORT_URL = os.environ.get('HWD_EXPORT_URL', 'https://wd.trustmyrecord.com/api/hwd/pending')
 EXPORT_TOKEN = os.environ.get('HWD_EXPORT_TOKEN', '')
 
 
@@ -449,7 +449,7 @@ def public_row(row):
 def live_stats():
     """Platform wide counters TMR's Pro page reads live (same endpoint, fetched here because it is CORS locked)."""
     try:
-        d = json.loads(get('https://trustmyrecord-api.onrender.com/api/pro/watchdog/stats'))
+        d = json.loads(get('https://api.trustmyrecord.com/api/pro/watchdog/stats'))
         keep = ('generated_at', 'last_capture_at', 'last_graded_at', 'accounts_discovered', 'accounts_monitored', 'graded_picks',
                 'pending_picks', 'platforms', 'communities', 'posts_captured', 'new_accounts_today', 'picks_captured_today')
         out = {k: d.get(k) for k in keep}
