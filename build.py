@@ -2811,6 +2811,66 @@ def _profile_read(r, c, rec_s, units_s, roi_s):
             '<p><a href="pricing.html">Watchdog Pro</a> shows this account\'s eligible pending picks before games start and its full graded pick log.</p></section>') % paras
 
 
+PUBLIC_LEDGER_MAX = 10  # same cap as tools/verify_boundary.py: the free ledger never holds more
+
+
+def _public_profile(site, cid):
+    """The FREE profile file this build already publishes at data/p/<id>.json. Profile pages may only show
+    what is in it, so the page can never reveal more than the public JSON does."""
+    try:
+        with open(os.path.join(site, 'data', 'p', cid + '.json'), encoding='utf-8') as f:
+            p = json.load(f)
+    except (OSError, ValueError):
+        return {}
+    return p if p.get('detail') else {}
+
+
+def _profile_recent(pub, c):
+    """Most recent graded picks (already public in data/p, already shown by capper.js), in the HTML so a
+    crawler that does not run scripts sees them too. Graded games only: never pending picks or post text."""
+    rows = [x for x in (pub.get('ledger') or [])[:PUBLIC_LEDGER_MAX] if x.get('r') in ('W', 'L', 'P')]
+    if not rows:
+        return ''
+    res = {'W': 'Win', 'L': 'Loss', 'P': 'Push'}
+    trs = ''.join('<tr><td class="l">%s</td><td class="l">%s</td><td class="l">%s</td><td class="l">%s</td><td>%s</td><td>%s</td><td class="hm">%s</td></tr>' % (
+        _esc(_day(x.get('d')) or ''), _esc(x.get('sp') or ''), _esc(x.get('m') or ''), _esc(x.get('pk') or ''),
+        ('%+d' % x['o']) if isinstance(x.get('o'), (int, float)) else 'n/a', res[x['r']], _esc(x.get('f') or '')) for x in rows)
+    return ('<section class="sec"><h2>Most recent graded picks</h2><p class="muted small">The %d most recent graded picks for #%s.</p><div class="tw"><table class="mini ledger"><thead><tr><th class="l">Date</th><th class="l">Sport</th>'
+            '<th class="l">Game</th><th class="l">Pick</th><th>Odds</th><th>Result</th><th class="hm">Final</th></tr></thead><tbody>%s</tbody></table></div></section>') % (
+                len(rows), c, trs)
+
+
+def _profile_facts(r, pub, c, sport_slugs):
+    """Record facts from public fields only (data/index.json and the free data/p file). No prose filler:
+    every sentence is a number this account produced, and it is omitted when the number is missing."""
+    if not r.get('picks'):
+        return ''
+    o = pub.get('overview') or {}
+    st = o.get('streaks') or {}
+    items = []
+    first, last = _day(r.get('first_pick')), _day(r.get('last_pick'))
+    if first and last:
+        r7 = (r.get('r7') or {}).get('picks') or 0
+        items.append('First graded pick %s, most recent %s. Graded picks in the last 7 days: %d.' % (first, last, r7))
+    if st.get('longest_win') or st.get('longest_loss'):
+        items.append('Longest winning streak %d, longest losing streak %d%s.' % (
+            int(st.get('longest_win') or 0), int(st.get('longest_loss') or 0), ', current streak %s' % _esc(st['current']) if st.get('current') else ''))
+    last20 = [x for x in (pub.get('last_results') or [])[:20] if x in ('W', 'L', 'P')]
+    if len(last20) >= 10:
+        w, l, p = last20.count('W'), last20.count('L'), last20.count('P')
+        items.append('Last %d graded picks: %d-%d%s.' % (len(last20), w, l, '-%d' % p if p else ''))
+    if isinstance(o.get('avg_odds'), (int, float)) and o.get('avg_odds'):
+        items.append('Average price %+d (American odds) across priced picks.' % o['avg_odds'])
+    sp = [s for s in (r.get('sports') or []) if s]
+    if sp:
+        items.append('Sports with graded picks: %s.' % ', '.join(
+            ('<a href="sports/%s.html">%s</a>' % (sport_slugs[s], _esc(s))) if s in sport_slugs else _esc(s) for s in sp))
+    if not items:
+        return ''
+    return ('<section class="edsec proffacts"><h2>Record facts for #%s</h2><ul>%s</ul></section>') % (
+        c, ''.join('<li>%s</li>' % t for t in items))
+
+
 def _write_profile_pages(site, index):
     """One real URL per account: handicappers/<id>.html. capper.js fills the page in; the headline record is in the HTML for search."""
     root = 'https://handicapperwatchdog.com/'
@@ -2822,6 +2882,10 @@ def _write_profile_pages(site, index):
     if not ranked:
         return
     place = {r['id']: i for i, r in enumerate(ranked)}
+    try:
+        sport_slugs = {s: _sport_slug(s) for s in _sport_pages(index)}  # the sport pages this build writes
+    except Exception:
+        sport_slugs = {}
 
     def code(r):
         return r['id'][:6].upper()
@@ -2862,8 +2926,11 @@ def _write_profile_pages(site, index):
                 '<div class="kvgrid">%s</div>%s') % (
                     c, c, _esc(desc), kpis,
                     '<table><thead><tr><th class="l">Sport</th><th>Record</th><th>Picks</th><th>Units</th></tr></thead><tbody>%s</tbody></table>' % rows if rows else '')
-        body += _profile_read(r, c, record(r), units(r), roi(r))
-        more = ('<section class="wrap profmore" aria-label="More handicapper records"><h2>More graded records</h2><p>%s</p>'
+        pub = _public_profile(site, cid)
+        body += _profile_recent(pub, c)  # inside #prof: capper.js replaces it with the same public ledger when scripts run
+        facts = _profile_facts(r, pub, c, sport_slugs) + _profile_read(r, c, record(r), units(r), roi(r))
+        more = (('<div class="wrap profkeep">%s</div>' % facts) if facts else '') + (
+                '<section class="wrap profmore" aria-label="More handicapper records"><h2>More graded records</h2><p>%s</p>'
                 '<p><a href="handicappers/">Handicapper directory</a> · <a href="cappers.html">Rankings</a> · <a href="how-we-grade.html">How we grade</a></p></section>') % ' '.join(
                     '<a href="handicappers/%s.html">#%s (%s)</a>' % (p['id'], code(p), record(p)) for p in peers)
         graph = [{'@type': 'ProfilePage', 'url': url, 'name': title, 'description': desc,
@@ -2875,6 +2942,8 @@ def _write_profile_pages(site, index):
                      {'@type': 'ListItem', 'position': 3, 'name': '#' + c, 'item': url}]}]
         if r.get('last_pick'):
             graph[0]['dateModified'] = r['last_pick']
+        if r.get('first_pick'):
+            graph[0]['dateCreated'] = r['first_pick']
         ld = '<script type="application/ld+json">%s</script>' % json.dumps({'@context': 'https://schema.org', '@graph': graph}, ensure_ascii=True).replace('<', '\\u003c')
         robots = '' if r['picks'] >= PROFILE_INDEX_MIN else '<meta name="robots" content="noindex,follow">\n'
         page = shell
