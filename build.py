@@ -800,7 +800,12 @@ def _write_sitemap(site, lastmod):
         path = os.path.join(site, filename.replace('/', os.sep))
         if not os.path.isfile(path) or _noindex(path):
             continue
-        lines.append('  <url><loc>%s</loc><lastmod>%s</lastmod><changefreq>%s</changefreq><priority>%s</priority></url>' % (loc, lastmod, freq, priority))
+        with open(path, encoding='utf-8') as f:
+            mod = re.search(r'"dateModified":\s*"(\d{4}-\d{2}-\d{2})', f.read())
+        # A page that states its own dateModified (reviews, articles) reports that date, not the build date,
+        # so lastmod changes only when the content does. Never later than the build date.
+        page_mod = mod.group(1) if mod and mod.group(1) <= lastmod else lastmod
+        lines.append('  <url><loc>%s</loc><lastmod>%s</lastmod><changefreq>%s</changefreq><priority>%s</priority></url>' % (loc, page_mod, freq, priority))
     lines.append('</urlset>')
     with open(os.path.join(site, 'sitemap.xml'), 'w', encoding='utf-8', newline='\n') as f:
         f.write('\n'.join(lines) + '\n')
@@ -883,6 +888,9 @@ def _header(depth, current):
     ) % (home, prefix, _nav(depth, current), prefix, prefix)
 
 
+FOOTER_SPORTS = []  # (slug, label) of sports/<slug>.html written this build; each had 1 internal link (GSC 2026-11-09)
+
+
 def _footer(depth):
     prefix = '../' * depth
     links = (
@@ -907,8 +915,10 @@ def _footer(depth):
         '<p><b>Handicapper Watchdog</b> grades picks captured from public posts on X, Covers, Reddit, TheRX, '
         'Sportsbook Review and Predictem. Records are past results, not predictions or guarantees. '
         'Held, duplicate and unreviewed picks are not counted.</p>'
+        '%s'
         '<p>21+. Gambling problem? Call 1 800 GAMBLER.</p></div><div>%s</div></div></footer>'
-    ) % ''.join('<p><a href="%s%s">%s</a></p>' % (prefix, href, label) for href, label in links)
+    ) % (('<p>Records by sport: %s</p>' % ' · '.join('<a href="%ssports/%s.html">%s</a>' % (prefix, s, _esc(n)) for s, n in FOOTER_SPORTS)) if FOOTER_SPORTS else '',
+         ''.join('<p><a href="%s%s">%s</a></p>' % (prefix, href, label) for href, label in links))
 
 
 def _document(depth, current, title, description, canonical, body, robots=''):
@@ -1938,6 +1948,35 @@ def _write_learn(site, meta, cappers):
         f.write(html)
 
 
+REVIEW_MIN_INBOUND = 3  # every review gets at least this many "Related reviews" links from other reviews
+REVIEW_MAX_RELATED = 6
+
+
+def _balance_related(v2, slugs):
+    """Curated related lists stay first. Reviews nobody links to (GSC 2026-11-09: 10 reviews had 0 inbound
+    related links) are appended to the reviews with spare room, least linked first, deterministic order."""
+    from collections import Counter
+    slugs = sorted(slugs)
+    inbound = Counter()
+    for s in sorted(v2):
+        v2[s]['related'] = [x for x in dict.fromkeys(v2[s].get('related') or []) if x != s and x in slugs]
+        inbound.update(v2[s]['related'])
+    changed = True
+    while changed:
+        changed = False
+        for s in sorted(v2):
+            rel = v2[s]['related']
+            if len(rel) >= REVIEW_MAX_RELATED:
+                continue
+            need = [t for t in slugs if t != s and t not in rel and inbound[t] < REVIEW_MIN_INBOUND]
+            if need:
+                t = min(need, key=lambda x: (inbound[x], x))
+                rel.append(t)
+                inbound[t] += 1
+                changed = True
+    return inbound
+
+
 def _write_editorial(site, cappers=None):
     """Reviews and the JustBet page. Facts come from content/*.json. No score without evidence. No affiliate URL."""
     import pathlib
@@ -1965,6 +2004,7 @@ def _write_editorial(site, cappers=None):
         if r['slug'] in v2:
             r['verdict'] = v2[r['slug']]['status']['label']
             r['dek'] = v2[r['slug']]['dek']
+    _balance_related(v2, {r['slug'] for r in reviews['reviews']})
     v2_stats = reviewv2.board_stats(cappers or [])
     book = json.loads(book_path.read_text(encoding='utf-8'))
     out_reviews = os.path.join(site, 'reviews')
@@ -2672,6 +2712,7 @@ def stamp_public_pages(site):
             html = _fill(filename, html, name, inner, _MARKERS[filename])
         with open(path, 'w', encoding='utf-8', newline='') as f:
             f.write(html)
+    FOOTER_SPORTS[:] = [(_sport_slug(s), s) for s in _sport_pages(cappers)]  # only sport pages this build writes
     _write_guides(site, meta, cappers)
     _write_learn(site, meta, cappers)
     _write_research(site, meta, cappers)
