@@ -36,7 +36,7 @@ KEY = (os.environ.get('HWD_MASK_KEY') or secrets.token_hex(16)).encode()
 HERE = os.path.dirname(os.path.abspath(__file__))
 CACHE = os.path.join(HERE, '.cache', 'profiles')
 SITE = os.path.join(HERE, '_site')
-STATIC = ('index.html', 'home.css', 'sportsbook-bg.jpg', 'sportsbook-bg-sm.jpg', 'capper.html', 'cappers.html', 'account.html', 'compare.html', 'picks.html', 'style.css', 'app.js', 'capper.js',
+STATIC = ('index.html', 'home.css', 'husky.webp', 'husky-sm.webp', 'shield.webp', 'sportsbook-bg.jpg', 'sportsbook-bg-sm.jpg', 'capper.html', 'cappers.html', 'account.html', 'compare.html', 'picks.html', 'style.css', 'app.js', 'capper.js',
           'pro.js', 'track.js', 'compare.js', 'pricing.js', 'account.js', 'picks.js', 'contact.js', 'favicon.svg', 'stadium.svg', 'og-card.png', 'review2.css', 'CNAME', 'robots.txt', 'sitemap.xml')
 PROFILE_TTL = int(os.environ.get('HWD_PROFILE_TTL', str(6 * 3600)))
 MAX_FETCH = int(os.environ.get('HWD_MAX_FETCH', '400'))
@@ -489,7 +489,7 @@ _SITEMAP = (
     ('contact.html', 'https://handicapperwatchdog.com/contact.html', 'yearly', '0.3'),
 )
 _MARKERS = {
-    'index.html': ('board', 'pending', 'jsonld'),
+    'index.html': ('board', 'pending', 'jsonld', 'top', 'books', 'recent', 'stats'),
     'cappers.html': ('fresh', 'rows', 'pending', 'jsonld', 'sportnav'),
 }
 # Sport pages need a real sample. A 21 pick hot streak never leads a sport page.
@@ -587,6 +587,88 @@ def _ranked(cappers, limit):
     rows = _established(cappers)
     body = ''.join(_row(r, i) for i, r in enumerate(rows[:limit], 1))
     return body or '<tr><td colspan="10" class="empty">No established records with 100 or more graded picks yet.</td></tr>'
+
+
+def _home_top(cappers, limit=6):
+    """Homepage card: the same established ranking as the board, by units won. Watchdog IDs only."""
+    rows = []
+    for i, r in enumerate(_established(cappers)[:limit], 1):
+        code = '#' + _esc(r['id'][:6].upper())
+        name = '<a href="handicappers/%s.html">%s</a>' % (r['id'], code) if r.get('profile') else code
+        rows.append('<tr><td><span class="medal m%d">%d</span></td><th scope="row">%s</th><td>%s</td><td>%s</td></tr>' % (
+            min(i, 4), i, name, _record(r), _signed(r.get('roi'), 1, '%')))
+    return ''.join(rows) or '<tr><td colspan="4">No established records with 100 or more graded picks yet.</td></tr>'
+
+
+def _short_date(iso):
+    try:
+        d = datetime.strptime(str(iso)[:10], '%Y-%m-%d')
+    except ValueError:
+        return ''
+    return '%d %s' % (d.day, d.strftime('%b %Y'))
+
+
+def _home_books(limit=5):
+    """Homepage card: sportsbook research pages from content/sportsbooks.json. Status text only, this edition has no score."""
+    try:
+        with open(os.path.join(HERE, 'content', 'sportsbooks.json'), encoding='utf-8') as f:
+            doc = json.load(f)
+    except (OSError, ValueError):
+        return ''
+    rows = []
+    for b in (doc.get('books') or [])[:limit]:
+        head, _, tail = str(b.get('status') or '').partition('. ')
+        live = b.get('kind') == 'review' and head == 'Operating'
+        note = tail if live and tail else (b.get('status') or '')
+        rows.append('<li><a href="sportsbooks/%s/"><span class="bmark" aria-hidden="true">%s</span><b>%s</b><span class="tag%s">%s</span><small>%s Checked %s.</small></a></li>' % (
+            _esc(b['slug']), _esc(b.get('mark') or b['name'][:2]), _esc(b['name']), '' if live else ' warn', 'Operating' if live else 'Status check',
+            _esc(note), _esc(doc.get('checked') or '')))
+    return ''.join(rows)
+
+
+def _home_reviews(limit=5):
+    """Homepage card: the most recently checked service reviews with the status each review page carries."""
+    root = os.path.join(HERE, 'content')
+    try:
+        with open(os.path.join(root, 'reviews.json'), encoding='utf-8') as f:
+            doc = json.load(f)
+    except (OSError, ValueError):
+        return ''
+    items = {}
+    for r in doc.get('reviews') or []:
+        items[r['slug']] = {'slug': r['slug'], 'name': r['name'], 'label': r.get('verdict') or 'Not rated',
+                            'date': r.get('updated_iso') or r.get('checked_iso') or doc.get('checked_iso') or '', 'depth': 0}
+    v2_dir = os.path.join(root, 'reviews_v2')
+    for name in sorted(os.listdir(v2_dir)) if os.path.isdir(v2_dir) else []:
+        if not name.endswith('.json'):
+            continue
+        with open(os.path.join(v2_dir, name), encoding='utf-8') as f:
+            r = json.load(f)
+        items[r['slug']] = {'slug': r['slug'], 'name': r['name'], 'label': (r.get('status') or {}).get('label') or 'Not rated',
+                            'date': r.get('updated_iso') or r.get('checked_iso') or '', 'depth': len(r.get('customers') or [])}
+    # newest check first; on the same day the review holding the most customer evidence leads, a flagged one ahead of that
+    order = sorted(items.values(), key=lambda x: x['name'])
+    order.sort(key=lambda x: (x['date'], x['label'] == 'Scam', x['depth']), reverse=True)
+    tick = '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h14v17l-7-4-7 4z"/><path d="M9 9h6M9 13h4"/></svg>'
+    rows = []
+    for x in order[:limit]:
+        kind = ' bad' if x['label'] == 'Scam' else '' if x['label'] == 'Verified' else ' warn'
+        rows.append('<li><a href="reviews/%s.html">%s<b>%s</b><span class="tag%s">%s</span><small>Checked %s</small></a></li>' % (
+            _esc(x['slug']), tick, _esc(x['name']), kind, _esc(x['label']), _esc(_short_date(x['date']) or 'this edition')))
+    return ''.join(rows)
+
+
+def _home_stats(meta, cappers):
+    """Homepage statistics tiles, straight from the published index. The live tracker panel replaces them in the browser when it is up."""
+    est = _established(cappers)
+    up = sum(1 for r in est if float(r['units']) > 0)
+    cells = (
+        ('Picks graded', f'{int(meta.get("graded_picks") or 0):,}'),
+        ('Handicappers with a graded record', f'{int(meta.get("tracked") or 0):,}'),
+        ('Accounts monitored', f'{int(meta.get("monitored") or meta.get("profiles") or 0):,}'),
+        ('Established records up money', '%d of %d' % (up, len(est)) if est else 'n/a'),
+    )
+    return ''.join('<div><dt>%s</dt><dd>%s</dd></div>' % (_esc(k), _esc(v)) for k, v in cells)
 
 
 def _live(meta):
@@ -2045,7 +2127,14 @@ def _write_editorial(site, cappers=None):
 <li>There is no independent sample of buyers, so this page stays Not rated.</li></ul></section>'''
 
     with open(os.path.join(site, 'data', 'services.json'), 'w', encoding='utf-8') as f:
-        json.dump([{'name': r['name'], 'page': 'reviews/%s.html' % r['slug']} for r in reviews['reviews']], f, separators=(',', ':'))
+        svc = [{'name': r['name'], 'page': 'reviews/%s.html' % r['slug']} for r in reviews['reviews']]
+        try:  # the homepage search also finds sportsbook research pages
+            svc += [{'name': b['name'], 'page': 'sportsbooks/%s/' % b['slug'], 'kind': 'Sportsbook review'}
+                    for b in json.loads((root / 'sportsbooks.json').read_text(encoding='utf-8')).get('books') or []]
+            svc.append({'name': 'JustBet', 'page': 'sportsbooks/justbet.html', 'kind': 'Sportsbook review'})
+        except (OSError, ValueError):
+            pass
+        json.dump(svc, f, separators=(',', ':'))
     cards = []
     written = []
     for rev in reviews['reviews']:
@@ -2695,6 +2784,7 @@ def stamp_public_pages(site):
             'live': _live(meta), 'board': _ranked(cappers, 10), 'sports': _sports(cappers),
             'reality': _reality(meta, cappers), 'pending': _esc(_pending(meta)),
             'jsonld': _itemlist(cappers, 'https://handicapperwatchdog.com/', 'Top established handicappers by units'),
+            'top': _home_top(cappers), 'books': _home_books(), 'recent': _home_reviews(), 'stats': _home_stats(meta, cappers),
         },
         'cappers.html': {
             'fresh': _fresh(meta), 'rows': _ranked(cappers, 50), 'pending': _esc(_pending(meta)),

@@ -147,9 +147,9 @@
     function find(q) {
       var s = q.trim().toLowerCase().replace(/^#/, ''), out = [];
       if (!s) return out;
-      services.forEach(function (v) { if (v.name.toLowerCase().indexOf(s) >= 0) out.push({ href: v.page, a: v.name, b: 'Service review' }); });
+      services.forEach(function (v) { if (v.name.toLowerCase().indexOf(s) >= 0) out.push({ href: v.page, a: v.name, b: v.kind || 'Service review' }); });
       if (!out.length && s.length >= 4) services.map(function (v) { return { v: v, d: near(s, v.name.toLowerCase()) }; }).filter(function (x) { return x.d <= 2; }).sort(function (a, b) { return a.d - b.d; }).slice(0, 3)
-        .forEach(function (x) { out.push({ href: x.v.page, a: x.v.name, b: 'Did you mean this review?' }); });
+        .forEach(function (x) { out.push({ href: x.v.page, a: x.v.name, b: x.v.kind ? 'Did you mean this sportsbook?' : 'Did you mean this review?' }); });
       if (/^[0-9a-f]{2,10}$/.test(s)) all.filter(function (r) { return r.id.indexOf(s) === 0; }).sort(function (a, b) { return b.picks - a.picks; }).slice(0, 5).forEach(function (r) {
         out.push({ href: link(r), a: '#' + code(r.id), b: r.picks ? recTxt(r) + ', ' + fmt(r.picks) + ' graded picks' : 'No graded picks yet' });
       });
@@ -161,7 +161,7 @@
       var q = input.value.trim();
       if (!q) { box.hidden = true; input.setAttribute('aria-expanded', 'false'); return; }
       box.innerHTML = items.length ? items.map(function (o, i) { return '<li role="option" id="vo' + i + '"><a href="' + esc(o.href) + '">' + esc(o.a) + '<span>' + esc(o.b) + '</span></a></li>'; }).join('') :
-        '<li class="vnone-li"><span class="vnone">No match. Tracked accounts are listed by Watchdog ID, not by name, so a person or handle will not appear here. Try a <a href="reviews/index.html">named service review</a> or the <a href="cappers.html">rankings</a>.</span></li>';
+        '<li class="vnone-li"><span class="vnone">No match. Tracked accounts are listed by Watchdog ID, not by name, so a person or handle will not appear here. Try a <a href="reviews/index.html">named service review</a>, a <a href="sportsbooks/">sportsbook</a> or the <a href="cappers.html">rankings</a>.</span></li>';
       box.hidden = false; input.setAttribute('aria-expanded', 'true');
     }
     input.addEventListener('input', function () { load(); show(); });
@@ -456,6 +456,8 @@
         .sort(function (a, b) { return (b.bs[sp][1] || 0) - (a.bs[sp][1] || 0); }).slice(0, 1)
         .forEach(function (r) { mrows.push({ r: r, sp: sp, b: r.bs[sp] }); });
     });
+    // the light homepage file carries no sport splits: fall back to the top established records, lifetime
+    if (!mrows.length) est.slice(0, 4).forEach(function (r) { mrows.push({ r: r, sp: 'All sports', b: [r.picks, r.units] }); });
     var lockCell = '<span class="lockcell"><svg width="11" height="11" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2" fill="currentColor"/><path d="M8 11V8a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2"/></svg><span class="blur">Away at Home</span></span>';
     function mock(f) {
       var rows = mrows.filter(function (o) { return !f || o.sp === f; });

@@ -390,7 +390,7 @@ def check_menu():
 
     tmp = tempfile.mkdtemp(prefix='hwd-menu-')
     try:
-        for name in ('index.html', 'cappers.html', 'style.css', 'stadium.svg', 'favicon.svg'):
+        for name in ('index.html', 'cappers.html', 'style.css', 'home.css', 'husky.webp', 'husky-sm.webp', 'shield.webp', 'stadium.svg', 'favicon.svg'):
             shutil.copy(os.path.join(ROOT, name), tmp)
 
         class Quiet(SimpleHTTPRequestHandler):
