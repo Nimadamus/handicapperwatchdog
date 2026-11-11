@@ -36,7 +36,7 @@ KEY = (os.environ.get('HWD_MASK_KEY') or secrets.token_hex(16)).encode()
 HERE = os.path.dirname(os.path.abspath(__file__))
 CACHE = os.path.join(HERE, '.cache', 'profiles')
 SITE = os.path.join(HERE, '_site')
-STATIC = ('index.html', 'home.css', 'husky.webp', 'husky-sm.webp', 'shield.webp', 'sportsbook-bg.jpg', 'sportsbook-bg-sm.jpg', 'capper.html', 'cappers.html', 'account.html', 'compare.html', 'picks.html', 'style.css', 'app.js', 'capper.js',
+STATIC = ('index.html', 'home.css', 'husky.webp', 'husky-sm.webp', 'shield.webp', 'logo-draftkings.svg', 'logo-fanduel.svg', 'logo-bet365.svg', 'logo-fanatics.svg', 'sportsbook-bg.jpg', 'sportsbook-bg-sm.jpg', 'capper.html', 'cappers.html', 'account.html', 'compare.html', 'picks.html', 'style.css', 'app.js', 'capper.js',
           'pro.js', 'track.js', 'compare.js', 'pricing.js', 'account.js', 'picks.js', 'contact.js', 'favicon.svg', 'stadium.svg', 'og-card.png', 'review2.css', 'CNAME', 'robots.txt', 'sitemap.xml')
 PROFILE_TTL = int(os.environ.get('HWD_PROFILE_TTL', str(6 * 3600)))
 MAX_FETCH = int(os.environ.get('HWD_MAX_FETCH', '400'))
@@ -589,7 +589,7 @@ def _ranked(cappers, limit):
     return body or '<tr><td colspan="10" class="empty">No established records with 100 or more graded picks yet.</td></tr>'
 
 
-def _home_top(cappers, limit=6):
+def _home_top(cappers, limit=7):
     """Homepage leaderboard: the same established ranking as the board, by units won. Watchdog IDs only."""
     rows = []
     for i, r in enumerate(_established(cappers)[:limit], 1):
@@ -611,8 +611,13 @@ def _short_date(iso):
     return '%d %s' % (d.day, d.strftime('%b %Y'))
 
 
-# Brand colored monogram tiles for the homepage list. Presentation only: no operator artwork is copied.
-_BOOK_TILES = {'draftkings-review': 'DK', 'fanduel-review': 'FD', 'bet365-review': '<i>bet</i>365', 'fanatics-review': 'F', 'betmgm-review': 'MGM'}
+# Operator wordmarks for the homepage list, shown only to identify the book under review (files from Wikimedia, 2026-11-11).
+# A book without a clean file gets a plain text plate.
+_BOOK_TILES = {'draftkings-review': '<img src="logo-draftkings.svg" alt="" width="442" height="224" loading="lazy">',
+               'fanduel-review': '<img src="logo-fanduel.svg" alt="" width="751" height="132" loading="lazy">',
+               'bet365-review': '<img src="logo-bet365.svg" alt="" width="100" height="51" loading="lazy">',
+               'fanatics-review': '<img src="logo-fanatics.svg" alt="" width="617" height="128" loading="lazy">',
+               'betmgm-review': 'BETMGM'}
 
 
 def _home_books(limit=5):
