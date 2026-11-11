@@ -539,3 +539,14 @@ body[data-page="home"] .foot .wrap{max-width:1670px;padding-left:var(--gx);paddi
   .bside{grid-column:2;flex-direction:row;align-items:baseline;gap:16px}
 }
 @media (min-width:1101px){.xsec .xhead p{max-width:none}}
+
+/* hero height follows its content: spacing scales with the window instead of filling it */
+@media (min-width:1101px) and (min-height:660px){
+  .hero{min-height:0}
+  .heroin{flex:0 0 auto;padding-top:clamp(52px,12vh,110px);padding-bottom:clamp(40px,7.800vh,70px)}
+  .husky{bottom:104px}
+}
+@media (min-width:1101px){
+  .xsec{padding-top:clamp(36px,5.400vh,48px)}
+  .xsec .xhead{margin-bottom:24px}
+}
