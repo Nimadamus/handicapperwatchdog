@@ -489,7 +489,7 @@ _SITEMAP = (
     ('contact.html', 'https://handicapperwatchdog.com/contact.html', 'yearly', '0.3'),
 )
 _MARKERS = {
-    'index.html': ('board', 'pending', 'jsonld', 'top', 'books', 'recent', 'stats'),
+    'index.html': ('board', 'pending', 'jsonld', 'top', 'books', 'recent', 'stats', 'bookdate'),
     'cappers.html': ('fresh', 'rows', 'pending', 'jsonld', 'sportnav'),
 }
 # Sport pages need a real sample. A 21 pick hot streak never leads a sport page.
@@ -635,12 +635,22 @@ def _home_books(limit=5):
         if b.get('states_complete') and b.get('states'):
             note += ' %d jurisdictions named by the operator.' % len(b['states'])
         rows.append('<li><a href="sportsbooks/%s/"><span class="blogo b-%s" aria-hidden="true">%s</span>'
-                    '<span class="bmain"><b>%s</b><small>%s Checked %s.</small></span>'
+                    '<span class="bmain"><b>%s</b><small>%s</small></span>'
                     '<span class="bside"><span class="bstat%s">%s</span>'
                     '<span class="go">Review <span aria-hidden="true">&rarr;</span></span></span></a></li>' % (
                         _esc(b['slug']), _esc(b['slug']), _BOOK_TILES.get(b['slug']) or _esc(b.get('mark') or b['name'][:2]), _esc(b['name']), _esc(note),
-                        _esc(doc.get('checked') or ''), '' if live else ' warn', 'Operating' if live else 'Status check'))
+                        '' if live else ' warn', 'Operating' if live else 'Status check'))
     return ''.join(rows)
+
+
+def _home_book_date():
+    """One line for the sportsbook card note: every sportsbook page in this edition carries the same check date."""
+    try:
+        with open(os.path.join(HERE, 'content', 'sportsbooks.json'), encoding='utf-8') as f:
+            checked = json.load(f).get('checked')
+    except (OSError, ValueError):
+        checked = None
+    return 'Checked %s. ' % _esc(checked) if checked else ''
 
 
 def _home_reviews(limit=3):
@@ -2813,7 +2823,7 @@ def stamp_public_pages(site):
             'live': _live(meta), 'board': _ranked(cappers, 10), 'sports': _sports(cappers),
             'reality': _reality(meta, cappers), 'pending': _esc(_pending(meta)),
             'jsonld': _itemlist(cappers, 'https://handicapperwatchdog.com/', 'Top established handicappers by units'),
-            'top': _home_top(cappers), 'books': _home_books(), 'recent': _home_reviews(), 'stats': _home_stats(meta, cappers),
+            'top': _home_top(cappers), 'books': _home_books(), 'bookdate': _home_book_date(), 'recent': _home_reviews(), 'stats': _home_stats(meta, cappers),
         },
         'cappers.html': {
             'fresh': _fresh(meta), 'rows': _ranked(cappers, 50), 'pending': _esc(_pending(meta)),
