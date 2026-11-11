@@ -626,3 +626,76 @@ body[data-page="home"] .foot .wrap{max-width:1670px;padding-left:var(--gx);paddi
 @media (min-width:1101px) and (max-width:1480px){.tt .xw{display:none}.tt th,.tt td{padding-left:6px;padding-right:6px}}
 @media (min-width:1101px) and (max-width:1560px){body.lay-a .tt thead th{letter-spacing:.03em;font-size:11px}body.lay-a .tt th,body.lay-a .tt td{padding-left:3px;padding-right:3px}body.lay-a .tt th:first-child,body.lay-a .tt td:first-child{width:32px}body.lay-a .rank{width:26px;height:26px;font-size:12.500px}}
 @media (min-width:1101px) and (max-width:1300px){body.lay-a .tt tbody th small{display:none}body.lay-a .tt th,body.lay-a .tt td{padding-top:15px;padding-bottom:15px;font-size:14px}body.lay-a .tt tbody th a,body.lay-a .tt tbody th{font-size:14px}body.lay-a .tt td.roi{font-size:15px}}
+
+/* ---- Option A tune-up: one card system (same padding, header, row height and type sizes in all three) ---- */
+@media (min-width:1101px){
+  body.lay-a .xsec{padding-top:14px}
+  body.lay-a .exin{gap:0 28px}
+  body.lay-a .xhead{align-items:baseline;justify-content:space-between;gap:32px;margin:0 0 14px;padding-bottom:10px;border-bottom:1px solid var(--rule)}
+  body.lay-a .xhead h2{font-size:clamp(24px,1.550vw,29px);letter-spacing:-.005em}
+  body.lay-a .xsec .xhead p{flex:0 1 auto;font-size:15px;color:#a9bbd2;text-align:right}
+  body.lay-a .xp,body.lay-a .xr{padding:14px 24px 8px;border-color:rgba(140,180,235,.16)}
+  body.lay-a .xph{padding-bottom:11px}
+  body.lay-a .xph h3{font-size:18.500px}
+  body.lay-a .xall{font-size:14px}
+  /* leaderboard */
+  body.lay-a .tt th,body.lay-a .tt td{padding:12px 8px;font-size:16px}
+  body.lay-a .tt thead th{padding:9px 8px 7px;font-size:11.500px;letter-spacing:.08em}
+  body.lay-a .tt th:first-child,body.lay-a .tt td:first-child{width:46px;padding-left:0}
+  body.lay-a .tt th:last-child,body.lay-a .tt td:last-child{padding-right:0}
+  body.lay-a .tt tbody th a,body.lay-a .tt tbody th{font-size:16.500px}
+  body.lay-a .tt tbody th small{font-size:13.500px;color:#a9bbd2;margin-top:2px}
+  body.lay-a .tt td.roi{font-size:17.500px}
+  body.lay-a .rank{width:30px;height:30px;font-size:14px}
+  /* sportsbooks */
+  body.lay-a .books a{grid-template-columns:92px minmax(0,1fr) auto;gap:2px 16px;padding:9px 0;min-height:74px;box-sizing:border-box}
+  body.lay-a .blogo{width:92px;height:46px;padding:7px 10px;font-size:13.500px}
+  body.lay-a .blogo img{max-height:31px}body.lay-a .b-bet365-review img{max-height:46px}
+  body.lay-a .bmain b{font-size:16.500px}
+  body.lay-a .bmain small{white-space:normal;overflow:visible;font-size:14px;line-height:1.35;color:#a9bbd2;margin-top:2px}
+  body.lay-a .bside{gap:5px}
+  body.lay-a .bstat{font-size:14px}
+  body.lay-a .go{font-size:14px}
+  /* reviews */
+  body.lay-a .revs article{gap:6px 12px;padding:0;min-height:74px;align-content:center;box-sizing:border-box}
+  body.lay-a .revs h4{font-size:16.500px}
+  body.lay-a .revs .tag{height:24px;font-size:12px}
+  body.lay-a .rfoot{font-size:14px;color:#a9bbd2}
+  body.lay-a .rfoot a{font-size:14px}
+  /* notes: one under each card, readable */
+  body.lay-a .xfoot{grid-column:auto;margin:12px 0 0;padding:0 2px;font-size:14px;line-height:1.5;color:#a9bbd2}
+  body.lay-a .xfoot a{white-space:normal}
+}
+@media (min-width:1101px) and (max-width:1560px){
+  body.lay-a .exin{gap:0 20px}
+  body.lay-a .xp,body.lay-a .xr{padding-left:18px;padding-right:18px}
+  body.lay-a .xsec .xhead p{display:block;font-size:14px}
+  body.lay-a .books a{grid-template-columns:76px minmax(0,1fr) auto;gap:2px 12px}
+  body.lay-a .blogo{width:76px;height:40px;padding:6px 8px}
+  body.lay-a .blogo img{max-height:26px}body.lay-a .b-bet365-review img{max-height:40px}
+  body.lay-a .bmain small,body.lay-a .rfoot,body.lay-a .rfoot a,body.lay-a .xfoot{font-size:13.500px}
+  body.lay-a .tt th,body.lay-a .tt td{padding-left:4px;padding-right:4px;font-size:15px}
+  body.lay-a .tt th:first-child,body.lay-a .tt td:first-child{width:38px}
+}
+@media (min-width:1101px) and (max-width:1300px){body.lay-a .xsec .xhead p{display:none}body.lay-a .tt tbody th small{display:block}body.lay-a .tt th,body.lay-a .tt td{padding-top:12px;padding-bottom:12px}}
+
+@media (min-width:1101px){
+  body.lay-a .xsec{padding-top:12px}
+  body.lay-a .xhead{margin-bottom:12px;padding-bottom:8px}
+  body.lay-a .xp,body.lay-a .xr{padding-top:12px}
+  body.lay-a .xph{padding-bottom:9px}
+  body.lay-a .books a{grid-template-columns:92px auto minmax(0,1fr) auto;gap:3px 12px;padding:7px 0;min-height:75px;align-content:center}
+  body.lay-a .bmain,body.lay-a .bside{display:contents}
+  body.lay-a .blogo{grid-column:1;grid-row:1/span 2;align-self:center;margin-right:4px}
+  body.lay-a .bmain b{grid-column:2;grid-row:1}
+  body.lay-a .bstat{grid-column:3;grid-row:1;justify-self:start;align-self:center}
+  body.lay-a .go{grid-column:4;grid-row:1;align-self:center}
+  body.lay-a .bmain small{grid-column:2/-1;grid-row:2;margin:0}
+  body.lay-a .revs article{min-height:75px}
+  body.lay-a .tt th,body.lay-a .tt td{padding-top:13px;padding-bottom:13px}
+  body.lay-a .tt thead th{padding-top:9px;padding-bottom:7px}
+}
+@media (min-width:1101px) and (max-width:1560px){body.lay-a .books a{grid-template-columns:76px auto minmax(0,1fr) auto;gap:3px 10px}}
+@media (min-width:1101px){body.lay-a .books a{padding:5px 0;min-height:71px}body.lay-a .revs article{min-height:75px}body.lay-a .tt th,body.lay-a .tt td{padding-top:11px;padding-bottom:11px}body.lay-a .tt thead th{padding-top:9px;padding-bottom:7px}}
+@media (min-width:1101px) and (max-width:1300px){body.lay-a .tt th,body.lay-a .tt td{padding-left:3px;padding-right:3px;font-size:14.500px}body.lay-a .tt th:first-child,body.lay-a .tt td:first-child{width:32px}body.lay-a .rank{width:26px;height:26px;font-size:12.500px}body.lay-a .tt tbody th a,body.lay-a .tt tbody th{font-size:14.500px}body.lay-a .tt tbody th small{font-size:12.500px}body.lay-a .tt td.roi{font-size:15.500px}body.lay-a .tt thead th{letter-spacing:.02em;font-size:10.500px}}
+@media (min-width:1101px) and (max-width:1200px){body.lay-a .tt tbody th small{display:none}body.lay-a .tt th,body.lay-a .tt td{padding-top:19px;padding-bottom:19px}body.lay-a .xp,body.lay-a .xr{padding-left:14px;padding-right:14px}body.lay-a .books a{grid-template-columns:64px auto minmax(0,1fr) auto;gap:3px 8px}body.lay-a .blogo{width:64px;height:36px;padding:5px 6px}body.lay-a .blogo img{max-height:22px}body.lay-a .b-bet365-review img{max-height:36px}}

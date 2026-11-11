@@ -38,9 +38,14 @@ def write_options():
     block = a[x0:x1]
     notes = re.findall(r'\s*<p class="xnote">(.*?)</p>', block, re.S)
     block = re.sub(r'\s*<p class="xnote">.*?</p>', '', block, flags=re.S)
-    cut = block.rindex('</div>')
-    block = block[:cut] + '  <p class="xnote xfoot">%s</p>\n    ' % ' '.join(notes) + block[cut:]
     assert len(notes) == 3
+    # the check date is the same on every sportsbook row: say it once in that card's note so no row is cut short
+    dates = set(re.findall(r'<span class="bmain">.*? Checked ([^<.]+)\.</small>', block, re.S))
+    if len(dates) == 1:
+        block = re.sub(r'(<span class="bmain">.*?) Checked [^<.]+\.(</small>)', r'\1\2', block, flags=re.S)
+        notes[1] = 'Checked %s. ' % dates.pop() + notes[1]
+    cut = block.rindex('</div>')
+    block = block[:cut] + ''.join('  <p class="xnote xfoot">%s</p>\n    ' % n for n in notes) + block[cut:]
     a = a[:x0] + block + a[x1:]
     b = page.replace('<body data-page="home">', '<body data-page="home" class="lay-b">', 1)
     s0 = b.index('  <section class="band stats" id="records"'); s1 = b.index('  <section class="band claims"')
