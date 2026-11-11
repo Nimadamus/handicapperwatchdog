@@ -3050,6 +3050,15 @@ def _seo_finish(site):
                         graph.append({'@type': 'ItemList', 'itemListElement': [
                             {'@type': 'ListItem', 'position': i + 1, 'name': unescape(n), 'url': root + 'reviews/' + h}
                             for i, (h, n) in enumerate(zip(links, names_))]})
+                    if rel == 'pricing.html':
+                        def _offer(nm, amt, unit):
+                            return {'@type': 'Offer', 'name': nm, 'url': c.group(1), 'price': amt, 'priceCurrency': 'USD',
+                                    'priceSpecification': {'@type': 'UnitPriceSpecification', 'price': amt, 'priceCurrency': 'USD',
+                                                           'billingDuration': 1, 'unitCode': unit}}
+                        graph.append({'@type': 'Product', 'name': 'Watchdog Pro', 'url': c.group(1),
+                                      'description': 'Eligible pending picks before the start, full graded pick logs and research tools. Accounts stay anonymous in every plan.',
+                                      'brand': {'@type': 'Brand', 'name': 'Handicapper Watchdog'},
+                                      'offers': [_offer('Watchdog Pro Monthly', '49.99', 'MON'), _offer('Watchdog Pro Annual', '499.00', 'ANN')]})
                     tag = '<script type="application/ld+json">%s</script>' % json.dumps(
                         {'@context': 'https://schema.org', '@graph': graph}, ensure_ascii=True).replace('<', '\\u003c')
                     html = html.replace('</head>', tag + '\n</head>', 1)
