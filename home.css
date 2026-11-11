@@ -162,6 +162,7 @@ body[data-page="home"] main{display:block;max-width:none;padding:0;margin:0}
 
 /* sportsbook look */
 .hero{position:relative;padding:92px 0 0;background:linear-gradient(180deg,rgba(7,12,22,.5),rgba(7,12,22,.66) 50%,rgba(10,17,32,.94) 92%,var(--hn)),radial-gradient(900px 480px at 50% 22%,rgba(7,12,22,.55),transparent 72%),url(sportsbook-bg.jpg) 62% center/cover no-repeat}
+@supports (background-image:image-set(url(a.webp) type("image/webp"))){.hero{background-image:linear-gradient(180deg,rgba(7,12,22,.5),rgba(7,12,22,.66) 50%,rgba(10,17,32,.94) 92%,var(--hn)),radial-gradient(900px 480px at 50% 22%,rgba(7,12,22,.55),transparent 72%),image-set(url(sportsbook-bg.webp) type("image/webp"),url(sportsbook-bg.jpg) type("image/jpeg"))}}
 .hero h1,.herosub{text-shadow:0 2px 24px rgba(0,0,0,.75)}
 .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:52px 0 0;text-align:left}
 .facts>div{padding:20px;border-radius:14px;background:rgba(10,17,32,.82);border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(6px)}
@@ -178,6 +179,8 @@ body[data-page="home"] main{display:block;max-width:none;padding:0;margin:0}
 .ltick .lu{color:#5dff9f}.ltick .ld{color:#ff7a6b}.ltick i{display:inline;font-size:inherit}
 @keyframes ltick{to{transform:translateX(-50%)}}
 .pro2{background:linear-gradient(90deg,rgba(14,19,27,.96),rgba(14,19,27,.84)),url(sportsbook-bg.jpg) center/cover no-repeat}
+@media (max-width:700px){.pro2{background-image:linear-gradient(90deg,rgba(14,19,27,.96),rgba(14,19,27,.84)),url(sportsbook-bg-sm.jpg)}}
+@supports (background-image:image-set(url(a.webp) type("image/webp"))){.pro2{background-image:linear-gradient(90deg,rgba(14,19,27,.96),rgba(14,19,27,.84)),image-set(url(sportsbook-bg.webp) type("image/webp"),url(sportsbook-bg.jpg) type("image/jpeg"))}@media (max-width:700px){.pro2{background-image:linear-gradient(90deg,rgba(14,19,27,.96),rgba(14,19,27,.84)),image-set(url(sportsbook-bg-sm.webp) type("image/webp"),url(sportsbook-bg-sm.jpg) type("image/jpeg"))}}}
 .credit{font-size:12px;color:var(--dim)}
 .credit a{color:var(--muted)}
 @media (max-width:1100px){.facts{grid-template-columns:1fr 1fr}}
@@ -237,4 +240,5 @@ body[data-page="home"] main{display:block;max-width:none;padding:0;margin:0}
 .pchip,.stabs button{transition:background .15s,color .15s,border-color .15s}
 @media (max-width:700px){.facts>div{min-height:0}.cres,.sdash,#claims{min-height:0}.mission{padding:56px 0}}
 @media (max-width:700px){.hero{background-image:linear-gradient(180deg,rgba(7,12,22,.5),rgba(7,12,22,.66) 50%,rgba(10,17,32,.94) 92%,var(--hn)),radial-gradient(900px 480px at 50% 22%,rgba(7,12,22,.55),transparent 72%),url(sportsbook-bg-sm.jpg)}}
+@supports (background-image:image-set(url(a.webp) type("image/webp"))){@media (max-width:700px){.hero{background-image:linear-gradient(180deg,rgba(7,12,22,.5),rgba(7,12,22,.66) 50%,rgba(10,17,32,.94) 92%,var(--hn)),radial-gradient(900px 480px at 50% 22%,rgba(7,12,22,.55),transparent 72%),image-set(url(sportsbook-bg-sm.webp) type("image/webp"),url(sportsbook-bg-sm.jpg) type("image/jpeg"))}}}
 .credit a{text-decoration:underline}
