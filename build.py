@@ -590,14 +590,17 @@ def _ranked(cappers, limit):
 
 
 def _home_top(cappers, limit=6):
-    """Homepage card: the same established ranking as the board, by units won. Watchdog IDs only."""
+    """Homepage leaderboard: the same established ranking as the board, by units won. Watchdog IDs only."""
     rows = []
     for i, r in enumerate(_established(cappers)[:limit], 1):
         code = '#' + _esc(r['id'][:6].upper())
         name = '<a href="handicappers/%s.html">%s</a>' % (r['id'], code) if r.get('profile') else code
-        rows.append('<tr><td><span class="medal m%d">%d</span></td><th scope="row">%s</th><td>%s</td><td>%s</td></tr>' % (
-            min(i, 4), i, name, _record(r), _signed(r.get('roi'), 1, '%')))
-    return ''.join(rows) or '<tr><td colspan="4">No established records with 100 or more graded picks yet.</td></tr>'
+        win = _num(r.get('win_pct'))
+        rows.append('<tr><td><span class="rank r%d">%d</span></td><th scope="row">%s<small>%s graded picks</small></th><td>%s</td>'
+                    '<td class="xw">%s</td><td class="xw">%s</td><td class="roi">%s</td></tr>' % (
+                        min(i, 4), i, name, f'{int(r.get("picks") or 0):,}', _record(r), 'n/a' if win is None else '%.1f%%' % win,
+                        _signed(r.get('units'), 2, 'u'), _signed(r.get('roi'), 1, '%')))
+    return ''.join(rows) or '<tr><td colspan="6">No established records with 100 or more graded picks yet.</td></tr>'
 
 
 def _short_date(iso):
@@ -608,8 +611,12 @@ def _short_date(iso):
     return '%d %s' % (d.day, d.strftime('%b %Y'))
 
 
+# Brand colored monogram tiles for the homepage list. Presentation only: no operator artwork is copied.
+_BOOK_TILES = {'draftkings-review': 'DK', 'fanduel-review': 'FD', 'bet365-review': '<i>bet</i>365', 'fanatics-review': 'F', 'betmgm-review': 'MGM'}
+
+
 def _home_books(limit=5):
-    """Homepage card: sportsbook research pages from content/sportsbooks.json. Status text only, this edition has no score."""
+    """Homepage list: sportsbook research pages from content/sportsbooks.json. Status and state facts only, this edition has no score."""
     try:
         with open(os.path.join(HERE, 'content', 'sportsbooks.json'), encoding='utf-8') as f:
             doc = json.load(f)
@@ -620,14 +627,20 @@ def _home_books(limit=5):
         head, _, tail = str(b.get('status') or '').partition('. ')
         live = b.get('kind') == 'review' and head == 'Operating'
         note = tail if live and tail else (b.get('status') or '')
-        rows.append('<li><a href="sportsbooks/%s/"><span class="bmark" aria-hidden="true">%s</span><b>%s</b><span class="tag%s">%s</span><small>%s Checked %s.</small></a></li>' % (
-            _esc(b['slug']), _esc(b.get('mark') or b['name'][:2]), _esc(b['name']), '' if live else ' warn', 'Operating' if live else 'Status check',
-            _esc(note), _esc(doc.get('checked') or '')))
+        if b.get('states_complete') and b.get('states'):
+            note += ' %d jurisdictions named by the operator.' % len(b['states'])
+        rows.append('<li><a href="sportsbooks/%s/"><span class="blogo b-%s" aria-hidden="true">%s</span>'
+                    '<span class="bmain"><b>%s</b><small>%s</small></span>'
+                    '<span class="bside"><span class="bstat%s">%s</span><small>Checked %s</small></span>'
+                    '<span class="go">Review <span aria-hidden="true">&rarr;</span></span></a></li>' % (
+                        _esc(b['slug']), _esc(b['slug']), _BOOK_TILES.get(b['slug']) or _esc(b.get('mark') or b['name'][:2]), _esc(b['name']), _esc(note),
+                        '' if live else ' warn', 'Operating' if live else 'Status check', _esc(doc.get('checked') or '')))
     return ''.join(rows)
 
 
-def _home_reviews(limit=5):
-    """Homepage card: the most recently checked service reviews with the status each review page carries."""
+def _home_reviews(limit=3):
+    """Homepage editorial entries: the most recently checked service reviews. Each one separates what was read on the
+    seller's own page from what the seller claims, using the labels the review page itself carries."""
     root = os.path.join(HERE, 'content')
     try:
         with open(os.path.join(root, 'reviews.json'), encoding='utf-8') as f:
@@ -636,7 +649,7 @@ def _home_reviews(limit=5):
         return ''
     items = {}
     for r in doc.get('reviews') or []:
-        items[r['slug']] = {'slug': r['slug'], 'name': r['name'], 'label': r.get('verdict') or 'Not rated',
+        items[r['slug']] = {'slug': r['slug'], 'name': r['name'], 'label': r.get('verdict') or 'Not rated', 'dek': r.get('dek') or '',
                             'date': r.get('updated_iso') or r.get('checked_iso') or doc.get('checked_iso') or '', 'depth': 0}
     v2_dir = os.path.join(root, 'reviews_v2')
     for name in sorted(os.listdir(v2_dir)) if os.path.isdir(v2_dir) else []:
@@ -644,17 +657,28 @@ def _home_reviews(limit=5):
             continue
         with open(os.path.join(v2_dir, name), encoding='utf-8') as f:
             r = json.load(f)
-        items[r['slug']] = {'slug': r['slug'], 'name': r['name'], 'label': (r.get('status') or {}).get('label') or 'Not rated',
-                            'date': r.get('updated_iso') or r.get('checked_iso') or '', 'depth': len(r.get('customers') or [])}
+        price = next((row for row in r.get('pricing') or [] if len(row) >= 2 and row[0] and row[1] and str(row[2] if len(row) > 2 else '').lower() != 'free'), None)
+        claim = next((c for c in r.get('claims') or [] if str(c.get('status') or '').startswith(('Seller claim', 'Selected', 'Seller graded', 'Graded by the seller'))), None)
+        items[r['slug']] = {'slug': r['slug'], 'name': r['name'], 'label': (r.get('status') or {}).get('label') or 'Not rated', 'dek': r.get('dek') or '',
+                            'date': r.get('updated_iso') or r.get('checked_iso') or '', 'depth': len(r.get('customers') or []),
+                            'price': price, 'claim': claim}
     # newest check first; on the same day the review holding the most customer evidence leads, a flagged one ahead of that
     order = sorted(items.values(), key=lambda x: x['name'])
     order.sort(key=lambda x: (x['date'], x['label'] == 'Scam', x['depth']), reverse=True)
-    tick = '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h14v17l-7-4-7 4z"/><path d="M9 9h6M9 13h4"/></svg>'
     rows = []
     for x in order[:limit]:
-        kind = ' bad' if x['label'] == 'Scam' else '' if x['label'] == 'Verified' else ' warn'
-        rows.append('<li><a href="reviews/%s.html">%s<b>%s</b><span class="tag%s">%s</span><small>Checked %s</small></a></li>' % (
-            _esc(x['slug']), tick, _esc(x['name']), kind, _esc(x['label']), _esc(_short_date(x['date']) or 'this edition')))
+        kind = ' bad' if x['label'] == 'Scam' else ' yes' if x['label'] == 'Verified' else ' warn'
+        href = 'reviews/%s.html' % _esc(x['slug'])
+        facts = ''
+        if x.get('price'):
+            facts += '<div class="yes"><dt>Read on the seller&rsquo;s page</dt><dd>%s: %s</dd></div>' % (_esc(x['price'][0]), _esc(x['price'][1]))
+        if x.get('claim'):
+            facts += '<div class="no"><dt>Not verified</dt><dd>%s <em>%s</em></dd></div>' % (_esc(x['claim']['claim']), _esc(x['claim']['status']))
+        rows.append('<li><article><p class="kick"><span>Service review</span><span class="tag%s">%s</span></p>'
+                    '<h4><a href="%s">%s</a></h4><p class="dek">%s</p>%s'
+                    '<p class="rfoot"><span>Checked %s</span><a href="%s" aria-label="Read the %s review">Read the review <span aria-hidden="true">&rarr;</span></a></p></article></li>' % (
+                        kind, _esc(x['label']), href, _esc(x['name']), _esc(x['dek']), '<dl class="rfacts">%s</dl>' % facts if facts else '',
+                        _esc(_short_date(x['date']) or 'this edition'), href, _esc(x['name'])))
     return ''.join(rows)
 
 
