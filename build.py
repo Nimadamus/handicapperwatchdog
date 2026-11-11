@@ -589,7 +589,7 @@ def _ranked(cappers, limit):
     return body or '<tr><td colspan="10" class="empty">No established records with 100 or more graded picks yet.</td></tr>'
 
 
-def _home_top(cappers, limit=7):
+def _home_top(cappers, limit=6):
     """Homepage leaderboard: the same established ranking as the board, by units won. Watchdog IDs only."""
     rows = []
     for i, r in enumerate(_established(cappers)[:limit], 1):
@@ -635,11 +635,11 @@ def _home_books(limit=5):
         if b.get('states_complete') and b.get('states'):
             note += ' %d jurisdictions named by the operator.' % len(b['states'])
         rows.append('<li><a href="sportsbooks/%s/"><span class="blogo b-%s" aria-hidden="true">%s</span>'
-                    '<span class="bmain"><b>%s</b><small>%s</small></span>'
-                    '<span class="bside"><span class="bstat%s">%s</span><small>Checked %s</small></span>'
-                    '<span class="go">Review <span aria-hidden="true">&rarr;</span></span></a></li>' % (
+                    '<span class="bmain"><b>%s</b><small>%s Checked %s.</small></span>'
+                    '<span class="bside"><span class="bstat%s">%s</span>'
+                    '<span class="go">Review <span aria-hidden="true">&rarr;</span></span></span></a></li>' % (
                         _esc(b['slug']), _esc(b['slug']), _BOOK_TILES.get(b['slug']) or _esc(b.get('mark') or b['name'][:2]), _esc(b['name']), _esc(note),
-                        '' if live else ' warn', 'Operating' if live else 'Status check', _esc(doc.get('checked') or '')))
+                        _esc(doc.get('checked') or ''), '' if live else ' warn', 'Operating' if live else 'Status check'))
     return ''.join(rows)
 
 

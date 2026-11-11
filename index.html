@@ -67,12 +67,14 @@
         <ul class="vlist" id="vlist" role="listbox" hidden></ul>
       </form>
     </div>
+    <div class="featbar">
     <ul class="in feats">
       <li><svg width="46" height="46" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 4 7 10v12c0 11 7.2 18.600 17 22 9.800-3.400 17-11 17-22V10z"/><path d="m16 23 6 6 11-12"/></svg><div><b>Verified Records</b><span>Real wins, losses and units</span></div></li>
       <li><svg width="46" height="46" viewBox="0 0 48 48" fill="currentColor" aria-hidden="true"><rect x="4" y="30" width="8" height="14" rx="1.500"/><rect x="15" y="22" width="8" height="22" rx="1.500"/><rect x="26" y="13" width="8" height="31" rx="1.500"/><rect x="37" y="4" width="8" height="40" rx="1.500"/></svg><div><b>Independent Tracking</b><span>Graded on the final score</span></div></li>
       <li><svg width="50" height="46" viewBox="0 0 52 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M26 12c-5-4-12-5-21-4v30c9-1 16 0 21 4 5-4 12-5 21-4V8c-9-1-16 0-21 4z"/><path d="M26 12v30"/></svg><div><b>In Depth Reviews</b><span>Claims, prices and red flags</span></div></li>
       <li><svg width="46" height="46" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m24 5 19 9-19 9-19-9z"/><path d="m5 24 19 9 19-9"/><path d="m5 34 19 9 19-9"/></svg><div><b>Sportsbook Reviews</b><span>Availability, limits and sources</span></div></li>
     </ul>
+    </div>
   </section>
 
   <section class="xsec" id="explore" aria-labelledby="exploreH">
@@ -99,10 +101,33 @@
         <ul class="revs"><!--seo:recent--><li><div class="skel"></div></li><!--/seo:recent--></ul>
         <p class="xnote">A service stays Not verified until Watchdog has graded a full, time stamped record for it. <a href="reviews/how-we-rate.html">How we rate</a></p>
       </section>
-      <p class="prostrip"><span class="lock">Watchdog Pro</span><span>Every eligible pending pick before the game, and every account&rsquo;s full graded record.</span><a class="xall" href="#pro">See what Pro adds <span aria-hidden="true">&rarr;</span></a></p>
     </div>
     <p class="tagline"><span>Verified Records. Honest Reviews. Unbiased Analysis.</span></p>
     <div class="ticker" aria-hidden="true"><div class="ltick" id="ticker"></div></div>
+  </section>
+
+  <section class="band pro2" id="pro" aria-labelledby="proH">
+    <div class="in progrid">
+      <div class="protext">
+        <span class="lock">Watchdog Pro</span>
+        <h2 id="proH">See every pending pick. See every full record.</h2>
+        <div class="p2">
+          <div><b>Every eligible pending pick</b><p>From every tracked account, before the game starts, with that account&rsquo;s graded record beside it.</p></div>
+          <div><b>Every account&rsquo;s entire history</b><p>The complete graded pick log and the full breakdown by team, market, price, side and calendar.</p></div>
+          <div><b>Follow accounts, get alerts</b><p>Follow accounts and get an email when one of them posts a pick before the game.</p></div>
+          <div><b>Names stay private</b><p>No plan includes handicapper names or account links. Every account is a permanent Watchdog ID.</p></div>
+        </div>
+        <div class="buy"><div class="price"><b>$49.99</b><span>a month, or $499 a year</span></div>
+        <a class="btn pro lg" href="pricing.html">View Watchdog Pro</a></div>
+        <p class="muted small ctanote" data-cta-note hidden></p>
+        <p class="fine"><span id="featPending"><!--seo:pending-->Tracked picks waiting on a result are never counted in a record.<!--/seo:pending--></span></p>
+      </div>
+      <div class="mock" aria-label="Preview of the Watchdog Pro pending picks screen">
+        <div class="mockbar"><span class="lock">Watchdog Pro</span><b>Pending picks</b><span class="mocktag">Preview</span></div>
+                <div class="tw"><table class="mini mockt"><thead><tr><th class="l">Watchdog ID</th><th class="l">Record</th><th class="l">Game</th><th class="l">Pick</th><th class="hp">Starts</th></tr></thead><tbody id="mockRows"></tbody></table></div>
+        <p class="mockfoot">Handicapper records in this preview are real rows from today&rsquo;s board. Games and picks are placeholders. Real pending picks are shown only inside Watchdog Pro.</p>
+      </div>
+    </div>
   </section>
 
   <section class="band stats" id="records" aria-labelledby="statsH">
@@ -174,30 +199,6 @@
       <p class="lead3">Here is one real account, fully opened. Watchdog Pro gives you this same file on every tracked profile with graded picks, and puts it beside eligible pending picks before the game starts.</p>
       <div class="sdash" id="sdash"><div class="skel"></div></div>
       <p class="fine">Real data from one anonymous account on today&rsquo;s board. Past results are not predictions or guarantees.</p>
-    </div>
-  </section>
-
-  <section class="band pro2" id="pro" aria-labelledby="proH">
-    <div class="in progrid">
-      <div class="protext">
-        <span class="lock">Watchdog Pro</span>
-        <h2 id="proH">See every pending pick. See every full record.</h2>
-        <div class="p2">
-          <div><b>Every eligible pending pick</b><p>From every tracked account, before the game starts, with that account&rsquo;s graded record beside it.</p></div>
-          <div><b>Every account&rsquo;s entire history</b><p>The complete graded pick log and the full breakdown by team, market, price, side and calendar.</p></div>
-          <div><b>Follow accounts, get alerts</b><p>Follow accounts and get an email when one of them posts a pick before the game.</p></div>
-          <div><b>Names stay private</b><p>No plan includes handicapper names or account links. Every account is a permanent Watchdog ID.</p></div>
-        </div>
-        <div class="buy"><div class="price"><b>$49.99</b><span>a month, or $499 a year</span></div>
-        <a class="btn pro lg" href="pricing.html">View Watchdog Pro</a></div>
-        <p class="muted small ctanote" data-cta-note hidden></p>
-        <p class="fine"><span id="featPending"><!--seo:pending-->Tracked picks waiting on a result are never counted in a record.<!--/seo:pending--></span></p>
-      </div>
-      <div class="mock" aria-label="Preview of the Watchdog Pro pending picks screen">
-        <div class="mockbar"><span class="lock">Watchdog Pro</span><b>Pending picks</b><span class="mocktag">Preview</span></div>
-                <div class="tw"><table class="mini mockt"><thead><tr><th class="l">Watchdog ID</th><th class="l">Record</th><th class="l">Game</th><th class="l">Pick</th><th class="hp">Starts</th></tr></thead><tbody id="mockRows"></tbody></table></div>
-        <p class="mockfoot">Handicapper records in this preview are real rows from today&rsquo;s board. Games and picks are placeholders. Real pending picks are shown only inside Watchdog Pro.</p>
-      </div>
     </div>
   </section>
 

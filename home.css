@@ -496,3 +496,46 @@ body[data-page="home"] .foot .wrap{max-width:1670px;padding-left:var(--gx);paddi
 .faqin>*{max-width:none}
 .faqin .faqs{display:grid;grid-template-columns:1fr 1fr;gap:10px 32px}
 @media (max-width:700px){.faqin .faqs{grid-template-columns:1fr}}
+
+/* ---- composition: hero is one complete first screen on desktop; each section then opens and closes on its own ---- */
+.featbar{position:relative;z-index:2;margin-top:34px;border-top:1px solid rgba(110,170,255,.18);background:rgba(1,9,22,.55)}
+.featbar .feats{margin-top:0;padding-top:26px;padding-bottom:26px}
+@media (min-width:1101px) and (min-height:660px){
+  .hero{display:flex;flex-direction:column;padding-top:0;min-height:min(calc(100vh - 85px),920px);min-height:min(calc(100svh - 85px),920px)}
+  .heroin{flex:1 0 auto;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;width:100%;margin:0 auto;padding-top:28px;padding-bottom:28px;box-sizing:border-box}
+  .hero h1{margin-top:0;width:100%}
+  .vsearch{width:100%}
+  .husky{top:0;bottom:112px;display:flex;align-items:center}
+  .featbar{margin-top:0}
+}
+@media (min-width:1500px) and (min-height:820px){
+  .herosub{margin-top:22px}
+  .vsearch{margin-top:42px}
+}
+.xsec{padding-top:88px}
+.xhead{border-top:0;padding-top:0;margin-bottom:36px}
+.tagline{margin-top:64px;padding-bottom:80px}
+.band,.mission{padding:88px 0}
+.pro2{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+@media (max-width:700px){.xsec{padding-top:48px}.band,.mission{padding:56px 0}.tagline{margin-top:40px;padding-bottom:48px}.featbar{margin-top:22px}.featbar .feats{padding-top:8px;padding-bottom:10px}}
+@media (min-width:1101px) and (max-width:1480px){body[data-page="home"] .top .wrap{padding:0 22px;gap:8px}body[data-page="home"] .navlinks{gap:2px}body[data-page="home"] .navlinks a{padding:10px 9px;font-size:15.500px}body[data-page="home"] .top .btn.sm{padding:0 13px;font-size:14.500px}.wm{font-size:20px;margin-right:6px}.wm b{font-size:22.500px}.brand img{width:48px;height:56px}}
+@media (min-width:1101px) and (max-width:1220px){body[data-page="home"] .navlinks a{padding:10px 6px;font-size:14.500px}.navicon{display:none}}
+
+/* explore rows sized so the heading and both panels read as one screen on a desktop */
+.xsec{padding-top:64px}
+.xhead{margin-bottom:28px}
+.xhead p{text-wrap:wrap}
+.tt th,.tt td{padding-top:13px;padding-bottom:13px}
+.tt thead th{padding-top:14px;padding-bottom:10px}
+.books a{grid-template-columns:104px minmax(0,1fr) auto;padding:13px 0}
+.blogo{grid-row:auto}
+.bside{display:flex;flex-direction:column;align-items:flex-end;gap:6px;align-self:center;padding-top:0}
+.go{grid-column:auto;margin:0}
+.xp .xnote{padding-top:16px}
+@media (max-width:700px){
+  .xsec{padding-top:48px}
+  .books a{grid-template-columns:92px minmax(0,1fr);gap:6px 14px;align-items:start}
+  .blogo{grid-row:span 2}
+  .bside{grid-column:2;flex-direction:row;align-items:baseline;gap:16px}
+}
+@media (min-width:1101px){.xsec .xhead p{max-width:none}}
