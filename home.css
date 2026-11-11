@@ -550,3 +550,76 @@ body[data-page="home"] .foot .wrap{max-width:1670px;padding-left:var(--gx);paddi
   .xsec{padding-top:clamp(36px,5.400vh,48px)}
   .xsec .xhead{margin-bottom:24px}
 }
+
+/* ================= layout options (preview): body.lay-a compact, body.lay-b editorial ================= */
+@media (min-width:1101px){
+  /* ---- A: compact. Hero at its original tight proportions, then three complete summary cards in the first screen ---- */
+  body.lay-a .heroin{padding-top:26px;padding-bottom:22px}
+  body.lay-a .husky{bottom:84px}
+  body.lay-a .featbar .feats{padding-top:15px;padding-bottom:15px}
+  body.lay-a .xsec{padding-top:20px}
+  body.lay-a .xfoot{grid-column:1/-1;margin:14px 0 0;font-size:12.500px}
+  body.lay-a .exin{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 24px}
+  body.lay-a .xhead{grid-column:1/-1;display:flex;align-items:baseline;gap:18px;margin:0 0 14px}
+  body.lay-a .xhead h2{margin:0;font-size:22px;white-space:nowrap}
+  body.lay-a .xsec .xhead p{font-size:14.500px;color:#93a6be;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  body.lay-a .ex2{display:contents}
+  body.lay-a .xr{margin-top:0;display:flex;flex-direction:column}
+  body.lay-a .xp,body.lay-a .xr{padding:16px 22px 10px}
+  body.lay-a .xph{padding-bottom:11px}
+  body.lay-a .xph h3{font-size:18px}
+  body.lay-a .xall{font-size:13.500px}
+  body.lay-a .tt .xw{display:none}
+  body.lay-a .tt tbody tr:nth-child(n+4){display:none}
+  body.lay-a .tt tbody tr:nth-child(3) th,body.lay-a .tt tbody tr:nth-child(3) td{border-bottom:0}
+  body.lay-a .tt th,body.lay-a .tt td{padding:9px 8px}
+  body.lay-a .tt thead th{padding:9px 8px 7px}
+  body.lay-a .tt th:first-child,body.lay-a .tt td:first-child{width:44px}
+  body.lay-a .books{display:block;flex:0 0 auto}
+  body.lay-a .books li{display:block}
+  body.lay-a .books li:nth-child(n+4){display:none}
+  body.lay-a .books a{grid-template-columns:84px minmax(0,1fr) auto;gap:2px 14px;padding:11px 0}
+  body.lay-a .blogo{width:84px;height:42px;padding:6px 9px;font-size:13px}
+  body.lay-a .blogo img{max-height:28px}body.lay-a .b-bet365-review img{max-height:42px}
+  body.lay-a .bmain b{font-size:16.500px}
+  body.lay-a .bmain small{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:13px}
+  body.lay-a .bside{gap:3px}
+  body.lay-a .revs{display:block}
+  body.lay-a .revs li,body.lay-a .revs li:first-child,body.lay-a .revs li:last-child{display:block;padding:0}
+  body.lay-a .revs li+li{border-left:0;border-top:1px solid var(--rule)}
+  body.lay-a .revs article{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:3px 12px;padding:11px 0}
+  body.lay-a .revs h4{grid-column:1;grid-row:1;margin:0;font:700 16.500px/1.3 var(--font);letter-spacing:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  body.lay-a .kick{grid-column:2;grid-row:1;margin:0}
+  body.lay-a .kick>span:first-child,body.lay-a .dek,body.lay-a .rfacts{display:none}
+  body.lay-a .rfoot{grid-column:1/-1;margin:0;padding:0;font-size:13px}
+  body.lay-a .rfoot a{font-size:13.500px}
+  body.lay-a .xp .xnote,body.lay-a .xr .xnote{margin-top:auto;padding-top:10px;font-size:12.500px;line-height:1.45}
+  body.lay-a .tagline{margin-top:44px;padding-bottom:60px}
+
+  /* ---- B: editorial. Hero, feature bar and a statistics strip make the first screen; each section then gets room ---- */
+  body.lay-b .heroin{padding-top:clamp(30px,calc(18vh - 90px),80px);padding-bottom:clamp(26px,calc(13vh - 62px),56px)}
+  body.lay-b .husky{bottom:104px}
+  body.lay-b .stats{padding:30px 0 38px;background:var(--hn);border-bottom:1px solid var(--rule)}
+  body.lay-b .stats h2,body.lay-b .stats .mlead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+  body.lay-b .stats .in{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:0 24px}
+  body.lay-b .stats .eyebrow{margin:0}
+  body.lay-b .stats .proof{grid-column:1/-1;margin-top:16px;min-height:0;gap:24px}
+  body.lay-b .stats .proof>div{padding:18px 22px}
+  body.lay-b .stats .stamp{display:none}
+  body.lay-b .stats .statlinks{grid-column:2;grid-row:1;margin:0;gap:22px}
+  body.lay-b .stats .statlinks .pill{min-height:0;padding:0;border:0;background:none;color:#7cc4ff;font-size:14.500px}
+  body.lay-b .stats .statlinks .pill:hover{color:#fff;text-decoration:underline}
+  body.lay-b .xsec{padding-top:104px}
+  body.lay-b .xhead{margin-bottom:44px}
+  body.lay-b .xhead h2{font-size:clamp(30px,2.600vw,42px);margin-bottom:14px}
+  body.lay-b .xsec .xhead p{font-size:18px}
+  body.lay-b .ex2{gap:40px}
+  body.lay-b .xr{margin-top:40px}
+  body.lay-b .xp,body.lay-b .xr{padding:32px 36px}
+  body.lay-b .tt th,body.lay-b .tt td{padding-top:16px;padding-bottom:16px}
+  body.lay-b .books a{padding:16px 0}
+  body.lay-b .tagline{margin-top:80px;padding-bottom:96px}
+  body.lay-b .band,body.lay-b .mission{padding:104px 0}
+  body.lay-b .stats{padding:30px 0 38px}
+}
+@media (min-width:1101px) and (max-width:1560px){body.lay-a .tt th,body.lay-a .tt td{padding-left:4px;padding-right:4px;font-size:15px}body.lay-a .tt th:first-child,body.lay-a .tt td:first-child{width:36px}body.lay-a .tt tbody th a,body.lay-a .tt tbody th{font-size:15px}body.lay-a .tt td.roi{font-size:16px}body.lay-a .xp,body.lay-a .xr{padding-left:18px;padding-right:18px}body.lay-a .exin{gap:0 18px}body.lay-a .books a{grid-template-columns:72px minmax(0,1fr) auto;gap:2px 10px}body.lay-a .blogo{width:72px;height:38px;padding:5px 7px}body.lay-a .blogo img{max-height:24px}body.lay-a .b-bet365-review img{max-height:38px}body.lay-a .xsec .xhead p{display:none}}

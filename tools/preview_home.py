@@ -27,6 +27,31 @@ def fetch(path):
         return r.read(), r.headers.get('Content-Type') or 'application/octet-stream'
 
 
+def write_options():
+    """Two layout options from the same stamped page: a.html (compact) and b.html (editorial). Preview only."""
+    with open(os.path.join(OUT, 'index.html'), encoding='utf-8') as f:
+        page = f.read()
+    a = page.replace('<body data-page="home">', '<body data-page="home" class="lay-a">', 1)
+    # compact cards carry no footnote of their own: the three notes move into one line under the row
+    import re
+    x0 = a.index('<section class="xsec" id="explore"'); x1 = a.index('<p class="tagline">', x0)
+    block = a[x0:x1]
+    notes = re.findall(r'\s*<p class="xnote">(.*?)</p>', block, re.S)
+    block = re.sub(r'\s*<p class="xnote">.*?</p>', '', block, flags=re.S)
+    cut = block.rindex('</div>')
+    block = block[:cut] + '  <p class="xnote xfoot">%s</p>\n    ' % ' '.join(notes) + block[cut:]
+    assert len(notes) == 3
+    a = a[:x0] + block + a[x1:]
+    b = page.replace('<body data-page="home">', '<body data-page="home" class="lay-b">', 1)
+    s0 = b.index('  <section class="band stats" id="records"'); s1 = b.index('  <section class="band claims"')
+    stats = b[s0:s1]; b = b[:s0] + b[s1:]
+    e0 = b.index('  <section class="xsec" id="explore"'); b = b[:e0] + stats + b[e0:]
+    for name, html in (('a.html', a), ('b.html', b)):
+        assert 'class="lay-' in html
+        with open(os.path.join(OUT, name), 'w', encoding='utf-8') as f:
+            f.write(html)
+
+
 def build_preview():
     import build
     if os.path.isdir(OUT):
@@ -40,6 +65,7 @@ def build_preview():
     with open(os.path.join(OUT, 'data', 'index.json'), 'wb') as f:
         f.write(body)
     build.stamp_public_pages(OUT)
+    write_options()
     doc = json.loads(body)
     print('preview built from live index of', doc['meta'].get('built_at'), '->', OUT)
 
