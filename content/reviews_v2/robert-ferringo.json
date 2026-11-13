@@ -5,7 +5,7 @@
   "kind": "Handicapper selling picks through Doc's Sports",
   "checked": "7 Nov 2026",
   "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-07",
+  "updated_iso": "2026-11-13",
   "title": "Robert Ferringo Review 2026: Pricing, Record, Worth It?",
   "description": "Robert Ferringo review, checked 7 Nov 2026: Doc's Sports package prices, the credit guarantee, his record claims and what a buyer can verify.",
   "h1": "Robert Ferringo review",
@@ -159,10 +159,24 @@
       "source": 10
     },
     {
+      "type": "Forum allegation",
+      "tone": "Negative",
+      "date": "13 Feb 2014",
+      "text": "In a Sportsbook Review thread with an accusing title, a buyer said he bet big on a top rated total, lost, and doubted the claimed results given about 30 plays a day.",
+      "source": 12
+    },
+    {
+      "type": "Forum post",
+      "tone": "Positive",
+      "date": "13 Feb 2014",
+      "text": "In the same thread another member said he made a profit three straight years on Ferringo's college basketball plays, even counting the worst lines available. Other members accused him of being Ferringo, and we cannot tell either way.",
+      "source": 12
+    },
+    {
       "type": "Not found",
       "tone": "Neutral",
       "date": "Checked 7 Nov 2026",
-      "text": "Our searches found no Reddit, Covers or SportsbookReview thread with a real discussion of Ferringo's picks, and no Trustpilot or Better Business Bureau profile for him as an individual. Evidence is too thin to say what a typical buyer experiences.",
+      "text": "Apart from the 2014 Sportsbook Review thread above, our searches found no Reddit, Covers or SportsbookReview thread with a real discussion of Ferringo's picks, and no Trustpilot or Better Business Bureau profile for him as an individual. Evidence is too thin to say what a typical buyer experiences.",
       "source": null
     }
   ],
@@ -273,6 +287,11 @@
       "title": "CapperTek: DocSports.com customer reviews page",
       "url": "https://www.cappertek.com/reviews.asp?shs=DocSports.com",
       "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Sportsbook Review forum: Ferringo thread, Feb 2014",
+      "url": "https://www.sportsbookreview.com/forum/players-talk/1369984-robert-ferringo-is-a-scam-and-a-fraud",
+      "accessed": "13 Nov 2026"
     }
   ],
   "pricing_source": 0

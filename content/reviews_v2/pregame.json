@@ -5,7 +5,7 @@
   "kind": "Pick marketplace selling plays from many handicappers",
   "checked": "7 Nov 2026",
   "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-07",
+  "updated_iso": "2026-11-13",
   "title": "Pregame.com Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Pregame.com review, checked 7 Nov 2026: real package prices from $5 picks to $1,995 a year, what its pick archive shows, the Deadspin dispute, buyer reports.",
   "h1": "Pregame.com review",
@@ -162,6 +162,13 @@
       "source": 14
     },
     {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "Aug 2011",
+      "text": "On the Sportsbook Review forum, a member who used to buy plays from Pregame said he was never able to post on its forums and his emails asking why went unanswered, so he stopped buying. Others in the thread said the site had many losing handicappers but useful free information.",
+      "source": 19
+    },
+    {
       "type": "Not found",
       "tone": "Neutral",
       "date": "Checked 7 Nov 2026",
@@ -311,6 +318,11 @@
       "title": "Pregame homepage (join offer, footer)",
       "url": "https://pregame.com/",
       "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Sportsbook Review forum: Pregame.com really had potential",
+      "url": "https://www.sportsbookreview.com/forum/players-talk/734299-pregame-com-really-had-potential-but",
+      "accessed": "13 Nov 2026"
     }
   ],
   "pricing_source": 1

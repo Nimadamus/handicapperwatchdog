@@ -5,7 +5,7 @@
   "kind": "Pick service with a roster of handicappers",
   "checked": "7 Nov 2026",
   "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-07",
+  "updated_iso": "2026-11-13",
   "title": "Doc's Sports Review 2026: Prices, Guarantee, Record Claims",
   "description": "Doc's Sports review, checked 7 Nov 2026: real package prices, how the profit guarantee works, what its records leave out, and what bettors report.",
   "h1": "Doc's Sports review",
@@ -68,6 +68,9 @@
     {"type": "Customer report", "tone": "Positive", "date": "Page updated 18 Oct 2026", "text": "PissedConsumer lists one rated review of DocSports, 5.0 stars. Its summary says the reviewer praised the handicappers, naming Tony George, and the chance to speak to a live person. One review is not a sample.", "source": 5},
     {"type": "Forum allegation", "tone": "Negative", "date": "29 Jan 2026", "text": "On TheRX forum, a member who said he tracks the Doc's handicappers daily wrote that they promote hot runs and \"never mention their terrible cold streaks,\" and claimed he was up about 40 units betting against Doc's soccer picks and about 20 units betting against Doc's NBA picks in 2026. He did not post a log, and we did not verify these figures.", "source": 4},
     {"type": "Forum post", "tone": "Neutral", "date": "9 Dec 2025", "text": "The same thread was opened by a bettor who said he had used Doc's Sports off and on for more than 10 years and asked other customers for feedback. He did not post his results in the thread.", "source": 4},
+    {"type": "Customer report", "tone": "Positive", "date": "29 Jan 2017", "text": "On the Sportsbook Review forum, a member who said he had bought Doc's subscriptions for years called the service consistent and said he would track a $15,000 bankroll in public. Other members in the thread doubted him, and we found no posted results.", "source": 9},
+    {"type": "Customer report", "tone": "Negative", "date": "6 Jan 2016", "text": "On the Covers forum, a member who said he used Doc's Sports in 2005 and again in 2015 wrote that he never won with it and believed its published claims were inflated.", "source": 10},
+    {"type": "Customer report", "tone": "Negative", "date": "24 Oct 2026", "text": "In a TheRX service play thread, a buyer said he paid for a 7 unit soccer play, it lost, and he then got an email saying $30 was being refunded because the service had passed on the game. We did not see the email.", "source": 11},
     {"type": "Not found", "tone": "Neutral", "date": "Checked 7 Nov 2026", "text": "We did not find a Better Business Bureau profile we could confirm belongs to docsports.com, and Trustpilot did not load for our check. We found no Reddit thread with a substantial discussion of the service.", "source": null}
   ],
   "conflicts": [
@@ -108,6 +111,9 @@
     {"title": "PissedConsumer: DocSports reviews", "url": "https://www.pissedconsumer.com/docsports/RT-F.html", "accessed": "7 Nov 2026"},
     {"title": "Doc's Sports college basketball season special (record claims)", "url": "https://www.docsports.com/3-for-1-college-basketball-picks-season-special.html", "accessed": "7 Nov 2026"},
     {"title": "Doc's Sports contact page (operator and address)", "url": "https://www.docsports.com/contactus.html", "accessed": "7 Nov 2026"},
-    {"title": "Doc's Sports expert roster", "url": "https://www.docsports.com/expert-handicappers.html", "accessed": "27 Oct 2026"}
+    {"title": "Doc's Sports expert roster", "url": "https://www.docsports.com/expert-handicappers.html", "accessed": "27 Oct 2026"},
+    {"title": "Sportsbook Review forum: Doc's Sports $3,000 all inclusive", "url": "https://www.sportsbookreview.com/forum/players-talk/1644741-doc-s-sports-3-000-all-inclusive", "accessed": "13 Nov 2026"},
+    {"title": "Covers forum: Doc sports is a scam", "url": "https://www.covers.com/forum/website-promotions-12/doc-sports-is-a-scamfront-page-of-covers-is-n-100239181", "accessed": "13 Nov 2026"},
+    {"title": "TheRX: Saturday Service Play Thread 10/24/2026", "url": "https://www.therx.com/threads/saturday-service-play-thread-10-24-2026.1314346/", "accessed": "13 Nov 2026"}
   ]
 }

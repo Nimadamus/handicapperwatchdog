@@ -5,7 +5,7 @@
   "kind": "Handicapper marketplace and betting media site",
   "checked": "7 Nov 2026",
   "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-07",
+  "updated_iso": "2026-11-13",
   "title": "WagerTalk Review 2026: Pricing, Record, Is It Worth It?",
   "description": "WagerTalk review, checked 7 Nov 2026: real prices from $15 picks to $1,999 a year, how the credit guarantee works, what its records show, and what buyers say.",
   "h1": "WagerTalk review",
@@ -176,10 +176,31 @@
       "source": 13
     },
     {
+      "type": "Customer report",
+      "tone": "Mixed",
+      "date": "9 Mar 2025",
+      "text": "On the Sportsbook Review forum, a longtime user of the free WagerTalk odds board said the site blocked his IP for heavy use and offered a paid board at $99 a month, then lifted the block.",
+      "source": 16
+    },
+    {
+      "type": "Forum post",
+      "tone": "Negative",
+      "date": "29 Sep 2026",
+      "text": "On TheRX, a member said following one WagerTalk handicapper for the past couple of years had not been profitable and asked for another recommendation.",
+      "source": 17
+    },
+    {
+      "type": "Forum post",
+      "tone": "Neutral",
+      "date": "Checked 13 Nov 2026",
+      "text": "TheRX daily service play threads list all WagerTalk handicappers among the services members should not post. That is a forum rule, not a finding about results.",
+      "source": 18
+    },
+    {
       "type": "Not found",
       "tone": "Neutral",
       "date": "Checked 7 Nov 2026",
-      "text": "Trustpilot shows an unclaimed WagerTalk profile with 0 reviews. We found no Reddit thread with a substantial discussion of the paid picks, only a small WagerTalk subreddit. We found no WagerTalk app in the US App Store search, no Better Business Bureau profile we could confirm, and no TheRX thread. We found no positive independent review.",
+      "text": "Trustpilot shows an unclaimed WagerTalk profile with 0 reviews. We found no Reddit thread with a substantial discussion of the paid picks, only a small WagerTalk subreddit. We found no WagerTalk app in the US App Store search, no Better Business Bureau profile we could confirm, and no TheRX thread reviewing the paid picks beyond the posts above. We found no positive independent review.",
       "source": 14
     }
   ],
@@ -313,6 +334,21 @@
       "title": "PR Newswire: WagerTalk Media announces strategic partnership (27 Aug 2025)",
       "url": "https://www.prnewswire.com/news-releases/wagertalk-media-announces-strategic-partnership-with-premier-sports-betting-content-creators-302540204.html",
       "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Sportsbook Review forum: Wager Talk, Mar 2025",
+      "url": "https://www.sportsbookreview.com/forum/sportsbooks-industry/2045523-wager-talk",
+      "accessed": "13 Nov 2026"
+    },
+    {
+      "title": "TheRX: WagerTalk NHL capper",
+      "url": "https://www.therx.com/threads/wagertalk-nhl-capper.1313671/",
+      "accessed": "13 Nov 2026"
+    },
+    {
+      "title": "TheRX: Friday Service Play Thread 10/24/2025",
+      "url": "https://www.therx.com/threads/friday-service-play-thread-10-24-2025.1302825/",
+      "accessed": "13 Nov 2026"
     }
   ],
   "pricing_source": 3

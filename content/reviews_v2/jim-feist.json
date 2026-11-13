@@ -5,7 +5,7 @@
   "kind": "Pick service sold under one famous name, through its own store and a reseller network",
   "checked": "7 Nov 2026",
   "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-07",
+  "updated_iso": "2026-11-13",
   "title": "Jim Feist Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Jim Feist review, checked 7 Nov 2026: real prices on two storefronts, a credit only guarantee, seller picked streaks and what bettors report.",
   "h1": "Jim Feist review",
@@ -140,6 +140,20 @@
       "source": 8
     },
     {
+      "type": "Forum post",
+      "tone": "Negative",
+      "date": "1 May 2021",
+      "text": "On the Sportsbook Review forum, a member recalled paying $500 for a Jim Feist football weekend in the early 1980s and losing every star rated play.",
+      "source": 12
+    },
+    {
+      "type": "Forum post",
+      "tone": "Negative",
+      "date": "23 Sep 2005",
+      "text": "TheRX members described the sales pattern they met: a free pick, then a $49 weekly package, then a pitch for a $1,000 season deal.",
+      "source": 13
+    },
+    {
       "type": "Not found",
       "tone": "Neutral",
       "date": "Checked 7 Nov 2026",
@@ -256,6 +270,16 @@
       "title": "SmartCustomer: jimfeist.com reviews (0 reviews)",
       "url": "https://www.smartcustomer.com/reviews/jimfeist.com",
       "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Sportsbook Review forum: tracking thread, May 2021",
+      "url": "https://www.sportsbookreview.com/forum/players-talk/1946362-let-s-track-smokin-dave-cokin-and-teddy-covers-starting-0410-2021/page2",
+      "accessed": "13 Nov 2026"
+    },
+    {
+      "title": "TheRX: Jim Feist thread",
+      "url": "https://www.therx.com/threads/jim-feist.304631/",
+      "accessed": "13 Nov 2026"
     }
   ],
   "pricing_source": 2

@@ -5,7 +5,7 @@
   "kind": "Handicapper selling through StatSalt and WagerTalk",
   "checked": "7 Nov 2026",
   "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-07",
+  "updated_iso": "2026-11-13",
   "title": "Teddy Covers Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Teddy Covers review, checked 7 Nov 2026: StatSalt and WagerTalk prices from $25 to $1,999 a year, a credit only guarantee, and what his record shows.",
   "h1": "Teddy Covers review",
@@ -153,6 +153,20 @@
       "source": 6
     },
     {
+      "type": "Forum post",
+      "tone": "Negative",
+      "date": "22 Mar 2013",
+      "text": "Later in that 2013 Sportsbook Review thread, a member who tracked his free plays from 6 Feb 2013 counted 7 wins and 11 losses, about 4.4 units down at one unit a play.",
+      "source": 5
+    },
+    {
+      "type": "Forum post",
+      "tone": "Negative",
+      "date": "5 Apr 2021",
+      "text": "On the Covers forum, a member who said he tracked the free plays of the Covers experts that season said Teddy Covers was not very good, and others called his picks coin toss material.",
+      "source": 8
+    },
+    {
       "type": "Not found",
       "tone": "Neutral",
       "date": "Checked 7 Nov 2026",
@@ -246,6 +260,11 @@
       "title": "teddycovers.com (redirects to a parking page)",
       "url": "https://www.teddycovers.com/",
       "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Covers forum: Teddy covers, Apr 2021",
+      "url": "https://www.covers.com/forum/nba-betting-22/teddy-covers-103522837",
+      "accessed": "13 Nov 2026"
     }
   ],
   "pricing_source": 1

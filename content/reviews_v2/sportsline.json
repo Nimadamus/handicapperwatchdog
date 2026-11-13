@@ -5,7 +5,7 @@
   "kind": "Subscription picks site with a roster of experts and a simulation model",
   "checked": "7 Nov 2026",
   "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-07",
+  "updated_iso": "2026-11-13",
   "title": "SportsLine Review 2026: Prices, Refunds, Expert Records",
   "description": "SportsLine review, checked 7 Nov 2026: CBS Sports' picks subscription prices, its no refund auto renew terms, how expert records are shown and what users say.",
   "h1": "SportsLine review",
@@ -155,10 +155,17 @@
       "source": 5
     },
     {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "19 Feb 2016",
+      "text": "On the Sportsbook Review forum, a member who paid $10 for a month said the picks disappear after each day and no history is posted, which he saw as a red flag.",
+      "source": 8
+    },
+    {
       "type": "Not found",
       "tone": "Neutral",
       "date": "Checked 7 Nov 2026",
-      "text": "We found no Reddit thread or TheRX or Covers forum thread with a substantial discussion of SportsLine picks, and no Better Business Bureau profile we could confirm. We found no court case, regulator action or major news report about SportsLine subscriptions.",
+      "text": "Apart from the 2016 Sportsbook Review thread above, we found no Reddit thread or TheRX or Covers forum thread with a substantial discussion of SportsLine picks, and no Better Business Bureau profile we could confirm. We found no court case, regulator action or major news report about SportsLine subscriptions.",
       "source": null
     }
   ],
@@ -250,6 +257,11 @@
       "title": "Trustpilot: SportsLine reviews",
       "url": "https://www.trustpilot.com/review/www.sportsline.com",
       "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Sportsbook Review forum: CBS Sportsline tracking",
+      "url": "https://www.sportsbookreview.com/forum/players-talk/1573185-cbs-sportsline-tracking",
+      "accessed": "13 Nov 2026"
     }
   ],
   "pricing_source": 0

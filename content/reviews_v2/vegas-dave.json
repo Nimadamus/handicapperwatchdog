@@ -5,7 +5,7 @@
   "kind": "Handicapper and self described sports betting consultant",
   "checked": "7 Nov 2026",
   "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-07",
+  "updated_iso": "2026-11-13",
   "title": "Vegas Dave Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Vegas Dave review, checked 7 Nov 2026: his old site is parked, prices last reported in 2024, no verified record, and his court history in the news.",
   "h1": "Vegas Dave review",
@@ -133,7 +133,7 @@
       "type": "Not found",
       "tone": "Neutral",
       "date": "Checked 7 Nov 2026",
-      "text": "Trustpilot had no page for vegasdave.com, Reddit blocked our search, and we found no Covers thread about him. The TheRX and Sportsbook Review posts below are the closest we found to buyer accounts, and none gives a full record of a paid package.",
+      "text": "Trustpilot had no page for vegasdave.com, Reddit blocked our search, and the one Covers thread we found is summarized below. The TheRX and Sportsbook Review posts below are the closest we found to buyer accounts, and none gives a full record of a paid package.",
       "source": 13
     },
     {
@@ -177,6 +177,20 @@
       "date": "Apr 2017",
       "source": 17,
       "text": "An April 2017 Sportsbook Review thread about his federal indictment drew comments from members, one saying it was clear he made money at times and another calling him a \"fraud\". The thread discussed the criminal case, not anyone's experience as a paying customer."
+    },
+    {
+      "type": "Forum post",
+      "tone": "Negative",
+      "date": "21 Nov 2017",
+      "text": "On the Sportsbook Review forum, a member who said he tracked Vegas Dave's baseball plays from August and then his football plays wrote that he was losing badly, with many weekends of 2 wins and 14 losses. He did not post the log.",
+      "source": 18
+    },
+    {
+      "type": "Forum post",
+      "tone": "Mixed",
+      "date": "25 Dec 2019",
+      "text": "On the Covers forum, a member who got the plays through friends who bought them said the baseball system plays were moneylines of plus 200 or longer, doubled after a loss, and that the season had been profitable.",
+      "source": 19
     }
   ],
   "conflicts": [
@@ -315,6 +329,16 @@
       "title": "Sportsbook Review forum: Vegas Dave Oancea facing up to 90 Years in Prison (Apr 2017)",
       "url": "https://www.sportsbookreview.com/forum/boxing-mma-ufc-betting/1675619-vegas-dave-oancea-facing-up-to-90-years-in-prison",
       "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Sportsbook Review forum: thread on Vegas Dave, Nov 2017",
+      "url": "https://www.sportsbookreview.com/forum/players-talk/1730229-really-sick-handicapper-he-s-ripping-people-off-his-name-is-it-s-vegas-dave",
+      "accessed": "13 Nov 2026"
+    },
+    {
+      "title": "Covers forum: Vegas Dave courtside, Dec 2019",
+      "url": "https://www.covers.com/forum/nba-betting-22/anyone-see-that-129313-vegas-dave-sitting-court-side-103406978",
+      "accessed": "13 Nov 2026"
     }
   ]
 }

@@ -5,7 +5,7 @@
   "kind": "Paid tier of a betting media company owned by Better Collective",
   "checked": "7 Nov 2026",
   "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-07",
+  "updated_iso": "2026-11-13",
   "title": "Action Network PRO Review 2026: Prices, Refunds, Pick Records",
   "description": "Action Network PRO review, checked 7 Nov 2026: web and app prices, the no refund terms, what the free pick records show, and what users report.",
   "h1": "Action Network PRO review",
@@ -167,6 +167,13 @@
       "source": 0
     },
     {
+      "type": "Customer report",
+      "tone": "Mixed",
+      "date": "24 Jul 2021",
+      "text": "On the Covers forum, a member who had paid for the subscription said he used it for public and sharp money data, found the headline daily picks lost more than they won, and went back to the free version.",
+      "source": 7
+    },
+    {
       "type": "Not found",
       "tone": "Neutral",
       "date": "Checked 7 Nov 2026",
@@ -256,6 +263,11 @@
       "title": "Action Network BetMGM bonus code page (promo code, compensation note, Better Collective footer)",
       "url": "https://www.actionnetwork.com/online-sports-betting/reviews/betmgm",
       "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Covers forum: Action network pro?",
+      "url": "https://www.covers.com/forum/mlb-betting-27/action-network-pro-103550889",
+      "accessed": "13 Nov 2026"
     }
   ],
   "pricing_source": 0
