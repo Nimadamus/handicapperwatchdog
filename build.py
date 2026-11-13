@@ -37,7 +37,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CACHE = os.path.join(HERE, '.cache', 'profiles')
 SITE = os.path.join(HERE, '_site')
 STATIC = ('index.html', 'home.css', 'husky.webp', 'husky-sm.webp', 'shield.webp', 'logo-draftkings.svg', 'logo-fanduel.svg', 'logo-bet365.svg', 'logo-fanatics.svg', 'sportsbook-bg.jpg', 'sportsbook-bg-sm.jpg', 'capper.html', 'cappers.html', 'account.html', 'compare.html', 'picks.html', 'style.css', 'app.js', 'capper.js',
-          'pro.js', 'track.js', 'compare.js', 'pricing.js', 'account.js', 'picks.js', 'contact.js', 'favicon.svg', 'stadium.svg', 'og-card.png', 'review2.css', 'CNAME', 'robots.txt', 'sitemap.xml')
+          'pro.js', 'track.js', 'compare.js', 'pricing.js', 'account.js', 'picks.js', 'contact.js', 'favicon.svg', 'stadium.svg', 'og-card.png', 'review2.css', 'CNAME', 'robots.txt', 'sitemap.xml', '4c45f2077ce94c47a172151ef2939df2.txt')
 PROFILE_TTL = int(os.environ.get('HWD_PROFILE_TTL', str(6 * 3600)))
 MAX_FETCH = int(os.environ.get('HWD_MAX_FETCH', '400'))
 try:  # Pacific time with daylight saving; the fixed offset is a fallback only
