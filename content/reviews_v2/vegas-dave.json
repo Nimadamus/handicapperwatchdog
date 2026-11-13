@@ -133,7 +133,7 @@
       "type": "Not found",
       "tone": "Neutral",
       "date": "Checked 7 Nov 2026",
-      "text": "Trustpilot had no page for vegasdave.com, Reddit blocked our search, and the one Covers thread we found is summarized below. The TheRX and Sportsbook Review posts below are the closest we found to buyer accounts, and none gives a full record of a paid package.",
+      "text": "Trustpilot had no page for vegasdave.com, the Reddit thread we found is summarized below, and the one Covers thread we found is summarized below. The TheRX and Sportsbook Review posts below are the closest we found to buyer accounts, and none gives a full record of a paid package.",
       "source": 13
     },
     {
@@ -191,6 +191,13 @@
       "date": "25 Dec 2019",
       "text": "On the Covers forum, a member who got the plays through friends who bought them said the baseball system plays were moneylines of plus 200 or longer, doubled after a loss, and that the season had been profitable.",
       "source": 19
+    },
+    {
+      "type": "Forum post",
+      "tone": "Negative",
+      "date": "9 Feb 2024",
+      "text": "On r/sportsbetting, a bettor said he was tempted to buy a Vegas Dave pick after a claim that $1,000 had paid $285,000. Replies told him to research Vegas Dave before paying, and one pointed to a television documentary about him.",
+      "source": 20
     }
   ],
   "conflicts": [
@@ -338,6 +345,11 @@
     {
       "title": "Covers forum: Vegas Dave courtside, Dec 2019",
       "url": "https://www.covers.com/forum/nba-betting-22/anyone-see-that-129313-vegas-dave-sitting-court-side-103406978",
+      "accessed": "13 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbetting: How do yall feel about Vegas Dave?",
+      "url": "https://www.reddit.com/r/sportsbetting/comments/1ampi5s/how_do_yall_feel_about_vegas_dave_lol_tempted_to/",
       "accessed": "13 Nov 2026"
     }
   ]

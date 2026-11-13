@@ -197,10 +197,17 @@
       "source": 18
     },
     {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "7 May 2025",
+      "text": "In a r/sportsbook thread about paying for picks, a member said he paid for a full year with one WagerTalk handicapper and followed the recommended unit sizes. He said there were winning stretches but the year as a whole lost money.",
+      "source": 19
+    },
+    {
       "type": "Not found",
       "tone": "Neutral",
       "date": "Checked 7 Nov 2026",
-      "text": "Trustpilot shows an unclaimed WagerTalk profile with 0 reviews. We found no Reddit thread with a substantial discussion of the paid picks, only a small WagerTalk subreddit. We found no WagerTalk app in the US App Store search, no Better Business Bureau profile we could confirm, and no TheRX thread reviewing the paid picks beyond the posts above. We found no positive independent review.",
+      "text": "Trustpilot shows an unclaimed WagerTalk profile with 0 reviews. Apart from the Reddit post above, we found no Reddit thread with a substantial discussion of the paid picks, only a small WagerTalk subreddit. We found no WagerTalk app in the US App Store search, no Better Business Bureau profile we could confirm, and no TheRX thread reviewing the paid picks beyond the posts above. We found no positive independent review.",
       "source": 14
     }
   ],
@@ -348,6 +355,11 @@
     {
       "title": "TheRX: Friday Service Play Thread 10/24/2025",
       "url": "https://www.therx.com/threads/friday-service-play-thread-10-24-2025.1302825/",
+      "accessed": "13 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbook: Benderwins a Scam? thread",
+      "url": "https://www.reddit.com/r/sportsbook/comments/1kh5u0e/benderwins_a_scam_is_paying_for_handicapping/",
       "accessed": "13 Nov 2026"
     }
   ],

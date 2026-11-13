@@ -5,7 +5,7 @@
   "kind": "Marketplace where handicappers sell picks by subscription",
   "checked": "7 Nov 2026",
   "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-07",
+  "updated_iso": "2026-11-13",
   "title": "DubClub Review 2026: Pricing, Record, Is It Worth It?",
   "description": "DubClub review, checked 7 Nov 2026: what clubs cost, the no refund policy, how seller records can be hidden, and what buyers say about billing.",
   "h1": "DubClub review",
@@ -184,10 +184,17 @@
       "source": 18
     },
     {
+      "type": "Forum post",
+      "tone": "Negative",
+      "date": "10 Apr 2024",
+      "text": "A seller who said he had used DubClub for a couple of years warned on r/sportsbetting that its refer a friend program let almost anyone become a handicapper. He said he tested it by setting up a seller account for a friend with no betting knowledge, and that there was no real vetting.",
+      "source": 22
+    },
+    {
       "type": "Not found",
       "tone": "Neutral",
       "date": "Checked 7 Nov 2026",
-      "text": "We found no Reddit thread with a substantial discussion of DubClub, no Better Business Bureau profile we could confirm belongs to DubClub, Inc., and no court or regulator action involving the company.",
+      "text": "Apart from the Reddit post above, we found no Reddit thread with a substantial discussion of DubClub, no Better Business Bureau profile we could confirm belongs to DubClub, Inc., and no court or regulator action involving the company.",
       "source": null
     }
   ],
@@ -351,6 +358,11 @@
       "title": "DubClub Help Center: How to Earn a 7 Day Extension on Any Subscription?",
       "url": "https://dubclub.zendesk.com/hc/en-us/articles/27153846173588-How-to-Earn-a-7-Day-Extension-on-Any-Subscription",
       "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbetting: DUBCLUB USERS BEWARE",
+      "url": "https://www.reddit.com/r/sportsbetting/comments/1c0zujr/dubclub_users_beware/",
+      "accessed": "13 Nov 2026"
     }
   ],
   "pricing_source": 5

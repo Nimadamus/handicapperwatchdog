@@ -5,7 +5,7 @@
   "kind": "Bet tracking app with a marketplace of paid pick sellers",
   "checked": "7 Nov 2026",
   "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-07",
+  "updated_iso": "2026-11-13",
   "title": "Juice Reel Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Juice Reel review, checked 7 Nov 2026: seller subscription prices, how its sportsbook synced records work, refund terms, and what app users report.",
   "h1": "Juice Reel review",
@@ -133,7 +133,7 @@
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Juice Reel seller is matched to a Watchdog graded record, so we make no claim about how Juice Reel sellers perform.",
     "context": "For scale: Juice Reel ranks sellers by synced profit and ROI. On the Watchdog board on 7 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "App store reviews are the main customer evidence for Juice Reel, and most of them are about the free tracker, not about paid sellers. We found no Reddit thread, forum thread or Trustpilot page we could read about the paid marketplace. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "App store reviews are the main customer evidence for Juice Reel, and most of them are about the free tracker, not about paid sellers. We found one short Reddit post about the paid marketplace and no forum thread or Trustpilot page about it. Below is everything we found and how much weight it can carry.",
   "customers": [
     {
       "type": "Customer report",
@@ -157,10 +157,17 @@
       "source": 7
     },
     {
+      "type": "Forum post",
+      "tone": "Positive",
+      "date": "11 Jan 2026",
+      "text": "A r/SportsBettingPicks post said the transparency of Juice Reel was the first bright spot the poster had seen in the picks industry. In a related thread, one reply said a top seller there charges $100 a week.",
+      "source": 8
+    },
+    {
       "type": "Not found",
       "tone": "Neutral",
       "date": "Checked 7 Nov 2026",
-      "text": "Our searches found no Reddit, TheRX, Covers or SBR discussion of Juice Reel. Reddit and Trustpilot blocked our direct checks, so we could not confirm whether pages exist there. We found no BBB profile, lawsuit or regulator action naming Juice Integration in our searches.",
+      "text": "Apart from the Reddit post above, our searches found no Reddit, TheRX, Covers or SBR discussion of Juice Reel. Trustpilot did not load for our direct check, so we could not confirm whether a page exists there. We found no BBB profile, lawsuit or regulator action naming Juice Integration in our searches.",
       "source": null
     }
   ],
@@ -252,6 +259,11 @@
       "title": "Google Play: Juice Reel: Bet Tracker & Tips (rating, reviews, developer address)",
       "url": "https://play.google.com/store/apps/details?id=com.juiceintegration.juicereel",
       "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Reddit r/SportsBettingPicks: The transparency on juice reel",
+      "url": "https://www.reddit.com/r/SportsBettingPicks/comments/1qa3ri6/the_transparency_on_juice_reel_is_the_first/",
+      "accessed": "13 Nov 2026"
     }
   ],
   "pricing_source": 0

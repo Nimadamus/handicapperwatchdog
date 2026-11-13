@@ -117,7 +117,7 @@
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no SportsLine expert or model is matched to a Watchdog graded record, so we make no claim about how SportsLine picks perform.",
     "context": "For scale: SportsLine ranks experts by short hot streaks, many of them above 60%. On the Watchdog board on 7 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "Customer evidence on SportsLine is split by where you look. The iPhone app is rated highly, while the Trustpilot page is mostly one star complaints about billing and pick quality. We found no substantial Reddit or betting forum discussion. Below is what we read and how much weight it can carry.",
+  "customers_intro": "Customer evidence on SportsLine is split by where you look. The iPhone app is rated highly, while the Trustpilot page is mostly one star complaints about billing and pick quality. Reddit and betting forum discussion is thin: one Reddit post and one Sportsbook Review thread. Below is what we read and how much weight it can carry.",
   "customers": [
     {
       "type": "Customer report",
@@ -162,10 +162,17 @@
       "source": 8
     },
     {
+      "type": "Customer report",
+      "tone": "Mixed",
+      "date": "11 Aug 2025",
+      "text": "A r/sportsbook member who used SportsLine for an office NFL pick pool said he usually came close most weeks and won the pot once or twice a season.",
+      "source": 9
+    },
+    {
       "type": "Not found",
       "tone": "Neutral",
       "date": "Checked 7 Nov 2026",
-      "text": "Apart from the 2016 Sportsbook Review thread above, we found no Reddit thread or TheRX or Covers forum thread with a substantial discussion of SportsLine picks, and no Better Business Bureau profile we could confirm. We found no court case, regulator action or major news report about SportsLine subscriptions.",
+      "text": "Apart from the 2016 Sportsbook Review thread and the 2025 Reddit post above, we found no TheRX or Covers forum thread with a substantial discussion of SportsLine picks, and no Better Business Bureau profile we could confirm. We found no court case, regulator action or major news report about SportsLine subscriptions.",
       "source": null
     }
   ],
@@ -261,6 +268,11 @@
     {
       "title": "Sportsbook Review forum: CBS Sportsline tracking",
       "url": "https://www.sportsbookreview.com/forum/players-talk/1573185-cbs-sportsline-tracking",
+      "accessed": "13 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbook: Walter Picks vs Sportsline",
+      "url": "https://www.reddit.com/r/sportsbook/comments/1mncxst/walter_picks_vs_sportsline_which_service_is_worth/",
       "accessed": "13 Nov 2026"
     }
   ],
