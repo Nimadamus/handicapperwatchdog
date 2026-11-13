@@ -142,6 +142,13 @@
   "customers_intro": "Customer evidence on DubClub is large but split. App users rate the app well, while recent Trustpilot reviews and older CapperTek reviews complain about billing and about the sellers' results. Below is what we read and how much weight it can carry.",
   "customers": [
     {
+      "type": "Our summary",
+      "tone": "Negative",
+      "date": "Read 13 Nov 2026",
+      "text": "A seller who had used DubClub for years warned on Reddit in 2024 that its referral program let almost anyone open a seller account. He said he proved it by signing up a friend who knew nothing about betting.",
+      "source": null
+    },
+    {
       "type": "Customer report",
       "tone": "Positive",
       "date": "Checked 7 Nov 2026",
@@ -184,17 +191,10 @@
       "source": 18
     },
     {
-      "type": "Forum post",
-      "tone": "Negative",
-      "date": "10 Apr 2024",
-      "text": "A seller who said he had used DubClub for a couple of years warned on r/sportsbetting that its refer a friend program let almost anyone become a handicapper. He said he tested it by setting up a seller account for a friend with no betting knowledge, and that there was no real vetting.",
-      "source": 22
-    },
-    {
       "type": "Not found",
       "tone": "Neutral",
       "date": "Checked 7 Nov 2026",
-      "text": "Apart from the Reddit post above, we found no Reddit thread with a substantial discussion of DubClub, no Better Business Bureau profile we could confirm belongs to DubClub, Inc., and no court or regulator action involving the company.",
+      "text": "Apart from the Reddit post in our summary, we found no Reddit thread with a substantial discussion of DubClub, no Better Business Bureau profile we could confirm belongs to DubClub, Inc., and no court or regulator action involving the company.",
       "source": null
     }
   ],

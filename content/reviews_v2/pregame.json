@@ -141,6 +141,13 @@
   "customers_intro": "Independent customer evidence on Pregame is thin and mostly old. Much of the talk about Pregame pros happens on Pregame's own forum, which the company hosts and moderates. Below is everything we found and how much weight it can carry.",
   "customers": [
     {
+      "type": "Our summary",
+      "tone": "Negative",
+      "date": "Read 13 Nov 2026",
+      "text": "The buyer complaint we found is about service, not results. A past buyer said in 2011 that he could never post on the Pregame forums and his emails asking why went unanswered, so he stopped buying. Others in that Sportsbook Review thread said the site had many losing handicappers but useful free information.",
+      "source": null
+    },
+    {
       "type": "Forum allegation",
       "tone": "Negative",
       "date": "2 Jan 2026",
@@ -160,13 +167,6 @@
       "date": "Aug and Nov 2009",
       "text": "ComplaintsBoard shows two complaints from 2009, both marked resolved. One buyer said the picks he bought lost while the handicappers claimed wins on the forum the next day. Another alleged that a seller promoted himself under several usernames and that critics were banned. These are unverified and more than 15 years old.",
       "source": 14
-    },
-    {
-      "type": "Customer report",
-      "tone": "Negative",
-      "date": "Aug 2011",
-      "text": "On the Sportsbook Review forum, a member who used to buy plays from Pregame said he was never able to post on its forums and his emails asking why went unanswered, so he stopped buying. Others in the thread said the site had many losing handicappers but useful free information.",
-      "source": 19
     },
     {
       "type": "Not found",

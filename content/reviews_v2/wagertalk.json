@@ -141,6 +141,13 @@
   "customers_intro": "Independent customer evidence on WagerTalk is thin and one sided. CapperTek lists 14 reviews from March 2021 to July 2026, and none we read was positive; one has no text. Trustpilot has no reviews. Unhappy buyers are the likeliest to write, so this tells you what goes wrong for some buyers, not how many. CapperTek says its reviews are user generated and it does not guarantee their accuracy.",
   "customers": [
     {
+      "type": "Our summary",
+      "tone": "Negative",
+      "date": "Read 13 Nov 2026",
+      "text": "Bettors who paid WagerTalk handicappers describe losing years. A Reddit member paid a full year for one handicapper, followed the unit sizes and finished down; a TheRX member said two years with another handicapper had not been profitable. The free odds board gets praise, though a longtime user was blocked for heavy use and offered a $99 a month board. TheRX's daily pick threads ban posting any WagerTalk handicapper.",
+      "source": null
+    },
+    {
       "type": "Customer report",
       "tone": "Negative",
       "date": "13 Jan 2026",
@@ -176,38 +183,10 @@
       "source": 13
     },
     {
-      "type": "Customer report",
-      "tone": "Mixed",
-      "date": "9 Mar 2025",
-      "text": "On the Sportsbook Review forum, a longtime user of the free WagerTalk odds board said the site blocked his IP for heavy use and offered a paid board at $99 a month, then lifted the block.",
-      "source": 16
-    },
-    {
-      "type": "Forum post",
-      "tone": "Negative",
-      "date": "29 Sep 2026",
-      "text": "On TheRX, a member said following one WagerTalk handicapper for the past couple of years had not been profitable and asked for another recommendation.",
-      "source": 17
-    },
-    {
-      "type": "Forum post",
-      "tone": "Neutral",
-      "date": "Checked 13 Nov 2026",
-      "text": "TheRX daily service play threads list all WagerTalk handicappers among the services members should not post. That is a forum rule, not a finding about results.",
-      "source": 18
-    },
-    {
-      "type": "Customer report",
-      "tone": "Negative",
-      "date": "7 May 2025",
-      "text": "In a r/sportsbook thread about paying for picks, a member said he paid for a full year with one WagerTalk handicapper and followed the recommended unit sizes. He said there were winning stretches but the year as a whole lost money.",
-      "source": 19
-    },
-    {
       "type": "Not found",
       "tone": "Neutral",
       "date": "Checked 7 Nov 2026",
-      "text": "Trustpilot shows an unclaimed WagerTalk profile with 0 reviews. Apart from the Reddit post above, we found no Reddit thread with a substantial discussion of the paid picks, only a small WagerTalk subreddit. We found no WagerTalk app in the US App Store search, no Better Business Bureau profile we could confirm, and no TheRX thread reviewing the paid picks beyond the posts above. We found no positive independent review.",
+      "text": "Trustpilot shows an unclaimed WagerTalk profile with 0 reviews. Apart from the Reddit post in our summary, we found no Reddit thread with a substantial discussion of the paid picks, only a small WagerTalk subreddit. We found no WagerTalk app in the US App Store search, no Better Business Bureau profile we could confirm, and no TheRX thread reviewing the paid picks beyond the posts in our summary. We found no positive independent review.",
       "source": 14
     }
   ],

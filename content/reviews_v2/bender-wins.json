@@ -127,6 +127,13 @@
   "customers_intro": "Customer evidence on Bender Wins is thin. CapperTek holds six reviews from 2022 to 2026, and three of them come from one account. We found no Trustpilot page, no BBB listing, no reviews on the Winible store and no forum threads. Below is everything we found.",
   "customers": [
     {
+      "type": "Our summary",
+      "tone": "Negative",
+      "date": "Read 13 Nov 2026",
+      "text": "Recent Reddit buyers are harsh. In a 2025 r/sportsbook thread, the poster's own count had the $99.99 a month Masterclass down about 66 units for the year. Buyers there say the quoted lines are rarely available, losing stretches go quiet, and questions about the yearly record get deleted. A subscriber who rejoined in 2026 says he was told to track his own bets, graded the year himself and found it down more than 50 units at the quoted odds. The CapperTek reviews below are kinder, but several come from one account.",
+      "source": null
+    },
+    {
       "type": "Customer report",
       "tone": "Mixed",
       "date": "5 Oct 2026",
@@ -169,38 +176,10 @@
       "source": 3
     },
     {
-      "type": "Forum post",
-      "tone": "Negative",
-      "date": "7 May 2025",
-      "text": "A r/sportsbook thread asked whether Bender Wins is worth paying for. The poster listed $99.99 a month for the Masterclass card and $199.99 a month for the Consensus group or the combined pass, and posted a Masterclass tally for 2025 of 959 wins, 869 losses and 20 pushes, down 66.25 units. That is the poster's count, not ours.",
-      "source": 6
-    },
-    {
-      "type": "Customer report",
-      "tone": "Negative",
-      "date": "8 May 2025",
-      "text": "In the same thread a buyer said he felt cheated: the quoted lines of minus 105 were usually not available, bad stretches went quiet, and comments asking for the year to date total were deleted.",
-      "source": 6
-    },
-    {
-      "type": "Customer report",
-      "tone": "Negative",
-      "date": "12 Sep 2026",
-      "text": "A subscriber who said he joined, left and joined again wrote that when he asked for a tracked record he was told to track his own bets. He said he graded the 2026 plays himself and found them down more than 50 units at the quoted odds, and further down at slightly worse odds. He did not post the sheet, and we did not check it.",
-      "source": 6
-    },
-    {
-      "type": "Forum post",
-      "tone": "Negative",
-      "date": "2 Oct 2026",
-      "text": "Another member in the thread said the posted lines are not realistic and the plays are not profitable.",
-      "source": 6
-    },
-    {
       "type": "Not found",
       "tone": "Neutral",
       "date": "Checked 7 Nov 2026",
-      "text": "Trustpilot showed no page for benderwins.com, the Better Business Bureau search returned no results for Bender Wins, the Winible store showed no customer reviews, and apart from the r/sportsbook thread above we found no Reddit, TheRX, SBR or Covers forum thread about the service.",
+      "text": "Trustpilot showed no page for benderwins.com, the Better Business Bureau search returned no results for Bender Wins, the Winible store showed no customer reviews, and apart from the r/sportsbook thread in our summary we found no Reddit, TheRX, SBR or Covers forum thread about the service.",
       "source": null
     }
   ],

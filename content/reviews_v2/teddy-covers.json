@@ -132,6 +132,13 @@
   "customers_intro": "Independent customer evidence on Teddy Covers is thin and mostly old. We found no recent buyer reviews of him by name. Below is everything we found and how much weight it can carry.",
   "customers": [
     {
+      "type": "Our summary",
+      "tone": "Negative",
+      "date": "Read 13 Nov 2026",
+      "text": "Members who tracked his free plays found them losing: 7 wins and 11 losses over about six weeks in early 2013 on Sportsbook Review, and coin toss verdicts from Covers members who were tracking the experts in 2021.",
+      "source": null
+    },
+    {
       "type": "Forum allegation",
       "tone": "Negative",
       "date": "5 Feb 2013",
@@ -151,20 +158,6 @@
       "date": "18 Nov 2010",
       "text": "In the same thread, a member posted football records of 109-113-1 for 2009 and 55-78-4 for 2010 to that date, and another recalled an ad for a \"67% CBB Big Ticket Run\" that he said was only 2-1 over the last three plays. A third member answered that the football sample was not large. None of these figures came with a log we could check.",
       "source": 6
-    },
-    {
-      "type": "Forum post",
-      "tone": "Negative",
-      "date": "22 Mar 2013",
-      "text": "Later in that 2013 Sportsbook Review thread, a member who tracked his free plays from 6 Feb 2013 counted 7 wins and 11 losses, about 4.4 units down at one unit a play.",
-      "source": 5
-    },
-    {
-      "type": "Forum post",
-      "tone": "Negative",
-      "date": "5 Apr 2021",
-      "text": "On the Covers forum, a member who said he tracked the free plays of the Covers experts that season said Teddy Covers was not very good, and others called his picks coin toss material.",
-      "source": 8
     },
     {
       "type": "Not found",

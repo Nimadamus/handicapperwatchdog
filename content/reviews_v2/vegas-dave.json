@@ -123,6 +123,13 @@
   "customers_intro": "Independent buyer evidence on Vegas Dave is thin. Despite his huge following, we found few first hand reports from people who paid for his picks, and most forum comments are opinions about him rather than accounts of a purchase. Below is everything we found and how much weight it can carry.",
   "customers": [
     {
+      "type": "Our summary",
+      "tone": "Negative",
+      "date": "Read 13 Nov 2026",
+      "text": "Bettors who followed him tell the same story: big wins on social media and quiet losing weekends. A Sportsbook Review member who logged his baseball and football plays in 2017 said he was losing badly. A Covers member who saw his baseball system through friends described long priced moneylines doubled after every loss, and said that one season happened to finish ahead. On Reddit in 2024, a bettor tempted by a claimed $285,000 win was told to research him before paying.",
+      "source": null
+    },
+    {
       "type": "Customer report",
       "tone": "Neutral",
       "date": "Checked 7 Nov 2026",
@@ -133,7 +140,7 @@
       "type": "Not found",
       "tone": "Neutral",
       "date": "Checked 7 Nov 2026",
-      "text": "Trustpilot had no page for vegasdave.com, the Reddit thread we found is summarized below, and the one Covers thread we found is summarized below. The TheRX and Sportsbook Review posts below are the closest we found to buyer accounts, and none gives a full record of a paid package.",
+      "text": "Trustpilot had no page for vegasdave.com, the Reddit thread we found is in our summary, and the one Covers thread we found is in our summary. The TheRX and Sportsbook Review posts below are the closest we found to buyer accounts, and none gives a full record of a paid package.",
       "source": 13
     },
     {
@@ -177,27 +184,6 @@
       "date": "Apr 2017",
       "source": 17,
       "text": "An April 2017 Sportsbook Review thread about his federal indictment drew comments from members, one saying it was clear he made money at times and another calling him a \"fraud\". The thread discussed the criminal case, not anyone's experience as a paying customer."
-    },
-    {
-      "type": "Forum post",
-      "tone": "Negative",
-      "date": "21 Nov 2017",
-      "text": "On the Sportsbook Review forum, a member who said he tracked Vegas Dave's baseball plays from August and then his football plays wrote that he was losing badly, with many weekends of 2 wins and 14 losses. He did not post the log.",
-      "source": 18
-    },
-    {
-      "type": "Forum post",
-      "tone": "Mixed",
-      "date": "25 Dec 2019",
-      "text": "On the Covers forum, a member who got the plays through friends who bought them said the baseball system plays were moneylines of plus 200 or longer, doubled after a loss, and that the season had been profitable.",
-      "source": 19
-    },
-    {
-      "type": "Forum post",
-      "tone": "Negative",
-      "date": "9 Feb 2024",
-      "text": "On r/sportsbetting, a bettor said he was tempted to buy a Vegas Dave pick after a claim that $1,000 had paid $285,000. Replies told him to research Vegas Dave before paying, and one pointed to a television documentary about him.",
-      "source": 20
     }
   ],
   "conflicts": [

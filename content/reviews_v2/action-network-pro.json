@@ -125,6 +125,13 @@
   "customers_intro": "There is a lot of feedback on the Action Network app, but very little that is about PRO itself. Most reviews judge the free app, its bet tracker and its news. Below is everything we found and how much weight it can carry.",
   "customers": [
     {
+      "type": "Our summary",
+      "tone": "Mixed",
+      "date": "Read 13 Nov 2026",
+      "text": "A Covers member who had paid for PRO in 2021 said he used it mainly for public and sharp money data, found the headline picks lost more often than they won, and went back to the free version.",
+      "source": null
+    },
+    {
       "type": "Customer report",
       "tone": "Positive",
       "date": "Checked 7 Nov 2026",
@@ -165,13 +172,6 @@
       "date": "Checked 7 Nov 2026",
       "text": "The PRO page quotes one App Store review saying the app \"has paid for itself.\" It was chosen by the seller, so it cannot tell you what a typical buyer experiences.",
       "source": 0
-    },
-    {
-      "type": "Customer report",
-      "tone": "Mixed",
-      "date": "24 Jul 2021",
-      "text": "On the Covers forum, a member who had paid for the subscription said he used it for public and sharp money data, found the headline daily picks lost more than they won, and went back to the free version.",
-      "source": 7
     },
     {
       "type": "Not found",

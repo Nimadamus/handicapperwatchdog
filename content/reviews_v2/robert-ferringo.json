@@ -131,6 +131,13 @@
   "customers_intro": "We found almost no independent customer evidence about Robert Ferringo himself. One old review names him; the rest is about Doc's Sports in general, which sells his picks. Below is everything we found and how much weight it can carry.",
   "customers": [
     {
+      "type": "Our summary",
+      "tone": "Mixed",
+      "date": "Read 13 Nov 2026",
+      "text": "The one real forum discussion, a 2014 Sportsbook Review thread, is split. A buyer who lost big on a top rated total doubted the claimed results, given about 30 plays a day. Another member said he made money three straight years on the college basketball plays even at worse lines, though others in the thread accused him of being Ferringo.",
+      "source": null
+    },
+    {
       "type": "Forum allegation",
       "tone": "Negative",
       "date": "29 Jan 2026",
@@ -159,24 +166,10 @@
       "source": 10
     },
     {
-      "type": "Forum allegation",
-      "tone": "Negative",
-      "date": "13 Feb 2014",
-      "text": "In a Sportsbook Review thread with an accusing title, a buyer said he bet big on a top rated total, lost, and doubted the claimed results given about 30 plays a day.",
-      "source": 12
-    },
-    {
-      "type": "Forum post",
-      "tone": "Positive",
-      "date": "13 Feb 2014",
-      "text": "In the same thread another member said he made a profit three straight years on Ferringo's college basketball plays, even counting the worst lines available. Other members accused him of being Ferringo, and we cannot tell either way.",
-      "source": 12
-    },
-    {
       "type": "Not found",
       "tone": "Neutral",
       "date": "Checked 7 Nov 2026",
-      "text": "Apart from the 2014 Sportsbook Review thread above, our searches found no Reddit, Covers or SportsbookReview thread with a real discussion of Ferringo's picks, and no Trustpilot or Better Business Bureau profile for him as an individual. Evidence is too thin to say what a typical buyer experiences.",
+      "text": "Apart from the 2014 Sportsbook Review thread in our summary, our searches found no Reddit, Covers or SportsbookReview thread with a real discussion of Ferringo's picks, and no Trustpilot or Better Business Bureau profile for him as an individual. Evidence is too thin to say what a typical buyer experiences.",
       "source": null
     }
   ],
