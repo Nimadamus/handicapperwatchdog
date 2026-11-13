@@ -5,7 +5,7 @@
   "kind": "Handicapper and pick shop with a roster of handicappers",
   "checked": "7 Nov 2026",
   "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-07",
+  "updated_iso": "2026-11-13",
   "title": "Big Al McMordie Review 2026: Pricing, Record, Worth It?",
   "description": "Big Al McMordie review, checked 7 Nov 2026: BigAl.com prices from $30 picks to $2,395 a year, refund terms, what his record claims show, and buyer reports.",
   "h1": "Big Al McMordie review",
@@ -141,6 +141,13 @@
   },
   "customers_intro": "Independent customer evidence on Big Al is thin and mostly old. The testimonials on BigAl.com are chosen by the seller, and the forum discussion we could open dates from 2005 and 2012. Below is everything we found and how much weight it can carry.",
   "customers": [
+    {
+      "type": "Our summary",
+      "tone": "Neutral",
+      "date": "Read 13 Nov 2026",
+      "text": "Forum mentions are scattered and old. A TheRX member in 2004 said he paid $25 for one of Big Al's system plays out of curiosity and posted it for others; we found no buyer describing a season of his picks.",
+      "source": null
+    },
     {
       "type": "Seller curated",
       "tone": "Positive",
@@ -309,6 +316,11 @@
       "title": "Sportsbook Review forum: Warning to all betters thread (30 Dec 2012)",
       "url": "https://www.sportsbookreview.com/forum/college-football-betting/1074864-warning-to-all-betters-the-facts-about-scamdicappers-jeff-allen-and-big-al",
       "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "TheRX: Big Al McMordie system pick, 2004",
+      "url": "https://www.therx.com/threads/173383/",
+      "accessed": "13 Nov 2026"
     }
   ],
   "pricing_source": 2

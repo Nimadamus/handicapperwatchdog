@@ -5,7 +5,7 @@
   "kind": "Handicapper selling his own picks, on a site with a roster of other handicappers",
   "checked": "7 Nov 2026",
   "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-07",
+  "updated_iso": "2026-11-13",
   "title": "Brandon Lang Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Brandon Lang review, checked 7 Nov 2026: prices from $79 a play to $1,995 a year, no refunds, and what his Super Bowl and $10 bettor claims leave out.",
   "h1": "Brandon Lang review",
@@ -130,6 +130,13 @@
   },
   "customers_intro": "Independent customer evidence on Brandon Lang is mostly forum talk from bettors who track or bet against his plays. We found no review site sample we could open and count. Below is everything we found and how much weight it can carry.",
   "customers": [
+    {
+      "type": "Our summary",
+      "tone": "Negative",
+      "date": "Read 13 Nov 2026",
+      "text": "Bettors who followed Lang describe years of losses. TheRX members kept a thread logging his plays for a full year so readers could bet against them, and a member said friends lost heavily on his phone line picks in the 1990s. Posters also dispute the life story told in the film about him, including the college football career it shows.",
+      "source": null
+    },
     {
       "type": "Forum post",
       "tone": "Positive",
@@ -279,6 +286,16 @@
       "title": "Better Business Bureau search: brandon lang",
       "url": "https://www.bbb.org/search?find_text=brandon%20lang&find_type=Organization",
       "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "TheRX: The truth about Brandon Lang",
+      "url": "https://www.therx.com/threads/the-truth-about-brandon-lang.394933/",
+      "accessed": "13 Nov 2026"
+    },
+    {
+      "title": "Sportsbook Review forum: True Brandon Lang Story",
+      "url": "https://www.sportsbookreview.com/forum/players-talk/692439-true-brandon-lang-story",
+      "accessed": "13 Nov 2026"
     }
   ],
   "pricing_source": 1

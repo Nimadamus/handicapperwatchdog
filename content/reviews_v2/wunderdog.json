@@ -5,7 +5,7 @@
   "kind": "Single handicapper pick service",
   "checked": "7 Nov 2026",
   "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-07",
+  "updated_iso": "2026-11-13",
   "title": "Wunderdog Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Wunderdog review, checked 7 Nov 2026: prices from $15 to $5,499, how the free package guarantee works, what its public pick log shows, and what buyers say.",
   "h1": "Wunderdog Sports review",
@@ -152,6 +152,13 @@
   },
   "customers_intro": "Independent customer evidence on Wunderdog is thin. The Trustpilot page we opened had 10 reviews, split between praise and complaints, and the testimonials on Wunderdog's own site are chosen by Wunderdog. Below is everything we found and how much weight it can carry.",
   "customers": [
+    {
+      "type": "Our summary",
+      "tone": "Mixed",
+      "date": "Read 13 Nov 2026",
+      "text": "Buyer reports on forums are few and old. A Sportsbook Review member said in 2009 that a season pass he bought had been solid, winning over 60 percent. A 2020 thread opened with someone whose first three free picks all lost, and the one reply called the service legitimate but a long term proposition. We found no recent buyer posting a full season result.",
+      "source": null
+    },
     {
       "type": "Seller curated",
       "tone": "Positive",
@@ -326,6 +333,16 @@
       "title": "Wunderdog Parlay Club past picks archive",
       "url": "https://www.wunderdog.com/parlay/picks/archive",
       "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Sportsbook Review forum: Wunderdog NFL Picks",
+      "url": "https://www.sportsbookreview.com/forum/nfl-betting/181657-wunderdog-nfl-picks",
+      "accessed": "13 Nov 2026"
+    },
+    {
+      "title": "Sportsbook Review forum: Anyone follow Wunderdog?",
+      "url": "https://www.sportsbookreview.com/forum/players-talk/1878452-anyone-follow-wunderdog",
+      "accessed": "13 Nov 2026"
     }
   ],
   "pricing_source": 3

@@ -141,6 +141,13 @@
   "customers_intro": "Independent customer evidence on Stu Feiner's paid picks is thin. He is far better known as a media personality than as a reviewed service, and most of what we found is opinion, not buyer experience. A few people say they bought his picks; their reports are below, along with forum opinion and how much weight each can carry.",
   "customers": [
     {
+      "type": "Our summary",
+      "tone": "Negative",
+      "date": "Read 13 Nov 2026",
+      "text": "Forum talk about Feiner is old, hostile and short on buyer detail. In a 2011 Sportsbook Review thread, one member called him a salesman who created demand for picks out of thin air, and one recalled a sales call from his staff as the worst call of his life. We found no buyer posting a tracked record of his picks.",
+      "source": null
+    },
+    {
       "type": "Forum post",
       "tone": "Positive",
       "date": "23 Oct 2023",
@@ -383,6 +390,11 @@
       "title": "CapperTek: StuFeiner.com customer reviews page",
       "url": "https://www.cappertek.com/reviews.asp?shs=StuFeiner.com",
       "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Sportsbook Review forum: Stu Feiner's House",
+      "url": "https://www.sportsbookreview.com/forum/players-talk/722797-stu-feiner-s-house",
+      "accessed": "13 Nov 2026"
     }
   ],
   "pricing_source": 1
