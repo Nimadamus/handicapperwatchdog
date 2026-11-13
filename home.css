@@ -360,7 +360,7 @@ body[data-page="home"] .faq{background:#041a36;border-color:rgba(64,160,255,.28)
   .heroin{padding-left:32px}
   .hero h1 em{font-size:1.380em}
   .herosub{margin-left:0}
-  .proof{grid-template-columns:1fr 1fr}
+  .proof{grid-template-columns:repeat(2,minmax(0,1fr))}
   .calcgrid,.fivegrid,.progrid{grid-template-columns:minmax(0,1fr);gap:40px}
   .c3{grid-template-columns:1fr;gap:40px}
 }
@@ -407,8 +407,9 @@ body[data-page="home"] .faq{background:#041a36;border-color:rgba(64,160,255,.28)
   .prostrip{padding:16px 18px}
   .tagline{margin-top:44px;padding-bottom:44px}
   .proof{gap:10px;margin-top:28px}
-  .proof>div{padding:16px 14px}
+  .proof>div{padding:16px 12px}
   .proof dt{font-size:12.500px}
+  .proof dd{font-size:clamp(16px,5vw,22px)}
   .pchip{min-width:0;flex:1;padding:0 8px}
   .cres{padding:24px 20px;border-radius:16px;min-height:0}
   #claims,.sdash{min-height:0}
