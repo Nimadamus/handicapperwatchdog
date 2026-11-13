@@ -5,7 +5,7 @@
   "kind": "Handicapper selling picks through VegasWinners.com",
   "checked": "7 Nov 2026",
   "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-07",
+  "updated_iso": "2026-11-13",
   "title": "Wayne Allyn Root Review 2026: Pricing, Record, Worth It?",
   "description": "Wayne Allyn Root review, checked 7 Nov 2026: $30 VegasWinners picks, a no refund policy, record claims we could not verify, and his Winning Edge history.",
   "h1": "Wayne Allyn Root review",
@@ -125,8 +125,15 @@
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition Wayne Allyn Root is not matched to a Watchdog graded record, so we make no claim about how his picks perform.",
     "context": "For scale: Root's pages lead with 68% to 75% runs. On the Watchdog board on 7 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "We found no review site entries from people who bought Root's picks. The closest thing to buyer experience is a 2023 TheRX thread where members who said they held yearly subscriptions argued about what he sent. The rest is forum opinion from 2005 and 2009, mostly about his TV show. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "We found no review site entries from people who bought Root's picks. The closest thing to buyer experience is a 2023 TheRX thread where members who said they held yearly subscriptions argued about what he sent. The rest is older forum opinion, from 2003 to 2009, mostly about his TV show and sales claims. Below is everything we found and how much weight it can carry.",
   "customers": [
+    {
+      "type": "Our summary",
+      "tone": "Negative",
+      "date": "Read 13 Nov 2026",
+      "text": "Forum bettors have been hostile to Root for two decades. In a 2007 Sportsbook Review thread, a reader asked about Winning Edge ads claiming 80 percent winners on his locks; members answered that he was living off one strong NFL season in the late 1980s, and a later post said he turned down offers to have his record monitored. Another member recalled a 1990s Las Vegas celebrity contest where Root went 1 and 6 and said Root had admitted he never bet. TheRX members in 2003 and 2006 called him a scam and joked about betting against him. We found no buyer posting a tracked record of his picks.",
+      "source": null
+    },
     {
       "type": "Not found",
       "tone": "Neutral",
@@ -306,6 +313,21 @@
       "title": "TheRX forum: Wednesday Service Play Thread 01/11/2023 (page 4)",
       "url": "https://www.therx.com/threads/wednesday-service-play-thread-01-11-2023.1229079/page-4",
       "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Sportsbook Review forum: Question about Wayne Allyn Root",
+      "url": "https://www.sportsbookreview.com/forum/players-talk/18361-question-about-wayne-allyn-root",
+      "accessed": "13 Nov 2026"
+    },
+    {
+      "title": "TheRX: Wayne Allen Root, 2003",
+      "url": "https://www.therx.com/threads/wayne-allen-root.199341/",
+      "accessed": "13 Nov 2026"
+    },
+    {
+      "title": "TheRX: Wayne Root picks?, 2006",
+      "url": "https://therx.com/threads/420870",
+      "accessed": "13 Nov 2026"
     }
   ],
   "pricing_source": 2

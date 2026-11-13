@@ -5,7 +5,7 @@
   "kind": "Betting data and picks site with a paid subscription",
   "checked": "7 Nov 2026",
   "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-07",
+  "updated_iso": "2026-11-13",
   "title": "Dimers Review 2026: Pro Prices, Refunds, Record Claims",
   "description": "Dimers review, checked 7 Nov 2026: real Dimers Pro and Platinum prices, the no refund terms, what its win rate claims leave out, and what users report.",
   "h1": "Dimers review",
@@ -129,6 +129,13 @@
   },
   "customers_intro": "Independent customer evidence on Dimers is split by where you look. Ratings inside the Apple App Store are high, while the small CapperTek file is mostly negative, and Trustpilot and Reddit gave us nothing substantial. Below is everything we read and how much weight it can carry.",
   "customers": [
+    {
+      "type": "Our summary",
+      "tone": "Mixed",
+      "date": "Read 13 Nov 2026",
+      "text": "Bettors say little about paying for Dimers. In 2024 an r/sportsbetting member listed its free AI predictions among the sites he checks for research, and an r/sportsbook question asking whether its predictions are any good was removed before anyone answered. App Store ratings are high, but the CapperTek reviewers below mostly say the free parlays and long shots lost them money.",
+      "source": null
+    },
     {
       "type": "Customer report",
       "tone": "Positive",
@@ -281,6 +288,11 @@
       "title": "Yogonet: Hypometer and iRival Media form Cipher STG (29 Nov 2021)",
       "url": "https://www.yogonet.com/international/news/2021/11/29/60393-australia-39s-hypometer-and-irival-media-to-compete-in-us-sports-betting-market-as-cipher-stg",
       "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbetting: Which free websites are you using for insight?",
+      "url": "https://www.reddit.com/r/sportsbetting/comments/1bz4q3q/which_free_websites_are_you_all_using_for_insight/",
+      "accessed": "13 Nov 2026"
     }
   ],
   "pricing_source": 0

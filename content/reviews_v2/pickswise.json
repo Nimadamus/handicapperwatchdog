@@ -5,7 +5,7 @@
   "kind": "Free picks and betting media site paid by sportsbook and app referrals",
   "checked": "7 Nov 2026",
   "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-07",
+  "updated_iso": "2026-11-13",
   "title": "Pickswise Review 2026: Free Picks, Record Claims, Affiliates",
   "description": "Pickswise review, checked 7 Nov 2026: what the free picks cost you, the record claims it makes, who owns it, and how it earns from sportsbook signups.",
   "h1": "Pickswise review",
@@ -114,6 +114,13 @@
   },
   "customers_intro": "Most independent feedback on Pickswise sits on its App Store page. Trustpilot had no reviews, BBB returned no profile, and forum discussion was thin. Below is what we read and how much weight it carries.",
   "customers": [
+    {
+      "type": "Our summary",
+      "tone": "Mixed",
+      "date": "Read 13 Nov 2026",
+      "text": "Forum feedback is light and mostly about the free content. A Covers member in July 2026 said the written analysis had impressed him but that he put little weight on the star ratings, and a reply asked which of its many writers he meant. App Store reviewers below split between praise for the reasoning behind picks and complaints about losses and app problems.",
+      "source": null
+    },
     {
       "type": "Customer report",
       "tone": "Mixed",
@@ -278,6 +285,11 @@
       "title": "Sportsbook Review forum thread: pickswise",
       "url": "https://www.sportsbookreview.com/forum/players-talk/1985236-pickswise",
       "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Covers forum: Pickswise has been a great source, Jul 2026",
+      "url": "https://www.covers.com/forum/website-promotions-12/fyi---pickwise-has-been-a-great-source-for-me-104040420",
+      "accessed": "13 Nov 2026"
     }
   ],
   "pricing_source": 0

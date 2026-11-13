@@ -5,7 +5,7 @@
   "kind": "Handicapper and newsletter publisher with a roster of handicappers",
   "checked": "7 Nov 2026",
   "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-07",
+  "updated_iso": "2026-11-13",
   "title": "Marc Lawrence Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Marc Lawrence Playbook review, checked 7 Nov 2026: real prices, how pay after you win works, what the report card leaves out, and what bettors say.",
   "h1": "Marc Lawrence (Playbook Sports) review",
@@ -171,6 +171,13 @@
   },
   "customers_intro": "Independent customer evidence on Playbook Sports is thin and mostly forum talk. We found no review site sample we could count. The forum comments split between readers who value the magazine and data and bettors who doubt the pick records.",
   "customers": [
+    {
+      "type": "Our summary",
+      "tone": "Mixed",
+      "date": "Read 13 Nov 2026",
+      "text": "Bettors respect the Playbook as reading material and doubt the picks. Covers members in 2021 and 2023 liked the short team write ups, the reference data and the price of the magazine, but called his stacked multi condition trends data mining, with samples too small to mean anything. On TheRX in 2005, a customer of ten years said a bad season had cost him heavily before three winning 10 star game of the year plays won some of it back. In a Sportsbook Review thread, one member said his playbook picks had hit about 40 percent the season before, and another noted in 2008 that his record was monitored, unlike some rivals, but bad at the time.",
+      "source": null
+    },
     {
       "type": "Forum allegation",
       "tone": "Negative",
@@ -391,6 +398,26 @@
       "title": "Ourlads: partnership announcement with Playbook Sports (25 Sep 2024)",
       "url": "https://ourlads.com/story/default/new-partnership-announcement-ourlads-and-playbook-sports-deliver-game-winning-insights/11637/st",
       "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Covers forum: Marc Lawrence Playbook, Jul 2023",
+      "url": "https://www.covers.com/forum/college-football-33/marc-lawrence-playbook-103754066",
+      "accessed": "13 Nov 2026"
+    },
+    {
+      "title": "Covers forum: Marc Lawrence Playbook magazine, Mar 2021",
+      "url": "https://www.covers.com/forum/nfl-betting-21/marc-lawrence-playbook-magazine-103518541",
+      "accessed": "13 Nov 2026"
+    },
+    {
+      "title": "TheRX: Mark Lawrence Picks",
+      "url": "https://www.therx.com/threads/mark-lawrence-picks.253699/",
+      "accessed": "13 Nov 2026"
+    },
+    {
+      "title": "Sportsbook Review forum: Question about Wayne Allyn Root",
+      "url": "https://www.sportsbookreview.com/forum/players-talk/18361-question-about-wayne-allyn-root",
+      "accessed": "13 Nov 2026"
     }
   ],
   "pricing_source": 6

@@ -5,7 +5,7 @@
   "kind": "AI sports betting picks and model building app, sold by subscription",
   "checked": "7 Nov 2026",
   "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-07",
+  "updated_iso": "2026-11-13",
   "title": "Rithmm Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Rithmm review, checked 7 Nov 2026: plan prices from $29.99 a month, the no refund policy, what its AI pick claims leave out, and what users report.",
   "h1": "Rithmm review",
@@ -138,8 +138,15 @@
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Rithmm model or pick feed is matched to a Watchdog graded record, so we make no claim about how Rithmm's picks perform.",
     "context": "For scale: Rithmm's free pick posts list model win chances near 57% to 58%. On the Watchdog board on 7 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "Rithmm has a large App Store rating sample, but it splits sharply. The overall average is high, while the 50 most recent written reviews in Apple's public feed are close to evenly split between 5 stars and 1 or 2 stars. We found no Reddit discussion and no Trustpilot reviews. Below is what we read and how much weight it can carry.",
+  "customers_intro": "Rithmm has a large App Store rating sample, but it splits sharply. The overall average is high, while the 50 most recent written reviews in Apple's public feed are close to evenly split between 5 stars and 1 or 2 stars. Reddit discussion is thin, and we found no Trustpilot reviews. Below is what we read and how much weight it can carry.",
   "customers": [
+    {
+      "type": "Our summary",
+      "tone": "Mixed",
+      "date": "Read 13 Nov 2026",
+      "text": "Reddit talk about Rithmm is thin. In late 2024 an r/sportsbook user said it had worked for him for a while but was doing worse lately, and the only reply said prediction platforms that do not publish a full results sheet with closing line value are guesswork. Another user that December asked for apps that give more consistent results than Rithmm. The App Store feed below is the larger sample, and it splits between praise for the tools and complaints about losing picks and billing.",
+      "source": null
+    },
     {
       "type": "Customer report",
       "tone": "Neutral",
@@ -200,7 +207,7 @@
       "type": "Not found",
       "tone": "Neutral",
       "date": "Checked 7 Nov 2026",
-      "text": "The Trustpilot page for rithmm.com is unclaimed and had no reviews. We found no Reddit thread discussing Rithmm and no Better Business Bureau profile we could confirm.",
+      "text": "The Trustpilot page for rithmm.com is unclaimed and had no reviews. Apart from the short Reddit threads in our summary, we found no Reddit discussion of Rithmm, and no Better Business Bureau profile we could confirm.",
       "source": 10
     }
   ],
@@ -313,6 +320,16 @@
       "title": "New Jersey Division of Gaming Enforcement: Active Vendors Report (dated 6 Nov 2026)",
       "url": "https://nj.gov/lps/ge/docs/Reports/active_vendor.pdf",
       "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbook: Any reviews on TheOver.AI?",
+      "url": "https://www.reddit.com/r/sportsbook/comments/1gmetxj/any_reviews_on_theoverai/",
+      "accessed": "13 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbook: Underdog help",
+      "url": "https://www.reddit.com/r/sportsbook/comments/1h56ltu/underdog_help/",
+      "accessed": "13 Nov 2026"
     }
   ]
 }

@@ -143,6 +143,13 @@
   "customers_intro": "Independent customer evidence on Winners and Whiners is close to nonexistent. We found no review profile with reviews and no buyer describing its paid picks. The only independent mentions are two forum posts about its free information. Below is what we checked.",
   "customers": [
     {
+      "type": "Our summary",
+      "tone": "Neutral",
+      "date": "Read 13 Nov 2026",
+      "text": "We found no buyer of the paid picks. What bettors discuss is the free predictions: in 2024 an r/sportsbetting member built a seven leg parlay from them, and a reply said he no longer follows sites that do not show money on the line. Covers members describe it as a stats source, not a service they paid for.",
+      "source": null
+    },
+    {
       "type": "Not found",
       "tone": "Neutral",
       "date": "Checked 7 Nov 2026",
@@ -317,6 +324,11 @@
       "title": "SiteJabber: winnersandwhiners.com (no reviews)",
       "url": "https://www.sitejabber.com/reviews/winnersandwhiners.com",
       "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbetting: parlay from Winners and Whiners predictions, Feb 2024",
+      "url": "https://www.reddit.com/r/sportsbetting/comments/1b2v6yq/hello_degens_you_guys_got_killed_by_that/",
+      "accessed": "13 Nov 2026"
     }
   ],
   "pricing_source": 3
