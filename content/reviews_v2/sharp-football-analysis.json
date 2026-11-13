@@ -151,6 +151,13 @@
   "customers_intro": "Independent customer evidence on Sharp Football Analysis is thin and split. Trustpilot has six reviews, half five stars and half one star, the App Store has seven ratings, and the testimonials on the site are chosen by the seller. Below is everything we found and how much weight it can carry.",
   "customers": [
     {
+      "type": "Our summary",
+      "tone": "Mixed",
+      "date": "Read 13 Nov 2026",
+      "text": "Forum opinion splits between respect for the research and doubt about paying for the picks. In 2009, when a season package cost about $315, TheRX and Sportsbook Review members who had followed his free plays called him legitimate. Later threads are cooler. In 2021, TheRX members liked his preview book, about $28 to $30, but disliked the daily sales emails and said his totals move before buyers can bet them; one claimed he had deleted losing picks, with no proof. On Covers in November 2023, a full season subscriber said the totals were losing, well short of 50 percent, and that lines had often moved by the time plays were released.",
+      "source": null
+    },
+    {
       "type": "Seller curated",
       "tone": "Positive",
       "date": "Checked 7 Nov 2026",
@@ -350,6 +357,26 @@
       "title": "TheRX forum thread: Warren Sharp 2021 Football Preview",
       "url": "https://www.therx.com/threads/warren-sharp-2021-football-preview.1182678/",
       "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Sportsbook Review forum: Anyone have feedback on sharpfootballanalysis.com?, 2009",
+      "url": "https://www.sportsbookreview.com/forum/nfl-betting/188926-anyone-have-feedback-on-sharpfootballanalysis-com",
+      "accessed": "13 Nov 2026"
+    },
+    {
+      "title": "TheRX: Sharp Football Analysis, 2009",
+      "url": "https://www.therx.com/threads/sharp-football-analysis.693807/",
+      "accessed": "13 Nov 2026"
+    },
+    {
+      "title": "TheRX: Warren Sharp 2021",
+      "url": "https://www.therx.com/threads/warren-sharp-2021.1184026/",
+      "accessed": "13 Nov 2026"
+    },
+    {
+      "title": "Covers forum: Warren Sharp, 2022 to 2023",
+      "url": "https://www.covers.com/forum/nfl-betting-21/warren-sharp-103602285",
+      "accessed": "13 Nov 2026"
     }
   ],
   "pricing_source": 2

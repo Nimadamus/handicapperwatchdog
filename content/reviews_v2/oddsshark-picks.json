@@ -5,7 +5,7 @@
   "kind": "Free betting media picks, now part of Covers",
   "checked": "7 Nov 2026",
   "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-07",
+  "updated_iso": "2026-11-13",
   "title": "OddsShark Picks Review 2026: Pricing, Record, Worth It?",
   "description": "OddsShark picks review, checked 7 Nov 2026: the site now redirects to Covers, its computer picks are free, no results record is shown, and who profits.",
   "h1": "OddsShark picks review",
@@ -114,6 +114,13 @@
   },
   "customers_intro": "OddsShark itself has almost no customer footprint we could find: its Trustpilot page has no reviews and it has no app of its own in the US App Store. Because its picks now live on Covers, we also read Covers reviews. Those mostly praise the free contests and research tools, and only one we found speaks to whether the picks win.",
   "customers": [
+    {
+      "type": "Our summary",
+      "tone": "Neutral",
+      "date": "Read 13 Nov 2026",
+      "text": "We found no forum buyer of OddsShark picks, which are free on Covers. Covers members in 2024 called oddsshark.com a solid free stats site and liked its head to head database, while one wished it had day of the week splits. The only review we found that speaks to results, a 2026 Trustpilot review below, says tracked picks hit below 50 percent.",
+      "source": null
+    },
     {
       "type": "Not found",
       "tone": "Neutral",
@@ -276,6 +283,11 @@
       "title": "Covers: Scores, Picks and Odds on the Apple App Store",
       "url": "https://apps.apple.com/us/app/covers-scores-picks-and-odds/id6749450176",
       "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Covers forum: Any site similar to statfox.com, Jun 2024",
+      "url": "https://www.covers.com/forum/mlb-betting-27/any-site-similar-to-statfoxcom-103857770",
+      "accessed": "13 Nov 2026"
     }
   ],
   "pricing_source": 3

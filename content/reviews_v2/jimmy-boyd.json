@@ -5,7 +5,7 @@
   "kind": "Handicapper selling picks through his own site, BoydsBets.com, with checkout on SportsCapping.com",
   "checked": "7 Nov 2026",
   "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-07",
+  "updated_iso": "2026-11-13",
   "title": "Jimmy Boyd Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Jimmy Boyd review, checked 7 Nov 2026: his real package prices, how the profit guarantee works, who grades his record, and what buyers report.",
   "h1": "Jimmy Boyd review",
@@ -151,6 +151,13 @@
   "customers_intro": "Independent customer evidence on Jimmy Boyd is thin and mostly old. We found one BBB complaint, a set of buyer comments from 2013 to 2017 on HandicappingReviews.org that lean negative, and a comment section on a review site that belongs to his own sales network. Below is everything we found and how much weight it can carry.",
   "customers": [
     {
+      "type": "Our summary",
+      "tone": "Mixed",
+      "date": "Read 13 Nov 2026",
+      "text": "Buyer accounts are scattered. Reviewers on HandicappingReviews.org from 2014 to 2017 mostly said the picks ran near or below break even, and a 2026 BBB complaint said a paid season pass sat inactive for more than three weeks until the business fixed it. On the other side, a TheRX member said in February 2026 that after giving up on another handicapper, Boyd ended up rescuing his baseball season. He posted no record.",
+      "source": null
+    },
+    {
       "type": "Customer report",
       "tone": "Negative",
       "date": "Filed 29 Sep 2026",
@@ -231,7 +238,7 @@
       "type": "Not found",
       "tone": "Neutral",
       "date": "Checked 7 Nov 2026",
-      "text": "Trustpilot showed no page for boydsbets.com or sportscapping.com. Reddit search asked us to log in, so we could not read it. We found no TheRX or Sportsbook Review forum thread about Jimmy Boyd with a real discussion of results.",
+      "text": "Trustpilot showed no page for boydsbets.com or sportscapping.com. In the betting subreddit posts we read, we found no discussion of his picks. Apart from the TheRX posts in our summary, we found no TheRX or Sportsbook Review forum thread about Jimmy Boyd with a real discussion of results.",
       "source": null
     }
   ],
@@ -378,6 +385,11 @@
       "title": "TheRX forum: Saturday Service Play Thread 09/06/2025",
       "url": "https://www.therx.com/threads/saturday-service-play-thread-09-06-2025.1300524/",
       "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "TheRX: Service Plays Discussion Thread 2/2/26 to 2/8/26",
+      "url": "https://www.therx.com/threads/service-plays-discussion-thread-2-2-26-2-8-26.1307940/",
+      "accessed": "13 Nov 2026"
     }
   ],
   "pricing_source": 0

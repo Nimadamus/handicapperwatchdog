@@ -5,7 +5,7 @@
   "kind": "Betting media site with a paid expert picks subscription (VegasInsider Premium, VIP)",
   "checked": "7 Nov 2026",
   "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-07",
+  "updated_iso": "2026-11-13",
   "title": "VegasInsider Picks Review 2026: Pricing, Record, Worth It?",
   "description": "VegasInsider Premium review, checked 7 Nov 2026: plan prices, the no refund policy, what the expert records show and leave out, and what users report.",
   "h1": "VegasInsider expert picks review",
@@ -126,6 +126,13 @@
   },
   "customers_intro": "Independent customer evidence on VegasInsider Premium is thin. The largest sample is the iPhone app rating, which covers the whole app, not just the picks. We found no Reddit thread or forum discussion of the Premium picks. Below is everything we found and how much weight it can carry.",
   "customers": [
+    {
+      "type": "Our summary",
+      "tone": "Neutral",
+      "date": "Read 13 Nov 2026",
+      "text": "Forum bettors talk about VegasInsider as an odds and data site, not as a picks seller. In 2022, Sportsbook Review and Covers members complained that a redesign made the odds pages harder to use and more crowded with ads, and one claimed, without evidence, that its betting percentage data had been shaped by sponsor sportsbooks. We found no buyer describing the paid Premium picks.",
+      "source": null
+    },
     {
       "type": "Customer report",
       "tone": "Positive",
@@ -281,6 +288,16 @@
       "title": "Gambling Insider: Better Collective acquires two US sites for $20m (23 Jul 2019)",
       "url": "https://www.gamblinginsider.com/news/7583/better-collective-acquires-two-us-sites-for-20m",
       "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Sportsbook Review forum: Anybody else use Vegas Insider?, 2022",
+      "url": "https://www.sportsbookreview.com/forum/players-talk/1982954-anybody-else-use-vegas-insider",
+      "accessed": "13 Nov 2026"
+    },
+    {
+      "title": "Covers forum: Vegas insider, Feb 2022",
+      "url": "https://www.covers.com/forum/college-basketball-40/vegas-insider-103616588",
+      "accessed": "13 Nov 2026"
     }
   ]
 }
