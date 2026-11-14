@@ -199,7 +199,7 @@
       '<div class="g2">' + panel('Performance by period', table(p.form_days, 'Window'), '<span class="muted small">By game date</span>') +
         panel('Tracking', '<div class="pb">' + facts([['Watchdog ID', '#' + esc(c)], ['First tracked pick', day(s.first_pick)], ['Most recent graded game', day(p.last_game || s.last_pick)], ['Monitoring status', statusTag(p.status, 1)],
           ['Graded picks', fmt(o.picks)], ['Picks per week', p.per_week == null ? 'n/a' : (+p.per_week).toFixed(1)], ['Avg units risked', p.avg_risk == null ? 'n/a' : (+p.avg_risk).toFixed(2)], ['Pending picks', '<span class="dim">Watchdog Pro</span>']]) +
-          '<p class="note" style="margin:10px 0 0">The account name, link and posting site are never published. The ID is permanent.</p></div>') + '</div>' +
+          '</div>') + '</div>' +
       strengths(p) +
       '<div class="g2">' + panel('Advanced metrics', '<div class="pb">' + facts([['Z score vs break even', z.z == null ? 'n/a' : sgn(z.z, 2)], ['Win % needed at their prices', be.needed_pct == null ? 'n/a' : pct(be.needed_pct)],
         ['Gap to break even', be.gap_pts == null ? 'n/a' : sgn(be.gap_pts, 2, ' pts')], ['Avg closing line value', clv.avg_pts == null ? 'n/a' : sgn(clv.avg_pts, 2, ' pts')], ['Beat the closing line', clv.beat_pct == null ? 'n/a' : pct(clv.beat_pct)],

@@ -27,7 +27,7 @@
     var row = '<tr><td class="l"><span class="blur">#000000</span></td><td class="l"><span class="blur">000-000</span></td><td class="l"><span class="blur">League &middot; Away at Home</span></td><td class="l"><span class="blur">Side 3.5</span></td><td><span class="blur">-110</span></td><td class="hm"><span class="blur">Sun 1:05 PM</span></td></tr>';
     return '<section class="panel locked" style="margin-bottom:18px"><div class="ghost"><div class="tw"><table class="mini"><thead><tr><th class="l">Handicapper</th><th class="l">Record</th><th class="l">Game</th><th class="l">Pick</th><th>Odds</th><th class="hm">Starts</th></tr></thead><tbody>' +
       row + row + row + row + row + '</tbody></table></div></div><div class="over"><b style="font-size:16px">Picks are shown only inside Watchdog Pro</b>' +
-      '<p class="muted small" style="margin:0;max-width:460px">Each pick carries the account name, lifetime record, units, ROI and recent form of the account that posted it, with filters for sport and record. Names and account links are not included in any plan.</p>' +
+      '<p class="muted small" style="margin:0;max-width:460px">Each pick carries the account name, lifetime record, units, ROI and recent form of the account that posted it, with filters for sport and record.</p>' +
       '<a class="btn pro" href="pricing.html">See Watchdog Pro</a></div></section>' +
       '<section class="panel" style="margin-bottom:28px"><div class="pb prose"><h2>What Pro adds</h2><ul>' +
       '<li><b>Eligible pending picks</b> before the start: straight bets, review cleared, posted before the game.</li>' +

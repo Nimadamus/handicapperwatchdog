@@ -1378,7 +1378,7 @@ def _research_paths(cappers, depth=1):
         '<li>Eligible pending picks from tracked accounts before their games start, with each account&rsquo;s graded record beside the pick.</li>'
         '<li>The complete graded pick log for every account, not only the 10 most recent picks.</li>'
         '<li>Follow accounts and get an email when one of them posts a pick before the game.</li></ul>'
-        '<p>Pro never reveals who an account is. Free visitors keep the rankings, the research and each account&rsquo;s headline record. See <a href="' + up + 'how-we-grade.html">how Watchdog grades a pick</a>.</p></div>'
+        '<p>Free visitors keep the rankings, the research and each account&rsquo;s headline record. See <a href="' + up + 'how-we-grade.html">how Watchdog grades a pick</a>.</p></div>'
         '<p><a class="btn pro" href="' + up + 'pricing.html">See Watchdog Pro plans</a></p></section>\n')
 
 
