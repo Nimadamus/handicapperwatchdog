@@ -1,4 +1,4 @@
-// Today's Pro picks: eligible pending picks from tracked accounts, each beside its anonymous Watchdog ID record.
+// Today's Pro picks: eligible pending picks from tracked accounts, each beside the account name and record.
 // Pro accounts decrypt data/x/pending.bin in the browser. Everyone else sees what Pro includes, the launch prices,
 // and an accurate checkout status. No pick, game or per game count is ever shown to a non subscriber.
 (function () {
@@ -25,9 +25,9 @@
 
   function locked() {
     var row = '<tr><td class="l"><span class="blur">#000000</span></td><td class="l"><span class="blur">000-000</span></td><td class="l"><span class="blur">League &middot; Away at Home</span></td><td class="l"><span class="blur">Side 3.5</span></td><td><span class="blur">-110</span></td><td class="hm"><span class="blur">Sun 1:05 PM</span></td></tr>';
-    return '<section class="panel locked" style="margin-bottom:18px"><div class="ghost"><div class="tw"><table class="mini"><thead><tr><th class="l">Watchdog ID</th><th class="l">Record</th><th class="l">Game</th><th class="l">Pick</th><th>Odds</th><th class="hm">Starts</th></tr></thead><tbody>' +
+    return '<section class="panel locked" style="margin-bottom:18px"><div class="ghost"><div class="tw"><table class="mini"><thead><tr><th class="l">Handicapper</th><th class="l">Record</th><th class="l">Game</th><th class="l">Pick</th><th>Odds</th><th class="hm">Starts</th></tr></thead><tbody>' +
       row + row + row + row + row + '</tbody></table></div></div><div class="over"><b style="font-size:16px">Picks are shown only inside Watchdog Pro</b>' +
-      '<p class="muted small" style="margin:0;max-width:460px">Each pick carries the Watchdog ID, lifetime record, units, ROI and recent form of the account that posted it, with filters for sport and record. Names and account links are not included in any plan.</p>' +
+      '<p class="muted small" style="margin:0;max-width:460px">Each pick carries the account name, lifetime record, units, ROI and recent form of the account that posted it, with filters for sport and record. Names and account links are not included in any plan.</p>' +
       '<a class="btn pro" href="pricing.html">See Watchdog Pro</a></div></section>' +
       '<section class="panel" style="margin-bottom:28px"><div class="pb prose"><h2>What Pro adds</h2><ul>' +
       '<li><b>Eligible pending picks</b> before the start: straight bets, review cleared, posted before the game.</li>' +
@@ -45,7 +45,7 @@
       '<div class="fld"><label for="pt">Record</label><select id="pt"><option value="">Any sample</option><option value="100">Established (100+ picks)</option><option value="20">20+ picks</option></select></div>' +
       '<div class="fld"><label for="pf">Show</label><select id="pf"><option value="">All accounts</option><option value="f">Accounts I follow</option></select></div>' +
       '<div class="fld"><label for="pu">Units</label><select id="pu"><option value="">Any</option><option value="0">Up money</option><option value="10">+10 or more</option></select></div></div>' +
-      '<div class="tw"><table class="mini pboard"><thead><tr><th class="l hs">Starts (PT)</th><th class="l">Pick</th><th>Odds</th><th class="l">Watchdog ID</th><th class="hr">Record</th><th>Units</th><th class="hm">ROI</th><th class="hm">Before start</th></tr></thead><tbody id="prows"></tbody></table></div>' +
+      '<div class="tw"><table class="mini pboard"><thead><tr><th class="l hs">Starts (PT)</th><th class="l">Pick</th><th>Odds</th><th class="l">Handicapper</th><th class="hr">Record</th><th>Units</th><th class="hm">ROI</th><th class="hm">Before start</th></tr></thead><tbody id="prows"></tbody></table></div>' +
       '<div class="tfoot"><span id="pcount"></span><span class="muted small">Feed baked ' + (d.baked_at ? new Date(d.baked_at).toLocaleString('en-US', { timeZone: 'America/Los_Angeles', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) + ' PT' : 'n/a') + '</span></div></section>');
     var $ = function (id) { return document.getElementById(id); };
     var follows = [];
@@ -53,12 +53,12 @@
       var q = $('pq').value.trim().toLowerCase().replace(/^#/, ''), fo = $('pf').value === 'f', lg = $('pl').value, mn = +$('pt').value || 0, un = $('pu').value;
       var rows = all.filter(function (p) {
         return (!fo || follows.indexOf(p.id) >= 0) && (!lg || p.league === lg) && p.cpicks >= mn && (un === '' || (p.cu != null && p.cu > +un)) &&
-          (!q || (p.matchup + ' ' + p.selection + ' ' + p.id.slice(0, 6)).toLowerCase().indexOf(q) >= 0);
+          (!q || (p.matchup + ' ' + p.selection + ' ' + p.id.slice(0, 6) + ' ' + (p.name || '')).toLowerCase().indexOf(q) >= 0);
       });
       $('prows').innerHTML = rows.length ? rows.map(function (p) {
         var t = TIER[p.tier] || TIER.small;
         return '<tr><td class="l nowrap hs">' + when(p.start) + '</td><td class="l"><span class="ps small">' + when(p.start) + ' PT</span><b>' + esc(p.selection) + '</b> <span class="dim small">' + esc(p.bet_type) + '</span><span class="pg dim small">' + esc(p.league) + ' &middot; ' + esc(p.matchup) + '</span></td><td>' + odds(p.odds) +
-          '</td><td class="l"><a href="handicappers/' + esc(p.id) + '.html"><b class="idc">#' + esc(p.id.slice(0, 6).toUpperCase()) + '</b></a>' + (follows.indexOf(p.id) >= 0 ? ' <span class="pos" title="You follow this account">★</span>' : '') + '<span class="pt"><span class="badge ' + t[0] + '">' + t[1] + '</span></span></td><td class="hr">' + p.cw + '-' + p.cl + (p.cp ? '-' + p.cp : '') +
+          '</td><td class="l"><a href="handicappers/' + esc(p.id) + '.html"><b class="idc">' + esc(p.name || '#' + p.id.slice(0, 6).toUpperCase()) + '</b></a>' + (follows.indexOf(p.id) >= 0 ? ' <span class="pos" title="You follow this account">★</span>' : '') + '<span class="pt"><span class="badge ' + t[0] + '">' + t[1] + '</span></span></td><td class="hr">' + p.cw + '-' + p.cl + (p.cp ? '-' + p.cp : '') +
           '</td><td>' + sgn(p.cu, 2) + '</td><td class="hm">' + sgn(p.croi, 1, '%') + '</td><td class="hm">' + lead(p.lead_min) + '</td></tr>';
       }).join('') : '<tr><td colspan="8" class="empty">' + ($('pf').value === 'f' && !follows.length ? 'You are not following anyone yet. Open a profile and press Follow.' : 'No eligible picks match these filters right now.') + '</td></tr>';
       $('pcount').textContent = fmt(rows.length) + ' of ' + fmt(all.length) + ' eligible picks';

@@ -128,6 +128,70 @@ def mask(slug):
     return hmac.new(KEY, slug.encode(), hashlib.sha256).hexdigest()[:10]
 
 
+# NAMES_20261114: handicapper names are public again (owner decision, 14 Nov 2026). content/names.bin is the tracker's
+# account list (public slug -> platform, handle, profile link), sealed with a key derived from HWD_PRO_KEY so the public
+# repository never carries the slug to name table in the clear. tools/refresh_names.py rewrites it. An account that is
+# not in the file yet keeps its Watchdog ID until the next refresh. HWD_NAMES=0 turns names off again.
+NAMES_FILE = os.path.join(HERE, 'content', 'names.bin')
+PLATFORM_LABEL = {'x': 'X', 'reddit': 'Reddit', 'covers': 'Covers', 'therx': 'TheRX', 'sbr': 'Sportsbook Review', 'predictem': 'Predictem'}
+NAME_BY_ID = {}  # masked id -> display name, filled as rows are summarised
+_NAMES = None
+_LINK = re.compile(r'https://[^\s<>"\']{4,200}')
+
+
+def unseal(label, blob):
+    from cryptography.hazmat.primitives.ciphers.aead import AESGCM
+    raw = base64.b64decode(blob)
+    return json.loads(AESGCM(pro_key(label)).decrypt(raw[:12], raw[12:], None).decode('utf-8'))
+
+
+def load_names():
+    global _NAMES
+    if _NAMES is None:
+        _NAMES = {}
+        if os.environ.get('HWD_NAMES') == '0':
+            return _NAMES
+        try:
+            with open(NAMES_FILE, encoding='ascii') as f:
+                _NAMES = unseal('names', f.read().strip())
+        except Exception as e:
+            print('names unavailable, publishing Watchdog IDs:', type(e).__name__, file=sys.stderr)
+    return _NAMES
+
+
+def name_for(slug):
+    """(display name, platform label, profile link or None) for a tracked account, or None when it is not in the names file."""
+    v = load_names().get(slug)
+    if not v or not isinstance(v[1], str):
+        return None
+    plat, handle = str(v[0] or ''), re.sub(r'\s+', ' ', v[1]).strip().lstrip('@')[:40]
+    if not handle or plat not in PLATFORM_LABEL:
+        return None
+    link = v[2] if isinstance(v[2], str) and _LINK.fullmatch(v[2]) else None
+    shown = '@' + handle if plat == 'x' else 'u/' + handle if plat == 'reddit' and not handle.lower().startswith('u/') else handle
+    return shown, PLATFORM_LABEL[plat], link
+
+
+def _code(x):
+    return (x['id'] if isinstance(x, dict) else str(x))[:6].upper()
+
+
+def _who(x):
+    """Short label for an account row or masked id: its public name, or #CODE while the name is not on file."""
+    i = x['id'] if isinstance(x, dict) else str(x)
+    return (x.get('name') if isinstance(x, dict) else None) or NAME_BY_ID.get(i) or '#' + i[:6].upper()
+
+
+def _who_long(x):
+    w = _who(x)
+    return 'Handicapper ' + w if w.startswith('#') else w
+
+
+def _ini(x):
+    w = re.sub(r'^u/|[^A-Za-z0-9]', '', _who(x))
+    return (w[:2] or _code(x)[:2]).upper()
+
+
 def rec(r):
     p = [int(x) for x in str(r).split('-')] + [0, 0, 0]
     return p[0], p[1], p[2]
@@ -328,7 +392,7 @@ LEDGER_N = 10  # free profiles show this many most recent graded picks; never th
 DEEP_KEYS = ('advanced', 'after', 'form_picks', 'market_detail', 'fav_dog', 'plus_money', 'odds_buckets', 'over_under', 'home_away', 'teams_backing', 'teams_fading',
              'conference_backing', 'division_backing', 'weekday', 'month', 'season', 'recent_vs_lifetime', 'sport_detail', 'roi_curve', 'rolling_n', 'rolling_win', 'activity',
              'best_sport', 'best_market', 'curve', 'curve_dates', 'form_days', 'sports', 'markets', 'streaks', 'per_week', 'avg_risk')
-FREE_SUMMARY = ('id', 'w', 'l', 'p', 'picks', 'win_pct', 'units', 'roi', 'streak', 'last_pick', 'tier', 'first_pick', 'r7', 'r30')
+FREE_SUMMARY = ('id', 'w', 'l', 'p', 'picks', 'win_pct', 'units', 'roi', 'streak', 'last_pick', 'tier', 'first_pick', 'r7', 'r30', 'name', 'src', 'link')
 
 
 def _ts(iso):
@@ -424,7 +488,7 @@ def profile_extras(hist, research):
 
 def minimal_profile(s, reason):
     """Headline only, straight from the tracker record, for accounts whose history is not reconciled or not fetched yet."""
-    keep = ('id', 'w', 'l', 'p', 'picks', 'win_pct', 'units', 'roi', 'streak', 'sports', 'last_pick')
+    keep = ('id', 'w', 'l', 'p', 'picks', 'win_pct', 'units', 'roi', 'streak', 'sports', 'last_pick', 'name', 'src', 'link')
     return {'detail': False, 'reason': reason, 'summary': dict({k: s.get(k) for k in keep}, tier=tier(s['picks'])),
             'by_sport': [{'key': k, 'picks': v['picks'], 'record': v['record'], 'units': v['units'], 'roi': v['roi'], 'win_pct': v['win_pct']}
                          for k, v in (s.get('by_sport') or {}).items() if (v.get('picks') or 0) > 0]}
@@ -464,12 +528,19 @@ def summary(x):
     w, l, p = rec(x['record'])
     sports = sorted((x.get('by_sport') or {}).items(), key=lambda kv: -int(kv[1].get('graded') or 0))
     lp = x.get('last_pick_at') or ''
-    return {'id': mask(x['slug']), 'source': x.get('source_label') or x['source'], 'w': w, 'l': l, 'p': p,
+    out = {'id': mask(x['slug']), 'source': x.get('source_label') or x['source'], 'w': w, 'l': l, 'p': p,
             'picks': int(x['graded']), 'win_pct': x.get('win_rate'), 'units': None if x.get('units') is None else round(float(x['units']), 2),
             'roi': x.get('roi'), 'streak': int(x.get('streak') or 0), 'sports': [k for k, _ in sports],
             'by_sport': {k: {'record': v.get('record'), 'picks': v.get('graded'), 'units': v.get('units'), 'roi': v.get('roi'),
                              'win_pct': v.get('win_rate')} for k, v in sports},
             'last_pick': lp[:10] or None}
+    nm = name_for(x['slug'])
+    if nm:
+        out['name'], out['src'] = nm[0], nm[1]
+        if nm[2]:
+            out['link'] = nm[2]
+        NAME_BY_ID[out['id']] = nm[0]
+    return out
 
 
 _ID = re.compile(r'^[0-9a-f]{10}$')
@@ -540,11 +611,10 @@ def _tier(picks):
 
 
 def _cap_cell(r, href_prefix=''):
-    code = r['id'][:6].upper()
     kind, label = _tier(int(r.get('picks') or 0))
-    inner = ('<div class="cap"><span class="av">%s</span><span class="nm"><b class="idc">#%s</b>'
+    inner = ('<div class="cap"><span class="av">%s</span><span class="nm"><b class="idc">%s</b>'
              '<small><span class="badge %s">%s</span></small></span></div>') % (
-                 _esc(code[:2]), _esc(code), kind, label)
+                 _esc(_ini(r)), _esc(_who(r)), kind, label)
     if r.get('profile'):
         return '<a href="%shandicappers/%s.html">%s</a>' % (href_prefix, r['id'], inner)
     return inner
@@ -590,10 +660,10 @@ def _ranked(cappers, limit):
 
 
 def _home_top(cappers, limit=6):
-    """Homepage leaderboard: the same established ranking as the board, by units won. Watchdog IDs only."""
+    """Homepage leaderboard: the same established ranking as the board, by units won."""
     rows = []
     for i, r in enumerate(_established(cappers)[:limit], 1):
-        code = '#' + _esc(r['id'][:6].upper())
+        code = _esc(_who(r))
         name = '<a href="handicappers/%s.html">%s</a>' % (r['id'], code) if r.get('profile') else code
         win = _num(r.get('win_pct'))
         rows.append('<tr><td><span class="rank r%d">%d</span></td><th scope="row">%s<small>%s graded picks</small></th><td>%s</td>'
@@ -732,7 +802,7 @@ def _reality(meta, cappers):
     bars = _platform_bars(meta, cappers)
     return ('<div class="eyebrow">Established records, 100 or more picks</div><div class="big">%d%%</div>'
             '<p class="muted small">are up money: %s of %s handicappers. Among records with 20 or more picks, %s of %s are up money. '
-            'Names and posting sites are not published. These are past results, not predictions.</p>%s') % (
+            'Each record shows the account name. These are past results, not predictions.</p>%s') % (
                 pct, f'{up:,}', f'{est:,}', f'{prof:,}', f'{qual:,}', bars)
 
 
@@ -810,7 +880,7 @@ def _sports(cappers):
             if units <= 0:
                 continue
             rec = raw[4] if len(raw) > 4 and isinstance(raw[4], str) and _REC.fullmatch(raw[4]) else ''
-            label = '<span class="badge">#%s</span><span class="muted">%s</span>' % (_esc(r['id'][:6].upper()), _esc(rec))
+            label = '<span class="badge">%s</span><span class="muted">%s</span>' % (_esc(_who(r)), _esc(rec))
             linked = '<a href="handicappers/%s.html">%s</a>' % (r['id'], label) if r.get('profile') else label
             items.append('<li>%s%s</li>' % (linked, _signed(units, 1, 'u')))
             if len(items) == 3:
@@ -829,7 +899,7 @@ def _fresh(meta):
         when = '%s %d, %d PT' % ('Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec'.split()[dt.month - 1], dt.day, dt.year)
     except (TypeError, ValueError):
         pass
-    return '%s handicappers with graded picks. Every account is an anonymous Watchdog ID. Updated %s.' % (f'{int(meta.get("tracked") or 0):,}', when)
+    return '%s handicappers with graded picks. Every record shows the account name. Updated %s.' % (f'{int(meta.get("tracked") or 0):,}', when)
 
 
 def _pending(meta):
@@ -846,8 +916,8 @@ def _itemlist(cappers, page_url, name):
     rows = _established(cappers)
     items = []
     for i, r in enumerate(rows[:10], 1):
-        items.append({'@type': 'ListItem', 'position': i, 'name': 'Handicapper #%s, %+.2f units, %d graded picks' % (
-            r['id'][:6].upper(), float(r['units']), int(r.get('picks') or 0))})
+        items.append({'@type': 'ListItem', 'position': i, 'name': '%s, %+.2f units, %d graded picks' % (
+            _who_long(r), float(r['units']), int(r.get('picks') or 0))})
     data = {'@context': 'https://schema.org', '@type': 'ItemList', 'name': name, 'url': page_url, 'itemListElement': items}
     return '<script type="application/ld+json">%s</script>' % json.dumps(data, ensure_ascii=True).replace('<', '\\u003c')
 
@@ -1003,7 +1073,7 @@ def _header(depth, current):
         '%s'
         '<form class="navsearch" action="%scappers.html" role="search">'
         '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>'
-        '<input name="q" placeholder="Search ID or sport" aria-label="Search cappers"></form>'
+        '<input name="q" placeholder="Search name or sport" aria-label="Search cappers"></form>'
         '<a class="btn sm pro" href="%spricing.html">Watchdog Pro</a>'
         '</div></header>'
     ) % (home, prefix, _nav(depth, current), prefix, prefix)
@@ -1109,7 +1179,7 @@ def _write_guides(site, meta, cappers):
     pending = _esc(_pending(meta))
     grade = _document(0, 'how-we-grade.html',
                       'How Handicapper Watchdog Grades a Record',
-                      'How public handicapper picks are captured, graded on the final score, and ranked. Every account is an anonymous Watchdog ID.',
+                      'How public handicapper picks are captured, graded on the final score, and ranked. Every record shows the account name.',
                       'https://handicapperwatchdog.com/how-we-grade.html',
                       '''<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><span aria-current="page">How we grade</span></nav>
 <div class="pagehead"><div><div class="eyebrow">Methodology</div><h1>How a record gets graded</h1>
@@ -1121,7 +1191,7 @@ def _write_guides(site, meta, cappers):
 </div>
 <section class="panel" style="margin-bottom:18px"><div class="pb">
 <h2>What the free board shows</h2>
-<p>Rank, record, units, ROI, win rate and sample size are public. The name, the handle and the link to the account are not published anywhere on this site, Watchdog Pro included. Each account is a permanent anonymous Watchdog ID. A published name would let anyone copy the list of accounts worth following and use it without paying, which would end the research that keeps these records.</p>
+<p>Rank, record, units, ROI, win rate and sample size are public. Each record shows the account name and a link to the public account it was captured from, so anyone can read the posts and check the record for themselves.</p>
 <p>A handicapper cannot pay for a higher rank, a feature, or a verified label. Rank is the graded record. Watchdog Pro adds eligible pending picks and the full graded pick log. It is not a badge that a record is legitimate.</p>
 <p>People looking for a verified handicapper record are looking for a timestamp and a sample, not a badge. On this site a pick counts only when it was posted in public before the start, and the free board opens at 100 graded picks. A directory can still print the word verified and show the pick after the start. The <a href="reviews/cappertek.html">CapperTek review</a> is that case. CapperTek says the public reveal is 30 minutes after the event starts.</p>
 <p>Pending picks are not mixed into a record. %s</p>
@@ -1138,7 +1208,7 @@ def _write_guides(site, meta, cappers):
 </div></section>''' % (pending, f'{tracked:,}', f'{graded:,}', f'{up:,}', f'{est:,}'))
     board = _document(0, 'the-board.html',
                       'How Many Handicappers Are Actually Up | Handicapper Watchdog',
-                      'The share of tracked handicappers who are up money, split by sample size. Every account is an anonymous Watchdog ID.',
+                      'The share of tracked handicappers who are up money, split by sample size. Every record shows the account name.',
                       'https://handicapperwatchdog.com/the-board.html',
                       '''<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><span aria-current="page">The board</span></nav>
 <div class="pagehead"><div><div class="eyebrow">The board</div><h1>How many handicappers are actually up</h1>
@@ -1152,18 +1222,18 @@ def _write_guides(site, meta, cappers):
 <section class="panel" style="margin-bottom:18px"><div class="pb">
 <p>Established means 100 or more graded picks. The median ROI on those records is %s. A record with 20 picks can still be a hot streak, which is why the free rankings open on the established list.</p>
 <p>%s</p>
-<p>These are past results, not predictions. Names are not published, here or in Watchdog Pro. <a href="how-we-grade.html">How a record is graded</a>. Named services are reviewed apart from this board: <a href="reviews/index.html">handicapper reviews</a>.</p>
+<p>These are past results, not predictions. Every record shows the account name. <a href="how-we-grade.html">How a record is graded</a>. Named services are reviewed apart from this board: <a href="reviews/index.html">handicapper reviews</a>.</p>
 <p><a class="btn" href="cappers.html">See the established rankings</a></p>
 </div></section>
 <section class="proband"><div><span class="lock">Watchdog Pro</span><h2>Act on the records that are up</h2>
 <p class="muted" style="margin:0">$49.99 a month, or $499 a year. Cancel any time. <a href="pricing.html">See Watchdog Pro</a></p></div>
-<div class="feats"><div class="feat"><b>Eligible pending picks</b><span>Picks from tracked accounts, captured before their games start, with the Watchdog ID and record beside each one.</span></div>
-<div class="feat"><b>Why accounts stay anonymous</b><span>Names are not published in any plan. A name list could be copied in one month and used for free forever.</span></div></div>
+<div class="feats"><div class="feat"><b>Eligible pending picks</b><span>Picks from tracked accounts, captured before their games start, with the account name and record beside each one.</span></div>
+<div class="feat"><b>Names you can check</b><span>Every record shows the account name and links to the public account, so you can read the posts yourself.</span></div></div>
 </section>''' % (pending, f'{tracked:,}', f'{graded:,}', est_pct, f'{up:,}', f'{est:,}',
                  qual_pct, f'{prof:,}', f'{qual:,}', med_txt, pending))
     price = _document(0, 'pricing.html',
                       'Watchdog Pro Pricing | Handicapper Watchdog',
-                      'Watchdog Pro is $49.99 a month or $499 a year: eligible pending picks before the start, full graded pick logs and research tools. Accounts stay anonymous in every plan.',
+                      'Watchdog Pro is $49.99 a month or $499 a year: eligible pending picks before the start, full graded pick logs and research tools.',
                       'https://handicapperwatchdog.com/pricing.html',
                       '''<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><span aria-current="page">Pricing</span></nav>
 <div class="pagehead"><div><div class="eyebrow">Watchdog Pro</div><h1>Research the record, then see what comes next</h1>
@@ -1189,11 +1259,11 @@ def _write_guides(site, meta, cappers):
 <tr><td class="l">Complete graded pick log: game, pick, odds, result, units, post time</td><td>No</td><td>Yes</td></tr>
 <tr><td class="l">Advanced filters, and compare up to four records</td><td>No</td><td>Yes</td></tr>
 <tr><td class="l">Follow accounts and get an email when one posts a pick before the game</td><td>No</td><td>Yes</td></tr>
-<tr><td class="l">Handicapper names, handles or links to accounts</td><td>No</td><td>No</td></tr>
+<tr><td class="l">Handicapper names and links to their public accounts</td><td>Yes</td><td>Yes</td></tr>
 </tbody></table></div></section>
 <section class="panel" style="margin-bottom:28px"><div class="pb">
-<h2>Why names are not included</h2>
-<p>Every tracked account is a permanent anonymous Watchdog ID. If Pro revealed names, one month of access would be enough to copy the whole list of accounts worth following and use it for free from then on. So names, handles and account links stay out of every plan. Pro gives you the research and the eligible pending picks tied to those IDs.</p>
+<h2>Names are public</h2>
+<p>Every record shows the account name and a link to the public account it was captured from. Names are free for everyone. Pro adds the research and the eligible pending picks from those accounts.</p>
 <p>%s</p>
 <p>Watchdog Pro is not a verified badge. A handicapper cannot pay to be ranked higher, to be featured, or to receive a label that the record is legitimate.</p>
 <p class="billnote"><b>Who bills you:</b> Handicapper Watchdog is operated by TrustMyRecord. Stripe receipts and the billing portal show the TrustMyRecord business name, and it may appear on your card statement.</p>
@@ -1229,17 +1299,17 @@ def _write_sport_pages(site, cappers):
         keep.add(slug + '.html')
         leaders = _sport_leaders(cappers, sport)
         title = '%s Handicapper Records | Handicapper Watchdog' % sport
-        desc = 'Graded %s records for public handicappers, each an anonymous Watchdog ID. Ranked by units, %d or more %s picks.' % (
+        desc = 'Graded %s records for public handicappers, shown by name. Ranked by units, %d or more %s picks.' % (
             sport, _SPORT_MIN, sport)
         body = '''<div class="sportband s-%s" aria-hidden="true"></div>
 <nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><a href="../cappers.html">Rankings</a><span aria-hidden="true">/</span><span aria-current="page">%s</span></nav>
 <div class="pagehead"><div><div class="eyebrow">%s records</div><h1>%s handicapper records</h1>
-<p class="muted">%d handicappers with %d or more graded %s picks, ranked by units won in %s. Every account is an anonymous Watchdog ID. A short sample can still swing, so the all sports board opens on records with 100 or more picks. <a href="../how-we-grade.html">How records are graded</a>. Named services are a different file: <a href="../reviews/index.html">handicapper reviews</a>.</p></div>
+<p class="muted">%d handicappers with %d or more graded %s picks, ranked by units won in %s. Every record shows the account name. A short sample can still swing, so the all sports board opens on records with 100 or more picks. <a href="../how-we-grade.html">How records are graded</a>. Named services are a different file: <a href="../reviews/index.html">handicapper reviews</a>.</p></div>
 <a class="btn sm pro" href="../pricing.html">Watchdog Pro</a></div>
 <section class="panel"><div class="tw"><table><thead><tr><th class="l">#</th><th class="l">Handicapper</th><th>Picks</th><th>Record</th><th>Win %%</th><th>Units</th><th>ROI</th></tr></thead>
 <tbody>%s</tbody></table></div></section>
 <section class="proband" style="grid-template-columns:1fr auto"><div><span class="lock">Watchdog Pro</span><h2>Found a %s record worth following?</h2>
-<p class="muted" style="margin:0">Pro adds eligible pending picks before the start and the full graded pick log. Accounts stay anonymous. $49.99 a month or $499 a year at launch.</p></div>
+<p class="muted" style="margin:0">Pro adds eligible pending picks before the start and the full graded pick log. $49.99 a month or $499 a year at launch.</p></div>
 <a class="btn pro" href="../pricing.html">See pricing</a></section>''' % (
             _sport_slug(sport), _esc(sport), _esc(sport), _esc(sport), len(leaders), _SPORT_MIN, _esc(sport), _esc(sport),
             _sport_table(cappers, sport), _esc(sport))
@@ -1298,11 +1368,11 @@ def _research_paths(cappers, depth=1):
     big = sorted((c for c in cappers if (c.get('picks') or 0) >= 100 and c.get('roi') is not None and c.get('profile') and not c.get('basic')),
                  key=lambda c: -c['picks'])[:4]
     cards = ''.join(
-        '<a class="featcard" href="%shandicappers/%s.html" style="text-decoration:none;color:inherit;grid-template-columns:1fr"><p><b>#%s</b><br><b>%s graded picks</b><br>%s units, %s ROI. Full breakdown by sport, market, odds and month.</p></a>' % (
-            up, _esc(c['id']), _esc(c['id'][:6].upper()), '{:,}'.format(c['picks']), '%+.2f' % (c.get('units') or 0), '%+.1f%%' % c['roi'])
+        '<a class="featcard" href="%shandicappers/%s.html" style="text-decoration:none;color:inherit;grid-template-columns:1fr"><p><b>%s</b><br><b>%s graded picks</b><br>%s units, %s ROI. Full breakdown by sport, market, odds and month.</p></a>' % (
+            up, _esc(c['id']), _esc(_who(c)), '{:,}'.format(c['picks']), '%+.2f' % (c.get('units') or 0), '%+.1f%%' % c['roi'])
         for c in big)
     return (
-        '<section class="panel edcard"><h2>Look at real records</h2><div class="prose"><p>The four largest independently graded records on the board. Every profile shows the record, units, ROI, sample size, sport by sport results and recent form, free. Accounts are shown by anonymous Watchdog ID only.</p></div>'
+        '<section class="panel edcard"><h2>Look at real records</h2><div class="prose"><p>The four largest independently graded records on the board. Every profile shows the record, units, ROI, sample size, sport by sport results and recent form, free.</p></div>'
         '<div class="featgrid" style="margin-top:12px">' + cards + '</div></section>\n'
         '<section class="panel edcard"><h2>What Watchdog Pro adds</h2><div class="prose"><ul>'
         '<li>Eligible pending picks from tracked accounts before their games start, with each account&rsquo;s graded record beside the pick.</li>'
@@ -1505,7 +1575,7 @@ def _cid(i):
 
 
 def _plink(i, up='../'):
-    return '<a href="%shandicappers/%s.html">#%s</a>' % (up, _esc(i), _cid(i))
+    return '<a href="%shandicappers/%s.html">%s</a>' % (up, _esc(i), _esc(_who(i)))
 
 
 def _diff(cur, old, by_rank=False):
@@ -1674,14 +1744,14 @@ def _write_today(site, meta, cappers):
     body = (
         '<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><a href="./">Research</a><span aria-hidden="true">/</span><span aria-current="page">Today on the board</span></nav>\n'
         '<div class="pagehead"><div><div class="eyebrow">Updated through the day</div><h1>Today on the board</h1>\n'
-        '<p class="muted">What changed among independently graded handicapper records. Every account is an anonymous Watchdog ID. Last update ' + nice + ', ' + stamp + '.</p></div></div>\n'
+        '<p class="muted">What changed among independently graded handicapper records. Every record shows the account name. Last update ' + nice + ', ' + stamp + '.</p></div></div>\n'
         '<div class="edstack">\n' + '\n'.join(sec) + '\n'
         + ('<section class="panel edcard"><h2>Weekly report</h2><div class="prose"><ul>' + wl + '</ul></div></section>\n' if wl else '')
         + '<section class="panel edcard"><h2>How to read this page</h2><div class="prose"><ul>'
         '<li>Every number comes from picks posted in public before the game started and graded on the final score at the posted odds.</li>'
         '<li>Daily and weekly moves are short samples. They describe what happened. They do not predict the next pick.</li>'
         '<li>Rank is by lifetime units among records with 100 or more graded picks, the same order as the <a href="../cappers.html">rankings</a>.</li></ul></div></section>\n'
-        '<section class="ctaband"><div><h2>Pending picks from these accounts</h2><p class="muted">Watchdog Pro shows eligible pending picks before the start, the complete graded log, and pick alerts for accounts you follow. Names stay private in every plan.</p></div><p><a class="btn pro" href="../pricing.html">See Watchdog Pro</a></p></section>\n'
+        '<section class="ctaband"><div><h2>Pending picks from these accounts</h2><p class="muted">Watchdog Pro shows eligible pending picks before the start, the complete graded log, and pick alerts for accounts you follow.</p></div><p><a class="btn pro" href="../pricing.html">See Watchdog Pro</a></p></section>\n'
         '</div>\n<p class="muted small">21+. Gambling problem? Call 1 800 GAMBLER.</p>')
     with open(os.path.join(site, 'research', 'today.html'), 'w', encoding='utf-8', newline='\n') as f:
         f.write(_document(1, 'research/', 'Today on the Board: Handicapper Ranking Moves and Streaks | Handicapper Watchdog',
@@ -1759,7 +1829,7 @@ def _write_weekly(site, meta, cappers, snaps, man, now):
     body = (
         '<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><a href="./">Research</a><span aria-hidden="true">/</span><span aria-current="page">Week ending ' + label + '</span></nav>\n'
         '<div class="pagehead"><div><div class="eyebrow">Weekly report</div><h1>The graded week ending ' + label + '</h1>\n'
-        '<p class="muted">Every pick graded on the Watchdog board from ' + since + ' to ' + label + ', from public posts captured before the start. Accounts are anonymous Watchdog IDs.</p></div></div>\n'
+        '<p class="muted">Every pick graded on the Watchdog board from ' + since + ' to ' + label + ', from public posts captured before the start.</p></div></div>\n'
         '<div class="edstack">\n'
         '<section class="panel edcard answer"><h2>The week in numbers</h2><div class="prose"><p>'
         + '{:,}'.format(graded) + ' picks from ' + '{:,}'.format(len(act)) + ' accounts were graded. All of them together finished ' + _sg(crowd) + ' units at the posted odds. '
@@ -1934,7 +2004,7 @@ def _write_research(site, meta, cappers):
         {'@type': 'Article', 'headline': "How much does a handicapper's ROI mean after 30 picks?", 'url': url, 'dateModified': built,
          'author': org, 'publisher': org, 'isBasedOn': 'https://handicapperwatchdog.com/data/index.json'},
         {'@type': 'Dataset', 'name': 'Handicapper Watchdog public board', 'url': 'https://handicapperwatchdog.com/data/index.json',
-         'description': 'Independently graded records of public handicapper accounts under anonymous IDs.', 'creator': org, 'dateModified': built}]}).replace('<', '\\u003c')
+         'description': 'Independently graded records of public handicapper accounts shown by account name.', 'creator': org, 'dateModified': built}]}).replace('<', '\\u003c')
     body = (
         '<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><a href="./">Research</a><span aria-hidden="true">/</span><span aria-current="page">ROI and sample size</span></nav>\n'
         '<div class="pagehead"><div><div class="eyebrow">Watchdog research</div><h1>How much does a handicapper&rsquo;s ROI mean after 30 picks?</h1>\n'
@@ -2206,7 +2276,7 @@ def _write_editorial(site, cappers=None):
                  'Watchdog has not rated %s. We have not graded its picks, so we cannot say whether it wins. Of the %d customer reviews we read, %d were positive, %d negative and %d mixed, and those reviews are anonymous and unverified.' % (
                      rev['name'], tm['count'], tm['positive'], tm['negative'], tm['mixed'])),
                 ('What do customers say about %s?' % rev['name'], tm['points'][0] + ' ' + rev['customers']),
-                ('Does Watchdog track %s?' % rev['name'], 'Tracked accounts stay anonymous, so this page does not match %s to a Watchdog record.' % rev['name']),
+                ('Does Watchdog track %s?' % rev['name'], 'Watchdog has not matched %s to a graded record on the board. This page reviews the service itself.' % rev['name']),
             ]
             ld['@graph'].append({'@type': 'FAQPage', 'mainEntity': [
                 {'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in rev_faq]})
@@ -2366,7 +2436,7 @@ def _write_editorial(site, cappers=None):
 <div class="fld revsearch"><label for="revq">Search reviews</label><input id="revq" placeholder="Search a name or a site" aria-label="Search reviews"></div>
 <p class="muted"><a href="../learn/what-bettors-say-about-handicappers.html">What bettors say about online handicappers</a>: our report on 165 customer reviews of 11 services.</p>
 <div class="revgrid" id="revgrid">%s</div>
-<p class="muted small revfoot">Ten public names. The free rankings stay anonymous. <a href="../how-we-grade.html">How a record is graded</a> · <a href="../cappers.html">Established rankings</a> · <a href="../the-board.html">The board</a> · <a href="../sportsbooks/">Sportsbook research</a>.</p>
+<p class="muted small revfoot"><a href="../how-we-grade.html">How a record is graded</a> · <a href="../cappers.html">Established rankings</a> · <a href="../the-board.html">The board</a> · <a href="../sportsbooks/">Sportsbook research</a>.</p>
 <script>
 document.getElementById('revq').addEventListener('input', function () {
   var q = this.value.trim().toLowerCase();
@@ -2717,7 +2787,7 @@ def _write_legal(site):
 <p class="muted">Handicapper Watchdog grades picks that were posted in public before the game started. A handicapper does not send a record, and a handicapper cannot pay for a rank.</p></div></div>
 <section class="panel" style="margin-bottom:18px"><div class="pb prose">
 <h2>What this site is</h2>
-<p>The free board shows rank, record, units, ROI, win rate, and sample size. The name, the handle, and the account link are not published anywhere, Watchdog Pro included. Watchdog Pro, at the price on the pricing page, adds eligible pending picks and the full graded pick log. It is not a badge that a record is legitimate, and it is not a placement a seller can buy.</p>
+<p>The free board shows rank, record, units, ROI, win rate, and sample size. Each record shows the account name and a link to the public account. Watchdog Pro, at the price on the pricing page, adds eligible pending picks and the full graded pick log. It is not a badge that a record is legitimate, and it is not a placement a seller can buy.</p>
 <p>Reviews quote what a service publishes about itself. A numeric score stays off until a full evidence file exists. A text verdict is used only when the service's own pages support it, and the page says which sentences are documented, which were observed, and which are someone else's allegation.</p>
 <p>Sportsbook pages are research notes. They are not signup offers. JustBet registration on this site stays off.</p>
 <h2>What this site is not</h2>
@@ -2864,7 +2934,7 @@ def _publish_light_data(site):
     for sp in sports:
         top = sorted((r for r in rows if sp in (r.get('bs') or {}) and r['bs'][sp][1] is not None), key=lambda r: -r['bs'][sp][1])[:25]
         leaders |= {(r['id'], sp) for r in top}
-    keep = ('id', 'w', 'l', 'p', 'picks', 'win_pct', 'units', 'roi', 'streak', 'last_pick', 'first_pick', 'profile', 'basic', 'tier', 'r7', 'r30', 'sports')
+    keep = ('id', 'w', 'l', 'p', 'picks', 'win_pct', 'units', 'roi', 'streak', 'last_pick', 'first_pick', 'profile', 'basic', 'tier', 'r7', 'r30', 'sports', 'name', 'src', 'link')
     slim = []
     for r in rows:
         s = {k: r[k] for k in keep if k in r}
@@ -2891,7 +2961,7 @@ def _publish_light_data(site):
     with open(os.path.join(site, 'data', 'home.json'), 'w', encoding='utf-8') as f:
         json.dump(home, f, separators=(',', ':'))
     with open(os.path.join(site, 'data', 'ids.json'), 'w', encoding='utf-8') as f:
-        json.dump({'sports': sports, 'ids': [[r['id'], r['picks'], '%d-%d%s' % (r['w'], r['l'], '-%d' % r['p'] if r['p'] else '')] for r in slim]}, f, separators=(',', ':'))
+        json.dump({'sports': sports, 'ids': [[r['id'], r['picks'], '%d-%d%s' % (r['w'], r['l'], '-%d' % r['p'] if r['p'] else '')] + ([r['name']] if r.get('name') else []) for r in slim]}, f, separators=(',', ':'))
     doc['cappers'] = slim
     doc['meta'] = {k: v for k, v in meta.items() if k != 'odds_study'}
     with open(path, 'w', encoding='utf-8') as f:
@@ -2916,7 +2986,7 @@ def _profile_read(r, c, rec_s, units_s, roi_s):
     n, wp = r['picks'], r.get('win_pct')
     first, last = _day(r.get('first_pick')), _day(r.get('last_pick'))
     span = ' between %s and %s' % (first, last) if first and last and first != last else ''
-    out = ['Handicapper #%s has %s graded picks%s: a %s record%s, %s units and %s ROI.' % (
+    out = ['%s has %s graded picks%s: a %s record%s, %s units and %s ROI.' % (
         c, f'{n:,}', span, rec_s, ' (%.1f%% wins)' % wp if wp is not None else '', units_s, roi_s)]
     if wp is not None:
         gap = wp - 52.4
@@ -2964,7 +3034,7 @@ def _profile_recent(pub, c):
     trs = ''.join('<tr><td class="l">%s</td><td class="l">%s</td><td class="l">%s</td><td class="l">%s</td><td>%s</td><td>%s</td><td class="hm">%s</td></tr>' % (
         _esc(_day(x.get('d')) or ''), _esc(x.get('sp') or ''), _esc(x.get('m') or ''), _esc(x.get('pk') or ''),
         ('%+d' % x['o']) if isinstance(x.get('o'), (int, float)) else 'n/a', res[x['r']], _esc(x.get('f') or '')) for x in rows)
-    return ('<section class="sec"><h2>Most recent graded picks</h2><p class="muted small">The %d most recent graded picks for #%s.</p><div class="tw"><table class="mini ledger"><thead><tr><th class="l">Date</th><th class="l">Sport</th>'
+    return ('<section class="sec"><h2>Most recent graded picks</h2><p class="muted small">The %d most recent graded picks for %s.</p><div class="tw"><table class="mini ledger"><thead><tr><th class="l">Date</th><th class="l">Sport</th>'
             '<th class="l">Game</th><th class="l">Pick</th><th>Odds</th><th>Result</th><th class="hm">Final</th></tr></thead><tbody>%s</tbody></table></div></section>') % (
                 len(rows), c, trs)
 
@@ -2996,7 +3066,7 @@ def _profile_facts(r, pub, c, sport_slugs):
             ('<a href="sports/%s.html">%s</a>' % (sport_slugs[s], _esc(s))) if s in sport_slugs else _esc(s) for s in sp))
     if not items:
         return ''
-    return ('<section class="edsec proffacts"><h2>Record facts for #%s</h2><ul>%s</ul></section>') % (
+    return ('<section class="edsec proffacts"><h2>Record facts for %s</h2><ul>%s</ul></section>') % (
         c, ''.join('<li>%s</li>' % t for t in items))
 
 
@@ -3030,17 +3100,18 @@ def _write_profile_pages(site, index):
 
     for n, r in enumerate(index):
         cid, c = r['id'], code(r)
+        w, wl = _who(r), _who_long(r)  # public name, or the Watchdog ID while the name is not on file
         graded = r['picks'] > 0
         url = root + 'handicappers/%s.html' % cid
         sports = ', '.join((r.get('sports') or [])[:4])
         if graded:
-            title = 'Handicapper #%s Record: %s, %s Units' % (c, record(r), units(r))
-            desc = 'Handicapper #%s: %s graded picks, record %s, %s units, %s ROI%s. Graded by Handicapper Watchdog.'
-            full = desc % (c, f"{r['picks']:,}", record(r), units(r), roi(r), ' in ' + sports if sports else '')
-            desc = full if len(full) <= 158 else desc % (c, f"{r['picks']:,}", record(r), units(r), roi(r), '')
+            title = '%s Record: %s, %s Units' % (wl, record(r), units(r))
+            desc = '%s: %s graded picks, record %s, %s units, %s ROI%s. Graded by Handicapper Watchdog.'
+            full = desc % (wl, f"{r['picks']:,}", record(r), units(r), roi(r), ' in ' + sports if sports else '')
+            desc = full if len(full) <= 158 else desc % (wl, f"{r['picks']:,}", record(r), units(r), roi(r), '')
         else:
-            title = 'Handicapper #%s: No Graded Picks Yet' % c
-            desc = 'Anonymous handicapper #%s is monitored by Handicapper Watchdog. No pick has been graded yet.' % c
+            title = '%s: No Graded Picks Yet' % wl
+            desc = '%s is monitored by Handicapper Watchdog. No pick has been graded yet.' % wl
         start = place.get(cid, 0)
         peers = [ranked[(start + k) % len(ranked)] for k in range(1, 7)]
         peers = [p for p in peers if p['id'] != cid]
@@ -3050,25 +3121,27 @@ def _write_profile_pages(site, index):
         kpis = ''.join('<div class="kv"><b>%s</b><span>%s</span></div>' % (_esc(a), b) for a, b in (
             (record(r), 'Record'), (units(r), 'Units won'), (roi(r), 'ROI'), (f"{r['picks']:,}", 'Graded picks')))
         body = ('<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><a href="handicappers/">Handicappers</a>'
-                '<span aria-hidden="true">/</span><span aria-current="page">#%s</span></nav>'
-                '<div class="pagehead"><div><div class="eyebrow">Anonymous Watchdog ID</div><h1 class="idc">Handicapper #%s</h1><p class="muted">%s</p></div></div>'
+                '<span aria-hidden="true">/</span><span aria-current="page">%s</span></nav>'
+                '<div class="pagehead"><div><div class="eyebrow">%s</div><h1 class="idc">%s</h1><p class="muted">%s</p>%s</div></div>'
                 '<div class="kvgrid">%s</div>%s') % (
-                    c, c, _esc(desc), kpis,
+                    _esc(w), _esc('Tracked on ' + r['src'] if r.get('src') else 'Watchdog ID'), _esc(wl), _esc(desc),
+                    '<p class="muted small">Public account: <a href="%s" rel="nofollow noopener" target="_blank">%s on %s</a></p>' % (
+                        _esc(r['link']), _esc(w), _esc(r['src'])) if r.get('link') and r.get('src') else '', kpis,
                     '<table><thead><tr><th class="l">Sport</th><th>Record</th><th>Picks</th><th>Units</th></tr></thead><tbody>%s</tbody></table>' % rows if rows else '')
         pub = _public_profile(site, cid)
-        body += _profile_recent(pub, c)  # inside #prof: capper.js replaces it with the same public ledger when scripts run
-        facts = _profile_facts(r, pub, c, sport_slugs) + _profile_read(r, c, record(r), units(r), roi(r))
+        body += _profile_recent(pub, _esc(w))  # inside #prof: capper.js replaces it with the same public ledger when scripts run
+        facts = _profile_facts(r, pub, _esc(w), sport_slugs) + _profile_read(r, _esc(wl), record(r), units(r), roi(r))
         more = (('<div class="wrap profkeep">%s</div>' % facts) if facts else '') + (
                 '<section class="wrap profmore" aria-label="More handicapper records"><h2>More graded records</h2><p>%s</p>'
                 '<p><a href="handicappers/">Handicapper directory</a> · <a href="cappers.html">Rankings</a> · <a href="how-we-grade.html">How we grade</a></p></section>') % ' '.join(
-                    '<a href="handicappers/%s.html">#%s (%s)</a>' % (p['id'], code(p), record(p)) for p in peers)
+                    '<a href="handicappers/%s.html">%s (%s)</a>' % (p['id'], _esc(_who(p)), record(p)) for p in peers)
         graph = [{'@type': 'ProfilePage', 'url': url, 'name': title, 'description': desc,
                   'isPartOf': {'@type': 'WebSite', 'name': 'Handicapper Watchdog', 'url': root},
-                  'mainEntity': {'@type': 'Person', 'name': 'Handicapper #' + c, 'identifier': cid}},
+                  'mainEntity': dict({'@type': 'Person', 'name': wl, 'identifier': cid}, **({'sameAs': r['link']} if r.get('link') else {}))},
                  {'@type': 'BreadcrumbList', 'itemListElement': [
                      {'@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': root},
                      {'@type': 'ListItem', 'position': 2, 'name': 'Handicappers', 'item': root + 'handicappers/'},
-                     {'@type': 'ListItem', 'position': 3, 'name': '#' + c, 'item': url}]}]
+                     {'@type': 'ListItem', 'position': 3, 'name': w, 'item': url}]}]
         if r.get('last_pick'):
             graph[0]['dateModified'] = r['last_pick']
         if r.get('first_pick'):
@@ -3091,16 +3164,16 @@ def _write_profile_pages(site, index):
         with open(os.path.join(folder, cid + '.html'), 'w', encoding='utf-8', newline='\n') as f:
             f.write(page)
 
-    trs = ''.join('<tr><td class="l">%d</td><td class="l"><a href="%s.html">#%s</a></td><td>%s</td><td>%s</td><td>%s</td><td class="hm">%s</td></tr>' % (
-        i + 1, r['id'], code(r), record(r), f"{r['picks']:,}", units(r), roi(r)) for i, r in enumerate(ranked))
+    trs = ''.join('<tr><td class="l">%d</td><td class="l"><a href="%s.html">%s</a></td><td>%s</td><td>%s</td><td>%s</td><td class="hm">%s</td></tr>' % (
+        i + 1, r['id'], _esc(_who(r)), record(r), f"{r['picks']:,}", units(r), roi(r)) for i, r in enumerate(ranked))
     body = ('<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><span aria-current="page">Handicappers</span></nav>'
             '<div class="pagehead"><div><div class="eyebrow">Directory</div><h1>Handicapper directory</h1>'
             '<p class="muted">Every account here has %s or more graded picks, listed by sample size, not by results. %s accounts qualify. '
             'All %s monitored accounts have a profile, and you can find the rest in <a href="../cappers.html?min=0">the rankings</a>.</p></div></div>'
-            '<div class="tw"><table><thead><tr><th class="l">#</th><th class="l">Watchdog ID</th><th>Record</th><th>Picks</th><th>Units</th><th class="hm">ROI</th></tr></thead><tbody>%s</tbody></table></div>') % (
+            '<div class="tw"><table><thead><tr><th class="l">#</th><th class="l">Handicapper</th><th>Record</th><th>Picks</th><th>Units</th><th class="hm">ROI</th></tr></thead><tbody>%s</tbody></table></div>') % (
                 PROFILE_INDEX_MIN, f'{len(ranked):,}', f'{len(index):,}', trs)
     html = _document(1, 'cappers.html', 'Handicapper Directory: Graded Records | Watchdog',
-                     'Directory of anonymous sports handicappers with 20 or more graded picks. Open any record for its profile, sport splits and recent results.',
+                     'Directory of sports handicappers with 20 or more graded picks. Open any record for its profile, sport splits and recent results.',
                      root + 'handicappers/', body)
     with open(os.path.join(folder, 'index.html'), 'w', encoding='utf-8', newline='\n') as f:
         f.write(html)
@@ -3120,8 +3193,8 @@ SEO_TITLES = {
 }
 SEO_DESCRIPTIONS = {
     'index.html': 'Before you pay for picks, verify the record. Handicapper Watchdog captures public picks before games start, grades them and keeps the full history.',
-    'cappers.html': 'Handicapper rankings by units won, ROI, win rate and recent form. Every account is an anonymous Watchdog ID. Filter by sport, timeframe and sample size.',
-    'pricing.html': 'Watchdog Pro is $49.99 a month or $499 a year: eligible pending picks before the start, full graded pick logs and research tools. Accounts stay anonymous.',
+    'cappers.html': 'Handicapper rankings by units won, ROI, win rate and recent form. Every record shows the account name. Filter by sport, timeframe and sample size.',
+    'pricing.html': 'Watchdog Pro is $49.99 a month or $499 a year: eligible pending picks before the start, full graded pick logs and research tools.',
     'learn/index.html': 'Plain guides to judging a sports handicapper: break even win rates, units and ROI, sample size, closing line value, verified records and scam red flags.',
     'reviews/index.html': 'Reviews of named handicappers and pick marketplaces: what they advertise, prices we could read, what customers say, and why Watchdog has not scored them.',
     'sportsbooks/index.html': 'Original sportsbook research for DraftKings, FanDuel, bet365, Fanatics and BetMGM. Findings only where a source was checked. No scores and no signup links.',
@@ -3320,7 +3393,7 @@ def main():
                 deep['summary'], deep['windows'] = prof['summary'], prof.get('windows')
                 prof['gated'] = True
                 prof['ledger'] = (prof.get('ledger') or [])[:LEDGER_N]
-                prof['summary'] = {k: prof['summary'].get(k) for k in FREE_SUMMARY}
+                prof['summary'] = {k: prof['summary'].get(k) for k in FREE_SUMMARY if k in prof['summary'] or k not in ('name', 'src', 'link')}
                 prof['windows'] = {k: v for k, v in (prof.get('windows') or {}).items() if k in ('r7', 'r30')}
                 if PRO_KEY:
                     with open(os.path.join(SITE, 'data', 'x', s['id'] + '.bin'), 'w') as f:
@@ -3381,7 +3454,7 @@ def main():
             if not c or not c['picks']:
                 continue
             for p in picks:
-                board.append(dict(p, id=cid, cw=c['w'], cl=c['l'], cp=c['p'], cpicks=c['picks'], cu=c['units'], croi=c['roi'],
+                board.append(dict(p, id=cid, name=c.get('name'), cw=c['w'], cl=c['l'], cp=c['p'], cpicks=c['picks'], cu=c['units'], croi=c['roi'],
                                   tier=c['tier'], r30=c.get('r30'), sport=(c.get('bs') or {}).get(p.get('league'))))
         board.sort(key=lambda r: (r.get('start') or '', -(r.get('cu') or -1e9)))
         meta['pro']['pending_count'] = len(board)  # only picks tied to a ranked ID are published

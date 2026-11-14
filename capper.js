@@ -165,7 +165,7 @@
   function render(p) {
     if (p.detail === false) return renderBasic(p);
     if (p.gated && !p.unlocked) { Object.keys(DEEP_DEFAULTS).forEach(function (k) { if (p[k] == null) p[k] = DEEP_DEFAULTS[k]; }); p.locked = true; }
-    var s = p.summary, o = p.overview || {}, a = p.advanced || {}, c = s.id.slice(0, 6).toUpperCase(), t = TIER[s.tier] || TIER.small;
+    var s = p.summary, o = p.overview || {}, a = p.advanced || {}, c = s.id.slice(0, 6).toUpperCase(), w = s.name || '#' + c, t = TIER[s.tier] || TIER.small;
     var z = a.z || {}, be = a.break_even || {}, clv = a.clv || {}, ost = o.streaks || {};
     document.title = 'Handicapper #' + c + ': ' + rec(o) + ', ' + (o.net > 0 ? '+' : '') + (+o.net).toFixed(2) + ' units | Handicapper Watchdog';
     var sportNames = Object.keys(p.sport_detail || {});
@@ -176,13 +176,13 @@
       return known[slug] ? ('sports/' + slug + '.html') : ('cappers.html?q=' + encodeURIComponent(name));
     };
 
-    h += '<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><a href="cappers.html">Rankings</a><span aria-hidden="true">/</span><span aria-current="page">#' + esc(c) + '</span></nav>';
-    h += '<section class="phero"><div><div class="pid"><div class="pav">' + esc(c.slice(0, 2)) + '</div><div><div class="eyebrow">Anonymous Watchdog ID</div>' +
-      '<h1 class="idc">#' + esc(c) + '</h1>' +
+    h += '<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><a href="cappers.html">Rankings</a><span aria-hidden="true">/</span><span aria-current="page">' + esc(w) + '</span></nav>';
+    h += '<section class="phero"><div><div class="pid"><div class="pav">' + esc((w.replace(/^u\//, '').replace(/[^A-Za-z0-9]/g, '').slice(0, 2) || c.slice(0, 2)).toUpperCase()) + '</div><div><div class="eyebrow">' + (s.src ? 'Tracked on ' + esc(s.src) : 'Watchdog ID') + '</div>' +
+      '<h1 class="idc">' + esc(w) + '</h1>' + (s.link && s.src ? '<p class="muted small" style="margin:6px 0 0">Public account: <a href="' + esc(s.link) + '" rel="nofollow noopener" target="_blank">' + esc(w) + ' on ' + esc(s.src) + '</a></p>' : '') +
       '<div class="pmeta"><span class="badge ' + t[0] + '" title="' + t[2] + '">' + t[1] + '</span>' +
       (s.sports || []).slice(0, 4).map(function (x) { return '<a class="badge" href="' + sportHref(x) + '">' + esc(x) + '</a>'; }).join('') + '</div>' +
       '<p class="muted small" style="margin:8px 0 0">' + statusTag(p.status) + ' Tracked since ' + day(s.first_pick) + ' · last graded game ' + day(p.last_game || s.last_pick) + ' · verified through ' + day(p.generated_at) + (p.newer > 0 ? ' · ' + fmt(p.newer) + ' newer graded pick' + (p.newer === 1 ? '' : 's') + ' in the rankings join this breakdown at a coming update' : '') + '</p></div></div></div>' +
-      '<div class="unl"><span class="lock">Watchdog Pro</span><b>See what this account bets next</b><p>Free: the headline record, recent form and the latest 10 graded picks. Watchdog Pro adds:</p><ul><li>This account&rsquo;s eligible pending picks before the games start</li><li>The complete log of all ' + fmt(o.picks) + ' graded picks</li><li>Follow it and get an email when it posts a pick</li></ul><p>$49.99 a month or $499 a year. The name is not published in any plan.</p><a class="btn pro" style="width:100%" href="' + PRO + '">View Watchdog Pro</a></div></section>';
+      '<div class="unl"><span class="lock">Watchdog Pro</span><b>See what this account bets next</b><p>Free: the headline record, recent form and the latest 10 graded picks. Watchdog Pro adds:</p><ul><li>This account&rsquo;s eligible pending picks before the games start</li><li>The complete log of all ' + fmt(o.picks) + ' graded picks</li><li>Follow it and get an email when it posts a pick</li></ul><p>$49.99 a month or $499 a year.</p><a class="btn pro" style="width:100%" href="' + PRO + '">View Watchdog Pro</a></div></section>';
 
     h += kpis([[rec(o), 'Record'], [sgn(o.net, 2), 'Units won'], [sgn(o.roi, 1, '%'), 'ROI'], [pct(o.win_pct), 'Win %'], [fmt(o.picks), 'Graded picks'],
       [odds(o.avg_odds), 'Avg odds'], [strk(ost.current), 'Current streak'], [s.r30 ? sgn(s.r30.net, 2) : '<span class="dim">n/a</span>', 'Last 30 days']]);
@@ -344,7 +344,7 @@
     });
   }
   function renderBasic(p) {
-    var s = p.summary, c = s.id.slice(0, 6).toUpperCase(), t = TIER[s.tier] || TIER.small, none = p.reason === 'no_grades';
+    var s = p.summary, c = s.id.slice(0, 6).toUpperCase(), w = s.name || '#' + c, t = TIER[s.tier] || TIER.small, none = p.reason === 'no_grades';
     document.title = 'Handicapper #' + c + ': ' + (none ? 'no graded picks yet' : rec(s)) + ' | Handicapper Watchdog';
     var why = none
       ? 'Watchdog monitors this public account, but none of its picks have been graded yet. A record starts with the first pick posted before a game and graded from the final score. This page fills in on its own when that happens.'
@@ -353,10 +353,10 @@
       : p.reason === 'updating' ? 'New grades arrived for this account since its detailed breakdown was built, so the breakdown is being rebuilt. It returns at a coming update. The headline record below is current.'
       : 'The detailed breakdown for this account is still being built. The headline record below comes straight from the grading ledger.';
     var bs = (p.by_sport || []).map(function (b) { var r = String(b.record || '').split('-').map(Number); return { key: b.key, picks: b.picks, w: r[0] || 0, l: r[1] || 0, p: r[2] || 0, net: b.units, roi: b.roi, win_pct: b.win_pct }; });
-    root.innerHTML = '<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><a href="cappers.html">Rankings</a><span aria-hidden="true">/</span><span aria-current="page">#' + esc(c) + '</span></nav>' +
-      '<section class="phero"><div><div class="pid"><div class="pav">' + esc(c.slice(0, 2)) + '</div><div><div class="eyebrow">Anonymous Watchdog ID</div><h1 class="idc">#' + esc(c) + '</h1>' +
+    root.innerHTML = '<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><a href="cappers.html">Rankings</a><span aria-hidden="true">/</span><span aria-current="page">' + esc(w) + '</span></nav>' +
+      '<section class="phero"><div><div class="pid"><div class="pav">' + esc((w.replace(/^u\//, '').replace(/[^A-Za-z0-9]/g, '').slice(0, 2) || c.slice(0, 2)).toUpperCase()) + '</div><div><div class="eyebrow">' + (s.src ? 'Tracked on ' + esc(s.src) : 'Watchdog ID') + '</div><h1 class="idc">' + esc(w) + '</h1>' + (s.link && s.src ? '<p class="muted small" style="margin:6px 0 0">Public account: <a href="' + esc(s.link) + '" rel="nofollow noopener" target="_blank">' + esc(w) + ' on ' + esc(s.src) + '</a></p>' : '') +
       '<div class="pmeta"><span class="badge ' + t[0] + '" title="' + t[2] + '">' + t[1] + '</span></div><p class="muted small" style="margin:8px 0 0">' + (s.last_pick ? 'Last pick ' + day(s.last_pick) : 'No graded picks yet') + '</p></div></div></div>' +
-      (none ? '' : '<div class="unl"><span class="lock">Watchdog Pro</span><b>See what this account bets next</b><p>Watchdog Pro adds eligible pending picks before their games start. The name is not published in any plan.</p><a class="btn pro" style="width:100%" href="' + PRO + '">View Watchdog Pro</a></div>') + '</section>' +
+      (none ? '' : '<div class="unl"><span class="lock">Watchdog Pro</span><b>See what this account bets next</b><p>Watchdog Pro adds eligible pending picks before their games start.</p><a class="btn pro" style="width:100%" href="' + PRO + '">View Watchdog Pro</a></div>') + '</section>' +
       kpis([[rec(s), 'Record'], [sgn(s.units, 2), 'Units won'], [sgn(s.roi, 1, '%'), 'ROI'], [pct(s.win_pct), 'Win %'], [fmt(s.picks), 'Graded picks'], [s.streak > 0 ? '<span class="pos">W' + s.streak + '</span>' : s.streak < 0 ? '<span class="neg">L' + (-s.streak) + '</span>' : '<span class="dim">n/a</span>', 'Current streak']]) +
       '<div class="disclosure" style="margin:16px 0"><b>' + (none ? 'No graded picks yet' : 'Detailed analytics not shown') + '</b><p class="muted">' + why + '</p></div>' +
        (bs.length ? panel('By sport', table(bs, 'Sport', { sort: 1 })) : '') + '<div id="ppend" style="margin-top:18px"></div>';

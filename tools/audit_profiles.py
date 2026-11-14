@@ -127,9 +127,10 @@ def main():
             if len(r.get('pending') or []) and any(h.get('result') not in ('won', 'lost', 'push') for h in (r.get('history') or [])):
                 stats['history_has_ungraded_rows'] += 1
 
-    # privacy: nothing that names or links an account anywhere in the published site
-    leak = re.compile(r'th-\d{4}|Tracked Handicapper #|"url"\s*:|"text"\s*:|"handle"\s*:|"username"\s*:|"slug"\s*:|"posted"\s*:|x\.com/|twitter\.com/|reddit\.com/u|covers\.com/forum')
-    html_leak = re.compile(r'th-\d{4}|Tracked Handicapper #|x\.com/(?!intent)|twitter\.com/|reddit\.com/u|covers\.com/forum')
+    # privacy: names and public account links are published since 14 Nov 2026 (owner decision). Still never published:
+    # the tracker's internal slug, post text, post links and post times.
+    leak = re.compile(r'th-\d{4}|Tracked Handicapper #|"url"\s*:|"text"\s*:|"username"\s*:|"slug"\s*:|"posted"\s*:|/status/\d|/comments/')
+    html_leak = re.compile(r'th-\d{4}|Tracked Handicapper #|(?:x|twitter)\.com/\w+/status/\d')
     for path in glob.glob(os.path.join(SITE, '**', '*'), recursive=True):
         if os.path.isdir(path) or not path.endswith(('.json', '.html', '.js', '.xml', '.txt')):
             continue

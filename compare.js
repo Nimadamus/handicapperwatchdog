@@ -9,7 +9,7 @@
   HWD.ready.then(function (s) {
     if (!s.pro) {
       box.innerHTML = '<div class="pb center" style="padding:40px 20px"><span class="lock">Watchdog Pro</span><h2 style="margin:10px 0 6px">Side by side comparisons are part of Watchdog Pro</h2>' +
-        '<p class="muted" style="margin:0 0 16px">Compare records, form, prices and consistency for up to four anonymous Watchdog IDs side by side.</p><a class="btn pro" href="pricing.html">See Watchdog Pro</a></div>';
+        '<p class="muted" style="margin:0 0 16px">Compare records, form, prices and consistency for up to four handicappers side by side.</p><a class="btn pro" href="pricing.html">See Watchdog Pro</a></div>';
       return;
     }
     Promise.all([fetch('data/index.json', { cache: 'no-store' }).then(function (r) { return r.json(); })]).then(function (x) {
@@ -20,7 +20,7 @@
   });
 
   function render(idx, nm) {
-    var add = '<form class="row" id="af" style="padding:14px 16px;border-bottom:1px solid var(--line)"><input id="aq" placeholder="Add by Watchdog ID, for example 9B2F09" aria-label="Add handicapper" style="flex:1;height:36px;background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:0 10px">' +
+    var add = '<form class="row" id="af" style="padding:14px 16px;border-bottom:1px solid var(--line)"><input id="aq" placeholder="Add by name or Watchdog ID" aria-label="Add handicapper" style="flex:1;height:36px;background:var(--bg2);border:1px solid var(--line);border-radius:8px;padding:0 10px">' +
       '<button class="btn sm" type="submit"' + (ids.length >= 4 ? ' disabled' : '') + '>Add</button></form><p class="muted small" id="am" style="margin:8px 16px 0"></p>';
     if (!ids.length) { box.innerHTML = add + '<div class="empty">Add up to four handicappers to compare.</div>'; hook(idx, nm); return; }
     Promise.all(ids.map(function (id) { return idx[id] && idx[id].profile ? fetch('data/p/' + id + '.json').then(function (r) { return r.json(); }).then(function (p) { return !p.gated || !window.HWD ? p : HWD.capper(id).then(function (d) { return Object.assign(p, d.deep || {}); }).catch(function () { return p; }); }).catch(function () { return null; }) : null; })).then(function (ps) {
@@ -28,7 +28,7 @@
       var row = function (label, f) { return '<tr><td class="l">' + label + '</td>' + cols.map(function (o) { return '<td>' + f(o) + '</td>'; }).join('') + '</tr>'; };
       var best = function (o) { var sd = o.p && o.p.sport_detail || {}; var k = Object.keys(sd).filter(function (s) { return sd[s].overall.picks >= 10; }).sort(function (a, b) { return sd[b].overall.net - sd[a].overall.net; })[0]; return k ? esc(k) + ' ' + sgn(sd[k].overall.net, 1, 'u') : '<span class="dim">n/a</span>'; };
       box.innerHTML = add + '<div class="tw"><table class="mini cmpt"><thead><tr><th class="l">Handicapper</th>' + cols.map(function (o) {
-        return '<th><a href="handicappers/' + o.id + '.html" style="color:var(--ink)">' + esc('#' + o.id.slice(0, 6).toUpperCase()) + '</a><br><span class="dim small">' + '' + '</span> <a href="#" data-rm="' + o.id + '" class="dim small">remove</a></th>'; }).join('') + '</tr></thead><tbody>' +
+        return '<th><a href="handicappers/' + o.id + '.html" style="color:var(--ink)">' + esc(o.c.name || '#' + o.id.slice(0, 6).toUpperCase()) + '</a><br><span class="dim small">' + '' + '</span> <a href="#" data-rm="' + o.id + '" class="dim small">remove</a></th>'; }).join('') + '</tr></thead><tbody>' +
         row('Record', function (o) { return o.c.w + '-' + o.c.l + (o.c.p ? '-' + o.c.p : ''); }) + row('Graded picks', function (o) { return o.c.picks; }) +
         row('Units', function (o) { return sgn(o.c.units, 2); }) + row('ROI', function (o) { return sgn(o.c.roi, 1, '%'); }) + row('Win %', function (o) { return pct(o.c.win_pct); }) +
         row('Last 30 days', function (o) { return o.c.r30 ? sgn(o.c.r30.net, 2) + ' <span class="dim small">' + o.c.r30.picks + ' picks</span>' : '<span class="dim">n/a</span>'; }) +
@@ -49,7 +49,7 @@
     f.addEventListener('submit', function (e) {
       e.preventDefault();
       var q = document.getElementById('aq').value.trim().toLowerCase(), hit = null;
-      q = q.replace(/^#/, ''); Object.keys(idx).some(function (id) { if (id.slice(0, 6) === q || id === q) { hit = id; return true; } return false; });
+      q = q.replace(/^#|^@|^u\//, ''); Object.keys(idx).some(function (id) { if (id.slice(0, 6) === q || id === q || (idx[id].name && idx[id].name.toLowerCase().replace(/^@|^u\//, '') === q)) { hit = id; return true; } return false; });
       if (!hit) { document.getElementById('am').textContent = 'No tracked handicapper matches that.'; return; }
       if (ids.indexOf(hit) < 0 && ids.length < 4) go(ids.concat(hit));
     });

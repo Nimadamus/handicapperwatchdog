@@ -25,7 +25,7 @@ for f in glob.glob(os.path.join(SITE, 'data', 'p', '*.json')):
 print('public profiles checked', n, 'with deep data', len(fails))
 
 idx = json.load(open(os.path.join(SITE, 'data', 'index.json'), encoding='utf-8'))
-extra = {k for r in idx['cappers'] for k in r} - {'id', 'w', 'l', 'p', 'picks', 'win_pct', 'units', 'roi', 'streak', 'last_pick', 'first_pick', 'profile', 'basic', 'tier', 'r7', 'r30', 'sports', 'bs', 'spark'}
+extra = {k for r in idx['cappers'] for k in r} - {'id', 'w', 'l', 'p', 'picks', 'win_pct', 'units', 'roi', 'streak', 'last_pick', 'first_pick', 'profile', 'basic', 'tier', 'r7', 'r30', 'sports', 'bs', 'spark', 'name', 'src', 'link'}
 if extra:
     fails.append(('index extra fields', sorted(extra)))
 per_sport = {}

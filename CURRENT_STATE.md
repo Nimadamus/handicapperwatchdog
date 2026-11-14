@@ -37,5 +37,5 @@ token only, kill switch HWD_RESEARCH_EXPORT=0); HWD build.py fetch_research() us
 Stripe: 0 subscribers, $0. GA 7d: 54 users. GSC: 79 impressions, 0 clicks (navigational "cappers watchdog").
 
 ## Rules
-No names anywhere. No test emails to Nima. No regrades without per pick approval. No dashes in published text.
+NAMES ARE PUBLIC since 2026-11-14 (Nima: "just put the names back up"): build.py reads content/names.bin (sealed with HWD_PRO_KEY, rewrite with tools/refresh_names.py --push; HWD_NAMES=0 turns names off). Never publish th- slugs, post text or post links. No test emails to Nima. No regrades without per pick approval. No dashes in published text.
 Push hwd-home to main and pro-anon-20261102. Watchdog deploy only via wd_code_deploy.py.

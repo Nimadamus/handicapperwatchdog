@@ -9,6 +9,9 @@
   var pct = function (v) { return v == null ? '<span class="dim">n/a</span>' : (+v).toFixed(1) + '%'; };
   var strk = function (s) { return s > 0 ? '<span class="st pos">W' + s + '</span>' : s < 0 ? '<span class="st neg">L' + (-s) + '</span>' : '<span class="dim">0</span>'; };
   var code = function (id) { return id.slice(0, 6).toUpperCase(); };
+  var who = function (r) { return r.name || '#' + code(r.id); };  // public name, or the Watchdog ID while the name is not on file
+  var bare = function (s) { return String(s || '').toLowerCase().replace(/^@|^u\//, ''); };
+  var ini = function (r) { var w = bare(r.name).replace(/[^a-z0-9]/g, ''); return (w.slice(0, 2) || code(r.id).slice(0, 2)).toUpperCase(); };
   var TIER = { established: ['est', 'Established'], developing: ['dev', 'Developing'], small: ['sm', 'Small sample'] };
   var DAY = 864e5;
 
@@ -102,7 +105,7 @@
           tbl('After a win or a loss', p.after, 6) + tbl('By weekday', p.weekday, 7)],
         ['Pro only', '<div class="slock"><div><span class="lock">Watchdog Pro</span><h4>Pending picks from #' + c + '</h4><p>Eligible picks before the game starts, with this whole file beside them.</p><div class="sl"><span class="blur">Away at Home</span><span class="blur">Side 3.5</span><span class="blur">Sun 1:05</span></div><div class="sl"><span class="blur">Away at Home</span><span class="blur">Total 44.5</span><span class="blur">Sun 4:25</span></div></div>' +
           '<div><span class="lock">Watchdog Pro</span><h4>The complete pick log</h4><p>All ' + fmt(o.picks || r.picks) + ' graded picks with game, pick, odds, result, units and post time. Free profiles show the latest 10.</p><a class="btn pro" href="pricing.html">View Watchdog Pro</a></div></div>']];
-      box.innerHTML = '<div class="shead"><div><span class="eyebrow">Sample profile</span><b class="sid">#' + esc(c) + '</b></div>' +
+      box.innerHTML = '<div class="shead"><div><span class="eyebrow">Sample profile</span><b class="sid">' + esc(who(r)) + '</b></div>' +
         '<div class="skpi">' + fact('Record', recTxt(o)) + fact('Units', sgn(o.net, 2)) + fact('ROI', sgn(o.roi, 1, '%')) + fact('Win rate', pct(o.win_pct)) + fact('Avg odds', o.avg_odds == null ? 'n/a' : (o.avg_odds > 0 ? '+' : '') + o.avg_odds) + '</div></div>' +
         '<div class="stabs" role="tablist" aria-label="Profile sections">' + tabs.map(function (t, i) { return '<button type="button" role="tab" id="st' + i + '" aria-selected="' + (i ? 'false' : 'true') + '" aria-controls="sp">' + t[0] + '</button>'; }).join('') + '</div>' +
         '<div class="spanel" id="sp" role="tabpanel">' + tabs[0][1] + '</div>' +
@@ -139,7 +142,7 @@
     function load() {
       if (!loaded) loaded = Promise.all([fetch('data/services.json').then(function (r) { return r.json(); }), fetch('data/ids.json').then(function (r) { return r.json(); })]).then(function (x) {
         services = x[0]; sports = x[1].sports || [];
-        all = (x[1].ids || []).map(function (a) { var p = a[2].split('-'); return { id: a[0], picks: a[1], w: +p[0], l: +p[1], p: +(p[2] || 0), profile: true }; });
+        all = (x[1].ids || []).map(function (a) { var p = a[2].split('-'); return { id: a[0], picks: a[1], w: +p[0], l: +p[1], p: +(p[2] || 0), profile: true, name: a[3] || '' }; });
         if (document.activeElement === input && input.value) show();
       }).catch(function () { loaded = null; });
       return loaded;
@@ -150,9 +153,10 @@
       services.forEach(function (v) { if (v.name.toLowerCase().indexOf(s) >= 0) out.push({ href: v.page, a: v.name, b: v.kind || 'Service review' }); });
       if (!out.length && s.length >= 4) services.map(function (v) { return { v: v, d: near(s, v.name.toLowerCase()) }; }).filter(function (x) { return x.d <= 2; }).sort(function (a, b) { return a.d - b.d; }).slice(0, 3)
         .forEach(function (x) { out.push({ href: x.v.page, a: x.v.name, b: x.v.kind ? 'Did you mean this sportsbook?' : 'Did you mean this review?' }); });
-      if (/^[0-9a-f]{2,10}$/.test(s)) all.filter(function (r) { return r.id.indexOf(s) === 0; }).sort(function (a, b) { return b.picks - a.picks; }).slice(0, 5).forEach(function (r) {
-        out.push({ href: link(r), a: '#' + code(r.id), b: r.picks ? recTxt(r) + ', ' + fmt(r.picks) + ' graded picks' : 'No graded picks yet' });
-      });
+      var seen = {}, nq = bare(s);
+      var hit = function (r) { if (seen[r.id]) return; seen[r.id] = 1; out.push({ href: link(r), a: who(r), b: r.picks ? recTxt(r) + ', ' + fmt(r.picks) + ' graded picks' : 'No graded picks yet' }); };
+      if (nq.length >= 2) all.filter(function (r) { return r.name && bare(r.name).indexOf(nq) >= 0; }).sort(function (a, b) { return (bare(a.name).indexOf(nq) ? 1 : 0) - (bare(b.name).indexOf(nq) ? 1 : 0) || b.picks - a.picks; }).slice(0, 6).forEach(hit);
+      if (/^[0-9a-f]{2,10}$/.test(s)) all.filter(function (r) { return r.id.indexOf(s) === 0; }).sort(function (a, b) { return b.picks - a.picks; }).slice(0, 5).forEach(hit);
       sports.forEach(function (v) { if (v.toLowerCase().indexOf(s) === 0) out.push({ href: 'cappers.html?sport=' + encodeURIComponent(v), a: v, b: 'Rankings' }); });
       return out.slice(0, 7);
     }
@@ -161,7 +165,7 @@
       var q = input.value.trim();
       if (!q) { box.hidden = true; input.setAttribute('aria-expanded', 'false'); return; }
       box.innerHTML = items.length ? items.map(function (o, i) { return '<li role="option" id="vo' + i + '"><a href="' + esc(o.href) + '">' + esc(o.a) + '<span>' + esc(o.b) + '</span></a></li>'; }).join('') :
-        '<li class="vnone-li"><span class="vnone">No match. Tracked accounts are listed by Watchdog ID, not by name, so a person or handle will not appear here. Try a <a href="reviews/index.html">named service review</a>, a <a href="sportsbooks/">sportsbook</a> or the <a href="cappers.html">rankings</a>.</span></li>';
+        '<li class="vnone-li"><span class="vnone">No match. Try a <a href="reviews/index.html">named service review</a>, a <a href="sportsbooks/">sportsbook</a> or the <a href="cappers.html">rankings</a>.</span></li>';
       box.hidden = false; input.setAttribute('aria-expanded', 'true');
     }
     input.addEventListener('input', function () { load(); show(); });
@@ -187,7 +191,7 @@
 
   function capCell(r) {
     var t = TIER[r.tier] || TIER.small;
-    return '<div class="cap"><span class="av">' + esc(code(r.id).slice(0, 2)) + '</span><span class="nm"><b class="idc">#' + esc(code(r.id)) + '</b>' +
+    return '<div class="cap"><span class="av">' + esc(ini(r)) + '</span><span class="nm"><b class="idc">' + esc(who(r)) + '</b>' +
       '<small><span class="badge ' + t[0] + '">' + t[1] + '</span></small></span></div>';
   }
 
@@ -281,7 +285,7 @@
     buyerTools(all, est, M);
     sampleProfile(est.filter(function (r) { return !r.basic && r.profile; })[0]);
     if (top && $('idCode')) {
-      $('idCode').textContent = '#' + code(top.id);
+      $('idCode').textContent = who(top);
       set('idPicks', fmt(top.picks)); set('idRec', recTxt(top)); set('idUnits', sgn(top.units, 2)); set('idSince', since(top));
       if (link(top)) $('idLink').href = link(top);
     }
@@ -298,7 +302,7 @@
     function exCard(r, label, cls) {
       var h = link(r);
       return '<article class="panel excard ' + cls + '"><div class="exhead"><span class="eyebrow">' + label + '</span><span class="badge est">Established</span></div>' +
-        '<div class="exid"><span class="av">' + esc(code(r.id).slice(0, 2)) + '</span><b class="idc">#' + esc(code(r.id)) + '</b><span class="dim small">tracked since ' + since(r) + '</span></div>' +
+        '<div class="exid"><span class="av">' + esc(ini(r)) + '</span><b class="idc">' + esc(who(r)) + '</b><span class="dim small">tracked since ' + since(r) + '</span></div>' +
         '<div class="exspark">' + spark(r.spark, 320, 64) + '</div>' +
         '<div class="exk"><div><b>' + recTxt(r) + '</b><span>Record</span></div><div><b>' + sgn(r.units, 2) + '</b><span>Units</span></div><div><b>' + sgn(r.roi, 1, '%') + '</b><span>ROI</span></div><div><b>' + pct(r.win_pct) + '</b><span>Win rate</span></div><div><b>' + strk(r.streak) + '</b><span>Streak</span></div></div>' +
         '<p class="exp">' + explain(r) + '</p>' + (h ? '<a class="btn sm ghost" href="' + h + '">Open the full profile</a>' : '') + '</article>';
@@ -337,7 +341,7 @@
       if (!r) return '<article class="panel fcard"><span class="eyebrow">' + f[0] + '</span><p class="muted small">No account qualifies today. Rule: ' + f[1] + '</p></article>';
       var k = f[3](r), h = link(r), t = TIER[r.tier] || TIER.small;
       return '<a class="panel fcard" href="' + (h || 'cappers.html') + '"><span class="eyebrow">' + f[0] + '</span>' +
-        '<div class="exid"><span class="av">' + esc(code(r.id).slice(0, 2)) + '</span><b class="idc">#' + esc(code(r.id)) + '</b><span class="badge ' + t[0] + '">' + t[1] + '</span></div>' +
+        '<div class="exid"><span class="av">' + esc(ini(r)) + '</span><b class="idc">' + esc(who(r)) + '</b><span class="badge ' + t[0] + '">' + t[1] + '</span></div>' +
         '<div class="fck"><b>' + k[0] + '</b><span>' + k[1] + '</span></div>' + spark(r.spark, 240, 44) +
         '<div class="fcrow"><span>' + recTxt(r) + '</span><span>' + sgn(r.units, 2, 'u') + '</span><span>' + sgn(r.roi, 1, '%') + ' ROI</span><span>' + fmt(r.picks) + ' picks</span></div>' +
         '<p class="dim small">' + f[1] + '</p><span class="fcgo">Open full profile &rarr;</span></a>';
@@ -402,7 +406,7 @@
     $('boardTabs').innerHTML = TABS.map(function (t, i) { return '<button class="tab' + (i ? '' : ' on') + '" data-i="' + i + '">' + t[1] + '</button>'; }).join('');
     $('boardTabs').addEventListener('click', function (e) { var b = e.target.closest('.tab'); if (!b) return; state.tab = +b.getAttribute('data-i'); state.sport = ''; $('boardSport').value = ''; draw(); });
     $('boardSport').addEventListener('change', function () { state.sport = this.value; draw(); });
-    $('boardHead').innerHTML = '<tr><th class="l">#</th><th class="l">Watchdog ID</th><th class="hm l">Trend</th><th class="hm"><span class="tip2" tabindex="0" data-tip="Graded picks in this view">Picks</span></th><th><span class="tip2" tabindex="0" data-tip="Wins, losses, pushes">Record</span></th><th class="hm"><span class="tip2" tabindex="0" data-tip="Wins divided by wins plus losses">Win %</span></th><th><span class="tip2" tabindex="0" data-tip="Profit risking 1 unit per pick">Units</span></th><th class="hm"><span class="tip2" tabindex="0" data-tip="Units won per unit risked">ROI</span></th><th class="hm"><span class="tip2" tabindex="0" data-tip="Current run of wins or losses">Streak</span></th><th class="hm">Last pick</th></tr>';
+    $('boardHead').innerHTML = '<tr><th class="l">#</th><th class="l">Handicapper</th><th class="hm l">Trend</th><th class="hm"><span class="tip2" tabindex="0" data-tip="Graded picks in this view">Picks</span></th><th><span class="tip2" tabindex="0" data-tip="Wins, losses, pushes">Record</span></th><th class="hm"><span class="tip2" tabindex="0" data-tip="Wins divided by wins plus losses">Win %</span></th><th><span class="tip2" tabindex="0" data-tip="Profit risking 1 unit per pick">Units</span></th><th class="hm"><span class="tip2" tabindex="0" data-tip="Units won per unit risked">ROI</span></th><th class="hm"><span class="tip2" tabindex="0" data-tip="Current run of wins or losses">Streak</span></th><th class="hm">Last pick</th></tr>';
 
     function draw() {
       var t = TABS[state.tab], rows;
@@ -463,7 +467,7 @@
       var rows = mrows.filter(function (o) { return !f || o.sp === f; });
       set('mockRows', rows.map(function (o) {
         var h = link(o.r);
-        return '<tr><td class="l"><a href="' + (h || 'cappers.html') + '"><b class="idc">#' + esc(code(o.r.id)) + '</b></a></td><td class="l"><span class="idc small">' + recTxt(o.r) + '</span> <span class="dim small">' + esc(o.sp) + ' ' + sgn(o.b[1], 1, 'u') + '</span></td>' +
+        return '<tr><td class="l"><a href="' + (h || 'cappers.html') + '"><b class="idc">' + esc(who(o.r)) + '</b></a></td><td class="l"><span class="idc small">' + recTxt(o.r) + '</span> <span class="dim small">' + esc(o.sp) + ' ' + sgn(o.b[1], 1, 'u') + '</span></td>' +
           '<td class="l">' + lockCell + '</td><td class="l"><span class="blur">Side 3.5</span></td><td class="hp"><span class="blur">Sun 1:05</span></td></tr>';
       }).join('') || '<tr><td colspan="5" class="empty">No established records in this sport yet.</td></tr>');
     }
@@ -500,7 +504,7 @@
       var min = $('fMin').value === '' ? 1 : +$('fMin').value, roi = $('fRoi').value, win = $('fWin').value, un = $('fUnits').value, sort = $('fSort').value;
       view = [];
       all.forEach(function (r) {
-        if (q && !(r.id.indexOf(q) === 0 || code(r.id).toLowerCase() === q || r.id.slice(0, 4) === q ||
+        if (q && !(r.id.indexOf(q) === 0 || code(r.id).toLowerCase() === q || r.id.slice(0, 4) === q || (r.name && bare(r.name).indexOf(bare(q)) >= 0) ||
           (r.sports || []).some(function (s) { return s.toLowerCase().indexOf(q) >= 0; }))) return;
         if (actCut && !(r.last_pick && r.last_pick >= actCut)) return;
         var x = m(r, t, sp); if (!x) return;
