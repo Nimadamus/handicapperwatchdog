@@ -336,7 +336,7 @@ async function sendPurchaseNotices(env, deps, a) {
   const plan = planLabel(a.plan);
   const site = env.SITE_URL || 'https://handicapperwatchdog.com';
   await sendOnce(env, deps, 'mail:purchase:' + a.subscription, a.email, 'Your Watchdog Pro subscription',
-    `You are subscribed to Watchdog Pro (${plan}).\n\nComplete graded pick ledgers on every profile, eligible pending picks before the start, and side by side comparisons are unlocked now. Handicapper names and account links are not part of any plan.\n\nManage or cancel any time: ${site}/account.html\n\nSign in later from that page with this email. Stripe also emails a receipt.`);
+    `You are subscribed to Watchdog Pro (${plan}).\n\nComplete graded pick ledgers on every profile, every breakdown and side by side comparisons are unlocked now.\n\nManage or cancel any time: ${site}/account.html\n\nSign in later from that page with this email. Stripe also emails a receipt.`);
   const owner = (env.PURCHASE_NOTIFY_EMAIL || '').trim().toLowerCase();
   if (owner && owner !== a.email.toLowerCase()) {
     await sendOnce(env, deps, 'mail:owner:' + a.subscription, owner, 'New Watchdog Pro subscription',

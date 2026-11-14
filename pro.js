@@ -1,4 +1,4 @@
-// Watchdog Pro client: session state, checkout, sign in and decrypting Pro data (anonymous ledgers and pending picks).
+// Watchdog Pro client: session state, checkout, sign in and decrypting Pro data (full pick ledgers).
 // Loaded on every page before the page script. When the API is not reachable (a static only deploy),
 // HWD.ready resolves with api:false and every Pro control shows that checkout is not open yet.
 (function () {
@@ -90,7 +90,7 @@
     followButton: function (id) {
       var host = document.querySelector('.pid > div:last-child'); if (!host || document.getElementById('fbtn')) return;
       var u = document.querySelector('.phero .unl');
-      if (u) u.innerHTML = '<span class="lock">Watchdog Pro</span><b>You have Watchdog Pro</b><p>Follow this account to filter today&rsquo;s eligible picks to the accounts you track.</p><a class="btn pro" style="width:100%" href="picks.html">Today&rsquo;s Pro picks</a>';
+      if (u) u.innerHTML = '<span class="lock">Watchdog Pro</span><b>You have Watchdog Pro</b><p>The complete pick log and every breakdown are open on this profile.</p>';
       var self = this, b = document.createElement('button');
       b.id = 'fbtn'; b.type = 'button'; b.className = 'btn sm ghost'; b.style.marginTop = '10px';
       var paint = function (on) { b.setAttribute('aria-pressed', on ? 'true' : 'false'); b.textContent = on ? '★ Following' : '☆ Follow'; };
@@ -105,7 +105,7 @@
   // every "unlock" call to action says plainly when checkout is not open
   ready.then(function (s) {
     document.querySelectorAll('[data-cta-note]').forEach(function (el) {
-      if (s.pro) { el.textContent = 'You have Watchdog Pro. Today’s eligible picks are on the picks page.'; el.hidden = false; }
+      if (s.pro) { el.textContent = 'You have Watchdog Pro. Full pick logs are open on every profile.'; el.hidden = false; }
       else if (!s.api || !s.billing) { el.textContent = 'Watchdog Pro checkout is not open yet. The picks page shows what Pro includes and the launch prices.'; el.hidden = false; }
     });
   });

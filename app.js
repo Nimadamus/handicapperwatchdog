@@ -103,7 +103,7 @@
           fact('Max drawdown', sgn(a.max_drawdown, 2, 'u')) + fact('Peak units', sgn(a.peak_units, 2, 'u')) + fact('Volatility', a.volatility == null ? 'n/a' : (+a.volatility).toFixed(2)) +
           fact('Longest win streak', fmt(st.longest_win)) + fact('Longest losing streak', fmt(st.longest_loss)) + fact('Picks per week', p.per_week == null ? 'n/a' : (+p.per_week).toFixed(1)) + '</div>' +
           tbl('After a win or a loss', p.after, 6) + tbl('By weekday', p.weekday, 7)],
-        ['Pro only', '<div class="slock"><div><span class="lock">Watchdog Pro</span><h4>Pending picks from #' + c + '</h4><p>Eligible picks before the game starts, with this whole file beside them.</p><div class="sl"><span class="blur">Away at Home</span><span class="blur">Side 3.5</span><span class="blur">Sun 1:05</span></div><div class="sl"><span class="blur">Away at Home</span><span class="blur">Total 44.5</span><span class="blur">Sun 4:25</span></div></div>' +
+        ['Pro only', '<div class="slock"><div><span class="lock">Watchdog Pro</span><h4>Every breakdown</h4><p>Sport, market, price, team and calendar splits, charts and every time window for this account.</p></div>' +
           '<div><span class="lock">Watchdog Pro</span><h4>The complete pick log</h4><p>All ' + fmt(o.picks || r.picks) + ' graded picks with game, pick, odds, result, units and post time. Free profiles show the latest 10.</p><a class="btn pro" href="pricing.html">View Watchdog Pro</a></div></div>']];
       box.innerHTML = '<div class="shead"><div><span class="eyebrow">Sample profile</span><b class="sid">' + esc(who(r)) + '</b></div>' +
         '<div class="skpi">' + fact('Record', recTxt(o)) + fact('Units', sgn(o.net, 2)) + fact('ROI', sgn(o.roi, 1, '%')) + fact('Win rate', pct(o.win_pct)) + fact('Avg odds', o.avg_odds == null ? 'n/a' : (o.avg_odds > 0 ? '+' : '') + o.avg_odds) + '</div></div>' +
@@ -453,7 +453,7 @@
       ', and the median ROI is ' + (med == null ? 'n/a' : (med > 0 ? '+' : '') + med.toFixed(1) + '%') + '. Being up so far does not mean being up next week.</p>' +
       (bars ? '<div class="eyebrow" style="margin-bottom:4px">Up money by source, 20 or more picks</div>' + bars : ''));
 
-    // pending picks preview: real public records, placeholder games and picks, nothing from the pending feed
+    // pick log preview: real public records, placeholder games and picks
     var MOCK = ['NFL', 'NCAAF', 'NBA', 'NHL'], mrows = [];
     MOCK.forEach(function (sp) {
       all.filter(function (r) { return r.picks >= 100 && r.bs && r.bs[sp] && r.bs[sp][0] >= 20; })
@@ -468,7 +468,7 @@
       set('mockRows', rows.map(function (o) {
         var h = link(o.r);
         return '<tr><td class="l"><a href="' + (h || 'cappers.html') + '"><b class="idc">' + esc(who(o.r)) + '</b></a></td><td class="l"><span class="idc small">' + recTxt(o.r) + '</span> <span class="dim small">' + esc(o.sp) + ' ' + sgn(o.b[1], 1, 'u') + '</span></td>' +
-          '<td class="l">' + lockCell + '</td><td class="l"><span class="blur">Side 3.5</span></td><td class="hp"><span class="blur">Sun 1:05</span></td></tr>';
+          '<td class="l">' + lockCell + '</td><td class="l"><span class="blur">Side 3.5</span></td><td class="hp"><span class="blur">Win</span></td></tr>';
       }).join('') || '<tr><td colspan="5" class="empty">No established records in this sport yet.</td></tr>');
     }
     var mf = $('mockF');

@@ -33,7 +33,6 @@
       (msg ? '<div class="notice ok">' + esc(msg) + '</div>' : '') +
       '<ul class="facts"><li><span>Email</span><b>' + esc(s.email) + '</b></li><li><span>Plan</span><b>' + (s.plan === 'annual' ? '$499 a year' : s.plan === 'monthly' ? '$49.99 a month' : 'None') + '</b></li>' +
       '<li><span>Status</span><b>' + status + '</b></li></ul>' +
-      (s.pro ? '<div class="alertbox"><label class="tog"><input type="checkbox" id="alrt"' + (s.alerts ? ' checked' : '') + '> <span><b>Pick alerts by email</b><br><span class="muted small">When an account you follow posts an eligible pick before the start. At most ' + 8 + ' emails a day. You follow ' + (s.follows || 0) + (s.follows === 1 ? ' account' : ' accounts') + '; use Follow on any profile.</span></span></label><span id="alrtmsg" class="small muted"></span></div>' : '') +
       (s.payment_failed ? '<div class="notice">Your last payment did not go through. Update your card in billing to keep Pro.</div>' : '') +
       '<div class="row" style="margin-top:16px">' + (s.pro || s.status && s.status !== 'none' ? '<button class="btn" id="bill" type="button">Manage billing</button>' : '<a class="btn pro" href="pricing.html">Get Watchdog Pro</a>') +
       '<a class="btn ghost" href="cappers.html">Open rankings</a><button class="btn ghost" id="out" type="button">Sign out</button></div></div>';
@@ -64,7 +63,7 @@
         clean();
         if (d._status !== 200) return s.signed_in ? signedIn(s, d.error) : signedOut(d.error);
         if (window.gtag && !d.duplicate) { var annual = /annual/.test(d.plan || ''); gtag('event', 'purchase', { transaction_id: sid, currency: 'USD', value: annual ? 499 : 49.99, items: [{ item_id: 'watchdog_pro_' + (annual ? 'annual' : 'monthly'), item_name: 'Watchdog Pro', quantity: 1 }] }); }
-        return fetch(HWD.api + '/api/me', { credentials: 'include' }).then(function (r) { return r.json(); }).then(function (me) { setTimeout(backBar, 0); signedIn(me, d.duplicate ? 'You already had Watchdog Pro. The extra checkout was canceled.' : 'Welcome to Watchdog Pro. Full pick ledgers are unlocked on every profile, and today’s eligible picks are on the picks page.'); });
+        return fetch(HWD.api + '/api/me', { credentials: 'include' }).then(function (r) { return r.json(); }).then(function (me) { setTimeout(backBar, 0); signedIn(me, d.duplicate ? 'You already had Watchdog Pro. The extra checkout was canceled.' : 'Welcome to Watchdog Pro. Full pick ledgers and every breakdown are unlocked on every profile.'); });
       });
     }
     if (tok) {

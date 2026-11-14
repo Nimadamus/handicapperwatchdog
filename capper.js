@@ -158,7 +158,7 @@
       ['Teams', 'Teams backed and faded, conferences, divisions'], ['Prices and sides', 'Favorites, underdogs, odds ranges, overs, unders, home and away'], ['Calendar', 'Weekday, month and season splits'], ['Full history', 'Every graded pick and every time window']];
     var box = document.createElement('section');
     box.className = 'sec prolock'; box.id = 'pro-file';
-    box.innerHTML = '<div><span class="lock">Watchdog Pro</span><h2>The rest of this file is in Watchdog Pro</h2><p class="muted">Free profiles show the record, ROI, recent form and the latest graded picks. Pro opens everything below on every tracked profile, plus eligible pending picks before the start.</p></div>' +
+    box.innerHTML = '<div><span class="lock">Watchdog Pro</span><h2>The rest of this file is in Watchdog Pro</h2><p class="muted">Free profiles show the record, ROI, recent form and the latest graded picks. Pro opens everything below on every tracked profile.</p></div>' +
       '<ul>' + items.map(function (i) { return '<li><b>' + i[0] + '</b><span>' + i[1] + '</span></li>'; }).join('') + '</ul><a class="btn pro" href="pricing.html">View Watchdog Pro</a>';
     if (ov) ov.after(box);
   }
@@ -182,7 +182,7 @@
       '<div class="pmeta"><span class="badge ' + t[0] + '" title="' + t[2] + '">' + t[1] + '</span>' +
       (s.sports || []).slice(0, 4).map(function (x) { return '<a class="badge" href="' + sportHref(x) + '">' + esc(x) + '</a>'; }).join('') + '</div>' +
       '<p class="muted small" style="margin:8px 0 0">' + statusTag(p.status) + ' Tracked since ' + day(s.first_pick) + ' · last graded game ' + day(p.last_game || s.last_pick) + ' · verified through ' + day(p.generated_at) + (p.newer > 0 ? ' · ' + fmt(p.newer) + ' newer graded pick' + (p.newer === 1 ? '' : 's') + ' in the rankings join this breakdown at a coming update' : '') + '</p></div></div></div>' +
-      '<div class="unl"><span class="lock">Watchdog Pro</span><b>See what this account bets next</b><p>Free: the headline record, recent form and the latest 10 graded picks. Watchdog Pro adds:</p><ul><li>This account&rsquo;s eligible pending picks before the games start</li><li>The complete log of all ' + fmt(o.picks) + ' graded picks</li><li>Follow it and get an email when it posts a pick</li></ul><p>$49.99 a month or $499 a year.</p><a class="btn pro" style="width:100%" href="' + PRO + '">View Watchdog Pro</a></div></section>';
+      '<div class="unl"><span class="lock">Watchdog Pro</span><b>See this account&rsquo;s full record</b><p>Free: the headline record, recent form and the latest 10 graded picks. Watchdog Pro adds:</p><ul><li>The complete log of all ' + fmt(o.picks) + ' graded picks</li><li>Every breakdown by sport, market, price and team</li><li>Charts and every time window</li></ul><p>$49.99 a month or $499 a year.</p><a class="btn pro" style="width:100%" href="' + PRO + '">View Watchdog Pro</a></div></section>';
 
     h += kpis([[rec(o), 'Record'], [sgn(o.net, 2), 'Units won'], [sgn(o.roi, 1, '%'), 'ROI'], [pct(o.win_pct), 'Win %'], [fmt(o.picks), 'Graded picks'],
       [odds(o.avg_odds), 'Avg odds'], [strk(ost.current), 'Current streak'], [s.r30 ? sgn(s.r30.net, 2) : '<span class="dim">n/a</span>', 'Last 30 days']]);
@@ -198,7 +198,7 @@
         ['Max drawdown', sgn(a.max_drawdown, 2, 'u')], ['Peak', sgn(a.peak_units, 2, 'u')]]) + '</div>') + '</div></div>' +
       '<div class="g2">' + panel('Performance by period', table(p.form_days, 'Window'), '<span class="muted small">By game date</span>') +
         panel('Tracking', '<div class="pb">' + facts([['Watchdog ID', '#' + esc(c)], ['First tracked pick', day(s.first_pick)], ['Most recent graded game', day(p.last_game || s.last_pick)], ['Monitoring status', statusTag(p.status, 1)],
-          ['Graded picks', fmt(o.picks)], ['Picks per week', p.per_week == null ? 'n/a' : (+p.per_week).toFixed(1)], ['Avg units risked', p.avg_risk == null ? 'n/a' : (+p.avg_risk).toFixed(2)], ['Pending picks', '<span class="dim">Watchdog Pro</span>']]) +
+          ['Graded picks', fmt(o.picks)], ['Picks per week', p.per_week == null ? 'n/a' : (+p.per_week).toFixed(1)], ['Avg units risked', p.avg_risk == null ? 'n/a' : (+p.avg_risk).toFixed(2)]]) +
           '</div>') + '</div>' +
       strengths(p) +
       '<div class="g2">' + panel('Advanced metrics', '<div class="pb">' + facts([['Z score vs break even', z.z == null ? 'n/a' : sgn(z.z, 2)], ['Win % needed at their prices', be.needed_pct == null ? 'n/a' : pct(be.needed_pct)],
@@ -242,7 +242,7 @@
         '<div class="tw"><table class="mini ledger"><thead><tr><th class="l">Date</th><th class="l hg">Sport</th><th class="l hg">Game</th><th class="l">Pick</th><th>Odds</th><th class="hm">Risk</th><th>Result</th><th class="hm">Final</th><th>Units</th><th class="hm">Before start</th></tr></thead><tbody id="lrows"></tbody></table></div>' +
         '<div class="tfoot"><span id="lcount" class="muted small"></span><div class="pager"><button class="btn sm ghost" id="lprev" type="button">Previous</button><span id="lpg"></span><button class="btn sm ghost" id="lnext" type="button">Next</button></div></div>'
         : '<div class="empty small">No graded picks to list yet.</div>') +
-      '<div class="lockfoot" id="lockfoot"><span class="lock">Watchdog Pro</span><span>The complete log of all ' + fmt(o.picks) + ' graded picks and this account&rsquo;s eligible pending picks before the start are in Watchdog Pro.</span><a class="btn sm pro" href="' + PRO + '">View Watchdog Pro</a></div></div>' +
+      '<div class="lockfoot" id="lockfoot"><span class="lock">Watchdog Pro</span><span>The complete log of all ' + fmt(o.picks) + ' graded picks is in Watchdog Pro.</span><a class="btn sm pro" href="' + PRO + '">View Watchdog Pro</a></div></div>' +
       '<p class="note">Posted shows how long before the start the pick was captured. Odds are the posted price when the post had one; picks without a price count in the record but not in units.</p></section>';
 
     root.innerHTML = h;
@@ -317,23 +317,8 @@
     };
     draw();
   }
-  // Watchdog Pro: this account's eligible pending picks, from the one encrypted pending feed
-  function pendingFor(id) {
-    if (window.HWD && HWD.followButton) HWD.followButton(id);
-    var box = document.getElementById('ppend'); if (!box) return;
-    var when = function (iso) { return iso ? new Date(iso).toLocaleString('en-US', { timeZone: 'America/Los_Angeles', weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) + ' PT' : 'n/a'; };
-    var draw = function (body) { box.innerHTML = '<div class="sech"><h2>Eligible pending picks</h2><span class="lock">Watchdog Pro</span></div><div class="panel" style="margin-bottom:18px">' + body + '</div>'; };
-    HWD.pending().then(function (d) {
-      var live = (d.picks || []).filter(function (p) { return p.id === id && p.start && new Date(p.start) > new Date(); });
-      draw(!live.length ? '<div class="empty small">No eligible pending picks from this account right now. Picks appear here after capture and leave when the game starts.</div>'
-        : '<div class="tw"><table class="mini"><thead><tr><th class="l">Starts</th><th class="l">Game</th><th class="l">Pick</th><th>Odds</th><th class="hm">Units</th></tr></thead><tbody>' +
-          live.map(function (p) { return '<tr><td class="l nowrap">' + when(p.start) + '</td><td class="l">' + esc(p.league) + ' &middot; ' + esc(p.matchup) + '</td><td class="l"><b>' + esc(p.selection) + '</b> <span class="dim small">' + esc(p.bet_type) + '</span></td><td>' + odds(p.odds) + '</td><td class="hm">' + (p.units == null ? '<span class="dim">n/a</span>' : esc(p.units)) + '</td></tr>'; }).join('') +
-          '</tbody></table></div>');
-    }).catch(function () { draw('<div class="empty small">The pending pick feed is not available at this update. Graded records are unaffected.</div>'); });
-  }
-  // Watchdog Pro: the full anonymous ledger and this account's eligible pending picks, decrypted in the browser
+  // Watchdog Pro: the full ledger, decrypted in the browser
   function unlock(s, o) {
-    pendingFor(s.id);
     HWD.capper(s.id).then(function (d) {
       ledger(d.ledger || []);
       var hd = document.getElementById('lhead'); if (hd) hd.textContent = 'All ' + fmt((d.ledger || []).length) + ' graded picks';
@@ -356,10 +341,9 @@
     root.innerHTML = '<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><a href="cappers.html">Rankings</a><span aria-hidden="true">/</span><span aria-current="page">' + esc(w) + '</span></nav>' +
       '<section class="phero"><div><div class="pid"><div class="pav">' + esc((w.replace(/^u\//, '').replace(/[^A-Za-z0-9]/g, '').slice(0, 2) || c.slice(0, 2)).toUpperCase()) + '</div><div><div class="eyebrow">' + (s.src ? 'Tracked on ' + esc(s.src) : 'Watchdog ID') + '</div><h1 class="idc">' + esc(w) + '</h1>' + (s.link && s.src ? '<p class="muted small" style="margin:6px 0 0">Public account: <a href="' + esc(s.link) + '" rel="nofollow noopener" target="_blank">' + esc(w) + ' on ' + esc(s.src) + '</a></p>' : '') +
       '<div class="pmeta"><span class="badge ' + t[0] + '" title="' + t[2] + '">' + t[1] + '</span></div><p class="muted small" style="margin:8px 0 0">' + (s.last_pick ? 'Last pick ' + day(s.last_pick) : 'No graded picks yet') + '</p></div></div></div>' +
-      (none ? '' : '<div class="unl"><span class="lock">Watchdog Pro</span><b>See what this account bets next</b><p>Watchdog Pro adds eligible pending picks before their games start.</p><a class="btn pro" style="width:100%" href="' + PRO + '">View Watchdog Pro</a></div>') + '</section>' +
+      (none ? '' : '<div class="unl"><span class="lock">Watchdog Pro</span><b>See this account&rsquo;s full record</b><p>Watchdog Pro adds the complete graded pick log.</p><a class="btn pro" style="width:100%" href="' + PRO + '">View Watchdog Pro</a></div>') + '</section>' +
       kpis([[rec(s), 'Record'], [sgn(s.units, 2), 'Units won'], [sgn(s.roi, 1, '%'), 'ROI'], [pct(s.win_pct), 'Win %'], [fmt(s.picks), 'Graded picks'], [s.streak > 0 ? '<span class="pos">W' + s.streak + '</span>' : s.streak < 0 ? '<span class="neg">L' + (-s.streak) + '</span>' : '<span class="dim">n/a</span>', 'Current streak']]) +
       '<div class="disclosure" style="margin:16px 0"><b>' + (none ? 'No graded picks yet' : 'Detailed analytics not shown') + '</b><p class="muted">' + why + '</p></div>' +
        (bs.length ? panel('By sport', table(bs, 'Sport', { sort: 1 })) : '') + '<div id="ppend" style="margin-top:18px"></div>';
-    if (window.HWD) HWD.ready.then(function (st) { if (st.pro) pendingFor(s.id); });
   }
 })();

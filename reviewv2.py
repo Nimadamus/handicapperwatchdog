@@ -88,7 +88,7 @@ def render(rev, st, names, document):
         ''.join('<li>%s</li>' % E(x) for x in rev['strengths']), ''.join('<li>%s</li>' % E(x) for x in rev['concerns']))
     check = ('<section class="panel edcard probox"><h2>Before you pay any handicapper</h2><ol class="chk">%s</ol>'
              '<div class="procta"><div><p class="plate-k">Watchdog Pro</p><p><b>Graded records you can check before you buy.</b> Watchdog captures public picks before the game starts '
-             'and grades every one. Free profiles show the record; Pro opens full pick logs and eligible pending picks.</p></div>'
+             'and grades every one. Free profiles show the record; Pro opens full pick logs.</p></div>'
              '<a class="btn pro" href="../pricing.html">See Watchdog Pro</a></div>'
              '<p class="small"><a href="../cappers.html">Browse graded records free</a> · <a href="../learn/scam-handicapper-red-flags.html">Scam red flags</a> · '
              '<a href="../learn/break-even-win-rate.html">Break even win rates</a></p></section>') % ''.join('<li>%s</li>' % E(x) for x in rev['checklist'])
