@@ -39,6 +39,8 @@ def tracker_map():
 def main():
     if not build.PRO_KEY:
         sys.exit('HWD_PRO_KEY is not set: run through tools/hwd_secrets.py run --')
+    if '--push' in sys.argv:
+        git('pull', '-q', '--ff-only', 'origin', 'main')
     records = tracker_map().get('records') or {}
     names = {}
     for n, rec in records.items():
