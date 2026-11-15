@@ -2772,24 +2772,63 @@ def _write_sportsbook_pages(site, written):
          index)
 
 
-def _write_legal(site):
+def _write_legal(site, meta=None):
     """About, privacy, terms, and contact. Indexable. Profiles stay noindex."""
     robots = ''
     pages = (
         ('about.html',
-         'About Handicapper Watchdog',
-         'Handicapper Watchdog grades public picks. It does not sell picks, and it does not sell a verified badge.',
+         'About Handicapper Watchdog: Neutral Records and Sourced Reviews',
+         'Handicapper Watchdog is a neutral site. We grade picks posted in public and collect what bettors post online about pick sellers, with every source linked. You decide.',
          '''<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><span aria-current="page">About</span></nav>
-<div class="pagehead"><div><div class="eyebrow">About</div><h1>A record site, not a tout directory</h1>
-<p class="muted">Handicapper Watchdog grades picks that were posted in public before the game started. A handicapper does not send a record, and a handicapper cannot pay for a rank.</p></div></div>
+<div class="pagehead"><div><div class="eyebrow">About Handicapper Watchdog</div><h1>We collect what is posted. You decide.</h1>
+<p class="muted">Handicapper Watchdog is a neutral site. We do not sell picks, we do not work for any handicapper, and we have no stake in whether anyone wins or loses. We gather what is public, show you where we found it, and leave the verdict to you.</p></div></div>
 <section class="panel" style="margin-bottom:18px"><div class="pb prose">
-<h2>What this site is</h2>
-<p>The free board shows rank, record, units, ROI, win rate, and sample size. Each record shows the account name and a link to the public account. Watchdog Pro, at the price on the pricing page, adds the full graded pick log and deeper research. It is not a badge that a record is legitimate, and it is not a placement a seller can buy.</p>
-<p>Reviews quote what a service publishes about itself. A numeric score stays off until a full evidence file exists. A text verdict is used only when the service's own pages support it, and the page says which sentences are documented, which were observed, and which are someone else's allegation.</p>
-<p>Sportsbook pages are research notes. They are not signup offers. JustBet registration on this site stays off.</p>
-<h2>What this site is not</h2>
-<p>Handicapper Watchdog is not a sportsbook and does not take bets. It does not make picks of its own. It does not sell a green check, a featured row, or protection from a bad review. Past results are not predictions. 21+.</p>
-<p><a href="how-we-grade.html">How a record is graded</a> · <a href="reviews/index.html">Handicapper reviews</a> · <a href="reviews/cappertek.html">CapperTek review</a> · <a href="cappers.html">Rankings</a> · <a href="pricing.html">Watchdog Pro</a> · <a href="contact.html">Corrections</a></p>
+<h2>Why this site exists</h2>
+<p>Before you pay a handicapper, you search their name. What comes back is usually their own sales page, a few reviews you cannot trace, and forum threads scattered across ten years. Handicapper Watchdog puts that in one place: what a seller claims, what buyers have said about them, and, where the picks were posted in public, a graded record of how they did.</p>
+<h2>What we do</h2>
+<h3>1. We keep records of handicappers who post picks for free</h3>
+<p>We watch public posts on X, Reddit and betting forums and grade every pick that was posted before the game started. Today that covers {MONITORED} accounts and {GRADED} graded picks. Nobody sends us a record, and nobody can edit one. <a href="how-we-grade.html">How a record is graded</a> · <a href="cappers.html">See the rankings</a></p>
+<h3>2. We review the people and services who sell picks</h3>
+<p>For each pick seller we read their own pages (prices, guarantees, claims about past results) and then collect what bettors have posted about them: forum threads, Reddit posts, review sites and news reports. Each review lists every source with a link and the date we read it. There are {REVIEWS} reviews on the site now. <a href="reviews/index.html">All handicapper reviews</a></p>
+<h3>3. We keep watching</h3>
+<p>New posts about pick sellers are collected every week, and the free records update through the day. When new evidence comes in, the review is updated and its date changes, so you can see how fresh it is.</p>
+<h2>What we cannot tell you</h2>
+<p>We cannot confirm that any single post is true. A post can come from an honest buyer, an angry loser, a rival seller, or someone paid to praise a service. We do not know who is behind most accounts, and we do not pretend to. What we can tell you is what was posted, where, and when.</p>
+<p>So every statement on a review page carries a label: <strong>verified</strong> (we checked it ourselves), <strong>seller claim</strong> (the seller says it about itself), <strong>customer report</strong> (a buyer says it happened to them) or <strong>allegation</strong> (a serious claim nobody has proven). An allegation is never repeated as fact.</p>
+<h2>Where there is smoke</h2>
+<p>One bad post means very little. People lose bets and get angry. A pattern is different. When seven different buyers, on different sites and in different years, describe the same problem (a guarantee that only pays in more picks, a record that changes from page to page, a phone call pushing a bigger package), that tells you something a single post cannot. We show you the whole pattern, good and bad, so you can weigh it yourself.</p>
+<p>We also tell you when the evidence itself looks weak: reviews posted in a cluster on the same days, review sites owned by the network that sells the picks, sponsored posts without a label, or simply too few posts to say anything.</p>
+<h2>Why you can trust what you read here</h2>
+<ul>
+<li>No handicapper pays us. We take no advertising, affiliate fees, free picks or placement money from any service we review.</li>
+<li>A seller cannot buy a better rank, a badge, a featured row or the removal of a bad post.</li>
+<li>We make no picks of our own and run no sportsbook, so we have nothing to sell you on any game.</li>
+<li>Our money comes from readers, through Watchdog Pro, which adds full pick logs and deeper research.</li>
+<li>Every fact links to its source, so you can check our work.</li>
+</ul>
+<h2>Right of reply and corrections</h2>
+<p>Any handicapper we write about can reply. If a fact is wrong or out of date, send the page and the source that shows otherwise through our <a href="contact.html">contact page</a>. We fix errors, note the change and its date, and publish a fair summary of the reply. A denial alone does not remove what buyers posted, and nothing on the site is removed for money.</p>
+<h2>How to use this site</h2>
+<ol>
+<li>Look the seller up in our <a href="reviews/index.html">reviews</a> and read the sources, not only our summary.</li>
+<li>Ask the seller for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot streaks is not a record.</li>
+<li>Compare their win rate with the win rate their prices need. At standard odds you need about 52.4% just to break even.</li>
+<li>Read the guarantee closely. Most pay back in more picks, not money.</li>
+<li>Check the free <a href="cappers.html">rankings</a> to see what public handicappers really do over hundreds of picks.</li>
+</ol>
+<h2>Common questions</h2>
+<h3>Is Handicapper Watchdog legit?</h3>
+<p>Yes. We are an independent research site. We do not sell picks, and no handicapper pays us. Every review links its sources so you can check what we found.</p>
+<h3>Are the customer reviews true?</h3>
+<p>We cannot promise that. We report what people posted, label it, and link it. Where many independent posts say the same thing, we say so. Where the evidence is thin or looks staged, we say that too.</p>
+<h3>Can a handicapper pay to remove a review?</h3>
+<p>No. A seller can correct a wrong fact with a source and can have a reply published. Money does not change a page.</p>
+<h3>Do you care whether a handicapper wins or loses?</h3>
+<p>No. We grade every public pick the same way and report the result. A winning record and a losing record are both just information.</p>
+<h3>Do you sell picks?</h3>
+<p>No. Watchdog Pro sells research: full graded pick logs and breakdowns. We make no picks of our own.</p>
+<p class="muted small">Past results are not predictions. 21+. Gambling problem? Call 1 800 GAMBLER.</p>
+<p><a href="how-we-grade.html">How we grade</a> · <a href="reviews/index.html">Reviews</a> · <a href="cappers.html">Rankings</a> · <a href="pricing.html">Watchdog Pro</a> · <a href="contact.html">Corrections</a></p>
 </div></section>'''),
         ('privacy.html',
          'Privacy Policy | Handicapper Watchdog',
@@ -2844,7 +2883,13 @@ def _write_legal(site):
 <script src="pro.js"></script>
 <script src="contact.js"></script></div></section>'''),
     )
+    meta = meta or {}
+    rdir = os.path.join(site, 'reviews')
+    nrev = len([f for f in os.listdir(rdir) if f.endswith('.html') and f != 'index.html']) if os.path.isdir(rdir) else 0
+    fills = {'{MONITORED}': '{:,}'.format(meta.get('monitored') or 0), '{GRADED}': '{:,}'.format(meta.get('graded_picks') or 0), '{REVIEWS}': str(nrev)}
     for name, title, desc, body in pages:
+        for k, v in fills.items():
+            body = body.replace(k, v)
         html = _document(0, name, title, desc, 'https://handicapperwatchdog.com/' + name, body, robots)
         with open(os.path.join(site, name), 'w', encoding='utf-8', newline='\n') as f:
             f.write(html)
@@ -2914,7 +2959,7 @@ def stamp_public_pages(site):
     _write_research(site, meta, cappers)
     _write_sport_pages(site, cappers)
     _write_editorial(site, cappers)
-    _write_legal(site)
+    _write_legal(site, meta)
     _write_pro_legal(site)
     _write_retired_rating(site)
     _write_sitemap(site, lastmod)

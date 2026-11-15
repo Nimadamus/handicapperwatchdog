@@ -80,7 +80,8 @@ def render(rev, st, names, document):
         '<p class="small"><a href="%s" rel="nofollow noopener">%s</a></p>' % (E(src[c['source']]['url']), E(src[c['source']]['title'])) if c['source'] is not None else '')
         for c in rev['customers'])
     customers = ('<section class="panel edcard" id="customers"><h2>What customers say</h2><p class="lede tight">%s</p><ul class="crs">%s</ul>'
-                 '<p class="muted small">We never write, buy or edit testimonials. Allegations are reported as allegations, with the date and a link, and are not repeated as fact.</p></section>') % (
+                 '<p class="muted small">We never write, buy or edit testimonials. Allegations are reported as allegations, with the date and a link, and are not repeated as fact. '
+                 'Handicapper Watchdog is neutral: we collect what people post online and cannot confirm any single post is true. One post means little; a pattern across many buyers means more. You decide. <a href="../about.html">How we work</a></p></section>') % (
         E(rev['customers_intro']), cust)
     conf = '<section class="panel edcard essay" id="conflicts"><h2>Conflicts of interest</h2><div class="prose">%s</div></section>' % paras(rev['conflicts'])
     verdict = ('<section class="split" id="verdict"><div class="edsec good"><h2>Strengths</h2><ul>%s</ul></div>'
