@@ -1,41 +1,35 @@
-# Handicapper Watchdog: CURRENT STATE (saved 2026-11-03 ~7:15 AM PST)
+# Handicapper Watchdog: CURRENT STATE (saved 2026-11-15 ~11:45 AM PST)
 
-## Nov 6 update
-Every account has a profile page: build.py publishes all ATW accounts (3,826 live, 850 with no graded picks, reason no_grades); meta.tracked stays graded only, meta.monitored = all. Item 1 below looks done (profiles dated Nov 6/7).
+Work from worktree `~/hwd-names-1114` (branch names-1114, push `HEAD:main`; main = deploy, site rebuilds every 30 min).
 
-Homepage #what and #bettors sections live; 11 customer review pages in content/reviews.json (testimonials field, 165 reviews read 6 Nov, paraphrased, one short quote per page) + learn/what-bettors-say-about-handicappers. Original 10 reviews still have no buyer sample.
+## Done 15 Nov
+- Names refresh: 60 accounts showed #ID; refreshed (4290 names, main 2957095). Now automatic: scheduled task
+  "HWD Names Refresh" daily 5:40 AM, hidden, log tools/refresh_names_daily.log (script pulls main before pushing).
+- About page rewritten (main 1201a8c, LIVE 11:42 AM): neutral site, what we collect, what we cannot verify,
+  "where there is smoke", why trust us, right of reply, how to use, FAQ. Live counts filled from meta. Every v2
+  review page's "What customers say" now links to it (reviewv2.py).
 
-Profiles: real URLs handicappers/<id>.html for all accounts (noindex under 20 graded picks), directory at handicappers/, capper.html?id= still works. Next: customer reviews for the original 10 review pages.
+## Resume here
+1. NEW REVIEWS (owner: "build review pages on all handicappers who sell picks", based on what is posted online).
+   Batch of 16 drafted by research agents into `~/hwd_testimonials/new_reviews_1115/<slug>.json` (brief: BRIEF.md there):
+   kelso-sturgeon, winning-points, ats-consultants, sports-information-traders, kevin-oneill-the-prez, hammering-hank,
+   pickdawgz, ben-burns, vsin-picks, unabated, bettingpros, northcoast-sports, tony-george, larry-ness, kevin-thomas,
+   bill-krackomberger. Some may be missing if an agent was cut off; redo those.
+   Publish steps: `python ~/hwd_testimonials/new_reviews_1115/validate.py` (schema, dashes, source indexes, related slugs)
+   -> read each file (fairness, no names of reviewers, allegations labeled, max one quote) -> copy to content/reviews_v2/
+   -> test render (build._write_editorial into a scratch dir with a data/ folder) -> commit, push main -> verify live
+   -> IndexNow (`~/tools/indexnow_bulk.py`) for the new URLs.
+2. Next batch ideas: Matt Fargo, Chris Jordan, Joe Gavazzi, Phil Steele, Payne Insider, Rob Vinciletti, Zack Cimini, Sean Higgs.
+3. SEO open (needs owner OK): add 209 profiles with 100+ picks to sitemap + IndexNow (1107 rule said let Google add naturally);
+   profile titles with platform/handle for name searches; ~15 review pages still need GSC Request indexing (10/day, his Chrome).
+4. Signups (owner to pick): free follow-alert email signup; Pro buttons to TMR Pro (conflicts 1024 no-link rule); trial/price (Stripe = his OK).
+   Owner asked about hiding records until subscribe: recommended keep headline record free (SEO), offered "middle" option; no decision.
+5. Still open: HWD Cloudflare Worker welcome email text not deployed (no CF token).
 
-## Resume here, in order
-1. DEPLOY the profile freshness fix: `python ~/tools/site_audit/wd_code_deploy.py` (deploys tmr-watchdog main 8eef41d).
-   Last attempt was killed by laptop memory reap during drain; harvest/publish were resumed by hand (paused False).
-   Live Watchdog = efe3f07. Run it in the foreground or watch it; if it dies mid drain run
-   `cd ~/tmr-watchdog-repo/ops && python -c "import deploy as D; D.resume()"`.
-   After deploy + next publish: check `/api/hwd/research?slug=th-0115` (HWD token = sha256(WATCHDOG_TOKEN+"|hwd-export|v1")),
-   then confirm HWD data/index.json meta.odds_study "+250 or longer" count drops from 399 (held picks leaving).
-2. Refresh numbers in docs/BASB_ODDS_ARTICLE_DRAFT.md from the refreshed odds report; owner approves before publishing.
-3. Owner decisions pending: release moneyline price check (docs/PRICE_CHECK_VALIDATION_20261103.md, branch
-   staging-price-check-20261103); post TwoPlusTwo / Covers drafts (docs/OUTREACH_DRAFTS.md).
-
-## Why profiles are frozen
-Nov 2 NO_FREE_PICKS removed __WD_RESEARCH from public ATW pages; HWD build.py could no longer refresh profile research and
-kept stale cache. Fix: Watchdog writes private raw/hwd_research/<slug>.json each publish and serves /api/hwd/research (HWD
-token only, kill switch HWD_RESEARCH_EXPORT=0); HWD build.py fetch_research() uses it (f013b55), page fallback.
-
-## Done today (Nov 3)
-- Long shot audit: 278 picks held (LONGSHOT_PRICE_20261103), grades untouched, revertable
-  (tmr-watchdog app/audit_integrity/longshot_quarantine_20261103.py --revert --apply). Report docs/LONGSHOT_AUDIT_20261103.md.
-- Release guard: ops/check_release.py + pre-push hook in tmr-watchdog-repo refuse undeployable pushes to main.
-- Funnel: /api/ev first party counters, Stripe metadata src/landing/slot, tools/hwd_metrics.py joins (QA probes excluded).
-- Conversion: stale "checkout not open" copy removed; pricing table wraps on phones; sign in field styled; integrity log on
-  how-we-grade. Verified desktop + phone, 0 page errors.
-- TMR editorial links (owner approved): methodology, stats/streaks, stats/sample-size. All live.
-- Docs: ANALYTICS_ACCESS_PROPOSAL.md, OUTREACH_DRAFTS.md (2+2 no self promo, Covers links only in Website Promotions).
-
-## Numbers (Nov 3)
-Stripe: 0 subscribers, $0. GA 7d: 54 users. GSC: 79 impressions, 0 clicks (navigational "cappers watchdog").
+## Numbers
+Nov 9 funnel 7d: 148 visits (chatgpt.com 91, google 10), 23 pricing views, 0 checkout starts, 0 subscribers.
 
 ## Rules
-NO PENDING PICKS ON THIS SITE since 2026-11-14 (Nima: pending picks only for TMR Pro subscribers, "keep it on tmr pro board"): build publishes no pending.bin (HWD_PENDING_FEED=1 turns it back on), picks.html is a pointer to the graded board, pick alerts have nothing to send, Watchdog Pro = full pick logs + breakdowns + compare. NAMES ARE PUBLIC since 2026-11-14 (Nima: "just put the names back up"): build.py reads content/names.bin (sealed with HWD_PRO_KEY, rewrite with tools/refresh_names.py --push; HWD_NAMES=0 turns names off). Never publish th- slugs, post text or post links. No test emails to Nima. No regrades without per pick approval. No dashes in published text.
-Push hwd-home to main and pro-anon-20261102. Watchdog deploy only via wd_code_deploy.py.
+Names PUBLIC (HWD_NAMES=0 off). NO pending picks on this site (TMR Pro board only; HWD_PENDING_FEED=1 restores).
+Never publish th- slugs, post text or post links. No test emails to Nima. No regrades without per pick approval.
+No dashes in published text. Watchdog deploy only via wd_code_deploy.py. Reddit readable via Arctic Shift.
