@@ -340,12 +340,12 @@
     },
     {
       "title": "Arctic Shift Reddit archive: r/sportsbetting post search for vinciletti",
-      "url": "https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=sportsbetting&query=vinciletti&limit=100",
+      "url": "https://www.reddit.com/r/sportsbetting/search/?q=vinciletti&restrict_sr=1",
       "accessed": "16 Nov 2026"
     },
     {
       "title": "Arctic Shift Reddit archive: r/SportsBettingPicks post search for vinciletti",
-      "url": "https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=SportsBettingPicks&query=vinciletti&limit=100",
+      "url": "https://www.reddit.com/r/SportsBettingPicks/search/?q=vinciletti&restrict_sr=1",
       "accessed": "16 Nov 2026"
     }
   ],

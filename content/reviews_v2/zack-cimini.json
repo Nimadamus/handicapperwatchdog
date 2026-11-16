@@ -268,7 +268,7 @@
     },
     {
       "title": "Arctic Shift Reddit archive: r/sportsbook post search for cimini (no results)",
-      "url": "https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=sportsbook&query=cimini&limit=100",
+      "url": "https://www.reddit.com/r/sportsbook/search/?q=cimini&restrict_sr=1",
       "accessed": "16 Nov 2026"
     }
   ],

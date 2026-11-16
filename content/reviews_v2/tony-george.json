@@ -266,7 +266,7 @@
     },
     {
       "title": "Reddit r/sportsbook post search for Tony George (Arctic Shift archive)",
-      "url": "https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=sportsbook&query=tony%20george&limit=100",
+      "url": "https://www.reddit.com/r/sportsbook/search/?q=tony%20george&restrict_sr=1",
       "accessed": "16 Nov 2026"
     }
   ],

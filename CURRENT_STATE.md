@@ -10,16 +10,15 @@ Work from worktree `~/hwd-names-1114` (branch names-1114, push `HEAD:main`; main
   review page's "What customers say" now links to it (reviewv2.py).
 
 ## Resume here
-1. NEW REVIEWS (owner: "build review pages on all handicappers who sell picks", based on what is posted online).
-   Batch of 16 drafted by research agents into `~/hwd_testimonials/new_reviews_1115/<slug>.json` (brief: BRIEF.md there):
-   kelso-sturgeon, winning-points, ats-consultants, sports-information-traders, kevin-oneill-the-prez, hammering-hank,
-   pickdawgz, ben-burns, vsin-picks, unabated, bettingpros, northcoast-sports, tony-george, larry-ness, kevin-thomas,
-   bill-krackomberger. Some may be missing if an agent was cut off; redo those.
-   Publish steps: `python ~/hwd_testimonials/new_reviews_1115/validate.py` (schema, dashes, source indexes, related slugs)
-   -> read each file (fairness, no names of reviewers, allegations labeled, max one quote) -> copy to content/reviews_v2/
-   -> test render (build._write_editorial into a scratch dir with a data/ folder) -> commit, push main -> verify live
-   -> IndexNow (`~/tools/indexnow_bulk.py`) for the new URLs.
-2. Next batch ideas: Matt Fargo, Chris Jordan, Joe Gavazzi, Phil Steele, Payne Insider, Rob Vinciletti, Zack Cimini, Sean Higgs.
+1. DONE 16 Nov 10:55 AM PST (main c36f175): 15 new reviews LIVE + IndexNow ok (102 URLs). Prez slug = the-prez-wagertalk
+   (Kevin O'Neill name unsourced, removed). larry-ness held in ~/hwd_testimonials/new_reviews_1115/_hold (died 2022; owner to decide).
+   Reddit archive rate limited during research; Northcoast/SIT/ATS/Tony George pages have thin Reddit coverage (labelled).
+2. DONE 16 Nov 11:29 AM PST (main 8ebc36d): batch 2 LIVE (fargo, chris-jordan, phil-steele, payne-insider, rob-vinciletti,
+   zack-cimini, sean-higgs) + IndexNow 109 ok. joe-gavazzi skipped (stopped selling ~2015). Drafts archived in _published_1116.
+   Next batch: pick more active sellers from library.jsonl targets not yet in content/reviews_v2.
+2b. DONE 16 Nov 12:04 PM PST (main b4e2841): batch 3 LIVE (dave-essler, jesse-schule, kyle-hunter, oskeim-sports, porter-picks,
+   steve-merril, larry-ness historical per Nima yes) + IndexNow 116 ok. Skipped tom-freese, jeff-benton (not selling).
+   Arctic Shift API source URLs replaced with reddit search/permalinks on all pages (Nima OK 16 Nov).
 3. SEO open (needs owner OK): add 209 profiles with 100+ picks to sitemap + IndexNow (1107 rule said let Google add naturally);
    profile titles with platform/handle for name searches; ~15 review pages still need GSC Request indexing (10/day, his Chrome).
 4. Signups (owner to pick): free follow-alert email signup; Pro buttons to TMR Pro (conflicts 1024 no-link rule); trial/price (Stripe = his OK).

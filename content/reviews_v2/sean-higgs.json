@@ -280,7 +280,7 @@
     },
     {
       "title": "Arctic Shift Reddit archive: r/sportsbettingadvice post search for higgs (no results)",
-      "url": "https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=sportsbettingadvice&query=higgs&limit=100",
+      "url": "https://www.reddit.com/r/sportsbettingadvice/search/?q=higgs&restrict_sr=1",
       "accessed": "16 Nov 2026"
     }
   ],
