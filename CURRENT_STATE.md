@@ -28,6 +28,11 @@ Work from worktree `~/hwd-names-1114` (branch names-1114, push `HEAD:main`; main
    for top 10 reviews; GSC returned "problem submitting your indexing request, try again later" twice on stu-feiner 1:3x PM PST.
    Retry 18 Nov: stu-feiner, wayne-allyn-root-winningedge, juice-reel, covers-expert-picks, sharp-football-analysis, the-jewish-sharp,
    learn/what-bettors-say-about-handicappers, docs-sports-ai, vegas-dave, pickswise. Recheck GSC 20 Nov.
+2e. 17 Nov 1:10 PM PST batch 5 LIVE (main 1f39c5e, 11 pages, IndexNow 136 ok). Batch 6 HELD (validated, not published, deep standard):
+   gold-sheet, nellys-sports, the-sports-reporter, joe-damico, raphael-esparza, paul-bovi in ~/hwd_testimonials/new_reviews_1115.
+   Proposed pace ~5 deep pages/week (awaiting Nima OK). Skipped: alan-harris, chris-king, ryan-pelczarski, doug-upstone, kevin-rogers.
+   Owner rules 17 Nov: NO thin pages (BRIEF.md depth standard); NEVER his name/editor byline on HWD (7b51424 reverted 7fa860f).
+   Next: deepen thin live pages (chris-jordan, mike-lundin, bryan-power, will-rogers, paul-leiner, sean-murphy, jack-jones).
 3. SEO open (needs owner OK): add 209 profiles with 100+ picks to sitemap + IndexNow (1107 rule said let Google add naturally);
    profile titles with platform/handle for name searches; ~15 review pages still need GSC Request indexing (10/day, his Chrome).
 4. Signups (owner to pick): free follow-alert email signup; Pro buttons to TMR Pro (conflicts 1024 no-link rule); trial/price (Stripe = his OK).
