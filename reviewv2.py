@@ -53,7 +53,7 @@ def render(rev, st, names, document):
     hero = ('<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span>'
             '<a href="./">Reviews</a><span aria-hidden="true">/</span><span aria-current="page">%s</span></nav>'
             '<section class="edhero"><div class="herol"><div><p class="eyebrow">%s</p><h1>%s</h1><p class="lede">%s</p>'
-            '<p class="byline">By the Handicapper Watchdog editorial desk · Edited by <a href="../editor.html">Nima J</a> · Checked %s · <a href="#standards">How we review</a></p></div>' + legend + '</div>'
+            '<p class="byline">By the Handicapper Watchdog editorial desk · Checked %s · <a href="#standards">How we review</a></p></div>' + legend + '</div>'
             '<aside class="plate"><div class="seal" aria-hidden="true"><b>NV</b><span>%s</span></div>'
             '<p class="plate-k">Watchdog status</p><p class="plate-v">%s</p><p class="muted small">%s</p>'
             '<ul class="checks">%s</ul></aside></section>') % (
@@ -115,7 +115,6 @@ def render(rev, st, names, document):
             {'@type': 'ListItem', 'position': 3, 'name': rev['name'], 'item': url}]},
         {'@type': 'Article', 'headline': rev['title'], 'description': rev['description'], 'url': url, 'mainEntityOfPage': url,
          'datePublished': rev['checked_iso'], 'dateModified': rev['updated_iso'], 'author': org, 'publisher': org,
-         'editor': {'@type': 'Person', 'name': 'Nima J', 'url': 'https://handicapperwatchdog.com/editor.html'},
          'about': {'@type': 'Organization', 'name': rev['name'], 'legalName': rev.get('legal_name')}}]}
     html = document(1, 'reviews/index.html', rev['title'], rev['description'], url, body)
     html = html.replace('</head>', '<link rel="stylesheet" href="../review2.css">\n<script type="application/ld+json">%s</script>\n</head>' % (

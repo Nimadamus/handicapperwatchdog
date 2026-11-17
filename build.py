@@ -555,7 +555,6 @@ _SITEMAP = (
     ('pricing.html', 'https://handicapperwatchdog.com/pricing.html', 'monthly', '0.5'),
     ('picks.html', 'https://handicapperwatchdog.com/picks.html', 'daily', '0.6'),
     ('about.html', 'https://handicapperwatchdog.com/about.html', 'yearly', '0.3'),
-    ('editor.html', 'https://handicapperwatchdog.com/editor.html', 'yearly', '0.3'),
     ('privacy.html', 'https://handicapperwatchdog.com/privacy.html', 'yearly', '0.2'),
     ('terms.html', 'https://handicapperwatchdog.com/terms.html', 'yearly', '0.2'),
     ('contact.html', 'https://handicapperwatchdog.com/contact.html', 'yearly', '0.3'),
@@ -1098,7 +1097,6 @@ def _footer(depth):
         ('how-we-grade.html', 'How we grade'),
         ('pricing.html', 'Watchdog Pro'),
         ('about.html', 'About'),
-        ('editor.html', 'Editor'),
         ('privacy.html', 'Privacy'),
         ('terms.html', 'Terms'),
         ('contact.html', 'Contact'),
@@ -2831,28 +2829,6 @@ def _write_legal(site, meta=None):
 <p>No. Watchdog Pro sells research: full graded pick logs and breakdowns. We make no picks of our own.</p>
 <p class="muted small">Past results are not predictions. 21+. Gambling problem? Call 1 800 GAMBLER.</p>
 <p><a href="how-we-grade.html">How we grade</a> · <a href="reviews/index.html">Reviews</a> · <a href="cappers.html">Rankings</a> · <a href="pricing.html">Watchdog Pro</a> · <a href="contact.html">Corrections</a></p>
-</div></section>'''),
-        ('editor.html',
-         'Editor: Nima J | Handicapper Watchdog',
-         'Nima J is the editor of Handicapper Watchdog. He sets the review standards, picks which pick sellers get reviewed, and handles corrections and right of reply.',
-         '''<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><span aria-current="page">Editor</span></nav>
-<div class="pagehead"><div><div class="eyebrow">Editor</div><h1>Nima J</h1>
-<p class="muted">Editor of Handicapper Watchdog. He is responsible for what this site publishes.</p></div></div>
-<section class="panel" style="margin:16px 0 18px"><div class="pb prose">
-<h2>What the editor does</h2>
-<p>Nima J sets the standards every review on this site follows. He decides which pick sellers get a review, what counts as a source, how each statement is labeled, and when a page is ready to publish.</p>
-<p>He also handles corrections and right of reply. If a handicapper or a reader shows that a fact on a page is wrong, the fix goes through him, and the page date changes when it is updated.</p>
-<h2>Standards he holds every review to</h2>
-<ul>
-<li>Every fact traces to a source that was opened and read, and the source is linked on the page.</li>
-<li>Prices and guarantee terms are copied as the seller shows them, with the date they were checked.</li>
-<li>Seller claims, buyer reports and allegations are labeled as what they are. An allegation is never presented as a finding.</li>
-<li>Positive posts are reported as fully as negative ones. No handicapper pays to be reviewed or to change a review.</li>
-<li>When there is too little evidence to say anything useful about a seller, we do not publish a page about them.</li>
-</ul>
-<h2>Contact the editor</h2>
-<p>Corrections, right of reply and tips about a pick seller go through the <a href="contact.html">contact page</a>. Choose "Correction to a record" and include the page, the sentence and the source that shows otherwise.</p>
-<p><a href="about.html">About Handicapper Watchdog</a> · <a href="how-we-grade.html">How we grade</a> · <a href="reviews/">All reviews</a></p>
 </div></section>'''),
         ('privacy.html',
          'Privacy Policy | Handicapper Watchdog',
