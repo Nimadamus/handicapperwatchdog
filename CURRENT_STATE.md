@@ -30,7 +30,7 @@ Work from worktree `~/hwd-names-1114` (branch names-1114, push `HEAD:main`; main
    learn/what-bettors-say-about-handicappers, docs-sports-ai, vegas-dave, pickswise. Recheck GSC 20 Nov.
 2e. 17 Nov 1:10 PM PST batch 5 LIVE (main 1f39c5e, 11 pages, IndexNow 136 ok). Batch 6 HELD (validated, not published, deep standard):
    gold-sheet, nellys-sports, the-sports-reporter, joe-damico, raphael-esparza, paul-bovi, tony-t in ~/hwd_testimonials/new_reviews_1115.
-   Proposed pace ~5 deep pages/week (awaiting Nima OK). Skipped: al-mcmordie (= big-al), dave-cokin (died 2024), alan-harris, chris-king, ryan-pelczarski, doug-upstone, kevin-rogers.
+   PACE 5 a week (Nima OK 17 Nov): task "HWD Review Publish" Mon-Fri 9:15 AM runs ~/hwd_testimonials/publish_next.py, one file from ~/hwd_testimonials/publish_queue (NN_slug.json) per run, log publish_next.log; add new deep drafts to the queue. Skipped: al-mcmordie (= big-al), dave-cokin (died 2024), alan-harris, chris-king, ryan-pelczarski, doug-upstone, kevin-rogers.
    Owner rules 17 Nov: NO thin pages (BRIEF.md depth standard); NEVER his name/editor byline on HWD (7b51424 reverted 7fa860f).
    Next: deepen thin live pages (chris-jordan, mike-lundin, bryan-power, will-rogers, paul-leiner, sean-murphy, jack-jones).
 3. SEO open (needs owner OK): add 209 profiles with 100+ picks to sitemap + IndexNow (1107 rule said let Google add naturally);
