@@ -19,6 +19,10 @@ Work from worktree `~/hwd-names-1114` (branch names-1114, push `HEAD:main`; main
 2b. DONE 16 Nov 12:04 PM PST (main b4e2841): batch 3 LIVE (dave-essler, jesse-schule, kyle-hunter, oskeim-sports, porter-picks,
    steve-merril, larry-ness historical per Nima yes) + IndexNow 116 ok. Skipped tom-freese, jeff-benton (not selling).
    Arctic Shift API source URLs replaced with reddit search/permalinks on all pages (Nima OK 16 Nov).
+2c. DONE 17 Nov 12:38 PM PST (main e830554): batch 4 LIVE (cappertek, sportsmemo, jack-jones, sean-murphy, andy-iskoe,
+   bryan-leonard, spartan-sports, will-rogers, gianni-the-greek, bryan-power), verify_reviews_live PASS x10, IndexNow 125 ok.
+   Skipped (not selling / no sources): chase-diamond, hollywood-sports, erin-rynning; vegasexperts.com = reseller. Drafts in _published_1117.
+   Arctic Shift full text search timed out all day 17 Nov; pages say Reddit search was partial.
 3. SEO open (needs owner OK): add 209 profiles with 100+ picks to sitemap + IndexNow (1107 rule said let Google add naturally);
    profile titles with platform/handle for name searches; ~15 review pages still need GSC Request indexing (10/day, his Chrome).
 4. Signups (owner to pick): free follow-alert email signup; Pro buttons to TMR Pro (conflicts 1024 no-link rule); trial/price (Stripe = his OK).
