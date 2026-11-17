@@ -23,6 +23,11 @@ Work from worktree `~/hwd-names-1114` (branch names-1114, push `HEAD:main`; main
    bryan-leonard, spartan-sports, will-rogers, gianni-the-greek, bryan-power), verify_reviews_live PASS x10, IndexNow 125 ok.
    Skipped (not selling / no sources): chase-diamond, hollywood-sports, erin-rynning; vegasexperts.com = reseller. Drafts in _published_1117.
    Arctic Shift full text search timed out all day 17 Nov; pages say Reddit search was partial.
+2d. 17 Nov: impressions dip (GSC 8-14 Nov ~38/day, 15 Nov 14, last 24 h 0), loss on review pages, position steady ~13;
+   330 indexed, no manual action/removals, site 200. Likely recrawl after 13-15 Nov sitewide changes. Nima OK'd Request indexing
+   for top 10 reviews; GSC returned "problem submitting your indexing request, try again later" twice on stu-feiner 1:3x PM PST.
+   Retry 18 Nov: stu-feiner, wayne-allyn-root-winningedge, juice-reel, covers-expert-picks, sharp-football-analysis, the-jewish-sharp,
+   learn/what-bettors-say-about-handicappers, docs-sports-ai, vegas-dave, pickswise. Recheck GSC 20 Nov.
 3. SEO open (needs owner OK): add 209 profiles with 100+ picks to sitemap + IndexNow (1107 rule said let Google add naturally);
    profile titles with platform/handle for name searches; ~15 review pages still need GSC Request indexing (10/day, his Chrome).
 4. Signups (owner to pick): free follow-alert email signup; Pro buttons to TMR Pro (conflicts 1024 no-link rule); trial/price (Stripe = his OK).
