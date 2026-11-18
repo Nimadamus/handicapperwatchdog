@@ -7,9 +7,9 @@
   "checked_iso": "2026-11-17",
   "updated_iso": "2026-11-17",
   "title": "Mike Lundin Review 2026: Pricing, Record, Is It Worth It?",
-  "description": "Mike Lundin review, checked 17 Nov 2026: StatSalt prices from $5 to $299, an all sales final policy, seller run claims and what bettors say.",
+  "description": "Mike Lundin review, checked 17 Nov 2026: StatSalt prices from $5 to $299, all sales final, his last 20 plays and free picks counted, and what bettors say.",
   "h1": "Mike Lundin review",
-  "dek": "A StatSalt handicapper sold as \"Magic Mike\" who says a poker background shapes his picks. Single plays were $5 and passes ran from $39 a day to $299 a month. All sales are final, and every record we saw comes from the site that sells him.",
+  "dek": "A StatSalt handicapper sold as \"Magic Mike\" who says a poker background shapes his picks. Single plays were $5 and passes ran from $39 a day to $299 a month. All sales are final. His last 20 paid plays were 13 and 7 by the seller's grading, while an outside tracker had his free picks at 11 and 11 over 30 days.",
   "status": {
     "label": "Not verified",
     "note": "Watchdog has not graded a full, time stamped record of Mike Lundin picks. This page reports what we could check on 17 Nov 2026 and labels everything else."
@@ -17,11 +17,15 @@
   "glance": [
     [
       "Sold through",
-      "StatSalt (purchases made from Wager Talk Media, LP)"
+      "StatSalt (purchases made from Wager Talk Media, LP, \"the parent company of StatSalt\"; seller address in Las Vegas, NV)"
     ],
     [
       "Background claimed",
-      "Former professional poker player (StatSalt bio). No start year given"
+      "Former professional online poker player (StatSalt bio). No real history, city or start year given"
+    ],
+    [
+      "On StatSalt since",
+      "At least 6 Nov 2025 (earliest archived copy of his profile)"
     ],
     [
       "Price range seen",
@@ -32,25 +36,21 @@
       "None on passes. All sales final, no refunds"
     ],
     [
-      "Full public record",
-      "Not found. A last 20 plays list and seller chosen runs"
-    ],
-    [
       "Watchdog graded record",
       "None yet"
     ]
   ],
   "short_answer": [
-    "Mike Lundin is an active handicapper on StatSalt, a pick site whose refund policy says all purchases are made from Wager Talk Media, LP. On 17 Nov 2026 his profile sold single plays, three day sport passes and all sports passes, and it showed plays graded as recently as 16 Nov 2026. In that narrow sense he is a real, current seller.",
-    "Whether his picks make money over time is a separate question. The sales copy leans on short runs such as \"20-8 (71%)\" in college basketball this season and \"Profits 5 of the last 6 NBA seasons,\" all published by the site that sells him. We found no full, time stamped log of every pick kept by anyone else.",
-    "We also found almost no buyer talk about him anywhere. Treat him as an unproven seller, start with the cheapest option if you try him at all, and record every pick yourself with the line and time you got it."
+    "Mike Lundin is an active handicapper on StatSalt, a pick site whose refund policy says all purchases are made from Wager Talk Media, LP, the company behind WagerTalk. His profile has been online since at least November 2025. On 17 Nov 2026 it sold $5 single plays, three day sport passes and all sports passes, and it showed plays graded as recently as 16 Nov 2026. In that narrow sense he is a real, current seller.",
+    "Whether his picks make money over time is a separate question. His last 20 graded plays, 12 to 16 Nov 2026, came to 13 wins and 7 losses by our count, and the sales copy claims \"Profits 5 of the last 6 NBA seasons!\" without naming the seasons. An outside tracker that follows his free picks showed 11 wins and 11 losses and a small loss over the last 30 days. Neither is a full record.",
+    "We found no buyer talk about him anywhere. Treat him as an unproven seller, start with the cheapest option if you try him at all, and record every pick yourself with the line and time you got it."
   ],
-  "pricing_intro": "The rows below were on the StatSalt profile on 17 Nov 2026. The single plays and the sport passes showed a crossed out higher price next to the sale price; we list the price you would actually pay and put the crossed out figure in the note.",
+  "pricing_intro": "The rows below were on the StatSalt profile on 17 Nov 2026. Single plays and sport passes showed a higher crossed out price next to the sale price; we list the price you would actually pay and put the crossed out figure in the note. The all sports pass prices appear after you choose a duration; we read them from the page's own product data.",
   "pricing": [
     [
-      "Single premium play (e.g. CBB or NBA 4% top play)",
+      "Single premium play (e.g. \"4% NBA TOP PLAY of the Day Total\")",
       "$5.00",
-      "Shown next to a crossed out $25.00"
+      "Shown next to $25.00. A \"guaranteed\" version was priced at $8 (shown next to $38) in the page data"
     ],
     [
       "1 Day Pass, all sports",
@@ -75,125 +75,145 @@
     [
       "Weekend Warrior: every college football play Saturday and NFL play Sunday",
       "$49.00",
-      "Shown next to a crossed out $78.00"
+      "Shown next to $78.00; includes any 5% max football plays"
     ],
     [
-      "Three day Full-Court passes (college basketball or NBA) and NHL Hat-Trick pass",
+      "College Basketball Full-Court Pass, NBA Full-Court Pass, NHL Hat-Trick All-Access Pass",
       "$49.00 each",
-      "Shown next to a crossed out $100.00"
+      "Three days of plays in that sport; shown next to $100.00"
     ]
   ],
   "guarantee": [
-    "We saw no guarantee on his passes. The StatSalt refund policy says \"All Sales are Final and products are sold \"as is\",\" and that once a product is purchased, delivered or viewed, no refunds will be issued. Its FAQ answers \"Are your picks guaranteed to win?\" with \"No picks or predictions are guaranteed.\"",
-    "The page code for his single plays also lists a \"guaranteed\" option at $8, but the profile we read did not explain what that option returns. In this network a guarantee usually means site credit, not cash. Losses on the bets themselves are never covered, and they are usually far larger than the package price."
+    "We saw no guarantee on his passes. The StatSalt refund policy says \"All Sales are Final and products are sold \"as is\"\" and \"Once a product or service has been purchased, delivered, and/or viewed, no refunds will be issued.\" It also lists cases where no refund is given, such as games your state does not let you bet and \"Undelivered email or SMS notifications\". The charge appears on a card statement as \"WT/SM* PICKS AND PAR\".",
+    "The StatSalt FAQ answers \"Are your picks guaranteed to win?\" with \"No picks or predictions are guaranteed.\" The terms say \"The information contained at this site is for entertainment and amusement purposes only\" and that the buyer's \"exclusive remedy, shall be a refund of the price paid\" or a replacement.",
+    "The page data lists a \"guaranteed\" option on single plays at $8, but the profile does not explain it. On WagerTalk, which shares the same parent company, the guarantee \"backs your purchase with 100% in credits\": if the daily package does not show an overall profit, the price comes back as account credit for a future purchase, not cash. Losses on the bets themselves are never covered."
   ],
   "claims": [
     {
       "claim": "\"Magic Mike Moneymaker's experience as a professional poker player has proven to be an immeasurable asset in sports handicapping\"",
       "where": "StatSalt bio",
-      "status": "Seller claim, not checkable"
+      "status": "Seller claim, not checkable. The November 2025 version called him Mike \"Moneymaker\" Lundin and a \"former online poker pro\""
+    },
+    {
+      "claim": "Latest 20 graded plays on the profile",
+      "where": "StatSalt profile, 17 Nov 2026",
+      "status": "Counted by us from the seller's list: 13 wins and 7 losses from 12 to 16 Nov 2026, about plus 17 units if each rating is the amount risked at the listed odds. Graded by the seller"
     },
     {
       "claim": "\"#1 ranked CBB handicapper on this site!\" and \"KILLER 20-8 (71%) with his CBB on the season\"",
       "where": "StatSalt single play listings, 17 Nov 2026",
-      "status": "Seller claim, ranked against StatSalt handicappers only"
+      "status": "Seller claim, ranked against StatSalt handicappers only. The college basketball plays in his last 20 went 7 and 3; we cannot see the other games"
     },
     {
       "claim": "\"Profits 5 of the last 6 NBA seasons!\"",
       "where": "StatSalt 4% NBA top play listing",
-      "status": "Seller claim, no seasons shown"
+      "status": "Seller claim, no seasons shown. His StatSalt profile can only be traced back to November 2025"
     },
     {
-      "claim": "\"His picks don't just win, they teach you how to think like a pro\"",
-      "where": "StatSalt 4% NBA top play listing",
-      "status": "Marketing copy"
+      "claim": "Ratings: \"2% = Free picks and low-confidence / high-variance plays\", \"3% = Regular plays\", \"4% = Top Plays\", \"5% = Max Bets\"",
+      "where": "StatSalt bio, November 2025 archived copy",
+      "status": "Checked: the last 20 plays were all rated 3 or 4, which fits this scale"
     },
     {
-      "claim": "\"CAN'T MISS premium pick\"",
-      "where": "StatSalt college basketball listings",
-      "status": "Marketing copy, no pick is certain"
+      "claim": "\"CAN'T MISS premium pick\" and \"His picks don't just win, they teach you how to think like a pro\"",
+      "where": "StatSalt listings",
+      "status": "Marketing copy. Of his last 20 plays, 7 lost"
     }
   ],
   "claims_note": [
-    "The college basketball season was about two weeks old on 17 Nov 2026, so a 20 and 8 record means a lot of plays in a short time. A run that short tells you little about the next month.",
-    "The NBA claim names no seasons, units or prices, so it cannot be checked against anything. The bio gives no start year and no outside proof of the poker career.",
-    "Every number on the page is graded and published by StatSalt, the site that takes the money."
+    "The college basketball season was about two weeks old on 17 Nov 2026, so a 20 and 8 record means many plays in a short time, and it is ranked only against other StatSalt sellers. A run that short tells you little about the next month.",
+    "The last 20 list is the most useful thing on the page because it shows losses, odds and ratings. By our count it was 13 and 7, mostly at odds between minus 102 and minus 118. That is five days of plays graded by the seller.",
+    "The NBA claim names no seasons, units or prices, and we could find no trace of him selling picks anywhere before late 2025. The poker career is not backed by any name, event or result we could check."
   ],
   "record": [
-    "What a buyer can verify independently: nothing that we could find. We found no full, time stamped log of every Mike Lundin pick with the line, the odds and the release time, kept by anyone other than the seller, and no court or regulator record about him.",
-    "What the seller publishes: the StatSalt profile lists his latest 20 graded plays. On 17 Nov 2026 they covered a few days from 12 Nov to 16 Nov 2026 and, by our count, went 13 wins and 7 losses, mostly at odds between minus 102 and minus 118, rated 3 or 4 units. That is a short window graded by the site that sells him.",
-    "He did not appear on the StatSalt last 365 days leaderboard when we checked it."
+    "What a buyer can verify independently: no full, time stamped log of every paid Mike Lundin pick kept by anyone other than the seller, and no court or regulator record about him.",
+    "What the seller publishes: a last 20 list on the StatSalt profile. On 17 Nov 2026 it covered 12 to 16 Nov 2026 and went 13 wins and 7 losses by our count, every play rated 3 or 4. He did not appear in the top lists of the StatSalt last 365 days leaderboard when we checked it.",
+    "A third party: GameAdvisers, a site that says it may earn sportsbook commissions, tracks his free picks. On 17 Nov 2026 it showed 11 wins and 11 losses, minus $124 and a minus 5.0% return over the last 30 days, with totals at 1 and 4. Its page labels him as part of a different network, SportsCapping Group, so its labels may not be reliable, and it covers free picks only."
   ],
   "our_data": {
     "matched": false,
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Mike Lundin pick history is matched to a Watchdog graded record, so we make no claim about how Mike Lundin performs.",
-    "context": "For scale: the runs on his page sit at about 65% to 71% winners. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "context": "For scale: his last 20 paid plays sat at 65% and his tracked free picks at 50%. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "Independent customer evidence on Mike Lundin is close to nil. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent customer evidence on Mike Lundin is nil. Below is everything we found and how much weight it can carry.",
   "customers": [
     {
       "type": "Our summary",
       "tone": "Neutral",
       "date": "Read 17 Nov 2026",
-      "text": "We found no buyer who posted a review, a complaint or a tracked result of Mike Lundin's paid picks. Web searches for his name returned only his own StatSalt pages and unrelated people with the same name. Our saved Reddit archive had no posts or comments naming him, and a fresh Reddit archive search only worked for one betting forum, so the Reddit search was partial. StatSalt shows no reader comments or star rating on his profile. There is no pattern to report in either direction.",
+      "text": "We found no buyer who posted a review, a complaint or a tracked result of Mike Lundin's paid picks. Web searches for his name returned only his own StatSalt pages and unrelated people with the same name. Our saved Reddit archive had no posts or comments naming him, the live Reddit archive search of r/sportsbook returned nothing and other subreddits timed out. StatSalt shows no reader comments or star rating on his profile. The only outside numbers are an automated tracker of his free picks, which showed him even over 30 days. There is no buyer pattern to report in either direction.",
       "source": null
     },
     {
       "type": "Seller curated",
       "tone": "Positive",
       "date": "Checked 17 Nov 2026",
-      "text": "His StatSalt profile shows a recent 13 and 7 run over his last 20 plays and season run claims in college basketball and the NBA. These are published by the site that sells his picks, so they are marketing, not independent evidence.",
+      "text": "His StatSalt profile shows a 13 and 7 run over his last 20 plays and season run claims in college basketball and the NBA. These are published by the site that sells his picks, so they are marketing, not independent evidence.",
       "source": 0
     },
     {
       "type": "Forum post",
       "tone": "Neutral",
       "date": "14 Nov 2026",
-      "text": "TheRX daily service play thread tells members not to post picks from a list of services that starts with \"All Wagertalk Cappers.\" Neither StatSalt nor Mike Lundin is named, and the rule gives no reason, so it says nothing about his quality.",
-      "source": 5
+      "text": "TheRX daily service play thread tells members not to post picks from a list of services that includes \"All Wagertalk Cappers.\" Neither StatSalt nor Mike Lundin is named, and the rule gives no reason, so it says nothing about his quality.",
+      "source": 9
     },
     {
       "type": "Not found",
       "tone": "Neutral",
       "date": "Searched 17 Nov 2026",
-      "text": "We found no thread about Mike Lundin on Reddit, TheRX, Covers or Sportsbook Review, and no review on an independent site. The Reddit archive search of r/SportsBettingPicks returned no posts; searches of r/sportsbook and r/sportsbetting timed out and could not be completed.",
-      "source": 6
+      "text": "We found no thread about Mike Lundin on Reddit, TheRX, Covers or Sportsbook Review, no review on an independent site and no Better Business Bureau page. The Reddit archive search of r/sportsbook returned no posts; searches of r/sportsbetting timed out and could not be completed.",
+      "source": 10
     }
   ],
   "conflicts": [
     "Every record on the StatSalt profile is graded and published by StatSalt, which sells the picks. The \"#1 ranked\" claim compares him only with other StatSalt handicappers.",
-    "StatSalt says it may receive a commission when a visitor opens a sportsbook or casino account through its links."
+    "StatSalt and WagerTalk share a parent, Wager Talk Media, LP, and the same Las Vegas seller address, prices and specials. WagerTalk itself has no Mike Lundin profile.",
+    "StatSalt says it may receive a commission when a visitor opens a sportsbook or casino account through its links.",
+    "The only outside tracker, GameAdvisers, also says it may earn sportsbook commissions."
   ],
   "strengths": [
     "Prices are published for every option, and single plays were cheap at $5 on the day we checked.",
-    "The profile shows recent losing plays as well as wins, with the odds and the sportsbook for each.",
-    "Each play comes with a written explanation of the angle behind it."
+    "The profile shows recent losing plays as well as wins, with the odds, the rating and the sportsbook for each.",
+    "Each play comes with a written explanation of the angle behind it.",
+    "The bio explains his rating scale from 2% to 5%, and his recent plays match it.",
+    "His free picks are tracked by an outside site, so a buyer can see how they did before paying."
   ],
   "concerns": [
-    "No full public record. Every number we saw comes from the site that sells him.",
+    "No full public record. Every number on the sales page comes from the site that sells him.",
+    "His tracked free picks were 11 and 11 with a small loss over 30 days, well below the paid list's 13 and 7.",
     "No independent buyer reviews or complaints at all, so there is nothing to weigh either way.",
     "All sales are final, and the guarantee option on single plays is not explained on the profile.",
-    "Sales copy uses words like \"CAN'T MISS\" and short season runs that prove little."
+    "Sales copy uses words like \"CAN'T MISS\" and short season runs that prove little, and the poker background cannot be checked."
   ],
   "checklist": [
     "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A run in a listing title is not a record.",
     "Count units, not wins. His plays are rated 3 or 4 units, so a few big losses can erase many small wins.",
     "Read the refund policy before paying. On StatSalt all sales are final.",
+    "If you buy the guaranteed option, expect site credit, not cash, if the play loses.",
     "Write down each pick yourself the moment you receive it, with the line you can actually get.",
-    "Start with a single play or a one day pass before any monthly pass."
+    "Start with a single play or a one day pass before any monthly pass, and compare with his free picks."
   ],
   "faq": [
     [
       "Is Mike Lundin legit?",
-      "He is a real, active handicapper whose picks are sold on StatSalt at published prices. We could not verify that his picks win over time, because the only records come from the site that sells them, and we found no court or regulator action involving him."
+      "He is a real, active handicapper whose picks are sold on StatSalt at published prices, and his profile has existed since at least November 2025. We could not verify that his picks win over time, because the only full lists come from the site that sells them, and we found no court or regulator action involving him."
     ],
     [
       "How much does Mike Lundin cost?",
-      "On 17 Nov 2026 his StatSalt profile sold single plays for $5.00 and all sports passes for $39 a day, $69 for 3 days, $99 for 7 days and $299 for 30 days, plus $49.00 sport passes."
+      "On 17 Nov 2026 his StatSalt profile sold single plays for $5.00 and all sports passes for $39 a day, $69 for 3 days, $99 for 7 days and $299 for 30 days, plus $49.00 weekend and three day sport passes."
     ],
     [
       "Does Mike Lundin have a verified record?",
-      "No. His page shows short runs such as 20 and 8 in college basketball and a last 20 plays list, all graded by StatSalt. We found no independent, time stamped log of every pick."
+      "No. His last 20 plays were 13 and 7 by our count, graded by StatSalt. An outside tracker of his free picks showed 11 and 11 over 30 days. Nobody publishes an independent, time stamped log of every paid pick."
+    ],
+    [
+      "Can I get a refund on StatSalt?",
+      "No. The refund policy says all sales are final and no refunds are issued once a product is purchased, delivered or viewed. A guaranteed play, where offered, returns site credit rather than cash."
+    ],
+    [
+      "Who owns StatSalt?",
+      "The StatSalt refund policy says all purchases are made from Wager Talk Media, LP, \"the parent company of StatSalt.\" The terms give the seller address as 11035 Lavender Hill Dr, Las Vegas, NV. That is the company behind WagerTalk, which says it was founded in July 2015."
     ],
     [
       "Is Mike Lundin worth it?",
@@ -224,7 +244,7 @@
       "accessed": "17 Nov 2026"
     },
     {
-      "title": "StatSalt terms and conditions (entertainment purposes wording)",
+      "title": "StatSalt terms and conditions (seller address, entertainment purposes wording, remedy)",
       "url": "https://statsalt.com/terms",
       "accessed": "17 Nov 2026"
     },
@@ -234,13 +254,38 @@
       "accessed": "17 Nov 2026"
     },
     {
+      "title": "GameAdvisers: Mike Lundin page (tracked free picks, last 30 days)",
+      "url": "https://www.gameadvisers.com/handicappers/Mike-Lundin",
+      "accessed": "17 Nov 2026"
+    },
+    {
+      "title": "Internet Archive: StatSalt Mike Lundin profile as of 6 Nov 2025 (earlier bio and rating scale)",
+      "url": "https://web.archive.org/web/20251106050157/https://statsalt.com/profile/mike-lundin",
+      "accessed": "17 Nov 2026"
+    },
+    {
+      "title": "WagerTalk: profile address for Mike Lundin (no Mike Lundin profile shown)",
+      "url": "https://www.wagertalk.com/profile/mike-lundin",
+      "accessed": "17 Nov 2026"
+    },
+    {
+      "title": "PR Newswire: WagerTalk Adds Rick Allec to Ownership Team (11 Jun 2019)",
+      "url": "https://www.prnewswire.com/news-releases/wagertalk-adds-rick-allec-to-ownership-team-300865071.html",
+      "accessed": "17 Nov 2026"
+    },
+    {
       "title": "TheRX: Saturday service play thread 11/14/2026 (posting rules)",
       "url": "https://www.therx.com/threads/saturday-service-play-thread-11-14-2026.1315110/",
       "accessed": "17 Nov 2026"
     },
     {
-      "title": "Arctic Shift Reddit archive: r/SportsBettingPicks post search for lundin (no results; other subreddits timed out)",
-      "url": "https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=SportsBettingPicks&query=lundin&limit=100",
+      "title": "Arctic Shift Reddit archive: r/sportsbook post search for lundin (no results; other subreddits timed out)",
+      "url": "https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=sportsbook&query=lundin&limit=100",
+      "accessed": "17 Nov 2026"
+    },
+    {
+      "title": "WagerTalk refund policy (same parent company; how the guarantee credit works)",
+      "url": "https://www.wagertalk.com/refund-policy",
       "accessed": "17 Nov 2026"
     }
   ],

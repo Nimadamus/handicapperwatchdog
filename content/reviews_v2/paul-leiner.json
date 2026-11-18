@@ -7,9 +7,9 @@
   "checked_iso": "2026-11-17",
   "updated_iso": "2026-11-17",
   "title": "Paul Leiner Review 2026: Pricing, Record, Is It Worth It?",
-  "description": "Paul Leiner review, checked 17 Nov 2026: PlayersInsider prices from $29 to $1,599, the free days guarantee, his record claims and what buyers say.",
+  "description": "Paul Leiner review, checked 17 Nov 2026: PlayersInsider prices from $29 to $1,599, free days guarantee, his record checked against his own page.",
   "h1": "Paul Leiner review",
-  "dek": "A handicapper who goes by \"Plein\" and sells daily picks on PlayersInsider.com, a site that names no company and lists only a Gmail address. Access runs from $39 a day to $1,599 for 180 days. A losing daily play earns free days, not money back, and every record on the page is kept by the seller.",
+  "dek": "A handicapper who goes by \"Plein\" and has sold daily picks on PlayersInsider.com since at least 2010. The site names no company, lists only a Gmail address and says most of its handicappers' true identities are protected. Access runs from $39 a day to $1,599 for 180 days. A losing daily play earns free days, not money back, and every record is kept by the seller.",
   "status": {
     "label": "Not verified",
     "note": "Watchdog has not graded a full, time stamped record of Paul Leiner picks. This page reports what we could check on 17 Nov 2026 and labels everything else."
@@ -20,8 +20,16 @@
       "PlayersInsider.com. No company name, street address or phone shown; contact is a Gmail address (contact and terms pages)"
     ],
     [
-      "Claims to sell on the site since",
-      "2008 (his bio)"
+      "Site history",
+      "Domain registered 16 Jan 2003; About page carries a 2005 copyright; 13 handicappers listed on 17 Nov 2026"
+    ],
+    [
+      "Identity",
+      "Terms say most handicappers' true identities are protected, so the name may not be a legal name"
+    ],
+    [
+      "Selling on the site since",
+      "Bio says 2008; the earliest saved copy of his page we opened is from June 2010"
     ],
     [
       "Price range seen",
@@ -29,11 +37,11 @@
     ],
     [
       "Guarantee",
-      "Losing daily play earns three free days. No refunds; multi day packages carry no guarantee"
+      "Losing daily play earns three free days. All sales final; multi day packages carry no guarantee"
     ],
     [
       "Full public record",
-      "Not found. Totals, streaks and a list of winning top plays, all kept by the seller"
+      "Not found. Totals, monthly winning days and a list of 168 top plays that shows only wins"
     ],
     [
       "Watchdog graded record",
@@ -41,146 +49,205 @@
     ]
   ],
   "short_answer": [
-    "Paul Leiner's page is live and selling. On 17 Nov 2026 it offered a college basketball play dated that day, listed eight access packages with prices and showed a long list of record totals. That much is real. What the site does not show is who runs it: there is no company name, no street address and no phone number, only a Gmail address.",
-    "Every record on the page is kept by the seller, and much of it is chosen. A long \"Top Play Breakdown\" lists only winning plays. Several totals do not match each other, such as a college basketball record shown as 154-137 in one place and 178-154-5 in another, and the bio says both \"since 2008\" and \"14 years of winning\".",
-    "We found no independent post from anyone who bought his picks, good or bad. With no outside evidence either way, the reader has only the seller's own numbers to go on. If you buy, buy a single day, and log every pick yourself."
+    "Paul Leiner's page is live and selling. On 17 Nov 2026 it offered a 5000* college basketball play dated that day, listed eight access packages and showed a long list of record totals. Saved copies of the page show him selling there in 2010, 2016 and 2021, so this is a long running listing, not a new one.",
+    "What the site does not show is who runs it. There is no company name, street address or phone number, only a Gmail address. The terms add that \"the true identities of most of the handicappers at this site are protected,\" so Paul Leiner may be a pen name. We found no BBB listing, no court or regulator record and no business registration tied to the site.",
+    "Every record is kept by the seller. A 168 entry \"Top Play Breakdown\" lists only winning plays, several totals on the same page disagree, and his claimed years in business have not moved in step with the calendar. Taken at face value, his own overall run is about 54% winners and his own monthly winning day counts come to about 53% over the last 13 months.",
+    "We found no independent post from anyone who bought his picks, good or bad. If you buy, buy a single day and log every pick yourself."
   ],
-  "pricing_intro": "Prices below were on the Paul Leiner page at PlayersInsider on 17 Nov 2026. The daily play was shown at $39 at the top of the page and at $29 lower down; we list both.",
+  "pricing_intro": "Prices below were on the Paul Leiner page at PlayersInsider on 17 Nov 2026. The daily play was shown at $39 at the top of the page and in his note (\"just 39 dollars\"), and at $29 in the daily write up box; we list both. The 2010 copy of the page also sold a one year package, which is no longer offered.",
   "pricing": [
     [
-      "Daily play or daily access",
-      "$39 (also shown as \"ONLY COSTS $29\" in the daily write up)",
-      "Must win or next 3 days free"
+      "Daily Access (the day's top play)",
+      "$39 (also shown as \"ONLY COSTS $29\")",
+      "\"MUST WIN OR NEXT 3 DAYS FREE\""
     ],
     [
-      "2 Day / 3 Day / 7 Day Access",
-      "$79 / $89 / $149",
+      "2 Day Access",
+      "$79",
       "No guarantee on multi day packages (terms)"
     ],
     [
-      "30 Day / 60 Day Access",
-      "$399 / $699",
+      "3 Day Access",
+      "$89",
       "No guarantee on multi day packages"
     ],
     [
-      "100 Day / 180 Day Access",
-      "$999 / $1599",
+      "7 Day Access",
+      "$149",
+      "No guarantee on multi day packages"
+    ],
+    [
+      "30 Day Access",
+      "$399",
+      "No guarantee on multi day packages"
+    ],
+    [
+      "60 Day Access",
+      "$699",
+      "No guarantee on multi day packages"
+    ],
+    [
+      "100 Day Access",
+      "$999",
+      "No guarantee on multi day packages"
+    ],
+    [
+      "180 Day Access",
+      "$1599",
       "No guarantee on multi day packages"
     ]
   ],
   "guarantee": [
     "The daily play carries the line \"MUST WIN OR NEXT 3 DAYS FREE\" (also written \"Must Win or Three Free Days\"). The rating system says top rated 3000* plays \"Will Have Guarantee Attached.\" A loss earns more picks, not money back.",
-    "The PlayersInsider terms say there are no exchanges and no refunds, and that \"all sales are final.\" They add that only individual daily purchases are backed by free service, and that on multi day packages there is no guarantee of extra days if one of those days loses. The site also says it is not liable for any losses. Nothing covers losses on the bets themselves."
+    "The PlayersInsider terms open with \"All Sales Are Final\" and \"No Exchanges\", \"No Refunds\". They add: \"Only individual daily purchases are backed by free service. If you purchase a multiple day package, there is no warranty or guaranteed extra days of service if 1 of those days happens to lose.\"",
+    "The terms also say the site \"is not liable for any losses or damages incurred either directly or indirectly,\" and that sharing picks anywhere ends your account \"with no refund for any portion of unused service.\" Nothing covers losses on the bets themselves.",
+    "One other handicapper on the same site advertised \"MUST PROFIT OR FULL REFUND OF PURCHASE PRICE\" on 17 Nov 2026, which sits uneasily with the site wide no refunds rule. Paul Leiner's own offer is free days only."
   ],
   "claims": [
     {
+      "claim": "\"5,088-4,302-115 Overall Run\"",
+      "where": "Paul Leiner page",
+      "status": "Seller claim, no pick list. Computed from his own figures: about 54.2% winners"
+    },
+    {
       "claim": "\"167-100-2 RUN OVER THE LAST 67 DAYS\"",
       "where": "Paul Leiner page and PlayersInsider homepage",
-      "status": "Seller claim, no full log"
+      "status": "Seller claim, no pick list. Computed: about 62.5% winners, far above his own long run rate"
     },
     {
-      "claim": "\"5,088-4,302-115 Overall Run\" and \"1368-1115-14 LAST 618 DAYS\"",
+      "claim": "Monthly \"Winning Days\" counts from Nov 2025 to Nov 2026, and \"1572 out of 2883 Winning Days\" overall",
       "where": "Paul Leiner page",
-      "status": "Seller claim, no full log"
+      "status": "Checked against his own figures: 200 winning days out of 378 listed (about 53%); 3 of the 13 months were losing months"
     },
     {
-      "claim": "\"I have not had a losing football season since I started on this site and that was way back in 2008.\"",
+      "claim": "\"I have not had a losing football season since I started on this site and that was way back in 2008\" and \"I have 14 years of winning on my side\"",
       "where": "Paul Leiner page, bio",
-      "status": "Seller claim, not checkable"
+      "status": "Inconsistent with his own older pages (see notes)"
+    },
+    {
+      "claim": "\"20-12 TOP RATED RECORD\" in the NFL for 2026 to 2027",
+      "where": "Paul Leiner page",
+      "status": "Checked: the list under it shows the 20 wins only; none of the 12 losses is shown"
     },
     {
       "claim": "\"I WAS THE #1 RATED MLB HANDICAPPER ON THIS WEBSITE IN 2023 & DID IT AGAIN IN 2024\"",
       "where": "Paul Leiner page",
-      "status": "Seller claim, ranking on the seller's own site"
+      "status": "Ranking on the seller's own site; the page gives his MLB record two different ways"
     },
     {
       "claim": "\"Every game I release, I personally wager on.\"",
       "where": "Paul Leiner page, bio",
       "status": "Seller claim, not checkable"
-    },
-    {
-      "claim": "\"44-24-2 ON TOP RATED NFL PLAYS LAST SEASON (INCLUDES PRESEASON)\"",
-      "where": "Paul Leiner page",
-      "status": "Seller claim, no full log"
     }
   ],
   "claims_note": [
-    "Some totals on the same page disagree. The college basketball record appears as \"154-137\" and as \"178-154-5\". The 2025 NFL season appears as \"13 winning weeks out of the 18 NFL Regular Season weeks\" and as \"14 out of 22 Winning NFL Weeks\". The overall MLB record appears as 327-280-2 and 328-275-1.",
-    "The bio says he started on the site in 2008, which would be 18 years, while the same bio says \"I have 14 years of winning on my side.\"",
-    "The page also lists monthly winning days, and these include losing months, such as 13 winning days out of 31 in August 2026 and 13 out of 31 in January 2026. That is more candid than the \"Top Play Breakdown\" list, which shows only plays that won.",
-    "Taken at face value, the seller's own overall run of 5,088 wins and 4,302 losses is about 54% winners, only a little above the roughly 52.4% needed to break even at standard -110 odds, and only if the record is complete."
+    "Overall run: 5,088 wins and 4,302 losses is 54.2% of decided plays. At standard -110 odds a bettor needs about 52.4% to break even, so even the seller's own lifetime figure leaves a thin margin, before worse lines and any picks left out.",
+    "Winning days: adding the 13 monthly counts on the page gives 200 winning days out of 378, about 52.9%. August 2026 (13 of 31), January 2026 (13 of 31) and November 2025 (14 of 30) were below half, and February and July 2026 were exactly half. The 2 Mar 2021 copy of the page showed \"499 out of 873 Winning Days\"; against today's \"1572 out of 2883\", that means 1,073 winning days out of 2,010 since then, about 53.4%.",
+    "Years in business: the 2016 copy said \"I have not had a losing football season in 10 years\" and \"I have 10 years of winning on my side,\" which points to a start around 2006. The 2021 copy changed this to \"since I started on this site and that was way back in 2008\" with \"12 years of winning.\" Today's page keeps 2008 but says 14 years, while the same page claims a winning NFL year \"for the 18TH STRAIGHT YEAR.\"",
+    "Totals that disagree on the same page: college basketball appears as 154-137 and as 178-154-5; the overall MLB record as 327-280-2 and 328-275-1; the 2025 NFL season as \"13 winning weeks out of the 18\" and as \"14 out of 22 Winning NFL Weeks.\" The 2021 copy showed both \"13-6-1\" and \"13-5-1\" as his Super Bowl record.",
+    "To his credit, the page does post some losing figures: 42-44-1 on 3000* NBA plays and the losing months above. The 168 entry top play list and the 10 listed UFC plays, however, show wins only; the word loss does not appear anywhere on the page."
   ],
   "record": [
     "What a buyer can verify independently: nothing that we could find. We found no full, time stamped log of his picks kept by a third party, no contest results, and no court or regulator record.",
-    "What the seller publishes: totals by sport and star rating, a list of winning top plays going back months, monthly counts of winning days, and the day's free 100* play. The site does not say who grades these or how, and it shows no list of losing plays alongside the winners.",
-    "The PlayersInsider homepage lists 13 handicappers, most priced at $29 to $44 a day with \"must win\" free day offers. All of them are sold by the same unnamed operator."
+    "What the seller publishes: totals by sport and star rating, a 168 entry list of winning top plays running from 4 Jan to 16 Nov 2026, monthly counts of winning days, and the day's free 100* play (on 17 Nov 2026, Over 44.5 in Kent State at Miami Ohio). The site does not say who grades these or how, and it shows no list of losing plays alongside the winners.",
+    "The About page says the site's handicappers \"have been TRACKED and MONITORED for all plays,\" but names no tracking service and links to no outside record.",
+    "Background: playersinsider.com was registered on 16 Jan 2003 through eNom, and a 2005 copy of the homepage shows the site already running. On 17 Nov 2026 it listed 13 handicappers, most priced at $29 to $44 a day with \"must win\" free day offers, all sold by the same unnamed operator. The About page says offers by offshore sportsbooks advertised on the site are void where prohibited."
   ],
   "our_data": {
     "matched": false,
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no pick history from Paul Leiner is matched to a Watchdog graded record, so we make no claim about how Paul Leiner performs.",
     "context": "For scale: the seller's own overall run of 5,088-4,302-115 works out to about 54% winners. On the Watchdog board on 17 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "Independent customer evidence about Paul Leiner is nonexistent in what we could find. The only posts under his name are his own promotional threads. Below is what we checked and how much weight it can carry.",
+  "customers_intro": "Independent customer evidence about Paul Leiner is nonexistent in what we could find, after searching review sites, forums, the BBB, a Reddit archive and our own library. Below is what we checked and how much weight it can carry.",
   "customers": [
     {
       "type": "Our summary",
       "tone": "Neutral",
       "date": "Read 17 Nov 2026",
-      "text": "We found no independent post from anyone who bought Paul Leiner picks, on any site or in any year we could search. CapperTek has a page for PlayersInsider.com with no reviews or complaints. The Cappers Forum threads that turn up in search are posted by the seller to promote his plays, and that forum refused to load for us. Our own library of buyer posts had no mention of him or of PlayersInsider. With no posts either way there is no smoke to report; there is simply nothing independent to go on. Our Reddit search was partial. The Reddit archive's full text search timed out on 17 Nov 2026, so we checked our saved copy of ten betting subreddits and one WagerTalk thread instead. None of them mentioned him or PlayersInsider.",
+      "text": "We found no independent post from anyone who bought Paul Leiner picks, on any site or in any year we could search. CapperTek lists PlayersInsider.com with no reviews or complaints. Web searches for Paul Leiner, Pleiner and PlayersInsider on Covers, Sportsbook Review and TheRX returned nothing about him. The BBB has no listing for the site. The Reddit archive returned no posts naming him in three betting subreddits, and our saved copy of ten betting subreddits and our library of about 9,400 saved posts about pick sellers had no mention of him or the site. With no posts either way there is no smoke to report; there is simply nothing independent to go on.",
       "source": null
     },
     {
       "type": "Not found",
       "tone": "Neutral",
       "date": "Checked 17 Nov 2026",
-      "text": "CapperTek's PlayersInsider.com page said there were no reviews or complaints for the site. The reviews shown lower on that page are about other services.",
-      "source": 5
+      "text": "CapperTek's PlayersInsider.com page said there were no reviews or complaints for the site and labeled it an unverified service. The reviews shown lower on that page are about other services.",
+      "source": 6
     },
     {
       "type": "Not found",
       "tone": "Neutral",
       "date": "Checked 17 Nov 2026",
-      "text": "Web searches of Covers, Sportsbook Review, TheRX and general search results found no buyer review, complaint or results thread about Paul Leiner or Pleiner.",
+      "text": "A BBB search for PlayersInsider returned no business or charity, so there is no BBB complaint history to read.",
+      "source": 11
+    },
+    {
+      "type": "Not found",
+      "tone": "Neutral",
+      "date": "Checked 17 Nov 2026",
+      "text": "Reddit archive post searches for Leiner in r/sportsbook, r/sportsbetting and r/SportsBettingPicks, and for PlayersInsider in r/sportsbook, returned no posts. Some comment searches timed out, and our saved copy of ten betting subreddits had no mention of him or PlayersInsider.",
+      "source": 12
+    },
+    {
+      "type": "Not found",
+      "tone": "Neutral",
+      "date": "Checked 17 Nov 2026",
+      "text": "Web searches of Covers, Sportsbook Review, TheRX and general search results found no buyer review, complaint or results thread about Paul Leiner, Pleiner or PlayersInsider.",
       "source": null
     }
   ],
   "conflicts": [
-    "The records, the \"#1 rated\" claim and the list of winning plays are all published by the site that sells his picks. The site does not name its owner, so we cannot tell how the handicapper and the operator are related."
+    "The records, the \"#1 rated\" MLB claim and the list of winning plays are all published by the site that sells his picks. The site does not name its owner, so we cannot tell how the handicapper and the operator are related.",
+    "The terms say the true identities of most of the site's handicappers are protected. A buyer cannot check the background of a person whose real name may not be given.",
+    "The About page promises handicappers \"TRACKED and MONITORED for all plays\" but names no outside monitor."
   ],
   "strengths": [
-    "Prices for every package are published, and a single day costs $29 to $39.",
-    "The page posts a free daily play and dates its top plays, and its monthly winning day counts include losing months.",
-    "The terms state plainly that there are no refunds and that only daily purchases carry the free days offer."
+    "Prices for all eight packages are published, and a single day costs $29 to $39.",
+    "The listing is long running: saved copies show his page selling in 2010, 2016 and 2021.",
+    "The page posts a dated free play each day and dates its top plays.",
+    "Some losing figures are shown, such as 42-44-1 on 3000* NBA plays and three losing months of winning days.",
+    "The terms state plainly that all sales are final and that only daily purchases carry the free days offer."
   ],
   "concerns": [
-    "No company name, street address or phone number; the only contact is a Gmail address.",
-    "Every record is kept by the seller, the top play list shows only winners, and several totals on the same page disagree.",
-    "The guarantee gives free days, not money, and covers daily purchases only. All sales are final.",
+    "No company name, street address or phone number; the only contact is a Gmail address, and the terms say most handicappers' identities are protected.",
+    "Every record is kept by the seller, the 168 play top list and the NFL 20-12 list show only wins, and several totals on the same page disagree.",
+    "His stated start year and years of winning have shifted between versions of his own page.",
+    "Even taken at face value, his own lifetime figures are about 54% winners and about 53% winning days, a thin edge over the 52.4% break even at -110.",
+    "The guarantee gives free days, not money, covers daily purchases only, and all sales are final.",
     "We found no independent buyer reports, positive or negative."
   ],
   "checklist": [
-    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
-    "Count units, not wins. A 60% record at heavy favorites can still lose money.",
-    "Read the guarantee for the words refund, credit and free days. Most \"guarantees\" in this business are credits or more picks.",
+    "Ask the site who owns it and for a real business name and address before you pay. If it will not say, weigh that.",
+    "Ask for every pick from the last 12 months, losses included, with the line, the odds and the time it was sent. A list of winners is not a record.",
+    "Count units, not wins. A short hot run such as 167-100-2 over 67 days says little next to his own 54% lifetime figure.",
+    "If you buy, buy the single day play, the only purchase the free days offer covers. Multi day packages have no guarantee.",
     "Write down each pick yourself the moment you receive it, with the line you can actually get.",
     "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
   ],
   "faq": [
     [
       "Is Paul Leiner legit?",
-      "His page is live, sells dated daily picks and posts prices. The site that sells them does not name a company or give an address, every record is kept by the seller, and we found no buyer posts about him either way. We also found no court or regulator action involving him."
+      "His page is real, long running and sells dated daily picks at posted prices. But the site that sells them names no company or address, says most of its handicappers' identities are protected, keeps every record itself, and we found no buyer posts about him either way. We also found no court or regulator action involving him."
+    ],
+    [
+      "Who is Paul Leiner?",
+      "His bio says he goes by \"Plein,\" has followed sports all his life, wagers on every play he releases and started on PlayersInsider in 2008. Saved copies of his page confirm he was selling there by June 2010. We found nothing about him outside PlayersInsider, and the site's terms say most handicappers' true identities are protected."
     ],
     [
       "How much does Paul Leiner cost?",
-      "On 17 Nov 2026 a daily play cost $39 (also shown as $29 in the write up). Access ran $79 for 2 days, $149 for 7 days, $399 for 30 days, $999 for 100 days and $1599 for 180 days."
+      "On 17 Nov 2026 a daily play cost $39 (also shown as $29 in the write up). Access ran $79 for 2 days, $89 for 3 days, $149 for 7 days, $399 for 30 days, $699 for 60 days, $999 for 100 days and $1599 for 180 days."
+    ],
+    [
+      "Does Paul Leiner offer refunds?",
+      "No. The terms say \"All Sales Are Final\" with \"No Exchanges\" and \"No Refunds.\" A losing daily play earns the next three days free. Multi day packages carry no guarantee at all."
     ],
     [
       "Does Paul Leiner have a verified record?",
-      "No. The page shows totals such as 167-100-2 over 67 days and 5,088-4,302-115 overall, plus a list of winning top plays, all published by the seller. Some totals on the page contradict each other. We found no independent, time stamped log."
+      "No. The page shows totals such as 167-100-2 over 67 days and 5,088-4,302-115 overall, plus a list of winning top plays, all published by the seller. Some totals on the page contradict each other, and we found no independent, time stamped log."
     ],
     [
       "Is Paul Leiner worth it?",
-      "For $29 to $39 you get one day of picks with a free days offer if the main play loses. What is unproven is whether the picks beat the roughly 52.4% needed at -110 over time, and even the seller's own overall run is only about 54% winners. Nothing refunds your betting losses."
+      "For $29 to $39 you get one day of picks with a free days offer if the main play loses. What is unproven is whether the picks beat the roughly 52.4% needed at -110 over time; even the seller's own lifetime run is only about 54% winners. Nothing refunds your betting losses."
     ]
   ],
   "related": [
@@ -192,33 +259,68 @@
   ],
   "sources": [
     {
-      "title": "PlayersInsider: Paul Leiner handicapper page (packages, records, bio, rating system)",
+      "title": "PlayersInsider: Paul Leiner handicapper page (packages, records, bio, rating system, top play list)",
       "url": "https://www.playersinsider.com/handicap/HandicapPage.aspx?handi=3",
       "accessed": "17 Nov 2026"
     },
     {
-      "title": "PlayersInsider homepage (handicapper list, daily prices, guarantee offers)",
+      "title": "PlayersInsider homepage (redirects to the daily line up of handicappers)",
       "url": "https://www.playersinsider.com/",
       "accessed": "17 Nov 2026"
     },
     {
-      "title": "PlayersInsider handicappers page",
+      "title": "PlayersInsider handicappers page (all 13 handicappers, daily prices, guarantee offers)",
       "url": "https://www.playersinsider.com/general/PICapper.aspx",
       "accessed": "17 Nov 2026"
     },
     {
-      "title": "PlayersInsider terms and conditions (no refunds, free day rules, liability)",
+      "title": "PlayersInsider terms and conditions (all sales final, free day rules, identities protected)",
       "url": "https://www.playersinsider.com/general/terms.aspx",
       "accessed": "17 Nov 2026"
     },
     {
-      "title": "PlayersInsider contact page (Gmail address, no company or street address)",
+      "title": "PlayersInsider contact page (Gmail address only)",
       "url": "https://www.playersinsider.com/general/contactus.aspx",
       "accessed": "17 Nov 2026"
     },
     {
-      "title": "CapperTek: PlayersInsider.com review page (no reviews listed)",
+      "title": "PlayersInsider About Us page (tracking claim, disclaimers, 2005 copyright)",
+      "url": "https://www.playersinsider.com/general/aboutus.aspx",
+      "accessed": "17 Nov 2026"
+    },
+    {
+      "title": "CapperTek: PlayersInsider.com review page (no reviews or complaints)",
       "url": "https://www.cappertek.com/reviews.asp?shs=PlayersInsider.com",
+      "accessed": "17 Nov 2026"
+    },
+    {
+      "title": "Verisign RDAP registry record for playersinsider.com (registered 16 Jan 2003)",
+      "url": "https://rdap.verisign.com/com/v1/domain/playersinsider.com",
+      "accessed": "17 Nov 2026"
+    },
+    {
+      "title": "Internet Archive: Paul Leiner page as saved 20 Jun 2010",
+      "url": "https://web.archive.org/web/20100620182844/http://www.playersinsider.com/handicap/HandicapPage.aspx?handi=3",
+      "accessed": "17 Nov 2026"
+    },
+    {
+      "title": "Internet Archive: Paul Leiner page as saved 10 Aug 2016",
+      "url": "https://web.archive.org/web/20160810215417/http://www.playersinsider.com/handicap/HandicapPage.aspx?handi=3",
+      "accessed": "17 Nov 2026"
+    },
+    {
+      "title": "Internet Archive: Paul Leiner page as saved 2 Mar 2021",
+      "url": "https://web.archive.org/web/20210302165138/http://www.playersinsider.com/handicap/HandicapPage.aspx?handi=3",
+      "accessed": "17 Nov 2026"
+    },
+    {
+      "title": "BBB search for PlayersInsider (no business found)",
+      "url": "https://www.bbb.org/search?find_text=playersinsider",
+      "accessed": "17 Nov 2026"
+    },
+    {
+      "title": "Arctic Shift Reddit archive search: r/sportsbook posts, query leiner",
+      "url": "https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=sportsbook&query=leiner&limit=100",
       "accessed": "17 Nov 2026"
     }
   ],

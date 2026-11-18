@@ -1,39 +1,43 @@
 {
   "slug": "jack-jones",
   "name": "Jack Jones",
-  "legal_name": "Jack Jones (no company name or address given; picks sold through the SportsCapping network and the CappersPicks storefront)",
+  "legal_name": "Jack Jones, trading as BetFirm (BetFirms); no street address given. Picks sold through the SportsCapping network and the CappersPicks storefront",
   "kind": "Single handicapper sold through reseller storefronts",
   "checked": "17 Nov 2026",
   "checked_iso": "2026-11-17",
   "updated_iso": "2026-11-17",
   "title": "Jack Jones Review 2026: Pricing, Record, Is It Worth It?",
-  "description": "Jack Jones review, checked 17 Nov 2026: prices from $59.95 a day to $1,999.95 a year, a free time guarantee, seller picked runs and buyer talk.",
+  "description": "Jack Jones review, checked 17 Nov 2026: $34.95 plays to a $1,999.95 year, free time guarantee, his runs checked against the network leaderboard.",
   "h1": "Jack Jones review",
-  "dek": "A handicapper who says he was a private consultant before taking his picks public in 2008. His packages run from a $59.95 day pass to a $1,999.95 year pass on reseller storefronts. The guarantee pays in free time, not cash, and every record we saw is a run chosen by the seller.",
+  "dek": "A handicapper who says he was a private consultant before taking his picks public in 2008 under the BetFirm name. His packages run from a $59.95 day pass to a $1,999.95 year pass on the SportsCapping network. The guarantee pays in free time, not cash. The network's own all time leaderboard puts him at 52.5% winners over 24,739 picks, a return of about 1%.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Jack Jones picks. This page reports what we could check on 17 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record of Jack Jones picks. This page reports what we could check on 17 Nov 2026, including the figures the selling network publishes on its own leaderboard, and labels everything else."
   },
   "glance": [
     [
       "Operator",
-      "Jack Jones; no company, address or phone of his own found. Sales run through SportsCapping.com checkout"
+      "Jack Jones under the BetFirm brand (CappersPicks lists the company as Betfirms, phone 877-OUR-PICK). No street address found. Checkout through SportsCapping.com"
     ],
     [
       "Claims to operate since",
-      "Went public in 2008 after years as a private consultant (seller bio)"
+      "Went public in 2008 after years as a private consultant; BetFirms.com shows him posting picks by January 2009"
+    ],
+    [
+      "Where sold",
+      "SportsCapping.com, Capper Reviews and CappersPicks; BetFirm.com promotes him"
     ],
     [
       "Price range seen",
-      "$59.95 for 1 day to $1,999.95 for 365 days of all sports (CappersPicks)"
+      "$34.95 single play to $1,999.95 for 365 days of all sports"
     ],
     [
       "Guarantee",
       "Free extra time on most day passes. No guarantee on the 3 day pass or season passes. No money back"
     ],
     [
-      "Full public record",
-      "Not found. Only long runs and a yesterday table chosen by the seller"
+      "Network's own all time figure",
+      "12,722-11,505-512, 52.5%, ROI about 1% (SportsCapping leaderboard)"
     ],
     [
       "Watchdog graded record",
@@ -41,12 +45,18 @@
     ]
   ],
   "short_answer": [
-    "Jack Jones is a real, active name in the pick selling business. On 17 Nov 2026 his packages were on sale on CappersPicks and on Capper Reviews, a site that says it is part of the SportsCapping network that sells his picks. We found no store, company or address of his own.",
-    "Whether the picks make money is a separate question. The sales pages show long runs such as \"7328-6405 Run L3352 Days,\" which works out to about 53.4% winners, plus rankings on the same network that sells him. We found no full, time stamped log of every pick that we could check.",
-    "Treat Jack Jones as a seller with marketing records, not a proven winner. Buyer talk outside the network is thin: one 2026 forum exchange shows one member praising a hot NBA day and another calling him mediocre over time."
+    "Jack Jones is a real, long running name in the pick selling business. Saved copies of BetFirms.com show him posting free picks there in 2009 and 2011, and on 17 Nov 2026 BetFirm.com, CappersPicks, Capper Reviews and SportsCapping all sold or promoted his packages. We found no street address or company filing for him.",
+    "The sales pages lead with a run of \"7314-6415\" over the last 3,354 days, about 53.3% winners. The network that sells him also publishes a leaderboard, and its all time line for him is 12,722 wins and 11,505 losses, 52.5%, with a return of about 1% on money risked. In 2026 so far it shows him 904-811-37, 52.7%, roughly break even. The advertised \"757-648 Run\" since 11 Feb 2026 skips a 147-163 start to the year.",
+    "His strongest area on that leaderboard is the NBA, where he ranks first all time at 3,445-2,959-100, 53.8%. Some ranking claims on the sales pages do not match the leaderboard on the same day: \"No. 2\" overall shows as No. 3, and \"No. 2 NFL\" shows as No. 5.",
+    "Buyer talk outside the network is thin: one 2026 forum exchange shows one member praising a hot NBA day and another calling him mediocre over time. We found no complaints about billing or refunds."
   ],
-  "pricing_intro": "All rows were on the CappersPicks Jack Jones page on 17 Nov 2026, and the same package prices showed on Capper Reviews, which also listed single plays from $29.95 to $39.95. An undated BetFirms profile on CappersPicks lists much lower prices, so it is likely out of date.",
+  "pricing_intro": "All rows were on the CappersPicks Jack Jones page on 17 Nov 2026, and the same prices showed on Capper Reviews. An undated BetFirms profile on CappersPicks lists much lower prices ($19.95 to $34.95 daily, $999.95 a year), so it is likely out of date.",
   "pricing": [
+    [
+      "Single plays (for example 15* WVU/Auburn, 20* NBA Total of the Week)",
+      "$34.95 / $39.95",
+      "\"GUARANTEED or Wednesday ... is ON JACK\""
+    ],
     [
       "1 Day All Sports Pass",
       "$59.95",
@@ -55,7 +65,7 @@
     [
       "3 Day All Sports Pass",
       "$119.95",
-      "No guarantee wording on the page"
+      "No guarantee wording; listing says \"24-22 this season\""
     ],
     [
       "7 Day All Sports Pass",
@@ -80,65 +90,78 @@
     [
       "NFL or College Football Season Pass 2026/27; NFL and CFB combo",
       "$499.95 each; $799.95 combo",
-      "No guarantee wording; network policy says no guarantee on seasonal subscriptions"
+      "Season passes are not guaranteed (SportsCapping policy)"
     ],
     [
       "NBA or College Hoops Season Pass 2026/27; NBA and CBB combo",
       "$799.95 each; $1,199.95 combo",
-      "No guarantee wording; network policy says no guarantee on seasonal subscriptions"
+      "Season passes are not guaranteed (SportsCapping policy)"
     ]
   ],
   "guarantee": [
     "The CappersPicks page says most day passes are \"GUARANTEED PROFITS\" or the next period of picks \"is ON JACK.\" That means more picks, not money. The 3 day pass and the season passes carry no guarantee wording.",
-    "The SportsCapping network guarantee policy, linked from Capper Reviews, sets the limits: free time equal to what you bought if a package loses a single unit, no free time if it made any profit, grading on 100 unit intervals whatever the star rating, one free period per purchase, and \"There is NO GUARANTEE on seasonal subscriptions.\" It also says: \"We do not offer a money back policy like some services do.\"",
+    "SportsCapping, which runs checkout, says on its current Profit Guarantee page that a guaranteed package finishing at zero profit or less (\"breaking even counts\") earns the next day of picks free, a guaranteed subscription \"is automatically extended by its original length,\" some accounts get account credit instead, \"Season and rest-of-season passes are not guaranteed,\" and \"Guarantees apply once per purchase.\"",
+    "The older policy page on Capper Reviews, part of the same network, adds grading on 100 unit intervals whatever the star rating, and says: \"We do not offer a money back policy like some services do.\"",
     "Losses on the bets themselves are never covered, and they are usually far larger than the package price."
   ],
   "claims": [
     {
-      "claim": "\"7328-6405 Run L3352 Days\" and $1,000 per game players \"cash in $316,900!\"",
-      "where": "CappersPicks Jack Jones page",
-      "status": "Selected run, no full log"
+      "claim": "\"No. 2 Ranked Overall Capper All-Time!\" with a \"7314-6415 Run L3354 Days\" (also shown as 7334-6415) and $1,000 players \"cash in $311,670!\"",
+      "where": "CappersPicks, Capper Reviews and SportsCapping",
+      "status": "Checked against the network leaderboard: all time he was No. 3 by profit on 17 Nov 2026, at 12,722-11,505-512 (52.5%, ROI about 1%)"
     },
     {
-      "claim": "\"No. 2 Ranked Overall Capper All-Time!\" (ranked \"on the Sportscapping Network\")",
+      "claim": "\"Jack has delivered a 757-648 Run on all premium plays since February 11th!\"",
       "where": "CappersPicks and Capper Reviews",
-      "status": "Seller claim, ranking by the network that sells him"
+      "status": "Checked: the leaderboard's 2026 line is 904-811-37, so the six weeks before 11 Feb were about 147-163. Full year so far: 52.7%, ROI 0.4%"
     },
     {
-      "claim": "\"No. 1 Ranked NBA Capper All-Time!\" and \"3283-2787 NBA Run\"",
-      "where": "CappersPicks Jack Jones page",
-      "status": "Seller claim, no full log"
+      "claim": "\"No. 1 Ranked NBA Capper All-Time!\" with a \"3283-2787 NBA Run\" (also shown as 3310-2821)",
+      "where": "CappersPicks and Capper Reviews",
+      "status": "Confirmed No. 1 on the network's NBA all time leaderboard, which shows 3,445-2,959-100 (53.8%), a different total from either run"
     },
     {
-      "claim": "\"2272-1918 Football Run\" and \"EPIC 111-59 Bowl Run\"",
-      "where": "CappersPicks Jack Jones page",
-      "status": "Selected runs, no full log"
+      "claim": "\"No. 2 Ranked NFL Capper All-Time!\" with a \"686-552 NFL Run\"",
+      "where": "CappersPicks season pass copy",
+      "status": "Not matched: the network's NFL all time leaderboard had him No. 5, at 1,191-1,032-79 (53.6%)"
     },
     {
-      "claim": "\"EIGHT Top-10 Football Finishes\"; elsewhere \"seven Top-10 football finishes\"",
+      "claim": "\"No. 3 Ranked College Football Capper All-Time!\" with a \"1282-1070 CFB Run\"",
+      "where": "CappersPicks season pass copy",
+      "status": "Not matched: the network's college football all time leaderboard had him No. 5, at 1,631-1,423-62 (53.4%)"
+    },
+    {
+      "claim": "\"EIGHT Top-10 Football Finishes\"; elsewhere on the same page \"seven Top-10 football finishes\"",
       "where": "CappersPicks Jack Jones page",
-      "status": "Seller claim, inconsistent"
+      "status": "Seller claim, inconsistent on the same page"
     },
     {
       "claim": "\"Jack Jones has long been a private consultant\" who \"decided to take his selections public in 2008.\"",
-      "where": "Capper Reviews bio",
-      "status": "Seller claim, not checkable"
+      "where": "Capper Reviews and SportsCapping bio",
+      "status": "Consistent with saved BetFirms.com pages from 2009 (copyright 2008) showing his free picks. The consultant years are not checkable"
+    },
+    {
+      "claim": "\"AS CLOSE TO A SURE THING AS YOU'LL FIND in sports handicapping\"",
+      "where": "365 day pass description",
+      "status": "Marketing language; the network's own 2026 figure for him is 52.7% winners"
     }
   ],
   "claims_note": [
-    "The numbers drift between pages checked the same day. CappersPicks shows the overall run as 7328-6405; Capper Reviews shows 7314-6415 in its header and 7334-6415 in its body, and its NBA run appears as both 3310-2821 and 3283-2787. The NBA season pass calls him \"#1 NBA All-Time\" while other copy says \"No. 2 Ranked Basketball Capper All-Time!\"",
-    "Every ranking is on the SportsCapping network, which sells his picks and grades them. A rank inside one seller's own leaderboard is not an outside audit.",
-    "The long runs are about 53% to 54% winners. That is above the roughly 52.4% needed at -110, but the dollar totals assume a stake and grading the page does not fully explain, and each run starts where the seller chose."
+    "How we checked: SportsCapping, the network that sells and grades his picks, publishes a leaderboard by sport and period. We read it on 17 Nov 2026. Its \"profit\" and ROI columns are the network's own; ROI 0.0102 means about 1 cent returned per dollar risked.",
+    "The window effect: the sales run of 7,314 wins and 6,415 losses covers the last 3,354 days, roughly since September 2017. Taking it away from the all time line leaves about 5,400 wins and 5,090 losses before that window, about 51.5%, if both figures count the same picks. The run is accurate for the window, but the window starts where the record looks best. SportsCapping's own method note says a \"since\" figure is \"a window starting on the date shown, not a lifetime record.\"",
+    "Numbers drift between pages read the same day. The overall run appears as 7314-6415 and 7334-6415; the NBA run as 3310-2821 and 3283-2787; the college hoops run as 2363-2134 and 2351-2120. On 17 Nov 2026 the CappersPicks header said $311,670 for $1,000 players; an earlier reading of the same page that day showed 7328-6405 and $316,900.",
+    "In the last 90 days the leaderboard shows him 249-216-8 across all sports (53.6%), 46-38-2 in the NFL this season and 89-70-2 in college football this season, all profitable. The CappersPicks \"Yesterday's plays\" table for 16 Nov 2026 showed 2 wins and 3 losses, $140 down at $100 a play."
   ],
   "record": [
-    "What a buyer can verify independently: nothing that we could find. We found no full, time stamped log of every Jack Jones pick with the line, the odds and the release time, and no court or regulator record about him.",
-    "What the seller publishes: long runs by sport, rankings and a \"Yesterday's plays\" table. On 17 Nov 2026 the CappersPicks table showed 2 wins and 3 losses, with no calendar date. These results are graded by the selling side.",
-    "Members of one forum repost his paid plays and sometimes tally a day, which is a small outside glimpse but not a record."
+    "What a buyer can verify independently: no third party log. We found no outside tracker, contest record, court case or regulator action about him.",
+    "What the seller side publishes: long runs by sport, rankings and a yesterday table on the storefronts, plus a leaderboard on SportsCapping. The leaderboard is kept by the network that sells his picks, so it is not an audit, but it is more complete than the runs: 24,739 graded picks all time at 52.5% and about 1% ROI.",
+    "CappersPicks labels the network's figures \"3RD PARTY DOCUMENTED STATS,\" but SportsCapping sells his packages and grades them, so they are not third party in the usual sense.",
+    "Background: CappersPicks lists his company as Betfirms with the phone line 877-OUR-PICK. The betfirms.com domain was registered on 27 Dec 2003; saved copies from 2009 and 2011 show Jack Jones writing daily free picks there, and it now forwards to BetFirm.com, which on 17 Nov 2026 led with \"IF YOU AREN'T WINNING, YOU DON'T KNOW JACK\" and linked to the SportsCapping podcast. The CappersPicks footer says the storefront is \"located in Antigua, West Indies.\""
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Jack Jones pick history is matched to a Watchdog graded record, so we make no claim about how Jack Jones performs.",
-    "context": "For scale: the seller's long runs work out to about 53% to 54% winners. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Jack Jones pick history is matched to a Watchdog graded record, so we make no claim about how Jack Jones performs beyond what the selling network publishes.",
+    "context": "For scale: the selling network's all time line for him is 52.5% winners and its 2026 line 52.7%. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
   "customers_intro": "Independent customer evidence on Jack Jones is thin. The largest set of comments sits on a site that says it is part of the network selling his picks. Below is everything we found and how much weight it can carry.",
   "customers": [
@@ -146,14 +169,14 @@
       "type": "Our summary",
       "tone": "Mixed",
       "date": "Read 17 Nov 2026",
-      "text": "We found very little buyer talk about Jack Jones outside the sites that sell him. The main pool is 11 undated comments on Capper Reviews, a network owned site, and all of them are favorable: buyers praise early releases, detailed write ups and leaderboard finishes. Outside that, one TheRX thread from April 2026 shows members tallying a 6 and 1 day for his reposted plays, while another member wrote that over time he is mediocre and asked for proof from an independent monitor. Reddit archive searches found no posts about him. We found no complaints about billing or refunds, and no independent long term record either way.",
+      "text": "We found very little buyer talk about Jack Jones outside the sites that sell him. The main pool is 11 undated comments on Capper Reviews, a network owned site, and all of them are favorable: buyers praise early releases, detailed write ups and leaderboard finishes. Outside the network, members of TheRX repost his paid plays; in one April 2026 thread they tallied a 6 and 1 day and one called it an NBA heater, while another member wrote that over time he is mediocre and asked for proof from an independent monitor. Reddit archive searches and our saved copy of ten betting subreddits found no posts about the handicapper. The BBB has no listing for SportsCapping. We found no complaints about billing or refunds, and no independent long term record either way.",
       "source": null
     },
     {
       "type": "Seller curated",
       "tone": "Positive",
       "date": "Checked 17 Nov 2026",
-      "text": "Capper Reviews shows a rating of 3.71 out of 5 from 142 votes and 11 undated comments. All are favorable, mentioning college hoops, an NBA call, an opening day baseball underdog and a winning Sunday. The page says Jack Jones sells picks through the SportsCapping network, which Capper Reviews is part of, so this is not independent evidence.",
+      "text": "Capper Reviews shows a rating of 3.71 out of 5 from 142 votes and 11 undated comments. All are favorable, mentioning college hoops, an NBA call, an opening day baseball underdog, a winning Sunday and his long write ups; one tells readers to follow BetFirm. The page says Jack Jones sells picks through the SportsCapping network, which Capper Reviews is part of, so this is not independent evidence.",
       "source": 1
     },
     {
@@ -161,75 +184,102 @@
       "tone": "Positive",
       "date": "6 Apr 2026",
       "text": "In the TheRX Sunday service play thread for 5 Apr 2026, members who repost paid plays tallied his card from that day as 6 and 0 in the NBA and 0 and 1 in baseball, and one said he was on an NBA heater. This is one day of results.",
-      "source": 3
+      "source": 12
     },
     {
       "type": "Forum post",
       "tone": "Negative",
       "date": "6 Apr 2026",
-      "text": "In the same thread another member answered that he is \"quite mediocre\" over time and said only documentation from an objective monitoring service, not the seller's own site, would change his view. He gave no numbers.",
-      "source": 3
+      "text": "In the same thread another member answered that, from what he had seen and read over time, Jack Jones is \"quite mediocre,\" and said only documentation from an objective monitoring service, not the seller's own site, would change his view. He gave no numbers.",
+      "source": 12
+    },
+    {
+      "type": "Forum post",
+      "tone": "Neutral",
+      "date": "13 Nov 2026",
+      "text": "In the TheRX Saturday service play thread for 14 Nov 2026, a member reposted seven of his plays rated 20 to 25 units, with no comment on results. Unlike Sean Murphy and several network cappers, Jack Jones is not on that forum's do not post list.",
+      "source": 13
     },
     {
       "type": "Not found",
       "tone": "Neutral",
       "date": "Checked 17 Nov 2026",
-      "text": "Searches of the Reddit archive for posts naming Jack Jones in r/sportsbetting, r/SportsBettingPicks and r/sportsbettingadvice returned no matches, and posts in r/sportsbook that matched the words were about other people. Our web searches found no Sportsbook Review or Covers thread reviewing his service.",
-      "source": 4
+      "text": "Reddit archive searches for Jack Jones in the main betting subreddits returned no posts about the handicapper; the few matches in r/sportsbook were about other people. Our web searches found no Sportsbook Review or Covers thread reviewing his service.",
+      "source": 15
+    },
+    {
+      "type": "Not found",
+      "tone": "Neutral",
+      "date": "Checked 17 Nov 2026",
+      "text": "A BBB search for SportsCapping, the network that sells his packages, returned no business, so there is no BBB complaint history to read.",
+      "source": 16
     }
   ],
   "conflicts": [
-    "Capper Reviews, which hosts the star rating and comments, says it is part of the SportsCapping network that sells his packages.",
+    "Capper Reviews, which hosts the star rating and comments, and the leaderboard that ranks him are both run by the SportsCapping network that sells his packages and takes a share of each sale.",
     "The Capper Reviews page carried a \"$1,000 Free Play at MyBookie\" banner linked through an affiliate tracking address. MyBookie is an offshore sportsbook, not licensed by U.S. state regulators. Affiliate deals usually pay the referrer when referred customers sign up or lose.",
-    "The CappersPicks footer says the site is \"located in Antigua, West Indies.\""
+    "CappersPicks calls the network's figures third party documented stats, and its footer says the site is \"located in Antigua, West Indies.\"",
+    "SportsCapping's About page says \"No cherry-picked highlights,\" while the package copy it sells leads with runs whose start dates are chosen."
   ],
   "strengths": [
-    "Prices are published for every package, from $59.95 for one day up.",
-    "The guarantee rules are written out in detail by the selling network.",
-    "The sales pages show losing days in the yesterday table, not only wins."
+    "A long running, named seller: archived pages show him publishing picks under the BetFirms name since at least 2009.",
+    "The network's own leaderboard, though kept by the seller side, shows a positive all time line (52.5%, about 1% ROI) over a very large sample, and first place all time in the NBA.",
+    "Prices are published for every package, from $34.95 for one play up.",
+    "The guarantee rules are written out in detail, and the yesterday table shows losing days, not only wins.",
+    "Recent form on the leaderboard is positive: 249-216-8 over the last 90 days."
   ],
   "concerns": [
-    "No full public record. Every number we saw comes from the network that sells the picks.",
-    "Records and rankings disagree between pages checked the same day.",
+    "No independent record. Every number comes from the network that sells and grades the picks.",
+    "The headline runs start on chosen dates; the full 2026 line is 52.7% and roughly break even, and the all time return is about 1%.",
+    "Several ranking claims did not match the network's own leaderboard on the same day, and run totals differ between pages.",
     "The guarantee gives more picks, never money back, and season passes have no guarantee.",
-    "No company name or address of his own was found; the storefront footer gives Antigua.",
-    "The rating page is owned by the selling network and carries an offshore sportsbook affiliate banner."
+    "No street address found; the storefront footer gives Antigua, and the rating page carries an offshore sportsbook affiliate banner.",
+    "At about 1% return on money risked, small differences in the line you get can erase the edge."
   ],
   "checklist": [
+    "Open the SportsCapping leaderboard, set it to All Time and This Season, and compare with the runs on the package you are about to buy.",
     "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A long run on a sales page is not a record.",
-    "Count units, not wins. About 53% winners is close to break even once you bet at worse lines than the page uses.",
-    "Read the guarantee for the words refund, credit and extension. Here every version is free time.",
+    "Count units, not wins. About 52.5% winners is close to break even once you bet at worse lines than the page uses.",
+    "Read the guarantee for the words refund, credit and extension. Here every version is free time or credit, and season passes have none.",
     "Write down each pick yourself the moment you receive it, with the line you can actually get.",
     "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
   ],
   "faq": [
     [
       "Is Jack Jones legit?",
-      "He is a real, active seller whose packages have published prices on established storefronts. We could not verify that his picks win over time, because no site shows a full record of every pick, and we found no court or regulator action involving him."
+      "He is a real, long running seller whose packages have published prices on established storefronts. The selling network's own leaderboard shows him slightly profitable over the long run, about 1% ROI, but no independent party has audited his record, and we found no court or regulator action involving him."
+    ],
+    [
+      "Who is Jack Jones and what is BetFirm?",
+      "His bio says he was a private consultant to bigger players before going public in 2008. CappersPicks lists his company as Betfirms, and saved BetFirms.com pages from 2009 and 2011 show him posting free picks there. BetFirms.com now forwards to BetFirm.com, a picks site built around him that links to the SportsCapping network."
     ],
     [
       "How much does Jack Jones cost?",
-      "On 17 Nov 2026 a 1 day all sports pass was $59.95, 30 days was $399.95 and 365 days was $1,999.95. Season passes ran from $499.95 to $1,199.95, and single plays from $29.95 to $39.95."
+      "On 17 Nov 2026 single plays were $34.95 and $39.95, a 1 day all sports pass was $59.95, 30 days $399.95, 90 days $999.95 and 365 days $1,999.95. Season passes ran from $499.95 to $1,199.95."
+    ],
+    [
+      "Does Jack Jones offer refunds?",
+      "No cash refunds. Most day passes carry a guarantee of more picks if they do not profit, the 3 day pass and season passes carry none, and the network says it does not offer a money back policy."
     ],
     [
       "Does Jack Jones have a verified record?",
-      "No. The sales pages show long runs such as 7328-6405 and rankings on the SportsCapping network, all published by the selling side. We found no independent, time stamped log of every pick."
+      "No independent one. The network that sells him grades his picks and shows 12,722-11,505-512 all time, 52.5%, and 904-811-37 so far in 2026. The bigger runs on his sales pages start on dates the seller chose."
     ],
     [
       "Is Jack Jones worth it?",
-      "You get every play released in the period you buy, and on most day passes a free repeat period if it loses. What is unproven is whether his picks beat the roughly 52.4% needed at -110 over hundreds of plays at the lines you can get, and nothing refunds the package or your betting losses."
+      "You get every play released in the period you buy, and on most day passes a free repeat period if it loses. His long run edge on the seller's own numbers is about 1% of money risked, which is easy to lose to worse lines, and nothing refunds the package or your betting losses."
     ]
   ],
   "related": [
+    "betfirm",
+    "sportscapping",
     "jim-feist",
     "big-al",
-    "pickdawgz",
-    "sportscappro",
     "kevin-thomas"
   ],
   "sources": [
     {
-      "title": "CappersPicks: Jack Jones Sports Picks (packages, prices, guarantees, runs, rankings, Antigua footer)",
+      "title": "CappersPicks: Jack Jones Sports Picks (packages, prices, guarantees, runs, rankings, yesterday's plays, Antigua footer)",
       "url": "https://www.capperspicks.com/handicappers/jack-jones-sports-picks/",
       "accessed": "17 Nov 2026"
     },
@@ -239,23 +289,78 @@
       "accessed": "17 Nov 2026"
     },
     {
+      "title": "SportsCapping: Jack Jones handicapper page (bio, sports covered, free pick)",
+      "url": "https://www.sportscapping.com/handicappers/jack-jones",
+      "accessed": "17 Nov 2026"
+    },
+    {
+      "title": "SportsCapping leaderboard (all sports and by sport; all time, this season, last 90 days)",
+      "url": "https://www.sportscapping.com/leaderboard?sport=all&period=alltime&sort=profit&min_picks=10",
+      "accessed": "17 Nov 2026"
+    },
+    {
+      "title": "SportsCapping: The Profit Guarantee policy",
+      "url": "https://www.sportscapping.com/page/guarantee-policy",
+      "accessed": "17 Nov 2026"
+    },
+    {
       "title": "Capper Reviews guarantee policy",
       "url": "https://capperreviews.com/guarantee-policy/",
       "accessed": "17 Nov 2026"
     },
     {
-      "title": "TheRX: Sunday Service Play Thread 4/05/2026",
-      "url": "https://www.therx.com/threads/sunday-service-play-thread-4-05-2026.1309694/",
+      "title": "SportsCapping About page (network history and record claims)",
+      "url": "https://www.sportscapping.com/about",
       "accessed": "17 Nov 2026"
     },
     {
-      "title": "Arctic Shift Reddit archive search: r/sportsbetting posts, query jack jones",
-      "url": "https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=sportsbetting&query=jack%20jones&limit=100",
+      "title": "BetFirm.com homepage (Jack Jones branded picks site)",
+      "url": "https://www.betfirm.com/",
       "accessed": "17 Nov 2026"
     },
     {
-      "title": "CappersPicks: BetFirms profile (undated Jack Jones bio and prices)",
+      "title": "CappersPicks: BetFirms profile (company name, phone, email, older prices, bio)",
       "url": "https://www.capperspicks.com/handicappers/bet-firms/",
+      "accessed": "17 Nov 2026"
+    },
+    {
+      "title": "Internet Archive: BetFirms.com as saved 25 Jan 2009",
+      "url": "https://web.archive.org/web/20090125155812/http://www.betfirms.com/",
+      "accessed": "17 Nov 2026"
+    },
+    {
+      "title": "Internet Archive: BetFirms.com as saved 7 Jan 2011",
+      "url": "https://web.archive.org/web/20110107130931/http://www.betfirms.com/",
+      "accessed": "17 Nov 2026"
+    },
+    {
+      "title": "Verisign RDAP registry record for betfirms.com (registered 27 Dec 2003)",
+      "url": "https://rdap.verisign.com/com/v1/domain/betfirms.com",
+      "accessed": "17 Nov 2026"
+    },
+    {
+      "title": "TheRX: Sunday Service Play Thread 4/05/2026, page 2",
+      "url": "https://www.therx.com/threads/sunday-service-play-thread-4-05-2026.1309694/page-2",
+      "accessed": "17 Nov 2026"
+    },
+    {
+      "title": "TheRX: Saturday Service Play Thread 11/14/2026",
+      "url": "https://www.therx.com/threads/saturday-service-play-thread-11-14-2026.1315110/",
+      "accessed": "17 Nov 2026"
+    },
+    {
+      "title": "CappersPicks: handicappers stats page (\"3RD PARTY DOCUMENTED STATS\")",
+      "url": "https://capperspicks.com/handicappers-stats/",
+      "accessed": "17 Nov 2026"
+    },
+    {
+      "title": "Arctic Shift Reddit archive search: r/sportsbook posts, query jack jones",
+      "url": "https://arctic-shift.photon-reddit.com/api/posts/search?subreddit=sportsbook&query=jack%20jones&limit=100",
+      "accessed": "17 Nov 2026"
+    },
+    {
+      "title": "BBB search for SportsCapping (no business found)",
+      "url": "https://www.bbb.org/search?find_text=sportscapping",
       "accessed": "17 Nov 2026"
     }
   ],
