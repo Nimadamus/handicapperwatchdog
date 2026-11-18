@@ -32,7 +32,9 @@ Work from worktree `~/hwd-names-1114` (branch names-1114, push `HEAD:main`; main
    gold-sheet, nellys-sports, the-sports-reporter, joe-damico, raphael-esparza, paul-bovi, tony-t in ~/hwd_testimonials/new_reviews_1115.
    PACE 5 a week (Nima OK 17 Nov): task "HWD Review Publish" Mon-Fri 9:15 AM runs ~/hwd_testimonials/publish_next.py, one file from ~/hwd_testimonials/publish_queue (NN_slug.json) per run, log publish_next.log; add new deep drafts to the queue. Skipped: al-mcmordie (= big-al), dave-cokin (died 2024), alan-harris, chris-king, ryan-pelczarski, doug-upstone, kevin-rogers.
    Owner rules 17 Nov: NO thin pages (BRIEF.md depth standard); NEVER his name/editor byline on HWD (7b51424 reverted 7fa860f).
-   Next: deepen thin live pages (chris-jordan, mike-lundin, bryan-power, will-rogers, paul-leiner, sean-murphy, jack-jones).
+   DONE 17 Nov: 7 thin pages deepened (11 to 17 sources, 6 FAQ) LIVE main 796d3e8, verified 6:47 PM PST. Drafts in ~/hwd_testimonials/deepen_1117/_published.
+   validate.py now honours file args (before it silently checked only its own folder).
+   Next: 18 Nov check publish_next.log + gold-sheet live, retry GSC indexing (list above); 20 Nov GSC impressions; owner call on graded record + data report.
 3. SEO open (needs owner OK): add 209 profiles with 100+ picks to sitemap + IndexNow (1107 rule said let Google add naturally);
    profile titles with platform/handle for name searches; ~15 review pages still need GSC Request indexing (10/day, his Chrome).
 4. Signups (owner to pick): free follow-alert email signup; Pro buttons to TMR Pro (conflicts 1024 no-link rule); trial/price (Stripe = his OK).
