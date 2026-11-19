@@ -38,7 +38,7 @@ Work from worktree `~/hwd-names-1114` (branch names-1114, push `HEAD:main`; main
    (all 10 already 'URL is on Google') + gold-sheet (was 'unknown to Google'). Property = URL prefix https://handicapperwatchdog.com/ (not sc-domain).
    19 Nov: queued 08 asa-sports, 09 mike-barner, 10 king-creole (drafts copy in new_reviews_1115/_queued_1119). Skipped: johnny-detroit
    (not selling), tony-karpinski, chip-chirimbes, jeff-hochman (no independent buyer posts); joe-nelson = Nelly's, held as duplicate.
-   Next: queue publishes Mon-Fri 9:15 (raphael-esparza 19 Nov); 20 Nov GSC impressions; owner call on graded record + data report.
+   raphael-esparza LIVE 19 Nov 9:15 (main b71bd09, 200). Next: queue auto publishes Mon-Fri 9:15 (03 the-sports-reporter 20 Nov), 7 left in queue, add deep drafts before 1 Dec; 20 Nov GSC impressions; owner call on graded record + data report.
 3. SEO open (needs owner OK): add 209 profiles with 100+ picks to sitemap + IndexNow (1107 rule said let Google add naturally);
    profile titles with platform/handle for name searches; ~15 review pages still need GSC Request indexing (10/day, his Chrome).
 4. FREE WEEKLY EMAIL LIVE 19 Nov (owner OK): API on Cloudflare Pages project hwd-api (deploy: cd api-pages && npx wrangler@3 pages
@@ -49,7 +49,7 @@ Work from worktree `~/hwd-names-1114` (branch names-1114, push `HEAD:main`; main
    QA probe qa-hwd-probe-1119 confirmed end to end then unsubscribed. Sitemap profiles: owner agreed NOT to add (19 Nov).
    Still open from item 4: Pro buttons to TMR Pro (conflicts 1024 no-link rule); Pro buttons to TMR Pro (conflicts 1024 no-link rule); trial/price (Stripe = his OK).
    Owner asked about hiding records until subscribe: recommended keep headline record free (SEO), offered "middle" option; no decision.
-5. Still open: HWD Cloudflare Worker welcome email text not deployed (no CF token).
+5. DONE 19 Nov: purchase/welcome mail text is in backend/core.mjs, live via Pages prod deploy 5a0ee800 (source 80706cf); Worker token blocker obsolete.
 
 ## Numbers
 Nov 9 funnel 7d: 148 visits (chatgpt.com 91, google 10), 23 pricing views, 0 checkout starts, 0 subscribers.
