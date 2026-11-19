@@ -41,7 +41,13 @@ Work from worktree `~/hwd-names-1114` (branch names-1114, push `HEAD:main`; main
    Next: queue publishes Mon-Fri 9:15 (raphael-esparza 19 Nov); 20 Nov GSC impressions; owner call on graded record + data report.
 3. SEO open (needs owner OK): add 209 profiles with 100+ picks to sitemap + IndexNow (1107 rule said let Google add naturally);
    profile titles with platform/handle for name searches; ~15 review pages still need GSC Request indexing (10/day, his Chrome).
-4. Signups (owner to pick): free follow-alert email signup; Pro buttons to TMR Pro (conflicts 1024 no-link rule); trial/price (Stripe = his OK).
+4. FREE WEEKLY EMAIL LIVE 19 Nov (owner OK): API on Cloudflare Pages project hwd-api (deploy: cd api-pages && npx wrangler@3 pages
+   deploy --project-name hwd-api --branch main; wrangler OAuth on laptop works, no token needed). Deployed 5a0ee800 3:05 AM PST
+   (rollback = previous production deployment 89c25cec in CF Pages). Site main 80706cf/2579723: profile Follow button (free, 25 cap),
+   review page sign up box, account page toggles, double opt in (/api/signup + /api/signup/confirm). Sender tools/send_digest.py,
+   task "HWD Weekly Digest" Mon 8 AM (log tools/send_digest.log), graded results + new reviews only, never pending picks.
+   QA probe qa-hwd-probe-1119 confirmed end to end then unsubscribed. Sitemap profiles: owner agreed NOT to add (19 Nov).
+   Still open from item 4: Pro buttons to TMR Pro (conflicts 1024 no-link rule); Pro buttons to TMR Pro (conflicts 1024 no-link rule); trial/price (Stripe = his OK).
    Owner asked about hiding records until subscribe: recommended keep headline record free (SEO), offered "middle" option; no decision.
 5. Still open: HWD Cloudflare Worker welcome email text not deployed (no CF token).
 
