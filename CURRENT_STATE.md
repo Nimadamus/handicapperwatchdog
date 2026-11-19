@@ -36,6 +36,8 @@ Work from worktree `~/hwd-names-1114` (branch names-1114, push `HEAD:main`; main
    validate.py now honours file args (before it silently checked only its own folder).
    DONE 19 Nov 12:4x AM PST: gold-sheet LIVE (main b7e7cb1, /reviews/gold-sheet.html 200). GSC Request indexing OK for all 10 listed
    (all 10 already 'URL is on Google') + gold-sheet (was 'unknown to Google'). Property = URL prefix https://handicapperwatchdog.com/ (not sc-domain).
+   19 Nov: queued 08 asa-sports, 09 mike-barner, 10 king-creole (drafts copy in new_reviews_1115/_queued_1119). Skipped: johnny-detroit
+   (not selling), tony-karpinski, chip-chirimbes, jeff-hochman (no independent buyer posts); joe-nelson = Nelly's, held as duplicate.
    Next: queue publishes Mon-Fri 9:15 (raphael-esparza 19 Nov); 20 Nov GSC impressions; owner call on graded record + data report.
 3. SEO open (needs owner OK): add 209 profiles with 100+ picks to sitemap + IndexNow (1107 rule said let Google add naturally);
    profile titles with platform/handle for name searches; ~15 review pages still need GSC Request indexing (10/day, his Chrome).
