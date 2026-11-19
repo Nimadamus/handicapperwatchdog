@@ -8,7 +8,7 @@ Run weekly (scheduled task "HWD Weekly Digest", Monday 8 AM PT):
   python tools/hwd_secrets.py run -- python tools/send_digest.py [--dry-run] [--only you@example.com]
 Needs ALERTS_TOKEN and BREVO_API_KEY in the environment (hwd_secrets.py run provides them).
 """
-import argparse, datetime, json, os, subprocess, sys, urllib.request
+import argparse, datetime, json, os, re, subprocess, sys, urllib.request
 from zoneinfo import ZoneInfo
 
 API = 'https://api.handicapperwatchdog.com'
@@ -16,6 +16,7 @@ SITE = 'https://handicapperwatchdog.com'
 SENDER = {'email': 'contact@handicapperwatchdog.com', 'name': 'Handicapper Watchdog'}
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 UA = {'user-agent': 'hwd-digest'}
+QA = re.compile(r'\+hwdqa|qa-hwd-probe', re.I)
 
 
 def get(url, headers=None):
@@ -101,7 +102,7 @@ def main():
     reviews = new_reviews()
     sent = skipped = failed = 0
     for acct in due:
-        text = body_for(acct, by_id, reviews)
+        text = None if QA.search(acct['email']) else body_for(acct, by_id, reviews)  # QA addresses never get real mail
         if a.dry_run:
             print('---', acct['email'], '\n' + (text or '(nothing to send)'))
             continue
