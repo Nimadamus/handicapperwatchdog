@@ -31,6 +31,11 @@ Work from worktree `~/hwd-names-1114` (branch names-1114, push `HEAD:main`; main
 2e. 17 Nov 1:10 PM PST batch 5 LIVE (main 1f39c5e, 11 pages, IndexNow 136 ok). Batch 6 HELD (validated, not published, deep standard):
    gold-sheet, nellys-sports, the-sports-reporter, joe-damico, raphael-esparza, paul-bovi, tony-t in ~/hwd_testimonials/new_reviews_1115.
    PACE 5 a week (Nima OK 17 Nov): task "HWD Review Publish" Mon-Fri 9:15 AM runs ~/hwd_testimonials/publish_next.py, one file from ~/hwd_testimonials/publish_queue (NN_slug.json) per run, log publish_next.log; add new deep drafts to the queue. Skipped: al-mcmordie (= big-al), dave-cokin (died 2024), alan-harris, chris-king, ryan-pelczarski, doug-upstone, kevin-rogers.
+   19 Nov PM (owner: add all online pick sellers, find reviews): queued 11 scott-rickenbach, 12 stephen-nover, 13 ross-benjamin, 14 bob-balfe,
+   15 freddy-wills, 16 kingcap-sports, 17 parlay-science, 18 dormroom-degenerates (drafts ~/hwd_testimonials/new_reviews_1119/_queued).
+   Skipped: jim-hurley, dave-malinsky, pauly-howard, carlo-campanella, steve-janus, goat-sports-bets, trust-my-system, zcode (thin/inactive).
+   Master seller list: ~/hwd_testimonials/candidates_1119.json (discovery agent; write next batches from it, highest buzz first).
+   Arctic Shift full text search rate limited 19 Nov; retry Reddit for queued names.
    Owner rules 17 Nov: NO thin pages (BRIEF.md depth standard); NEVER his name/editor byline on HWD (7b51424 reverted 7fa860f).
    DONE 17 Nov: 7 thin pages deepened (11 to 17 sources, 6 FAQ) LIVE main 796d3e8, verified 6:47 PM PST. Drafts in ~/hwd_testimonials/deepen_1117/_published.
    validate.py now honours file args (before it silently checked only its own folder).
