@@ -31,11 +31,20 @@ Work from worktree `~/hwd-names-1114` (branch names-1114, push `HEAD:main`; main
 2e. 17 Nov 1:10 PM PST batch 5 LIVE (main 1f39c5e, 11 pages, IndexNow 136 ok). Batch 6 HELD (validated, not published, deep standard):
    gold-sheet, nellys-sports, the-sports-reporter, joe-damico, raphael-esparza, paul-bovi, tony-t in ~/hwd_testimonials/new_reviews_1115.
    PACE 5 a week (Nima OK 17 Nov): task "HWD Review Publish" Mon-Fri 9:15 AM runs ~/hwd_testimonials/publish_next.py, one file from ~/hwd_testimonials/publish_queue (NN_slug.json) per run, log publish_next.log; add new deep drafts to the queue. Skipped: al-mcmordie (= big-al), dave-cokin (died 2024), alan-harris, chris-king, ryan-pelczarski, doug-upstone, kevin-rogers.
-   19 Nov PM (owner: add all online pick sellers, find reviews): queued 11 scott-rickenbach, 12 stephen-nover, 13 ross-benjamin, 14 bob-balfe,
-   15 freddy-wills, 16 kingcap-sports, 17 parlay-science, 18 dormroom-degenerates (drafts ~/hwd_testimonials/new_reviews_1119/_queued).
-   Skipped: jim-hurley, dave-malinsky, pauly-howard, carlo-campanella, steve-janus, goat-sports-bets, trust-my-system, zcode (thin/inactive).
-   Master seller list: ~/hwd_testimonials/candidates_1119.json (discovery agent; write next batches from it, highest buzz first).
-   Arctic Shift full text search rate limited 19 Nov; retry Reddit for queued names.
+   19 Nov PM (owner: add all online pick sellers, find reviews; break time ~2:30 PM PST): publish_queue now holds 32 files (03 to 34),
+   24 written today: 11 scott-rickenbach, 12 stephen-nover, 13 ross-benjamin, 14 bob-balfe, 15 freddy-wills, 16 kingcap-sports,
+   17 parlay-science, 18 dormroom-degenerates, 19 tipstrr, 20 rotobot, 21 elite-picks, 22 propgpt, 23 vernon-croy, 24 jimmy-adams,
+   25 goodfella, 26 legup-picks, 27 winible, 28 whop-sports-betting, 29 picks-office, 30 brad-powers, 31 andre-gomes, 32 jr-odonnell,
+   33 sleepyj, 34 greg-shaker. Drafts: ~/hwd_testimonials/new_reviews_1119/_queued. Pace still 5 a week (ask owner if faster).
+   HELD for owner (new_reviews_1119/_hold): kelly-in-vegas (no paid buyer posts, press only), cody-brown-bets (free picks, not a seller).
+   RESUME: a SportsCapping/BetFirm writer agent was still running at break; any loose *.json in new_reviews_1119 = unchecked drafts:
+   run validate.py, check (no arctic/X post links, 'they' for forum members, no bare scammer lines, related slugs exist), then queue as 35+.
+   Master list ~/hwd_testimonials/candidates_1119.json (134 sellers; 108 have no buyer buzz, most rosters now checked and rejected as thin).
+   Rejected today (thin/inactive/not sellers): jim-hurley, dave-malinsky, pauly-howard, carlo-campanella, steve-janus, goat-sports-bets,
+   trust-my-system, zcode, blogabet, betting-gods, the-hobby-capper, five-star-sports-picks, purdys-picks, chef-t, big-mikes-picks,
+   mattys-picks, allen-eastman, tokyo-brandon, vegasbutcher + ~35 roster names with no forum posts.
+   Arctic Shift full text search rate limited all day 19 Nov; retry Reddit for queued names.
+   HARVESTER AUDIT 19 Nov: see memory project_watchdog_audit_20261119.md (2 picks await owner 'hold both': 197339, 192518).
    Owner rules 17 Nov: NO thin pages (BRIEF.md depth standard); NEVER his name/editor byline on HWD (7b51424 reverted 7fa860f).
    DONE 17 Nov: 7 thin pages deepened (11 to 17 sources, 6 FAQ) LIVE main 796d3e8, verified 6:47 PM PST. Drafts in ~/hwd_testimonials/deepen_1117/_published.
    validate.py now honours file args (before it silently checked only its own folder).
