@@ -39,6 +39,19 @@ def tag(kind):
     return '<span class="evt %s">%s</span>' % (cls, E(kind))
 
 
+# Free weekly email sign up (owner OK 19 Nov 2026): new review pages and graded results. Double opt in by email; never pending picks.
+ALERTS = ('<section class="panel edcard" id="alerts"><h2>Get new reviews by email</h2><p class="lede tight">One free email every Monday with the review pages '
+          'we published that week. Follow any tracked account from its profile to add its graded results. No picks before a game. Stop any time.</p>'
+          '<form class="row hwdsu" data-reviews="1"><input type="email" required placeholder="you@example.com" autocomplete="email" aria-label="Email">'
+          '<input name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">'
+          '<button class="btn" type="submit">Email me</button></form><p class="muted small hwdsum" style="margin:8px 0 0"></p></section>'
+          '<script>(function(){var f=document.querySelector(".hwdsu");if(!f)return;var A=location.hostname.replace(/^www[.]/,"")==="handicapperwatchdog.com"?"https://api.handicapperwatchdog.com":"";'
+          'var m=document.querySelector(".hwdsum");f.addEventListener("submit",function(e){e.preventDefault();var b=f.querySelector("button");b.disabled=true;'
+          'fetch(A+"/api/signup",{method:"POST",credentials:"include",headers:{"content-type":"application/json"},body:JSON.stringify({email:f.querySelector("input[type=email]").value,reviews:true,website:f.website.value})})'
+          '.then(function(r){return r.json();}).then(function(d){m.textContent=d.message||d.error||"Something went wrong. Try again.";b.disabled=!!d.ok;if(d.ok&&window.gtag)gtag("event","alerts_signup");})'
+          '.catch(function(){b.disabled=false;m.textContent="Could not send. Try again.";});});})();</script>')
+
+
 def render(rev, st, names, document):
     url = 'https://handicapperwatchdog.com/reviews/%s.html' % rev['slug']
     src = rev['sources']
@@ -106,7 +119,7 @@ def render(rev, st, names, document):
     side = ('<aside class="rside"><nav class="rtoc" aria-label="On this page"><p class="plate-k">On this page</p>%s</nav>'
             '<div class="sidepro"><p class="plate-k">Watchdog Pro</p><p>Graded records captured before the game starts. Check a handicapper before you pay one.</p>'
             '<a class="btn pro" href="../pricing.html">See Watchdog Pro</a></div></aside>') % ''.join('<a href="#%s">%s</a>' % (a, E(b)) for a, b in toc)
-    body = hero + '<div class="rlayout">' + side + '<article class="rmain">' + answer + prices + guar + claims + record + customers + conf + verdict + check + faq + rel + sources + standards + '</article></div>'
+    body = hero + '<div class="rlayout">' + side + '<article class="rmain">' + answer + prices + guar + claims + record + customers + conf + verdict + check + ALERTS + faq + rel + sources + standards + '</article></div>'
     org = {'@type': 'Organization', 'name': 'Handicapper Watchdog', 'url': 'https://handicapperwatchdog.com/'}
     ld = {'@context': 'https://schema.org', '@graph': [
         {'@type': 'BreadcrumbList', 'itemListElement': [

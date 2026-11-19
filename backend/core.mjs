@@ -378,6 +378,17 @@ async function setAlerts(env, a, on) {
   await kvPut(env, 'alertset', [...set]);
   await saveAccount(env, a);
 }
+// Free weekly email (owner OK 19 Nov 2026): graded results of followed accounts and new review pages. Never pending picks.
+// Sign up confirms by email (double opt in). The weekly sender (GitHub Actions, tools/send_digest.py) reads the list with
+// ALERTS_TOKEN and marks each address sent for the week, so a rerun never mails anyone twice.
+const FREE_FOLLOWS = 25;
+async function setDigest(env, a, on) {
+  a.digest = !!on;
+  const set = new Set((await kvGet(env, 'digestset')) || []);
+  if (on) set.add(a.id); else set.delete(a.id);
+  await kvPut(env, 'digestset', [...set]);
+  await saveAccount(env, a);
+}
 async function loadPending(env, deps) {
   const site = env.SITE_URL || 'https://handicapperwatchdog.com';
   const r = await deps.fetch(site + '/data/x/pending.bin?alerts=' + Date.now(), { cache: 'no-store' });
@@ -464,8 +475,8 @@ async function route(req, env, deps) {
     if (path === '/api/alerts/off' && req.method === 'GET') {
       const id = url.searchParams.get('a') || '', sig = url.searchParams.get('s') || '';
       const a = /^[A-Za-z0-9_-]{8,40}$/.test(id) && safeEqual(sig, await unsubSig(env, id)) ? await kvGet(env, 'acct:' + id) : null;
-      if (a) await setAlerts(env, a, false);
-      return new Response(`<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Alerts</title><body style="font:16px system-ui;background:#0b1220;color:#e6edf6;padding:40px"><h1 style="font-size:22px">${a ? 'Pick alerts are off' : 'That link is not valid'}</h1><p>${a ? 'You will not get more pick alert emails. Turn them back on any time from your account page.' : 'Turn alerts off from your account page instead.'}</p><p><a style="color:#e7c675" href="${env.SITE_URL || 'https://handicapperwatchdog.com'}/account.html">Your account</a></p></body>`, { status: a ? 200 : 400, headers: { 'content-type': 'text/html; charset=utf-8' } });
+      if (a) { await setAlerts(env, a, false); await setDigest(env, a, false); }
+      return new Response(`<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Alerts</title><body style="font:16px system-ui;background:#0b1220;color:#e6edf6;padding:40px"><h1 style="font-size:22px">${a ? 'Email alerts are off' : 'That link is not valid'}</h1><p>${a ? 'You will not get more alert emails from Handicapper Watchdog. Turn them back on any time from your account page.' : 'Turn alerts off from your account page instead.'}</p><p><a style="color:#e7c675" href="${env.SITE_URL || 'https://handicapperwatchdog.com'}/account.html">Your account</a></p></body>`, { status: a ? 200 : 400, headers: { 'content-type': 'text/html; charset=utf-8' } });
     }
 
     if (path === '/api/ev/summary' && req.method === 'GET') {
@@ -499,7 +510,7 @@ async function route(req, env, deps) {
     if (path === '/api/me' && req.method === 'GET') {
       const e = entitlement(acct);
       return json({ signed_in: !!acct, email: acct && acct.email, pro: e.pro, reason: e.reason, plan: acct && acct.plan || null,
-        status: acct && acct.status || null, period_end: acct && acct.period_end || null, cancel_at_period_end: !!(acct && acct.cancel_at_period_end), alerts: !!(acct && acct.alerts), follows: acct && acct.follows ? acct.follows.length : 0,
+        status: acct && acct.status || null, period_end: acct && acct.period_end || null, cancel_at_period_end: !!(acct && acct.cancel_at_period_end), alerts: !!(acct && acct.alerts), digest: !!(acct && acct.digest), digest_reviews: !!(acct && acct.digest_reviews), follows: acct && acct.follows ? acct.follows.length : 0,
         payment_failed: !!(acct && acct.payment_failed), billing: billingReady(env) && !liveBlocked(env) });
     }
 
@@ -582,21 +593,97 @@ async function route(req, env, deps) {
       return json({ alerts: acct.alerts });
     }
 
-    // Followed handicappers (anonymous Watchdog IDs), stored on the account. Pro feature; list kept even if Pro lapses.
+    // Followed handicappers (anonymous Watchdog IDs), stored on the account. Free members follow up to FREE_FOLLOWS, Pro up to 100.
     if (path === '/api/follows') {
       if (!acct) return err(401, 'Sign in to follow handicappers.');
       if (req.method === 'GET') return json({ ids: acct.follows || [] });
       if (req.method === 'POST') {
-        if (!entitlement(acct).pro) return err(402, 'Following is part of Watchdog Pro.');
         const b = await req.json().catch(() => ({}));
         const id = String(b.id || '').toLowerCase();
         if (!/^[0-9a-f]{6,16}$/.test(id)) return err(400, 'Unknown Watchdog ID.');
         const set = new Set(acct.follows || []);
-        if (b.on === false) set.delete(id); else { if (!set.has(id) && set.size >= 100) return err(400, 'You can follow up to 100 handicappers.'); set.add(id); }
+        const cap = entitlement(acct).pro ? 100 : FREE_FOLLOWS;
+        if (b.on === false) set.delete(id); else { if (!set.has(id) && set.size >= cap) return err(400, 'You can follow up to ' + cap + ' handicappers.'); set.add(id); }
         acct.follows = [...set];
         await saveAccount(env, acct);
         return json({ ids: acct.follows });
       }
+    }
+
+    // Free email alerts: sign up with an email, confirm by link, then the weekly results email starts.
+    if (path === '/api/signup' && req.method === 'POST') {
+      const b = await req.json().catch(() => ({}));
+      if (b.website) return json({ ok: true }); // honeypot
+      const email = String(b.email || '').trim().toLowerCase();
+      if (!validEmail(email)) return err(400, 'Enter a valid email.');
+      const follow = String(b.follow || '').toLowerCase();
+      if (follow && !/^[0-9a-f]{6,16}$/.test(follow)) return err(400, 'Unknown Watchdog ID.');
+      const ip = req.headers.get('cf-connecting-ip') || 'x';
+      for (const [k, max] of [['rl:signup:ip:' + ip, 10], ['rl:signup:em:' + email, 3]]) {
+        const n = +(await env.KV.get(k) || 0);
+        if (n >= max) return err(429, 'Too many tries. Try again in an hour.');
+        await env.KV.put(k, String(n + 1), { expirationTtl: 3600 });
+      }
+      const a = await accountByEmail(env, email, true);
+      const tok = randomId(24);
+      await kvPut(env, 'confirm:' + tok, { a: a.id, follow: follow || null, reviews: !!b.reviews }, 2 * DAY);
+      const link = site + '/account.html?confirm=' + tok;
+      const what = follow ? 'the graded results of the account you chose to follow' + (b.reviews ? ' and new review pages on pick sellers' : '') : 'new review pages on pick sellers';
+      await sendMail(env, deps, email, 'Confirm your Handicapper Watchdog alerts',
+        `Tap to confirm your free weekly email from Handicapper Watchdog:
+
+${link}
+
+It covers ${what}. Graded results only, never picks before a game. You can follow more accounts or stop the email at any time.
+
+If you did not ask for this, ignore this email and nothing will be sent.`);
+      return json({ ok: true, message: 'Check your inbox for a confirmation link.', ...(env.DEV_MAIL_ECHO === '1' ? { dev_link: link } : {}) });
+    }
+    if (path === '/api/signup/confirm' && req.method === 'POST') {
+      const { token } = await req.json().catch(() => ({}));
+      if (typeof token !== 'string' || !/^[A-Za-z0-9_-]{20,64}$/.test(token)) return err(400, 'Bad link.');
+      const rec = await kvGet(env, 'confirm:' + token);
+      if (!rec) return err(400, 'That link has expired or was already used.');
+      await env.KV.delete('confirm:' + token);
+      const a = await kvGet(env, 'acct:' + rec.a);
+      if (!a) return err(400, 'Account not found.');
+      if (rec.follow) {
+        const set = new Set(a.follows || []);
+        if (set.size < (entitlement(a).pro ? 100 : FREE_FOLLOWS)) set.add(rec.follow);
+        a.follows = [...set];
+      }
+      if (rec.reviews || !rec.follow) a.digest_reviews = true;
+      a.confirmed = a.confirmed || now();
+      await setDigest(env, a, true);
+      return json({ ok: true, email: a.email, follows: (a.follows || []).length, reviews: !!a.digest_reviews }, 200, { 'set-cookie': await makeCookie(env, a.id) });
+    }
+    if (path === '/api/digest' && req.method === 'POST') {
+      if (!acct) return err(401, 'Sign in first.');
+      const b = await req.json().catch(() => ({}));
+      if ('reviews' in b) acct.digest_reviews = !!b.reviews;
+      if (b.on && !acct.confirmed) acct.confirmed = now(); // signed in by an emailed link, so the address is proven
+      await setDigest(env, acct, !!b.on);
+      return json({ digest: acct.digest, digest_reviews: !!acct.digest_reviews });
+    }
+    if ((path === '/api/digest/list' && req.method === 'GET') || (path === '/api/digest/sent' && req.method === 'POST')) {
+      const t = req.headers.get('x-alerts-token') || '';
+      if (!env.ALERTS_TOKEN || !safeEqual(t, env.ALERTS_TOKEN)) return err(401, 'no');
+      if (req.method === 'POST') {
+        const b = await req.json().catch(() => ({}));
+        if (!/^\d{4}-W\d{2}$/.test(String(b.week || '')) || !/^[A-Za-z0-9_-]{8,40}$/.test(String(b.id || ''))) return err(400, 'bad');
+        await env.KV.put('dg:' + b.week + ':' + b.id, '1', { expirationTtl: 21 * DAY });
+        return json({ ok: true });
+      }
+      const week = url.searchParams.get('week') || '';
+      if (!/^\d{4}-W\d{2}$/.test(week)) return err(400, 'week like 2026-W47');
+      const out = [];
+      for (const id of (await kvGet(env, 'digestset')) || []) {
+        const a = await kvGet(env, 'acct:' + id);
+        if (!a || !a.digest || !a.confirmed || await env.KV.get('dg:' + week + ':' + id)) continue;
+        out.push({ id, email: a.email, follows: a.follows || [], reviews: !!a.digest_reviews,
+          unsub: `${env.API_URL || 'https://api.handicapperwatchdog.com'}/api/alerts/off?a=${id}&s=${await unsubSig(env, id)}` });
+      }
+      return json({ week, accounts: out });
     }
 
     // Support: the site has no inbox, so the form mails the owner with the customer as reply-to and keeps a copy in KV.
@@ -653,7 +740,7 @@ ${message}`);
         await sendLogin(env, deps, e, link);
         if (env.DEV_MAIL_ECHO === '1') dev = link; // local testing only; never set this in production
       }
-      return json({ ok: true, message: 'If that email has a Watchdog Pro account, a sign in link is on its way.', ...(dev ? { dev_link: dev } : {}) });
+      return json({ ok: true, message: 'If that email has a Handicapper Watchdog account, a sign in link is on its way.', ...(dev ? { dev_link: dev } : {}) });
     }
 
     if (path === '/api/login/verify' && req.method === 'POST') {

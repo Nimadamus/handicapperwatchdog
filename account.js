@@ -7,8 +7,8 @@
   var clean = function () { history.replaceState(null, '', location.pathname); };
 
   function signedOut(msg) {
-    box.innerHTML = '<div class="ph"><h1>Sign in to Watchdog Pro</h1></div><div class="pb">' + (msg ? '<div class="notice">' + esc(msg) + '</div>' : '') +
-      '<p class="muted" style="margin:0 0 14px">Enter the email you subscribed with and we will send you a sign in link. New here? <a href="pricing.html" style="text-decoration:underline">See Watchdog Pro</a>.</p>' +
+    box.innerHTML = '<div class="ph"><h1>Sign in</h1></div><div class="pb">' + (msg ? '<div class="notice">' + esc(msg) + '</div>' : '') +
+      '<p class="muted" style="margin:0 0 14px">Enter the email you used for Watchdog Pro or the free weekly email and we will send you a sign in link. New here? Follow any account from its profile for a free weekly results email, or <a href="pricing.html" style="text-decoration:underline">see Watchdog Pro</a>.</p>' +
       '<form id="lf" class="row"><input id="em" type="email" required placeholder="you@example.com" autocomplete="email" aria-label="Email"><button class="btn" type="submit">Email me a link</button></form><p class="muted small" id="lm"></p></div>';
     document.getElementById('lf').addEventListener('submit', function (e) {
       e.preventDefault();
@@ -32,7 +32,9 @@
     box.innerHTML = '<div class="ph"><h1>Your account</h1><span class="lock">' + (s.pro ? 'Watchdog Pro' : 'Free') + '</span></div><div class="pb">' +
       (msg ? '<div class="notice ok">' + esc(msg) + '</div>' : '') +
       '<ul class="facts"><li><span>Email</span><b>' + esc(s.email) + '</b></li><li><span>Plan</span><b>' + (s.plan === 'annual' ? '$499 a year' : s.plan === 'monthly' ? '$49.99 a month' : 'None') + '</b></li>' +
-      '<li><span>Status</span><b>' + status + '</b></li></ul>' +
+      '<li><span>Status</span><b>' + status + '</b></li><li><span>Following</span><b>' + (s.follows || 0) + ' accounts</b></li></ul>' +
+      '<div class="notice" style="margin-top:14px"><label style="display:flex;gap:10px;align-items:flex-start"><input type="checkbox" id="dg"' + (s.digest ? ' checked' : '') + '><span><b>Free weekly email</b><br><span class="muted small">Every Monday: graded results of the accounts you follow. Never picks before a game.</span></span></label>' +
+      '<label style="display:flex;gap:10px;align-items:flex-start;margin-top:8px"><input type="checkbox" id="dgr"' + (s.digest_reviews ? ' checked' : '') + '><span>Include new review pages on pick sellers</span></label><p class="muted small" id="dgmsg" style="margin:6px 0 0"></p></div>' +
       (s.payment_failed ? '<div class="notice">Your last payment did not go through. Update your card in billing to keep Pro.</div>' : '') +
       '<div class="row" style="margin-top:16px">' + (s.pro || s.status && s.status !== 'none' ? '<button class="btn" id="bill" type="button">Manage billing</button>' : '<a class="btn pro" href="pricing.html">Get Watchdog Pro</a>') +
       '<a class="btn ghost" href="cappers.html">Open rankings</a><button class="btn ghost" id="out" type="button">Sign out</button></div></div>';
@@ -41,6 +43,11 @@
       fetch(HWD.api + '/api/alerts', { method: 'POST', credentials: 'include', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ on: al.checked }) })
         .then(function (r) { return r.json(); }).then(function (d) { al.disabled = false; if (d.error) { al.checked = !al.checked; m.textContent = d.error; } else { m.textContent = d.alerts ? 'Alerts on.' : 'Alerts off.'; if (window.gtag) gtag('event', d.alerts ? 'alerts_on' : 'alerts_off'); } })
         .catch(function () { al.disabled = false; al.checked = !al.checked; m.textContent = 'Could not save. Try again.'; }); };
+    var dg = document.getElementById('dg'), dgr = document.getElementById('dgr');
+    var saveDg = function () { dg.disabled = dgr.disabled = true; var m = document.getElementById('dgmsg');
+      HWD.digest(dg.checked, dgr.checked).then(function (d) { dg.disabled = dgr.disabled = false; if (d.error) { m.textContent = d.error; return; } dg.checked = !!d.digest; dgr.checked = !!d.digest_reviews; m.textContent = d.digest ? 'Weekly email on.' : 'Weekly email off.'; })
+        .catch(function () { dg.disabled = dgr.disabled = false; m.textContent = 'Could not save. Try again.'; }); };
+    if (dg) { dg.onchange = saveDg; dgr.onchange = saveDg; }
     var bill = document.getElementById('bill');
     if (bill) bill.onclick = function () { bill.disabled = true; HWD.portal().then(function (d) { if (!d.url) { bill.disabled = false; alertBox(d.error); } }); };
     document.getElementById('out').onclick = function () { HWD.logout(); };
@@ -48,8 +55,8 @@
   function alertBox(m) { var n = document.createElement('div'); n.className = 'notice'; n.textContent = m || 'Billing is not available right now.'; box.querySelector('.pb').prepend(n); }
 
   HWD.ready.then(function (s) {
-    if (!s.api) { box.innerHTML = '<div class="ph"><h1>Watchdog Pro accounts</h1></div><div class="pb"><p class="muted" style="margin:0">Accounts open with Watchdog Pro. <a href="pricing.html" style="text-decoration:underline">See plans</a>.</p></div>'; return; }
-    var sid = P.get('session_id'), tok = P.get('login');
+    if (!s.api) { box.innerHTML = '<div class="ph"><h1>Watchdog Pro accounts</h1></div><div class="pb"><p class="muted" style="margin:0">Accounts are not available right now. Please try again shortly.</p></div>'; return; }
+    var sid = P.get('session_id'), tok = P.get('login'), conf = P.get('confirm');
     var backBar = function () {
       var to = HWD.returnTo(); if (!to) return;
       var el = document.createElement('p'); el.className = 'muted small'; el.style.margin = '12px 0 0';
@@ -64,6 +71,14 @@
         if (d._status !== 200) return s.signed_in ? signedIn(s, d.error) : signedOut(d.error);
         if (window.gtag && !d.duplicate) { var annual = /annual/.test(d.plan || ''); gtag('event', 'purchase', { transaction_id: sid, currency: 'USD', value: annual ? 499 : 49.99, items: [{ item_id: 'watchdog_pro_' + (annual ? 'annual' : 'monthly'), item_name: 'Watchdog Pro', quantity: 1 }] }); }
         return fetch(HWD.api + '/api/me', { credentials: 'include' }).then(function (r) { return r.json(); }).then(function (me) { setTimeout(backBar, 0); signedIn(me, d.duplicate ? 'You already had Watchdog Pro. The extra checkout was canceled.' : 'Welcome to Watchdog Pro. Full pick ledgers and every breakdown are unlocked on every profile.'); });
+      });
+    }
+    if (conf) {
+      return HWD.confirm(conf).then(function (d) {
+        clean();
+        if (d._status !== 200) return s.signed_in ? signedIn(s, d.error) : signedOut(d.error);
+        if (window.gtag) gtag('event', 'alerts_confirm');
+        return fetch(HWD.api + '/api/me', { credentials: 'include' }).then(function (r) { return r.json(); }).then(function (me) { setTimeout(backBar, 0); signedIn(me, 'Confirmed. Your free weekly email starts next Monday. Follow more accounts from any profile.'); });
       });
     }
     if (tok) {

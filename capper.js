@@ -249,7 +249,7 @@
     hookCharts();
     ledger(L);
     afterRender(p);
-    if (window.HWD) HWD.ready.then(function (st) { if (st.pro) unlock(s, o); });
+    if (window.HWD) HWD.ready.then(function (st) { if (st.pro) unlock(s, o); if (st.api) HWD.followButton(id, st.pro); });
     root.addEventListener('click', function (e) {
       var b = e.target.closest('button.tab'); if (!b) return;
       var box = b.parentNode, name = box.getAttribute('data-tabs'), i = b.getAttribute('data-i');

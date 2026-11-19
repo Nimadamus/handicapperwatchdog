@@ -613,3 +613,36 @@ test('checkout carries first party attribution (source, landing page, offer slot
   const d = await t.call('POST', '/api/checkout', { plan: 'annual', email: 'other@example.com' });
   assert.equal(t.S.sessions[d.body.url.split('/').pop()].metadata.src, 'unknown');
 });
+
+test('free alerts: sign up, confirm by link, follow without Pro, weekly list once per week, signed unsubscribe stops it', async () => {
+  const t = setup({ ALERTS_TOKEN: 'tok_digest' });
+  assert.equal((await t.call('POST', '/api/signup', { email: 'bad' })).status, 400);
+  assert.equal((await t.call('POST', '/api/signup', { email: 'a@b.co', follow: 'zz' })).status, 400);
+  assert.equal((await t.call('POST', '/api/signup', { email: 'bot@b.co', website: 'x' })).body.ok, true);
+  const s = await t.call('POST', '/api/signup', { email: 'Fan@Example.com', follow: 'A1B2C3D4E5' });
+  assert.equal(s.body.ok, true); assert.match(s.body.dev_link, /account\.html\?confirm=/);
+  const list = async (week = '2026-W47') => (await t.call('GET', '/api/digest/list?week=' + week, undefined, { 'x-alerts-token': 'tok_digest' })).body;
+  assert.equal((await list()).accounts.length, 0); // not confirmed yet
+  assert.equal((await t.call('GET', '/api/digest/list?week=2026-W47')).status, 401);
+  const tok = s.body.dev_link.split('confirm=')[1];
+  const c = await t.call('POST', '/api/signup/confirm', { token: tok });
+  assert.equal(c.status, 200); assert.equal(c.body.follows, 1);
+  assert.equal((await t.call('POST', '/api/signup/confirm', { token: tok })).status, 400); // one use
+  const me = (await t.call('GET', '/api/me')).body;
+  assert.equal(me.signed_in, true); assert.equal(me.pro, false); assert.equal(me.digest, true);
+  assert.deepEqual((await t.call('POST', '/api/follows', { id: 'ffffff0001' })).body.ids, ['a1b2c3d4e5', 'ffffff0001']);
+  const l1 = await list();
+  assert.equal(l1.accounts.length, 1); assert.equal(l1.accounts[0].email, 'fan@example.com');
+  assert.deepEqual(l1.accounts[0].follows, ['a1b2c3d4e5', 'ffffff0001']);
+  assert.equal((await t.call('POST', '/api/digest/sent', { week: '2026-W47', id: l1.accounts[0].id }, { 'x-alerts-token': 'tok_digest' })).body.ok, true);
+  assert.equal((await list()).accounts.length, 0); // sent this week
+  assert.equal((await list('2026-W48')).accounts.length, 1);
+  const u = new URL(l1.accounts[0].unsub);
+  const off = await handle(new Request(SITE + u.pathname + u.search), t.env, { fetch: t.S.fetch });
+  assert.equal(off.status, 200);
+  assert.equal((await list('2026-W48')).accounts.length, 0);
+  assert.equal((await t.call('POST', '/api/digest', { on: true, reviews: true })).body.digest, true);
+  assert.equal((await list('2026-W48')).accounts[0].reviews, true);
+  for (let i = 0; i < 23; i++) await t.call('POST', '/api/follows', { id: 'abcdef' + String(i).padStart(4, '0') });
+  assert.equal((await t.call('POST', '/api/follows', { id: 'abcdef9999' })).status, 400); // free cap 25
+});

@@ -86,17 +86,43 @@
       var self = this;
       return post('/api/follows', { id: id, on: on }).then(function (d) { if (d.ids) self._follows = Promise.resolve(d.ids); if (window.gtag) gtag('event', on ? 'follow' : 'unfollow'); return d; });
     },
-    // Follow toggle for a profile header (Pro members only)
-    followButton: function (id) {
+    // Free weekly email sign up (double opt in). Never pending picks, only graded results and new reviews.
+    signup: function (email, follow, reviews, website) { return post('/api/signup', { email: email, follow: follow || undefined, reviews: !!reviews, website: website || '' }); },
+    confirm: function (token) { return post('/api/signup/confirm', { token: token }); },
+    digest: function (on, reviews) { return post('/api/digest', reviews == null ? { on: on } : { on: on, reviews: reviews }); },
+    // Follow toggle for a profile header. Everyone can follow; signed out visitors get the free email sign up.
+    followButton: function (id, pro) {
       var host = document.querySelector('.pid > div:last-child'); if (!host || document.getElementById('fbtn')) return;
       var u = document.querySelector('.phero .unl');
-      if (u) u.innerHTML = '<span class="lock">Watchdog Pro</span><b>You have Watchdog Pro</b><p>The complete pick log and every breakdown are open on this profile.</p>';
+      if (pro && u) u.innerHTML = '<span class="lock">Watchdog Pro</span><b>You have Watchdog Pro</b><p>The complete pick log and every breakdown are open on this profile.</p>';
       var self = this, b = document.createElement('button');
+      if (!state.signed_in) {
+        b.id = 'fbtn'; b.type = 'button'; b.className = 'btn sm ghost'; b.style.marginTop = '10px'; b.textContent = '☆ Follow (free weekly email)';
+        host.appendChild(b);
+        b.onclick = function () {
+          if (document.getElementById('fsign')) return;
+          var f = document.createElement('form'); f.id = 'fsign'; f.className = 'row'; f.style.marginTop = '10px';
+          f.innerHTML = '<input type="email" required placeholder="you@example.com" autocomplete="email" aria-label="Email"><input name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true"><button class="btn sm" type="submit">Email me</button><p class="muted small" style="flex-basis:100%;margin:6px 0 0">Every Monday: this account’s graded results for the week. Never picks before a game. Free, stop any time.</p>';
+          host.appendChild(f);
+          f.addEventListener('submit', function (e) {
+            e.preventDefault(); var sb = f.querySelector('button'); sb.disabled = true;
+            self.signup(f.querySelector('input[type=email]').value, id, false, f.website.value).then(function (d) {
+              f.querySelector('p').textContent = d.message || d.error || 'Something went wrong. Try again.'; sb.disabled = !!d.ok;
+              if (d.ok && window.gtag) gtag('event', 'alerts_signup');
+            }).catch(function () { sb.disabled = false; f.querySelector('p').textContent = 'Could not send. Try again.'; });
+          });
+          f.querySelector('input').focus();
+        };
+        return;
+      }
       b.id = 'fbtn'; b.type = 'button'; b.className = 'btn sm ghost'; b.style.marginTop = '10px';
       var paint = function (on) { b.setAttribute('aria-pressed', on ? 'true' : 'false'); b.textContent = on ? '★ Following' : '☆ Follow'; };
       host.appendChild(b);
       self.follows().then(function (ids) { var on = ids.indexOf(id) >= 0; paint(on);
-        b.onclick = function () { b.disabled = true; on = !on; self.follow(id, on).then(function (d) { b.disabled = false; if (d.error) { on = !on; } paint(on); }); };
+        b.onclick = function () { b.disabled = true; on = !on; self.follow(id, on).then(function (d) {
+          b.disabled = false; if (d.error) { on = !on; b.title = d.error; } paint(on);
+          if (on && !d.error && !state.digest) self.digest(true).then(function (r) { if (r.digest) state.digest = true; });
+        }); };
       });
     },
     pending: function () { if (!this._pending) this._pending = open('data/x/pending.bin', 'pending'); return this._pending; }
