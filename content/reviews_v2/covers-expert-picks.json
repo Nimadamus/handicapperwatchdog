@@ -1,15 +1,15 @@
 {
   "slug": "covers-expert-picks",
   "name": "Covers.com expert picks",
-  "legal_name": "CS Media Ltd (part of the Genius Sports group)",
+  "legal_name": "CS Media Ltd, operator of covers.com; part of Legend, which Genius Sports (NYSE: GENI) bought in 2026",
   "kind": "Free picks on a betting media site, plus free contests",
-  "checked": "7 Nov 2026",
-  "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-07",
+  "checked": "20 Nov 2026",
+  "checked_iso": "2026-11-20",
+  "updated_iso": "2026-11-20",
   "title": "Covers Expert Picks Review 2026: Pricing, Record, Worth It?",
-  "description": "Covers expert picks review, checked 7 Nov 2026: free picks, who owns Covers, which records you can check, the free contests, and what users say.",
+  "description": "Covers expert picks review, checked 20 Nov 2026: free picks, who owns Covers, the new analyst record boxes checked, the contests, and user views.",
   "h1": "Covers.com expert picks review",
-  "dek": "Covers is a long running betting media site that gives away expert and computer picks for free and runs free contests with cash prizes. It sells no picks package that we could find. It earns from sportsbook and prediction market offers placed beside the picks, and it shows no full graded record for its own experts.",
+  "dek": "Covers is a betting media site founded in 1995 that gives away analyst and computer picks for free and runs free contests with cash prizes. It sells no picks package. It earns from sportsbook and prediction market offers placed beside the picks, and since May 2026 it belongs to Genius Sports, the sports data company. Some analyst articles now carry a small 2026 record box, but no full pick log sits behind it.",
   "status": {
     "label": "Not verified",
     "note": "Watchdog has not graded a full, time stamped record for any Covers analyst or for the Covers computer picks. This page reports what we could check and labels everything else."
@@ -17,11 +17,15 @@
   "glance": [
     [
       "Operator",
-      "CS Media Ltd, part of the Genius Sports group (About page)"
+      "CS Media Ltd, part of the Genius Sports group (About page); offices in Post Falls, Idaho and Halifax, Nova Scotia"
     ],
     [
       "Claims to operate since",
       "1995 (About page and footer)"
+    ],
+    [
+      "Owner",
+      "Legend, parent of Covers, Casino.org and Casino Guru, bought by Genius Sports; deal closed by 1 May 2026"
     ],
     [
       "Price",
@@ -33,7 +37,7 @@
     ],
     [
       "Full public record",
-      "Not found for experts. Contest players are graded by Covers"
+      "Not found. Some articles show a 2026 \"Transparency Record\" box per analyst, with no log behind it"
     ],
     [
       "Watchdog graded record",
@@ -41,11 +45,11 @@
     ]
   ],
   "short_answer": [
-    "Covers is a real, established business. Its About page names the operator, CS Media Ltd, and says Covers is part of Genius Sports, a company listed on the New York Stock Exchange. The picks are free to read, so the legitimacy question is not about a refund or a package.",
-    "The open question is whether the picks win. The picks pages show who made each pick and roughly when, but we found no graded log of wins, losses and units for any analyst or for the computer picks. The few performance figures we found, such as a 19.79% ROI in one analyst's bio, are the site's own claims with no log behind them.",
-    "Covers also runs free contests, King of Covers and Streak Survivor, where users' picks lock at game time and are graded by Covers in units. Those leaderboards are the most checkable records on the site, but they belong to users, not to the Covers experts, and Covers runs them itself."
+    "Covers is a real, established business. Its About page names the operator, CS Media Ltd, and says Covers is part of Genius Sports, a company listed on the New York Stock Exchange. Trade press reported that Genius bought Legend, the company behind Covers, Casino.org and Casino Guru, in a deal worth up to $1.2 billion that closed in spring 2026. The picks are free to read, so the legitimacy question is not about a refund or a package.",
+    "The open question is whether the picks win. Covers ran a paid handicapper section for about 25 years and closed it in July 2022, sending several of those handicappers to WagerTalk. Today's picks come from staff analysts. Several analyst articles we opened from 15 to 19 Nov 2026 carry a small \"2026 Transparency Record\" box, for example Neil Parker's NFL top picks at 55-46 for +10.44 units. That is progress, but the boxes have no pick log behind them, and one analyst's box went from 43-51 to 53-44 in a single day, which cannot happen to a running record.",
+    "Covers also runs free contests, King of Covers and Streak Survivor, where users' picks lock at game time and are graded by Covers. Those leaderboards are the most checkable records on the site, but they belong to users, not to the Covers analysts. Users mostly praise the contests and the prompt prize payouts; the complaints we found are about picks that lost and contest rules."
   ],
-  "pricing_intro": "Covers sold nothing for its picks on 7 Nov 2026. The About page says its core products are offered \"free of charge, with no signup or subscription.\" Below is what we saw and what it costs.",
+  "pricing_intro": "Covers sold nothing for its picks on 20 Nov 2026. The About page says it offers its core products \"free of charge, with no signup or subscription.\" Below is what we saw and what it costs.",
   "pricing": [
     [
       "Expert picks and best bets (all leagues)",
@@ -59,143 +63,210 @@
     ],
     [
       "King of Covers contests",
-      "Free to enter. Season top prizes shown from a $100 Amazon gift card (CFL) to $3,000 cash (NFL)",
+      "Free to enter. Season top prizes from a $100 Amazon gift card (CFL) to $3,000 cash (NFL); $2,000 for college football, college basketball and NBA, $1,000 for NHL",
       "Contest units are not real money"
     ],
     [
       "Streak Survivor",
-      "Free. $100,000 cash for a 25 pick win streak",
+      "Free. $100,000 grand prize for a 25 game win streak",
       "No deadline, per the contests page"
     ],
     [
-      "Covers app (iPhone)",
-      "Free on the App Store",
+      "Covers app (iPhone and Android)",
+      "Free",
       "Not applicable"
     ]
   ],
   "guarantee": [
     "There is no guarantee because there is no price. Covers does not charge for its picks, so a losing pick costs the reader only what they bet on it. Betting losses are never covered by anyone.",
-    "The contests have written rules. They say no purchase is necessary, that contest units are not real money, and that cash prizes are paid only to a valid PayPal account, up to 4 to 6 weeks after the winner provides the needed details. The rules also say contests are void in United States territories, the Province of Quebec and where prohibited by law, and that Canadian winners must answer a skill question."
+    "The contests have written rules. They say \"NO PURCHASE IS NECESSARY,\" that \"Covers Contests units are not real money,\" and that cash prizes go only to a valid PayPal account, with payment \"up to 4-6 weeks after providing all necessary information.\" Winners must answer the prize email within 5 days or no prize is sent. The rules say contests are void in all United States territories, the Province of Quebec and where prohibited by law, and that Canadian winners must answer a time limited math skill question."
   ],
   "claims": [
     {
-      "claim": "\"our analysts' free expert picks and predictions give sports bettors an edge to get the best value from their bets\"",
-      "where": "Picks hub intro",
-      "status": "Seller claim"
-    },
-    {
-      "claim": "\"With more than 25 years of experience in sports betting\"; \"Established in 1995\"",
-      "where": "Picks hub and footer",
-      "status": "Seller claim"
-    },
-    {
       "claim": "Neil Parker \"finished last season with a 19.79% ROI with his NFL best bets\"",
       "where": "Neil Parker writer page",
-      "status": "Seller claim, no full log"
+      "status": "Checked against his 2026 NFL box on 15 Nov 2026: top picks 55-46 (+10.44 units) and combos 2-21 (-10.10 units), together 57-67 for about +0.34 units this season. Last season's 19.79% has no log we could find"
     },
     {
-      "claim": "Dustin Saracini, a \"self proclaimed NRFI guru\" targeting \"his second straight +10u MLB season\"",
+      "claim": "\"Josh Inglis' 2026 Transparency Record\": \"Top picks: 43-51, +8.95 units\" (18 Nov) and \"Top picks: 53-44, +5.98 units\" (19 Nov)",
+      "where": "Covers NHL best bets articles",
+      "status": "Checked: inconsistent. A running record cannot drop from 51 losses to 44 in one day while adding 10 wins and losing 2.97 units. The two boxes cannot both describe the same set of picks"
+    },
+    {
+      "claim": "Josh Inglis is \"tracking over 2,500 bets annually\" and \"All of his posted bets are tracked and available to the public\"",
+      "where": "Josh Inglis writer page",
+      "status": "Not matched: the page links no log or monthly report, and the 2026 box he carries counts about 97 top picks"
+    },
+    {
+      "claim": "\"Neil Parker's 2026 Transparency Record\": NHL \"Top picks: 58-38, +34.33 units\"; \"Combos: 7-29, +1.04 units\"",
+      "where": "Covers Oilers vs Lightning article, 19 Nov 2026",
+      "status": "Checked arithmetic: 60.4% on top picks; combos hit 19.4% but are slightly up, so they are long priced parlays. No log behind either line"
+    },
+    {
+      "claim": "\"Joe Osborne's 2026 Transparency Record\": \"Top picks: 5-5, -0.5 units\"; \"Combos: 1-9, -1.0 units\"",
+      "where": "Covers Colts vs Texans article, 19 Nov 2026",
+      "status": "Checked: a small, losing sample shown openly, which is to Covers' credit"
+    },
+    {
+      "claim": "Dustin Saracini, a \"self proclaimed NRFI guru targeting his second straight +10u MLB season\"",
       "where": "Covers writers directory",
-      "status": "Seller claim, no full log"
+      "status": "Seller claim, no log found"
     },
     {
-      "claim": "Value stars: 0 to 2 stars negative to even EV, 3 to 4 stars positive EV, 5 stars highest EV",
-      "where": "Picks hub, How is Value calculated",
-      "status": "Method described, results not shown"
+      "claim": "\"With more than 25 years of experience in sports betting, our analysts' free expert picks and predictions give sports bettors an edge\"",
+      "where": "Picks hub intro",
+      "status": "Seller claim; Covers shows no combined record for its picks"
     },
     {
-      "claim": "\"attracting more than 35 million visitors annually\"; 810,221 lifetime members",
+      "claim": "\"attracting more than 35 million visitors annually\"; \"810,221 lifetime members worldwide\"; \"We have given away over $2,000,000\" in contests",
       "where": "About page",
-      "status": "Seller claim, not checkable"
+      "status": "Seller claims, not checkable. The member count was the same on 7 Nov and 20 Nov"
     }
   ],
   "claims_note": [
-    "The ROI and unit claims sit in writer bios, not next to a record. The bio does not say how many bets the 19.79% covers, what prices were taken or where the bets were logged. An ROI on one season of best bets can swing widely, and a reader cannot check it from the page.",
-    "The star ratings come from Covers' own projections compared with the odds. A positive expected value rating is a forecast, not a result, and we found no page that grades how 5 star picks have done over time."
+    "How we checked: Covers does not publish a full graded log for any analyst. What it does publish, in some 2026 articles, is a small box headed \"2026 Transparency Record\" with wins, losses and units for top picks and for combos (parlays). We opened five such articles on 20 Nov 2026, did the arithmetic, and compared boxes for the same analyst on different days.",
+    "The boxes are a real step toward accountability, and some show losing numbers. But they give no start date, no list of the picks counted, no unit sizes and no prices, so a reader cannot rebuild them. The Josh Inglis boxes on 18 and 19 Nov disagree in a way no running record can, and the Neil Parker NFL box shows his combos losing back almost all of his top picks profit this season.",
+    "The ROI and unit claims in writer bios sit next to no record at all. The 19.79% NFL figure does not say how many bets it covers, what prices were taken or where the bets were logged. The star ratings beside picks come from Covers' own projections compared with the odds; a positive expected value rating is a forecast, not a result, and we found no page that grades how 5 star picks have done over time."
   ],
   "record": [
-    "What a reader can verify: the King of Covers contests. The rules say picks can be made only until a game starts, cannot be changed once submitted, and are graded at standard prices (risk 110 to win 100 on sides and totals, the moneyline in MLB and NHL). The Money Leaders board on 7 Nov 2026 showed full won, lost and pushed counts for each user, for example a leader at +63679 units on 1703-1544-25, 52.43% winners. Covers runs and grades these contests itself, so they are not third party results, and they cover users, not the Covers analysts.",
-    "What is the seller's own marketing: the expert and computer picks. Each pick on the NFL page shows the analyst and a rough time such as \"Pick made: yesterday,\" but we found no graded log, no season record and no units total for any analyst or for the computer picks. The only performance numbers we found were short claims in writer bios.",
-    "History: a Gambling911 article dated 20 Jul 2022 reported that the Covers expert picks section, which it said had run for nearly 25 years, was being closed, with a handful of its handicappers moving to WagerTalk. We did not find a paid Covers picks product on 7 Nov 2026."
+    "What a reader can verify: the King of Covers contests. The rules say picks can be made only until a game starts, cannot be changed once submitted, and are graded at standard prices (risk 110 to win 100 on sides and totals in basketball and football). Each wager can vary from 100 to 500 units, so unit totals mix stake size with skill. The Money Leaders board on 20 Nov 2026 showed full won, lost and pushed counts; the top player was at +72,294 units on 2,117-1,910-25, 52.55% winners, and the top four were all between 52.5% and 54%. Covers runs and grades these contests itself, and they cover users, not the Covers analysts.",
+    "What Covers publishes for its analysts: individual picks with the analyst's name, the market and the odds, and in some articles the 2026 Transparency Record box described above. We found no full graded log, season record or units total behind those boxes, and none for the computer picks.",
+    "History: Gambling911 reported on 18 and 20 Jul 2022 that Covers was shutting down its expert picks section after nearly 25 years, that WagerTalk was taking almost the entire team with Covers' blessing, and that the Ben Burns page had already been replaced with Covers content writers. The current picks are made by staff analysts and writers, many of whom also write promo and sportsbook review content.",
+    "Ownership: the About page says CS Media Ltd operates covers.com and that Covers is part of Genius Sports. Trade press reported in February 2026 that Genius would buy Legend, described as the parent of gaming affiliate properties including Covers, for up to $1.2 billion, and reported on 1 May 2026 that the deal had closed. Genius Sports is best known as an official sports data supplier to leagues and sportsbooks."
   ],
   "our_data": {
     "matched": false,
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Covers analyst or Covers computer pick is matched to a Watchdog graded record, so we make no claim about how Covers picks perform.",
-    "context": "For scale: on the Watchdog board on 7 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even, so free picks still need a full record before they mean much."
+    "context": "For scale: the Covers boxes we read ranged from 5-5 to 58-38 on top picks this year. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even, so free picks still need a full record before they mean much."
   },
-  "customers_intro": "Customer evidence on Covers is mostly about the site and its free contests, not about whether the expert picks win. Below is what we read and how much weight it carries.",
+  "customers_intro": "Customer evidence on Covers is mostly about the site and its free contests, not about whether the analyst picks win. Below is what we read and how much weight it carries.",
   "customers": [
+    {
+      "type": "Our summary",
+      "tone": "Mixed",
+      "date": "Read 20 Nov 2026",
+      "source": null,
+      "text": "We read about 30 independent reviews and posts about Covers from 2021 to 2026, on Trustpilot, the App Store and the Covers forum itself. Most are positive, and most are about the free contests, the stats and the community: Trustpilot reviewers repeatedly say contest prizes were paid promptly through PayPal, and app reviewers like the layout. Posts that judge the picks lean negative. Three one star Trustpilot reviews from 2024 and 2025 say the picks lose, a three star reviewer in May 2026 said their own tracking of the computer and expert picks came in under 50%, and Covers forum members in 2021 and 2026 called individual Covers experts weak or their free picks poorly reasoned. One 2021 forum member asked whether anyone kept a record of the Covers experts' free picks, and nobody had one. We found no complaint about billing, because nothing is sold."
+    },
     {
       "type": "Customer report",
       "tone": "Positive",
-      "date": "Checked 7 Nov 2026",
-      "text": "Trustpilot showed a TrustScore of 4.7 from 264 reviews, with 88% five star and 3% one star. The most recent reviews, from 11 Sep to 26 Oct 2026, mostly praise the free contests and prompt prize payouts; one five star review still said payouts were getting complicated. Trustpilot said Covers has not invited customers recently and that the profile is claimed.",
+      "date": "Checked 20 Nov 2026",
+      "text": "Trustpilot showed a TrustScore of 4.7 from 265 reviews (81 in the last 12 months), with 88% five star and 3% one star. The recent reviews, from July to November 2026, mostly praise the free contests, the stats and prompt PayPal payouts; one five star review said payout rules had become more complicated. Trustpilot notes that Covers has not invited customers recently and has not replied to negative reviews.",
       "source": 12
     },
     {
       "type": "Customer report",
       "tone": "Negative",
       "date": "Jun 2024 to Sep 2025",
-      "text": "Among the one star Trustpilot reviews, three complain that the picks lose, for example that expert picks never hit and that three MLB picks all lost. Others complain about a contest disqualification for multiple entries, a missed NFL Survivor deadline and a 2024 site redesign. One more recent one star review is about a different company, XCover, filed under Covers.",
+      "text": "Among the one star Trustpilot reviews, three from 2024 and 2025 say the picks lose: one says the expert picks never hit, one that the picks never cover and readers should bet the opposite, and one that three MLB picks all lost. Others complain about a contest disqualification for multiple entries and a $100 payout, a missed NFL Survivor deadline and a 2024 site redesign. A 2026 one star review is about a different company, XCover, filed under Covers.",
       "source": 13
     },
     {
       "type": "Customer report",
       "tone": "Positive",
-      "date": "Checked 7 Nov 2026",
-      "text": "The Covers iPhone app, sold by CS Media LTD and free to download, showed 4.7 stars from 470 ratings. The visible reviews praise the layout and the expert picks; one notes that links in columns go straight to FanDuel and DraftKings. App ratings judge the app, not pick results.",
+      "date": "Checked 20 Nov 2026",
+      "text": "The Covers iPhone app, sold by CS Media LTD and free to download, showed 4.7 stars from 548 ratings, up from 470 on 7 Nov. The visible reviews praise the layout and the expert picks; one notes that links in columns go straight to FanDuel and DraftKings, and the developer replies to reviews. App ratings judge the app, not pick results.",
       "source": 14
     },
     {
       "type": "Seller curated",
       "tone": "Positive",
-      "date": "Checked 7 Nov 2026",
+      "date": "Checked 20 Nov 2026",
       "text": "The Covers testimonials page quotes members praising the forums, the matchup data and the free contests, including one who says he won $1,000. These are chosen and published by Covers.",
       "source": 11
     },
     {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "4 May 2026",
+      "text": "A three star Trustpilot reviewer said they had tracked the site's computer picks and expert picks for baseball, basketball and football, and that overall pick accuracy was less than 50%. No numbers or method were shown.",
+      "source": 26
+    },
+    {
+      "type": "Customer report",
+      "tone": "Positive",
+      "date": "Mar 2026 and Nov 2024",
+      "text": "Two five star Trustpilot reviewers mentioned picks favorably: one praised the forums and the knowledge of the site's cappers, and another said they had recently hit 11 picks in a row testing themselves against other cappers in the contests.",
+      "source": 26
+    },
+    {
+      "type": "Forum post",
+      "tone": "Negative",
+      "date": "5 to 6 Apr 2021",
+      "text": "In a Covers forum thread about a free pick from one member of the old Covers experts panel, members called him one of the weaker experts, said his picks were a coin toss, and one said fading him had worked again. One member asked whether anyone kept a record of all the Covers experts' free picks; nobody posted one. One member claimed the expert worked with sportsbooks, without evidence.",
+      "source": 24
+    },
+    {
+      "type": "Forum post",
+      "tone": "Negative",
+      "date": "22 Oct 2026",
+      "text": "A Covers forum member called a Covers expert's free NBA pick on the Cavaliers poorly reasoned, saying it ignored the 76ers' opening win over the defending champions. Replies did not discuss the expert, and the thread does not say how the pick did.",
+      "source": 25
+    },
+    {
+      "type": "Customer report",
+      "tone": "Positive",
+      "date": "Jul 2026",
+      "text": "A four star Trustpilot reviewer who said they had been a member for 15 years shared a view on fading Streak Survivor leaders after 18 straight wins. Like most reviews, it is about the contests rather than the analyst picks.",
+      "source": 12
+    },
+    {
       "type": "Not found",
       "tone": "Neutral",
-      "date": "Checked 7 Nov 2026",
-      "text": "We found no Reddit thread that evaluates the Covers expert picks record, and no BBB profile we could confirm for covers.com.",
+      "date": "Checked 20 Nov 2026",
+      "text": "Reddit archive searches for Covers expert picks in r/sportsbook and r/sportsbetting returned only spam and unrelated posts, and no thread that evaluates the Covers picks record. We found no BBB profile we could confirm for covers.com, and no court or regulator action about its picks.",
       "source": null
     }
   ],
   "conflicts": [
-    "Covers earns from the betting operators it promotes. Its menus carry sportsbook, casino, sweepstakes casino and prediction market promo code pages. Its DraftKings promo page says the offer applies when you sign up \"through our exclusive link\" and that affiliate link relationships are disclosed. The same page says its experts do not accept compensation for a specific rating.",
-    "The picks sit beside those offers. On 7 Nov 2026 the NFL picks page showed us a Kalshi \"Exclusive $60 Bonus\" with code MAX60 and a \"Featured Trade\" banner, and the odds next to each pick came from prediction markets and betting apps. What appears may depend on where you are. We saw no disclosure next to the picks themselves.",
-    "Covers is part of Genius Sports, a sports data company listed on the New York Stock Exchange, according to the About page."
+    "Covers earns from the betting operators it promotes. Its menus carry sportsbook, casino, sweepstakes casino and prediction market promo code pages. Its DraftKings promo page says experts \"do not accept compensation from DraftKings in exchange for a specific rating or ranking\" and that where the page contains affiliate links, \"that relationship is disclosed.\"",
+    "The picks sit beside those offers. On 20 Nov 2026 the NFL picks page showed us a Kalshi promo with code MAX60 and Kalshi Sports prices next to picks. What appears may depend on where you are. We saw no disclosure next to the picks themselves.",
+    "Covers' owner, Genius Sports, is a sports data company that supplies official data to leagues and sportsbooks, and trade press described the Legend deal as Genius entering the gaming affiliate business.",
+    "Some analysts also write promo and sportsbook review content for the same site, and one directory bio describes an editor who manages commercial content for prediction market and sportsbook brands."
   ],
   "strengths": [
     "Free. There is no package to buy and nothing to refund.",
-    "A named operator and parent company, and named analysts with bios.",
-    "Each pick shows the analyst, the market and the odds, and contest picks lock at game time with full won and lost counts."
+    "A named operator and a large, listed parent company, and named analysts with bios.",
+    "Each pick shows the analyst, the market and the odds, and some articles now show a 2026 record box that includes losing numbers.",
+    "Contest picks lock at game time, are graded at standard prices, and show full won and lost counts.",
+    "Long history and active forums where members openly criticize Covers' own experts."
   ],
   "concerns": [
-    "No graded record for any Covers analyst or for the computer picks.",
-    "The only performance figures are short claims in writer bios, such as a 19.79% ROI.",
+    "No full graded log for any Covers analyst or for the computer picks.",
+    "The new record boxes cannot be rebuilt, and one analyst's box changed in a way no running record can.",
+    "Bio claims such as a 19.79% ROI have no record behind them, and one analyst's 2026 NFL box is close to break even once parlays are counted.",
     "Promo codes and prediction market offers sit beside the picks, and Covers earns from them.",
-    "Contest leaderboards are run and graded by Covers itself and cover users, not its experts."
+    "Contest leaderboards are run and graded by Covers itself and cover users, not its analysts."
   ],
   "checklist": [
-    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
-    "Count units, not wins. A 60% record at heavy favorites can still lose money.",
-    "Read the guarantee for the words refund, credit and extension. Most \"guarantees\" in this business are credits.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Read the 2026 Transparency Record box on any pick article, and check whether combos are dragging down the top picks line.",
+    "Ask for every pick behind a record box, with the line, the odds and the time it was posted. A box is not a log.",
+    "Count units, not wins. A 60% record at heavy favorites can still lose money, and a 45% record on long prices can still win.",
+    "Notice the promo codes beside the picks; you never need to open a new account to follow a free pick.",
+    "Write down each pick yourself the moment you read it, with the line you can actually get.",
+    "Give any analyst a few hundred picks before you call them a winner. Short runs swing hard both ways."
   ],
   "faq": [
     [
       "Are Covers.com expert picks legit?",
-      "Covers is a real, long running media business operated by CS Media Ltd and part of Genius Sports, and its picks are posted with the analyst's name before games. We could not verify that the picks win over time, because Covers shows no graded record for its analysts."
+      "Covers is a real, long running media business operated by CS Media Ltd and owned by Genius Sports, and its picks are posted with the analyst's name before games. We could not verify that the picks win over time, because Covers shows no full graded log for its analysts."
     ],
     [
       "How much do Covers expert picks cost?",
-      "Nothing. On 7 Nov 2026 the picks, computer picks, contests and iPhone app were all free, and we found no paid picks tier. Covers earns from sportsbook and prediction market offers instead."
+      "Nothing. On 20 Nov 2026 the picks, computer picks, contests and app were all free, and we found no paid picks tier. Covers earns from sportsbook and prediction market offers instead."
     ],
     [
       "Do Covers experts have a verified record?",
-      "No. We found no graded log for any Covers analyst or for the computer picks, only claims in bios such as a 19.79% ROI. The King of Covers boards show full graded records, but for users, and Covers grades them itself."
+      "No. Some 2026 articles now show a small record box per analyst, such as Neil Parker's NHL top picks at 58-38 for +34.33 units, but no log sits behind the boxes and one analyst's box changed in a way a running record cannot. The King of Covers boards show full records, but for users, and Covers grades them itself."
+    ],
+    [
+      "Who owns Covers?",
+      "Covers.com is operated by CS Media Ltd. Its parent, Legend, which also runs Casino.org and Casino Guru, was bought by Genius Sports, a sports data company listed on the New York Stock Exchange, in a deal reported closed by 1 May 2026."
+    ],
+    [
+      "Does Covers still sell handicapper picks?",
+      "No. Covers closed its paid handicapper section in July 2022 after about 25 years, and several of those handicappers moved to WagerTalk. Today's picks are free and come from staff analysts."
     ],
     [
       "Are Covers expert picks worth it?",
@@ -203,97 +274,157 @@
     ]
   ],
   "related": [
+    "wagertalk",
     "action-network-pro",
     "oddsshark-picks",
     "vegasinsider-expert-picks",
-    "wagertalk",
-    "dimers"
+    "vsin-picks"
   ],
   "sources": [
     {
       "title": "Covers free expert picks hub (pick counts, analysts, star scale, FAQ)",
       "url": "https://www.covers.com/picks",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Covers NFL picks page (expert and computer picks, Kalshi offer, featured trade)",
       "url": "https://www.covers.com/picks/nfl",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "Covers About page (Genius Sports, CS Media Ltd, free of charge statement)",
+      "title": "Covers About page (Genius Sports, CS Media Ltd, free of charge statement, 810,221 members, 35 million visitors)",
       "url": "https://www.covers.com/about",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Covers writer page: Jason Logan",
       "url": "https://www.covers.com/writers/jason-logan",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Covers writer page: Neil Parker (ROI claim)",
       "url": "https://www.covers.com/writers/neil-parker",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Covers writers directory (analyst bios)",
       "url": "https://www.covers.com/writers",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "King of Covers contest leaderboards",
       "url": "https://contests.covers.com/kingofcovers",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "King of Covers official rules",
       "url": "https://contests.covers.com/kingofcovers/rules",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Covers contest Money Leaders (all leagues)",
       "url": "https://contests.covers.com/consensus/pickleaders/all",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Covers consensus FAQ",
       "url": "https://contests.covers.com/consensus/faq",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Covers contests home (Streak Survivor prize)",
       "url": "https://contests.covers.com/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Covers testimonials page",
       "url": "https://www.covers.com/testimonials",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Trustpilot: Covers.com reviews",
       "url": "https://www.trustpilot.com/review/covers.com",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Trustpilot: Covers.com 1 star reviews",
       "url": "https://www.trustpilot.com/review/covers.com?stars=1",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "Apple App Store: Covers: Scores, Picks and Odds",
+      "title": "Apple App Store: Covers: Scores, Picks and Odds (4.7 from 548 ratings)",
       "url": "https://apps.apple.com/us/app/covers-scores-picks-and-odds/id6749450176",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Gambling911: Extinct: Covers Scrubs its Expert Picks Section (20 Jul 2022)",
       "url": "https://www.gambling911.com/node/66865",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Covers DraftKings promo code page (partnership and affiliate link disclosure)",
       "url": "https://www.covers.com/betting/bonuses/draftkings-promo-codes",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Gambling911: What Happened to the Covers.com Sports Handicappers, Picks Experts? (18 Jul 2022)",
+      "url": "https://gambling911.com/What-Happened-to-the-Covers.com-Sports-Handicappers-Picks-Experts.html",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Covers: NHL Best Bets Today, 18 Nov 2026 (Josh Inglis 2026 Transparency Record box)",
+      "url": "https://www.covers.com/nhl/best-bets-nov-18-2026",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Covers: NHL Best Bets Today, 19 Nov 2026 (Josh Inglis 2026 Transparency Record box)",
+      "url": "https://www.covers.com/nhl/best-bets-nov-19-2026",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Covers: Oilers vs Lightning prediction, 19 Nov 2026 (Neil Parker 2026 Transparency Record box)",
+      "url": "https://covers.com/nhl/oilers-vs-lightning-prediction-picks-nov-19-2026",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Covers: Chiefs vs Falcons prediction, NFL Week 10, 15 Nov 2026 (Neil Parker 2026 Transparency Record box)",
+      "url": "https://www.covers.com/nfl/chiefs-vs-falcons-prediction-picks-best-bets-today-nov-15-2026",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Covers: Colts vs Texans prediction, 19 Nov 2026 (Joe Osborne 2026 Transparency Record box)",
+      "url": "https://www.covers.com/nfl/colts-vs-texans-prediction-picks-best-bets-tonight-nov-19-2026",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Covers writer page: Josh Inglis (tracking and transparency claims)",
+      "url": "https://www.covers.com/writers/josh-inglis",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Covers forum, NBA Betting: Teddy Covers... (Apr 2021, Covers experts panel)",
+      "url": "https://www.covers.com/forum/nba-betting-22/teddy-covers-103522837",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Covers forum, NBA Betting: Sixers easy 10/22 (Oct 2026, remark on a Covers expert free pick)",
+      "url": "https://www.covers.com/forum/nba-betting-22/sixers-easy---1022-104054953",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Trustpilot: Covers.com reviews, page 9 (pick related reviews)",
+      "url": "https://www.trustpilot.com/review/covers.com?page=9",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Affiverse Media: Genius Sports acquires Legend in a deal worth up to $1.2 billion (Feb 2026)",
+      "url": "https://www.affiversemedia.com/genius-sports-acquires-legend-in-1-2-billion-deal-making-it-the-largest-gaming-affiliate-acquisition-ever/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Pulse 2.0: Genius Sports completes acquisition of Legend (1 May 2026)",
+      "url": "https://pulse2.com/genius-sports-completes-acquisition-of-legend/",
+      "accessed": "20 Nov 2026"
     }
   ],
   "pricing_source": 0

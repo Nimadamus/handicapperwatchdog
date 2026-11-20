@@ -3,13 +3,13 @@
   "name": "VSiN Pro",
   "legal_name": "VSiN, the Vegas Stats and Information Network, owned by Musburger Media since July 2024 (no legal company name shown on the pages we read)",
   "kind": "Sports betting media network that sells a Pro subscription with daily picks from many hosts and guests",
-  "checked": "16 Nov 2026",
-  "checked_iso": "2026-11-16",
-  "updated_iso": "2026-11-16",
+  "checked": "20 Nov 2026",
+  "checked_iso": "2026-11-20",
+  "updated_iso": "2026-11-20",
   "title": "VSiN Pro Review 2026: Pricing, Record, Is It Worth It?",
-  "description": "VSiN Pro review, checked 16 Nov 2026: what the $120 offer includes, how the picks are sold, no overall record, and what bettors say.",
+  "description": "VSiN Pro review, checked 20 Nov 2026: what Pro includes, prices VSiN shows, host records checked, refund terms, and what bettors say.",
   "h1": "VSiN Pro review",
-  "dek": "A Las Vegas sports betting radio and video network that sells VSiN Pro, a subscription with daily picks from dozens of hosts and guests, betting splits and video. In October 2026 it advertised six months for $120. It publishes no overall win rate, and we found no refund policy.",
+  "dek": "A Las Vegas sports betting radio and video network that sells VSiN Pro, a subscription with daily picks from dozens of hosts and guests, betting splits, guides and video. Its subscribe page did not show prices when we checked, its FAQ says the annual plan costs half the monthly rate, and it publishes no combined win rate. Hosts' own season records in their columns ranged from below to just above break even.",
   "status": {
     "label": "Not verified",
     "note": "Watchdog has not graded a full, time stamped record of VSiN Pro picks. This page reports what we could check on 16 Nov 2026 and labels everything else."
@@ -17,23 +17,27 @@
   "glance": [
     [
       "Operator",
-      "VSiN, owned by Musburger Media since July 2024; studio at Circa Resort and Casino, Las Vegas (Covers, Wikipedia)"
+      "VSiN, owned by Musburger Media since July 2024; studios at Circa and The D on Fremont Street, Las Vegas (Covers, Wikipedia)"
     ],
     [
       "Claims to operate since",
       "Launched 5 Feb 2017 (Wikipedia)"
     ],
     [
+      "Where sold",
+      "vsin.com (VSiN Pro); shows on SiriusXM channel 158 since January 2025 and the VSiN Watch app"
+    ],
+    [
       "Price seen",
-      "$120 for VSiN Pro through 1 May 2027 (VSiN post on X, 23 Oct 2026); monthly price not shown on the page we read"
+      "Not shown on the subscribe page on 20 Nov 2026; VSiN's own Circa page offered annual renewal at $240 for a January 2025 promotion"
     ],
     [
       "Guarantee",
-      "None stated. No refund policy found"
+      "None stated. No refund policy found; the FAQ says VSiN will credit you if charged after asking to cancel"
     ],
     [
       "Full public record",
-      "No overall record found. Picks come from many people, each with their own results"
+      "No overall record. Some hosts print their own season record in their columns"
     ],
     [
       "Watchdog graded record",
@@ -41,26 +45,31 @@
     ]
   ],
   "short_answer": [
-    "VSiN is a real, well known sports betting media company. It started in 2017, was bought by DraftKings in 2021 and sold back to the founding Musburger family in July 2024. Its shows run on SiriusXM and on its own video stream, with a studio inside the Circa sportsbook in Las Vegas. In that sense VSiN Pro is legitimate.",
-    "VSiN Pro is not a single handicapper. It is a media subscription: picks from many hosts and guests, betting splits, articles, guides, prop tools and live video. VSiN's own pages make no win rate claim for the service as a whole, and we found no combined record of all the picks that a buyer could check.",
-    "Treat VSiN Pro as paid betting media, not a proven winning pick service. If you want the picks, judge each host on their own long record, log every pick yourself with the price you could actually get, and note that we found no refund terms."
+    "VSiN is a real, well known sports betting media company. It started in 2017, was bought by DraftKings in 2021 (for a reported $70 million) and sold back to a group led by its founders in July 2024. Its shows air on SiriusXM and its own video stream, with studios inside Circa and The D in Las Vegas. In that sense VSiN Pro is legitimate.",
+    "VSiN Pro is not a single handicapper. It is a media subscription: picks from many hosts and guests, betting splits, articles, guides, prop tools and live video. VSiN makes no win rate claim for the service as a whole. Some hosts print their own records, and in mid November 2026 they ranged from 26-28-3 against the spread (48.1%) to 45-42-2 (51.7%), both below the roughly 52.4% needed at standard prices, while one props writer was 52-60 but slightly up in units.",
+    "Bettors online mostly value VSiN for its shows and data, not its picks, and the main complaint is that the betting splits moved behind the paywall. Treat VSiN Pro as paid betting media, not a proven winning pick service. Judge each host on their own long record, log every pick yourself with the price you could actually get, and note that we found no refund terms."
   ],
-  "pricing_intro": "The VSiN subscribe page did not show dollar prices when we read it on 16 Nov 2026; its plan box said the options were loading. The prices below come from VSiN's own posts on X. The FAQ describes the plan types.",
+  "pricing_intro": "The VSiN subscribe page did not show dollar prices on 20 Nov 2026: its plan box said \"Subscription Options Loading Up\" both in a plain page fetch and in a normal browser. The rows below are the only prices we could tie to VSiN's own pages today. Earlier this month we also saw a VSiN social media offer of six months for $120; we no longer cite it because we do not link social posts, so treat it as unconfirmed.",
   "pricing": [
-    [
-      "VSiN Pro special offer",
-      "$120",
-      "VSiN post on 23 Oct 2026: VSiN Pro through 1 May 2027. A 27 Oct post called it 6 months for $120, for a limited time"
-    ],
     [
       "Monthly plan",
       "Price not shown on the pages we read",
-      "The FAQ says the annual plan \"saves you 50% off the monthly price\""
+      "Same benefits as annual, per the FAQ"
     ],
     [
       "Annual plan",
-      "Price not shown on the pages we read",
-      "Paid upfront for the year, per the FAQ"
+      "Price not shown; the FAQ says it \"saves you 50% off the monthly price by paying upfront for the year\"",
+      "Paid upfront for the year"
+    ],
+    [
+      "Annual renewal, Circa promotion (January 2025)",
+      "$240",
+      "VSiN's Circa page: Pro subscribers could renew at $240 to earn a three night Circa stay; expired"
+    ],
+    [
+      "Horse racing offer",
+      "50% off the first month with code HORSE",
+      "Page says \"OFFER EXPIRES 5/19\" with no year"
     ],
     [
       "Season only plan",
@@ -68,58 +77,80 @@
       "One sport for a set period, per the FAQ"
     ],
     [
+      "Circa free trial",
+      "30 days of VSiN Pro free",
+      "Landing page for a Circa promotion; terms not shown"
+    ],
+    [
       "Free VSiN (no Pro)",
       "$0",
-      "Live audio, daily podcasts, daily betting email, free primers and limited articles, per the comparison table"
+      "Limited articles, daily betting email, free primers, live audio and daily podcasts, per the comparison table"
     ]
   ],
   "guarantee": [
     "We found no guarantee of any kind, and no refund policy, on the VSiN subscribe page, the Pro page or the FAQ. VSiN does not promise that its picks will win, so there is no free extra time or credit if they lose.",
-    "To cancel, the subscribe page says to contact VSiN, and the FAQ says to turn off auto renew in the Subscriptions tab of My Account. The FAQ also says VSiN will credit a monthly payment if you switch to an annual plan. The subscribe page carries the line \"VSiN Pro is a sports betting media subscription. Betting involves risk; wager responsibly.\""
+    "To cancel, the FAQ says to log into My Account, open the Subscriptions tab, choose Manage and \"disable auto renew.\" Elsewhere it says to contact VSiN and \"We'll credit you if you've been charged anything.\" The FAQ also says VSiN will credit a monthly payment if you switch to an annual plan. The subscribe page carries the line \"VSiN Pro is a sports betting media subscription. Betting involves risk; wager responsibly.\""
   ],
   "claims": [
+    {
+      "claim": "Steve Makinen: \"My season record is now 45-42-2 ATS (51.7%).\"",
+      "where": "VSiN NFL Week 11 best bets column, 19 Nov 2026",
+      "status": "Checked: 45 of 87 decided picks is 51.7%, as stated, which is below the 52.4% needed to profit at -110"
+    },
+    {
+      "claim": "Dave Tuley: \"my overall record here to 26-28-3 ATS (48.1%) after we were at 59.5% just three weeks ago\"",
+      "where": "Tuley's Takes, NFL Week 11, 18 Nov 2026",
+      "status": "Checked: 26 of 54 decided picks is 48.1%, as stated. A losing record printed openly"
+    },
+    {
+      "claim": "Zachary Cohen: \"2026 NFL Record: 52-60 (+3.75 units)\"",
+      "where": "VSiN expert NFL picks, Week 11, 19 Nov 2026",
+      "status": "Checked: 46.4% winners but slightly up in units, because many picks are plus money props and alternate lines. No log of the 112 picks is linked"
+    },
+    {
+      "claim": "Subscriber testimonial: finished \"fifth in the Super Contest cashing almost $200,000\" in 2018",
+      "where": "VSiN subscribe page",
+      "status": "Consistent with the published 2018 SuperContest prize table, which paid $193,938 for fifth; we could not confirm who finished fifth"
+    },
+    {
+      "claim": "\"Join Thousands of Bettors Cashing Tickets With VSiN Pro\"; \"Get dozens of picks from our team of experts and analysts delivered directly to your inbox\"",
+      "where": "VSiN subscribe page",
+      "status": "Seller claim; no combined record of those picks is published"
+    },
     {
       "claim": "Pro features listed as \"Daily Expert Picks\", \"Real Time Betting Splits\", \"Opta AI Prop Projections\" and a \"Daily Picks Email\"",
       "where": "vsin.com/subscribe and vsin.com/pro comparison table",
       "status": "Seller description of the product"
     },
     {
-      "claim": "\"VSiN Pro subscribers get every play sent to their inbox after each game\"",
-      "where": "VSiN post on X, 2 Oct 2026",
-      "status": "Seller claim, not checked by us"
-    },
-    {
-      "claim": "A subscriber testimonial about \"cashing almost $200,000\" and finishing fifth in the Super Contest",
-      "where": "vsin.com/pro testimonials",
-      "status": "Seller curated testimonial, not checkable"
-    },
-    {
       "claim": "\"The annual just saves you 50% off the monthly price by paying upfront for the year\"",
       "where": "VSiN FAQ",
-      "status": "Seller claim, monthly price not shown to us"
+      "status": "Seller claim; monthly price not shown to us"
     }
   ],
   "claims_note": [
-    "VSiN is careful in what it claims. We saw no overall win rate, no units won and no hot streak headline on the sales pages. The strongest money claim is one subscriber's story about a contest finish, chosen by VSiN for its own page.",
+    "How we checked: VSiN publishes no combined record for VSiN Pro. Three of its NFL writers print their own season numbers in their free weekly columns, so we read those columns on 20 Nov 2026 and recomputed each percentage from the wins and losses shown. All three matched their own arithmetic. None links a full pick log, so we could not check that the totals include every pick.",
+    "VSiN is careful in what it claims. We saw no overall win rate, no units won and no hot streak headline on the sales pages, and two of the three hosts we checked printed losing or below break even records. The strongest money claim is one subscriber's story about a 2018 contest finish, which fits the published prize table.",
     "Because the picks come from dozens of different people, a single record for VSiN Pro would mean little anyway. Some hosts post with unit sizes and odds, others do not. A buyer has to judge each voice on its own."
   ],
   "record": [
-    "What a buyer can verify independently: we found no full, time stamped log of every VSiN Pro pick with results that we could open. The VSiN Pro picks page refused our request, and we did not see a results summary on the pages we read.",
-    "What others publish: a long running TheRX forum thread reposts a list called \"VSiN Pro Picks by Game Last 24 hours\". The 30 Oct 2026 post lists picks from many hosts with the line, the odds and sometimes a unit size, for college football, the NFL, the NHL and other sports. Nobody in the replies we read posted results for those picks.",
-    "VSiN also reports picks for the Circa football contests. Contest picks are made against fixed lines and do not tell you how the daily picks perform."
+    "What a buyer can verify independently: we found no full, time stamped log of every VSiN Pro pick with results. VSiN's Pro picks data page refused our request, and the sales pages show no results summary.",
+    "What VSiN hosts publish: several weekly columns print a running season record in the text, for example 45-42-2 against the spread for one NFL columnist and 26-28-3 for another as of 18 and 19 Nov 2026. These are self reported and written by the people making the picks.",
+    "What others publish: a long running TheRX forum thread reposts a list called \"VSiN Pro Picks by Game Last 24 hours.\" The 30 Oct 2026 post lists picks from many hosts with the line, the odds and sometimes a unit size. Nobody in the replies we read posted results for those picks. VSiN also reports host picks for the Circa football contests, which use fixed lines and do not tell you how the daily picks perform.",
+    "Background: Wikipedia lists the founders as Brian Musburger, Todd Musburger and Dave Berg, with Brent Musburger as lead on air voice. DraftKings bought VSiN in March 2021, and Covers reported on 22 Jul 2024 that Musburger Media, led by Brian Musburger and Bill Adee, bought it back for an undisclosed sum, with DraftKings saying it would keep advertising on the network. SiriusXM dropped VSiN in January 2021 and picked it up again in January 2025."
   ],
   "our_data": {
     "matched": false,
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no VSiN Pro pick history is matched to a Watchdog graded record, so we make no claim about how VSiN Pro picks perform.",
-    "context": "For scale: VSiN makes no win rate claim to compare. On the Watchdog board on 16 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "context": "For scale: VSiN makes no overall win rate claim, and the host records we read ran from 48.1% to 51.7% against the spread. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "Independent posts about VSiN are mostly about the shows and the betting splits, not about buying the picks. Below is what we found and how much weight it can carry.",
+  "customers_intro": "Independent posts about VSiN are mostly about the shows, the app and the betting splits, not about buying the picks. Below is what we found and how much weight it can carry.",
   "customers": [
     {
       "type": "Our summary",
       "tone": "Mixed",
-      "date": "Read 16 Nov 2026",
-      "text": "We read about a dozen independent posts on Reddit, TheRX and X from 2019 to 2026. Most praise the hosts, the shows and the daily email as entertainment and research, and posts from 2020 and 2026 recommend the paid tier. The repeated complaint since 2023 is that the betting splits moved behind the paywall, and several bettors replied that splits are of little use anyway. Criticism of the picks is aimed at single hosts or guests, not at the service. We found no buyer who posted a long term profit or loss from following VSiN Pro picks, and no refund complaints.",
+      "date": "Read 20 Nov 2026",
+      "text": "We read about 20 independent posts and reviews on Reddit, TheRX and the App Store, from 2019 to 2026. Most praise the hosts, the shows and the daily email as entertainment and research, and the VSiN Watch app holds 4.8 stars from about 1,200 ratings, with complaints about audio that cuts out and no background listening. A 2020 Reddit thread praised the hosts and the daily email, and a 2026 Reddit user parlayed picks heard on the SiriusXM show. The repeated complaint since 2023 is that the betting splits moved behind the paywall, and several bettors replied that splits are of little use anyway. Criticism of the picks is aimed at single hosts or guests, not at the service. We found no buyer who posted a long term profit or loss from following VSiN Pro picks, no refund complaints and no BBB profile.",
       "source": null
     },
     {
@@ -127,108 +158,127 @@
       "tone": "Positive",
       "date": "14 Oct 2020",
       "text": "In a Reddit thread asking whether VSiN, SportsLine or Action Network was worth paying for, replies called the VSiN hosts excellent and the daily email very good. One bettor said the free shows gave him enough. Nobody discussed pick results.",
-      "source": 9
+      "source": 6
     },
     {
       "type": "Forum post",
       "tone": "Mixed",
       "date": "14 Aug 2019",
       "text": "Asked which VSiN voices give good betting advice, Reddit users named several hosts they liked, and one praised a regular football guest as a proven winner. Others replied harshly that another frequent guest handicapper was a long term loser, and that the shows talk up longshot winners after the fact. These are opinions without records attached.",
-      "source": 10
+      "source": 7
     },
     {
       "type": "Forum post",
       "tone": "Negative",
       "date": "2 Oct 2023",
       "text": "When VSiN moved its betting percentages behind the subscription, a Reddit user asked where else to find them. Replies said the information is close to useless for winning and that free sources are no better.",
-      "source": 11
+      "source": 8
     },
     {
       "type": "Forum post",
       "tone": "Neutral",
       "date": "19 Dec 2023",
       "text": "Another bettor asked whether to pay for VSiN splits. Most replies said no reliable betting split data exists anywhere, and that line moves matter more than the percentages.",
-      "source": 13
+      "source": 10
     },
     {
       "type": "Forum post",
       "tone": "Neutral",
       "date": "17 Sep 2024",
       "text": "In a Reddit thread on betting splits, the poster said VSiN splits were now paywalled. Others asked for any reliable free source, and one described a way to see the page before the paywall loads.",
-      "source": 12
-    },
-    {
-      "type": "Forum allegation",
-      "tone": "Negative",
-      "date": "22 Sep 2026",
-      "text": "A bettor on X wrote that a VSiN prop analyst posts numbers that are stale and in his own favor, told him he does not bet himself, and blamed injuries and coaches after a losing week. This is one person's claim, and we could not check it.",
-      "source": 14
-    },
-    {
-      "type": "Forum post",
-      "tone": "Positive",
-      "date": "18 Sep 2026",
-      "text": "A handicapper on X told followers they should be VSiN Pro members and said he was not paid to say so. He appears in the Circa contest pick lists that VSiN reports, so he is not a fully independent voice.",
-      "source": 15
+      "source": 9
     },
     {
       "type": "Forum post",
       "tone": "Neutral",
       "date": "30 Oct 2026",
       "text": "On TheRX a member reposts the daily VSiN Pro picks list each week in a newsletters thread, so much of the pick content circulates for free. Replies only note when the list is up; nobody grades it.",
-      "source": 8
+      "source": 5
     },
     {
       "type": "Seller curated",
       "tone": "Positive",
-      "date": "Checked 16 Nov 2026",
-      "text": "The VSiN Pro page quotes several subscribers from different states who praise the service, one with a large contest win. VSiN's X account also congratulated a Pro subscriber on 27 Sep 2026 for a good game handicap on its community page. VSiN chose these, so they are marketing.",
+      "date": "Checked 20 Nov 2026",
+      "text": "The VSiN subscribe and Pro pages quote six subscribers from different states who praise the service, one with a large 2018 contest win. VSiN chose these, so they are marketing.",
       "source": 2
+    },
+    {
+      "type": "Forum post",
+      "tone": "Neutral",
+      "date": "21 Jul 2026",
+      "text": "A Reddit user said they heard several picks on the VSiN SiriusXM show on the way home from work and put them all into one parlay for 1.5 units. It shows how listeners use the free shows; there was no follow up on the result.",
+      "source": 22
+    },
+    {
+      "type": "Customer report",
+      "tone": "Positive",
+      "date": "Checked 20 Nov 2026",
+      "text": "The VSiN Watch iPhone app showed 4.8 out of 5 from about 1,200 ratings. Visible reviews from 2024 to 2026 praise the hosts, the live streams and the content, one calling it the best betting information available.",
+      "source": 18
+    },
+    {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "2024 to 2026",
+      "text": "Critical App Store reviews say the audio stops at random for a long time subscriber despite feedback to VSiN, that iPhone users cannot keep listening in the background, that live video cannot be minimized, and that ads play louder than the shows. One reviewer asked for dates and times on the picks.",
+      "source": 18
     },
     {
       "type": "Not found",
       "tone": "Neutral",
-      "date": "Checked 16 Nov 2026",
-      "text": "Our searches found no Covers or SportsbookReview thread reviewing VSiN Pro, no court or regulator action, and no independent record of the picks. The VSiN Pro picks page refused our request.",
+      "date": "Checked 20 Nov 2026",
+      "text": "Our searches found no Covers or SportsbookReview thread reviewing VSiN Pro, no BBB profile, no court or regulator action, and no independent record of the picks. VSiN's Pro picks data page refused our request. Reddit archive searches were rate limited on 20 Nov 2026, so the Reddit posts here come from earlier searches and our saved library.",
       "source": null
     }
   ],
   "conflicts": [
-    "VSiN was owned by DraftKings, a sportsbook, from 2021 to July 2024. It is now owned by Musburger Media, and its studio sits inside the Circa sportsbook. The network shows DraftKings and Circa betting splits and reports Circa contest picks, so it has close business ties to bookmakers.",
-    "Many VSiN hosts and guests also sell their own picks or run their own services. A host's appearance on VSiN is not a record."
+    "VSiN was owned by DraftKings, a sportsbook, from 2021 to July 2024, and DraftKings said it would keep advertising on the network. VSiN's studios sit inside the Circa sportsbook and The D, it shows DraftKings and Circa betting splits, and it reports Circa contest picks, so it has close business ties to bookmakers.",
+    "Many VSiN hosts and guests also sell their own picks or run their own services. VSiN's partnership offers page promotes paid pick services such as Wunderdog, Doc's Sports, SIC Picks and Just Win Bets Baby to its subscribers, and a 15 Nov 2026 newsletter labeled some blocks as sponsors but not a Wunderdog offer block.",
+    "A host's appearance on VSiN is not a record, and the records hosts print in their own columns are self reported."
   ],
   "strengths": [
-    "A real media company with a long public history, known owners and a Las Vegas studio.",
-    "No inflated win rate or hot streak marketing on the pages we read.",
+    "A real media company with a long public history, known owners and Las Vegas studios.",
+    "No inflated win rate or hot streak marketing on the pages we read, and some hosts print losing records openly.",
     "Picks are listed with the line and the odds, and many with a unit size.",
-    "A free tier with live audio, podcasts and a daily email lets you sample the voices before paying."
+    "A free tier with live audio, podcasts and a daily email lets you sample the voices before paying.",
+    "The FAQ explains how to cancel, and says VSiN will credit a charge if you contact it."
   ],
   "concerns": [
-    "No overall or per host record that we could open and check.",
-    "Monthly and annual prices were not shown on the subscribe page when we read it; the only prices we saw came from social media offers.",
-    "No refund policy found, and cancelling means contacting VSiN or turning off auto renew yourself.",
-    "Close ties to sportsbooks, past and present.",
+    "No overall or full per host record that we could open and check.",
+    "Monthly and annual prices were not shown on the subscribe page when we read it.",
+    "No refund policy found, and cancelling means turning off auto renew yourself or contacting VSiN.",
+    "The host season records we checked were below or near the break even rate at standard prices.",
+    "Close ties to sportsbooks, past and present, and paid partner offers from other pick sellers.",
     "Bettors who wrote about it mainly valued the shows and splits, not the picks, and many doubt that splits help."
   ],
   "checklist": [
+    "Pick the two or three hosts you would actually follow and find their own season record in their columns.",
     "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
-    "Count units, not wins. A 60% record at heavy favorites can still lose money.",
-    "Read the guarantee for the words refund, credit and extension. Most \"guarantees\" in this business are credits.",
+    "Count units, not wins. A 46% record on plus money props can be up, and a 52% record at -110 is not.",
+    "Check the price at checkout and whether the plan renews automatically; set a reminder to turn off auto renew.",
     "Write down each pick yourself the moment you receive it, with the line you can actually get.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Try the free tier and any free trial first, and give any host a few hundred picks before you call them a winner."
   ],
   "faq": [
     [
       "Is VSiN Pro legit?",
-      "VSiN is a real sports betting media network, founded in 2017 and owned by Musburger Media, with shows on SiriusXM and a studio at Circa in Las Vegas. VSiN Pro is its paid tier. We could not verify that following its picks makes money, because we found no full record of them."
+      "VSiN is a real sports betting media network, founded in 2017 and owned by Musburger Media, with shows on SiriusXM and studios at Circa and The D in Las Vegas. VSiN Pro is its paid tier. We could not verify that following its picks makes money, because we found no full record of them."
     ],
     [
       "How much does VSiN Pro cost?",
-      "In October 2026 VSiN advertised VSiN Pro through 1 May 2027 for $120, which it called 6 months for $120. Its FAQ says annual plans cost 50% less than monthly, but the subscribe page did not show the monthly price when we read it."
+      "The subscribe page did not show prices when we checked on 20 Nov 2026. The FAQ says plans are monthly, annual or season only and that the annual plan costs 50% less than paying monthly. VSiN's own Circa promotion page offered annual renewal at $240 for a January 2025 deal."
+    ],
+    [
+      "Who owns VSiN?",
+      "Musburger Media, a group led by founder Brian Musburger and Bill Adee, bought VSiN back from DraftKings in July 2024. DraftKings had bought it in 2021 for a reported $70 million."
     ],
     [
       "Does VSiN Pro have a verified record?",
-      "No. VSiN makes no overall win rate claim, and the picks come from many hosts and guests. We found no independent, time stamped log of every pick."
+      "No. VSiN makes no overall win rate claim, and the picks come from many hosts and guests. Some hosts print their own season records; in mid November 2026 those we checked ranged from 48.1% to 51.7% against the spread. We found no independent, time stamped log of every pick."
+    ],
+    [
+      "Can I get a refund from VSiN?",
+      "We found no refund policy. The FAQ says you cancel by turning off auto renew in My Account, and that VSiN will credit you if you contact it and have been charged."
     ],
     [
       "Is VSiN Pro worth it?",
@@ -239,49 +289,34 @@
     "action-network-pro",
     "sportsline",
     "covers-expert-picks",
-    "vegasinsider-expert-picks",
+    "wunderdog",
     "steve-fezzik"
   ],
   "sources": [
     {
-      "title": "VSiN Pro subscribe page (plans, Pro feature table, cancellation, disclaimer)",
+      "title": "VSiN Pro subscribe page (plan box, Pro feature table, testimonials, disclaimer)",
       "url": "https://vsin.com/subscribe/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "VSiN FAQ (monthly, annual and season plans, annual saves 50%, how to cancel)",
+      "title": "VSiN FAQ (monthly, annual and season plans, annual saves 50%, how to cancel, credit if charged)",
       "url": "https://vsin.com/faq/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "VSiN Pro page (feature comparison, subscriber testimonials)",
       "url": "https://vsin.com/pro",
-      "accessed": "16 Nov 2026"
-    },
-    {
-      "title": "VSiN on X, 23 Oct 2026: VSiN Pro through 1 May 2027 for $120",
-      "url": "https://x.com/VSiNLive/status/2113747978192367992",
-      "accessed": "16 Nov 2026"
-    },
-    {
-      "title": "VSiN on X, 27 Oct 2026: special offer, 6 months for $120",
-      "url": "https://x.com/VSiNLive/status/2115194318382408161",
-      "accessed": "16 Nov 2026"
-    },
-    {
-      "title": "VSiN on X, 2 Oct 2026: Pro subscribers get every play sent to their inbox",
-      "url": "https://x.com/VSiNLive/status/2106155767988404625",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Covers: VSiN founders buy sports betting network back from DraftKings (22 Jul 2024)",
       "url": "https://www.covers.com/industry/vsin-founders-buy-sports-betting-network-back-from-draftkings-july-22-2024",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Wikipedia: Vegas Stats and Information Network (launch, owners, studios)",
       "url": "https://en.wikipedia.org/wiki/VSiN",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "TheRX forum: Newsletters thread, page 769 (VSiN Pro Picks by Game, 30 Oct 2026)",
@@ -314,20 +349,65 @@
       "accessed": "16 Nov 2026"
     },
     {
-      "title": "X post, 22 Sep 2026: bettor criticizes a VSiN prop analyst",
-      "url": "https://x.com/Muchobets/status/2102451948742189212",
-      "accessed": "16 Nov 2026"
+      "title": "VSiN Circa page (VSiN Pro annual offer, renewal at $240, stay dates January 2025)",
+      "url": "https://vsin.com/circa/",
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "X post, 18 Sep 2026: handicapper recommends VSiN Pro",
-      "url": "https://x.com/tgeorgecapper/status/2100801748570914990",
-      "accessed": "16 Nov 2026"
+      "title": "VSiN horse racing offer page (code HORSE, 50% off first month)",
+      "url": "https://vsin.com/horse-racing-offer/",
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "VSiN on X, 27 Sep 2026: congratulates a VSiN Pro subscriber",
-      "url": "https://x.com/VSiNLive/status/2104335508835086666",
-      "accessed": "16 Nov 2026"
+      "title": "VSiN partnership offers page (partner deals offered to VSiN subscribers)",
+      "url": "https://vsin.com/partnership-offers/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "VSiN: Steve Makinen NFL Week 11 best bets and predictions (19 Nov 2026, season ATS record)",
+      "url": "https://vsin.com/nfl/steve-makinen-nfl-week-11-best-bets-and-predictions/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "VSiN: Expert NFL picks Week 11 from Zachary Cohen (19 Nov 2026, 2026 NFL record)",
+      "url": "https://vsin.com/nfl/expert-nfl-picks-week-11-best-bets-predictions-and-player-props-from-zachary-cohen/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "VSiN: Tuley's Takes for NFL Week 11 (18 Nov 2026, season ATS record)",
+      "url": "https://vsin.com/nfl/tuleys-takes-for-nfl-week-11/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "RotoGrinders: 2018 Las Vegas SuperContest prizes announced (14 Sep 2018)",
+      "url": "https://rotogrinders.com/articles/2018-las-vegas-supercontest-prizes-announced-2660089",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Apple App Store: VSiN Watch ratings and reviews",
+      "url": "https://apps.apple.com/us/app/vsin-watch/id6670797630?see-all=reviews&platform=iphone",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Better Business Bureau search for VSiN (no results)",
+      "url": "https://www.bbb.org/search?find_country=USA&find_text=VSiN",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "VSiN Daily, 15 Nov 2026: NFL Week 10 best bets and Circa contest selections (sponsor labels)",
+      "url": "https://vsin.com/the-vsin-daily/nfl-week-10-best-bets-and-circa-contest-selections/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "VSiN Circa free trial page (30 days of free VSiN Pro)",
+      "url": "https://vsin.com/circa-free-trial/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbetting: VSiN picks for tonight as well (Jul 2026)",
+      "url": "https://www.reddit.com/r/sportsbetting/comments/1v2wafb/",
+      "accessed": "20 Nov 2026"
     }
   ],
-  "pricing_source": 3
+  "pricing_source": 1
 }
