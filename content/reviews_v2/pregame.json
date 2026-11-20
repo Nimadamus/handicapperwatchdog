@@ -3,29 +3,33 @@
   "name": "Pregame.com",
   "legal_name": "Pregame, LLC",
   "kind": "Pick marketplace selling plays from many handicappers",
-  "checked": "7 Nov 2026",
-  "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-13",
+  "checked": "20 Nov 2026",
+  "checked_iso": "2026-11-20",
+  "updated_iso": "2026-11-20",
   "title": "Pregame.com Review 2026: Pricing, Record, Is It Worth It?",
-  "description": "Pregame.com review, checked 7 Nov 2026: real package prices from $5 picks to $1,995 a year, what its pick archive shows, the Deadspin dispute, buyer reports.",
+  "description": "Pregame.com review, checked 20 Nov 2026: prices from $6 picks to $1,995 a year, pro streak lines checked against Pregame's own records, the Deadspin dispute.",
   "h1": "Pregame.com review",
-  "dek": "A Las Vegas marketplace that sells picks from about 30 handicappers in one cart, at $5 to $30 a play or up to $1,995 for a year of one pro. It publishes a graded archive of recent pro picks, which is more than most sellers show, but the archive is kept by the company that sells the picks.",
+  "dek": "A Las Vegas marketplace founded by RJ Bell that sells picks from about 30 handicappers in one cart, at $6 to $30 a play or up to $1,995 for a year of one pro. It publishes a graded archive and season records for every pro, which is more than most sellers show. On 20 Nov 2026 those records showed five of the six pros we checked behind for the current season, while their sales lines named winning runs.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record for Pregame or any handicapper who sells on it. This page reports what we could check and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record for Pregame or any handicapper who sells on it. This page reports what we could check on 20 Nov 2026, including figures from Pregame's own record pages, and labels everything else."
   },
   "glance": [
     [
       "Operator",
-      "Pregame, LLC, a Nevada LLC in Las Vegas (terms of service)"
+      "Pregame, LLC, a Nevada LLC at 5860 S. Pecos Rd., Suite 400, Las Vegas (terms of service)"
+    ],
+    [
+      "Founder",
+      "RJ Bell, real name Randall James Busack (Las Vegas Review Journal, 2017)"
     ],
     [
       "Claims to operate since",
-      "2006 (site footer)"
+      "2006 (site footer); Deadspin reported Bell started it in 2005"
     ],
     [
       "Price range seen",
-      "$5 a play to $1,995 for one pro for a year"
+      "$6 a play to $1,995 for one pro for a year"
     ],
     [
       "Guarantee",
@@ -33,7 +37,7 @@
     ],
     [
       "Full public record",
-      "Pregame graded archive, about the last 30 days shown"
+      "Pregame graded archive (about 30 days) and per pro season records, all kept by Pregame"
     ],
     [
       "Watchdog graded record",
@@ -41,46 +45,52 @@
     ]
   ],
   "short_answer": [
-    "Pregame.com is a real, long running business. Its terms name the operator, Pregame, LLC of Las Vegas, it lists a toll free phone line and a support email, and it shows a price for every package. In that narrow sense it is legitimate.",
-    "Pregame is a store, not one handicapper, so there is no single Pregame record. Each pro sells under his own name and advertises streaks he picks himself, such as \"296-253-7 Last 556 Premium Plays\" or \"+374.67 UNITS\". Pregame does publish a graded log of recent pro picks with odds and results, which lets a buyer check some of this, but Pregame keeps that log itself. A 2016 Deadspin analysis of Pregame's own archive found the picks sold from 2011 to May 2016 lost money overall. Pregame's founder disputed it, sued, and the case was settled.",
-    "Treat every Pregame pro as a seller with a marketing record. If you buy, buy short, compare what you get against the archive and your own log, and judge a pro after a few hundred picks, not a hot week."
+    "Pregame.com is a real, long running business. Its terms name the operator, Pregame, LLC of Las Vegas, with a street address and phone number, it lists a toll free line and a support email, and it shows a price for every package. In that narrow sense it is legitimate.",
+    "Pregame is a store, not one handicapper, so there is no single Pregame record. Each pro sells under his own name and advertises streaks he picks himself, such as \"316-263-7 Last 587 Premium Plays\" or \"NFL (+181 UNITS) #1 PRO\". Pregame also publishes a win and loss page for every pro. When we opened the \"Current Season\" view for six featured pros on 20 Nov 2026, five were behind in Pregame's own weighted dollars, from about $333 to $5,932 at its standard stakes, and only one was ahead, by $231.",
+    "A 2016 Deadspin analysis of Pregame's archive found that the picks sold from 2011 to May 2016 lost money overall. Pregame's founder disputed it and sued, a bankruptcy judge blocked most of the claim, and the case was later settled with Deadspin standing by its reporting.",
+    "Treat every Pregame pro as a seller with a marketing record. If you buy, buy short, open the pro's own win and loss page before paying, keep your own log, and judge a pro after a few hundred picks, not a hot week."
   ],
-  "pricing_intro": "Prices below were shown on the Pregame pros page and on Dave Essler's profile, one of the most heavily promoted pros, on 7 Nov 2026. Each pro sets his own packages, so prices for other pros may differ. Prices shown as reduced are Pregame's own comparison, and the \"Money Back to Comeback\" offer, whose terms we could not find, is not a verified current offer.",
+  "pricing_intro": "Prices below were shown on the Pregame pros page and on Dave Essler's profile, one of the most heavily promoted pros, on 20 Nov 2026. Each pro sets his own packages, so prices for other pros may differ. Crossed out prices are Pregame's own comparison figures. Since our 7 Nov check, the Essler weekender rose from $69 to $89 and the Bulk Dollars offer changed from $20 for $100 to $99 for $150.",
   "pricing": [
     [
       "Single plays and daily cards (pros page)",
-      "$5 to $30 each",
+      "$6 to $30 each",
       "No refund terms found"
     ],
     [
       "Dave Essler weekender, every pick through Monday night",
-      "$69",
+      "$89",
       "No refund terms found"
     ],
     [
       "Dave Essler all access",
-      "7 days $119 · 30 days $249 · 90 days $449 · 6 months $995 · 1 year $1,995",
+      "7 days $119 · 30 days $249 · 90 days $449 (shown against $747) · 6 months $995 (against $1,494) · 1 year $1,995 (against $2,988)",
       "No refund terms found"
     ],
     [
       "Dave Essler season packages",
-      "NBA or college basketball $585 · both $885",
+      "NBA or college basketball $585 each (shown against $3,000) · both $885 (against $5,000)",
       "No refund terms found"
     ],
     [
-      "One month football all access (several pros)",
-      "$195, shown reduced from $400",
+      "Dave Essler rest of season",
+      "College football $175 · NFL $249 · all football $395 (shown against $1,000)",
+      "No refund terms found"
+    ],
+    [
+      "Other pros' 90 day all access (Goodfella, Spartan)",
+      "$449, shown against $747",
       "No refund terms found"
     ],
     [
       "Flex Access, one pro at a time, switch up to twice a month",
-      "$195 a month, rebills unless cancelled by email",
+      "$195 a month (shown against $450), rebills unless cancelled by email",
       "No refund terms found"
     ],
     [
       "Bulk Dollars store credit",
-      "$20 buys $100, limit one",
-      "Credit to spend on picks"
+      "$99 buys $150",
+      "Credit to spend on picks; never expires"
     ],
     [
       "New account offer",
@@ -89,34 +99,50 @@
     ]
   ],
   "guarantee": [
-    "Pregame does not offer a money back or profit guarantee on picks, and it says so on purpose. Its discount page calls \"guaranteed picks\" a \"deceptive marketing ploy\" and argues they cost more than its own picks when a handicapper wins. That argument is fair as far as it goes: a pick guarantee never covers the money you bet. The same page mentions a narrow \"Money Back to Comeback\" insurance offer, but we found no terms for it.",
-    "The one remedy we could read is \"opposite side insurance\". The FAQ links to a 2009 forum post that says if you buy two packages whose top rated plays are on opposite sides of the same game, Pregame will credit your account with what you spent on both. It applies only to the top play in each package, is paid as account credit, and you must email support to claim it. We found no cash refund terms in the FAQ or the terms of service. Flex Access rebills at $195 a month until you cancel by email."
+    "Pregame does not offer a money back or profit guarantee on picks, and it says so on purpose. Its discount page calls \"guaranteed picks\" a \"deceptive marketing ploy\" and argues they cost more than its own picks when a handicapper wins. That argument is fair as far as it goes: a pick guarantee never covers the money you bet. The same page mentions a narrow \"Money Back to Comeback\" insurance offer and links a Bet Like a Pro profit program, but we found no current terms for either.",
+    "The one remedy we could read is \"opposite side insurance\". The FAQ says: \"I bought plays from two cappers on the same game. They are taking opposite sides. Shoot us a message\" and links a 2009 forum post. That post says if you buy two packages whose top rated plays are on opposite sides of the same game, Pregame will credit your account with what you spent on both. It applies only to the top play in each package, is paid as account credit, and you must email support to claim it.",
+    "We found no cash refund terms in the FAQ or the terms of service. The terms say the service is provided \"AS IS\" and that Pregame does not warrant that content is \"ACCURATE, RELIABLE OR CORRECT\". Flex Access says it \"Rebills at $195 a month unless cancelled via email\". Discounts are limited to one per purchase, and Bulk Dollars count as a discount."
   ],
   "claims": [
     {
+      "claim": "Spartan: \"All Records Meticulously Maintained!\" and \"NFL Triple Stars 2012-2026 277-183\"",
+      "where": "Pros page streak lines",
+      "status": "Checked: Pregame's own Current Season page shows Spartan 495-494-10 across all sports, down $5,932 weighted; NFL 47-43-3, up $319"
+    },
+    {
+      "claim": "Goodfella: \"NFL/CFB (+163 UNITS) L/5 YEARS #1 PRO\" and \"NFL (+181 UNITS) #1 PRO\"",
+      "where": "Pros page streak lines",
+      "status": "Checked: Current Season NFL 41-36-1, down $2,675; all sports 288-229-7 (55.7%) but down $4,944"
+    },
+    {
+      "claim": "Dave Essler: \"Another huge MAX winner and sweep\" and \"Our NBA is on an extensive multi-year run\"",
+      "where": "Essler profile, daily message",
+      "status": "Checked: Current Season NBA 16-10, up $1,445; all sports 253-231-10, down $2,956, mostly from MLB"
+    },
+    {
+      "claim": "Stephen Nover: \"28-17-1 NFL with 3* Texans Thursday Winner\" and \"316-263-7 Last 587 Premium Plays\"",
+      "where": "Pros page",
+      "status": "Close to Pregame's page: rated NFL picks 29-20-1, up $1,368. All sports Current Season 274-248-5, down $333"
+    },
+    {
+      "claim": "André Gomes: \"NBA TY: 40-35 (53%) | +3.34un\"",
+      "where": "Pros page",
+      "status": "Confirmed: Pregame's rated NBA line is 40-35, up $334, which is 3.34 units at $100. All sports Current Season down $808"
+    },
+    {
+      "claim": "Greg Shaker: \"CBB +47.4 UNITS LAST SEASON\" and \"TOTAL DESTROYER PLAYS 478-228\"",
+      "where": "Pros page",
+      "status": "Seller claim for a past season; his Current Season total was the only one of six we checked in profit, up $231"
+    },
+    {
       "claim": "\"all our sports betting experts have the experience, knowledge, and qualifications necessary to provide successful picks\"",
       "where": "Pros page",
-      "status": "Seller claim"
+      "status": "Seller claim; see the season records above"
     },
     {
       "claim": "\"Pregame.com is the lowest priced high quality pick site in the world!\"",
       "where": "How to get discounts page",
       "status": "Seller claim, not checkable"
-    },
-    {
-      "claim": "Goodfella \"NFL/CFB (+163 UNITS) L/5 YEARS #1 PRO\"; Spartan \"NFL Triple Stars 2012-2026 274-181\"; Stephen Nover \"296-253-7 Last 556 Premium Plays\"",
-      "where": "Pros page streak lines",
-      "status": "Selected runs chosen by each pro"
-    },
-    {
-      "claim": "Andre Gomes \"+374.67 UNITS\" on NBA since 2006/07",
-      "where": "Pros page",
-      "status": "Seller claim, no full log opened"
-    },
-    {
-      "claim": "Fezzik \"1.65 MILLION in Documented Sports Betting CONTEST Wins!\"",
-      "where": "Fezzik profile",
-      "status": "Seller claim, contest results not opened"
     },
     {
       "claim": "RJ Bell \"is the only sports bettor on Forbes' list of Gambling Gurus\"",
@@ -125,33 +151,35 @@
     }
   ],
   "claims_note": [
-    "The streak lines are chosen by each pro and change often. Under each pro the page offers \"more streaks\", which means more lines the pro selected, not a full record. Some pros do post losing totals too: one showed \"2026 CFB / 58-62 -19.25 Units\" beside his winning lines, which is more honest than most marketing in this business.",
-    "Win and loss counts alone say little. Stephen Nover's 296-253-7 works out to about 54% winners, only a little above the roughly 52.4% needed at -110, and the line does not show the prices taken or the size of each play. Dollar figures on profiles assume a bet size per star that buyers may not match."
+    "How we checked: every Pregame pro has a public win and loss page with filters for time (yesterday, last 7 days, last 30 days, current season), pick type and pick size. On 20 Nov 2026 we set it to Current Season and All Picks for six pros featured on the pros page and added up the sport rows ourselves. The dollar column is Pregame's own \"$ (Weighted)\" figure, which appears to stake $100 per star: a 3 star Essler winner shows +$300. Pregame does not define the start of its \"current season\"; it includes 2026 baseball and the current NBA and college football seasons. Totals: Essler 253-231-10, down $2,956; Nover 274-248-5, down $333; Gomes 401-393-17, down $808; Goodfella 288-229-7, down $4,944; Spartan 495-494-10, down $5,932; Shaker 205-186-12, up $231.",
+    "Win rates and money do not move together. Goodfella won 55.7% of his graded picks this season and still showed the second biggest loss, because his NFL parlays and teasers at bigger sizes lost. Win and loss counts alone say little; the price and the size of each play decide the result.",
+    "The streak lines are chosen by each pro and change often. Under each pro the page offers \"more streaks\", which means more lines the pro selected, not a full record. Some pros do post losing lines too: sleepyj showed \"2026-27 CFB / 68-76 -36.41 Units\" beside his winning golf line, which is more honest than most marketing in this business."
   ],
   "record": [
-    "What a buyer can verify independently: very little. We found no full log of Pregame picks kept by an outside party that we could open, and no regulator record. In 2015 Pregame's founder announced that a forum member, ComptrBob, would track Steve Fezzik's Bet Like a Pro service as an \"impartial third party\", but that tracking lives in a thread on Pregame's own forum and we did not audit it. Fezzik cites Westgate contest results, which are run by a third party, but we did not open those results.",
-    "What Pregame itself publishes: an \"Every Pro Pick Ever\" page that lists pro picks with a date and time, the pro, the pick, the final score, the odds, the size, win or loss, and the dollar result. On 7 Nov 2026 its date filter covered about the last 30 days. Each profile also shows the last 10 picks and selected best records. This is more than most pick sellers show. But Pregame grades and stores it, the log does not say whether its time is the release time or the game time, and in a 2019 response the founder said picks enter the archive \"soon after the game starts\". A 2015 forum post says Pregame grades only at a line that at least half of representative sportsbooks offered when the pick was made.",
-    "The archive has been tested once in public. On 23 Jun 2016 Deadspin published an analysis of Pregame's archive by two bettors who scraped it, and reported that picks sold from 1 Jan 2011 through May 2016 added up to a loss of nearly $310,000 by Pregame's own grading, with 11 of 49 pros showing a profit. Deadspin's update says RJ Bell and Pregame filed a defamation lawsuit in June 2017 and the case was settled, that Deadspin links Bell's response as part of the settlement, and that Deadspin stands by its reporting. In that response Bell said Deadspin counted inactive pros, did not adjust for pros on opposite sides of the same game, and that most of Pregame's active pros were profitable. That data is now more than nine years old and says nothing certain about today's roster."
+    "What a buyer can verify independently: very little. We found no full log of Pregame picks kept by an outside party that we could open, and no regulator record. In 2015 Pregame announced that a forum member would track Steve Fezzik's Bet Like a Pro service as an \"impartial third party\", but that tracking lives in a thread on Pregame's own forum and we did not audit it.",
+    "What Pregame itself publishes: an \"Every Pro Pick Ever\" page that lists pro picks with a date and time, the pro, the pick, the final score, the odds, the size, win or loss, and the dollar result. On 20 Nov 2026 its date menu went back to 22 Oct 2026, about 30 days, and showed 33 graded picks for the previous day. Each profile shows the last 10 picks (Essler's last 10 were 7 wins and 3 losses, up $490 by our sum), best records chosen by size and sport, and a link to the win and loss page described above. This is more than most pick sellers show. But Pregame grades and stores all of it, the times shown appear to be game times rather than release times, and in a 2019 response the founder said picks enter the archive \"soon after the game starts\".",
+    "The archive has been tested once in public. On 23 Jun 2016 Deadspin published an analysis of Pregame's archive by two bettors who scraped it. It reported that picks sold from 1 Jan 2011 through May 2016 added up to a loss of nearly $310,000 by Pregame's own grading, that a buyer who had bought and played every pick would be down $1,359,432 once the cost of the picks is counted, and that 11 of 49 pros showed a profit. It also said three pros, including Stan Sharp, had been removed from the archive. Bell told Deadspin they were deleted because their inactive pages drew search traffic, and released their histories, which Deadspin said showed one up 28 units and the other two down a combined 179 units. By Deadspin's count the roster as a whole picked about 51.67% against the spread.",
+    "The legal fight: the Las Vegas Review Journal reported on 24 Jun 2017 that Bell sued Deadspin's owner and the writer for $10 million, represented by Charles Harder. On 13 Dec 2017 Jezebel reported that a bankruptcy judge ruled the claim over the original article could not proceed against Gizmodo Media Group, leaving a narrow opening and the suit against the writer. Deadspin's update says the parties later settled, that it links Bell's response as part of the settlement, and that it stands by its reporting. In that response Bell said Deadspin counted inactive pros, did not adjust for pros on opposite sides of the same game, and that most active pros were profitable. That data is now more than nine years old."
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Pregame.com handicapper is matched to a Watchdog graded record, so we make no claim about how these handicappers perform.",
-    "context": "For scale: Pregame's founder has written that 55% winners is the best a professional can hope for over the long run. On the Watchdog board on 7 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Pregame.com handicapper is matched to a Watchdog graded record, so we make no claim about how these handicappers perform beyond what Pregame's own pages show.",
+    "context": "For scale: Pregame's founder has written that 55% winners is the best a professional can hope for over the long run, and the six pros we checked ranged from 50.1% to 55.7% this season. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "Independent customer evidence on Pregame is thin and mostly old. Much of the talk about Pregame pros happens on Pregame's own forum, which the company hosts and moderates. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent customer evidence on Pregame spans 2009 to 2026 but is thin, and much of it is about individual pros rather than the store. A lot of the talk happens on Pregame's own forum, which the company hosts and moderates. Below is everything we found and how much weight it can carry.",
   "customers": [
     {
       "type": "Our summary",
-      "tone": "Negative",
-      "date": "Read 13 Nov 2026",
-      "text": "The buyer complaint we found is about service, not results. A past buyer said in 2011 that he could never post on the Pregame forums and his emails asking why went unanswered, so he stopped buying. Others in that Sportsbook Review thread said the site had many losing handicappers but useful free information.",
+      "tone": "Mixed",
+      "date": "Read 20 Nov 2026",
+      "text": "We found about a dozen independent posts across ComplaintsBoard, TheRX, Sportsbook Review, Reddit and Pregame's own forum, from 2009 to 2026. The oldest set, from 2009 to 2011, repeats one pattern: buyers said they paid for a heavily promoted pro, lost, and then saw the pro boast on the forum while other usernames praised him; several alleged that one seller used many usernames and that critics were banned. A 2009 TheRX member alleged that one Pregame pro was invented by the company, which others disputed. A 2011 Sportsbook Review thread praised Pregame's free information and podcasts while calling many pros losing and the promotion dishonest. Recent posts are about single pros: a January 2026 thread on Pregame's own forum alleged Steve Fezzik lost 95 units for clients in 2025, and a 2025 Reddit comment said he had been in the red for two years. Positive posts praise the free content, the opposite side insurance and, in one 2011 comment, years of profit following one pro. No post includes a full log, and we could not verify any of the figures.",
       "source": null
     },
     {
       "type": "Forum allegation",
       "tone": "Negative",
       "date": "2 Jan 2026",
-      "text": "In a thread on Pregame's own forum, a member claimed Steve Fezzik \"lost -95 Units for his clients in 2025\". Fezzik replied in the thread that he won just under 260 units from 2020 to 2024. Neither side posted a full log there, and we did not verify either figure.",
+      "text": "In a thread on Pregame's own forum, a member claimed Steve Fezzik \"lost -95 Units for his clients in 2025\". Fezzik replied that he won just under 260 units from 2020 to 2024. A day later another member argued no buyer won those units once fees and lines buyers could not get are counted. Neither side posted a full log, and we did not verify either figure.",
       "source": 12
     },
     {
@@ -164,140 +192,197 @@
     {
       "type": "Customer report",
       "tone": "Negative",
-      "date": "Aug and Nov 2009",
-      "text": "ComplaintsBoard shows two complaints from 2009, both marked resolved. One buyer said the picks he bought lost while the handicappers claimed wins on the forum the next day. Another alleged that a seller promoted himself under several usernames and that critics were banned. These are unverified and more than 15 years old.",
+      "date": "Aug 2009 to Oct 2011",
+      "text": "ComplaintsBoard shows a 2009 complaint, marked resolved, from a buyer who said the picks he bought twice lost while the handicappers claimed wins on the forum the next day, and another alleging that a seller promoted himself under several usernames and that critics were banned. In September 2009 a buyer said he paid for a week of one promoted pro and had six losing days out of seven. An October 2011 comment alleged the same pro had lost over 100 units for clients that year. These are unverified and more than 14 years old.",
       "source": 14
+    },
+    {
+      "type": "Customer report",
+      "tone": "Positive",
+      "date": "Jul 2010 and Feb 2011",
+      "text": "On the same ComplaintsBoard page, a commenter wrote in February 2011 that following that pro for years had been the best time of their betting life, and another in July 2010 argued that Pregame's own win and loss tool would expose any false claim. A long July 2010 reply defending Pregame's approach to losing streaks reads like a company response, though it is not signed as one.",
+      "source": 14
+    },
+    {
+      "type": "Forum allegation",
+      "tone": "Negative",
+      "date": "31 Jan 2009",
+      "text": "A TheRX member alleged, citing someone who had worked at Pregame, that one featured pro was a fictional person created to sell picks. Other members disputed it and posted his monitored record of about 57% over 674 plays; one said that even if the name was a brand, the record was what mattered. Deadspin later reported that this pro's picks had been removed from Pregame's archive, which Bell said was done for search traffic reasons. We could not verify who he was.",
+      "source": 26
+    },
+    {
+      "type": "Forum allegation",
+      "tone": "Negative",
+      "date": "23 Aug 2010",
+      "text": "A long TheRX post, also copied to ComplaintsBoard, alleged that a Pregame pro posted praise for himself under many usernames from 2007 onward. Replies included a member who said they would no longer send that pro their football money and another who said critics on Pregame's forum were banned for questioning records. These are allegations we could not verify.",
+      "source": 27
+    },
+    {
+      "type": "Forum post",
+      "tone": "Mixed",
+      "date": "18 to 19 Aug 2011",
+      "text": "In a Sportsbook Review thread, members said Pregame had many losing handicappers but useful free information, radio and podcasts. One past buyer said he could never post on the Pregame forums, his emails asking why went unanswered, and so he stopped buying.",
+      "source": 19
+    },
+    {
+      "type": "Forum allegation",
+      "tone": "Negative",
+      "date": "10 Dec 2024",
+      "text": "On Pregame's own forum, a member alleged that Steve Fezzik sent paying clients the Rams +3 while saying on a podcast that the 49ers were the right side, and cited a 2024 paid NFL record of 62-58-2 without a source. Another member called him irrelevant apart from a short streak. We could not check either claim.",
+      "source": 32
+    },
+    {
+      "type": "Forum post",
+      "tone": "Negative",
+      "date": "7 May 2025",
+      "text": "In an r/sportsbook thread about paying for picks, a commenter who said they bet full time told readers never to pay for picks and wrote that two well known sellers, one of them Fezzik, had been in the red for their services for the last two years. No figures were posted.",
+      "source": 31
     },
     {
       "type": "Not found",
       "tone": "Neutral",
-      "date": "Checked 7 Nov 2026",
-      "text": "Trustpilot showed an unclaimed Pregame.com profile with 0 reviews. The Apple App Store app named PreGame is an unrelated party game from another developer. Reddit search did not load for our check, and we did not find a Better Business Bureau profile we could confirm belongs to pregame.com.",
+      "date": "Checked 20 Nov 2026",
+      "text": "Trustpilot showed an unclaimed Pregame.com profile with 0 reviews when we checked on 7 Nov 2026 and refused our request today. The Apple App Store app named PreGame is an unrelated party game from another developer. Our Reddit archive check found Pregame mostly cited as a line source, not reviewed as a pick seller, and we did not find a Better Business Bureau profile we could confirm belongs to pregame.com.",
       "source": 15
     }
   ],
   "conflicts": [
-    "Pregame sells the picks, grades them, keeps the archive and runs the forum where buyers discuss them. That does not make the records wrong, but no outside party checks them.",
-    "We found no sportsbook links or promo codes on the Pregame pages we opened on 7 Nov 2026, and its affiliate page says \"Pregame does not have a Affiliate Program.\" In his 2019 response Bell wrote that Pregame does not advertise or receive revenue from any sportsbook. Deadspin's 2016 story reported that Pregame sent customers to sportsbook referral sites, and Bell denied running them. We could not confirm either side for today."
+    "Pregame sells the picks, grades them, keeps the archive, writes the season records and runs the forum where buyers discuss them. That does not make the records wrong, but no outside party checks them.",
+    "We found no sportsbook links or promo codes on the Pregame pages we opened on 20 Nov 2026, and its affiliate page says \"Pregame does not have a Affiliate Program.\" In his 2019 response Bell wrote that Pregame does not advertise or receive revenue from any sportsbook. Deadspin's 2016 story reported that Pregame sent customers to sportsbook referral sites, and Bell denied running them. We could not confirm either side for today.",
+    "Steve Fezzik announced on 1 Apr 2026 that he was leaving Pregame, yet on 20 Nov 2026 his name was still in the pros menu and his profile still carried his sales claims. A buyer could mistake an old profile for a current offer."
   ],
   "strengths": [
-    "A named operator, a toll free phone line, a support email and a posted price for every package.",
-    "A public graded archive of recent pro picks with odds, size and results, plus a last 10 picks list on each profile. Most pick sellers show nothing like it.",
-    "It does not sell \"guaranteed\" picks, and it explains why a guarantee does not protect a bettor's stake. Free picks and a $25 join credit let you sample before paying."
+    "A named operator with a street address, a toll free phone line, a support email and a posted price for every package.",
+    "A public graded archive of recent pro picks with odds, size and results, plus a win and loss page for every pro that shows losing seasons as well as winning ones. Most pick sellers show nothing like it.",
+    "Some streak lines check out against Pregame's own records: André Gomes's NBA line matched exactly, and Stephen Nover's NFL line was close.",
+    "It does not sell \"guaranteed\" picks, and it explains why a guarantee does not protect a bettor's stake. Free picks, podcasts and a $25 join credit let you sample before paying.",
+    "Flexible buying: single plays from $6, weekend passes and a monthly plan that can switch pros twice a month."
   ],
   "concerns": [
-    "The archive and every streak line come from the seller. On 7 Nov 2026 the archive filter showed only about the last 30 days.",
+    "Pregame's own Current Season pages showed five of the six featured pros we checked behind on 20 Nov 2026, while their sales lines named winning runs and \"#1 PRO\" claims.",
+    "The archive, the season pages and every streak line come from the seller. The archive menu reaches back only about 30 days, and the season view does not say when the season starts.",
     "No refund terms found. The only remedy we read is store credit when two bought top plays land on opposite sides.",
-    "Deadspin's 2016 analysis of Pregame's own data found the picks sold from 2011 to May 2016 lost money overall. Pregame disputed it, and the lawsuit was settled.",
-    "Heavy discount marketing, such as prices shown reduced from $3,000 or $5,000, and a monthly plan that rebills until you cancel by email."
+    "Deadspin's 2016 analysis of Pregame's own data found the picks sold from 2011 to May 2016 lost money overall. Pregame disputed it, and the lawsuit was settled with Deadspin standing by its story.",
+    "Heavy discount marketing, such as prices shown against $3,000 or $5,000 and \"Price Will NEVER Be This Low Again\", and a monthly plan that rebills until you cancel by email.",
+    "Old and recent buyer posts allege sock puppet praise and banned critics on the company forum. These are unverified, but they recur from 2009 to 2011."
   ],
   "checklist": [
-    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
-    "Count units, not wins. A 60% record at heavy favorites can still lose money.",
-    "Read the guarantee for the words refund, credit and extension. Most \"guarantees\" in this business are credits.",
+    "Before buying any pro, open his win and loss page on Pregame, set it to Current Season and All Picks, and add up the dollar column across sports.",
+    "Compare the streak line on the package with that page. A run that starts on a chosen date is not a record.",
+    "Count units and dollars, not wins. Goodfella won 55.7% of his graded picks this season and still showed a loss of $4,944.",
+    "If you take Flex Access, put a reminder in your calendar: it rebills at $195 a month until you cancel by email.",
+    "If two pros you bought land on opposite sides, email support the same day to claim the opposite side credit.",
     "Write down each pick yourself the moment you receive it, with the line you can actually get.",
     "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
   ],
   "faq": [
     [
       "Is Pregame.com legit?",
-      "It is a real business, Pregame, LLC of Las Vegas, with published prices, a support line and roughly 30 named pros. Whether those pros win over time is a separate question that we could not verify."
+      "It is a real business, Pregame, LLC of Las Vegas, with published prices, a support line and roughly 30 named pros, and it publishes more of its pros' results than most pick sellers. Whether those pros win over time is a separate question: on its own season pages five of the six featured pros we checked were behind on 20 Nov 2026."
+    ],
+    [
+      "Who owns Pregame.com?",
+      "Pregame, LLC, a Nevada company. Its founder is RJ Bell, whose real name the Las Vegas Review Journal reported as Randall James Busack; the terms list Randall Busack as the company's agent at 5860 S. Pecos Rd., Las Vegas. Bell has been an oddsmaker for the Associated Press and a sports radio host, according to Pregame's About page."
     ],
     [
       "How much does Pregame.com cost?",
-      "On 7 Nov 2026 single plays cost $5 to $30. Dave Essler's packages ran $69 for a weekend, $119 for 7 days, $249 for 30 days and $1,995 for a year, and Flex Access cost $195 a month and rebills until cancelled."
+      "On 20 Nov 2026 single plays cost $6 to $30. Dave Essler's packages ran $89 for a weekend, $119 for 7 days, $249 for 30 days, $449 for 90 days and $1,995 for a year, and Flex Access cost $195 a month and rebills until cancelled."
+    ],
+    [
+      "Does Pregame.com offer refunds or a guarantee?",
+      "No cash refunds or profit guarantees that we could find. The only remedy is account credit if you buy two packages whose top plays are on opposite sides of the same game, claimed by email."
     ],
     [
       "Does Pregame.com have a verified record?",
-      "Not an independent one. Pregame publishes a graded archive of recent pro picks with odds and results, but it keeps that archive itself, and no Watchdog graded record is matched to any Pregame pro."
+      "Not an independent one. Pregame publishes a graded archive and season records for every pro, which you can use, but it keeps them itself, and no Watchdog graded record is matched to any Pregame pro. The only outside test, Deadspin in 2016, found the picks lost money overall from 2011 to May 2016."
     ],
     [
       "Is Pregame.com worth it?",
-      "For the money you get a pro's picks and analysis, plus a public archive you can use to check recent results, which most sellers do not offer. What is unproven is whether any pro beats the roughly 52.4% needed at -110 over hundreds of picks, and there is no refund if the picks lose."
+      "For the money you get a pro's picks and analysis, plus public record pages you can use to check him, which most sellers do not offer. On those pages this season most featured pros were not beating the market, and there is no refund if the picks lose. If you buy, buy short and check the pro's season page first."
     ]
   ],
   "related": [
     "wagertalk",
+    "steve-fezzik",
     "docs-sports",
     "dubclub",
-    "covers-expert-picks",
-    "jim-feist"
+    "covers-expert-picks"
   ],
   "sources": [
     {
       "title": "Pregame pros page (roster, streak lines, prices, join offer)",
       "url": "https://pregame.com/pros",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Pregame: Dave Essler profile (packages, prices, last 10 picks)",
       "url": "https://pregame.com/pros/dave-essler",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Pregame: Every Pro Pick Ever archive",
       "url": "https://pregame.com/buy-picks/pro-pick-hq",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Pregame: How to Get Discounts (guaranteed picks argument, price claim)",
       "url": "https://pregame.com/buy-picks/how-to-get-discounts",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Pregame FAQ (opposite side insurance, discounts)",
       "url": "https://pregame.com/faq",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Pregame forum: Opposite Side Insurance (2 Jul 2009)",
       "url": "https://pregame.com/pregame-forums/f/nba/89893/opposite-side-insurance-another-pregame-only-program",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "Pregame terms of service (operator, Nevada)",
+      "title": "Pregame terms of service (operator, Nevada, address)",
       "url": "https://pregame.com/terms-of-service",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Pregame About Us (RJ Bell biography)",
       "url": "https://pregame.com/about-us",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Pregame affiliate program page",
       "url": "https://pregame.com/affiliate-program",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Pregame support page (email, phone)",
       "url": "https://pregame.com/support",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Deadspin: How America's Favorite Sports Betting Expert Turned A Sucker's Game Into An Industry (23 Jun 2016, updated 16 Jan 2019)",
       "url": "https://deadspin.com/how-america-s-favorite-sports-betting-expert-turned-a-s-1782438574/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Deadspin: RJ Bell's Response to this Article (16 Jan 2019)",
       "url": "https://deadspin.com/rj-bell-s-response-to-this-article-i-write-here-to-resp-1831259156/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Pregame forum: STEVE FEZZIK 2025 RESULTS (2 Jan 2026)",
       "url": "https://pregame.com/pregame-forums/f/cfb/1874689/steve-fezzik-2025-results",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Pregame forum: Fezzik Bet Like a Pro tracking by ComptrBob (7 Aug 2015)",
       "url": "https://pregame.com/pregame-forums/f/everything-else/1276577/fezzik-bet-like-a-pro-tracking-by-comptrbob",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "ComplaintsBoard: Pregame.com reviews and complaints",
       "url": "https://www.complaintsboard.com/reviews/pregamecom-a161496",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Trustpilot: Pregame.com (unclaimed, 0 reviews)",
@@ -307,22 +392,87 @@
     {
       "title": "Apple App Store: PreGame. (unrelated party game)",
       "url": "https://apps.apple.com/us/app/pregame/id1581007867",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Pregame: Fezzik profile (contest claims)",
       "url": "https://pregame.com/members/fezzik",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Pregame homepage (join offer, footer)",
       "url": "https://pregame.com/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "Sportsbook Review forum: Pregame.com really had potential",
+      "title": "Sportsbook Review forum: Pregame.com really had potential (Aug 2011)",
       "url": "https://www.sportsbookreview.com/forum/players-talk/734299-pregame-com-really-had-potential-but",
-      "accessed": "13 Nov 2026"
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Pregame: Dave Essler win and loss record, Current Season, All Picks",
+      "url": "https://pregame.com/pros/dave-essler/win-loss-record?time=Current+Season&size=All+Picks",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Pregame: Spartan win and loss record, Current Season, All Picks",
+      "url": "https://pregame.com/pros/spartan/win-loss-record?time=Current+Season&size=All+Picks",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Pregame: Goodfella win and loss record, Current Season, All Picks",
+      "url": "https://pregame.com/pros/goodfella/win-loss-record?time=Current+Season&size=All+Picks",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Pregame: André Gomes win and loss record, Current Season (All Picks and Rated Picks)",
+      "url": "https://pregame.com/pros/andre-gomes/win-loss-record?time=Current+Season&size=Rated+Picks+Only",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Pregame: Stephen Nover win and loss record, Current Season (All Picks and Rated Picks)",
+      "url": "https://pregame.com/pros/stephen-nover/win-loss-record?time=Current+Season&size=Rated+Picks+Only",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Pregame: Greg Shaker win and loss record, Current Season, All Picks",
+      "url": "https://pregame.com/pros/greg-shaker/win-loss-record?time=Current+Season&size=All+Picks",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "TheRX: Stan Sharp thread (31 Jan 2009)",
+      "url": "https://www.therx.com/threads/stan-sharp.657751/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "TheRX: The Vegas Runner thread (23 Aug 2010)",
+      "url": "https://www.therx.com/threads/the-vegas-runner-scam-fraud-exposed.789847/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Las Vegas Review Journal: Hulk Hogan's lawyer representing RJ Bell in $10M lawsuit against Deadspin (24 Jun 2017)",
+      "url": "https://www.reviewjournal.com/sports/betting/hulk-hogans-lawyer-representing-rj-bell-in-10m-lawsuit-against-deadspin",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Jezebel: Judge Hands Gizmodo Media Group a Legal Victory Over Hulk Hogan's Lawyer (13 Dec 2017)",
+      "url": "https://www.jezebel.com/judge-hands-gizmodo-media-group-a-legal-victory-over-hu-1821267997",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Pregame forum: Fezzik Leaving Pregame (1 Apr 2026)",
+      "url": "https://pregame.com/pregame-forums/f/everything-else/1878557/fezzik-leaving-pregame",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbook: Benderwins a Scam? thread, comment on paid pick sellers (7 May 2025)",
+      "url": "https://www.reddit.com/r/sportsbook/comments/1kh5u0e/benderwins_a_scam_is_paying_for_handicapping/mr4d3b7/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Pregame forum: Rams/ SF Steve Fezzik gave out BOTH sides (10 Dec 2024)",
+      "url": "https://pregame.com/pregame-forums/f/nfl/1855665/rams-sf-steve-fezzik-gave-out-both-sides-no-shame",
+      "accessed": "20 Nov 2026"
     }
   ],
   "pricing_source": 1
