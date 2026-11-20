@@ -1,27 +1,31 @@
 {
   "slug": "cappertek",
   "name": "CapperTek",
-  "legal_name": "Sports Media, LLC (site terms); the App Store lists the seller as MO Sports Media LLC",
   "kind": "Pick marketplace, handicapper directory and pick tracker where independent sellers set their own prices",
-  "checked": "17 Nov 2026",
-  "checked_iso": "2026-11-17",
-  "updated_iso": "2026-11-17",
   "title": "CapperTek Review 2026: Pricing, Record, Is It Worth It?",
-  "description": "CapperTek review, checked 17 Nov 2026: how the pick marketplace and tracker works, who sets prices, refund terms, leaderboard limits and user reports.",
   "h1": "CapperTek review",
-  "dek": "A US pick marketplace and tracking site where any handicapper can list for free, set a price and post graded picks. CapperTek sells no picks of its own. Its records are more open than most tout pages, but the platform's own claims are not audited and its fees are non refundable.",
+  "legal_name": "Sports Media, LLC (site terms); the App Store lists the seller as MO Sports Media LLC. BBB has files in Philadelphia, PA and Scottsdale, AZ",
+  "checked": "20 Nov 2026",
+  "checked_iso": "2026-11-20",
+  "updated_iso": "2026-11-20",
+  "description": "CapperTek review, checked 20 Nov 2026: how the pick marketplace works, who sets prices, refund terms, its leaderboards recounted, and user reports.",
+  "dek": "A US pick marketplace and tracking site where any handicapper can list for free, set a price and post graded picks. CapperTek sells no picks of its own. Its records are more open than most tout pages and its own headline numbers check out, but \"Verified\" is a banner deal, not an audit, the leaderboards have no minimum sample, and its fees are non refundable.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not audited CapperTek's grading or matched any CapperTek seller to a Watchdog graded record. This page reports what we could check on 17 Nov 2026 and labels everything else."
+    "note": "Watchdog has not audited CapperTek's grading or matched any CapperTek seller to a Watchdog graded record. We recounted its public leaderboards and two seller logs on 20 Nov 2026; this page reports what we could check and labels everything else."
   },
   "glance": [
     [
       "Operator",
-      "Sports Media, LLC (terms); no street address published"
+      "Sports Media, LLC (terms); App Store seller MO Sports Media LLC; no street address published on the site"
     ],
     [
       "Operating since",
-      "2013, per the site copyright and its \"since 2013\" pick count"
+      "2013: domain registered 20 Aug 2013, BBB lists a 1 Jan 2013 start"
+    ],
+    [
+      "Directory size",
+      "11,428 services listed, of which 4,938 active, 6,490 inactive and 73 with picks for sale (20 Nov 2026)"
     ],
     [
       "Who sets prices",
@@ -41,16 +45,32 @@
     ]
   ],
   "short_answer": [
-    "CapperTek is a real, long running platform. Its terms name Sports Media, LLC as the owner, it says it has documented picks since 2013, and its app is on the Apple App Store. It does not sell its own picks. It lists independent handicappers, tracks their picks and lets them sell access passes at prices they set.",
-    "Its pitch is transparency: picks are revealed to the public 30 minutes after each game starts, and the site says sellers cannot alter, hide or delete picks. That is better than a seller who only shows hot streaks. But the FAQ also says a pick can be voided, the site does not explain how verification works, and we found no outside audit of its grading.",
-    "Treat a CapperTek record as a useful starting point, not proof. Look at long windows, check sample sizes on the leaderboard, and remember that every seller listed is, in CapperTek's words, an individually owned and operated private entity."
+    "CapperTek is a real, long running platform. Its terms name Sports Media, LLC as the owner, its domain dates from Aug 2013, BBB has two files on it with no complaints, and its app is on the Apple App Store. It does not sell its own picks. It lists independent handicappers, tracks their picks and lets them sell access passes at prices they set.",
+    "Its pitch is transparency, and the numbers we could test held up. Its homepage said 104 handicappers were profitable over the last 30 days; we counted the 30 day leaderboard and found exactly 104 of 231. Pick ID numbers we saw had passed 3.5 million, consistent with its \"over 3 million\" claim. In two seller logs we downloaded, every pick was made before its game started.",
+    "The weak points are in what the labels mean. CapperTek's own FAQ says \"Verified\" means a seller put a CapperTek banner on its site so complaints can be routed, not that the record was audited. Picks can be voided. Leaderboards set no minimum sample, so the best ROI over 365 days belonged to sellers with one to nine picks. And CapperTek earns from the sellers it ranks through commissions, featured listings, banner ads and $450 sponsored posts.",
+    "Treat a CapperTek record as a useful starting point, not proof. Open the all time view, check the sample size, and remember that every seller listed is, in CapperTek's words, an individually owned and operated private entity."
   ],
-  "pricing_intro": "CapperTek does not publish one price list. Each seller sets its own access pass prices, and the pages we could read on 17 Nov 2026 did not show a seller's price without signing in. The rows below are the platform rules as CapperTek states them.",
+  "pricing_intro": "CapperTek does not publish one price list for buyers. Each seller sets its own access pass prices, which show on the seller's Purchase tab without signing in. The rows below are the platform rules as CapperTek states them on 20 Nov 2026, with two seller price lists as examples, and what CapperTek charges sellers.",
   "pricing": [
     [
       "Access passes to a seller's picks",
       "Set by each seller",
       "Pass lengths of 1, 7, 14, 30 or 60 days (Sell Sports Picks page)"
+    ],
+    [
+      "Example: BigAlsPicks.com passes",
+      "1 day $24.88 · 7 days $40.88 · 14 days $70.88 · 30 days $149.88 · 60 days $190.88",
+      "Seller offers extended access if a 14 day or longer pass finishes in the red"
+    ],
+    [
+      "Example: SportsCapPro.com passes",
+      "1 day $15.00 · 7 days $90.00 · 14 days $140.00 · 30 days $210.00 · 60 days $325.00",
+      "No guarantee shown on the pass page"
+    ],
+    [
+      "Viewing records, leaderboards and free picks",
+      "Free",
+      "CapperTek says pending picks stay hidden until 30 minutes after the start"
     ],
     [
       "Listing and verification for sellers",
@@ -68,40 +88,56 @@
       "Check mailed monthly, $250 minimum payout, US sellers only (FAQ)"
     ],
     [
-      "Free trials and guarantees",
-      "Set by each seller",
-      "Example: one seller offers a 1 day free trial and extra access when a 14 day or longer package ends in the red"
+      "Pro Featured listing (paid by sellers)",
+      "\"a nominal monthly advertising fee\", amount not published",
+      "Listing highlighted in green in the directory (FAQ)"
+    ],
+    [
+      "Sponsored guest post (paid by advertisers)",
+      "$450 per article",
+      "Sponsored Posts page"
     ]
   ],
   "guarantee": [
-    "CapperTek itself guarantees nothing about results. The terms say the site \"makes no warranty as to the results that may be obtained from the use of the Website\" and that \"all fees and charges (including subscription fees) are non-refundable.\"",
-    "Any guarantee comes from the individual seller. For example, the BigAlsPicks profile says packages of 14 days or longer get extended access if they finish in the red on the documented record. That is more picks, not money back, and losses on the bets themselves are never covered."
+    "CapperTek itself guarantees nothing about results. The terms, last updated 8 Dec 2022 and re-read on 20 Nov 2026, say the site \"makes no warranty as to the results that may be obtained from the use of the Website\" and that \"all fees and charges (including subscription fees) are non-refundable.\" The same terms say a Featured Handicapper subscription \"can be canceled at anytime for any reason by the Provider without notice or refund.\"",
+    "Any guarantee comes from the individual seller. The BigAlsPicks profile, for example, says \"Packages of 14 days or longer: if you finish in the red on our documented record for that window, we extend your access.\" That is more picks, not money back, and losses on the bets themselves are never covered.",
+    "Disputes with CapperTek go to confidential arbitration in the British Virgin Islands under its laws, according to the terms, even though the footer calls it \"Proudly an American Company\" and another clause points to United States law."
   ],
   "claims": [
     {
-      "claim": "\"Over 3 million documented sports picks since 2013.\"",
-      "where": "CapperTek homepage",
-      "status": "Platform claim, not checked by us"
+      "claim": "\"Currently 104 profitable sports handicappers the last 30-days.\"",
+      "where": "CapperTek homepage, 20 Nov 2026",
+      "status": "Confirmed: the 30 day leaderboard listed 231 handicappers with picks, and 104 of them (45%) were up in units"
     },
     {
-      "claim": "\"Handicappers cannot alter, hide, or delete picks nor can records or units be tampered with or forged.\"",
-      "where": "CapperTek Buy Sports Picks page",
-      "status": "Platform claim, no outside audit found"
+      "claim": "\"Over 3 million documented sports picks since 2013.\"",
+      "where": "CapperTek homepage",
+      "status": "Consistent: pick IDs we saw rose from 3,378,518 on 25 Feb 2026 to 3,540,250 on 19 Nov 2026, if IDs are numbered in order"
+    },
+    {
+      "claim": "\"11,428 sports handicappers listed in our directory\"",
+      "where": "CapperTek homepage",
+      "status": "Confirmed as a count, but the directory itself marks 6,490 as inactive and only 73 had picks for sale that day"
     },
     {
       "claim": "\"All picks revealed 30minutes after event starts for 100% transparency.\"",
       "where": "CapperTek homepage",
-      "status": "Platform claim"
+      "status": "Partly checked: in two seller logs (263 and 22 picks) every pick was made before its start time. We could not watch a reveal happen"
+    },
+    {
+      "claim": "\"Handicappers cannot alter, hide, or delete picks nor can records or units be tampered with or forged.\"",
+      "where": "Buy Sports Picks page",
+      "status": "Partly contradicted by its own FAQ: picks can be voided, and profiles open on a short default window (60 days for SportsCapPro, which showed nothing)"
     },
     {
       "claim": "\"All handicapper records and units gained or lost are accurate, legitimate, and documented.\"",
-      "where": "CapperTek Buy Sports Picks page",
-      "status": "Platform claim, not checked by us"
+      "where": "Buy Sports Picks page",
+      "status": "Our recount of SportsCapPro's 263 picks matched CapperTek's totals exactly. Grading against real game results not audited"
     },
     {
       "claim": "\"Reach the over 500,000 active sports bettors using our platform each month.\"",
-      "where": "CapperTek Advertising page",
-      "status": "Platform claim, no traffic data shown"
+      "where": "Advertising page",
+      "status": "Not checkable; the only user count on its own pages is \"32,178 Registered Customers\""
     },
     {
       "claim": "\"the largest and most trusted sports handicapping service directory and marketplace on the web\"",
@@ -110,27 +146,37 @@
     }
   ],
   "claims_note": [
-    "The pages do not fully agree. The Buy page says picks cannot be deleted, while the FAQ explains that a pick \"can ONLY be voided, meaning that there is still a record of it.\" The Sell page promises \"Zero fees or commissions,\" while the FAQ says CapperTek charges 30% when it takes payments for the seller. Both can be true under different payment routes, but a buyer should know voids exist.",
-    "The verification badge is free and the verification page does not say what is checked. The terms also say CapperTek has no direct affiliation with listed services and is not responsible for the accuracy of reviews or complaints."
+    "How we checked: on 20 Nov 2026 we downloaded the full 30 day and 365 day leaderboards and counted every row, downloaded SportsCapPro's complete pick history (263 picks) and three days of BigAlsPicks history (22 picks), and compared pick times, totals and ID numbers with CapperTek's own statements.",
+    "The pages do not fully agree. The Buy page says picks cannot be deleted, while the FAQ explains that a pick \"can ONLY be voided, meaning that there is still a record of it.\" The FAQ also admits that the default view hides older picks, which \"might even make it seem like something fishy is going on.\" The Sell page promises \"Zero fees or commissions,\" while the FAQ says CapperTek charges 30% when it takes payments for the seller. Each can be true in its own context, but a buyer should know voids and default windows exist.",
+    "The verification label is the biggest gap. The FAQ says Verified services \"have been verified by us by placing a verification banner on their website,\" which means CapperTek \"established an open line of communication directly with the owner ... so we can resolve any negative reviews or complaints.\" Pro Featured services are verified services that also pay a monthly advertising fee. Neither label says anything about whether the seller wins. The directory counted 2,458 Verified, 121 Pro Verified and 32 Pro Featured Verified services.",
+    "In a 2014 TheRX post, the CapperTek account described the company as a web development and marketing firm that works \"together with many of the top name handicappers in the industry\" on their IT and marketing, alongside running the directory. A tracker that also builds and markets for sellers has a reason to keep them happy."
   ],
   "record": [
-    "CapperTek is a platform, so it has no single record. Each seller has a record kept by CapperTek, with picks revealed 30 minutes after the start.",
-    "The leaderboard defaults to all sports over the last 30 days and ranks by units. On 17 Nov 2026 the top five ran from 55% to 60% winners, and one of them had only 5 picks. The page sets no minimum number of picks and does not say how units or stakes are counted. A 30 day ranking on small samples says little about skill.",
-    "We did not audit CapperTek's grading. We found no outside review of whether voids, late posts or unit sizes are handled fairly."
+    "CapperTek is a platform, so it has no single record. Each seller has a record kept by CapperTek, with picks revealed 30 minutes after the start. Here is what its own leaderboards showed on 20 Nov 2026, counted by us.",
+    "Last 30 days: 231 handicappers with picks, 104 (45%) up in units, median ROI -1.42%. Only 2 had 250 or more picks in the window, and both were down. 50 had fewer than 20 picks.",
+    "Last 365 days: 508 handicappers, 209 (41%) up in units, median ROI -1.6%. The longer the record, the better the odds a seller was up: of the 132 sellers with 500 or more picks, 77 were up, with a median ROI of +0.76%. That fits sellers who lose dropping out, as much as sellers who win staying. Sorted by ROI, the top five over 365 days had 9, 1, 1, 1 and 1 picks. The leaderboard sets no minimum, so sort by units and check the pick count.",
+    "We did not audit CapperTek's grading against game results. We found no outside review of whether voids, late posts or unit sizes are handled fairly. One check we could make held: our hand count of SportsCapPro's 263 picks matched CapperTek's totals to the cent of a unit (118-143-2, -93.01 units)."
   ],
   "our_data": {
     "matched": false,
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no CapperTek seller is matched to a Watchdog graded record, so we make no claim about how CapperTek listed sellers perform.",
-    "context": "For scale: the CapperTek 30 day leaderboard top five ran from 55% to 60% winners. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "context": "For scale: of 132 CapperTek sellers with 500 or more picks over the last 365 days, the median ROI was +0.76%. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "We found little independent talk from people who bought picks through CapperTek. Most mentions online are sellers advertising their CapperTek rank. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "We found little independent talk from people who bought picks through CapperTek. Most mentions online are sellers advertising their CapperTek rank. We re-read the App Store, Sportsbook Review and TheRX threads, and both BBB files, on 20 Nov 2026. Below is everything we found and how much weight it can carry.",
   "customers": [
     {
       "type": "Our summary",
       "tone": "Mixed",
-      "date": "Read 17 Nov 2026",
-      "text": "Independent posts about CapperTek are few. The only forum complaint we found is a 2015 Sportsbook Review thread alleging that the site removed unfavorable reviews and favored services that paid it; no proof was posted and nobody from the site replied. On the App Store the app rated 4.7 from 36 ratings, with users praising its tracking and affordable subscriptions and one 2024 user complaining about constant pop ups pushing a monthly plan. On Reddit, nearly every mention from 2024 to 2026 is a seller promoting a CapperTek ranking, and one seller asked in 2026 whether those rankings mean anything. We found no buyer describing a lost payment or a refund dispute that we could open.",
+      "date": "Read 20 Nov 2026",
+      "text": "Independent posts about CapperTek are few and span 2014 to 2026. Early forum talk was skeptical: in Nov 2014 a Sportsbook Review member who tried the site called it suspicious, and others replied that any rating service struggles to tell lucky sellers from good ones; in Aug 2015 another member alleged, without evidence, that CapperTek removed unfavorable reviews and favored services that paid it. Later evidence is milder. The App Store app rates 4.7 from 36 ratings, with one user praising its verified tracking and one complaining about pop ups pushing a monthly plan. Both BBB files show no complaints. On Reddit, nearly every mention from 2019 to 2026 is a seller promoting a CapperTek ranking, and one seller asked in 2026 whether those rankings mean anything. We found no buyer describing a lost payment or a refund dispute with CapperTek itself that we could open; the one purchase complaint we saw on the platform, about a seller, was withdrawn the next day.",
       "source": null
+    },
+    {
+      "type": "Forum post",
+      "tone": "Mixed",
+      "date": "18 Nov 2014",
+      "text": "A Sportsbook Review member said they had tried CapperTek, which rates handicapping services, and that it looked very suspicious, and asked if it could be trusted. Replies did not report a bad experience with the site; they argued that a rating service cannot separate lucky sellers from skilled ones, and one said any seller showing 60% over thousands of bets would be cooking the books.",
+      "source": 23
     },
     {
       "type": "Forum allegation",
@@ -164,56 +210,84 @@
       "type": "Seller curated",
       "tone": "Neutral",
       "date": "24 Mar 2026",
-      "text": "Several Reddit posts from 2024 to 2026 are sellers citing their CapperTek rank or record as proof, for example a props seller claiming first place on the ROI leaderboard. These are sellers marketing themselves, not buyer reports.",
+      "text": "Several Reddit posts from 2019 to 2026 are sellers citing their CapperTek rank or record as proof, for example a props seller claiming first place on the ROI leaderboard. These are sellers marketing themselves, not buyer reports.",
       "source": 12
+    },
+    {
+      "type": "Seller curated",
+      "tone": "Neutral",
+      "date": "27 Jul 2014",
+      "text": "The CapperTek account posted on TheRX describing itself as a web development, marketing and technology firm for handicapping sites that works with \"many of the top name handicappers,\" and as the operator of the directory, where every service started at a \"C+\" rating. This is the company describing itself. One reply mocked how the directory rated another service.",
+      "source": 22
     },
     {
       "type": "Not found",
       "tone": "Neutral",
-      "date": "Checked 17 Nov 2026",
-      "text": "Our web searches found no CapperTek thread on TheRX or Covers, and our archive scan of the r/sportsbetting and r/sportsbook post streams found no buyer complaint about a CapperTek purchase. We did not check review sites that block automated reading.",
+      "date": "Checked 20 Nov 2026",
+      "text": "BBB lists cappertek.com in Philadelphia, PA (A+, not accredited, business started 20 Oct 2014) and CapperTek in Scottsdale, AZ (not rated, started 1 Jan 2013), each with 0 complaints in the last three years and 0 customer reviews.",
+      "source": 20
+    },
+    {
+      "type": "Not found",
+      "tone": "Neutral",
+      "date": "Checked 20 Nov 2026",
+      "text": "Our web searches found no CapperTek thread on Covers. A fresh Reddit archive search of r/sportsbetting on 20 Nov 2026 returned eight posts naming CapperTek, all from sellers or the 2026 question above; none was a buyer complaint about a CapperTek purchase. We did not read review sites that block automated reading.",
       "source": null
     }
   ],
   "conflicts": [
-    "CapperTek earns money from the sellers it ranks: a 30% commission when it handles their payments, paid featured listings mentioned in its terms, sponsored posts and banner advertising. A tracker paid by the people it tracks has a reason to keep them happy.",
+    "CapperTek earns money from the sellers it ranks: a 30% commission when it handles their payments, monthly fees for Pro Featured listings, $450 sponsored posts and banner advertising. A tracker paid by the people it tracks has a reason to keep them happy.",
+    "Its \"Verified\" badge means a seller placed a CapperTek banner and opened a channel for complaints, according to its FAQ; Pro Featured sellers also pay a monthly fee. Neither label is an audit of results.",
+    "In 2014 the company described itself as also building websites and marketing for handicappers. We do not know whether that work continues.",
     "The terms say disputes go to arbitration in the British Virgin Islands under its law, while another section says United States law governs. The site publishes no street address."
   ],
   "strengths": [
-    "Picks are revealed to the public 30 minutes after each game starts, so records are not limited to hand picked streaks.",
-    "Leaderboards show picks, record, average odds, units and ROI side by side, over windows from 3 to 365 days.",
+    "Picks are revealed to the public 30 minutes after each game starts, so records are not limited to hand picked streaks, and every pick in the logs we checked was made before the start.",
+    "Its own headline numbers held up when we counted them: 104 profitable sellers out of 231, and a seller total that matched our hand count exactly.",
+    "Leaderboards show picks, record, average odds, units and ROI side by side, over windows from 3 days to all time.",
     "Listing is free for sellers, so the directory is wide and not limited to paying advertisers.",
-    "A named operating company and written terms of service."
+    "A named operating company, written terms, and two BBB files with no complaints."
   ],
   "concerns": [
-    "No outside audit of the grading. Picks can be voided, and the site does not explain how voids or verification are handled.",
-    "All fees and charges are non refundable under the terms.",
-    "The leaderboard has no minimum sample, so tiny records can rank near the top.",
-    "The platform earns from the sellers it tracks, and its terms point disputes to British Virgin Islands arbitration."
+    "\"Verified\" is a banner and contact arrangement, not an audit of results, and Pro Featured sellers pay for their placement.",
+    "No outside audit of the grading. Picks can be voided, and profiles open on a short default window that can hide a poor long record.",
+    "The leaderboard has no minimum sample: the top five by 365 day ROI had between 1 and 9 picks.",
+    "Most sellers lose: 59% of sellers with picks over the last 365 days were down in units.",
+    "All fees and charges are non refundable under the terms, and disputes point to British Virgin Islands arbitration.",
+    "The platform earns from the sellers it tracks, and its customer reviews sit on the same site the sellers pay."
   ],
   "checklist": [
-    "Look at a seller's 365 day record, not the 7 or 30 day view, and check how many picks it covers.",
-    "Count units and ROI, not wins. A 60% record at heavy favorites can still lose money.",
-    "Ask the seller how many picks were voided and why.",
+    "On any seller profile, switch the span filter to \"ALL TIME\" before you look at the record.",
+    "Look at the number of picks first, then units and ROI. Ignore any rank built on fewer than a few hundred picks.",
+    "Check how much of the record is parlays and how big the unit sizes are; CapperTek allows 0.1 to 11 units a pick.",
+    "Read \"Verified\" as \"reachable\", not \"proven\". Ask the seller how many picks were voided and why.",
     "Read the seller's own guarantee and the CapperTek terms before you pay; CapperTek fees are non refundable.",
     "Write down each pick yourself the moment you receive it, with the line you can actually get."
   ],
   "faq": [
     [
       "Is CapperTek legit?",
-      "It is a real platform run by Sports Media, LLC since 2013 that tracks and sells picks from independent handicappers. We could not verify its grading, because we found no outside audit, and its terms say fees are non refundable."
+      "It is a real platform run by Sports Media, LLC since 2013 that tracks and sells picks from independent handicappers, and the platform numbers we tested held up. We could not verify its grading against game results, because we found no outside audit, and its terms say fees are non refundable."
     ],
     [
       "How much does CapperTek cost?",
-      "Each seller sets its own price for 1, 7, 14, 30 or 60 day passes. Free tools and public records cost nothing to view. Sellers list for free and pay a 30% commission only if CapperTek handles their payments."
+      "Viewing records and free picks costs nothing. Each seller sets its own price for 1, 7, 14, 30 or 60 day passes; on 20 Nov 2026 one featured seller charged $24.88 for a day and another $15. Sellers list for free and pay a 30% commission only if CapperTek handles their payments."
     ],
     [
       "Are CapperTek records verified?",
-      "CapperTek keeps the records itself and reveals picks 30 minutes after each start, which is more open than most tout pages. It does not explain what its verification badge checks, picks can be voided, and nobody independent audits it."
+      "CapperTek keeps the records itself and reveals picks 30 minutes after each start, which is more open than most tout pages. Its \"Verified\" badge only means the seller placed a CapperTek banner and can be reached about complaints. Picks can be voided, and nobody independent audits the grading."
+    ],
+    [
+      "What does Pro Featured mean on CapperTek?",
+      "According to its FAQ, Pro Featured services are verified services that pay CapperTek a monthly advertising fee to be highlighted in green in the directory. It is a paid placement, not a performance award."
+    ],
+    [
+      "Can I trust the CapperTek leaderboard?",
+      "Use it with care. It sets no minimum number of picks, so sellers with one pick can top an ROI sort. Over the last 365 days 41% of sellers with picks were profitable; among those with 500 or more picks the median return was +0.76%."
     ],
     [
       "Is CapperTek worth it?",
-      "As a free way to look up a seller's tracked history, it can help. Before paying any seller there, check the long term record and sample size; nothing on the platform refunds your fees or covers your betting losses."
+      "As a free way to look up a seller's tracked history, it can help. Before paying any seller there, check the all time record and sample size; nothing on the platform refunds your fees or covers your betting losses."
     ]
   ],
   "related": [
@@ -225,59 +299,59 @@
   ],
   "sources": [
     {
-      "title": "CapperTek homepage (operator, picks revealed after start, directory size)",
+      "title": "CapperTek homepage (operator, picks revealed after start, 104 profitable handicappers, 11,428 listed, 3 million picks claim)",
       "url": "https://www.cappertek.com/",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "CapperTek FAQ (voided picks, seller pricing, 30% commission route)",
       "url": "https://www.cappertek.com/faq.asp",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "CapperTek Terms of Service (Sports Media, LLC, non refundable fees, arbitration)",
       "url": "https://www.cappertek.com/termsOfService.asp",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "CapperTek Buy Sports Picks page (buyer claims, PayPal)",
       "url": "https://www.cappertek.com/whyBuyPicks.asp",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "CapperTek Sell Sports Picks page (access pass lengths, zero commission wording)",
       "url": "https://www.cappertek.com/whySellPicks.asp",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "CapperTek Get Your Service Verified page (free verification)",
       "url": "https://www.cappertek.com/getVerified.asp",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "CapperTek Leaderboard (all sports, last 30 days)",
+      "title": "CapperTek Leaderboard (all sports, last 30 days, 231 handicappers)",
       "url": "https://www.cappertek.com/leaderboard.asp",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "CapperTek seller profile example: BigAlsPicks.com (trial, extension policy)",
       "url": "https://www.cappertek.com/picks.asp?shs=BigAlsPicks.com",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "CapperTek Advertising page (banner ads, audience claim)",
       "url": "https://www.cappertek.com/advertising.asp",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Apple App Store: CapperTek Sports Betting Tools (rating, user reviews)",
       "url": "https://apps.apple.com/us/app/cappertek-sports-betting-tools/id1659881336",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Sportsbook Review forum: buyer complaint thread about CapperTek and Verifiedtipsters (Aug 2015)",
       "url": "https://www.sportsbookreview.com/forum/players-talk/1526750-scam-alert-cappertek-and-verifiedtipsters",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Reddit r/sportsbetting: Are CapperTek leaderboards meaningful? (11 Mar 2026, read via Arctic Shift archive)",
@@ -288,6 +362,61 @@
       "title": "Reddit r/sportsbetting: seller post citing a CapperTek ROI rank (24 Mar 2026, read via Arctic Shift archive)",
       "url": "https://www.reddit.com/r/sportsbetting/comments/1s2li3n/",
       "accessed": "17 Nov 2026"
+    },
+    {
+      "title": "CapperTek Leaderboard (all sports, last 365 days, 508 handicappers)",
+      "url": "https://www.cappertek.com/leaderboard.asp?sport=ALL&lastDays=365",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "CapperTek directory (11,428 listed; active, inactive and verified counts)",
+      "url": "https://www.cappertek.com/directory.asp",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "CapperTek Sponsored Posts page ($450 per sponsored guest post)",
+      "url": "https://www.cappertek.com/sponsoredPosts.asp",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "CapperTek BigAlsPicks.com access pass prices (example of seller set pricing)",
+      "url": "https://www.cappertek.com/picks.asp?shs=BigAlsPicks.com&tab=purchase",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "CapperTek BigAlsPicks.com pick history, last 3 days (pick IDs up to 3,540,250)",
+      "url": "https://www.cappertek.com/picks.asp?shs=BigAlsPicks.com&tab=picks&sport=ALL&lastDays=3",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "CapperTek SportsCapPro.com pick history, all time (pick made and start times, default 60 day view)",
+      "url": "https://www.cappertek.com/picks.asp?shs=SportsCapPro.com&tab=picks&sport=ALL&lastDays=10000",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Public domain registration record for cappertek.com (RDAP)",
+      "url": "https://rdap.verisign.com/com/v1/domain/cappertek.com",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "BBB: cappertek.com business profile (Philadelphia, PA)",
+      "url": "https://www.bbb.org/us/pa/philadelphia/profile/internet-service/cappertekcom-0241-236037571",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "BBB: CapperTek business profile (Scottsdale, AZ)",
+      "url": "https://www.bbb.org/us/az/scottsdale/profile/online-gaming/cappertek-0241-236039435",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "TheRX forum: \"CapperTek, Sports Handicapping Service Directory\" post by the CapperTek account (Jul 2014)",
+      "url": "https://www.therx.com/threads/cappertek-sports-handicapping-service-directory.994523/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Sportsbook Review forum: \"Cappertek and others\" (Nov 2014)",
+      "url": "https://www.sportsbookreview.com/forum/players-talk/1461692-cappertek-and-others",
+      "accessed": "20 Nov 2026"
     }
   ],
   "pricing_source": 4
