@@ -37,8 +37,11 @@ Work from worktree `~/hwd-names-1114` (branch names-1114, push `HEAD:main`; main
    25 goodfella, 26 legup-picks, 27 winible, 28 whop-sports-betting, 29 picks-office, 30 brad-powers, 31 andre-gomes, 32 jr-odonnell,
    33 sleepyj, 34 greg-shaker. Drafts: ~/hwd_testimonials/new_reviews_1119/_queued. Pace still 5 a week (ask owner if faster).
    HELD for owner (new_reviews_1119/_hold): kelly-in-vegas (no paid buyer posts, press only), cody-brown-bets (free picks, not a seller).
-   RESUME: a SportsCapping/BetFirm writer agent was still running at break; any loose *.json in new_reviews_1119 = unchecked drafts:
-   run validate.py, check (no arctic/X post links, 'they' for forum members, no bare scammer lines, related slugs exist), then queue as 35+.
+   DONE 20 Nov 7:05 AM PST: 5 SportsCapping/BetFirm drafts validated + checked, queued 35 aaa-sports, 36 alex-smart, 37 black-widow,
+   38 john-ryan, 39 marc-lyle (originals in new_reviews_1119/_queued). Queue now 03 to 39 (37 files, ~7 weeks at 5 a week).
+   GSC 20 Nov 7:06 AM PST: impressions recovering (16 Nov 0, 17 Nov 5, 18 Nov 15; 8-14 Nov ~40/day); 28 d 25 clicks 463 impr pos 14.1. Recheck ~24 Nov.
+   HARVESTER: market stage CONFIRMED fixed (mkt_ok every cycle since 19 Nov 2:11 PM PST; first COMPLETE cycle 20 Nov 2:59 AM PST);
+   only reconcile_parse.py still times out (parser backlog ~118k, box CPU). Picks 197339/192518 still await owner 'hold both'.
    Master list ~/hwd_testimonials/candidates_1119.json (134 sellers; 108 have no buyer buzz, most rosters now checked and rejected as thin).
    Rejected today (thin/inactive/not sellers): jim-hurley, dave-malinsky, pauly-howard, carlo-campanella, steve-janus, goat-sports-bets,
    trust-my-system, zcode, blogabet, betting-gods, the-hobby-capper, five-star-sports-picks, purdys-picks, chef-t, big-mikes-picks,
