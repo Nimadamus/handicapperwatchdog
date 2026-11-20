@@ -3,37 +3,41 @@
   "name": "Jimmy Boyd",
   "legal_name": "Boyd Information Group",
   "kind": "Handicapper selling picks through his own site, BoydsBets.com, with checkout on SportsCapping.com",
-  "checked": "7 Nov 2026",
-  "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-13",
+  "checked": "20 Nov 2026",
+  "checked_iso": "2026-11-20",
+  "updated_iso": "2026-11-20",
   "title": "Jimmy Boyd Review 2026: Pricing, Record, Is It Worth It?",
-  "description": "Jimmy Boyd review, checked 7 Nov 2026: his real package prices, how the profit guarantee works, who grades his record, and what buyers report.",
+  "description": "Jimmy Boyd review, checked 20 Nov 2026: current BoydsBets prices, the new guarantee terms, his network graded record and what buyers report.",
   "h1": "Jimmy Boyd review",
-  "dek": "A handicapper who says he has sold picks since November 2002, with single picks from $39.99 and passes up to $1999.95 a year. His record is graded by SportsCapping.com, a site that lists the same company and address as his own.",
+  "dek": "A handicapper who says he has sold picks since November 2002, with single picks from $29.99 and passes up to $1,999.95 a year. His record is graded by SportsCapping.com, whose own help page says Boyd Information Group, the company named on his site, is the company behind SportsCapping.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record for Jimmy Boyd. This page reports what we could check on 7 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record for Jimmy Boyd. This page reports what we could check on 20 Nov 2026 and labels everything else."
   },
   "glance": [
     [
       "Operator",
-      "Boyd Information Group, 1887 Whitney Mesa Dr, Henderson, NV (contact page). BBB lists the suite as a PMB, a private mailbox"
+      "Boyd Information Group, 1887 Whitney Mesa Dr, Henderson, NV (contact page). BBB lists the address as PMB 2930, a private mailbox"
     ],
     [
       "Claims to sell picks since",
       "November 2002 (About page)"
     ],
     [
+      "Who grades the record",
+      "SportsCapping.com. Its help page says Boyd Information Group is \"the company behind SportsCapping.com\""
+    ],
+    [
       "Price range seen",
-      "$39.99 for one pick to $1999.95 for 365 days"
+      "$29.99 for one pick to $1,999.95 for 365 days"
     ],
     [
       "Guarantee",
-      "A free next card or equal free term on short packages. No guarantee on season passes. No money back"
+      "Next day of picks free, or an equal length extension, if a guaranteed purchase does not profit. Season passes not covered. Refunds reviewed case by case"
     ],
     [
-      "Full public record",
-      "A dated pick archive on SportsCapping, which lists the same operator. Not independent"
+      "Network graded record",
+      "5,855 wins, 5,324 losses since 20 Jan 2018, 52.4%, about 1.7 cents profit per dollar risked"
     ],
     [
       "Watchdog graded record",
@@ -41,134 +45,146 @@
     ]
   ],
   "short_answer": [
-    "Jimmy Boyd runs a real, working pick business. His site names an operator, publishes every price, takes payment through a SportsCapping checkout, and posts a dated archive of his graded picks. In that narrow sense he is legitimate.",
-    "Whether his picks make money over time is not something we could confirm. His record is graded and published by SportsCapping.com, and both SportsCapping and BoydsBets list the same contact: Boyd Information Group at the same Henderson address. His FAQ calls this documentation by \"independent sports monitors\", but a grader that shares the seller's name and address is not independent. His sales copy also mixes numbers, such as \"nearly 20 years\" next to a 2002 start date.",
-    "Treat the archive as useful raw data from the seller, not as an audit. If you buy, buy short, record every pick yourself with the line and time you received it, and judge it after a few hundred picks."
+    "Jimmy Boyd runs a real, working pick business. His site names an operator, publishes every price, takes payment through a SportsCapping checkout, and posts a dated archive of his graded picks, losses included. In that narrow sense he is legitimate.",
+    "The record is not independent. SportsCapping grades, ranks and sells his picks, and its own help page now says Boyd Information Group, the company on the BoydsBets contact page, is \"the company behind SportsCapping.com\". His FAQ still calls this documentation by \"independent sports monitors\". On the network's own numbers he is a small winner over a long stretch: 5,855 wins and 5,324 losses since January 2018, 52.4%, with profit of about 1.7 cents for every dollar risked.",
+    "We checked six of his sales runs against that archive. Two matched exactly, and four did not: his NBA page claims a 10 and 6 run over his last 16 picks while the archive showed 6 and 10. Treat the archive as useful raw data from the seller, not as an audit. If you buy, buy short, record every pick yourself with the line you got, and judge it after a few hundred picks."
   ],
-  "pricing_intro": "Prices below were shown on BoydsBets.com and on his SportsCapping.com page on 7 Nov 2026, and the two pages matched. Clicking Buy Now on one package opened a SportsCapping cart with the same total, $59.97. Daily packages change every day. Capper's Picks, a third party listing, shows older and different BoydsBets prices; a third party listing is not a current offer, so we do not quote it.",
+  "pricing_intro": "Prices below were shown on BoydsBets.com on 20 Nov 2026. Several changed since our 7 Nov check: season passes dropped by $150 to $250 and single picks now start at $29.99. Daily packages change every day. A second, higher figure is shown next to most season passes with no label; we treat it as a former price. Capper's Picks, a third party listing, shows older and different BoydsBets prices, so we do not quote it.",
   "pricing": [
     [
-      "Single 5* best bets (NFL, college football, college basketball)",
-      "$39.99 to $59.97 each",
-      "\"You MUST PROFIT on this package or you will get the next card FREE!\""
+      "Single best bets (college basketball, NBA, college football, NFL)",
+      "$29.99, $39.97, $49.97 or $74.96 each on 20 Nov 2026",
+      "Single picks and packs carry the next day free guarantee where the badge is shown"
     ],
     [
-      "Multi pick day packs (2, 4, 5 or 9 picks)",
-      "$74.97 to $99.97",
-      "Next card free if the pack does not profit"
-    ],
-    [
-      "1 day all sports pass",
-      "$49.95 (the description says \"For just $99\")",
-      "Labeled guaranteed profit"
+      "Multi pick day packs (for example a 6 for 1 college basketball pack or an 11 for 1 pack)",
+      "$49.97 to $99.97",
+      "\"Guaranteed: if it doesn't profit, the next one is free.\""
     ],
     [
       "3 day and 7 day all sports passes",
       "$99.95 and $199.95",
-      "Labeled guaranteed profit"
+      "No guarantee badge shown on the pass list"
     ],
     [
       "30 day and 90 day all sports passes",
       "$499.95 and $999.95",
-      "Labeled guaranteed profit"
+      "No guarantee badge shown on the pass list"
     ],
     [
       "365 day all sports pass",
-      "$1999.95",
-      "Labeled guaranteed profit. The policy excludes season long subscriptions; we found no wording on how it treats a year pass"
+      "$1,999.95 (\"$5.48 a day\")",
+      "No guarantee badge shown"
     ],
     [
-      "College football, NFL or college basketball season pass",
-      "$699.97, $699.97 and $699.95",
-      "No guarantee (season pass)"
+      "College football, NFL, NBA and college basketball season passes",
+      "$450, $475, $525 and $600 (shown next to $475, $500, $550 and $625)",
+      "\"Rest of Season · not guaranteed\""
     ],
     [
-      "NBA season pass",
-      "$599.95 (listed as regularly $799.95)",
-      "No guarantee (season pass)"
+      "NBA and college basketball combo; NFL and college football combo",
+      "$899.99 (next to $999.99); $999.97",
+      "Not guaranteed"
     ],
     [
-      "NFL and college football combo; NBA and college basketball combo",
-      "$999.97; $899.99 (listed as regularly $999.99)",
-      "No guarantee (season pass)"
+      "WNBA and MLB passes",
+      "$125 (next to $299.95) and $349.95 (next to $399.95)",
+      "Still listed on 20 Nov 2026, after both seasons had ended; WNBA labeled \"through Dec 1\""
+    ],
+    [
+      "1 day all sports pass",
+      "Not listed on 20 Nov 2026 (was $49.95 on 7 Nov)",
+      "Removed"
     ]
   ],
   "guarantee": [
-    "Almost every short package is sold as \"100% GUARANTEED!\" and the BoydsBets buy page says all the picks on it \"come GUARANTEED to show you a profit.\" The rules sit in the SportsCapping Guaranteed Pick Policy. If you do not show a profit during the paid period, you get an equal length subscription free. The policy says plainly: \"We do not offer monetary refunds.\"",
-    "Read the fine print. Any profit, however small, counts as a win and ends the guarantee. Every pick is graded at a flat 100 units, whatever star rating it carried. You get one free term per purchase, even if the free term also loses. Season subscriptions carry no profit guarantee at all. The SportsCapping refund policy says products are sold \"as is\" and no refunds will be issued, though a subscription can be swapped for one of equal or lesser value. Losses on your own bets are never covered."
+    "The SportsCapping guarantee page was rewritten since our last check. It now reads: \"A guaranteed purchase triggers its guarantee when the picks it covers finish with a total profit of zero or less, breaking even counts.\" For a losing package, \"you automatically receive the handicapper's next day of picks in the same sport, free.\" A guaranteed subscription that does not profit \"is automatically extended by its original length.\" Nothing has to be claimed. Some accounts get account credit for the amount paid instead.",
+    "The limits are in \"The Fine Print\": \"Season and rest-of-season passes are not guaranteed\", \"Replacement picks and extensions don't carry a guarantee of their own\" and \"Guarantees apply once per purchase.\" Credits \"can't be withdrawn or exchanged for cash.\" On refunds, the SportsCapping help page now says \"Because picks are graded results, refunds are reviewed individually\", a softer line than the \"We do not offer monetary refunds\" wording we read on 7 Nov. In the one BBB complaint, the business offered a partial or full refund. Losses on your own bets are never covered."
   ],
   "claims": [
     {
-      "claim": "\"Since November of 2002, I have been helping readers like you win money\"",
-      "where": "BoydsBets About page",
-      "status": "Seller claim"
+      "claim": "\"I'm going to build on my INCREDIBLE 35-25 (58.3%) run over my L60 NFL picks that has helped dime bettors make $7,820!\"",
+      "where": "BoydsBets NFL packages, 20 Nov 2026",
+      "status": "Checked: matches. His last 60 decided NFL picks on the network archive were 35 and 25, +$782 at $100 a pick"
     },
     {
-      "claim": "\"I've been DELIVERING PROFITS for gamblers like you for nearly 20 years\"",
-      "where": "Single best bet package copy",
-      "status": "Seller claim, does not match the 2002 date"
+      "claim": "\"I'm on an INCREDIBLE 11-5 (68.8%) run on my L16 CFB picks that has helped dime bettors who have followed make $5,720!\"",
+      "where": "BoydsBets college football packages",
+      "status": "Checked: the record matches (11 and 5, +$570 at $100 a pick on the archive)"
+    },
+    {
+      "claim": "\"I'm on an INCREDIBLE 56-44 (56.0%) run on my L100 CFB picks\" and \"214-166 (56.3%) run on my L380 CFB picks\"",
+      "where": "BoydsBets college football packages",
+      "status": "Checked: not reproduced. His last 100 decided college football picks on the archive were 48 and 52, about $818 down at $100 a pick"
+    },
+    {
+      "claim": "\"I'm on an INCREDIBLE 10-6 (62.5%) run on my L16 NBA picks\" and \"Nobody has the long term track record in the NBA that I do!\"",
+      "where": "BoydsBets NBA packages",
+      "status": "Checked: contradicted. The archive's last 16 decided NBA picks were 6 and 10, $436 down; his NBA row since 5 Mar 2025 is 189 and 177, +$14"
+    },
+    {
+      "claim": "\"I'm on an INCREDIBLE 55-45 (55.0%) run on my L100 CBB picks\" and \"39-23 (62.9%) run on my L62 CBB picks\"",
+      "where": "BoydsBets college basketball packages",
+      "status": "Checked: not reproduced. The archive holds 79 graded college basketball picks (45 and 34 since 17 Mar 2026); the last 62 were 32 and 30"
+    },
+    {
+      "claim": "\"I'm 36-19 (+15.50u) on football top plays since October 2026\"",
+      "where": "SportsCapping profile promo text, 20 Nov 2026",
+      "status": "Checked: not reproduced. Football top plays dated 1 Oct to 19 Nov 2026 on the archive were 30 and 16, +$1,278"
     },
     {
       "claim": "\"I have all my plays documented by independent sports monitors\"",
       "where": "BoydsBets FAQ",
-      "status": "Seller claim. The grader lists the same operator"
+      "status": "Contradicted by the grader's own help page, which names Boyd Information Group as the company behind SportsCapping"
     },
     {
-      "claim": "\"INCREDIBLE 30-14 (68%) run on my L44 CBB picks that has helped dime bettors make $15,270!\"",
-      "where": "College basketball 4 pick pack",
-      "status": "Selected run, start date chosen by the seller"
+      "claim": "\"Since November of 2002\" and \"DELIVERING PROFITS for gamblers like you for nearly 20 years\"",
+      "where": "About page; package copy",
+      "status": "Seller claim; 2002 to 2026 is 24 years, so the two lines do not match"
     },
     {
-      "claim": "\"9-2 (82%) run over my L11 CFB picks! Dime bettors who have followed are now up $6,850!\" and the same 9-2 and $6,850 for \"my L11 NFL picks\"",
-      "where": "College football and NFL day packs",
-      "status": "Selected runs, same figures used for two sports"
-    },
-    {
-      "claim": "\"six documented Top-10 finishes in CBB\" and six in the NBA, \"four Top-10 finishes\" in the NFL, \"#1 RATED BASKETBALL HANDICAPPER (TWICE)\"",
-      "where": "Season pass descriptions",
-      "status": "Seller claim, rankings from the site that sells the picks"
-    },
-    {
-      "claim": "All Sports Sides \"(+24237) 4805-4340\" at 53%",
-      "where": "BoydsBets streak table",
-      "status": "Seller graded total, no start date shown"
+      "claim": "Top 10 NBA finishes in 2008 to 2012 and college basketball top 10s in 2012 to 2014; \"former collegiate golfer and University of Iowa Law grad\"",
+      "where": "BoydsBets page text; SportsCapping bio",
+      "status": "Seller claim; the rankings come from the network that sells his picks; schooling not checked"
     }
   ],
   "claims_note": [
-    "The streak numbers start on dates the seller picks. On his SportsCapping page each row has its own start date: college basketball from 17 Mar 2026, top football from 24 Oct 2026, all sports from 9 Mar 2025. Starting each count after a cold spell is an easy way to make every sport look hot. \"Dime bettors\" means $1,000 a pick, ten times the $100 the board uses, so the sales copy figures are ten times the board's own: the college basketball row shows $1,527, while the sales copy says $15,270.",
-    "Some copy does not hold together. The 1 day pass is priced at $49.95, but its text says \"For just $99\". The 3 day pass text compares itself to \"$99 for one day\", and the 7 day pass text says \"just $43/day\", which does not match a $199.95 price over 7 days. The free pick section says \"All plays are made using sophisticated machine learning models,\" while the About page has Boyd writing \"I'm not a system player by any means.\""
+    "How we checked: on 20 Nov 2026 we opened his SportsCapping archive filtered to each sport (NFL, college football, NBA, college basketball and football top plays), took the most recent 120 picks for each, sorted them by pick date, dropped pushes and counted back. Profit is the archive's own figure at $100 a pick, after the juice. Picks released on the same day can sort in a slightly different order, so a run can differ by a pick at its edge. Two runs matched exactly. Four did not come close, and one, the NBA run, was the reverse of what the archive showed.",
+    "The college basketball claims are the hardest to square. A run over the last 100 college basketball picks needs at least 100 graded picks, and the archive held 79 for that sport, all since 17 Mar 2026. The figures may come from an older record that the network no longer shows, but a buyer has no way to see it.",
+    "\"Dime bettors\" means $1,000 a pick, ten times the archive's $100, so every dollar figure in his sales copy is ten times the archive figure. The page also sells off season products: on 20 Nov 2026 a WNBA pass was still for sale through 1 Dec and an MLB pass was listed weeks after the World Series."
   ],
   "record": [
-    "What a buyer can verify independently: nothing that we could find. We found no full pick log kept by a grader with no tie to the seller, no third party contest results we could open, and no court or regulator record about Jimmy Boyd or Boyd Information Group.",
-    "What the seller's network publishes: SportsCapping shows a Jimmy Boyd archive of 100 picks a page, with the date, the pick and line, the score, the result, the profit at $100 a pick and the lead time before the game, and it includes losses. On 7 Nov 2026 the latest day, 6 Nov, read 5 wins and 1 loss for +410. His all sports row reads 1335-1161, +$10,838, 53%, since 9 Mar 2025. On the SportsCapping current season leaderboard by profit, he was not in the top 20 shown. This is real, dated data, but it is graded by a site that lists the same operator, so it is the seller's own record, not an audit.",
-    "A note on our earlier edition: on 27 Oct 2026 a direct request for a SportsCapping export address returned \"Invalid access\", so that edition printed no prices. On 7 Nov 2026 both his BoydsBets page and his SportsCapping page opened and showed the prices above."
+    "What a buyer can verify independently: nothing complete. We found no pick log kept by a grader with no tie to the seller, and no court or regulator record about Jimmy Boyd or Boyd Information Group.",
+    "What the seller's network publishes: SportsCapping shows a Jimmy Boyd archive with the date, pick, line, odds, score, result and profit for each pick, losses included. On 20 Nov 2026 its all sports row read 5,855 wins and 5,324 losses since 20 Jan 2018, with 240 pushes, 52.4%, +$20,532.50 at $100 a pick and a return of 1.65% of money risked. His top plays row read 2,813 and 2,542 since 12 Aug 2017, 52.5%. By sport, MLB (1,497 and 1,313, +$17,841 since 2017) carries most of the profit; NBA (+$14 since March 2025), NHL (+$208 since 2019) and college football (+$1,624 since 2012) are close to flat.",
+    "Put in a buyer's terms: 20 Jan 2018 to 19 Nov 2026 is about 8.8 years, so the archive's profit averages about $2,300 a year at $100 a pick. A 365 day pass costs $1,999.95. At $100 a pick, the pass would have taken almost all of the average year's profit, before any line you got that was worse than his.",
+    "Recent form: his page showed 63 wins and 54 losses over the last 30 days, +$424, ranked 22nd. On the network's 2026 all sports leaderboard he was not among the 31 handicappers listed. Ownership: the SportsCapping help page answers \"Why is there a charge from Boyd Information Group on my statement?\" with \"Boyd Information Group is the company behind SportsCapping.com\". That settles the question our earlier edition left open: the grader and the seller list the same company."
   ],
   "our_data": {
     "matched": false,
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition Jimmy Boyd is not matched to a Watchdog graded record, so we make no claim about how his picks perform.",
-    "context": "For scale: his SportsCapping all sports row since 9 Mar 2025 shows 53% winners. On the Watchdog board on 7 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "context": "For scale: his SportsCapping all sports row since 20 Jan 2018 shows 52.4% winners. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "Independent customer evidence on Jimmy Boyd is thin and mostly old. We found one BBB complaint, a set of buyer comments from 2013 to 2017 on HandicappingReviews.org that lean negative, and a comment section on a review site that belongs to his own sales network. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent customer evidence on Jimmy Boyd is thin and mostly old. We found one BBB complaint, nine buyer comments from 2013 to 2017 on HandicappingReviews.org that lean negative, a few TheRX posts, and a comment section on a review site that belongs to his own sales network. Below is everything we found and how much weight it can carry.",
   "customers": [
     {
       "type": "Our summary",
       "tone": "Mixed",
-      "date": "Read 13 Nov 2026",
-      "text": "Buyer accounts are scattered. Reviewers on HandicappingReviews.org from 2014 to 2017 mostly said the picks ran near or below break even, and a 2026 BBB complaint said a paid season pass sat inactive for more than three weeks until the business fixed it. On the other side, a TheRX member said in February 2026 that after giving up on another handicapper, Boyd ended up rescuing his baseball season. He posted no record.",
+      "date": "Read 20 Nov 2026",
+      "text": "We found about a dozen buyer accounts across BBB, HandicappingReviews.org and TheRX, spread from 2013 to 2026. The older ones repeat two points: results near or below break even, and poor contact, with emails unanswered and sales calls that would not stop. Two of the 2015 and 2016 reviewers also said they never saw him on the network leaderboard, which matches what we saw in 2026. The newest complaint, to BBB in September 2026, was about a paid season pass that was never switched on; the business fixed it and offered a refund, and the buyer accepted. On the positive side, a TheRX member said in February 2026 that Boyd rescued his baseball season, which fits the archive, where MLB is his strongest sport. Praise on Capper Reviews comes from a site inside his own sales network. No buyer posted a full record of what he received.",
       "source": null
     },
     {
       "type": "Customer report",
       "tone": "Negative",
       "date": "Filed 29 Sep 2026",
-      "text": "A buyer told the BBB that a season pass bought on 5 Sep 2026 was never delivered and that four or five emails got no reply. The business answered that a system fault had recorded the order without turning the pass on, that it activated the pass on 29 Sep backdated to the purchase, and that it offered a partial or full refund. BBB lists the complaint as resolved, confirmed by the customer on 30 Sep 2026.",
+      "text": "A buyer told the BBB that a season pass bought for $399.95 on 5 Sep 2026 was never activated and that four or five emails got no reply. The business answered that a system fault had recorded the order without turning the pass on, that it activated the pass on 29 Sep backdated to the purchase, and that it offered a partial or full refund. BBB lists the complaint as resolved; the customer called the answer satisfactory on 30 Sep 2026.",
       "source": 12
     },
     {
       "type": "Customer report",
       "tone": "Neutral",
-      "date": "Checked 7 Nov 2026",
-      "text": "BBB lists Boyd Information Group as a sports handicapper, not accredited and not rated, with a file opened on 9/29/2026 and 1 complaint in the last 12 months. A new file means BBB has little history to go on either way.",
+      "date": "Checked 20 Nov 2026",
+      "text": "BBB lists Boyd Information Group as a sports handicapper, not accredited and not rated because it \"has been in business less than 6 months\" by BBB's file, which was opened on 9/29/2026, with 1 complaint in the last 3 years. A new file means BBB has little history to go on either way.",
       "source": 11
     },
     {
@@ -216,7 +232,7 @@
     {
       "type": "Seller curated",
       "tone": "Mixed",
-      "date": "No date shown",
+      "date": "Checked 20 Nov 2026",
       "text": "Capper Reviews, which says it is part of the SportsCapping network that sells Boyd's picks, shows a 3.53 out of 5 rating from 49 votes and 9 undated comments. Most praise his consistency, write ups and a college basketball run, while two complain about a losing pick and a bad first day. Because the site belongs to the seller's own network, we give these comments little weight.",
       "source": 16
     },
@@ -237,54 +253,103 @@
     {
       "type": "Not found",
       "tone": "Neutral",
-      "date": "Checked 7 Nov 2026",
-      "text": "Trustpilot showed no page for boydsbets.com or sportscapping.com. In the betting subreddit posts we read, we found no discussion of his picks. Apart from the TheRX posts in our summary, we found no TheRX or Sportsbook Review forum thread about Jimmy Boyd with a real discussion of results.",
+      "date": "Checked 20 Nov 2026",
+      "text": "Trustpilot showed no page for boydsbets.com or sportscapping.com. In the Reddit betting forum posts we could search through the Arctic Shift archive on 20 Nov 2026, BoydsBets appeared only as a link to its articles on key numbers and trends, never as a pick service someone had bought. Several archive comment searches timed out, so a Reddit comment about him could be missing. Sportsbook Review forum threads from 2012 that mention him would not open for us, so we do not report them.",
       "source": null
+    },
+    {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "16 Sep 2017",
+      "text": "On HandicappingReviews.org, a reviewer said his experience had been miserable, that the records on the site must be fake because his results were the opposite, that the site was hard to use, and that he had lost money following the picks.",
+      "source": 15
+    },
+    {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "27 Nov 2016",
+      "text": "Another reviewer said he used Boyd a few years earlier and the picks were heavy losers, and that following him on SportsCapping he never saw Boyd on the leaderboard.",
+      "source": 15
+    },
+    {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "24 Sep 2015",
+      "text": "A reviewer called the service awful, said Boyd ranked 13th on his own network's site, and claimed the picks looked copied from ESPN's pick center. He gave no evidence for that last point.",
+      "source": 15
+    },
+    {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "1 Sep 2013",
+      "text": "A reviewer said he stayed with the service for a few years and lost consistently, and lost more when he bought the specials. He said the picks seemed random.",
+      "source": 15
+    },
+    {
+      "type": "Forum post",
+      "tone": "Positive",
+      "date": "Feb 2026",
+      "text": "In a TheRX service plays discussion thread, a member said he had given up on another handicapper during the baseball season, had a strong football season with a third, and that Jimmy Boyd \"ended up rescuing baseball season\". He posted no record.",
+      "source": 19
     }
   ],
   "conflicts": [
-    "The biggest one is the grader. SportsCapping.com grades and ranks Boyd's picks, sells them, and runs his checkout, and its footer lists Boyd Information Group at the same Henderson address as the BoydsBets contact page. We did not find a document that says who owns each site, but a buyer should not treat SportsCapping's archive or its top 10 rankings as an outside audit of Boyd.",
-    "BoydsBets also sells picks from other handicappers through the same SportsCapping checkout, so the site earns from a whole roster, not only from Boyd.",
-    "His FAQ says a free trial is offered \"only if you sign up for one of our recommended sportsbooks and make a deposit.\" The sportsbook page ranks offshore books such as BetOnline, Bovada and Bookmaker, and the FAQ says his posted line comes from \"a variety of offshore books.\" On 7 Nov 2026 the Go to links we tested led to logo images or a review page, so we saw no tracking code, but tying a trial to a deposit shows an interest in where you bet. Offshore sportsbooks are not licensed by U.S. state regulators. Check the law where you live."
+    "The biggest one is the grader. SportsCapping.com grades and ranks Boyd's picks, sells them and runs his checkout, and its help page says Boyd Information Group, the company on the BoydsBets contact page, is \"the company behind SportsCapping.com\". A buyer should treat SportsCapping's archive, leaderboards and top 10 finishes as the seller's own record, not an outside audit.",
+    "BoydsBets also sells picks from other handicappers through the same checkout, and SportsCapping sells dozens more. The network earns from a whole roster, so it has a reason to promote whoever is hot this month.",
+    "His FAQ says a free trial is offered \"only if you sign up for one of our recommended sportsbooks and make a deposit.\" The sportsbook page ranks offshore books such as BetOnline, Bovada and Bookmaker, and the FAQ says his posted line comes from \"a variety of offshore books.\" Tying a trial to a deposit shows an interest in where you bet. Offshore sportsbooks are not licensed by U.S. state regulators. Check the law where you live."
   ],
   "strengths": [
-    "A named operator, an address and a full price list, the same on both of his storefronts.",
-    "A dated pick archive on SportsCapping with the line, the score, the result, the profit and the lead time before the game, including losses. Yesterday's Best on the SportsCapping homepage showed him at $410, which matches his 6 Nov archive rows.",
-    "Free picks with a full written case are posted daily, so a reader can see his reasoning before paying."
+    "A named operator, an address, a working checkout and a full public price list.",
+    "A dated pick archive with the line, odds, result and profit for every graded pick, losses included, going back to 2018 for all sports. Few sellers show that much.",
+    "Two of the six sales runs we checked matched the archive exactly, including the NFL 35 and 25 run.",
+    "The rewritten guarantee counts a break even day as a loss, applies itself without a claim, and the help page now allows refunds case by case. The one BBB complaint was fixed within a day of filing with a refund offer.",
+    "Free picks with a full written case are posted daily, so a reader can judge his reasoning before paying."
   ],
   "concerns": [
-    "The only full record is published by a site that lists the same company and address as his own, and the FAQ calls it independent.",
-    "The guarantee gives more picks, never money, and season passes have none.",
-    "Streaks start on dates the seller chooses, and sales copy dollar figures assume $1,000 a pick.",
-    "Sales copy contradicts itself on years in business and on per day prices.",
+    "The only full record is published by a network that names Boyd Information Group as the company behind it, while his FAQ calls it independent.",
+    "Four of the six sales runs we checked did not match the archive, and the NBA run was the reverse of it (claimed 10 and 6, archive 6 and 10).",
+    "Over 8.8 years the archive shows a thin edge, about 1.7 cents per dollar risked, which a year pass at $1,999.95 would mostly use up at $100 a pick.",
+    "Season passes carry no guarantee, and WNBA and MLB passes were still for sale after those seasons ended.",
+    "Sales copy contradicts itself on years in business, and dollar figures assume $1,000 a pick.",
     "Free trials are tied to depositing at a recommended offshore sportsbook."
   ],
   "checklist": [
-    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
-    "Count units, not wins. A 60% record at heavy favorites can still lose money.",
-    "Read the guarantee for the words refund, credit and extension. Most \"guarantees\" in this business are credits.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
+    "Before you buy, open his archive for the sport you want and count the last 50 decided picks yourself. Compare it with the run in the sales copy.",
+    "Divide any \"dime bettor\" dollar figure by ten to get the figure at $100 a pick.",
+    "Add up what you would pay in a year and compare it with the archive's profit at your bet size. A small edge can be smaller than the subscription.",
+    "Read the guarantee badge on the exact package. Season and rest of season passes are not covered, and replacement days carry no guarantee of their own.",
+    "Write down each pick the moment you receive it, with the line you can actually get, not the posted line.",
+    "Do not deposit at an offshore sportsbook to get a free trial.",
     "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
   ],
   "faq": [
     [
       "Is Jimmy Boyd legit?",
-      "He runs a real business with a named operator, a public price list and a working checkout, and BBB lists one complaint, marked resolved. We could not verify that his picks win over time, because his only full record is graded by a site that lists the same company and address as his own."
+      "He runs a real business with a named operator, a public price list, a working checkout and a dated pick archive, and BBB lists one complaint, resolved. What is not independent is the record: SportsCapping, which grades it, names Boyd Information Group as the company behind it."
     ],
     [
       "How much does Jimmy Boyd cost?",
-      "On 7 Nov 2026 single best bets cost $39.99 to $59.97, day packs $74.97 to $99.97, all sports passes $49.95 for a day up to $1999.95 for 365 days, and season passes $599.95 to $999.97."
+      "On 20 Nov 2026 single best bets cost $29.99 to $74.96, day packs $49.97 to $99.97, all sports passes $99.95 for 3 days up to $1,999.95 for 365 days, and season passes $450 to $999.97."
     ],
     [
-      "Does Jimmy Boyd have a verified record?",
-      "Not independently. SportsCapping publishes a dated archive of his picks with results and lead times, but SportsCapping lists the same operator as BoydsBets, and Watchdog has not matched him to a graded record."
+      "What is Jimmy Boyd's record?",
+      "On the network archive on 20 Nov 2026: 5,855 wins and 5,324 losses since January 2018, 52.4%, about 1.7 cents of profit per dollar risked at the posted lines. MLB carries most of the profit; NBA is close to flat."
+    ],
+    [
+      "Are his advertised win streaks accurate?",
+      "Some are. We checked six against his archive: the NFL 35 and 25 run and the college football 11 and 5 run matched. Two college football and college basketball runs did not, and the NBA 10 and 6 run showed as 6 and 10."
+    ],
+    [
+      "Does Jimmy Boyd give refunds?",
+      "The help page says refunds are reviewed individually. Guaranteed packages that do not profit get the next day free, guaranteed subscriptions get extended, and season passes get nothing. In the one BBB complaint the business offered a refund."
     ],
     [
       "Is Jimmy Boyd worth it?",
-      "For the money you get daily picks with written analysis, and on short packages a free repeat term if you lose, never cash. What is unproven is whether the picks beat the market over time at the lines you can actually get, since every record comes from the seller's own network."
+      "On the seller's own numbers he has been a small long run winner, but the edge is thin enough that the price of a long pass can eat it at ordinary bet sizes. If you try him, buy short, keep your own record and compare it with the archive."
     ]
   ],
   "related": [
+    "jack-jones",
     "jim-feist",
     "big-al",
     "docs-sports",
@@ -292,49 +357,49 @@
   ],
   "sources": [
     {
-      "title": "BoydsBets.com: Jimmy Boyd page (packages, prices, streak table, yesterday's plays, top 10 claims)",
+      "title": "BoydsBets.com: Jimmy Boyd page (packages, prices, sales runs, last 30 days record, pass list)",
       "url": "https://www.boydsbets.com/jimmy-boyd/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "SportsCapping.com: Jimmy Boyd page (same packages, prices, streaks with start dates, price update dates)",
-      "url": "https://www.sportscapping.com/jimmy-boyd.html",
-      "accessed": "7 Nov 2026"
+      "title": "SportsCapping.com: Jimmy Boyd profile (bio, promo text, record rows)",
+      "url": "https://www.sportscapping.com/handicappers/jimmy-boyd",
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "BoydsBets.com: About Jimmy Boyd (since November 2002 claim)",
       "url": "https://www.boydsbets.com/about/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "BoydsBets.com: FAQ (independent monitors claim, free trial tied to sportsbook deposit, offshore lines)",
       "url": "https://www.boydsbets.com/faq/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "BoydsBets.com: Contact (Boyd Information Group, Henderson, NV; SportsCapping ticket system)",
       "url": "https://www.boydsbets.com/contact-us/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "SportsCapping.com: Guaranteed Pick Policy (8 Apr 2025)",
-      "url": "https://www.sportscapping.com/guarantee-policy",
-      "accessed": "7 Nov 2026"
+      "title": "SportsCapping.com: The Profit Guarantee (rewritten policy)",
+      "url": "https://www.sportscapping.com/page/guarantee-policy",
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "SportsCapping.com: Refund and Return Policy",
-      "url": "https://www.sportscapping.com/articles/refund-return-policy",
-      "accessed": "7 Nov 2026"
+      "title": "SportsCapping.com: Help Center (refunds reviewed individually; Boyd Information Group named as the company behind SportsCapping)",
+      "url": "https://www.sportscapping.com/help",
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "SportsCapping.com: Jimmy Boyd All Sports Picks Archive",
-      "url": "https://www.sportscapping.com/jimmy-boyd-sports-picks-archive.html",
-      "accessed": "7 Nov 2026"
+      "title": "SportsCapping.com: Jimmy Boyd all sports picks archive (5,855 and 5,324 since 20 Jan 2018)",
+      "url": "https://www.sportscapping.com/handicappers/jimmy-boyd/picks?league=all",
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "SportsCapping.com: current season leaderboard by profit",
-      "url": "https://www.sportscapping.com/all-season-cappers-leaderboard.html?min_picks=1&sort=profit&direction=DESC",
-      "accessed": "7 Nov 2026"
+      "title": "SportsCapping.com: 2026 all sports leaderboard",
+      "url": "https://www.sportscapping.com/leaderboard",
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "SportsCapping.com homepage (footer contact Boyd Information Group, Yesterday's Best)",
@@ -349,12 +414,12 @@
     {
       "title": "BBB: Boyd Information Group business profile",
       "url": "https://www.bbb.org/us/nv/henderson/profile/sports-handicappers/boyd-information-group-1086-90096031",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "BBB: Boyd Information Group complaints",
       "url": "https://www.bbb.org/us/nv/henderson/profile/sports-handicappers/boyd-information-group-1086-90096031/complaints",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Capper's Picks: BoydsBets.com listing (third party, older prices, sportsbook bonus codes)",
@@ -369,12 +434,12 @@
     {
       "title": "HandicappingReviews.org (header says provided by Sports Wagering Association): Boyd's Bets review with dated personal reviews",
       "url": "https://www.handicappingreviews.org/boyds-bets-handicapper-review/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Capper Reviews: Jimmy Boyd page and comments (site says it is part of the SportsCapping network)",
       "url": "https://capperreviews.com/capper/jimmy-boyd/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "CapperTek: BoydsBets.com customer reviews page",
@@ -384,12 +449,37 @@
     {
       "title": "TheRX forum: Saturday Service Play Thread 09/06/2025",
       "url": "https://www.therx.com/threads/saturday-service-play-thread-09-06-2025.1300524/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "TheRX: Service Plays Discussion Thread 2/2/26 to 2/8/26",
       "url": "https://www.therx.com/threads/service-plays-discussion-thread-2-2-26-2-8-26.1307940/",
-      "accessed": "13 Nov 2026"
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "SportsCapping.com: Jimmy Boyd NFL archive",
+      "url": "https://www.sportscapping.com/handicappers/jimmy-boyd/picks?league=nfl",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "SportsCapping.com: Jimmy Boyd college football archive",
+      "url": "https://www.sportscapping.com/handicappers/jimmy-boyd/picks?league=cfb",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "SportsCapping.com: Jimmy Boyd NBA archive",
+      "url": "https://www.sportscapping.com/handicappers/jimmy-boyd/picks?league=nba",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "SportsCapping.com: Jimmy Boyd college basketball archive",
+      "url": "https://www.sportscapping.com/handicappers/jimmy-boyd/picks?league=cbb",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "SportsCapping.com: Jimmy Boyd football top plays archive",
+      "url": "https://www.sportscapping.com/handicappers/jimmy-boyd/picks?league=football&top=1",
+      "accessed": "20 Nov 2026"
     }
   ],
   "pricing_source": 0
