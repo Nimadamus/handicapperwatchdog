@@ -3,21 +3,25 @@
   "name": "BettingPros",
   "legal_name": "Marzen Media LLC (named on the site as owner of the BettingPros trademark and as the App Store seller)",
   "kind": "Betting data and picks subscription (model ratings on props and games, expert picks, tools)",
-  "checked": "16 Nov 2026",
-  "checked_iso": "2026-11-16",
-  "updated_iso": "2026-11-16",
+  "checked": "20 Nov 2026",
+  "checked_iso": "2026-11-20",
+  "updated_iso": "2026-11-20",
   "title": "BettingPros Review 2026: Pricing, Record, Is It Worth It?",
-  "description": "BettingPros review, checked 16 Nov 2026: Plus and Elite prices, how billing and cancelling work, the hit rate claims, and what users post.",
+  "description": "BettingPros review, checked 20 Nov 2026: Plus and Elite prices, billing and cancelling, and its own posted prop record recounted by star rating.",
   "h1": "BettingPros review",
-  "dek": "A large betting data site from the company behind FantasyPros. Premium comes in two tiers, Plus and Elite, from $119.99 to $199.99 a year or $29.99 to $49.99 a month. You get model ratings on every prop, expert picks and tools. There is no guarantee, and the only results on the sales page are one week of 5 star NBA picks.",
+  "dek": "A large betting data site from the company behind FantasyPros. Premium comes in two tiers, Plus and Elite, from $119.99 to $199.99 a year or $29.99 to $49.99 a month. You get model ratings on every prop, picks and tools. There is no guarantee. BettingPros publishes its own prop record, and on it the 5 star NBA picks were the weakest tier this season.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of BettingPros picks. This page reports what we could check on 16 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record of BettingPros picks. On 20 Nov 2026 we read the prop record pages BettingPros publishes; those are graded by the seller, not by us."
   },
   "glance": [
     [
       "Operator",
       "BettingPros.com; trademark held by Marzen Media LLC, which is also the App Store seller"
+    ],
+    [
+      "Parent company",
+      "Marzen Media LLC, which does business as FantasyPros; privately held, headquartered in Las Vegas per a 2015 FantasyPros release"
     ],
     [
       "On the web since",
@@ -32,8 +36,8 @@
       "None stated. Cancel any time; access runs to the end of the billing period"
     ],
     [
-      "Full public record",
-      "Not found for premium picks. The sales page shows one week of 5 star NBA results"
+      "Public record",
+      "Seller published prop record by star rating for the 2026 to 2027 NBA and NFL seasons"
     ],
     [
       "Watchdog graded record",
@@ -41,11 +45,11 @@
     ]
   ],
   "short_answer": [
-    "BettingPros is a real, large company. Its footer names Marzen Media LLC as the owner of the BettingPros trademark, the same company sells the iPhone app, and the site has run since at least 2018. Prices, plan contents and cancel rules are written out on the premium page. In that sense it is legitimate.",
-    "It is not a classic tout. What you pay for is mostly data: a model projection, a cover probability and a 1 to 5 star rating on every player prop, plus tools such as a prop cheat sheet, a parlay builder and, on Elite, an AI assistant and a library of betting systems. The sales page claims a \"71%\" 5 star NBA hit rate and \"+10u\" profit, but both are labelled \"this week\". We found no full, time stamped history of every rated pick that we could check.",
-    "Users we found mostly treat it as a research tool and rate the free app well. Complaints focus on sportsbook syncing, data errors and whether the paid tier is worth it, not on billing tricks. If you try it, use the free tier or a trial first, and record every pick you take at the price you actually got."
+    "BettingPros is a real, large company. Its footer names Marzen Media LLC as the owner of the BettingPros trademark, the same company sells the iPhone app, and Marzen Media does business as FantasyPros, a fantasy sports site running since 2010. Prices, plan contents and cancel rules are written out on the premium page. In that sense it is legitimate.",
+    "It is not a classic tout. What you pay for is mostly data: a model projection, a cover probability and a 1 to 5 star rating on every player prop, plus tools such as a prop cheat sheet, a parlay builder and, on Elite, an AI assistant and a library of betting systems. The sales page shows a one week figure, \"85%\" for 5 star NFL picks on 20 Nov 2026. Its own prop record pages tell a longer story. For the NBA season to date, 5 star props were 2,214 and 2,379 (48.2%) for minus 177 units, the worst of the five star tiers. For the NFL season, 5 star props were 528 and 487 (52.0%) for plus 44.9 units.",
+    "Users mostly treat BettingPros as a research tool and rate the free app well. Complaints focus on sportsbook syncing, data errors and whether the paid tier is worth it, not on billing tricks. If you try it, use the free tier or trial first, read the record pages for the sport you bet, and log every pick you take at the price you actually got."
   ],
-  "pricing_intro": "Prices below were shown in the billing answers on the BettingPros premium page on 16 Nov 2026. The App Store listing showed the same amounts. The page says members on the older Premium plan keep their old price while they stay subscribed.",
+  "pricing_intro": "Prices below were shown in the billing answers on the BettingPros premium page on 20 Nov 2026, unchanged from our previous check. The App Store listing showed the same amounts and a 3 day free trial. The page says members on the older Premium plan keep their old price while they stay subscribed.",
   "pricing": [
     [
       "Plus, annual",
@@ -66,61 +70,83 @@
       "Elite, monthly",
       "$49.99/mo",
       "Month to month; cancel any time"
+    ],
+    [
+      "Legacy Premium (App Store)",
+      "$119.99 a year or $29.99 a month",
+      "Older plan; existing members keep it while subscribed"
     ]
   ],
   "guarantee": [
-    "We found no guarantee of any kind on the premium page. Its FAQ says you can cancel in \"Two clicks from your account page\" with \"No call, no email, no retention scripts\", and that you keep access until the end of the current billing period. It does not mention refunds.",
-    "Annual plans bill once for the whole year. The page says annual saves 67% over paying monthly, and that cancelling stops the next renewal. The site footer says its content is \"intended to be used for entertainment purposes only.\" Losses on bets you place are never covered."
+    "We found no guarantee of any kind on the premium page. Its FAQ says you can cancel in \"Two clicks from your account page. No call, no email, no retention scripts.\" and \"You'll keep your membership until the end of your current billing period.\" It does not mention refunds, and the terms of use page did not show its body text when we opened it. The support form has a \"Cancel Subscription\" topic.",
+    "Annual plans bill once for the whole year: \"Plus is a single charge of $119.99/year ($9.99/mo)\". The page says annual saves 67% over paying monthly and that you \"can still cancel at any time to stop the renewal.\" The App Store listing offers a 3 day free trial. The site footer says its content is \"intended to be used for entertainment purposes only.\" Losses on bets you place are never covered."
   ],
   "claims": [
     {
-      "claim": "\"71%\" \"5-star NBA hit rate\" and \"+10u\" \"NBA net profit\", both labelled \"this week\"",
-      "where": "BettingPros premium page, stats strip",
-      "status": "Seller claim, one week only, no full log"
+      "claim": "\"85%\" \"5-star NFL hit rate\" and \"+8u\" \"NFL net profit\" \"on 5-star picks, this week\"",
+      "where": "BettingPros premium page, stats strip (20 Nov 2026)",
+      "status": "Partly matches its own record: NFL week 10 shows 5 star props 31 and 21 for +8.01 units, which is 59.6%, not 85%"
     },
     {
-      "claim": "\"5-star picks are the highest-confidence plays, typically 3-8 per sport per day. This is where our strongest hit rates come from.\"",
+      "claim": "\"5-star picks are the highest-confidence plays ... This is where our strongest hit rates come from.\"",
       "where": "BettingPros premium page FAQ",
-      "status": "Seller claim, no long run figures shown"
+      "status": "Contradicted by its own season record: NBA 5 star props hit 48.2%, the lowest of the five tiers; NFL 5 star hit 52.0%, below 2 and 3 star"
+    },
+    {
+      "claim": "5 star picks are \"typically 3-8 per sport per day\"",
+      "where": "BettingPros premium page FAQ",
+      "status": "Not matched by its own NBA record: decided 5 star props ran from 15 to 59 a day after 6 Nov 2026, and several hundred every two days before that"
+    },
+    {
+      "claim": "\"71%\" \"5-star NBA hit rate\" and \"+10u\", \"this week\"",
+      "where": "BettingPros premium page, stats strip (16 Nov 2026)",
+      "status": "Not found in its own record: 10 to 16 Nov 2026 shows 152 and 135 (53.0%) for +12.47 units"
+    },
+    {
+      "claim": "\"You save 67% by committing for the year\"",
+      "where": "BettingPros premium page FAQ",
+      "status": "Confirmed: $119.99 against 12 times $29.99 ($359.88), and $199.99 against $599.88, both about 66.7% less"
+    },
+    {
+      "claim": "\"Track our verified NBA prop betting performance ... All picks recorded before game time.\"",
+      "where": "BettingPros NBA prop record page description",
+      "status": "Seller claim; the record is published by the seller, not audited"
     },
     {
       "claim": "\"Win more bets. Become a pro.\"",
       "where": "BettingPros premium page title",
       "status": "Marketing line, not checkable"
-    },
-    {
-      "claim": "\"Picks, projections and edge on every line\"",
-      "where": "BettingPros premium page description",
-      "status": "Product description"
     }
   ],
   "claims_note": [
-    "The only performance numbers on the sales page cover one week of one sport. A week of 5 star NBA picks is a few dozen bets at most, which is far too few to tell skill from luck.",
-    "The site has pages called Accuracy and Leaderboards, but they load in the browser and we could not read a full history of the premium star ratings from them. We did not see the hit rate of all 5 star picks over a season anywhere."
+    "How we checked: the BettingPros prop record pages carry the full season tally behind their tables. We read the NBA and NFL pages titled 2026 to 2027 on 20 Nov 2026 and split them by star rating. NBA, all rated props: 14,040 and 12,295 (53.3%), minus 396.19 units, ROI minus 1.5%. By tier: 1 star 58.6%, 2 star 55.4%, 3 star 53.8%, 4 star 52.4%, 5 star 48.2% (minus 177.05 units, ROI minus 3.85%). NFL, all rated props: 4,154 and 3,593 (53.6%), plus 114.14 units, ROI plus 1.5%; 5 star 52.0% for plus 44.87 units and ROI plus 4.4%, with 3 star the best tier at plus 166.19 units.",
+    "The NBA split changes partway through. Before 6 Nov 2026 the record shows hundreds of 5 star NBA props every two days, and they lost heavily. From 6 to 19 Nov the count fell to about 15 to 59 decided picks a day, and the result was 286 and 267 (51.7%) for plus 12.67 units. The last seven days, 13 to 19 Nov, were 131 and 127 (50.8%), plus 2.45 units. That recent stretch is too short and too close to even to call a winner or a loser.",
+    "Hit rate is not profit. The NBA record shows a 53.3% hit rate across all props and still loses units, because many props are priced well past -110. The sales strip uses hit rate in big type and units in small type.",
+    "The weekly strip changes. On 16 Nov 2026 it showed NBA, \"71%\" and \"+10u\"; on 20 Nov 2026 it showed NFL, \"85%\" and \"+8u\". At about -110 odds, 85% and +8 units together imply only about 13 decided picks, and 71% with +10 units about 28. These are short samples picked for display."
   ],
   "record": [
-    "What a buyer can verify independently: nothing that covers the premium star ratings over a long period. We found no third party audit and no full, time stamped log of every rated pick with its line and result.",
-    "What the seller publishes: a one week figure on the sales page, and leaderboard pages for its writers and community members. These are published by the company, so they are marketing, not an audit.",
-    "The leaderboards also rank free community members, so part of the site works as a pick tracker for users. That says nothing about how the paid model performs."
+    "What a buyer can verify independently: nothing that an outside party has audited. We found no third party tracker of the star ratings.",
+    "What the seller publishes: prop record pages for each sport, with wins, losses, pushes, units and ROI, split by star rating, cover probability band and expected value band, plus weekly or daily results. This is more than most pick sellers publish, and it includes the losing tiers. It is still graded by BettingPros.",
+    "What it shows for this season: the NFL ratings are slightly profitable overall and the 5 star NFL tier is up about 45 units. The NBA ratings are losing overall and the 5 star NBA tier is down about 177 units, though the count and result changed after 6 Nov 2026. Accuracy and leaderboard pages for writers and community members also exist; they rank people, not the paid model."
   ],
   "our_data": {
     "matched": false,
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no BettingPros pick history is matched to a Watchdog graded record, so we make no claim about how BettingPros performs.",
-    "context": "For scale: the sales page showed a 71% hit rate on 5 star NBA picks for a single week. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. Many props are priced well past -110, so a hit rate alone does not show profit."
+    "context": "For scale: BettingPros' own NBA record shows 5 star props at 48.2% this season and the sales strip showed 85% for one NFL week. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. Many props are priced well past -110, so a hit rate alone does not show profit."
   },
-  "customers_intro": "Independent buyer evidence on BettingPros is small but spread over several years. Most of it is App Store reviews and Reddit threads where bettors compare prop research tools. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent buyer evidence on BettingPros is spread over several years but mostly light. It is App Store reviews and Reddit threads where bettors compare prop research tools. Below is everything we found and how much weight it can carry.",
   "customers": [
     {
       "type": "Our summary",
       "tone": "Mixed",
-      "date": "Read 16 Nov 2026",
-      "text": "We read four App Store reviews and five Reddit threads from 2023 to 2025. The App Store listing averages 4.8 out of 5 from about 16,000 ratings, and users praise the free stats, the leaderboards and the prop projections. The complaints that repeat are sportsbook sync errors, missing or wrong data, and doubt that the paid tier pays for itself. On Reddit, BettingPros comes up as one tool among several; one bettor had his best results with it and a rival tool, others preferred competitors or said they fade the expert picks. Nobody posted a long, checkable profit record from following the premium ratings, and we found no billing or refund complaints.",
+      "date": "Read 20 Nov 2026",
+      "text": "We read four App Store reviews and about a dozen Reddit threads from 2023 to 2026. The App Store listing averages 4.8 out of 5 from about 16,000 ratings, and users praise the free stats, the leaderboards and the prop projections. The complaints that repeat are sportsbook sync problems (failed syncs in 2025, only three months of history imported in another 2025 case), missing or wrong data, and doubt that the paid tier pays for itself. On Reddit, BettingPros comes up as one research tool among several: some members had their best results with it and a rival tool, more often members prefer a competitor, one said they fade the expert picks on sites like it, and others were confused about what cover probability means. Pick sellers sometimes point to their own BettingPros profiles as proof of a record, which shows the leaderboards are used as a tracker. Nobody posted a long, checkable profit record from following the premium ratings, and we found no billing or refund complaints, BBB complaints or news coverage of disputes. The seller's own prop record, which we read, shows a losing NBA 5 star tier this season.",
       "source": null
     },
     {
       "type": "Customer report",
       "tone": "Positive",
-      "date": "Checked 16 Nov 2026",
+      "date": "Checked 20 Nov 2026",
       "text": "The BettingPros app on the U.S. App Store showed 4.8 out of 5 from about 16,000 ratings. The app is sold by the same company that runs the site, and star ratings do not show whether users won money.",
       "source": 1
     },
@@ -156,7 +182,7 @@
       "type": "Forum post",
       "tone": "Mixed",
       "date": "22 Feb 2025",
-      "text": "In an r/sportsbook thread comparing prop research tools, the poster said he had his best results with BettingPros and one rival tool. Another member on free trials of three tools found all of them crowded and preferred a rival, and a third said stats sites that only show recent game logs are useless without an odds screen.",
+      "text": "In an r/sportsbook thread comparing prop research tools, the poster said he had his best results with BettingPros and one rival tool. Another member on free trials of three tools found all of them crowded and preferred a rival, and a third said stats sites that only show recent game logs are useless without an odds screen. A later reply in September 2026 said they had the most success with the rival tool but also liked BettingPros.",
       "source": 2
     },
     {
@@ -176,46 +202,101 @@
     {
       "type": "Not found",
       "tone": "Neutral",
-      "date": "Checked 16 Nov 2026",
+      "date": "Checked 20 Nov 2026",
       "text": "An August 2025 r/sportsbook post asking whether BettingPros premium is worth it had no replies in the archive. We found no forum thread, news report or regulator record about BettingPros refunds or billing, and no member post with a long, checkable record from following the premium ratings.",
       "source": 5
+    },
+    {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "14 Jan 2025",
+      "text": "An r/sportsbetting user said they synced a FanDuel account but BettingPros showed only the last three months of a four year history, and that support had not answered. A BettingPros developer replied in the thread offering help; the user said FanDuel told them that is just how its data works.",
+      "source": 13
+    },
+    {
+      "type": "Forum post",
+      "tone": "Neutral",
+      "date": "8 Feb 2025",
+      "text": "A new prop bettor asked whether to subscribe to BettingPros or a rival tool on a budget of about $20 a month. The one reply recommended a third tool and did not discuss BettingPros.",
+      "source": 14
+    },
+    {
+      "type": "Forum post",
+      "tone": "Neutral",
+      "date": "27 Jun 2024",
+      "text": "A member asked whether the BettingPros AI assistant was accurate. The one reply said the unpaid version told them it could not help with sports predictions.",
+      "source": 15
+    },
+    {
+      "type": "Forum post",
+      "tone": "Neutral",
+      "date": "24 Jan 2025",
+      "text": "A user asked what the BettingPros cover probability means on an under bet, saying the site does not make clear whether the number is the chance the under hits. The archive showed no useful reply.",
+      "source": 16
+    },
+    {
+      "type": "Forum post",
+      "tone": "Neutral",
+      "date": "26 Jun 2024",
+      "text": "A user who got a one year trial of BettingPros and FantasyPros said FantasyPros helped their fantasy season and asked whether the BettingPros picks were worth keeping when the trial ended. The same question was posted in two subreddits; one reply called the post AI generated and another said they were curious too. Nobody answered with results.",
+      "source": 18
+    },
+    {
+      "type": "Seller curated",
+      "tone": "Positive",
+      "date": "26 Jun 2025",
+      "text": "A pick seller promoting a 5 and 0 day on Reddit called all their bets free and third party tracked and linked a BettingPros profile. That is a user's profile on the free leaderboard, not the paid model, and it shows sellers using BettingPros as a tracker.",
+      "source": 17
     }
   ],
   "conflicts": [
-    "The site footer carries an Affiliate Signup link, and betting data sites usually earn referral fees when readers join a sportsbook. We could not read the text of the disclosures page, so we cannot say which books pay BettingPros, but a buyer should assume the company has a financial interest in people betting.",
-    "The App Store listing and the website are both run by the seller, so the 4.8 star rating is a platform rating, not a check of results."
+    "The site footer carries an Affiliate Signup link, and the support form lists \"Special Offer\" topics for BetMGM, FanDuel Sportsbook, Novig, Plus500 and Polymarket. The same form describes premium upgrades given to brand new players who deposit at least $10 at partner sites such as Underdog, OwnersBox, ThriveFantasy and Jackpot. A buyer should assume the company earns when people sign up and bet.",
+    "The App Store listing, the sales page and the prop record pages are all run by the seller, so the 4.8 star rating and the hit rates are the company's own numbers.",
+    "The weekly stats strip on the sales page shows a short, favorable window, while the full season record sits on separate pages."
   ],
   "strengths": [
-    "A named company, a long running site and a big user base on the App Store.",
-    "Prices for both tiers and both billing options are published, and the cancel process is spelled out.",
+    "A named company with a long history: the FantasyPros parent has run since 2010 and BettingPros since 2018, with a big user base on the App Store.",
+    "Prices for both tiers and both billing options are published, the cancel process is spelled out, and there is a free tier and a 3 day app trial.",
+    "It publishes a season prop record split by star rating, including the tiers that lose, which is rare in this industry.",
     "The product is mostly data and tools, so a buyer can use it for their own research rather than blind following.",
-    "A free tier lets you test the app before paying."
+    "The NFL ratings show a small profit across the 2026 season to date on its own record."
   ],
   "concerns": [
-    "No full public record of the premium star ratings. The only sales page numbers cover one week.",
+    "On its own NBA record the 5 star tier, sold as the strongest, is the weakest this season at 48.2% and minus 177 units.",
+    "The sales page leads with one good week, and its numbers do not always match the record pages.",
     "No refund wording that we could find, and annual plans bill the full year up front.",
-    "Users report sportsbook sync failures and data errors.",
-    "Cover probability on props does not account for the price you pay. A high hit rate on heavy favourites can still lose money."
+    "Users report sportsbook sync failures, incomplete history and data errors.",
+    "Cover probability on props does not account for the price you pay. A high hit rate on heavy favourites can still lose money.",
+    "The company promotes sportsbooks and prediction markets and rewards new deposits at partner sites."
   ],
   "checklist": [
-    "Ask for the hit rate and units of every 5 star pick over a full season, not one week.",
-    "Count units, not wins. Props at -150 need about 60% just to break even.",
-    "Check whether a refund is offered before you pay for a year up front.",
+    "Open the prop record page for your sport and read the full season by star rating, not the weekly strip.",
+    "Look at units and ROI, not hit rate. Props at -150 need about 60% just to break even.",
+    "Check the most recent few weeks separately. A model can change during a season, as the NBA count did in November 2026.",
+    "Use the free tier or the 3 day trial before paying, and check whether a refund is offered before you pay for a year up front.",
     "Write down each pick you take, with the line and price you actually got.",
     "Give any model a few hundred picks before you trust it. Short runs swing hard both ways."
   ],
   "faq": [
     [
       "Is BettingPros legit?",
-      "It is a real, large company. The trademark and the iPhone app belong to Marzen Media LLC, prices and cancel rules are published, and we found no court or regulator action. We could not verify that its premium picks make money, because it does not publish a full record of every rated pick."
+      "It is a real, large company. The trademark and the iPhone app belong to Marzen Media LLC, which also runs FantasyPros. Prices and cancel rules are published, and we found no court or regulator action. Its own published record does not show its 5 star NBA picks making money this season."
     ],
     [
       "How much does BettingPros cost?",
-      "On 16 Nov 2026 Plus cost $119.99 a year or $29.99 a month, and Elite cost $199.99 a year or $49.99 a month. Members on the older Premium plan keep their old price while they stay subscribed."
+      "On 20 Nov 2026 Plus cost $119.99 a year or $29.99 a month, and Elite cost $199.99 a year or $49.99 a month. Members on the older Premium plan keep their old price while they stay subscribed. The app offers a 3 day free trial."
     ],
     [
       "Does BettingPros have a verified record?",
-      "No. The sales page shows a 71% hit rate and +10 units on 5 star NBA picks for one week. We found no independent, time stamped log of every premium pick."
+      "Not independently. BettingPros publishes a prop record by star rating, graded by itself. For the 2026 to 2027 seasons to 20 Nov 2026, 5 star NBA props were 48.2% for minus 177 units and 5 star NFL props were 52.0% for plus 44.9 units."
+    ],
+    [
+      "Can I cancel BettingPros?",
+      "Yes. The premium page says you can cancel in two clicks from your account page and keep access until the end of the billing period. We found no refund wording, and annual plans are charged in full up front."
+    ],
+    [
+      "Are BettingPros 5 star picks good?",
+      "The sales page calls them the source of its strongest hit rates. Its own season record disagrees for the NBA, where 5 star was the lowest hitting tier, while in the NFL 5 star props were modestly profitable. The recent NBA stretch since 6 Nov 2026 is close to break even."
     ],
     [
       "Is BettingPros worth it?",
@@ -231,49 +312,99 @@
   ],
   "sources": [
     {
-      "title": "BettingPros Premium page (plans, prices, billing and cancel FAQ, weekly stats, footer)",
+      "title": "BettingPros Premium page (plans, prices, billing and cancel FAQ, weekly stats strip, footer)",
       "url": "https://www.bettingpros.com/premium/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "Apple App Store: BettingPros (seller, rating, in app prices, user reviews)",
+      "title": "Apple App Store: BettingPros: Picks & Odds (seller, rating, in app prices, free trial, user reviews)",
       "url": "https://apps.apple.com/us/app/bettingpros-sports-betting/id1468109182",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Reddit r/sportsbook: Of all the rising/top Sportsbook aids, what is your favorite and why? (Feb 2025)",
       "url": "https://www.reddit.com/r/sportsbook/comments/1ivmkvt/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Reddit r/sportsbetting: BettingPros app any good? (Dec 2024)",
       "url": "https://www.reddit.com/r/sportsbetting/comments/1hmzqbb/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Reddit r/sportsbetting: Experts schmexperts (Jun 2025)",
       "url": "https://www.reddit.com/r/sportsbetting/comments/1llx3j9/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Reddit r/sportsbook: BettingPros, anyone using premium? (Aug 2025)",
       "url": "https://www.reddit.com/r/sportsbook/comments/1mrcl0x/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Reddit r/sportsbetting: player props apps (Aug 2025)",
       "url": "https://www.reddit.com/r/sportsbetting/comments/1n4gg49/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Reddit r/sportsbetting: BettingPros or similar? (Jun 2024)",
       "url": "https://www.reddit.com/r/sportsbetting/comments/1dprpu0/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "BettingPros NFL Accuracy Leaderboard",
       "url": "https://www.bettingpros.com/nfl/accuracy/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "BettingPros NBA Prop Record (2026 to 2027): season record by star rating, published by BettingPros",
+      "url": "https://www.bettingpros.com/nba/prop-record/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "BettingPros NFL Prop Record (2026 to 2027): season and weekly record by star rating, published by BettingPros",
+      "url": "https://www.bettingpros.com/nfl/prop-record/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "BettingPros customer support request form (topics, sportsbook special offers, premium upgrade terms)",
+      "url": "https://secure.bettingpros.com/support-request/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "FantasyPros press release: Marzen Media LLC (d/b/a FantasyPros) acquires Sports Injury Alert (1 Jan 2015)",
+      "url": "https://www.fantasypros.com/about/press/fantasypros-acquires-majority-interest-in-sports-injury-alert",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbetting: synced FanDuel to BettingPros but not showing full history (14 Jan 2025)",
+      "url": "https://www.reddit.com/r/sportsbetting/comments/1i0vxcb/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbook: Prop bet analyzer, Outlier or BettingPros? (8 Feb 2025)",
+      "url": "https://www.reddit.com/r/sportsbook/comments/1ikcl3n/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbook: BettingPros AI GPT (27 Jun 2024)",
+      "url": "https://www.reddit.com/r/sportsbook/comments/1dpn3ma/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbetting: Cover probability question (24 Jan 2025)",
+      "url": "https://www.reddit.com/r/sportsbetting/comments/1i8osyv/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbetting: a pick seller citing a BettingPros profile as third party tracking (26 Jun 2025)",
+      "url": "https://www.reddit.com/r/sportsbetting/comments/1lkzt75/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbook: Betting odds/picks comparison sites (26 Jun 2024)",
+      "url": "https://www.reddit.com/r/sportsbook/comments/1dp6tar/",
+      "accessed": "20 Nov 2026"
     }
   ],
   "pricing_source": 0
