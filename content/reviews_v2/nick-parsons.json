@@ -1,35 +1,39 @@
 {
   "slug": "nick-parsons",
   "name": "Nick Parsons",
-  "legal_name": "Nick Parsons, sold through Picks and Parlays, Winners and Whiners and StatSalt (Picks and Parlays sales are made by Wager Talk Media, LP)",
+  "legal_name": "Nick Parsons, sold through Picks and Parlays, Winners and Whiners and StatSalt (Picks and Parlays sales are made by Wager Talk Media, LP; seller address 11035 Lavender Hill Dr, Ste 160-263, Las Vegas, NV 89135)",
   "kind": "Handicapper sold on a network of pick marketplaces",
-  "checked": "17 Nov 2026",
-  "checked_iso": "2026-11-17",
-  "updated_iso": "2026-11-17",
+  "checked": "20 Nov 2026",
+  "checked_iso": "2026-11-20",
+  "updated_iso": "2026-11-20",
   "title": "Nick Parsons Review 2026: Pricing, Record, Is It Worth It?",
-  "description": "Nick Parsons review, checked 17 Nov 2026: prices from $5 to $49 passes, all sales final, a No. 1 ranking from sites run by his seller.",
+  "description": "Nick Parsons review, checked 20 Nov 2026: $25 plays to a $1,999 year, all sales final, and his No. 1 ranking and runs checked against his own pages.",
   "h1": "Nick Parsons review",
-  "dek": "A handicapper who says he has bet every day for 20 years and is now sold on Picks and Parlays, Winners and Whiners and StatSalt. Passes cost $49 for three days. His No. 1 NFL and college football ranking comes from sites owned by the company that sells his picks.",
+  "dek": "A handicapper who says he has bet every day for 20 years, promoted on Covers in 2014 and now sold on Picks and Parlays, Winners and Whiners and StatSalt. Passes run from $39 for a day to $1,999 for a year, with $49 specials. His No. 1 NFL and college football ranking comes from sites tied to the company that sells his picks, and his current headline record is 64-49-1, 56.6%.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Nick Parsons picks. This page reports what we could check on 17 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record of Nick Parsons picks. This page reports what we could check on 20 Nov 2026, including our own arithmetic on the figures his sales pages publish, and labels everything else."
   },
   "glance": [
     [
       "Operator",
-      "Sold on Picks and Parlays, Winners and Whiners and StatSalt; Picks and Parlays sales are made by Wager Talk Media, LP (refund policy)"
+      "Sold on Picks and Parlays, Winners and Whiners and StatSalt; Picks and Parlays sales are made by Wager Talk Media, LP, Las Vegas, NV"
     ],
     [
       "Claims to operate since",
-      "About 20 years in the business (StatSalt bio); X account says Canada"
+      "About 20 years in the business (StatSalt bio); promoted on Covers' Steamwire service in October 2014"
     ],
     [
       "Price range seen",
-      "$5 sale price for one play to $49 for a 3 day or weekend pass; longer passes not priced on the page"
+      "$25 single plays to $1,999 for a 1 year all sports pass; $49 three day and weekend specials"
     ],
     [
       "Guarantee",
-      "None on his pages. Picks and Parlays says all sales are final"
+      "None on his passes. Picks and Parlays: \"All Sales are Final\"; its FAQ says \"No picks or predictions are guaranteed\""
+    ],
+    [
+      "Headline record",
+      "64-49-1, 56.64%, +20.25 units (time window not stated)"
     ],
     [
       "Full public record",
@@ -41,52 +45,89 @@
     ]
   ],
   "short_answer": [
-    "Nick Parsons is a real handicapper with a public X account and profiles on three pick marketplaces. His name appears in betting forums as far back as 2014, when Covers promoted him on its Steamwire service. In that narrow sense the service is legitimate.",
-    "Whether the picks make money is a separate question. His headline claim, No. 1 NFL and college football capper since 2023, is a ranking on Picks and Parlays and Winners and Whiners, and the Picks and Parlays refund policy says sales are made by Wager Talk Media, LP, its parent company. The ranking and the store belong to the same business.",
-    "Treat Nick Parsons as a marketplace seller with in house rankings, not a proven winner. All sales are final, so track his picks yourself before you buy."
+    "Nick Parsons is a real handicapper with a public X account and profiles on three pick marketplaces. His name shows up in betting forums as far back as October 2014, when Covers promoted him on its Steamwire service. His StatSalt bio says he has fought the books \"every single day for the last 20 years.\" In that narrow sense the service is legitimate.",
+    "Whether the picks make money is a separate question. His headline claim, No. 1 NFL and college football capper since 2023, is a ranking on Picks and Parlays and Winners and Whiners. The Picks and Parlays refund policy says sales are made by Wager Talk Media, LP, and WagerTalk Media announced a partnership with both sites in August 2025. The ranking, the grading and the store belong to the same business.",
+    "We checked his runs against his own pages. The badge record, 64-49-1, is 56.6% winners, and its unit total rose between 17 Nov and 20 Nov 2026 even though four losses and no wins were added, so the window appears to roll. His college basketball claim, 84-77 for +31.35 units, is 52.2% winners, which would lose money at flat -110 stakes; the profit can only come from bigger bets on winners or plus money prices, and no log shows which.",
+    "We found no buyer review of a paid package anywhere, good or bad. Treat Nick Parsons as a marketplace seller with in house rankings, not a proven winner. All sales are final, so track his free and reposted picks yourself before you buy."
   ],
-  "pricing_intro": "Prices below were on his Picks and Parlays profile on 17 Nov 2026. Winners and Whiners and StatSalt showed the same packages at the same prices. Short and long term passes showed no price until a duration was chosen.",
+  "pricing_intro": "Prices below were on his Picks and Parlays profile on 20 Nov 2026, read from the page's own product list. Winners and Whiners and StatSalt showed the same $49 specials and $25 plays that day. On 17 Nov the pass prices did not display until a duration was chosen, and single plays were shown on sale at $5; both have changed.",
   "pricing": [
     [
-      "Single play, such as \"Parsons' $5 Tues. Night MACtion\"",
-      "$5.00 (shown against $25.00)",
+      "Single play (for example \"3% FRIDAY NIGHT New Mexico/Wyoming BLOCKBUSTER\", \"3% CBB ULTIMATE ATS BEATDOWN\")",
+      "$25.00",
+      "The page data also lists a \"guaranteed\" version at $38; we found no page explaining what it pays"
+    ],
+    [
+      "Weekend Warrior (every Saturday college football and Sunday NFL play)",
+      "$49.00 (retail $78.00)",
       "All sales final"
     ],
     [
-      "Weekend Warrior (Saturday college football and Sunday NFL)",
-      "$49.00 (retail $78.00)",
-      "Includes any 5% max football plays"
-    ],
-    [
-      "College Basketball, NBA or NHL 3 day pass",
+      "College Basketball, NBA or NHL 3 day pass (includes 5% Best Bets)",
       "$49.00 each (listed at $100.00)",
-      "Includes 5% Best Bets"
+      "All sales final"
     ],
     [
-      "Short Term and Long Term Pass",
-      "No price shown",
-      "All sports"
+      "All sports passes: 1 day / 3 days / 7 days",
+      "$39 / $69 / $99",
+      "Not guaranteed"
+    ],
+    [
+      "All sports passes: 30 days / 90 days / 1 year",
+      "$299 / $749 / $1,999",
+      "Not guaranteed"
+    ],
+    [
+      "Football season passes: CFB through Championship Game / NFL through Super Bowl / NFL + CFB",
+      "$259 (was $299) / $339 (was $369) / $529 (was $579)",
+      "Not guaranteed"
+    ],
+    [
+      "Basketball and hockey: NBA through All Star Game / through Finals; CBB through March Madness",
+      "$389 (was $414) / $719 (was $739); $639 (was $669)",
+      "Not guaranteed"
+    ],
+    [
+      "NHL through All Star Game / through Stanley Cup Finals",
+      "$324 (was $349) / $639 (was $659)",
+      "Not guaranteed"
     ]
   ],
   "guarantee": [
-    "We found no guarantee on any of his three profiles. The Picks and Parlays refund policy says \"All Sales are Final,\" that products are sold \"as is,\" and that no refund is given once a product is bought, delivered or viewed.",
-    "The policy also says charges appear on a card statement as \"WT/SM* PICKS AND PAR.\" Betting losses on the picks are never covered."
+    "We found no guarantee on any of his passes; the product data on his Picks and Parlays profile marks every pass and special as not guaranteed. The Picks and Parlays refund policy says \"All Sales are Final and products are sold \"as is\".\" Its FAQ answers \"Are your picks guaranteed to win?\" with \"No picks or predictions are guaranteed.\"",
+    "The Picks and Parlays terms say the seller is located at 11035 Lavender Hill Dr, Ste 160-263, Las Vegas, NV 89135, that the agreement is governed by Nevada law, and that \"the purchaser's exclusive remedy, shall be a refund of the price paid or replacement of our products, at our option.\" So a refund is possible only at the seller's choice.",
+    "Charges appear on a card statement as \"WT/SM* PICKS AND PAR.\" Betting losses on the picks are never covered."
   ],
   "claims": [
     {
-      "claim": "\"No. 1 NFL/CFB CAPPER SINCE 2023!\"",
+      "claim": "\"No. 1 NFL/CFB CAPPER SINCE 2023!\"; \"the No. 1-ranked NFL and College Football combined capper on Picks and Parlays and Winners and Whiners since the start of the 2023 Regular season\"",
       "where": "Picks and Parlays and Winners and Whiners profiles",
-      "status": "Ranking on the seller's own board"
+      "status": "Ranking on the seller's own boards. The Picks and Parlays leaderboard did not show him in the views we could load on 20 Nov 2026, and the page data for his overall stats line lists a rank of 5 without saying for which board"
     },
     {
-      "claim": "\"58.72% Win Rate(64-45-1)+18.54 units+$1854 profit\"",
-      "where": "Picks and Parlays and StatSalt profiles",
-      "status": "Seller claim, time window not stated"
+      "claim": "\"56.64% Win Rate(64-49-1)+20.25 units+$2025 profit\" (read on 17 Nov 2026 as \"58.72% Win Rate(64-45-1)+18.54 units+$1854 profit\")",
+      "where": "Picks and Parlays, StatSalt and Winners and Whiners profiles",
+      "status": "Percentages check out. Between the two readings, four losses and no wins were added but units rose by 1.71, which is only possible if older picks dropped out. The window appears to roll and is not stated"
     },
     {
-      "claim": "\"PARSONS' TUES. NIGHT MACTION WINNER: 33-20 (+29 UNITS) CFB YTD!\"",
-      "where": "StatSalt and Picks and Parlays profiles",
-      "status": "Selected run, no full log"
+      "claim": "\"Nick Parsons is an ELECTRIC 84-77 for +31.35 UNITS in College Hoops since last year\"",
+      "where": "CBB play listing on all three sites",
+      "status": "Checked by arithmetic: 52.2% winners. At flat -110 stakes that record would be about 0.7 units down. A +31.35 unit profit needs much bigger bets on the winners or plus money prices; no log shows which"
+    },
+    {
+      "claim": "\"33-22 (+27 UNITS) CFB YTD!\"",
+      "where": "College football play listing and profile achievements",
+      "status": "Checked by arithmetic: 60.0% winners. At flat -110 about +8.8 units, so the +27 again relies on larger plays winning. Year to date window"
+    },
+    {
+      "claim": "\"80-50 NFL RUN SINCE LAST YEAR!\" and \"53-31 (+27 UNITS) ALL SOCCER YTD & 7-3 MLS YTD!\"",
+      "where": "Profile achievements in the Picks and Parlays and StatSalt page data",
+      "status": "Arithmetic: 61.5% and 63.1%. Start dates chosen by the seller; no full log"
+    },
+    {
+      "claim": "Sport badges: NBA \"55.26% Winning (21-17)\", CBB \"54.55% Winning (12-10)\", CFB \"62.50% Winning (15-9)\"",
+      "where": "Picks and Parlays profile",
+      "status": "Percentages check out. On 17 Nov the badges read NBA 19-15, CFB 15-7 and NFL 13-7. The five latest picks on 20 Nov (18 and 19 Nov) went 3 and 2"
     },
     {
       "claim": "\"No. 2 Combined NBA/CBB Capper 2024/25!\"",
@@ -96,7 +137,7 @@
     {
       "claim": "\"Nick's been in the trenches fighting the books every single day for the last 20 years.\"",
       "where": "StatSalt profile",
-      "status": "Seller claim"
+      "status": "Seller claim. Consistent with the 2014 Covers promotion; the same bio still says \"2023 and 2024 have massive potential\""
     },
     {
       "claim": "\"Nick returned to Steamwire™ and promptly went 16-3 w/ these exclusive plays in his first week.\"",
@@ -105,34 +146,36 @@
     }
   ],
   "claims_note": [
-    "The No. 1 ranking is measured on Picks and Parlays and Winners and Whiners. The Picks and Parlays refund policy names Wager Talk Media, LP as its parent company, and WagerTalk Media announced a partnership with both sites in August 2025. His X profile describes him as \"documented by\" those same two sites.",
-    "The StatSalt bio still says \"2023 and 2024 have massive potential,\" so parts of the copy are out of date.",
-    "Each run starts on a date the seller picked: year to date, last seven days, one week in 2014. A window picked after the fact tells you little."
+    "How we checked: we read his profiles on 17 Nov and 20 Nov 2026, divided wins by wins plus losses for each badge and run, compared the readings between the two dates, and estimated what each record returns at standard -110 odds with one unit per pick. The sites rate plays by size (3%, 4% and 5% plays), so unit totals can differ from flat stakes; the question is whether the gap is plausible.",
+    "Two runs lean entirely on bet sizing or prices: 84-77 in college basketball is below break even by count yet claims +31.35 units, and 33-22 in college football claims about three times what flat stakes would earn. Neither is impossible, but neither can be checked without the full list of picks, sizes and prices.",
+    "The No. 1 ranking is measured on Picks and Parlays and Winners and Whiners. The Picks and Parlays refund policy names Wager Talk Media, LP as the seller, and WagerTalk Media's 27 Aug 2025 press release announced a partnership with both sites. His X profile describes him as documented by those same two sites.",
+    "Each run starts on a date the seller picked: since 2023, since last year, year to date, one week in 2014. A window picked after the fact tells you little."
   ],
   "record": [
     "What a buyer can verify independently: nothing that we could find. We found no full, time stamped log of every Nick Parsons pick from an outside tracker, and no court or regulator record about him.",
-    "What the marketplaces publish: badges such as 55.88% in the NBA (19 and 15), 68.18% in college football (15 and 7) and 65.00% in the NFL (13 and 7), and a latest picks list. The five picks visible on 17 Nov 2026, from 15 and 16 Nov, went 2 and 3. These are graded by the company that sells the picks, so they are marketing, not an audit.",
-    "His WagerTalk profile address opened the general experts page instead, and that page did not list him on 17 Nov 2026."
+    "What the marketplaces publish: a headline badge, sport badges and a latest picks list. The five picks visible on 17 Nov 2026 (from 15 and 16 Nov) went 2 and 3; the five visible on 20 Nov (from 18 and 19 Nov) went 3 and 2. These are graded by the company that sells the picks, so they are marketing, not an audit. The latest picks list shows only results, not the price taken or the time the pick was released.",
+    "History we could confirm: a Covers forum post of 2 Oct 2014 advertised him on Covers' Steamwire subscription, then $19.99 a month, as a leader in first half, second half and in game bets. TheRX members reposted his plays in September 2025. His WagerTalk profile address opened the general experts page on 17 Nov, and on 20 Nov that page still did not list him.",
+    "Unlike several sellers on the same network, Nick Parsons is not on TheRX forum's list of services whose plays or write ups may not be posted."
   ],
   "our_data": {
     "matched": false,
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Nick Parsons pick history is matched to a Watchdog graded record, so we make no claim about how he performs.",
-    "context": "For scale: the badges on his profiles run from 55.88% to 68.18% winners. On the Watchdog board on 17 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "context": "For scale: the badges and runs on his profiles range from 52.2% (college basketball since last year) to 63.1% (soccer this year), with a headline 56.6%. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "Independent buyer evidence on Nick Parsons is close to nil. We found no buyer review of a paid package, good or bad. Our Reddit search was partial. The Reddit archive's full text search timed out all day, so we searched our saved copy of r/sportsbook and r/sportsbetting posts from January 2024 to November 2026, plus a few smaller betting subreddits and the comments of 329 saved threads. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent buyer evidence on Nick Parsons is close to nil. We found no buyer review of a paid package, good or bad, on any site we searched. Below is everything we found and how much weight it can carry.",
   "customers": [
     {
       "type": "Our summary",
       "tone": "Neutral",
-      "date": "Read 17 Nov 2026",
-      "text": "We found almost nothing from buyers. On TheRX his plays are sometimes reposted without results, such as a Rays +1.5 game of the week in September 2025. The only performance figures come from the marketplaces that sell him, plus a 2014 Covers promotion. Our saved Reddit copy and CapperTek's WagerTalk reviews do not mention him. We found no complaints and no buyer praise.",
+      "date": "Read 20 Nov 2026",
+      "text": "We searched Covers, Sportsbook Review, TheRX, our saved copy of the main betting subreddits (r/sportsbook, r/sportsbetting, r/sportsbettingadvice and r/SportsBettingPicks), CapperTek, the BBB and the web. We found no buyer describing a purchase from Nick Parsons, no complaint and no praise. What exists is promotional: a 2014 Covers advert for its Steamwire service, the marketplaces' own badges, and forum members reposting his plays without results, such as a Rays +1.5 game of the week on TheRX in September 2025. Reddit archive full text searches for his name returned errors on 20 Nov 2026, and our saved Reddit copy had no post or comment naming him. The BBB has no listing for Picks and Parlays. On this evidence there is nothing independent to weigh for or against him, which itself means a buyer has only the seller's own numbers.",
       "source": null
     },
     {
       "type": "Seller curated",
       "tone": "Mixed",
-      "date": "Checked 17 Nov 2026",
-      "text": "His Picks and Parlays profile shows a 58.72% win rate badge and a No. 1 NFL and college football ranking, while the five latest picks visible that day went 2 and 3. The site that grades him is owned by the company that sells his picks.",
+      "date": "Checked 20 Nov 2026",
+      "text": "His Picks and Parlays profile shows a 56.64% win rate badge (64-49-1) and a No. 1 NFL and college football ranking, while the five latest picks visible that day went 3 and 2. Three days earlier the same badge read 58.72% (64-45-1) and the latest five went 2 and 3. The site that grades him is tied to the company that sells his picks.",
       "source": 0
     },
     {
@@ -152,49 +195,71 @@
     {
       "type": "Not found",
       "tone": "Neutral",
+      "date": "Checked 20 Nov 2026",
+      "text": "A BBB search for Picks and Parlays, the main store selling his picks, returned no business profile, so there is no complaint history to read.",
+      "source": 13
+    },
+    {
+      "type": "Not found",
+      "tone": "Neutral",
       "date": "Checked 17 Nov 2026",
-      "text": "Our saved Reddit copy had no post or comment naming Nick Parsons, and live Reddit archive searches timed out. CapperTek's WagerTalk reviews do not mention him. Web searches found no Covers or Sportsbook Review buyer thread and no Better Business Bureau, court or regulator record.",
+      "text": "CapperTek's WagerTalk customer reviews do not mention him. Web searches found no Covers or Sportsbook Review buyer thread about him and no court or regulator record.",
       "source": 9
     }
   ],
   "conflicts": [
-    "The Picks and Parlays refund policy says all purchases are made from Wager Talk Media, LP, its parent company. The same business ranks him No. 1, grades his picks and earns money on every sale.",
-    "Winners and Whiners says it may receive a commission when a reader opens an account through its bookmaker or casino links. That proves nothing about the picks, but it is a financial interest a buyer should know about."
+    "The Picks and Parlays refund policy says all purchases are made from Wager Talk Media, LP. The same business network ranks him No. 1, grades his picks and earns money on every sale.",
+    "Winners and Whiners says that if a reader opens an account through its bookmaker or casino links, \"Winners & Whiners may receive a commission.\" That proves nothing about the picks, but it is a financial interest a buyer should know about.",
+    "The prices shown against each special (\"retail\" $78 or $100) are the seller's own reference prices, not prices we saw charged."
   ],
   "strengths": [
-    "A public X account and profiles with published prices on three sites.",
-    "Short passes are cheap at $49 for three days, and single plays are often on sale for $5.",
-    "A latest picks list with wins and losses is shown on his profiles."
+    "A public X account and profiles with every package priced on three established marketplaces, with a named seller and a Las Vegas address in the terms.",
+    "Short passes are cheap: $39 for a day, $49 specials for three days or a football weekend, so sampling costs little.",
+    "A latest picks list with wins and losses is shown on his profiles, including losing days.",
+    "His headline badge percentages match their win and loss counts, and he has a public history back to at least 2014.",
+    "He is not on TheRX's do not post list, so his plays circulate there and can be tracked by anyone."
   ],
   "concerns": [
-    "No full public record from an outside tracker. Every ranking is the marketplace's own.",
-    "All sales are final, and we found no guarantee.",
-    "Long pass prices are hidden until a duration is chosen.",
-    "Parts of his bio are years out of date."
+    "No full public record from an outside tracker. Every ranking and badge is the marketplace's own, and the headline window is not stated and appears to roll.",
+    "Two runs claim large unit profits from ordinary win rates (84-77 for +31.35 units; 33-22 for +27 units) with no log of bet sizes or prices.",
+    "All sales are final, no pass is guaranteed, and any refund is at the seller's option.",
+    "The latest picks list shows results but not the price taken or the release time.",
+    "Parts of his bio are years out of date (\"2023 and 2024 have massive potential\").",
+    "Not a single independent buyer review exists that we could find, positive or negative."
   ],
   "checklist": [
-    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
+    "Track his free picks and forum reposts yourself for a few weeks, with the line you could actually get, before paying for anything.",
+    "Ask for every pick from the last 12 months with the line, the odds, the play size and the time it was sent. A list of hot runs is not a record.",
+    "Divide wins by wins plus losses on any run, and ask how a 52% record became +31 units.",
     "Count units, not wins. A 60% record at heavy favorites can still lose money.",
-    "Read the guarantee for the words refund, credit and extension. Most \"guarantees\" in this business are credits.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
+    "Read the refund policy before paying: all sales are final, and a refund is only at the seller's option.",
+    "If you buy, start with a $39 day or $49 special, not a season or year pass.",
     "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
   ],
   "faq": [
     [
       "Is Nick Parsons legit?",
-      "He is a real handicapper sold on three established pick marketplaces, with a public X account. We could not verify that his picks win over time, because the only records are graded by the company that sells them, and we found no court or regulator action involving him."
+      "He is a real handicapper sold on three established pick marketplaces, with a public X account and a history back to at least 2014. We could not verify that his picks win over time, because the only records are graded by the business network that sells them, and we found no court or regulator action involving him."
     ],
     [
       "How much does Nick Parsons cost?",
-      "On 17 Nov 2026 his Picks and Parlays profile showed single plays from $5 on sale, a Weekend Warrior football pass at $49 and 3 day basketball or hockey passes at $49. Longer passes showed no price until a duration was picked."
+      "On 20 Nov 2026 his Picks and Parlays profile showed single plays at $25, $49 weekend and three day specials, all sports passes of $39 for a day, $69 for three days, $99 for seven days, $299 for 30 days, $749 for 90 days and $1,999 for a year, and season passes from $259 to $719."
+    ],
+    [
+      "Does Nick Parsons offer a guarantee or refunds?",
+      "No guarantee on his passes. Picks and Parlays says all sales are final and products are sold as is, and its FAQ says no picks are guaranteed. Its terms allow a refund or replacement only at the seller's option."
     ],
     [
       "Does Nick Parsons have a verified record?",
-      "No. The marketplaces show badges such as 64 and 45 and a No. 1 NFL and college football ranking, graded by the company that sells his picks. We found no independent, time stamped log of every pick."
+      "No. The marketplaces show a 64-49-1 badge (56.6%) and a No. 1 NFL and college football ranking, graded by the company that sells his picks, with no stated time window. We found no independent, time stamped log of every pick."
+    ],
+    [
+      "Who owns Picks and Parlays and Winners and Whiners?",
+      "The Picks and Parlays refund policy says purchases are made from Wager Talk Media, LP, and its terms give a Las Vegas address. WagerTalk Media announced a partnership with Picks and Parlays and Winners and Whiners on 27 Aug 2025."
     ],
     [
       "Is Nick Parsons worth it?",
-      "The entry price is low, so sampling a few days costs little. What is unproven is whether his picks beat the roughly 52.4% needed at -110 over hundreds of plays, and all sales are final."
+      "The entry price is low, so sampling a day or a weekend costs little. What is unproven is whether his picks beat the roughly 52.4% needed at -110 over hundreds of plays, two of his headline runs depend on bet sizing nobody can check, and all sales are final."
     ]
   ],
   "related": [
@@ -206,24 +271,24 @@
   ],
   "sources": [
     {
-      "title": "Picks and Parlays: Nick Parsons profile (claims, prices, latest picks)",
+      "title": "Picks and Parlays: Nick Parsons profile (claims, specials, pass prices in page data, badges, latest picks)",
       "url": "https://picksandparlays.net/profile/nick-parsons",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "Picks and Parlays refund policy (seller Wager Talk Media, LP, all sales final)",
+      "title": "Picks and Parlays refund policy (seller Wager Talk Media, LP, all sales final, statement descriptor)",
       "url": "https://picksandparlays.net/refund-policy",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Winners and Whiners: Nick Parsons profile (claims, prices, commission note)",
       "url": "https://winnersandwhiners.com/profile/nick-parsons",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "StatSalt: Nick Parsons profile (20 years bio, prices, rank claims)",
+      "title": "StatSalt: Nick Parsons profile (20 years bio, prices, rank claims, achievements)",
       "url": "https://www.statsalt.com/profile/nick-parsons",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "X: Nick Parsons account profile (@NickParsonsPro)",
@@ -233,27 +298,57 @@
     {
       "title": "PR Newswire: WagerTalk Media announces strategic partnership (27 Aug 2025)",
       "url": "https://www.prnewswire.com/news-releases/wagertalk-media-announces-strategic-partnership-with-premier-sports-betting-content-creators-302540204.html",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "WagerTalk experts page (Nick Parsons not listed)",
       "url": "https://www.wagertalk.com/experts",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Covers forum: Steamwire promotional post, 2 Oct 2014",
       "url": "https://www.covers.com/postingforum/POST01/showmessage.aspx?spt=213&sub=101961661",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "TheRX: Wednesday Service Play Thread 09/03/2025",
       "url": "https://www.therx.com/threads/wednesday-service-play-thread-09-03-2025.1300527/",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "CapperTek: WagerTalk customer reviews (none name Nick Parsons)",
       "url": "https://www.cappertek.com/reviews.asp?shs=WagerTalk.com",
       "accessed": "17 Nov 2026"
+    },
+    {
+      "title": "Picks and Parlays terms and conditions (Las Vegas seller address, Nevada law, exclusive remedy)",
+      "url": "https://picksandparlays.net/terms",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Picks and Parlays FAQ (\"No picks or predictions are guaranteed\")",
+      "url": "https://picksandparlays.net/faq",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Picks and Parlays support page (company address)",
+      "url": "https://picksandparlays.net/support",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "BBB search: Picks and Parlays (no business profile found)",
+      "url": "https://www.bbb.org/search?find_text=Picks%20and%20Parlays&find_country=USA",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Picks and Parlays leaderboard (Nick Parsons not shown in the views that loaded)",
+      "url": "https://picksandparlays.net/leaderboard",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "TheRX forum: Service play guidelines (Nick Parsons not on the do not post lists)",
+      "url": "https://www.therx.com/threads/service-play-guidelines.1243057/",
+      "accessed": "20 Nov 2026"
     }
   ],
   "pricing_source": 0
