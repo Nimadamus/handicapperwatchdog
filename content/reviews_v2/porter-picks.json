@@ -1,39 +1,39 @@
 {
   "slug": "porter-picks",
   "name": "Porter Picks",
-  "legal_name": "Porter Picks (the only name used on its DubClub, Substack and X pages; no company or full personal name given)",
+  "legal_name": "Porter Picks (the only name used on its DubClub, LaunchPass, Substack and X pages; no company or full personal name given)",
   "kind": "Paid Discord pick group sold by monthly subscription, promoted on X and a free Substack",
-  "checked": "16 Nov 2026",
-  "checked_iso": "2026-11-16",
-  "updated_iso": "2026-11-16",
+  "checked": "20 Nov 2026",
+  "checked_iso": "2026-11-20",
+  "updated_iso": "2026-11-20",
   "title": "Porter Picks Review 2026: Pricing, Record, Is It Worth It?",
-  "description": "Porter Picks review, checked 16 Nov 2026: a $75 a month VIP Discord on DubClub, self reported unit totals, no refunds, no independent buyer reports.",
+  "description": "Porter Picks review, checked 20 Nov 2026: VIP Discord from $75 a month to $750 a year, self reported unit totals, no refunds, no independent reviews.",
   "h1": "Porter Picks review",
-  "dek": "A sports pick group that sells a VIP Discord for $75 a month through DubClub and posts free daily selections on Substack. Every record we saw is a unit total reported by the seller, the totals do not always agree, and we found no independent buyer posts at all.",
+  "dek": "A sports pick group that sells a VIP Discord through DubClub and LaunchPass, from $75 a month to $750 a year, and posts free daily selections on Substack. Every record we saw is a unit total reported by the seller, the totals do not always agree, a promised public spreadsheet was not linked anywhere we looked, and we found no independent buyer reviews.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Porter Picks plays. This page reports what we could check on 16 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record of Porter Picks plays. This page reports what we could check on 20 Nov 2026 and labels everything else."
   },
   "glance": [
     [
       "Operator",
-      "Porter Picks; no full name, company or address shown on the pages we read"
+      "Porter Picks; no full name, company or address shown. Its LaunchPass page describes the handicapper only as an Italian New Yorker living in Las Vegas"
     ],
     [
       "Claims to operate since",
-      "VIP Discord launched in 2023; bio claims \"15+ years of handicapping expertise\" (DubClub)"
+      "VIP Discord launched June 2023; bio claims \"15+ years\" (DubClub) and \"10+ years\" (LaunchPass) of handicapping"
     ],
     [
       "Price seen",
-      "VIP All Access \"Starting at $75.00 / month\" (DubClub, 16 Nov 2026)"
+      "DubClub: $75 a month, $210 for 3 months, $390 for 6 months, $750 a year (20 Nov 2026)"
     ],
     [
       "Guarantee",
-      "None from the seller. DubClub says all sales are final and non refundable"
+      "None. LaunchPass page: \"There are no guarantees in betting.\" DubClub: all sales final and non refundable"
     ],
     [
       "Full public record",
-      "Not found. Only unit totals and streaks posted by the seller"
+      "Not found. Running totals per sport on Substack; a public spreadsheet is promised but not linked"
     ],
     [
       "Watchdog graded record",
@@ -41,16 +41,36 @@
     ]
   ],
   "short_answer": [
-    "Porter Picks is an active pick service. Its DubClub page sells a VIP All Access plan delivered by Discord, its Substack posted a free selection almost every day in November 2026, and its X account promotes the DubClub link several times a week. In that narrow sense it is a real, working business.",
-    "Whether the picks make money is a separate question that nothing we opened answers. The seller has posted different running totals: +229.76 units for 2023, then +336 units since June 2023 and +358.42 units in the same May 2025 post, plus short hot runs such as +54.90 units over 22 days in October 2026. We found no full, time stamped log of every pick that we could check.",
-    "No real person is named on the pages we read, and we found no independent buyer reviews on forums or review sites. Treat it as an unproven seller, and record every pick yourself with the line and time you got it."
+    "Porter Picks is an active pick service. Its DubClub page sells a VIP All Access plan delivered by Discord, a LaunchPass sign up page sells the same Discord, its Substack posted a free selection almost every day in November 2026, and its X account promotes the DubClub link several times a week. In that narrow sense it is a real, working business, with about 700 DubClub subscribers and a Discord of roughly 5,000 members by third party counts.",
+    "Whether the picks make money is a separate question that nothing we opened answers. The seller has posted many different running totals: +229.76 units for 2023, then +336 units and +358.42 units since June 2023 in the same May 2025 post, then +387.25 units over 3,700+ picks at 55.6% on its LaunchPass page, plus sport by sport runs such as NFL 48 and 34 (+35.45 units) and NHL 36 and 20 with 1 tie (+47.37 units) in Nov 2026. The free posts say a third party tracker and a public spreadsheet exist, but neither was linked on any page we read, so we could not check a single total against a full list of picks.",
+    "No real person is named on the pages we read, and we found no independent buyer reviews on forums or review sites. The only testimonials are ten short X replies the seller collected into one image. Treat it as an unproven seller, track the free Substack picks yourself before paying, and record every pick with the line and time you got it."
   ],
-  "pricing_intro": "The first row was on the DubClub club page on 16 Nov 2026. The other rows are older or promotional prices the seller posted, shown so a buyer can see how the price has moved.",
+  "pricing_intro": "The DubClub rows were on the PorterPicks club page on 20 Nov 2026 (the page shows only the monthly price; the longer plans are in the page's plan list). The LaunchPass row was on the sign up page linked from The Hive Index. The last two rows are older or promotional prices the seller posted, shown so a buyer can see how the price has moved.",
   "pricing": [
     [
-      "VIP All Access (DubClub, Discord delivery)",
-      "\"Starting at $75.00 / month\", also shown as \"as low as $2.05/Day\"",
-      "Auto renews; DubClub says all sales are final and non refundable"
+      "VIP All Access, monthly (DubClub, Discord delivery)",
+      "\"Starting at $75.00 / month\"",
+      "Recurring; DubClub says all sales are final and non refundable"
+    ],
+    [
+      "VIP All Access, 3 months (DubClub)",
+      "$210.00 ($70.00 a month)",
+      "Recurring every 3 months"
+    ],
+    [
+      "VIP All Access, 6 months (DubClub)",
+      "$390.00 ($65.00 a month)",
+      "Recurring every 6 months"
+    ],
+    [
+      "VIP All Access, yearly (DubClub)",
+      "$750.00, shown as \"as low as $2.05/Day\"",
+      "Recurring every year"
+    ],
+    [
+      "VIP Monthly and VIP Yearly (LaunchPass page)",
+      "$75 a month or $750 a year",
+      "Same Discord, sold through LaunchPass; no terms beyond \"no guarantees\""
     ],
     [
       "First month promotion (X, 8 Oct 2026)",
@@ -64,18 +84,18 @@
     ]
   ],
   "guarantee": [
-    "We found no guarantee from Porter Picks on any page we read. The Substack promotion said only that there was \"NO CATCH\" with the discounted price.",
-    "The DubClub refund policy that covers the current plan says \"ALL SALES ARE FINAL AND NON-REFUNDABLE\", that subscriptions renew automatically, and that partial or unused periods are not refunded. A seller may offer a refund at its own discretion, but nothing entitles a buyer to one. Losses on the bets themselves are never covered."
+    "Porter Picks offers no guarantee. Its LaunchPass page says plainly: \"There are no guarantees in betting. Anyone claiming otherwise is a scam.\" The Substack promotion in May 2025 said only that there was \"NO CATCH\" with the discounted price.",
+    "The DubClub refund policy that covers the current plans says \"ALL SALES ARE FINAL AND NON-REFUNDABLE\", that subscriptions renew automatically, and that \"we do not issue refunds or credits of Fees for partial or unused Subscription Periods.\" A seller may offer a refund \"at our or their sole discretion\", but nothing entitles a buyer to one, and failing to tick \"Do Not Renew\" is not a reason for a refund. All four DubClub plans are recurring, so the yearly plan renews at $750 unless you switch it off. Losses on the bets themselves are never covered."
   ],
   "claims": [
     {
       "claim": "\"With 15+ years of handicapping expertise, we launched our VIP Discord in 2023\"",
       "where": "DubClub club page bio",
-      "status": "Seller claim, not checkable"
+      "status": "Seller claim; LaunchPass page says \"10+ years\""
     },
     {
       "claim": "\"+229.76 units of profit for discord clients in 2023\" and \"Already +140 units of profit in 2024\"",
-      "where": "Reletter publication listing (author bio)",
+      "where": "Substack profile and Reletter listing",
       "status": "Seller claim, no full log"
     },
     {
@@ -86,7 +106,27 @@
     {
       "claim": "\"+89.6% growth in your entire bankroll in two years\"",
       "where": "Substack post, 26 May 2025",
-      "status": "Seller claim, stake size not explained"
+      "status": "Arithmetic checks: 358.42 units at 0.25% of bankroll per unit"
+    },
+    {
+      "claim": "+387.25 units, \"$387,250.00\" profit for clients, 55.6% win rate, 3700+ picks",
+      "where": "LaunchPass sign up page",
+      "status": "Seller claim; assumes $1,000 units; no log"
+    },
+    {
+      "claim": "\"48-34 (58.5%) (+35.45-UNITS) this 2026\" NFL season",
+      "where": "Substack free pick, 15 Nov 2026",
+      "status": "Win rate checks; units need stakes not shown"
+    },
+    {
+      "claim": "NHL \"36-16-1 (69.2%) (+58.42-UNITS)\" on 16 Nov, then \"36-20-1 (64%) (+47.37-UNITS)\" on 18 Nov 2026",
+      "where": "Substack free picks",
+      "status": "Checked: consistent, four NHL losses and no wins in between"
+    },
+    {
+      "claim": "\"Every pick is tracked and our results are updated daily through a third-party tracker. We also maintain a public spreadsheet\"",
+      "where": "FAQ at the end of each Substack free pick",
+      "status": "Not found: no tracker or spreadsheet linked"
     },
     {
       "claim": "\"+54.90 units the past 22 days\" and \"$100 unit bettors are up $5,490 in this span\"",
@@ -100,90 +140,124 @@
     }
   ],
   "claims_note": [
-    "The totals do not line up. The 26 May 2025 post gives +336 units and +358.42 units for the same Discord without explaining the gap. On X, a 10 Oct 2026 post said $100 unit bettors were up $6,975 over the past 21 days, and the next day a post said $5,490 over the past 22 days. A one day drop of about 15 units is possible, but the posts do not show the picks behind either number.",
-    "The bio pairs \"15+ years\" of handicapping with a VIP Discord that started in 2023, and the DubClub page shows the club joined in Aug 2026. Before DubClub, the May 2025 promotion sold VIP access through LaunchPass. None of this proves anything about the picks.",
-    "Every run the seller posts starts on a date the seller chose. A streak cut from a longer history tells you little; every handicapper has a hot stretch somewhere."
+    "How we checked: we read the running records printed at the top of the free Substack picks from 15 to 19 Nov 2026 and did the arithmetic ourselves. The win rates are computed correctly with pushes left out: 48 of 82 is 58.5%, 36 of 52 is 69.2%, and 36 of 56 is 64.3%. Between the 16 Nov and 18 Nov NHL posts the record went from 36 and 16 to 36 and 20 and the units fell from +58.42 to +47.37, so four NHL losses and no wins cost 11.05 units, about 2.8 units each. That means stakes vary a lot from play to play, which is why we cannot turn a win loss line into a unit total without the full list of stakes and odds.",
+    "Size of the claims: at a flat one unit per play at standard odds of 110 to win 100, an NFL record of 48 and 34 would be up about 9.6 units, not 35.45. A record of 55.6% over 3,700 picks would be up about 227 units at flat stakes, not 387.25. Bigger bets on winners or plus money odds could explain the gap, but only a full log could show it. The LaunchPass page also turns 387.25 units into \"$387,250.00\" of client profit, which assumes $1,000 per unit; at its own rule that \"1 unit is 0.25% of a bankroll\", that is a $400,000 bankroll. The May 2025 figure of +89.6% bankroll growth is consistent with the same 0.25% rule (358.42 times 0.25%).",
+    "The totals do not line up across pages. The 26 May 2025 post gives +336 units and +358.42 units for the same Discord without explaining the gap. The Substack profile still says \"Already +140 units of profit in 2024\". On X, a 10 Oct 2026 post said $100 unit bettors were up $6,975 over the past 21 days, and the next day a post said $5,490 over the past 22 days. The DubClub bio claims 15+ years of handicapping and the LaunchPass page 10+ years. The LaunchPass FAQ gives a win rate that \"fluctuates between 54 to 58%\" while the stats box on the same page says 55.6%.",
+    "The free picks FAQ says results are tracked by a third party and kept in a public spreadsheet. We looked for a link on the posts, the About page, the Substack profile, DubClub and the LaunchPass page and found none. If the spreadsheet exists, ask for the link before paying: it would be the single most useful thing the seller could show."
   ],
   "record": [
-    "What a buyer can verify independently: nothing that we could find. We found no full, time stamped log of every Porter Picks play with the line, the odds and the release time, and no third party tracking of the service.",
-    "What the seller publishes: unit totals on Substack, Reletter and X, and a free daily selection on Substack. The free picks show the play but not a running graded log we could check.",
+    "What a buyer can verify independently: nothing that we could find. We found no full, time stamped log of every Porter Picks play with the line, the odds, the stake and the release time, and no third party tracking we could open.",
+    "What the seller publishes: running records per sport at the top of each free Substack pick (NFL, NHL and college football runs in Nov 2026), unit totals on the Substack profile, Reletter, LaunchPass and X, and occasional daily recaps. A 30 May 2025 recap listed seven picks with five winners, matching its headline, but did not show the stake on each pick, so its +13.70 unit total could not be checked pick by pick.",
+    "The free Substack picks are the best starting point for a buyer. Each one gives the team, the line, the odds and a start time, posted before the game. Write each one down and grade it yourself for a few weeks; that is the only record of this service you can fully trust.",
     "The DubClub page states no win rate, record or units at all."
   ],
   "our_data": {
     "matched": false,
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Porter Picks history is matched to a Watchdog graded record, so we make no claim about how Porter Picks performs.",
-    "context": "For scale: the seller advertises runs such as +54.90 units in 22 days. On the Watchdog board on 16 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "context": "For scale: the seller advertises a 55.6% win rate over 3,700+ picks and runs such as +54.90 units in 22 days. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard odds of 110 to win 100 a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "We found no independent customer evidence on Porter Picks. Below is what we checked and what the seller's own pages show.",
+  "customers_intro": "We found no independent customer reviews of Porter Picks. Below is what we checked, the testimonials the seller posts itself, and the one outside mention we found.",
   "customers": [
     {
       "type": "Our summary",
       "tone": "Neutral",
-      "date": "Read 16 Nov 2026",
-      "text": "We found zero independent buyer posts about Porter Picks. Web searches for reviews, complaints and forum threads on Sportsbook Review, Covers and TheRX returned nothing about this service, and the one Substack post we checked for comments had none. Everything public about results comes from the seller: unit totals on Substack and Reletter and streak posts on X in 2025 and 2026. Silence is not a verdict either way; it means a buyer has no outside reports to lean on.",
+      "date": "Read 20 Nov 2026",
+      "text": "We found zero independent buyer reviews of Porter Picks. Web searches for reviews, complaints and forum threads on Sportsbook Review, Covers and TheRX returned nothing about this service; The Hive Index lists the Discord with no community reviews; and the Substack posts we checked had no reader comments. The only outside mentions we found were two 2025 Reddit posts from people offering to resell paid picks from many services, Porter Picks among them (one in r/sportsbook in January, one in r/SportsBettingPicks in October promising \"Guaranteed Profit\"); neither is a review and neither says anything about results. All the praise we saw is curated by the seller: an image of ten short X replies, all dated 16 Oct and posted during a hot run. Everything public about results also comes from the seller, in 2023 to 2026. We found no complaint either, about billing, renewals or anything else. Silence is not a verdict either way; it means a buyer has no outside reports to lean on.",
       "source": null
     },
     {
       "type": "Seller curated",
       "tone": "Neutral",
-      "date": "Checked 16 Nov 2026",
-      "text": "The DubClub page shows 700 subscribers, and The Hive Index lists the Discord at roughly 5,000 members, a figure it says is community reported. Membership counts say nothing about whether members win.",
+      "date": "Checked 20 Nov 2026",
+      "text": "The DubClub page shows 700 subscribers, and The Hive Index lists the Discord at roughly 5,000 members, a figure it says is community reported. The Substack profile shows 6.9K+ subscribers to the free newsletter. Membership counts say nothing about whether members win.",
       "source": 0
     },
     {
-      "type": "Not found",
+      "type": "Seller curated",
+      "tone": "Positive",
+      "date": "16 Oct (shown on Substack, Nov 2026)",
+      "text": "Each free Substack pick ends with a \"VIP Reviews\" image titled what members are saying. It shows ten short X replies, all dated 16 Oct, praising an \"incredible run\" and calling the service transparent; one says the writer had about three or four losing days in a few months. The seller chose these replies and posted them during a winning stretch, so they show some members were happy at that moment and nothing about long run results.",
+      "source": 8
+    },
+    {
+      "type": "Forum post",
       "tone": "Neutral",
-      "date": "Checked 16 Nov 2026",
-      "text": "The Reddit archive we use (Arctic Shift) refused our subreddit scoped searches of r/sportsbook, r/sportsbetting and r/SportsBettingPicks with repeated timeouts, even with requests spaced 15 to 30 seconds apart, so we could not check Reddit fully this time. One search of r/sportsbetting did return results, and none mentioned Porter Picks. Web searches surfaced no Reddit thread about the service.",
+      "date": "15 Oct 2025",
+      "text": "A post in r/SportsBettingPicks offered picks from dozens of named services, Porter Picks among them, for \"Guaranteed Profit\" by private message. It is a reseller ad, not a buyer report, and it is not from Porter Picks. It does suggest the paid picks are passed around outside the Discord, as happens with many services.",
       "source": 11
+    },
+    {
+      "type": "Forum post",
+      "tone": "Neutral",
+      "date": "20 Jan 2025",
+      "text": "A post in r/sportsbook titled \"Paid locks!\" offered to share picks from paid subscriptions to several services, Porter Picks among them, and said the poster had been on a streak with them. It is an offer to pass on paid picks, not a review, and gives no record.",
+      "source": 16
     },
     {
       "type": "Not found",
       "tone": "Neutral",
-      "date": "Checked 16 Nov 2026",
-      "text": "The comments section on the May 2025 VIP promotion post was empty. We found no court or regulator record about the service in our searches, and no review on independent review pages we could open.",
+      "date": "Checked 20 Nov 2026",
+      "text": "The comments section on the May 2025 VIP promotion post was still empty, and none of the twelve most recent free picks (9 to 19 Nov 2026) had a reader comment. We found no court or regulator record about the service in our searches, and no review on independent review pages we could open.",
       "source": 10
+    },
+    {
+      "type": "Not found",
+      "tone": "Neutral",
+      "date": "Checked 20 Nov 2026",
+      "text": "Our saved copy of Reddit betting posts (r/sportsbetting, r/sportsbook, r/SportsBettingPicks and r/nbabetting, Jan 2024 to Nov 2026) held no review or complaint about Porter Picks, only the October 2025 reseller post. A fresh post search of r/sportsbook found only the January 2025 reseller post; searches of the other subreddits and of comments were refused with timeouts on 20 Nov 2026, so this check is partial.",
+      "source": null
     }
   ],
   "conflicts": [
-    "Porter Picks sells through DubClub, a marketplace that takes the payment and whose refund policy governs the sale. DubClub earns from each subscription, so its subscriber counts and badges are not independent evidence.",
+    "Porter Picks sells through DubClub and LaunchPass, which take the payment and whose terms govern the sale. They earn from each subscription, so their subscriber counts and badges are not independent evidence.",
     "We saw no sportsbook affiliate links on the pages we read."
   ],
   "strengths": [
-    "A clear, published monthly price on DubClub.",
-    "Free daily selections on Substack let a buyer watch the picks before paying.",
-    "Active in Nov 2026, with posts almost every day."
+    "Clear, published prices for every plan on DubClub, from $75 a month to $750 a year.",
+    "Free daily selections on Substack, posted before the game with the line, odds and start time, let a buyer watch the picks before paying.",
+    "The seller says plainly that there are no guarantees in betting, instead of selling a fake guarantee.",
+    "Active in Nov 2026, with posts almost every day, and running records per sport printed on each free pick, including the losing days that pulled the NHL record from 69% to 64%."
   ],
   "concerns": [
     "No real person, company or address is named on any page we read.",
-    "No full public record. Every number we saw is a total or streak posted by the seller, and the totals disagree.",
-    "All sales are final under the DubClub policy, and the plan renews automatically.",
-    "Heavy promotion on X with streak and dollar claims, plus deep discounts that make the regular price hard to judge.",
-    "No independent buyer reports found anywhere we looked."
+    "No full public record. Every number we saw is a total or streak posted by the seller, the totals disagree across pages, and the promised public spreadsheet and third party tracker were not linked anywhere.",
+    "Unit totals are far above what the posted win rates would produce at flat stakes, which points to large, varying bet sizes that the seller does not show.",
+    "All sales are final under the DubClub policy, every plan renews automatically, and unused time is not refunded.",
+    "Heavy promotion on X with streak and dollar claims, plus deep discounts such as a $3 month, that make the regular price hard to judge.",
+    "No independent buyer reports found anywhere we looked; the only testimonials are curated by the seller."
   ],
   "checklist": [
-    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
-    "Track the free Substack picks yourself for a few weeks before paying.",
-    "Set Do Not Renew in DubClub right after you subscribe if you only want one month.",
-    "Count units, not wins. A good record at heavy favorites can still lose money.",
+    "Ask for the public spreadsheet the free posts mention, with every pick, line, odds, stake and release time. A list of hot runs is not a record.",
+    "Track the free Substack picks yourself for a few weeks before paying, at the price you could actually get.",
+    "Set Do Not Renew in DubClub right after you subscribe if you only want one period, especially on the $750 yearly plan.",
+    "Count units, not wins, and note the stake on each pick. A good record can still lose money if the big bets lose.",
+    "Never pay a reseller for these picks; a third party offering \"guaranteed profit\" is not the seller and has no refund duty.",
     "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
   ],
   "faq": [
     [
       "Is Porter Picks legit?",
-      "It is a real, active pick service with a published DubClub price and daily posts. We could not verify that its picks win over time, because it does not publish a full checkable record, no person or company is named, and we found no independent buyer reports."
+      "It is a real, active pick service with published DubClub prices, about 700 DubClub subscribers and daily posts. We could not verify that its picks win over time, because it does not publish a full checkable record, no person or company is named, and we found no independent buyer reports."
     ],
     [
       "How much does Porter Picks cost?",
-      "On 16 Nov 2026 the DubClub page listed VIP All Access starting at $75.00 a month. The seller has also promoted a $37 first month (Oct 2026) and a $3.00 month (May 2025)."
+      "On 20 Nov 2026 DubClub listed VIP All Access at $75.00 a month, $210.00 for 3 months, $390.00 for 6 months or $750.00 a year, all renewing automatically. The LaunchPass page showed $75 a month or $750 a year. The seller has also promoted a $37 first month (Oct 2026) and a $3.00 month (May 2025)."
     ],
     [
       "Does Porter Picks have a verified record?",
-      "No. The seller reports totals such as +229.76 units in 2023 and +336 units since June 2023, and streaks on X. These are self reported and sometimes disagree. We found no independent, time stamped log."
+      "No. The seller reports totals such as +229.76 units in 2023, +358.42 units from June 2023 to May 2025, and +387.25 units at 55.6% on its LaunchPass page, plus per sport runs on Substack. These are self reported and sometimes disagree, and the public spreadsheet the seller mentions was not linked anywhere we looked."
     ],
     [
       "Can I get a refund from Porter Picks?",
-      "DubClub, which handles the sale, says all sales are final and non refundable and that unused time is not refunded. A seller may choose to refund, but nothing requires it."
+      "DubClub, which handles the sale, says all sales are final and non refundable and that unused time is not refunded. A seller may choose to refund at its own discretion, but nothing requires it, and the LaunchPass page says there are no guarantees in betting."
+    ],
+    [
+      "What do buyers say about Porter Picks?",
+      "We found no independent reviews or complaints on Reddit, Covers, Sportsbook Review, TheRX or review sites. The only praise is a set of ten X replies the seller collected into an image during a hot run in October."
+    ],
+    [
+      "Is Porter Picks worth it?",
+      "That depends on proof the seller has not yet shown. If the posted 55.6% win rate held at flat stakes it would beat the roughly 52.4% break even, but the unit totals depend on bet sizes we cannot see. Follow the free picks first, ask for the full spreadsheet, and if you join, start with one month and switch off auto renewal."
     ]
   ],
   "related": [
@@ -195,64 +269,89 @@
   ],
   "sources": [
     {
-      "title": "DubClub: PorterPicks club page (VIP All Access price, bio, 700 subscribers, joined Aug 2026)",
+      "title": "DubClub: PorterPicks club page (plans $75 a month to $750 a year, bio, 700 subscribers, joined Aug 2026)",
       "url": "https://dubclub.win/PorterPicks/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "DubClub Refund Policy (all sales final, auto renewal)",
       "url": "https://dubclub.win/refund-policy/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Porter Picks Substack: About page",
       "url": "https://porterpicks.substack.com/about",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Porter Picks Substack: archive (daily selections through Nov 2026)",
       "url": "https://porterpicks.substack.com/archive",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Porter Picks Substack: 30 Days of Porter Picks VIP for $3.00 (26 May 2025)",
       "url": "https://porterpicks.substack.com/p/30-days-of-porter-picks-vip-for-300",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "Reletter: Porter Picks publication listing (2023 and 2024 unit claims)",
+      "title": "Reletter: Porter Picks publication listing (2023 and 2024 unit claims, Nov 2026 runs)",
       "url": "https://reletter.com/publications/porter-picks",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "The Hive Index: Porter Picks Discord listing",
+      "title": "The Hive Index: Porter Picks Discord listing (roughly 5K members, no community reviews)",
       "url": "https://thehiveindex.com/communities/porter-picks/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "X post by @Porter_Picks, 11 Oct 2026 (+54.90 units past 22 days; archived in the Watchdog library 13 Nov 2026)",
-      "url": "https://x.com/Porter_Picks/status/2109248160967057435",
+      "title": "X: @Porter_Picks account (posts of 8, 10 and 11 Oct 2026 on discounts and runs, archived in the Watchdog library 13 Nov 2026)",
+      "url": "https://x.com/Porter_Picks",
       "accessed": "13 Nov 2026"
     },
     {
-      "title": "X post by @Porter_Picks, 10 Oct 2026 ($100 unit bettors up $6,975 past 21 days; archived in the Watchdog library 13 Nov 2026)",
-      "url": "https://x.com/Porter_Picks/status/2108911818676822127",
-      "accessed": "13 Nov 2026"
+      "title": "Porter Picks Substack: NFL selection for Sunday, 15 Nov 2026 (NFL record line, FAQ on tracker and spreadsheet, VIP Reviews image)",
+      "url": "https://porterpicks.substack.com/p/nfl-selection-for-sunday-c53",
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "X post by @Porter_Picks, 8 Oct 2026 (50% off first month, $37; archived in the Watchdog library 13 Nov 2026)",
-      "url": "https://x.com/Porter_Picks/status/2108260897240100901",
-      "accessed": "13 Nov 2026"
+      "title": "Porter Picks Substack: NHL selection for Monday, 16 Nov 2026 (NHL 36-16-1 line)",
+      "url": "https://porterpicks.substack.com/p/nhl-selection-for-monday-b17",
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Substack comments on the 26 May 2025 VIP post (no reader comments)",
       "url": "https://porterpicks.substack.com/p/30-days-of-porter-picks-vip-for-300/comments",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "Arctic Shift Reddit archive: r/sportsbook post search for porter (request refused with a timeout)",
-      "url": "https://www.reddit.com/r/sportsbook/search/?q=porter&restrict_sr=1",
-      "accessed": "16 Nov 2026"
+      "title": "Reddit r/SportsBettingPicks: reseller post listing many services, 15 Oct 2025 (read in our saved Reddit archive)",
+      "url": "https://www.reddit.com/r/SportsBettingPicks/comments/1o7memo/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Porter Picks Substack: NHL selection for Wednesday, 18 Nov 2026 (NHL 36-20-1 line)",
+      "url": "https://porterpicks.substack.com/p/nhl-selection-for-wednesday-4c9",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Porter Picks LaunchPass sign up page (VIP Monthly $75, Yearly $750, +387.25 units, 55.6%, unit rule, no guarantees)",
+      "url": "https://myinvitepage.com/porter-picks/home",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Substack profile: Porter Picks (@porterpicks), bio unit claims and 6.9K+ subscribers",
+      "url": "https://substack.com/@PORTERPICKS",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Porter Picks Substack: Thursday recap, winning day 5-2 (30 May 2025)",
+      "url": "https://porterpicks.substack.com/p/thursday-recap-winning-day-5-2",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbook: Paid locks! (20 Jan 2025, found via the Arctic Shift archive)",
+      "url": "https://www.reddit.com/r/sportsbook/comments/1i5v3ee/",
+      "accessed": "20 Nov 2026"
     }
   ],
   "pricing_source": 0

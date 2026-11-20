@@ -3,37 +3,37 @@
   "name": "Spartan",
   "legal_name": "Spartan, a pen name (picks sold by Pregame, LLC, a Nevada limited liability company)",
   "kind": "Individual handicapper sold under a pen name through the Pregame store",
-  "checked": "17 Nov 2026",
-  "checked_iso": "2026-11-17",
-  "updated_iso": "2026-11-17",
+  "checked": "20 Nov 2026",
+  "checked_iso": "2026-11-20",
+  "updated_iso": "2026-11-20",
   "title": "Spartan Review 2026: Pricing, Record, Is It Worth It?",
-  "description": "Spartan review, checked 17 Nov 2026: Pregame prices from $20 to $1,995, no pick guarantee, a graded season record and what bettors say.",
+  "description": "Spartan review, checked 20 Nov 2026: Pregame prices from $25 to $1,995, no pick guarantee, his graded record this season and what bettors say.",
   "h1": "Spartan review",
-  "dek": "A Missouri handicapper who sells under the name Spartan on Pregame and says he once worked as a local bookie. Pregame grades his picks in public. On 17 Nov 2026 his rated picks this season showed a net loss in Pregame's own weighted dollar figures, while his sales page leads with a long NFL Triple Star run.",
+  "dek": "A Missouri handicapper who sells under the name Spartan on Pregame and says he spent over a decade as a local bookie. Pregame grades his picks in public. On 20 Nov 2026 his rated picks this season were 495 wins and 493 losses with a weighted dollar loss, while his top rated picks were up and his sales page leads with a long NFL Triple Star run.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Spartan picks. This page reports what we could check on 17 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record of Spartan picks. This page reports what we could check on 20 Nov 2026 and labels everything else."
   },
   "glance": [
     [
       "Operator",
-      "Pregame, LLC, a Nevada LLC, 5860 S. Pecos Rd, Las Vegas, NV (terms of use)"
+      "Pregame, LLC, a Nevada LLC, 5860 S. Pecos Rd., Suite 400, Las Vegas, NV (terms of use)"
     ],
     [
-      "Claims to bet since",
-      "1971 (Pregame bio)"
+      "Seller",
+      "Spartan, a pen name; bio says a lifetime Missouri resident who first bet in 1971"
     ],
     [
       "Price range seen",
-      "$20 single play to $1,995 for one year"
+      "$25 single play to $1,995 for one year (20 Nov 2026)"
     ],
     [
       "Guarantee",
-      "None on picks. Credit only if two bought top plays land on opposite sides"
+      "None on picks. Account credit only if two bought top plays land on opposite sides"
     ],
     [
       "Full public record",
-      "Pregame graded records by sport and period; current season rated picks 488-492-10"
+      "Pregame graded tables by sport and period; current season rated picks 495-493-10"
     ],
     [
       "Watchdog graded record",
@@ -41,16 +41,26 @@
     ]
   ],
   "short_answer": [
-    "Spartan is a real, long running seller on Pregame, a Las Vegas pick store run by Pregame, LLC. His bio says he is a lifetime Missouri resident who placed his first bet in 1971 and spent over a decade as a local bookie. He sells single plays, season passes and subscriptions with published prices. In that narrow sense the service is legitimate.",
-    "Whether his picks make money is a separate question, and Pregame's own numbers are not flattering right now. His sales page leads with \"NFL Triple Stars 2012-2026 277-183\". But Pregame's graded table for the current season, rated picks only, showed 488 wins, 492 losses and 10 ties across all sports on 17 Nov 2026, with a weighted dollar loss in college football, baseball and hockey. The last 30 days were 79 and 76.",
-    "Independent buyer comment is almost absent. The praise we found is from 2012 on Pregame's own forum, and no buyer complaint turned up. Treat Spartan as a seller with one strong marketed category and an overall record near break even before the price of the picks."
+    "Spartan is a real, long running seller on Pregame, a Las Vegas pick store run by Pregame, LLC. His bio says he is a lifetime Missouri resident who placed his first bet in 1971 on Ali and Frazier, was mentored as a youth by coach Cotton Fitzsimmons, and spent over a decade as a local bookie. Pregame has sold him for well over a decade: its own forum has a thread with buyers thanking him in January 2012. He sells single plays, weekend passes, season passes and subscriptions with published prices. In that narrow sense the service is legitimate.",
+    "Whether his picks make money is a separate question, and the answer depends on which Pregame table you read. His sales page leads with \"NFL Triple Stars 2012-2026 277-183\", about 60% winners. Pregame's graded table for the current season, rated picks only, showed 495 wins, 493 losses and 10 ties across all sports on 20 Nov 2026, a weighted loss of about $5,818 on Pregame's scale. His top rated picks alone were better: 83 wins, 67 losses and 1 tie, up about $1,260, nearly all of it from baseball.",
+    "Independent buyer comment is almost absent. The praise we found is from 2012 on Pregame's own forum, two forum posts in 2026 simply repost his plays, and no buyer complaint about billing, refunds or delivery turned up anywhere we looked. Treat Spartan as a seller whose overall graded record sits near break even before you pay for the picks, with a stronger record on his top plays, and check the tables yourself before you buy."
   ],
-  "pricing_intro": "All prices were on his Pregame page on 17 Nov 2026. Most are shown as a discount from a higher list price, and offers change often.",
+  "pricing_intro": "All prices were on his Pregame page on 20 Nov 2026. Most are shown as a discount from a higher list price, and offers change often: the rest of football season pass was $449 on 17 Nov and $395 three days later, and new single plays appear daily.",
   "pricing": [
     [
-      "Single NBA play",
-      "$20.00",
-      "One pick"
+      "Single play: 2026 Big 12 Game of the Year (CFB)",
+      "$30.00",
+      "One pick, for Saturday"
+    ],
+    [
+      "Single play: NFL Triple Game of the Month",
+      "$25.00",
+      "One pick, for Sunday"
+    ],
+    [
+      "Weekender All Access",
+      "$89.00",
+      "Every pick in every sport through Monday Night Football"
     ],
     [
       "7 Day All Access",
@@ -63,24 +73,29 @@
       "Every pick in every sport"
     ],
     [
-      "One Month Football All Access",
-      "$195.00 (listed from $400)",
-      "Every football pick for a month"
-    ],
-    [
       "90 Day All Access",
       "$449.00 (listed from $747)",
       "All sports"
     ],
     [
+      "CFB Rest of Season",
+      "$175.00 (listed from $500)",
+      "Every college football pick through the championship game"
+    ],
+    [
+      "NFL Rest of Season",
+      "$249.00 (listed from $700)",
+      "Every NFL pick through the Super Bowl"
+    ],
+    [
       "Rest of Football Season All Access",
-      "$449.00 (listed from $1,200)",
+      "$395.00 (listed from $1,000)",
       "NFL and college football through the Super Bowl"
     ],
     [
       "Season passes",
       "NHL $359.00, NBA $585.00, CBB $585.00, Basketball (NBA and CBB) $885.00",
-      "Listed from $499 to $5,000"
+      "Listed from $499, $3,000, $3,000 and $5,000"
     ],
     [
       "6 Month and 1 Year All Access",
@@ -89,29 +104,44 @@
     ],
     [
       "Flex Access",
-      "$195.00 a month",
-      "Rebills at $195 a month until cancelled by email; can switch to another Pregame pro twice a month"
+      "$195.00 a month (listed from $450)",
+      "Rebills at $195 a month until cancelled by email; can switch to another Pregame pro up to twice a month"
     ]
   ],
   "guarantee": [
-    "Pregame does not offer a money back or profit guarantee on his picks, and it says so on purpose. Its discount page calls \"guaranteed picks\" a \"deceptive marketing ploy\" and says the amount a bettor risks is always much bigger than the cost of the pick. That point is fair: a pick guarantee never covers the money you bet.",
-    "The one remedy we could read is opposite side insurance. The Pregame FAQ says to message support if you bought plays from two handicappers who took opposite sides of the same game, and links to the details. It is account credit, not cash. Flex Access rebills every month until you cancel by email."
+    "Pregame does not offer a money back or profit guarantee on his picks, and it says so on purpose. Its discount page calls \"guaranteed picks\" a \"deceptive marketing ploy\" and says \"The amount risked by bettors is always much bigger than the cost of the pick\". That point is fair: a pick guarantee never covers the money you bet. The same page mentions one narrow insurance offer, \"Money Back to Comeback\", whose stated purpose is to discourage over betting on the biggest games; we did not find its current terms.",
+    "The remedy we could read in full is opposite side insurance. Pregame's forum post announcing it says that if you buy two different pick packages \"whose top ranked pick is opposite\", you email support and it will \"credit your account with the amount spend on BOTH packages\". It covers only the top rated pick in each package and not two packages that name the same game. It is account credit, not cash. Flex Access \"Rebills at $195 a month unless cancelled via email\". We found no general refund clause in the terms of use."
   ],
   "claims": [
     {
       "claim": "\"NFL Triple Stars 2012-2026 277-183\"",
-      "where": "Pregame sales page",
-      "status": "Seller claim, triple star picks only"
+      "where": "Pregame sales page, 20 Nov 2026",
+      "status": "Checked in part: 60.2% if accurate; current season NFL top picks 13-12-1"
     },
     {
-      "claim": "\"Triple Star & Rabid Dogs + 214.18 Units!\"; \"2025 CFB Featured Releases 22-12 Overall\"",
-      "where": "Pregame sales page",
-      "status": "Selected categories, no full log for them"
+      "claim": "\"Triple Star & Rabid Dogs + 221.18 Units!\"",
+      "where": "Pregame sales page and Pregame pros page, 20 Nov 2026",
+      "status": "Seller claim, no start date; read +214.18 on 17 Nov"
     },
     {
-      "claim": "\"documented TWO Time NBA Handicapping Champion\" at \"Free Sports Monitor\"",
-      "where": "Pregame single play listing",
-      "status": "Seller claim, not checked by us"
+      "claim": "\"2025 CFB Featured Releases 22-12 Overall\"",
+      "where": "Pregame sales page",
+      "status": "Selected category; Pregame shows prior season CFB sides up $4,431"
+    },
+    {
+      "claim": "\"MOST importantly he's putting up another WINNING season!\" (NFL)",
+      "where": "Pregame single play listing, 20 Nov 2026",
+      "status": "Checked: rated NFL 47-43-3, up $319; top NFL 13-12-1, down $135"
+    },
+    {
+      "claim": "\"a 100% documented TWO Time NFL handicapping champion at the highly regarded & totally impartial Free Sports Monitor\"",
+      "where": "Pregame single play listing, 20 Nov 2026",
+      "status": "Not checkable; on 17 Nov a listing said NBA, not NFL"
+    },
+    {
+      "claim": "\"hitting on a documented 80% of his GOY level releases\"",
+      "where": "Pregame single play listing, 20 Nov 2026",
+      "status": "Seller claim, no list of those plays shown"
     },
     {
       "claim": "\"he's cashed six of seven years in the NFL, including two documented championships\"",
@@ -122,34 +152,32 @@
       "claim": "\"Working over a decade as a local bookie\"; \"mentored by coaching legend Cotton Fitzsimmons\"",
       "where": "Pregame bio",
       "status": "Seller claim, not checkable"
-    },
-    {
-      "claim": "\"All Records Meticulously Maintained!\"",
-      "where": "Pregame sales page",
-      "status": "Pregame does grade picks in public; see record"
     }
   ],
   "claims_note": [
-    "The headline numbers cover his top rated NFL plays and a few chosen categories. Pregame's full graded tables tell a different story for the current season: rated picks across all sports were 488 and 492, and the weighted dollar figures were negative in college football, baseball, hockey, college basketball and the UFL.",
-    "In Mar 2026 a forum member reposted one of his college basketball plays along with a season college basketball line of 77 and 98 and 1. That is a losing season by count, from a line that traveled with his own play."
+    "How we checked: we opened Pregame's win loss pages for Spartan on 20 Nov 2026 with three settings (rated picks only, top picks only, all picks) for the current season, plus the last 30 days, and added up every sport row ourselves. Rated picks: 495 wins, 493 losses, 10 ties, 50.1% winners, weighted loss of $5,818. Top picks only: 83 wins, 67 losses, 1 tie, 55.3% winners, weighted gain of $1,260. All picks: 495 wins, 494 losses, 10 ties, weighted loss of $5,932. Last 30 days, rated: 78 wins, 71 losses, 1 tie, weighted loss of $222.",
+    "The headline run covers his top rated NFL plays only. We could not open an all time table to check the 277 and 183 figure itself: Pregame's page only offers Yesterday, Last 7 Days, Last 30 Days and Current Season. A summary box on his page lists his best all time category as NFL top picks, up $6,357, which fits a long positive NFL run but does not show the count. This season's NFL top picks are 13 and 12 with 1 tie and down $135, so the run is not adding much right now.",
+    "The championship claim changes with the listing. On 17 Nov 2026 a single play listing called him a \"TWO Time NBA Handicapping Champion\" at Free Sports Monitor; on 20 Nov 2026 a listing called him a \"TWO Time NFL handicapping champion\" at the same place. His bio claims two documented NFL championships and two documented NBA championships. We could not find any site called Free Sports Monitor in web searches, so none of these titles could be checked.",
+    "The unit total moved from +214.18 to +221.18 between 17 and 20 Nov 2026, so it is a running count, but the page never says when it starts or what a Rabid Dog is beyond an underdog play. In Mar 2026 a forum member reposted one of his college basketball plays with a season college basketball line of 77 and 98 and 1, which is 44% winners by count. Pregame's current season table has reset since then and shows only 9 college basketball picks so far."
   ],
   "record": [
-    "What a buyer can check: Pregame grades every rated pick and shows tables by sport and period. On 17 Nov 2026, the current season table for rated picks showed MLB 351 and 345 (weighted minus $2,363), college football 56 and 62 with 5 ties (minus $2,913), NFL 47 and 43 with 3 ties (plus $319), NBA 19 and 17 (plus $7), NHL 9 and 12 (minus $512), college basketball 2 and 5 (minus $350), CFL 4 and 3 (plus $38) and UFL 0 and 5 (minus $1,034). Added up, that is 488 wins and 492 losses with a weighted loss of about $6,808.",
-    "The last 30 days, rated picks only, were 79 wins, 76 losses and 1 tie, with a weighted loss of about $1,196. The page does not say what one unit equals in dollars, so read the dollar figures as Pregame's scale, not your own money.",
-    "These tables are kept by the store that sells the picks, so they are not an independent audit. They are still more than most sellers show, and they are the best record we found."
+    "What a buyer can check: Pregame grades every rated pick and shows tables by sport and period. On 20 Nov 2026 the current season table for rated picks showed MLB 351 and 345 with 2 ties (weighted minus $2,363), college football 56 and 62 with 5 ties (minus $2,913), NFL 47 and 43 with 3 ties (plus $319), NBA 23 and 17 (plus $807), NHL 11 and 12 (minus $312), college basketball 3 and 6 (minus $360), CFL 4 and 3 (plus $38) and UFL 0 and 5 (minus $1,034). Added up, that is 495 wins and 493 losses with a weighted loss of about $5,818.",
+    "His top rated picks tell a different story. With the Top Picks Only setting the current season showed MLB 61 and 44 (plus $2,346), NFL 13 and 12 with 1 tie (minus $135), college football 7 and 10 (minus $1,221) and NBA 2 and 1 (plus $270). That is 83 and 67 with 1 tie and a weighted gain of about $1,260, almost all from baseball. A buyer who only played his top picks did better than one who played everything.",
+    "Recent form is flat. The last 30 days, rated picks only, were 78 wins, 71 losses and 1 tie, with a weighted loss of about $222: NBA 23 and 16 (plus $909) and college football 26 and 18 with 1 tie (plus $161) were offset by baseball 1 and 5 (minus $894), college basketball 3 and 6 (minus $360) and NHL 7 and 7 (minus $128). Pregame does not say what one unit equals in dollars, so read the dollar figures as Pregame's scale, not your own money. On 17 Nov 2026 the season table read 488 and 492 with a loss of about $6,808, so the last few days were good ones.",
+    "His last ten picks shown on 20 Nov 2026 include the line and odds for each (for example Minnesota Wild at minus 225 and LA Clippers plus 15.5 at minus 108), which lets a buyer compare the posted price with what they can get. These tables are kept by the store that sells the picks, so they are not an independent audit. They are still more than most sellers show, and they are the best record we found."
   ],
   "our_data": {
     "matched": false,
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Spartan pick history is matched to a Watchdog graded record, so we make no claim about how Spartan performs.",
-    "context": "For scale: his marketed NFL Triple Star run is about 60% winners, while Pregame's current season table for all his rated picks is just under 50%. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "context": "For scale: his marketed NFL Triple Star run is about 60% winners, while Pregame's current season table for all his rated picks is about 50.1%. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard odds of 110 to win 100 a bettor needs about 52.4% to break even."
   },
   "customers_intro": "Independent customer evidence on Spartan is very thin. The comments we found sit on the store that sells him or simply copy his plays. Below is everything we found and how much weight it can carry.",
   "customers": [
     {
       "type": "Our summary",
       "tone": "Neutral",
-      "date": "Read 17 Nov 2026",
-      "text": "We found very little from buyers. The only praise sits on Pregame's own forum in Jan 2012, where a few members thanked him for playoff and Game of the Year winners. In Mar 2026 a member of the Bookmakers Review forum reposted one of his plays with a losing season count attached, without comment. CapperTek has a profile for him with no reviews at all, and our archive of Reddit betting posts held nothing about him. We found no complaint about billing, refunds or delivery, and no independent buyer reporting a profit or a loss.",
+      "date": "Read 20 Nov 2026",
+      "text": "Across Pregame's forum, the Bookmakers Review forum, TheRX, CapperTek, our saved Reddit archive and web searches, we found five items that mention Spartan as a seller, and none is an independent buyer review. The only praise is from Jan 2012 on Pregame's own forum, where a few members thanked him for playoff and Game of the Year winners; Pregame runs that forum and sells his picks. In 2026, members of the Bookmakers Review forum (March) and TheRX (February) reposted his plays inside daily service play threads without comment; the March post carried a losing college basketball season count of 77 and 98 and 1. CapperTek has a profile with no reviews. We found no complaint about billing, refunds, renewals or delivery on any site, no Better Business Bureau profile, no news coverage, and no buyer reporting a profit or a loss. There is no smoke here either way: buyers have simply said very little about him in public, so a reader has only Pregame's own graded tables to go on.",
       "source": null
     },
     {
@@ -169,50 +197,77 @@
     {
       "type": "Not found",
       "tone": "Neutral",
-      "date": "Checked 17 Nov 2026",
+      "date": "Checked 20 Nov 2026",
       "text": "CapperTek lists Spartan.pregame.com with no reviews or complaints. We found no Sportsbook Review, Covers or TheRX thread about his service, no Better Business Bureau profile, and no posts about him in our archive of r/sportsbook and r/sportsbetting posts. TheRX tells members not to post write ups from Pregame.",
       "source": 10
+    },
+    {
+      "type": "Forum post",
+      "tone": "Neutral",
+      "date": "26 Feb 2026",
+      "text": "In a TheRX daily service play thread, a moderator posted two of his one star college basketball plays, Cal Irvine plus 1.5 and Michigan State plus 8, among plays from many other services. Threads like this pass paid picks around for free and do not grade them, so they show his plays circulate but say nothing about results.",
+      "source": 15
+    },
+    {
+      "type": "Not found",
+      "tone": "Neutral",
+      "date": "Checked 20 Nov 2026",
+      "text": "Our saved copy of Reddit betting posts (r/sportsbetting, r/sportsbook, r/SportsBettingPicks and r/nbabetting, posts from Jan 2024 to Nov 2026) held no post about Spartan as a Pregame seller; every Spartan hit was about Michigan State teams. Web searches found older Sportsbook Review threads by a forum member with a similar name posting free college football picks, which are not about this seller. We found no Covers thread about him.",
+      "source": null
     }
   ],
   "conflicts": [
     "Pregame sells his picks, grades them, keeps the record and runs the forum where buyers comment. That does not make the records wrong, but no outside party checks them.",
-    "His sales copy is written in the store's voice and calls the price \"NEVER\" this low again on several packages at once. Treat list prices such as $5,000 for a basketball season as marketing, not a real comparison."
+    "His sales copy is written in the store's voice and says the price will \"NEVER be this low again\" on several season packages at once, while the football pass price changed twice in three days. Treat list prices such as $5,000 for a basketball season as marketing, not a real comparison.",
+    "Pregame's own discount page links to another site for a profit guarantee program. We did not check that site, and it is not a guarantee on Spartan's picks."
   ],
   "strengths": [
     "Pregame publishes his graded record by sport and period, including losing categories, which most sellers do not.",
-    "Every package has a published price, and single plays let you sample him for $20.",
-    "Pregame states plainly that it sells no pick guarantee instead of dressing up store credit as one."
+    "His top rated picks this season were up on Pregame's own table (83 and 67 with 1 tie), so the star ratings carried some information this year.",
+    "Every package has a published price, and single plays let you sample him for $25 or $30.",
+    "Recent picks are shown with the line and odds, so a buyer can compare the price he took with the price on offer.",
+    "Pregame states plainly that it sells no pick guarantee instead of dressing up store credit as one, and a named Nevada company stands behind the sale."
   ],
   "concerns": [
-    "On Pregame's own tables his rated picks this season are just under 50% across all sports, with weighted losses in most sports.",
-    "The sales page leads with one strong category, NFL Triple Stars, rather than the overall record.",
-    "Claims such as two NBA championships at Free Sports Monitor and six winning NFL years out of seven are not dated or linked.",
-    "Flex Access rebills every month until you cancel by email.",
+    "On Pregame's own tables his rated picks this season are about 50.1% across all sports, with a weighted loss of about $5,818, below the roughly 52.4% needed to break even.",
+    "The sales page leads with one strong category, NFL Triple Stars, rather than the overall record, and Pregame offers no all time table to check it.",
+    "Contest titles at \"Free Sports Monitor\" switch between NFL and NBA from one listing to the next, and we could not find that site at all.",
+    "Flex Access rebills every month until you cancel by email, and remedies are account credit, not cash.",
+    "Season pass list prices of $3,000 to $5,000 and \"NEVER this low again\" copy make the discounts look bigger than they are.",
     "Almost no independent buyer feedback exists, good or bad."
   ],
   "checklist": [
-    "Look at the full graded record for every sport, not only the category in the headline.",
+    "Open his Pregame win loss page and switch between Rated Picks Only, Top Picks Only and All Picks before you buy. The three tell different stories.",
+    "Look at the sport you want to bet, not the category in the headline. This season his baseball top picks carried the record while college football lost.",
     "Count units, not wins. A 60% record at heavy favorites can still lose money.",
-    "Read the guarantee for the words refund, credit and extension. Most \"guarantees\" in this business are credits.",
+    "If you take Flex Access, put a reminder in your calendar and cancel by email before the next $195 rebill.",
     "Write down each pick yourself the moment you receive it, with the line you can actually get.",
     "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
   ],
   "faq": [
     [
       "Is Spartan legit?",
-      "Spartan is a real, long running seller on Pregame, a Las Vegas store with written terms and published prices. Pregame grades his picks in public. We found no court or regulator action involving him, and no independent check of his claimed contest titles."
+      "Spartan is a real, long running seller on Pregame, a Las Vegas store run by Pregame, LLC with written terms and published prices, and Pregame grades his picks in public. We found no court or regulator action involving him, and no independent check of his claimed contest titles. Legit as a business is not the same as profitable: his rated picks this season were near 50%."
     ],
     [
       "How much does Spartan cost?",
-      "On 17 Nov 2026 Pregame sold a single Spartan play for $20, 7 days for $119, 30 days for $249, 90 days for $449 and one year for $1,995. Season passes ran from $359 for NHL to $885 for all basketball."
+      "On 20 Nov 2026 Pregame sold single Spartan plays for $25 and $30, a weekend pass for $89, 7 days for $119, 30 days for $249, 90 days for $449 and one year for $1,995. Season passes ran from $359 for NHL to $885 for all basketball, and Flex Access was $195 a month."
     ],
     [
       "Does Spartan have a verified record?",
-      "Pregame keeps a graded record, but Pregame also sells the picks, so it is not independent. On 17 Nov 2026 that record showed his rated picks this season at 488 wins and 492 losses across all sports, while his sales page highlighted an NFL Triple Star run of 277 and 183."
+      "Pregame keeps a graded record, but Pregame also sells the picks, so it is not independent. On 20 Nov 2026 that record showed his rated picks this season at 495 wins and 493 losses across all sports with a weighted loss, while his top rated picks were 83 and 67 with a weighted gain. His sales page highlights an NFL Triple Star run of 277 and 183 that we could not check against an all time table."
+    ],
+    [
+      "Does Spartan offer a guarantee or refunds?",
+      "No pick guarantee. Pregame calls guaranteed picks a deceptive marketing ploy. The only remedy we could read is opposite side insurance, which credits your account if two packages you bought have top picks on opposite sides of a game. Flex Access rebills monthly until you cancel by email."
+    ],
+    [
+      "What do buyers say about Spartan?",
+      "Very little. A few members thanked him for winners on Pregame's own forum in 2012, and forum members reposted his plays in 2026 without comment. We found no complaints and no independent reviews, good or bad."
     ],
     [
       "Is Spartan worth it?",
-      "His top NFL plays have a long marketed run, but his overall rated record this season sits just under 50%, below the roughly 52.4% needed at -110. Pregame offers no pick guarantee, and nothing covers your betting losses."
+      "His top rated plays have done better than his full card this season, mostly thanks to baseball, but his overall rated record sits near break even before you pay for picks. If you try him, start with a single play, follow the top rated plays only if that is what you pay for, and keep your own log. Nothing covers your betting losses."
     ]
   ],
   "related": [
@@ -223,64 +278,84 @@
   ],
   "sources": [
     {
-      "title": "Pregame: Spartan pro page (prices, streak claims, recent picks)",
+      "title": "Pregame: Spartan pro page (prices, streak claims, last 10 picks, best records box)",
       "url": "https://pregame.com/pros/spartan",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Pregame: Spartan bio",
       "url": "https://pregame.com/pros/spartan/bio",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Pregame: Spartan win loss record, last 30 days, rated picks",
       "url": "https://pregame.com/pros/spartan/win-loss-record?time=Last+30+Days",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Pregame: Spartan win loss record, current season, rated picks",
       "url": "https://pregame.com/pros/spartan/win-loss-record?time=Current+Season",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Pregame: Sports Betting Experts listing",
       "url": "https://pregame.com/pros",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Pregame: How to Get Discounts (guaranteed picks stance)",
       "url": "https://pregame.com/buy-picks/how-to-get-discounts",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Pregame FAQ (opposite side insurance)",
       "url": "https://pregame.com/faq",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Pregame Terms of Use (operator, address)",
       "url": "https://pregame.com/terms-of-service",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Pregame forum: Spartan, Conversation with the Pregame Pro (Jan 2012)",
       "url": "https://pregame.com/pregame-forums/f/everything-else/216007/spartan---conversation-with-the-pregame-pro",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Bookmakers Review forum: Sports Betting Service Plays, Wednesday 3/11/26",
       "url": "https://forum.bookmakersreview.com/threads/sports-betting-service-plays-wednesday-3-11-26.70412/",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "CapperTek: Spartan.pregame.com reviews (none)",
       "url": "https://www.cappertek.com/reviews.asp?shs=Spartan.pregame.com",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "TheRX: Tuesday Service Play Thread 10/06/2026 (posting rules)",
+      "title": "TheRX: Tuesday Service Play Thread 10/06/2026 (posting guidelines, Pregame on the do not post write ups list)",
       "url": "https://www.therx.com/threads/tuesday-service-play-thread-10-06-2026.1313853/",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Pregame forum: Opposite Side Insurance (another Pregame only program!)",
+      "url": "https://www.pregame.com/pregame-forums/f/nba/89893/opposite-side-insurance-another-pregame-only-program",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Pregame: Spartan win loss record, current season, top picks only",
+      "url": "https://pregame.com/pros/spartan/win-loss-record?time=Current+Season&size=Top+Picks+Only",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Pregame: Spartan win loss record, current season, all picks",
+      "url": "https://pregame.com/pros/spartan/win-loss-record?time=Current+Season&size=All+Picks",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "TheRX: Thursday Service Play Thread 2/26/2026 (Spartan plays reposted)",
+      "url": "https://www.therx.com/threads/thursday-service-play-thread-2-26-2026.1308521/post-14795014",
+      "accessed": "20 Nov 2026"
     }
   ],
   "pricing_source": 0
