@@ -1,39 +1,47 @@
 {
   "slug": "payne-insider",
   "name": "Payne Insider",
-  "legal_name": "PayneInsider.com (the only name in the site terms; no company name or owner given)",
+  "legal_name": "PayneInsider.com (the only name in the site terms; no company name, owner name or address given)",
   "kind": "Football focused pick service sold under one handle, from its own site, by a betting podcast co host",
-  "checked": "16 Nov 2026",
-  "checked_iso": "2026-11-16",
-  "updated_iso": "2026-11-16",
+  "checked": "20 Nov 2026",
+  "checked_iso": "2026-11-20",
+  "updated_iso": "2026-11-20",
   "title": "Payne Insider Review 2026: Pricing, Record, Is It Worth It?",
-  "description": "Payne Insider review, checked 16 Nov 2026: hidden prices, no refunds, a season by season record that shows losing years, and what bettors post.",
+  "description": "Payne Insider review, checked 20 Nov 2026: a $579.99 30 day football pass, no refunds, and his own season totals recounted line by line.",
   "h1": "Payne Insider review",
-  "dek": "A football pick service run by a bettor known only as Payne, who also co hosts the Bet The Board podcast. His site posts season totals back to 2007, losing years included, but no pick by pick log. Prices are not shown in the page text, and all sales are final.",
+  "dek": "A football pick service run by a bettor known only as Payne, who co hosts the Bet The Board podcast with former oddsmaker Todd Fuhrman. The only package we could price was a 30 day NFL and college football pass at $579.99 through PayPal. All sales are final. His site posts season totals back to 2007, losing years included, and his three football headline numbers add up when we recount them, but there is no pick by pick log and we found no independent buyer reviews.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Payne Insider picks. This page reports what we could check on 16 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record of Payne Insider picks. This page reports what we could check on 20 Nov 2026, including our own recount of the season totals the seller publishes, and labels everything else."
   },
   "glance": [
     [
       "Operator",
-      "PayneInsider.com. The seller goes by Payne and, per a 2026 Awful Announcing article, keeps his real last name private"
+      "PayneInsider.com. The seller goes by Payne and, per a 2026 Awful Announcing article, keeps his real last name private. Contact is by email only"
     ],
     [
       "Claims to operate since",
-      "Privately since 2004, publicly since 2007 (records page)"
+      "Privately since 2004, publicly since 2007 (records page). The payneinsider.com domain was registered on 20 Oct 2007"
     ],
     [
-      "Price seen on his own site",
-      "Not shown in the page text; checkout runs through a PayPal button"
+      "Where sold",
+      "Only on payneinsider.com, through a PayPal checkout button. No reseller network found"
+    ],
+    [
+      "Price seen",
+      "30 Day NFL + College Football: $579.99 (PayPal checkout behind the Football Picks page)"
     ],
     [
       "Guarantee",
       "None. Terms say all sales are final, no refunds"
     ],
     [
+      "Seller's own football total",
+      "2,319 wins, 1,741 losses (57.1%) since 2007, by our sum of his season lines"
+    ],
+    [
       "Full public record",
-      "Season totals only, back to 2007. No pick by pick log"
+      "Season totals only. No pick by pick log"
     ],
     [
       "Watchdog graded record",
@@ -41,42 +49,54 @@
     ]
   ],
   "short_answer": [
-    "Payne Insider is a real, long running pick service. The same Payne co hosts Bet The Board, a free NFL and college football betting podcast with former oddsmaker Todd Fuhrman, which moved to Clay Travis's Sport & State in 2026. He does not publish his last name, and the site gives no company name, address or phone number, only an email address.",
-    "The site sells football packages, but on 16 Nov 2026 no price appeared in the page text; buying runs through a PayPal button. The terms say all sales are final and that nothing about performance is guaranteed.",
-    "The records page is more open than most: it lists every season since 2007 by sport, including losing years such as 2019 to 2020 football at minus 34.44 units and 2024 to 2025 football at minus 7.51 units. It is still the seller's own tally, with no individual picks, dates or odds we could check. We found no independent buyer reviews at all, positive or negative."
+    "Payne Insider is a real, long running pick service. The same Payne co hosts Bet The Board, a free NFL and college football betting podcast with former Caesars oddsmaker Todd Fuhrman. Apple Podcasts lists the show from 2014 to 2025 with about 300 episodes and a 4.8 rating, and in August 2026 it came back on Clay Travis's Sport & State under a three year deal, with Hard Rock Bet as presenting sponsor. Payne does not publish his last name, and the site gives no company name, address or phone number, only an email address.",
+    "The football page shows no prices in its text, but the PayPal button behind it sells one product on 20 Nov 2026: a 30 Day NFL + College Football package for $579.99. The terms say all sales are final, payment is earned once you log in, and nothing about performance is guaranteed.",
+    "The records page is more open than most. It lists every season since 2007 by sport, including losing ones. We added up every football line ourselves: 17 of 19 finished seasons were up in units, the lifetime football rate is 57.2% and the last five finished seasons are 58.3%, which match the three numbers on his sales page. The catch is that these are still his own season totals, with no individual picks, dates or odds anyone can check.",
+    "We found no independent buyer reviews at all, positive or negative, on CapperTek, TheRX, Reddit or Apple Podcasts. The only customer voices are testimonials the seller chose."
   ],
-  "pricing_intro": "We read the football picks page on 16 Nov 2026. It says \"2026 Football Packages Available Now\" but shows no package names or prices in its text. The order button is a PayPal hosted button, and the PayPal payment page did not show an item or price to us. We do not guess prices.",
+  "pricing_intro": "We read the football picks page on 20 Nov 2026. It says \"2026 Football Packages Available Now\" but shows no package names or prices in its text. The page loads a PayPal hosted checkout button, and that checkout shows one fixed price item, listed below. The site's FAQ says members get \"every premium selection we release\" in football, basketball and baseball, but the only product on sale was football. We do not guess prices for anything else.",
   "pricing": [
     [
-      "2026 Football Packages (payneinsider.com)",
-      "Price not shown in the page text",
-      "PayPal checkout; terms say all sales are final, no refunds"
+      "30-Day NFL + College Football (PayPal checkout on the Football Picks page)",
+      "$579.99",
+      "\"Every premium football investment Payne's group makes during this 30-Day window is yours.\" All sales final, no refunds"
+    ],
+    [
+      "Free picks and the Bet The Board newsletter",
+      "$0",
+      "The podcast newsletter is free and promises \"Additional Best Bets\"; it is not the paid service"
     ]
   ],
   "guarantee": [
-    "There is no guarantee. The terms carry the heading \"All Sales Are Final\" with \"No Refunds\", and say the payment counts as fully earned once you get into the members area. No refund is due if a package ends early for any reason.",
-    "The terms also say the advice \"is not guaranteed in terms of any type of performance.\" Losses on the bets themselves are never covered, and they are usually much larger than the package price."
+    "There is no guarantee. The terms carry the heading \"All Sales Are Final\" with \"No Refunds\", and say the payment counts as \"earned in full once you access the subscription-only area of this website.\" No refund is due \"in the event your subscription/package is terminated, regardless of the reason for termination.\"",
+    "The terms also say the advice \"is not guaranteed in terms of any type of performance\" and that the site takes \"a specific number of clients each season,\" so buying reserves a spot. Breaking the no resharing rule ends your account with no refund for unused time.",
+    "Losses on the bets themselves are never covered, and they are usually much larger than the package price. At $579.99 for 30 days, a buyer staking $100 a DIME would need roughly six units of profit in the month just to cover the fee."
   ],
   "claims": [
     {
-      "claim": "\"17 of 19 Winning Football Seasons\"; \"57.2% Lifetime on Football\"; \"58.3% Football last 5 seasons\"",
+      "claim": "\"17 of 19 Winning Football Seasons\"",
       "where": "payneinsider.com Football Picks page",
-      "status": "Seller claim, season totals only, no full log"
+      "status": "Checked against his own records page: summing NFL and college football lines for each finished season from 2007 to 2008 through 2025 to 2026, 17 seasons were up in DIMES and 2 were down (2019 to 2020 at minus 34.44, 2024 to 2025 at minus 7.51)"
+    },
+    {
+      "claim": "\"57.2% Lifetime on Football\"",
+      "where": "payneinsider.com Football Picks page",
+      "status": "Checked: finished seasons add up to 2,281 wins and 1,710 losses, 57.2%. With the current season included it is 2,319 to 1,741, 57.1%"
+    },
+    {
+      "claim": "\"58.3% Football last 5 seasons\"",
+      "where": "payneinsider.com Football Picks page",
+      "status": "Checked: 2021 to 2022 through 2025 to 2026 add up to 481 wins and 344 losses, 58.3%, plus 166.02 DIMES"
     },
     {
       "claim": "\"16 years of providing winners\"",
       "where": "payneinsider.com homepage",
-      "status": "Seller claim; the records page dates the public service to 2007"
+      "status": "Out of date: the records page dates the public service to 2007 and the domain was registered in October 2007, which is 19 years"
     },
     {
-      "claim": "\"Every investment Payne releases is graded and updated on this very records page, win, lose or push.\"",
+      "claim": "\"Every investment Payne's group releases is graded and updated on this very records page, win, lose or draw.\"",
       "where": "payneinsider.com Records page",
-      "status": "Seller claim; only season totals are shown"
-    },
-    {
-      "claim": "\"2025-2026 Football Combo Package: (51-38-0) 57.3% +13.01 DIMES\"; \"2026-2027 Football Combo Package: (38-31-1) 55.1% +4.48 DIMES\"",
-      "where": "payneinsider.com Records page",
-      "status": "Seller claim, no full log"
+      "status": "Partly matched: only season totals are shown, and there are no basketball lines after 2019 to 2020 and no baseball lines after 2014, although the FAQ still lists both as core sports"
     },
     {
       "claim": "\"By joining Payne's group you will no longer be with the masses, but part of the elite 2% profiting in the sports betting market annually.\"",
@@ -87,93 +107,123 @@
       "claim": "Picks \"continually beat the closing line\"",
       "where": "payneinsider.com Football Picks page",
       "status": "Seller claim, no closing line data shown"
+    },
+    {
+      "claim": "\"Payne bets each and every game advised to clients.\"",
+      "where": "payneinsider.com Customer Support FAQ",
+      "status": "Seller claim, not checkable"
     }
   ],
   "claims_note": [
-    "The years do not line up neatly. The homepage says 16 years, the football page counts 19 football seasons, and the records page dates the public service to 2007, which is 19 or 20 seasons ago.",
-    "To the seller's credit, the records page lists losing seasons as well as winning ones. We counted two losing football combo seasons in recent years (2019 to 2020 and 2024 to 2025) and several losing sport splits in older years, such as 2013 to 2014 NBA. That is more than most pick sellers show.",
-    "Units are counted in \"DIMES\" on a 1 to 10 confidence scale, with an average play of about 2.2. Without the individual picks, the odds taken and the time each was sent, a buyer cannot rebuild these totals or check the claim about beating the closing line."
+    "How we checked: on 20 Nov 2026 we copied all 72 season lines from the records page and added them up. Before 2017 the page splits football into NFL and college football, so we combined the two for each season; from 2017 to 2018 on it shows one football combo line. We left out the separate win totals and futures lines. Each line's win rate matches its own wins and losses.",
+    "The three football headline numbers hold up on his own figures. In some seasons one half lost while the other carried it: college football was down 51.5 DIMES in 2011 to 2012 and 20.65 in 2014 to 2015, but the NFL side more than covered both.",
+    "Volume has fallen sharply. The football combo had 307 plays in 2018 to 2019 and 266 in 2022 to 2023, but only 98 in 2024 to 2025 and 89 in 2025 to 2026. Fewer plays means each season's percentage swings more.",
+    "Units are counted in \"DIMES\" on a 1 to 10 confidence scale, with an average released play of 2.2 DIMES since 2007, per the page. As a rough guide only: if every football play averaged 2.2 DIMES, the lifetime football profit of 963.78 DIMES over about 4,150 plays would be a return of roughly 10% of money risked, and the 2025 to 2026 season about 6.6%. Without the individual picks and their sizes we cannot compute it properly.",
+    "The other sports tell a mixed story: across every sport and season listed the page adds up to 5,162 wins and 3,981 losses, 56.5%, but baseball was 805 to 684 (54.1%) and stopped being reported after 2014, and college basketball was 1,060 to 874 (54.8%)."
   ],
   "record": [
     "What a buyer can verify independently: nothing that we could find. There is no pick by pick log with lines, odds and release times, and we found no third party tracker that has graded the paid plays.",
-    "What the seller publishes: season totals by sport from 2007 onward. Recent football combo seasons run from 51% (2019 to 2020, minus 34.44 units) to 60.8% (2022 to 2023, plus 69.69 units). The current 2026 to 2027 line read 38 wins, 31 losses and 1 push on 16 Nov 2026.",
-    "TheRX forum keeps a list of services whose write ups members should not repost, and PayneInsider was on it in February 2026. That tells us the paid plays circulate, but not how they perform."
+    "What the seller publishes: season totals by sport from 2007 onward. Recent football combo seasons run from 50.8% (2019 to 2020, minus 34.44 DIMES) to 60.8% (2022 to 2023, plus 69.69 DIMES). The current 2026 to 2027 line read 38 wins, 31 losses and 1 push, plus 4.48 DIMES, on 20 Nov 2026, the same as four days earlier.",
+    "The early seasons carry the biggest numbers: 2008 to 2009 NFL shows 52 wins and 32 losses for plus 150.6 DIMES. Recent seasons are smaller and closer to break even, which a buyer judging the service today should weigh more than the lifetime figure.",
+    "TheRX forum keeps a list of services whose write ups members should not repost, and PayneInsider was on it in its February 2026 and 31 Oct 2026 service play threads. That tells us the paid plays circulate, but not how they perform.",
+    "The site's blog has not been updated since 2015, when it carried betting articles by guest writers. The Linktree page now points mainly to the podcast, a free newsletter, social accounts and the football picks page."
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Payne Insider pick history is matched to a Watchdog graded record, so we make no claim about how Payne Insider performs.",
-    "context": "For scale: the seller's football claims sit at 51% to 61% in recent seasons. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Payne Insider pick history is matched to a Watchdog graded record, so we make no claim about how Payne Insider performs beyond our recount of the seller's own season totals.",
+    "context": "For scale: the seller's football lines sit at 51% to 61% in recent seasons and 57.1% lifetime by our sum. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "Independent customer evidence on Payne Insider is almost nonexistent. The only buyer comments we found sit on the seller's own testimonials page. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent customer evidence on Payne Insider is almost nonexistent. The only buyer comments we found sit on the seller's own pages. Listener reviews of his free podcast are plentiful and warm, but they are about the show, not the paid picks. Below is everything we found and how much weight it can carry.",
   "customers": [
     {
       "type": "Our summary",
       "tone": "Neutral",
-      "date": "Read 16 Nov 2026",
-      "text": "We found no independent buyer posts about Payne Insider on CapperTek, in Reddit through the Arctic Shift archive, or in TheRX and Sportsbook Review searches. The only customer voices are 25 undated testimonials chosen by the seller, all positive, praising steady profits, discipline and plays that move lines. There is no pattern of complaints, but there is also no independent praise, so buyers have very little outside evidence either way.",
+      "date": "Read 20 Nov 2026",
+      "text": "Across CapperTek, TheRX, Sportsbook Review and Covers web searches, our saved copy of the main betting subreddits and Apple Podcasts, we found no independent post from anyone who says they bought Payne Insider picks, good or bad. The only customer voices are about 25 undated testimonials on his own site, all positive, praising steady profits, discipline and plays that move betting lines, two of them credited to Las Vegas oddsmakers including his podcast partner. On TheRX his write ups appear only on a do not repost list. On Apple Podcasts, listeners of the free Bet The Board show rate it 4.8 out of 5 from about 1,800 ratings and praise his candor, but none mention the paid service. There is no pattern of complaints, and also no independent praise of the paid picks, so a buyer has very little outside evidence either way.",
       "source": null
     },
     {
       "type": "Seller curated",
       "tone": "Positive",
-      "date": "Checked 16 Nov 2026",
-      "text": "The testimonials page shows 25 notes signed with a first name and a place or job title, none dated. They describe winning months and seasons, renewals, and plays that move the betting line, and two are credited to Las Vegas oddsmakers. The seller picks what appears here, so it is not independent evidence.",
+      "date": "Checked 20 Nov 2026",
+      "text": "The testimonials page shows about 25 notes signed with a first name and a place or job title, none dated. They describe winning months and seasons, renewals, a renewal discount and plays that move the betting line. One credits Payne as co founder of a Miami sports hedge fund group. Two are credited to Las Vegas oddsmakers, one of them his podcast co host. The seller picks what appears here, so it is not independent evidence.",
       "source": 4
+    },
+    {
+      "type": "Forum post",
+      "tone": "Positive",
+      "date": "Jul to Aug 2025",
+      "text": "The most recent listener reviews on Apple Podcasts, written when Bet The Board paused in 2025, thank both hosts, and one praises Payne's candor after more than a decade of listening. They are about the free podcast, not the paid picks.",
+      "source": 13
     },
     {
       "type": "Not found",
       "tone": "Neutral",
-      "date": "Checked 16 Nov 2026",
-      "text": "CapperTek lists PayneInsider.com as an unverified service with no reviews or complaints. A TheRX search found the name only in the forum's list of services whose write ups should not be reposted, with no comments on results.",
+      "date": "Checked 20 Nov 2026",
+      "text": "CapperTek lists PayneInsider.com as an unverified, active service with \"no reviews or complaints\" on 20 Nov 2026. TheRX threads from February and October 2026 show the name only in the forum's do not repost list, with no comments on results.",
       "source": 8
     },
     {
       "type": "Not found",
       "tone": "Neutral",
       "date": "Checked 16 Nov 2026",
-      "text": "A post search of r/sportsbook, r/sportsbetting and r/SportsBettingPicks in the Arctic Shift Reddit archive found no thread about the service. Comment searches for the name timed out on the archive side, so Reddit comments were not fully checked.",
+      "text": "A post search of r/sportsbook, r/sportsbetting and r/SportsBettingPicks in the Arctic Shift Reddit archive found no thread about the service, and our saved copy of the main betting subreddits has no buyer comment about it. Archive comment searches for the name timed out again on 20 Nov 2026, so Reddit comments were not fully checked.",
       "source": 10
     }
   ],
   "conflicts": [
-    "Payne co hosts Bet The Board, a free podcast whose new home on Sport & State has Hard Rock Bet as presenting sponsor, according to Awful Announcing. A sportsbook sponsor of the free show is a financial tie a buyer should know about, though it says nothing about the paid picks.",
-    "We saw no sportsbook links or affiliate banners on the payneinsider.com pages we read."
+    "Payne co hosts Bet The Board, a free podcast whose new home on Sport & State has Hard Rock Bet as presenting sponsor, per Awful Announcing and Barrett Media. A sportsbook sponsor of the free show is a financial tie a buyer should know about, though it says nothing about the paid picks.",
+    "Todd Fuhrman, his podcast partner, is quoted as a testimonial on the paid site. That is not independent praise.",
+    "The site FAQ names offshore sportsbooks it prefers to use. We saw no sportsbook affiliate banners on the payneinsider.com pages we read."
   ],
   "strengths": [
     "A long running service that publishes season by season totals since 2007, and shows losing seasons as well as winning ones.",
-    "The seller has a public face through a podcast with a known former oddsmaker.",
-    "Terms are written out plainly, including the no refund rule."
+    "His three football headline numbers (17 of 19 winning seasons, 57.2% lifetime, 58.3% last five seasons) match his own season lines when we add them up.",
+    "The seller has a public face through a long running podcast with a known former oddsmaker, now on a new three year deal.",
+    "Terms are written out plainly, including the no refund rule.",
+    "Checkout runs through PayPal, which shows a clear fixed price before you pay."
   ],
   "concerns": [
-    "No price appears in the page text before checkout.",
+    "No price appears in the page text; you only see $579.99 for 30 days inside the PayPal checkout.",
     "All sales are final. No refund and no guarantee of any kind.",
-    "No pick by pick record, so the season totals and the closing line claim cannot be checked.",
+    "No pick by pick record, so the season totals and the closing line claim cannot be checked by anyone outside.",
+    "Play volume has dropped to under 100 football plays a season, and recent seasons are closer to break even than the lifetime numbers.",
     "The operator gives no last name, company name, address or phone number, only an email address.",
-    "No independent buyer reviews exist that we could find; the only customer comments are seller chosen testimonials."
+    "No independent buyer reviews exist that we could find; the only customer comments are seller chosen testimonials, one from his podcast partner.",
+    "Parts of the site are stale: the homepage still says 16 years, the blog stopped in 2015, and baseball and basketball records stop years ago."
   ],
   "checklist": [
-    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. Season totals are not a record you can check.",
-    "Count units, not wins. Ask what one DIME means in dollars before you size bets off it.",
-    "Read the terms before you pay: all sales are final here.",
+    "Ask for every pick from the last 12 months with the line, the odds, the DIME size and the time it was sent. Season totals are not a record you can check.",
+    "Count units, not wins. Ask what one DIME means in dollars before you size bets off it, and work out how many units you need just to cover $579.99 a month.",
+    "Read the terms before you pay: all sales are final, and payment is earned the moment you log in.",
+    "Compare the current season line on the records page with what you actually receive, and keep the emails or texts with their time stamps.",
     "Write down each pick yourself the moment you receive it, with the line you can actually get.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Give any handicapper a few hundred picks before you call them a winner. With under 100 plays a season, one season proves little."
   ],
   "faq": [
     [
       "Is Payne Insider legit?",
-      "It is a real service that has sold football picks since at least 2007, run by the same Payne who co hosts the Bet The Board podcast. We could not verify that the picks win over time, because only season totals are published, and we found no independent buyer reviews, complaints, or court or regulator action."
+      "It is a real service that has sold football picks since at least 2007, run by the same Payne who co hosts the Bet The Board podcast. His published football season totals add up to the numbers he advertises, but they are his own totals with no pick by pick log, and we found no independent buyer reviews, complaints, or court or regulator action."
+    ],
+    [
+      "Who is Payne Insider?",
+      "A professional bettor who uses the name Payne and keeps his last name private, per Awful Announcing. He co founded Bet The Board with former Caesars oddsmaker Todd Fuhrman; the show ran from 2014 to 2025 and returned on Clay Travis's Sport & State in August 2026. His site gives an email address only, with no company, address or phone."
     ],
     [
       "How much does Payne Insider cost?",
-      "On 16 Nov 2026 the football picks page showed no prices in its text. Checkout runs through PayPal, and the terms say all sales are final with no refunds."
+      "On 20 Nov 2026 the PayPal checkout behind the football picks page sold a 30 Day NFL + College Football package for $579.99. No other package or price was shown. The podcast and its newsletter are free."
+    ],
+    [
+      "Does Payne Insider offer refunds?",
+      "No. The terms say all sales are final, payment is earned in full once you enter the members area, and no refund is due if a package ends early for any reason."
     ],
     [
       "Does Payne Insider have a verified record?",
-      "No. The records page lists season totals by sport since 2007, including losing seasons, but no individual picks, dates or odds. Nobody independent has graded the paid plays that we could find."
+      "No. The records page lists season totals by sport since 2007, including losing seasons, and our recount matches his football headline numbers. But there are no individual picks, dates or odds, and nobody independent has graded the paid plays that we could find."
     ],
     [
       "Is Payne Insider worth it?",
-      "You get a long running football service whose own numbers show more winning seasons than losing ones. What is unproven is whether a buyer betting at the lines they can actually get beats the roughly 52.4% needed at -110, and nothing refunds the package or your betting losses."
+      "You get a long running football service whose own numbers show more winning seasons than losing ones. What is unproven is whether a buyer betting at the lines they can actually get beats the roughly 52.4% needed at -110 by enough to cover $579.99 a month, and nothing refunds the package or your betting losses."
     ]
   ],
   "related": [
@@ -185,60 +235,95 @@
   ],
   "sources": [
     {
-      "title": "payneinsider.com homepage (16 years claim, email, PayPal badge)",
+      "title": "payneinsider.com homepage (16 years claim, testimonials, email support)",
       "url": "https://www.payneinsider.com/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "payneinsider.com Football Picks (2026 packages, 17 of 19 seasons claim)",
+      "title": "payneinsider.com Football Picks (2026 packages, 17 of 19 seasons claim, PayPal button)",
       "url": "https://www.payneinsider.com/football-picks/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "payneinsider.com Records (season totals since 2007, DIMES scale)",
       "url": "https://www.payneinsider.com/payneinsider-records/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "payneinsider.com Terms and Conditions (all sales final, no refunds)",
       "url": "https://www.payneinsider.com/terms-and-conditions/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "payneinsider.com Testimonials (25 seller chosen notes)",
+      "title": "payneinsider.com Testimonials (about 25 seller chosen notes)",
       "url": "https://www.payneinsider.com/payneinsider-testimonials/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "payneinsider.com Customer Support/Contact Us (email only)",
+      "title": "payneinsider.com Customer Support/Contact Us (email only, FAQ)",
       "url": "https://www.payneinsider.com/customer-supportcontact-us/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Linktree: PayneInsider Official (podcast, newsletter, football picks links)",
       "url": "https://linktr.ee/PayneInsider",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Awful Announcing: Bet the Board returns on Sport & State (31 Aug 2026)",
       "url": "https://awfulannouncing.com/online-outlets/bet-the-board-todd-furhman-payne-insider-clay-travis-sport-state.html",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "CapperTek: PayneInsider.com review page (no reviews)",
+      "title": "CapperTek: PayneInsider.com review page (no reviews or complaints)",
       "url": "https://www.cappertek.com/reviews.asp?shs=PayneInsider.com",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "TheRX: Thursday Service Play Thread 2/12/2026 (do not post write ups list)",
       "url": "https://www.therx.com/threads/thursday-service-play-thread-2-12-2026.1308138/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Arctic Shift Reddit archive: r/sportsbook post search for payne",
       "url": "https://www.reddit.com/r/sportsbook/search/?q=payne&restrict_sr=1",
       "accessed": "16 Nov 2026"
+    },
+    {
+      "title": "PayPal hosted checkout for the payneinsider.com football button (30-Day NFL + College Football, $579.99)",
+      "url": "https://www.paypal.com/ncp/payment/A2T2XQFTU39TU",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Barrett Media: Clay Travis adds Bet The Board podcast to Sport & State with three year agreement (31 Aug 2026)",
+      "url": "https://barrettmedia.com/2026/08/31/clay-travis-bet-the-board-todd-fuhrman-payne-insider/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Apple Podcasts: Bet The Board (2014 to 2025, ratings and listener reviews)",
+      "url": "https://podcasts.apple.com/us/podcast/bet-the-board/id927810876",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Bet The Board free newsletter page",
+      "url": "https://www.bettheboardpodcast.com/bet-the-board-podcast-newsletter/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "TheRX: Saturday Service Play Thread 10/31/2026 (do not post write ups list)",
+      "url": "https://www.therx.com/threads/saturday-service-play-thread-10-31-2026.1314598/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Verisign RDAP registry record for payneinsider.com (registered 20 Oct 2007)",
+      "url": "https://rdap.verisign.com/com/v1/domain/payneinsider.com",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "payneinsider.com Blog (latest posts from 2015)",
+      "url": "https://www.payneinsider.com/blog/",
+      "accessed": "20 Nov 2026"
     }
   ],
-  "pricing_source": 1
+  "pricing_source": 11
 }
