@@ -52,7 +52,11 @@ Work from worktree `~/hwd-names-1114` (branch names-1114, push `HEAD:main`; main
    WAVE 2 DONE 8:17 AM PST (last 8985078). IndexNow ran 7:57 AM (138 ok). payne-insider flags only pricing<3 (one product, legit).
    WAVE 3 running 8:20 AM: rob-vinciletti the-jewish-sharp ats-consultants docs-sports leans-ai oddsshark-picks porter-picks spartan-sports
    sports-information-traders sportscappro betfirm cappertek dimers docs-sports-ai robert-ferringo unabated hammering-hank jim-feist.
-   After wave 3: 30 left; rerun the depth audit on reviews_v2 to list them, then IndexNow again.
+   WAVE 3 DONE 8:40 AM PST (last cdd60f1). Publish helper: bash ~/hwd_testimonials/deepen_1120/pub.sh <slugs> (checks + push).
+   WAVE 4 running 8:42 AM: pickswise rithmm the-cashman-wins tom-stryker vegas-winners brandon-lang joe-duffy-offshoreinsiders sportscapping
+   big-al dannys-vip-sports-picks dynamic-sports-plays vegasinsider-expert-picks wunderdog covers-expert-picks vsin-picks winning-points
+   winners-and-whiners northcoast-sports. WAVE 5 (last 12): wayne-allyn-root-winningedge jimmy-boyd phil-steele pregame steve-fezzik wagertalk
+   dr-bob-sports vegas-dave dubclub sharp-football-analysis stu-feiner marc-lawrence-playbook. Then IndexNow + live check of all 84.
    HARVESTER: market stage CONFIRMED fixed (mkt_ok every cycle since 19 Nov 2:11 PM PST; first COMPLETE cycle 20 Nov 2:59 AM PST);
    only reconcile_parse.py still times out (parser backlog ~118k, box CPU). Picks 197339/192518 still await owner 'hold both'.
    Master list ~/hwd_testimonials/candidates_1119.json (134 sellers; 108 have no buyer buzz, most rosters now checked and rejected as thin).
