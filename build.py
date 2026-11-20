@@ -3222,20 +3222,15 @@ def _profile_facts(r, pub, c, sport_slugs):
     items = []
     first, last = _day(r.get('first_pick')), _day(r.get('last_pick'))
     if first and last:
-        r7 = (r.get('r7') or {}).get('picks') or 0
-        items.append('First graded pick %s, most recent %s. Graded picks in the last 7 days: %d.' % (first, last, r7))
+        items.append('Graded from %s to %s.' % (first, last))
     if st.get('longest_win') or st.get('longest_loss'):
         items.append('Longest winning streak %d, longest losing streak %d%s.' % (
             int(st.get('longest_win') or 0), int(st.get('longest_loss') or 0), ', current streak %s' % _esc(st['current']) if st.get('current') else ''))
-    last20 = [x for x in (pub.get('last_results') or [])[:20] if x in ('W', 'L', 'P')]
-    if len(last20) >= 10:
-        w, l, p = last20.count('W'), last20.count('L'), last20.count('P')
-        items.append('Last %d graded picks: %d-%d%s.' % (len(last20), w, l, '-%d' % p if p else ''))
     if isinstance(o.get('avg_odds'), (int, float)) and o.get('avg_odds'):
-        items.append('Average price %+d (American odds) across priced picks.' % o['avg_odds'])
+        items.append('Typical price %+d, %s.' % (o['avg_odds'], 'mostly plus money' if o['avg_odds'] > 0 else 'heavy favorites' if o['avg_odds'] <= -150 else 'close to standard -110 pricing' if o['avg_odds'] <= -105 else 'near even money'))
     sp = [s for s in (r.get('sports') or []) if s]
     if sp:
-        items.append('Sports with graded picks: %s.' % ', '.join(
+        items.append('Graded in %s.' % ', '.join(
             ('<a href="sports/%s.html">%s</a>' % (sport_slugs[s], _esc(s))) if s in sport_slugs else _esc(s) for s in sp))
     if not items:
         return ''
