@@ -2,17 +2,17 @@
   "slug": "dave-essler",
   "name": "Dave Essler",
   "legal_name": "Dave Essler (name used on his Pregame.com pro page; picks are sold through Pregame.com, which says it is located and licensed in Las Vegas, Nevada)",
-  "kind": "Individual pick seller on the Pregame.com marketplace",
-  "checked": "16 Nov 2026",
-  "checked_iso": "2026-11-16",
-  "updated_iso": "2026-11-16",
+  "kind": "Individual pick seller and podcast regular on the Pregame.com marketplace",
+  "checked": "20 Nov 2026",
+  "checked_iso": "2026-11-20",
+  "updated_iso": "2026-11-20",
   "title": "Dave Essler Review 2026: Pricing, Record, Is It Worth It?",
-  "description": "Dave Essler review, checked 16 Nov 2026: Pregame.com prices from $119 a week to $1,995 a year, seller picked streaks, and what bettors posted.",
+  "description": "Dave Essler review, checked 20 Nov 2026: Pregame prices from $25 a pick to $1,995 a year, his graded record this season, and what bettors posted.",
   "h1": "Dave Essler review",
-  "dek": "A long running Pregame.com pro known to followers as \"Uncle Dave.\" He sells all access packages from $119 for 7 days to $1,995 for a year. Pregame keeps a graded log of his monitored picks, but the numbers on his sales page are streaks and best records picked for display, and we found no refund terms.",
+  "dek": "A long running Pregame.com pro known to followers as \"Uncle Dave.\" He sells single picks from $25 and all access packages from $89 to $1,995 a year. Pregame grades his picks, and its own tables tell two stories: a positive all time figure, and a losing current season led by baseball. The numbers at the top of his sales page are streaks picked for display, and we found no refund terms.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Dave Essler picks. This page reports what we could check on 16 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record of Dave Essler picks. This page reports what we could check on 20 Nov 2026 and labels everything else."
   },
   "glance": [
     [
@@ -20,20 +20,24 @@
       "Pregame.com, Las Vegas, Nevada (site footer)"
     ],
     [
-      "Selling on Pregame since",
-      "At least 2015 (a Pregame forum post that year discusses him as a pro)"
+      "On Pregame since",
+      "Forum account joined 1 Nov 2009, with more than 18,000 posts; discussed as a pro by 2015"
     ],
     [
-      "Lowest subscription seen",
-      "$119.00 for 7 days of all access (Pregame pro page)"
+      "Other work",
+      "Regular guest on Pregame podcasts and videos, including Straight Outta Vegas AM in Nov 2026"
+    ],
+    [
+      "Price range seen",
+      "$25 for a single pick to $1,995.00 for one year of all access"
     ],
     [
       "Guarantee",
       "None found on his page, in the Pregame FAQ or in the terms"
     ],
     [
-      "Full public record",
-      "Pregame hosts an Every Pick Ever log of monitored picks; the sales page shows selected streaks"
+      "Pregame graded record",
+      "Current season, rated picks: 243-217-10, minus $2,166 at Pregame's weighting. Best all time figure shown: plus $9,250, all picks"
     ],
     [
       "Watchdog graded record",
@@ -41,12 +45,22 @@
     ]
   ],
   "short_answer": [
-    "Dave Essler is a real, active seller on Pregame.com, one of the best known pick marketplaces. His pro page lists ten packages with prices, a daily message and his most recent picks with results, and Pregame staff and members have discussed him on its forum since at least 2015. In that sense the service is legitimate.",
-    "Whether the picks make money over time is a different question. The top of his page shows streaks such as \"367-229 (62%) GOM Winners\" and \"86% NFL 3* Totals,\" chosen for display. The Win/Loss table we saw, in its default view, showed 45 wins and 33 losses with a weighted gain of $693, including 7 wins and 11 losses in the NFL. Pregame's full archive of his picks sits behind a captcha, so we could not audit it.",
-    "Treat Dave Essler as an experienced seller with selected marketing numbers, not a proven long term winner. If you buy, use the Pregame archive to read his full record for the sport you want, and log every pick yourself with the line you actually got."
+    "Dave Essler is a real, active seller on Pregame.com, one of the best known pick marketplaces. His pro page lists a price for every package, a daily message and his latest picks with results, his forum account dates from 2009, and he appears on Pregame's betting podcasts and videos most weeks. In that sense the service is legitimate.",
+    "Whether the picks make money over time is a different question, and Pregame's own tables give mixed answers. The top of his page shows streaks such as \"367-229 (62%) GOM Winners\" and \"86% NFL 3* Totals,\" chosen for display. Below that, the Best W/L Records table lists a positive all time figure of $9,250 across all picks. But the Current Season view, which we added up ourselves, shows rated picks at 243 wins, 217 losses and 10 ties, down $2,166 at Pregame's weighting, with baseball (143-138) and the NFL (22-25-1) losing and the NBA and college football winning. The full archive of his picks sits behind a captcha, so we could not audit it pick by pick.",
+    "Treat Dave Essler as an experienced seller with selected marketing numbers and a record that swings by sport and season, not a proven long term winner. If you buy, check his Current Season table for the sport you want, start with a short package, and log every pick yourself with the line you actually got."
   ],
-  "pricing_intro": "All prices below were on Dave Essler's Pregame.com pro page on 16 Nov 2026. Where the page shows a higher list price next to the sale price, we give both.",
+  "pricing_intro": "All prices below were on Dave Essler's Pregame.com pro page on 20 Nov 2026. Where the page shows a higher list price next to the sale price, we give both; the list prices are Pregame's own comparisons, not prices we saw anyone pay. Several football packages are cheaper than on 16 Nov 2026 as the season runs down, and a Weekender pass and a college football pass were added. The page also offered coupon code UNCLE50 for half price on Friday's card.",
   "pricing": [
+    [
+      "Single pick: \"NBA (3*) Triple Dime Max Bet\"",
+      "only $25.00",
+      "One NBA pick; card final by 6 PM EST Friday"
+    ],
+    [
+      "Dave Essler's Weekender ALL-ACCESS!",
+      "only $89.00",
+      "Every pick in every sport through Monday Night Football"
+    ],
     [
       "Dave Essler's 7 DAY ALL ACCESS!",
       "only $119.00",
@@ -56,11 +70,6 @@
       "Dave Essler: 30 Day ALL ACCESS",
       "only $249.00",
       "Every pick, every sport, 30 days"
-    ],
-    [
-      "Special: One Month FB All-Access!",
-      "$195.00 (shown against $400)",
-      "Every football pick for one month; called a limited time offer"
     ],
     [
       "Dave Essler's FLEX ACCESS",
@@ -73,9 +82,29 @@
       "All sports for 90 days"
     ],
     [
+      "6 MONTH ALL-ACCESS!",
+      "$995.00 (shown against $1,494)",
+      "All sports for 6 months"
+    ],
+    [
+      "1 YEAR ALL-ACCESS ALL SPORTS!",
+      "$1,995.00 (shown against $2,988)",
+      "All sports for 365 days"
+    ],
+    [
+      "CFB Rest of Season Access!",
+      "$175.00 (shown against $500)",
+      "Every college football pick through the championship game"
+    ],
+    [
+      "NFL Rest of Season Access!",
+      "$249.00 (shown against $700)",
+      "Every NFL pick through the Super Bowl; called a limited time offer"
+    ],
+    [
       "Rest of Football Season All-Access!",
-      "$449.00 (shown against $1,200)",
-      "Every NFL and college football pick through the Super Bowl"
+      "$395.00 (shown against $1,000)",
+      "Every NFL and college football pick through the Super Bowl; was $449.00 on 16 Nov 2026"
     ],
     [
       "NBA Season All-Access! / CBB Season All-Access!",
@@ -86,211 +115,288 @@
       "Basketball Season All-Access!",
       "$885.00 (shown against $5,000)",
       "College and NBA through the NBA Finals"
-    ],
-    [
-      "6 MONTH ALL-ACCESS!",
-      "$995.00 (shown against $1,494)",
-      "All sports for 6 months"
-    ],
-    [
-      "1 YEAR ALL-ACCESS ALL SPORTS!",
-      "$1,995.00 (shown against $2,988)",
-      "All sports for 365 days"
     ]
   ],
   "guarantee": [
-    "None of the ten packages on the Dave Essler page mentions a guarantee, a refund or free extra time. The Pregame FAQ we read covers purchased picks, discounts and forum moderation, and the only protection it describes is an \"opposite side insurance\" program for buyers who bought two pros on opposite sides of the same game.",
-    "The Pregame terms say Pregame does not \"WARRANT, ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY\" for products offered by third parties through the service. Read the checkout terms before you pay, and note that the Flex Access package rebills every month until you cancel by email. Losses on the bets themselves are never covered."
+    "None of the packages on the Dave Essler page mentions a guarantee, a refund or free extra time. The Pregame FAQ we read covers purchased picks, discounts and forum moderation, and the only protection it describes is an \"opposite side insurance\" program for buyers who bought two pros on opposite sides of the same game.",
+    "The Pregame terms say \"PREGAME DOES NOT WARRANT, ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR ANY PRODUCT OR SERVICE ADVERTISED OR OFFERED BY A THIRD PARTY THROUGH THE SERVICE.\" Read the checkout terms before you pay, and note that the Flex Access package rebills every month at $195 until you cancel by email. Losses on the bets themselves are never covered."
   ],
   "claims": [
     {
-      "claim": "\"73-59 (55%) CBB +3.20*\"; \"86% NFL 3* Totals\"; \"69% 3* NFL Wins\"; \"367-229 (62%) GOM Winners\"; \"99.65 * NBA Win Streak\"",
-      "where": "Pregame pro page, Win Streaks box (last updated 15 Nov)",
-      "status": "Seller claim, selected streaks"
+      "claim": "\"73-59 (55%) CBB +3.20*\" and, in the daily message, \"CBB finished at 55% this season.\"",
+      "where": "Pregame pro page, Win Streaks box and Daily Message (updated 20 Nov 2026)",
+      "status": "Arithmetic checked: 73 of 132 is 55.3%. Refers to last season; no dates given"
     },
     {
-      "claim": "\"Our NBA is on a 99.60* multi-year run. CBB finished at 55% this season.\"",
+      "claim": "\"86% NFL 3* Totals\" and \"65% 3* NFL Wins\"",
+      "where": "Pregame pro page, Win Streaks box",
+      "status": "Selected slice. Pregame's Current Season table shows all his rated NFL picks at 22-25-1, down $1,175"
+    },
+    {
+      "claim": "\"Our NBA is on an extensive multi-year run.\"",
       "where": "Pregame pro page, Daily Message",
-      "status": "Seller claim, start date not given"
+      "status": "Consistent with Pregame's tables: NBA 16-10, plus $1,445 this season, and totals are his best all time slice ($11,910 rated)"
     },
     {
-      "claim": "Best W/L Records led by NBA Totals, All Time, Rated picks: $11,140",
+      "claim": "\"Another huge MAX winner and sweep... with the NBA under and a CFB winner.\"",
+      "where": "Pregame pro page, Daily Message, 20 Nov 2026",
+      "status": "Confirmed on his Last 10 Picks table: both 19 Nov picks (Knicks and Timberwolves under, a college football moneyline parlay) graded as wins"
+    },
+    {
+      "claim": "\"367-229 (62%) GOM Winners\"",
+      "where": "Pregame pro page, Win Streaks box",
+      "status": "Arithmetic checked: 61.6%. Start date not given"
+    },
+    {
+      "claim": "Best W/L Records: Totals, All Time, Rated $11,910; All, All Time, All $9,250",
       "where": "Pregame pro page, Best W/L Records table",
-      "status": "Platform graded, best slices only"
+      "status": "Platform graded, best slices only; the current season is negative"
     },
     {
-      "claim": "\"Called 'Uncle Dave' by many for his commitment to helping his followers in every possible way\"",
+      "claim": "\"Called 'Uncle Dave' by many for his commitment to helping his followers in every possible way\"; Pregame's \"MOST POPULAR subscription seller\"",
       "where": "Pregame 7 day package description",
-      "status": "Seller marketing"
-    },
-    {
-      "claim": "\"75% 3* Winners\" and \"Dave's most recent 3* winning run is 75%\"",
-      "where": "Pregame forum promotion, 25 Nov 2021",
-      "status": "Seller claim, run length not given"
+      "status": "Seller marketing; popularity is not evidence that the picks win"
     }
   ],
   "claims_note": [
-    "Every number at the top of the page is a streak or a best slice. The page itself labels the table \"Best W/L Records,\" and the streak box mixes win rates, unit totals and star ratings without saying when each run starts. The NBA run is shown as 99.65 in the streak box and 99.60 in the daily message on the same day.",
+    "Every number at the top of the page is a streak or a best slice. The page labels the table \"Best W/L Records,\" and the streak box mixes win rates, unit totals and star ratings without saying when each run starts. It does move with results, which is to its credit: between 16 and 20 Nov 2026 the NFL 3 star wins figure fell from 69% to 65% and the NBA streak from 99.65 to 99.05.",
+    "We added up Pregame's Current Season table ourselves. Rated picks: 243 wins, 217 losses, 10 ties, 52.8% of decided picks, and minus $2,166. All picks: 253 wins, 231 losses, 10 ties, minus $2,956. By sport (rated): MLB 143-138-9, minus $2,150; NFL 22-25-1, minus $1,175; CFL 7-7, minus $640; CFB 41-27, plus $170; NBA 16-10, plus $1,445; NHL 5-2, plus $403; WNBA 7-5, minus $89; CBB 2-2, minus $20; UFL 0-1, minus $110. A 52.8% hit rate is close to the roughly 52.4% needed at -110, and the dollar figure is negative because bigger star plays lost more than smaller ones won.",
+    "Pregame weights results by star rating. On his Last 10 Picks a 3 star win shows as $300 and a 3 star loss at -110 as minus $330, so the dollar figures read as about $100 a star. On that scale the all time plus $9,250 is about 92 stars of profit over his whole Pregame history, and this season's minus $2,166 is about 22 stars down. We could not see how many picks the all time figure covers.",
     "The bio does not claim a long record or big winnings. In it he writes that few bettors make a living, that he \"made my living in a former life,\" and that he tells long term clients \"we are not going to retire betting on sports.\" That is more modest than most sales pages in this business."
   ],
   "record": [
-    "What a buyer can check: Pregame shows an Every Pick Ever archive for him, split into monitored picks that count in the W/L records and unmonitored picks that count for contests only. When we opened it, the page asked for a captcha, so we did not read the full log.",
-    "What we saw on the Win/Loss Record page, in its default view: CBB 2 and 1, CFB 17 and 11, CFL 1 and 0, MLB 2 and 0, NBA 12 and 8, NFL 7 and 11, NHL 4 and 2, for 45 wins, 33 losses and a weighted $693. The page text did not make the time frame of the default view clear to us. The Last 10 Picks table on the pro page showed a loss on Dallas Cowboys +4 on 15 Nov 2026 and a win on a team total on 13 Nov 2026, among others.",
-    "These figures are graded by Pregame, the marketplace that sells his packages. That is better than no log at all, but it is not an independent audit."
+    "What a buyer can check: Pregame shows an Every Pick Ever archive for him, split into monitored picks that count in the W/L records and unmonitored picks that count for contests only. When we opened it on 20 Nov 2026 the page asked for a captcha, so we did not read the full log. The Win/Loss page can be switched between yesterday, last 7 days, last 30 days and current season, by bet type and by rated, top or all picks.",
+    "What we saw on 20 Nov 2026: the default view (last 30 days, rated picks) showed CBB 2-2, CFB 18-9, CFL 1-0, MLB 1-0, NBA 16-10, NFL 6-9 and NHL 3-2, which we add to 47 wins, 32 losses and plus $1,643, with NFL the one big loser at minus $940. The Current Season view is negative overall, as set out above. His Last 10 Picks showed recent results such as wins on two NBA unders on 17 and 19 Nov and losses on a 76ers and Magic under and a college basketball under on 18 Nov.",
+    "Members have tracked some of his free picks themselves. A 2018 Pregame forum tracker of the college football picks made on Pregame's \"Dream Pod\" podcast credited him with 9 wins and 8 losses for the season, against 11-6, 10-6 and 13-5 for the other three hosts. These were free podcast picks, not his paid card.",
+    "These figures are graded by Pregame, the marketplace that sells his packages. That is better than no log at all, but it is not an independent audit. We found no court or regulator action naming him."
   ],
   "our_data": {
     "matched": false,
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Dave Essler pick history is matched to a Watchdog graded record, so we make no claim about how Dave Essler performs.",
-    "context": "For scale: the streaks on his page run from 55% to 86% winners. On the Watchdog board on 16 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "context": "For scale: the streaks on his page run from 55% to 86% winners, while Pregame's current season table has his rated picks at 52.8%. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
   "customers_intro": "Independent buyer comment on Dave Essler is thin. Most of what we found sits on the Pregame forum, which is run by the site that sells his picks. Below is everything we could open and how much weight it can carry.",
   "customers": [
     {
       "type": "Our summary",
       "tone": "Mixed",
-      "date": "Read 16 Nov 2026",
-      "text": "We found only a handful of buyer posts, from 2015, 2023 and 2024, on the Pregame forum and TheRX. The tone is mostly friendly: members say his picks paid them on a given weekend, praise his free content and call him a long term winner, though one admits he is not sure of that. Nobody posted a full record, and we found no detailed complaint about the picks. The one public controversy was a 2015 Pregame suspension over a tweet, not over results.",
-      "source": null
+      "date": "Read 20 Nov 2026",
+      "source": null,
+      "text": "We found only a handful of buyer posts, from 2015, 2018, 2023, 2024 and 2026, almost all on the Pregame forum plus one on TheRX. The tone is mostly friendly: members say his picks paid them on a given weekend or a single big play, praise his free content and call him a long term winner, though one admits he is not sure of that. The doubts are short: a member in Nov 2026 replied that cappers lose more than they win, and a 2018 member tracker had his free podcast college football picks at 9 and 8, the weakest of four hosts. Nobody posted a full record of his paid picks, and we found no detailed complaint about refunds, billing or service. The one public controversy was a 2015 Pregame suspension over a tweet, not over results. The forum is moderated by the seller of his picks, so this is not an independent sample. Our Reddit check was partial: the Arctic Shift full text search timed out again on 20 Nov 2026, and our saved library of betting subreddit posts held one unrelated passing mention."
     },
     {
       "type": "Forum post",
       "tone": "Positive",
-      "date": "16 Feb 2015",
-      "text": "In the Pregame forum thread about his suspension, one member said Essler had recently put money in his pocket and gives solid information, while adding he was not sure Essler is a long term winner and that he does not follow any capper blindly.",
-      "source": 7
-    },
-    {
-      "type": "Forum post",
-      "tone": "Positive",
-      "date": "16 Feb 2015",
-      "text": "In the same thread another member called him a long term winner and argued that a tweet mattered less than a different Pregame capper being 350 units down in 2013. A third member said he is probably among the top three sellers on the site and gives some of the best free content in the forum.",
-      "source": 7
+      "date": "9 Nov 2026",
+      "source": 13,
+      "text": "A Pregame member thanked him for an NBA 3 unit play, saying he had bet far more than he should have, won a lot and got out of a big hole, and promised to use a unit system from now on. Essler replied that it was a good thing the member had not been around on Sunday. A second member answered that cappers lose more than they win, and a third told that member to show his own record. One winning bet is not evidence of a long term edge."
     },
     {
       "type": "Forum post",
       "tone": "Positive",
       "date": "7 Oct 2024",
-      "text": "On the Pregame forum, a member who said he rarely buys big plays thanked Nover and Essler for coming through for him that weekend. He gave no stakes or results beyond that.",
-      "source": 8
+      "source": 8,
+      "text": "On the Pregame forum, a member who said he rarely buys big plays thanked Nover and Essler for coming through for him that weekend. He gave no stakes or results beyond that."
     },
     {
       "type": "Forum post",
       "tone": "Neutral",
       "date": "19 Sep 2023",
-      "text": "In a TheRX thread for shared pick buying groups, a member offered access to Essler's NFL package and a Fezzik all access package to anyone interested. It shows people split his subscriptions, but says nothing about results.",
-      "source": 9
+      "source": 9,
+      "text": "In a TheRX thread for shared pick buying groups, a member offered access to Essler's NFL package and a Fezzik all access package to anyone interested. It shows people split his subscriptions, but says nothing about results."
+    },
+    {
+      "type": "Forum post",
+      "tone": "Mixed",
+      "date": "21 Sep 2018 to Jan 2019",
+      "source": 14,
+      "text": "A Pregame member kept a weekly tracker of the free college football picks made by four hosts of a Pregame podcast. Essler's picks finished 9 and 8 for the season, including the bowls, while the other three hosts finished 11-6, 10-6 and 13-5. The tracker covers one free pick a week, not his paid card."
+    },
+    {
+      "type": "Forum post",
+      "tone": "Positive",
+      "date": "16 Feb 2015",
+      "source": 7,
+      "text": "In the Pregame forum thread about his suspension, one member said Essler had recently put money in his pocket and gives solid information, while adding he was not sure Essler is a long term winner and that he does not follow any capper blindly."
+    },
+    {
+      "type": "Forum post",
+      "tone": "Positive",
+      "date": "16 Feb 2015",
+      "source": 7,
+      "text": "In the same thread another member called him a long term winner and argued that a tweet mattered less than a different Pregame capper being 350 units down in 2013. A third member said he is probably among the top three sellers on the site and gives some of the best free content in the forum."
+    },
+    {
+      "type": "Seller curated",
+      "tone": "Positive",
+      "date": "25 Nov 2021",
+      "source": 10,
+      "text": "A Pregame forum promotion offered his NFL 3 star max bet for $1 and advertised \"75% 3* Winners.\" It is marketing, not a buyer report, and gives no run length."
     },
     {
       "type": "Not found",
       "tone": "Neutral",
-      "date": "Checked 16 Nov 2026",
-      "text": "The Reddit archive we use (Arctic Shift) refused our searches for Essler on 16 Nov 2026 with a \"slow down\" timeout on every try, so this page has no Reddit posts. Older Sportsbook Review threads about his plays redirected to the forum home page and did not open. We found no Better Business Bureau, court or regulator record naming him in our searches.",
-      "source": null
+      "date": "Checked 20 Nov 2026",
+      "source": null,
+      "text": "The Reddit archive we use (Arctic Shift) timed out on every search for Essler on 16 and 20 Nov 2026, and our saved library of betting subreddit posts held no buyer report about him. Sportsbook Review threads under his name that turned up in search redirected to the forum home page and did not open, and a FreaksForum thread needed a login. We found no Better Business Bureau, court or regulator record naming him."
     }
   ],
   "conflicts": [
     "Pregame.com sells his packages, grades his record and runs the forum where most comments about him appear. Its forum also places new posters in moderation, per the FAQ. Comments there are not independent of the seller.",
     "In February 2015 a forum post speaking for Pregame announced that Dave Essler had been suspended for 10 days after bashing a Seton Hall player on Twitter, that he had deleted the tweet and apologized, and that the community had in net benefited from his participation. It was a conduct issue, not a complaint about picks.",
-    "The 2015 member comment that he is among the top sellers on Pregame is one person's guess, but it fits the size of his package list. A seller's popularity is not evidence that the picks win."
+    "Pregame itself has been criticized. A 2016 Deadspin investigation, which does not name Essler, said that picks sold by the Pregame pros it examined from 2011 to May 2016 lost money in total under Pregame's own grading, and that only 11 of 49 showed a profit. Pregame's founder sued over the article; the case settled in 2019, Deadspin said it stands by its reporting, and it linked a response from the founder disputing the method. This is background on the marketplace, not a finding about him.",
+    "He is also a regular on Pregame's free podcasts and videos, which promote the same packages. Muck Rack lists him in Las Vegas with appearances on Pregame.com and a betting podcast."
   ],
   "strengths": [
-    "Sold through a large, known marketplace with a published price for every package.",
-    "Pregame keeps a graded archive of his monitored picks and shows recent losses as well as wins on his page.",
+    "Sold through a large, known marketplace with a published price for every package, from a $25 single pick and an $89 weekend pass up.",
+    "Pregame grades his monitored picks and lets anyone switch the record to the current season, by sport, bet type and pick size, losses included.",
+    "His daily claims can be checked against the Last 10 Picks table, and the ones we checked matched.",
+    "The best all time figure Pregame shows for all his picks is positive, and his NBA and totals results are his strongest areas.",
     "His bio is unusually frank that few bettors make a living and that clients should keep expectations reasonable."
   ],
   "concerns": [
     "Every headline number is a streak or a best slice chosen for display.",
-    "No guarantee or refund terms found, and the Flex package rebills monthly until cancelled by email.",
+    "Pregame's Current Season table has his rated picks down $2,166, with baseball and the NFL losing, while the page advertises NFL streaks.",
+    "No guarantee or refund terms found, and the Flex package rebills at $195 a month until cancelled by email.",
     "Large list prices next to sale prices ($5,000 shown against $885) make discounts look bigger than any real price paid.",
-    "The default Win/Loss view we saw had his NFL picks at 7 and 11, down $1,330 weighted, while the page advertises NFL streaks.",
-    "Almost all buyer comment sits on the seller's own forum."
+    "The full pick archive is behind a captcha, and almost all buyer comment sits on the seller's own forum."
   ],
   "checklist": [
+    "Open his Win/Loss Record, switch it to Current Season and All Picks, and look at the sport you want before you pay.",
     "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
-    "Count units, not wins. A 60% record at heavy favorites can still lose money.",
-    "Read the guarantee for the words refund, credit and extension. Most \"guarantees\" in this business are credits.",
+    "Count stars and dollars, not wins. A 3 star loss costs more than a 1 star win pays.",
+    "If you take Flex Access, put a reminder in your calendar to cancel by email before it rebills.",
     "Write down each pick yourself the moment you receive it, with the line you can actually get.",
     "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
   ],
   "faq": [
     [
       "Is Dave Essler legit?",
-      "He is a real, long running seller on Pregame.com with published prices and a pick archive graded by Pregame. We could not verify that his picks win over time, and we found no court or regulator action involving him. Pregame suspended him for 10 days in 2015 over a tweet about a college player."
+      "He is a real, long running seller on Pregame.com with published prices and a pick record graded by Pregame. We could not verify that his picks win over time, and we found no court or regulator action involving him. Pregame suspended him for 10 days in 2015 over a tweet about a college player."
     ],
     [
       "How much does Dave Essler cost?",
-      "On 16 Nov 2026 his Pregame page sold 7 days of all access for $119.00, 30 days for $249.00, 90 days for $449.00 and one year for $1,995.00, with sport season packages from $449.00 to $885.00."
+      "On 20 Nov 2026 his Pregame page sold a single NBA pick for $25.00, a weekend pass for $89.00, 7 days of all access for $119.00, 30 days for $249.00, 90 days for $449.00, 6 months for $995.00 and one year for $1,995.00, with sport season packages from $175.00 to $885.00 and Flex Access at $195.00 a month."
     ],
     [
       "Does Dave Essler have a verified record?",
-      "Not by us. Pregame grades his monitored picks and keeps an archive, but the sales page shows selected streaks, and the archive asked us for a captcha. The default Win/Loss view we saw showed 45 wins and 33 losses."
+      "Not by us. Pregame grades his monitored picks. On 20 Nov 2026 its Current Season view showed rated picks at 243-217-10, down $2,166, while its best all time figure was plus $9,250 across all picks. The full archive asked us for a captcha."
+    ],
+    [
+      "Does Dave Essler offer a guarantee or refund?",
+      "We found none on his page, in the Pregame FAQ or in the terms. The only protection Pregame describes is opposite side insurance when two pros you bought pick opposite sides of the same game."
+    ],
+    [
+      "What do bettors say about Dave Essler?",
+      "Very little outside Pregame. Forum members have thanked him for single winning plays and called him a long term winner, one said he was not sure of that, and a 2018 member tracker had his free podcast college football picks at 9 and 8. We found no detailed complaint about billing or refunds."
     ],
     [
       "Is Dave Essler worth it?",
-      "You get every pick he releases in the period you buy, with written analysis, from a seller who is open about the limits of betting. What is unproven is whether his picks beat the roughly 52.4% needed at -110 over hundreds of plays, and we found no refund if they do not."
+      "You get every pick he releases in the period you buy, with written analysis, from a seller who is open about the limits of betting. What is unproven is whether his picks beat the roughly 52.4% needed at -110 over hundreds of plays; this season Pregame's own table has him slightly above that rate but down in dollars, and we found no refund if they lose."
     ]
   ],
   "related": [
     "pregame",
     "steve-fezzik",
     "wagertalk",
-    "teddy-covers"
+    "teddy-covers",
+    "covers-expert-picks"
   ],
   "sources": [
     {
       "title": "Pregame.com: Dave Essler pro page (packages, prices, streaks, daily message, last 10 picks, best W/L records)",
       "url": "https://pregame.com/pros/dave-essler",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Pregame.com: Dave Essler bio",
       "url": "https://pregame.com/pros/dave-essler/bio",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "Pregame.com: Dave Essler Win/Loss Record",
+      "title": "Pregame.com: Dave Essler Win/Loss Record (default view: last 30 days, rated picks)",
       "url": "https://pregame.com/pros/dave-essler/win-loss-record",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "Pregame.com: Dave Essler picks page (Every Pick Ever, monitored and unmonitored picks)",
+      "title": "Pregame.com: Dave Essler picks page (Every Pick Ever, monitored and unmonitored picks, captcha)",
       "url": "https://pregame.com/pros/dave-essler/picks",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "Pregame.com: Buy Sports Picks (One Month FB All-Access listing)",
+      "title": "Pregame.com: Buy Sports Picks (marketplace listing of his packages)",
       "url": "https://pregame.com/buy-picks",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Pregame.com Terms of Service",
       "url": "https://pregame.com/terms-of-service",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Pregame.com FAQ (purchased picks, opposite side insurance, discounts)",
       "url": "https://pregame.com/faq",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Pregame forum: A mistake by Dave Essler (15 Feb 2015, 105 replies)",
       "url": "https://pregame.com/thread/2307003?ContentTypeID=1",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Pregame forum: Nover!!! thread (post of 7 Oct 2024)",
       "url": "https://pregame.com/pregame-forums/f/everything-else/1852283/nover/3920638",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "TheRX: Master Buy Groups thread, page 179 (Sep 2023)",
       "url": "https://www.therx.com/threads/master-buy-groups-please-post-all-buy-groups-here-only.706794/page-179",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Pregame forum: Only $1 !! Uncle Dave's NFL 3* MAX BET (75%) (25 Nov 2021)",
       "url": "https://pregame.com/pregame-forums/f/nfl/1798606/only-1-uncle-dave-s-nfl-3-max-bet-75",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Pregame.com: Dave Essler Win/Loss Record, Current Season, rated picks",
+      "url": "https://pregame.com/pros/dave-essler/win-loss-record?time=Current+Season",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Pregame.com: Dave Essler Win/Loss Record, Current Season, all picks",
+      "url": "https://pregame.com/pros/dave-essler/win-loss-record?time=Current+Season&size=All+Picks",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Pregame forum NBA: Dave Essler (thread of 9 to 11 Nov 2026)",
+      "url": "https://pregame.com/pregame-forums/f/nba/1886470/dave-essler",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Pregame forum CFB: 2018 Dream Pod Pick Tracker (member tally of podcast picks, Sep 2018 to Jan 2019)",
+      "url": "https://pregame.com/pregame-forums/f/cfb/1724881/cfb---2018---dream-pod-pick-tracker/2959320",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Muck Rack: Dave Essler profile",
+      "url": "https://muckrack.com/dave-essler",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Apple Podcasts: Straight Outta Vegas AM (Pregame.com podcast network episode list)",
+      "url": "https://podcasts.apple.com/us/podcast/straight-outta-vegas-am/id1647719549",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Deadspin: How America's Favorite Sports Betting Expert Turned A Sucker's Game Into An Industry (23 Jun 2016, updated 2019)",
+      "url": "https://deadspin.com/how-america-s-favorite-sports-betting-expert-turned-a-s-1782438574/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Deadspin: RJ Bell's response to the article (16 Jan 2019)",
+      "url": "https://deadspin.com/rj-bell-s-response-to-this-article-i-write-here-to-resp-1831259156",
+      "accessed": "20 Nov 2026"
     }
   ],
   "pricing_source": 0
