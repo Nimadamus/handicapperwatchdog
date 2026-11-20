@@ -3,13 +3,13 @@
   "name": "VegasInsider expert picks",
   "legal_name": "Better Collective USA, Inc.",
   "kind": "Betting media site with a paid expert picks subscription (VegasInsider Premium, VIP)",
-  "checked": "7 Nov 2026",
-  "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-13",
+  "checked": "20 Nov 2026",
+  "checked_iso": "2026-11-20",
+  "updated_iso": "2026-11-20",
   "title": "VegasInsider Picks Review 2026: Pricing, Record, Worth It?",
-  "description": "VegasInsider Premium review, checked 7 Nov 2026: plan prices, the no refund policy, what the expert records show and leave out, and what users report.",
+  "description": "VegasInsider Premium review, checked 20 Nov 2026: plan prices, the no refund policy, what the self graded expert records show, and what users report.",
   "h1": "VegasInsider expert picks review",
-  "dek": "A long running odds site, owned by Better Collective since 2019, that sells one subscription to every pick from its roster of experts for $19.99 a month or $119.99 a year. VegasInsider grades its own experts and shows leaderboards, but we could not open a full pick log without paying, and the subscription has no refunds.",
+  "dek": "A long running odds site, founded in 1997 and owned by Better Collective since 2019, that sells one subscription to every pick from its roster of experts for $19.99 a month or $119.99 a year. VegasInsider grades its own experts and shows leaderboards, but we could not open a full pick log without paying, and the subscription has no refunds.",
   "status": {
     "label": "Not verified",
     "note": "Watchdog has not graded a full, time stamped record for any VegasInsider expert. This page reports what we could check and labels everything else."
@@ -21,11 +21,11 @@
     ],
     [
       "Claims to operate since",
-      "1997 (About page and Why Buy page)"
+      "1997 (About page and Why Buy page). Bought by Better Collective for $20 million in Jul 2019"
     ],
     [
       "Price range seen",
-      "$4.99 for 3 days, then $19.99 a month, or $119.99 a year"
+      "$4.99 for 3 days, then $19.99 a month, or $119.99 a year (unchanged since 7 Nov 2026)"
     ],
     [
       "Guarantee",
@@ -33,7 +33,11 @@
     ],
     [
       "Full public record",
-      "Not found without paying. Leaderboards graded by VegasInsider itself"
+      "Not found without paying. Leaderboards graded by VegasInsider itself, top four names only"
+    ],
+    [
+      "iPhone app rating",
+      "4.7 out of 5 from 2.4K ratings (whole app, not just picks)"
     ],
     [
       "Watchdog graded record",
@@ -41,21 +45,21 @@
     ]
   ],
   "short_answer": [
-    "VegasInsider is a real, well known betting media site. Its terms name Better Collective USA, Inc. as the operator, its prices are posted, and its experts are named. In that sense the Premium subscription is legitimate.",
-    "Whether the picks make money is a separate question. VegasInsider grades its own experts at $100 per pick and posts leaderboards, such as Mark Franco at 578-456 (56%) this year. Those are graded by the seller, not by a third party, and the full pick by pick log was not open to us without a subscription. The free picks pages show records like \"1-0 NFL Last 3 Days\", which tell you almost nothing.",
-    "Treat VegasInsider Premium as a cheap bundle of opinions from a seller that also earns from sportsbook signups. If you try it, start with the shortest plan, record every pick with the line and the time you saw it, and remember the plan renews automatically and is not refundable."
+    "VegasInsider is a real, well known betting media site. Its terms name Better Collective USA, Inc. as the operator, its prices are posted, and its experts are named people with long public careers. In that sense the Premium subscription is legitimate.",
+    "Whether the picks make money is a separate question. VegasInsider grades its own experts at $100 per pick and posts leaderboards. On 20 Nov 2026 Mark Franco was 611-485 (56%) and +$6,465 this year, and Stephen Nover was 754-677 (53%) and +$3,507. Those are full counts, which is better than most sellers offer, but they are graded by the seller, only the top four names show, and the pick by pick log was not open to us without a subscription. VegasInsider's own guide to handicappers tells bettors to look for records from independent platforms and audited results, which its own boards are not.",
+    "Treat VegasInsider Premium as a cheap bundle of opinions from a seller that earns most of its money from sportsbook signups. If you try it, start with the $4.99 pass, cancel before it rolls into $19.99 a month if you do not want it, record every pick with the line and the time you saw it, and remember the plans are not refundable."
   ],
-  "pricing_intro": "Prices below were shown on the VegasInsider Premium page on 7 Nov 2026. The Why Buy Our Picks page on the same day still listed older prices of $19.95 a month or $119.95 a year, and the iPhone app lists different in app purchase prices, so check the amount at checkout.",
+  "pricing_intro": "Prices below were shown on the VegasInsider Premium page on 20 Nov 2026, the same as on 7 Nov 2026. The Why Buy Our Picks page on the same day still listed older prices of $19.95 a month or $119.95 a year, and the iPhone app lists different in app purchase prices, so check the amount at checkout. The per day figures are our own arithmetic.",
   "pricing": [
     [
       "Annual",
       "$119.99 billed annually (shown as $10 a month, \"Save 50%\")",
-      "No refund on annual plans. No performance guarantee"
+      "About 33 cents a day. No refund on annual plans. Renews automatically. No performance guarantee"
     ],
     [
       "Monthly",
       "$19.99 a month, billed monthly",
-      "No refund on monthly plans. No performance guarantee"
+      "About 67 cents a day. No refund on monthly plans. Renews automatically"
     ],
     [
       "3 Day Pass",
@@ -64,73 +68,81 @@
     ],
     [
       "iPhone app in app purchases",
-      "Expert Picks $6.99 · VI Premium $9.99 · Vegas Insider Premium $19.99 · VI Premium $99.99",
-      "Terms not shown on the App Store listing"
+      "Expert Picks $6.99; VI Premium $9.99; Vegas Insider Premium $19.99; VI Premium $99.99",
+      "Terms not shown on the App Store listing. Seller listed as Rical LLC"
     ]
   ],
   "pricing_source": 0,
   "guarantee": [
-    "There is no guarantee. The refund policy says there is \"a no refund policy on Vegas Insider Premium monthly or annual subscriptions\" and that \"refunds will not be provided due to poor predictive performance.\" The only refunds it describes are for unauthorized or fraudulent card charges, reviewed case by case. It does end by saying customers who feel entitled to a refund can contact the company.",
-    "Plans renew on their own. The Why Buy page says \"all subscriptions will be automatically billed at the end of your product, either monthly or annually,\" and the 3 Day Pass says it continues at $19.99 per month. A buyer who only wants a short trial needs to cancel before the pass ends. Losses on the bets themselves are never covered."
+    "There is no guarantee. The refund policy says \"There is a no refund policy on Vegas Insider Premium monthly or annual subscriptions\" and \"refunds will not be provided due to poor predictive performance.\" The only refunds it describes are for unauthorized or fraudulent card charges, reviewed case by case. It does end by saying that customers who feel entitled to a refund for whatever reason can reach out and the company will work with them.",
+    "Plans renew on their own. The Why Buy page says \"all subscriptions will be automatically billed at the end of your product, either monthly or annually,\" and the 3 Day Pass says it continues at $19.99 per month. A buyer who only wants a short trial needs to cancel before the pass ends. The Delivery Policy says access starts at once from the Expert Picks or My Products page after signing in. Losses on the bets themselves are never covered."
   ],
   "claims": [
     {
-      "claim": "\"Vegas Insider offers the best stable of professional handicappers in the industry.\"",
-      "where": "Why Buy Our Picks page",
-      "status": "Seller claim"
+      "claim": "Current year leaders, all sports: Prop Model $7528, Mark Franco $6465, Stephen Nover $3507, Bet Labs $2446; Mark Franco 611-485 (56%), Stephen Nover 754-677 (53%)",
+      "where": "Expert Records leaderboard, 20 Nov 2026",
+      "status": "Graded by the seller. Our arithmetic: Franco about $5.90 profit per $100 pick, Nover about $2.45, just above the 52.4% break even at -110"
     },
     {
-      "claim": "\"providing solid results. But we don't just say it, we prove it.\"",
-      "where": "Why Buy Our Picks page",
-      "status": "Seller claim, results graded by the seller"
+      "claim": "Same leaderboard on 7 Nov 2026: Mark Franco 578-456 and $6480; Stephen Nover 701-629 and $3294; Bet Labs 62-34 and $2446",
+      "where": "Expert Records leaderboard, read 13 days apart",
+      "status": "Checked by difference: in 13 days Franco went 33-29 and lost $15, Nover went 53-48 and won $213, and Bet Labs logged no new picks yet still ranks in the top four"
     },
     {
       "claim": "\"To be a successful handicapper you need to be right just 55% of the time.\"",
       "where": "NFL free picks page",
-      "status": "Seller claim"
+      "status": "Checked: at -110, 55% returns about 5% on money risked. Of the four leaders by percentage, only Bet Labs (96 picks) and Mark Franco clear 55%"
     },
     {
-      "claim": "Current year leaders, all sports: Prop Model $7073, Mark Franco $6480, Stephen Nover $3294, Bet Labs $2446; Bet Labs 62-34 (65%), Mark Franco 578-456 (56%)",
-      "where": "Expert Records leaderboard",
-      "status": "Graded by the seller, no full log seen"
-    },
-    {
-      "claim": "Mark Franco \"2023 NHL Finals: 6-0 Record\" and \"2021-2022 NBA Profits Leader: $3207\"",
+      "claim": "Mark Franco finished fifth in the 2003 Hilton SuperContest at \"76-57 record for a 57 percent clip, netting \"dime players\" with $13,500 of profit\"",
       "where": "Mark Franco profile",
-      "status": "Selected highlights"
+      "status": "Arithmetic checked: 76-57 is 57.1%, and $1,000 bets at -110 would net about $13,300. The contest standings themselves we could not find online"
+    },
+    {
+      "claim": "\"I don't bet a lot of money and getting access to over 100 daily picks and betting strategies for less than a $1 a day is unheard of.\"",
+      "where": "Premium page testimonial",
+      "status": "Price arithmetic checked: about 33 cents a day on the annual plan and 67 cents a day monthly. The 100 picks a day figure we could not count"
     },
     {
       "claim": "Stephen Nover \"Finished above .500 in 24 of 27 years\" in the NFL",
       "where": "Stephen Nover profile",
-      "status": "Seller claim, not checkable"
+      "status": "Seller claim, not checkable; the profile says it covers results \"heading into 2021\""
     },
     {
-      "claim": "Testimonial: experts \"who have documented winning records\"",
-      "where": "Premium page, \"Pat, New York\"",
-      "status": "Seller curated"
+      "claim": "\"Vegas Insider offers the best stable of professional handicappers in the industry.\" \"But we don't just say it, we prove it.\"",
+      "where": "Why Buy Our Picks page",
+      "status": "Seller claim, results graded by the seller"
+    },
+    {
+      "claim": "Bettors should \"look for verified records from independent platforms\" and \"The best handicappers provide audited results\"",
+      "where": "VegasInsider guide to the best handicappers, Nov 2026",
+      "status": "VegasInsider's own advice; its expert records are not independent or audited"
     }
   ],
   "claims_note": [
-    "VegasInsider does more than most pick sellers here. The Why Buy page says it grades every expert at one unit ($100) per pick, does not let experts inflate records with multi unit plays, shows the pick, the publish time and the odds, and requires picks to post at least one hour before the game. Those are good rules. But the grading is done by the company that sells the picks, and the full logs were not open to us without paying.",
-    "The leaderboard shows only the top four names per board. A buyer sees the leaders, not the experts who are losing. The profile highlights are titles picked from past seasons, and Stephen Nover's profile says it covers results \"heading into 2021\", so it is several years old. The free picks pages show records over the last 3 or 7 days, such as 1-0 or 2-0, which are too short to mean anything."
+    "How we checked: we read the all sports, current year leaderboard on 7 Nov 2026 and again on 20 Nov 2026, and worked out what changed in between. Profit is VegasInsider's own figure at $100 per pick. Mark Franco's 611 wins and 485 losses would earn about $7,750 if every pick were a standard -110 bet; the board shows $6,465, which suggests his average price was worse than -110 or that some losses were at bigger prices. Either way he is profitable by the board's count, at roughly 5% to 6% of money risked.",
+    "Stephen Nover's 754-677 is 52.7%. At -110 a bettor needs 52.4% to break even, so the board's +$3,507 over 1,431 picks works out to about $2.45 per $100 pick. That is a thin edge that the price a buyer actually gets could erase.",
+    "VegasInsider does more than most pick sellers here. The Why Buy page says it grades every expert at one unit ($100) per pick, does not allow experts \"to pad their records with multiple unit wagers,\" shows the pick, the publish time and the odds, and requires picks to post at least one hour before the game. Those are good rules. But the grading is done by the company that sells the picks, and the full logs were not open to us without paying.",
+    "The leaderboard shows only the top four names per board. A buyer sees the leaders, not the experts who are losing. Bet Labs sits on the percentage board with 96 picks and no change in 13 days. The profile highlights are titles picked from past seasons, and Stephen Nover's profile covers results only \"heading into 2021\". The free picks pages show records over the last 3 or 7 days, such as 3-0 in the last 7 days, which are too short to mean anything."
   ],
   "record": [
-    "What is independently verifiable: nothing we could find. No third party grades the VegasInsider experts, and we found no contest results or regulator records for them. One profile claim points to an outside contest: Mark Franco's bio says he finished fifth in the 2003 Hilton SuperContest at 76-57. We did not check that against the contest's own records.",
-    "What is the seller's own record keeping: the Expert Records leaderboards, graded by VegasInsider at $100 per pick. On 7 Nov 2026 the all sports current year board showed Mark Franco at 578-456 (56%) and Stephen Nover at 701-629 (53%). These are full counts, not streaks, which is better than most sellers offer, but we could not open the pick by pick log behind them, so we could not check the prices, the post times or the losing experts left off the board.",
-    "What is marketing: the short records shown next to free picks, the season titles on each profile, and the testimonials on the Premium page."
+    "What is independently verifiable: very little. No third party grades the VegasInsider experts, and we found no regulator records for them. One profile claim points to an outside contest: Mark Franco's bio says he finished fifth in the 2003 Hilton SuperContest at 76-57. We could not find the contest's own standings online to check it.",
+    "What is the seller's own record keeping: the Expert Records leaderboards, graded by VegasInsider at $100 per pick. On 20 Nov 2026 the all sports current year board showed Prop Model 612-488 (56%, +$7,528), Mark Franco 611-485 (56%, +$6,465), Stephen Nover 754-677 (53%, +$3,507) and Bet Labs 62-34 (65%, +$2,446). These are full counts, not streaks, which is better than most sellers offer, but we could not open the pick by pick log behind them, so we could not check the prices, the post times or the experts left off the board.",
+    "Company background: VegasInsider says it has run since 1997. Better Collective, a sports betting affiliate company (Better Collective A/S), bought VegasInsider and ScoresandOdds in Jul 2019 for $20 million in cash, and said at the time it would move the sites from a subscription based tips model to an affiliate (referral) model. The site today carries promo code pages for dozens of sportsbooks, casinos, sweepstakes casinos and prediction markets beside the picks.",
+    "What is marketing: the short records shown next to free picks, the season titles on each profile, and the three testimonials on the Premium page."
   ],
   "our_data": {
     "matched": false,
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no VegasInsider expert is matched to a Watchdog graded record, so we make no claim about how these experts perform.",
-    "context": "For scale: VegasInsider says a handicapper needs to be right 55% of the time. On the Watchdog board on 7 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "context": "For scale: VegasInsider says a handicapper needs to be right 55% of the time, and its leading experts this year sit between 53% and 56%. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "Independent customer evidence on VegasInsider Premium is thin. The largest sample is the iPhone app rating, which covers the whole app, not just the picks. We found no Reddit thread or forum discussion of the Premium picks. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent customer evidence on VegasInsider Premium is thin. The largest sample is the iPhone app rating, which covers the whole app, not just the picks. Forum bettors talk about VegasInsider mostly as an odds and data site. We found no Reddit thread or forum post from a paying Premium buyer describing the picks. Below is everything we found and how much weight it can carry.",
   "customers": [
     {
       "type": "Our summary",
-      "tone": "Neutral",
-      "date": "Read 13 Nov 2026",
-      "text": "Forum bettors talk about VegasInsider as an odds and data site, not as a picks seller. In 2022, Sportsbook Review and Covers members complained that a redesign made the odds pages harder to use and more crowded with ads, and one claimed, without evidence, that its betting percentage data had been shaped by sponsor sportsbooks. We found no buyer describing the paid Premium picks.",
+      "tone": "Mixed",
+      "date": "Read 20 Nov 2026",
+      "text": "Across the App Store, two betting forums and a long running TheRX thread, users talk about VegasInsider as an odds, trends and consensus site far more than as a picks seller. The App Store rating is high (4.7 from 2.4K ratings), and the visible reviews from 2022 to 2026 split between longtime users who call it their go to source and users unhappy with a redesign, with consensus data moving behind a paywall, and with one touch in app sign ups that one reviewer said cost him $40. In 2022 Sportsbook Review and Covers members complained that a redesign made the odds pages harder to use and more crowded with ads, and one claimed, without evidence, that its betting percentage data had been shaped by sponsor sportsbooks. Older posts on TheRX from 2014 show members passing around a VegasInsider weekly tip sheet. We found no buyer describing results from the paid Premium picks, positive or negative, and BBB had no listing.",
       "source": null
     },
     {
@@ -150,9 +162,37 @@
     {
       "type": "Customer report",
       "tone": "Negative",
+      "date": "21 Dec 2024",
+      "text": "An App Store reviewer said the new version was much worse: trends could only be seen game by game, and once a game started the app showed nothing but closing lines, which made it useless to him for live betting.",
+      "source": 16
+    },
+    {
+      "type": "Customer report",
+      "tone": "Negative",
       "date": "1 Sep 2023",
       "text": "Another App Store reviewer said the app used to be his go to source for consensus data and complained that consensus numbers now sit behind a paywall, though he accepted paying for picks.",
       "source": 11
+    },
+    {
+      "type": "Customer report",
+      "tone": "Positive",
+      "date": "Nov 2022 to Sep 2026 (several reviews)",
+      "text": "Other App Store reviewers were positive about the app as an information source: one called it the only site that covers everything a bettor needs and noted it is based in Fort Lauderdale, others called it accurate and up to date or their go to site for years, and one said they use its spreads and trends in a confidence pool. None mentions the paid picks or whether they win.",
+      "source": 16
+    },
+    {
+      "type": "Customer report",
+      "tone": "Mixed",
+      "date": "28 Oct 2022 and 8 Nov 2022",
+      "text": "Two App Store reviewers liked the tool but asked for changes: one wanted the betting and money percentages updated more often because they moved sharply before kickoff, and the other wanted the team numbers shown next to each team as before.",
+      "source": 16
+    },
+    {
+      "type": "Forum post",
+      "tone": "Neutral",
+      "date": "29 Oct 2014",
+      "text": "In a long running newsletters thread on TheRX, members shared and asked for issues of a VegasInsider weekly tip sheet alongside other paid newsletters. The posts pass the sheet around rather than judge its results, so they show reach, not performance.",
+      "source": 17
     },
     {
       "type": "Seller curated",
@@ -164,34 +204,40 @@
     {
       "type": "Not found",
       "tone": "Neutral",
-      "date": "Checked 7 Nov 2026",
-      "text": "We found no Reddit thread, BBB profile we could confirm, or TheRX, Covers or SBR forum discussion about VegasInsider Premium picks.",
-      "source": null
+      "date": "Checked 20 Nov 2026",
+      "text": "BBB returned no results for VegasInsider. Trustpilot refused our request, and we found no Reddit thread in the main betting subreddits, and no TheRX, Covers or SBR discussion, about results from the paid Premium picks.",
+      "source": 21
     }
   ],
   "conflicts": [
-    "VegasInsider earns from the betting companies it promotes. Its affiliate disclosure says \"we may collect a share of sales or other compensation from the company links provided on this Website.\" A 2019 Gambling Insider report on the purchase by Better Collective said the new owner would change the site's model from subscription and advertising \"to affiliate marketing and lead generation.\"",
-    "The picks sit beside those offers. The NFL free picks page links to a BetMGM bonus code page, which on 7 Nov 2026 promoted code VIBONUS. The site menus carry promo code pages for sportsbooks, prediction markets, casinos and sweepstakes casinos. Each page footer says the site contains commercial content and links the disclosure.",
+    "VegasInsider earns from the betting companies it promotes. Its affiliate disclosure says \"we may collect a share of sales or other compensation from the company links provided on this Website.\" Reports on the 2019 purchase by Better Collective, in Gambling Insider and SBC News, said the new owner would change the site's model from subscriptions and betting tips to affiliate marketing and lead generation.",
+    "The picks sit beside those offers. The NFL free picks page links to a BetMGM bonus code page, which on 20 Nov 2026 still promoted code VIBONUS. The site menus carry promo code pages for sportsbooks, prediction markets, casinos and sweepstakes casinos. Each page footer says the site contains commercial content and links the disclosure.",
+    "VegasInsider's own guide to the best handicappers lists its own experts first and tells readers to prefer independent, audited records. The guide is written by the same company that sells the picks.",
     "The iPhone app lists RotoGrinders as developer and Rical LLC as seller, not VegasInsider."
   ],
   "strengths": [
-    "A named corporate operator, posted prices and published refund and terms pages.",
+    "A named corporate operator owned by Better Collective, with posted prices and published refund, delivery and terms pages.",
     "Clear grading rules on paper: one unit ($100) per pick, no multi unit padding, picks posted at least an hour before the game, per the Why Buy page.",
-    "Leaderboards show full won and lost counts for the leaders, not just hot streaks.",
-    "Low price for access to every expert, with a $4.99 short pass to try it."
+    "Leaderboards show full won and lost counts for the leaders, not just hot streaks, and the leaders were profitable by the board's count in 2026.",
+    "Low price for access to every expert: about 33 cents a day on the annual plan, with a $4.99 short pass to try it.",
+    "Named experts with long public careers, such as Mark Franco and Stephen Nover, rather than anonymous handles."
   ],
   "concerns": [
     "No refunds on monthly or annual plans, and plans renew automatically. The $4.99 pass rolls into $19.99 a month.",
-    "Records are graded by the seller. The pick by pick log was not open to us without paying, and the boards show only the top names.",
+    "Records are graded by the seller. The pick by pick log was not open to us without paying, and the boards show only the top four names.",
+    "The leading experts' edges are thin: Stephen Nover's 53% is barely above break even at -110.",
     "The site earns from sportsbook signups and promo codes placed next to its picks.",
-    "Prices differ between the Premium page, the Why Buy page and the iPhone app."
+    "Prices differ between the Premium page, the Why Buy page and the iPhone app, and one App Store reviewer described accidental one touch sign ups.",
+    "No independent buyer account of the paid picks' results, positive or negative."
   ],
   "checklist": [
-    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
-    "Count units, not wins. A 60% record at heavy favorites can still lose money.",
-    "Read the guarantee for the words refund, credit and extension. Most \"guarantees\" in this business are credits.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Start with the $4.99 3 Day Pass and set a reminder to cancel before it rolls into $19.99 a month.",
+    "Pick one or two experts and open their full pick history once you are inside. Count units at the prices you could actually get, not the leaderboard's figure.",
+    "Look past the top four on the leaderboard: ask how many experts on the roster lost money this year.",
+    "Write down each pick yourself the moment you receive it, with the line and the time.",
+    "Ignore 3 day and 7 day records on the free picks pages. They are too short to mean anything.",
+    "Keep the picks and the sportsbook offers apart in your mind: the site is paid when you sign up with a book.",
+    "Give any expert a few hundred picks before you call them a winner. Short runs swing hard both ways."
   ],
   "faq": [
     [
@@ -200,11 +246,19 @@
     ],
     [
       "How much does VegasInsider Premium cost?",
-      "On 7 Nov 2026 the Premium page listed $19.99 a month, $119.99 a year, or a 3 Day Pass for $4.99 that then bills $19.99 per month. The refund policy says monthly and annual plans are not refundable."
+      "On 20 Nov 2026 the Premium page listed $19.99 a month, $119.99 a year, or a 3 Day Pass for $4.99 that then bills $19.99 per month. The refund policy says monthly and annual plans are not refundable, and plans renew automatically."
     ],
     [
       "Do VegasInsider experts have a verified record?",
-      "Not independently. VegasInsider grades its own experts at $100 per pick and posts leaderboards, such as Mark Franco at 578-456 (56%) this year, but no third party checks them and we could not open the pick by pick log without paying."
+      "Not independently. VegasInsider grades its own experts at $100 per pick and posts leaderboards, such as Mark Franco at 611-485 (56%) and Stephen Nover at 754-677 (53%) this year, but no third party checks them and we could not open the pick by pick log without paying."
+    ],
+    [
+      "Can I get a refund from VegasInsider?",
+      "The policy says no refunds on monthly or annual plans and none for poor predictive performance. It describes refunds only for unauthorized or fraudulent charges, though it says customers who feel entitled to one can contact the company."
+    ],
+    [
+      "Who owns VegasInsider?",
+      "Better Collective, a sports betting affiliate company, through Better Collective USA, Inc. It bought VegasInsider and ScoresandOdds in Jul 2019 for $20 million. The site also earns from sportsbook signups."
     ],
     [
       "Is VegasInsider Premium worth it?",
@@ -222,62 +276,62 @@
     {
       "title": "VegasInsider Premium page (plans, prices, testimonials)",
       "url": "https://www.vegasinsider.com/premium/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "VegasInsider NFL free picks page (short records, 55% claim, BetMGM link)",
       "url": "https://www.vegasinsider.com/nfl/picks/free-pick/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "VegasInsider Why Buy Our Picks (grading rules, auto billing, older prices)",
       "url": "https://www.vegasinsider.com/picks/why-buy-our-picks/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "VegasInsider Refund Policy",
       "url": "https://www.vegasinsider.com/refund-policy/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "VegasInsider Expert Records leaderboards",
       "url": "https://www.vegasinsider.com/picks/expert-records/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "VegasInsider expert profile: Mark Franco",
       "url": "https://www.vegasinsider.com/handicappers/mark-franco/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "VegasInsider expert profile: Stephen Nover",
       "url": "https://www.vegasinsider.com/handicappers/stephen-nover/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "VegasInsider About page (since 1997, Better Collective)",
       "url": "https://www.vegasinsider.com/about/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "VegasInsider Affiliate Marketing Disclosure",
       "url": "https://www.vegasinsider.com/affiliate-marketing-disclosure/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "VegasInsider BetMGM bonus code page",
       "url": "https://www.vegasinsider.com/sportsbooks/betmgm/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "VegasInsider Terms of Use (operator and address)",
       "url": "https://www.vegasinsider.com/terms-of-use/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "Apple App Store: VegasInsider Betting Tips",
+      "title": "Apple App Store: VegasInsider Betting Tips (rating, in app purchase prices, seller)",
       "url": "https://apps.apple.com/us/app/vegasinsider-betting-tips/id1629510597",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Trustpilot: vegasinsider.com reviews",
@@ -287,17 +341,47 @@
     {
       "title": "Gambling Insider: Better Collective acquires two US sites for $20m (23 Jul 2019)",
       "url": "https://www.gamblinginsider.com/news/7583/better-collective-acquires-two-us-sites-for-20m",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Sportsbook Review forum: Anybody else use Vegas Insider?, 2022",
       "url": "https://www.sportsbookreview.com/forum/players-talk/1982954-anybody-else-use-vegas-insider",
-      "accessed": "13 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Covers forum: Vegas insider, Feb 2022",
       "url": "https://www.covers.com/forum/college-basketball-40/vegas-insider-103616588",
       "accessed": "13 Nov 2026"
+    },
+    {
+      "title": "Apple App Store: VegasInsider Betting Tips, ratings and reviews page",
+      "url": "https://apps.apple.com/us/app/vegasinsider-betting-tips/id1629510597?see-all=reviews",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "TheRX forum: Newsletters thread, page 22 (VegasInsider Weekly Tip sheet shared, Oct 2014)",
+      "url": "https://www.therx.com/threads/newsletters.971451/page-22",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "SBC News: Better Collective strengthens US grip acquiring VegasInsider and ScoresandOdds (23 Jul 2019)",
+      "url": "https://sbcnews.co.uk/affiliatenews/2019/07/23/better-collective-strengthens-us-grip-acquiring-vegasinsider-scoresandodds/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "VegasInsider: Best Handicappers for November 2026 (advice to seek independent, audited records)",
+      "url": "https://www.vegasinsider.com/sportsbooks/best-handicappers/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "VegasInsider Delivery Policy (how Premium access is delivered)",
+      "url": "https://www.vegasinsider.com/delivery-policy/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "BBB search: vegasinsider (no results)",
+      "url": "https://www.bbb.org/search?find_text=vegasinsider",
+      "accessed": "20 Nov 2026"
     }
   ]
 }

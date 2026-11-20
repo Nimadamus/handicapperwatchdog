@@ -3,125 +3,361 @@
   "name": "Dynamic Sports Plays",
   "legal_name": "Not stated. Terms refer only to \"Dynamic Sports Plays (DSP)\"",
   "kind": "Pick service selling all access passes on its own website, marketed on Instagram and TikTok",
-  "checked": "7 Nov 2026",
-  "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-07",
+  "checked": "20 Nov 2026",
+  "checked_iso": "2026-11-20",
+  "updated_iso": "2026-11-20",
   "title": "Dynamic Sports Plays Review 2026: Pricing, Record, Worth It?",
-  "description": "Dynamic Sports Plays review, checked 7 Nov 2026: passes from $100 a day to $4,999 a year, a 64% win rate claim with no log, no refunds, and 7 buyer reviews.",
+  "description": "Dynamic Sports Plays review, checked 20 Nov 2026: passes from $100 a day to $4,999 a year, a 64% win rate claim with no log, no refunds, and 7 buyer reviews.",
   "h1": "Dynamic Sports Plays review",
-  "dek": "A pick service that says it has served 125,000 members since 2013 and wins 64% of its picks. It sells passes from $100 a day to $4,999 a year, all final sale. We found no public record of its picks, and its CapperTek listing shows no documented record at all.",
+  "dek": "A pick service that says it has served 125,000 members since 2013 and wins 64% of its picks. It sells passes from $100 a day to $4,999 a year, plus processing fees, all final sale. We found no public record of its picks, and its CapperTek listing still showed no documented record on 20 Nov 2026.",
   "status": {
     "label": "Not verified",
     "note": "Watchdog has not graded a record for Dynamic Sports Plays, and we found no full, time stamped log of its picks anywhere. This page reports what we could check and labels everything else."
   },
   "glance": [
-    ["Operator", "Not named. No owner, company or address on the site; email and a contact form only"],
-    ["Claims to operate since", "2013 (homepage and FAQ). Domain registered Apr 2016"],
-    ["Price range seen", "$100 a day to $4,999 a year, plus processing fees"],
-    ["Guarantee", "None. All purchases final and non refundable (FAQ and terms)"],
-    ["Full public record", "Not found. CapperTek listing has no documented record"],
-    ["Watchdog graded record", "None yet"]
+    [
+      "Operator",
+      "Not named. No owner, company or address on the site; info@ email and a contact form only"
+    ],
+    [
+      "Claims to operate since",
+      "2013 (homepage, FAQ and page description). Domain registered 22 Apr 2016; earliest saved copy Aug 2018"
+    ],
+    [
+      "Price range seen",
+      "$100 a day to $4,999 a year, plus $4 to $212.50 processing fees (unchanged since 7 Nov 2026)"
+    ],
+    [
+      "Guarantee",
+      "None. All purchases final and non refundable (FAQ, footer and terms)"
+    ],
+    [
+      "Full public record",
+      "Not found. CapperTek listing has no documented record and no picks"
+    ],
+    [
+      "Social reach seen",
+      "TikTok: 472 followers, 2,599 likes (20 Nov 2026)"
+    ],
+    [
+      "Watchdog graded record",
+      "None yet"
+    ]
   ],
   "short_answer": [
-    "Dynamic Sports Plays is a working website that sells pick passes, with social accounts that post winning tickets. It does not name an owner, a company or an address, and it gives only an email address and a contact form. That is very little to go on for a service charging up to $4,999.",
-    "Its record is entirely its own claim. The FAQ says it has kept \"a consistent win rate of 64%\" since 2013, and the homepage shows parlay tickets such as +7495. We found no pick log behind any of it. Its listing on CapperTek, a marketplace that tracks picks, said it \"does not have a documented record yet\" and had posted no picks.",
-    "Treat Dynamic Sports Plays as an expensive, unproven seller. The terms say every purchase is final, so a buyer who is unhappy after one day has no remedy."
+    "Dynamic Sports Plays is a working website that sells pick passes, with social accounts that post winning tickets. It does not name an owner, a company or an address, and it gives only an email address and a contact form. That is very little to go on for a service charging up to $4,999 a year.",
+    "Its record is entirely its own claim. The FAQ says it has kept \"a consistent win rate of 64%\" since 2013, the page description calls it \"the #1 Rated Sports Handicapping Service in the U.S\", and the homepage shows parlay tickets such as +7495. We found no pick log behind any of it. Its listing on CapperTek, a marketplace that tracks picks, said it \"does not have a documented record yet\" and had posted no picks.",
+    "Seven buyer reviews on CapperTek are all positive, but most come from people in their first days or weeks, and we found no independent buyer post anywhere else. Treat Dynamic Sports Plays as an expensive, unproven seller. The terms say every purchase is final, so a buyer who is unhappy after one day has no remedy."
   ],
-  "pricing_intro": "Prices below were shown on the Dynamic Sports Plays pricing page on 7 Nov 2026 (the Get Picks link opens it). Every plan adds a processing fee at checkout. The terms say all packages are one time, fixed term purchases that do not auto renew, although the page labels three plans \"Every week\", \"Every month\" and \"Every year\".",
+  "pricing_intro": "Prices below were shown on the Dynamic Sports Plays pricing page on 20 Nov 2026, the same as on 7 Nov 2026. The Get Picks link now opens it at /pricing-plans/get-picks. Every plan adds a processing fee at checkout. The terms say all packages are one time, fixed term purchases that do not auto renew, although the page labels three plans \"Every week\", \"Every month\" and \"Every year\". The day rates in the notes are our own arithmetic, fee included.",
   "pricing": [
-    ["Daily All Access Plan", "$100 plus $4 processing fee", "No refund. Plan text says \"Profit guaranteed\", but the footer and terms say no outcome or profit is guaranteed"],
-    ["3 Day All Access Plan", "$249 plus $10 processing fee", "No refund"],
-    ["7 Day All Access Plan", "$399 plus $20 processing fee", "No refund"],
-    ["30 Day All Access Plan", "$899 plus $40 processing fee", "No refund"],
-    ["All Access Yearly VIP Pass", "$4,999 plus $212.50 processing fee", "No refund. Listed plays exclude parlays, unlike the shorter plans"]
+    [
+      "Daily All Access Plan",
+      "$100 plus $4 processing fee",
+      "$104 for one day. Plan text says \"Profit guaranteed\", but the footer and terms say no outcome or profit is guaranteed. No refund"
+    ],
+    [
+      "3 Day All Access Plan",
+      "$249 plus $10 processing fee",
+      "About $86.33 a day with the fee. No refund"
+    ],
+    [
+      "7 Day All Access Plan",
+      "$399 plus $20 processing fee",
+      "About $59.86 a day with the fee. Labeled \"Every week\". No refund"
+    ],
+    [
+      "30 Day All Access Plan",
+      "$899 plus $40 processing fee",
+      "About $31.30 a day with the fee. Labeled \"Every month\". No refund"
+    ],
+    [
+      "All Access Yearly VIP Pass",
+      "$4,999 plus $212.50 processing fee",
+      "About $14.28 a day with the fee. Labeled \"Every year\". Listed plays exclude parlays, unlike the shorter plans. No refund"
+    ]
   ],
   "guarantee": [
-    "There is no guarantee, and the site says so in several places. The FAQ says all purchases are final with no refunds because picks are time sensitive digital products, and the terms say refunds are not provided once access is granted. The terms also say \"We do not guarantee outcomes or profits.\"",
-    "One line contradicts that: the Daily All Access Plan description ends with \"Profit guaranteed with the best in the business.\" A buyer should read that as sales copy. Nothing on the site explains what would happen if a day lost, and the refund rules leave no room for a payout. The terms also allow the seller to suspend an account for sharing picks without a refund."
+    "There is no guarantee, and the site says so in several places. The FAQ says \"All purchases are final and non-refundable, as picks are time-sensitive digital products.\" The terms say refunds \"are not provided once access is granted\" and \"We do not guarantee outcomes or profits.\" The footer on every page repeats that all purchases are final \"unless explicitly stated otherwise.\"",
+    "One line contradicts that: the Daily All Access Plan description ends with \"Profit guaranteed with the best in the business.\" A buyer should read that as sales copy. Nothing on the site explains what would happen if a day lost, and the refund rules leave no room for a payout. The terms also let the seller suspend an account for sharing picks, by screenshot, forwarding or group chat, with no refund for suspensions or terminations due to violations, and cap the seller's total liability at the amount paid in the previous 12 months."
   ],
   "claims": [
-    {"claim": "\"125,000+ Members Served Worldwide\", \"12+ Years\" and \"50+ Countries\"", "where": "Homepage", "status": "Seller claim, not checkable"},
-    {"claim": "\"Delivering a Winning Edge Since 2013\"; \"a globally respected sports consulting firm\"", "where": "Homepage", "status": "Seller claim"},
-    {"claim": "\"Since launching in 2013, we've maintained a consistent win rate of 64% across all sports.\"", "where": "FAQ", "status": "Seller claim, no log found"},
-    {"claim": "Results built on \"advanced analytics, proprietary algorithms\"", "where": "Homepage", "status": "Seller claim, no detail given"},
-    {"claim": "\"As Seen On\" with CBS, Fox, NBC News and Yahoo Finance logos", "where": "Homepage", "status": "Logos only. No article linked on the page"},
-    {"claim": "Winning tickets labeled \"+7495 Parlay\", \"+1247 Parlay\" and \"100K Winner\"", "where": "Homepage gallery", "status": "Selected wins, not a record"},
-    {"claim": "\"Profit guaranteed with the best in the business.\"", "where": "Daily All Access Plan, pricing page", "status": "Contradicted by the site's own terms"}
+    {
+      "claim": "\"Since launching in 2013, we've maintained a consistent win rate of 64% across all sports.\"",
+      "where": "FAQ",
+      "status": "Seller claim, no log found. Checked against the arithmetic: 64% at -110 would return about 22% on every dollar risked, far above what long run public records usually show"
+    },
+    {
+      "claim": "\"Delivering a Winning Edge Since 2013\" and \"12+ Years\"",
+      "where": "Homepage",
+      "status": "Checked against public records: the domain was registered on 22 Apr 2016 and the earliest saved copy of the site is from Aug 2018. An earlier start elsewhere is possible but not shown"
+    },
+    {
+      "claim": "\"the #1 Rated Sports Handicapping Service in the U.S, Serving Clients Worldwide!\"",
+      "where": "Page description in the homepage code",
+      "status": "Seller claim. We found no rating body, ranking or review site that gives it that rank"
+    },
+    {
+      "claim": "\"125,000+ Members Served Worldwide\" and \"50+ Countries\"",
+      "where": "Homepage",
+      "status": "Seller claim, not checkable. TikTok showed 472 followers on 20 Nov 2026, and we found 7 buyer reviews in total"
+    },
+    {
+      "claim": "\"As Seen On\" with CBS, Fox, NBC News and Yahoo Finance logos",
+      "where": "Homepage",
+      "status": "Logos only. No article linked, and our searches found no coverage"
+    },
+    {
+      "claim": "\"Profit guaranteed with the best in the business.\"",
+      "where": "Daily All Access Plan, pricing page",
+      "status": "Contradicted by the site's own terms and footer"
+    },
+    {
+      "claim": "\"Picks are posted at least one hour prior to game time.\"",
+      "where": "FAQ",
+      "status": "Seller promise. With no public pick log, we could not check it"
+    },
+    {
+      "claim": "Winning tickets labeled \"+7495 Parlay\", \"+1247 Parlay\" and \"100K Winner\"",
+      "where": "Homepage gallery",
+      "status": "Selected wins, not a record"
+    }
   ],
   "claims_note": [
-    "A 64% win rate across all sports for 13 years would be extraordinary, and the site offers nothing to check it against. Win rate alone also says little here, because the service rates plays from 5 to 25 units and sells parlays. A few large losing plays can outweigh many small winners, and a parlay ticket at +7495 is one winning slip, not a measure of skill.",
-    "The history is hard to pin down. The site says 2013, but the domain dynamicsportsplays.com was registered on 22 Apr 2016, according to the .com registry, and the earliest Wayback Machine capture we found is from Aug 2018. The business could have started elsewhere, such as on social media, but we found no record of that.",
-    "Small inconsistencies: the units page lists NFL, college football, NBA, college basketball and MLB, while the FAQ adds the NHL. The terms say users must be 18, while the site footer says 21. The media logos are not linked to any coverage."
+    "What 64% would mean: at the usual -110 price, a bettor who wins 64% of flat bets makes about 0.64 x 0.909 minus 0.36, or roughly 22 cents for every dollar risked. On a 5 unit play at $100 a unit that is about $110 profit per bet on average, every bet, for 13 years. Public, time stamped records kept by third parties rarely show anything close. The claim comes with no log, no sample size and no definition of how parlays are counted.",
+    "Win rate alone also says little here, because the service rates plays from 5 to 25 units and sells parlays. A few large losing plays can outweigh many small winners, and a parlay ticket at +7495 is one winning slip, not a measure of skill. The units page explains the scale with an example: a 5 unit play at -110 at $100 a unit means risking $550 to win $500.",
+    "The history is hard to pin down. The site says 2013, but the domain dynamicsportsplays.com was registered on 22 Apr 2016, according to the .com registry, and the earliest Wayback Machine capture is from Aug 2018. That 2018 copy was already a Wix site titled Dynamic Sports Plays with Units, FAQ, Blog and Subscriptions pages, so the business has been selling picks under this name for at least eight years. The domain was last changed on 23 Apr 2026 and is registered through GoDaddy, with the site hosted on Wix.",
+    "Small inconsistencies remain: the units page lists NFL, college football, NBA, college basketball and MLB, while the FAQ and page description add the NHL. The terms say users must be 18, while the site footer says 21. Plans labeled \"Every week\" and \"Every month\" sit beside terms that say nothing renews. The media logos are not linked to any coverage."
   ],
   "record": [
-    "Independently verifiable: nothing we could find. There is no full, time stamped log of every pick with the line, odds and stake on the site or on a third party tracker. Picks appear on a members only \"Your Picks\" page and by email, according to the FAQ. On 7 Nov 2026 the Dynamic Sports Plays listing on CapperTek showed no documented record, no picks and no packages for sale, even though customer reviews there quote unit totals.",
-    "Seller marketing: the 64% win rate, the membership and country counts, and the winning tickets on the homepage. Reviewers on CapperTek repeat unit totals such as +243.39 units in early 2025, but these appear to be the service's own reported numbers, not separate measurements, and none comes with a log.",
-    "We found no court or regulator action involving Dynamic Sports Plays in our searches. With no legal name or owner given, we could not search further."
+    "Independently verifiable: nothing we could find. There is no full, time stamped log of every pick with the line, odds and stake on the site or on a third party tracker. Picks appear on a members only \"Your Picks\" page and by email, according to the FAQ, which also points buyers to Instagram post notifications. On 20 Nov 2026 the Dynamic Sports Plays listing on CapperTek still showed \"does not have a documented record yet\", no picks, no bio and no packages for sale, even though customer reviews there quote unit totals.",
+    "Seller marketing: the 64% win rate, the number one rating, the membership and country counts, and the winning tickets on the homepage. Reviewers on CapperTek repeat unit totals such as +243.39 units in early 2025 and a 73% week, but these appear to be the service's own reported numbers or the buyer's own short runs, not separate measurements, and none comes with a log.",
+    "We found no court or regulator action involving Dynamic Sports Plays in our searches, and BBB had no listing under the name. With no legal name or owner given, we could not search further."
   ],
   "our_data": {
     "matched": false,
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition Dynamic Sports Plays is not matched to a Watchdog graded record, so we make no claim about how its picks perform.",
-    "context": "For scale: the FAQ claims a 64% win rate since 2013. On the Watchdog board on 7 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "context": "For scale: the FAQ claims a 64% win rate since 2013. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "The only buyer reviews we found are seven on CapperTek, all positive, from six usernames, posted between Nov 2023 and Apr 2025. Most reviewers had been with the service for days or weeks, and several quote unit totals that no record we could open supports. We found no reviews on BBB, SiteJabber (which now redirects to SmartCustomer), Reddit or the betting forums.",
+  "customers_intro": "The only buyer reviews we found are seven on CapperTek, all positive, from six usernames, posted between Nov 2023 and Apr 2025. Most reviewers had been with the service for days or weeks, and several quote unit totals that no record we could open supports. Outside CapperTek we found one Reddit question about the service, removed before anyone answered, and nothing on BBB, SmartCustomer or the betting forums.",
   "customers": [
-    {"type": "Customer report", "tone": "Positive", "date": "9 Nov 2023", "text": "A buyer said he joined in early October 2023, profited over 36 units in his first month and, betting $100 a unit, made over $3,600, so he signed up again. He gave no pick list.", "source": 6},
-    {"type": "Customer report", "tone": "Positive", "date": "19 Nov 2023", "text": "A buyer said he found the service on Instagram, tried two daily packages that went 2-1 and 3-1, then a 3 day package, and claimed an 11-3 run that doubled his bankroll in five days. He cited the service's claim of being in the game since 2013.", "source": 6},
-    {"type": "Customer report", "tone": "Positive", "date": "20 Dec 2023 and 1 Apr 2025", "text": "One username posted twice. About a week in, he described a 4 leg parlay at +1348 that cashed after the service told members to parlay all its picks; in 2025 he said he had used the service since Dec 2023 and quoted +79.87 units for March and +243.39 units for 2025 so far, praising the WHALE, MEGA MAX and MAX unit tiers.", "source": 6},
-    {"type": "Customer report", "tone": "Positive", "date": "5 Jan 2024", "text": "A reviewer starting his second month said he profited over 27 units the previous month and was up 42 units so far in January, and that \"The stats show it all.\" No stats were linked.", "source": 6},
-    {"type": "Customer report", "tone": "Positive", "date": "22 Mar 2024", "text": "A reviewer about a week in said he had seen a 73% win rate including parlays, with 1 to 4 picks a day, and that the service explained its unit system when he asked. One week is far too short to judge a handicapper.", "source": 6},
-    {"type": "Customer report", "tone": "Positive", "date": "27 Mar 2025", "text": "A reviewer just over a month in said he had doubled his bankroll, cited a 9-0 whale run and an 11-3 March Madness run, and praised fast replies to Instagram messages. He gave no log.", "source": 6},
-    {"type": "Not found", "tone": "Neutral", "date": "Checked 7 Nov 2026", "text": "BBB returned no results for the name, and SmartCustomer showed 0 reviews for dynamicsportsplays.com. Trustpilot refused our request, the Instagram profile showed \"Profile isn't available\" to a logged out visitor, and searches found no Reddit, TheRX, Covers or SBR thread. The TikTok account had 473 followers and 97 videos.", "source": 11}
+    {
+      "type": "Our summary",
+      "tone": "Positive",
+      "date": "Read 20 Nov 2026",
+      "text": "We found eight buyer side posts about Dynamic Sports Plays, and seven of them sit on CapperTek, a listing that has no tracked picks. All seven are positive and were posted between Nov 2023 and Apr 2025 by six usernames, one of whom posted twice. They repeat the same themes: big unit gains in a first week or month, doubled bankrolls, parlays that cashed, and quick replies to Instagram messages. At least one reviewer found the service on Instagram. None links a log, and most wrote within days or weeks of joining, which is too short to judge any handicapper. The eighth post is a Reddit question from Oct 2025 asking whether anyone had actually tried the service; it was removed and drew no replies. We found no complaints about billing or refunds, and no independent long term account, positive or negative, on BBB, SmartCustomer, Reddit, Covers, SBR or TheRX.",
+      "source": null
+    },
+    {
+      "type": "Customer report",
+      "tone": "Positive",
+      "date": "9 Nov 2023",
+      "text": "A buyer said he joined in early October 2023, profited over 36 units in his first month and, betting $100 a unit, made over $3,600, so he signed up again. He gave no pick list.",
+      "source": 6
+    },
+    {
+      "type": "Customer report",
+      "tone": "Positive",
+      "date": "19 Nov 2023",
+      "text": "A buyer said he found the service on Instagram, tried two daily packages that went 2-1 and 3-1, then a 3 day package, and claimed an 11-3 run that doubled his bankroll in five days. He cited the service's claim of being in the game since 2013.",
+      "source": 6
+    },
+    {
+      "type": "Customer report",
+      "tone": "Positive",
+      "date": "20 Dec 2023 and 1 Apr 2025",
+      "text": "One username posted twice. About a week in, he described a 4 leg parlay at +1348 that cashed after the service told members to parlay all its picks; in 2025 he said he had used the service since Dec 2023 and quoted +79.87 units for March and +243.39 units for 2025 so far, praising the WHALE, MEGA MAX and MAX unit tiers.",
+      "source": 6
+    },
+    {
+      "type": "Customer report",
+      "tone": "Positive",
+      "date": "5 Jan 2024",
+      "text": "A reviewer starting his second month said he profited over 27 units the previous month and was up 42 units so far in January, and that \"The stats show it all.\" No stats were linked.",
+      "source": 6
+    },
+    {
+      "type": "Customer report",
+      "tone": "Positive",
+      "date": "22 Mar 2024",
+      "text": "A reviewer about a week in said he had seen a 73% win rate including parlays, with 1 to 4 picks a day, and that the service explained its unit system when he asked. One week is far too short to judge a handicapper.",
+      "source": 6
+    },
+    {
+      "type": "Customer report",
+      "tone": "Positive",
+      "date": "27 Mar 2025",
+      "text": "A reviewer just over a month in said he had doubled his bankroll, cited a 9-0 whale run and an 11-3 March Madness run, and praised fast replies to Instagram messages. He gave no log.",
+      "source": 6
+    },
+    {
+      "type": "Forum post",
+      "tone": "Neutral",
+      "date": "24 Oct 2025",
+      "text": "A Reddit user in r/sportsbetting asked whether anyone had actually tried Dynamic Sports Plays. The post body was removed and the thread had no replies, so it tells us only that at least one bettor was looking for independent opinions and found none.",
+      "source": 17
+    },
+    {
+      "type": "Not found",
+      "tone": "Neutral",
+      "date": "Checked 20 Nov 2026",
+      "text": "BBB returned no results for the name, and SmartCustomer showed 0 reviews for dynamicsportsplays.com. Trustpilot refused our request on 7 Nov 2026, the Instagram profile did not show to a logged out visitor, and searches of Reddit archives found no other thread, with no TheRX, Covers or SBR discussion. The TikTok account had 472 followers and 2,599 likes.",
+      "source": 11
+    }
   ],
   "conflicts": [
     "We saw no sportsbook affiliate links or promo codes on the pages we opened.",
     "The service holds a CapperTek \"Verified Service\" listing. CapperTek's FAQ says verified means a verification banner and an open line of communication to resolve complaints, not a check of results, and this listing has no tracked picks. The positive reviews on it cannot be compared to any record.",
-    "The site markets heavily through winning tickets and social media, which show only the bets the seller chooses to show."
+    "The site markets heavily through winning tickets and social media, which show only the bets the seller chooses to show. The terms forbid buyers from sharing picks by screenshot or group chat, so outsiders cannot easily build a record either."
   ],
   "strengths": [
     "Prices and processing fees are shown before checkout, and the terms say packages do not auto renew.",
-    "The FAQ and units page explain how many picks to expect (1 to 4 a day) and how the 5 to 25 unit scale works.",
-    "Several reviewers say support answers quickly by Instagram message."
+    "The FAQ and units page explain how many picks to expect (1 to 4 a day), when they arrive (at least an hour before the game) and how the 5 to 25 unit scale works.",
+    "Several reviewers say support answers quickly by Instagram message, and the contact page promises a reply within 24 hours.",
+    "The business has run under the same name and domain since at least 2018, so it is not a pop up page.",
+    "We found no complaints about billing, refunds or unauthorized charges anywhere we looked."
   ],
   "concerns": [
-    "No pick log anywhere, and the CapperTek listing has no documented record, so the 64% win rate claim cannot be checked.",
-    "No named owner, company or address.",
-    "High prices, up to $899 a month and $4,999 a year, with every sale final.",
+    "No pick log anywhere, and the CapperTek listing has no documented record, so the 64% win rate and number one rating claims cannot be checked.",
+    "No named owner, company or address; only an email and a form.",
+    "High prices, up to $899 plus $40 a month and $4,999 plus $212.50 a year, with every sale final.",
     "A \"Profit guaranteed\" line on the daily plan that the site's own terms contradict.",
+    "A founding date of 2013 that public records cannot place earlier than 2016.",
     "Marketing leans on parlays and winning tickets, and stakes run as high as 25 units.",
     "All customer evidence is from one site, mostly from buyers in their first weeks."
   ],
   "checklist": [
-    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
-    "Count units, not wins. A 60% record at heavy favorites can still lose money.",
-    "Read the guarantee for the words refund, credit and extension. Most \"guarantees\" in this business are credits.",
+    "Before paying, email info@dynamicsportsplays.com and ask for every pick from the last 12 months with the line, the odds, the units and the time it was sent. A gallery of winning tickets is not a record.",
+    "Count units, not wins. With a 5 to 25 unit scale, one losing 25 unit play wipes out five winning 5 unit plays.",
+    "Read the refund terms first: every purchase is final, so a one day pass at $104 is the most you should risk to try it.",
     "Write down each pick yourself the moment you receive it, with the line you can actually get.",
+    "Ignore media logos that are not linked to an article you can open.",
     "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
   ],
   "faq": [
-    ["Is Dynamic Sports Plays legit?", "It is a working website that sells pick passes and has buyer reviews on CapperTek. It names no owner, company or address, and we could not verify its 64% win rate or its membership claims."],
-    ["How much does Dynamic Sports Plays cost?", "On 7 Nov 2026 it charged $100 for a day, $249 for 3 days, $399 for 7 days, $899 for 30 days and $4,999 for a year, each plus a processing fee from $4 to $212.50. All purchases are final with no refunds."],
-    ["Does Dynamic Sports Plays have a verified record?", "No. We found no full log of its picks, its CapperTek listing showed no documented record, and Watchdog has no graded record for it. The 64% figure comes only from its own FAQ."],
-    ["Is Dynamic Sports Plays worth it?", "For the money you get 1 to 4 picks a day across major U.S. sports, rated on a 5 to 25 unit scale, plus parlays on shorter plans. What is unproven is whether those picks win over time, since no record exists to check, and a buyer cannot get money back if they lose."]
+    [
+      "Is Dynamic Sports Plays legit?",
+      "It is a working website that sells pick passes and has been online under that name since at least 2018, with seven buyer reviews on CapperTek. It names no owner, company or address, and we could not verify its 64% win rate, its 2013 founding date or its membership claims."
+    ],
+    [
+      "How much does Dynamic Sports Plays cost?",
+      "On 20 Nov 2026 it charged $100 for a day, $249 for 3 days, $399 for 7 days, $899 for 30 days and $4,999 for a year, each plus a processing fee from $4 to $212.50. All purchases are final with no refunds."
+    ],
+    [
+      "Does Dynamic Sports Plays have a verified record?",
+      "No. We found no full log of its picks, its CapperTek listing showed no documented record, and Watchdog has no graded record for it. The 64% figure comes only from its own FAQ."
+    ],
+    [
+      "Does Dynamic Sports Plays offer refunds or a guarantee?",
+      "No. The FAQ, terms and footer all say purchases are final, and the terms say they do not guarantee outcomes or profits. The only promise of profit is one line of sales copy on the daily plan."
+    ],
+    [
+      "Who runs Dynamic Sports Plays?",
+      "The site does not say. The terms refer only to \"Dynamic Sports Plays (DSP)\", the public registry record names only the registrar, GoDaddy, and the only contact is info@dynamicsportsplays.com and a web form."
+    ],
+    [
+      "Is Dynamic Sports Plays worth it?",
+      "For the money you get 1 to 4 picks a day across major U.S. sports, rated on a 5 to 25 unit scale, plus parlays on shorter plans. What is unproven is whether those picks win over time, since no record exists to check, and a buyer cannot get money back if they lose."
+    ]
   ],
-  "related": ["dannys-vip-sports-picks", "the-jewish-sharp", "the-machines-picks", "cappertek", "dubclub"],
+  "related": [
+    "dannys-vip-sports-picks",
+    "the-jewish-sharp",
+    "the-machines-picks",
+    "cappertek",
+    "dubclub"
+  ],
   "sources": [
-    {"title": "Dynamic Sports Plays homepage (membership, history, media logos, tickets)", "url": "https://www.dynamicsportsplays.com/", "accessed": "7 Nov 2026"},
-    {"title": "Dynamic Sports Plays pricing page (plans, prices, processing fees)", "url": "https://www.dynamicsportsplays.com/pricing-plans/list", "accessed": "7 Nov 2026"},
-    {"title": "Dynamic Sports Plays FAQ (64% claim, picks per day, refunds)", "url": "https://www.dynamicsportsplays.com/faq", "accessed": "7 Nov 2026"},
-    {"title": "Dynamic Sports Plays units page (5 to 25 unit scale)", "url": "https://www.dynamicsportsplays.com/units", "accessed": "7 Nov 2026"},
-    {"title": "Dynamic Sports Plays terms and conditions (no refunds, no auto renewal, no profit guarantee)", "url": "https://www.dynamicsportsplays.com/terms-conditions", "accessed": "7 Nov 2026"},
-    {"title": "Dynamic Sports Plays contact page", "url": "https://www.dynamicsportsplays.com/contact", "accessed": "7 Nov 2026"},
-    {"title": "CapperTek: customer reviews for DynamicSportsPlays.com", "url": "https://www.cappertek.com/reviews.asp?shs=DynamicSportsPlays.com", "accessed": "7 Nov 2026"},
-    {"title": "CapperTek: DynamicSportsPlays.com profile (no documented record, no picks)", "url": "https://www.cappertek.com/picks.asp?shs=DynamicSportsPlays.com", "accessed": "7 Nov 2026"},
-    {"title": "CapperTek FAQ (what Verified means)", "url": "https://www.cappertek.com/faq.asp", "accessed": "7 Nov 2026"},
-    {"title": ".com registry RDAP record for dynamicsportsplays.com (registration date)", "url": "https://rdap.verisign.com/com/v1/domain/dynamicsportsplays.com", "accessed": "7 Nov 2026"},
-    {"title": "Wayback Machine capture index for dynamicsportsplays.com (earliest capture Aug 2018)", "url": "https://web.archive.org/cdx/search/cdx?url=dynamicsportsplays.com&limit=3&output=json&fl=timestamp,original,statuscode", "accessed": "7 Nov 2026"},
-    {"title": "BBB search: dynamic sports plays (no results)", "url": "https://www.bbb.org/search?find_text=dynamic%20sports%20plays", "accessed": "7 Nov 2026"},
-    {"title": "SiteJabber (which now redirects to SmartCustomer): dynamicsportsplays.com reviews (0 reviews)", "url": "https://www.smartcustomer.com/reviews/dynamicsportsplays.com", "accessed": "7 Nov 2026"},
-    {"title": "TikTok @dynamicsportsplays profile (followers, videos)", "url": "https://www.tiktok.com/@dynamicsportsplays", "accessed": "7 Nov 2026"},
-    {"title": "Instagram @dynamicsportsplays (profile not available to logged out visitors)", "url": "https://www.instagram.com/dynamicsportsplays/", "accessed": "7 Nov 2026"},
-    {"title": "CapperTek: DynamicSportsPlays.com purchase tab (no packages)", "url": "https://www.cappertek.com/picks.asp?shs=DynamicSportsPlays.com&tab=purchase", "accessed": "7 Nov 2026"}
+    {
+      "title": "Dynamic Sports Plays homepage (membership, history, media logos, tickets)",
+      "url": "https://www.dynamicsportsplays.com/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Dynamic Sports Plays pricing page (plans, prices, processing fees; now opens at /pricing-plans/get-picks)",
+      "url": "https://www.dynamicsportsplays.com/pricing-plans/list",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Dynamic Sports Plays FAQ (64% claim, picks per day, refunds)",
+      "url": "https://www.dynamicsportsplays.com/faq",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Dynamic Sports Plays units page (5 to 25 unit scale)",
+      "url": "https://www.dynamicsportsplays.com/units",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Dynamic Sports Plays terms and conditions (no refunds, no auto renewal, no profit guarantee)",
+      "url": "https://www.dynamicsportsplays.com/terms-conditions",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Dynamic Sports Plays contact page",
+      "url": "https://www.dynamicsportsplays.com/contact",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "CapperTek: customer reviews for DynamicSportsPlays.com",
+      "url": "https://www.cappertek.com/reviews.asp?shs=DynamicSportsPlays.com",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "CapperTek: DynamicSportsPlays.com profile (no documented record, no picks)",
+      "url": "https://www.cappertek.com/picks.asp?shs=DynamicSportsPlays.com",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "CapperTek FAQ (what Verified means)",
+      "url": "https://www.cappertek.com/faq.asp",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": ".com registry RDAP record for dynamicsportsplays.com (registration date)",
+      "url": "https://rdap.verisign.com/com/v1/domain/dynamicsportsplays.com",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Wayback Machine capture index for dynamicsportsplays.com (earliest capture Aug 2018)",
+      "url": "https://web.archive.org/cdx/search/cdx?url=dynamicsportsplays.com&limit=3&output=json&fl=timestamp,original,statuscode",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "BBB search: dynamic sports plays (no results)",
+      "url": "https://www.bbb.org/search?find_text=dynamic%20sports%20plays",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "SiteJabber (which now redirects to SmartCustomer): dynamicsportsplays.com reviews (0 reviews)",
+      "url": "https://www.smartcustomer.com/reviews/dynamicsportsplays.com",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "TikTok @dynamicsportsplays profile (followers, likes, bio)",
+      "url": "https://www.tiktok.com/@dynamicsportsplays",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Instagram @dynamicsportsplays (profile not available to logged out visitors)",
+      "url": "https://www.instagram.com/dynamicsportsplays/",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "CapperTek: DynamicSportsPlays.com purchase tab (no packages)",
+      "url": "https://www.cappertek.com/picks.asp?shs=DynamicSportsPlays.com&tab=purchase",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Wayback Machine: dynamicsportsplays.com homepage saved 28 Aug 2018 (site pages Units, FAQ, Subscriptions)",
+      "url": "https://web.archive.org/web/20180828235443/https://www.dynamicsportsplays.com/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbetting: Anyone actually tried Dynamic Sports Plays? (Oct 2025, post removed, no replies)",
+      "url": "https://www.reddit.com/r/sportsbetting/comments/1oevjx1/anyone_actually_tried_dynamic_sports_plays/",
+      "accessed": "20 Nov 2026"
+    }
   ],
   "pricing_source": 1
 }

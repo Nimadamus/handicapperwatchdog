@@ -3,16 +3,16 @@
   "name": "Danny's VIP Sports Picks",
   "legal_name": "Not stated. Listed on CapperTek as DannysVIPSportsPicks.cappertek.com",
   "kind": "Single handicapper selling picks through a CapperTek listing",
-  "checked": "7 Nov 2026",
-  "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-07",
-  "title": "Danny's VIP Sports Picks Review 2026: Pricing, Record",
-  "description": "Danny's VIP Sports Picks review, checked 7 Nov 2026: CapperTek prices from $10 a day, a logged record that is down 133 units, and what 7 buyer reviews say.",
+  "checked": "20 Nov 2026",
+  "checked_iso": "2026-11-20",
+  "updated_iso": "2026-11-20",
+  "title": "Danny's VIP Sports Picks Review 2026: Pricing, Record, Worth It?",
+  "description": "Danny's VIP Sports Picks review, checked 20 Nov 2026: CapperTek passes from $10 a day, a logged record down 179 units, and what 7 buyer reviews say.",
   "h1": "Danny's VIP Sports Picks review",
-  "dek": "A handicapper known only as Danny who sells day and multi day passes on CapperTek, from $10 for a day to $220 for 60 days. Unlike most small sellers, his picks are logged on CapperTek with times and odds, and that log shows him winning 53% of graded picks while losing units over time.",
+  "dek": "A handicapper known only as Danny who sells day and multi day passes on CapperTek, from $10 for a day to $220 for 60 days. Unlike most small sellers, every pick is logged on CapperTek with the time, odds and stake. We read all 1,806 logged picks: he wins 52% of them and is down 179.20 units since Sep 2023.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a record for Danny's VIP Sports Picks. This page reports the CapperTek log as CapperTek shows it, and labels everything else."
+    "note": "Watchdog has not graded a record for Danny's VIP Sports Picks. This page reports the CapperTek log as CapperTek shows it, plus our own count of every pick in that log, and labels everything else."
   },
   "glance": [
     [
@@ -21,19 +21,23 @@
     ],
     [
       "Claims to operate since",
-      "Not stated. The CapperTek pick log starts in Sep 2023"
+      "Not stated. The CapperTek pick log starts on 25 Sep 2023"
     ],
     [
       "Price range seen",
-      "$10 for 1 day to $220 for 60 days"
+      "$10 for 1 day to $220 for 60 days (unchanged since 7 Nov 2026)"
     ],
     [
       "Guarantee",
-      "None found. CapperTek terms say fees are non refundable unless stated"
+      "None found. CapperTek terms say fees are non refundable"
     ],
     [
       "Full public record",
-      "Yes, on CapperTek: 923-829-11, -133.00 units (last 1,825 days)"
+      "Yes, on CapperTek: 939-850-12, -179.20 units, -2.09% ROI (last 1,825 days, read 20 Nov 2026)"
+    ],
+    [
+      "Last 30 days",
+      "38-43-1, -103.09 units; 205th of 231 CapperTek listings by units"
     ],
     [
       "Watchdog graded record",
@@ -41,160 +45,190 @@
     ]
   ],
   "short_answer": [
-    "Danny's VIP Sports Picks is a real seller in the narrow sense that it has a live CapperTek listing, posts picks there almost daily and sells access at published prices. The seller gives no full name, company, address or website of its own that we could open, so a buyer knows very little about who is behind it.",
-    "The good news for a buyer is that a pick log exists. CapperTek records each pick with the time it was entered, the odds and the stake, and grades it. The bad news is what the log shows: on 7 Nov 2026 CapperTek put the five year window at 923 wins, 829 losses and 11 pushes, about 53% winners, for -133.00 units and a -1.60% return. The last 365 days were also negative.",
-    "Treat Danny as a small seller whose own posted record is roughly break even to losing, not as a proven winner. The cheap price is real, but a cheap pick that loses still costs you the bet."
+    "Danny's VIP Sports Picks is a real seller in the narrow sense that it has a live CapperTek listing, posts picks there most days and sells access at published prices. The seller gives no full name, company, address or website of its own, so a buyer knows very little about who is behind it.",
+    "The good news for a buyer is that a full pick log exists. CapperTek records each pick with the time it was entered, the odds and the stake, and grades it. The bad news is what the log shows. On 20 Nov 2026 CapperTek put the five year window at 939 wins, 850 losses and 12 pushes, about 52% winners, for -179.20 units and a -2.09% return. That is 46 units worse than on 7 Nov 2026, after a bad November. We counted all 1,806 logged picks ourselves and got the same totals.",
+    "The log does show one real strength: baseball. His MLB straight bets are up about 68 units. Hockey parlays and hockey in general have cost far more than that. Treat Danny as a cheap seller whose own record is losing overall, not as a proven winner. A cheap pick that loses still costs you the bet."
   ],
-  "pricing_intro": "Prices below were shown on the CapperTek purchase tab for DannysVIPSportsPicks.cappertek.com on 7 Nov 2026. CapperTek says sellers set their own prices and are paid through their own PayPal account. A buyer must register a free CapperTek customer account to buy.",
+  "pricing_intro": "Prices below were shown on the CapperTek purchase tab for DannysVIPSportsPicks.cappertek.com on 20 Nov 2026, the same as on 7 Nov 2026. CapperTek says sellers set their own prices and are paid through their own PayPal account, and it charges sellers no commission. A buyer must register a free CapperTek customer account to buy.",
   "pricing": [
     [
       "1 day access",
       "$10.00",
-      "No refund terms shown on the listing"
+      "Handicapper's picks for 1 day. No refund terms shown on the listing"
     ],
     [
       "7 day access",
       "$50.00",
-      "Same"
+      "About $7.14 a day. Same terms"
     ],
     [
       "14 day access",
       "$75.00",
-      "Same"
+      "About $5.36 a day. Same terms"
     ],
     [
       "30 day access",
       "$120.00",
-      "Same"
+      "$4.00 a day. Same terms"
     ],
     [
       "60 day access",
       "$220.00",
-      "Same"
+      "About $3.67 a day. Same terms"
     ]
   ],
   "guarantee": [
-    "We found no guarantee of any kind on the Danny's VIP listing. The bio promises how picks are delivered, not results: it says buyers get each pick at least 25 minutes before game time.",
-    "CapperTek's terms of service say that, unless otherwise stated, all fees and charges are non refundable, and that its payment portal is PayPal. Nothing on the listing states otherwise. Losses on the bets themselves are never covered by any pick seller."
+    "We found no guarantee of any kind on the Danny's VIP listing. The bio promises how picks are delivered, not results: it says \"YOU WILL RECEIVE EACH PICK AT LEAST 25 MINUTES BEFORE GAME TIME\".",
+    "CapperTek's terms of service say that \"all fees and charges (including subscription fees) are non-refundable\" unless otherwise stated, and that payment on provider sites goes through PayPal. Nothing on the listing states otherwise. A buyer with a problem would have to go to the seller, whose contact details CapperTek shows only to logged in customers, or to PayPal. Losses on the bets themselves are never covered by any pick seller."
   ],
   "claims": [
     {
       "claim": "\"I FIGURED OUT HOW TO CONSISTENTLY WIN\"",
       "where": "Handicapper bio on the CapperTek profile",
-      "status": "Seller claim, contradicted by the seller's own CapperTek log"
+      "status": "Checked against the seller's own log: 939-850-12 and -179.20 units over five years; only 14 of the 33 months with picks were profitable"
     },
     {
-      "claim": "\"WE MAKE A LOT OF MONEY\" and the motto \"If you can't make money everyday why bother.\"",
+      "claim": "Motto: \"If you can't make money everyday why bother.\"",
       "where": "Handicapper bio",
-      "status": "Seller claim"
+      "status": "Checked: of 566 days with graded picks, 269 finished up, 296 down and 1 level"
     },
     {
-      "claim": "Plays rated 3, 5 or 7 units, with \"ALWAYS USE 5 UNIT PLAY\" on VIP games",
+      "claim": "\"WE MAKE A LOT OF MONEY\" and \"we use 3..5..7 unit plays\" with \"ALWAYS USE 5 UNIT PLAY ON THE \"VIP\" GAMES\"",
       "where": "Handicapper bio",
-      "status": "Seller rule. The log also shows stakes of 8, 10 and 11 units"
+      "status": "Checked: 1,248 of 1,806 picks are 5 units, but 32 picks were 8 to 11 units and went 32-33 for -74.11 units"
     },
     {
       "claim": "\"YOU WILL RECEIVE EACH PICK AT LEAST 25 MINUTES BEFORE GAME TIME\"",
       "where": "Handicapper bio",
-      "status": "Seller promise, not always met in the log"
+      "status": "Checked: 242 of 1,806 picks (13%) were entered less than 25 minutes before the listed start, 91 of them less than 10 minutes before"
+    },
+    {
+      "claim": "A reviewer wrote that his NFL picks hit 80%",
+      "where": "CapperTek review, 8 Feb 2025",
+      "status": "Checked: the log shows NFL picks for the 2024 season (Sep 2024 to Feb 2025) at 17-13, 57%, +27.39 units"
     },
     {
       "claim": "Replying to a review, the seller described himself as someone who \"charges hardly anything\" with the goal to beat the casinos, bookies and sportsbooks",
       "where": "Seller response on the CapperTek reviews page, Feb 2025",
-      "status": "Seller statement"
+      "status": "Seller statement. Prices are low; the goal is not met in the log"
     }
   ],
   "claims_note": [
-    "The bio says the seller figured out how to win consistently. The CapperTek log the seller keeps on the same profile does not show that. Over the windows CapperTek offers, only the shorter recent windows were positive on 7 Nov 2026 (90 days and 180 days), while the 30 day, 365 day, 730 day and five year windows were negative.",
-    "The 25 minute promise is not always kept. In the pick history, a Colorado Avalanche pick on 5 Nov 2026 was entered at 9:27 PM ET for a 9:37 PM ET start. A buyer who needs time to place a bet should know that some picks arrive close to the start."
+    "How we checked: CapperTek publishes the whole pick history for this listing as one page. On 20 Nov 2026 we read every entry, 1,806 picks from 25 Sep 2023 to 19 Nov 2026, and added up the results, stakes and times ourselves. Our totals matched CapperTek's own chart exactly: 939 wins, 850 losses, 12 pushes (plus 5 voided picks) and -179.20 units. The MLB and NHL charts also matched our sport splits, so the numbers below come from the log itself, not from marketing.",
+    "By year the log reads: 2023 (from late Sep) 82-109-2, -80.32 units; 2024 178-170-5, -12.90 units; 2025 281-211, +22.95 units; 2026 so far 398-360-5, -108.93 units. 2025 was the one winning year. November 2026 has been poor: 21-29-1 for -86.39 units through 19 Nov, and 14-20-1 for -48.97 units since our first check on 7 Nov 2026.",
+    "Baseball is the strength. MLB straight bets went 336-235-2 for +67.98 units, and the MLB chart on CapperTek, which includes parlays, shows 362-289-2 and +35.32 units over five years. A reviewer in Aug 2026 said Danny was locked in on baseball, and the log backs that up for the period: MLB picks from 1 Jul to 13 Aug 2026 went 77-51 for +72.55 units.",
+    "Hockey and parlays are the weakness. The CapperTek NHL chart shows 209-181-3 and -175.06 units, a -9.64% return. NHL parlays alone went 6-31 for -112.09 units. Across all sports, parlays went 82-181 for -151.42 units, while straight bets went 857-669-12 for -27.78 units, close to break even on 7,543 units risked.",
+    "Win rate and profit point in different directions because many plays are favorites. Of 1,543 straight picks with the odds shown, 484 were priced at -150 or shorter and 183 at -200 or shorter, against 198 underdogs. Laying -200 needs a win rate of about 67% just to break even."
   ],
   "record": [
-    "Independently checkable: CapperTek, a pick marketplace that says it takes no commission on sales, keeps a documented record for this listing. Each pick shows the game, the side, the odds, the stake in units, the time the pick was made and the time it was graded, and picks are revealed to the public 30 minutes after the game starts. Its record windows read: last 30 days 44-32, -18.20 units, -3.46% ROI; last 90 days 63-45, +33.80 units, +4.88%; last 365 days 433-378-4, -59.62 units, -1.36%; last 730 days 685-567-4, -19.96 units, -0.30%; last 1,825 days 923-829-11, -133.00 units, -1.60%. CapperTek says ROI is based on a $100 per unit risk amount.",
-    "Limits of that log: the seller enters his own picks, and CapperTek is a directory and marketplace, not an auditor. We cannot see whether every pick sent to paying customers appears in it. Many picks are heavy favorites, such as Colorado at -212 and Florida at -251 in early November 2026, which is why a win rate above 50% can still lose money.",
+    "Independently checkable: CapperTek, a pick marketplace that says it charges sellers \"Zero fees or commissions\", keeps a documented record for this listing. Each pick shows the game, the side, the odds, the stake in units, the time the pick was made and the time it was graded, and picks are revealed to the public 30 minutes after the game starts. Its record windows on 20 Nov 2026 read: last 90 days 62-55-1, -64.85 units, -7.77%; last 180 days 202-164-2, -11.59 units, -0.51%; last 365 days 440-397-5, -126.41 units, -2.74%; last 730 days 699-586-5, -72.71 units, -1.06%; last 1,825 days 939-850-12, -179.20 units, -2.09% on 8,584.8 units risked. CapperTek says ROI is based on a $100 per unit risk amount.",
+    "Ranking: the CapperTek leaderboard for the last 30 days listed 231 handicappers on 20 Nov 2026. Danny's VIP was at 38-43-1 for -103.09 units and a -17.18% return, which put it 205th of 231 by units. 104 listings were in profit over the same 30 days.",
+    "Limits of that log: the seller enters his own picks, and CapperTek is a directory and marketplace, not an auditor. We cannot see whether every pick sent to paying customers appears in it, or whether customers got the same odds. There are gaps with no picks at all, such as Jun to Sep 2024, Mar 2025 and Sep 2026.",
     "Seller marketing: the bio and reviews speak of consistent winning and a top win percentage. Those are claims; the numbers above are the log. We found no court or regulator action involving this seller in our searches, and with no legal name given there was nothing further to search."
   ],
   "our_data": {
     "matched": false,
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition Danny's VIP Sports Picks is not matched to a Watchdog graded record, so we make no claim about how this handicapper performs beyond what CapperTek shows.",
-    "context": "For scale: one reviewer says the NFL picks hit 80%. On the Watchdog board on 7 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even, and more when laying heavy favorites."
+    "context": "For scale: one reviewer says the NFL picks hit 80%, while the log shows 57% for that season. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even, and more when laying heavy favorites."
   },
-  "customers_intro": "All the customer evidence we found sits on one site: seven short reviews on the seller's CapperTek page, all positive, from five usernames, one of which posted three times. We found nothing on BBB, Reddit or the betting forums. None of the reviews includes a pick log, and they do not square with the losing totals in the seller's own CapperTek record.",
+  "customers_intro": "All the buyer evidence we found sits on one site: seven short reviews on the seller's CapperTek page, all positive, from five usernames, one of which posted three times. On 20 Nov 2026 there were still seven, the newest from 13 Aug 2026. We found nothing on BBB, Reddit or the betting forums. Below, each review sits next to what the seller's own log showed for the same period.",
   "customers": [
+    {
+      "type": "Our summary",
+      "tone": "Positive",
+      "date": "Read 20 Nov 2026",
+      "text": "Every buyer comment we could find about Danny's VIP Sports Picks is positive, and every one sits on the CapperTek listing that sells the picks. There are seven reviews from five usernames, posted between Feb 2024 and Aug 2026; one username wrote three of them, and two others arrived on the same day in Mar 2024. Reviewers praise the low price, the small number of daily picks, quick wins in hockey and basketball and, most often, baseball. None posts a record. Where a review names a period, the seller's own log sometimes supports it (baseball in summer 2026 was strongly profitable) and sometimes does not (an 80% NFL claim against a logged 57%, and a \"best winning percentage\" claim when the log stood near 53%). Searches of BBB, Reddit archives, Covers, SBR and TheRX found no independent post, positive or negative, and no complaint about billing or refunds.",
+      "source": null
+    },
     {
       "type": "Customer report",
       "tone": "Positive",
       "date": "25 Feb 2024, 6 Aug 2026 and 13 Aug 2026",
-      "text": "One username wrote three of the seven reviews. In Feb 2024 he said Danny had won him a lot of money that weekend in hockey and basketball and called baseball Danny's strength; in Aug 2026 he said Danny was locked in on baseball with one of the higher win percentages around. The seller replied to the first with a joke about the username.",
+      "text": "One username wrote three of the seven reviews. In Feb 2024 he said Danny had won him a lot of money that weekend in hockey and basketball and called baseball Danny's strength; in Aug 2026 he said Danny was locked in on baseball with one of the higher win percentages around. The log supports the 2026 baseball comment (77-51, +72.55 units from 1 Jul to 13 Aug 2026) and shows that weekend in Feb 2024 at 12-7 and +5.54 units, inside a month that finished 37-34-1 and -22.32 units.",
       "source": 0
     },
     {
       "type": "Customer report",
       "tone": "Positive",
       "date": "29 Sep 2025",
-      "text": "A reviewer said Danny should be ranked first because he has the best winning percentage, said the picks had made him a good amount of cash, and criticized handicappers who, in his words, pay for their top rankings. On 7 Nov 2026 the seller's own CapperTek log showed about 53% winners and a loss in units over five years.",
+      "text": "A reviewer said Danny should be ranked first because he has the best winning percentage, said the picks had made him a good amount of cash, and criticized handicappers who, in his words, pay for their top rankings. On the date of that review the seller's own log stood at 443-400-7, about 52.6% winners and -33.07 units.",
       "source": 0
     },
     {
       "type": "Customer report",
       "tone": "Positive",
       "date": "8 Feb 2025",
-      "text": "A reviewer claimed the NFL picks hit 80% and praised the hockey and college basketball picks. He liked that Danny sends about two picks a day rather than seven and skips days with nothing he likes. He gave no sample size.",
+      "text": "A reviewer claimed the NFL picks hit 80% and praised the hockey and college basketball picks. He liked that Danny sends about two picks a day rather than seven and skips days with nothing he likes. The log shows NFL picks for that season at 17-13 (57%) and +27.39 units: profitable, but not 80%.",
       "source": 0
     },
     {
       "type": "Customer report",
       "tone": "Positive",
       "date": "6 Mar 2024 (two reviews)",
-      "text": "Two reviews arrived the same day. One buyer, referred by a friend and about a month in, said they could not seem to lose; the other said he only sticks with \"a sure thing\" and Danny had not disappointed. No bet is a sure thing, and neither review gave a record.",
+      "text": "Two reviews arrived the same day. One buyer, referred by a friend and about a month in, said they could not seem to lose; the other said he only sticks with \"a sure thing\" and Danny had not disappointed. The log for the month before those reviews reads 45-36-1 and about +1 unit. No bet is a sure thing, and neither review gave a record.",
       "source": 0
     },
     {
       "type": "Not found",
       "tone": "Neutral",
-      "date": "Checked 7 Nov 2026",
-      "text": "BBB returned no results for the name. Web searches, including site searches of Reddit, found no thread about this seller, and we found no TheRX, Covers or SBR discussion. The seller has no website of its own that loaded for us, so there was no Trustpilot or SiteJabber page to check.",
+      "date": "Checked 20 Nov 2026",
+      "text": "BBB again returned no results for the name. Reddit archive searches of the main betting subreddits, web searches and site searches found no thread about this seller, and we found no TheRX, Covers or SBR discussion. The seller has no website of its own, so there was no Trustpilot or SiteJabber page to check.",
       "source": 10
     }
   ],
   "conflicts": [
     "We saw no sportsbook affiliate links or promo codes on the seller's CapperTek pages. CapperTek's own footer lists Pinnacle and FanDuel as partners; that is the marketplace, not the seller.",
     "The listing carries a CapperTek \"Verified Service\" label. CapperTek's FAQ says verified means the service placed a verification banner on its website and opened a line of communication so CapperTek can resolve complaints. It is not a check of results. CapperTek separately sells Pro Featured placement for a monthly advertising fee.",
-    "Reviews on CapperTek are anonymous and user submitted, and CapperTek says it does not guarantee their accuracy. A buyer cannot tell who wrote them."
+    "Reviews on CapperTek are anonymous and user submitted, and CapperTek says it does not guarantee their accuracy. The seller replies to several of them, and a buyer cannot tell who wrote them."
   ],
   "strengths": [
-    "A public, time stamped pick log with odds and stakes, graded by the platform, which is more than most small sellers offer.",
-    "Low prices: $10 for a day or $120 for 30 days.",
-    "Few picks a day, by the seller's and one reviewer's account, which makes the plays easier to follow and track."
+    "A full public, time stamped pick log with odds and stakes, graded by the platform. We could recount all 1,806 picks and our totals matched CapperTek's.",
+    "Low prices: $10 for a day or $120 for 30 days, about $4 a day.",
+    "Baseball has been genuinely profitable in the log: MLB straight bets are up about 68 units since Sep 2023.",
+    "Straight bets overall are close to break even (-27.78 units on 7,543 risked), so a buyer who skips the parlays would have lost far less.",
+    "Few picks a day by the seller's and one reviewer's account, which makes the plays easy to track."
   ],
   "concerns": [
-    "The seller's own CapperTek log is negative over one, two and five years, despite a bio that claims consistent winning.",
-    "No name, company, address or website, and no refund terms beyond CapperTek's general rule that fees are non refundable.",
-    "Many plays are heavy favorites and some stakes run to 11 units, so a cold run can cost a follower a lot of money quickly.",
+    "The seller's own CapperTek log is negative over 90 days, one year, two years and five years, despite a bio that claims consistent winning.",
+    "Parlays, especially NHL parlays, have lost heavily: 82-181 for -151.42 units across all sports.",
+    "One in eight picks was entered less than 25 minutes before the listed start, against the bio's 25 minute promise.",
+    "Stakes run from 1 to 11 units, and the biggest plays (8 units or more) lost 74 units, so a cold run can cost a follower a lot quickly.",
+    "No name, company, address or website, and no refund terms beyond CapperTek's rule that fees are non refundable.",
     "All customer reviews come from one site, five usernames and no records."
   ],
   "checklist": [
-    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
-    "Count units, not wins. A 60% record at heavy favorites can still lose money.",
-    "Read the guarantee for the words refund, credit and extension. Most \"guarantees\" in this business are credits.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
+    "Open the CapperTek picks tab, set it to the last 365 days and the last 1,825 days, and read the units, not the win rate.",
+    "Filter by sport. Baseball and hockey tell very different stories in this log.",
+    "Decide in advance whether you will follow the parlays. In this log they lost far more than the straight bets.",
+    "Bet a flat stake of your own rather than copying 8 to 11 unit plays.",
+    "Write down each pick the moment you receive it, with the time and the odds you can actually get, and compare with the log.",
+    "Remember the CapperTek terms: fees are non refundable, so buy the shortest pass first.",
     "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
   ],
   "faq": [
     [
       "Is Danny's VIP Sports Picks legit?",
-      "It is a real, active CapperTek seller that posts picks and sells access at published prices. The seller gives no name, company or address, and its own logged record does not show the consistent winning its bio claims."
+      "It is a real, active CapperTek seller that posts picks and sells access at published prices, and every pick is logged with time and odds. The seller gives no name, company or address, and its own logged record does not show the consistent winning its bio claims."
     ],
     [
       "How much does Danny's VIP Sports Picks cost?",
-      "On 7 Nov 2026 CapperTek listed $10 for 1 day, $50 for 7 days, $75 for 14 days, $120 for 30 days and $220 for 60 days. We found no refund terms, and CapperTek's terms say fees are non refundable unless stated."
+      "On 20 Nov 2026 CapperTek listed $10 for 1 day, $50 for 7 days, $75 for 14 days, $120 for 30 days and $220 for 60 days. We found no refund terms, and CapperTek's terms say fees are non refundable unless stated."
     ],
     [
       "Does Danny's VIP Sports Picks have a verified record?",
-      "It has a CapperTek documented record with pick times, odds and stakes, which anyone can read, though the seller enters the picks and CapperTek is not an auditor. On 7 Nov 2026 it showed 923-829-11 and -133.00 units over the last 1,825 days, and Watchdog has no graded record of its own."
+      "It has a CapperTek documented record with pick times, odds and stakes, which anyone can read, though the seller enters the picks and CapperTek is not an auditor. On 20 Nov 2026 it showed 939-850-12 and -179.20 units over the last 1,825 days, and our own count of all 1,806 picks matched. Watchdog has no graded record of its own."
+    ],
+    [
+      "Which sports does Danny do best in?",
+      "Baseball. MLB straight bets in the log went 336-235-2 for +67.98 units. Hockey is the weak spot: the NHL chart shows -175.06 units, much of it from parlays."
+    ],
+    [
+      "Does Danny send picks early enough to bet?",
+      "Usually, but not always. Most picks are entered hours before the start, yet 242 of 1,806 logged picks were entered less than 25 minutes before the listed start time, and 91 less than 10 minutes before."
     ],
     [
       "Is Danny's VIP Sports Picks worth it?",
-      "For the money you get a few cheap daily picks across baseball, hockey, basketball and football. What is unproven is any long run profit: the seller's own log is down in units over one, two and five years, so a buyer would be paying for picks that have not beaten the market over time."
+      "For the money you get a few cheap daily picks across baseball, hockey, basketball and football. What is unproven is any long run profit: the seller's own log is down 179.20 units over five years, so a buyer would be paying for picks that have not beaten the market over time, apart from baseball."
     ]
   ],
   "related": [
@@ -208,57 +242,57 @@
     {
       "title": "CapperTek: customer reviews for DannysVIPSportsPicks.cappertek.com",
       "url": "https://www.cappertek.com/reviews.asp?shs=DannysVIPSportsPicks.cappertek.com",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "CapperTek: DannysVIPSportsPicks profile (bio, documented record)",
       "url": "https://www.cappertek.com/picks.asp?shs=DannysVIPSportsPicks.cappertek.com",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "CapperTek: DannysVIPSportsPicks purchase tab (access packages and prices)",
       "url": "https://www.cappertek.com/picks.asp?shs=DannysVIPSportsPicks.cappertek.com&tab=purchase",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "CapperTek: DannysVIPSportsPicks picks tab",
       "url": "https://www.cappertek.com/picks.asp?shs=DannysVIPSportsPicks.cappertek.com&tab=picks",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "CapperTek: DannysVIPSportsPicks full pick history, all picks",
       "url": "https://www.cappertek.com/picks.asp?shs=DannysVIPSportsPicks.cappertek.com&tab=picks&sport=ALL&lastDays=10000&showAllPicks=yes",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "CapperTek: DannysVIPSportsPicks record chart, last 1,825 days",
       "url": "https://www.cappertek.com/xAjaxROIChart.asp?shs=DannysVIPSportsPicks.cappertek.com&sport=ALL&lastDays=1825&shsid=49534&shsds=ALL&shsdld=1825",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "CapperTek: DannysVIPSportsPicks record chart, last 365 days",
       "url": "https://www.cappertek.com/xAjaxROIChart.asp?shs=DannysVIPSportsPicks.cappertek.com&sport=ALL&lastDays=365&shsid=49534&shsds=ALL&shsdld=365",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "CapperTek FAQ (what Verified and Pro Featured mean)",
       "url": "https://www.cappertek.com/faq.asp",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "CapperTek: Why use CapperTek to sell sports picks (no commission, PayPal, 30 minute reveal)",
       "url": "https://www.cappertek.com/whySellPicks.asp",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "CapperTek terms of service (fees non refundable, PayPal)",
       "url": "https://www.cappertek.com/termsOfService.asp",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "BBB search: dannys vip sports picks (no results)",
       "url": "https://www.bbb.org/search?find_text=dannys%20vip%20sports%20picks",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "CapperTek: DannysVIPSportsPicks record chart, last 30 days",
@@ -268,22 +302,42 @@
     {
       "title": "CapperTek: DannysVIPSportsPicks record chart, last 90 days",
       "url": "https://www.cappertek.com/xAjaxROIChart.asp?shs=DannysVIPSportsPicks.cappertek.com&sport=ALL&lastDays=90&shsid=49534&shsds=ALL&shsdld=90",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "CapperTek: DannysVIPSportsPicks record chart, last 180 days",
       "url": "https://www.cappertek.com/xAjaxROIChart.asp?shs=DannysVIPSportsPicks.cappertek.com&sport=ALL&lastDays=180&shsid=49534&shsds=ALL&shsdld=180",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "CapperTek: DannysVIPSportsPicks record chart, last 730 days",
       "url": "https://www.cappertek.com/xAjaxROIChart.asp?shs=DannysVIPSportsPicks.cappertek.com&sport=ALL&lastDays=730&shsid=49534&shsds=ALL&shsdld=730",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "CapperTek: DannysVIPSportsPicks pending picks (30 minute reveal notice)",
       "url": "https://www.cappertek.com/xAjaxPicksTabPicksPending.asp?shs=DannysVIPSportsPicks.cappertek.com&sport=ALL&lastDays=30&showAllPicks=",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "CapperTek: DannysVIPSportsPicks full pick history feed, all 1,806 graded picks since Sep 2023",
+      "url": "https://www.cappertek.com/xAjaxPicksTabPicksHistory.asp?shs=DannysVIPSportsPicks.cappertek.com&sport=ALL&lastDays=10000&showAllPicks=yes",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "CapperTek: DannysVIPSportsPicks record chart, MLB only, last 1,825 days",
+      "url": "https://www.cappertek.com/xAjaxROIChart.asp?shs=DannysVIPSportsPicks.cappertek.com&sport=MLB&lastDays=1825&shsid=49534&shsds=MLB&shsdld=1825",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "CapperTek: DannysVIPSportsPicks record chart, NHL only, last 1,825 days",
+      "url": "https://www.cappertek.com/xAjaxROIChart.asp?shs=DannysVIPSportsPicks.cappertek.com&sport=NHL&lastDays=1825&shsid=49534&shsds=NHL&shsdld=1825",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "CapperTek handicapper leaderboard, all sports, last 30 days (231 listings)",
+      "url": "https://www.cappertek.com/leaderboard.asp",
+      "accessed": "20 Nov 2026"
     }
   ],
   "pricing_source": 2
