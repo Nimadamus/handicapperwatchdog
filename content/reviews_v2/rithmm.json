@@ -3,333 +3,162 @@
   "name": "Rithmm",
   "legal_name": "Rithmm, Inc.",
   "kind": "AI sports betting picks and model building app, sold by subscription",
-  "checked": "7 Nov 2026",
-  "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-13",
+  "checked": "20 Nov 2026",
+  "checked_iso": "2026-11-20",
+  "updated_iso": "2026-11-20",
   "title": "Rithmm Review 2026: Pricing, Record, Is It Worth It?",
-  "description": "Rithmm review, checked 7 Nov 2026: plan prices from $29.99 a month, the no refund policy, what its AI pick claims leave out, and what users report.",
+  "description": "Rithmm review, checked 20 Nov 2026: plans from $29.99 a month, no refunds, 26 free picks we graded ourselves, and what 450 App Store reviews say.",
   "h1": "Rithmm review",
-  "dek": "A Boston area app that sells AI predictions, player prop projections, line shopping and a model builder for $29.99 to $99.99 a month after a 7 day free trial. There are no refunds, and we found no public, graded record of its picks. The win rates it shows are model estimates and historical trends chosen by the seller.",
+  "dek": "A Boston area app, founded in 2022 and backed by a $2 million seed round, that sells AI predictions, player prop projections, line shopping and a model builder for $29.99 to $99.99 a month after a 7 day free trial. There are no refunds and no public graded record. We graded its free pick posts from 30 Oct to 19 Nov 2026 ourselves: 10 wins and 14 losses.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Rithmm picks or models. This page reports what we could check and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record of Rithmm picks or models. This page reports what we could check, including our own grading of 26 free pick posts, and labels everything else."
   },
   "glance": [
-    [
-      "Operator",
-      "Rithmm, Inc., 675 VFW Parkway #314, Chestnut Hill, MA (terms page)"
-    ],
-    [
-      "Started",
-      "September 2022 (about page)"
-    ],
-    [
-      "Price range seen",
-      "$29.99 to $99.99 a month, or $239.99 to $999.99 a year"
-    ],
-    [
-      "Guarantee",
-      "None. FAQ and terms say payments are not refunded"
-    ],
-    [
-      "Full public record",
-      "Not found. Model estimates and seller chosen trends only"
-    ],
-    [
-      "Watchdog graded record",
-      "None yet"
-    ]
+    ["Operator", "Rithmm, Inc., 675 VFW Parkway #314, Chestnut Hill, MA (terms page)"],
+    ["Founders", "Megan Lanham (CEO, former Division I basketball coach, MIT MBA) and Brian Beachkofski (CTO, PhD)"],
+    ["Started", "September 2022; app public since 2023; $2 million seed round in June 2023"],
+    ["Price range seen", "$29.99 to $99.99 a month, or $239.99 to $999.99 a year"],
+    ["Guarantee", "None. FAQ and terms say payments are not refunded"],
+    ["Free picks we graded", "24 decided picks, 30 Oct to 19 Nov 2026: 10 wins, 14 losses, about minus 5.7 units"],
+    ["Watchdog graded record", "None yet"]
   ],
   "short_answer": [
-    "Rithmm is a real company. It names an operator and a mailing address in its terms, publishes its prices, sells through the Apple App Store as Rithmm Inc., and appears on the New Jersey Division of Gaming Enforcement active vendor report. In that narrow sense it is legitimate.",
-    "Whether its picks make money is a different question, and nothing we could open answers it. Rithmm shows a model win chance and an \"Edge\" on each pick, plus historical trend numbers such as \"28-13, plus 25.2 percent ROI\". Those are estimates and backtests chosen by the seller, not a graded log of picks it actually sent. Its own terms say recommended bets \"can and will lose.\"",
-    "Treat Rithmm as a research tool with marketing numbers, not a proven winner. If you try it, use the free week, write down every pick with the line and time you saw it, and grade it yourself before any money is charged."
+    "Rithmm is a real company. It names an operator and a mailing address in its terms, publishes its prices, sells through the Apple App Store as Rithmm Inc., raised a $2 million seed round from Boston investors in 2023, and appears on the New Jersey Division of Gaming Enforcement active vendor report. In that narrow sense it is legitimate.",
+    "Whether its picks make money is a different question. Rithmm shows a model win chance and an \"Edge\" on each pick, plus trend lines such as \"Rithmm is 11-0 on Ziaire Williams props this season.\" Those are estimates and records chosen by the seller. Its pick posts never show a result after the game, so we graded them ourselves: the 24 free picks we could settle from 30 Oct to 19 Nov 2026 went 10 and 14, about minus 5.7 units at the listed prices. The stated win chances implied about 13 wins. That is a small sample, but it is the only outside check we know of.",
+    "Buyer feedback has turned. Of 450 written App Store reviews in Apple's public feed, the 2025 reviews were about three quarters 4 or 5 stars, while the 80 written so far in 2026 split almost evenly, 37 at 4 or 5 stars and 41 at 1 or 2 stars. Complaints center on losing picks and on being charged during or right after the free trial.",
+    "Treat Rithmm as a research tool with marketing numbers, not a proven winner. If you try it, use the free week, write down every pick with the line and time you saw it, grade it yourself, and cancel before the trial ends if the results do not hold up."
   ],
-  "pricing_intro": "Prices below were shown on the Rithmm pricing page on 7 Nov 2026. The yearly prices are behind the page's Yearly switch. The Apple App Store listing showed the same monthly and yearly prices.",
+  "pricing_intro": "Prices below were shown on the Rithmm pricing page on 20 Nov 2026, unchanged from our 7 Nov check. The yearly prices sit behind the page's Yearly switch. The Apple App Store listing showed the same plans.",
   "pricing": [
-    [
-      "Core, monthly",
-      "$29.99 a month. Scout, the AI chat analyst, is not included",
-      "No refund. Renews each month unless cancelled"
-    ],
-    [
-      "Core, yearly",
-      "$239.99 a year (shown as $19.99 a month)",
-      "No refund. Renews each year unless cancelled"
-    ],
-    [
-      "Pro, monthly",
-      "$49.99 a month, includes monthly Scout usage",
-      "No refund. Renews each month unless cancelled"
-    ],
-    [
-      "Pro, yearly",
-      "$449.99 a year (shown as $37.49 a month)",
-      "No refund. Renews each year unless cancelled"
-    ],
-    [
-      "Premium, monthly",
-      "$99.99 a month, 4 times the Scout usage of Pro, advanced model builder, bet exports",
-      "No refund. Renews each month unless cancelled"
-    ],
-    [
-      "Premium, yearly",
-      "$999.99 a year (shown as $83.33 a month)",
-      "No refund. Renews each year unless cancelled"
-    ],
-    [
-      "Free trial",
-      "7 days, first time users only, one per user",
-      "Paid plan starts automatically unless cancelled before the trial ends"
-    ],
-    [
-      "Promo code TRYCORE25",
-      "25% off the first month of Core (promos page)",
-      "Rithmm's own discount, not a sportsbook offer"
-    ]
+    ["Core, monthly", "$29.99 a month. Scout, the AI chat analyst, is not included", "No refund. Renews each month unless cancelled"],
+    ["Core, yearly", "$239.99 a year (shown as $19.99 a month)", "No refund. Renews each year unless cancelled"],
+    ["Pro, monthly", "$49.99 a month, includes monthly Scout usage", "No refund. Renews each month unless cancelled"],
+    ["Pro, yearly", "$449.99 a year (shown as $37.49 a month)", "No refund. Renews each year unless cancelled"],
+    ["Premium, monthly", "$99.99 a month, 4 times the Scout usage of Pro, advanced model builder, player impact adjustments, bet exports", "No refund. Renews each month unless cancelled"],
+    ["Premium, yearly", "$999.99 a year (shown as $83.33 a month)", "No refund. Renews each year unless cancelled"],
+    ["Free trial", "7 days, \"limited to first-time Rithmm users. One free trial per user.\"", "Paid plan starts automatically unless cancelled before the trial ends"],
+    ["Promo codes TRYCORE25 and TRYPREM25", "25% off the first month (promos page)", "Rithmm's own discount, not a sportsbook offer"]
   ],
   "pricing_source": 0,
   "guarantee": [
-    "Rithmm offers no guarantee and no refunds. Its FAQ says: \"Rithmm doesn't offer refunds. You can cancel any time to stop future billing, but past charges are not refunded.\" The terms, last updated 17 Aug 2026, say all payments are non refundable, including partly used billing periods, except where the law or the App Store or Google Play policy requires otherwise. They also rule out any refund, credit or extension for outages, even during a game.",
-    "Subscriptions renew automatically at the current rate unless cancelled at least 24 hours before the billing period ends. The free trial turns into a paid plan on its own unless you cancel first. The terms also say Scout's recommendations \"carry no guarantee of accuracy or profitability.\" Disputes go to binding individual arbitration in Boston, with a class action waiver; you can opt out only by mailed notice within 30 days of first accepting the terms."
+    "Rithmm offers no guarantee and no refunds. Its FAQ says: \"Rithmm doesn't offer refunds. You can cancel any time to stop future billing, but past charges are not refunded.\" The terms, last updated 17 Aug 2026, say: \"Except where required by law or by applicable App Marketplace policy, all payments are non-refundable, including for partially used billing periods.\" They also rule out any refund, credit, price reduction or extension for outages.",
+    "Subscriptions renew automatically at the current rate unless cancelled at least 24 hours before the billing period ends, and Rithmm may raise prices at the next renewal after notice. The free trial turns into a paid plan on its own unless you cancel first, and the trial is one per user, so a second sign up on the same account is charged at once.",
+    "On outcomes the terms are blunt: model outputs are \"statistical estimates and not guarantees,\" and \"A prediction with a high stated probability can and frequently will be wrong.\" Disputes go to binding individual arbitration in Boston with a class action waiver; you can opt out only by a signed notice mailed within 30 days of first accepting the terms. If you paid through Apple, Apple, not Rithmm, decides any refund request."
   ],
   "claims": [
-    {
-      "claim": "\"They met at MIT and built the modeling tool professional bettors use, made for everyone else.\"",
-      "where": "Homepage founders section",
-      "status": "Seller claim, not checkable"
-    },
-    {
-      "claim": "\"The data science that pro bettors have always had, in the pocket of the person who never had access to it.\"",
-      "where": "Site footer",
-      "status": "Seller claim"
-    },
-    {
-      "claim": "Smart Signals \"highlights the plays where the models see the strongest patterns historically\"",
-      "where": "Homepage feature list",
-      "status": "Seller claim, backtest not shown"
-    },
-    {
-      "claim": "Three point unders against the Rockets \"hitting at a 68.3 percent win rate (28-13, plus 25.2 percent ROI)\"; shooting guard three point unders \"58.9 percent win rate (248-173, plus 14.6 percent ROI)\"",
-      "where": "Free pick post, 30 Oct 2026",
-      "status": "Seller chosen trend, not a pick log"
-    },
-    {
-      "claim": "Utah Jazz +7.5: \"57.3% model win chance\" and \"+9.0% Edge\"",
-      "where": "Free pick post, 6 Nov 2026",
-      "status": "Model estimate, not a result"
-    },
-    {
-      "claim": "\"copy a top-performing model from the leaderboard\"",
-      "where": "Homepage feature list",
-      "status": "Leaderboard is inside the paid app; not checked"
-    }
+    {"claim": "Utah Jazz +7.5 at -113: \"57.3% model win chance\" and \"+9.0% Edge\"", "where": "Free pick post, 6 Nov 2026", "status": "Graded by us: Dallas won by 12, so the pick lost"},
+    {"claim": "Kyrie Irving Under 2.5 three pointers: \"58 percent win probability\"; unders against the Rockets \"28-13, plus 25.2 percent ROI\"", "where": "Free pick post, 30 Oct 2026", "status": "Graded by us: Irving made 5 threes, so the pick lost. The 28-13 is a seller chosen trend, not a pick log"},
+    {"claim": "\"Rithmm is 11-0 on Ziaire Williams props this season (+91.0% ROI).\"", "where": "Free pick post, 17 Nov 2026 (Williams Over 1.5 threes at +170)", "status": "Graded by us: Williams made 0 threes, so the pick lost. No list of the 11 earlier picks is shown"},
+    {"claim": "\"Rithmm is 23-12 on NBA center points + rebounds unders this season (+24.6% ROI)\"", "where": "Free pick post, 17 Nov 2026 (Towns Under 33.5)", "status": "Graded by us: Towns had 32, so the pick won. The 23-12 record itself has no pick list"},
+    {"claim": "Justin Jefferson Under 6.5 receptions: \"63% win chance and +16.9% Edge\"", "where": "Free pick post, 9 Nov 2026", "status": "Graded by us: 3 catches, so the pick won"},
+    {"claim": "Each pick shows a win chance and an Edge that \"shows whether Rithmm's win probability is stronger than the sportsbook's price\"", "where": "Homepage FAQ", "status": "Partly checked: in 16 of 26 posts the Edge was within about 1 point of the expected return we computed; in 10 it was off by 1.7 to 6.4 points"},
+    {"claim": "\"They met at MIT and built the modeling tool professional bettors use, made for everyone else.\"", "where": "Homepage founders section", "status": "Background confirmed in part by 2023 trade press; the comparison to professional bettors is not checkable"},
+    {"claim": "\"copy a top-performing model from the leaderboard\"", "where": "Homepage feature list", "status": "Leaderboard is inside the paid app; not checked"}
   ],
   "claims_note": [
-    "A model win chance and an Edge number tell you what the model expected, not what happened. A trend like 28-13 is a slice of past games picked because it looks strong; it is not a record of picks Rithmm sent before those games. The site never shows how often its stated win chances actually came true. To its credit, its own pick FAQ says \"No model is right every time,\" and each pick post says the probability is an estimate, not a guarantee.",
-    "The free picks page is not clear about who makes the picks. It says the picks \"come from Rithmm's predictive models,\" and also that they are \"generated by real Rithmm users running custom models on our platform.\" Each post we saw was labeled \"Community Post\" with a staff byline."
+    "How we graded: on 20 Nov 2026 we opened every free pick post linked from Rithmm's AI sports picks page (24 posts dated 7 to 19 Nov 2026) plus the two older posts we cited on 7 Nov. Each post names the bet, the price and the model win chance. We settled each one against ESPN box scores and final scores, at the price in the post, one unit per pick.",
+    "Result: 24 picks could be settled. They went 10 wins and 14 losses, about minus 5.7 units, or minus 24% of the amount risked. Two could not be settled: Van Jefferson did not appear in the Giants and Commanders box score, and Ty Jerome did not appear in the 19 Nov Warriors and Grizzlies box score, so those bets were most likely voided. Adding up the stated win chances on the 24 settled picks gives an expected 13.2 wins. Ten is below that, but 24 picks is far too few to judge any model; a short run like this can swing either way.",
+    "The Edge figure: we computed the expected return of each pick from its stated win chance and stated price. In 16 of 26 posts the published Edge was within about 1 point of our number. In the other 10 it was off by 1.7 to 6.4 points, sometimes higher and sometimes lower; for example the Kyrie Irving post showed +11.3% where 58% at -120 works out to about +6.3%. Rithmm does not publish its formula, so a buyer cannot tell how Edge is set.",
+    "Trend lines such as 11-0, 18-4 and 23-12 are slices of past games chosen because they look strong. They are not shown with a list of the picks, dates or prices. Win chances like 55% to 63% sound high, but those posts were priced from -102 to -179, which need about 50.5% to 64% just to break even, so a win chance has to be accurate, not just high, to make money."
   ],
   "record": [
-    "Independently verifiable: nothing about results. We found no full, time stamped log of Rithmm picks with the line, the price and the outcome, no third party contest results, and no court or regulator record about its performance. The New Jersey Division of Gaming Enforcement active vendor report dated 6 Nov 2026 lists Rithmm Inc at its Chestnut Hill address. That confirms the company is on a regulator's vendor list; it says nothing about whether the picks win.",
-    "Seller's own marketing: the free pick posts are dated and show the line and price, which is a start, but the posts we opened showed no result after the game. A 30 Oct 2026 post still showed no grade on 7 Nov 2026. The model leaderboard and backtest figures sit inside the paid app, and Rithmm does not explain publicly how they are counted. One App Store reviewer questioned exactly that, saying picks can switch from recommended to caution during the day. The app also tracks your own bets, which is useful, but that is your record, not Rithmm's."
+    "Independently verifiable: nothing complete. We found no full, time stamped log of Rithmm picks with the line, the price and the outcome, no third party grader, and no court or regulator record about its performance. The New Jersey Division of Gaming Enforcement active vendor report we read on 7 Nov 2026 lists Rithmm Inc at its Chestnut Hill address. That confirms the company is on a regulator's vendor list; it says nothing about whether the picks win.",
+    "Seller's own marketing: the free pick posts are dated and show the line, price and model win chance, which makes them gradable, but none we opened showed a result after the game. Our own grading of 26 posts is above. The model leaderboard and backtests sit inside the paid app, and Rithmm does not explain publicly how they are counted. Two App Store reviewers said picks changed status during the day or that advertised backtests did not match what they saw.",
+    "Background: the about page says Rithmm officially started in September 2022 and spent a year in stealth. Trade press in June 2023 reported a $2 million seed round led by Boston Seed Capital, Counterview Capital, Oyster Ventures, Correlation Ventures, Service Provider Capital and Permit Ventures, with money set aside for an NFL product. A CDC Gaming report in September 2023 said Rithmm had just launched after beta testing, and quoted the CEO saying she wanted her own instincts back tested rather than paying for picks. The App Store lists the app since 2022 and showed version 3.5.1, updated 10 Nov 2026.",
+    "The free picks page is not clear about who makes the picks. It says the picks \"come from Rithmm's predictive models,\" and also that they are \"generated by real Rithmm users running custom models on our platform.\" The FAQ on that page still says Rithmm covers \"NBA, MLB, and Golf,\" while the pricing page lists NFL, NBA, MLB, WNBA, Golf, college football and college basketball."
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Rithmm model or pick feed is matched to a Watchdog graded record, so we make no claim about how Rithmm's picks perform.",
-    "context": "For scale: Rithmm's free pick posts list model win chances near 57% to 58%. On the Watchdog board on 7 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Rithmm model or pick feed is matched to a Watchdog graded record, so we make no claim about how Rithmm's picks perform beyond the 26 free posts we graded above.",
+    "context": "For scale: Rithmm's free pick posts list model win chances mostly between 52% and 63%. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "Rithmm has a large App Store rating sample, but it splits sharply. The overall average is high, while the 50 most recent written reviews in Apple's public feed are close to evenly split between 5 stars and 1 or 2 stars. Reddit discussion is thin, and we found no Trustpilot reviews. Below is what we read and how much weight it can carry.",
+  "customers_intro": "Rithmm has the largest buyer sample of any app we checked in this group: 2,152 App Store ratings and 450 written reviews in Apple's public feed from March 2023 to October 2026. We read all 450, plus every Reddit thread we could find that discusses the app. Below is what we read and how much weight it can carry.",
   "customers": [
-    {
-      "type": "Our summary",
-      "tone": "Mixed",
-      "date": "Read 13 Nov 2026",
-      "text": "Reddit talk about Rithmm is thin. In late 2024 an r/sportsbook user said it had worked for him for a while but was doing worse lately, and the only reply said prediction platforms that do not publish a full results sheet with closing line value are guesswork. Another user that December asked for apps that give more consistent results than Rithmm. The App Store feed below is the larger sample, and it splits between praise for the tools and complaints about losing picks and billing.",
-      "source": null
-    },
-    {
-      "type": "Customer report",
-      "tone": "Neutral",
-      "date": "Checked 7 Nov 2026",
-      "text": "The US App Store listing shows 4.4 out of 5 from 2,098 ratings, with the seller listed as Rithmm Inc. Ratings without text cannot tell you whether users made money.",
-      "source": 4
-    },
-    {
-      "type": "Customer report",
-      "tone": "Neutral",
-      "date": "17 Mar to 23 Oct 2026",
-      "text": "Apple's public feed of the 50 most recent written US reviews had 23 five star reviews, 6 two star reviews and 21 one star reviews. Praise centered on the model builder, Scout, Prop Explorer and helpful Discord staff. Complaints centered on losing picks, the price and the free trial.",
-      "source": 5
-    },
-    {
-      "type": "Customer report",
-      "tone": "Negative",
-      "date": "11 Oct 2026",
-      "text": "A 2 star reviewer said the app advertised a backtest of about +10% on spread picks, then tracked its picks and said one day went 13-19 and lost about 26%. The reviewer said the picks leaned toward big underdogs, Overs and small games, and cancelled before the trial ended. We did not verify these figures.",
-      "source": 5
-    },
-    {
-      "type": "Customer report",
-      "tone": "Negative",
-      "date": "17 Mar 2026",
-      "text": "A 1 star reviewer who said they bet seriously wrote that paper tracked bets backed by several models and a Smart Signal went 16-31 for about 18 units down, and questioned how the in app backtests count picks that change status during the day. We did not verify these figures.",
-      "source": 5
-    },
-    {
-      "type": "Customer report",
-      "tone": "Negative",
-      "date": "17 Aug 2026",
-      "text": "A 2 star reviewer said they paid for Core for three months and finished negative every month. They praised the app design and the Discord team, but said they could not justify paying.",
-      "source": 5
-    },
-    {
-      "type": "Customer report",
-      "tone": "Negative",
-      "date": "24 Jul 2026",
-      "text": "A 2 star reviewer said the free trial did not work and their card was charged right away, and that sending bets to sportsbooks did not work for them.",
-      "source": 5
-    },
-    {
-      "type": "Customer report",
-      "tone": "Positive",
-      "date": "20 Mar 2026",
-      "text": "A 5 star reviewer said they had used Rithmm for two years and were up 24 units in NBA. Others in October 2026 praised Prop Explorer, Scout and the new features. These are self reported results we could not check.",
-      "source": 5
-    },
-    {
-      "type": "Seller curated",
-      "tone": "Positive",
-      "date": "Checked 7 Nov 2026",
-      "text": "The homepage shows four unnamed user quotes, one saying the app \"eliminates the emotional side of betting.\" They are selected by Rithmm and carry no names or dates.",
-      "source": 1
-    },
-    {
-      "type": "Not found",
-      "tone": "Neutral",
-      "date": "Checked 7 Nov 2026",
-      "text": "The Trustpilot page for rithmm.com is unclaimed and had no reviews. Apart from the short Reddit threads in our summary, we found no Reddit discussion of Rithmm, and no Better Business Bureau profile we could confirm.",
-      "source": 10
-    }
+    {"type": "Our summary", "tone": "Mixed", "date": "Read 20 Nov 2026", "text": "Across about 460 independent posts from 2023 to 2026, the pattern changes over time. Through 2025 the App Store reviews were mostly warm: 230 of 310 written that year gave 4 or 5 stars, praising the model builder, Smart Signals, Prop Explorer, Scout and helpful Discord staff, and several users said they were up over months. In 2026 the 80 written reviews split nearly evenly, and the 1 and 2 star reviews repeat three themes: picks that lost in streaks during the trial, a trial that charged the card right away or a cancellation that did not stop billing, and slow support. Reddit is smaller and similar: one user ran a public 30 day test in October 2025, reported 13 wins and 6 losses through day 5, then stopped posting; others said they tried it and were not impressed, or that the AI missed a lot in the NBA. Nobody we found posted a long, checkable record either way.", "source": null},
+    {"type": "Customer report", "tone": "Neutral", "date": "Checked 20 Nov 2026", "text": "The US App Store listing shows 4.4 out of 5 from 2,152 ratings, up from 2,098 on 7 Nov 2026, with the seller listed as Rithmm Inc. Ratings without text cannot tell you whether users made money.", "source": 4},
+    {"type": "Customer report", "tone": "Mixed", "date": "5 Mar 2023 to 23 Oct 2026", "text": "Apple's public feed held 450 written US reviews: 255 five star, 50 four star, 9 three star, 19 two star and 117 one star. By year, 2025 had 230 of 310 at 4 or 5 stars (74%), while 2026 so far had 37 of 80 (46%) and 41 at 1 or 2 stars. Of the 136 reviews at 1 or 2 stars, 19 use the word scam and 35 mention the trial, charges, cancelling or refunds.", "source": 30},
+    {"type": "Customer report", "tone": "Negative", "date": "11 Oct 2026", "text": "A 2 star reviewer said the app advertised a backtest of about +10% on spread picks, then tracked its picks and said one day went 13-19 and lost about 26%. The reviewer said the picks leaned toward big underdogs, Overs and small games, and cancelled before the trial ended. We did not verify these figures.", "source": 5},
+    {"type": "Customer report", "tone": "Negative", "date": "17 Mar 2026", "text": "A 1 star reviewer who said they bet seriously wrote that paper tracked bets backed by several models and a Smart Signal went 16-31 for about 18 units down, and questioned how the in app backtests count picks that change status during the day. We did not verify these figures.", "source": 5},
+    {"type": "Customer report", "tone": "Negative", "date": "Oct 2025 to Jul 2026", "text": "Several reviewers described billing problems: one in October 2025 said the 7 day trial charged at once and caused an overdraft fee; another that month said they were told the trial had already been used on their email and were charged in full; in January 2026 two said they cancelled and were still charged $29.99 and $99.99; in March 2026 one said a free trial still charged $19.99. We cannot see their accounts, and the terms limit the trial to one per user.", "source": 30},
+    {"type": "Customer report", "tone": "Negative", "date": "17 Aug 2026", "text": "A 2 star reviewer said they paid for Core for three months and finished negative every month. They praised the app design and the Discord team, but said they could not justify paying.", "source": 5},
+    {"type": "Customer report", "tone": "Negative", "date": "Dec 2025", "text": "A reviewer said they had been subscribed for over four months and had a negative return even when following only Smart Signals. Another said support took more than a week to answer messages.", "source": 30},
+    {"type": "Customer report", "tone": "Positive", "date": "Sep 2025 to Mar 2026", "text": "Positive reviewers described real use over time: one said they had used Rithmm for two years and were up 24 units in NBA; one said they made a profit over four months; one said a tuned model won a Rithmm contest and paid them $1,000; others praised the backtesting of their own models and quick help on Discord. These are self reported results we could not check.", "source": 30},
+    {"type": "Forum post", "tone": "Mixed", "date": "23 to 30 Oct 2025", "text": "On r/sportsbetting a user started a public 30 day test with a $500 bankroll and $20 straight bets on Rithmm picks. Daily posts reported 6 of 10 on day 1, 10 and 4 by day 4, and 3 of 5 Smart Signals on day 5. The posts stopped after day 5, so the full test was never reported. A commenter on one day said they had tried the app and found it so so.", "source": 24},
+    {"type": "Forum post", "tone": "Negative", "date": "6 to 12 Mar 2026", "text": "A user testing Rithmm on the free trial posted a winning college basketball parlay but said the AI had many NBA misses. A week later they said the next picks did not hit and that most of their wins that week came from their own picks or picks from Reddit.", "source": 26},
+    {"type": "Forum post", "tone": "Negative", "date": "Aug 2024 to Oct 2025", "text": "Several Reddit users mentioned Rithmm in passing while shopping for tools: one asked for something similar that is reasonable in cost, one said they had tried it and DFS Army and were not impressed, one listed it among apps they had tried before moving on, and one in late 2024 said it had worked for a while but was doing worse.", "source": 27},
+    {"type": "Seller curated", "tone": "Positive", "date": "Checked 20 Nov 2026", "text": "The homepage shows four unnamed user quotes, one saying the app \"eliminates the emotional side of betting.\" They are selected by Rithmm and carry no names or dates.", "source": 1},
+    {"type": "Not found", "tone": "Neutral", "date": "Checked 7 Nov 2026", "text": "The Trustpilot page for rithmm.com was unclaimed and had no reviews, and we found no Better Business Bureau profile we could confirm. We found no forum thread on Covers, Sportsbook Review or TheRX discussing Rithmm results.", "source": 10}
   ],
   "conflicts": [
-    "Rithmm's app builds bet slips and sends them with one tap to sportsbooks and prediction markets. A 30 Oct 2026 pick post named DraftKings, FanDuel, BetMGM, Caesars, BetRivers, Hard Rock, Kalshi, Polymarket and Novig for line shopping. The footer of the pick posts has a link labeled \"Affiliate Disclosure,\" but it pointed back to the homepage, and we found no page saying whether Rithmm is paid when users sign up or bet. If a picks app is paid per referral, it has a reason to push more bets. We did not confirm any such deal.",
-    "The site footer lists registration numbers for Rithmm, Inc. in New Jersey, Indiana, Michigan, Virginia and Colorado. We confirmed the New Jersey entry on the regulator's vendor report. We did not find what business those registrations cover.",
-    "The site disclaimer says it is \"for entertainment purposes only and does not involve real-money betting or prizes,\" while the product is built to help users choose real bets. The terms add that Rithmm is not a sportsbook and is not responsible for any wager."
+    "Rithmm's app builds bet slips and sends them with one tap to sportsbooks and prediction markets. Its free pick posts name DraftKings, FanDuel, BetMGM, Caesars, BetRivers, Hard Rock, Kalshi, Polymarket and Novig for line shopping, and its FAQ says parlays can be sent \"directly to DraftKings, FanDuel, BetMGM, Caesars, or BetRivers.\" The footer of the pick posts has a link labeled \"Affiliate Disclosure,\" but on 7 Nov and again on 20 Nov 2026 we found no page saying whether Rithmm is paid when users sign up or bet. If a picks app is paid per referral, it has a reason to push more bets. We did not confirm any such deal.",
+    "The site footer lists registration numbers for Rithmm, Inc. in New Jersey (0094686), Indiana (SWR-000591), Michigan (008230), Virginia (V-7154-127813) and Colorado (97208926). We confirmed the New Jersey entry on the regulator's vendor report. Vendor registrations are typically needed by companies that do business with licensed sportsbooks, which fits a referral or marketing relationship, but we did not find what business these registrations cover.",
+    "The site disclaimer says it is \"for entertainment purposes only and does not involve real-money betting or prizes,\" while the product is built to help users choose real bets and send them to sportsbooks. The terms add that Rithmm is not a sportsbook and is not responsible for any wager."
   ],
   "strengths": [
-    "A named company, a mailing address, published prices and full written terms, including the refund and renewal rules.",
-    "A 7 day free trial and free daily pick posts that show the line, price and model win chance, so you can test it before paying.",
+    "A named company with named founders, a mailing address, published prices and full written terms, including the refund and renewal rules.",
+    "Real outside backing: a $2 million seed round from Boston investors in 2023, reported in the trade press.",
+    "A 7 day free trial and free daily pick posts that show the line, price and model win chance, so you can grade it before paying.",
     "Tools a bettor can use on their own: line shopping across books, a model builder and tracking of your own bets with filters.",
-    "The pick posts and FAQ say plainly that probabilities are estimates and no model is right every time."
+    "The pick posts, FAQ and terms say plainly that probabilities are estimates and that high probability picks can and frequently will be wrong."
   ],
   "concerns": [
-    "No public, graded record of its picks. Every win rate on the site is a model estimate or a backtested trend.",
-    "No refunds. The trial converts to a paid plan automatically, and some reviewers say they were charged early.",
-    "Recent App Store reviews split nearly evenly between 5 stars and 1 or 2 stars, with many reports of losing picks.",
+    "No public, graded record of its picks, and the free posts never show a result. Our own grading of 24 settled free picks was 10 wins and 14 losses.",
+    "The Edge number could not be reproduced from the posted win chance and price in 10 of 26 posts.",
+    "Trend claims such as 11-0 and 23-12 come with no list of picks; the 11-0 trend pick we graded lost.",
+    "No refunds. The trial converts to a paid plan automatically, and a cluster of reviewers say they were charged early or after cancelling.",
+    "Buyer reviews have turned: 2026 App Store reviews split nearly evenly between 4 or 5 stars and 1 or 2 stars, after a mostly positive 2025.",
     "One tap sending to sportsbooks, with no working affiliate disclosure we could find."
   ],
   "checklist": [
-    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
-    "Count units, not wins. A 60% record at heavy favorites can still lose money.",
-    "Read the guarantee for the words refund, credit and extension. Most \"guarantees\" in this business are credits.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Use the free week to grade it: copy every pick you would follow with the time, line and price, and settle them yourself before day 7.",
+    "Cancel at least 24 hours before the trial or billing period ends if you are not sure, and keep a screenshot of the cancellation.",
+    "If you subscribed through Apple, cancel and ask for any refund through Apple; Rithmm's own policy gives none.",
+    "Count units, not wins. A 60% pick at -150 needs to win 60% just to break even.",
+    "Ask for the list behind any trend line such as 11-0 or 23-12 before trusting it.",
+    "Give any model a few hundred graded picks before you call it a winner. Short runs swing hard both ways."
   ],
   "faq": [
-    [
-      "Is Rithmm legit?",
-      "It is a real company, Rithmm, Inc. of Chestnut Hill, MA, with published prices, written terms and an App Store app, and it appears on New Jersey's gaming vendor list. We could not verify that its picks win over time, because it does not publish a graded record."
-    ],
-    [
-      "How much does Rithmm cost?",
-      "On 7 Nov 2026 the pricing page showed Core at $29.99 a month or $239.99 a year, Pro at $49.99 a month or $449.99 a year, and Premium at $99.99 a month or $999.99 a year. New users get a 7 day free trial, and there are no refunds."
-    ],
-    [
-      "Does Rithmm have a verified record?",
-      "No. Its pick posts show model win chances and backtested trends, but we found no full, time stamped log of picks with results, and no third party has graded it. No Rithmm feed is matched to a Watchdog graded record in this edition."
-    ],
-    [
-      "Is Rithmm worth it?",
-      "For the money you get model projections, line shopping, a model builder, bet tracking and, on Pro and above, an AI chat analyst. What is unproven is whether following its picks makes money, and recent App Store reviews are sharply split, so the free week is the cheapest way to grade it yourself."
-    ]
+    ["Is Rithmm legit?", "It is a real company, Rithmm, Inc. of Chestnut Hill, MA, with named founders, published prices, written terms, an App Store app and outside investors, and it appears on New Jersey's gaming vendor list. We could not verify that its picks win over time, because it does not publish a graded record."],
+    ["How much does Rithmm cost?", "On 20 Nov 2026 the pricing page showed Core at $29.99 a month or $239.99 a year, Pro at $49.99 a month or $449.99 a year, and Premium at $99.99 a month or $999.99 a year. New users get one 7 day free trial, and there are no refunds."],
+    ["Does Rithmm have a verified record?", "No. Its pick posts show model win chances and trend records, but no results. We graded 24 of its free picks from 30 Oct to 19 Nov 2026 ourselves: 10 wins, 14 losses, about minus 5.7 units. That sample is too small to judge the models either way."],
+    ["Can I get a refund from Rithmm?", "Not from Rithmm. Its FAQ and terms say past charges are not refunded, including partly used periods and outages, except where the law or the App Store or Google Play policy requires it. If you paid through Apple, Apple decides refund requests."],
+    ["Who owns Rithmm?", "Rithmm, Inc. was started in September 2022 by Megan Lanham, a former Division I basketball coach with an MIT MBA, and Brian Beachkofski, a PhD who did predictive modeling for the U.S. Air Force. A 2023 seed round brought in Boston Seed Capital, Counterview Capital, Oyster Ventures and others."],
+    ["Is Rithmm worth it?", "For the money you get model projections, line shopping, a model builder, bet tracking and, on Pro and above, an AI chat analyst. What is unproven is whether following its picks makes money, and 2026 reviews are sharply split, so the free week is the cheapest way to grade it yourself."]
   ],
-  "related": [
-    "dimers",
-    "betql",
-    "action-network-pro",
-    "docs-sports-ai",
-    "oddsshark-picks"
-  ],
+  "related": ["dimers", "betql", "action-network-pro", "docs-sports-ai", "oddsshark-picks"],
   "sources": [
-    {
-      "title": "Rithmm pricing page (plans, monthly and yearly prices, trial terms)",
-      "url": "https://www.rithmm.com/pricing",
-      "accessed": "7 Nov 2026"
-    },
-    {
-      "title": "Rithmm homepage (feature claims, testimonials, FAQ on refunds, state registration numbers)",
-      "url": "https://www.rithmm.com/",
-      "accessed": "7 Nov 2026"
-    },
-    {
-      "title": "Rithmm about page (founders, start date)",
-      "url": "https://www.rithmm.com/about",
-      "accessed": "7 Nov 2026"
-    },
-    {
-      "title": "Rithmm terms and conditions (refunds, renewals, arbitration, operator address)",
-      "url": "https://www.rithmm.com/terms-and-conditions",
-      "accessed": "7 Nov 2026"
-    },
-    {
-      "title": "Apple App Store: Rithmm: AI Sports Betting (rating, seller, in app prices)",
-      "url": "https://apps.apple.com/us/app/rithmm-ai-sports-betting/id1641010681",
-      "accessed": "7 Nov 2026"
-    },
-    {
-      "title": "Apple customer reviews feed for Rithmm, most recent US reviews",
-      "url": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=1641010681/sortby=mostrecent/json",
-      "accessed": "7 Nov 2026"
-    },
-    {
-      "title": "Rithmm AI sports picks page (free picks, accuracy FAQ)",
-      "url": "https://www.rithmm.com/ai-sports-picks",
-      "accessed": "7 Nov 2026"
-    },
-    {
-      "title": "Rithmm pick post: Kyrie Irving Under 2.5 3 Pointers vs Rockets (trend claims, sportsbooks named)",
-      "url": "https://www.rithmm.com/sports-betting-picks/kyrie-irving-under-2-5-3-pointers-vs-rockets",
-      "accessed": "7 Nov 2026"
-    },
-    {
-      "title": "Rithmm pick post: Utah Jazz +7.5 vs Mavericks (model win chance and Edge)",
-      "url": "https://www.rithmm.com/sports-betting-picks/utah-jazz-plus-7-5-vs-mavericks-prediction-nov-6-2026",
-      "accessed": "7 Nov 2026"
-    },
-    {
-      "title": "Rithmm promo codes and offers page",
-      "url": "https://www.rithmm.com/sports-betting-promos-and-offers",
-      "accessed": "7 Nov 2026"
-    },
-    {
-      "title": "Trustpilot: rithmm.com",
-      "url": "https://www.trustpilot.com/review/rithmm.com",
-      "accessed": "7 Nov 2026"
-    },
-    {
-      "title": "New Jersey Division of Gaming Enforcement: Active Vendors Report (dated 6 Nov 2026)",
-      "url": "https://nj.gov/lps/ge/docs/Reports/active_vendor.pdf",
-      "accessed": "7 Nov 2026"
-    },
-    {
-      "title": "Reddit r/sportsbook: Any reviews on TheOver.AI?",
-      "url": "https://www.reddit.com/r/sportsbook/comments/1gmetxj/any_reviews_on_theoverai/",
-      "accessed": "13 Nov 2026"
-    },
-    {
-      "title": "Reddit r/sportsbook: Underdog help",
-      "url": "https://www.reddit.com/r/sportsbook/comments/1h56ltu/underdog_help/",
-      "accessed": "13 Nov 2026"
-    }
+    {"title": "Rithmm pricing page (plans, monthly and yearly prices, trial terms)", "url": "https://www.rithmm.com/pricing", "accessed": "20 Nov 2026"},
+    {"title": "Rithmm homepage (feature claims, testimonials, FAQ on refunds and Edge, state registration numbers)", "url": "https://www.rithmm.com/", "accessed": "20 Nov 2026"},
+    {"title": "Rithmm about page (founders, start date)", "url": "https://www.rithmm.com/about", "accessed": "20 Nov 2026"},
+    {"title": "Rithmm terms and conditions (refunds, renewals, arbitration, operator address)", "url": "https://www.rithmm.com/terms-and-conditions", "accessed": "20 Nov 2026"},
+    {"title": "Apple App Store: Rithmm: AI Sports Predictions (rating, seller, in app prices)", "url": "https://apps.apple.com/us/app/rithmm-ai-sports-betting/id1641010681", "accessed": "20 Nov 2026"},
+    {"title": "Apple customer reviews feed for Rithmm, most recent US reviews (page 1)", "url": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=1641010681/sortby=mostrecent/json", "accessed": "20 Nov 2026"},
+    {"title": "Rithmm AI sports picks page (free picks list, accuracy FAQ)", "url": "https://www.rithmm.com/ai-sports-picks", "accessed": "20 Nov 2026"},
+    {"title": "Rithmm pick post: Kyrie Irving Under 2.5 3 Pointers vs Rockets (trend claims, sportsbooks named)", "url": "https://www.rithmm.com/sports-betting-picks/kyrie-irving-under-2-5-3-pointers-vs-rockets", "accessed": "20 Nov 2026"},
+    {"title": "Rithmm pick post: Utah Jazz +7.5 vs Mavericks (model win chance and Edge)", "url": "https://www.rithmm.com/sports-betting-picks/utah-jazz-plus-7-5-vs-mavericks-prediction-nov-6-2026", "accessed": "20 Nov 2026"},
+    {"title": "Rithmm promo codes and offers page", "url": "https://www.rithmm.com/sports-betting-promos-and-offers", "accessed": "20 Nov 2026"},
+    {"title": "Trustpilot: rithmm.com", "url": "https://www.trustpilot.com/review/rithmm.com", "accessed": "7 Nov 2026"},
+    {"title": "New Jersey Division of Gaming Enforcement: Active Vendors Report (dated 6 Nov 2026)", "url": "https://nj.gov/lps/ge/docs/Reports/active_vendor.pdf", "accessed": "7 Nov 2026"},
+    {"title": "Reddit r/sportsbook: Any reviews on TheOver.AI?", "url": "https://www.reddit.com/r/sportsbook/comments/1gmetxj/any_reviews_on_theoverai/", "accessed": "13 Nov 2026"},
+    {"title": "Reddit r/sportsbook: Underdog help", "url": "https://www.reddit.com/r/sportsbook/comments/1h56ltu/underdog_help/", "accessed": "13 Nov 2026"},
+    {"title": "Rithmm pick post: Ziaire Williams Over 1.5 3 Pointers (11-0 trend claim)", "url": "https://www.rithmm.com/sports-betting-picks/ziaire-williams-over-1-5-3-pointers-prediction-nov-17-2026", "accessed": "20 Nov 2026"},
+    {"title": "Rithmm pick post: Karl-Anthony Towns Under 33.5 Points + Rebounds (23-12 trend claim)", "url": "https://www.rithmm.com/sports-betting-picks/karl-anthony-towns-under-33-5-points-rebounds-prediction-nov-17-2026", "accessed": "20 Nov 2026"},
+    {"title": "Rithmm pick post: Mikel Brown Under 13.5 Points + Assists (18-4 trend claim)", "url": "https://www.rithmm.com/sports-betting-picks/mikel-brown-under-13-5-points-assists-prediction-nov-18-2026", "accessed": "20 Nov 2026"},
+    {"title": "Rithmm pick post: Justin Jefferson Under 6.5 Receptions (63% win chance)", "url": "https://www.rithmm.com/sports-betting-picks/justin-jefferson-under-6-5-receptions-prediction-nov-9-2026", "accessed": "20 Nov 2026"},
+    {"title": "ESPN NBA scoreboard and box scores (results used to grade the pick posts)", "url": "https://www.espn.com/nba/scoreboard", "accessed": "20 Nov 2026"},
+    {"title": "ESPN NFL scoreboard and box scores (results used to grade the pick posts)", "url": "https://www.espn.com/nfl/scoreboard", "accessed": "20 Nov 2026"},
+    {"title": "ESPN men's college basketball scoreboard (Canisius at Brown, Vermont at Yale)", "url": "https://www.espn.com/mens-college-basketball/scoreboard", "accessed": "20 Nov 2026"},
+    {"title": "The SaaS News: Rithmm closes $2 million in seed round (investors named)", "url": "https://www.thesaasnews.com/news/rithmm-closes-2-million-in-seed-round/", "accessed": "20 Nov 2026"},
+    {"title": "Gaming America: Rithmm poised to launch NFL platform, closes $2m seed funding round (5 Jun 2023)", "url": "https://gamingamerica.com/news/7874/rithmm-poised-to-launch-nfl-platform-closes-2m-seed-funding-round", "accessed": "20 Nov 2026"},
+    {"title": "CDC Gaming: High tech startups aspire to help bettors beat the books (24 Sep 2023)", "url": "https://cdcgaming.com/brief/high-tech-startups-aspire-to-help-bettors-beat-the-books/", "accessed": "20 Nov 2026"},
+    {"title": "Reddit r/sportsbetting: Made a post about trying Rithmm 30 day test $500 bankroll (Oct 2025) and daily follow ups", "url": "https://www.reddit.com/r/sportsbetting/comments/1oebp9k/", "accessed": "20 Nov 2026"},
+    {"title": "Reddit r/sportsbetting: Day 5/30 results (Rithmm Smart Signals, Oct 2025)", "url": "https://www.reddit.com/r/sportsbetting/comments/1ok20if/", "accessed": "20 Nov 2026"},
+    {"title": "Reddit r/sportsbetting: First win with AI picks (Rithmm trial, Mar 2026)", "url": "https://www.reddit.com/r/sportsbetting/comments/1rm8z3i/", "accessed": "20 Nov 2026"},
+    {"title": "Reddit r/sportsbetting: AI Apps (tried Rithmm, Oct 2025)", "url": "https://www.reddit.com/r/sportsbetting/comments/1nv7vnr/", "accessed": "20 Nov 2026"},
+    {"title": "Reddit r/sportsbetting: Which data analysis app do yall prefer? (Sep 2025)", "url": "https://www.reddit.com/r/sportsbetting/comments/1nf1pug/", "accessed": "20 Nov 2026"},
+    {"title": "Reddit r/sportsbook: Anyone using any type of gambling AI's they could recommend? (Aug 2024)", "url": "https://www.reddit.com/r/sportsbook/comments/1f1p6wm/", "accessed": "20 Nov 2026"},
+    {"title": "Apple customer reviews feed for Rithmm, pages 2 to 9 (older US reviews back to Mar 2023)", "url": "https://itunes.apple.com/us/rss/customerreviews/page=9/id=1641010681/sortby=mostrecent/json", "accessed": "20 Nov 2026"},
+    {"title": "Reddit r/sportsbetting: Got a 7 day free trial of Rithmm (Oct 2025)", "url": "https://www.reddit.com/r/sportsbetting/comments/1oea1mo/", "accessed": "20 Nov 2026"}
   ]
 }

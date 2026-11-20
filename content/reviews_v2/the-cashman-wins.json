@@ -3,123 +3,434 @@
   "name": "The Cashman Wins",
   "legal_name": "TheCashmanWins.com (Alan Cashman, Indianapolis)",
   "kind": "Low price pick subscription run by one handicapper",
-  "checked": "7 Nov 2026",
-  "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-07",
+  "checked": "20 Nov 2026",
+  "checked_iso": "2026-11-20",
+  "updated_iso": "2026-11-20",
   "title": "The Cashman Wins Review 2026: Pricing, Record, Worth It?",
-  "description": "The Cashman Wins review, checked 7 Nov 2026: $10 a month to $179 lifetime, no refunds, a seller kept pick sheet, and 33 CapperTek reviews read in full.",
+  "description": "The Cashman Wins review, checked 20 Nov 2026: $10 a month to $179 lifetime, no refunds, and his own 1,650 row pick sheet recounted by us.",
   "h1": "The Cashman Wins review",
-  "dek": "Alan Cashman sells all access picks for $10 a month, $99 a year or $179 for life, far below most sellers. He posts a pick history sheet that he keeps himself. Buyers on CapperTek mostly praise him, but one reviewer wrote almost half the reviews, and two say they paid and got nothing.",
+  "dek": "Alan Cashman sells all access picks for $10 a month, $99 a year or $179 for life, far below most sellers. He posts a pick sheet he keeps himself. We recounted it: about 55.6% winners on straight bets since 2019, a small edge at flat stakes, losing years in 2023 and 2024, and no new rows since 27 Sep 2026.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record for The Cashman Wins. This page reports what we could check and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record for The Cashman Wins. This page reports what we could check, including our own count of the seller's pick sheet, and labels everything else."
   },
   "glance": [
-    ["Operator", "Alan Cashman, Indianapolis (About page). Contact by form or email; no address listed"],
-    ["Claims to operate since", "Site copyright 2020; seller says he has done this 10 years (CapperTek reply, 2026)"],
-    ["Price range seen", "$10 a month to $179 lifetime"],
-    ["Guarantee", "None. \"There are no refunds once picks are sent.\""],
-    ["Full public record", "A pick history sheet kept by the seller, with no post times"],
-    ["Watchdog graded record", "None yet"]
+    [
+      "Operator",
+      "Alan Cashman, Indianapolis (About page). Contact by form or email; no address listed"
+    ],
+    [
+      "Selling picks since",
+      "At least Dec 2019 on Reddit, earlier as AlanCashman.com; he says he has done this 10 years"
+    ],
+    [
+      "Price range seen",
+      "$10 a month to $179 lifetime; $45 to $95 on a Previous Members page"
+    ],
+    [
+      "Guarantee",
+      "None. \"There are no refunds once picks are sent.\""
+    ],
+    [
+      "Seller's own pick sheet, our count",
+      "Straight bets 688 wins, 550 losses, 18 pushes (55.6%); +2.0% return at flat stakes"
+    ],
+    [
+      "Recent years on that sheet",
+      "2023 and 2024 lost money; 2025 about even; 2026 up through 27 Sep"
+    ],
+    [
+      "Watchdog graded record",
+      "None yet"
+    ]
   ],
   "short_answer": [
-    "The Cashman Wins is a small, real service run by one named person, Alan Cashman, who says he is based in Indianapolis and appears on The Dan Dakich Show and WISH-TV. It publishes its prices, takes payment by card, Venmo, Cash App or X Money, and links a public pick history sheet. Most buyers who reviewed it on CapperTek say they got what they paid for.",
-    "Whether the picks make money is harder to say. The pick history is a Google Sheet that Cashman keeps himself, with odds and results but no time each pick was sent, so a buyer cannot confirm the picks were posted before the games. Win rates such as 65% to 70% come from the seller and from reviewers, not from an outside grader.",
+    "The Cashman Wins is a small, real service run by one named person, Alan Cashman, who says he is based in Indianapolis and appears on The Dan Dakich Show and WISH-TV. It publishes its prices, takes payment by card, PayPal, Venmo, Cash App or X Money, and links a public pick history sheet. Most buyers who reviewed it on CapperTek say they got what they paid for.",
+    "We downloaded that sheet on 20 Nov 2026 and counted it ourselves. Across 1,256 straight bets with a league and date, it shows 688 wins, 550 losses and 18 pushes, a 55.6% win rate. Risking one unit on each at the listed odds would have made about 25 units, a 2% return. That is a thin edge, and the sheet is kept by the seller with no time each pick was sent.",
+    "The recent years matter most. The sheet shows a loss in 2023 (98 wins, 98 losses) and in 2024 (119 wins, 104 losses), roughly break even in 2025, and a good 2026 so far (35 wins, 20 losses). Pick volume has also dropped from about 250 straight plays in 2021 to about 60 a year, and no new row has been added since 27 Sep 2026.",
     "Because the price is so low, the money at risk is mostly what you bet, not the fee. If you join, record each pick with the time and line you received it, and compare that with the sheet."
   ],
-  "pricing_intro": "Prices below were shown on TheCashmanWins.com on 7 Nov 2026. The subscribe page lists the main plans. A separate \"Previous Members\" page showed lower prices, and the seller has posted many short term deals on TheRX forum.",
+  "pricing_intro": "Prices below were shown on TheCashmanWins.com on 20 Nov 2026, unchanged from our 7 Nov check. The subscribe page lists the main plans. A separate \"Previous Members\" page shows lower prices, and the seller has posted many short term deals on TheRX and Reddit over the years.",
   "pricing": [
-    ["All Access Monthly", "$10 a month, \"Cancel Anytime\"", "No refunds once picks are sent"],
-    ["All Access 1 Year", "$99, \"Get 2nd year FREE!\"", "Same"],
-    ["Lifetime Pass", "$179", "Same"],
-    ["Previous Members page", "Football through the Super Bowl $45 · 1 year (2nd year free) $59 · Lifetime $95 (listed as Reg $179)", "Same"],
-    ["Referral program", "Members get 1 year added for a first referral; new 1 year or longer members get a free 1 year membership for a friend", "Shown 7 Nov 2026"],
-    ["BetUS offer", "Free picks through the Super Bowl for joining BetUS through his link and depositing $100 or more", "Tied to a sportsbook deposit"]
+    [
+      "All Access Monthly",
+      "$10 a month, \"Cancel Anytime\"",
+      "No refunds once picks are sent"
+    ],
+    [
+      "All Access 1 Year",
+      "$99, \"Get 2nd year FREE!\"",
+      "Same"
+    ],
+    [
+      "Lifetime Pass",
+      "$179 (\"Never Pay For Betting Advice Again!\")",
+      "Same"
+    ],
+    [
+      "Previous Members page",
+      "All Access through the Super Bowl $45 · 1 Year All Access (2nd year free) $59 · Lifetime $95 (listed as Reg $179)",
+      "Same"
+    ],
+    [
+      "Referral program",
+      "1 year added for your first referral and one more month for each referral after; new 1 year or longer members get a free 1 year membership for a friend",
+      "Shown 20 Nov 2026"
+    ],
+    [
+      "BetUS offer",
+      "Free picks through the Super Bowl for joining BetUS through his link and depositing $100 or more",
+      "Tied to a sportsbook deposit"
+    ],
+    [
+      "Earlier prices (history)",
+      "1 year $79 (Dec 2019); 1 year $49 \"Reg $99\" and 2 years $79 \"Reg $149\" (2021); 1 year $52, $40 or $39 (2022); Lifetime against \"Reg $399\" then \"Reg $199\" (2023)",
+      "From the seller's own Reddit and TheRX posts"
+    ]
   ],
+  "pricing_source": 1,
   "guarantee": [
-    "There is no guarantee. Every page on the site carries one line: \"There are no refunds once picks are sent.\" The Terms and Conditions page we opened showed no other refund terms. The About page says plainly that he will not promise every play will win.",
-    "What that means in practice: at $10 a month the fee is small, but if picks do not arrive, as two CapperTek reviewers say happened to them, the written policy offers nothing. Both times the seller replied publicly that the buyer had access or that he would fix it."
+    "There is no guarantee. Every page on the site carries one line: \"There are no refunds once picks are sent.\" The Terms and Conditions page we opened showed no other refund terms. The About page says plainly: \"I'm not going to promise that every play will win. Nobody can honestly make that promise.\"",
+    "What that means in practice: at $10 a month the fee is small, but if picks do not arrive, as two CapperTek reviewers say happened to them, the written policy offers nothing. Both times the seller replied publicly that the buyer had access or that he would fix it.",
+    "Payment is taken by card or PayPal on the site, or by Venmo, Cash App or X Money. Peer to peer payments such as Venmo and Cash App to a person usually carry less buyer protection than a card, so a card is the safer way to pay for any pick service."
   ],
   "claims": [
-    {"claim": "Every subscriber pick must meet \"a combination of at least five key statistics, trends, or supporting angles\"", "where": "About page", "status": "Seller claim about method"},
-    {"claim": "\"Transparent, Straightforward, Disciplined, Vetted, Researched Action\"; plans that average about $1 to $2 a week", "where": "About page", "status": "Seller claim; the price part matches the published prices"},
-    {"claim": "\"We were 70% in CFB last season.\"", "where": "Seller reply to a CapperTek review, 6 Jun 2024", "status": "Seller claim"},
-    {"claim": "\"We are now 7-2 in the 2023 College Basketball Postseason\"; \"Model 4 has won 12 straight Stanley Cup Playoff O/U Projections\"", "where": "Seller posts on TheRX forum, March and May 2023", "status": "Seller claim, short runs"},
-    {"claim": "\"I am the most Affordable AND Transparent Capper you will find\"", "where": "Seller post on TheRX forum, 15 Mar 2023", "status": "Seller claim"},
-    {"claim": "A running total of \"$58,208.37\" at the top of the pick history sheet", "where": "Pick history Google Sheet linked from the site", "status": "Seller kept, no post times"},
-    {"claim": "Appearances on The Dan Dakich Show, The OddsBreakers podcast and WISH-TV's \"All Indiana Bets\"", "where": "About page and homepage", "status": "Seller claim; homepage links two Dakich Show episodes"}
+    {
+      "claim": "\"Alan Cashman Finished A Combined 66 % in the NFL and CFB Last Season\" with \"25-15 ATS in CFB\" and \"17-6 in the NFL\"",
+      "where": "Seller posts on Reddit, Jul and Aug 2022",
+      "status": "Checked against his sheet: college football 2021 shows 25-15-1, matching; the NFL shows 14-5, not 17-6. Combined 39-20, 66.1%"
+    },
+    {
+      "claim": "\"We were 70% in CFB last season.\"",
+      "where": "Seller reply to a CapperTek review, 6 Jun 2024",
+      "status": "Checked against his sheet: the 2023 college football season shows 14-7 (66.7%), and those bets lost $253 at the sheet's own stakes"
+    },
+    {
+      "claim": "\"19-6 last 25 MLB Picks\"",
+      "where": "Seller post on Reddit, 25 Jun 2024",
+      "status": "Confirmed on his sheet: the 25 MLB rows from 22 May to 22 Jun 2024 went 19-6"
+    },
+    {
+      "claim": "\"I went 10-4 CBB Postseason last year\" and \"22-8 in March CBB the past 2 seasons\"",
+      "where": "Seller posts on Reddit, Mar 2024",
+      "status": "Not matched: his sheet shows 8-4 in March 2022 and 7-3 in March 2023 (15-7), and fewer than 14 decided college basketball bets in March and April 2023"
+    },
+    {
+      "claim": "A running total of \"$58,208.37\" at the top of the pick history sheet",
+      "where": "Pick history Google Sheet linked from the site",
+      "status": "Recounted: all money rows add to about $60,454; straight bets alone made $51,066 on $631,457 staked, 8.1%. Stakes vary, so this is not a flat record"
+    },
+    {
+      "claim": "\"Every potential Subscriber Pick must meet my standard of a combination of at least five key statistics, trends, or supporting angles\"",
+      "where": "About page",
+      "status": "Seller claim about method, not checkable"
+    },
+    {
+      "claim": "\"Many of my plans average just $1 to $2 per week\"",
+      "where": "About page",
+      "status": "Checked: $99 a year with a free second year is under $1 a week; $10 a month is about $2.30 a week"
+    },
+    {
+      "claim": "Appearances on The Dan Dakich Show, The OddsBreakers podcast and WISH-TV's \"All Indiana Bets\"",
+      "where": "About page and homepage",
+      "status": "Seller claim; the homepage links two Dakich Show episodes (7 Feb 2025 and 5 Sep 2025). A 2021 report on the WISH-TV show did not name him"
+    }
   ],
   "claims_note": [
-    "The \"regular\" prices move. On TheRX in February and March 2023 the Lifetime Pass was offered against a \"Reg $399\" price; by May and June 2023 the posts said \"Reg $199\"; on 7 Nov 2026 the subscribe page sold it for $179 and the Previous Members page listed $95 against \"Reg $179\". A discount measured from a regular price that keeps changing is a sales device, though every price we saw is low.",
-    "The dollar total on the pick sheet is built from stakes that change from pick to pick, from about $100 up to $2,500 in the rows we read, so it is not the same as a flat bet record. The short runs, such as 7-2 in a postseason, say little on their own."
+    "How we checked: on 20 Nov 2026 we downloaded the public pick history sheet linked from the site as a spreadsheet file and counted every row ourselves. It has about 1,650 rows. We treated as straight bets the 1,256 rows that carry a league, a date and a result. We set aside 164 parlay and teaser leg rows, 80 parlay header rows, 43 blank rows and 96 rows that list only odds, a result and dollars, with no game, pick or date. Those 96 rows net about $7,043 that cannot be matched to any game.",
+    "The flat stake view: the sheet's dollar column uses stakes from about $100 up to $2,500, so big wins on big stakes can carry a total. We also scored each straight bet as one unit at the listed odds. That gives 688 wins, 550 losses and 18 pushes, about +25.2 units, a 2.0% return on the units risked. About 92% of the plays were at favorite prices (minus odds), so a 55.6% win rate is closer to break even than it sounds.",
+    "Year by year on the same sheet (straight bets, dollars as recorded): 2019 45-33-3; 2020 119-94-2; 2021 149-100-4, the best year, +$44,178; 2022 89-70-1; 2023 98-98-3, minus $8,355; 2024 119-104-3, minus $2,031; 2025 30-29-2, plus $944; 2026 to 27 Sep 35-20, plus $2,639. At one unit per play, 2024 was minus 3.4%, 2025 minus 2.6% and 2026 plus 11.9% on 55 picks. The 2026 run is the strongest stretch since 2021, but it is a small sample.",
+    "The \"regular\" prices move. On TheRX in 2021 a year was offered at $49 against \"Reg $99\"; in February and March 2023 the Lifetime Pass was offered against \"Reg $399\"; by May and June 2023 it was \"Reg $199\"; on 20 Nov 2026 the subscribe page sold it for $179 and the Previous Members page listed $95 against \"Reg $179\". A discount measured from a regular price that keeps changing is a sales device, though every price we saw is low.",
+    "A reviewer wrote in Oct 2022 that he is regularly over 65% every month. On the sheet, the 12 months from Oct 2021 to Sep 2022 ranged from 21% (Nov 2021) to 85% (Oct 2021); six of the 12 months were at 65% or better."
   ],
   "record": [
-    "What is the seller's own marketing, but more open than most: the Pick History page links a public Google Sheet with about 1,250 graded picks, mostly from 2019 to September 2026. Each row lists the league, date, game, pick, odds, result, units and dollars. That lets a buyer see losses as well as wins. But the sheet is kept by the seller, has no column for the time a pick was sent, and could be edited after the fact, so it is not independent proof. The newest row we saw was dated 27 Sep 2026.",
-    "What is independently verifiable: nothing we found. CapperTek, where most reviews appear, is a review directory, not a grader of this service's picks, and we found no third party leaderboard tracking Cashman. We found no court or regulator action involving Alan Cashman or TheCashmanWins.com in our searches."
+    "What is the seller's own record, and more open than most: the Pick History page links a public Google Sheet. Each straight bet row lists the league, date, game, pick, odds, result, units and dollars, so a buyer can see losses as well as wins. But the sheet is kept by the seller, has no column for the time a pick was sent, could be edited after the fact, and mixes in rows without a game or a date. Earlier sales posts in 2022 linked two other sheets, one for subscriber picks and one for 2021 football, so the record has moved between files.",
+    "What our count shows: 55.6% winners on straight bets since 2019, about 2% profit per unit at flat stakes, two losing years in 2023 and 2024, and a strong but short 2026. The newest row we saw on 20 Nov 2026 was dated 27 Sep 2026. No October or November picks had been added even though football season was under way, so the sheet was at least seven weeks behind on the day we checked.",
+    "What is independently verifiable: nothing about results. CapperTek labels the listing \"Verified Service\", but its page does not say it grades this service's picks, and we found no third party leaderboard tracking Cashman. We found no court or regulator action involving Alan Cashman or TheCashmanWins.com in our searches.",
+    "Volume has fallen. The sheet shows about 253 straight plays in 2021, 160 in 2022, about 200 in 2023 and 2024, 61 in 2025 and 55 so far in 2026. At $99 a year that is still cheap per pick, but buyers expecting daily plays should know that several reviewers mention long gaps without a play."
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition The Cashman Wins is not matched to a Watchdog graded record, so we make no claim about how its picks perform.",
-    "context": "For scale: reviewers and the seller cite 65% to 70% stretches. On the Watchdog board on 7 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition The Cashman Wins is not matched to a Watchdog graded record, so we make no claim about how its picks perform beyond our count of the seller's own sheet above.",
+    "context": "For scale: his own sheet shows 55.6% winners on straight bets, mostly at favorite prices. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "CapperTek showed 33 reviews from October 2022 to June 2026, and we read all of them. They come from 16 reviewer names, and one reviewer wrote 15 of the 33. Five reviews were posted between 31 Oct and 2 Nov 2022, and the seller has promoted the page on TheRX as \"REAL Customer Reviews.\" Treat the sample as a small, loyal group rather than a broad survey. Below is each independent voice we found.",
+  "customers_intro": "CapperTek showed 33 reviews from October 2022 to June 2026, unchanged on 20 Nov 2026, and we read all of them. They come from 16 reviewer names, and one reviewer wrote 15 of the 33. Reddit adds a handful of replies under the seller's own promotional posts from 2022. Treat the sample as a small, loyal group rather than a broad survey. Below is each independent voice we found.",
   "customers": [
-    {"type": "Customer report", "tone": "Positive", "date": "16 Dec 2022 to 6 Jun 2026", "text": "One CapperTek reviewer posted 15 of the 33 reviews. He said he had been a member for more than five years, praised the price and honesty, and wrote that Cashman charges for a year what many sellers charge for a week. Most of his posts are short notes after good runs, and the seller replies to him by first name.", "source": 9},
-    {"type": "Customer report", "tone": "Negative", "date": "13 Mar 2026", "text": "A reviewer said he paid $59 for two years of service, got nothing, and his emails went unanswered. The seller replied that he had answered every email, that the account had been active since 2 March, and that his messages were probably landing in spam.", "source": 9},
-    {"type": "Customer report", "tone": "Negative", "date": "13 Oct 2023", "text": "A reviewer said he bought through Patreon and did not get a single pick. The seller replied that he had sent several emails, had heard of no problem, and offered to fix it if he had the wrong address.", "source": 9},
-    {"type": "Customer report", "tone": "Mixed", "date": "10 Apr 2023", "text": "A reviewer gave the service a thumbs up and called the price unbeatable, but said he was disappointed by how few plays are posted, with several days at a time without one, and found the computer models hard to choose from because they run hot and cold.", "source": 9},
-    {"type": "Customer report", "tone": "Positive", "date": "15 Mar 2023", "text": "A reviewer who bought a lifetime pass wrote that every subscriber pick was documented on the site, that members also get spreadsheets of leans and his personal bets, and that Cashman usually answered email within the hour.", "source": 9},
-    {"type": "Customer report", "tone": "Positive", "date": "31 Aug 2023", "text": "A reviewer said he had used the service for three years after hearing Cashman on The Dan Dakich Show, liked that he does not force daily picks, and had upgraded to a lifetime membership. In a later review he said he had won about 15 straight baseball picks.", "source": 9},
-    {"type": "Customer report", "tone": "Positive", "date": "19 Aug 2023 and 10 Mar 2024", "text": "Another reviewer said he had been a member for about two, then four, years, that he had winning football seasons every year, and that Cashman was honest and easy to contact. These are his claims; he posted no results.", "source": 9},
-    {"type": "Customer report", "tone": "Positive", "date": "19 Oct 2022", "text": "A reviewer claimed Cashman is regularly over 65% every month on subscriber picks and averages about 15 to 20 picks a month. That win rate is the reviewer's statement, not a checked figure.", "source": 9},
-    {"type": "Not found", "tone": "Neutral", "date": "Checked 7 Nov 2026", "text": "TheRX threads about the service are written by Cashman himself and contain only his own posts. Trustpilot had no page for thecashmanwins.com, SmartCustomer (formerly SiteJabber) showed 0 reviews, a Better Business Bureau search returned no matching business, and we found no Reddit discussion.", "source": null}
+    {
+      "type": "Our summary",
+      "tone": "Mixed",
+      "date": "Read 20 Nov 2026",
+      "text": "We found about 40 independent comments in all, nearly all on CapperTek, plus a few Reddit replies. The CapperTek pool runs from 2022 to 2026 and is mostly positive: buyers praise the low price, honesty, quick email replies, model numbers and MLB runs. It is concentrated, since one reviewer wrote 15 of the 33 reviews and five came within three days in 2022. The negatives repeat one theme: two buyers, in 2023 and 2026, said they paid and received no picks, and the seller answered that they had access and his emails were probably in spam. One reviewer found too few plays. On Reddit in 2022, a few users replied to his sales posts: one planned to subscribe after hearing him on the radio, one asked about the odds on his win streak, and two mocked pick selling, which drew insulting replies from the seller's account. We found no billing disputes, no BBB or Trustpilot reviews and no independent results tracking.",
+      "source": null
+    },
+    {
+      "type": "Customer report",
+      "tone": "Positive",
+      "date": "16 Dec 2022 to 6 Jun 2026",
+      "text": "One CapperTek reviewer posted 15 of the 33 reviews. He said he had been a member for more than five years, praised the price and honesty, and wrote that Cashman charges for a year what many sellers charge for a week. Most of his posts are short notes after good runs, such as a hockey totals system in March 2025, college football models in September 2025 and a baseball run in June 2026. The seller replies to him by first name.",
+      "source": 9
+    },
+    {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "13 Mar 2026",
+      "text": "A reviewer said he paid $59 for two years of service, got nothing, and his emails went unanswered. The seller replied that he had answered every email, that the account had been active since 2 March, that the messages were probably landing in spam, and that he hoped the buyer would come back and apologize.",
+      "source": 9
+    },
+    {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "13 Oct 2023",
+      "text": "A reviewer said he bought through Patreon and did not get a single pick. The seller replied that he had sent several emails, had heard of no problem, and offered to fix it if he had the wrong address.",
+      "source": 9
+    },
+    {
+      "type": "Customer report",
+      "tone": "Mixed",
+      "date": "10 Apr 2023",
+      "text": "A reviewer gave the service a thumbs up and called the price unbeatable, but said he was disappointed by how few plays are posted, with several days at a time without one, and found the computer models hard to choose from because they run hot and cold.",
+      "source": 9
+    },
+    {
+      "type": "Customer report",
+      "tone": "Positive",
+      "date": "15 Mar 2023",
+      "text": "A reviewer who bought a lifetime pass wrote that every subscriber pick was documented on the site, that members also get spreadsheets of leans and his personal bets, and that Cashman usually answered email within the hour.",
+      "source": 9
+    },
+    {
+      "type": "Customer report",
+      "tone": "Positive",
+      "date": "31 Aug 2023 and 6 Jun 2024",
+      "text": "Reviewers who said they found him through The Dan Dakich Show or his college football videos liked that he does not force daily picks. One said he had won about 15 straight baseball picks in spring 2024 and planned to buy a lifetime pass. His sheet does show a 19-6 MLB run in that window.",
+      "source": 9
+    },
+    {
+      "type": "Customer report",
+      "tone": "Positive",
+      "date": "19 Aug 2023 and 10 Mar 2024",
+      "text": "Another reviewer said he had been a member for about two, then four, years, that he had winning football seasons every year, and that Cashman was honest and easy to contact. These are his claims; he posted no results.",
+      "source": 9
+    },
+    {
+      "type": "Customer report",
+      "tone": "Positive",
+      "date": "19 Oct 2022",
+      "text": "A reviewer claimed Cashman is regularly over 65% every month on subscriber picks and averages about 15 to 20 picks a month. On the seller's own sheet, half of the 12 months before that review were at 65% or better and the rest ranged from 21% to 61%.",
+      "source": 9
+    },
+    {
+      "type": "Forum post",
+      "tone": "Positive",
+      "date": "14 Apr 2022",
+      "text": "Under one of his Reddit sales posts, a user wrote that he had heard Cashman on the Dakich show, liked the post, and would be subscribing. We found no later post from that user about results.",
+      "source": 17
+    },
+    {
+      "type": "Forum post",
+      "tone": "Neutral",
+      "date": "27 Jul 2022",
+      "text": "In the seller's official Reddit thread, a user asked what the average odds were on his advertised 12 game college football win streak. The seller answered by linking a sheet of his full 2021 football results and saying he does not send heavy favorites to clients.",
+      "source": 14
+    },
+    {
+      "type": "Forum post",
+      "tone": "Negative",
+      "date": "7 Jun 2022 and 30 Jul 2022",
+      "text": "Two Reddit users replied to his sales posts that a winning bettor would not need to sell picks. In both threads the seller's account answered with insults, calling one a loser and a coward, telling the other he had three buyers already, and saying he blocks people like that. This says nothing about the picks, but it is how the seller has handled criticism in public.",
+      "source": 15
+    },
+    {
+      "type": "Not found",
+      "tone": "Neutral",
+      "date": "Checked 20 Nov 2026",
+      "text": "The TheRX threads about the service, including a 2021 AlanCashman.com daily plays thread, are written by Cashman himself and contain only his own posts. On 7 Nov 2026 Trustpilot had no page for thecashmanwins.com, SmartCustomer (formerly SiteJabber) showed 0 reviews, and a Better Business Bureau search returned no matching business. Our 20 Nov 2026 Reddit archive search found his own promotional posts but no buyer thread about results.",
+      "source": null
+    }
   ],
   "conflicts": [
-    "The site has a Sportsbook Offers page and a menu link to \"Join BetUS Sportsbook.\" The offers page uses referral or affiliate links for DraftKings, Caesars, BetMGM, BetUS and BetDSI, and the DraftKings link carries his name as the referrer. Referral and affiliate deals pay the referrer when readers sign up or deposit. BetUS and BetDSI are offshore sportsbooks that are not licensed by U.S. state regulators, so check the law where you live.",
-    "The BetUS page offers free picks through the Super Bowl for depositing $100 or more through his link, which ties the pick service directly to a sportsbook deposit."
+    "The site has a Sportsbook Offers page and a menu link to \"Join BetUS Sportsbook.\" The offers page uses referral or affiliate links for DraftKings, Caesars, FanDuel, BetMGM, BetUS and BetDSI, and the DraftKings link carries his name as the referrer. Referral and affiliate deals pay the referrer when readers sign up or deposit. BetUS and BetDSI are offshore sportsbooks that are not licensed by U.S. state regulators, so check the law where you live.",
+    "The BetUS page offers free picks through the Super Bowl for depositing $100 or more through his link, which ties the pick service directly to a sportsbook deposit.",
+    "The seller has also promoted free contests and free plays heavily: dozens of Reddit posts from 2022 to 2024 advertise win streaks such as \"11-2 last 13 MLB Plays\" and \"9-1 last 2 Weeks in Circa Millions Contest.\" Streak posts choose their own start date, which is why we count the full sheet instead."
   ],
   "strengths": [
     "Very low prices: $10 a month or $99 a year, so the fee is a small part of the risk.",
-    "A public pick history sheet with odds and results, losses included.",
+    "A public pick history sheet with odds, results and stakes, losses included, more than most sellers show.",
+    "On that sheet, straight bets since 2019 are slightly profitable at flat stakes, and 2026 so far is strong at 35 wins and 20 losses.",
+    "Some sales claims check out against his own sheet, such as 19-6 in MLB in spring 2024 and 25-15-1 in college football in 2021.",
     "A named person who answers complaints in public, and most CapperTek reviewers report a good experience.",
     "The About page says he will not promise winners and does not force daily plays."
   ],
   "concerns": [
-    "The pick history is kept by the seller with no post times, so it cannot prove picks were sent before games.",
+    "The pick history is kept by the seller with no post times, so it cannot prove picks were sent before games, and 96 rows have no game or date at all.",
+    "The edge on his own sheet is thin: about 2% per unit at flat stakes, with losing years in 2023 and 2024.",
+    "The sheet had no new rows after 27 Sep 2026 when we checked on 20 Nov 2026.",
+    "Some sales claims do not match the sheet, such as 17-6 in the 2021 NFL and 22-8 in March college basketball.",
     "No refunds once picks are sent, and two reviewers say they paid and received nothing.",
     "The review sample is small and concentrated: one reviewer wrote 15 of 33 reviews.",
-    "Sportsbook referral links, including offshore books, and a free picks offer tied to a BetUS deposit.",
-    "\"Regular\" prices used for discounts have changed several times."
+    "Sportsbook referral links, including offshore books, and a free picks offer tied to a BetUS deposit."
   ],
   "checklist": [
-    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
-    "Count units, not wins. A 60% record at heavy favorites can still lose money.",
-    "Read the guarantee for the words refund, credit and extension. Most \"guarantees\" in this business are credits.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Open the pick sheet before paying and look at the last 12 months, not the running dollar total at the top.",
+    "Count units, not dollars. Stakes on his sheet range from about $100 to $2,500, so dollar totals can hide a thin edge.",
+    "Write down each pick yourself the moment you receive it, with the time and the line you can actually get, then compare it with the sheet.",
+    "Pay by card or PayPal rather than Venmo or Cash App if you want some protection if picks never arrive.",
+    "If no picks arrive in the first days, check your spam folder and email him at once; the written policy gives no refund.",
+    "Treat streak posts such as \"19-6 last 25\" as samples chosen by the seller and give any handicapper a few hundred picks before calling them a winner."
   ],
   "faq": [
-    ["Is The Cashman Wins legit?", "It is a real, small service run by Alan Cashman, with published prices, a public pick sheet and mostly positive CapperTek reviews, though two buyers said they paid and got nothing. We could not verify that the picks win over time."],
-    ["How much does The Cashman Wins cost?", "On 7 Nov 2026 it cost $10 a month, $99 for a year with a second year free, or $179 for a lifetime pass, with lower prices of $45 to $95 on a Previous Members page. There are no refunds once picks are sent."],
-    ["Does The Cashman Wins have a verified record?", "No. The pick history is a Google Sheet kept by the seller, with odds and results but no post times, and no outside grader or Watchdog record tracks it."],
-    ["Is The Cashman Wins worth it?", "For a few dollars a week you get a small number of researched picks, computer model numbers and his personal bets, which several reviewers valued. What is unproven is whether the picks beat the roughly 52.4% needed at -110 over hundreds of bets, since the only record is the seller's own sheet."]
+    [
+      "Is The Cashman Wins legit?",
+      "It is a real, small service run by Alan Cashman, with published prices, a public pick sheet and mostly positive CapperTek reviews, though two buyers said they paid and got nothing. We could not verify that the picks win over time, because the only record is the seller's own sheet."
+    ],
+    [
+      "How much does The Cashman Wins cost?",
+      "On 20 Nov 2026 it cost $10 a month, $99 for a year with a second year free, or $179 for a lifetime pass, with lower prices of $45 to $95 on a Previous Members page. There are no refunds once picks are sent."
+    ],
+    [
+      "What does his pick sheet show?",
+      "Our count on 20 Nov 2026: 688 wins, 550 losses and 18 pushes on straight bets since 2019, a 55.6% win rate and about 2% profit per unit at flat stakes. 2023 and 2024 lost money, 2025 was about even, and 2026 is up through 27 Sep."
+    ],
+    [
+      "Does The Cashman Wins have a verified record?",
+      "No. The pick history is a Google Sheet kept by the seller, with odds and results but no post times, and no outside grader or Watchdog record tracks it."
+    ],
+    [
+      "How do I get picks after paying?",
+      "By email, on the members area of the site, and on a subscriber list. Two buyers who said they got nothing were told by the seller that his emails were landing in their spam folders, so check there first and contact him in writing."
+    ],
+    [
+      "Is The Cashman Wins worth it?",
+      "For a few dollars a week you get a small number of researched picks, computer model numbers and his personal bets, which several reviewers valued. On his own sheet the long run edge is small, so the fee is cheap but the bets still decide whether you win or lose."
+    ]
   ],
-  "related": ["nobrainerwagers", "bender-wins", "the-jewish-sharp", "cappertek", "dannys-vip-sports-picks"],
+  "related": [
+    "nobrainerwagers",
+    "bender-wins",
+    "the-jewish-sharp",
+    "cappertek",
+    "dannys-vip-sports-picks"
+  ],
   "sources": [
-    {"title": "TheCashmanWins.com homepage ($10 banner, no refunds line, media appearances)", "url": "https://thecashmanwins.com/", "accessed": "7 Nov 2026"},
-    {"title": "TheCashmanWins.com subscribe page (plan prices, payment methods)", "url": "https://thecashmanwins.com/subscribe", "accessed": "7 Nov 2026"},
-    {"title": "TheCashmanWins.com Previous Members page (discounted prices)", "url": "https://thecashmanwins.com/previous-members", "accessed": "7 Nov 2026"},
-    {"title": "TheCashmanWins.com About page (Alan Cashman, method, philosophy)", "url": "https://thecashmanwins.com/about", "accessed": "7 Nov 2026"},
-    {"title": "TheCashmanWins.com Pick History page", "url": "https://thecashmanwins.com/pick-history", "accessed": "7 Nov 2026"},
-    {"title": "The Cashman Wins pick history Google Sheet", "url": "https://docs.google.com/spreadsheets/d/1HQShtLP8BthflpytY-VFybtkEanUQFS4-w_ZDLx3UFM/edit?usp=sharing", "accessed": "7 Nov 2026"},
-    {"title": "TheCashmanWins.com Sportsbook Offers page (referral and affiliate links)", "url": "https://thecashmanwins.com/sportsbook-offers", "accessed": "7 Nov 2026"},
-    {"title": "TheCashmanWins.com Join BetUS Sportsbook page", "url": "https://thecashmanwins.com/join-betus-sportsbook", "accessed": "7 Nov 2026"},
-    {"title": "TheCashmanWins.com Referral Program page", "url": "https://thecashmanwins.com/referral-program", "accessed": "7 Nov 2026"},
-    {"title": "CapperTek: The Cashman Wins customer reviews (33 reviews)", "url": "https://www.cappertek.com/reviews.asp?shs=TheCashmanWins.com", "accessed": "7 Nov 2026"},
-    {"title": "TheRX forum: Alan Cashman of TheCashmanwins.com: Picks and Deals (2023, seller posts)", "url": "https://www.therx.com/threads/alan-cashman-of-thecashmanwins-com-picks-and-deals.1234965/", "accessed": "7 Nov 2026"},
-    {"title": "TheRX forum: Alan Cashman of TheCashmanwins.com: Picks, Deals, Appearances Posted Here (seller posts)", "url": "https://www.therx.com/threads/alan-cashman-of-thecashmanwins-com-picks-deals-appearances-posted-here.1206051/", "accessed": "7 Nov 2026"},
-    {"title": "SmartCustomer (formerly SiteJabber): thecashmanwins.com reviews", "url": "https://www.smartcustomer.com/reviews/thecashmanwins.com", "accessed": "7 Nov 2026"},
-    {"title": "TheCashmanWins.com Terms and Conditions page", "url": "https://thecashmanwins.com/terms-and-conditions", "accessed": "7 Nov 2026"}
-  ],
-  "pricing_source": 1
+    {
+      "title": "TheCashmanWins.com homepage ($10 banner, no refunds line, media appearances)",
+      "url": "https://thecashmanwins.com/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "TheCashmanWins.com subscribe page (plan prices, payment methods)",
+      "url": "https://thecashmanwins.com/subscribe",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "TheCashmanWins.com Previous Members page (discounted prices)",
+      "url": "https://thecashmanwins.com/previous-members",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "TheCashmanWins.com About page (Alan Cashman, method, philosophy)",
+      "url": "https://thecashmanwins.com/about",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "TheCashmanWins.com Pick History page",
+      "url": "https://thecashmanwins.com/pick-history",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "The Cashman Wins pick history Google Sheet (downloaded and recounted)",
+      "url": "https://docs.google.com/spreadsheets/d/1HQShtLP8BthflpytY-VFybtkEanUQFS4-w_ZDLx3UFM/edit?usp=sharing",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "TheCashmanWins.com Sportsbook Offers page (referral and affiliate links)",
+      "url": "https://thecashmanwins.com/sportsbook-offers",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "TheCashmanWins.com Join BetUS Sportsbook page",
+      "url": "https://thecashmanwins.com/join-betus-sportsbook",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "TheCashmanWins.com Referral Program page",
+      "url": "https://thecashmanwins.com/referral-program",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "CapperTek: The Cashman Wins customer reviews (33 reviews)",
+      "url": "https://www.cappertek.com/reviews.asp?shs=TheCashmanWins.com",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "TheRX forum: Alan Cashman of TheCashmanwins.com: Picks and Deals (2023, seller posts)",
+      "url": "https://www.therx.com/threads/alan-cashman-of-thecashmanwins-com-picks-and-deals.1234965/",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "TheRX forum: Alan Cashman of TheCashmanwins.com: Picks, Deals, Appearances Posted Here (seller posts)",
+      "url": "https://www.therx.com/threads/alan-cashman-of-thecashmanwins-com-picks-deals-appearances-posted-here.1206051/",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "SmartCustomer (formerly SiteJabber): thecashmanwins.com reviews",
+      "url": "https://www.smartcustomer.com/reviews/thecashmanwins.com",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "TheCashmanWins.com Terms and Conditions page",
+      "url": "https://thecashmanwins.com/terms-and-conditions",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbetting: Official Reddit Thread for Sports Handicapper, Alan Cashman (Jul 2022, seller claims and a user question)",
+      "url": "https://www.reddit.com/r/sportsbetting/comments/w8ymz2/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbetting: Alan Cashman's Tuesday MLB (Jun 2022, 1 yr $40 offer and exchange with a critic)",
+      "url": "https://www.reddit.com/r/sportsbetting/comments/v77tis/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbetting: Alan Cashman is 9-2 last 11 MLB Subscriber Plays (Jul 2022, $39 offer and replies)",
+      "url": "https://www.reddit.com/r/sportsbetting/comments/wc71hn/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbetting: Alan Cashman of TheCashmanwins.com 1 yr $52, All Plays (Apr 2022)",
+      "url": "https://www.reddit.com/r/sportsbetting/comments/u341lg/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbetting: Getting you Ready for Football Season. 66% NFL/CFB Combined in 2021 (Aug 2022, seller post)",
+      "url": "https://www.reddit.com/r/sportsbetting/comments/wjo2cd/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbetting: Tuesday FREE MLB from Alan Cashman (Jun 2024, 19-6 last 25 claim)",
+      "url": "https://www.reddit.com/r/sportsbetting/comments/1dobth5/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbetting: Bracket Contest from TheCashmanwins.com (Mar 2024, 10-4 and 22-8 claims)",
+      "url": "https://www.reddit.com/r/sportsbetting/comments/1bgxe94/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbetting: Alan Cashman Handicapper NFL, CFB, CBB, NBA, NHL, MLB (Dec 2019, 1 yr $79)",
+      "url": "https://www.reddit.com/r/sportsbetting/comments/egvzdi/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "TheRX forum: AlanCashman.com Daily Plays Thread (2021, seller posts and prices)",
+      "url": "https://www.therx.com/threads/alancashman-com-daily-plays-thread.1180260/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Indianapolis Business Journal: WISH-TV to launch show dedicated to sports betting (23 Mar 2021)",
+      "url": "https://www.ibj.com/articles/wish-tv-launching-show-on-sports-betting",
+      "accessed": "20 Nov 2026"
+    }
+  ]
 }
