@@ -1,39 +1,39 @@
 {
   "slug": "kevin-thomas",
   "name": "Kevin Thomas",
-  "legal_name": "Kevin Thomas (name shown on his Tony's Picks profile; no company name given)",
-  "kind": "Single handicapper selling picks through the Tony's Picks marketplace",
-  "checked": "16 Nov 2026",
-  "checked_iso": "2026-11-16",
-  "updated_iso": "2026-11-16",
+  "legal_name": "Kevin Thomas (no company name given). Picks sold through Tony's Picks (Ontario, CA), the SportsCapping network and Wizard Sports Picks",
+  "kind": "Single handicapper selling picks through several marketplaces",
+  "checked": "20 Nov 2026",
+  "checked_iso": "2026-11-20",
+  "updated_iso": "2026-11-20",
   "title": "Kevin Thomas Review 2026: Pricing, Record, Is It Worth It?",
-  "description": "Kevin Thomas review, checked 16 Nov 2026: Tony's Picks prices from $30 to $999.99, a record shown below 50%, and what we found from buyers.",
+  "description": "Kevin Thomas review, checked 20 Nov 2026: $4.99 to $1,999.95 across three storefronts, and all three of their own records show him losing.",
   "h1": "Kevin Thomas review",
-  "dek": "A handicapper who sells picks on Tony's Picks. His packages run from $30 for one game to $999.99 for an NFL season. The marketplace blog called him its top earner in June 2026, but the record its own data showed on 16 Nov 2026 was 1366 wins and 1388 losses, with his units down this year and last year.",
+  "dek": "A handicapper who says he has sold picks since 2007 and today lists the same daily plays on Tony's Picks, SportsCapping and Wizard Sports Picks, at prices from $4.99 to $30 for the same single pick. Each storefront grades him itself, and on 20 Nov 2026 all three showed him below break even: about 49.7%, 48.9% and 50.8% winners, with units or dollars down on each.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Kevin Thomas picks. This page reports what we could check on 16 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record of Kevin Thomas picks. This page reports what we could check on 20 Nov 2026, including the records three selling sites publish, which we downloaded and recomputed where we could, and labels everything else."
   },
   "glance": [
     [
       "Operator",
-      "Sold through Tony's Picks (tonyspicks.com); no company name found for Kevin Thomas himself"
+      "Sold through Tony's Picks (run by Tony Tellez, Ontario, CA), SportsCapping.com and WizardSportsPicks.com; no company name found for Kevin Thomas himself"
     ],
     [
       "Background claim",
-      "Four years in the Navy, then college to teach math (profile bio)"
+      "Navy veteran (\"data analyst for air unit\" on two sites; went on to teach math on a third); handicapping since 2007; grew up in Reading, Pennsylvania"
     ],
     [
       "Price range seen",
-      "$30 for one game to $999.99 for an NFL season pass"
+      "$4.99 single pick on Wizard Sports Picks to $1,999.95 for a year on SportsCapping"
     ],
     [
       "Guarantee",
-      "Two $30 single game packages are marked guaranteed; we found no written terms for what that pays"
+      "Credit or free time on some packages, depending on the store; no cash back; season passes not guaranteed"
     ],
     [
-      "Record shown by the marketplace",
-      "1366 wins, 1388 losses, 46 pushes; units below zero lifetime, this year and last year"
+      "Records shown by the sellers",
+      "Tony's Picks 1373-1391-46; SportsCapping 218-228 and -$2,123 since Aug 2025; Wizard 618-598-19 and -119.9 units since Oct 2025"
     ],
     [
       "Watchdog graded record",
@@ -41,90 +41,141 @@
     ]
   ],
   "short_answer": [
-    "Kevin Thomas is a handicapper who sells picks on Tony's Picks, a marketplace run by Tony Tellez that lists about 29 cappers. His profile says he served four years in the Navy and went to college to teach math, and that he handicaps the NFL, MLB, WNBA, NBA, college football, college basketball and the NHL. He also writes free pick articles on the Tony's Picks blog. In that narrow sense he is a real, active seller.",
-    "Whether his picks make money is less clear. In late June and early July 2026 the Tony's Picks blog called him the top performer of the past 30 days, at 50-28-1. But the record the same marketplace showed for his whole history on 16 Nov 2026 was 1366 wins, 1388 losses and 46 pushes, just under half, with unit totals below zero for his whole history, for 2026 so far and for 2025.",
-    "Treat him as a seller with one very good month and a long record that, by the marketplace's own numbers, does not show a profit. If you buy, buy short, log each pick yourself with the line you got, and do not judge him by a 30 day leaderboard."
+    "Kevin Thomas is a real, active seller. His picks appear on three marketplaces at once: Tony's Picks, a site run by Tony Tellez that lists about 29 cappers; SportsCapping, a large handicapper network; and Wizard Sports Picks, a newer site run alongside a horse racing picks brand known as The Wizard. Saved pages show him selling on SportsCapping as far back as 2014. In that narrow sense he is legitimate.",
+    "Whether his picks make money is a different matter, and here the evidence is unusually clear because each store publishes its own grading. Tony's Picks showed 1,373 wins, 1,391 losses and 46 pushes, with units below zero for his whole history, for 2026 and for 2025. SportsCapping showed 218 wins and 228 losses since he joined its current platform in August 2025, down $2,123 at $100 a pick. Wizard Sports Picks publishes all 1,235 of his graded picks since October 2025; we downloaded them and counted 618 wins, 598 losses and 19 pushes, down 119.9 units, with the last 30 days at 41 and 52.",
+    "His sales copy points to winning slices: a strong June 2026, college football \"since 2023\", and WNBA. Some of those slices are real on the sellers' own logs; the totals are not winning. The same Friday pick sold for $30 on two sites and $4.99 on the third. We found no independent buyer posts about him, good or bad."
   ],
-  "pricing_intro": "Prices below come from the package list that the Tony's Picks store loads for his profile on 16 Nov 2026. Single game packages change daily; the two shown here were the ones listed that day.",
+  "pricing_intro": "Prices below were read on 20 Nov 2026 from each store's own package data. Single game packages change daily; the two listed that day (a Friday college football total and a Friday NBA side) were the same plays on all three sites.",
   "pricing": [
     [
-      "Single game package (for example \"Kevin's NFL Monday Night Mayhem\")",
+      "Single game package, Tony's Picks (for example \"Kevin's CFB Friday Pristine Wager\")",
       "$30",
-      "Marked as guaranteed in the store data; terms of the guarantee not found"
+      "Flagged as guaranteed at the same $30; terms of the guarantee not stated"
     ],
     [
-      "Three Day All Access Pass",
-      "$109",
-      "Its own description still says \"$89.99\"; no guarantee"
+      "Single game package, SportsCapping",
+      "$30.00",
+      "Guaranteed: if it does not profit, the next day of picks is free"
     ],
     [
-      "30 Day Full Access Subscription",
-      "$349",
-      "All seven sports; no guarantee"
+      "Single game package, Wizard Sports Picks",
+      "$4.99, or $9.99 guaranteed",
+      "Shown against $30.00 and $40.00; guarantee pays site credit"
     ],
     [
-      "College Football Season Pass (1 Sep 2026 to 31 Mar 2027)",
-      "$899.99",
-      "No guarantee"
+      "Three day pass",
+      "Tony's Picks $109 (its own text still says $89.99) · SportsCapping $105.00 · Wizard $89.99",
+      "Guaranteed on SportsCapping only"
     ],
     [
-      "NFL All Access Season Pass (1 Aug 2026 to 28 Feb 2027)",
-      "$999.99",
-      "No guarantee"
+      "Seven day pass",
+      "SportsCapping $199.99 · Wizard $129.99",
+      "Guaranteed on SportsCapping"
+    ],
+    [
+      "30 day pass",
+      "Tony's Picks $349 · SportsCapping $429.99 · Wizard $329.99",
+      "Guaranteed on SportsCapping"
+    ],
+    [
+      "One year all sports",
+      "SportsCapping $1,999.95",
+      "Marked guaranteed"
+    ],
+    [
+      "College football season pass",
+      "Tony's Picks $899.99 · SportsCapping $899.95 · Wizard $599.99",
+      "Not guaranteed"
+    ],
+    [
+      "NFL season pass",
+      "Tony's Picks $999.99 · SportsCapping $999.99 · Wizard $699.99; NFL and CFB combo $1,299.99 on SportsCapping",
+      "Not guaranteed"
+    ],
+    [
+      "Other season passes (SportsCapping)",
+      "NBA $499.95, NBA and CBB $499.99, NHL $499.95, CBB $499.95, WNBA $299.95",
+      "Not guaranteed"
+    ],
+    [
+      "Rest of season passes (Wizard)",
+      "WNBA $199.99, MLB $199.99",
+      "Not guaranteed"
     ]
   ],
   "guarantee": [
-    "In the Tony's Picks store data, only his $30 single game packages are flagged as guaranteed, and the guaranteed price is the same $30. We could not find a page that explains what that guarantee gives a buyer, such as cash back, store credit or a free pick. Ask before you rely on it.",
-    "The Tony's Picks terms page deals with auto renewing memberships. It says a buyer must email within 3 days of the next automatic renewal date to stop it and get a refund or credit for that period, and that a 3 day trial must be cancelled 48 hours before it renews. Nothing we read covers losses on the bets themselves, which are usually far larger than the package price."
+    "The guarantee depends on where you buy. On Tony's Picks only his $30 single game packages are flagged as guaranteed, at the same $30 price, and we found no page that explains what that guarantee gives. Ask before relying on it.",
+    "SportsCapping's Profit Guarantee page says a guaranteed purchase that finishes with \"a total profit of zero or less\" (\"breaking even counts\") earns the next day of picks free, a guaranteed subscription \"is automatically extended by its original length,\" some accounts get account credit instead, \"Season and rest-of-season passes are not guaranteed,\" and \"Guarantees apply once per purchase.\"",
+    "Wizard Sports Picks says in its FAQ: \"If the pick doesn’t turn a profit you’ll automatically receive a full credit equal to your purchase price,\" and \"Only your initial purchase carries a guarantee.\" That is site credit, not cash.",
+    "Tony's Picks terms deal with auto renewing memberships: a buyer must email \"within 3 days of your next automatic renewal date\" to stop it and get a refund or credit for that period, and a 3 day trial must be cancelled 48 hours before it renews. None of the three stores covers losses on the bets themselves, which are usually far larger than the package price."
   ],
   "claims": [
     {
-      "claim": "\"His dedication to numbers and the mindset of how today's athletes perform have made him a lot of money\"",
-      "where": "Kevin Thomas profile bio on Tony's Picks",
-      "status": "Seller claim, not checkable"
+      "claim": "\"I’m 315-264-4 for 55% since 2023 on these gems\" (his 5 star college football Pristine Wagers)",
+      "where": "Package copy on all three stores, 20 Nov 2026",
+      "status": "Checked: 315 of 579 is 54.4%, rounded up to 55%. The stores' own logs cover only 2025 onward: SportsCapping has all his college football at 55-66 (45.5%, -$1,777); Wizard has 93-78-7 since Oct 2025 but 40-43-3 in the 2026 season"
     },
     {
-      "claim": "\"Kevin Thomas served four years in the Navy before attending college to teach Math\"",
-      "where": "Kevin Thomas profile bio on Tony's Picks",
-      "status": "Seller claim, not checked by us"
+      "claim": "Video, 14 Oct 2026: \"a 54.2% NFL record last year\", \"60.2% in college football last year\" and \"58.2% in the WNBA since joining Wizard Sports Picks\"",
+      "where": "Wizard Sports Picks YouTube channel",
+      "status": "Confirmed against Wizard's own log: NFL Oct 2025 to Feb 2026 45-38 (54.2%), college football 2025 season 53-35-4 (60.2%), WNBA to 14 Oct 2026 82-59 (58.2%)"
     },
     {
-      "claim": "\"His record of 49 wins, 31 losses and 1 push has generated an outstanding +1822 units\" over the last 30 days",
-      "where": "Tony's Picks blog, 25 Jun 2026",
-      "status": "Marketplace claim, one month only"
-    },
-    {
-      "claim": "\"a remarkable 50-28-1 record while generating an outstanding +2246 units\"",
-      "where": "Tony's Picks blog, 1 Jul 2026",
-      "status": "Marketplace claim, one month only"
+      "claim": "Same video: \"a 60% NFL mark so far this season\"",
+      "where": "Wizard Sports Picks YouTube channel",
+      "status": "Not matched: Wizard's log shows 17-13 (56.7%) in the regular season through 14 Oct, or 23-22 counting preseason. Since then his NFL plays there went 10-18"
     },
     {
       "claim": "\"Historically, the Gridiron has been very profitable for me\"",
-      "where": "NFL All Access Season Pass description",
-      "status": "Seller claim, no full log"
+      "where": "NFL season pass copy on Tony's Picks and Wizard",
+      "status": "Not supported by the stores' logs: NFL 78-78 and -42.0 units on Wizard; 39-39 and -$383 on SportsCapping"
+    },
+    {
+      "claim": "\"I have been one of the most consistent MLB handicappers over my extensive 19-year career\"",
+      "where": "Wizard MLB pass copy",
+      "status": "Not supported by the stores' logs: MLB 114-126 and -18.3 units on Wizard; 51-56 on SportsCapping"
+    },
+    {
+      "claim": "\"His record of 49 wins, 31 losses and 1 push\" and later \"50-28-1\" as the top performer of the last 30 days",
+      "where": "Tony's Picks blog, 25 Jun and 1 Jul 2026",
+      "status": "Consistent with Wizard's log, where June 2026 was his best month at 50-29-1 (+21.3 units). It is one month out of fourteen there"
+    },
+    {
+      "claim": "\"Kevin Thomas served four years in the Navy before attending college to teach Math\"",
+      "where": "Tony's Picks profile",
+      "status": "Conflicts with his SportsCapping and Wizard bios, which say he was a Navy \"data analyst for air unit\" and then \"entered college for Physical Therapy\""
+    },
+    {
+      "claim": "\"Kevin was #1 ranked in the world with a 62% win rate in 2023\" in the WNBA, then 56% in 2024 and 49% in 2025",
+      "where": "Wizard WNBA pass copy",
+      "status": "Seller claim for 2023 and 2024, no log. SportsCapping lists him #9 all time in the WNBA on its own board at 47-32"
     }
   ],
   "claims_note": [
-    "The leaderboard posts and the long run record point in different directions. The June and July 2026 blog posts were written by the owner of the marketplace that sells his picks, and they cover one 30 day window. The lifetime numbers in the same marketplace's data show slightly more losses than wins.",
-    "The unit figures on Tony's Picks use a scale the site does not explain. A 50-28-1 month showed as +2246 units, which looks closer to dollars won on $100 bets than to standard units. We report the numbers as the site shows them and have not confirmed the scale."
+    "How we checked: Wizard Sports Picks shows every graded pick it has for him, 1,235 rows from 2 Oct 2025 to 19 Nov 2026, each with the price and the stake in units. We downloaded the full table on 20 Nov 2026 and totaled wins, losses and units by season, sport and month ourselves. For SportsCapping we added up the per sport lines its profile publishes. For Tony's Picks we read the win, loss and unit totals in its store data. Each figure is graded by the store that sells him, not by an outside auditor.",
+    "The pattern is the same everywhere: his sales copy is built from real slices that look good (a 63% June, a 60% college football season in 2025, 58% in the WNBA), while the full logs on the same sites sit near or below 50% and lose money. On Wizard his months since October 2025 were winners only in October to December 2025, March 2026 and June 2026, and the last two months were his worst: October 2026 at 43-52-1 (-53.9 units) and November so far at 23-32-1 (-52.9 units).",
+    "The \"55% since 2023\" college football figure cannot be checked before 2025, since none of the stores shows his picks from 2023 and 2024. Where the stores do overlap with that window, the result is mixed: winning on Wizard in 2025, losing on Wizard in 2026 and losing on SportsCapping overall.",
+    "The unit figures on Tony's Picks use a scale the site does not explain (a 50-28-1 month showed as +2246 units), so we compare its win and loss counts rather than its units."
   ],
   "record": [
-    "What a buyer can verify independently: nothing that we could find. We found no third party tracker, contest result or full archive of his picks outside the marketplace that sells them.",
-    "What the marketplace shows: on 16 Nov 2026 the Tony's Picks data for his profile listed 1366 wins, 1388 losses and 46 pushes, a lifetime units figure of minus 9322, minus 3345 for this year and minus 2512 for last year. The same data showed minus 1283 for the last 30 days and minus 612 for the last 7 days. These numbers are graded by the seller's own marketplace, not audited.",
-    "His free picks appear as articles on the Tony's Picks blog, such as an under 44.5 in Bills at Vikings for 9 Nov 2026. The articles we opened did not show a running record of the free plays."
+    "What a buyer can verify independently: no third party audit. We found no outside tracker, contest record, court case or regulator action about him.",
+    "Tony's Picks: on 20 Nov 2026 its store data listed 1,373 wins, 1,391 losses and 46 pushes (49.7% of decided picks), units of minus 8,945 lifetime, minus 2,968 for 2026 and minus 2,512 for 2025. Over the last 30 days he was at minus 1,180, 26th of the 29 cappers on the site; the last 7 days were up 213. On 16 Nov the same data read 1,366 and 1,388.",
+    "SportsCapping: his current profile says member since August 2025 with 453 picks. Adding its per sport lines gives 218 wins and 228 losses, down $2,123 at $100 a pick: college football 55-66 (-$1,777), MLB 51-56 (-$42), WNBA 47-32 (+$1,239), NFL 39-39 (-$383), NBA 6-12 (-$725), NFL preseason 7-10 (-$412), NHL 7-7 (+$47), college basketball 6-6 (-$70). The page counts 2 winning months out of 7 and 10 winning weeks out of 23, and labels August 2026 his most profitable month at 37-35. His free picks there were 28-20 since 31 Aug 2025.",
+    "Wizard Sports Picks: all 1,235 graded picks since 2 Oct 2025 total 618-598-19 (50.8%) and minus 119.9 units at the site's stakes, which average about 1.9 units to risk per pick. By year: 2025 (October to December) 148-123-7, up 13.1 units; 2026 so far 470-475-12, down 133.0 units. By sport: WNBA 84-62 (+18.0), NHL 41-42-3 (+3.1), college football 93-78-7 (-19.0), MLB 114-126-2 (-18.3), college basketball 93-104-4 (-24.4), NBA 115-108-3 (-37.3), NFL 78-78 (-42.0).",
+    "Older history: SportsCapping pages saved in May 2014 and July 2017 show Kevin Thomas selling day, 3 day, 7 day and 30 day passes and season passes there, with a bio saying he had been capping \"for well over 12 years\" and had a circle of trainers and physical therapists. The 2014 page promised a free next day if a day pass did not profit; by 2017 the 30 day pass promised money back in site credit. The records from those years are not shown on the current platform."
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Kevin Thomas pick history is matched to a Watchdog graded record, so we make no claim about how Kevin Thomas performs.",
-    "context": "For scale: the lifetime record Tony's Picks shows for him works out to about 49.6% winners, while the 30 day run its blog promoted in July 2026 was about 64%. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Kevin Thomas pick history is matched to a Watchdog graded record, so we make no claim about how Kevin Thomas performs beyond what the selling sites publish.",
+    "context": "For scale: the three selling sites show him at about 48.9% to 50.8% winners overall, while the 30 day run Tony's Picks promoted in July 2026 was about 64%. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "We found no independent buyer reviews of Kevin Thomas. Below is what we searched and what little exists.",
+  "customers_intro": "We found no independent buyer reviews of Kevin Thomas. Below is what we searched, what little exists, and the reviews of the marketplace that sells him.",
   "customers": [
     {
       "type": "Our summary",
       "tone": "Neutral",
-      "date": "Read 16 Nov 2026",
-      "text": "We found no posts from people who say they bought Kevin Thomas picks, good or bad. Searches of four betting subreddits through the Reddit archive, and web searches for forum threads, review pages and complaints, returned nothing about him. What exists online is his own free pick articles and the Tony's Picks blog praising one strong month in June 2026. His name also shows up in reposted pick lists on X from accounts that collect plays from many sellers, which says nothing about how buyers fared.",
+      "date": "Read 20 Nov 2026",
+      "text": "We found no post from anyone who says they bought Kevin Thomas picks, good or bad. We searched Covers, Sportsbook Review and TheRX through the web, our saved copies of ten betting subreddits and the newest r/sportsbetting and r/sportsbook posts, CapperTek, the Better Business Bureau and general review searches. The few Reddit posts that matched his name were unrelated golf pool and daily odds threads. What exists is seller side: Tony's Picks blog posts praising one strong month in June 2026, his free pick articles, a 2026 video interview on the Wizard Sports Picks channel, and reposts of his plays by pick sharing accounts on X, which say nothing about how buyers fared. The only buyer reviews we found are four CapperTek reviews of the Tony's Picks marketplace from 2019 to 2024, all negative, none naming him. With no buyer posts there is no smoke to report about him personally; the strongest evidence on this page is the sellers' own records.",
       "source": null
     },
     {
@@ -142,101 +193,196 @@
       "source": 5
     },
     {
+      "type": "Seller curated",
+      "tone": "Positive",
+      "date": "14 Oct 2026",
+      "text": "A Wizard Sports Picks video interview presents him as a professional with over twenty years in the business and walks through his NFL, college football and WNBA percentages. Three of the four percentages match the site's own log; the current NFL figure did not.",
+      "source": 13
+    },
+    {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "2019 to 2024",
+      "text": "CapperTek lists four reviews of TonysPicks.com, all negative. Reviewers describe losing records after paying, including one who said they were down about $6,000 on a $599 monthly plan in February 2024, and one who complained about heavy favorites. None of the four names Kevin Thomas, so they describe the marketplace, not his picks.",
+      "source": 16
+    },
+    {
       "type": "Not found",
       "tone": "Neutral",
-      "date": "Checked 16 Nov 2026",
+      "date": "Checked 20 Nov 2026",
+      "text": "The Better Business Bureau lists Tony's Picks in Ontario, California, business started 22 May 2005, not accredited and not rated, with no complaints filed in the last 3 years.",
+      "source": 17
+    },
+    {
+      "type": "Not found",
+      "tone": "Neutral",
+      "date": "Checked 20 Nov 2026",
       "text": "No Reddit, Covers, Sportsbook Review or TheRX thread about Kevin Thomas the handicapper turned up in our searches, and we found no review page, regulator action or court record naming him.",
       "source": null
     }
   ],
   "conflicts": [
-    "Every record and ranking we saw comes from Tony's Picks, the marketplace that earns money when his packages sell. Its blog posts about him are marketing.",
-    "The marketplace's own data contradicts the blog's message: a top month in June 2026, but losing unit totals for 2025, for 2026 so far, and over his whole history there."
+    "Every record and ranking we saw comes from a store that earns money when his packages sell. The Tony's Picks blog posts and the Wizard video are marketing.",
+    "The stores' own logs contradict their marketing: a top month in June 2026 and a strong 2025 college football season, but losing totals on all three sites.",
+    "His background differs by store: math teaching on Tony's Picks, physical therapy studies on SportsCapping and Wizard.",
+    "The same pick sells for $30 on two stores and $4.99 on the third, so the price you pay depends on where you happen to land."
   ],
   "strengths": [
-    "Prices for every package are listed, from $30 for one game upward.",
-    "He writes free pick articles with his reasoning, so you can judge his thinking before paying.",
-    "The marketplace shows a lifetime win and loss count instead of only hot streaks."
+    "Prices for every package are listed on all three stores.",
+    "Wizard Sports Picks publishes every graded pick with the line, price and stake, so a buyer can check his record before paying, as we did.",
+    "He writes free pick articles with his reasoning, and his free picks on SportsCapping were 28-20 since August 2025.",
+    "Some slices are genuinely positive on the sellers' own logs: WNBA (84-62 on Wizard, 47-32 on SportsCapping) and the 2025 college football season (53-35-4).",
+    "A long history: saved pages show him selling on SportsCapping since at least 2014."
   ],
   "concerns": [
-    "The lifetime record the marketplace shows is below 50% winners with negative units.",
-    "Praise comes only from the marketplace that sells his picks.",
-    "The guarantee on single game packages is not explained anywhere we could find, and the bigger packages have none.",
-    "The three day pass description says $89.99 while the listed price is $109.",
+    "All three stores' own records show him below break even overall, and the last two months on Wizard were his worst.",
+    "Sales copy highlights chosen slices and contains at least one figure (60% NFL this season) that the store's own log did not match.",
+    "His Navy and college background is told two different ways.",
+    "Guarantees differ by store, pay in credit or free picks, and the Tony's Picks guarantee is not explained anywhere we could find.",
+    "Prices for the same plays vary from $4.99 to $30, and the three day pass description on Tony's Picks still shows an old price.",
     "No independent buyer reviews at all."
   ],
   "checklist": [
+    "Before buying anywhere, open the Wizard Sports Picks history table or the SportsCapping profile and look at the full record, not the package headline.",
+    "Compare prices across the three stores; the same pick can cost six times more on one than another.",
     "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A 30 day leaderboard is not a record.",
     "Count units, not wins. A 60% month can sit inside a losing year.",
-    "Read the guarantee for the words refund, credit and extension before you pay for it.",
-    "Watch automatic renewals. Tony's Picks wants a cancellation email days before the renewal date.",
+    "Read the guarantee for the words refund, credit and extension before you pay for it, and watch automatic renewals on Tony's Picks.",
     "Write down each pick yourself the moment you receive it, with the line you can actually get."
   ],
   "faq": [
     [
       "Is Kevin Thomas legit?",
-      "He is a real handicapper with an active profile, published prices and free pick articles on Tony's Picks. We could not verify that his picks win over time. The marketplace's own data showed a lifetime record just under 50% with negative units, and we found no independent buyer reviews and no court or regulator action involving him."
+      "He is a real handicapper with active profiles, published prices and free pick articles on three marketplaces, and saved pages show him selling since at least 2014. We could not verify that his picks win over time; in fact all three stores' own records showed him below break even on 20 Nov 2026. We found no independent buyer reviews and no court or regulator action involving him."
+    ],
+    [
+      "Where is Kevin Thomas sold?",
+      "On Tony's Picks (run by Tony Tellez), on the SportsCapping network and on Wizard Sports Picks. The same daily plays appeared on all three on 20 Nov 2026."
     ],
     [
       "How much does Kevin Thomas cost?",
-      "On 16 Nov 2026 Tony's Picks listed single game packages at $30, a three day pass at $109, 30 days at $349, a college football season pass at $899.99 and an NFL season pass at $999.99."
+      "On 20 Nov 2026 single picks were $30 on Tony's Picks and SportsCapping and $4.99 on Wizard Sports Picks. Three day passes ran $89.99 to $109, 30 days $329.99 to $429.99, a year $1,999.95 on SportsCapping, and NFL season passes $699.99 to $999.99."
+    ],
+    [
+      "Does Kevin Thomas offer refunds?",
+      "Not in cash. SportsCapping gives free replacement time or account credit on guaranteed packages, Wizard gives site credit on guaranteed picks, and Tony's Picks only refunds or credits an auto renewal if you email in time. Season passes carry no guarantee anywhere."
     ],
     [
       "Does Kevin Thomas have a verified record?",
-      "No. The only record is the one Tony's Picks keeps: 1366 wins, 1388 losses and 46 pushes on 16 Nov 2026. It is graded by the marketplace that sells his picks, not by an outside party."
+      "No independent one. The stores that sell him grade his picks: Tony's Picks shows 1,373-1,391-46, SportsCapping 218-228 since August 2025, and Wizard 618-598-19 since October 2025, all losing money."
     ],
     [
       "Is Kevin Thomas worth it?",
-      "He had a strong month in June 2026, but the marketplace's longer numbers show losses for 2025 and for 2026 so far. Nothing refunds your betting losses, so if you try him, buy the shortest package and track every pick yourself."
+      "He has had strong stretches, such as June 2026 and the WNBA, but the full records on the sites that sell him show losses for 2026 and overall. Nothing refunds your betting losses, so if you try him, buy the cheapest version of the shortest package and track every pick yourself."
     ]
   ],
   "related": [
     "bill-krackomberger",
-    "wagertalk",
+    "sportscapping",
+    "jack-jones",
     "dubclub",
-    "teddy-covers",
     "pregame"
   ],
   "sources": [
     {
       "title": "Tony's Picks: Kevin Thomas author page (free pick articles)",
       "url": "https://www.tonyspicks.com/author/kevin-thomas/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Tony's Picks: Bills vs Vikings Over/Under November 9, by Kevin Thomas (8 Nov 2026)",
       "url": "https://www.tonyspicks.com/2026/11/08/bills-vs-vikings-over-under-kevin-thomas-11-9-26/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Tony's Picks store data for the Kevin Thomas profile (bio, packages, prices, record)",
       "url": "https://api.tonyspicks.com/users/capper/1415",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Tony's Picks store data: list of cappers with recent unit totals",
       "url": "https://api.tonyspicks.com/users/cappers",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Tony's Picks blog: Leaderboard Analysis, Top Performers Over the Last 30 Days (25 Jun 2026)",
       "url": "https://www.tonyspicks.com/2026/06/25/tonys-picks-leaderboard-analysis-top-performers-over-the-last-30-days/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Tony's Picks blog: Top Performers Last 30 Days, Kevin Thomas Leads (1 Jul 2026)",
       "url": "https://www.tonyspicks.com/2026/07/01/tonys-picks-top-performers-last-30-days-kevin-thomas-leads-documented-handicappers/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Tony's Picks terms (renewal, refund and credit wording, phone number)",
       "url": "https://www.tonyspicks.com/terms/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Tony's Picks members store: all cappers",
       "url": "https://members.tonyspicks.com/cappers/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "SportsCapping: Kevin Thomas handicapper page (bio, stats by sport, packages, prices)",
+      "url": "https://www.sportscapping.com/handicappers/kevin-thomas",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "SportsCapping: The Profit Guarantee policy",
+      "url": "https://www.sportscapping.com/page/guarantee-policy",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Wizard Sports Picks: Kevin Thomas profile (bio, packages, prices, full graded pick history)",
+      "url": "https://wizardsportspicks.com/author/kevin-tomas/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Wizard Sports Picks FAQ (guarantee and credit terms)",
+      "url": "https://wizardsportspicks.com/faq/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Wizard Sports Picks: Kevin's CFB Friday Pristine Wager (product page, 20 Nov 2026)",
+      "url": "https://wizardsportspicks.com/picks/kevins-cfb-friday-pristine-wager-5/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Wizard Sports Picks on YouTube: Pro Handicapper Kevin Thomas on His 60% Run (14 Oct 2026)",
+      "url": "https://www.youtube.com/watch?v=ySE2gZbz38k",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Internet Archive: SportsCapping Kevin Thomas page as saved 7 Jul 2017",
+      "url": "https://web.archive.org/web/20170707041646/https://www.sportscapping.com/kevin-thomas.html",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Internet Archive: SportsCapping Kevin Thomas page as saved 20 May 2014",
+      "url": "https://web.archive.org/web/20140520020736/http://www.sportscapping.com:80/kevin-thomas.html",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "CapperTek: TonysPicks.com customer reviews",
+      "url": "https://www.cappertek.com/reviews.asp?shs=TonysPicks.com",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Better Business Bureau: Tony's Picks business profile (Ontario, CA)",
+      "url": "https://www.bbb.org/us/ca/ontario/profile/sports-promoter/tonys-picks-1126-850098056",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Tony's Picks About page (Tony Tellez background)",
+      "url": "https://www.tonyspicks.com/about/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Tony's Picks contact page (toll free number)",
+      "url": "https://www.tonyspicks.com/contact-us/",
+      "accessed": "20 Nov 2026"
     }
   ],
   "pricing_source": 2
