@@ -489,6 +489,7 @@
     sportsByDepth(all, 5).forEach(function (s) { $('fSport').insertAdjacentHTML('beforeend', '<option>' + esc(s) + '</option>'); });
     var map = { q: 'q', sport: 'fSport', t: 'fTime', sort: 'fSort', min: 'fMin', roi: 'fRoi', win: 'fWin', u: 'fUnits', act: 'fAct' };
     Object.keys(map).forEach(function (k) { if (P.has(k)) $(map[k]).value = P.get(k); });
+    ['fTime', 'fSort', 'fMin'].forEach(function (id) { var el = $(id); if (el && el.tagName === 'SELECT' && el.selectedIndex < 0) { var d = [].filter.call(el.options, function (o) { return o.defaultSelected; })[0]; el.selectedIndex = d ? d.index : 0; } });  // an old link with a removed option falls back to the default
     var cols = [['l', '#', ''], ['l', 'Handicapper', ''], ['hm l', 'Trend', ''], ['', 'Picks', 'picks'], ['', 'Record', ''], ['hm', 'Win %', 'win_pct'], ['', 'Units', 'units'], ['', 'ROI', 'roi'], ['hm', 'Streak', 'streak'], ['hm', 'Last pick', 'last_pick']];
 
     function head() {

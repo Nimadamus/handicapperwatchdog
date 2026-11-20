@@ -1166,6 +1166,24 @@ def _median_roi(cappers, minimum):
     return vals[len(vals) // 2]
 
 
+def _write_404(site):
+    """Branded not found page. GitHub Pages serves /404.html for any missing path, so every link is root relative (20 Nov 2026)."""
+    body = ('<div class="pagehead"><div><div class="eyebrow">Not found</div><h1>That page is not here</h1>'
+            '<p class="muted">The link may be old, or the page may have moved. These are the main parts of the site.</p></div></div>'
+            '<section class="panel"><div class="pb prose"><ul>'
+            '<li><a href="/cappers.html">Handicapper rankings</a>: graded records, ranked by units</li>'
+            '<li><a href="/handicappers/">Handicapper directory</a>: every account with 20 or more graded picks</li>'
+            '<li><a href="/reviews/">Handicapper reviews</a>: named pick services, with sources</li>'
+            '<li><a href="/learn/">Betting guides</a> and <a href="/research/">research</a></li>'
+            '<li><a href="/sportsbooks/">Sportsbook research</a></li></ul>'
+            '<p><a class="btn" href="/">Go to the home page</a></p></div></section>')
+    html = _document(0, '404.html', 'Page Not Found | Handicapper Watchdog', 'This page could not be found on Handicapper Watchdog.',
+                     'https://handicapperwatchdog.com/404.html', body, 'noindex')
+    html = html.replace('<meta charset="utf-8">', '<meta charset="utf-8">\n<base href="/">', 1)
+    with open(os.path.join(site, '404.html'), 'w', encoding='utf-8', newline='\n') as f:
+        f.write(html)
+
+
 def _write_guides(site, meta, cappers):
     est = int(meta.get('established') or 0)
     up = int(meta.get('established_up') or 0)
@@ -3073,6 +3091,7 @@ def stamp_public_pages(site):
             f.write(html)
     FOOTER_SPORTS[:] = [(_sport_slug(s), s) for s in _sport_pages(cappers)]  # only sport pages this build writes
     _write_guides(site, meta, cappers)
+    _write_404(site)
     _write_learn(site, meta, cappers)
     _write_research(site, meta, cappers)
     _write_sport_pages(site, cappers)

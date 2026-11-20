@@ -167,7 +167,7 @@
     if (p.gated && !p.unlocked) { Object.keys(DEEP_DEFAULTS).forEach(function (k) { if (p[k] == null) p[k] = DEEP_DEFAULTS[k]; }); p.locked = true; }
     var s = p.summary, o = p.overview || {}, a = p.advanced || {}, c = s.id.slice(0, 6).toUpperCase(), w = s.name || '#' + c, t = TIER[s.tier] || TIER.small;
     var z = a.z || {}, be = a.break_even || {}, clv = a.clv || {}, ost = o.streaks || {};
-    document.title = 'Handicapper #' + c + ': ' + rec(o) + ', ' + (o.net > 0 ? '+' : '') + (+o.net).toFixed(2) + ' units | Handicapper Watchdog';
+    document.title = (s.name ? s.name + ' Record' : 'Handicapper #' + c) + ': ' + rec(o) + ', ' + (o.net > 0 ? '+' : '') + (+o.net).toFixed(2) + ' Units | Handicapper Watchdog';
     var sportNames = Object.keys(p.sport_detail || {});
     var h = '';
     var sportHref = function (name) {
@@ -330,7 +330,7 @@
   }
   function renderBasic(p) {
     var s = p.summary, c = s.id.slice(0, 6).toUpperCase(), w = s.name || '#' + c, t = TIER[s.tier] || TIER.small, none = p.reason === 'no_grades';
-    document.title = 'Handicapper #' + c + ': ' + (none ? 'no graded picks yet' : rec(s)) + ' | Handicapper Watchdog';
+    document.title = (s.name || 'Handicapper #' + c) + ': ' + (none ? 'No Graded Picks Yet' : rec(s)) + ' | Handicapper Watchdog';
     var why = none
       ? 'Watchdog monitors this public account, but none of its picks have been graded yet. A record starts with the first pick posted before a game and graded from the final score. This page fills in on its own when that happens.'
       : p.reason === 'unreconciled'
