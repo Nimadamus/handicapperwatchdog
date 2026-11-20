@@ -1205,7 +1205,7 @@ def _write_guides(site, meta, cappers):
 <p class="muted">Every number on this site comes from a pick that was posted in public before the game started. A handicapper does not send us a record. We grade the posts ourselves.</p></div></div>
 <div class="how">
 <div class="panel pb"><span class="n">01</span><b>Captured from public posts</b><p>Picks are read from public posts on X, Covers, Reddit, TheRX, Sportsbook Review and Predictem, with the time each one was posted. A pick posted after the game starts is not counted.</p></div>
-<div class="panel pb"><span class="n">02</span><b>Graded on the final score</b><p>Straight bets are graded against the final score. One unit is risked on each pick at the posted price. When a post has no price, a reference price is used. Pushes are pushes. Held, duplicate and unreviewed posts are left out.</p></div>
+<div class="panel pb"><span class="n">02</span><b>Graded on the final score</b><p>Straight bets are graded against the final score. One unit is risked on each pick at the posted price. When a post has no price, a reference price is used where one exists. A pick with no price at all still counts as a win or a loss but adds no units, and each profile shows how many such picks it has. Pushes are pushes. Held, duplicate and unreviewed posts are left out.</p></div>
 <div class="panel pb"><span class="n">03</span><b>Sample size is part of the record</b><p>Under 20 picks is a small sample. From 20 to 99 is developing. 100 or more is established. The free homepage and the rankings open on established records, because a short hot streak is not a career.</p></div>
 </div>
 <section class="panel" style="margin-bottom:18px"><div class="pb">

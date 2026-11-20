@@ -151,20 +151,20 @@
       var s = q.trim().toLowerCase().replace(/^#/, ''), out = [];
       if (!s) return out;
       services.forEach(function (v) { if (v.name.toLowerCase().indexOf(s) >= 0) out.push({ href: v.page, a: v.name, b: v.kind || 'Service review' }); });
-      if (!out.length && s.length >= 4) services.map(function (v) { return { v: v, d: near(s, v.name.toLowerCase()) }; }).filter(function (x) { return x.d <= 2; }).sort(function (a, b) { return a.d - b.d; }).slice(0, 3)
-        .forEach(function (x) { out.push({ href: x.v.page, a: x.v.name, b: x.v.kind ? 'Did you mean this sportsbook?' : 'Did you mean this review?' }); });
       var seen = {}, nq = bare(s);
       var hit = function (r) { if (seen[r.id]) return; seen[r.id] = 1; out.push({ href: link(r), a: who(r), b: r.picks ? recTxt(r) + ', ' + fmt(r.picks) + ' graded picks' : 'No graded picks yet' }); };
       if (nq.length >= 2) all.filter(function (r) { return r.name && bare(r.name).indexOf(nq) >= 0; }).sort(function (a, b) { return (bare(a.name).indexOf(nq) ? 1 : 0) - (bare(b.name).indexOf(nq) ? 1 : 0) || b.picks - a.picks; }).slice(0, 6).forEach(hit);
       if (/^[0-9a-f]{2,10}$/.test(s)) all.filter(function (r) { return r.id.indexOf(s) === 0; }).sort(function (a, b) { return b.picks - a.picks; }).slice(0, 5).forEach(hit);
       sports.forEach(function (v) { if (v.toLowerCase().indexOf(s) === 0) out.push({ href: 'cappers.html?sport=' + encodeURIComponent(v), a: v, b: 'Rankings' }); });
+      if (!out.length && s.length >= 4) services.map(function (v) { return { v: v, d: near(s, v.name.toLowerCase()) }; }).filter(function (x) { return x.d <= 2; }).sort(function (a, b) { return a.d - b.d; }).slice(0, 3)
+        .forEach(function (x) { out.push({ href: x.v.page, a: x.v.name, b: x.v.kind ? 'Did you mean this sportsbook?' : 'Did you mean this review?' }); });
       return out.slice(0, 7);
     }
     function show() {
       items = find(input.value); on = -1;
       var q = input.value.trim();
       if (!q) { box.hidden = true; input.setAttribute('aria-expanded', 'false'); return; }
-      box.innerHTML = items.length ? items.map(function (o, i) { return '<li role="option" id="vo' + i + '"><a href="' + esc(o.href) + '">' + esc(o.a) + '<span>' + esc(o.b) + '</span></a></li>'; }).join('') :
+      box.innerHTML = !items.length && !all.length && !services.length ? '<li class="vnone-li"><span class="vnone">Searching&hellip;</span></li>' : items.length ? items.map(function (o, i) { return '<li role="option" id="vo' + i + '"><a href="' + esc(o.href) + '">' + esc(o.a) + '<span>' + esc(o.b) + '</span></a></li>'; }).join('') :
         '<li class="vnone-li"><span class="vnone">No match. Try a <a href="reviews/index.html">named service review</a>, a <a href="sportsbooks/">sportsbook</a> or the <a href="cappers.html">rankings</a>.</span></li>';
       box.hidden = false; input.setAttribute('aria-expanded', 'true');
     }
