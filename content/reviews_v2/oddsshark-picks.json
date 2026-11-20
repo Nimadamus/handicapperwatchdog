@@ -3,25 +3,33 @@
   "name": "OddsShark picks",
   "legal_name": "CS Media Ltd, operator of covers.com, part of the Genius Sports group (Covers About page)",
   "kind": "Free betting media picks, now part of Covers",
-  "checked": "7 Nov 2026",
-  "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-13",
+  "checked": "20 Nov 2026",
+  "checked_iso": "2026-11-20",
+  "updated_iso": "2026-11-20",
   "title": "OddsShark Picks Review 2026: Pricing, Record, Worth It?",
-  "description": "OddsShark picks review, checked 7 Nov 2026: the site now redirects to Covers, its computer picks are free, no results record is shown, and who profits.",
+  "description": "OddsShark picks review, checked 20 Nov 2026: now part of Covers, free computer picks, its last posted 100 game records checked, and who profits.",
   "h1": "OddsShark picks review",
-  "dek": "OddsShark.com now redirects to Covers, part of the Genius Sports group, where its model runs as \"Computer Picks powered by Odds Shark.\" The picks are free. The page says it tracks the computer's results, but we found no results table, and prediction market and sportsbook links sit beside every pick.",
+  "dek": "OddsShark.com now redirects to Covers, part of the Genius Sports group, where its model runs as \"Computer Picks powered by Odds Shark.\" The picks are free. The live page shows no results table, but archived 2025 copies did, and our check of those numbers found winning and losing columns side by side, with prediction market and sportsbook links next to every pick.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded OddsShark's computer picks or any Covers analyst. This page reports what we could check and labels everything else."
+    "note": "Watchdog has not graded OddsShark's computer picks or any Covers analyst. This page reports what we could check on 20 Nov 2026 and labels everything else."
   },
   "glance": [
     [
       "Operator",
-      "CS Media Ltd, operator of covers.com, part of the Genius Sports group (Covers About page)"
+      "CS Media Ltd, operator of covers.com, part of the Genius Sports group (Covers About and terms pages)"
     ],
     [
-      "Claims to operate since",
-      "OddsShark: 2008 (archived 2025 footer). Covers: 1995"
+      "History",
+      "OddsShark site from 2008 (archived 2025 footer); now redirects to Covers, founded 1995"
+    ],
+    [
+      "Parent",
+      "Genius Sports (NYSE: GENI), which closed its purchase of Covers owner Legend in May 2026, a deal valued at up to $1.2 billion"
+    ],
+    [
+      "Where shown",
+      "covers.com/picks and the free Covers app (4.7 from 548 ratings on the App Store)"
     ],
     [
       "Price range seen",
@@ -33,7 +41,7 @@
     ],
     [
       "Full public record",
-      "Not found. The page describes a 100 game results table we did not see"
+      "Not on the live page. Archived 2025 pages showed last 100 game tables"
     ],
     [
       "Watchdog graded record",
@@ -41,11 +49,11 @@
     ]
   ],
   "short_answer": [
-    "OddsShark is no longer a separate site. On 7 Nov 2026 oddsshark.com and its picks pages redirected to Covers, to a page headed \"Odds Shark is now part of Covers.\" Covers' About page says it is part of the Genius Sports group and names CS Media Ltd as the operator. An archived copy from 1 Jun 2025 still showed OddsShark as its own site.",
-    "The picks are free. The NFL page on 7 Nov 2026 showed a computer projected score for each game, analyst picks with a rough post time such as \"Pick made: yesterday,\" and betting trends. The page text says a table tracks the computer's results over the last 100 games at opening and closing lines, but no such table appeared on the page we opened, even fully loaded. We found no win and loss record for the computer or any analyst.",
-    "Covers earns from betting offers. The odds shown beside the picks link out through Covers redirect links to prediction market apps such as Kalshi and Novig, and the menus list dozens of promo code pages. Treat OddsShark picks as free content from an affiliate publisher, not a proven edge."
+    "OddsShark is no longer a separate site. On 20 Nov 2026 oddsshark.com answered with a permanent redirect, and its old NFL computer picks address pointed to covers.com/picks/nfl, under a page headed \"Odds Shark is now part of Covers.\" Covers' About page says it is part of the Genius Sports group and names CS Media Ltd as the operator. Genius Sports, a sports data company, agreed in February 2026 to buy Legend, the media network behind Covers, in a deal reported at up to $1.2 billion, and trade press reported it closed in May 2026.",
+    "The picks are free. The NFL page shows a computer projected score and a spread, total and moneyline side for every game, under the heading \"New Computer Picks powered by Odds Shark,\" but no results table and no method. Archived copies of the old OddsShark pages from January and June 2025 did show a last 100 games table. We checked those numbers: in January 2025 the NFL computer was ahead on moneylines and spreads but behind on totals, and in June 2025 the NBA computer was behind on spreads at opening lines. Most of the dollar figures match a flat -110 calculation; two NFL figures do not.",
+    "Covers earns from betting offers. The odds beside the computer picks link through Covers redirect links to prediction market apps such as Kalshi, Novig, ProphetX and Polymarket, a Kalshi \"Exclusive $60 Bonus\" banner sits on the page, and in 2025 the old OddsShark pages carried paid \"Sponsored Picks\" boxes from pick sellers. Treat OddsShark picks as free content from an affiliate publisher, not a proven edge."
   ],
-  "pricing_intro": "Nothing on the OddsShark or Covers picks pages we opened on 7 Nov 2026 was for sale. Covers' About page says its core products are free, with no signup or subscription.",
+  "pricing_intro": "Nothing on the OddsShark or Covers picks pages we opened on 20 Nov 2026 was for sale, as on our 7 Nov 2026 check. Covers' About page says its core products are free, with no signup or subscription.",
   "pricing": [
     [
       "Computer picks, powered by Odds Shark",
@@ -60,65 +68,78 @@
     [
       "Covers app",
       "Free download",
-      "App Store listing says it offers expert picks"
+      "App Store listing promotes expert picks, best bets and parlays"
     ]
   ],
   "guarantee": [
-    "There is nothing to guarantee because the picks are free. The real cost to a reader is the bets placed on them, and none of the pages we opened promised results."
+    "There is nothing to guarantee because the picks are free. The real cost to a reader is the bets placed on them, and none of the pages we opened promised results.",
+    "Covers' terms, updated 5 August 2026, say its content is \"provided for your non-commercial entertainment and enjoyment\" and disclaim that results will be \"accurate or reliable.\" They give a postal address for CS Media Ltd in Post Falls, Idaho, and name no governing jurisdiction."
   ],
   "claims": [
     {
-      "claim": "\"Odds Shark is the global authority for betting odds, picks and insights\"",
-      "where": "covers.com/oddsshark",
-      "status": "Seller claim"
+      "claim": "\"Odds Shark prides itself in delivering bettors profitable analysis.\"",
+      "where": "covers.com/oddsshark, 20 Nov 2026",
+      "status": "Mixed against its own archived tables: some columns won, others lost (see below)"
     },
     {
-      "claim": "\"Odds Shark's team of experts provide fans game picks and analysis\"",
-      "where": "covers.com/oddsshark",
-      "status": "Seller claim"
+      "claim": "NFL computer, last 100 games (archived 16 Jan 2025): spreads 60-39-1 for $1,227 at opening lines and 56-42-2 for $893 at closing lines",
+      "where": "Old OddsShark NFL computer picks page, Wayback Machine",
+      "status": "Checked: closing figure matches flat -110 math (about $891). Opening figure does not: 60-39 at -110 makes about $1,555"
     },
     {
-      "claim": "Computer picks \"based on a proprietary algorithm that values each team in the current week\"",
-      "where": "Covers NFL picks page",
-      "status": "Seller description; method not published"
+      "claim": "NFL computer totals (same table): 49-46-5 for -$383 at opening, 50-47-3 for -$155 at closing; moneylines 69-30-1 for $1,042",
+      "where": "Old OddsShark NFL computer picks page, Wayback Machine",
+      "status": "Checked: closing total matches (-$155). Opening total does not: 49-46 at -110 is about -$145. Totals lost money either way"
+    },
+    {
+      "claim": "NBA computer, last 100 games (archived 3 Jun 2025): spreads 48-51-1 for -$740 at opening, 52-46-2 for $124 at closing; totals 57-42-1 for $930; moneylines 64-36 for $61",
+      "where": "Old OddsShark NBA computer picks page, Wayback Machine",
+      "status": "Checked: spread figures match flat -110 math within a few dollars. Moneylines won 64% yet made $61, because favorites pay little"
     },
     {
       "claim": "A table \"tracks our NFL computer's results over the last 100 games\" at opening and closing lines",
-      "where": "Covers NFL picks page",
-      "status": "Not found on the page on 7 Nov 2026"
+      "where": "Old OddsShark NFL computer picks page (2025)",
+      "status": "Not on the Covers page on 7 Nov or 20 Nov 2026"
     },
     {
-      "claim": "\"FinCertified\" reviews of betting sites, casinos and prediction platforms",
-      "where": "covers.com/oddsshark",
+      "claim": "Computer picks \"based on a proprietary algorithm that values each team in the current week\"",
+      "where": "Old OddsShark NFL computer picks page (2025)",
+      "status": "Seller description; method not published, and the Covers page no longer describes it"
+    },
+    {
+      "claim": "\"Odds Shark is the global authority for betting odds, picks and insights\" and \"Our FinCertified process ensures our experts review sportsbooks and online casinos\"",
+      "where": "covers.com/oddsshark, 20 Nov 2026",
       "status": "Seller claim; these reviews sit beside affiliate offers"
     },
     {
       "claim": "\"Established in 1995, Covers is the world leader in sports betting information\"",
       "where": "Covers footer",
-      "status": "Seller claim"
+      "status": "Founding confirmed by the About page (June 1995). \"World leader\" is a slogan"
     }
   ],
   "claims_note": [
-    "The page tells readers that the larger the projected score margin, the more confident the computer is. A projection is not a result. Without the results table the page describes, a reader cannot tell whether those projections have beaten the closing line.",
-    "Old OddsShark pick history is hard to find now that its pages redirect to Covers. We did not find an archive of past OddsShark computer picks with results."
+    "How we checked. The live Covers page has no results, so we opened the last archived copies of the old OddsShark NFL computer picks page (16 Jan 2025, end of the NFL regular season) and NBA computer picks page (3 Jun 2025, NBA Finals). Each showed a \"Computer Picks Results, Last 100 Games\" table with records and dollar results at $100 a unit, at opening and closing lines. For each spread and total row we computed the profit a bettor would make risking $100 a bet at -110 and compared it with the printed figure.",
+    "Six of the eight spread and total figures land within about $60 of our flat -110 math, and four within $5, so the table appears to be computed the way it says. Two NFL opening line figures do not fit: the spread row printed $1,227 where 60-39 at -110 gives about $1,555, and the totals row printed -$383 where 49-46 gives about -$145. The page did not explain the gap, which could come from worse opening prices than -110.",
+    "The tables show why one headline number misleads. The NFL computer looked strong against the spread in January 2025 (60.6% at opening lines, 57.1% at closing lines), but its totals lost money. Five months later the NBA computer lost against the spread at opening lines (48.5%) while its totals won. Its moneyline picks won 64% of the time in the NBA table and still made only $61 over 100 games, because picking favorites pays little. A 100 game window is also short: it rolls forward every day, so a reader sees whatever the latest stretch happened to be.",
+    "Old OddsShark pick history is hard to find now that its pages redirect to Covers. Beyond these two archived snapshots we found no archive of past OddsShark computer picks with results, and no outside party that graded them."
   ],
   "record": [
     "What is independently verifiable: nothing about OddsShark's picks. We found no outside monitor, contest or regulator record of its computer or analyst picks. Covers runs its own free contests, which we cover in our Covers expert picks review, but those grade Covers users, not the OddsShark computer.",
-    "What is the seller's own marketing: the NFL computer picks page says it tracks the last 100 games with record and profit at $100 a unit, at both opening and closing lines. That table was not on the page on 7 Nov 2026, so we cannot report a figure. Analyst picks showed names and rough times without a season record.",
-    "Legal history: our searches found no court or regulator action involving OddsShark. Covers' terms name CS Media Ltd, with a postal address in Post Falls, Idaho."
+    "What is the seller's own marketing: in 2025 the old OddsShark pages showed a rolling last 100 games table for the computer, and analyst picks carried a time stamp such as \"Bet placed at 12:34 pm ET on Tuesday, January 14,\" which is good practice. On 20 Nov 2026 the Covers NFL page showed computer projections for every Week 11 game but no results table, no method text and no visible analyst picks, only an \"Expert Picks\" tab.",
+    "Legal history: our searches found no court or regulator action involving OddsShark. Covers' terms name CS Media Ltd, with a postal address in Post Falls, Idaho. We could not confirm who owned OddsShark before it moved into Covers or exactly when the move happened; the trademark lookup we tried refused automated access."
   ],
   "our_data": {
     "matched": false,
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition neither the OddsShark computer nor any Covers analyst is matched to a Watchdog graded record, so we make no claim about how these picks perform.",
-    "context": "For scale: free computer picks on spreads and totals have to clear the same bar as paid ones. On the Watchdog board on 7 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "context": "For scale: free computer picks on spreads and totals have to clear the same bar as paid ones. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "OddsShark itself has almost no customer footprint we could find: its Trustpilot page has no reviews and it has no app of its own in the US App Store. Because its picks now live on Covers, we also read Covers reviews. Those mostly praise the free contests and research tools, and only one we found speaks to whether the picks win.",
+  "customers_intro": "OddsShark itself has almost no customer footprint we could find: its Trustpilot page had no reviews and it has no app of its own in the US App Store. Because its picks now live on Covers, we also read Covers reviews. Those mostly praise the free contests and research tools, and only one we found speaks to whether the picks win.",
   "customers": [
     {
       "type": "Our summary",
-      "tone": "Neutral",
-      "date": "Read 13 Nov 2026",
-      "text": "We found no forum buyer of OddsShark picks, which are free on Covers. Covers members in 2024 called oddsshark.com a solid free stats site and liked its head to head database, while one wished it had day of the week splits. The only review we found that speaks to results, a 2026 Trustpilot review below, says tracked picks hit below 50 percent.",
+      "tone": "Mixed",
+      "date": "Read 20 Nov 2026",
+      "text": "We found no paying buyer of OddsShark picks, because they are free, and very few posts that judge them at all. On the Covers forum in June 2024 two members called oddsshark.com a solid free stats site and one liked its head to head database while wishing it had day of the week splits; a few days later another member called it useless, saying it was full of its own predictions and lacked basics such as game logs and bullpen stats. A Reddit poster in 2024 said he was betting $20 on OddsShark's NFL picks, with no follow up. The only review that speaks to results, a May 2026 Trustpilot review of Covers, says tracked computer and expert picks hit below 50 percent. Reviews of Covers as a whole are strongly positive (4.7 on Trustpilot and on the App Store), but they praise contests, layout and prize payouts, not pick results.",
       "source": null
     },
     {
@@ -166,42 +187,59 @@
     {
       "type": "Customer report",
       "tone": "Positive",
-      "date": "Checked 7 Nov 2026",
-      "text": "The free Covers iPhone app, which its listing says offers expert picks, showed 4.7 out of 5 from 471 ratings. The top visible review, dated May 8 with no year shown, praised the clean layout.",
+      "date": "Checked 20 Nov 2026",
+      "text": "The free Covers iPhone app, published by CS Media LTD, showed 4.7 out of 5 from 548 ratings on 20 Nov 2026, up from 471 on 7 Nov. Its description promotes expert picks, best bets and parlays. The visible reviews, dated May and September with no year shown, praise the clean layout and the free picks; several drew replies from the developer.",
       "source": 10
+    },
+    {
+      "type": "Forum post",
+      "tone": "Negative",
+      "date": "23 Jun 2024",
+      "text": "In the same Covers forum thread about free stats sites, a member called oddsshark.com useless for baseball research, saying it was filled with its own prediction content and lacked game logs, bullpen numbers and splits against left handed pitching. Another member agreed.",
+      "source": 11
+    },
+    {
+      "type": "Forum post",
+      "tone": "Neutral",
+      "date": "9 Aug 2024",
+      "text": "A Reddit poster in r/sportsbetting said he had looked at the NFL picks on OddsShark and was letting $20 ride on them. The only reply posted a payout figure without saying what it was for, and nobody reported a result.",
+      "source": 17
     },
     {
       "type": "Not found",
       "tone": "Neutral",
-      "date": "Checked 7 Nov 2026",
-      "text": "Our searches found no Reddit, TheRX, SBR or Covers forum thread that evaluates OddsShark's computer picks record, and no OddsShark app in the US App Store.",
+      "date": "Checked 20 Nov 2026",
+      "text": "Our searches found no TheRX, SBR or Covers forum thread that evaluates OddsShark's computer picks record, no Better Business Bureau profile, and no OddsShark app in the US App Store.",
       "source": null
     }
   ],
   "conflicts": [
-    "Covers, which now runs OddsShark, earns from betting operators. On the NFL picks page, the odds beside the computer picks link through Covers redirect links to Kalshi and Novig, and the site menus list promo code pages for sportsbooks, casinos, sweepstakes casinos and prediction markets.",
-    "Covers' DraftKings promo page says the offer applies when you sign up \"through our exclusive link,\" labels it \"Sponsored by DK\" and a Covers and DraftKings partnership, and says affiliate links are disclosed. We saw no such disclosure next to the picks themselves.",
-    "OddsShark's \"FinCertified\" reviews rate the betting sites and casinos that the same network promotes.",
-    "Covers is part of Genius Sports, a sports data company listed on the New York Stock Exchange, according to the Covers About page."
+    "Covers, which now runs OddsShark, earns from betting operators. On 20 Nov 2026 the odds beside the computer picks linked through Covers redirect links to Kalshi, Novig, ProphetX and Polymarket, a Kalshi \"Exclusive $60 Bonus\" banner sat on the page, and the covers.com/oddsshark page listed bonus code pages for thirteen sportsbooks and twelve prediction market apps.",
+    "In 2025 the old OddsShark computer picks pages placed \"Sponsored Picks\" boxes from paid pick sellers, including Doc's Premium Picks, Wunderdog Picks and Outlier Premium Data, right beside its own free picks, and its menu carried a \"Picks Service Reviews\" section. A site that sells placement to pick sellers and also reviews them has a conflict a reader should weigh.",
+    "Covers' DraftKings promo page, when we read it on 7 Nov 2026, said the offer applies when you sign up \"through our exclusive link,\" labelled it \"Sponsored by DK\" and a Covers and DraftKings partnership, and said affiliate links are disclosed. We saw no such disclosure next to the picks themselves, and the Covers terms contain no affiliate disclosure.",
+    "Covers belongs to Genius Sports, a sports data company listed on the New York Stock Exchange. Trade press described Legend, the network Genius bought, as a gaming affiliate business \"built to monetize attention\" with 320 million visits a year."
   ],
   "strengths": [
-    "Free, with no signup needed to see computer and analyst picks.",
-    "Computer picks cover every game on the board with projected scores, so you can compare them with your own numbers.",
-    "Covers names its operator, CS Media Ltd, and its parent group.",
-    "The page says results are tracked at both opening and closing lines, which is the right test if the table is published."
+    "Free, with no signup needed to see computer projections and picks for every game on the board.",
+    "Computer picks give projected scores, so you can compare them with your own numbers rather than just tail a side.",
+    "When the old OddsShark pages published results, they tracked both opening and closing lines over a rolling 100 games, and our check found most figures consistent with flat -110 math.",
+    "Covers names its operator, CS Media Ltd, its postal address and its parent group.",
+    "Analyst picks on the old pages carried an exact time stamp, which is what a buyer should demand of any seller."
   ],
   "concerns": [
-    "No results table or season record for the computer or the analysts was visible on 7 Nov 2026.",
-    "Prediction market and sportsbook links sit right beside the picks.",
-    "The move into Covers makes old OddsShark pick history hard to find.",
-    "Customer reviews are about Covers' contests and tools, not about whether these picks win."
+    "No results table, method text or season record for the computer was visible on the Covers page on 7 Nov or 20 Nov 2026.",
+    "The last archived tables we found showed losing columns (NFL totals in January 2025, NBA spreads at opening lines in June 2025) beside winning ones.",
+    "Two archived NFL dollar figures do not match the records printed beside them.",
+    "Prediction market and sportsbook links, a $60 bonus banner and, in 2025, paid sponsored picks sat right beside the free picks.",
+    "The move into Covers makes old OddsShark pick history hard to find, and customer reviews are about Covers' contests and tools, not about whether these picks win."
   ],
   "checklist": [
-    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
-    "Count units, not wins. A 60% record at heavy favorites can still lose money.",
-    "Read the guarantee for the words refund, credit and extension. Most \"guarantees\" in this business are credits.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Before following any free computer pick, find its results at closing lines over at least a full season. If the page shows none, treat the pick as a projection.",
+    "Count dollars, not wins. A 64% moneyline record can still make almost nothing when it backs favorites.",
+    "Check whether a pick still holds at the line you can get now; the archived tables show opening and closing results can differ by hundreds of dollars over 100 games.",
+    "Write down each pick yourself with the time and the price, then grade it after a few hundred picks.",
+    "Do not sign up for a sportsbook or prediction market app because a link sits beside a pick. Read who earns from that link.",
+    "Prediction market and offshore offers are not regulated the same way as state licensed sportsbooks. Check the law where you live."
   ],
   "faq": [
     [
@@ -210,15 +248,23 @@
     ],
     [
       "How much does OddsShark cost?",
-      "Nothing. The computer and analyst picks we saw on 7 Nov 2026 were free with no subscription; the site earns from sportsbook and prediction market offers instead."
+      "Nothing. The computer and analyst picks we saw on 20 Nov 2026 were free with no subscription; the site earns from sportsbook and prediction market offers instead."
     ],
     [
       "Does OddsShark have a verified record?",
-      "No. We found no outside record, and the results table the computer picks page describes was not on the page when we checked. Watchdog has no graded record for it."
+      "No. We found no outside record, and the results table the old pages described was not on the Covers page when we checked. Archived 2025 tables showed a mix of winning and losing columns over 100 game windows, and Watchdog has no graded record for it."
+    ],
+    [
+      "What happened to oddsshark.com?",
+      "On 20 Nov 2026 oddsshark.com returned a permanent redirect to Covers, and its computer picks pages now sit on covers.com under \"Computer Picks powered by Odds Shark.\" An archived copy from June 2025 still showed OddsShark as its own site, with a 2008 to 2025 copyright."
+    ],
+    [
+      "Who owns OddsShark now?",
+      "Its pages are part of Covers, operated by CS Media Ltd. Covers is part of Genius Sports, which closed its purchase of Covers owner Legend in May 2026 according to trade press."
     ],
     [
       "Is OddsShark worth it?",
-      "It is free, so you pay only with the bets you place, and you get projected scores and picks for every game. What is unproven is whether following them beats the roughly 52.4% needed at -110, and the links beside them earn the site money when you sign up with a book or app."
+      "It is free, so you pay only with the bets you place, and you get projected scores and sides for every game. What is unproven is whether following them beats the roughly 52.4% needed at -110, and the links beside them earn the site money when you sign up with a book or app."
     ]
   ],
   "related": [
@@ -232,12 +278,12 @@
     {
       "title": "Odds Shark is now part of Covers (oddsshark.com redirects here)",
       "url": "https://www.covers.com/oddsshark",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Covers NFL picks, Computer Picks powered by Odds Shark (the old OddsShark NFL computer picks address redirects here)",
       "url": "https://www.covers.com/picks/nfl",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Covers picks hub (oddsshark.com/picks redirects here)",
@@ -247,17 +293,17 @@
     {
       "title": "Covers About page (ownership, operator, free products)",
       "url": "https://www.covers.com/about",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Covers Terms of Service (CS Media Ltd, postal address)",
       "url": "https://www.covers.com/terms",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "OddsShark homepage, Wayback Machine copy of 1 Jun 2025",
       "url": "https://web.archive.org/web/20250601170856/https://www.oddsshark.com/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Covers DraftKings promo code page (partnership and affiliate disclosure)",
@@ -280,14 +326,44 @@
       "accessed": "7 Nov 2026"
     },
     {
-      "title": "Covers: Scores, Picks and Odds on the Apple App Store",
+      "title": "Covers: Scores, Picks and Odds on the Apple App Store (developer CS Media LTD)",
       "url": "https://apps.apple.com/us/app/covers-scores-picks-and-odds/id6749450176",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Covers forum: Any site similar to statfox.com, Jun 2024",
       "url": "https://www.covers.com/forum/mlb-betting-27/any-site-similar-to-statfoxcom-103857770",
-      "accessed": "13 Nov 2026"
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "OddsShark NFL computer picks, Wayback Machine copy of 16 Jan 2025 (last 100 games table, sponsored picks)",
+      "url": "https://web.archive.org/web/20250116112211/https://www.oddsshark.com/nfl/computer-picks",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "OddsShark NBA computer picks, Wayback Machine copy of 3 Jun 2025 (last 100 games table)",
+      "url": "https://web.archive.org/web/20250603204044/https://www.oddsshark.com/nba/computer-picks",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "OddsShark About Us, Wayback Machine copy of 1 Jun 2025",
+      "url": "https://web.archive.org/web/20250601171624/https://www.oddsshark.com/about-us",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Affiverse Media: Genius Sports acquires Legend in $1.2 billion deal (9 Feb 2026)",
+      "url": "https://www.affiversemedia.com/genius-sports-acquires-legend-in-1-2-billion-deal-making-it-the-largest-gaming-affiliate-acquisition-ever/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "SGI Europe: Genius Sports buys a media network worth a billion (14 May 2026)",
+      "url": "https://www.sgieurope.com/mergers-and-acquisitions/genius-sports-buys-a-media-network-worth-a-billion/121083.article",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbetting: Playing oddsshark picks (Aug 2024)",
+      "url": "https://www.reddit.com/r/sportsbetting/comments/1eobnxf/",
+      "accessed": "20 Nov 2026"
     }
   ],
   "pricing_source": 3

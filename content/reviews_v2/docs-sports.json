@@ -3,115 +3,480 @@
   "name": "Doc's Sports",
   "legal_name": "Doc's Enterprises",
   "kind": "Pick service with a roster of handicappers",
-  "checked": "7 Nov 2026",
-  "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-13",
+  "checked": "20 Nov 2026",
+  "checked_iso": "2026-11-20",
+  "updated_iso": "2026-11-20",
   "title": "Doc's Sports Review 2026: Prices, Guarantee, Record Claims",
-  "description": "Doc's Sports review, checked 7 Nov 2026: real package prices, how the profit guarantee works, what its records leave out, and what bettors report.",
+  "description": "Doc's Sports review, checked 20 Nov 2026: every package price, the credit and extension guarantee, its posted records checked, and what buyers report.",
   "h1": "Doc's Sports review",
-  "dek": "A pick shop that says it has sold picks since 1971, with more than a dozen handicappers, packages from $25 a day to $850 a season, and a guarantee that pays in more picks or store credit, not cash. Every record on its site is a run or total chosen by the seller.",
+  "dek": "A pick shop founded in 1971 by Morris \"Doc\" Moseman, now selling a roster of more than a dozen handicappers and computer systems. Packages ran from $25 a day to $850 a season on 20 Nov 2026. Its guarantee pays in more picks or store credit, never cash, and every record on its site is a run or total the seller chose.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record for any Doc's Sports handicapper. This page reports what we could check and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record for any Doc's Sports handicapper. This page reports what we could check on 20 Nov 2026 and labels everything else."
   },
   "glance": [
-    ["Operator", "Doc's Enterprises, PO Box 88, Sauk City, WI (contact page)"],
-    ["Claims to operate since", "1971 (homepage)"],
-    ["Price range seen", "$25 a day to $850 a season"],
-    ["Guarantee", "Free extension or account credit. No cash refund terms found"],
-    ["Full public record", "Not found. Only selected runs"],
-    ["Watchdog graded record", "None yet"]
+    [
+      "Operator",
+      "Doc's Enterprises, PO Box 88, Sauk City, WI 53583 (contact page)"
+    ],
+    [
+      "Founded",
+      "1971 by Morris \"Doc\" Moseman, who died in Dec 2012 (Gambling911)"
+    ],
+    [
+      "Run today by",
+      "The Moseman family, per a 2012 obituary and a reseller profile; the site still calls the founder the sole owner"
+    ],
+    [
+      "Where sold",
+      "docsports.com, phone 1-866-238-6696, text alerts; also resold on Capperspicks through sportscapping.com"
+    ],
+    [
+      "Price range seen",
+      "$25 a day to $850 a season (20 Nov 2026)"
+    ],
+    [
+      "Guarantee",
+      "Free extension or account credit. No cash refund terms found"
+    ],
+    [
+      "Full public record",
+      "Not found. Only selected runs and totals"
+    ],
+    [
+      "Watchdog graded record",
+      "None yet"
+    ]
   ],
   "short_answer": [
-    "Doc's Sports is a real, long running business. It names an operator and a mailing address, publishes its prices, and sells picks from a roster of named handicappers. In that narrow sense it is legitimate.",
-    "Whether its picks make money is a different question, and nothing we could open answers it. The site shows streaks such as \"138-80 +14,325\" or \"19-5 NFL run\" chosen by the seller, with no full log of every pick, price and post time. Its guarantee gives losing buyers more picks or a store credit, not their money back.",
-    "Treat Doc's Sports as a seller with marketing records, not a proven winner. If you buy, buy short, record every pick yourself with the line and time you received it, and judge it after at least a few hundred picks."
+    "Doc's Sports is a real, long running business. A 2012 Gambling911 obituary says Morris \"Doc\" Moseman started it in 1971 and ran it for more than 40 years, with his son helping move it onto the web. Today the site names an operator, Doc's Enterprises, a Wisconsin mailing address, a toll free phone line with posted hours, and a full price list. In that narrow sense it is legitimate.",
+    "Whether its picks make money is a different question, and nothing we could open answers it. The site shows streaks such as \"193-134 +12,705\" or \"+17,430 Soccer Run!\" chosen by the seller, with no full log of every pick, price and post time. We checked the numbers it does post: the win rates match their own win and loss counts, but the same record is often given two different ways on one page, and the founding story gives four different ages for the business.",
+    "Independent buyer posts we found run mostly negative, from Covers in 2008 to TheRX in 2026, with a few positive voices on SBR and one five star PissedConsumer review. The guarantee gives losing buyers more picks or a store credit, not their money back. Treat Doc's Sports as a seller with marketing records, not a proven winner. If you buy, buy short, log every pick yourself with the line and time you received it, and judge it after a few hundred picks."
   ],
-  "pricing_intro": "Prices below were shown on the Doc's Sports house handicapper page on 7 Nov 2026. Other handicappers on the roster sell from their own pages, and their prices may differ.",
+  "pricing_intro": "Prices below were shown on the Doc's Sports house handicapper page on 20 Nov 2026 (page stamped \"November 20, 2026 @ 6:00 AM CST\"). They were unchanged from our 7 Nov 2026 check. Other handicappers on the roster sell from their own pages, and their prices may differ. A reseller, Capperspicks, lists Doc's picks at different prices: $29 a single pick, $59.95 a day, $199.95 a week and $499.95 for 30 days.",
   "pricing": [
-    ["College or pro football", "Weekly $99 · 4 weekends $325 · rest of season $495", "Extension if the package loses"],
-    ["College basketball", "Day $30 · week $99 · month $299 · season $849 (listed as regularly $950)", "Day: $30 credit unless the day makes at least $40. Longer: extension"],
-    ["NBA", "Day $30 · week $99 · month $299 · season $850", "Day: $30 credit. Longer: extension"],
-    ["NHL", "Day $30 · week $89 · month $279 · season $795", "Day: $30 credit unless the day makes at least $35. Longer: extension"],
-    ["Soccer", "Day $30 · 365 days $795", "Day: credit"],
-    ["UFC, NASCAR, KBO, CFL", "Day $30 each", "Credit"],
-    ["Daily props, other sports", "Day $25 each", "Credit"]
+    [
+      "Football weekly",
+      "$99",
+      "\"backed by our profit guarantee, with access to our self-extend service if needed\". Picks post Thursday 6 p.m. Eastern"
+    ],
+    [
+      "Football monthly (4 full weekends)",
+      "$325",
+      "Self extend if the month does not produce a profit"
+    ],
+    [
+      "Football, rest of season",
+      "$495",
+      "No guarantee stated on the page"
+    ],
+    [
+      "College basketball",
+      "Day $30 · week $99 · month $299 · season $849 (shown as Reg. $950)",
+      "Day: $30 credit unless the day makes at least $40. Week and month: free self extend if at a loss. Season: no guarantee stated"
+    ],
+    [
+      "NBA",
+      "Day $30 · week $99 · month $299 · season $850 (shown as normally $950)",
+      "Day: $30 credit if at a loss. Week and month: self extend. Season: no guarantee stated"
+    ],
+    [
+      "NHL",
+      "Day $30 · week $89 · month $279 · season $795 (shown as normally $950)",
+      "Day: $30 credit on a loss or a profit under $35. Week and month: self extend. Season: no guarantee stated"
+    ],
+    [
+      "Soccer",
+      "Day $30 · 365 days $795",
+      "Day: credit the next day on a loss. Year: no guarantee stated"
+    ],
+    [
+      "UFC, boxing, combat sports",
+      "Day $30",
+      "Credit equal to the purchase price if no profit"
+    ],
+    [
+      "Other sports or events",
+      "Day $25",
+      "$25 credit for a future purchase if no daily profit"
+    ],
+    [
+      "Daily props (player and team)",
+      "Day $25",
+      "Page promises a $30 credit if no daily profit"
+    ]
   ],
   "guarantee": [
-    "The guarantee is the core of the pitch, so read the wording. On packages of a week or longer, the page says that if the package \"finishes at a loss, you can extend your service for free through our self-extend program.\" On one day packages the remedy is an account credit, usually $25 or $30, added the next morning. Several daily packages count a small profit as a failure too: the college basketball day package pays the credit unless the day makes at least $40, and the NHL day package unless it makes at least $35.",
-    "We did not find cash refund terms on any Doc's Sports page we opened. A buyer who loses money betting the picks gets more picks from the same handicapper or credit to spend at the same store. Losses on the bets themselves are never covered, and those losses are usually far larger than the package price."
+    "The guarantee is the core of the pitch (\"You Win or We Work for Free!\"), so read the wording package by package. On weekly and monthly packages the page says that if the package \"finishes at a loss, you can extend your service for free through our self-extend program.\" On one day packages the remedy is an account credit, usually $25 or $30, added around 11 a.m. Eastern the next morning. The NBA day credit reads: \"If your package finishes at a loss, a $30 credit will be added to your account the following morning\".",
+    "Several day packages count a small profit as a failure too. The college basketball day package says that \"If the package does not produce at least $40 in profit across all plays, a $30 account credit will be applied\", and the NHL day package pays the credit on \"a loss (or profit less than $35)\". The four season and year long packages ($495 football, $849 college basketball, $850 NBA, $795 NHL and soccer) carry no guarantee wording at all on the page we read.",
+    "We found no cash refund terms on any Doc's Sports page we opened, and the terms of service link we tried returned a not found error. A buyer who loses money betting the picks gets more picks from the same handicapper or credit to spend at the same store. Losses on the bets themselves are never covered, and those are usually far larger than the package price. A Covers forum member wrote in 2016 that the service only offers more picks until you recover your losses, which matches the written terms."
   ],
   "claims": [
-    {"claim": "\"54 Years Strong! A Trusted Leader In Sports Picks... Since 1971.\"", "where": "Homepage banner", "status": "Seller claim"},
-    {"claim": "\"put 55 years of handicapping experience to work for you\"", "where": "Doc's Sports house handicapper page", "status": "Seller claim"},
-    {"claim": "\"the first to develop a unit system for betting sports almost 50 years ago\"", "where": "Service page", "status": "Seller claim, not checkable"},
-    {"claim": "Scott Rickenbach \"138-80 +14,325 All\"; Scott Spreitzer \"All Sports: 150-97, 61% Run!\"; Robert Ferringo \"+65,080 EARLY NCAAB $$\"", "where": "Homepage roster blurbs", "status": "Selected runs, no full log"},
-    {"claim": "Doc's \"34-18, +10,330\" on college basketball plays rated 7.0 and up over three seasons; Ferringo \"599-398 (60 percent)\" on plays rated 5.0 and up", "where": "College basketball season special page", "status": "Seller claim, no full log"},
-    {"claim": "\"Our goal, as always, has been to hit at least 60% or better.\"", "where": "FAQ", "status": "Stated goal, not a result"}
+    {
+      "claim": "\"54 Years Strong! A Trusted Leader In Sports Picks, Best Bets and Predictions Since 1971.\" and \"Let 55 Years of Handicapping Experience Work for You\"",
+      "where": "Homepage banner and house handicapper page, 20 Nov 2026",
+      "status": "Checked: 1971 to 2026 is 55 years. The same site also says \"almost 50 years\" and \"over 38 years ago\""
+    },
+    {
+      "claim": "\"Doc (Morey Moseman) is the founder and has been the sole owner of Doc's Sports since it opened in 1971\"",
+      "where": "Expert roster page, 20 Nov 2026",
+      "status": "Out of date: a Gambling911 obituary reported his death in Dec 2012"
+    },
+    {
+      "claim": "\"Doc's Sports was the first to develop a unit system for betting sports\"",
+      "where": "Service page and roster page",
+      "status": "Seller claim, not checkable"
+    },
+    {
+      "claim": "Scott Rickenbach \"193-134 +12,705\"",
+      "where": "Homepage and roster blurbs, 20 Nov 2026",
+      "status": "Checked: 59.0% winners. At a flat $100 risked at -110 that record makes about $4,145, so the +12,705 needs bigger bets on winners or plus prices. No full log"
+    },
+    {
+      "claim": "The Quantitative Edge \"All Sports: 248-223 +3245\"",
+      "where": "Homepage and roster, 20 Nov 2026",
+      "status": "Checked: 52.7% winners, a hair above the 52.4% break even. Flat $100 bets at -110 would make about $245. No full log"
+    },
+    {
+      "claim": "Platinum Club Picks \"70-37, 65% Football Season!\"; Robert Ferringo \"599-398 (60 percent)\" on plays of 5.0 and up; Arun Shiva \"84-54 (61%)\"",
+      "where": "Roster and college basketball special pages",
+      "status": "Checked: 65.4%, 60.1% and 60.9%, so the percentages match the counts. Start dates and prices not given"
+    },
+    {
+      "claim": "House football \"+3,010 Season Profits!\", NHL \"2025 +9,840\", soccer \"+17,430 Run Since April\", UFC \"16-6, +4,715 Run\"",
+      "where": "House handicapper page sidebar, 20 Nov 2026",
+      "status": "Contradicted on the same page: the body text says +3,090, \"2026: +9,840\", \"+17,830 since April 11\" and \"16-5, +5,135\""
+    },
+    {
+      "claim": "\"Our goal, as always, has been to hit at least 60% or better.\"",
+      "where": "FAQ",
+      "status": "Stated goal, not a result"
+    }
   ],
   "claims_note": [
-    "The founding story does not hold one number. The homepage says 54 years, the house page says 55 years, the service page says almost 50 years, and on 27 Oct 2026 the roster page said the unit system was developed \"over 38 years ago\". None of these is proof of anything, but a buyer should notice that the marketing copy is not kept consistent.",
-    "The dollar figures, such as +14,325, are not explained on the pages we read. They usually mean profit for a bettor risking a set amount per unit, but the unit size, the prices taken and the losing runs around each streak are not shown. A streak picked from a longer history tells you very little; every handicapper has a hot stretch somewhere."
+    "How we checked. We took every record on the homepage, the roster page, the house handicapper page and the college basketball special that gives both wins and losses, divided wins by wins plus losses, and compared the result with the percentage the seller printed. Every printed percentage we tested matched its own counts after rounding: for example 599 of 997 is 60.1% and 117 of 201 is 58.2%. So the arithmetic inside each blurb is honest. What the blurbs leave out is the start date, the prices taken, the unit sizes and every losing run around each streak.",
+    "We then compared the same record where it appears twice. On the house handicapper page alone, the football season profit is +3,010 in the sidebar and +3,090 in the member notes, the soccer run is +17,430 in one place and +17,830 in another, the UFC run is 16-6 for +4,715 in one place and 16-5 for +5,135 in another, and the NHL profit of +9,840 is labelled 2025 in the sidebar and 2026 in the text. The homepage soccer line says 25-7 on 7 unit plays while the roster says 27-7. These may be updates that did not reach every box, but a buyer cannot tell which number is current.",
+    "The dollar figures are explained nowhere we looked. They usually mean profit for a bettor risking $100 a unit, but Doc's rates plays from 1 to 8 units or more, so a few large winning plays can produce a big dollar total from an ordinary win rate. Our flat bet math above shows how far apart the two can be: The Quantitative Edge is 248-223, which is almost break even at flat stakes, yet it is advertised as +3,245.",
+    "The founding story does not hold one number. The homepage says 54 years, the house page says 55 years, the service page says almost 50 years and the roster page says the unit system was developed \"over 38 years ago\" and that the founder \"has been the sole owner\" since 1971. Gambling911 reported in December 2012 that Morris \"Doc\" Moseman had died and that his son had been heavily involved in running the service. None of this proves anything about the picks, but it shows how little the marketing copy is kept up to date."
   ],
   "record": [
-    "Doc's Sports does not publish a full, time stamped log of every pick with the line, the price and the post time, at least not on any page we could open without paying. The roster shows short runs and season totals chosen by the seller.",
-    "One small inconsistency: the FAQ says football picks post at 1 pm Pacific on Fridays, while the current weekly football package says selections post Thursday at 6 pm Eastern. The FAQ appears out of date."
+    "Doc's Sports does not publish a full, time stamped log of every pick with the line, the price and the post time, at least not on any page we could open without paying. The roster shows short runs and season totals chosen by the seller, and each handicapper's blurb is rewritten as runs change, so the set of numbers we saw on 20 Nov 2026 will not be the set a reader sees next month.",
+    "The only outside grading we came across was not a full record either. A Wayback Machine copy of the old OddsShark NFL computer picks page from 16 Jan 2025 carried boxes labelled \"Sponsored Picks\" from \"Doc's Premium Picks\", which means Doc's paid or partnered for that placement, not that anyone graded it. In 2021 a press release said Doc's had relaunched its text based Consensus Picks service \"with new management\" and claimed eight straight winning days and 43 units; today the same product is advertised as \"23-8 +$3,500 Consensus run!\". Neither figure comes with a log.",
+    "Posting times on the site do not agree. The FAQ says picks post \"at 1 pm pacific on Fridays\" with top college and NFL games on weekend mornings, while the current weekly football package says selections post Thursday at 6 p.m. Eastern. The FAQ appears out of date."
   ],
   "our_data": {
     "matched": false,
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Doc's Sports handicapper is matched to a Watchdog graded record, so we make no claim about how these handicappers perform.",
-    "context": "For scale: the FAQ sets a goal of 60% winners. On the Watchdog board on 7 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "context": "For scale: the Doc's FAQ sets a goal of 60% winners. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "Independent customer evidence on Doc's Sports is thin. We could not find a large review sample, and the testimonials on the Doc's site are chosen by Doc's. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent buyer evidence on Doc's Sports is spread thin over almost twenty years: one Covers thread that started in 2008, two SBR threads from 2013 and 2017, a TheRX thread from 2025 and 2026, three Reddit posts and one PissedConsumer review. The testimonials on the Doc's site are chosen by Doc's. Below is everything we found and how much weight each piece can carry.",
   "customers": [
-    {"type": "Our summary", "tone": "Negative", "date": "Read 13 Nov 2026", "text": "Forum buyers are split, and most of what they say runs against the service. A Covers member who bought twice, ten years apart, says he never won and thinks the published claims are inflated. A TheRX buyer said in October 2026 that a 7 unit soccer play he paid for lost, and he was then told his $30 was being refunded because the service had passed on the game. On the other side, a Sportsbook Review member said in 2017 that he had bought for years and found the picks consistent, though nobody in that thread saw his results. Regular forum posters talk more about betting against the biggest rated plays than following them.", "source": null},
-    {"type": "Seller curated", "tone": "Neutral", "date": "Checked 7 Nov 2026", "text": "The Doc's service page carries \"handicapper reviews and customer comments\" from members and says names are shown as first names or initials. These are selected and published by the seller, so they cannot tell you what a typical buyer experiences.", "source": 2},
-    {"type": "Customer report", "tone": "Positive", "date": "Page updated 18 Oct 2026", "text": "PissedConsumer lists one rated review of DocSports, 5.0 stars. Its summary says the reviewer praised the handicappers, naming Tony George, and the chance to speak to a live person. One review is not a sample.", "source": 5},
-    {"type": "Forum allegation", "tone": "Negative", "date": "29 Jan 2026", "text": "On TheRX forum, a member who said he tracks the Doc's handicappers daily wrote that they promote hot runs and \"never mention their terrible cold streaks,\" and claimed he was up about 40 units betting against Doc's soccer picks and about 20 units betting against Doc's NBA picks in 2026. He did not post a log, and we did not verify these figures.", "source": 4},
-    {"type": "Forum post", "tone": "Neutral", "date": "9 Dec 2025", "text": "The same thread was opened by a bettor who said he had used Doc's Sports off and on for more than 10 years and asked other customers for feedback. He did not post his results in the thread.", "source": 4},
-    {"type": "Not found", "tone": "Neutral", "date": "Checked 7 Nov 2026", "text": "We did not find a Better Business Bureau profile we could confirm belongs to docsports.com, and Trustpilot did not load for our check. We found no Reddit thread with a substantial discussion of the service.", "source": null}
+    {
+      "type": "Our summary",
+      "tone": "Negative",
+      "date": "Read 20 Nov 2026",
+      "text": "We found about fifteen independent posts about Doc's Sports across Covers, Sportsbook Review, TheRX, Reddit and PissedConsumer, from 2008 to 2026. Most run against the service. The complaints repeat across sites and years: advertised runs that buyers say did not match what they received (Covers 2008, Covers 2016), a guarantee that only gives more picks (Covers 2016), losing free picks (SBR 2013), and forum regulars who say they bet against the biggest rated plays (SBR 2017, TheRX 2026). Two posters on SBR in 2017 alleged that Doc's earns from sportsbook affiliate deals and sends opposite sides to different buyers; neither showed proof. On the positive side, a buyer on SBR in 2017 said he had bought for years and found the picks consistent, a poster in 2018 reported a 10-2 stretch on one handicapper, a 2024 Reddit poster said a free trial put him up $2,300, and a 2026 PissedConsumer reviewer praised the handicappers and the live phone support. Nobody on either side posted a full log, and we could not verify any of these claims.",
+      "source": null
+    },
+    {
+      "type": "Seller curated",
+      "tone": "Neutral",
+      "date": "Checked 20 Nov 2026",
+      "text": "The Doc's service page says \"handicapper reviews and customer comments\" from members appear below and that more are added weekly. These are selected and published by the seller, so they cannot tell you what a typical buyer experiences.",
+      "source": 2
+    },
+    {
+      "type": "Customer report",
+      "tone": "Positive",
+      "date": "18 Aug 2026",
+      "text": "PissedConsumer lists one rated review of DocSports, 5.0 stars. The reviewer praised the handicappers, naming Tony George, and the chance to reach a live person by phone, and said they had contacted the company before posting. One review is not a sample.",
+      "source": 5
+    },
+    {
+      "type": "Forum allegation",
+      "tone": "Negative",
+      "date": "29 Jan 2026",
+      "text": "On TheRX, a member who said he tracks the Doc's handicappers daily wrote that they promote hot runs and \"never mention their terrible cold streaks,\" named Doc's among the worst services of the 2026 season, and said he was up about 40 units betting against Doc's soccer and NBA picks before a hot week cut that roughly in half. He did not post a log, and we did not verify these figures.",
+      "source": 4
+    },
+    {
+      "type": "Forum post",
+      "tone": "Neutral",
+      "date": "9 Dec 2025",
+      "text": "The same TheRX thread was opened by a bettor who said he had used Doc's Sports off and on for more than 10 years and asked other customers for feedback. He did not post his results, and a later reply in August 2026 asked whether the critic above still had Doc's football picks.",
+      "source": 4
+    },
+    {
+      "type": "Forum post",
+      "tone": "Negative",
+      "date": "11 Feb 2026",
+      "text": "A later TheRX reply agreed that honest profit and loss records are rare among pick sellers, said posting 10 to 15 picks a day is not serious, and warned against paying to join group buys. The post was about sellers in general, with Doc's as the thread's topic.",
+      "source": 4
+    },
+    {
+      "type": "Forum post",
+      "tone": "Neutral",
+      "date": "17 Oct 2026",
+      "text": "TheRX's daily service play thread rules list Doc's Sports and Doc Sports handicappers among the services whose plays may not be posted there. The rules do not give a reason.",
+      "source": 11
+    },
+    {
+      "type": "Customer report",
+      "tone": "Positive",
+      "date": "15 Jan 2017",
+      "text": "An SBR member said he was thinking of buying a $3,000 a month package covering every 5.0 rated Doc's play, said he had bought Doc's subscriptions for years and found them very consistent, and later said he would track every bet. Other members accused him of promoting the service, which he denied. He never posted his results in the thread.",
+      "source": 9
+    },
+    {
+      "type": "Forum allegation",
+      "tone": "Negative",
+      "date": "16 Jan 2017",
+      "text": "In the same SBR thread one member wrote that Doc's was one of the biggest losing services and that betting against its 5 unit and bigger plays was profitable, and claimed a leaked sportsbook affiliate statement showed Doc's earning more than $25,000 from one book in one month. We found no document supporting this.",
+      "source": 9
+    },
+    {
+      "type": "Forum allegation",
+      "tone": "Negative",
+      "date": "17 Jan 2017",
+      "text": "Another SBR member in that thread alleged that Doc's had emailed top rated picks on both sides of the same game, giving the 2017 college football title game as his example. He offered no screenshots, and we could not check it.",
+      "source": 9
+    },
+    {
+      "type": "Customer report",
+      "tone": "Positive",
+      "date": "7 Jun 2018",
+      "text": "On the second page of the SBR thread a poster said he had followed one handicapper's plays a few days earlier and gone 10-2, and asked where to find that handicapper's official record. A reply told him to bet against the service instead.",
+      "source": 15
+    },
+    {
+      "type": "Forum allegation",
+      "tone": "Negative",
+      "date": "20 Sep 2008",
+      "text": "A Covers thread was opened by a buyer who said Doc's advertised a 7-1 college run and a college Game of the Year that did not match his record, that he was down about 10 bets on the season, and that he was given another handicapper's picks to make up for it. Two other members said they had paid and would dispute the charge with their card company.",
+      "source": 10
+    },
+    {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "6 Jan 2016",
+      "text": "A Covers member said he had used Doc's twice, around 2005 and again in 2015, in college and pro football and basketball, never came out ahead, and that the service only offered more picks until losses were recovered. He said he suspected the posted claims were inflated.",
+      "source": 10
+    },
+    {
+      "type": "Forum post",
+      "tone": "Negative",
+      "date": "13 Feb 2025",
+      "text": "A later reply in the same Covers thread said the service had long frustrated customers. The post also carried an unrelated link, so we give it little weight.",
+      "source": 10
+    },
+    {
+      "type": "Forum post",
+      "tone": "Negative",
+      "date": "19 Jan 2013",
+      "text": "On SBR, a member said the Doc's free picks emailed to him had lost seven in a row. Free picks are a sample the seller chooses to give away, not the paid product.",
+      "source": 16
+    },
+    {
+      "type": "Forum post",
+      "tone": "Negative",
+      "date": "9 Oct 2023",
+      "text": "A Covers member who opened a thread to rank the worst handicappers online placed Doc's Sports fifth, saying it had lots of bad picks. He gave no record.",
+      "source": 17
+    },
+    {
+      "type": "Forum post",
+      "tone": "Negative",
+      "date": "16 May 2025",
+      "text": "On Reddit, a bettor who checks free picks sites said Doc's free MLB picks often took long shot sides and quoted odds that did not match the books he saw. Another user replied that they suspected the site was paid by sportsbooks to give poor picks, mostly underdogs, and called its MMA picks horrible. Neither offered evidence.",
+      "source": 18
+    },
+    {
+      "type": "Customer report",
+      "tone": "Positive",
+      "date": "31 Jan 2024",
+      "text": "A Reddit poster wrote that a free trial with one Doc's handicapper had put him up $2,300 in about a week betting $100 a unit, and linked that handicapper's sales page. A post that links straight to a sales page may be promotion, so weigh it accordingly.",
+      "source": 19
+    },
+    {
+      "type": "Not found",
+      "tone": "Neutral",
+      "date": "Checked 20 Nov 2026",
+      "text": "We did not find a Better Business Bureau profile we could confirm belongs to docsports.com, an app store listing, or any court or regulator record about the business. A Reddit post asking about docsports.com in August 2024 was removed by moderators with no replies.",
+      "source": null
+    }
   ],
   "conflicts": [
-    "The Doc's FAQ says: \"We have a list of offshore sports book that we have complete confidence in. We suggest that you give a couple of these a try.\" Its free picks on 7 Nov 2026 listed the line as \"Offered at: BookMaker,\" and one homepage link redirected to a BookMaker revenue share promotion page. Revenue share deals usually pay the referrer a cut of what referred customers lose. That does not prove anything about the picks, but it is a financial interest a buyer should know about.",
-    "Offshore sportsbooks are not licensed by U.S. state regulators. Check the law where you live before you follow that advice."
+    "The Doc's FAQ says: \"We suggest that you give a couple of these a try,\" about offshore sportsbooks it says it has confidence in, while adding that \"Doc's does not endorse any illegal gambling activity.\" On 20 Nov 2026 its daily free pick listed the line as offered at BookMaker through a docsports.com tracking link. Sportsbook affiliate deals usually pay the referrer a share of what referred customers lose. That does not prove anything about the picks, but it is a financial interest a buyer should know about.",
+    "Offshore sportsbooks are not licensed by U.S. state regulators. Check the law where you live before you follow that advice.",
+    "Doc's picks are also sold through resellers. The Capperspicks profile lists Doc's packages behind Buy Now links to sportscapping.com carrying an affiliate code, at prices that differ from docsports.com. In January 2025 the OddsShark computer picks page showed \"Sponsored Picks\" boxes for \"Doc's Premium Picks\" beside its own free picks. Paid placement on other betting sites is marketing, not a record."
   ],
   "strengths": [
-    "A named operator, a mailing address, a phone line with posted hours and a published price list.",
-    "Prices and guarantee terms are written out per package, so a buyer can see the rules before paying.",
-    "Free picks, a weekly newsletter and a \"free $60 account\" offer let a reader see the style before buying."
+    "A long, documented history: a 2012 news obituary confirms the founder ran the service for more than 40 years.",
+    "A named operator, a mailing address, a toll free phone line with posted hours, and a buyer review that praised reaching a live person.",
+    "Prices and guarantee terms are written out per package, so a buyer can see the rules, including the profit thresholds, before paying.",
+    "The win percentages printed beside its records match their own win and loss counts in every case we tested.",
+    "Free picks, a weekly newsletter and a \"Free $60 Account\" offer let a reader see the style before buying, and a roster of named handicappers lets a buyer pick one sport specialist."
   ],
   "concerns": [
-    "No full public record. Every number on the site is a run or total chosen by the seller.",
-    "The guarantee replaces a losing package with more picks or store credit. It never returns money and never covers betting losses.",
-    "The FAQ points readers to offshore sportsbooks, and the site carries a sportsbook revenue share link.",
-    "Founding and experience claims change from page to page."
+    "No full public record. Every number on the site is a run or total chosen by the seller, with no start dates, prices or unit sizes.",
+    "The same record is printed two different ways on one page in at least four places, and the business's age is given four different ways.",
+    "The roster page still says the founder has been the sole owner since 1971, years after a news report of his death.",
+    "The guarantee replaces a losing package with more picks or store credit. It never returns money, never covers betting losses, and season packages carry no guarantee at all.",
+    "The FAQ points readers to offshore sportsbooks, the free pick links to BookMaker, and the picks are also pushed through reseller affiliate links and sponsored boxes.",
+    "Independent buyer posts we found are mostly negative, and the few positive ones come without logs."
   ],
   "checklist": [
-    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
-    "Count units, not wins. A 60% record at heavy favorites can still lose money.",
-    "Read the guarantee for the words refund, credit and extension. Most \"guarantees\" in this business are credits.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
+    "Ask Doc's for every pick from the last 12 months for the handicapper you are considering, with the line, the odds, the unit size and the time it was sent. A list of hot runs is not a record.",
+    "Count units and dollars, not wins. Our math shows 248-223 at flat stakes is close to break even, even when it is advertised as +3,245.",
+    "Read the guarantee for your exact package. Day packages pay a credit, longer packages extend, and season packages carry no guarantee.",
+    "Write down each pick yourself the moment you receive it, with the line you can actually get at a licensed book where you live.",
+    "Do not follow the FAQ's advice about offshore sportsbooks without checking your local law.",
     "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
   ],
   "faq": [
-    ["Is Doc's Sports legit?", "It is a real business with a named operator, published prices and a long history of selling picks. We could not verify that its handicappers win over time, because it does not publish a full record of every pick."],
-    ["How much does Doc's Sports cost?", "On 7 Nov 2026 the house handicapper sold one day packages for $25 to $30, weekly packages for $89 to $99, monthly packages for $279 to $325, and season packages from $495 (rest of football season) to $850 (NBA)."],
-    ["Does Doc's Sports give refunds?", "We found no cash refund terms. Losing multi day packages can be extended for free, and losing one day packages get an account credit of about the package price."],
-    ["Does Watchdog track Doc's Sports?", "Not yet. No Doc's Sports handicapper is matched to a Watchdog graded record in this edition. If that changes, this page will say so and show the record."]
+    [
+      "Is Doc's Sports legit?",
+      "It is a real business, founded in 1971 by Morris \"Doc\" Moseman and still selling picks under a named operator with published prices and a phone line. We could not verify that its handicappers win over time, because it does not publish a full record of every pick, and the independent buyer posts we found are mostly negative."
+    ],
+    [
+      "How much does Doc's Sports cost?",
+      "On 20 Nov 2026 the house handicapper sold one day packages for $25 to $30, weekly packages for $89 to $99, monthly packages for $279 to $325, and season packages from $495 (rest of football season) to $850 (NBA). The 365 day soccer package was $795."
+    ],
+    [
+      "Does Doc's Sports give refunds?",
+      "We found no cash refund terms. Losing weekly and monthly packages can be extended for free, losing one day packages get an account credit of about the package price, and the season packages show no guarantee."
+    ],
+    [
+      "Who owns Doc's Sports?",
+      "The contact page names Doc's Enterprises of Sauk City, Wisconsin. The founder died in 2012 according to Gambling911, which said his son had been heavily involved in running the service, and a reseller profile names the son as the owner. The Doc's roster page still describes the founder as sole owner."
+    ],
+    [
+      "Are the Doc's Sports records verified?",
+      "No. The win percentages it prints match its own counts, but every record is a run or total chosen by the seller, with no full log, and some records appear with two different figures on the same page."
+    ],
+    [
+      "Does Watchdog track Doc's Sports?",
+      "Not yet. No Doc's Sports handicapper is matched to a Watchdog graded record in this edition. If that changes, this page will say so and show the record."
+    ]
   ],
-  "related": ["docs-sports-ai", "scott-spreitzer", "robert-ferringo", "wagertalk", "pregame"],
+  "related": [
+    "docs-sports-ai",
+    "scott-spreitzer",
+    "robert-ferringo",
+    "tony-george",
+    "indian-cowboy"
+  ],
   "sources": [
-    {"title": "Doc's Sports homepage (roster blurbs, banner)", "url": "https://www.docsports.com/", "accessed": "7 Nov 2026"},
-    {"title": "Doc's Sports house handicapper page (packages, prices, guarantee terms)", "url": "https://www.docsports.com/cappers.html?cap_id=3", "accessed": "7 Nov 2026"},
-    {"title": "Doc's Sports service page (unit system claim, testimonials)", "url": "https://www.docsports.com/service/", "accessed": "7 Nov 2026"},
-    {"title": "Doc's Sports FAQ (60% goal, posting times, offshore sportsbooks)", "url": "https://www.docsports.com/faq.html", "accessed": "7 Nov 2026"},
-    {"title": "TheRX forum thread: Doc's Sports Service", "url": "https://www.therx.com/threads/docs-sports-service.1305351/", "accessed": "7 Nov 2026"},
-    {"title": "PissedConsumer: DocSports reviews", "url": "https://www.pissedconsumer.com/docsports/RT-F.html", "accessed": "7 Nov 2026"},
-    {"title": "Doc's Sports college basketball season special (record claims)", "url": "https://www.docsports.com/3-for-1-college-basketball-picks-season-special.html", "accessed": "7 Nov 2026"},
-    {"title": "Doc's Sports contact page (operator and address)", "url": "https://www.docsports.com/contactus.html", "accessed": "7 Nov 2026"},
-    {"title": "Doc's Sports expert roster", "url": "https://www.docsports.com/expert-handicappers.html", "accessed": "27 Oct 2026"},
-    {"title": "Sportsbook Review forum: Doc's Sports $3,000 all inclusive", "url": "https://www.sportsbookreview.com/forum/players-talk/1644741-doc-s-sports-3-000-all-inclusive", "accessed": "13 Nov 2026"},
-    {"title": "Covers forum: Doc sports is a scam", "url": "https://www.covers.com/forum/website-promotions-12/doc-sports-is-a-scamfront-page-of-covers-is-n-100239181", "accessed": "13 Nov 2026"},
-    {"title": "TheRX: Saturday Service Play Thread 10/24/2026", "url": "https://www.therx.com/threads/saturday-service-play-thread-10-24-2026.1314346/", "accessed": "13 Nov 2026"}
-  ]
+    {
+      "title": "Doc's Sports homepage (roster blurbs, banner)",
+      "url": "https://www.docsports.com/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Doc's Sports house handicapper page (packages, prices, guarantee terms)",
+      "url": "https://www.docsports.com/cappers.html?cap_id=3",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Doc's Sports service page (unit system claim, testimonials)",
+      "url": "https://www.docsports.com/service/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Doc's Sports FAQ (60% goal, posting times, offshore sportsbooks)",
+      "url": "https://www.docsports.com/faq.html",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "TheRX forum thread: Doc's Sports Service",
+      "url": "https://www.therx.com/threads/docs-sports-service.1305351/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "PissedConsumer: DocSports reviews",
+      "url": "https://www.pissedconsumer.com/docsports/RT-F.html",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Doc's Sports college basketball season special (3 for 1 offer, record claims)",
+      "url": "https://www.docsports.com/3-for-1-college-basketball-picks-season-special.html",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Doc's Sports contact page (operator and address)",
+      "url": "https://www.docsports.com/contactus.html",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Doc's Sports expert roster (records, founder and unit system lines)",
+      "url": "https://www.docsports.com/expert-handicappers.html",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Sportsbook Review forum: Doc's Sports $3,000 all inclusive",
+      "url": "https://www.sportsbookreview.com/forum/players-talk/1644741-doc-s-sports-3-000-all-inclusive",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Covers forum: Doc sports is a scam",
+      "url": "https://www.covers.com/forum/website-promotions-12/doc-sports-is-a-scamfront-page-of-covers-is-n-100239181",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "TheRX: Saturday Service Play Thread 10/24/2026 (posting rules)",
+      "url": "https://www.therx.com/threads/saturday-service-play-thread-10-24-2026.1314346/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Gambling911: Doc Sports head Morris \"Doc\" Moseman passes away (17 Dec 2012)",
+      "url": "https://www.gambling911.com//gambling-news/doc-sports-head-morris-%E2%80%9Cdoc%E2%80%9D-moseman-passes-away-121712.html",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Doc's Sports: My Journey with Doc's Sports (staff history, 1 Sep 2016)",
+      "url": "https://www.docsports.com/2016/jeremy-martin-journey-with-docs-sports-unlv-844.html",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Newswire: Doc's Sports Service relaunches Consensus service (20 Jan 2021)",
+      "url": "https://www.newswire.com/news/docs-sports-service-relaunches-consensus-service-to-some-staggering-21300966",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Sportsbook Review forum: Doc's Sports $3,000 all inclusive, page 2",
+      "url": "https://www.sportsbookreview.com/forum/players-talk/1644741-doc-s-sports-3-000-all-inclusive/page2",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Sportsbook Review forum: Scam alert, best sports handicapping company (2012 to 2013)",
+      "url": "https://www.sportsbookreview.com/forum/sportsbooks-industry/1062702-scam-alert-best-sports-handicapping-scam-company",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Covers forum: Rank the worst cappers on internet (Oct 2023)",
+      "url": "https://www.covers.com/forum/nfl-betting-21/rank-the-worst-cappers-on-internet-103772135",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbetting: Does anyone else check their MLB picks on Google? What's up with docsports? (May 2025)",
+      "url": "https://www.reddit.com/r/sportsbetting/comments/1knu2uf/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbetting: Free Picks (Jan 2024)",
+      "url": "https://www.reddit.com/r/sportsbetting/comments/1afwk9s/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Capperspicks: Doc's Sports picks profile (history, reseller prices)",
+      "url": "https://www.capperspicks.com/handicappers/docs-sports-picks/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "OddsShark NFL computer picks, Wayback Machine copy of 16 Jan 2025 (Doc's Premium Picks sponsored boxes)",
+      "url": "https://web.archive.org/web/20250116112211/https://www.oddsshark.com/nfl/computer-picks",
+      "accessed": "20 Nov 2026"
+    }
+  ],
+  "pricing_source": 1
 }

@@ -3,25 +3,33 @@
   "name": "Leans AI",
   "legal_name": "Leans AI LLC",
   "kind": "AI sports pick subscription (model called Remi)",
-  "checked": "7 Nov 2026",
-  "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-07",
+  "checked": "20 Nov 2026",
+  "checked_iso": "2026-11-20",
+  "updated_iso": "2026-11-20",
   "title": "Leans AI Review 2026: Pricing, Record, Is It Worth It?",
-  "description": "Leans AI review, checked 7 Nov 2026: Remi pick prices from $49 a month to $27,500 a year, the no refund policy, what its scorecard leaves out, user reports.",
+  "description": "Leans AI review, checked 20 Nov 2026: Remi plan prices from $49 a month to $27,500 a year, no refunds, a scorecard that changed in 13 days, buyer reports.",
   "h1": "Leans AI review",
-  "dek": "An AI pick service whose model, Remi, covers six US sports. Plans run from $49 a month to $27,500 a year, every sale is final, and the record on its site is a scorecard the seller computes itself at a flat -110 price, after retiring more than 1,058 games of older data.",
+  "dek": "An AI pick service whose model, Remi, covers six US sports. Plans run from $49 a month to $27,500 a year, every sale is final, and the record on its site is a scorecard the seller computes itself at a flat -110 price. Between our checks on 7 and 20 Nov 2026 its lifetime banner turned 12 wins into losses and its Vault units fell by more than 100.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Leans AI picks. This page reports what we could check and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record of Leans AI picks. This page reports what we could check on 20 Nov 2026 and labels everything else."
   },
   "glance": [
     [
       "Operator",
-      "Leans AI LLC, a Colorado limited liability company (terms page). No street address found"
+      "Leans AI LLC, a Colorado limited liability company (terms page, read 7 Nov 2026). No street address or phone on the contact page"
+    ],
+    [
+      "Public face",
+      "A spokesman named as Steve Westfeld (Fox News 2024) or Steve Westfield (Vice 2025), who Vice says uses an alias"
     ],
     [
       "Results tracked since",
-      "1 Sep 2022, by its own account (FAQ)"
+      "1 Sep 2022, by its own account; v2 model from fall 2023, v3 from fall 2024 (FAQ)"
+    ],
+    [
+      "Where sold",
+      "leans.ai only, by subscription; picks by email and web portal. No app found"
     ],
     [
       "Price range seen",
@@ -41,11 +49,11 @@
     ]
   ],
   "short_answer": [
-    "Leans AI is a real business. Its terms name Leans AI LLC of Colorado, it publishes its prices and its rules, and it sends picks to paying members. In that narrow sense it is legitimate.",
-    "Whether Remi wins over time is not settled by anything we could open. The site shows a lifetime scorecard, for example 2,437-2,092 and +532.1 units on its Executive picks, but Leans AI computes it itself, grades every win at a flat -110 rather than the price you would get, and in August 2025 retired its older v1 and pre release data, which it says covered more than 1,058 games. We found no full log of every pick with its date, time and odds.",
-    "Treat Leans AI as a seller with an in house scorecard, not a proven winner. Its prices are high next to its own claimed edge, and no money comes back if the picks lose. If you buy, buy the shortest term, record every pick yourself with the time and the price you actually got, and judge it after a few hundred picks."
+    "Leans AI is a real business. Its terms name Leans AI LLC of Colorado, it publishes its prices and its rules, its spokesman has talked to Fox News and Vice, and it sends picks to paying members. In that narrow sense it is legitimate. It does not publish a street address or phone number, and the person who speaks for it uses a name Vice described as an alias.",
+    "Whether Remi wins over time is not settled by anything we could open. The site shows a lifetime scorecard, now 2,467-2,119 and +530.6 units on its Executive picks, but Leans AI computes it itself, grades every win at a flat -110 rather than the price you would get, and in August 2025 retired more than 1,058 games of older data. We compared the scorecard on 7 Nov and 20 Nov 2026: the homepage lifetime record kept the same 4,982 games but moved 12 of them from wins to losses, and the Vault units fell from +563.4 to +454.1 while the Vault record added 15 wins and 12 losses. The Vault sport rows also add to +937.2 units, not the +454.1 total printed under them.",
+    "Independent buyer evidence is small and split: Trustpilot showed 3.0 from 43 reviews when we read it on 7 Nov 2026, RealReviews.io lists 12 mostly positive reviews, a Vice writer found a week of picks patchy, and two 2026 Reddit posts called the picks garbage and the results selectively reported. The prices are high next to the seller's own claimed edge, and no money comes back if the picks lose. If you buy, buy the shortest term, record every pick yourself with the time and the price you actually got, and judge it after a few hundred picks."
   ],
-  "pricing_intro": "Prices below were shown on the Leans AI upgrade page on 7 Nov 2026. Each level includes everything in the levels below it. The page did not state a free trial length.",
+  "pricing_intro": "Prices below were shown on the Leans AI upgrade page on 20 Nov 2026 and are unchanged from our 7 Nov 2026 check. Each level includes everything in the levels below it. The upgrade page did not state a free trial; the homepage offers one free pick a day with a free account. The profit estimates the page prints beside each plan changed between our two checks and are listed in the claims section.",
   "pricing": [
     [
       "Intel (pick of the day, parlay builder, underdog sleepers, marquee spotlight)",
@@ -58,50 +66,61 @@
       "No refund"
     ],
     [
-      "Vault V2 \"Blackcell\" (6+ unit picks, about 2 to 10 a week)",
+      "Vault V2 \"Blackcell\" (6+ unit picks, about 2 to 10 a week, limited seats)",
       "$4,300 for 5 months · $5,900 a year",
-      "No refund"
+      "No refund. No monthly option"
     ],
     [
       "Vault V3 \"Darklink\" (about 4 to 20 Vault picks a week)",
       "$6,500 for 5 months · $9,900 a year",
-      "No refund"
+      "No refund. NDA required, mandatory cool off periods"
     ],
     [
       "Vault V4 \"Nightfall\" (about 6 to 30 Vault picks a week)",
       "$13,000 for 5 months · $19,500 a year",
-      "No refund. Page says some higher tiers require an NDA"
+      "No refund. NDA required; profit estimate redacted on the page"
     ],
     [
-      "Vault V5 \"Phantom\" (application or invitation only)",
+      "Vault V5 \"Phantom\" (about 8 to 40 Vault picks a week, application or invitation only)",
       "$17,900 for 5 months · $27,500 a year",
-      "No refund. Terms confirmed directly with qualified members"
+      "No refund. Terms confirmed directly with accepted members"
     ]
   ],
   "guarantee": [
-    "There is no guarantee. The cancellation and refund page says Leans AI \"cannot offer a refund for any fees paid with no exceptions,\" and lists poor results and forgetting to cancel among the cases it will not refund. The checkout box a buyer ticks says canceling stops auto renewal and that past payments are not refundable.",
-    "Subscriptions renew automatically. You can cancel in your account, and the page says you must see \"CANCELS ON END DATE\" or the cancellation did not work. Email cancellations must arrive at least 24 hours before renewal, and by 10 AM Eastern on the prior business day if renewal falls on a weekend or holiday. The terms also call cancellation your \"sole recourse\" if you are unhappy, bar chargebacks except for fraud, and let Leans AI end any account at any time without refund."
+    "There is no guarantee. The cancellation and refund page says Leans AI \"cannot offer a refund for any fees paid with no exceptions,\" and lists \"early cancellations, forgetting to cancel, poor results, personal situations, and more\" among the cases it will not refund. Your subscription ends at the close of the current billing period.",
+    "Subscriptions renew automatically. You can cancel in your account, and the page says you must see \"CANCELS ON END DATE\" or the cancellation did not go through. Email cancellations must arrive at least 24 hours before renewal, and if renewal falls on a weekend or US holiday you \"MUST email cancellation requests by 10AM EST on the business day prior.\" The contact page promises replies \"within 3 business days\", which is longer than the 24 hour window, so cancel in the account, not by email, if you are close to a renewal.",
+    "When we read the terms on 7 Nov 2026 they called cancellation your \"sole recourse\" if you are unhappy, barred chargebacks except for fraud, and let Leans AI end any account at any time without refund. The terms page showed only a verification screen when we tried it again on 20 Nov 2026."
   ],
   "claims": [
     {
-      "claim": "\"AI Sports Picks Proven Across Thousands of Games\"; lifetime record 2,670-2,312 against the spread, +563.4 net units after vig",
-      "where": "Homepage banner",
-      "status": "Seller claim, no full log"
+      "claim": "Homepage banner: \"Lifetime Record: 2,658-2,324 Against the Spread\" and \"+454.1 Net Units After Vig\"",
+      "where": "Homepage, 20 Nov 2026",
+      "status": "Changed: on 7 Nov 2026 it read 2,670-2,312 and +563.4. Same 4,982 games, 12 fewer wins"
     },
     {
-      "claim": "Executive 2 to 5 unit picks: 2437-2092, 53.7%, 532.1 net units, \"$53,212\" at $100 a unit",
-      "where": "Homepage and past performance scorecard",
-      "status": "Seller computed, flat -110"
+      "claim": "Executive 2 to 5 unit picks: 2467-2119, 53.7%, 530.6 net units, $53,060 at $100 a unit",
+      "where": "Homepage, scorecard and NFL odds page, 20 Nov 2026",
+      "status": "Checked: sport rows add up. 2,467 of 4,586 is 53.8%. Seller computed at flat -110"
     },
     {
-      "claim": "Vault: 573-467, 54.9%, 563.4 net units, \"$56,335\" at $100 a unit",
-      "where": "Homepage and past performance scorecard",
-      "status": "Seller computed, flat -110"
+      "claim": "Vault: 588-479, 55.0%, 454.1 net units, $45,413 at $100 a unit",
+      "where": "Homepage and scorecard, 20 Nov 2026",
+      "status": "Does not add up: the six sport rows sum to +937.2 units. On 7 Nov it read 573-467 and +563.4"
     },
     {
-      "claim": "Historical net profit of \"$8,012\" a year (Executive), \"$11,286\" (Vault V2) and \"$15,034\" (Vault V3) at $100 a unit",
-      "where": "Upgrade page",
-      "status": "Seller estimate, not a result"
+      "claim": "Historical net profit of $7,750 a year (Executive), $11,997 (Vault V2) and $14,853 (Vault V3) at $100 a unit after -110 vig",
+      "where": "Upgrade page, 20 Nov 2026",
+      "status": "Seller estimate. On 7 Nov the same boxes read $8,012, $11,286 and $15,034"
+    },
+    {
+      "claim": "Unit band table: 9 unit plays won 50.1% of 20 picks; 10+ unit plays won 75.1% of 8 picks",
+      "where": "Past performance page, 20 Nov 2026",
+      "status": "Impossible as printed: 20 picks can give 50.0% or 55.0%, and 8 picks 75.0%"
+    },
+    {
+      "claim": "A 5 unit pick group \"won 55.1% over 436 picks\"",
+      "where": "FAQ, 20 Nov 2026",
+      "status": "Does not match the unit table, which shows 5 unit picks at 55.2% over 811"
     },
     {
       "claim": "Team members were \"blacklisted or cut-off by sportsbooks from making too much money too quickly\"",
@@ -111,30 +130,39 @@
     {
       "claim": "\"Read Our 5-Star Customer Reviews Verified by Trustpilot\"",
       "where": "Homepage",
-      "status": "Selected reviews; Trustpilot 3.0"
+      "status": "Selected reviews; Trustpilot showed 3.0 from 43 reviews on 7 Nov 2026"
     }
   ],
   "claims_note": [
-    "The numbers do not tie together on the pages we read. The homepage banner says 2,670-2,312, which matches neither the Executive table (2,437-2,092) nor the Vault table (573-467). The +563.4 units beside it is the Vault figure, and the Vault table says its units count 2 to 10 unit picks, including Executive picks, while its win and loss record counts only 6 to 10 unit picks. On the unit band table, the 9 unit row shows 50.1% over 20 picks, a rate 20 picks cannot produce, and the 2+ and 3+ rows both show 4,982 picks.",
-    "Every win is graded at a flat -110, by the FAQ's own description, and the line used is \"the best line available\" when the pick is released. A buyer who gets a worse number later will not match the scorecard. The FAQ also says older v1 and pre release data, \"over 1,058 games worth,\" was retired in August 2025 and the scorecard now reflects only v2 and v3 picks, so the record you see is not the whole history since tracking began in September 2022."
+    "How we checked. We read the homepage, the past performance page, the upgrade page and the NFL odds page on 20 Nov 2026 and compared them with the same pages as we recorded them on 7 Nov 2026. We added the sport rows of each scorecard, divided wins by wins plus losses, and tested whether each unit band percentage is possible for its pick count.",
+    "The Executive table holds together: the six sports add to 2,467 wins, 2,119 losses and 530.7 units against the printed 530.6. Its 53.7% is 53.79% cut short rather than rounded. Over our 13 days it added 30 wins and 27 losses and lost 1.5 units, which is plausible for a near even stretch.",
+    "The Vault table does not hold together. Its six sport rows add to +937.2 units, but the total row says +454.1. The page labels the units as \"2-10U\" (Executive picks included) while the win and loss record is for 6 to 10 unit picks only, and the NFL odds page labels the same +454.1 as \"VAULT 6-10U\". Between 7 and 20 Nov the Vault record went from 573-467 to 588-479, a 15-12 stretch that should add units at 6 units or more a play, yet the total fell by 109.3 units. We could not find any note on the site explaining the change.",
+    "The homepage banner is the plainest problem. A lifetime record can only add games, but on 7 Nov 2026 it read 2,670-2,312 and on 20 Nov 2026 it read 2,658-2,324: the same 4,982 games with 12 wins turned into losses. That is a correction or a regrading, and the site did not say which. Every win is also graded at a flat -110 from \"the best line available at the time a pick is released\", so a buyer who gets a worse number later will not match the scorecard, and the August 2025 retirement of \"over 1,058 games worth\" of v1 and pre release data means the scorecard is not the whole history since tracking began."
   ],
   "record": [
     "Independently verifiable: nothing we found. We found no time stamped log of every pick held by a third party, no contest run by someone else, and no regulator or court record about results.",
-    "Seller's own marketing: a live scorecard by sport and unit size, computed by Leans AI at a flat -110 and limited to v2 and v3 picks, plus a \"Recent AI Picks\" list of about the last 20 picks per sport. That list shows the pick, Remi's win probability, units and result, but no date, post time or odds, and the FAQ says it is a sample that leaves out the Intel parlay, underdog and marquee picks.",
-    "The scorecard is not useless. It is detailed, it shows a losing sport (NHL is negative on both tables) and the FAQ explains its method. But a bettor cannot rebuild it from the picks, so it is a claim, not a verified record."
+    "Seller's own marketing: a live scorecard by sport and unit size, computed by Leans AI at a flat -110 and limited to v2 and v3 picks, plus a \"Recent AI Picks\" list of about the last 20 picks per sport. That list shows the matchup, the pick, Remi's win probability, units and result, but no date, post time or odds, and the page itself calls it a weaker gauge than the scorecard.",
+    "The scorecard is not useless. It is detailed, it shows a losing sport (NHL is negative on both tables, 308-296 and -52.8 units on Executive), and its unit table shows Remi's expected win rate for each unit size beside the actual rate, which mostly track each other from 2 to 6 units. But a bettor cannot rebuild it from the picks, and it changed between our two checks in ways the site did not explain, so it is a claim, not a verified record."
   ],
   "our_data": {
     "matched": false,
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Leans AI pick feed is matched to a Watchdog graded record, so we make no claim about how Remi's picks perform.",
-    "context": "For scale: Leans AI's own Executive scorecard shows 53.7% winners, and its founder told Vice the product is \"just barely above\" break even. On the Watchdog board on 7 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "context": "For scale: Leans AI's own Executive scorecard shows 53.7% winners, and its spokesman told Vice the product is \"just barely above\" break even. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "Independent customer evidence on Leans AI is small and split. Trustpilot has the largest sample we could read, 43 reviews, and it is mixed. The testimonials on the Leans AI site are chosen by Leans AI. Below is what we found and how much weight it can carry.",
+  "customers_intro": "Independent customer evidence on Leans AI is small and split. Trustpilot had the largest sample we could read, 43 reviews, and it was mixed. RealReviews.io adds 12 mostly positive reviews, Vice tested it for a week, and two Reddit posts in 2026 attacked it. The testimonials on the Leans AI site are chosen by Leans AI. Below is what we found and how much weight it can carry.",
   "customers": [
+    {
+      "type": "Our summary",
+      "tone": "Mixed",
+      "date": "Read 20 Nov 2026",
+      "text": "We found about 58 independent reviews and posts about Leans AI from 2023 to 2026, most of them on Trustpilot (43, read 7 Nov 2026) and RealReviews.io (12), plus a Vice test and two Reddit posts. Reviews split into two camps. Positive buyers praise the email alerts, the detailed scorecard, the support replies and good early runs, though several of them call Remi streaky. Negative buyers say the published results did not match what they experienced, that losing picks were left out of the record, and that the price is too high for the edge; one also complained about marketing emails after unsubscribing. The record complaint repeats across Trustpilot in 2026 and both Reddit posts in 2026, and our own comparison of the scorecard on 7 and 20 Nov 2026 found unexplained changes. No reviewer on either side posted a full log, and we could not verify any individual claim.",
+      "source": null
+    },
     {
       "type": "Seller curated",
       "tone": "Positive",
-      "date": "Checked 7 Nov 2026",
-      "text": "The Leans AI homepage shows five star Trustpilot reviews from 2023 to 2025 praising transparency, unit sizing and support. They are picked by the seller, and the overall Trustpilot score is lower than the homepage suggests.",
+      "date": "Checked 20 Nov 2026",
+      "text": "The Leans AI homepage shows six five star testimonials dated May 2023 to Jan 2025 praising transparency, unit sizing and support, under a \"Verified by Trustpilot\" label. They are picked by the seller, and the overall Trustpilot score we saw was lower than the homepage suggests.",
       "source": 0
     },
     {
@@ -182,53 +210,80 @@
     {
       "type": "Customer report",
       "tone": "Mixed",
-      "date": "Apr 2025 to Sep 2026",
-      "text": "RealReviews.io lists 12 reviews, mostly positive. One 2026 reviewer liked the confidence grades but called the Executive price steep. Several reviewer names and texts resemble Trustpilot reviews, so we give this site little weight.",
+      "date": "Jan 2025 to Sep 2026",
+      "text": "RealReviews.io lists 12 reviews averaging 4.5 stars, dated Jan 2025 to Sep 2026. Most are positive about the email alerts, the support replies and the visible past picks. Several are qualified: a Sep 2026 reviewer called Executive expensive and said to use the picks as a filter, an Apr 2025 reviewer said 5 unit and bigger picks did well while 3 and 4 unit picks did not, and a Mar 2025 reviewer stopped after a few months because his betting volume did not justify the monthly fee. Several reviewer names and texts resemble Trustpilot reviews, so we give this site little weight.",
       "source": 10
+    },
+    {
+      "type": "Forum allegation",
+      "tone": "Negative",
+      "date": "2 Jun 2026",
+      "text": "A Reddit post in r/sportsbook titled \"Remi / Leans.AI picks are garbage\" carried no body text and drew no replies, so it tells us only that one bettor was unhappy enough to post it.",
+      "source": 12
+    },
+    {
+      "type": "Forum allegation",
+      "tone": "Negative",
+      "date": "26 Jul 2026",
+      "text": "A Reddit post in r/sportsbetting was titled as a first hand account of misleading results and selective reporting at Leans.ai and called the company's spokesman a fraud. The body was removed, so we could not read the details or any evidence, and the post had no replies.",
+      "source": 13
     },
     {
       "type": "Not found",
       "tone": "Neutral",
-      "date": "Checked 7 Nov 2026",
-      "text": "We found no Reddit thread, no TheRX, Covers or SBR forum thread, no app store listing and no Better Business Bureau profile we could confirm belongs to Leans AI. We found no court or regulator record about the company.",
+      "date": "Checked 20 Nov 2026",
+      "text": "We found no TheRX, Covers or SBR forum thread, no app store listing and no Better Business Bureau profile we could confirm belongs to Leans AI. We found no court or regulator record about the company. A Digital Journal press release about Remi's NBA picks that appears in search results returned a not found error.",
       "source": null
     }
   ],
   "conflicts": [
-    "Leans AI runs an affiliate program that pays \"a 30% commission on all customer purchases for their lifetime.\" Web pages that rank or praise AI pick tools may earn a share of what their readers pay. Weigh glowing third party write ups with that in mind.",
-    "Its terms say Leans AI does not accept or place wagers, is not associated with any sportsbook, and receives no consideration from any party with an interest in its picks. We saw no sportsbook signup or promo links on the pages we opened; its NFL odds comparison table names books such as FanDuel and DraftKings without linking to them."
+    "Leans AI runs an affiliate program that pays \"a 30% commission on all customer purchases for their lifetime,\" monthly by PayPal, with a 60 day cookie, and gives affiliates coupons and an extended free trial. Web pages that rank or praise AI pick tools may earn a share of what their readers pay, for as long as they pay. Weigh glowing third party write ups with that in mind.",
+    "Its terms and contact page say Leans AI is not affiliated with any sportsbook and is for entertainment purposes only. We saw no sportsbook sign up or promo links on the pages we opened. Its NFL odds comparison table names twelve books as plain text, including offshore books such as BetOnline, BetUS, Bovada and MyBookie that are not licensed by US state regulators.",
+    "The person who speaks for the company appears as Steve Westfeld in Fox News (2024) and as Steve Westfield in Vice (2025), and Vice reported that the founder did not reveal his real identity. A buyer paying thousands of dollars a year has no named owner to hold to the record."
   ],
   "strengths": [
-    "A named company, published prices for every directly purchasable tier, and written cancellation steps.",
-    "The scorecard is detailed by sport and unit size, includes a losing sport, and the FAQ explains that results include vig and that past results do not predict future ones.",
-    "A free pick each day with a free account lets a reader see the format, the win probability and the unit rating before paying."
+    "A named company, published prices for every directly purchasable tier, and written cancellation steps including the \"CANCELS ON END DATE\" check.",
+    "The scorecard is detailed by sport and unit size, includes a losing sport, prints expected and actual win rates per unit size, and the FAQ explains that results include vig and do not predict the future.",
+    "A free pick each day with a free account lets a reader see the format, the win probability and the unit rating before paying.",
+    "The Executive table's sport rows add up to its total, and its claimed edge is modest rather than miraculous: about 53.8% winners.",
+    "No sportsbook promo links on the pages we read, and an explicit statement that it is not affiliated with any sportsbook."
   ],
   "concerns": [
     "No full public record. The scorecard is computed by the seller at a flat -110, and older data covering more than 1,058 games was retired in August 2025.",
-    "The headline numbers do not reconcile across the homepage and scorecard tables.",
-    "No refunds of any kind, automatic renewal, and terms that bar most chargebacks.",
-    "High prices next to a claimed edge of a point or two: Executive costs $3,800 a year against a seller estimated $8,012 a year at $100 a unit, before any price slippage. At smaller stakes the fee can exceed the claimed profit.",
-    "Trustpilot shows 3.0 from 43 reviews while the homepage advertises five star reviews."
+    "The lifetime banner lost 12 wins between 7 and 20 Nov 2026 with no explanation, and the Vault units fell by 109.3 over a winning 15-12 stretch.",
+    "The Vault sport rows add to +937.2 units against a printed total of +454.1, and two unit band percentages are impossible for their pick counts.",
+    "No refunds of any kind, automatic renewal, a short email cancellation window, and terms that bar most chargebacks.",
+    "High prices next to a claimed edge of a point or two: Executive costs $3,800 a year against a seller estimated $7,750 a year at $100 a unit, so a bettor needs to stake about $49 a unit at the claimed rate just to cover the fee, before any price slippage.",
+    "No street address, no phone, and a spokesman who uses an alias."
   ],
   "checklist": [
-    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
-    "Count units, not wins. A 60% record at heavy favorites can still lose money.",
-    "Read the guarantee for the words refund, credit and extension. Most \"guarantees\" in this business are credits.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Screenshot the scorecard the day you subscribe and compare it with your own results each month. Ours changed in 13 days.",
+    "Ask for every pick from the last 12 months with the date, the line, the odds and the time it was sent. A list of recent results without dates is not a record.",
+    "Work out the unit size you need to cover the fee: divide the plan price by the seller's own yearly unit estimate. For Executive that is about $49 a unit.",
+    "Write down each pick yourself the moment you receive it, with the price you actually got, not the flat -110 the scorecard uses.",
+    "Cancel inside your account and confirm it shows \"CANCELS ON END DATE\"; do not rely on email near a renewal date.",
+    "Give any model a few hundred picks before you call it a winner. Short runs swing hard both ways."
   ],
   "faq": [
     [
       "Is Leans AI legit?",
-      "It is a real business run by Leans AI LLC of Colorado, with published prices, written terms and picks delivered to members. We could not verify that Remi wins over time, because the only record is a scorecard the company computes itself."
+      "It is a real business run by Leans AI LLC of Colorado, with published prices, written terms and picks delivered to members. We could not verify that Remi wins over time, because the only record is a scorecard the company computes itself, and that scorecard changed between our checks in ways the site did not explain."
     ],
     [
       "How much does Leans AI cost?",
-      "On 7 Nov 2026 Intel cost $49 a month or $499 a year, Executive $349 a month or $3,800 a year, and the Vault tiers $5,900 to $27,500 a year, or $4,300 to $17,900 for a five month season pass. All sales are final and plans renew until you cancel."
+      "On 20 Nov 2026 Intel cost $49 a month or $499 a year, Executive $349 a month or $3,800 a year, and the Vault tiers $5,900 to $27,500 a year, or $4,300 to $17,900 for a five month season pass. All sales are final and plans renew until you cancel."
     ],
     [
       "Does Leans AI have a verified record?",
       "No. Its scorecard is public and detailed, but Leans AI computes it at a flat -110, it covers only v2 and v3 picks after older data was retired in 2025, and we found no full time stamped log or third party audit."
+    ],
+    [
+      "Does Leans AI give refunds?",
+      "No. Its policy says it \"cannot offer a refund for any fees paid with no exceptions,\" including for poor results or forgetting to cancel. Cancelling only stops the next renewal."
+    ],
+    [
+      "Who runs Leans AI?",
+      "The terms name Leans AI LLC, a Colorado company. The site lists no address, phone or named owner. Its spokesman appears as Steve Westfeld or Steve Westfield in press coverage, and Vice said the founder did not reveal his real identity."
     ],
     [
       "Is Leans AI worth it?",
@@ -246,27 +301,27 @@
     {
       "title": "Leans AI homepage (banner record, scorecard, testimonials, FAQ)",
       "url": "https://leans.ai/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Leans AI upgrade page (plans, prices, access matrix)",
       "url": "https://leans.ai/upgrade/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Leans AI cancellation and refund policy",
       "url": "https://leans.ai/refund-policy/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Leans AI FAQ (data retirement, flat -110 grading, tracking start date)",
       "url": "https://leans.ai/faq/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Leans AI past performance scorecard and recent picks",
       "url": "https://leans.ai/past-performance/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Leans AI terms of service (operator, cancellation, chargebacks)",
@@ -276,7 +331,7 @@
     {
       "title": "Leans AI affiliate program page",
       "url": "https://leans.ai/affiliates/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Trustpilot: Leans.AI reviews",
@@ -286,22 +341,37 @@
     {
       "title": "Vice: Can AI Help You Make Money Sports Betting? I Tried It for a Week to Find Out (13 Feb 2025)",
       "url": "https://www.vice.com/en/article/ai-sports-betting-best-tools/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Fox News: AI powered approach to sports handicapping (28 Feb 2024)",
       "url": "https://www.foxnews.com/sports/innovative-ai-powered-approach-to-sports-handicapping-continues-push-to-reshape-betting",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "RealReviews.io: Leans.AI reviews",
       "url": "https://realreviews.io/reviews/leans.ai",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "Leans AI NFL odds comparison page",
+      "title": "Leans AI NFL odds comparison page (books named, scorecard labels)",
       "url": "https://leans.ai/nfl/odds-comparison/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbook: Remi / Leans.AI picks are garbage (2 Jun 2026)",
+      "url": "https://www.reddit.com/r/sportsbook/comments/1tugskg/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbetting: Leans.ai website, misleading results and selective reporting (26 Jul 2026, body removed)",
+      "url": "https://www.reddit.com/r/sportsbetting/comments/1v7i1x3/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Leans AI contact page (no address or phone, 3 business day replies)",
+      "url": "https://leans.ai/contact/",
+      "accessed": "20 Nov 2026"
     }
   ],
   "pricing_source": 1
