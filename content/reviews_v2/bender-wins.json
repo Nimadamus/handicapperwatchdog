@@ -1,31 +1,31 @@
 {
   "slug": "bender-wins",
   "name": "Bender Wins",
-  "legal_name": "Bender Wins (Ryan Bender), sold through Winible",
+  "legal_name": "Bender Wins (Ryan Bender), sold through a Winible store opened in May 2026",
   "kind": "Pick seller on the Winible subscription platform, promoted on YouTube, Instagram and TikTok",
-  "checked": "7 Nov 2026",
-  "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-13",
+  "checked": "20 Nov 2026",
+  "checked_iso": "2026-11-20",
+  "updated_iso": "2026-11-20",
   "title": "Bender Wins Review 2026: Pricing, Record, Is It Worth It?",
-  "description": "Bender Wins review, checked 7 Nov 2026: Winible plans from $129.99 a month to $2,999.99 a year, what its winning years claim rests on, and buyer reports.",
+  "description": "Bender Wins review, checked 20 Nov 2026: Winible plans from $129.99 a month, a 7 winning years claim with no public record, and Reddit buyer counts.",
   "h1": "Bender Wins review",
-  "dek": "Bender Wins is Ryan Bender's pick service, sold on Winible from $129.99 a month to $2,999.99 a year. It advertises 7 straight winning years but shows no pick record on its store page. Customer evidence is six CapperTek reviews, three of them from one account.",
+  "dek": "Bender Wins is Ryan Bender's pick service, sold on Winible from $129.99 a month to $2,999.99 a year. It advertises 7 straight winning years but shows no pick record. Buyer evidence is split: kind CapperTek reviews, partly from one account, against Reddit posters whose own counts put his card well down in 2025 and 2026.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record for Bender Wins. This page reports what we could check and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record for Bender Wins. This page reports what we could check on 20 Nov 2026 and labels everything else."
   },
   "glance": [
     [
       "Operator",
-      "Ryan Bender, selling through a Winible store (benderwins.com redirects there)"
+      "Ryan Bender, selling through a Winible store created on 3 May 2026 (benderwins.com redirects there)"
     ],
     [
-      "Claims to operate since",
-      "\"7 straight winning years\"; \"over two decades\" of experience (store page)"
+      "Claims",
+      "\"7 straight winning years\"; \"over two decades\" of experience; a $100 bettor now betting $2,150 a unit"
     ],
     [
       "Price range seen",
-      "Free plan, then $129.99 a month to $2,999.99 a year"
+      "Free plan, then $129.99 a month to $2,999.99 a year; football passes $548 and $749.95"
     ],
     [
       "Guarantee",
@@ -33,7 +33,11 @@
     ],
     [
       "Full public record",
-      "Not found. Picks on the store page are locked"
+      "Not found. Picks are locked and the store shows 0 units and no win rate"
+    ],
+    [
+      "Audience",
+      "16.4K YouTube subscribers; 1,977 people on the free Winible plan (20 Nov 2026)"
     ],
     [
       "Watchdog graded record",
@@ -41,110 +45,179 @@
     ]
   ],
   "short_answer": [
-    "Bender Wins is an active pick service run by Ryan Bender. The store at benderwins.com is a Winible page that lists four paid plans, a football season pass and a free plan, and shows new posts every day, including free picks. Picks are delivered by text or email through Winible.",
-    "Whether the picks make money is not shown anywhere we could open. The store claims 7 straight winning years and says a $100 bettor is now betting over $2,150 a unit, but every pick post is locked and we found no public record, outside monitor or contest result.",
-    "The customer file is small and split. Former subscribers describe a high volume, systems style service that profits slowly and needs fast betting before lines move, while one reviewer claims the positive reviews are written by Bender himself. Treat the record as unproven."
+    "Bender Wins is an active pick service run by Ryan Bender. Since May 2026 it has sold through a Winible store that lists four monthly or yearly plans, two football passes and a free plan, and benderwins.com forwards there. He promotes it through a YouTube channel with about 16,400 subscribers, plus TikTok and Instagram. Picks are delivered by text or email through Winible.",
+    "Whether the picks make money is not shown anywhere we could open. The store claims 7 straight winning years and says a $100 bettor now bets over $2,150 a unit, but every pick post is locked, the store's own record fields show no units and no win rate, and we found no outside monitor or contest result.",
+    "The buyer file splits sharply. CapperTek reviewers, three of six from one account, describe a slow, high volume, systems style service that profits over time. Reddit posters tell a different story: a May 2025 post counted the Masterclass card at 959-869-20, down 66.25 units for the year; a 2026 subscriber who graded every play himself said it was down more than 50 units at the quoted odds; and in Oct and Nov 2026 two more posts in r/sportsbetting set out to publish losing results. One commenter in Feb 2026 said the service ended 2025 up 50 to 70 units. None of these counts is audited, so treat the record as unproven and disputed."
   ],
-  "pricing_intro": "Prices below were shown on the Bender Wins Winible store on 7 Nov 2026. Each plan has a monthly and an annual price. Winible says you can unsubscribe anytime, and its refund policy covers all purchases.",
+  "pricing_intro": "Prices below were shown on the Bender Wins Winible store on 20 Nov 2026 and match what we saw on 7 Nov 2026, plus a new half season football pass. Each recurring plan has a monthly and an annual price. In May 2025 a Reddit post listed the Masterclass at $99.99 a month, so the entry price has risen since.",
   "pricing": [
     [
       "Free Plan",
-      "Free, all free picks",
-      "Free"
+      "Free",
+      "\"You'll get access to all my free picks\""
     ],
     [
       "Masterclass Top Plays",
-      "$129.99 a month or $1,299.99 a year. Plays of 1 unit and above, plus a betting guide",
-      "Winible: all sales final and non refundable"
+      "$129.99 a month or $1,299.99 a year",
+      "Plays of 1 unit and above, plus a betting guide. Winible: all sales final and non refundable"
     ],
     [
       "Masterclass Elite",
-      "$149.99 a month or $1,499.99 a year. Full card from 0.25 to 3 units, plus educational videos and the guide",
-      "Same as above"
+      "$149.99 a month or $1,499.99 a year",
+      "Full card from 0.25 to 3 units, plus educational videos and the guide"
     ],
     [
       "Consensus Group + Bet Scraper",
-      "$199.99 a month or $1,999.99 a year. 1 to 4 consensus plays 5 to 7 times a week, plus a tool that triggers plays when 3 or more tracked bettors agree",
-      "Same as above"
+      "$199.99 a month or $1,999.99 a year",
+      "1 to 4 consensus plays 5 to 7 times a week from a group of 3 bettors, plus a tool that triggers plays when 3 or more tracked bettors agree"
     ],
     [
-      "Super Pass",
-      "$299.99 a month or $2,999.99 a year. All of the above",
-      "Same as above"
+      "Super Pass (Best Value)",
+      "$299.99 a month or $2,999.99 a year",
+      "All of the above. Upgrade pop ups offer it once at $229.99 or $239.99 a month to existing subscribers"
     ],
     [
       "2026 to 27 Football Season (NFL + NCAAF)",
       "$749.95 for 12 Aug 2026 to 15 Feb 2027",
-      "Same as above"
+      "Fixed term, does not auto renew"
+    ],
+    [
+      "Half Season NFL/CFB 2026",
+      "$548 for 26 Oct 2026 to 1 Mar 2027",
+      "Fixed term, does not auto renew"
     ]
   ],
   "guarantee": [
-    "There is no performance guarantee. Winible's refund policy, last updated 8 Oct 2026, says all purchases made through Winible are final and non refundable, including for dissatisfaction with the content, and that refunds are offered only at Winible's discretion in limited cases.",
-    "The same policy asks buyers to contact Winible support before filing a chargeback, and says a chargeback without doing so may lead to account suspension. We did not see any separate refund promise from Bender Wins."
+    "There is no performance guarantee. Winible's refund policy, last updated 8 Oct 2026, says: \"ALL SALES OF WINIBLE PURCHASES (AS DESCRIBED IN SECTION 1) ARE FINAL AND NON-REFUNDABLE.\" It adds that buyers are not entitled to a refund or credit \"under any circumstances,\" including when content differs from what they expected.",
+    "Refunds are offered only \"at Winible's sole discretion\" in limited cases, such as a creator failing to deliver a paid livestream, and may be paid in dollars or in Winible credit.",
+    "Before any chargeback, the policy says buyers must first contact support@winible.com, and that filing one without doing so may lead to suspension or permanent deactivation of the account and, in some cases, referral as potential first party fraud.",
+    "Recurring plans renew automatically until cancelled; the two football passes run for a fixed period. We did not see any separate refund promise from Bender Wins. Losses on the bets themselves are never covered."
   ],
   "claims": [
     {
       "claim": "\"7 straight winning years by doing things the right way!!\"",
-      "where": "Store page header",
-      "status": "Seller claim, no record found"
+      "where": "Store headline",
+      "status": "Seller claim, no record found. Reddit posters' own counts (below) put 2025 and 2026 in the red, while one commenter said 2025 ended up 50 to 70 units; none is audited"
     },
     {
       "claim": "\"Masterclass has won all 7 years of its existence!! a $100 bettor is now betting over $2150 a unit!!!\"",
       "where": "Masterclass plan descriptions",
-      "status": "Seller claim, no record found"
+      "status": "Checked the arithmetic: $2,150 is 21.5 times $100. If unit size tracks the bankroll, that means growing it more than 21 fold, which no public log supports"
     },
     {
-      "claim": "Football: \"Last Year we won 14 of the first 15 weeks\"",
+      "claim": "Masterclass year to date 959-869-20, \"-66.25\" units, \"-4.57% roi\" (May 2025)",
+      "where": "A buyer's own count in the r/sportsbook thread, not a seller claim",
+      "status": "Checked the arithmetic: 959 of 1,828 decided plays is 52.5%, near break even at -110, and a 4.57% loss on money risked fits a card bet at mostly short prices. We could not see the underlying plays"
+    },
+    {
+      "claim": "\"Last Year we won 14 of the first 15 weeks\"",
       "where": "Football season pass",
-      "status": "Seller claim, no record found"
+      "status": "Seller claim, no record found. Winning weeks count periods, not units"
     },
     {
       "claim": "\"Over two decades of professional experience\"; \"a true master at finding value in mispriced lines\"",
       "where": "About section and an unattributed quote at the top of the store",
-      "status": "Seller claim"
+      "status": "Seller claim. The quote has no name or source"
     },
     {
-      "claim": "\"Going for 7 Straight Free pick winners!!\"",
-      "where": "Store post, 5 Nov 2026",
-      "status": "Seller claim, post locked"
+      "claim": "Store record fields: profit 0, units 0, win percentage blank",
+      "where": "Winible store data behind the public page",
+      "status": "Checked: Winible can display a creator's tracked record, but this store shows none"
     }
   ],
   "claims_note": [
-    "Going from $100 to $2,150 a unit means the bankroll grew more than 21 times, if unit size tracks the bankroll. That is a very large claim to make with no public pick log.",
+    "How we checked: Bender Wins publishes no record, so the only numbers to test are the seller's own claims and the counts buyers posted. We worked out the win rates and compared them with the 52.4% needed at -110. The May 2025 count sits right at break even on wins but loses units, which happens when many plays are at prices worse than -110.",
     "Winning weeks and winning years count periods, not units. A seller can win most weeks and still be close to even if losing weeks are larger.",
-    "The quote praising Bender at the top of the store has no name or source attached."
+    "Buyer counts conflict. In May 2025 one commenter recalled the Consensus group down about 41 units in 2024 with the Masterclass up about 3; in Feb 2026 two replies said 2025 ended up 50 or more units; in Sep 2026 a returning subscriber said 2026 was down more than 50 units at the quoted odds. Without a time stamped log, nobody can settle which is right, and that is the core problem with the service."
   ],
   "record": [
-    "What a buyer can check outside the seller: nothing. We found no third party monitor, contest result or regulator record for Bender Wins. A CourtListener search for \"benderwins\" or \"bender wins\" returned no case involving the service.",
-    "What is the seller's own marketing: the Winible store lists daily posts such as full cards, top plays and consensus plays, but each is locked to subscribers, and the store shows no win and loss record, unit totals or ROI. The winning years claims are not backed by anything we could open. Unit sizes on the full card run from 0.25 to 3 units, which suggests a high volume card with small stakes per play.",
-    "Customer reports describe 10 to 20 bets a day and lines that move quickly after release, so a buyer who bets late may get worse prices than any record the seller keeps."
+    "What a buyer can check outside the seller: nothing complete. We found no third party monitor, contest result or regulator record for Bender Wins. A CourtListener search on 7 Nov 2026 for \"benderwins\" or \"bender wins\" returned no case involving the service; a repeat search on 20 Nov 2026 was refused by the site, so we could not recheck it. A BBB search on 20 Nov 2026 returned no business.",
+    "What is the seller's own marketing: the Winible store lists daily posts such as full cards, top plays and consensus plays, but each is locked to subscribers, and the store shows no win and loss record, unit totals or ROI. Unit sizes on the full card run from 0.25 to 3 units, which suggests a high volume card with small stakes per play.",
+    "What buyers counted: the Reddit figures quoted on this page are buyers' own tallies. The most detailed, from a subscriber in Sep 2026, says he had an AI tool grade every 2026 play, found the card down more than 50 units at Bender's quoted odds, and about 100 units down if the odds were 5% worse, which he said was closer to what was actually available.",
+    "Customer reports describe 10 to 20 bets a day and lines that move quickly after release, so a buyer who bets late may get worse prices than any record the seller keeps. Winible store data showed 1,977 people on the free plan and a total subscriber count of 3,209 including free members on 20 Nov 2026; the paid figure is not shown."
   ],
   "our_data": {
     "matched": false,
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition Bender Wins is not matched to a Watchdog graded record, so we make no claim about how its picks perform.",
-    "context": "For scale: Bender Wins advertises winning years rather than a win rate. On the Watchdog board on 7 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "context": "For scale: Bender Wins advertises winning years rather than a win rate, and the one buyer count with wins and losses put the 2025 Masterclass at 52.5%. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "Customer evidence on Bender Wins is thin. CapperTek holds six reviews from 2022 to 2026, and three of them come from one account. We found no Trustpilot page, no BBB listing, no reviews on the Winible store and no forum threads. Below is everything we found.",
+  "customers_intro": "Customer evidence on Bender Wins comes from two places that disagree: six CapperTek reviews from 2022 to 2026, three of them from one account, and Reddit threads from May 2025 to Nov 2026. We found no Trustpilot page, no BBB listing and no reviews on the Winible store. Below is everything we found, positive and negative.",
   "customers": [
     {
       "type": "Our summary",
       "tone": "Negative",
-      "date": "Read 13 Nov 2026",
-      "text": "Recent Reddit buyers are harsh. In a 2025 r/sportsbook thread, the poster's own count had the $99.99 a month Masterclass down about 66 units for the year. Buyers there say the quoted lines are rarely available, losing stretches go quiet, and questions about the yearly record get deleted. A subscriber who rejoined in 2026 says he was told to track his own bets, graded the year himself and found it down more than 50 units at the quoted odds. The CapperTek reviews below are kinder, but several come from one account.",
+      "date": "Read 20 Nov 2026",
+      "text": "We read six CapperTek reviews and about a dozen buyer comments across four Reddit posts in r/sportsbook and r/sportsbetting, from 2022 to Nov 2026. CapperTek is kinder: reviewers describe a disciplined, high volume systems service that grows a bankroll slowly, praise the free YouTube content, and warn that you must bet fast before lines move; one 2026 reviewer there claimed, without evidence, that the positive reviews come from Bender himself. Reddit is harsh and more recent. Buyers there posted their own counts showing the Masterclass down 66 units in 2025 and more than 50 units in 2026, said the quoted lines such as -105 are often not available, that losing stretches go quiet and questions about the yearly record get deleted, and that a request for a tracked record was answered with advice to track it yourself. One reply in Feb 2026 said 2025 ended up 50 to 70 units, and several posters liked his free educational videos. Two r/sportsbetting posts in Oct and Nov 2026 set out to publish losing results; the Nov one was removed. The repeating theme across years and sites is no public record, fast moving lines, and buyer counts that disagree with the winning years headline.",
       "source": null
+    },
+    {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "7 May 2025",
+      "text": "The original r/sportsbook poster listed prices of $99.99 a month for the Masterclass and $199.99 for the Consensus group, and gave a year to date count of 959-869-20 for the Masterclass, down 66.25 units at a 4.57% loss, and 122-110-1 for the Consensus group, down 25.12 units. The poster said negative comments on his TikTok and YouTube were often deleted and asked whether paying was worth it.",
+      "source": 6
+    },
+    {
+      "type": "Forum post",
+      "tone": "Mixed",
+      "date": "7 May 2025",
+      "text": "Replies in the same thread said his TikTok videos were informative and the information was fine, but that with that record the picks were not worth paying for. One said last year's record was worse; another recalled the Consensus group down about 41 units in 2024 with the Masterclass up about 3.",
+      "source": 6
+    },
+    {
+      "type": "Forum allegation",
+      "tone": "Negative",
+      "date": "8 May 2025",
+      "text": "A commenter who said he had subscribed wrote that the service keeps stressing the long term so people keep paying, that lines of -105 are often not available, and that comments asking for the year to date total are deleted while two winning days bring a burst of posts and videos.",
+      "source": 6
+    },
+    {
+      "type": "Forum post",
+      "tone": "Positive",
+      "date": "18 Feb 2026",
+      "text": "Two replies in the same thread said the service ended 2025 up 50 or more units, one putting it at 50 to 70, and that it does not bet heavy favorites. Neither gave a record or source.",
+      "source": 6
+    },
+    {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "12 Sep 2026",
+      "text": "A subscriber who said he left and then rejoined wrote that he kept losing, that requests for a tracked record were answered with advice to track his own bets, and that he then graded every 2026 play with an AI tool and a spreadsheet. He said the card was down more than 50 units at Bender's quoted odds, over 100 units at odds 5% worse, and over 200 units at 10% worse. He estimated, without evidence, that about 2,000 subscribers pay around $100 a month.",
+      "source": 6
+    },
+    {
+      "type": "Forum allegation",
+      "tone": "Negative",
+      "date": "2 Oct 2026",
+      "text": "Another commenter wrote that the posted lines are not real and the service is not profitable, without giving numbers. A later Oct 2026 reply mocked three of that night's plays.",
+      "source": 6
+    },
+    {
+      "type": "Forum post",
+      "tone": "Negative",
+      "date": "10 Oct 2026",
+      "text": "A user in r/sportsbetting started a post titled Benderwins Masterclass Results, saying he saw a lot of marketing for the service on social media and would post the results so people could make informed decisions. No results were attached when we read it.",
+      "source": 7
+    },
+    {
+      "type": "Forum post",
+      "tone": "Negative",
+      "date": "4 Nov 2026",
+      "text": "A post in r/sportsbetting titled WARNING: AVOID Benderwins Masterclass; Results Inside was removed; only the title survives, so we cannot say what results it showed. A May 2025 r/sportsbetting post about the service was also removed.",
+      "source": 8
     },
     {
       "type": "Customer report",
       "tone": "Mixed",
       "date": "5 Oct 2026",
-      "text": "A former subscriber on CapperTek said Bender is pretty good but not the best, runs a systems approach with 10 to 20 bets a day, and that lines move fast after release. The reviewer said the service profits slowly, suits people free during work hours with a bankroll of a few thousand dollars, is cheaper on annual or holiday pricing, and would not let people who left rejoin for a while.",
+      "text": "A former subscriber on CapperTek said Bender is pretty good but not the best, runs a systems approach with 10 to 20 bets a day, and that lines move fast after release. The reviewer doubted emails touting a 59 unit gain, said profits came slowly, that the service suits people free during work hours with a bankroll of a few thousand dollars, is cheaper on annual or holiday pricing, and once would not let people who left rejoin.",
       "source": 3
     },
     {
       "type": "Forum allegation",
       "tone": "Negative",
       "date": "27 May 2026",
-      "text": "A CapperTek reviewer claimed the positive reviews are written by Bender himself, that the picks are mostly favorites and unders, that the free picks have hit barely above 46% over three years, and that he sues people who confront him. We could not confirm any of this and found no such court case.",
+      "text": "A CapperTek reviewer claimed the positive reviews are written by Bender himself, that the picks are mostly favorites and unders, that the free picks have hit barely above 46% over three years, and that he sues people who confront him. We could not confirm any of this and found no such court case in our 7 Nov 2026 search.",
       "source": 3
     },
     {
@@ -158,7 +231,7 @@
       "type": "Customer report",
       "tone": "Positive",
       "date": "9 Aug 2024",
-      "text": "A CapperTek reviewer said they had used Bender for four years without a losing year, and that buyers need accounts at 7 or more sportsbooks to get good prices. The reviewer posted a business email address in the review.",
+      "text": "A CapperTek reviewer said they had used Bender for four years without a losing year, rejected claims of a 40% hit rate, and said buyers need accounts at 7 or more sportsbooks to get good prices.",
       "source": 3
     },
     {
@@ -169,54 +242,68 @@
       "source": 3
     },
     {
-      "type": "Customer report",
+      "type": "Seller curated",
       "tone": "Neutral",
-      "date": "Checked 7 Nov 2026",
-      "text": "Three of the six CapperTek reviews, from Feb 2023, Dec 2025 and Oct 2026, were posted by the same account, so the file reflects at most four separate reviewers.",
+      "date": "Checked 20 Nov 2026",
+      "text": "Three of the six CapperTek reviews, from Feb 2023, Dec 2025 and Oct 2026, were posted under the same name, so the file reflects at most four separate reviewers.",
       "source": 3
     },
     {
       "type": "Not found",
       "tone": "Neutral",
-      "date": "Checked 7 Nov 2026",
-      "text": "Trustpilot showed no page for benderwins.com, the Better Business Bureau search returned no results for Bender Wins, the Winible store showed no customer reviews, and apart from the r/sportsbook thread in our summary we found no Reddit, TheRX, SBR or Covers forum thread about the service.",
-      "source": null
+      "date": "Checked 20 Nov 2026",
+      "text": "The Better Business Bureau search returned no business for Bender Wins, the Winible store shows no customer reviews, and we found no TheRX, SBR or Covers forum thread about the service.",
+      "source": 4
     }
   ],
   "conflicts": [
-    "Winible, the platform that sells the picks, also offers real money games through a partner and ProphetX accounts, according to its refund policy. We saw no sportsbook affiliate link or promo code on the Bender Wins store page itself.",
-    "The store grades nothing in public, so any record a subscriber sees comes from the seller."
+    "Winible, the platform that sells the picks, also offers real money games through a partner, Lucra, and links to ProphetX accounts, according to its refund policy. We saw no sportsbook affiliate link or promo code on the Bender Wins store page itself.",
+    "The store grades nothing in public, so any record a subscriber sees comes from the seller, and buyers say they were told to track results themselves.",
+    "Upgrade pop ups and a one time Super Pass discount push existing subscribers toward the most expensive plan."
   ],
   "strengths": [
-    "Published prices with monthly and annual options and a free plan to sample picks first.",
-    "Small stated stakes per play, 0.25 to 3 units, and reviewers describe a focus on bankroll management and straight bets.",
-    "Free daily content, including YouTube videos, lets a buyer see the style before paying."
+    "Published prices with monthly and annual options, fixed term football passes that do not auto renew, and a free plan to sample picks first.",
+    "Small stated stakes per play, 0.25 to 3 units, and reviewers describe a focus on bankroll management and straight bets rather than parlays.",
+    "Free daily content, including a YouTube channel with about 16,400 subscribers, lets a buyer see the style before paying.",
+    "Even critics on Reddit called his free educational videos informative.",
+    "Several CapperTek reviewers over four years describe receiving the picks as sold and slow, steady results."
   ],
   "concerns": [
-    "No public record of any kind. The 7 winning years and $2,150 a unit claims are unsupported.",
-    "All Winible sales are final and non refundable.",
-    "High volume and fast moving lines mean a buyer may not get the posted prices.",
-    "A tiny review file, half from one account, plus an unconfirmed claim that the reviews are written by the seller."
+    "No public record of any kind. The 7 winning years and $2,150 a unit claims are unsupported, and the store's own record fields are empty.",
+    "Buyer counts posted on Reddit show the Masterclass down 66 units in 2025 and more than 50 units in 2026; one reply disputes 2025. The seller has not published anything to settle it.",
+    "All Winible sales are final and non refundable, and a chargeback without contacting support first can get your account closed.",
+    "High volume and fast moving lines mean a buyer may not get the posted prices; buyers say lines such as -105 are often gone.",
+    "A small CapperTek file, half from one name, plus Reddit claims that critical comments are deleted on his social channels.",
+    "The entry price has risen from $99.99 a month in 2025 to $129.99 in 2026."
   ],
   "checklist": [
-    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
-    "Count units, not wins. A 60% record at heavy favorites can still lose money.",
-    "Read the guarantee for the words refund, credit and extension. Most \"guarantees\" in this business are credits.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
+    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of winning years is not a record.",
+    "Count units, not wins or winning weeks. A card at 52.5% winners lost 66 units in one buyer's count because prices matter.",
+    "Check the line you can actually get within a minute of each release and record that price, not the posted one.",
+    "Use the free plan for a few weeks and track every free pick before paying.",
+    "Remember Winible sales are final: start with one month, not a year, and set a reminder to cancel.",
     "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
   ],
   "faq": [
     [
       "Is Bender Wins legit?",
-      "It is an active service with a named handicapper, published prices and daily posts on Winible, and former subscribers describe receiving picks as sold. We could not verify any of its performance claims, because it publishes no record."
+      "It is an active service with a named handicapper, published prices and daily posts on Winible, and subscribers describe receiving picks as sold. We could not verify any of its performance claims, because it publishes no record, and buyers on Reddit have posted counts that show heavy losses in 2025 and 2026."
     ],
     [
       "How much does Bender Wins cost?",
-      "On 7 Nov 2026 plans ran from $129.99 a month or $1,299.99 a year for Top Plays up to $299.99 a month or $2,999.99 a year for the Super Pass, plus a $749.95 football season pass and a free plan. Winible says all sales are final."
+      "On 20 Nov 2026 plans ran from $129.99 a month or $1,299.99 a year for Masterclass Top Plays up to $299.99 a month or $2,999.99 a year for the Super Pass, plus football passes at $749.95 and $548 and a free plan. Winible says all sales are final."
     ],
     [
       "Does Bender Wins have a verified record?",
-      "No. The store claims 7 straight winning years but shows no pick record, we found no outside tracking, and Watchdog has no graded record for it."
+      "No. The store claims 7 straight winning years but shows no pick record and empty record fields, we found no outside tracking, and Watchdog has no graded record for it."
+    ],
+    [
+      "What do Reddit users say about Bender Wins?",
+      "Mostly negative. A May 2025 r/sportsbook post counted the Masterclass at 959-869-20, down 66.25 units for the year, and a returning subscriber in Sep 2026 said his own grading had 2026 down more than 50 units at the quoted odds. One reply said 2025 ended up 50 to 70 units. None of these counts is audited."
+    ],
+    [
+      "Who is behind Bender Wins?",
+      "The store's About section names Ryan Bender and says he has over two decades of professional experience. The Winible store was created in May 2026, and benderwins.com forwards to it. We found no company filing, address or BBB listing."
     ],
     [
       "Is Bender Wins worth it?",
@@ -232,29 +319,29 @@
   ],
   "sources": [
     {
-      "title": "Bender Wins store on Winible (plans, prices, claims, locked posts)",
+      "title": "Bender Wins store on Winible (headline, About Ryan Bender, social links, locked posts)",
       "url": "https://www.winible.com/benderwins",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "benderwins.com (redirects to the Winible store)",
       "url": "https://benderwins.com/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Winible refund policy (last updated 8 Oct 2026)",
       "url": "https://www.winible.com/refund-policy",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "BenderWins.com customer reviews on CapperTek",
       "url": "https://www.cappertek.com/reviews.asp?shs=BenderWins.com",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Better Business Bureau search: Bender Wins",
       "url": "https://www.bbb.org/search?find_country=USA&find_text=Bender%20Wins",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "CourtListener search: \"benderwins\" OR \"bender wins\"",
@@ -262,9 +349,35 @@
       "accessed": "7 Nov 2026"
     },
     {
-      "title": "Reddit r/sportsbook: Benderwins a Scam? thread",
+      "title": "Reddit r/sportsbook: Benderwins a Scam? is paying for Handicapping services worth it? (7 May 2025, comments to Oct 2026)",
       "url": "https://www.reddit.com/r/sportsbook/comments/1kh5u0e/benderwins_a_scam_is_paying_for_handicapping/",
-      "accessed": "13 Nov 2026"
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbetting: Benderwins Masterclass Results (10 Oct 2026)",
+      "url": "https://www.reddit.com/r/sportsbetting/comments/1x2l1gl/benderwins_masterclass_results/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbetting: WARNING: AVOID Benderwins Masterclass; Results Inside (4 Nov 2026, body removed)",
+      "url": "https://www.reddit.com/r/sportsbetting/comments/1xne7z0/warning_avoid_benderwins_masterclass_results/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbetting: post about Bender Wins (7 May 2025, body removed)",
+      "url": "https://www.reddit.com/r/sportsbetting/comments/1kh5o2l/bender_wins_is_a_scamhandicapping_service/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Bender Wins subscription plans on Winible (plan names, prices, descriptions, upgrade offers)",
+      "url": "https://www.winible.com/benderwins/subscription-plans",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "YouTube: Bender Wins Sports Betting channel",
+      "url": "https://www.youtube.com/benderwinssportsbetting",
+      "accessed": "20 Nov 2026"
     }
-  ]
+  ],
+  "pricing_source": 10
 }
