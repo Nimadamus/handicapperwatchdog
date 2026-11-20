@@ -3,13 +3,13 @@
   "name": "Stu Feiner",
   "legal_name": "Stu Feiner (no company name shown on his site)",
   "kind": "Celebrity handicapper selling his own picks",
-  "checked": "7 Nov 2026",
-  "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-13",
+  "checked": "20 Nov 2026",
+  "checked_iso": "2026-11-20",
+  "updated_iso": "2026-11-20",
   "title": "Stu Feiner Review 2026: Pricing, Record, Is It Worth It?",
-  "description": "Stu Feiner review, checked 7 Nov 2026: picks priced from $55 to $50,000, what his bet tier records leave out, a 1991 SI test and what bettors say.",
+  "description": "Stu Feiner review, checked 20 Nov 2026: picks from $55 to $50,000, his bet tier records checked, a 1991 SI test, and what buyers say.",
   "h1": "Stu Feiner review",
-  "dek": "Barstool Sports personality Stu \"The Source\" Feiner sells his own picks through stufeiner.com, from a $55 five pick special to $50,000 season passes, paid through PayPal. We found no guarantee and no full record. The only outside test of his picks we could open is a four week Sports Illustrated check from 1991, which he lost 19-32.",
+  "dek": "Barstool Sports personality Stu \"The Source\" Feiner sells his own picks through stufeiner.com, from a $55 five pick special to $50,000 season passes, paid through PayPal. We found no guarantee and no full record. His own tier records work out to 52% to 58% winners with no odds shown, the only outside test we could open is a 1991 Sports Illustrated check he lost 19-32, and buyer posts from 2004 to 2025 are mostly negative.",
   "status": {
     "label": "Not verified",
     "note": "Watchdog has not graded a full, time stamped record of Stu Feiner's paid picks. This page reports what we could check and labels everything else."
@@ -17,7 +17,11 @@
   "glance": [
     [
       "Operator",
-      "Stu Feiner, selling directly through stufeiner.com. Phone and PayPal checkout; no company name or address shown"
+      "Stu Feiner, selling directly through stufeiner.com. Phone (516) 698-8870 and PayPal checkout; no company name or address shown"
+    ],
+    [
+      "Based in",
+      "Farmingdale, New York, on Long Island (Wikipedia; a 2025 forum post also mentions his Farmingdale office)"
     ],
     [
       "Claims to operate since",
@@ -41,35 +45,40 @@
     ]
   ],
   "short_answer": [
-    "Stu Feiner is a real and well known figure. He has sold picks under his own name for decades, his site promotes his role on Barstool Sports Advisors, and his site lists prices and a phone number. In that narrow sense he is legitimate: you pay, and he sends picks.",
-    "Whether his paid picks make money is a different question, and nothing we could open answers it. His homepage shows win and loss totals for bet tiers such as \"$100k Bet Record 146-126-2\", with no dates, odds or pick log. The one outside test we found is old: Sports Illustrated monitored him for four weeks in 1991 and he went 19-32. The same article reported a 1990 New York City fine for false and misleading advertising.",
-    "Prices run far above most pick sellers, up to $50,000 for a season or a month, and we found no guarantee or refund terms. If you buy, start with the cheapest product, record every pick yourself with the line and time you received it, and judge it only after a few hundred picks."
+    "Stu Feiner is a real and well known figure. He has sold picks under his own name for decades, co hosts Barstool Sports Advisors with Dave Portnoy and Dan Katz, and his site lists prices and a phone number. In that narrow sense he is legitimate: you pay, and he sends picks.",
+    "Whether his paid picks make money is a different question, and nothing we could open answers it. His homepage shows win and loss totals for bet tiers such as \"$100k Bet Record 147-126-3\", with no dates, odds or pick log. Across all four tiers that is 787 wins and 666 losses, about 54.2%, and between 7 Nov and 20 Nov 2026 the tiers went 2-4 with one push by our count. The one outside test we found is old: Sports Illustrated monitored him for four weeks in 1991 and he went 19-32. The same article reported a 1990 New York City fine for false and misleading advertising.",
+    "Prices run far above most pick sellers, up to $50,000 for a season or a month, and we found no guarantee or refund terms. Buyer posts from 2004 to 2025 on TheRX, Sportsbook Review, CapperTek and Reddit are mostly negative, with a few satisfied buyers and fans. If you buy, start with the cheapest product, record every pick yourself with the line and time you received it, and judge it only after a few hundred picks."
   ],
-  "pricing_intro": "Prices below were shown on the stufeiner.com picks catalog and product pages on 7 Nov 2026. Checkout is through PayPal, or by calling Stu for other payment. Names like \"$100K Best Bet\" are product names; the pages we read do not say what the dollar figure means.",
+  "pricing_intro": "Prices below were shown on the stufeiner.com picks catalog, homepage and pick schedule on 20 Nov 2026. Several changed since we checked on 7 Nov 2026: the all picks Daily Picks pass fell from $5,000 to $1,000, the Daily Combo and Daily CFB passes rose from $99 to $199, and the NFL Daily Pass fell from $250 to $199. Checkout is through PayPal, or by calling Stu for other payment. Names like \"$100K Best Bet\" are product names; the pages we read do not say what the dollar figure means.",
   "pricing": [
     [
       "555 Special",
-      "$55 for 5 selections including a \"$20K Best Bet\"",
+      "$55 (five selections including a \"$20K Best Bet\", per the product page on 7 Nov 2026)",
       "No guarantee found"
     ],
     [
       "Barstool Sports Advisors NFL Special",
-      "$69 for three NFL \"$10,000 Best Bets\", emailed Sunday",
+      "$69 (three NFL \"$10,000 Best Bets\", emailed Sunday, per the product page on 7 Nov 2026)",
       "No guarantee found"
     ],
     [
-      "Double 555 Special, Daily CFB Pass, Daily Combo Special, NFL Sunday Night Football",
-      "$99 each. The daily passes exclude the game of the month or year and the $25,000, $50,000 and $100,000 best bets",
+      "Double 555 Special · NFL Sunday Night Football",
+      "$99 each",
+      "No guarantee found"
+    ],
+    [
+      "Daily Combo Special, NFL Daily Pass, Daily CFB Pass, Daily NBA Picks, Daily CBB Picks",
+      "$199 each for one day. The combo, NFL and CFB passes exclude the game of the month or year and the $25,000, $50,000 and $100,000 best bets",
       "No guarantee found"
     ],
     [
       "Stu's $20K All-In Max Best Bet Special",
-      "$199 for three \"$20,000 Best Bets\"",
+      "$199",
       "No guarantee found"
     ],
     [
-      "Daily CBB, daily NBA, NFL Daily Pass",
-      "$199 · $199 · $250 for one day",
+      "Daily Picks (\"All Selections for the current day\", released 6:30pm ET)",
+      "$1,000",
       "No guarantee found"
     ],
     [
@@ -78,8 +87,8 @@
       "No guarantee found"
     ],
     [
-      "All picks, longer terms",
-      "Daily Picks $5,000 · Weekly Package $15,000 · November Package $50,000",
+      "Longer terms",
+      "Weekly Package $15,000 · November Package $50,000",
       "No guarantee found"
     ],
     [
@@ -89,14 +98,24 @@
     ]
   ],
   "guarantee": [
-    "We found no guarantee on any stufeiner.com page we opened: no refund, no free extension and no credit if a package loses. The purchase steps are simple. Pay through PayPal, then call or contact Stu to receive the picks.",
-    "The only purchase terms we found are in the site footer, which says buyers agree not to pass the picks on to anyone and warns that sharing or reselling them will bring legal action. Note also how the tiers are built. The $99 \"all picks for the current day\" passes leave out the bigger best bets, while \"Daily Picks\" with every selection for the day costs $5,000. A buyer should know exactly which plays a package includes before paying."
+    "We found no guarantee on any stufeiner.com page we opened on 7 Nov or 20 Nov 2026: no refund, no free extension and no credit if a package loses. The purchase steps are simple. Pay through PayPal, then call or contact Stu to receive the picks.",
+    "The only purchase terms we found are in the site footer, which says \"WHEN YOU MAKE A PURCHASE FROM THIS WEBSITE, YOU AGREE TO NOT REDISTRIBUTE ANY INFORMATION IN ANY FASHION\" and warns that sharing or reselling the picks will bring legal action. Note also how the tiers are built. The $199 daily passes leave out the bigger best bets, which are sold one at a time for $1,000 to $5,000, while the $1,000 Daily Picks pass covers every selection for the day. A buyer should know exactly which plays a package includes before paying, and should know that a card or PayPal dispute is the only route back we could see."
   ],
   "claims": [
     {
-      "claim": "\"$100k Bet Record 146-126-2\", \"2x NET WORTH Record 57-39-1\", \"$50k Bet Record 300-234-9\", \"$25K Bet Record 282-263-8\"",
-      "where": "Homepage banner",
-      "status": "Seller claim, no dates, odds or log"
+      "claim": "\"$100k Bet Record 147-126-3\", \"2x NET WORTH Record 57-41-1\", \"$50k Bet Record 301-235-9\", \"$25K Bet Record 282-264-8\"",
+      "where": "Homepage banner, 20 Nov 2026",
+      "status": "Checked: 53.8%, 58.2%, 56.2% and 51.6% winners by our count. No dates, odds or log"
+    },
+    {
+      "claim": "The same four tier records on 7 Nov 2026: 146-126-2, 57-39-1, 300-234-9, 282-263-8",
+      "where": "Homepage banner, 7 Nov 2026",
+      "status": "Checked: between the two dates the tiers went 2-4 with 1 push combined"
+    },
+    {
+      "claim": "\"42-21-2 cfb run\" and \"DAILY COMBO 6-0 SWEEP\"; a homepage banner saying the $1,000 daily picks had \"7 winners with my goty\"",
+      "where": "Pick schedule and homepage, 20 Nov 2026",
+      "status": "Selected runs, no start date or log. 42-21 is 66.7% winners"
     },
     {
       "claim": "\"last two saturdays 19-3 overall and 6-0 best bets\"",
@@ -104,47 +123,44 @@
       "status": "Selected run, no log"
     },
     {
-      "claim": "\"Stu Feiner is the world`s premiere handicapper\" and \"no handicappers see the success rate or win percentages\" he does",
+      "claim": "\"Stu Feiner is the world's premiere handicapper\" and \"Will I win more than anyone on the internet? I have every year since the site has been live\"",
       "where": "About page",
-      "status": "Seller claim, not checkable"
+      "status": "Seller claim, not checkable; no stats shown"
     },
     {
-      "claim": "\"Will I win more than anyone on the internet? I have every year since the site has been live\"",
-      "where": "About page",
-      "status": "Seller claim, not checkable"
+      "claim": "\"Since 1982\", \"over 30 years\" and \"one of the the best seasons of my 37 year career\"; banner \"The Gambling God since 1989\"",
+      "where": "About page; site banner",
+      "status": "Seller claim; the dates do not agree with each other"
     },
     {
-      "claim": "\"Since 1982\" and \"one of the the best seasons of my 37 year career\"",
-      "where": "About page",
-      "status": "Seller claim"
-    },
-    {
-      "claim": "\"The Gambling God since 1989\"",
-      "where": "Site banner on every page",
-      "status": "Slogan"
+      "claim": "A 1991 brochure advertising a \"1991 documented record college and pro: 9-3\"",
+      "where": "Reported by Sports Illustrated, 18 Nov 1991",
+      "status": "Contradicted by SI's own 19-32 monitoring in the same period"
     }
   ],
   "claims_note": [
-    "Take the homepage tier records at face value and do the math. They work out to about 53.7% winners for the $100k tier, 59.4% for the double net worth tier, 56.2% for the $50k tier and 51.7% for the $25K tier. The site shows no odds, so none of these can be turned into profit, and the $25K tier sits below the roughly 52.4% needed to break even at -110. No dates are given, so a buyer cannot tell what period the totals cover or whether every play is counted.",
-    "The start date also moves around. The About page says \"Since 1982\" and \"over 30 years\", the same page mentions a \"37 year career\", and the site banner says \"since 1989\". Some pages look out of date: the NFL Season Pass page still describes \"the 2021-2022 season\"."
+    "Take the homepage tier records at face value and do the math. On 20 Nov 2026 they worked out to about 53.8% winners for the $100k tier, 58.2% for the double net worth tier, 56.2% for the $50k tier and 51.6% for the $25K tier. Added together, the four tiers are 787-666, or 54.2%. The site shows no odds, so none of these can be turned into profit, and the $25K tier sits below the roughly 52.4% needed to break even at -110. No dates are given, so a buyer cannot tell what period the totals cover or whether every play is counted.",
+    "We compared the banner on 7 Nov and 20 Nov 2026. In those 13 days the $100k tier moved from 146-126-2 to 147-126-3, the double net worth tier from 57-39-1 to 57-41-1, the $50k tier from 300-234-9 to 301-235-9 and the $25K tier from 282-263-8 to 282-264-8. That is 2 wins, 4 losses and 1 push on his biggest rated plays, during the same weeks the pick schedule advertised a 42-21-2 college football run and a 6-0 daily combo sweep. Short samples prove nothing either way, but the banner and the runs describe very different two weeks.",
+    "The start date also moves around. The About page says \"Since 1982\" and \"over 30 years\", the same page mentions a \"37 year career\", the banner says \"since 1989\", and Wikipedia says he has handicapped since 1981. The About page's copyright line reads 2022, and the NFL Season Pass page still described \"the 2021-2022 season\" on 7 Nov 2026."
   ],
   "record": [
     "What a buyer can verify independently: very little, and none of it is recent. The only outside test of his picks we could open is from Sports Illustrated's 18 Nov 1991 issue. SI wrote that Feiner agreed to be monitored for four weeks that September, that he \"unfailingly\" gave SI his picks, and that he went 19-32, a 37% win rate, for an imaginary loss of $6,210 at $100 a unit. That is a short sample from 35 years ago and says nothing certain about his picks today.",
-    "Regulatory history, as reported by a major outlet: the same SI article said Feiner was fined $13,000 in February 1990 by the New York City Department of Consumer Affairs for false and misleading advertising. SI also reported that a later brochure advertised a \"1991 documented record college and pro: 9-3\" while he was 19-32 in SI's test, and quoted Feiner saying that was his record before SI started documenting him. We did not find the department's own record of the fine, and we found no court or regulator action involving him in our searches today.",
-    "What Feiner himself publishes: tier totals on the homepage and short runs on the daily pick schedule. We found no full, time stamped log of every paid pick with the line, the odds and the release time on any page we could open without paying. His free picks on Barstool Sports Advisors are public, but we did not find a complete graded record of them either."
+    "Regulatory history, as reported by a major outlet: the same SI article said Feiner was fined $13,000 in February 1990 by the New York City Department of Consumer Affairs for false and misleading advertising. SI also reported that a later brochure advertised a \"1991 documented record college and pro: 9-3\" while he was 19-32 in SI's test, and quoted Feiner saying that was his record before SI started documenting him. We did not find the department's own record of the fine, and we found no court or regulator action involving him in our searches on 20 Nov 2026. Deadspin's 2016 history of the tout business named him among the loud television pick sellers of the 1980s and 1990s, without new findings about his record.",
+    "What Feiner himself publishes: tier totals on the homepage and short runs on the daily pick schedule. We found no full, time stamped log of every paid pick with the line, the odds and the release time on any page we could open without paying. His free picks on Barstool Sports Advisors are public, but we did not find a complete graded record of them either.",
+    "What buyers post: the only buyer tallies we found are tiny. A CapperTek reviewer in 2020 said one paid weekend went 1-9, and a TheRX member in 2023 said his Barstool picks had gone 10-1 over two weeks. Neither posted a log."
   ],
   "our_data": {
     "matched": false,
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Stu Feiner pick account is matched to a Watchdog graded record, so we make no claim about how his picks perform.",
-    "context": "For scale: Stu's own homepage tier records range from about 52% to 59% winners, with no odds shown. On the Watchdog board on 7 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "context": "For scale: Stu's own homepage tier records range from about 52% to 58% winners, 54.2% combined, with no odds shown. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "Independent customer evidence on Stu Feiner's paid picks is thin. He is far better known as a media personality than as a reviewed service, and most of what we found is opinion, not buyer experience. A few people say they bought his picks; their reports are below, along with forum opinion and how much weight each can carry.",
+  "customers_intro": "Independent customer evidence on Stu Feiner's paid picks is thin and mostly old. He is far better known as a media personality than as a reviewed service, and most of what we found is opinion rather than buyer experience. A few people say they bought his picks; their reports are below, along with forum opinion and how much weight each can carry.",
   "customers": [
     {
       "type": "Our summary",
       "tone": "Negative",
-      "date": "Read 13 Nov 2026",
-      "text": "Forum talk about Feiner is old, hostile and short on buyer detail. In a 2011 Sportsbook Review thread, one member called him a salesman who created demand for picks out of thin air, and one recalled a sales call from his staff as the worst call of his life. We found no buyer posting a tracked record of his picks.",
+      "date": "Read 20 Nov 2026",
+      "text": "We found about twenty independent posts about Stu Feiner on TheRX (2004 to 2023), Sportsbook Review (2011 and 2025), CapperTek (2020 to 2023) and Reddit (2016), plus a 1991 Sports Illustrated test. The pattern is mostly negative and consistent across decades. Buyers and former callers describe high pressure phone sales, from his 900 line era in the 1990s to calls pushing a $5,000 package in 2010 and a $1,500 package offered for $299 in 2016, and several say the picks lost: one CapperTek buyer reported a 1-9 weekend in 2020, another said years of following him matched a coin flip, and a 2025 Sportsbook Review member said he wished he had bet against the picks. Of 13 CapperTek entries, 10 were negative, one positive and one mixed. The positives are real but thin: a 2016 TheRX buyer said the discounted package was winning, a 2022 CapperTek reviewer who knows him from Barstool said he follows every pick, and a 2023 TheRX member noted a 10-1 two week run on the show. Many posts call him names without evidence, and we do not repeat those as fact. No buyer posted a tracked record.",
       "source": null
     },
     {
@@ -176,10 +192,31 @@
       "source": 21
     },
     {
+      "type": "Customer report",
+      "tone": "Positive",
+      "date": "24 Sep 2022",
+      "text": "A CapperTek reviewer called Feiner a favorite Barstool personality and said he had never missed his picks. He gave no record, and it is not clear whether he paid for picks or followed the free ones on the show.",
+      "source": 21
+    },
+    {
+      "type": "Customer report",
+      "tone": "Mixed",
+      "date": "29 Mar 2022",
+      "text": "A CapperTek reviewer asked why Feiner gets so much criticism, called him entertaining, and said people who pay for picks are responsible for their own bets. It is a defence of his right to sell, not a report of results.",
+      "source": 21
+    },
+    {
+      "type": "Forum allegation",
+      "tone": "Negative",
+      "date": "2021 to 2023",
+      "text": "Most of the other CapperTek entries are short attacks with no buyer detail. One from March 2021 repeats the 1990 New York City fine and the 1991 SI test reported above; others from 2021 to 2023 call him a con man or compare him to famous fraudsters without evidence. We count them only as a sign of how he is seen, not as proof of anything.",
+      "source": 21
+    },
+    {
       "type": "Forum post",
       "tone": "Positive",
       "date": "26 Mar 2016",
-      "text": "On TheRX, a member said calling the free pick line got him an offer of a $1,500 package for $299, that he bought it, and that Feiner had been \"killing it\". He posted no record, and the thread starter replied that the free line pushed him to a sales office instead of giving a free pick.",
+      "text": "On TheRX, a member said calling the free pick line got him an offer of a $1,500 package for $299, that he bought it, and that Feiner had been winning. He posted no record, and the thread starter replied that the free line pushed him to a sales office instead of giving a free pick.",
       "source": 18
     },
     {
@@ -193,14 +230,28 @@
       "type": "Forum post",
       "tone": "Negative",
       "date": "30 Apr 2025",
-      "text": "On the Sportsbook Review forum, a member said he bought Feiner's service in his early betting days, received a multi team round robin, and had to mail back a signed credit card slip to the Farmingdale office. He said he wished he had bet against the picks. Other members in the thread called Feiner a scammer without giving evidence.",
+      "text": "On the Sportsbook Review forum, a member said he bought Feiner's service in his early betting days, received a multi team round robin, and had to mail back a signed credit card slip to the Farmingdale office. He said he wished he had bet against the picks. Other members in the thread used harsher labels without giving evidence.",
       "source": 17
+    },
+    {
+      "type": "Forum post",
+      "tone": "Negative",
+      "date": "7 Aug 2006",
+      "text": "In a TheRX thread about another tout, a member said several 1990s pick sellers, Feiner among them, took his friends for large sums in the mid 1990s, and that he lost money himself calling their 900 lines for a long time, though far less than his friends. He gave no figures.",
+      "source": 25
+    },
+    {
+      "type": "Forum allegation",
+      "tone": "Negative",
+      "date": "19 Sep 2016",
+      "text": "A post in r/sportsbook copied a story from another site about the tout Brandon Lang, claiming the New York company Lang once worked for was a phone sales operation run by Feiner. The text was pasted from elsewhere with no source, and we did not verify it. Several other r/sportsbook threads from 2017 to 2022 with his name in the title, including one asking whether he is legit, were removed by moderators and could not be read.",
+      "source": 26
     },
     {
       "type": "Forum allegation",
       "tone": "Negative",
       "date": "7 Dec 2004",
-      "text": "In a TheRX thread, members called Feiner and another tout scam artists and said their offices kept calling people who had given a phone number. None of this came with records, and we did not verify it.",
+      "text": "In a TheRX thread, members described Feiner and another tout as dishonest and said their offices kept calling people who had given a phone number. None of this came with records, and we did not verify it.",
       "source": 20
     },
     {
@@ -209,6 +260,13 @@
       "date": "3 Jan 2010",
       "text": "In another TheRX thread, members said his records were not true and claimed that pricey private plays went bad once they were released. No one posted a log, and we did not verify it.",
       "source": 19
+    },
+    {
+      "type": "Forum post",
+      "tone": "Negative",
+      "date": "2011",
+      "text": "In a Sportsbook Review thread, one member called him a salesman who created demand for picks out of thin air, and one recalled a sales call from his staff as the worst call of his life. No records were posted.",
+      "source": 22
     },
     {
       "type": "Not found",
@@ -227,32 +285,37 @@
     {
       "type": "Not found",
       "tone": "Neutral",
-      "date": "Checked 7 Nov 2026",
-      "text": "The betting subreddit posts we read since 2024 never mention him. We found no testimonials on stufeiner.com and no app store listing for his picks.",
+      "date": "Checked 20 Nov 2026",
+      "text": "We found no Covers forum thread about his paid picks, no testimonials on stufeiner.com and no app store listing for his picks. Web searches turned up no lawsuit, regulator action or news complaint about him after the 1990 fine reported by SI.",
       "source": null
     }
   ],
   "conflicts": [
     "We saw no sportsbook affiliate links, promo codes or revenue share offers on the stufeiner.com pages we opened. The site sells picks, Cameo and custom shoutout videos, and merchandise through a separate store.",
-    "His site promotes Barstool Sports Advisors and sells a package named after the show. A buyer should know that his public picks are part of an entertainment show as well as a sales funnel for his paid packages."
+    "His site promotes Barstool Sports Advisors and sells a package named after the show. A buyer should know that his public picks are part of an entertainment show as well as a sales funnel for his paid packages. Wikipedia quotes him describing himself as critical of gambling, saying \"Gambling is for the rich to lose money\", and says he claimed a $16 million handicapping business in 1997."
   ],
   "strengths": [
-    "A real, public person with a long on camera history, a working phone line on the contact page and a published price list.",
+    "A real, public person with a long on camera history, a working phone line on the site and a published price list.",
     "His free picks on Barstool Sports Advisors let a bettor watch his style before paying, and the cheapest packages cost $55 to $99.",
-    "In the one outside test we found, SI credited him for giving them every pick during monitoring."
+    "In the one outside test we found, SI credited him for giving them every pick during monitoring.",
+    "The homepage tier records include losses and a tier below break even, rather than only winning runs.",
+    "Products are sold one at a time through PayPal, so a buyer can try a single $55 to $199 product without any recurring charge."
   ],
   "concerns": [
-    "No full public record. The homepage tier totals have no dates or odds, and by his own numbers the $25K tier wins about 51.7%, below break even at -110.",
+    "No full public record. The homepage tier totals have no dates or odds, and by his own numbers the $25K tier wins about 51.6%, below break even at -110.",
     "No guarantee or refund terms found, on packages that run up to $50,000.",
-    "The cheap daily passes leave out the bigger best bets, which are sold separately for $1,000 to $5,000 each.",
+    "The $199 daily passes leave out the bigger best bets, which are sold separately for $1,000 to $5,000 each, and prices on the same products changed sharply between 7 Nov and 20 Nov 2026.",
     "Sports Illustrated reported a 1990 New York City fine for false and misleading advertising and a 19-32 result in its 1991 test. Both are old, but they are the only outside evidence we found.",
+    "Buyer posts over two decades repeatedly describe high pressure phone sales and losing picks, and almost none are positive.",
     "Career start dates differ from page to page, and some product pages are out of date."
   ],
   "checklist": [
     "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
-    "Count units, not wins. A 60% record at heavy favorites can still lose money.",
-    "Read the guarantee for the words refund, credit and extension. Most \"guarantees\" in this business are credits.",
+    "Ask what period the homepage tier records cover and at what odds, and whether every best bet sold is counted.",
+    "Before paying, confirm in writing which plays a package includes. The daily passes exclude the bigger best bets.",
+    "Decide your limit before you call. Several buyers describe being pushed toward bigger packages on the phone.",
     "Write down each pick yourself the moment you receive it, with the line you can actually get.",
+    "Count units, not wins. A 54% record at heavy favorites can still lose money.",
     "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
   ],
   "faq": [
@@ -262,15 +325,23 @@
     ],
     [
       "How much does Stu Feiner cost?",
-      "On 7 Nov 2026 his packages ran from $55 (five picks) and $99 daily passes up to $1,000 to $5,000 for single best bets, $15,000 for a week, and $50,000 for the November package or a season pass. We found no guarantee or refund terms."
+      "On 20 Nov 2026 his packages ran from $55 (five picks), $69 and $99 specials and $199 daily passes up to $1,000 for every pick of the day, $1,000 to $5,000 for single best bets, $15,000 for a week, and $50,000 for the November package or a season pass. We found no guarantee or refund terms."
     ],
     [
       "Does Stu Feiner have a verified record?",
-      "No current one that we could find. His homepage shows win and loss totals by bet tier with no dates, odds or log, and the only outside test we opened is a four week Sports Illustrated check in 1991, where he went 19-32."
+      "No current one that we could find. His homepage shows win and loss totals by bet tier with no dates, odds or log, about 54% combined, and the only outside test we opened is a four week Sports Illustrated check in 1991, where he went 19-32."
+    ],
+    [
+      "What do the $25k, $50k and $100k labels mean?",
+      "They are product names for his higher rated best bets, sold for $1,000 to $5,000 each. The pages we read do not say what the dollar figure means, and it is not the price."
+    ],
+    [
+      "What do buyers say about Stu Feiner?",
+      "Mostly negative. Posts from 2004 to 2025 on TheRX, Sportsbook Review, CapperTek and Reddit describe pushy phone sales and losing picks, with a few satisfied buyers and Barstool fans. Nobody posted a tracked record."
     ],
     [
       "Is Stu Feiner worth it?",
-      "For the money you get his picks and his best bet ratings from a famous name, with a cheap $55 to $99 entry point. What is unproven is whether those picks beat the roughly 52.4% needed at -110 over hundreds of plays, and nothing protects you if a package loses."
+      "For the money you get his picks and his best bet ratings from a famous name, with a $55 to $199 entry point. What is unproven is whether those picks beat the roughly 52.4% needed at -110 over hundreds of plays, and nothing protects you if a package loses."
     ]
   ],
   "related": [
@@ -284,22 +355,22 @@
     {
       "title": "Stu Feiner homepage (bet tier records, featured packages, PayPal checkout)",
       "url": "https://www.stufeiner.com/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Stu Feiner Buy My Picks catalog (all packages and prices)",
       "url": "https://www.stufeiner.com/picks",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "Stu Feiner pick schedule for Saturday 7 Nov 2026",
+      "title": "Stu Feiner pick schedule for Friday 20 Nov 2026",
       "url": "https://www.stufeiner.com/pick-schedule",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Stu Feiner About page (career claims)",
       "url": "https://www.stufeiner.com/about",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Stu Feiner Contact page",
@@ -387,14 +458,34 @@
       "accessed": "7 Nov 2026"
     },
     {
-      "title": "CapperTek: StuFeiner.com customer reviews page",
+      "title": "CapperTek: StuFeiner.com customer reviews page (13 entries, 2020 to 2023)",
       "url": "https://www.cappertek.com/reviews.asp?shs=StuFeiner.com",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Sportsbook Review forum: Stu Feiner's House",
       "url": "https://www.sportsbookreview.com/forum/players-talk/722797-stu-feiner-s-house",
       "accessed": "13 Nov 2026"
+    },
+    {
+      "title": "Wikipedia: Stu Feiner (biography, career, Barstool role)",
+      "url": "https://en.wikipedia.org/wiki/Stu_Feiner",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Deadspin: How America's Favorite Sports Betting Expert Turned A Sucker's Game Into An Industry (23 Jun 2016)",
+      "url": "https://deadspin.com/how-america-s-favorite-sports-betting-expert-turned-a-s-1782438574/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "TheRX forum: The truth about Brandon Lang (Aug 2006)",
+      "url": "https://www.therx.com/threads/the-truth-about-brandon-lang.394933/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbook: The true Story of Brandon Lang, for those of you who buy picks (Sep 2016, read via the Arctic Shift archive)",
+      "url": "https://www.reddit.com/r/sportsbook/comments/53k7er/",
+      "accessed": "20 Nov 2026"
     }
   ],
   "pricing_source": 1
