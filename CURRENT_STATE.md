@@ -45,6 +45,12 @@ Work from worktree `~/hwd-names-1114` (branch names-1114, push `HEAD:main`; main
    rechecked 20 Nov). Re-audit: 0 pages below standard (payne-insider has 1 price = only one product). Commits da5a734 .. c959ba4 on main.
    Drafts archived ~/hwd_testimonials/deepen_1120/_published; brief DEEPEN_BRIEF.md; helper pub.sh. IndexNow 9:57 AM 139 ok.
    Open: none of the deepened pages has had a GSC Request indexing; Reddit was partial on most (Arctic Shift rate limited all day).
+   SITEWIDE UNIQUENESS 20 Nov (owner: no thin/templated pages Google could penalize): audit tool ~/hwd_testimonials/dupaudit_1120 (fetch.py +
+   audit.py on live pages). Profiles were the risk (929 indexable, 35% shared text, 21 GSC impressions/90 d): PROFILE_INDEX_MIN 20->100
+   (now ~232 indexable; DIRECTORY_MIN 20 keeps the directory), data written per account analysis (rank, units curve peak/slide, sport
+   split, last 30 d vs career). Reviews: method boilerplate cut to one page specific line. Sports: per sport analysis of listed records
+   (bs breakdown is PARTIAL, never claim board wide). picks.html noindex. Learn: 9 guides rewritten ~2,500 words each from site data.
+   Live verified 10:4x AM PST; IndexNow 138 ok. Commits f09556d ab594ba 05003d4 78f534e.
    HARVESTER: market stage CONFIRMED fixed (mkt_ok every cycle since 19 Nov 2:11 PM PST; first COMPLETE cycle 20 Nov 2:59 AM PST);
    only reconcile_parse.py still times out (parser backlog ~118k, box CPU). Picks 197339/192518 still await owner 'hold both'.
    Master list ~/hwd_testimonials/candidates_1119.json (134 sellers; 108 have no buyer buzz, most rosters now checked and rejected as thin).
