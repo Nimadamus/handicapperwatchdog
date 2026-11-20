@@ -13,6 +13,7 @@ The raw research is cached in .cache/ (Actions cache, never published) and a pro
 the capper has posted since and the cached copy is older than PROFILE_TTL, so TMR serves each profile a few times
 a day at most, gzipped.
 """
+import collections
 from html import unescape
 import base64
 import gzip
@@ -1221,16 +1222,16 @@ def _write_guides(site, meta, cappers):
 </div>
 <section class="panel" style="margin-bottom:18px"><div class="pb">
 <p>Established means 100 or more graded picks. The median ROI on those records is %s. A record with 20 picks can still be a hot streak, which is why the free rankings open on the established list.</p>
-<p>%s</p>
 <p>These are past results, not predictions. Every record shows the account name. <a href="how-we-grade.html">How a record is graded</a>. Named services are reviewed apart from this board: <a href="reviews/index.html">handicapper reviews</a>.</p>
 <p><a class="btn" href="cappers.html">See the established rankings</a></p>
 </div></section>
+%s
 <section class="proband"><div><span class="lock">Watchdog Pro</span><h2>Act on the records that are up</h2>
 <p class="muted" style="margin:0">$49.99 a month, or $499 a year. Cancel any time. <a href="pricing.html">See Watchdog Pro</a></p></div>
 <div class="feats"><div class="feat"><b>Complete pick logs</b><span>Every graded pick behind every record: game, pick, odds, result, units and post time.</span></div>
 <div class="feat"><b>Names you can check</b><span>Every record shows the account name and links to the public account, so you can read the posts yourself.</span></div></div>
 </section>''' % (pending, f'{tracked:,}', f'{graded:,}', est_pct, f'{up:,}', f'{est:,}',
-                 qual_pct, f'{prof:,}', f'{qual:,}', med_txt, pending))
+                 qual_pct, f'{prof:,}', f'{qual:,}', med_txt, _board_analysis(cappers)))
     price = _document(0, 'pricing.html',
                       'Watchdog Pro Pricing | Handicapper Watchdog',
                       'Watchdog Pro is $49.99 a month or $499 a year: full graded pick logs, profile breakdowns and research tools.',
@@ -1368,6 +1369,35 @@ def _write_sport_pages(site, cappers):
         if name.endswith('.html') and name not in keep:
             os.remove(os.path.join(dest, name))
 
+
+
+def _board_analysis(cappers):
+    """The board in numbers: how results spread by sample size and sport, from the published rows only (20 Nov 2026)."""
+    try:
+        rs = _research_stats(cappers)
+    except Exception:
+        return ''
+    rows = ''.join('<tr><td class="l">%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s to %s</td></tr>' % (
+        b['label'], f"{b['n']:,}", '%d%%' % round(100 * b['up']) if b['up'] is not None else 'n/a',
+        '%+.1f%%' % b['med'] if b['med'] is not None else 'n/a',
+        '%+.1f%%' % b['p10'] if b['p10'] is not None else 'n/a', '%+.1f%%' % b['p90'] if b['p90'] is not None else 'n/a')
+        for b in rs['bands'] if b['n'])
+    small = next((b for b in rs['bands'] if b['n'] and b['label'].startswith('20')), None)
+    large = next((b for b in rs['bands'] if b['n'] and b['label'].startswith('250')), None)
+    notes = []
+    if small and large and small['p10'] is not None and large['p10'] is not None:
+        notes.append('Look at how the range narrows. The middle 80%% of records with 20 to 49 picks runs from %+.1f%% to %+.1f%% ROI; '
+                     'with 250 or more picks it shrinks to %+.1f%% to %+.1f%%. Small samples are wide mostly because luck has not '
+                     'evened out yet.' % (small['p10'], small['p90'], large['p10'], large['p90']))
+    if rs.get('est'):
+        notes.append('Among the %s established records, %d win at least 52.4%% of the time and are still down money, and %d win less than half '
+                     'and are up. Price, not win rate, decides most of the difference.' % (f"{rs['est']:,}", rs['win_down'], rs['lose_up']))
+    return ('<section class="panel" style="margin-bottom:18px"><div class="pb"><h2>How results spread by sample size</h2>'
+            '<div class="tw"><table class="mini"><thead><tr><th class="l">Graded picks</th><th>Records</th><th>Up money</th><th>Median ROI</th><th>Middle 80%%</th></tr></thead>'
+            '<tbody>%s</tbody></table></div>%s'
+            '<p class="muted small">More detail: <a href="research/roi-and-sample-size.html">ROI and sample size</a> and <a href="research/odds-and-profit.html">odds and profit</a>.</p>'
+            '</div></section>') % (
+        rows, ''.join('<p>%s</p>' % t for t in notes))
 
 
 def _research_stats(cappers):
@@ -2839,7 +2869,7 @@ def _write_legal(site, meta=None):
     pages = (
         ('about.html',
          'About Handicapper Watchdog: Neutral Records and Sourced Reviews',
-         'Handicapper Watchdog is a neutral site. We grade picks posted in public and collect what bettors post online about pick sellers, with every source linked. You decide.',
+         'A neutral site: we grade picks posted in public and collect what bettors say about pick sellers, with every source linked. You decide.',
          '''<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><span aria-current="page">About</span></nav>
 <div class="pagehead"><div><div class="eyebrow">About Handicapper Watchdog</div><h1>We collect what is posted. You decide.</h1>
 <p class="muted">Handicapper Watchdog is a neutral site. We do not sell picks, we do not work for any handicapper, and we have no stake in whether anyone wins or loses. We gather what is public, show you where we found it, and leave the verdict to you.</p></div></div>
@@ -3269,9 +3299,12 @@ def _write_profile_pages(site, index):
     def roi(r):
         return 'n/a' if r.get('roi') is None else '%+.1f%%' % r['roi']
 
+    names = collections.Counter(_who_long(r) for r in index if r['picks'] >= PROFILE_INDEX_MIN)
     for n, r in enumerate(index):
         cid, c = r['id'], code(r)
         w, wl = _who(r), _who_long(r)  # public name, or the Watchdog ID while the name is not on file
+        if names.get(wl, 0) > 1 and r.get('src'):
+            wl = '%s on %s' % (wl, r['src'])  # two established accounts share a name: keep titles and h1 unique
         graded = r['picks'] > 0
         url = root + 'handicappers/%s.html' % cid
         sports = ', '.join((r.get('sports') or [])[:4])
