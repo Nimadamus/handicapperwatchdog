@@ -46,6 +46,10 @@ Work from worktree `~/hwd-names-1114` (branch names-1114, push `HEAD:main`; main
    ben-burns kevin-thomas kyle-hunter action-network-pro bryan-leonard andy-iskoe tony-george oskeim-sports indian-cowboy juice-reel
    bettingpros teddy-covers matt-fargo nobrainerwagers. Then: check (validate.py + manual), copy to reviews_v2, push main, verify_reviews_live,
    IndexNow; next waves = the remaining 66 thin slugs (ordered by source count).
+   WAVE 1 DONE 7:53 AM PST: all 18 pushed (da5a734 90f9887 a0f7904 c6e51df 4122f89 6c134c9), drafts in deepen_1120/_published.
+   WAVE 2 running 7:55 AM: nick-parsons scott-spreitzer sportsline betql gianni-the-greek ralph-michaels payne-insider pickdawgz
+   steve-merril sportsmemo marco-dangelo zack-cimini jesse-schule sean-higgs the-prez-wagertalk the-machines-picks dave-essler kelso-sturgeon.
+   Remaining 48 after wave 2: rerun the depth audit on reviews_v2 to list them. IndexNow for deepened URLs still to run.
    HARVESTER: market stage CONFIRMED fixed (mkt_ok every cycle since 19 Nov 2:11 PM PST; first COMPLETE cycle 20 Nov 2:59 AM PST);
    only reconcile_parse.py still times out (parser backlog ~118k, box CPU). Picks 197339/192518 still await owner 'hold both'.
    Master list ~/hwd_testimonials/candidates_1119.json (134 sellers; 108 have no buyer buzz, most rosters now checked and rejected as thin).
