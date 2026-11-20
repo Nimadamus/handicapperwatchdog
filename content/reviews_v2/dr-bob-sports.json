@@ -3,13 +3,13 @@
   "name": "Dr. Bob Sports",
   "legal_name": "Dr. Bob Sports, a limited liability company",
   "kind": "Single analyst pick service (Bob Stoll), NFL only this season",
-  "checked": "7 Nov 2026",
-  "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-13",
+  "checked": "20 Nov 2026",
+  "checked_iso": "2026-11-20",
+  "updated_iso": "2026-11-20",
   "title": "Dr. Bob Sports Review 2026: Pricing, Record, Is It Worth It?",
-  "description": "Dr. Bob Sports review, checked 7 Nov 2026: NFL only pricing, no refunds for losing picks, the long record he publishes himself, and what bettors say.",
+  "description": "Dr. Bob Sports review, checked 20 Nov 2026: NFL only prices, no refunds, his own records recomputed by us, and what bettors have said since 2006.",
   "h1": "Dr. Bob Sports review",
-  "dek": "Bob Stoll has sold model based picks as Dr. Bob since 1987. This season he sells only NFL plays, at $895 for the rest of the season or $375 for four weeks, with no refund if they lose. He publishes long season by season records, but he keeps them himself and the totals do not match from page to page.",
+  "dek": "Bob Stoll has sold model based picks as Dr. Bob since 1987. This season he sells only NFL plays, at $825 for the rest of the season or $375 for four weeks, with no refund if they lose. He publishes far more record detail than most sellers, and most of it adds up when we recompute it, but he keeps the books himself and a few totals are one game off.",
   "status": {
     "label": "Not verified",
     "note": "Watchdog has not graded a full, time stamped record of Dr. Bob's plays. The records on this page are the ones his own site publishes. This page reports what we could check and labels everything else."
@@ -20,20 +20,28 @@
       "Dr. Bob Sports, an LLC (terms); mail to Lone Tree, CO (contact page)"
     ],
     [
+      "Analyst",
+      "Bob Stoll, statistics student at UC Berkeley when he started (about page; MIT Sloan Sports Analytics Conference speaker bio)"
+    ],
+    [
       "Claims to operate since",
       "1987 (homepage and about page)"
     ],
     [
       "Price range seen",
-      "$375 for 4 NFL weeks to $895 for the rest of the NFL season"
+      "$375 for 4 NFL weeks to $825 for the rest of the NFL season (20 Nov 2026)"
     ],
     [
       "Guarantee",
       "None. Refund policy says no refunds based on performance"
     ],
     [
+      "Posted 2026 NFL record",
+      "31 and 21 and 2, plus 3.77 units (his NFL page)"
+    ],
+    [
       "Full public record",
-      "Season totals and the current week's plays. No full public log of every play found"
+      "Season tables and weekly recaps. No full public log of every play with release times"
     ],
     [
       "Watchdog graded record",
@@ -41,19 +49,19 @@
     ]
   ],
   "short_answer": [
-    "Dr. Bob Sports is a real, long running business run by one named analyst, Bob Stoll. It lists a mailing address and phone number, publishes its prices and terms, and writes long free analysis of games. In that sense it is legitimate.",
-    "Whether a buyer makes money is a separate question. Dr. Bob publishes more than most sellers: season by season win, loss and push counts going back decades, profit in stars or units, losing seasons, and a recap of each week's paid plays with the line. But that record is kept by the seller, the totals differ slightly between his own pages, and we found no public log of every play with its release time that an outsider can audit.",
-    "Treat the record as the seller's own bookkeeping, more detailed than most, not as proof. If you buy, log each play with the line and time you received it, and compare it with his weekly recap."
+    "Dr. Bob Sports is a real, long running business run by one named analyst, Bob Stoll. It lists a mailing address and phone number, publishes its prices and terms, and posts long free analysis of games. Outside coverage backs up the basic story: the Wall Street Journal profiled him in January 2007 and the Daily Racing Form reported in October 2006 that betting lines moved within minutes of his releases. In that sense it is legitimate.",
+    "Whether a buyer makes money is a separate question. Dr. Bob publishes more than most sellers: season by season win, loss and push counts going back decades, profit in stars or units, his losing seasons, and a recap of each week's paid plays with the line. We recomputed several of his headline numbers from his own tables on 20 Nov 2026. The college basketball six season total matches exactly, the 2026 NFL split adds up, and the week 10 recap units work out. Two NFL headline totals are each one game off the sum of his own season tables.",
+    "So treat the record as careful bookkeeping by the seller, more detailed than most, but not as an audit. No third party holds a time stamped log of every paid play. His 2026 NFL Best Bets stood at 11 and 10 and 1 on 20 Nov 2026, close to break even, while his Strong Opinions carried the season. If you buy, log each play with the line and the time you received it, and compare it with his weekly recap."
   ],
-  "pricing_intro": "Prices below were shown on Dr. Bob Sports product pages on 7 Nov 2026. This season Stoll says he is handicapping only the NFL. The season packages page says the season price is lowered each week to reflect how much of the season is left, so the $895 figure will keep falling (on 27 Oct 2026 the same product page showed $995).",
+  "pricing_intro": "Prices below were shown on Dr. Bob Sports product pages on 20 Nov 2026. This season Stoll says he is handicapping only the NFL. The season packages page says the season price is lowered each week to reflect how much of the season is left, and we watched it happen: the NFL Season product showed $995 on 27 Oct 2026, $895 on 7 Nov 2026 and $825 on 20 Nov 2026.",
   "pricing": [
     [
-      "NFL Season (Best Bets and Strong Opinions through the Super Bowl)",
-      "$895 on 7 Nov 2026, lowered each week",
+      "NFL Season (all NFL Best Bets and Strong Opinions through the Super Bowl)",
+      "$825 on 20 Nov 2026, lowered each week",
       "No refund for losses"
     ],
     [
-      "NFL 4 Weeks (Best Bets and Strong Opinions with analysis)",
+      "NFL 4 Weeks (Best Bets and Strong Opinions with analysis; lists Dr. Bob and EVBettor as analysts)",
       "$375",
       "No refund for losses"
     ],
@@ -66,67 +74,110 @@
       "College basketball and NBA",
       "An older packages page still lists $695 for Dr. Bob basketball, $595 for NBA Guru and $1095 for both, but the college basketball page says he will not handicap it this year and the NBA page says there is no NBA product",
       "Old listing, not a verified current offer"
+    ],
+    [
+      "Free content",
+      "Free game analysis on the site, and a weekly NFL bet given as a guest on the VSiN show A Numbers Game",
+      "Free"
     ]
   ],
   "guarantee": [
-    "There is no guarantee. The refund policy says: \"Refunds will not be issued based on performance but in some cases refunds are issued based on other circumstances,\" and points to the terms. The terms say a subscriber may cancel at any time \"without refund for any prepaid fees,\" and that a recurring subscription stays active to the end of the paid period. We did not see the NFL product pages say whether those packages renew automatically.",
-    "In plain terms: if the picks lose, you keep the losses and the fee. That is at least clearer than a \"guarantee\" that only pays in more picks."
+    "There is no guarantee. The refund policy says: \"Refunds will not be issued based on performance but in some cases refunds are issued based on other circumstances,\" and points to the terms without saying what those other circumstances are. The terms say a subscriber may cancel at any time \"without refund for any prepaid fees,\" and that a recurring subscription stays active \"until the conclusion of the subscription period for which you already have paid.\"",
+    "The terms also say the service is produced \"for entertainment purposes only,\" that \"Dr. Bob Sports provides no assurances whatsoever regarding the accuracy of the Service,\" and that it is provided as is. Neither NFL product page we opened on 20 Nov 2026 says whether the package renews automatically; both are priced as fixed packages.",
+    "In plain terms: if the picks lose, you keep the losses and the fee. That is at least clearer than a \"guarantee\" that only pays in more picks, and the falling season price means a late buyer pays less, but also gets fewer games."
   ],
   "claims": [
     {
-      "claim": "NFL Best Bets \"522-386-13 (57.5%)\" and Strong Opinions \"411-335-16 (55.1%)\" since 2016",
-      "where": "NFL page headline",
-      "status": "Seller kept record, no full public log"
+      "claim": "NFL Best Bets \"526-389-13 (57.5%)\" from 2016 to 2026",
+      "where": "NFL page and NFL Season product page, 20 Nov 2026",
+      "status": "Checked by us: one win more than his own tables. His 2016 to 2025 total (514-379-12) plus his posted 2026 Best Bets (11-10-1) gives 525-389-13, which is 57.4%"
     },
     {
-      "claim": "NFL Best Bets \"514-379-12 (57.6%)\" in 10 seasons",
+      "claim": "NFL Strong Opinions \"415-336-16 (55.3%)\" from 2016 to 2026",
+      "where": "NFL page headline (the recap lower on the same page says 415-336-15)",
+      "status": "Checked by us: one win fewer than his own tables. 396-325-15 plus this season's 20-11-1 gives 416-336-16"
+    },
+    {
+      "claim": "\"2026 NFL Plays: 31-21-2\" for \"+3.77 Units\"",
+      "where": "NFL page and product page",
+      "status": "Confirmed by us as arithmetic: 11-10-1 Best Bets plus 20-11-1 Strong Opinions is 31-21-2. Units not recomputed"
+    },
+    {
+      "claim": "Week 10 plays \"4-1 for +1.85 Units\"",
+      "where": "NFL page weekly recap",
+      "status": "Confirmed by us: it works out exactly if each play is sized to win its stated units (wins of 0.5, 1, 1 and 0.5) and the one loss, at -115, cost 1.15 units"
+    },
+    {
+      "claim": "\"College Basketball: Current matchup model plays are 3769-3173-95 (54.3%) in 6 Seasons\"",
       "where": "Homepage",
-      "status": "Seller kept record, older total"
+      "status": "Confirmed by us: Best Bets plus Opinions for 2020 to 2021 through 2025 to 2026 in his past performance table add to exactly 3769-3173-95, and 3769 of 6942 decided plays is 54.3%"
     },
     {
-      "claim": "College Football Best Bets \"2535-2077-96 (55.0%) on a Star Basis\" since 1999; \"55.1% over 38 Years\"",
-      "where": "Past performance and college football pages",
-      "status": "Seller kept record, no full public log"
+      "claim": "NFL Best Bets \"514-379-12 (57.6%) in 10 seasons\"",
+      "where": "Homepage and past performance page",
+      "status": "Confirmed by us as arithmetic (514 of 893 decided is 57.6%). The game by game log behind it is not public"
+    },
+    {
+      "claim": "\"Dr. Bob's Free Analysis Leans have gone 1101-913-38 ATS (55%) over 13 years in College Football\"",
+      "where": "Homepage",
+      "status": "Arithmetic is 54.7%, rounded up to 55%. No game log shown"
+    },
+    {
+      "claim": "\"Best Bets 326-261-19 (55.5%) & Strong Opinions/0.5 Star Plays 184-152-3 (54.8%) since 2018\"",
+      "where": "Homepage, college football section",
+      "status": "Could not reconcile. The sides tables for 2018 to 2025 give 230 and 187 on Best Bets, and the totals table shown covers only 2023 onward"
     },
     {
       "claim": "\"The average closing line value on the NFL Best Bets the last 5 seasons is +2.8%\"",
       "where": "Past performance page",
-      "status": "Seller claim, not checkable without release times"
+      "status": "Seller claim, not checkable without release times and closing lines"
     },
     {
       "claim": "\"one of the most profitable and respected handicappers in the nation\" whose \"picks have an influence on the betting markets\"",
       "where": "Homepage",
-      "status": "Seller claim"
-    },
-    {
-      "claim": "College basketball plays \"+40.175 Stars\" in 2025 to 2026 and \"+569.3 Stars the last 28 seasons\"",
-      "where": "College basketball and past performance pages",
-      "status": "Seller kept record, no full public log"
+      "status": "Line movement was reported by the Daily Racing Form in 2006 and the Wall Street Journal in 2007; profitability is the seller's claim"
     }
   ],
   "claims_note": [
-    "The NFL numbers do not agree from page to page. On 7 Nov 2026 the NFL page headline showed Strong Opinions at 411-335-16, the recap lower on the same page showed 411-335-15, and the package box on the same page, the product page and the release page still showed 520-386-12 Best Bets and 404-333-16 Strong Opinions. The homepage still shows the 2016 to 2025 totals. Adding this season's posted 7-7-1 Best Bets and 16-10-1 Strong Opinions to the 2016 to 2025 totals on the past performance page gives 521-386-13 and 412-335-16, one game off the headline in each case. These are small gaps, but a record kept by hand on several pages is not an audited record.",
-    "The about page is out of date in places: it says he is embarking on his 33rd year in business and that the NFL plays won 59% since 2016 \"through 2020\", while the homepage says 38 years. It also says that 60% plus winners long term \"is no longer possible for anyone\", which is a fair warning for anyone reading high win rates elsewhere.",
-    "Profit is shown in stars or units, not dollars. The NFL page says Best Bets are 1.0 unit or higher and Strong Opinions are 0.5 unit plays. The past performance page also lists bad stretches, such as NFL Best Bets at 50.6% from 1999 through 2012, after which he says he stopped handicapping the NFL until a new model in 2016, and weak college football Best Bet seasons in 2023 and 2024. Publishing losing years is a point in his favor, but the seller still chooses how the record is presented."
+    "How we checked: on 20 Nov 2026 we took the season tables from his past performance page and the 2026 lines from his NFL page, added them by hand, and compared the sums with the headline totals on his homepage, NFL page and product pages. We did not have a game by game list, so we could check that his numbers agree with each other, not that each game was graded correctly.",
+    "Most of it holds up. The six season college basketball total matches his table to the play, the 2026 NFL split adds up, and the week 10 units reconcile once you see that plays are sized to win the stated units. That is better bookkeeping than most pick sellers show.",
+    "The NFL headlines are each one game off. Best Bets show one more win than his tables support and Strong Opinions show one fewer, so the combined 2016 to 2026 total is right but a game sits in the wrong column. On 7 Nov 2026 we found the same kind of one game gaps, and the recap line on the NFL page still disagrees with the headline by one push. These gaps are small and do not flatter him overall, but they show the record is kept by hand on several pages.",
+    "The about page is out of date in places: it says he is embarking on his 33rd year in business and that NFL plays won 59% since 2016 \"through 2020\", while the homepage says 38 years. It also says that 60% plus winners long term \"is no longer possible for anyone\", which is a fair warning for anyone reading high win rates elsewhere.",
+    "Profit is shown in stars or units, not dollars. The NFL page says Best Bets are 1.0 unit or higher and Strong Opinions are 0.5 unit plays. The past performance page also lists bad stretches: NFL Best Bets at 50.6% from 1999 through 2012, after which he says he \"decided to stop handicapping the NFL until I had a better model\" and returned in 2016, a 2023 college football Best Bets season of 35-33-2 for minus 9.7 stars, and four losing seasons for his former NBA Guru. The Daily Racing Form reported in 2006 that his 2005 NFL plays went 26 and 35, which fits that weak stretch. Publishing losing years is a point in his favor, but the seller still chooses how the record is presented."
   ],
   "record": [
-    "What is independently verifiable: nothing we could open. We found no third party that holds a time stamped log of Dr. Bob's paid plays, no contest results run by an organizer, and no regulator or court record about the business. Old forum posts from 2011 and 2012 discuss his yearly win rates, but they quote his own numbers.",
-    "What the seller publishes, and how a buyer could check it: the past performance page has season by season tables (wins, losses, pushes and stars, split by star rating for college football and basketball), and the NFL page posts a recap of the week's paid plays with the side or total, the line and the result, for example a 0.5 unit play on Detroit -3 -115 that won 19-15. This is more detail than most pick sellers show. But we saw only the current week's recap and season totals, not a complete dated archive of every play with its release time and line, and the release page is locked to subscribers. A buyer can check it only going forward: record each play with the line and the time you receive it, and compare with the weekly recap and the season total he posts.",
-    "Either way, the record is kept by the seller. Until a third party holds the log, every percentage on the site is his own bookkeeping."
+    "What is independently verifiable: we found no third party that holds a time stamped log of Dr. Bob's paid plays, no contest results run by an organizer, and no regulator or court record about the business. What outside reporting does confirm is his influence on lines in the mid 2000s. The Daily Racing Form reported on 19 Oct 2006 that he emailed college picks to clients at 10 a.m. Pacific on Thursdays, that Pinnacle took his games off the board within minutes, and that eight games moved at least a point within half an hour. A Wall Street Journal profile of 5 Jan 2007, reposted on TheRX, said packages then ran from $25 to $2,495 and that 10 casinos moved one bowl line by up to two points within 78 seconds.",
+    "What the seller publishes, and how a buyer could check it: the past performance page has season by season tables (wins, losses, pushes and stars, split by star rating for college football and basketball), and the NFL page posts a recap of the week's paid plays with the side or total, the line and the result. On 20 Nov 2026 the week 10 recap listed five plays: Washington +2.5, Kansas City and Atlanta over 45.5, Houston and Cleveland under 41.5 at -115 (a loss), Minnesota and Green Bay under 41.5, and Carolina +2.5. This is more detail than most pick sellers show. But we saw only the current week's recap and season totals, not a complete dated archive of every play with its release time and line, and the release page is locked to subscribers.",
+    "Line movement cuts both ways for a buyer. The 2006 article said plays bet after the line moved still went 40 and 24 and 7 that season, but a buyer who gets a worse number than the posted line will not match the posted record. Several reviewers on HandicappingReviews.org between 2015 and 2021 complained about exactly that.",
+    "Either way, the record is kept by the seller. Until a third party holds the log, every percentage on the site is his own bookkeeping, careful as it is."
   ],
   "our_data": {
     "matched": false,
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition Dr. Bob Sports is not matched to a Watchdog graded record, so we make no claim about how its plays perform.",
-    "context": "For scale: Dr. Bob's NFL page claims 57.5% on Best Bets since 2016. On the Watchdog board on 7 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "context": "For scale: Dr. Bob's NFL page claims 57.5% on Best Bets since 2016, and his 2026 Best Bets stood at 11 and 10 and 1 on 20 Nov 2026. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "Independent customer evidence on Dr. Bob Sports is thin and mostly old. We found no Reddit discussion of the service, no Trustpilot or BBB profile we could confirm, and no recent forum threads. Below is what we did find and how much weight it can carry.",
+  "customers_intro": "Independent customer evidence on Dr. Bob Sports is thin and mostly old. Over about 20 years we found one review site with buyer comments, two Sportsbook Review threads, two Las Vegas Advisor discussions and two TheRX threads. We found no Reddit discussion of the service in our archive searches, and no Trustpilot or BBB profile we could confirm. Below is all of it and how much weight it can carry.",
   "customers": [
     {
       "type": "Our summary",
       "tone": "Mixed",
-      "date": "Read 13 Nov 2026",
-      "text": "Opinion splits between buyers and readers. A 2014 Sportsbook Review buyer called his subscription terrible and objected to the Dr title, while longtime readers in the same thread praised the written analysis and said his recent results were about average rather than a fraud.",
+      "date": "Read 20 Nov 2026",
+      "text": "We found about a dozen independent posts about Dr. Bob across HandicappingReviews.org, Sportsbook Review, the Las Vegas Advisor and TheRX, spread from 2007 to 2026, plus older press coverage. The pattern is consistent: people respect his method and his openness, and even critics rarely call him dishonest, but buyers who say they paid describe average or losing results, lines that moved before they could bet, and a high price for the bankroll needed. A 2014 Sportsbook Review buyer called his subscription terrible; others in the same thread said his results were average but not a fraud. Positive buyer comments praise customer service and his willingness to explain his methods. No poster published a full record of a paid package, and almost nothing is recent: the only 2026 post we found was a forum member asking whether anyone had his best bets.",
       "source": null
+    },
+    {
+      "type": "Forum post",
+      "tone": "Neutral",
+      "date": "9 Nov 2026",
+      "text": "In a TheRX thread where members discuss plays from paid services, one member asked whether anyone had Dr. Bob's best bets. Nobody answered in the thread. It shows his plays still circulate among bettors, nothing more.",
+      "source": 24
+    },
+    {
+      "type": "Forum post",
+      "tone": "Mixed",
+      "date": "5 Jan 2007",
+      "text": "When the Wall Street Journal profile was reposted on TheRX, one member called him \"the main man right now\" while another said his hot streak had cooled to about 51%, though still respectable. A third asked where that 51% came from. Nobody in the thread said they subscribed.",
+      "source": 21
     },
     {
       "type": "Customer report",
@@ -173,49 +224,65 @@
     {
       "type": "Not found",
       "tone": "Neutral",
-      "date": "Checked 7 Nov 2026",
-      "text": "We found no Reddit thread, no Trustpilot page and no Better Business Bureau profile we could confirm belongs to drbobsports.com, and no customer discussion from 2025 or 2026.",
+      "date": "Checked 20 Nov 2026",
+      "text": "We found no Reddit thread about the service in our archive searches, no Trustpilot page and no Better Business Bureau profile we could confirm belongs to drbobsports.com, and no buyer account from 2025 or 2026 describing results.",
       "source": null
     }
   ],
   "conflicts": [
-    "We saw no sportsbook affiliate links, promo codes or revenue share offers on the Dr. Bob Sports pages we opened.",
-    "The NBA page sends readers to KillerCappers.com, where his former NBA handicapper now sells picks, and quotes that handicapper's recent record. We saw no statement about whether Dr. Bob Sports is paid for that referral. The NFL 4 Weeks product page also lists EVBettor as an analyst alongside Dr. Bob."
+    "We saw no sportsbook affiliate links, promo codes or revenue share offers on the Dr. Bob Sports pages we opened on 20 Nov 2026.",
+    "The NBA page sends readers to KillerCappers.com, where his former NBA handicapper now sells picks, and quotes that handicapper's recent record. We saw no statement about whether Dr. Bob Sports is paid for that referral. The NFL 4 Weeks product page also lists EVBettor as an analyst alongside Dr. Bob, without saying who EVBettor is or how the two share the plays.",
+    "He gives a free weekly NFL bet as a guest on the VSiN show A Numbers Game. That is promotion for his paid service as well as free content."
   ],
   "strengths": [
     "A named analyst, an LLC operator, a mailing address and a phone number, with prices and refund terms in writing.",
     "Publishes far more than most sellers: decades of season by season records including losing years, and a weekly recap of the paid plays with the line and result.",
-    "Long free game analysis is posted for games outside the paid package, so a reader can judge the method before paying."
+    "His numbers mostly reconcile. The six season college basketball total, the 2026 NFL split and the week 10 units all add up exactly when we recompute them from his own pages.",
+    "Outside press from 2006 and 2007 (Daily Racing Form, Wall Street Journal) confirms the market moved on his plays, which is rare evidence that bettors took him seriously.",
+    "Long free game analysis is posted for games outside the paid package, so a reader can judge the method before paying.",
+    "The season price drops week by week, so a late buyer is not charged for games already played."
   ],
   "concerns": [
-    "The record is kept by the seller, and the NFL totals differ slightly across his own pages.",
+    "The record is kept by the seller, and two NFL headline totals are each one game off the sum of his own tables.",
     "No refund if the picks lose, and cancelling does not refund prepaid fees.",
-    "Old basketball package prices are still posted although the site says he is not handicapping basketball this season.",
-    "Bettors have long reported that his lines move fast after release, so a buyer may not get the posted number."
+    "His 2026 NFL Best Bets, the plays he rates highest, stood at 11 and 10 and 1 on 20 Nov 2026, about break even before the fee.",
+    "Bettors have long reported that his lines move fast after release, so a buyer may not get the posted number and will not match the posted record.",
+    "Old basketball package prices are still posted although the site says he is not handicapping basketball this season, and the about page is years out of date.",
+    "Almost all independent buyer comment is more than five years old, so there is little recent evidence either way."
   ],
   "checklist": [
-    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
-    "Count units, not wins. A 60% record at heavy favorites can still lose money.",
-    "Read the guarantee for the words refund, credit and extension. Most \"guarantees\" in this business are credits.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
+    "Read his free game analysis for a few weeks before paying, and compare it with the plays he posts in his weekly recap.",
+    "Write down each play the moment you receive it, with the line you can actually get and the time. Compare your number with the line in his recap.",
+    "Check his posted season totals against his past performance tables yourself; it takes ten minutes and shows whether the books still agree.",
+    "Size bets the way he does: his units are amounts to win, so a 1 unit play at -115 risks 1.15 units.",
+    "Buy late in the season only if the lower price still makes sense for the number of games left.",
+    "Remember there is no refund for losses and no refund of prepaid fees if you cancel.",
     "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
   ],
   "faq": [
     [
       "Is Dr. Bob Sports legit?",
-      "It is a real business run by Bob Stoll since 1987, with a named operator, an address, published prices and written terms. That makes it legitimate as a business; it does not prove the picks make money."
+      "It is a real business run by Bob Stoll since 1987, with a named operator, an address, published prices and written terms, and the Wall Street Journal and Daily Racing Form covered him in 2006 and 2007. That makes it legitimate as a business; it does not prove the picks make money for buyers today."
     ],
     [
       "How much does Dr. Bob Sports cost?",
-      "On 7 Nov 2026 the NFL season package was $895, a price the site lowers each week as the season runs down, and the NFL 4 Weeks package was $375. Those were the only packages offered this season, and losses are not refunded."
+      "On 20 Nov 2026 the NFL season package was $825, a price the site lowers each week as the season runs down (it was $995 on 27 Oct and $895 on 7 Nov), and the NFL 4 Weeks package was $375. Those were the only packages offered this season, and losses are not refunded."
     ],
     [
       "Does Dr. Bob Sports have a verified record?",
-      "No third party verifies it. He publishes detailed season by season records and a weekly recap of the paid plays with lines, which a buyer can check going forward, but the record is kept by the seller and its totals differ slightly between his own pages."
+      "No third party verifies it. He publishes detailed season tables and a weekly recap of the paid plays with lines. When we recomputed his totals, most matched his own tables exactly and two NFL totals were each one game off, but the record is still kept by the seller."
+    ],
+    [
+      "What is Dr. Bob's NFL record this season?",
+      "His NFL page showed 31 and 21 and 2 for plus 3.77 units on 20 Nov 2026: Best Bets 11 and 10 and 1 and Strong Opinions 20 and 11 and 1. Those are his own figures; we checked that they add up, not each game."
+    ],
+    [
+      "Does Dr. Bob give refunds?",
+      "Not for losing picks. The refund policy says refunds are not issued based on performance, and the terms say you can cancel at any time without a refund of prepaid fees. Some refunds for other circumstances are mentioned but not explained."
     ],
     [
       "Is Dr. Bob Sports worth it?",
-      "For the money you get every NFL Best Bet and Strong Opinion with written analysis, sent at release, from an analyst who publishes losing years as well as winning ones. What is unproven is whether those plays still beat the roughly 52.4% needed at -110 at the lines a buyer can actually get, and there is no refund if they do not."
+      "For the money you get every NFL Best Bet and Strong Opinion with written analysis, sent at release, from an analyst who publishes losing years and whose numbers mostly reconcile. What is unproven is whether those plays still beat the roughly 52.4% needed at -110 at the lines a buyer can actually get, after a fee of several hundred dollars, and there is no refund if they do not."
     ]
   ],
   "related": [
@@ -229,22 +296,22 @@
     {
       "title": "Dr. Bob Sports homepage (founding claim, record blurbs)",
       "url": "https://drbobsports.com/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "Dr. Bob Sports NFL page (packages, week 8 and season recap, 2016 to 2026 records)",
+      "title": "Dr. Bob Sports NFL page (packages, week 10 and 2026 season recap, 2016 to 2026 records)",
       "url": "https://drbobsports.com/nfl/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Dr. Bob Sports NFL Season product page",
       "url": "https://drbobsports.com/allbestbets/dr-bob-nfl-season/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Dr. Bob Sports NFL 4 Weeks product page",
       "url": "https://drbobsports.com/allbestbets/dr-bob-sports-nfl-4-weeks/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Dr. Bob Sports season packages category (price lowered each week)",
@@ -254,12 +321,12 @@
     {
       "title": "Dr. Bob Past Performance (season by season records, closing line value claim)",
       "url": "https://drbobsports.com/dr-bob-past-performance/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "About Dr Bob (Bob Stoll's own history)",
       "url": "https://drbobsports.com/about/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Dr. Bob Sports contact page (address and phone)",
@@ -269,12 +336,12 @@
     {
       "title": "Dr. Bob Sports Terms and Conditions (operator, cancellation, no refund for prepaid fees)",
       "url": "https://drbobsports.com/terms-and-conditions/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Dr. Bob Sports Privacy and Refund Policy",
       "url": "https://drbobsports.com/privacy-and-refund-policy/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Dr. Bob Sports College Football page (service note: not handicapping college football this year)",
@@ -330,6 +397,26 @@
       "title": "Dr. Bob Sports free NFL analysis example: Detroit at Miami, 2026",
       "url": "https://drbobsports.com/nfl-matchup/detroit-lions-miami-dolphins-matchup-analysis-2026/",
       "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "TheRX forum: The Man Who Shook Up Vegas (Wall Street Journal profile reposted, 5 Jan 2007)",
+      "url": "https://www.therx.com/threads/the-man-who-shook-up-vegas.444459/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Daily Racing Form: Dr. Bob's picks moving college lines (19 Oct 2006)",
+      "url": "https://www.drf.com/news/dr-bobs-picks-moving-college-lines",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "MIT Sloan Sports Analytics Conference: Bob Stoll speaker bio",
+      "url": "https://sloansportsconference.com/people/bob-stoll",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "TheRX forum: Service Plays Discussion Thread 11/9/26 to 11/15/26",
+      "url": "https://www.therx.com/threads/service-plays-discussion-thread-11-9-26-11-15-26.1315127/",
+      "accessed": "20 Nov 2026"
     }
   ],
   "pricing_source": 2
