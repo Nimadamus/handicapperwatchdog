@@ -40,6 +40,12 @@ Work from worktree `~/hwd-names-1114` (branch names-1114, push `HEAD:main`; main
    DONE 20 Nov 7:05 AM PST: 5 SportsCapping/BetFirm drafts validated + checked, queued 35 aaa-sports, 36 alex-smart, 37 black-widow,
    38 john-ryan, 39 marc-lyle (originals in new_reviews_1119/_queued). Queue now 03 to 39 (37 files, ~7 weeks at 5 a week).
    GSC 20 Nov 7:06 AM PST: impressions recovering (16 Nov 0, 17 Nov 5, 18 Nov 15; 8-14 Nov ~40/day); 28 d 25 clicks 463 impr pos 14.1. Recheck ~24 Nov.
+   DEEPEN 20 Nov (owner: "these reviews need to be in depth"): audit = 84 of 93 LIVE review pages below BRIEF depth standard
+   (mostly FAQ 4 not 6, strengths 3, 18 pages under 10 sources); all 37 queued drafts meet it. Brief ~/hwd_testimonials/deepen_1120/DEEPEN_BRIEF.md,
+   output deepen_1120/<slug>.json. Wave 1 (18 thinnest by sources) running 7:20 AM PST: bill-krackomberger larry-ness bender-wins rob-veno
+   ben-burns kevin-thomas kyle-hunter action-network-pro bryan-leonard andy-iskoe tony-george oskeim-sports indian-cowboy juice-reel
+   bettingpros teddy-covers matt-fargo nobrainerwagers. Then: check (validate.py + manual), copy to reviews_v2, push main, verify_reviews_live,
+   IndexNow; next waves = the remaining 66 thin slugs (ordered by source count).
    HARVESTER: market stage CONFIRMED fixed (mkt_ok every cycle since 19 Nov 2:11 PM PST; first COMPLETE cycle 20 Nov 2:59 AM PST);
    only reconcile_parse.py still times out (parser backlog ~118k, box CPU). Picks 197339/192518 still await owner 'hold both'.
    Master list ~/hwd_testimonials/candidates_1119.json (134 sellers; 108 have no buyer buzz, most rosters now checked and rejected as thin).
