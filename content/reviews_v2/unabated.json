@@ -1,23 +1,27 @@
 {
   "slug": "unabated",
   "name": "Unabated",
-  "legal_name": "Unabated Sports, Inc. (site copyright line); terms governed by Massachusetts law",
+  "legal_name": "Unabated Sports, Inc. (site terms); terms governed by Massachusetts law. Merged with Gambly in March 2026 to form Gambly Ventures, Inc., with both brands kept separate",
   "kind": "Betting tools, odds screen and education subscription; it does not sell picks",
-  "checked": "16 Nov 2026",
-  "checked_iso": "2026-11-16",
-  "updated_iso": "2026-11-16",
+  "checked": "20 Nov 2026",
+  "checked_iso": "2026-11-20",
+  "updated_iso": "2026-11-20",
   "title": "Unabated Review 2026: Pricing, Record, Is It Worth It?",
-  "description": "Unabated review, checked 16 Nov 2026: plans from $99 to $799 a month, a 14 day refund on monthly plans, the 96% claim, and what bettors say.",
+  "description": "Unabated review, checked 20 Nov 2026: plans from $99 to $799 a month, a 14 day refund on new monthly plans, the 96% claim, the Gambly merger and user posts.",
   "h1": "Unabated review",
-  "dek": "A betting tools company built around an odds screen, a no vig market price it calls the Unabated Line, simulators and education from professional bettor Captain Jack Andrews. It does not sell picks. Plans run from $99 to $799 a month, and new monthly Props+ and Premium members get a 14 day money back window.",
+  "dek": "A betting tools company built around an odds screen, a no vig market price it calls the Unabated Line, simulators and education led by professional bettor Captain Jack Andrews. It does not sell picks. Plans run from $99 to $799 a month, new monthly Props+ and Premium members get a 14 day money back window, and in March 2026 it merged with the betslip company Gambly.",
   "status": {
     "label": "Not verified",
-    "note": "Unabated sells tools, not picks, so there is no pick record to grade. Watchdog has not checked its member profit claim. This page reports what we could check on 16 Nov 2026 and labels everything else."
+    "note": "Unabated sells tools, not picks, so there is no pick record to grade. Watchdog has not checked its member profit claim. This page reports what we could check on 20 Nov 2026 and labels everything else."
   },
   "glance": [
     [
       "Operator",
-      "Unabated Sports, Inc.; terms under Massachusetts law, disputes in Essex County courts (site terms)"
+      "Unabated Sports, Inc.; terms under Massachusetts law, disputes in Essex County or federal court in Massachusetts. Part of Gambly Ventures, Inc. since March 2026"
+    ],
+    [
+      "People named",
+      "Captain Jack Andrews (a pen name), described as co founder in 2026 merger coverage; a 2021 review also named Rufus Peabody, Dan Fabrizio and Matt Snyder as the people behind it"
     ],
     [
       "Claims to operate since",
@@ -25,11 +29,11 @@
     ],
     [
       "Price range seen",
-      "$99 a month for Props+ to $799 a month for Concierge (pricing page)"
+      "$99 a month for Props+ to $799 a month for Concierge; annual plans billed yearly at a lower monthly rate"
     ],
     [
       "Guarantee",
-      "Full refund within 14 days for new monthly Props+ or Premium members, once per person. No refund on annual, Concierge, renewals or add ons"
+      "Full refund of the first payment within 14 days for new monthly Props+ or Premium members, once per person. No refund on annual, Concierge, renewals or add ons"
     ],
     [
       "Full public record",
@@ -41,11 +45,11 @@
     ]
   ],
   "short_answer": [
-    "Unabated is a real company, Unabated Sports, Inc., with written terms under Massachusetts law, a public price list and a known professional bettor, Captain Jack Andrews, as its main voice. A 2021 review named Rufus Peabody, Dan Fabrizio and Matt Snyder as his co founders. In that sense it is legitimate.",
-    "It is not a pick seller. You pay for an odds screen across many sportsbooks, a no vig price it calls the Unabated Line, calculators, simulators, a Discord community and education. You still choose your own bets. Its terms say the content is not advice and promises no specific results.",
-    "The one big performance claim, that 96% of members say they became profitable, is not backed by any data we could see. Bettors who wrote about it praise the line and some tools, but some complained about price rises, odds that lag and bugs. If you try it, use the monthly plan inside the 14 day refund window first."
+    "Unabated is a real company, Unabated Sports, Inc., with written terms under Massachusetts law, a public price list and well known professional bettors behind it. A 2021 review named professional bettors Captain Jack Andrews and Rufus Peabody among the people behind it, and Covers reported its March 2026 merger with the betslip company Gambly. In that sense it is legitimate.",
+    "It is not a pick seller. You pay for an odds screen across about 30 sportsbooks, exchanges and prediction markets, a no vig price it calls the Unabated Line, calculators, simulators, projections, a Discord community and education. You still choose your own bets. Its terms say the content is not advice and promises no specific results.",
+    "The one big performance claim, that 96% of members say they became profitable, comes with no survey data. Bettors who wrote about it over five years praise the line, the free education and some tools, while a 2024 forum thread complained about a price rise, odds that lagged, a buggy sidebar and no app. Many Reddit questions about whether it is worth it went unanswered. If you try it, use the monthly plan inside the 14 day refund window first."
   ],
-  "pricing_intro": "Prices below were in the data behind the Unabated pricing page on 16 Nov 2026. The page offers 17% off for annual billing, and the annual figures match the monthly prices less 17%, so we read them as a monthly rate paid for a year upfront.",
+  "pricing_intro": "Prices below were in the data behind the Unabated pricing page on 20 Nov 2026, unchanged from our 16 Nov check. The page advertises 17% off for annual billing; the annual rates shown are monthly figures charged for a year upfront. Add ons \"can be added to any tier above during checkout\" and are \"Not eligible for 14-day money-back guarantee.\"",
   "pricing": [
     [
       "Props+ monthly",
@@ -54,59 +58,81 @@
     ],
     [
       "Props+ annual",
-      "$83 a month, paid yearly",
-      "A full year of Props+. No refund guarantee on annual plans"
+      "$83 a month, paid yearly ($996 a year)",
+      "No refund guarantee on annual plans"
     ],
     [
       "Premium monthly",
       "$199 a month",
-      "All Props+ features plus the Unabated Line, odds screens with all market makers, alternate lines calculator, NFL futures simulator, livestreams with Captain Jack. 14 day money back for new members"
+      "All Props+ features plus the Unabated Line, odds screens with all market makers, alternate lines calculator, futures simulators, livestreams. 14 day money back for new members"
     ],
     [
       "Premium annual",
-      "$167 a month, paid yearly",
-      "A full year of Premium. No refund guarantee on annual plans"
+      "$167 a month, paid yearly ($2,004 a year)",
+      "No refund guarantee on annual plans"
     ],
     [
       "Concierge monthly",
       "$799 a month",
-      "All Premium features plus Edge Rusher, Prop Rusher, all add ons with early access, alts on the odds screen, private Discord channels. No money back guarantee"
+      "All Premium features plus Edge Rusher, Prop Rusher, all add ons with early access, private Discord channels. No money back guarantee"
     ],
     [
       "Concierge annual",
-      "$667 a month, paid yearly",
+      "$667 a month, paid yearly ($8,004 a year)",
       "No money back guarantee"
     ],
     [
-      "NBA news add on for members",
+      "Unabated NBA News for members (add on)",
       "$99 a month",
-      "Discord player news alerts; add ons are not eligible for the money back guarantee"
+      "Discord player news alerts for existing Props+ or Premium members; not eligible for the money back guarantee"
+    ],
+    [
+      "Unabated NBA News (standalone)",
+      "$149 a month or $749 for the 2026/27 season",
+      "No base subscription needed; not eligible for the money back guarantee"
     ]
   ],
   "guarantee": [
-    "The terms give new subscribers to a paid monthly Props+ or Premium plan a full refund of the first payment if they ask within 14 days, by email to support@unabated.com. It is available once per person, and Unabated may refuse requests it links to an earlier account through payment, device or IP details.",
-    "There is no refund on annual plans, Concierge, renewals, upgrades, downgrades or add ons, and no credit for unused parts of a billing period. You can cancel at any time and keep access until the period ends. The terms also say the content is not advice, that betting is \"INHERENTLY RISKY\", and that Unabated does not promise your use of the site \"WILL PROVIDE SPECIFIC RESULTS\"."
+    "The terms let a new subscriber to a paid monthly Props+ or Premium plan \"request a full refund of your initial subscription payment within 14 days of your first purchase date,\" by email to support@unabated.com. It is available once per person, and Unabated may refuse requests it links to an earlier account through payment, device or IP details.",
+    "The terms add: \"This guarantee does not apply to annual memberships, Concierge memberships, membership renewals,\" and otherwise \"payments are nonrefundable and there are no refunds or credits for partially used billing periods.\" Add ons and standalone packages are excluded on the pricing page.",
+    "You \"may cancel your membership to Unabated Sports at any time\" and keep access until the end of the current billing period.",
+    "The terms also say the site is \"strictly for educational and informational purposes,\" that \"ANY SPORTS BETTING IS INHERENTLY RISKY AND UNDERTAKEN AT YOUR OWN RISK,\" and that nothing on it is a recommendation on whether or how to bet."
   ],
   "claims": [
     {
-      "claim": "\"96% of Unabated members say they've become profitable sports bettors.\"",
+      "claim": "\"Trusted by thousands, 96% of Unabated members say they've become profitable sports bettors.\"",
       "where": "unabated.com homepage",
-      "status": "Seller claim, no survey data shown"
+      "status": "Seller claim, no survey size, date or definition shown"
+    },
+    {
+      "claim": "Annual billing saves 17%",
+      "where": "Unabated pricing page (annual discount value 17)",
+      "status": "Checked: $83, $167 and $667 against $99, $199 and $799 are savings of 16.2%, 16.1% and 16.5%, slightly under 17%"
+    },
+    {
+      "claim": "\"Our Odds Screen delivers real-time odds from dozens of sportsbooks, exchanges, and prediction markets.\"",
+      "where": "unabated.com homepage",
+      "status": "Consistent: the page shows 30 supported books, including exchanges and prediction markets. Real time accuracy was disputed by users in 2024"
     },
     {
       "claim": "\"Join over 23,000 sharp bettors who trust Unabated for their weekly dose of betting intelligence.\"",
-      "where": "unabated.com newsletter pop up",
-      "status": "Seller claim, not checkable"
-    },
-    {
-      "claim": "Member testimonials such as \"building a bankroll that's up over $100,000 this year\" and \"I'm up $12,000 betting $100-$200 units\"",
-      "where": "unabated.com homepage",
-      "status": "Seller curated testimonials, not checkable"
+      "where": "unabated.com newsletter sign up",
+      "status": "Seller claim about newsletter readers, not paying members; not checkable"
     },
     {
       "claim": "\"A professional bettor for 20-plus years, Captain Jack Andrews is one of the most trusted voices in sports betting.\"",
       "where": "unabated.com homepage",
-      "status": "Seller claim, pseudonymous person"
+      "status": "Seller claim; Captain Jack is a pen name and no betting record is public"
+    },
+    {
+      "claim": "Member testimonials: \"building a bankroll that's up over $100,000 this year\"; \"I'm up $12,000 betting $100-$200 units\"",
+      "where": "unabated.com homepage",
+      "status": "Seller curated testimonials, not checkable"
+    },
+    {
+      "claim": "\"14-Day Money-Back Guarantee\" on monthly plans",
+      "where": "Unabated pricing page buttons",
+      "status": "Checked against the terms: refund covers only the first payment, once per person, new monthly Props+ or Premium members only"
     },
     {
       "claim": "\"the sharpest betting tools on the market\"",
@@ -115,40 +141,42 @@
     }
   ],
   "claims_note": [
-    "The 96% figure is the claim that matters most, and it comes with no sample size, no survey date and no definition of profitable. Members who answer a seller's survey are likely to be the happy ones. Treat it as marketing.",
-    "Because Unabated does not sell picks, there is no win rate to check. What you pay for is information on prices. Whether it helps depends on how you use it, and on whether sportsbooks let you keep betting if you win."
+    "The 96% figure is the claim that matters most, and it comes with no sample size, no survey date and no definition of profitable. Members who answer a seller's survey are likely to be the happy ones, and members who quit are not asked. Treat it as marketing.",
+    "How we checked the price claims: we read the plan data behind the pricing page and compared each annual monthly rate with its monthly price. A year of Premium costs $2,004 paid upfront against $2,388 paid month to month, a saving of $384, but the annual plan loses the 14 day refund.",
+    "Because Unabated does not sell picks, there is no win rate to check. What you pay for is information on prices. Whether it helps depends on how you use it, and on whether sportsbooks let you keep betting if you win; several Reddit replies warned that bettors who win by shopping prices get limited."
   ],
   "record": [
-    "There is no pick record to verify. Unabated sells an odds screen, calculators, projections and education, not selected bets.",
-    "Its own Unabated Line is a market price with the bookmaker margin taken out. One bettor on X in November 2026 said he uses it as his fair price and uses the site's closing line value calculator, and a pick service on X said it grades its plays with prices from Unabated. Those are uses of the tool, not proof that members profit.",
-    "We found no independent study of Unabated member results, and no court or regulator action involving the company."
+    "There is no pick record to verify. Unabated sells an odds screen, calculators, projections, news alerts and education, not selected bets.",
+    "Its Unabated Line is a market price with the bookmaker margin taken out. Bettors use it as a fair price to compare against, and a sports betting author writing for the Las Vegas Advisor said he still uses Unabated alongside other sources for props. Those are uses of the tool, not proof that members profit.",
+    "Company history: a September 2021 newsletter review described Unabated as free \"for the time being\" and named Captain Jack Andrews, Rufus Peabody, Dan Fabrizio and Matt Snyder as the people behind it. On 18 Mar 2026 Covers reported that Gambly and Unabated merged into Gambly Ventures, Inc., with both platforms continuing to run separately; Next.io named Gambly's Cal Spears as chief executive of the combined company.",
+    "We found no independent study of Unabated member results, and no court, BBB or regulator action involving the company."
   ],
   "our_data": {
     "matched": false,
     "text": "Watchdog grades picks captured from public posts before the game starts. Unabated sells tools rather than picks, so there is no Unabated pick history to match to a Watchdog graded record, and we make no claim about how its members perform.",
-    "context": "For scale: Unabated says 96% of members report being profitable. On the Watchdog board on 16 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "context": "For scale: Unabated says 96% of members report being profitable. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "Independent posts about Unabated are fewer than for most pick sellers, and most are questions rather than reviews. Below is what we found and how much weight it can carry.",
+  "customers_intro": "Independent posts about Unabated are fewer than for most pick sellers, and many are questions rather than reviews. Below is everything we found and how much weight it can carry.",
   "customers": [
     {
       "type": "Our summary",
       "tone": "Mixed",
-      "date": "Read 16 Nov 2026",
-      "text": "We read about a dozen independent posts from 2021 to 2026 on SBR, Reddit, X and one newsletter. The positives repeat: bettors use the Unabated Line as a fair price, praise the education and Captain Jack's videos, and like some tools such as the teaser tool. The negatives come mostly from one SBR thread in 2024: a price rise from $129 to $199 a month, odds that sometimes lagged, a buggy basketball sidebar and no mobile app. Several Reddit users asked whether it was worth it and got no public answers, and others said the price kept them out. We found no refund disputes and no reports of losing money because of the tools.",
+      "date": "Read 20 Nov 2026",
+      "text": "We read about 15 independent posts and articles from 2021 to 2026 on SBR, Reddit, a newsletter and the Las Vegas Advisor. The positives repeat: writers and bettors use the Unabated Line as a fair price, praise the free education and Captain Jack's videos, and like specific tools such as the teaser tool; a 2021 review scored it 8 out of 10 and a 2026 column still endorses it. The negatives come mostly from one SBR thread in December 2024: a price rise from $129 to $199 a month, odds that sometimes failed to update, a buggy basketball sidebar that one user said went unfixed for a year, a low vig book dropped from the screen and no mobile app. Several Reddit users from 2024 to 2026 asked whether it was worth it, or whether to choose it over a rival, and the archive shows no public replies; others said the price kept them out. One 2024 post found the screen showing a sportsbook line the user could not find at that book. We found no refund disputes and no reports of losing money because of the tools.",
       "source": null
     },
     {
       "type": "Forum post",
       "tone": "Positive",
       "date": "20 Sep 2021",
-      "text": "A betting newsletter reviewed Unabated while it was still free. It praised the line comparison tools and the education, called the site crowded and clunky for beginners, and scored it 8 out of 10. It did not say whether the writer had any tie to Unabated.",
+      "text": "A betting newsletter reviewed Unabated while it was still free. It praised the line comparison tools, the NFL simulator and the education, called the site crowded and clunky for beginners, and scored it 8 out of 10. It did not say whether the writer had any tie to Unabated.",
       "source": 3
     },
     {
       "type": "Customer report",
       "tone": "Mixed",
       "date": "13 Dec 2024",
-      "text": "On SBR a subscriber said the price went from $129 to $199 a month after a few months, so he cancelled and later took a six month offer of about $599. He said odds sometimes failed to update for minutes, there was no app or mobile site, and the teaser tool was very good. His view was that it is a good product but of limited use in an efficient market.",
+      "text": "On SBR a subscriber said the price went from $129 to $199 a month after a few months, so he cancelled and later took a six month offer of about $599. He said odds sometimes failed to update, there was no app or mobile site, and the teaser tool was very good. His view was that it is a good product but of limited use in an efficient market.",
       "source": 4
     },
     {
@@ -161,6 +189,13 @@
     {
       "type": "Forum post",
       "tone": "Neutral",
+      "date": "28 Apr 2024",
+      "text": "A Reddit user said Unabated's NBA odds screen showed a first half spread at DraftKings for a playoff game, but he could not find any first half market for that game at DraftKings itself. The archive shows no replies explaining it.",
+      "source": 17
+    },
+    {
+      "type": "Forum post",
+      "tone": "Neutral",
       "date": "18 May 2024",
       "text": "A Reddit user looking for a run line calculator said Unabated had a tool close to what he needed but that he was not ready to pay for a subscription.",
       "source": 5
@@ -168,9 +203,16 @@
     {
       "type": "Forum post",
       "tone": "Neutral",
+      "date": "19 Jul 2024",
+      "text": "A former sportsbook trader asking which odds screen bettors prefer wanted to know how Unabated compared with SpankOdds and OddsJam. No answer is in the archive.",
+      "source": 18
+    },
+    {
+      "type": "Forum post",
+      "tone": "Neutral",
       "date": "2 Aug 2024",
       "text": "A new bettor said he was thinking of a trial at Unabated to learn to find good prices. Replies warned that bettors who win this way often get limited by sportsbooks.",
-      "source": 12
+      "source": 10
     },
     {
       "type": "Forum post",
@@ -178,6 +220,20 @@
       "date": "21 Dec 2024",
       "text": "A Reddit user asking for an odds screen with European sportsbooks said he believed Unabated and similar screens did not cover them.",
       "source": 6
+    },
+    {
+      "type": "Forum post",
+      "tone": "Positive",
+      "date": "20 Oct 2025",
+      "text": "A bettor focused on arbitrage said he had heard pretty good things about Unabated and a few rivals and asked what others used.",
+      "source": 16
+    },
+    {
+      "type": "Not found",
+      "tone": "Neutral",
+      "date": "Checked 20 Nov 2026",
+      "text": "Reddit threads from June 2025 (\"does anyone use it?\"), October 2025 (Outlier or Unabated?) and February 2026 (\"Is Unabated really good?\") had no public replies in the archive we read, and an October 2026 thread asking whether learning to make your own numbers is \"Unabated-or-nothing\" was removed by moderators.",
+      "source": 14
     },
     {
       "type": "Forum post",
@@ -194,59 +250,65 @@
       "source": 9
     },
     {
-      "type": "Forum post",
+      "type": "Customer report",
       "tone": "Positive",
-      "date": "2 Nov 2026",
-      "text": "A bettor on X said he uses the Unabated Line as his no vig fair price to save time, and also uses its closing line value calculator.",
-      "source": 10
+      "date": "Nov 2026",
+      "text": "A sports betting author writing on the Las Vegas Advisor said he still strongly endorses Unabated for its free learning resources and for tools subscribers cannot get elsewhere, though he now uses another screen for main lines and keeps Unabated in his process for props. He devotes a section of his book to it and disclosed no payment from Unabated.",
+      "source": 13
     },
     {
       "type": "Seller curated",
       "tone": "Positive",
-      "date": "Checked 16 Nov 2026",
-      "text": "The Unabated homepage shows member quotes about sustainable bankroll growth and wins of $12,000 and over $100,000, next to the 96% profitable claim. Unabated chose these, so they are marketing.",
+      "date": "Checked 20 Nov 2026",
+      "text": "The Unabated homepage shows member quotes about bankroll growth and wins of $12,000 and over $100,000, next to the 96% profitable claim. Unabated chose these, so they are marketing.",
       "source": 2
-    },
-    {
-      "type": "Not found",
-      "tone": "Neutral",
-      "date": "Checked 16 Nov 2026",
-      "text": "Reddit threads from June 2025 and February 2026 asking whether Unabated is good had no public replies in the archive we read. We found no Covers or TheRX review thread and no court or regulator action.",
-      "source": 7
     }
   ],
   "conflicts": [
-    "The homepage shows logos of about 30 sportsbooks, exchanges and prediction markets as supported books. The page does not say whether any of these pay Unabated, and we saw no affiliate wording.",
-    "Captain Jack Andrews is a pseudonym. His record as a bettor is not public, so his reputation rests on his content and the views of people in the industry."
+    "The homepage shows logos of about 30 sportsbooks, exchanges and prediction markets as supported books. The page does not say whether any of these pay Unabated, and we saw no affiliate disclosure.",
+    "The pricing page loads an affiliate tracking script (Tapfiliate), which suggests that people who refer subscribers may be paid. Praise from creators who link to Unabated may therefore be paid promotion.",
+    "Since March 2026 Unabated has been part of Gambly Ventures, whose Gambly product sends bettors straight to sportsbook betslips. Coverage of the merger said Gambly produced nearly 15 million betslips for sportsbook operators in one NFL season.",
+    "Captain Jack Andrews is a pen name. His record as a bettor is not public, so his reputation rests on his content and the views of people in the industry."
   ],
   "strengths": [
-    "A named company with written terms, a public price list and a real money back window on monthly Props+ and Premium.",
+    "A named company with written terms, a public price list and a real 14 day money back window on new monthly Props+ and Premium plans.",
     "Sells tools and education rather than picks, so there are no hot streak claims to chase.",
-    "Bettors across several years praise the Unabated Line, the education and some specific tools.",
-    "Cancel at any time and keep access to the end of the billing period."
+    "Writers and bettors across five years praise the Unabated Line, the free education and specific tools such as the teaser tool.",
+    "Cancel at any time and keep access to the end of the billing period.",
+    "Run by known professional bettors and industry people, with independent trade press coverage of the company."
   ],
   "concerns": [
     "Expensive: $199 a month for Premium and $799 a month for Concierge, and one subscriber reported a rise from $129 to $199.",
     "The 96% profitable members claim has no data behind it that we could see.",
-    "Reports of lagging odds, a buggy sidebar and no mobile app in late 2024.",
-    "No refund on annual plans, Concierge, renewals or add ons.",
-    "Finding better prices works only while sportsbooks let you bet; several bettors warned that winners get limited."
+    "Reports of lagging odds, a buggy sidebar, a line shown that the book did not offer and no mobile app.",
+    "No refund on annual plans, Concierge, renewals or add ons, and the refund is once per person.",
+    "Finding better prices works only while sportsbooks let you bet; several bettors warned that winners get limited.",
+    "Ownership changed in 2026 to a group that also runs a betslip product used by sportsbooks."
   ],
   "checklist": [
-    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
-    "Count units, not wins. A 60% record at heavy favorites can still lose money.",
-    "Read the guarantee for the words refund, credit and extension. Most \"guarantees\" in this business are credits.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Start on a monthly Props+ or Premium plan and decide inside 14 days; the refund does not cover annual, Concierge or add ons.",
+    "Check that the sportsbooks you can legally use appear on the odds screen before paying.",
+    "Before you bet a price you see on the screen, confirm it on the sportsbook itself; users reported lagging and missing lines.",
+    "Track closing line value and units for every bet you place with the tools, so you can judge whether the subscription pays for itself.",
+    "Ignore member testimonials and the 96% figure; judge the tool by your own tracked results over a few hundred bets.",
+    "Set a reminder before each renewal date and cancel if you are not using the paid features."
   ],
   "faq": [
     [
       "Is Unabated legit?",
-      "Yes in the sense that it is a real company, Unabated Sports, Inc., with written terms, published prices and a 14 day refund on new monthly Props+ and Premium plans. It sells betting tools and education, not picks. We could not verify its claim that 96% of members say they became profitable."
+      "Yes in the sense that it is a real company, Unabated Sports, Inc., with written terms, published prices, named founders and a 14 day refund on new monthly Props+ and Premium plans. It sells betting tools and education, not picks. We could not verify its claim that 96% of members say they became profitable."
+    ],
+    [
+      "Who owns Unabated?",
+      "Unabated Sports, Inc. is led by co founder Jack Andrews (Captain Jack); a 2021 review also named professional bettor Rufus Peabody, Dan Fabrizio and Matt Snyder as the people behind it. In March 2026 it merged with Gambly to form Gambly Ventures, Inc.; both products keep running separately."
     ],
     [
       "How much does Unabated cost?",
-      "On 16 Nov 2026 the pricing page listed Props+ at $99 a month, Premium at $199 a month and Concierge at $799 a month, with about 17% off for paying a year upfront ($83, $167 and $667 a month)."
+      "On 20 Nov 2026 the pricing page listed Props+ at $99 a month, Premium at $199 a month and Concierge at $799 a month, or $83, $167 and $667 a month paid a year upfront. An NBA news add on cost $99 a month for members."
+    ],
+    [
+      "Does Unabated offer refunds?",
+      "Only one: a new monthly Props+ or Premium member can ask for a full refund of the first payment within 14 days, once per person. Annual plans, Concierge, renewals and add ons are not refundable, and there is no credit for unused time."
     ],
     [
       "Does Unabated have a verified record?",
@@ -268,27 +330,27 @@
     {
       "title": "Unabated pricing page (Props+, Premium, Concierge prices, add ons, money back wording)",
       "url": "https://tools.unabated.com/pricing",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Unabated Terms of Use (company name, Massachusetts law, refunds and cancellations, disclaimers)",
       "url": "https://unabated.com/terms",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "Unabated homepage (96% claim, 23,000 subscribers claim, testimonials, Captain Jack bio)",
+      "title": "Unabated homepage (96% claim, 23,000 subscribers claim, testimonials, Captain Jack bio, supported books)",
       "url": "https://unabated.com/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "The Handle (Substack): Unabated review, 20 Sep 2021",
       "url": "https://thehandle.substack.com/p/unabated",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "SBR forum: Spankodds vs. Unabated (Dec 2024)",
       "url": "https://www.sportsbookreview.com/forum/sportsbooks-industry/2039710-spankodds-vs-unabated",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Reddit r/sportsbook: Calculator to convert ML/Implied Odds to -1.5 Run-lines and Puck-lines (May 2024)",
@@ -316,19 +378,54 @@
       "accessed": "16 Nov 2026"
     },
     {
-      "title": "X post, 2 Nov 2026: bettor uses the Unabated line and CLV calculator",
-      "url": "https://x.com/FiddlesPicks/status/2117059873083167228",
-      "accessed": "16 Nov 2026"
-    },
-    {
-      "title": "X post, 10 Nov 2026: pick service grades plays using Unabated prices",
-      "url": "https://x.com/MovetheNumber/status/2120280889322099060",
-      "accessed": "16 Nov 2026"
-    },
-    {
       "title": "Reddit r/sportsbook: From ground zero to finding +EV consistently (Aug 2024)",
       "url": "https://www.reddit.com/r/sportsbook/comments/1eicpk5/",
       "accessed": "16 Nov 2026"
+    },
+    {
+      "title": "Covers: Gambly, Unabated Merge to Expand AI, Analytics for Sports Bettors (18 Mar 2026)",
+      "url": "https://www.covers.com/industry/gambly-unabated-merge-to-expand-ai-analytics-for-sports-bettors-march-18-2026",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Next.io: Gambly and Unabated merge (Mar 2026)",
+      "url": "https://next.io/news/investment/gambly-and-unabated-merge/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Las Vegas Advisor column mentioning Unabated (Nov 2026)",
+      "url": "https://www.lasvegasadvisor.com/shop/?p=926954",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbook: Is Unabated really good? (Feb 2026)",
+      "url": "https://www.reddit.com/r/sportsbook/comments/1qxsbkx/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbetting: Which one? Outlier or Unabated? (Oct 2025)",
+      "url": "https://www.reddit.com/r/sportsbetting/comments/1o0vg67/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbetting: betting research? (Oct 2025)",
+      "url": "https://www.reddit.com/r/sportsbetting/comments/1obtia2/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbetting: Unabated shows DK is offering 1st half spread... (Apr 2024)",
+      "url": "https://www.reddit.com/r/sportsbetting/comments/1cfhuv3/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbook: Best Screen Service? (Jul 2024)",
+      "url": "https://www.reddit.com/r/sportsbook/comments/1e7crdn/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbook: Done the intro courses... or is it Unabated-or-nothing? (Oct 2026, removed)",
+      "url": "https://www.reddit.com/r/sportsbook/comments/1xbvqtm/",
+      "accessed": "20 Nov 2026"
     }
   ],
   "pricing_source": 0
