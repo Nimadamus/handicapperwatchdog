@@ -3,124 +3,398 @@
   "name": "Joe Duffy (OffshoreInsiders)",
   "legal_name": "AJA Enterprises (contact on OffshoreInsiders press releases)",
   "kind": "Handicapper selling picks through OffshoreInsiders.com",
-  "checked": "7 Nov 2026",
-  "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-07",
+  "checked": "20 Nov 2026",
+  "checked_iso": "2026-11-20",
+  "updated_iso": "2026-11-20",
   "title": "Joe Duffy Review 2026: Pricing, Record, Is It Worth It?",
-  "description": "Joe Duffy review, checked 7 Nov 2026: OffshoreInsiders prices from $21 a day to $1,249 a year, no refunds, and what outside leaderboards show of his record.",
+  "description": "Joe Duffy review, checked 20 Nov 2026: OffshoreInsiders prices from $21 a day to $1,249 a year, no refunds, and his 2026 record on outside leaderboards.",
   "h1": "Joe Duffy review",
-  "dek": "Joe Duffy has sold picks since 1988 and runs OffshoreInsiders.com, where packages cost $21 for a day to $1,249 for a year with no refunds. The site claims \"the most units won of all time\" but posts no record. A pick marketplace leaderboard showed him near break even in 2026.",
+  "dek": "Joe Duffy says he has sold picks since 1988 and runs OffshoreInsiders.com, where packages cost $21 for a day to $1,249 for a year with no refunds. The site claims \"the most units won of all time\" and a win rate near 60%, but posts no record. The marketplace boards that sell his picks showed him at about 51.8% and a 0.5% return for 2026.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record for Joe Duffy. This page reports what we could check and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record for Joe Duffy. This page reports what we could check on 20 Nov 2026 and labels everything else."
   },
   "glance": [
-    ["Operator", "OffshoreInsiders.com, 9925 Haynes Bridge Road, Suite #200-186, Alpharetta, GA (contact page). Email only, no phone"],
-    ["Claims to operate since", "1988 (homepage and bio page)"],
-    ["Price range seen", "$21 a day to $1,249 a year"],
-    ["Guarantee", "None on OffshoreInsiders. FAQ: no refunds for losing days"],
-    ["Full public record", "Not on his site. Outside marketplaces show partial records"],
-    ["Watchdog graded record", "None yet"]
+    [
+      "Operator",
+      "OffshoreInsiders.com, 9925 Haynes Bridge Road, Suite #200-186, Alpharetta, GA 30022 (contact page). Email only, no phone. Press releases name AJA Enterprises as the contact"
+    ],
+    [
+      "Claims to operate since",
+      "1988 on his own site; a StatsAlt pick listing says \"professionally since 1985\""
+    ],
+    [
+      "Price range seen",
+      "$21 a day to $1,249 a year on OffshoreInsiders. $25 single plays and $49 passes on StatsAlt"
+    ],
+    [
+      "Guarantee",
+      "None on OffshoreInsiders. FAQ: no refunds for losing days. Sister site PicksDepot advertises guaranteed packages"
+    ],
+    [
+      "Full public record",
+      "Not on his site. Marketplace boards show 2026 at 722-673-18, 0.5% return (SportsCapping)"
+    ],
+    [
+      "Where else sold",
+      "PicksDepot (sister site), SportsCapping, CappersPicks, StatsAlt, CapperTek"
+    ],
+    [
+      "Watchdog graded record",
+      "None yet"
+    ]
   ],
   "short_answer": [
-    "Joe Duffy runs a real, long running pick business. OffshoreInsiders.com lists a mailing address in Alpharetta, Georgia, an email address, published prices for every package and the date each one runs to. Payment goes through PayPal. In that narrow sense it is legitimate.",
-    "Whether his picks make money is not shown on his own site. It claims he has \"the most units won of all time\" and that over any long period he will hit \"near or above the 60 percentile,\" but it publishes no record, and its FAQ says it is not wise to advertise losing days. Two outside pick marketplaces that sell his picks showed small gains: one at 686-638 with a 0.6% return for 2026, one at 81-69-3 over a period it did not state.",
-    "Treat Duffy as an experienced seller whose marketing claims go far beyond the numbers we could find. If you buy, start with a day or a week, record every pick with the line you got, and judge it after a few hundred picks."
+    "Joe Duffy runs a real, long running pick business. OffshoreInsiders.com lists a mailing address in Alpharetta, Georgia, an email address, a published price for every package and the date each one runs to. Payment goes through PayPal, which also takes cards. In that narrow sense it is legitimate.",
+    "Whether his picks make money is not shown on his own site. It claims he has \"the most units won of all time\" and that over any long period he will hit \"near or above the 60 percentile,\" but it publishes no record, and its FAQ says \"it would not be wise to advertise losing days.\"",
+    "The numbers we could check come from marketplaces that sell his picks. On 20 Nov 2026 the SportsCapping season board had him 20th by profit at 722-673-18 for 2026, a 51.8% win rate and a 0.5% return on flat $100 bets. StatsAlt showed 84-79-1 and +2.00 units. CappersPicks showed a better college football stretch, 47-37 over 60 days. None of these is close to 60%, and all of them are kept by companies that earn money when his picks sell.",
+    "Buyer feedback is very thin. The only first hand complaint we found is a 2012 Sportsbook Review post from someone who bought a month of a different OffshoreInsiders service and said they lost over $2,000. Treat Duffy as an experienced seller whose marketing goes far beyond the numbers we found. If you buy, start with a day or a week, record every pick with the line you got, and judge it after a few hundred picks."
   ],
-  "pricing_intro": "Prices below were shown on the OffshoreInsiders.com package page on 7 Nov 2026. Each package listed the date it would run to if bought that day. Purchases go through PayPal, which also takes cards.",
+  "pricing_intro": "Prices below were shown on the OffshoreInsiders.com package list on 20 Nov 2026, unchanged from our 7 Nov check. Each package listed the date it would run to if bought that day. Purchases go through PayPal, which also takes cards; the FAQ also lists Western Union for long term purchases made in advance. Duffy's picks are also sold one at a time on outside marketplaces, shown in the last two rows.",
   "pricing": [
-    ["Daily", "$21 (good until 8 Nov 2026)", "No refund for losing days (FAQ)"],
-    ["2 Day All Sports", "$39", "Same"],
-    ["Three Day", "$58", "Same"],
-    ["Four Day", "$79", "Same"],
-    ["Five Day (Thursday to Monday)", "$93", "Same"],
-    ["Weekly", "$129", "Same"],
-    ["Monthly", "$299 (good until 8 Dec 2026)", "Same"],
-    ["100 Day", "$899 (good until 15 Feb 2027)", "Same"],
-    ["One Year", "$1,249 (good until 7 Nov 2027)", "Same"],
-    ["Test package", "$1, labeled \"for testing purposes ONLY\"", "Not a real product"]
+    [
+      "Daily",
+      "$21 (good until 20 Nov 2026)",
+      "No refund for losing days (FAQ)"
+    ],
+    [
+      "2 Day All Sports",
+      "$39 (until 21 Nov 2026)",
+      "Same"
+    ],
+    [
+      "Three Day",
+      "$58 (until 22 Nov 2026)",
+      "Same"
+    ],
+    [
+      "Four Day",
+      "$79 (until 23 Nov 2026)",
+      "Same"
+    ],
+    [
+      "Five Day (Thursday night to Monday night)",
+      "$93 (until 24 Nov 2026)",
+      "Same"
+    ],
+    [
+      "Weekly",
+      "$129 (until 26 Nov 2026)",
+      "Same"
+    ],
+    [
+      "Monthly",
+      "$299 (until 20 Dec 2026)",
+      "Same. FAQ allows a pause for monthly or longer buyers who travel"
+    ],
+    [
+      "100 Day",
+      "$899 (until 27 Feb 2027)",
+      "Same"
+    ],
+    [
+      "One Year",
+      "$1,249 (until 19 Nov 2027)",
+      "Same"
+    ],
+    [
+      "Test package",
+      "$1, labeled \"for testing purposes ONLY\"",
+      "Shown on the public list; not a real product"
+    ],
+    [
+      "StatsAlt single play (outside marketplace)",
+      "$25 for a \"4* College Football Wise Guy\" seen 20 Nov 2026",
+      "StatsAlt terms apply, not OffshoreInsiders"
+    ],
+    [
+      "StatsAlt passes (outside marketplace)",
+      "Weekend Warrior $49 (listed as $78), college basketball or NBA three day pass $49 (listed as $100)",
+      "Passes cover one handicapper chosen by the buyer"
+    ]
   ],
   "guarantee": [
     "OffshoreInsiders does not sell a guarantee. Its FAQ answers \"Why not guarantee your picks like some other sites?\" at length, says \"Anyone who wants a guarantee frankly should not be gambling,\" and states: \"we do not give refunds for occasional losing days.\" Packages run on consecutive days, like a newspaper subscription, with exceptions only for some monthly or longer buyers.",
-    "There is a twist. An OffshoreInsiders page announcing its sister site, PicksDepot.com, says PicksDepot sells Duffy's picks in \"Guaranteed Packages\" while OffshoreInsiders offers \"lower-priced, non-guaranteed packages.\" We did not read the PicksDepot guarantee terms, so we cannot say whether that means cash, credit or more picks."
+    "The FAQ argues that guarantees elsewhere are a gimmick: it says sellers who guarantee a winning day release an odd number of plays so they need a lower hit rate, and that make good days are used by services that \"charge 20 times what we do.\" That is a fair point about how many guarantees work, and it is also a reason this site gives nothing back after a bad run.",
+    "There is a twist. The OffshoreInsiders page announcing its sister site, PicksDepot.com, says PicksDepot gives bettors \"guaranteed selections\" while OffshoreInsiders offers \"lower-priced, non-guaranteed packages.\" We did not find PicksDepot's guarantee terms, so we cannot say whether that means cash, credit or more picks.",
+    "The FAQ also has no refund wording for a double charge or a failed delivery. It tells buyers with an \"already paid\" error to reload or change browser, and to use the contact form for account problems, because phone support was dropped."
   ],
   "claims": [
-    {"claim": "\"reigns supreme with the most units won of all time\"", "where": "OffshoreInsiders package page, Five Day package", "status": "Seller claim, no figures given"},
-    {"claim": "\"America's Sole Grandmaster Sports Handicapper\"; \"America's best handicapper\"; \"the indisputable rulers of the handicapping realm\"", "where": "OffshoreInsiders package page", "status": "Seller claim"},
-    {"claim": "Over any long term period, \"we will hit near or above the 60 percentile\"", "where": "OffshoreInsiders FAQ", "status": "Seller claim, no record behind it"},
-    {"claim": "\"No website in the history of the world has better vetted handicappers\"; \"we eliminate long-term risk\"", "where": "OffshoreInsiders FAQ", "status": "Seller claim"},
-    {"claim": "Serving bettors full time since 1988, with a reputation built on \"sustained success rather than short-term results\"", "where": "What Makes Joe Duffy No. 1? page", "status": "Seller claim"},
-    {"claim": "A winning March Madness \"every year since 1998\" (CapperTek bio) or \"every year since 1988\" (StatsAlt bio)", "where": "Handicapper bios on CapperTek and StatsAlt", "status": "Seller claim, years do not match"},
-    {"claim": "\"You can see why I'm #2 overall last 90 days!\"", "where": "StatsAlt pick listing, 7 Nov 2026", "status": "Seller claim about a marketplace ranking"}
+    {
+      "claim": "Over any long term period, \"we will hit near or above the 60 percentile\"",
+      "where": "OffshoreInsiders FAQ",
+      "status": "Checked against marketplace boards that sell his picks: 722-673-18 for 2026 on SportsCapping is 51.8%, and 84-79-1 on StatsAlt is 51.5%"
+    },
+    {
+      "claim": "\"reigns supreme with the most units won of all time\"",
+      "where": "OffshoreInsiders package list, Five Day package",
+      "status": "No figures given. SportsCapping ranked him 20th of 31 by 2026 profit, at $759 on 1,413 picks"
+    },
+    {
+      "claim": "\"You can see why I'm #2 overall last 90 days!\"",
+      "where": "StatsAlt pick listing, 7 Nov 2026",
+      "status": "Checked: StatsAlt's own profile showed 84-79-1, +2.00 units on 20 Nov 2026, about a 1% return"
+    },
+    {
+      "claim": "\"Joe Duffy is the industry standard\"",
+      "where": "PicksDepot leaderboards page (his sister site)",
+      "status": "Checked: the same page's leaderboard top five did not include him"
+    },
+    {
+      "claim": "Full time since 1988; \"handicapping professionally since 1985\"",
+      "where": "OffshoreInsiders bio and PR.com release; StatsAlt pick listing",
+      "status": "Seller claims, start years do not match"
+    },
+    {
+      "claim": "A winning March Madness \"every year since 1998\" (CapperTek bio) or \"every year since 1988\" (StatsAlt bio)",
+      "where": "Handicapper bios on CapperTek and StatsAlt",
+      "status": "Seller claim, years do not match, no log"
+    },
+    {
+      "claim": "Joe Duffy 47-37, +$627 in college football over the past 60 days",
+      "where": "CappersPicks college football ranking, 20 Nov 2026",
+      "status": "Checked: 47 of 84 is 56.0%, and 47 wins of $100 less 37 losses of $110 is about +$630, so the figure is consistent"
+    },
+    {
+      "claim": "\"No website in the history of the world has better vetted handicappers\"; \"we eliminate long-term risk\"",
+      "where": "OffshoreInsiders FAQ",
+      "status": "Seller claim"
+    }
   ],
   "claims_note": [
-    "The biggest claims come with no numbers at all. \"The most units won of all time\" names no total, no period and no source, and nothing on the site lets a reader check it.",
-    "The FAQ is unusually frank about how it markets. Asked why the site never talks about losers, it says the best products do not advertise bad reviews and that \"it would not be wise to advertise losing days,\" while promising \"There will be no inaccurate records posted.\" In other words, what you see is chosen to sell. Asked where records are documented, it calls that a \"simple question, not a simple answer\" and points to an article without giving a record.",
-    "The bios disagree with each other. One says he has had a winning March Madness every year since 1998, another says since 1988. The FAQ also carries a badge reading \"Verified by CapperTek on 10-8-2020\"; CapperTek's own page lists OffshoreInsiders as a verified service, but its documented record did not load for our check."
+    "How we checked: OffshoreInsiders posts no record, so we used the boards of the marketplaces that sell his picks. SportsCapping's season board for 2026 (1 Jan to 20 Nov, flat $100 bets) listed him at 722 wins, 673 losses and 18 pushes, $759 profit and a 0.5% return. 722 divided by 1,395 decided picks is 51.8%. At the average odds these boards show for him, about -106, a bettor needs roughly 51.5% to break even, so this is close to flat. To reach the 60% the FAQ promises, he would have needed about 837 wins out of those 1,395 decisions, 115 more than he had.",
+    "We also compared two dates. On 7 Nov 2026 the same board showed him at 686-638 with $923 profit. By 20 Nov it was 722-673 with $759. That means the 13 days in between went about 36-35 and lost about $164 on $100 bets. Short stretches like this mean little alone, but they show the record is moving sideways, not toward 60%.",
+    "The biggest claims come with no numbers at all. \"The most units won of all time\" names no total, no period and no source. The FAQ is unusually frank about why: asked why the site never talks about losers, it compares itself to restaurants that do not post bad reviews and says \"it would not be wise to advertise losing days,\" while promising \"There will be no inaccurate records posted.\" What you see on the site is chosen to sell.",
+    "The biographies disagree with each other. OffshoreInsiders and a 2016 press release say full time since 1988, while a StatsAlt pick listing on 20 Nov 2026 said \"professionally since 1985.\" One bio says a winning March Madness every year since 1998, another says since 1988. None of this proves anything about results, but it is a reason to treat the career claims as marketing copy."
   ],
   "record": [
-    "What a buyer can check outside OffshoreInsiders: PicksDepot, the sister site announced by OffshoreInsiders, showed a leaderboard on 7 Nov 2026 whose top rows matched the SportsCapping current season board exactly. It ranked Joe Duffy 22nd with 686-638, 51.8% wins, average odds of -106, a 0.6% return and $923 profit. SportsCapping says its board counts all picks since 1 Jan on flat $100 bets. At -106 a bettor needs about 51.5% to break even, so this is close to flat. StatsAlt, another marketplace, showed him at 81-69-3, +26.33 units and +$2,633 profit, without saying what period that covers. All of these sites sell his picks, and we could not open the full pick logs behind the numbers, so they are third party figures, not audits.",
-    "What is the seller's own marketing: every claim on OffshoreInsiders.com, from \"most units won of all time\" to the 60% target. The site has no results page we could find, and its FAQ says it is not set up to post plays after they start, though it says it may add that.",
-    "We found no court or regulator action involving Joe Duffy or OffshoreInsiders in our searches."
+    "What a buyer can check outside OffshoreInsiders: three marketplaces that sell his picks publish numbers. SportsCapping's 2026 season board had him at 722-673-18, 51.8%, $759 profit and 0.5% return on 20 Nov 2026, ranked 20th of the 31 handicappers shown. StatsAlt showed 84-79-1, 51.53%, +2.00 units and +$200 profit, without naming the period. CappersPicks showed 47-37 and +$627 in college football over the past 60 days. These sites earn money when his picks sell, and we could not open the full pick logs behind any of them, so they are third party figures, not audits.",
+    "PicksDepot, the sister site OffshoreInsiders launched, shows a leaderboard with the same top rows and the same \"Sc Score\" column as SportsCapping, so it appears to draw on the same grading system rather than a separate one. Its leaderboard page says \"Joe Duffy is the industry standard,\" yet he did not appear in the top five rows it displayed.",
+    "What is the seller's own marketing: every claim on OffshoreInsiders.com, from \"most units won of all time\" to the 60% target. The site has no results page we could find. Its FAQ says it is not set up to post plays after they start, criticises other sites for grading at the best line ever available, and says it grades its own plays strictly, but it does not publish those grades.",
+    "We found no court or regulator action involving Joe Duffy or OffshoreInsiders in our searches, and the Better Business Bureau returned no business profile for OffshoreInsiders."
   ],
   "our_data": {
     "matched": false,
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition Joe Duffy is not matched to a Watchdog graded record, so we make no claim about how his picks perform.",
-    "context": "For scale: the OffshoreInsiders FAQ says he will hit near or above 60% over time. On the Watchdog board on 7 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "context": "For scale: the OffshoreInsiders FAQ says he will hit near or above 60% over time. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "We found no customer reviews of Joe Duffy or OffshoreInsiders on any review site we checked, and the forum mentions we could open are short and say nothing about results. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent buyer evidence on Joe Duffy is very thin for a seller this old. We searched TheRX, Sportsbook Review, Covers, our saved library of Reddit and forum posts, CapperTek reviews and the BBB. Most mentions are reposted plays or the company's own promotion. Below is everything we found and how much weight it can carry. Unhappy buyers are the likeliest to write, so this shows what has gone wrong for some buyers, not how many.",
   "customers": [
-    {"type": "Not found", "tone": "Neutral", "date": "Checked 7 Nov 2026", "text": "CapperTek's review page for OffshoreInsiders said there were no reviews, SmartCustomer (formerly SiteJabber) showed 0 reviews, Trustpilot had no page for offshoreinsiders.com, and a Better Business Bureau search returned no matching business. We found no Reddit thread about the service.", "source": null},
-    {"type": "Forum post", "tone": "Neutral", "date": "12 Mar 2022", "text": "On TheRX forum, a member asked whether anyone had used Joe Duffy and OffshoreInsiders and how the picks were. The replies we read on that page did not answer him.", "source": 12},
-    {"type": "Forum post", "tone": "Neutral", "date": "13 Jan 2014", "text": "In a TheRX service plays thread, a member posted the day's Joe Duffy Wise Guy and major plays and wrote that they were \"Paid and confirmed by me,\" which shows he bought them. He did not report how they did.", "source": 13}
+    {
+      "type": "Our summary",
+      "tone": "Mixed",
+      "date": "Read 20 Nov 2026",
+      "text": "We found four buyer related posts over 14 years, all on forums. One is negative: in 2012 a Sportsbook Review member said a month of an OffshoreInsiders service cost them over $2,000 in bets and that the ads showed only the wins. Two are neutral: a 2014 TheRX member who bought and reposted his plays without reporting results, and a 2022 TheRX member who asked if anyone had used him and got no answer. On Reddit we found only the company's own promotional posts. There are no reviews on CapperTek, no BBB profile and no App Store app. Nobody, positive or negative, posted a tracked record of his picks.",
+      "source": null
+    },
+    {
+      "type": "Forum allegation",
+      "tone": "Negative",
+      "date": "31 Dec 2012",
+      "text": "In a Sportsbook Review thread warning about pick sellers, a member said they bought a month of a service called \"GodsTips\" from OffshoreInsiders, lost over $2,000 following it, and that bets were often lost by halftime. They objected that the ads showed a single win without saying the day went 1-6 or worse. The post names an OffshoreInsiders service, not necessarily Duffy's own plays, and gives no full record.",
+      "source": 15
+    },
+    {
+      "type": "Forum post",
+      "tone": "Neutral",
+      "date": "12 Mar 2022",
+      "text": "On TheRX forum, a member asked whether anyone had used Joe Duffy and OffshoreInsiders and how the picks were. The replies we read on that page did not answer him.",
+      "source": 12
+    },
+    {
+      "type": "Forum post",
+      "tone": "Neutral",
+      "date": "13 Jan 2014",
+      "text": "In a TheRX service plays thread, a member posted the day's Joe Duffy Wise Guy and major plays and wrote that they were \"Paid and confirmed by me,\" which shows he bought them. He did not report how they did.",
+      "source": 13
+    },
+    {
+      "type": "Forum post",
+      "tone": "Neutral",
+      "date": "Oct 2020",
+      "text": "The Reddit posts we found that name OffshoreInsiders, in r/sportsbetting from 2020 and 2021, were written to promote the site and its podcast, not by buyers. We found no Reddit buyer review.",
+      "source": 20
+    },
+    {
+      "type": "Not found",
+      "tone": "Neutral",
+      "date": "Checked 20 Nov 2026",
+      "text": "CapperTek's review page for OffshoreInsiders said there were no reviews, and a Better Business Bureau search returned no matching business. On 7 Nov 2026 SmartCustomer (formerly SiteJabber) showed 0 reviews and Trustpilot had no page for offshoreinsiders.com.",
+      "source": 10
+    }
   ],
   "conflicts": [
-    "The OffshoreInsiders homepage carries a banner link that redirects to an affiliate address at MyBookie, an offshore sportsbook, with the promo code MB50. The site's article list also includes reviews of MyBookie, BetOnline and Bovada. Affiliate deals like these usually pay the referrer when readers sign up or lose. Offshore sportsbooks are not licensed by U.S. state regulators, so check the law where you live.",
-    "PicksDepot, which displays the leaderboard quoted above, is OffshoreInsiders' own sister site, and StatsAlt and SportsCapping sell picks too. None of them is a neutral auditor."
+    "The OffshoreInsiders homepage carries a MyBookie banner served through an affiliate tracking link (on 7 Nov 2026 the link also carried the promo code MB50), and its article list includes reviews of MyBookie, BetOnline and Bovada. The joeduffy.net blog adds a GT Bets review. Affiliate deals like these usually pay the referrer when readers sign up or lose. Offshore sportsbooks are not licensed by U.S. state regulators, so check the law where you live.",
+    "PicksDepot, which says \"Joe Duffy is the industry standard,\" is OffshoreInsiders' own sister site. StatsAlt, SportsCapping, CappersPicks and CapperTek all sell picks too. None of them is a neutral auditor.",
+    "The FAQ says the business was built by recruiting \"tipsters who have winners to brag about\" and that admitting losers \"was not a criterion.\" That tells you the site's selection test is marketing, not a verified record."
   ],
   "strengths": [
-    "Every package price is published, with the exact date each package runs to.",
-    "A mailing address and email are listed, and payment goes through PayPal rather than straight to a bank.",
+    "Every package price is published, with the exact date each package runs to, and the cheapest is $21 for a day.",
+    "A mailing address and email are listed, and card payment goes through PayPal, so card details are not stored on his site.",
     "The FAQ is blunt that there is no guarantee and no refund, so a buyer knows the terms before paying.",
-    "His picks are listed on outside marketplaces that grade them, which is more than many sellers allow."
+    "His picks are graded on outside marketplaces, and the numbers there show a roughly break even 2026 rather than heavy losses.",
+    "Free picks and long write ups on his blog and podcast let a reader see his method before paying."
   ],
   "concerns": [
     "No record on his own site, and an FAQ that says losing days are not advertised.",
-    "\"Most units won of all time\" and the 60% target have no figures behind them; the outside numbers we found were near break even.",
-    "No refunds, and no phone support.",
-    "The homepage carries an offshore sportsbook affiliate link with a promo code.",
-    "Bios on different sites give different start years for the same March Madness claim."
+    "\"Most units won of all time\" and the 60% target have no figures behind them; every outside number we found was near 52%.",
+    "No refunds, no phone support, and Western Union offered as a payment route for long term buys.",
+    "The homepage and blog carry offshore sportsbook affiliate links and promo codes.",
+    "Bios on different sites give different start years, 1985 or 1988, and different March Madness streak years.",
+    "Almost no independent buyer feedback exists, and the one first hand complaint we found is negative."
   ],
   "checklist": [
     "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
-    "Count units, not wins. A 60% record at heavy favorites can still lose money.",
-    "Read the guarantee for the words refund, credit and extension. Most \"guarantees\" in this business are credits.",
+    "Compare the same handicapper across sites. His 2026 numbers on SportsCapping are a better guide than any line on OffshoreInsiders.",
+    "Count units, not wins. A 60% record at heavy favorites can still lose money, and 52% at -110 loses.",
+    "Pay by card through PayPal rather than Western Union, so you keep a dispute route.",
     "Write down each pick yourself the moment you receive it, with the line you can actually get.",
     "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
   ],
   "faq": [
-    ["Is Joe Duffy legit?", "OffshoreInsiders is a real, long running business with a mailing address, published prices and PayPal checkout. We could not verify his big claims, such as the most units won of all time, because his site publishes no record."],
-    ["How much does Joe Duffy cost?", "On 7 Nov 2026 OffshoreInsiders charged $21 for one day, $129 for a week, $299 for a month, $899 for 100 days and $1,249 for a year, with no refunds for losing days."],
-    ["Does Joe Duffy have a verified record?", "Not a full one. Outside pick marketplaces that sell his picks showed 686-638 with a 0.6% return for 2026 and 81-69-3 over an unstated period, but we could not open the logs behind them, and Watchdog has no graded record for him."],
-    ["Is Joe Duffy worth it?", "For $21 a day you get every pick he releases, usually 3 to 6 plays according to the FAQ, from a handicapper active since 1988. What is unproven is the 60% the site promises: the outside numbers we found were close to break even, and losing days are not refunded."]
+    [
+      "Is Joe Duffy legit?",
+      "OffshoreInsiders is a real, long running business with a mailing address, published prices and PayPal checkout. We could not verify his big claims, such as the most units won of all time, because his site publishes no record, and the outside boards we checked show him close to break even in 2026."
+    ],
+    [
+      "How much does Joe Duffy cost?",
+      "On 20 Nov 2026 OffshoreInsiders charged $21 for one day, $39 for two days, $129 for a week, $299 for a month, $899 for 100 days and $1,249 for a year, with no refunds for losing days. Single plays on StatsAlt cost $25."
+    ],
+    [
+      "Does Joe Duffy have a verified record?",
+      "Not a full one. SportsCapping showed 722-673-18 with a 0.5% return for 2026, StatsAlt showed 84-79-1, and CappersPicks showed 47-37 in college football over 60 days. These sites sell his picks and we could not open the logs behind them. Watchdog has no graded record for him."
+    ],
+    [
+      "Does Joe Duffy hit 60%?",
+      "Not on any board we found. His FAQ promises near or above 60% over time, but his 2026 season on SportsCapping is 51.8% and StatsAlt shows 51.5%. Only a 60 day college football slice on CappersPicks was higher, at 56%."
+    ],
+    [
+      "Does OffshoreInsiders give refunds?",
+      "No. The FAQ says it does not give refunds for losing days and argues that guarantees are a gimmick. Its sister site PicksDepot says it sells guaranteed packages, but we did not find those terms."
+    ],
+    [
+      "Is Joe Duffy worth it?",
+      "For $21 a day you get every play he releases from a handicapper active for decades, which is cheap by industry standards. What is unproven is the edge: the outside numbers are close to the 52.4% needed at -110, so after the price of the picks and the lines you can get, a buyer could easily end up behind."
+    ]
   ],
-  "related": ["wayne-allyn-root-winningedge", "big-al", "docs-sports", "cappertek", "marc-lawrence-playbook"],
+  "related": [
+    "wayne-allyn-root-winningedge",
+    "big-al",
+    "sportscapping",
+    "cappertek",
+    "marc-lawrence-playbook"
+  ],
   "sources": [
-    {"title": "OffshoreInsiders.com homepage and package page (prices, claims, affiliate banner)", "url": "https://www.offshoreinsiders.com/", "accessed": "7 Nov 2026"},
-    {"title": "OffshoreInsiders: What Makes Joe Duffy No. 1?", "url": "https://offshoreinsiders.com/index.php?PageID=140", "accessed": "7 Nov 2026"},
-    {"title": "OffshoreInsiders FAQ (win rate claim, records, no guarantee, no refunds, payment)", "url": "https://www.offshoreinsiders.com/index.php?PageID=2", "accessed": "7 Nov 2026"},
-    {"title": "OffshoreInsiders contact page (address, email)", "url": "https://www.offshoreinsiders.com/index.php?Page=Contact", "accessed": "7 Nov 2026"},
-    {"title": "OffshoreInsiders: Partner Site PicksDepot.com (guaranteed packages)", "url": "https://www.offshoreinsiders.com/index.php?PageID=163", "accessed": "7 Nov 2026"},
-    {"title": "OffshoreInsiders daily package checkout page (PayPal)", "url": "https://www.offshoreinsiders.com/index.php?PageID=151&packageid=1", "accessed": "7 Nov 2026"},
-    {"title": "PicksDepot.com homepage (leaderboard listing Joe Duffy)", "url": "https://picksdepot.com/", "accessed": "7 Nov 2026"},
-    {"title": "SportsCapping season profit leaderboard (method and top rows)", "url": "https://www.sportscapping.com/all-season-cappers-leaderboard.html?min_picks=1&sort=profit&direction=DESC", "accessed": "7 Nov 2026"},
-    {"title": "StatsAlt: Joe Duffy profile (record, bio, packages)", "url": "https://www.statsalt.com/profile/joe-duffy", "accessed": "7 Nov 2026"},
-    {"title": "CapperTek: OffshoreInsiders.com profile (verified service, bio)", "url": "https://www.cappertek.com/picks.asp?shs=OffshoreInsiders.com", "accessed": "7 Nov 2026"},
-    {"title": "CapperTek: OffshoreInsiders.com customer reviews (none)", "url": "https://www.cappertek.com/reviews.asp?shs=OffshoreInsiders.com", "accessed": "7 Nov 2026"},
-    {"title": "PR.com: OffshoreInsiders.com CEO press release (19 Feb 2016, AJA Enterprises contact)", "url": "https://www.pr.com/press-release/658762", "accessed": "7 Nov 2026"},
-    {"title": "TheRX forum: Saturday Service Play Thread 3/12/2022", "url": "https://www.therx.com/threads/saturday-service-play-thread-3-12-2022.1196686/post-13807227", "accessed": "7 Nov 2026"},
-    {"title": "TheRX forum: Service Plays Monday 1/13/14", "url": "https://www.therx.com/threads/service-plays-monday-1-13-14.980841/post-10424523", "accessed": "7 Nov 2026"},
-    {"title": "SmartCustomer (formerly SiteJabber): offshoreinsiders.com reviews", "url": "https://www.smartcustomer.com/reviews/offshoreinsiders.com", "accessed": "7 Nov 2026"}
+    {
+      "title": "OffshoreInsiders.com homepage and package page (prices, claims, affiliate banner)",
+      "url": "https://www.offshoreinsiders.com/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "OffshoreInsiders: What Makes Joe Duffy No. 1?",
+      "url": "https://offshoreinsiders.com/index.php?PageID=140",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "OffshoreInsiders FAQ (win rate claim, records, no guarantee, no refunds, payment)",
+      "url": "https://www.offshoreinsiders.com/index.php?PageID=2",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "OffshoreInsiders contact page (address, email)",
+      "url": "https://www.offshoreinsiders.com/index.php?Page=Contact",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "OffshoreInsiders: Partner Site PicksDepot.com (guaranteed packages)",
+      "url": "https://www.offshoreinsiders.com/index.php?PageID=163",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "OffshoreInsiders daily package checkout page (PayPal)",
+      "url": "https://www.offshoreinsiders.com/index.php?PageID=151&packageid=1",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "PicksDepot.com homepage (leaderboard listing Joe Duffy)",
+      "url": "https://picksdepot.com/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "SportsCapping season profit leaderboard (2026 All Sports, 1 Jan to 20 Nov, flat $100 bets)",
+      "url": "https://www.sportscapping.com/all-season-cappers-leaderboard.html?min_picks=1&sort=profit&direction=DESC",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "StatsAlt: Joe Duffy profile (record, bio, packages)",
+      "url": "https://www.statsalt.com/profile/joe-duffy",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "CapperTek: OffshoreInsiders.com profile (verified service, bio)",
+      "url": "https://www.cappertek.com/picks.asp?shs=OffshoreInsiders.com",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "CapperTek: OffshoreInsiders.com customer reviews (none)",
+      "url": "https://www.cappertek.com/reviews.asp?shs=OffshoreInsiders.com",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "PR.com: OffshoreInsiders.com CEO press release (19 Feb 2016, AJA Enterprises contact)",
+      "url": "https://www.pr.com/press-release/658762",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "TheRX forum: Saturday Service Play Thread 3/12/2022",
+      "url": "https://www.therx.com/threads/saturday-service-play-thread-3-12-2022.1196686/post-13807227",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "TheRX forum: Service Plays Monday 1/13/14",
+      "url": "https://www.therx.com/threads/service-plays-monday-1-13-14.980841/post-10424523",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "SmartCustomer (formerly SiteJabber): offshoreinsiders.com reviews",
+      "url": "https://www.smartcustomer.com/reviews/offshoreinsiders.com",
+      "accessed": "7 Nov 2026"
+    },
+    {
+      "title": "Sportsbook Review forum: Warning to all betters thread (30 and 31 Dec 2012, OffshoreInsiders buyer reply)",
+      "url": "https://www.sportsbookreview.com/forum/college-football-betting/1074864-warning-to-all-betters-the-facts-about-scamdicappers-jeff-allen-and-big-al",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "PicksDepot leaderboards page (Sc Score column, \"Joe Duffy is the industry standard\")",
+      "url": "https://picksdepot.com/leaderboards/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "SportsCapping: Joe Duffy handicapper page",
+      "url": "https://www.sportscapping.com/handicappers/joe-duffy",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "CappersPicks: Best College Football Handicappers in 2026 (Joe Duffy 47-37, +$627, last 60 days)",
+      "url": "https://www.capperspicks.com/gambling/best-college-football-handicappers/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "BBB search for offshoreinsiders (no business profile found)",
+      "url": "https://www.bbb.org/search?find_text=offshoreinsiders",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbetting: OffshoreInsiders promotional post (Oct 2020)",
+      "url": "https://www.reddit.com/r/sportsbetting/comments/j7gwwi/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "OffshoreInsiders Handicapping Blog at joeduffy.net (free pick write ups)",
+      "url": "http://www.joeduffy.net/blog/",
+      "accessed": "20 Nov 2026"
+    }
   ],
   "pricing_source": 0
 }
