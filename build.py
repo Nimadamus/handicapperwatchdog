@@ -3010,7 +3010,8 @@ def _publish_light_data(site):
         json.dump(doc, f, separators=(',', ':'))
 
 
-PROFILE_INDEX_MIN = 20  # thinner profiles still get a page, but stay out of search until they have a real sample
+PROFILE_INDEX_MIN = 100  # 20 Nov 2026: only established samples are indexable (thin template pages hurt the whole site)
+DIRECTORY_MIN = 20  # the directory still lists every account with a real sample
 
 
 def _day(iso):
@@ -3021,35 +3022,104 @@ def _day(iso):
     return '%d %s %d' % (d.day, d.strftime('%b'), d.year)
 
 
-def _profile_read(r, c, rec_s, units_s, roi_s):
-    """Plain language read of a public record, built only from fields already public in data/index.json."""
+def _board_stats(index):
+    """Reference numbers for comparing one account with every other established account."""
+    est = [r for r in index if r.get('picks', 0) >= PROFILE_INDEX_MIN and r.get('units') is not None]
+    rois = sorted(r['roi'] for r in est if r.get('roi') is not None)
+    return {'n': len(est), 'rois': rois,
+            'med_roi': rois[len(rois) // 2] if rois else None,
+            'by_units': {r['id']: i + 1 for i, r in enumerate(sorted(est, key=lambda x: -x['units']))}}
+
+
+def _ordinal(k):
+    return '%d%s' % (k, 'th' if 10 <= k % 100 <= 20 else {1: 'st', 2: 'nd', 3: 'rd'}.get(k % 10, 'th'))
+
+
+def _profile_read(r, c, rec_s, units_s, roi_s, board=None):
+    """What this record actually says, written only from this account's own public numbers (data/index.json).
+    Every sentence is chosen by the data, so no two established profiles read the same (20 Nov 2026)."""
     if not r.get('picks'):
         return ''
-    n, wp = r['picks'], r.get('win_pct')
-    first, last = _day(r.get('first_pick')), _day(r.get('last_pick'))
-    span = ' between %s and %s' % (first, last) if first and last and first != last else ''
-    out = ['%s has %s graded picks%s: a %s record%s, %s units and %s ROI.' % (
-        c, f'{n:,}', span, rec_s, ' (%.1f%% wins)' % wp if wp is not None else '', units_s, roi_s)]
-    if wp is not None:
+    n, wp, roi = r['picks'], r.get('win_pct'), r.get('roi')
+    out = []
+    weeks = None
+    try:
+        days = (datetime.strptime(r['last_pick'][:10], '%Y-%m-%d') - datetime.strptime(r['first_pick'][:10], '%Y-%m-%d')).days
+        weeks = max(days / 7.0, 1.0)
+    except (KeyError, TypeError, ValueError):
+        pass
+    if weeks:
+        pace = n / weeks
+        out.append('%s has %s graded picks over about %d week%s, roughly %s a week%s.' % (
+            c, f'{n:,}', round(weeks), '' if round(weeks) == 1 else 's', ('%.0f' % pace) if pace >= 2 else ('%.1f' % pace),
+            ', a heavy volume that leaves little room for being selective' if pace >= 40 else
+            ', a light card where every pick moves the record' if pace < 5 else ''))
+    if wp is not None and roi is not None:
         gap = wp - 52.4
-        out.append('At standard -110 prices a bettor needs about 52.4%% wins to break even, so this win rate sits %.1f points %s that line. '
-                   'Plus money and favorites change the math, which is why units and ROI matter more than win rate.' % (abs(gap), 'above' if gap >= 0 else 'below'))
-    if n < 100:
-        out.append('With fewer than 100 graded picks this is still a developing sample, and short runs swing hard in both directions.')
+        if gap >= 0 and roi < 0:
+            out.append('The win rate of %.1f%% clears the 52.4%% needed at -110, yet ROI is %s: the winners came at short prices '
+                       'and the losers cost more than the wins paid.' % (wp, roi_s))
+        elif gap < 0 and roi > 0:
+            out.append('Only %.1f%% of picks won, under the 52.4%% line for -110 bets, but ROI is still %s because many winners '
+                       'were plus money.' % (wp, roi_s))
+        elif roi >= 0:
+            out.append('A %.1f%% win rate and %s ROI point the same way: this record has beaten the price, %.1f points of win rate over the -110 line.' % (wp, roi_s, gap))
+        else:
+            out.append('A %.1f%% win rate and %s ROI point the same way: this record has lost to the price, %.1f points under the -110 line.' % (wp, roi_s, -gap))
+    if board and board.get('n') and r.get('units') is not None and roi is not None and n >= PROFILE_INDEX_MIN:
+        rank = board['by_units'].get(r['id'])
+        if rank:
+            better = 100.0 * sum(1 for x in board['rois'] if x < roi) / len(board['rois'])
+            out.append('Among the %d accounts with %d or more graded picks it ranks %s by units, and its ROI beats %d%% of them%s.' % (
+                board['n'], PROFILE_INDEX_MIN, _ordinal(rank), round(better),
+                ' (the middle account is at %+.1f%%)' % board['med_roi'] if board.get('med_roi') is not None else ''))
+    sp = [x for x in (r.get('spark') or []) if isinstance(x, (int, float))]
+    if len(sp) >= 8:
+        peak, cur, low = max(sp), sp[-1], min(sp)
+        at = sp.index(peak)
+        dd = max(max(sp[:k + 1]) - sp[k] for k in range(len(sp)))
+        phase = 'early in the record' if at < len(sp) / 3 else 'midway through' if at < 2 * len(sp) / 3 else 'late in the record'
+        if peak > 0 and cur < peak - 1:
+            out.append('The running units total peaked at %+.1f %s and now sits %.1f units below that high.' % (peak, phase, peak - cur))
+        elif cur > 0 and cur >= peak - 1:
+            out.append('The running units total is at or near its high (%+.1f), so the record is finishing stronger than it started.' % cur)
+        elif peak <= 0:
+            out.append('The running units total never got above break even; its low point was %+.1f.' % low)
+        if dd >= 5:
+            out.append('The deepest slide from a high point was %.1f units, the swing a follower would have had to sit through.' % dd)
+    bs = [(k, v) for k, v in (r.get('bs') or {}).items() if v and v[0] and v[0] >= 15 and v[1] is not None]
+    if len(bs) >= 2:
+        bs.sort(key=lambda kv: -kv[1][1])
+        (bk, bv), (wk, wv) = bs[0], bs[-1]
+        if bv[1] > 0 > wv[1]:
+            out.append('%s carried the record (%+.2f units on %d picks) while %s cost %.2f units on %d picks.' % (bk, bv[1], bv[0], wk, -wv[1], wv[0]))
+        elif bv[1] > 0:
+            out.append('Every sport with 15 or more picks finished ahead; %s led with %+.2f units on %d picks.' % (bk, bv[1], bv[0]))
+        else:
+            out.append('No sport with 15 or more picks finished ahead; %s lost least (%+.2f units on %d picks) and %s lost most (%+.2f on %d).' % (
+                bk, bv[1], bv[0], wk, wv[1], wv[0]))
+        top = max(v[0] for k, v in bs)
+        if top / n >= 0.6:
+            out.append('About %d%% of the graded picks are in one sport, so this is mostly a specialist record.' % round(100 * top / n))
+    elif len(bs) == 1:
+        out.append('Only one sport has 15 or more graded picks (%s, %d picks), so the sport breakdown rests on a single sample.' % (bs[0][0], bs[0][1][0]))
+    r30 = r.get('r30') or {}
+    if r30.get('picks', 0) >= 15 and r30.get('roi') is not None and roi is not None:
+        d = r30['roi'] - roi
+        if abs(d) >= 3:
+            out.append('The last 30 days (%d-%d over %d picks, %+.1f%% ROI) are running %s than the full record by %.1f points of ROI.' % (
+                r30.get('w', 0), r30.get('l', 0), r30['picks'], r30['roi'], 'hotter' if d > 0 else 'colder', abs(d)))
+        else:
+            out.append('The last 30 days (%d-%d, %+.1f%% ROI) look much like the full record.' % (r30.get('w', 0), r30.get('l', 0), r30['roi']))
+    if n < 300:
+        link = '<a href="learn/sample-size.html">why %s picks is still a small sample</a>' % f'{n:,}'
+    elif wp is not None and roi is not None and (wp >= 52.4) != (roi >= 0):
+        link = '<a href="learn/units-and-roi.html">why win rate and ROI can disagree</a>'
     else:
-        out.append('With %s graded picks this is an established sample, large enough that luck explains less of the result.' % f'{n:,}')
-    win = []
-    for key, label in (('r7', 'last 7 days'), ('r30', 'last 30 days')):
-        x = r.get(key)
-        if x and x.get('picks'):
-            win.append('%s: %d-%d%s over %d picks, %+.2f units' % (label, x['w'], x['l'], '-%d' % x['p'] if x.get('p') else '', x['picks'], x.get('net') or 0))
-    if win:
-        out.append('Recent form, %s.' % '; '.join(win))
+        link = '<a href="learn/break-even-win-rate.html">the break even win rate behind these numbers</a>'
     paras = ''.join('<p>%s</p>' % _esc(t) for t in out)
-    return ('<section class="edsec profread"><h2>How to read this record</h2>%s'
-            '<p>Learn more: <a href="learn/break-even-win-rate.html">break even win rates</a>, '
-            '<a href="learn/sample-size.html">sample size</a> and <a href="learn/units-and-roi.html">units and ROI</a>.</p>'
-            '<p><a href="pricing.html">Watchdog Pro</a> shows this account\'s full graded pick log and every breakdown.</p></section>') % paras
+    return ('<section class="edsec profread"><h2>What the %s record shows</h2>%s<p class="muted small">Read more: %s.</p></section>') % (
+        rec_s, paras, link)
 
 
 PUBLIC_LEDGER_MAX = 10  # same cap as tools/verify_boundary.py: the free ledger never holds more
@@ -3119,9 +3189,12 @@ def _write_profile_pages(site, index):
     os.makedirs(folder, exist_ok=True)
     with open(os.path.join(HERE, 'capper.html'), encoding='utf-8') as f:
         shell = f.read().replace('\r\n', '\n')
-    ranked = sorted((r for r in index if r['picks'] >= PROFILE_INDEX_MIN), key=lambda r: -r['picks'])
+    ranked = sorted((r for r in index if r['picks'] >= DIRECTORY_MIN), key=lambda r: -r['picks'])
     if not ranked:
         return
+    board = _board_stats(index)
+    indexable = [r for r in ranked if r['picks'] >= PROFILE_INDEX_MIN] or ranked
+    iplace = {r['id']: i for i, r in enumerate(indexable)}
     place = {r['id']: i for i, r in enumerate(ranked)}
     try:
         sport_slugs = {s: _sport_slug(s) for s in _sport_pages(index)}  # the sport pages this build writes
@@ -3154,8 +3227,8 @@ def _write_profile_pages(site, index):
         else:
             title = '%s: No Graded Picks Yet' % wl
             desc = '%s is monitored by Handicapper Watchdog. No pick has been graded yet.' % wl
-        start = place.get(cid, 0)
-        peers = [ranked[(start + k) % len(ranked)] for k in range(1, 7)]
+        start = iplace.get(cid, place.get(cid, 0) % len(indexable))
+        peers = [indexable[(start + k) % len(indexable)] for k in range(1, 7)]
         peers = [p for p in peers if p['id'] != cid]
         bs = sorted((r.get('bs') or {}).items(), key=lambda kv: -(kv[1][0] or 0))
         rows = ''.join('<tr><td class="l">%s</td><td>%s</td><td>%s</td><td>%s</td></tr>' % (
@@ -3172,7 +3245,7 @@ def _write_profile_pages(site, index):
                     '<table><thead><tr><th class="l">Sport</th><th>Record</th><th>Picks</th><th>Units</th></tr></thead><tbody>%s</tbody></table>' % rows if rows else '')
         pub = _public_profile(site, cid)
         body += _profile_recent(pub, _esc(w))  # inside #prof: capper.js replaces it with the same public ledger when scripts run
-        facts = _profile_facts(r, pub, _esc(w), sport_slugs) + _profile_read(r, _esc(wl), record(r), units(r), roi(r))
+        facts = _profile_facts(r, pub, _esc(w), sport_slugs) + _profile_read(r, _esc(wl), record(r), units(r), roi(r), board)
         more = (('<div class="wrap profkeep">%s</div>' % facts) if facts else '') + (
                 '<section class="wrap profmore" aria-label="More handicapper records"><h2>More graded records</h2><p>%s</p>'
                 '<p><a href="handicappers/">Handicapper directory</a> · <a href="cappers.html">Rankings</a> · <a href="how-we-grade.html">How we grade</a></p></section>') % ' '.join(
@@ -3213,7 +3286,7 @@ def _write_profile_pages(site, index):
             '<p class="muted">Every account here has %s or more graded picks, listed by sample size, not by results. %s accounts qualify. '
             'All %s monitored accounts have a profile, and you can find the rest in <a href="../cappers.html?min=0">the rankings</a>.</p></div></div>'
             '<div class="tw"><table><thead><tr><th class="l">#</th><th class="l">Handicapper</th><th>Record</th><th>Picks</th><th>Units</th><th class="hm">ROI</th></tr></thead><tbody>%s</tbody></table></div>') % (
-                PROFILE_INDEX_MIN, f'{len(ranked):,}', f'{len(index):,}', trs)
+                DIRECTORY_MIN, f'{len(ranked):,}', f'{len(index):,}', trs)
     html = _document(1, 'cappers.html', 'Handicapper Directory: Graded Records | Watchdog',
                      'Directory of sports handicappers with 20 or more graded picks. Open any record for its profile, sport splits and recent results.',
                      root + 'handicappers/', body)
