@@ -55,6 +55,11 @@ Work from worktree `~/hwd-names-1114` (branch names-1114, push `HEAD:main`; main
    scam-handicapper-red-flags, should-you-pay-for-sports-picks, verified-handicapper-records, break-even-win-rate, units-and-roi, sample-size,
    closing-line-value, what-bettors-say-about-handicappers, the-board.html; then the 84 deepened reviews. (Search box ref "search URL inspection".)
    Board page now has sample size spread table (f5336f8, live 11:28 AM). Tech audit (dupaudit_1120/tech_audit.py) clean except frozen weekly title.
+   BUG HUNT 20 Nov PM (tools in ~/hwd_testimonials/dupaudit_1120: bughunt_crawl.py, pick_sanity.py (box), index_consistency.py,
+   review_integrity.py). Fixed live: dead r90/r365 ranking filters, profile JS title, compare copy, branded 404, home search ranking +
+   loading state, unpriced pick method text, 545 forum pronouns -> they (+13 in queue). AWAITING OWNER: (1) 6 impossible price ML wins
+   +1000 or longer on favorites, 128.5u (coolbetcanada 3, dailycfbcbb Yankees +3500, danielkarpuc, bignutscapper); (2) 52 exact duplicate
+   graded picks in 31 accounts (/tmp/exact_dups.json on box); (3) ROI excludes 1,718 unpriced picks while W-L counts them (222 accounts).
    HARVESTER: market stage CONFIRMED fixed (mkt_ok every cycle since 19 Nov 2:11 PM PST; first COMPLETE cycle 20 Nov 2:59 AM PST);
    only reconcile_parse.py still times out (parser backlog ~118k, box CPU). Picks 197339/192518 still await owner 'hold both'.
    Master list ~/hwd_testimonials/candidates_1119.json (134 sellers; 108 have no buyer buzz, most rosters now checked and rejected as thin).
