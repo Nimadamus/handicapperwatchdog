@@ -1,18 +1,18 @@
 {
   "slug": "sportsmemo",
   "name": "SportsMemo",
-  "legal_name": "Wager Talk Media, LP, named on the refund page as the parent company of SportsMemo",
+  "legal_name": "Wager Talk Media, LP, named on the refund page as the parent company of SportsMemo; earlier traded as SPORTSMEMO, INC",
   "kind": "Pick marketplace selling plays from a stable of paid handicappers",
-  "checked": "17 Nov 2026",
-  "checked_iso": "2026-11-17",
-  "updated_iso": "2026-11-17",
+  "checked": "20 Nov 2026",
+  "checked_iso": "2026-11-20",
+  "updated_iso": "2026-11-20",
   "title": "SportsMemo Review 2026: Pricing, Record, Is It Worth It?",
-  "description": "SportsMemo review, checked 17 Nov 2026: $5 single plays, $49 to $77 passes, all sales final, seller run leaderboards and what bettors have posted.",
+  "description": "SportsMemo review, checked 20 Nov 2026: $7 single plays, all sales final, its leaderboard and expert runs checked, and 17 years of buyer posts.",
   "h1": "SportsMemo review",
-  "dek": "A pick marketplace founded in 2004 and bought by WagerTalk in 2018. On 17 Nov 2026 most single plays were $5 and short passes ran $49 to $77. Sales are final, nothing is guaranteed, and every record shown is published by the site that sells the picks.",
+  "dek": "A pick marketplace founded in 2004 by Ted Sevransky, better known as Teddy Covers, and bought by WagerTalk in 2018. On 20 Nov 2026 every single play on its picks page was $7.00. Sales are final, nothing is guaranteed, and every record shown is published by the company that sells the picks. Buyer posts are few: a cluster of forum threads from 2009 and 2010 and two negative reviews from 2022.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of SportsMemo picks. This page reports what we could check on 17 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record of SportsMemo picks. This page reports what we could check on 20 Nov 2026, including the figures SportsMemo publishes about its own experts, and labels everything else."
   },
   "glance": [
     [
@@ -21,19 +21,23 @@
     ],
     [
       "Founded",
-      "2004; bought by WagerTalk on 20 Aug 2018 (press release)"
+      "2004 by Ted Sevransky (Teddy Covers); domain registered 24 Jul 2004; bought by WagerTalk on 20 Aug 2018"
+    ],
+    [
+      "Where sold",
+      "SportsMemo.com, with logins and checkout run through WagerTalk's identity system"
     ],
     [
       "Typical price seen",
-      "$5.00 single plays, $49 three day passes, $77 seven day pass with a coupon"
+      "$7.00 per single play (one listed against a $25.00 regular price)"
     ],
     [
       "Guarantee",
-      "None. \"No picks or predictions are guaranteed\" and all sales are final"
+      "None. \"No picks or predictions are guaranteed\" and \"All Sales are Final\""
     ],
     [
       "Full public record",
-      "Not found. A 7 day profit leaderboard and expert blurbs; yesterday's plays need a login"
+      "Not found. A profit leaderboard and expert blurbs; Yesterday's Plays needs a login"
     ],
     [
       "Watchdog graded record",
@@ -41,100 +45,111 @@
     ]
   ],
   "short_answer": [
-    "SportsMemo is a real, long running pick marketplace. Its terms give a Las Vegas address and Nevada law, and its refund page names Wager Talk Media, LP as the parent company. WagerTalk announced it had bought SportsMemo in August 2018. In that narrow sense the business is legitimate.",
-    "Whether its experts win is a different question. The site shows a 7 day profit leaderboard and blurbs such as \"25-10-1 over his last 36 plays here at SportsMemo.\" Those numbers come from the seller, and the page of yesterday's plays asked us to log in. We found no full, time stamped log of every pick that we could check.",
-    "Prices are low per play, often $5, which limits what a buyer can lose on the picks themselves. Treat the records as marketing, not proof, and log every play yourself with the line and time you got it."
+    "SportsMemo is a real, long running pick marketplace. The sportsmemo.com domain was registered on 24 Jul 2004, and saved copies of the site from 2006 show it selling plays from a group of named handicappers, led by its founder Ted Sevransky, who writes as Teddy Covers. WagerTalk announced it had bought SportsMemo on 20 Aug 2018. Today the terms give a Las Vegas address and Nevada law, and the refund page names Wager Talk Media, LP as the parent company. In that narrow sense the business is legitimate.",
+    "Whether its experts win is a different question. On 20 Nov 2026 the site showed a profit leaderboard and expert cards full of runs such as \"35-20 (64%) FOOTBALL HEATER\" and \"13-8-0 since Oct 27, 2026.\" These numbers come from the seller. The Yesterday's Plays page sent us to a WagerTalk login, and we found no full, time stamped log of every pick that a buyer could check.",
+    "When we did the arithmetic on the seller's own figures, most percentages were correct for the windows shown, but the windows are chosen after the fact, one expert's 2024 NFL lines cannot both be true, another expert's run appeared in two versions on the same page, and the leaderboard's 7 day, 365 day and year to date tabs showed identical profit figures.",
+    "Prices are low per play, $7.00, which limits what a buyer can lose on the picks themselves. Independent buyer talk is thin and mostly old. Forum threads from 2009 and 2010 mix praise for the analysis with complaints about losing runs, lines that moved before members could bet, and records that were hard to find. Two CapperTek reviews from 2022 were negative. Treat the records as marketing, not proof, and log every play yourself."
   ],
-  "pricing_intro": "All rows were on sportsmemo.com/picks on 17 Nov 2026. Prices change daily as experts post new plays, and many are marked as sale prices.",
+  "pricing_intro": "All rows were on sportsmemo.com/picks and the homepage on 20 Nov 2026. Three days earlier most single plays were $5.00; on 20 Nov every listed play was $7.00. Prices change daily as experts post new plays. For history: a saved copy from January 2006 shows full season packages at $999 to $1,299 and a newsletter at $59 to $179, and a saved copy from December 2016 shows single plays at $20 to $39, an all access autobill at $299 and full season passes from $399 to $899.",
   "pricing": [
     [
-      "Most single plays (NHL, NBA, college football, college basketball)",
-      "$5.00 (several shown with $7.00 crossed out)",
+      "Most single plays (NBA, college football, college basketball), nine listed on 20 Nov 2026",
+      "$7.00",
       "All sales final"
     ],
     [
-      "Marco D'Angelo NBA Game of the Week",
-      "$5 (regular $25, per the listing)",
+      "Mike Lundin NBA \"$7 Deal of the Day\"",
+      "$7.00 (shown next to $25.00)",
       "All sales final"
     ],
     [
-      "Marco D'Angelo 7 Day All Access",
-      "$77 with code MARCO77 (regular $99)",
-      "Marked \"Today Only\""
+      "Multi day or season passes",
+      "None listed on the picks page on 20 Nov 2026",
+      "On 17 Nov two experts had 3 day passes at $49 and one a 7 day pass at $77 with a code"
     ],
     [
-      "Steve Seagrave NHL Hat Trick All Access Pass (3 days)",
-      "$49",
-      "Includes his 5% Best Bets, per the listing"
+      "Power Pass",
+      "No price shown",
+      "Promoted on the homepage and experts page"
     ],
     [
-      "Jimmy Adams 3 day NBA pass",
-      "$49",
-      ""
-    ],
-    [
-      "Power Pass and WagerBuxx prepaid credits",
-      "No price shown on the page",
-      ""
+      "WagerBuxx prepaid credits",
+      "No price shown",
+      "Promoted on the homepage and experts page"
     ]
   ],
   "guarantee": [
-    "SportsMemo offers no win guarantee. The FAQ says \"No picks or predictions are guaranteed\" and that all sales are final. The refund policy adds that \"Once a product or service has been purchased, delivered, and/or viewed, no refunds will be issued.\"",
-    "The terms say the buyer's exclusive remedy is \"a refund of the price paid or replacement of our products, at our option.\" We found no free extra time or credit offer on the pages we read. Losses on the bets themselves are never covered."
+    "SportsMemo offers no win guarantee. The FAQ answers \"Are your picks guaranteed to win?\" with \"No picks or predictions are guaranteed.\" and adds that \"past performance is not indicative of future results.\"",
+    "The refund page says purchases are made from \"Wager Talk Media, LP\", that \"All Sales are Final and products are sold \"as is\".\", and that \"Once a product or service has been purchased, delivered, and/or viewed, no refunds will be issued.\" It also lists cases that never earn a refund, including in state team restrictions, lack of access to authorized sportsbooks and \"Undelivered email or SMS notifications as we are unable to guarantee the deliverability\". Card charges show as \"WT/SM* PICKS AND PAR\".",
+    "The terms say the buyer's exclusive remedy is \"a refund of the price paid\" or replacement of the product, at the company's option. The FAQ says a subscription can be cancelled at any time and access runs to the end of the billing period. It does not say whether subscriptions renew automatically.",
+    "This is a change from earlier years. In December 2016 single plays on the site were sold as \"guaranteed to cash or\" the handicapper's next top play \"is on the house.\" We found no such wording on 20 Nov 2026. Losses on the bets themselves were never covered."
   ],
   "claims": [
     {
-      "claim": "\"pushing his record to 25-10-1 over his last 36 plays here at SportsMemo\"",
-      "where": "SportsMemo homepage, David Hess listing",
-      "status": "Seller claim, no full log"
+      "claim": "\"#2 2024 NFL REG. SEASON 62-48-1 +41.27 units\" and \"#3 2024 NFL 71-25-2 +48.23 units\" (Dan Kaiser)",
+      "where": "SportsMemo Experts page",
+      "status": "Checked: the two lines cannot both describe the same 2024 NFL picks. A full season line includes the regular season, so it cannot show fewer losses (25) than the regular season alone (48)"
     },
     {
-      "claim": "\"#1 CFB Capper +85.8 Units (1 Unit base) $8500 on $100\"",
-      "where": "SportsMemo homepage, Sean Higgs",
-      "status": "Seller claim, time frame not shown"
+      "claim": "\"SINCE DEC 2025: 255-184-5 58% +166U\" and \"NOV 2026: 12-3 80% +26U\" (Razor Ray Monohan)",
+      "where": "SportsMemo leaderboard pages",
+      "status": "Checked: the same pages also show \"255-185-5 58% +163U\" and \"SM NOV: 12-4-0 75% +22U\". Both versions round to 58% (255 of 439 or 440 decided picks), but the totals differ on the same day"
     },
     {
-      "claim": "\"Rob is UP 52 UNITS SNINCE MID OCTOBER in CFB\"",
-      "where": "SportsMemo homepage, Rob Vinciletti listing",
-      "status": "Selected run, no full log"
+      "claim": "\"Sizzling 5-1-0 since Nov 14 with $7 picks, +65.7% ROI!\" (Mike Lundin)",
+      "where": "SportsMemo picks page and homepage",
+      "status": "Checked against the seller's own board: his 7 day line on the same page read \"71.43% Winning (5-2)\". The run starts on a date that leaves out a loss"
     },
     {
-      "claim": "\"Marco's 4% & 5% Plays Have Won 9 in a Row!\"",
-      "where": "SportsMemo homepage, Marco D'Angelo listing",
-      "status": "Selected streak"
+      "claim": "\"CFB 5% Bluechips 142-92 60.7% +104.0 units since 2007\" and \"NBA Playoffs 72-44 (62.1%) since 2016\" (Rob Veno)",
+      "where": "SportsMemo Experts page",
+      "status": "Arithmetic confirmed: 142 of 234 is 60.7% and 72 of 116 is 62.1%. No pick log is shown, and each line starts on a year the seller picked"
     },
     {
-      "claim": "\"#1 MLB handicapper on Sportsmemo 2025!\"",
-      "where": "SportsMemo homepage, Marc David",
-      "status": "Ranking on the seller's own board"
+      "claim": "\"35-20 (64%) FOOTBALL HEATER\", \"68-41 (62.4%)\" over 45 days and \"319-243 (+91% Gain)\" in 2026 (Oskeim Sports)",
+      "where": "SportsMemo picks page",
+      "status": "Arithmetic confirmed: 63.6%, 62.4% and 56.8%. The full 2026 figure is much lower than the 45 day heater used in the headline"
     },
     {
-      "claim": "\"The Sports Monitor of Oklahoma City, Oklahoma, documented the 25-game winning streak.\"",
-      "where": "SportsMemo Experts page, Marco D'Angelo",
-      "status": "Seller claim, cites a monitor we did not check"
+      "claim": "Leaderboard tabs for \"Last 7 days\", \"Last 365 days\" and \"Year to date\"",
+      "where": "SportsMemo leaderboard pages",
+      "status": "Checked: all three tabs showed the same five names with the same profits ($907, $664, $600, $552, $533) on 20 Nov 2026, so the longer periods did not show different numbers"
+    },
+    {
+      "claim": "\"154-99-2 (+$41,322) with all plays!\" (Bryan Power)",
+      "where": "SportsMemo Experts and leaderboard pages",
+      "status": "Stale: the page dates this to April and May 2022; it was still shown in November 2026 next to a \"7-1 since Mar 29, 2026\" line"
+    },
+    {
+      "claim": "Newsletter records of 211-155 (2007), 202-174 (2008) and 183-155 (2009 to 16 Nov), +58.7 units in all",
+      "where": "SportsMemo account on the Las Vegas Advisor forum, 19 Nov 2009",
+      "status": "Arithmetic confirmed (57.7%, 53.7%, 54.1%; 37.0 + 9.7 + 12.0 = 58.7 units). Seller's own figures; no log to check"
     }
   ],
   "claims_note": [
-    "Each blurb picks its own window: the last 36 plays, since mid October, nine in a row, one past season. A window chosen after the fact tells you little, because every handicapper has a hot stretch somewhere.",
-    "The leaderboard ranks experts by dollar profit over the last 7 days on a $100 bet size and shows no win and loss records. Seven days is far too short to separate skill from luck."
+    "How we checked: SportsMemo publishes expert cards, an experts page and a leaderboard with several period tabs. We read them on 20 Nov 2026, recomputed every win percentage from the wins and losses shown (pushes left out), and compared figures for the same expert across pages. We could not read the Yesterday's Plays page, which asks for a WagerTalk login, so we could not check any figure pick by pick.",
+    "Each blurb picks its own window: since 14 Nov, the last 45 days, since December 2025, since 2007, one past season. A window chosen after the fact tells you little, because every handicapper has a hot stretch somewhere. Where the page also showed a longer figure for the same expert, the longer figure was weaker.",
+    "The leaderboard ranks experts by dollar profit on a $100 bet size. Its header says \"Win/Loss and Units\", but the main table shows only profit. On 20 Nov 2026 the 7 day, 365 day and year to date tabs all showed the same top five with identical dollar figures, so we treat the board as a short term snapshot.",
+    "Several cards cite rankings on \"P&P + W&W\", meaning Picks and Parlays and Winners and Whiners. In August 2025 WagerTalk Media announced a partnership with both sites, so those rankings are not independent of SportsMemo."
   ],
   "record": [
     "What a buyer can verify independently: nothing that we could find. We found no full, time stamped log of every SportsMemo pick with the line, odds and release time, and no third party audit.",
-    "What the seller publishes: a 7 day profit leaderboard, expert blurbs with selected runs, and a Yesterday's Plays page. When we opened Yesterday's Plays on 17 Nov 2026 it sent us to a WagerTalk login page, so we could not read it.",
-    "Older figures exist only as forum posts. In Nov 2009 an account posting as SportsMemo on the Las Vegas Advisor forum listed its newsletter at 211-155 (+37.0 units) in 2007, 202-174 (+9.7) in 2008 and 183-155 (+12.0) in 2009 through 16 Nov. Those are the seller's own numbers and we could not check them."
+    "What the seller publishes: a profit leaderboard, expert cards and bios with selected runs, and a Yesterday's Plays page. When we opened Yesterday's Plays on 20 Nov 2026 it sent us to identity.wagertalk.com to log in, the same result as on 17 Nov.",
+    "Older figures exist only as forum posts. In September and November 2009 an account posting as SportsMemo on the Las Vegas Advisor forum listed yearly newsletter records and multi year records for two handicappers, for example 268-210 (56.1%) on football for one of them from 2006 to September 2009. Those are the seller's own numbers and we could not check them.",
+    "Background: the sportsmemo.com domain was registered on 24 Jul 2004. A saved copy from January 2006 describes it as a handicapping site with free picks, a forum and handicapper blogs, naming Ted Sevransky (Teddy Covers) and others. A saved copy from December 2016 carries the footer \"SPORTSMEMO, INC, 1-800-575-3069\". WagerTalk's August 2018 release names Sevransky as the founder and quotes WagerTalk co founders Marco D'Angelo and Lawrence Prezman. On 20 Nov 2026 Teddy Covers was still listed among SportsMemo's experts."
   ],
   "our_data": {
     "matched": false,
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no SportsMemo pick history is matched to a Watchdog graded record, so we make no claim about how SportsMemo experts perform.",
     "context": "For scale: on the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "Independent buyer talk about SportsMemo is thin and mostly old. The fullest threads are on the Las Vegas Advisor forum from 2009 and 2010. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent buyer talk about SportsMemo is thin and mostly old. The fullest threads are on the Las Vegas Advisor forum from 2009 and 2010; the only recent buyer reviews we found are two on CapperTek from 2022. Below is everything we found and how much weight it can carry.",
   "customers": [
     {
       "type": "Our summary",
       "tone": "Mixed",
-      "date": "Read 17 Nov 2026",
-      "text": "We found three relevant forum threads, all on the Las Vegas Advisor forum, from Sep 2009 to Dec 2010, and no recent buyer threads. The complaints repeat a few themes: a bad run of 27-77 over two Saturdays in late 2010 by one poster's count, a claim that picks once differed between the email and the website, trouble getting the release line, and a view that the site makes good runs easy to find and full records hard to find. On the positive side, one subscriber praised how the newsletter broke down games, members called two of its handicappers long term winners, and the site's own account posted yearly winning records for 2007 to 2009. Since WagerTalk bought it in 2018 we found almost nothing from buyers.",
+      "date": "Read 20 Nov 2026",
+      "text": "Across 17 years we found buyer talk in only two places. Three Las Vegas Advisor forum threads from September 2009 to December 2010 hold most of it. There, members split: some praised the newsletter's game breakdowns and called two of its handicappers long term winners, while others tallied a 27 and 77 run over two Saturdays, said picks once differed between the email and the website, said they often could not bet at the release number, and described the site as a marketing operation that promotes whichever capper is hot while full records stay hard to find. The SportsMemo account answered with yearly winning totals that we could not check. The second place is CapperTek, where two 2022 reviews of SportsMemo were both negative, one questioning a handicapper's posted records and one saying a buyer lost their whole bankroll. CapperTek's 14 reviews of WagerTalk, the parent company, from 2021 to 2026 are almost all negative but none mentions SportsMemo. TheRX lists \"Sports Memo Crew\" write ups among content members should not post. We found nothing about SportsMemo on Reddit or the BBB. The pattern is old, small and mixed, with the same complaint about selective records repeating in 2010 and 2022.",
       "source": null
     },
     {
@@ -154,6 +169,13 @@
     {
       "type": "Forum post",
       "tone": "Mixed",
+      "date": "6 to 7 Dec 2010",
+      "text": "On the second page of that thread, members agreed that services commonly feature the hot handicapper and bury overall records. One member posted 2010 football figures showing two SportsMemo handicappers took opposite approaches, one mostly underdogs and one mostly favorites, to explain why their results moved together. Another called SportsMemo a marketing operation that sells plays, and was asked by others to tone it down.",
+      "source": 11
+    },
+    {
+      "type": "Forum post",
+      "tone": "Mixed",
       "date": "19 Nov 2009",
       "text": "A thread opened by a member saying the SportsMemo best bets newsletter was down for the year drew mixed replies. One subscriber said the newsletter broke down games well but counted his own results at 56-52, down 1.2 units. Another was harsh about its NHL picks.",
       "source": 9
@@ -162,7 +184,7 @@
       "type": "Seller curated",
       "tone": "Neutral",
       "date": "19 Nov 2009",
-      "text": "An account posting as SportsMemo replied in that thread that the newsletter was only slightly down for the football season and listed winning yearly totals for 2007 to 2009. It also gave its NHL writer's record as 20-24, down 10.15 units. These are the seller's figures.",
+      "text": "An account posting as SportsMemo replied in that thread that the newsletter was only slightly down for the football season and listed winning yearly totals for 2007 to 2009. It also gave its NHL writer's record as 20-24, down 10.15 units, and said the newsletter cost about $3.50 an issue. These are the seller's figures.",
       "source": 9
     },
     {
@@ -173,115 +195,214 @@
       "source": 10
     },
     {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "5 Jul 2022",
+      "text": "A CapperTek reviewer wrote that one SportsMemo handicapper always seemed to be 9 and 1 or 8 and 2 over his last 10 picks, asked where those picks were tracked, and said that after buying picks and comparing them with what the site posted, they concluded the records were not genuine. No amount lost is given.",
+      "source": 17
+    },
+    {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "6 Jun 2022",
+      "text": "Another CapperTek reviewer said they had tried many SportsMemo handicappers and found them all poor, singled out the same handicapper for confident write ups, and said they lost their entire bankroll. They advised others to avoid the service. No dollar figure is given.",
+      "source": 17
+    },
+    {
+      "type": "Customer report",
+      "tone": "Negative",
+      "date": "Mar 2021 to Jul 2026",
+      "text": "CapperTek lists 14 reviews of WagerTalk, which owns SportsMemo. Thirteen with text are negative, describing losing purchases, records the reviewers found misleading and, in one case, reward points they could not use. None of them names SportsMemo, so they describe the parent company's own storefront, not this one.",
+      "source": 18
+    },
+    {
+      "type": "Forum post",
+      "tone": "Neutral",
+      "date": "Checked 20 Nov 2026",
+      "text": "TheRX service play guidelines, posted in March 2023, list \"Sports Memo Crew\" under write ups members should not post, and list all WagerTalk cappers under services not to post. The rules give no reason.",
+      "source": 19
+    },
+    {
       "type": "Not found",
       "tone": "Neutral",
-      "date": "Checked 17 Nov 2026",
-      "text": "Our archive scan of the r/sportsbetting and r/sportsbook Reddit post streams found no buyer thread about SportsMemo, and our web searches found no SportsMemo thread on Sportsbook Review, TheRX or Covers. We did not check review sites that block automated reading.",
-      "source": null
+      "date": "Checked 20 Nov 2026",
+      "text": "Reddit archive post searches for sportsmemo in r/sportsbook and r/sportsbetting returned no posts, and our saved copy of ten betting subreddits from 2024 to 2026 had no mention of SportsMemo. Web searches found no SportsMemo thread on Sportsbook Review, TheRX or Covers. A BBB search for sportsmemo found no business profile. We did not read review sites that block automated reading.",
+      "source": 20
     }
   ],
   "conflicts": [
     "The leaderboard, the expert records and the Yesterday's Plays page are all run by the company that sells the picks. None is an independent audit.",
-    "SportsMemo is owned by Wager Talk Media, LP, which also runs WagerTalk. The refund page says card charges show as \"WT/SM* PICKS AND PAR.\" One expert blurb cites rankings on Picks and Parlays and Winners and Whiners; we did not check who runs those sites."
+    "SportsMemo is owned by Wager Talk Media, LP, which also runs WagerTalk. The refund page says card charges show as \"WT/SM* PICKS AND PAR.\" WagerTalk's 2018 release quotes Marco D'Angelo as a WagerTalk co founder, and he also sells picks on WagerTalk.",
+    "Several expert cards cite rankings on Picks and Parlays and Winners and Whiners. WagerTalk Media announced a partnership with both sites in August 2025, so those rankings come from inside the same network.",
+    "TheRX, an independent forum, asks members not to post SportsMemo write ups or any WagerTalk capper's plays, which limits outside tracking of these experts."
   ],
   "strengths": [
     "A named parent company, a Las Vegas address and written terms under Nevada law.",
-    "Low entry prices: many single plays were $5.00 on 17 Nov 2026, so trying one expert costs little.",
-    "Prices are shown for each package before you buy, and the FAQ says you can cancel a subscription at any time."
+    "A long history: the domain dates to 2004, saved copies show the business selling plays in 2006 and 2016, and its founder is still listed among its experts.",
+    "Low entry prices: every single play was $7.00 on 20 Nov 2026, so trying one expert costs little.",
+    "Prices are shown before you buy, and the FAQ says a subscription can be cancelled at any time with access to the end of the period.",
+    "Most percentages on the expert cards are arithmetically correct for the windows shown."
   ],
   "concerns": [
-    "No full public record. Every number we saw is a streak, a ranking or a 7 day board chosen and published by the seller.",
-    "All sales are final and nothing is guaranteed.",
-    "Many prices are shown as discounts from a higher regular price, which pushes quick decisions.",
-    "Old forum complaints mention picks that differed between email and website and lines that moved before buyers could bet."
+    "No full public record. Every number we saw is a streak, a ranking or a short leaderboard chosen and published by the seller, and the Yesterday's Plays page needs a login.",
+    "Some figures do not hold together: one expert's two 2024 NFL lines cannot both be true, another expert's run appeared in two versions on the same day, and three leaderboard periods showed identical numbers.",
+    "All sales are final and nothing is guaranteed; the 2016 style next play free guarantee is gone.",
+    "Many prices are shown against a higher regular price, which pushes quick decisions.",
+    "Buyer complaints repeat across years: picks differing between email and website and lines moving before buyers could bet (2010), and records buyers did not trust (2010 and 2022).",
+    "Rankings cited from partner sites come from inside the same business network."
   ],
   "checklist": [
     "Ask for every pick from the expert's last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
+    "Compare the headline run with any longer figure for the same expert on the same page; on SportsMemo the longer figure was usually weaker.",
     "Count units, not wins. A 60% record at heavy favorites can still lose money.",
     "Check whether you can still get the release line. A pick that only wins at the original number is worth less to you.",
+    "Remember that all sales are final; buy single plays before any multi day pass.",
     "Write down each pick yourself the moment you receive it, with the line you can actually get.",
     "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
   ],
   "faq": [
     [
       "Is SportsMemo legit?",
-      "It is a real business founded in 2004, owned since 2018 by WagerTalk, with a named parent company, a Las Vegas address and written terms. We could not verify that its experts win over time, because the site does not publish a full, time stamped record of every pick."
+      "It is a real business founded in 2004, owned since 2018 by WagerTalk, with a named parent company, a Las Vegas address and written terms. We could not verify that its experts win over time, because the site does not publish a full, time stamped record of every pick, and we found no court or regulator action involving it."
+    ],
+    [
+      "Who owns SportsMemo?",
+      "Wager Talk Media, LP, the company behind WagerTalk, is named on the refund page as the parent company. WagerTalk announced the purchase on 20 Aug 2018. The site was founded by Ted Sevransky, who writes as Teddy Covers."
     ],
     [
       "How much does SportsMemo cost?",
-      "On 17 Nov 2026 most single plays were $5.00, three day passes from two experts were $49, and one seven day all access pass was $77 with a coupon. Prices change daily."
+      "On 20 Nov 2026 every single play on the picks page was $7.00, one shown next to a $25.00 regular price. No multi day passes were listed that day; on 17 Nov two experts had 3 day passes at $49. Prices change daily."
+    ],
+    [
+      "Does SportsMemo offer refunds or a guarantee?",
+      "No. The FAQ says no picks are guaranteed, and the refund policy says all sales are final and no refunds are issued once a product is delivered or viewed. Undelivered emails or texts do not earn a refund either."
     ],
     [
       "Does SportsMemo have a verified record?",
-      "No. The site shows a 7 day profit leaderboard and selected runs in each expert's blurb, all published by SportsMemo. We found no independent, time stamped log of every pick."
+      "No. The site shows a profit leaderboard and selected runs in each expert's card, all published by SportsMemo. Some of those figures did not agree with each other on the same day, and we found no independent, time stamped log of every pick."
     ],
     [
       "Is SportsMemo worth it?",
-      "At $5 a play the price of the picks is small, but sales are final and nothing is guaranteed. What is unproven is whether any expert beats the roughly 52.4% needed at -110 over hundreds of plays, and nothing covers your betting losses."
+      "At $7 a play the price of the picks is small, but sales are final and nothing is guaranteed. What is unproven is whether any expert beats the roughly 52.4% needed at -110 over hundreds of plays, and nothing covers your betting losses."
     ]
   ],
   "related": [
     "wagertalk",
     "the-prez-wagertalk",
     "teddy-covers",
-    "jesse-schule",
-    "rob-vinciletti"
+    "rob-vinciletti",
+    "mike-lundin"
   ],
   "sources": [
     {
-      "title": "SportsMemo homepage (packages, expert blurbs, record claims)",
+      "title": "SportsMemo homepage (expert cards, record claims, $7 prices, Power Pass and WagerBuxx)",
       "url": "https://www.sportsmemo.com/",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "SportsMemo Expert Picks page (current prices)",
+      "title": "SportsMemo Expert Picks page (current prices and pick listings)",
       "url": "https://www.sportsmemo.com/picks",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "SportsMemo Experts page (expert list and record claims)",
+      "title": "SportsMemo Experts page (expert list, bios and record claims)",
       "url": "https://www.sportsmemo.com/experts",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "SportsMemo Leaderboard (last 7 days, profit on $100 bets)",
+      "title": "SportsMemo Leaderboard (default view, last 7 days, profit on $100 bets)",
       "url": "https://www.sportsmemo.com/leaderboard",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "SportsMemo Terms and Conditions (Las Vegas address, Nevada law, customer remedy)",
       "url": "https://www.sportsmemo.com/terms",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "SportsMemo Refund Policy (all sales final, Wager Talk Media, LP)",
+      "title": "SportsMemo Refund Policy (all sales final, Wager Talk Media, LP, card descriptor)",
       "url": "https://www.sportsmemo.com/refund-policy",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "SportsMemo FAQ (delivery, no guarantee, cancellation)",
       "url": "https://www.sportsmemo.com/faq",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "PR Newswire: WagerTalk Announces the Acquisition of Sportsmemo (20 Aug 2018)",
       "url": "https://prnewswire.com/news-releases/wagertalk-announces-the-acquisition-of-sportsmemo-300699704.html",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
-      "title": "Las Vegas Advisor forum: Sportsmemo hits a 20,000 to 1 Losing Streak (Dec 2010)",
+      "title": "Las Vegas Advisor forum: Sportsmemo hits a 20,000 to 1 Losing Streak (Dec 2010), page 1",
       "url": "https://www.lasvegasadvisor.com/forums/pro-football/sportsmemo-hits-20-000-to-1-losing-streak-yesterday-for-55-capper/",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Las Vegas Advisor forum: sportsmemo best bets newsletter minus units for year (Nov 2009)",
       "url": "https://www.lasvegasadvisor.com/forums/pro-football/sportsmemo-best-bets-newsletter-minus-units-for-year/",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Las Vegas Advisor forum: Tim Trushel's Highest Rated Plays (Sep 2009)",
       "url": "https://www.lasvegasadvisor.com/forums/pro-football/tim-trushels-highest-rated-plays/",
-      "accessed": "17 Nov 2026"
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Las Vegas Advisor forum: Sportsmemo losing streak thread, page 2 (6 to 7 Dec 2010)",
+      "url": "https://www.lasvegasadvisor.com/forums/pro-football/sportsmemo-hits-20-000-to-1-losing-streak-yesterday-for-55-capper/page/2/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "SportsMemo Leaderboard, Last 365 days tab",
+      "url": "https://www.sportsmemo.com/leaderboard/last-365",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "SportsMemo Leaderboard, Year to date tab",
+      "url": "https://www.sportsmemo.com/leaderboard/ytd",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Internet Archive: SportsMemo.com as saved 13 Jan 2006 (packages, prices, handicapper list)",
+      "url": "https://web.archive.org/web/20060113053416/http://www.sportsmemo.com:80/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Internet Archive: SportsMemo.com as saved 20 Dec 2016 (prices, guarantee wording, SPORTSMEMO, INC footer)",
+      "url": "https://web.archive.org/web/20161220080051/https://sportsmemo.com/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Verisign RDAP registry record for sportsmemo.com (registered 24 Jul 2004)",
+      "url": "https://rdap.verisign.com/com/v1/domain/sportsmemo.com",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "CapperTek: SportsMemo.com customer reviews (two reviews, 2022)",
+      "url": "https://www.cappertek.com/reviews.asp?shs=SportsMemo.com",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "CapperTek: WagerTalk.com customer reviews (parent company, 2021 to 2026)",
+      "url": "https://www.cappertek.com/reviews.asp?shs=WagerTalk.com",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "TheRX: Service Play Guidelines (do not post lists)",
+      "url": "https://www.therx.com/threads/service-play-guidelines.1243057/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "BBB search for sportsmemo (no business found)",
+      "url": "https://www.bbb.org/search?find_text=sportsmemo",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "PR Newswire: WagerTalk Media announces strategic partnership (27 Aug 2025)",
+      "url": "https://www.prnewswire.com/news-releases/wagertalk-media-announces-strategic-partnership-with-premier-sports-betting-content-creators-302540204.html",
+      "accessed": "20 Nov 2026"
     }
   ],
   "pricing_source": 1
