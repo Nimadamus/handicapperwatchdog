@@ -1,39 +1,43 @@
 {
   "slug": "northcoast-sports",
   "name": "Northcoast Sports",
-  "legal_name": "Northcoast Sports Service (BBB listing; Phil Steele named as owner)",
+  "legal_name": "Northcoast Sports Service (BBB listing: Phil Steele owner, Todd Gebhardt business manager)",
   "kind": "Football newsletters plus daily phone and online pick packages, and a resale line of other handicappers",
-  "checked": "16 Nov 2026",
-  "checked_iso": "2026-11-16",
-  "updated_iso": "2026-11-16",
+  "checked": "20 Nov 2026",
+  "checked_iso": "2026-11-20",
+  "updated_iso": "2026-11-20",
   "title": "Northcoast Sports Review 2026: Pricing, Record, Is It Worth It?",
-  "description": "Northcoast Sports review, checked 16 Nov 2026: Power Sweep and Power Plays prices, late phone plays, the 62% claim and what forum trackers report.",
+  "description": "Northcoast Sports review, checked 20 Nov 2026: newsletter and late phone prices up to $4,500, its record claims recomputed and what trackers report.",
   "h1": "Northcoast Sports review",
-  "dek": "An Ohio pick service in business since 1982, home of the Power Sweep and Power Plays football newsletters. Season subscriptions start at $69 to $89, and single night plays sell for about $15. The BBB rates it A+ with no complaints, while a long running forum tracker reports losing seasons for its rated plays.",
+  "dek": "An Ohio pick service founded in 1982, home of the Power Sweep and Power Plays football newsletters. A season of one newsletter costs $89 and single issues $10, while its late phone price list runs from $75 a day to $4,500 for the Executive Club. The BBB rates it A+ with no complaints, but every outside tally we found has its rated plays near or below break even.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Northcoast Sports picks. This page reports what we could check on 16 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record of Northcoast Sports picks. This page reports what we could check on 20 Nov 2026 and labels everything else."
   },
   "glance": [
     [
       "Operator",
-      "Northcoast Sports Service, 869 Canterbury, Westlake (Cleveland), OH 44145; phone 1-800-654-3448 (site and BBB)"
+      "Northcoast Sports Service, 869 Canterbury, Westlake (Cleveland), OH 44145; mail to P.O. Box 450829, Cleveland, OH 44145; phone 1-800-654-3448"
+    ],
+    [
+      "Owner",
+      "Phil Steele (BBB listing; Cleveland Scene profile, 2007)"
     ],
     [
       "Claims to operate since",
-      "1982 (BBB business start date)"
+      "1982 (BBB start date; 2026 issue says \"this is our 43rd year in business\")"
     ],
     [
       "Price range seen",
-      "$15 for a single night play to $89 for a 2026 season of one newsletter"
+      "$10 for a single newsletter issue to $4,500 for the Executive Club season"
     ],
     [
       "Guarantee",
-      "None found on the pages we read"
+      "Only on the Monday Night Magic play: pay $30, get a $40 credit if it loses"
     ],
     [
       "Full public record",
-      "Not found for phone plays. Past newsletter issues are archived on the site"
+      "Not found for phone plays. Past newsletter issues are archived on the site back to 2010"
     ],
     [
       "Watchdog graded record",
@@ -41,62 +45,93 @@
     ]
   ],
   "short_answer": [
-    "Northcoast Sports is a real and very old business. Its site gives a street address, a toll free number and office hours, and the Better Business Bureau lists Northcoast Sports Service as accredited since 2000 with an A+ rating, a start date of 1982 and Phil Steele as owner. A 2007 Cleveland Scene profile described it as Phil Steele's business. In that sense it is legitimate.",
-    "What it sells is mostly football. Power Sweep and Power Plays are weekly newsletters with previews, projected box scores and star rated plays. Late phone packages sell star rated, Marquee and Game of the Month plays by the day, and the Community Line resells plays from other handicappers. The site claims its free Early Bird Play of the Week has \"produced 62% Winners OVER 28 YEARS,\" but we found no full log of those plays.",
-    "Independent evidence comes mostly from one TheRX member who tracked the rated plays for several seasons and reported net losses after service costs. Other members said they do well picking among the plays. Prices are low for the newsletters, so if you buy, start with one season and grade every play yourself."
+    "Northcoast Sports is a real and very old business. Its site gives a street address, a toll free number and office hours, and the Better Business Bureau lists Northcoast Sports Service as accredited since 22 Nov 2000 with an A+ rating, a start date of 1 Jan 1982, zero complaints in three years and Phil Steele as owner. A 2007 Cleveland Scene profile described it as Steele's business, started in his mother's dining room in 1982, with 30 employees and, by his account, more than $4 million in yearly sales at the time. In that sense it is legitimate.",
+    "What it sells is mostly football. Power Sweep and Power Plays are weekly newsletters with previews, projected box scores and star rated plays, and they are cheap: $89 for the 2026 season by email, or $10 an issue. The money is in the late phone plays, sold by the day, week, month or season, with a published list price of $4,500 for the Executive Club. The Community Line resells plays from other services, including one under the Jim Feist name.",
+    "The sales copy leans on long runs: 62% over 28 years on a free weekly play, 77% on the September 5 star play, 56% on NFL late phones over five seasons. The arithmetic behind each figure checks out, but none comes with a list of plays. Every independent tally we found, from a rival newsletter's six season table to forum trackers in 2023, 2024, 2025 and 2026, puts the rated plays near or below the 52.4% needed to break even at -110. If you buy, start with one newsletter season and grade every play yourself."
   ],
-  "pricing_intro": "Prices below were on ncsports.com on 16 Nov 2026. Most late phone products showed $0.00 that day, which looks like they were not on sale for the current date, so we list only the one with a live price. Week or month Community Line packages are sold by phone and show no price online.",
+  "pricing_intro": "Newsletter prices below were on ncsports.com on 20 Nov 2026. Late phone prices come from the price list printed in the Power Sweep issue for Week 4 of the 2026 season, which the site archives; most late phone product pages showed $0.00 on 20 Nov 2026, meaning they were not on sale for that day. Newsletter subscribers get large discounts on phone packages, and a preseason Power Sweep issue offered 2026 renewals at $119 by email.",
   "pricing": [
     [
-      "Power Sweep, full season, email only",
+      "Power Sweep or Power Plays, full season, email only",
       "$89.00 (2026 season); $79.00 (2027); $69.00 (2028)",
-      "Add Power Plays for +$50.00"
-    ],
-    [
-      "Power Plays, full season, email only",
-      "$89.00 (2026 season); $79.00 (2027); $69.00 (2028)",
-      "Add Power Sweep for +$50.00"
+      "Add the other newsletter for +$50.00"
     ],
     [
       "Single newsletter issue",
-      "\"Single issue only $10\" (homepage)",
-      "Product page showed $0.00 for the current issue on 16 Nov 2026"
+      "$10.00",
+      "Product page price on 20 Nov 2026"
     ],
     [
-      "Monday Night NFL Marquee (late phone)",
-      "$15.00, one day",
-      "Released after 12:00 noon ET on Mondays"
+      "Marquee plays",
+      "$15 each; Season Ticket $549; 7 pack $79; 21 pack $179; 49 pack $399",
+      "2026 issue price list"
     ],
     [
-      "Other late phone packages and Community Line",
-      "No live price shown online",
-      "Week or month Community Line packages by phone at 1-800-654-3448"
+      "Late phone day and week rates",
+      "Weekly college sides and pro $150; Saturday college sides $100; Sunday pro $75; college totals $75; a 5 star play $100",
+      "Regular prices; subscribers pay less on weekend specials"
+    ],
+    [
+      "Late phone month rates",
+      "College $500; Pro, with Monday night, $400",
+      "2026 issue price list"
+    ],
+    [
+      "Season packages",
+      "Top Play Club $1,100; Pro Executive $2,500; College Executive $2,900; Executive Club $4,500",
+      "Executive Club runs preseason through the Super Bowl and includes both newsletters"
+    ],
+    [
+      "5 day Executive Club weekend",
+      "$450 for non subscribers; $149 for 2026 subscribers",
+      "Week 4 2026 special"
+    ],
+    [
+      "Monday Night Magic play",
+      "$30",
+      "The only guaranteed product we found; $40 credit if it loses"
+    ],
+    [
+      "Community Line week or month packages",
+      "No price shown online",
+      "By phone at 1-800-654-3448"
     ]
   ],
   "guarantee": [
-    "We found no guarantee, refund or credit wording on the homepage, the product pages, the free plays page or the FAQ. The FAQ covers only how and when newsletters are delivered.",
-    "A buyer should assume there is no money back if the plays lose. Losses on the bets themselves are never covered, and over a season they can be much larger than the price of a newsletter."
+    "The one guarantee we found is printed in the 2026 Power Sweep issues: \"Monday Night Magic releases are available on gameday for a Money Back PLUS Guarantee! Simply get the MNM Play through our office for $30 after noon EST on Monday and if the release fails to win, you will be credited back $40\". That is a credit on your account, not cash back.",
+    "We found no guarantee, refund or credit wording for the newsletters or the other phone packages on the homepage, the product pages, the free plays page, the FAQ or the issues we read. The FAQ covers only how and when newsletters are delivered.",
+    "A buyer should assume there is no money back if the plays lose. Losses on the bets themselves are never covered, and over a season they can be much larger than the price of a package."
   ],
   "claims": [
     {
       "claim": "The Early Bird Play of the Week \"has produced 62% Winners OVER 28 YEARS\"",
-      "where": "ncsports.com Free Daily Comp Plays page",
-      "status": "Seller claim, no full log"
+      "where": "ncsports.com Free Daily Comp Plays page; the 2026 Week 4 issue gives the count as \"256-155 (62%) the past 28 years\"",
+      "status": "Checked: 256 / 411 = 62.3%, about 15 plays a year. No list of the plays is published"
     },
     {
-      "claim": "\"We feel we have the best comp plays in the country\"; \"The Underdog Play in Power Sweep has been consistent over two decades.\"",
-      "where": "ncsports.com Free Daily Comp Plays page",
-      "status": "Seller claim, no figures given"
+      "claim": "September 5 star play \"now a remarkable 34-10 77% in our 45 year history\"",
+      "where": "Power Sweep, Week 4 2026 issue",
+      "status": "Checked: 34 / 44 = 77.3%. The same issue says Northcoast was founded in 1982 and is in its 43rd year, so \"45 year history\" does not match"
     },
     {
-      "claim": "\"The Best Sports Handicapping Information\"",
-      "where": "ncsports.com homepage title",
-      "status": "Marketing line, not checkable"
+      "claim": "NFL Late Phones \"150-118-5 (56%) the Last 5 seasons\"",
+      "where": "Power Sweep, Week 4 2026 issue",
+      "status": "Checked: 150 / 268 = 56.0%. A forum tracker counted the NFL phone plays at 38, 36 and 3 in 2023 and 39, 45 and 1 in 2024; if both are right, the other three seasons were about 73 and 37"
     },
     {
-      "claim": "Community Line is \"A collection of top-rated handicappers\"; one listed service shows \"11-6 last 7 days in the NBA\"",
-      "where": "ncsports.com Community Line page",
-      "status": "Seller claim, rating source not shown"
+      "claim": "\"NFL PLAYOFF EXEC RECORD 33-22-1 (60%) L10Y's!!\"",
+      "where": "Power Sweep cover, 25 Jan 2026",
+      "status": "Checked: 33 / 55 = 60.0%, about 5.5 plays a postseason. No list published"
+    },
+    {
+      "claim": "Post Draft \"A\" and \"D\" grades \"59-13-7 82% THE L9Y\", \"79% OVER 16 YEARS\"",
+      "where": "2026 Power Sweep Post Draft issue",
+      "status": "Checked: 59 / 72 = 81.9%; the 16 year table shows 106 correct of 135 graded, 78.5%. These are season win total calls, not bets against the spread"
+    },
+    {
+      "claim": "\"Over 43 years this play has been a reader favorite and now has a combined record of 58% winners!!\"",
+      "where": "Power Sweep Underdog Play of the Week, Week 4 2026 issue",
+      "status": "Seller claim, no count given. The forum tracker had the Underdog Play at 6 and 8 in 2025 and 5 and 5 in 2026 through 10 Nov"
     },
     {
       "claim": "\"Up to 70 percent of his picks have been winners in years past\"",
@@ -105,40 +140,92 @@
     }
   ],
   "claims_note": [
-    "The 62% figure covers one free play a week over 28 years. That is a small slice of what Northcoast sells, and the site does not show the list of plays behind it.",
+    "How we checked: we downloaded three issues from the ncsports.com archive (the 2026 Post Draft issue, the Week 4 2026 issue and the 25 Jan 2026 issue), copied each record claim and recomputed the percentage from the win and loss counts printed beside it. The arithmetic was right every time.",
+    "What the numbers leave out: every figure is a slice the seller chose, such as one free play a week, one September play a year, playoff games only or the last five NFL seasons. None comes with the list of plays, the line taken or the stake, so none can be checked against results.",
+    "Where the slices can be compared with outside counts, the gap is large. A February 2025 renewal letter, as quoted on TheRX, said the NFL plays went 33 and 26 in 2023; the forum tracker had 38, 36 and 3 for the same season. The same letter said Power Sweep College Keys went 51 and 31 (62%) in 2024, a product the tracker did not grade; the letter also says the phones never go against a Power Sweep selection, and the tracker's count of rated college late phone sides that season was 47 and 46.",
     "The Community Line resells other services, including one sold under the Jim Feist name. Any record shown there belongs to those services, not to Northcoast's own handicapping."
   ],
   "record": [
-    "What a buyer can verify independently: Northcoast keeps an archive of past Power Sweep and Power Plays issues going back to 2010, so newsletter plays can in principle be graded from the issues. We did not grade them. We found no public, time stamped log of the late phone plays.",
-    "What the site publishes: ATS logs of every college and NFL game with lines and results, which are schedule data rather than a record of Northcoast picks, and the 62% claim for its free weekly play.",
-    "What a forum tracker reports: one TheRX member posted weekly records of the rated plays for several seasons. For 2023 he reported college sides and totals at 63 wins, 89 losses and 6 pushes and the NFL at 38, 36 and 3, with service costs of $4,624. Late in 2024 he reported college sides at 41 and 43, totals at 31 and 29, and the NFL at 32, 36 and 1. These are one person's counts, not an audit."
+    "What a buyer can verify independently: Northcoast keeps an archive of past Power Sweep and Power Plays issues going back to 2010, so newsletter plays can in principle be graded from the issues. On 20 Nov 2026 the archive showed only issues 0 to 4 of the 2026 season. We found no public, time stamped log of the late phone plays.",
+    "Newsletter plays, graded by outsiders: the Powers' Picks rival table for the 2015 to 2020 regular seasons put Power Sweep at 258 and 251 with 13 pushes (50.69%) and Power Plays 4.5 star plays at 168 and 178 with 10 pushes (48.55%). A weekly forum tracker on SBR and TheRX had Power Sweep star plays at 50, 54 and 3 in college and 31, 31 and 1 in the NFL for 2025, and Power Plays at 81, 75 and 3. For 2026 through 10 Nov it had Power Sweep college star plays at 21 and 30, Power Sweep NFL at 12, 13 and 2, and Power Plays at 58, 55 and 1, with the Power Plays NFL 4 star at 7, 1 and 1 the strongest line.",
+    "Late phone plays, graded by one forum member: for 2023 they reported college sides and totals at 63 wins, 89 losses and 6 pushes and the NFL at 38, 36 and 3, with service costs of $4,624. For 2024 the final count was college sides 47 and 46, totals 34 and 31 and NFL 39, 45 and 1, with service costs of $6,124 and a $100 a unit bettor down $9,475 after costs. The tracker put the three season loss at $42,975 including service, then stopped tracking in August 2025.",
+    "Another member posted college football records that they attributed to The Sports Monitor, an outside grading service: 31, 55 and 1 in 2022, 38, 51 and 3 in 2023 and 43 and 46 in 2024. Added up that is 112 wins and 152 losses, 42.4%. We could not open the monitor's own records, so these stay forum claims."
   ],
   "our_data": {
     "matched": false,
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Northcoast Sports pick history is matched to a Watchdog graded record, so we make no claim about how Northcoast performs.",
-    "context": "For scale: the site claims 62% winners on its free weekly play. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "context": "For scale: the site claims 62% winners on its free weekly play, while outside tallies of its rated plays run about 42% to 51%. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "Independent evidence on Northcoast Sports sits almost entirely on TheRX forum, where members share and track its plays, plus a BBB profile and one Covers post. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent evidence on Northcoast Sports sits mostly on TheRX forum, where members share and track its plays, plus a weekly newsletter tracker on SBR and TheRX, a BBB profile and one Covers post. Below is everything we found and how much weight it can carry.",
   "customers": [
     {
       "type": "Our summary",
       "tone": "Mixed",
-      "date": "Read 16 Nov 2026",
-      "text": "We read about ten posts from 2023 to 2025 on TheRX and Covers, plus the BBB profile. The most detailed evidence is a TheRX thread, started in August 2023, in which one member tracked the rated plays week by week and reported losing seasons once service costs were added. Other members in the same thread said the Game of the Month and Game of the Year plays often win and that they profit by choosing among the plays. A separate thread said the newsletters were losing subscribers while prices rose. The BBB shows no complaints in three years. Most of the negative numbers come from a single tracker, so they are one person's view, but they cover several seasons.",
+      "date": "Read 20 Nov 2026",
+      "text": "We read about 20 posts from 2023 to 2026 on TheRX, SBR and Covers, plus the BBB profile and a rival newsletter's six season table. The most detailed evidence is a TheRX thread, started in August 2023, in which one member tracked the late phone plays week by week for three seasons and reported losses each year once service costs were added, about $43,000 in all at $100 a unit; the tracking stopped in August 2025. Several other members in that thread called the service a losing one, and one posted Sports Monitor college records near 42%. On the positive side, members said the Game of the Month and Game of the Year plays often win, one said they profit by choosing among the plays, and in 2026 the weekly newsletter tracker had the Power Plays NFL 4 star at 7, 1 and 1. Members still post the paid late phone plays in public threads in 2026. The BBB shows no complaints in three years and nobody we read described a billing or refund dispute. Much of the negative detail comes from one tracker, so it is one person's view, but it covers several seasons and lines up with the other tallies.",
       "source": null
     },
     {
       "type": "Forum post",
       "tone": "Negative",
+      "date": "11 Feb 2025",
+      "text": "The TheRX tracker posted a final 2024 count: college sides 47 and 46, totals 34 and 31, NFL 39, 45 and 1. The tracker said a $100 a unit bettor following the ratings lost $9,475 after $6,124 in service costs, and put the documented loss over three seasons at $42,975 including the price of service.",
+      "source": 25
+    },
+    {
+      "type": "Forum post",
+      "tone": "Mixed",
+      "date": "6 Feb 2025",
+      "text": "A member posted the Executive Club renewal letter. As quoted, it said the club normally costs $4,500 for seven months, offered past members $1,900 and less for early sign ups, and claimed Power Sweep College Keys went 51 and 31 and the Thanksgiving weekend package 47 and 18 in 2024, while admitting a disappointing 2023 and a 1 and 5 NFL playoff run.",
+      "source": 25
+    },
+    {
+      "type": "Forum post",
+      "tone": "Negative",
+      "date": "9 Aug 2025",
+      "text": "A TheRX member posted college football records that they said came from The Sports Monitor: 31, 55 and 1 in 2022, 38, 51 and 3 in 2023 and 43 and 46 in 2024. Another member replied that Northcoast holds an A+ BBB rating; the tracker answered that the rating says nothing about the picks.",
+      "source": 26
+    },
+    {
+      "type": "Forum post",
+      "tone": "Neutral",
+      "date": "7 Aug 2025",
+      "text": "The member who had tracked the late phone plays for three seasons announced they would stop updating the thread, saying they had followed the service on various forums for more than 20 years. Several members thanked the tracker; one said fading the plays had worked for them.",
+      "source": 26
+    },
+    {
+      "type": "Forum post",
+      "tone": "Mixed",
+      "date": "10 Nov 2026",
+      "text": "A weekly SBR tracker of many newsletters had 2026 Power Sweep college star plays at 21 and 30 and its Series Play of the Week at 1 and 7, but Power Plays NFL 4 star plays at 7, 1 and 1 and the Revenge Play of the Week at 7, 2 and 1.",
+      "source": 23
+    },
+    {
+      "type": "Forum post",
+      "tone": "Mixed",
+      "date": "27 Aug 2026",
+      "text": "Reposting final 2025 numbers, the TheRX newsletter tracker had Power Sweep college star plays at 50, 54 and 3, Power Sweep NFL at 31, 31 and 1, and Power Plays at 81, 75 and 3. The Power Sweep Tech Play of the Week, at 9 and 4, was listed among the season's best.",
+      "source": 24
+    },
+    {
+      "type": "Forum post",
+      "tone": "Neutral",
+      "date": "3 Oct 2026",
+      "text": "Members of TheRX posted a full Saturday card of Northcoast college late phone plays, star ratings and Marquee plays in a public service plays thread. Another member asked where the plays came from and got no clear answer.",
+      "source": 27
+    },
+    {
+      "type": "Forum post",
+      "tone": "Negative",
       "date": "16 Jan 2024",
-      "text": "The TheRX tracker posted his final 2023 counts: college sides and totals 63 wins, 89 losses, 6 pushes, college sides alone 40 and 66, and NFL 38 and 36. He put service costs at $4,624 and said a $100 a play bettor following the scale would be down about $13,990. Earlier that week he said the Executive Service for the NFL playoffs was cut from $500 to $345.",
+      "text": "The TheRX tracker posted final 2023 counts: college sides and totals 63 wins, 89 losses, 6 pushes, college sides alone 40 and 66, and NFL 38 and 36. The tracker put service costs at $4,624 and said a $100 a play bettor following the scale would be down about $13,990. Earlier that week the tracker said the Executive Service for the NFL playoffs was cut from $500 to $345.",
       "source": 13
     },
     {
       "type": "Forum post",
       "tone": "Negative",
       "date": "12 Jan 2024",
-      "text": "The same tracker listed the 2023 Power Sweep star plays: college 4 star at 5 wins and 11 losses, 3 star at 15 and 20, and NFL 3 star at 4 and 13. He called the newsletter plays worthless and said the staff never mention their record.",
+      "text": "The same tracker listed the 2023 Power Sweep star plays: college 4 star at 5 wins and 11 losses, 3 star at 15 and 20, and NFL 3 star at 4 and 13. The tracker called the newsletter plays worthless and said the staff never mention their record.",
       "source": 13
     },
     {
@@ -152,14 +239,14 @@
       "type": "Forum post",
       "tone": "Positive",
       "date": "21 Oct 2024",
-      "text": "A TheRX member said he does well with Northcoast plays by adding his own research and money management, and that the star rated Power Sweep and late phone plays are usually good.",
+      "text": "A TheRX member said they do well with Northcoast plays by adding their own research and money management, and that the star rated Power Sweep and late phone plays are usually good.",
       "source": 14
     },
     {
       "type": "Forum post",
       "tone": "Negative",
       "date": "29 Oct 2024",
-      "text": "The tracker reported 2024 season to date college sides at 25 and 26, totals at 15 and 21, and NFL at 18 and 19, with service costs of $2,983 and a $100 bettor down $7,124. He also said he complained to Northcoast about a $10 price rise for the weekly publications.",
+      "text": "The tracker reported 2024 season to date college sides at 25 and 26, totals at 15 and 21, and NFL at 18 and 19, with service costs of $2,983 and a $100 bettor down $7,124. The tracker also said they had complained to Northcoast about a $10 price rise for the weekly publications.",
       "source": 14
     },
     {
@@ -180,56 +267,69 @@
       "type": "Forum post",
       "tone": "Neutral",
       "date": "29 Jul 2023",
-      "text": "On Covers, a bettor said he uses Northcoast newsletters alongside two other newsletters. A reply called such newsletters losing publications in general, without naming Northcoast.",
+      "text": "On Covers, a bettor said they use Northcoast newsletters alongside two other newsletters. A reply called such newsletters losing publications in general, without naming Northcoast.",
       "source": 18
     },
     {
       "type": "Not found",
       "tone": "Neutral",
-      "date": "Checked 16 Nov 2026",
-      "text": "The BBB profile for Northcoast Sports Service showed an A+ rating, accreditation since 22 Nov 2000, zero complaints in the last three years and zero customer reviews. We found no news report, court record or regulator action about the service.",
+      "date": "Checked 20 Nov 2026",
+      "text": "The BBB profile for Northcoast Sports Service showed an A+ rating, accreditation since 22 Nov 2000, a business start date of 1 Jan 1982, zero complaints in the last three years and zero customer reviews. We found no news report, court record or regulator action about the service.",
       "source": 10
     }
   ],
   "conflicts": [
     "The Community Line page resells plays from other services, including one under the Jim Feist name. Northcoast earns from those sales, so its listing of them as top rated is not independent.",
-    "TheRX members regularly post Northcoast's paid plays in public threads. That makes the plays easy to track, but it also means the tracker's records depend on what members chose to post."
+    "TheRX members regularly post Northcoast's paid plays in public threads. That makes the plays easy to track, but it also means the tracker's records depend on what members chose to post, and the most detailed tracker openly disliked the service.",
+    "The only multi season newsletter table we found was printed by Powers' Picks, a competing newsletter that ranked itself first. Its counts may be right, but a rival is not a neutral auditor.",
+    "Northcoast is not paid by Watchdog and does not advertise with us."
   ],
   "strengths": [
     "A named owner, a street address, a toll free number and office hours, with BBB accreditation since 2000 and no complaints there in three years.",
-    "Newsletter prices are low and published, with cheaper prices for future seasons.",
-    "Past newsletter issues are archived on the site, so buyers can check old plays themselves.",
-    "Free weekly plays let you watch the service before paying."
+    "Newsletter prices are low and published, with cheaper prices for future seasons and $10 single issues.",
+    "Past newsletter issues are archived on the site back to 2010, so buyers can check old plays themselves.",
+    "The record figures it prints are arithmetically correct, and the price list for phone packages is printed in full in each issue.",
+    "Free weekly plays and the archive let you watch the service before paying, and nobody we read described a billing or refund dispute."
   ],
   "concerns": [
-    "No full public record of the late phone plays, which are where most of the money is spent.",
-    "A forum tracker reported losing seasons for the rated plays in 2023 and 2024 once service costs were counted.",
-    "No guarantee or refund wording that we could find.",
-    "The 62% claim covers only one free play a week and shows no list behind it."
+    "No full public record of the late phone plays, which are where most of the money is spent; the season packages list at $1,100 to $4,500.",
+    "A forum tracker reported losing seasons for the phone plays in 2023 and 2024 once service costs were counted, and newsletter tallies for 2015 to 2020, 2025 and 2026 sit near or below break even.",
+    "The only guarantee is a $40 account credit on one $30 Monday night play. No refund wording for anything else.",
+    "Record claims cover hand picked slices such as one free play a week or playoff games only, and one says \"45 year history\" while the same issue says the company is in its 43rd year.",
+    "Seller figures and outside counts for the same season do not match, for example the 2023 NFL record."
   ],
   "checklist": [
     "Ask for every late phone play from the last season with the line, the star rating and the result. A free play record is not the paid record.",
     "Count units, not wins. Higher star plays carry bigger stakes, so a few losses there cost more.",
-    "Add the price of the plays to your results. Several hundred dollars of service can erase a small winning edge.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Add the price of the plays to your results. A few thousand dollars of service can erase a small winning edge.",
+    "If you want to test the service, buy one newsletter season and grade its star plays from the archived issues before buying any phone package.",
+    "Treat the Monday Night Magic guarantee as store credit, not a refund.",
+    "Write down each pick yourself the moment you receive it, with the line you can actually get."
   ],
   "faq": [
     [
       "Is Northcoast Sports legit?",
-      "It is a real, long running business with a street address, a phone line and BBB accreditation since 2000, with no BBB complaints in three years. We could not verify that its plays win over time, because it does not publish a full record of its paid plays."
+      "It is a real, long running business founded in 1982, with a street address, a phone line, a named owner and BBB accreditation since 2000, and no BBB complaints in three years. We could not verify that its plays win over time, because it does not publish a full record of its paid plays."
     ],
     [
       "How much does Northcoast Sports cost?",
-      "On 16 Nov 2026 a 2026 season of Power Sweep or Power Plays by email cost $89.00, with the second newsletter $50.00 more, and later seasons cheaper. The Monday Night NFL Marquee cost $15.00 for one day. Other daily packages showed no live price."
+      "On 20 Nov 2026 a 2026 season of Power Sweep or Power Plays by email cost $89.00, with the second newsletter $50.00 more, and single issues cost $10.00. Its 2026 phone price list runs from $15 Marquee plays and $75 day packages to $4,500 for the Executive Club season."
     ],
     [
       "Does Northcoast Sports have a verified record?",
-      "No. The site claims 62% winners over 28 years on its free weekly play and archives old newsletters, but we found no independent log of every paid play. A forum tracker reported losing seasons in 2023 and 2024."
+      "No. The site claims 62% winners over 28 years on its free weekly play and archives old newsletters, but we found no independent log of every paid play. Outside tallies put its rated plays at about 42% to 51% depending on the product and season."
+    ],
+    [
+      "Does Northcoast Sports offer a guarantee?",
+      "Only on its Monday Night Magic play: pay $30 and, if it loses, you get $40 credited to your account. We found no refund terms for the newsletters or other phone packages."
+    ],
+    [
+      "Who owns Northcoast Sports?",
+      "The BBB lists Phil Steele as owner and Todd Gebhardt as business manager. A 2007 Cleveland Scene profile said Steele started the business in his mother's dining room in 1982. Steele also publishes a well known college football preview magazine."
     ],
     [
       "Is Northcoast Sports worth it?",
-      "The newsletters are cheap and full of football information, and some bettors say they use them as a starting point. What is unproven is whether the paid plays beat the roughly 52.4% needed at -110 after the cost of the service, and nothing refunds the package or your betting losses."
+      "The newsletters are cheap and full of football information, and some bettors use them as a starting point. What is unproven is whether the paid plays beat the roughly 52.4% needed at -110 after the cost of the service, and nothing refunds the package or your betting losses."
     ]
   ],
   "related": [
@@ -243,98 +343,143 @@
     {
       "title": "ncsports.com homepage (products, address, phone, office hours, newsletter prices)",
       "url": "https://ncsports.com/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "ncsports.com Power Sweep Newsletter product page (season prices)",
       "url": "https://ncsports.com/products/power-sweep-newsletter/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "ncsports.com Power Plays Newsletter product page (season prices)",
       "url": "https://ncsports.com/products/power-plays-newsletter/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "ncsports.com Late Phone Packages",
       "url": "https://ncsports.com/products/late-phone-packages/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "ncsports.com Monday Night NFL Marquee product page ($15.00)",
       "url": "https://ncsports.com/products/late-phone-packages/monday-night-nfl-marquee/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "ncsports.com Free Daily Comp Plays (62% over 28 years claim)",
       "url": "https://ncsports.com/free-plays/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "ncsports.com Community Line (resold handicappers)",
       "url": "https://ncsports.com/products/community-line/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "ncsports.com Schedule + Logs (ATS logs)",
       "url": "https://ncsports.com/schedule-logs/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "ncsports.com Archives (past Power Sweep and Power Plays issues)",
       "url": "https://ncsports.com/archives/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "ncsports.com FAQ",
       "url": "https://ncsports.com/faq/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Better Business Bureau: Northcoast Sports Service, Westlake, OH",
       "url": "https://www.bbb.org/us/oh/westlake/profile/publishers-book/northcoast-sports-service-0312-25000652",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Cleveland Scene: Helmet Head (profile of Phil Steele, 3 Oct 2007)",
       "url": "https://www.clevescene.com/?p=219636",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "TheRX: NorthCoast Records Thread, page 1 (Aug 2023)",
       "url": "https://www.therx.com/threads/northcoast-records-thread.1257301/",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "TheRX: NorthCoast Records Thread, Jan 2024 posts (2023 season totals)",
       "url": "https://www.therx.com/threads/northcoast-records-thread.1257301/post-14370751",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "TheRX: NorthCoast Records Thread, Oct 2024 posts",
       "url": "https://www.therx.com/threads/northcoast-records-thread.1257301/post-14522214",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "TheRX: NorthCoast Records Thread, Dec 2024 posts",
       "url": "https://www.therx.com/threads/northcoast-records-thread.1257301/post-14559757",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "TheRX: NorthCoast Records Thread, page 45 (Aug 2025)",
       "url": "https://www.therx.com/threads/northcoast-records-thread.1257301/page-45",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "TheRX: Newsletters thread (Dec 2023 posts on Northcoast publications)",
       "url": "https://www.therx.com/threads/newsletters.1254892/post-14340865",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Covers forum: Marc Lawrence Playbook thread (Jul 2023)",
       "url": "https://www.covers.com/forum/college-football-33/marc-lawrence-playbook-103754066",
-      "accessed": "16 Nov 2026"
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "ncsports.com archive: Power Sweep, Week 4 2026 issue (price list, Monday Night Magic guarantee, record claims)",
+      "url": "http://ncsports.com/wp-content/uploads/2018/05/Power-Sweep-Week-4-2.pdf",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "ncsports.com archive: Power Sweep Vol 42 Issue 23, 25 Jan 2026 (NFL playoff Exec record)",
+      "url": "http://ncsports.com/wp-content/uploads/2018/05/Power-Sweep-Week-22.pdf",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "ncsports.com archive: 2026 Power Sweep Post Draft issue (A and D grades table)",
+      "url": "http://ncsports.com/wp-content/uploads/2018/05/2026-Power-Sweep-Post-Draft.pdf",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Powers' Picks Spring Football Preview 2021 (2015 to 2020 newsletter results table)",
+      "url": "https://nebula.wsimg.com/8d924ec934fe905b4bfe7db012a9a344?AccessKeyId=F4E5462B12CB60B63AD2&disposition=0&alloworigin=1",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "SBR forum: Newsletters NCAA Week 11, NFL Week 10 tracker (10 Nov 2026)",
+      "url": "https://www.sportsbookreview.com/forum/nfl-betting/29950601-%E2%80%8Bnewsletters-ncaa-week-11-nfl-week-10",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "TheRX: Newsletters thread, page 738 (final 2025 newsletter numbers, Aug 2026)",
+      "url": "https://www.therx.com/threads/newsletters.971451/page-738",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "TheRX: NorthCoast Records Thread, page 43 (Jan and Feb 2025: final 2024 counts, Executive Club letter)",
+      "url": "https://www.therx.com/threads/northcoast-records-thread.1257301/page-43",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "TheRX: NorthCoast Records Thread, page 44 (Feb and Aug 2025 posts)",
+      "url": "https://www.therx.com/threads/northcoast-records-thread.1257301/page-44",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "TheRX: Saturday Service Play Thread 10/03/2026, page 4 (Northcoast late phone card)",
+      "url": "https://www.therx.com/threads/saturday-service-play-thread-10-03-2026.1313552/page-4",
+      "accessed": "20 Nov 2026"
     }
   ],
-  "pricing_source": 1
+  "pricing_source": 19
 }

@@ -3,37 +3,41 @@
   "name": "Winners and Whiners",
   "legal_name": "Wager Talk Media, LP (named as parent company in the refund policy)",
   "kind": "Pick marketplace and betting media site with a roster of handicappers",
-  "checked": "7 Nov 2026",
-  "checked_iso": "2026-11-07",
-  "updated_iso": "2026-11-13",
+  "checked": "20 Nov 2026",
+  "checked_iso": "2026-11-20",
+  "updated_iso": "2026-11-20",
   "title": "Winners and Whiners Review 2026: Pricing, Record, Worth It?",
-  "description": "Winners and Whiners review, checked 7 Nov 2026: real pick and pass prices, the paid guarantee that pays in credits, its WagerTalk ownership and leaderboard.",
+  "description": "Winners and Whiners review, checked 20 Nov 2026: every pick, pass and credit price, the paid guarantee, its WagerTalk owner and leaderboard claims checked.",
   "h1": "Winners and Whiners review",
-  "dek": "A pick marketplace with about 35 handicappers selling single plays from $15 to $39, passes from $49 to $499, and prepaid credits. Its refund policy names WagerTalk's parent company as the seller. Every record on the site is graded and displayed by the network itself.",
+  "dek": "A pick marketplace with 35 handicappers selling single plays from $15 to $35, three day passes from $49 to $69, Flex Picks from $39 a day and a Power Pass at $199 a day for every handicapper. Its refund policy names WagerTalk's parent company as the seller, and every record on the site is graded and displayed by the network itself.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record for Winners and Whiners or any handicapper who sells on it. This page reports what we could check and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record for Winners and Whiners or any handicapper who sells on it. This page reports what we could check on 20 Nov 2026 and labels everything else."
   },
   "glance": [
     [
       "Operator",
-      "Wager Talk Media, LP, named as parent company (refund policy); mailing address in Las Vegas, NV (support page)"
+      "Wager Talk Media, LP, named as parent company (refund policy); seller address 11035 Lavender Hill Dr, Ste 160-263, Las Vegas, NV 89135 (terms and support page)"
     ],
     [
       "Claims to operate since",
       "Not stated on the site. A 2025 news report says it was created over a decade ago"
     ],
     [
+      "Handicappers",
+      "35 listed for Flex Picks on 20 Nov 2026"
+    ],
+    [
       "Price range seen",
-      "$15 a play to $499 for one NBA season pass"
+      "$15 a play to $1,188 for 365 days of Flex Picks"
     ],
     [
       "Guarantee",
-      "Optional, costs extra, pays in Capper Credits. All sales final"
+      "Optional, costs about 50% extra, pays in Capper Credits. All sales final"
     ],
     [
       "Full public record",
-      "Not found. Leaderboard windows and seller chosen runs"
+      "Not found. Leaderboard windows, unlabeled profile records and seller chosen runs; past plays behind a login"
     ],
     [
       "Watchdog graded record",
@@ -41,21 +45,26 @@
     ]
   ],
   "short_answer": [
-    "Winners and Whiners is a real business. Its refund policy says every purchase is made from Wager Talk Media, LP, \"the parent company of Winners & Whiners\", and it lists a Las Vegas mailing address and a support email. It publishes prices and delivers picks through a member dashboard. In that narrow sense it is legitimate.",
-    "Whether its handicappers make money is a different question. The site shows leaderboards for windows as short as 7 days and sales copy full of streaks such as \"24-10 (71%) FOOTBALL HEATER\" or \"#1 ALL-TIME BASKETBALL RECORD\". The network grades these itself, and we found no full public log of every pick with the line and the time it was sent. The guarantee, where offered, is an extra cost and pays in site credit, not cash.",
-    "Treat Winners and Whiners as a storefront for many sellers, not as proof that any of them win. If you buy, buy short, record every pick yourself with the price you could actually get, and judge a handicapper only after a few hundred picks."
+    "Winners and Whiners is a real business. Its refund policy says every purchase is made from Wager Talk Media, LP, \"the parent company of Winners & Whiners\", card charges show as \"WT/SM* PICKS AND PAR\", and its terms give a Las Vegas seller address. It publishes prices and delivers picks through a member dashboard and email. In that narrow sense it is legitimate.",
+    "Whether its handicappers make money is a different question. The site shows leaderboards for 7 day, 30 day, 365 day and year to date windows and sales copy full of streaks such as \"7-1-0 87% +13U CFB RUN\". The network grades these itself, and we found no full public log of every pick with the line and the time it was sent; the \"Yesterday's Plays\" page sends visitors to a login screen. When we compared sales claims with the site's own leaderboard on 20 Nov 2026, several did not match.",
+    "The leaderboard itself is sobering. The best year to date record on the site was 53.69% winners, and the top nine over the last 365 days ranged from 46.39% to 57.44%. Treat Winners and Whiners as a storefront for many sellers, not as proof that any of them win. If you buy, buy short, record every pick yourself with the price you could actually get, and judge a handicapper only after a few hundred picks."
   ],
-  "pricing_intro": "Prices below were shown on the Winners and Whiners homepage, picks page, specials page and Flex Picks page on 7 Nov 2026. Each handicapper sets their own prices, and specials change often.",
+  "pricing_intro": "Prices below were shown on the Winners and Whiners homepage, picks page, specials page, a handicapper profile and the Flex Picks page on 20 Nov 2026. Each handicapper sets single play prices, and specials change often. Flex Picks buy one handicapper's full card for a day; the Power Pass buys every handicapper's plays for the days covered.",
   "pricing": [
     [
       "Single daily plays",
-      "$15 to $39 a release; most were $25 or $29",
+      "$15 to $35 a release; most were $25 or $29",
       "No refund. All sales final"
     ],
     [
       "Single play \"with Guarantee\"",
-      "$29 play: $44 · $35 play: $53 · $39 play: $59",
+      "$15 play: $23 · $20 play: $30 · $25 play: $38 · $29 play: $44 · $35 play: $53",
       "100% of the price back as Capper Credits if the day's picks show no overall profit"
+    ],
+    [
+      "One handicapper, 3 Day Pass",
+      "$69",
+      "Seen for three handicappers on the homepage"
     ],
     [
       "Weekend Warrior (every Saturday college football and Sunday NFL play from one handicapper)",
@@ -68,56 +77,62 @@
       "No guarantee stated"
     ],
     [
-      "Pavlos Laguretos all soccer pass through 31 Dec 2026",
-      "$199 (listed as $398)",
-      "No guarantee stated"
+      "Rob Vinciletti All Access through 31 Dec 2026",
+      "$299 (listed as $497)",
+      "Special says one month alone is $299 and seven days $99"
     ],
     [
-      "Rob Vinciletti NBA season pass",
-      "$499 (listed as $779)",
+      "Flex Picks (any one handicapper per day, days need not be in a row)",
+      "1 day $39 · 3 days $69 · 7 days $99 · 30 days $299 · 90 days $749 · 365 days $1,188 (listed as $1,999)",
+      "Schedule up to a week ahead; switch handicapper until plays are released"
+    ],
+    [
+      "Power Pass (every handicapper)",
+      "1 day $199 · 2 days $358 · 3 days $447 · 1 week $798",
       "No guarantee stated"
     ],
     [
       "WagerBuxx prepaid credits",
       "$100 buys $110 · $500 buys $575 · $2,000 buys $2,300 · $2,500 buys $3,000",
-      "Spend on any handicapper. No refund terms beyond all sales final"
-    ],
-    [
-      "Power Pass and Flex Picks",
-      "No price shown to a visitor who is not logged in",
-      "Not checked"
+      "Spend on any handicapper. All sales final"
     ]
   ],
   "guarantee": [
-    "There is no guarantee by default. On many single plays the buyer can choose \"Purchase with Guarantee\", which cost about half again as much on 7 Nov 2026: a $29 play became $44, a $35 play $53 and a $39 play $59. The terms say: \"If your daily pick(s) don't produce an overall profit, we'll credit 100% of your purchase price as Capper Credits to your account\", redeemable on daily, guaranteed or multi day packages.",
-    "So the guarantee is a paid upgrade that returns store credit, not money. A buyer who pays $59 and loses gets $59 of credit to spend on more picks at the same store. Losses on the bets themselves are never covered.",
-    "The refund policy says \"All Sales are Final\" and that once a product is purchased, delivered or viewed, no refunds will be issued. The terms and conditions also contain a \"Customer Remedy\" clause saying the company's liability is a refund of the price paid or replacement \"at our option\". The two pages do not say how those rules fit together, so a buyer should assume no cash refunds."
+    "There is no guarantee by default. On many single plays the buyer can choose \"Purchase with Guarantee\", which cost about half again as much on 20 Nov 2026: a $15 play became $23, a $25 play $38, a $29 play $44 and a $35 play $53. The terms say: \"If your daily pick(s) don't produce an overall profit, we'll credit 100% of your purchase price as Capper Credits to your account\", redeemable on any daily, guaranteed or multi day package.",
+    "So the guarantee is a paid upgrade that returns store credit, not money. A buyer who pays $53 and loses gets $53 of credit to spend on more picks at the same store, having paid $18 extra for that credit. Losses on the bets themselves are never covered.",
+    "The refund policy says \"All Sales are Final and products are sold \"as is\". Once a product or service has been purchased, delivered, and/or viewed, no refunds will be issued.\" It adds that refunds will not be issued because of state restrictions on in state teams, wager types, lack of access to legal sportsbooks or undelivered email and text alerts. The terms and conditions also contain a \"Customer Remedy\" clause: \"Our company's entire liability, and the purchaser's exclusive remedy, shall be a refund of the price paid or replacement of our products, at our option.\" A buyer should assume no cash refunds.",
+    "The FAQ says subscriptions can be cancelled at any time from account settings, with access continuing to the end of the billing period, and answers \"Are your picks guaranteed to win?\" with \"No picks or predictions are guaranteed.\""
   ],
   "claims": [
     {
-      "claim": "Oskeim Sports \"296-221 (+100% Gain) All-Time, for a total of 520 plays\" and, in the next listing, \"a Top 5 Capper in '26: 296-222 (+96.3% Gain)\"",
-      "where": "Homepage and leaderboard play listings",
-      "status": "Seller claim, no full log"
+      "claim": "Rob Vinciletti \"is #1 on the network this week at +60 units on a 25-7 all-sports run\"",
+      "where": "Specials page, All Access through 2026 offer",
+      "status": "Checked against the leaderboard on 20 Nov 2026: he was #2 on the Last 30 board at +59.75 units (74-50-2), behind a soccer handicapper at +72.32, and was not among the 17 names on the \"Who's hot\" board"
     },
     {
-      "claim": "Ben Burns \"#1 ALL-TIME BASKETBALL RECORD: AMAZING +405 UNIT HEATER!\"",
-      "where": "Homepage leaderboard",
-      "status": "Seller claim, network graded"
+      "claim": "\"MASSIVE ALL SPORTS RUN +39.51 units S-AUGUST 17TH\"",
+      "where": "Rob Vinciletti profile achievements",
+      "status": "Checked: the same profile shows +59.75 units for the last 30 days, so if both are right he was about 20 units down from 17 Aug to late October"
     },
     {
-      "claim": "Rob Vinciletti \"was the #1 NBA capper at both Picks and Parlays and Winners and Whiners\", \"+52.59 units\"",
-      "where": "Specials page, NBA season pass",
-      "status": "Seller claim; both sites belong to the same network"
-    },
-    {
-      "claim": "Rocky Atkinson \"has made $1,000/game bettors $7,030 since January 28, 2026\"",
+      "claim": "\"Ricky's 5% (NCAAB) BEST BET ... 4-5 (73%) Last 19 Top Rated 5% Plays!\"",
       "where": "Homepage play listing",
-      "status": "Selected window, no full log"
+      "status": "Checked: 4 and 5 is 44%, and 4 and 5 is 9 plays, not 19. About 14 and 5 would be 73.7%, so the headline is wrong as printed"
     },
     {
-      "claim": "Bruce Marshall \"ALL PICKS +162.67% RETURN SINCE APRIL 14\"",
-      "where": "Homepage play listing",
-      "status": "Selected window, return basis not explained"
+      "claim": "Pavlos Laguretos \"+174.4u L/6 Months (since May 2026)\" and \"+101.21u L/6 Weeks\"",
+      "where": "Homepage and leaderboard achievements",
+      "status": "Checked: the leaderboard showed +54.71 units year to date and +32.61 units for the last 365 days at 46.39% winners (508-587-51). If all are right, January to May 2026 was about 120 units down"
+    },
+    {
+      "claim": "Profile record \"59.68% Win Rate (74-50-2) +59.75 units\"",
+      "where": "Rob Vinciletti profile header",
+      "status": "Checked: identical to his Last 30 leaderboard line, but the profile does not say it covers only 30 days"
+    },
+    {
+      "claim": "\"7-1-0 87% +13U CFB RUN\"",
+      "where": "Homepage play listing, $15 single pick",
+      "status": "Checked: 7 / 8 = 87.5%. Arithmetic right; an eight game window chosen by the seller"
     },
     {
       "claim": "\"Winners & Whiners is the nation's premier resource for sports betting and handicapping information.\"",
@@ -126,28 +141,65 @@
     }
   ],
   "claims_note": [
-    "One Oskeim Sports record does not hold one label. The same 296 wins appear as an all time record in one listing and as a 2026 record in the next, with different gain figures (+100% and +96.3%). That may be a stale blurb, but a buyer should notice that the sales copy is not kept consistent.",
-    "Most headline numbers are chosen windows: last 7 days, last 35 days, since a chosen date, or a category such as 5% plays only. Gain percentages and dollar figures depend on unit size and prices that the listings do not show. Every handicapper has a hot stretch somewhere, and a window picked after the fact tells you very little.",
-    "Several bios cite outside results, such as Sports Monitor awards and a tie for first in the 2021 Circa Sports Million II contest. We did not open those third party records, so we treat them as seller claims here."
+    "How we checked: on 20 Nov 2026 we read the site's leaderboard in all four windows it offers (Who's hot, Last 30, Last 365 and YTD) plus the sport boards, and compared each headline in the sales copy with the matching board line. The leaderboard is the network's own grading, so this tests the sales copy for consistency, not the picks for honesty.",
+    "Of the six numeric claims we tested, one did not match the board on the day we read it, one was arithmetically wrong as printed, one profile record was a 30 day figure shown without its window, and two only fit the board if the handicapper had a long losing stretch that the sales copy leaves out. Sales copy may be written days before it is read, so some gaps may be stale text, but a buyer cannot tell which.",
+    "Most headline numbers are chosen windows: last 7 days, last 35 days, since a chosen date, or a category such as 5% plays only. Gain figures depend on unit sizes that the listings do not show. Every handicapper has a hot stretch somewhere, and a window picked after the fact tells you very little.",
+    "Several bios cite outside results, such as monitor awards or contest finishes. We did not open those third party records, so we treat them as seller claims here."
   ],
   "record": [
     "What a buyer can verify independently: nothing we could find. We found no full pick log kept by an outside party, and no regulator or court record. Bios that cite contest results or monitor awards point to third parties, but we did not open those records.",
-    "What Winners and Whiners itself publishes: a leaderboard with \"Profit based on $100 bet size\" for last 7 days, last 30, last 365 and year to date, with sport filters; a win rate, units and profit line on each profile (Oskeim Sports showed 40-19-1, +46.48 units, with no time window stated); and a free pick or two per handicapper. This is graded and stored by the network that sells the picks. The pages we opened do not say who grades results, whether the price graded is the price at release, or how release times are recorded. The \"Yesterday's Plays\" page sent us to a WagerTalk login screen, so past plays are not open to the public.",
+    "What Winners and Whiners itself publishes: a leaderboard with \"Profit based on $100 bet size\" for Who's hot, Last 30, Last 365 and YTD, with sport filters, and a win rate, units and profit line on each profile. On 20 Nov 2026 the YTD board was led by one handicapper at 858-740-25 (53.69%, +207.03 units), followed by 584-491-19 (54.33%) and 699-703-11 (49.86%). The Last 365 board listed nine names, from 46.39% to 57.44% winners. The 7 day \"Who's hot\" leader was 15-8-1.",
+    "This is graded and stored by the network that sells the picks. The pages we opened do not say who grades results, whether the price graded is the price at release, how plays of different sizes are counted, or whether losing handicappers appear on the boards at all. The \"Yesterday's Plays\" page redirected us to a WagerTalk login, so past plays are not open to the public.",
     "Some bios quote records \"across all sites\" or rank handicappers on both Winners and Whiners and Picks and Parlays. Those sites are partners in the same network, so a ranking on both is still the network grading itself."
   ],
   "our_data": {
     "matched": false,
     "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Winners and Whiners handicapper is matched to a Watchdog graded record, so we make no claim about how these handicappers perform.",
-    "context": "For scale: the top five on the Winners and Whiners 7 day leaderboard were shown at 53% to 71% winners. On the Watchdog board on 7 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "context": "For scale: the best year to date record on the Winners and Whiners leaderboard on 20 Nov 2026 was 53.69% winners. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "Independent customer evidence on Winners and Whiners is close to nonexistent. We found no review profile with reviews and no buyer describing its paid picks. The only independent mentions are two forum posts about its free information. Below is what we checked.",
+  "customers_intro": "Independent customer evidence on Winners and Whiners is thin. We found no review profile with reviews and no buyer describing its paid picks. What exists is a handful of Reddit and Covers posts, almost all about its free predictions. Below is everything we found.",
   "customers": [
     {
       "type": "Our summary",
       "tone": "Neutral",
-      "date": "Read 13 Nov 2026",
-      "text": "We found no buyer of the paid picks. What bettors discuss is the free predictions: in 2024 an r/sportsbetting member built a seven leg parlay from them, and a reply said he no longer follows sites that do not show money on the line. Covers members describe it as a stats source, not a service they paid for.",
+      "date": "Read 20 Nov 2026",
+      "text": "We found no buyer of the paid picks anywhere. What bettors discuss is the free predictions. On Reddit, a 2017 r/sportsbook post named it as a professional site the poster found less useful than the free forum threads; one member built a seven leg parlay from its free predictions in February 2024 and a reply said they no longer follow sites that do not show money on the line; a May 2025 poster said the site gives pretty good information; and in March 2026 a member posted a winning parlay built from its predictions, a post that appeared twice the same day in nearly the same words. On Covers, members in 2023 and 2025 described it as a stats and information source, not a service they paid for. BBB, Trustpilot and SiteJabber had nothing to report. With no complaints and no praise from paying customers, there is no buyer pattern to weigh either way.",
       "source": null
+    },
+    {
+      "type": "Forum post",
+      "tone": "Negative",
+      "date": "20 Apr 2017",
+      "source": 28,
+      "text": "An r/sportsbook member thanked the regulars in the daily pick threads, saying the real conversation there was more useful than reading a professional picks site, naming Winners and Whiners and one other site as examples."
+    },
+    {
+      "type": "Forum post",
+      "tone": "Mixed",
+      "date": "29 Feb 2024",
+      "source": 17,
+      "text": "An r/sportsbetting member posted a seven leg parlay built from Winners and Whiners free predictions so others would not have to do the work. The first reply said such sites do not win and that they no longer listen to any site that does not show money on the line."
+    },
+    {
+      "type": "Forum post",
+      "tone": "Neutral",
+      "date": "1 Sep 2024",
+      "source": 24,
+      "text": "A post on r/sportsbetting shared a free NASCAR play with a link to a Winners and Whiners handicapper page. It reads like promotion of the handicapper rather than a buyer review, and it drew no replies."
+    },
+    {
+      "type": "Forum post",
+      "tone": "Positive",
+      "date": "16 May 2025",
+      "source": 23,
+      "text": "An r/sportsbetting member who checks free picks online said Winners and Whiners and one other site give pretty good information, while asking whether a different picks site was legit. The replies discussed only the other site."
+    },
+    {
+      "type": "Forum post",
+      "tone": "Positive",
+      "date": "13 Mar 2026",
+      "source": 25,
+      "text": "A member said they had their first big parlay win after betting legs taken from the free predictions on winnersandwhiners.com and adjusting some alternate totals. The same post appeared twice on r/sportsbetting that day in nearly identical words; we cannot tell whether it was a customer or promotion. Replies were congratulations."
     },
     {
       "type": "Not found",
@@ -159,21 +211,21 @@
     {
       "type": "Not found",
       "tone": "Neutral",
-      "date": "Checked 7 Nov 2026",
-      "text": "A Better Business Bureau search for \"winners and whiners\" returned no results.",
+      "date": "Checked 20 Nov 2026",
+      "text": "Better Business Bureau searches for \"winners and whiners\" and for \"wagertalk\" both returned no results.",
       "source": 12
     },
     {
       "type": "Not found",
       "tone": "Neutral",
-      "date": "Checked 7 Nov 2026",
-      "text": "Web searches for Reddit threads, TheRX, Covers and SBR forum posts found no buyer discussing the paid picks; the two Covers posts below concern free information only. SiteJabber shows no reviews of winnersandwhiners.com, the one Reddit post we found used its free picks for a parlay, and TheRX forum search returned no thread about the site. We did not check app stores.",
+      "date": "Checked 20 Nov 2026",
+      "text": "SiteJabber showed 0 reviews of winnersandwhiners.com. Web searches for TheRX and SBR threads found no buyer discussing the paid picks, and the Reddit posts we found, listed below, concern the free predictions. We did not check app stores.",
       "source": 16
     },
     {
       "type": "Seller curated",
       "tone": "Neutral",
-      "date": "Checked 7 Nov 2026",
+      "date": "Checked 20 Nov 2026",
       "text": "We did not see customer testimonials on the pages we opened. What the site shows instead is handicapper sales copy and its own leaderboard, both published by the seller.",
       "source": 0
     },
@@ -181,55 +233,68 @@
       "type": "Forum post",
       "tone": "Neutral",
       "date": "9 Oct 2023",
-      "text": "In a Covers thread asking members to rank the worst paid cappers, one member said he does not use betting sites' picks and only uses the information they publish, listing winnersandwhiners.com among those sites. He did not describe buying anything.",
+      "text": "In a Covers thread asking members to rank the worst paid cappers, one member said they do not use betting sites' picks and only use the information those sites publish, listing winnersandwhiners.com among those sites. They did not describe buying anything.",
       "source": 14
     },
     {
       "type": "Forum post",
       "tone": "Positive",
       "date": "13 Nov 2025",
-      "text": "A Covers college basketball member shared a Winners and Whiners free pick page as a site he uses for stats, saying it puts a lot of information in one place. His comment is about the free previews, not the paid picks.",
+      "text": "A Covers college basketball member shared a Winners and Whiners free pick page as a site they use for stats, saying it puts a lot of information in one place. The comment is about the free previews, not the paid picks.",
       "source": 15
     }
   ],
   "conflicts": [
-    "The refund policy says all purchases are made from Wager Talk Media, LP, \"the parent company of Winners & Whiners\", and card charges appear as \"WT/SM* PICKS AND PAR\". A ReadWrite article updated 28 Aug 2025 reported that WagerTalk Media would partner with PicksandParlays.net Group and WinnersAndWhiners to form one sports betting content network. In practice that means the leaderboard, the rankings and the sales pages are all run by the company that profits from the sales. Logins go through a WagerTalk identity page.",
-    "The site footer says that if you click a link to a bookmaker or casino and open an account, \"Winners & Whiners may receive a commission\". The menu also carries pages for betting sites, social sportsbooks and sweepstakes casinos. That is a financial interest a buyer should know about; it proves nothing about the picks."
+    "The refund policy says all purchases are made from Wager Talk Media, LP, \"the parent company of Winners & Whiners\", and card charges appear as \"WT/SM* PICKS AND PAR\". A ReadWrite article updated 28 Aug 2025 reported that WagerTalk Media would partner with PicksandParlays.net Group and WinnersAndWhiners to form one sports betting content network of about eight million users. In practice the leaderboard, the rankings and the sales pages are all run by the company that profits from the sales. Logins go through a WagerTalk identity page.",
+    "The site footer says that if you click a link to a bookmaker or casino and open an account, \"Winners & Whiners may receive a commission\". The menu also carries pages for betting sites, social sportsbooks, daily fantasy and sweepstakes casinos. That is a financial interest a buyer should know about; it proves nothing about the picks.",
+    "Winners and Whiners is not paid by Watchdog and does not advertise with us."
   ],
   "strengths": [
-    "A named parent company, a mailing address and a support email, with prices shown on every package before you pay.",
-    "A leaderboard with several time windows and sport filters, which is more than many single handicapper shops show.",
-    "Free picks with full write ups, game times and prices let a reader see a handicapper's style before buying."
+    "A named parent company, a Las Vegas seller address and a support email, with prices shown on every package before you pay.",
+    "A leaderboard with four time windows and sport filters, which is more than many single handicapper shops show.",
+    "Free picks with full write ups, game times and prices let a reader see a handicapper's style before buying.",
+    "Flexible buying: single plays, three day passes, Flex Picks that let you switch handicapper day by day, and cancellable subscriptions.",
+    "We found no billing or refund complaints anywhere we looked."
   ],
   "concerns": [
     "No full public record. The leaderboard and every streak are graded and published by the network that sells the picks, and past plays sit behind a login.",
     "The guarantee costs about 50% extra and pays in Capper Credits, never cash. All sales are final.",
-    "Sales copy relies on short, chosen windows, and at least one record is labeled both all time and 2026.",
+    "Sales copy did not match the site's own leaderboard on the day we checked, and one headline record was arithmetically wrong.",
+    "Even the leaders win only about 53% to 57% of their picks over a year, close to the 52.4% break even at -110, and packages like the Power Pass run $199 a day.",
     "The site may earn commissions from sportsbook and casino sign ups, and its parent company sells picks on partner sites too."
   ],
   "checklist": [
     "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
+    "Compare any record in a sales blurb with the handicapper's line on the Last 365 leaderboard before buying.",
     "Count units, not wins. A 60% record at heavy favorites can still lose money.",
-    "Read the guarantee for the words refund, credit and extension. Most \"guarantees\" in this business are credits.",
+    "Read the guarantee for the words refund, credit and extension. This one is store credit you pay extra for.",
     "Write down each pick yourself the moment you receive it, with the line you can actually get.",
     "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
   ],
   "faq": [
     [
       "Is Winners and Whiners legit?",
-      "It is a real business. Its refund policy names Wager Talk Media, LP as the parent company, and it lists a Las Vegas mailing address and published prices. Whether its handicappers win over time is a separate question that we could not verify."
+      "It is a real business. Its refund policy names Wager Talk Media, LP as the parent company, and it lists a Las Vegas seller address and published prices. Whether its handicappers win over time is a separate question that we could not verify."
     ],
     [
       "How much does Winners and Whiners cost?",
-      "On 7 Nov 2026 single plays cost $15 to $39, or $44 to $59 with the credit guarantee. Passes ran $49 for a weekend or three days, $199 for a soccer pass through 2026 and $499 for an NBA season, and prepaid WagerBuxx started at $100."
+      "On 20 Nov 2026 single plays cost $15 to $35, or $23 to $53 with the credit guarantee. A handicapper's three day pass was $69, Flex Picks ran from $39 a day to $1,188 a year, the all handicapper Power Pass from $199 a day to $798 a week, and prepaid WagerBuxx started at $100."
     ],
     [
       "Does Winners and Whiners have a verified record?",
       "Not an independent one. The site grades its own handicappers on a leaderboard and shows chosen streaks, but we found no full public log or outside audit, and no Watchdog graded record is matched to any of its handicappers."
     ],
     [
+      "Does Winners and Whiners give refunds?",
+      "No cash refunds. All sales are final once a product is purchased, delivered or viewed. The optional guarantee returns the price as Capper Credits if the day's picks show no overall profit."
+    ],
+    [
+      "Who owns Winners and Whiners?",
+      "Its refund policy names Wager Talk Media, LP as the parent company, and a 2025 ReadWrite report described a partnership joining WagerTalk, Picks and Parlays and Winners and Whiners into one content network."
+    ],
+    [
       "Is Winners and Whiners worth it?",
-      "For the money you get one handicapper's picks and write ups, delivered to a dashboard, with an optional guarantee that returns store credit. What is unproven is whether any of them beat the roughly 52.4% needed at -110 over hundreds of picks, and there are no cash refunds."
+      "For the money you get one or more handicappers' picks and write ups, delivered to a dashboard, with an optional guarantee that returns store credit. What is unproven is whether any of them beat the roughly 52.4% needed at -110 over hundreds of picks, and there are no cash refunds."
     ]
   ],
   "related": [
@@ -243,57 +308,57 @@
     {
       "title": "Winners and Whiners homepage (featured plays, guarantee prices, leaderboard, footer)",
       "url": "https://www.winnersandwhiners.com/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Winners and Whiners picks page (single play prices)",
       "url": "https://www.winnersandwhiners.com/picks",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Winners and Whiners leaderboard (windows, $100 bet size, Oskeim listings)",
       "url": "https://www.winnersandwhiners.com/leaderboard",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Winners and Whiners specials (passes and listed prices)",
       "url": "https://www.winnersandwhiners.com/specials",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Winners and Whiners Flex Picks page (WagerBuxx tiers, Power Pass)",
       "url": "https://www.winnersandwhiners.com/flex-picks",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Winners and Whiners refund policy (parent company, all sales final, commission note)",
       "url": "https://www.winnersandwhiners.com/refund-policy",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Winners and Whiners terms and conditions (seller address, customer remedy)",
       "url": "https://www.winnersandwhiners.com/terms",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Winners and Whiners support page (address and contact)",
       "url": "https://www.winnersandwhiners.com/support",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Winners and Whiners FAQ (delivery, cancellation, refunds)",
       "url": "https://www.winnersandwhiners.com/faq",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Winners and Whiners: Oskeim Sports profile (profile record, release times)",
       "url": "https://www.winnersandwhiners.com/profile/oskeim-sports",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "ReadWrite: WagerTalk Media announces partnership with other content networks (updated 28 Aug 2025)",
       "url": "https://readwrite.com/wagertalk-media-announces-partnership-content-networks/",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Trustpilot: winnersandwhiners.com (page not found)",
@@ -303,33 +368,88 @@
     {
       "title": "BBB search: winners and whiners (no results)",
       "url": "https://www.bbb.org/search?find_text=winners%20and%20whiners",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Winners and Whiners experts page (handicapper roster and bios)",
       "url": "https://www.winnersandwhiners.com/experts",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Covers forum: Rank The Worst Cappers on Internet (9 Oct 2023)",
       "url": "https://www.covers.com/forum/nfl-betting-21/rank-the-worst-cappers-on-internet-103772135",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Covers forum: Stats and info, College Basketball (13 Nov 2025)",
       "url": "https://www.covers.com/forum/college-basketball-40/stats-and-info-103990116",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "SiteJabber: winnersandwhiners.com (no reviews)",
       "url": "https://www.sitejabber.com/reviews/winnersandwhiners.com",
-      "accessed": "7 Nov 2026"
+      "accessed": "20 Nov 2026"
     },
     {
       "title": "Reddit r/sportsbetting: parlay from Winners and Whiners predictions, Feb 2024",
       "url": "https://www.reddit.com/r/sportsbetting/comments/1b2v6yq/hello_degens_you_guys_got_killed_by_that/",
-      "accessed": "13 Nov 2026"
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Winners and Whiners leaderboard, Last 30",
+      "url": "https://www.winnersandwhiners.com/leaderboard/last-30",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Winners and Whiners leaderboard, Last 365",
+      "url": "https://www.winnersandwhiners.com/leaderboard/last-365",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Winners and Whiners leaderboard, YTD",
+      "url": "https://www.winnersandwhiners.com/leaderboard/ytd",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Winners and Whiners: Rob Vinciletti profile (record line, achievements, passes)",
+      "url": "https://www.winnersandwhiners.com/profile/rob-vinciletti",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Winners and Whiners Yesterday's Plays (redirects to login)",
+      "url": "https://www.winnersandwhiners.com/yesterdays-plays",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbetting: checking MLB picks on Google, May 2025",
+      "url": "https://www.reddit.com/r/sportsbetting/comments/1knu2uf/does_anyone_else_check_their_mlb_picks_on_google/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbetting: free play link to a Winners and Whiners handicapper, Sep 2024",
+      "url": "https://www.reddit.com/r/sportsbetting/comments/1f6ndxq/wry_or_die_free_play/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbetting: First time big win, Mar 2026",
+      "url": "https://www.reddit.com/r/sportsbetting/comments/1rsk3ls/first_time_big_win/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbetting: First time big win (second post the same day), Mar 2026",
+      "url": "https://www.reddit.com/r/sportsbetting/comments/1rsjzz2/first_time_big_win/",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "BBB search: wagertalk (no results)",
+      "url": "https://www.bbb.org/search?find_text=wagertalk",
+      "accessed": "20 Nov 2026"
+    },
+    {
+      "title": "Reddit r/sportsbook: thanks to the daily pick threads, Apr 2017",
+      "url": "https://www.reddit.com/r/sportsbook/comments/66ehau/",
+      "accessed": "20 Nov 2026"
     }
   ],
-  "pricing_source": 3
+  "pricing_source": 4
 }
