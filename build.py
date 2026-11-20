@@ -1288,6 +1288,56 @@ def _sport_table(cappers, sport):
     return ''.join(rows)
 
 
+_SPORT_CONTEXT = {
+    'NFL': ('Most NFL picks are point spreads and totals priced near -110, so the 52.4% break even line applies cleanly here. '
+            'With one game a week per team, even a busy NFL handicapper rarely posts more than a few hundred picks a season, '
+            'which keeps NFL samples small and makes a hot month look more meaningful than it is.'),
+    'NBA': ('NBA cards are long: up to 15 games a night from October to April, plus player props. Volume builds fast, so NBA records '
+            'reach a real sample sooner than football ones, but late injury news moves NBA lines more than in most sports, and a pick '
+            'posted before a lineup change can be graded against a number nobody could bet an hour later.'),
+    'MLB': ('Baseball is mostly a moneyline sport. Favorites can cost -200 and underdogs pay +150, so win rate alone says very little: '
+            'a 45% record on underdogs can make money while a 60% record on heavy favorites can lose. Units and ROI are the numbers to read on this page.'),
+    'NHL': ('Hockey is priced mainly on the moneyline and the puck line, and close games are decided by one goal, empty net goals and '
+            'shootouts. That randomness makes short NHL runs especially noisy, so a record needs a larger sample before it says much.'),
+    'NCAAF': ('College football has more than 130 FBS teams and wide talent gaps, so spreads of 20 points or more are common. Lines on '
+              'smaller programs can be softer, but limits are lower and numbers move quickly once sharp money arrives.'),
+    'NCAAB': ('College basketball has the biggest card of all, with more than 350 Division I teams and dozens of games on a busy night. '
+              'Handicappers who post here often post a lot, and high volume at -110 punishes a small edge that is not really there.'),
+}
+
+
+def _sport_analysis(cappers, sport):
+    """What the records listed on one sport page show. Only the rows in the table above are used: the per sport
+    breakdown is published for some accounts, not every pick, so nothing here claims to cover the whole board."""
+    qual = [(int(raw[0]), float(raw[1]), raw[2] if isinstance(raw[2], (int, float)) else None)
+            for units, r, raw in _sport_leaders(cappers, sport) if len(raw) >= 3]
+    if not qual:
+        return ''
+    picks = sum(p for p, u, roi in qual)
+    units = sum(u for p, u, roi in qual)
+    up = sum(1 for p, u, roi in qual if u > 0)
+    rois = sorted(roi for p, u, roi in qual if roi is not None)
+    med = rois[len(rois) // 2] if rois else None
+    big = sum(1 for p, u, roi in qual if p >= 100)
+    out = ['The %d records listed above cover %s graded %s picks. Together they are %s %.1f units, about %+.1f%% per unit risked.' % (
+        len(qual), f'{picks:,}', _esc(sport), 'up' if units >= 0 else 'down', abs(units), 100.0 * units / picks if picks else 0)]
+    out.append('%d of the %d are ahead%s. This list only includes accounts whose %s results are broken out on their profile, '
+               'a subset of everyone who posts this sport, so it is not a count of the whole board.' % (
+                   up, len(qual), ', and the middle record sits at %+.1f%% ROI' % med if med is not None else '', _esc(sport)))
+    if len(rois) >= 8:
+        q1, q3 = rois[len(rois) // 4], rois[3 * len(rois) // 4]
+        out.append('The middle half of these records runs from %+.1f%% to %+.1f%% ROI.' % (q1, q3))
+    out.append(('%d of them %s 100 or more %s picks, the point where luck starts to explain less of a record.' % (
+        big, 'has' if big == 1 else 'have', _esc(sport))) if big else
+        'None of them has reached 100 %s picks yet, so treat every number on this page as an early read.' % _esc(sport))
+    winners = sorted((u for p, u, roi in qual if u > 0), reverse=True)
+    if len(winners) >= 4:
+        out.append('The top three hold %d%% of the units won by the profitable records here.' % round(100.0 * sum(winners[:3]) / sum(winners)))
+    ctx = _SPORT_CONTEXT.get(sport)
+    paras = ''.join('<p>%s</p>' % t for t in out) + ('<p>%s</p>' % _esc(ctx) if ctx else '')
+    return '<section class="panel prose"><h2>What these %s records show</h2>%s</section>' % (_esc(sport), paras)
+
+
 def _write_sport_pages(site, cappers):
     dest = os.path.join(site, 'sports')
     os.makedirs(dest, exist_ok=True)
@@ -1302,15 +1352,15 @@ def _write_sport_pages(site, cappers):
         body = '''<div class="sportband s-%s" aria-hidden="true"></div>
 <nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><a href="../cappers.html">Rankings</a><span aria-hidden="true">/</span><span aria-current="page">%s</span></nav>
 <div class="pagehead"><div><div class="eyebrow">%s records</div><h1>%s handicapper records</h1>
-<p class="muted">%d handicappers with %d or more graded %s picks, ranked by units won in %s. Every record shows the account name. A short sample can still swing, so the all sports board opens on records with 100 or more picks. <a href="../how-we-grade.html">How records are graded</a>. Named services are a different file: <a href="../reviews/index.html">handicapper reviews</a>.</p></div>
+<p class="muted">%d handicappers with %d or more graded %s picks, ranked by units won in %s. <a href="../how-we-grade.html">How records are graded</a>.</p></div>
 <a class="btn sm pro" href="../pricing.html">Watchdog Pro</a></div>
 <section class="panel"><div class="tw"><table><thead><tr><th class="l">#</th><th class="l">Handicapper</th><th>Picks</th><th>Record</th><th>Win %%</th><th>Units</th><th>ROI</th></tr></thead>
 <tbody>%s</tbody></table></div></section>
-<section class="proband" style="grid-template-columns:1fr auto"><div><span class="lock">Watchdog Pro</span><h2>Found a %s record worth following?</h2>
-<p class="muted" style="margin:0">Pro adds the full graded pick log and every profile breakdown. $49.99 a month or $499 a year at launch.</p></div>
+%s
+<section class="proband" style="grid-template-columns:1fr auto"><div><span class="lock">Watchdog Pro</span><h2>Found a %s record worth following?</h2></div>
 <a class="btn pro" href="../pricing.html">See pricing</a></section>''' % (
             _sport_slug(sport), _esc(sport), _esc(sport), _esc(sport), len(leaders), _SPORT_MIN, _esc(sport), _esc(sport),
-            _sport_table(cappers, sport), _esc(sport))
+            _sport_table(cappers, sport), _sport_analysis(cappers, sport), _esc(sport))
         html = _document(1, '', title, desc, 'https://handicapperwatchdog.com/sports/%s.html' % slug, body)
         with open(os.path.join(dest, slug + '.html'), 'w', encoding='utf-8', newline='\n') as f:
             f.write(html)
@@ -3094,15 +3144,15 @@ def _profile_read(r, c, rec_s, units_s, roi_s, board=None):
         if bv[1] > 0 > wv[1]:
             out.append('%s carried the record (%+.2f units on %d picks) while %s cost %.2f units on %d picks.' % (bk, bv[1], bv[0], wk, -wv[1], wv[0]))
         elif bv[1] > 0:
-            out.append('Every sport with 15 or more picks finished ahead; %s led with %+.2f units on %d picks.' % (bk, bv[1], bv[0]))
+            out.append('Every sport broken out on this profile is ahead; %s leads with %+.2f units on %d picks.' % (bk, bv[1], bv[0]))
         else:
-            out.append('No sport with 15 or more picks finished ahead; %s lost least (%+.2f units on %d picks) and %s lost most (%+.2f on %d).' % (
+            out.append('No sport broken out on this profile is ahead; %s lost least (%+.2f units on %d picks) and %s lost most (%+.2f on %d).' % (
                 bk, bv[1], bv[0], wk, wv[1], wv[0]))
         top = max(v[0] for k, v in bs)
         if top / n >= 0.6:
-            out.append('About %d%% of the graded picks are in one sport, so this is mostly a specialist record.' % round(100 * top / n))
+            out.append('One sport accounts for about %d%% of all graded picks, so this is mostly a specialist record.' % round(100 * top / n))
     elif len(bs) == 1:
-        out.append('Only one sport has 15 or more graded picks (%s, %d picks), so the sport breakdown rests on a single sample.' % (bs[0][0], bs[0][1][0]))
+        out.append('The sport breakdown on this profile covers %s only (%d picks, %+.2f units).' % (bs[0][0], bs[0][1][0], bs[0][1][1]))
     r30 = r.get('r30') or {}
     if r30.get('picks', 0) >= 15 and r30.get('roi') is not None and roi is not None:
         d = r30['roi'] - roi
