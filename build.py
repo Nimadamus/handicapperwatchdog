@@ -2135,11 +2135,38 @@ def _write_research(site, meta, cappers):
         ('<a class="featcard" href="odds-and-profit.html" style="text-decoration:none;color:inherit"><span>New</span><p><b>Why a 70% win rate can lose money</b><br>How the price a handicapper takes decides profit, across every graded public pick.</p></a>\n' if odds_ok else '') +
         '<a class="featcard" href="roi-and-sample-size.html" style="text-decoration:none;color:inherit"><span>01</span><p><b>How much does a handicapper&rsquo;s ROI mean after 30 picks?</b><br>ROI spread by sample size, win rate versus profit, and sport by sport results.</p></a>\n'
         + (('<a class="featcard" href="do-hot-handicappers-stay-hot.html" style="text-decoration:none;color:inherit"><span>02</span><p><b>Do hot handicappers stay hot?</b><br>First half of each record against the second half, for every account with 100 or more graded picks.</p></a>\n') if persisted else '') +
-        '<a class="featcard" href="../the-board.html" style="text-decoration:none;color:inherit"><span>' + ('03' if persisted else '02') + '</span><p><b>How many handicappers are up?</b><br>The share of established accounts with a winning record.</p></a></section>')
+        '<a class="featcard" href="../the-board.html" style="text-decoration:none;color:inherit"><span>' + ('03' if persisted else '02') + '</span><p><b>How many handicappers are up?</b><br>The share of established accounts with a winning record.</p></a></section>'
+        + _research_findings(cappers))
     with open(os.path.join(folder, 'index.html'), 'w', encoding='utf-8', newline='\n') as f:
         f.write(_document(1, 'research/', 'Handicapper Research | Handicapper Watchdog',
                           'Original research on public handicapper records: sample size, ROI, win rate and sport results, from independently graded picks.',
                           'https://handicapperwatchdog.com/research/', hub))
+
+def _research_findings(cappers):
+    """Key findings for the research hub, recomputed from the published rows on every build (20 Nov 2026)."""
+    try:
+        rs = _research_stats(cappers)
+    except Exception:
+        return ''
+    est = [c for c in _public(cappers) if (c.get('picks') or 0) >= 100 and c.get('units') is not None]
+    if not est:
+        return ''
+    up = sum(1 for c in est if c['units'] > 0)
+    big = sorted(est, key=lambda c: -c['picks'])[0]
+    items = ['%d of %d established records (100 or more graded picks) are up money, %d%%.' % (
+        up, len(est), round(100.0 * up / len(est)))]
+    small = next((b for b in rs['bands'] if b['n'] and b['label'].startswith('20')), None)
+    large = next((b for b in rs['bands'] if b['n'] and b['label'].startswith('250')), None)
+    if small and large and small['p10'] is not None and large['p10'] is not None:
+        items.append('Records with 20 to 49 picks spread from %+.1f%% to %+.1f%% ROI (middle 80%%); records with 250 or more picks from %+.1f%% to %+.1f%%. '
+                     'Most of the extreme results belong to small samples.' % (small['p10'], small['p90'], large['p10'], large['p90']))
+    if rs.get('win_down'):
+        items.append('%d established records win at least 52.4%% of their picks and still lose money, because the prices they take are too short.' % rs['win_down'])
+    items.append('The largest record on the board has %s graded picks and sits at %+.1f%% ROI.' % ('{:,}'.format(big['picks']), big.get('roi') or 0))
+    return ('<section class="panel edcard"><h2>Key findings right now</h2><div class="prose"><ul>%s</ul>'
+            '<p class="muted small">Recomputed from the published board on every update. Method and limits are on each study page.</p></div></section>') % ''.join(
+        '<li>%s</li>' % t for t in items)
+
 
 def _write_learn(site, meta, cappers):
     """Evergreen guides from content/learn.json. {{key}} placeholders take the live board numbers."""
