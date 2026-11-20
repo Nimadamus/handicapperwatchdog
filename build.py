@@ -1410,23 +1410,34 @@ def _corr(pairs):
     return sum((x - mx) * (y - my) for x, y in zip(xs, ys)) / den if den else 0.0
 
 
-def _research_paths(cappers, depth=1):
-    """Pathways from a research page into anonymous profiles, the method page and Pro. IDs only, never names."""
+_RESEARCH_PICKS = (
+    ('largest', 'The four largest graded records', 'The biggest samples on the board, where luck explains the least.'),
+    ('best', 'Four big records that beat the price', 'The highest ROI among records with 250 or more graded picks.'),
+    ('worst', 'Four big records that lost to the price', 'The lowest ROI among records with 250 or more graded picks: volume alone proves nothing.'),
+    ('busiest', 'The four busiest records this week', 'Established records with the most graded picks in the last 7 days.'),
+)
+
+
+def _research_paths(cappers, depth=1, kind='largest'):
+    """Pathways from a research page into profiles: each research page features a different slice of the board (20 Nov 2026)."""
     up = '../' * depth
-    big = sorted((c for c in cappers if (c.get('picks') or 0) >= 100 and c.get('roi') is not None and c.get('profile') and not c.get('basic')),
-                 key=lambda c: -c['picks'])[:4]
+    pool = [c for c in cappers if (c.get('picks') or 0) >= 100 and c.get('roi') is not None and c.get('profile') and not c.get('basic')]
+    big = [c for c in pool if c['picks'] >= 250] or pool
+    order = {'largest': sorted(pool, key=lambda c: -c['picks']),
+             'best': sorted(big, key=lambda c: -c['roi']),
+             'worst': sorted(big, key=lambda c: c['roi']),
+             'busiest': sorted(pool, key=lambda c: -((c.get('r7') or {}).get('picks') or 0))}[kind][:4]
+    head, intro = next((h, t) for k, h, t in _RESEARCH_PICKS if k == kind)
     cards = ''.join(
-        '<a class="featcard" href="%shandicappers/%s.html" style="text-decoration:none;color:inherit;grid-template-columns:1fr"><p><b>%s</b><br><b>%s graded picks</b><br>%s units, %s ROI. Full breakdown by sport, market, odds and month.</p></a>' % (
-            up, _esc(c['id']), _esc(_who(c)), '{:,}'.format(c['picks']), '%+.2f' % (c.get('units') or 0), '%+.1f%%' % c['roi'])
-        for c in big)
+        '<a class="featcard" href="%shandicappers/%s.html" style="text-decoration:none;color:inherit;grid-template-columns:1fr"><p><b>%s</b><br><b>%s graded picks</b><br>%s units, %s ROI%s.</p></a>' % (
+            up, _esc(c['id']), _esc(_who(c)), '{:,}'.format(c['picks']), '%+.2f' % (c.get('units') or 0), '%+.1f%%' % c['roi'],
+            ', %d picks in the last 7 days' % (c.get('r7') or {}).get('picks', 0) if kind == 'busiest' else '')
+        for c in order)
     return (
-        '<section class="panel edcard"><h2>Look at real records</h2><div class="prose"><p>The four largest independently graded records on the board. Every profile shows the record, units, ROI, sample size, sport by sport results and recent form, free.</p></div>'
-        '<div class="featgrid" style="margin-top:12px">' + cards + '</div></section>\n'
-        '<section class="panel edcard"><h2>What Watchdog Pro adds</h2><div class="prose"><ul>'
-        '<li>The complete graded pick log for every account, not only the 10 most recent picks.</li>'
-        '<li>Sport, market, price and team breakdowns, charts and every time window on every profile.</li></ul>'
-        '<p>Free visitors keep the rankings, the research and each account&rsquo;s headline record. See <a href="' + up + 'how-we-grade.html">how Watchdog grades a pick</a>.</p></div>'
-        '<p><a class="btn pro" href="' + up + 'pricing.html">See Watchdog Pro plans</a></p></section>\n')
+        '<section class="panel edcard"><h2>%s</h2><div class="prose"><p>%s</p></div>'
+        '<div class="featgrid" style="margin-top:12px">%s</div>'
+        '<p class="small"><a href="%show-we-grade.html">How a pick is graded</a> · <a href="%spricing.html">Watchdog Pro</a> opens every pick log.</p></section>\n') % (
+            head, intro, cards, up, up)
 
 
 def _write_persist(site, meta, nice, org, cappers):
@@ -1493,7 +1504,7 @@ def _write_persist(site, meta, nice, org, cappers):
         '<li><b>Uncertainty:</b> the 95% interval comes from 2,000 bootstrap resamples of the published pairs with a fixed seed, so anyone can reproduce it.</li>'
         '<li><b>Population:</b> accounts that post picks in public on the platforms Watchdog monitors. They are not a random sample of all bettors.</li>'
         '<li>Nothing here is betting advice.</li></ul></div></section>\n'
-        + _research_paths(cappers) +
+        + _research_paths(cappers, kind='largest') +
         '<section class="ctaband"><div><h2>See the long record, not the hot week</h2><p class="muted">The free rankings sort by sample size, units and ROI.</p></div><p><a class="btn" href="../cappers.html">Open the rankings</a> <a class="btn pro" href="../pricing.html">Watchdog Pro</a></p></section>\n'
         '</div>\n<p class="muted small">Updated ' + nice + '. 21+. Gambling problem? Call 1 800 GAMBLER.</p>\n'
         '<script type="application/ld+json">' + ldj + '</script>')
@@ -1894,7 +1905,7 @@ def _write_weekly(site, meta, cappers, snaps, man, now):
         '<li>Change between the public board at the end of ' + base_day + ' and at the end of ' + label + ' (Pacific time). Accounts new this week are not in the account tables.</li>'
         '<li>A pick counts only if it was posted in public before the game started. It is graded on the final score, one unit risked at the posted odds.</li>'
         '<li>One week is a short sample. Nothing here predicts the next pick or is betting advice. See <a href="do-hot-handicappers-stay-hot.html">do hot handicappers stay hot</a> and <a href="roi-and-sample-size.html">ROI and sample size</a>.</li></ul></div></section>\n'
-        + _research_paths(cappers) +
+        + _research_paths(cappers, kind='best') +
         '</div>\n<p class="muted small">21+. Gambling problem? Call 1 800 GAMBLER.</p>')
     with open(os.path.join(folder, 'weekly-%s.html' % key), 'w', encoding='utf-8', newline='\n') as f:
         f.write(_document(1, 'research/', 'Handicapper Report: Week Ending %s | Handicapper Watchdog' % label,
@@ -2018,7 +2029,7 @@ def _write_odds_report(site, meta, nice, org, cappers):
         '<li>Price bands use the posted American odds. Picks without a posted price, and prices between minus 100 and plus 100, are left out.</li>'
         + ('<li>Picks priced at plus 250 or longer (' + '{:,}'.format(tail['n']) + ' picks) are left out of the charts. An audit on November 3, 2026 compared every price of plus 150 or longer with the market price when it was posted and with the original post: 278 picks whose stored price did not match the bet (mostly player props, futures and combined bets read as a team moneyline) are now held out of every public record until reviewed, with their original posts and grades preserved. Many remaining long shots are in leagues with no market price to check against, so the band stays out until that check is complete.</li>' if tail else '')
         + '<li>These are accounts that post in public on the platforms Watchdog monitors, not all bettors. Results describe the past. They are not a prediction or betting advice.</li></ul></div></section>\n'
-        + _research_paths(cappers) +
+        + _research_paths(cappers, kind='worst') +
         '</div>\n<p class="muted small">Updated ' + nice + '. 21+. Gambling problem? Call 1 800 GAMBLER.</p>\n'
         '<script type="application/ld+json">' + ldj + '</script>')
     with open(os.path.join(site, 'research', 'odds-and-profit.html'), 'w', encoding='utf-8', newline='\n') as f:
@@ -2073,7 +2084,7 @@ def _write_research(site, meta, cappers):
         '<li>A pick counts only if it was posted in public before the game started, graded against the final score at the odds posted. Held, duplicate and unreviewed picks are excluded.</li>'
         '<li>These are accounts that post picks in public on the platforms Watchdog monitors. They are not a random sample of all bettors, and accounts that stop posting keep their record in the data.</li>'
         '<li>Past results are not predictions. Nothing here is betting advice.</li></ul></div></section>\n'
-        + _research_paths(cappers) +
+        + _research_paths(cappers, kind='busiest') +
         '<section class="ctaband"><div><h2>Check a record yourself</h2><p class="muted">Sort the free rankings by sample size, units and ROI.</p></div><p><a class="btn" href="../cappers.html">Open the rankings</a> <a class="btn pro" href="../pricing.html">Watchdog Pro</a></p></section>\n'
         '</div>\n<p class="muted small">Updated ' + nice + '. 21+. Gambling problem? Call 1 800 GAMBLER.</p>\n'
         '<script type="application/ld+json">' + ldj + '</script>')
