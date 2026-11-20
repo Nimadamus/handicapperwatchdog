@@ -51,6 +51,10 @@ Work from worktree `~/hwd-names-1114` (branch names-1114, push `HEAD:main`; main
    split, last 30 d vs career). Reviews: method boilerplate cut to one page specific line. Sports: per sport analysis of listed records
    (bs breakdown is PARTIAL, never claim board wide). picks.html noindex. Learn: 9 guides rewritten ~2,500 words each from site data.
    Live verified 10:4x AM PST; IndexNow 138 ok. Commits f09556d ab594ba 05003d4 78f534e.
+   NEXT (21 Nov): GSC Request indexing hit "Quota Exceeded" 20 Nov 11:4x AM PST. Request, 10 a day, in this order: learn/ are-sports-handicappers-legit,
+   scam-handicapper-red-flags, should-you-pay-for-sports-picks, verified-handicapper-records, break-even-win-rate, units-and-roi, sample-size,
+   closing-line-value, what-bettors-say-about-handicappers, the-board.html; then the 84 deepened reviews. (Search box ref "search URL inspection".)
+   Board page now has sample size spread table (f5336f8, live 11:28 AM). Tech audit (dupaudit_1120/tech_audit.py) clean except frozen weekly title.
    HARVESTER: market stage CONFIRMED fixed (mkt_ok every cycle since 19 Nov 2:11 PM PST; first COMPLETE cycle 20 Nov 2:59 AM PST);
    only reconcile_parse.py still times out (parser backlog ~118k, box CPU). Picks 197339/192518 still await owner 'hold both'.
    Master list ~/hwd_testimonials/candidates_1119.json (134 sellers; 108 have no buyer buzz, most rosters now checked and rejected as thin).
