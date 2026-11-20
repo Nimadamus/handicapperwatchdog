@@ -93,17 +93,14 @@ def render(rev, st, names, document):
         '<p class="small"><a href="%s" rel="nofollow noopener">%s</a></p>' % (E(src[c['source']]['url']), E(src[c['source']]['title'])) if c['source'] is not None else '')
         for c in rev['customers'])
     customers = ('<section class="panel edcard" id="customers"><h2>What customers say</h2><p class="lede tight">%s</p><ul class="crs">%s</ul>'
-                 '<p class="muted small">We never write, buy or edit testimonials. Allegations are reported as allegations, with the date and a link, and are not repeated as fact. '
-                 'Handicapper Watchdog is neutral: we collect what people post online and cannot confirm any single post is true. One post means little; a pattern across many buyers means more. You decide. <a href="../about.html">How we work</a></p></section>') % (
-        E(rev['customers_intro']), cust)
+                 '<p class="muted small">%d entries above, each dated and linked; allegations stay allegations. <a href="../about.html">How we collect them</a></p></section>') % (
+        E(rev['customers_intro']), cust, len(rev['customers']))
     conf = '<section class="panel edcard essay" id="conflicts"><h2>Conflicts of interest</h2><div class="prose">%s</div></section>' % paras(rev['conflicts'])
     verdict = ('<section class="split" id="verdict"><div class="edsec good"><h2>Strengths</h2><ul>%s</ul></div>'
                '<div class="edsec bad"><h2>Concerns</h2><ul>%s</ul></div></section>') % (
         ''.join('<li>%s</li>' % E(x) for x in rev['strengths']), ''.join('<li>%s</li>' % E(x) for x in rev['concerns']))
     check = ('<section class="panel edcard probox"><h2>Before you pay any handicapper</h2><ol class="chk">%s</ol>'
-             '<div class="procta"><div><p class="plate-k">Watchdog Pro</p><p><b>Graded records you can check before you buy.</b> Watchdog captures public picks before the game starts '
-             'and grades every one. Free profiles show the record; Pro opens full pick logs.</p></div>'
-             '<a class="btn pro" href="../pricing.html">See Watchdog Pro</a></div>'
+             '<p><a class="btn pro" href="../pricing.html">See Watchdog Pro</a></p>'
              '<p class="small"><a href="../cappers.html">Browse graded records free</a> · <a href="../learn/scam-handicapper-red-flags.html">Scam red flags</a> · '
              '<a href="../learn/break-even-win-rate.html">Break even win rates</a></p></section>') % ''.join('<li>%s</li>' % E(x) for x in rev['checklist'])
     faq = '<section class="panel edcard" id="faq"><h2>Common questions</h2><div class="faqs">%s</div></section>' % ''.join(
@@ -113,9 +110,9 @@ def render(rev, st, names, document):
     sources = ('<section class="panel edcard srcpanel" id="sources"><h2>Sources</h2><ol class="src">%s</ol></section>') % ''.join(
         '<li><a href="%s" rel="nofollow noopener">%s</a> <span class="muted small">accessed %s</span></li>' % (E(s['url']), E(s['title']), E(s['accessed'])) for s in src)
     standards = ('<section class="panel edcard" id="standards"><h2>How we review, corrections and right of reply</h2><div class="prose">'
-                 '<p>Every fact on this page comes from a page we opened on the date shown, and each source is linked. We label each statement as verified, a seller claim, a customer report or an allegation. We do not accept payment, affiliate fees or free picks from the services we review.</p>'
-                 '<p>%s can reply. If something here is wrong or out of date, send the page that shows otherwise through our <a href="../contact.html">contact page</a>. We correct errors, note the change and its date on this page, and publish a fair summary of any reply. Last updated %s.</p>'
-                 '</div></section>') % (E(rev['name']), E(rev['checked']))
+                 '<p>This review of %s rests on the %d sources listed above, last checked %s. %s can reply or send a correction through our '
+                 '<a href="../contact.html">contact page</a>; changes are dated here. <a href="../about.html">Our standards</a>.</p>'
+                 '</div></section>') % (E(rev['name']), len(src), E(rev['checked']), E(rev['name']))
     side = ('<aside class="rside"><nav class="rtoc" aria-label="On this page"><p class="plate-k">On this page</p>%s</nav>'
             '<div class="sidepro"><p class="plate-k">Watchdog Pro</p><p>Graded records captured before the game starts. Check a handicapper before you pay one.</p>'
             '<a class="btn pro" href="../pricing.html">See Watchdog Pro</a></div></aside>') % ''.join('<a href="#%s">%s</a>' % (a, E(b)) for a, b in toc)
