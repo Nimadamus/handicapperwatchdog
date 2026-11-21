@@ -62,6 +62,10 @@ Work from worktree `~/hwd-names-1114` (branch names-1114, push `HEAD:main`; main
    owner_fix_20261120.py, --revert supported; copy in tools/owner_fixes): 12 futures/prop prices read as game MLs (Coolbet x3,
    DailyCFBCBB Yankees +3500, Bengals SB, Avdija prop, Drummond prop, 3 futures 0.25-0.75U, Arizona/MSU futures) + 11 record summary
    lines parsed as picks ("ML: 212-195, -9.27 units"). The "52 duplicates" were FALSE (1H/F5 vs full game), nothing changed.
+   +9 more holds 00:48 UTC 21 Nov (props/contest share/UEFA Georgia/1H total read as full game) = 32 held. Holds reach the site only
+   after the next publish_daily snapshot (raw/publish_snapshot.db is copied at publish start; 00:29 UTC copy predates the holds).
+   Read only findings, NOT changed: ~118 ML and ~185 spread picks have market fields for the opposite side (CLV metric only,
+   grades use posted price/line); alt lines and teaser legs graded at posted line by rule.
    ROI on priced picks kept (correct math), disclosed in method text. Genuine big dog MLs (acct 2844 Brugge/Charlotte/GaSo) left counted.
    HARVESTER: market stage CONFIRMED fixed (mkt_ok every cycle since 19 Nov 2:11 PM PST; first COMPLETE cycle 20 Nov 2:59 AM PST);
    only reconcile_parse.py still times out (parser backlog ~118k, box CPU). Picks 197339/192518 still await owner 'hold both'.

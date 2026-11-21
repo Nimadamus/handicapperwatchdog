@@ -39,6 +39,15 @@ HOLD = {
     175704: "the line is a record summary (ML: 22-17), not a pick",
     186095: "the line is a record summary (ML: 30-29, -4.12 units), not a pick",
     202066: "the line is a record summary (ML: 26-22), not a pick",
+    169610: "Zach Edey double double prop (+358) read as a Raptors moneyline",
+    178178: "a Wild ML plus Devin Booker 3PM parlay; the -106 is the parlay price, not the Wild moneyline",
+    11635: "Patrick Mahomes O14.5 player prop read as a full game total over 14.5",
+    2378: "Pittsburgh/Syracuse o25.5 is a first half number (full game market 51.5) graded as a full game total",
+    7959: "'The Chargers - 22.5% of the field' is a contest share, read as Chargers -22.5",
+    32105: "'Jordan Marshall -105' is a player prop (Michigan running back), read as a Marshall moneyline",
+    36404: "'Jordan Marshall -105' is a player prop (Michigan running back), read as a Marshall moneyline",
+    23193: "'Georgia (UEFA) -124' is the Georgia national soccer team, read as a Georgia Bulldogs moneyline",
+    33516: "'Georgia (UEFA) -124' is the Georgia national soccer team, read as a Georgia Bulldogs moneyline",
 }
 HOLD_TAG = "OWNER_HOLD_20261120"
 DUP_REASON = "same account, game, pick and start time parsed twice from the same post (owner fix 2026-11-20)"
