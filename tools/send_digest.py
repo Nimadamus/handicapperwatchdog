@@ -16,6 +16,7 @@ SITE = 'https://handicapperwatchdog.com'
 SENDER = {'email': 'contact@handicapperwatchdog.com', 'name': 'Handicapper Watchdog'}
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 UA = {'user-agent': 'hwd-digest'}
+NO_WINDOW = getattr(subprocess, 'CREATE_NO_WINDOW', 0)  # git children never open a console window
 QA = re.compile(r'\+hwdqa|qa-hwd-probe', re.I)
 
 
@@ -42,15 +43,15 @@ def units(x):
 
 def new_reviews(days=7):
     """Review pages added to main in the last `days` days: [(slug, title)]."""
-    subprocess.run(['git', '-C', REPO, 'fetch', '-q', 'origin'], check=False)
+    subprocess.run(['git', '-C', REPO, 'fetch', '-q', 'origin'], check=False, creationflags=NO_WINDOW)
     out = subprocess.run(['git', '-C', REPO, 'log', 'origin/main', f'--since={days} days ago', '--diff-filter=A',
-                          '--name-only', '--format=', '--', 'content/reviews_v2'], capture_output=True, text=True).stdout
+                          '--name-only', '--format=', '--', 'content/reviews_v2'], capture_output=True, text=True, creationflags=NO_WINDOW).stdout
     res = []
     for path in dict.fromkeys(x.strip() for x in out.splitlines() if x.strip().endswith('.json')):
         slug = os.path.basename(path)[:-5]
         try:
             d = json.loads(subprocess.run(['git', '-C', REPO, 'show', 'origin/main:' + path], capture_output=True,
-                                          text=True, encoding='utf-8').stdout)
+                                          text=True, encoding='utf-8', creationflags=NO_WINDOW).stdout)
             res.append((slug, d.get('h1') or slug))
         except Exception:
             res.append((slug, slug))
