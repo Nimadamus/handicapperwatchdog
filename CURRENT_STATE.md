@@ -57,9 +57,12 @@ Work from worktree `~/hwd-names-1114` (branch names-1114, push `HEAD:main`; main
    Board page now has sample size spread table (f5336f8, live 11:28 AM). Tech audit (dupaudit_1120/tech_audit.py) clean except frozen weekly title.
    BUG HUNT 20 Nov PM (tools in ~/hwd_testimonials/dupaudit_1120: bughunt_crawl.py, pick_sanity.py (box), index_consistency.py,
    review_integrity.py). Fixed live: dead r90/r365 ranking filters, profile JS title, compare copy, branded 404, home search ranking +
-   loading state, unpriced pick method text, 545 forum pronouns -> they (+13 in queue). AWAITING OWNER: (1) 6 impossible price ML wins
-   +1000 or longer on favorites, 128.5u (coolbetcanada 3, dailycfbcbb Yankees +3500, danielkarpuc, bignutscapper); (2) 52 exact duplicate
-   graded picks in 31 accounts (/tmp/exact_dups.json on box); (3) ROI excludes 1,718 unpriced picks while W-L counts them (222 accounts).
+   loading state, unpriced pick method text, 545 forum pronouns -> they (+13 in queue).
+   OWNER "fix all" 1:55 PM PST: HELD 23 picks in live DB (review_required, reason OWNER_HOLD_20261120, corrections_log tool
+   owner_fix_20261120.py, --revert supported; copy in tools/owner_fixes): 12 futures/prop prices read as game MLs (Coolbet x3,
+   DailyCFBCBB Yankees +3500, Bengals SB, Avdija prop, Drummond prop, 3 futures 0.25-0.75U, Arizona/MSU futures) + 11 record summary
+   lines parsed as picks ("ML: 212-195, -9.27 units"). The "52 duplicates" were FALSE (1H/F5 vs full game), nothing changed.
+   ROI on priced picks kept (correct math), disclosed in method text. Genuine big dog MLs (acct 2844 Brugge/Charlotte/GaSo) left counted.
    HARVESTER: market stage CONFIRMED fixed (mkt_ok every cycle since 19 Nov 2:11 PM PST; first COMPLETE cycle 20 Nov 2:59 AM PST);
    only reconcile_parse.py still times out (parser backlog ~118k, box CPU). Picks 197339/192518 still await owner 'hold both'.
    Master list ~/hwd_testimonials/candidates_1119.json (134 sellers; 108 have no buyer buzz, most rosters now checked and rejected as thin).
