@@ -718,8 +718,7 @@ Reply to this email to answer the customer.`, email);
 
 Billing: manage or cancel Watchdog Pro any time at ${site}/account.html
 
-Your message:
-${message}`);
+If you did not write to us, ignore this email.`);  // never echo the visitor's text to an unverified address: it would turn the form into a spam relay
       return sent ? json({ ok: true, ref: id }) : err(503, 'The message could not be sent right now. Please try again shortly.');
     }
 
