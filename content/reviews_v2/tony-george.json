@@ -5,14 +5,14 @@
   "kind": "Individual handicapper and radio host selling picks through the Doc's Sports store",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Tony George Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Tony George review, checked 20 Nov 2026: Doc's Sports prices $25 to $850, a credit and extension guarantee, his sales claims checked and his Circa record.",
   "h1": "Tony George review",
   "dek": "A radio host and Doc's Sports handicapper who says he has 35 years in the business. Packages run from $25 for a day of props to $850 for an NBA season. The guarantee pays in credit or extra time, the record on the sales page is a set of chosen runs, and his one public contest record this fall was close to even. We found no buyer posts outside the seller's own review page.",
   "status": {
-    "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Tony George picks. This page reports what we could check on 20 Nov 2026 and labels everything else."
+    "label": "Partly graded",
+    "note": "Tony George publishes no complete log we can audit. Watchdog graded 14 of their plays that were posted publicly before the game started. This is a sample, not a full record."
   },
   "glance": [
     [
@@ -42,6 +42,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "14 plays posted before the start, 26 Sep 2026 to 17 Oct 2026: 7 won, 7 lost, -0.64 units"
     ]
   ],
   "short_answer": [
@@ -172,14 +176,17 @@
     "Every run on the sales page starts and stops where the seller chose. The one record kept by someone else, his Circa contest entry, was 28-25-3 in early November, about 52.8% on decided games."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Tony George does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Tony George most often were BuzzKill (TheRX newsletters thread), tgeorgecapper, 1218Sports, bluelouboyle. From 26 Sep 2026 to 17 Oct 2026 we took every play our parser could read inside a Tony George block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 14 plays, 7 won, 7 lost, -0.64 units, a return of -4.5% per unit risked. By sport: NCAAF 6 won, 5 lost, +0.45 units; NFL 1 won, 2 lost, -1.09 units. By month: September 1 won, 1 lost, -0.09 units; October 6 won, 6 lost, -0.55 units.",
+    "What it means: a 50% win rate on 14 decided plays has a 95% range of about 27% to 73%, and at the prices in this sample a bettor needed about 52% to break even. That range includes break even, so this sample cannot show whether they win or lose over time. The sample covers only the plays that others chose to post, which is not the full card a subscriber receives, and stakes are counted flat even where the seller rates plays differently.",
     "What a buyer can verify independently: one contest. VSiN lists Tony George in the 2026 Circa Friday Football Invitational field, a free 25 handicapper contest with seven college and NFL plays a week and $30,000 in prizes. A standings table reposted on TheRX on 7 Nov 2026 showed him at 28-25-3, 17th of 25 entries, while the leader was 38-18. That is about 53% against the spread on a small sample. On 20 Nov 2026 VSiN's contest page showed the leader at 47-23 entering week 11; George's own line was behind a login, so we could not update it.",
     "Contest rules matter for reading that number: the field shrinks through elimination rounds after NFL week 16, so the standings will tell a reader by January whether he survived the cut.",
     "What the seller publishes: the Doc's Sports page shows yearly rankings, chosen runs and member notes such as a \"4-3 last 7\" NBA note marked \"Not good enough\" and a missed Wednesday play. To its credit the page does post some losses in these notes, but they are graded by the store that sells the picks, so they are marketing, not an audit.",
     "We found no full, time stamped log of every Tony George pick with the line, the odds and the release time, and no court or regulator record about him."
   ],
   "our_data": {
-    "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Tony George pick history is matched to a Watchdog graded record, so we make no claim about how Tony George performs.",
+    "matched": true,
+    "text": "Watchdog graded 14 Tony George plays posted before the start, 26 Sep 2026 to 17 Oct 2026: 7 won, 7 lost, -0.64 units at one unit each. A sample of what was posted publicly, not a full record.",
     "context": "For scale: his contest entry was 28-25-3 in the reposted table. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
   "customers_intro": "We found no independent buyer reviews of Tony George. Below is what does exist, including the seller's own review page, and how much weight each piece can carry.",
@@ -267,6 +274,10 @@
     [
       "Is Tony George legit?",
       "He is a real handicapper and radio host, sold through Doc's Sports with published prices, and VSiN named him in its 2026 Circa contest field. We could not verify that his paid picks win over time, we found no independent buyer reviews either way, and we found no court or regulator action involving him."
+    ],
+    [
+      "What does the Watchdog sample of Tony George show?",
+      "We graded 14 of their plays that were posted publicly before the game started, 26 Sep 2026 to 17 Oct 2026: 7 won, 7 lost, -0.64 units at one unit each. The 95% range of the win rate is about 27% to 73%, against about 52% needed to break even."
     ],
     [
       "How much does Tony George cost?",
@@ -368,5 +379,145 @@
       "accessed": "20 Nov 2026"
     }
   ],
-  "pricing_source": 0
+  "pricing_source": 0,
+  "record_table": {
+    "caption": "Every Tony George play in the Watchdog sample, 26 Sep 2026 to 17 Oct 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "25 Sep 07:42 PM",
+        "NCAAF",
+        "Utah Utes -8",
+        "not shown",
+        "Won",
+        "+0.91",
+        "BuzzKill (TheRX newsletters thread)"
+      ],
+      [
+        "25 Sep 07:42 PM",
+        "NCAAF",
+        "West Virginia Mountaineers -2",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "BuzzKill (TheRX newsletters thread)"
+      ],
+      [
+        "2 Oct 08:22 PM",
+        "NCAAF",
+        "Louisiana Ragin' Cajuns -6",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "BuzzKill (TheRX newsletters thread)"
+      ],
+      [
+        "2 Oct 08:22 PM",
+        "NCAAF",
+        "UCF Knights +11",
+        "not shown",
+        "Won",
+        "+0.91",
+        "BuzzKill (TheRX newsletters thread)"
+      ],
+      [
+        "9 Oct 08:18 PM",
+        "NCAAF",
+        "Houston Cougars +3",
+        "not shown",
+        "Won",
+        "+0.91",
+        "BuzzKill (TheRX newsletters thread)"
+      ],
+      [
+        "9 Oct 08:18 PM",
+        "NCAAF",
+        "Indiana Hoosiers -7.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "BuzzKill (TheRX newsletters thread)"
+      ],
+      [
+        "9 Oct 08:18 PM",
+        "NCAAF",
+        "Ohio Bobcats -3",
+        "not shown",
+        "Won",
+        "+0.91",
+        "BuzzKill (TheRX newsletters thread)"
+      ],
+      [
+        "9 Oct 08:18 PM",
+        "NFL",
+        "Los Angeles Chargers +3.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "BuzzKill (TheRX newsletters thread)"
+      ],
+      [
+        "9 Oct 08:18 PM",
+        "NFL",
+        "New Orleans Saints +2.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "BuzzKill (TheRX newsletters thread)"
+      ],
+      [
+        "9 Oct 08:18 PM",
+        "NFL",
+        "Pittsburgh Steelers -2.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "BuzzKill (TheRX newsletters thread)"
+      ],
+      [
+        "16 Oct 09:20 PM",
+        "NCAAF",
+        "Boston College Eagles +6.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "BuzzKill (TheRX newsletters thread)"
+      ],
+      [
+        "16 Oct 09:20 PM",
+        "NCAAF",
+        "Georgia State Panthers +10.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "BuzzKill (TheRX newsletters thread)"
+      ],
+      [
+        "16 Oct 09:20 PM",
+        "NCAAF",
+        "Georgia Tech Yellow Jackets +9.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "BuzzKill (TheRX newsletters thread)"
+      ],
+      [
+        "16 Oct 09:20 PM",
+        "NCAAF",
+        "Ole Miss Rebels -5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "BuzzKill (TheRX newsletters thread)"
+      ]
+    ]
+  }
 }

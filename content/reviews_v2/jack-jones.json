@@ -5,14 +5,14 @@
   "kind": "Single handicapper sold through reseller storefronts",
   "checked": "17 Nov 2026",
   "checked_iso": "2026-11-17",
-  "updated_iso": "2026-11-17",
+  "updated_iso": "2026-11-22",
   "title": "Jack Jones Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Jack Jones review, checked 17 Nov 2026: $34.95 plays to a $1,999.95 year, free time guarantee, his runs checked against the network leaderboard.",
   "h1": "Jack Jones review",
   "dek": "A handicapper who says he was a private consultant before taking his picks public in 2008 under the BetFirm name. His packages run from a $59.95 day pass to a $1,999.95 year pass on the SportsCapping network. The guarantee pays in free time, not cash. The network's own all time leaderboard puts him at 52.5% winners over 24,739 picks, a return of about 1%.",
   "status": {
-    "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Jack Jones picks. This page reports what we could check on 17 Nov 2026, including the figures the selling network publishes on its own leaderboard, and labels everything else."
+    "label": "Partly graded",
+    "note": "Jack Jones publishes no complete log we can audit. Watchdog graded 30 of their plays that were posted publicly before the game started. This is a sample, not a full record."
   },
   "glance": [
     [
@@ -42,6 +42,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "30 plays posted before the start, 14 Sep 2026 to 7 Nov 2026: 19 won, 10 lost, 1 push, +7.03 units"
     ]
   ],
   "short_answer": [
@@ -153,14 +157,17 @@
     "In the last 90 days the leaderboard shows him 249-216-8 across all sports (53.6%), 46-38-2 in the NFL this season and 89-70-2 in college football this season, all profitable. The CappersPicks \"Yesterday's plays\" table for 16 Nov 2026 showed 2 wins and 3 losses, $140 down at $100 a play."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Jack Jones does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Jack Jones most often were 1218Sports, TheGodOfCappers, EZMSports, Hottie4Sports. From 14 Sep 2026 to 7 Nov 2026 we took every play our parser could read inside a Jack Jones block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 30 plays, 19 won, 10 lost, 1 push, +7.03 units, a return of +23.4% per unit risked. By sport: NFL 11 won, 5 lost, 1 push, +4.96 units; NCAAF 5 won, 3 lost, +1.51 units; MLB 3 won, 2 lost, +0.56 units. By month: September 13 won, 7 lost, +4.57 units; October 5 won, 2 lost, 1 push, +2.55 units; November 1 won, 1 lost, -0.09 units.",
+    "What it means: a 66% win rate on 29 decided plays has a 95% range of about 47% to 80%, and at the prices in this sample a bettor needed about 52% to break even. That range includes break even, so this sample cannot show whether they win or lose over time. The sample covers only the plays that others chose to post, which is not the full card a subscriber receives, and stakes are counted flat even where the seller rates plays differently.",
     "What a buyer can verify independently: no third party log. We found no outside tracker, contest record, court case or regulator action about him.",
     "What the seller side publishes: long runs by sport, rankings and a yesterday table on the storefronts, plus a leaderboard on SportsCapping. The leaderboard is kept by the network that sells his picks, so it is not an audit, but it is more complete than the runs: 24,739 graded picks all time at 52.5% and about 1% ROI.",
     "CappersPicks labels the network's figures \"3RD PARTY DOCUMENTED STATS,\" but SportsCapping sells his packages and grades them, so they are not third party in the usual sense.",
     "Background: CappersPicks lists his company as Betfirms with the phone line 877-OUR-PICK. The betfirms.com domain was registered on 27 Dec 2003; saved copies from 2009 and 2011 show Jack Jones writing daily free picks there, and it now forwards to BetFirm.com, which on 17 Nov 2026 led with \"IF YOU AREN'T WINNING, YOU DON'T KNOW JACK\" and linked to the SportsCapping podcast. The CappersPicks footer says the storefront is \"located in Antigua, West Indies.\""
   ],
   "our_data": {
-    "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Jack Jones pick history is matched to a Watchdog graded record, so we make no claim about how Jack Jones performs beyond what the selling network publishes.",
+    "matched": true,
+    "text": "Watchdog graded 30 Jack Jones plays posted before the start, 14 Sep 2026 to 7 Nov 2026: 19 won, 10 lost, 1 push, +7.03 units at one unit each. A sample of what was posted publicly, not a full record.",
     "context": "For scale: the selling network's all time line for him is 52.5% winners and its 2026 line 52.7%. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
   "customers_intro": "Independent customer evidence on Jack Jones is thin. The largest set of comments sits on a site that says it is part of the network selling his picks. Below is everything we found and how much weight it can carry.",
@@ -248,6 +255,10 @@
     [
       "Is Jack Jones legit?",
       "He is a real, long running seller whose packages have published prices on established storefronts. The selling network's own leaderboard shows him slightly profitable over the long run, about 1% ROI, but no independent party has audited his record, and we found no court or regulator action involving him."
+    ],
+    [
+      "What does the Watchdog sample of Jack Jones show?",
+      "We graded 30 of their plays that were posted publicly before the game started, 14 Sep 2026 to 7 Nov 2026: 19 won, 10 lost, 1 push, +7.03 units at one unit each. The 95% range of the win rate is about 47% to 80%, against about 52% needed to break even."
     ],
     [
       "Who is Jack Jones and what is BetFirm?",
@@ -364,5 +375,289 @@
       "accessed": "17 Nov 2026"
     }
   ],
-  "pricing_source": 0
+  "pricing_source": 0,
+  "record_table": {
+    "caption": "Every Jack Jones play in the Watchdog sample, 14 Sep 2026 to 7 Nov 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "14 Sep 06:04 AM",
+        "NFL",
+        "Under 44",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EDMrager"
+      ],
+      [
+        "16 Sep 09:42 AM",
+        "MLB",
+        "Los Angeles Angels ML",
+        "+125",
+        "Lost",
+        "-1.00",
+        "EZMSports"
+      ],
+      [
+        "16 Sep 09:42 AM",
+        "MLB",
+        "Over 7.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "16 Sep 09:42 AM",
+        "MLB",
+        "Over 8.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EZMSports"
+      ],
+      [
+        "17 Sep 05:33 AM",
+        "NCAAF",
+        "Syracuse Orange +10",
+        "-110",
+        "Lost",
+        "-1.00",
+        "EDMrager"
+      ],
+      [
+        "17 Sep 05:33 AM",
+        "NFL",
+        "Buffalo Bills -4.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EDMrager"
+      ],
+      [
+        "19 Sep 08:06 AM",
+        "NCAAF",
+        "Louisville Cardinals ML",
+        "-115",
+        "Won",
+        "+0.87",
+        "offshoreinsider"
+      ],
+      [
+        "19 Sep 08:06 AM",
+        "MLB",
+        "Tampa Bay Rays ML",
+        "-128",
+        "Won",
+        "+0.78",
+        "offshoreinsider"
+      ],
+      [
+        "19 Sep 09:08 PM",
+        "NFL",
+        "Over 50",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ],
+      [
+        "19 Sep 09:08 PM",
+        "NFL",
+        "Dallas Cowboys -3.5",
+        "-110",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ],
+      [
+        "20 Sep 05:51 AM",
+        "NFL",
+        "New Orleans Saints +9",
+        "-110",
+        "Won",
+        "+0.91",
+        "offshoreinsider"
+      ],
+      [
+        "20 Sep 06:21 AM",
+        "NFL",
+        "Under 47",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "20 Sep 06:21 AM",
+        "NFL",
+        "Over 48",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EZMSports"
+      ],
+      [
+        "20 Sep 06:21 AM",
+        "NFL",
+        "Under 45.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EZMSports"
+      ],
+      [
+        "20 Sep 06:21 AM",
+        "NFL",
+        "Under 42",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "24 Sep 09:54 AM",
+        "NCAAF",
+        "Coastal Carolina Chanticleers +2.5",
+        "+100",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ],
+      [
+        "24 Sep 09:54 AM",
+        "NFL",
+        "Atlanta Falcons +5.5",
+        "-115",
+        "Won",
+        "+0.87",
+        "TheGodOfCappers"
+      ],
+      [
+        "24 Sep 12:29 PM",
+        "MLB",
+        "Over 11",
+        "-115",
+        "Won",
+        "+0.87",
+        "offshoreinsider"
+      ],
+      [
+        "27 Sep 09:15 AM",
+        "NFL",
+        "Under 48",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EZMSports"
+      ],
+      [
+        "27 Sep 09:15 AM",
+        "NFL",
+        "Over 48",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "1 Oct 01:12 PM",
+        "NFL",
+        "Under 38.5",
+        "-110",
+        "Lost",
+        "-1.00",
+        "offshoreinsider"
+      ],
+      [
+        "1 Oct 01:12 PM",
+        "NFL",
+        "Tennessee Titans +11.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "offshoreinsider"
+      ],
+      [
+        "17 Oct 07:47 AM",
+        "NCAAF",
+        "SMU Mustangs -9.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "offshoreinsider"
+      ],
+      [
+        "18 Oct 05:56 AM",
+        "NFL",
+        "Over 39",
+        "not shown",
+        "Push",
+        "+0.00",
+        "offshoreinsider"
+      ],
+      [
+        "18 Oct 05:56 AM",
+        "NFL",
+        "Philadelphia Eagles +3.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "offshoreinsider"
+      ],
+      [
+        "21 Oct 11:07 AM",
+        "NCAAF",
+        "New Mexico State Aggies -2.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ],
+      [
+        "22 Oct 11:22 AM",
+        "NFL",
+        "Over 50.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "bmd1803"
+      ],
+      [
+        "31 Oct 09:58 AM",
+        "NCAAF",
+        "Oregon Ducks ML",
+        "not shown",
+        "Won",
+        "+0.91",
+        "nautique72"
+      ],
+      [
+        "6 Nov 05:32 PM",
+        "NCAAF",
+        "Iowa Hawkeyes ML",
+        "not shown",
+        "Won",
+        "+0.91",
+        "1313"
+      ],
+      [
+        "7 Nov 07:03 AM",
+        "NCAAF",
+        "Missouri Tigers +3",
+        "-115",
+        "Lost",
+        "-1.00",
+        "offshoreinsider"
+      ]
+    ]
+  }
 }

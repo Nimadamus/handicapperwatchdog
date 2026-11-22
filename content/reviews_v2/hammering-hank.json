@@ -5,14 +5,14 @@
   "kind": "Social media pick seller sold by weekly subscription on DubClub",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Hammering Hank Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Hammering Hank review, checked 20 Nov 2026: DubClub plans from $25 a week, no refunds, his own recaps checked line by line, and what bettors post.",
   "h1": "Hammering Hank review",
   "dek": "A DubClub pick seller showing 33K subscribers who sells weekly packages from $25.00 to $79.99 and posts yearly unit totals that are all positive. DubClub sales are final, the totals are self reported, his own October 2026 recap shows a small loss, and some of his figures do not agree with each other.",
   "status": {
-    "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Hammering Hank picks. This page reports what we could check on 20 Nov 2026, including our own arithmetic on the seller's published recaps, and labels everything else."
+    "label": "Partly graded",
+    "note": "Hammering Hank publishes no complete log we can audit. Watchdog graded 76 of their plays that were posted publicly before the game started. This is a sample, not a full record."
   },
   "glance": [
     [
@@ -42,6 +42,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "76 plays posted before the start, 14 Sep 2026 to 21 Nov 2026: 38 won, 37 lost, 1 push, -2.20 units"
     ]
   ],
   "short_answer": [
@@ -137,14 +141,18 @@
     "Scale matters. October risked 660 units on 181 bets, about 3.6 units a bet. At his own definition of 1 unit as 1% of bankroll, a month like October moves the equivalent of six and a half bankrolls through the book to finish about where it started."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Hammering Hank does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Hammering Hank most often were TheGodOfCappers, Thecappershub, BettingBuddyy, TitanSportsCo. From 14 Sep 2026 to 21 Nov 2026 we took every play our parser could read inside a Hammering Hank block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 76 plays, 38 won, 37 lost, 1 push, -2.20 units, a return of -2.9% per unit risked. By sport: NCAAF 18 won, 19 lost, -2.50 units; NFL 12 won, 7 lost, 1 push, +3.90 units; MLB 4 won, 8 lost, -4.41 units; NHL 2 won, 1 lost, +0.98 units. By month: September 18 won, 18 lost, -1.75 units; October 14 won, 16 lost, 1 push, -2.97 units; November 6 won, 3 lost, +2.53 units.",
+    "What it means: a 51% win rate on 75 decided plays has a 95% range of about 40% to 62%, and at the prices in this sample a bettor needed about 52% to break even. That range includes break even, so this sample cannot show whether they win or lose over time. The sample covers only the plays that others chose to post, which is not the full card a subscriber receives, and stakes are counted flat even where the seller rates plays differently.",
+    "Another 1 plays naming Hammering Hank first appeared after the game had started, so they are not counted; they went 1 won, 0 lost, +0.91 units.",
     "What a buyer can verify independently: nothing that we could find. We found no full, time stamped log of every Hammering Hank pick kept by a third party, and no court or regulator record about him.",
     "What the seller publishes: yearly unit totals from 2022, a 2026 total of +123.57 units through October, a full October 2026 recap and several weekly or daily September 2026 recaps on hammeringhank.com. The September list has gaps (no recap for 14 to 18 Sep or 26 to 30 Sep), so it cannot be used as a month total. DubClub shows a Hotzone box with short windows by bet type. On 20 Nov 2026 the latest monthly recap was still October.",
     "In October 2026 he announced a \"long-term partnership with Polymarket\" and wrote that in his own comparisons Polymarket priced better \"nearly 80% of the time,\" adding that this was \"not an independently verified study.\"",
     "Name confusion: Hank Goldberg, the ESPN NFL handicapper who died in Las Vegas on 4 Jul 2022 at 82, was widely known as Hammering Hank. Older articles and pick pages under that nickname are about him, not about the DubClub seller, who joined DubClub in January 2022."
   ],
   "our_data": {
-    "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Hammering Hank pick history is matched to a Watchdog graded record, so we make no claim about how Hammering Hank performs.",
+    "matched": true,
+    "text": "Watchdog graded 76 Hammering Hank plays posted before the start, 14 Sep 2026 to 21 Nov 2026: 38 won, 37 lost, 1 push, -2.20 units at one unit each. A sample of what was posted publicly, not a full record.",
     "context": "For scale: the win rates we saw on his own pages run from 50.6% in his October 2026 recap to 57% in a 90 day NFL window. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
   "customers_intro": "Independent customer evidence on Hammering Hank is thin: a handful of short Reddit posts from 2025 and 2026, plus pick sharing accounts that repost his plays. Below is everything we found and how much weight it can carry.",
@@ -246,6 +254,10 @@
     [
       "Is Hammering Hank legit?",
       "He is a real, active DubClub seller with published prices, a large subscriber count and dated monthly recaps. We could not verify that his picks win over time, because every record we saw comes from his own side, and some of his figures disagree with each other. We found no court or regulator action involving him."
+    ],
+    [
+      "What does the Watchdog sample of Hammering Hank show?",
+      "We graded 76 of their plays that were posted publicly before the game started, 14 Sep 2026 to 21 Nov 2026: 38 won, 37 lost, 1 push, -2.20 units at one unit each. The 95% range of the win rate is about 40% to 62%, against about 52% needed to break even."
     ],
     [
       "Who is Hammering Hank?",
@@ -372,5 +384,703 @@
       "accessed": "20 Nov 2026"
     }
   ],
-  "pricing_source": 0
+  "pricing_source": 0,
+  "record_table": {
+    "caption": "Every Hammering Hank play in the Watchdog sample, 14 Sep 2026 to 21 Nov 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "14 Sep 04:32 PM",
+        "NFL",
+        "Kansas City Chiefs ML",
+        "-125",
+        "Won",
+        "+0.80",
+        "TitanSportsCo"
+      ],
+      [
+        "15 Sep 02:46 PM",
+        "MLB",
+        "Cleveland Guardians ML",
+        "-144",
+        "Won",
+        "+0.69",
+        "Thecappershub"
+      ],
+      [
+        "15 Sep 02:46 PM",
+        "MLB",
+        "Baltimore Orioles ML",
+        "+122",
+        "Won",
+        "+1.22",
+        "Thecappershub"
+      ],
+      [
+        "15 Sep 02:46 PM",
+        "MLB",
+        "Philadelphia Phillies -1.5",
+        "-117",
+        "Lost",
+        "-1.00",
+        "Thecappershub"
+      ],
+      [
+        "16 Sep 09:29 AM",
+        "MLB",
+        "New York Yankees ML",
+        "-148",
+        "Lost",
+        "-1.00",
+        "Thecappershub"
+      ],
+      [
+        "16 Sep 10:12 AM",
+        "MLB",
+        "Max Scherzer under 4.5 strikeouts",
+        "not shown",
+        "Won",
+        "+0.91",
+        "Sloki_Bets_702"
+      ],
+      [
+        "16 Sep 10:12 AM",
+        "MLB",
+        "Robbie Ray under 15.5 outs",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "Sloki_Bets_702"
+      ],
+      [
+        "16 Sep 01:02 PM",
+        "MLB",
+        "Andrew Abbott over 14.5 outs",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EliteFreePlays"
+      ],
+      [
+        "16 Sep 03:18 PM",
+        "MLB",
+        "Boston Red Sox ML",
+        "-104",
+        "Lost",
+        "-1.00",
+        "Thecappershub"
+      ],
+      [
+        "16 Sep 03:18 PM",
+        "MLB",
+        "Colorado Rockies +1.5",
+        "+100",
+        "Lost",
+        "-1.00",
+        "Thecappershub"
+      ],
+      [
+        "17 Sep 04:09 PM",
+        "NCAAF",
+        "Pittsburgh Panthers -10.5",
+        "-105",
+        "Won",
+        "+0.95",
+        "cappers_daily"
+      ],
+      [
+        "17 Sep 04:15 PM",
+        "NFL",
+        "Detroit Lions +5.5",
+        "-110",
+        "Lost",
+        "-1.00",
+        "Thecappershub"
+      ],
+      [
+        "19 Sep 08:36 AM",
+        "NCAAF",
+        "Kansas Jayhawks +5.5",
+        "-110",
+        "Lost",
+        "-1.00",
+        "Thecappershub"
+      ],
+      [
+        "19 Sep 08:36 AM",
+        "NCAAF",
+        "North Carolina Tar Heels +3",
+        "-110",
+        "Lost",
+        "-1.00",
+        "Thecappershub"
+      ],
+      [
+        "19 Sep 03:10 PM",
+        "NCAAF",
+        "Ole Miss Rebels +3",
+        "-110",
+        "Won",
+        "+0.91",
+        "Thecappershub"
+      ],
+      [
+        "20 Sep 09:19 AM",
+        "NFL",
+        "Atlanta Falcons +2.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ],
+      [
+        "20 Sep 09:34 AM",
+        "NFL",
+        "Cleveland Browns +8.5",
+        "-110",
+        "Won",
+        "+0.91",
+        "Thecappershub"
+      ],
+      [
+        "20 Sep 09:34 AM",
+        "NFL",
+        "Minnesota Vikings +4.5",
+        "-110",
+        "Won",
+        "+0.91",
+        "Thecappershub"
+      ],
+      [
+        "20 Sep 12:54 PM",
+        "NFL",
+        "Denver Broncos -2.5",
+        "-110",
+        "Won",
+        "+0.91",
+        "Thecappershub"
+      ],
+      [
+        "20 Sep 04:27 PM",
+        "NFL",
+        "Indianapolis Colts +6",
+        "not shown",
+        "Won",
+        "+0.91",
+        "Thecappershub"
+      ],
+      [
+        "22 Sep 02:07 PM",
+        "MLB",
+        "Philadelphia Phillies ML",
+        "-131",
+        "Won",
+        "+0.76",
+        "Thecappershub"
+      ],
+      [
+        "23 Sep 03:21 PM",
+        "MLB",
+        "Tampa Bay Rays ML",
+        "+124",
+        "Lost",
+        "-1.00",
+        "BettingBuddyy"
+      ],
+      [
+        "24 Sep 04:12 PM",
+        "NCAAF",
+        "Coastal Carolina Chanticleers +2.5",
+        "-110",
+        "Lost",
+        "-1.00",
+        "Thecappershub"
+      ],
+      [
+        "25 Sep 03:52 PM",
+        "NCAAF",
+        "Northwestern Wildcats +20.5",
+        "-110",
+        "Won",
+        "+0.91",
+        "Thecappershub"
+      ],
+      [
+        "25 Sep 03:52 PM",
+        "NCAAF",
+        "UAB Blazers +6.5",
+        "-110",
+        "Won",
+        "+0.91",
+        "Thecappershub"
+      ],
+      [
+        "26 Sep 11:46 AM",
+        "NCAAF",
+        "Florida Gators -3.5",
+        "-110",
+        "Won",
+        "+0.91",
+        "TheCappersHub__"
+      ],
+      [
+        "26 Sep 11:46 AM",
+        "NCAAF",
+        "Michigan Wolverines -5",
+        "-110",
+        "Lost",
+        "-1.00",
+        "TheCappersHub__"
+      ],
+      [
+        "26 Sep 11:46 AM",
+        "NCAAF",
+        "Oklahoma Sooners +13.5",
+        "-110",
+        "Lost",
+        "-1.00",
+        "TheCappersHub__"
+      ],
+      [
+        "26 Sep 11:46 AM",
+        "NCAAF",
+        "Wisconsin Badgers +10",
+        "-110",
+        "Won",
+        "+0.91",
+        "TheCappersHub__"
+      ],
+      [
+        "26 Sep 03:12 PM",
+        "NCAAF",
+        "Oregon Ducks -3.5",
+        "-110",
+        "Won",
+        "+0.91",
+        "Thecappershub"
+      ],
+      [
+        "26 Sep 03:12 PM",
+        "NCAAF",
+        "South Carolina Gamecocks +12.5",
+        "-110",
+        "Lost",
+        "-1.00",
+        "Thecappershub"
+      ],
+      [
+        "26 Sep 03:12 PM",
+        "NCAAF",
+        "Texas A&M Aggies +8.5",
+        "-110",
+        "Lost",
+        "-1.00",
+        "Thecappershub"
+      ],
+      [
+        "27 Sep 09:31 AM",
+        "NFL",
+        "Los Angeles Chargers +7.5",
+        "-110",
+        "Lost",
+        "-1.00",
+        "Thecappershub"
+      ],
+      [
+        "27 Sep 09:31 AM",
+        "NFL",
+        "Miami Dolphins +10",
+        "-110",
+        "Lost",
+        "-1.00",
+        "Thecappershub"
+      ],
+      [
+        "27 Sep 03:47 PM",
+        "NFL",
+        "Denver Broncos +1.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "DeParlayKing001"
+      ],
+      [
+        "28 Sep 04:45 PM",
+        "NFL",
+        "Chicago Bears +3.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ],
+      [
+        "1 Oct 03:43 PM",
+        "NCAAF",
+        "New Mexico State Aggies -2",
+        "-110",
+        "Won",
+        "+0.91",
+        "Thecappershub"
+      ],
+      [
+        "1 Oct 03:43 PM",
+        "NCAAF",
+        "North Texas Mean Green -2.5",
+        "-110",
+        "Lost",
+        "-1.00",
+        "Thecappershub"
+      ],
+      [
+        "2 Oct 03:26 PM",
+        "NCAAF",
+        "Delaware Blue Hens +7.5",
+        "-115",
+        "Lost",
+        "-1.00",
+        "Thecappershub"
+      ],
+      [
+        "2 Oct 03:26 PM",
+        "NCAAF",
+        "Pittsburgh Panthers +2.5",
+        "-110",
+        "Lost",
+        "-1.00",
+        "Thecappershub"
+      ],
+      [
+        "3 Oct 07:43 AM",
+        "NCAAF",
+        "Charlotte 49ers +19.5",
+        "-110",
+        "Lost",
+        "-1.00",
+        "Thecappershub"
+      ],
+      [
+        "3 Oct 08:32 AM",
+        "NCAAF",
+        "Mississippi State Bulldogs +5.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "Thecappershub"
+      ],
+      [
+        "3 Oct 12:11 PM",
+        "NCAAF",
+        "Auburn Tigers +6.5",
+        "-110",
+        "Lost",
+        "-1.00",
+        "Thecappershub"
+      ],
+      [
+        "3 Oct 12:11 PM",
+        "NCAAF",
+        "Missouri Tigers +5.5",
+        "-110",
+        "Won",
+        "+0.91",
+        "Thecappershub"
+      ],
+      [
+        "5 Oct 04:37 PM",
+        "NFL",
+        "Atlanta Falcons ML",
+        "-102",
+        "Won",
+        "+0.98",
+        "Thecappershub"
+      ],
+      [
+        "6 Oct 01:01 PM",
+        "NHL",
+        "Utah Mammoth ML",
+        "+108",
+        "Won",
+        "+1.08",
+        "Thecappershub"
+      ],
+      [
+        "6 Oct 04:19 PM",
+        "NCAAF",
+        "Southern Miss Golden Eagles +10",
+        "-110",
+        "Lost",
+        "-1.00",
+        "cappers_daily"
+      ],
+      [
+        "8 Oct 03:49 PM",
+        "NCAAF",
+        "South Florida Bulls +6.5",
+        "-120",
+        "Lost",
+        "-1.00",
+        "Thecappershub"
+      ],
+      [
+        "9 Oct 05:45 PM",
+        "NCAAF",
+        "Washington Huskies -2.5",
+        "-120",
+        "Lost",
+        "-1.00",
+        "Thecappershub"
+      ],
+      [
+        "9 Oct 05:45 PM",
+        "NCAAF",
+        "Wyoming Cowboys +4.5",
+        "-110",
+        "Won",
+        "+0.91",
+        "Thecappershub"
+      ],
+      [
+        "10 Oct 12:04 PM",
+        "NCAAF",
+        "Georgia Tech Yellow Jackets +5.5",
+        "-112",
+        "Won",
+        "+0.89",
+        "Thecappershub"
+      ],
+      [
+        "10 Oct 12:04 PM",
+        "NCAAF",
+        "Oregon Ducks -10.5",
+        "+100",
+        "Lost",
+        "-1.00",
+        "Thecappershub"
+      ],
+      [
+        "11 Oct 09:30 AM",
+        "NFL",
+        "Miami Dolphins +7",
+        "-110",
+        "Push",
+        "+0.00",
+        "Thecappershub"
+      ],
+      [
+        "11 Oct 01:16 PM",
+        "NFL",
+        "San Francisco 49ers +3",
+        "-110",
+        "Won",
+        "+0.91",
+        "Thecappershub"
+      ],
+      [
+        "11 Oct 01:16 PM",
+        "NFL",
+        "Arizona Cardinals +5.5",
+        "-110",
+        "Lost",
+        "-1.00",
+        "Thecappershub"
+      ],
+      [
+        "12 Oct 04:40 PM",
+        "NFL",
+        "Los Angeles Rams -3.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "cappers_daily"
+      ],
+      [
+        "13 Oct 03:49 PM",
+        "NCAAF",
+        "Delaware Blue Hens ML",
+        "-114",
+        "Lost",
+        "-1.00",
+        "cappers_daily"
+      ],
+      [
+        "13 Oct 04:38 PM",
+        "NCAAF",
+        "Jacksonville State Gamecocks -2.5",
+        "-120",
+        "Won",
+        "+0.83",
+        "Thecappershub"
+      ],
+      [
+        "14 Oct 04:10 PM",
+        "NCAAF",
+        "Missouri State Bears +2.5",
+        "-106",
+        "Won",
+        "+0.94",
+        "Thecappershub"
+      ],
+      [
+        "15 Oct 03:41 PM",
+        "NHL",
+        "Utah Mammoth ML",
+        "-111",
+        "Won",
+        "+0.90",
+        "Thecappershub"
+      ],
+      [
+        "16 Oct 03:26 PM",
+        "NCAAF",
+        "Tulane Green Wave +7",
+        "-115",
+        "Won",
+        "+0.87",
+        "Thecappershub"
+      ],
+      [
+        "16 Oct 03:26 PM",
+        "NCAAF",
+        "Washington Huskies +3",
+        "+100",
+        "Won",
+        "+1.00",
+        "Thecappershub"
+      ],
+      [
+        "18 Oct 04:49 PM",
+        "NFL",
+        "Dallas Cowboys ML",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "CappersCashB"
+      ],
+      [
+        "22 Oct 05:07 PM",
+        "NFL",
+        "Chicago Bears -3",
+        "not shown",
+        "Won",
+        "+0.91",
+        "CappersCashB"
+      ],
+      [
+        "28 Oct 04:44 PM",
+        "NBA",
+        "New Orleans Pelicans +4.5",
+        "-110",
+        "Lost",
+        "-1.00",
+        "CappersCashB"
+      ],
+      [
+        "28 Oct 04:49 PM",
+        "MLB",
+        "Tampa Bay Rays ML",
+        "+133",
+        "Lost",
+        "-1.00",
+        "CappersCashB"
+      ],
+      [
+        "29 Oct 05:03 PM",
+        "NFL",
+        "Green Bay Packers -3.5",
+        "-102",
+        "Won",
+        "+0.98",
+        "CappersCashB"
+      ],
+      [
+        "1 Nov 01:07 PM",
+        "NFL",
+        "Miami Dolphins +7.5",
+        "-115",
+        "Won",
+        "+0.87",
+        "CappersCashB"
+      ],
+      [
+        "3 Nov 03:50 PM",
+        "NHL",
+        "Pittsburgh Penguins ML",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "CappersCashB"
+      ],
+      [
+        "3 Nov 03:53 PM",
+        "NCAAB",
+        "Arkansas Razorbacks -41.5",
+        "-110",
+        "Won",
+        "+0.91",
+        "CappersCashB"
+      ],
+      [
+        "4 Nov 03:48 PM",
+        "NBA",
+        "Utah Jazz +5.5",
+        "-108",
+        "Lost",
+        "-1.00",
+        "CappersCashB"
+      ],
+      [
+        "4 Nov 03:48 PM",
+        "NBA",
+        "Indiana Pacers +6.5",
+        "-108",
+        "Won",
+        "+0.93",
+        "CappersCashB"
+      ],
+      [
+        "21 Nov 08:48 AM",
+        "NCAAF",
+        "East Carolina Pirates +5.5",
+        "-108",
+        "Won",
+        "+0.93",
+        "CappersCashB"
+      ],
+      [
+        "21 Nov 08:48 AM",
+        "NCAAF",
+        "Kansas Jayhawks +5.5",
+        "-106",
+        "Won",
+        "+0.94",
+        "CappersCashB"
+      ],
+      [
+        "21 Nov 08:48 AM",
+        "NCAAF",
+        "Ohio State Buckeyes -3.5",
+        "-104",
+        "Lost",
+        "-1.00",
+        "CappersCashB"
+      ],
+      [
+        "21 Nov 08:48 AM",
+        "NCAAF",
+        "West Virginia Mountaineers +7",
+        "-105",
+        "Won",
+        "+0.95",
+        "CappersCashB"
+      ]
+    ]
+  }
 }

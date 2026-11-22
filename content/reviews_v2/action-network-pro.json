@@ -5,7 +5,7 @@
   "kind": "Paid tier of a betting media company owned by Better Collective",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Action Network PRO Review 2026: Prices, Refunds, Pick Records",
   "description": "Action Network PRO review, checked 20 Nov 2026: web and app prices, the no refund terms, what the 30 day expert records add up to, and what users report.",
   "h1": "Action Network PRO review",
@@ -42,6 +42,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "1 plays posted before the start, 30 Sep 2026 to 30 Sep 2026: 0 won, 1 lost, -1.00 units"
     ]
   ],
   "short_answer": [
@@ -126,6 +130,9 @@
     "The about page says many experts have verified records tracked in the app, but the pages we could open showed only 30 day lines. We did not log in to the app."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Action Network PRO does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Action Network PRO most often were ActionNetworkHQ, ParlayScience, foxedgeai, ShatearyaT8m8q. From 30 Sep 2026 to 30 Sep 2026 we took every play our parser could read inside a Action Network PRO block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 1 plays, 0 won, 1 lost, -1.00 units, a return of -100.0% per unit risked. By sport: too few per sport to split. By month: September 0 won, 1 lost, -1.00 units.",
+    "What it means: 1 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
     "The free picks page lists each expert's latest picks with the line, the odds, the units and the game time, plus a last 30 day record in wins, losses and units. On 20 Nov 2026 the ten experts shown went a combined 1,267 and 1,234 (50.7%) for +41.4 units. On 7 Nov 2026 the records we saw ranged from 77 and 79 (minus 9.2 units) to 403 and 339 (+44.4 units). That is more than most pick sellers show, and it includes losing records. But we did not find a full, time stamped history for the experts or for the PRO system picks on any page we opened.",
     "The PRO page itself shows no record at all. Its feature table lists Expert Picks as free and Instant Expert Pick Alerts, PRO System Picks, Money Percentages, Prop Projections, Betting Projections and the Sharp Action Report as PRO only. So what PRO mainly sells for picks is speed and data, not access.",
     "Users have tried to keep their own score. In the forum threads we read, one Reddit user in 2021 said they had started recording PRO projections against Vegas lines and found them close so far, and another in 2023 said their trial days went well following PRO signals, then reported a few weeks later that the sharp betting signal had been losing on baseball moneylines. No user posted a long term tally."
@@ -282,6 +289,10 @@
     [
       "Is Action Network PRO legit?",
       "It is a real subscription from a real company, owned by Better Collective, with published prices and terms. We could not verify that its picks or systems win over time, because no full record was shown on the pages we opened."
+    ],
+    [
+      "What does the Watchdog sample of Action Network PRO show?",
+      "We graded 1 of their plays that were posted publicly before the game started, 30 Sep 2026 to 30 Sep 2026: 0 won, 1 lost, -1.00 units at one unit each. That is too few plays to judge."
     ],
     [
       "How much does Action Network PRO cost?",

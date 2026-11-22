@@ -5,14 +5,14 @@
   "kind": "Handicapper and pick shop with a roster of handicappers",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Big Al McMordie Review 2026: Pricing, Record, Worth It?",
   "description": "Big Al McMordie review, checked 20 Nov 2026: BigAl.com prices from $30 picks to $2,395 a year, refund terms, his record claims checked, and buyer reports.",
   "h1": "Big Al McMordie review",
   "dek": "Al McMordie has sold picks at BigAl.com since 1992 and now sells picks from 21 handicappers, from $30 a pick to $2,395 for a year. The site grades its own handicappers and posts daily results, and the outside boards we checked show him slightly profitable in 2026. There is no performance guarantee.",
   "status": {
-    "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record for Al McMordie or any BigAl.com handicapper. This page reports what we could check on 20 Nov 2026 and labels everything else."
+    "label": "Partly graded",
+    "note": "Big Al McMordie publishes no complete log we can audit. Watchdog graded 35 of their plays that were posted publicly before the game started. This is a sample, not a full record."
   },
   "glance": [
     [
@@ -42,6 +42,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "35 plays posted before the start, 19 Sep 2026 to 16 Nov 2026: 16 won, 18 lost, 1 push, -3.45 units"
     ]
   ],
   "short_answer": [
@@ -153,14 +157,17 @@
     "The \"angle\" and \"system\" records in pick titles, such as a \"179-132 ATS NBA KNOCKOUT\" or a \"30-7 NHL SLAPSHOT CLUB\" on 19 Nov 2026, describe how a past trend or run did, not his overall record. On that day he went 3-2 with those plays."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Big Al McMordie does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Big Al McMordie most often were BuzzKill (TheRX newsletters thread), 1218Sports, TheGodOfCappers, Churchillsprts. From 19 Sep 2026 to 16 Nov 2026 we took every play our parser could read inside a Big Al McMordie block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 35 plays, 16 won, 18 lost, 1 push, -3.45 units, a return of -9.9% per unit risked. By sport: NCAAF 11 won, 6 lost, +4.00 units; NFL 5 won, 9 lost, 1 push, -4.45 units. By month: September 6 won, 8 lost, 1 push, -2.55 units; October 9 won, 4 lost, +4.18 units; November 1 won, 6 lost, -5.09 units.",
+    "What it means: a 47% win rate on 34 decided plays has a 95% range of about 31% to 63%, and at the prices in this sample a bettor needed about 52% to break even. That range includes break even, so this sample cannot show whether they win or lose over time. The sample covers only the plays that others chose to post, which is not the full card a subscriber receives, and stakes are counted flat even where the seller rates plays differently.",
     "What a buyer can check outside BigAl.com: SportsCapping's 2026 season board (1 Jan to 20 Nov, flat $100 bets) listed \"Big Al McMordie\" 10th by profit at 733-629-20, 53.8% wins, $2,845 profit and a 1.8% return. PickDawgz' 2025 NFL table showed him at 90-74, 54.88%, +$932 on $100 bets. On 7 Nov 2026 SportsWatchMonitor's homepage showed small positive returns for 2023 to 2026, between 2.6% and 4.2% a year; that table was gone when we looked on 20 Nov. All of these sites also sell picks, and we could not open the full logs behind them, so they are third party numbers, not audits.",
     "SportsHub, which tracks the free picks posted on BigAl.com, showed 6-8 and a -17.9% return on 14 graded free picks. That sample is far too small to mean anything, and free picks are not the paid plays.",
     "What is the seller's own marketing: BigAl.com grades its handicappers itself, to win $1,000 a game, using the best line among BetMGM, Caesars and DraftKings at the time of the pick, according to its FAQ. It posts the previous day's results each morning at 3 am eastern (Al went 3-2, +$950 on 19 Nov 2026) and running totals on each handicapper page. We did not find a searchable archive of every past pick with its line and post time.",
     "Contest results, such as the 2004 Stardust Invitational, would be independently verifiable if the organizers published them, but we did not find those records. We found no court or regulator action involving Al McMordie or BigAl.com in our searches."
   ],
   "our_data": {
-    "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition neither Al McMordie nor any BigAl.com handicapper is matched to a Watchdog graded record, so we make no claim about how these handicappers perform.",
+    "matched": true,
+    "text": "Watchdog graded 35 Big Al McMordie plays posted before the start, 19 Sep 2026 to 16 Nov 2026: 16 won, 18 lost, 1 push, -3.45 units at one unit each. A sample of what was posted publicly, not a full record.",
     "context": "For scale: Al's page markets basketball seasons won in the mid 50s by win rate. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
   "customers_intro": "Independent customer evidence on Big Al is thin and mostly old. The testimonials on BigAl.com are chosen by the seller. The forum discussion we could open dates from 2004, 2005 and 2012, plus one 2025 Reddit post and a 2024 App Store review of a different site that mentions him. Reddit's archive full text search was failing on 20 Nov 2026, so the Reddit check relies on our saved library of earlier downloads. Below is everything we found and how much weight it can carry.",
@@ -275,6 +282,10 @@
     [
       "Is Big Al McMordie legit?",
       "Yes in the sense that BigAl.com is a real, long running business with a named owner, an address, published prices and daily posted results. We could not verify his long term career record, because the site does not publish a full log of every pick."
+    ],
+    [
+      "What does the Watchdog sample of Big Al McMordie show?",
+      "We graded 35 of their plays that were posted publicly before the game started, 19 Sep 2026 to 16 Nov 2026: 16 won, 18 lost, 1 push, -3.45 units at one unit each. The 95% range of the win rate is about 31% to 63%, against about 52% needed to break even."
     ],
     [
       "How much does Big Al McMordie cost?",
@@ -426,5 +437,334 @@
       "accessed": "20 Nov 2026"
     }
   ],
-  "pricing_source": 2
+  "pricing_source": 2,
+  "record_table": {
+    "caption": "Every Big Al McMordie play in the Watchdog sample, 19 Sep 2026 to 16 Nov 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "19 Sep 09:49 AM",
+        "NCAAF",
+        "BYU Cougars -17.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "19 Sep 09:49 AM",
+        "NCAAF",
+        "Under 60.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "19 Sep 09:49 AM",
+        "NCAAF",
+        "Notre Dame Fighting Irish -29.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EZMSports"
+      ],
+      [
+        "19 Sep 09:49 AM",
+        "NCAAF",
+        "Stanford Cardinal +10.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EZMSports"
+      ],
+      [
+        "19 Sep 09:51 AM",
+        "NCAAF",
+        "UTEP Miners +35",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "24 Sep 08:40 AM",
+        "NFL",
+        "Over 43",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ],
+      [
+        "27 Sep 08:21 AM",
+        "NFL",
+        "Tampa Bay Buccaneers +1",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "1218Sports"
+      ],
+      [
+        "27 Sep 08:21 AM",
+        "NFL",
+        "Los Angeles Chargers +7.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "1218Sports"
+      ],
+      [
+        "27 Sep 09:06 AM",
+        "NFL",
+        "Tampa Bay Buccaneers +1.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "cappers_daily"
+      ],
+      [
+        "27 Sep 09:06 AM",
+        "NFL",
+        "Miami Dolphins +11.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "cappers_daily"
+      ],
+      [
+        "27 Sep 09:06 AM",
+        "NFL",
+        "Over 45.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "cappers_daily"
+      ],
+      [
+        "27 Sep 09:06 AM",
+        "NFL",
+        "New Orleans Saints -3",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "cappers_daily"
+      ],
+      [
+        "27 Sep 09:06 AM",
+        "NFL",
+        "Arizona Cardinals +8.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "cappers_daily"
+      ],
+      [
+        "27 Sep 09:06 AM",
+        "NFL",
+        "Baltimore Ravens -3",
+        "not shown",
+        "Push",
+        "+0.00",
+        "cappers_daily"
+      ],
+      [
+        "27 Sep 09:06 AM",
+        "NFL",
+        "Pittsburgh Steelers +3.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "cappers_daily"
+      ],
+      [
+        "16 Oct 06:40 AM",
+        "NCAAF",
+        "App State Mountaineers -1",
+        "not shown",
+        "Won",
+        "+0.91",
+        "1218Sports"
+      ],
+      [
+        "16 Oct 03:49 PM",
+        "NCAAF",
+        "Baylor Bears -6",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "1218Sports"
+      ],
+      [
+        "16 Oct 03:49 PM",
+        "NCAAF",
+        "Oklahoma Sooners -6.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "1218Sports"
+      ],
+      [
+        "16 Oct 03:49 PM",
+        "NCAAF",
+        "Wake Forest Demon Deacons -6.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "1218Sports"
+      ],
+      [
+        "16 Oct 03:49 PM",
+        "NCAAF",
+        "Colorado Buffaloes +15",
+        "not shown",
+        "Won",
+        "+0.91",
+        "1218Sports"
+      ],
+      [
+        "16 Oct 03:49 PM",
+        "NCAAF",
+        "BYU Cougars +11",
+        "not shown",
+        "Won",
+        "+0.91",
+        "1218Sports"
+      ],
+      [
+        "16 Oct 03:49 PM",
+        "NCAAF",
+        "Under 43",
+        "not shown",
+        "Won",
+        "+0.91",
+        "1218Sports"
+      ],
+      [
+        "16 Oct 03:49 PM",
+        "NCAAF",
+        "Under 57",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "1218Sports"
+      ],
+      [
+        "16 Oct 03:49 PM",
+        "NCAAF",
+        "SMU Mustangs -9.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "1218Sports"
+      ],
+      [
+        "16 Oct 03:49 PM",
+        "NCAAF",
+        "James Madison Dukes -12",
+        "not shown",
+        "Won",
+        "+0.91",
+        "1218Sports"
+      ],
+      [
+        "17 Oct 04:04 AM",
+        "NCAAF",
+        "Under 62.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "Hottie4Sports"
+      ],
+      [
+        "17 Oct 04:04 AM",
+        "NCAAF",
+        "Under 46.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "Hottie4Sports"
+      ],
+      [
+        "25 Oct 09:13 AM",
+        "NFL",
+        "Los Angeles Rams -3",
+        "not shown",
+        "Won",
+        "+0.91",
+        "1218Sports"
+      ],
+      [
+        "1 Nov 06:47 AM",
+        "NFL",
+        "Over 45.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "1218Sports"
+      ],
+      [
+        "1 Nov 07:08 AM",
+        "NFL",
+        "Los Angeles Chargers +6.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "cpawsports"
+      ],
+      [
+        "1 Nov 07:08 AM",
+        "NFL",
+        "Philadelphia Eagles +6",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "cpawsports"
+      ],
+      [
+        "2 Nov 03:48 PM",
+        "NHL",
+        "Chicago Blackhawks +1.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "1218Sports"
+      ],
+      [
+        "2 Nov 03:48 PM",
+        "NBA",
+        "Charlotte Hornets +4",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "1218Sports"
+      ],
+      [
+        "2 Nov 03:48 PM",
+        "NBA",
+        "LA Clippers +5.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "1218Sports"
+      ],
+      [
+        "16 Nov 01:21 PM",
+        "NFL",
+        "Los Angeles Chargers +4.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ]
+    ]
+  }
 }

@@ -5,7 +5,7 @@
   "kind": "Model picks sold by text message",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Doc's Sports AI-v3 Review 2026: Pricing, Record, Worth It?",
   "description": "Doc's Sports AI-v3 review, checked 20 Nov 2026: $89 to $595 prices, refund terms, and five archived copies of its profit claims compared.",
   "h1": "Doc's Sports AI-v3 review",
@@ -46,6 +46,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "None found in a search of about 1.37 million captured posts (22 Nov 2026)"
     ]
   ],
   "short_answer": [
@@ -130,6 +134,7 @@
     "The page never explains what the numbers measure. Doc's figures like this usually mean dollars of profit for a bettor risking $100 per unit, but the AI page does not say so, and it shows no unit size, no odds and no count of picks. One clue: the member notes say AI-v3 \"went 0-1 on Thursday for -420\", so a single losing pick cost 420 of these points. Without knowing the stake behind each pick, a buyer cannot turn +25,460 into a return on money risked."
   ],
   "record": [
+    "Watchdog search, 22 Nov 2026: we searched about 1.37 million captured public posts from X, Reddit, Covers, TheRX and other forums for Doc's Sports AI-v3 plays that were posted or reposted before a game started. We found none, so there is no Watchdog graded sample for this seller yet.",
     "Independently verifiable: nothing we found. We found no time stamped log of every AI pick held by a third party, no contest run by someone else, and no regulator or court record about results. For some of its human handicappers Doc's newsletters link \"documented\" play by play logs; we found no such log linked for the AI product, and the AI feed was not mentioned in the Doc's newsletters we read from November 2025 and late October 2026.",
     "Seller's own marketing: running profit totals on the AI page and on the homepage roster, a monthly total for October, a count of winning months and member notes such as \"AI-v3 went 0-1 on Thursday for -420\". None of these lists the picks, the odds or the post times, so a buyer cannot rebuild them.",
     "What we can check is the history of the claims. Wayback Machine copies show the page as AI-v1 on 7 Oct 2025 (\"70% ALL SPORTS RUN (+4,250)\"), still AI-v1 on 18 Jan 2026 (\"+5,700 Profit Since Inception\"), headed AI-v2 on 17 Feb 2026 with an AI-v1 bio underneath (\"+11,550 Profit Since Inception\"), AI-v2 on 12 Jun 2026 (\"+20,295 Profit Since Inception\", with \"+19,595\" further down the same page), and AI-v3 in November 2026. The name changed twice and the bio wording was softened; the record behind it was never published."

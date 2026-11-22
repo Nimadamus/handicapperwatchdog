@@ -5,14 +5,14 @@
   "kind": "Individual handicapper sold through the Doc's Sports roster",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Indian Cowboy Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Indian Cowboy (Arun Shiva) review, checked 20 Nov 2026: Doc's Sports prices, credit guarantee, and his posted pick logs recounted by us.",
   "h1": "Indian Cowboy review",
   "dek": "Arun Shiva, sold as Indian Cowboy, is a Doc's Sports handicapper with a large YouTube channel and a one play a day style. Packages run from $25 a day to $850 a season. The guarantee pays in credit or free time. Doc's posts full pick by pick logs for some of his seasons, and we recounted them.",
   "status": {
-    "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Indian Cowboy picks. We recounted the pick logs Doc's Sports publishes for him on 20 Nov 2026; those logs are graded by the seller, not by us."
+    "label": "Partly graded",
+    "note": "Indian Cowboy publishes no complete log we can audit. Watchdog graded 15 of their plays that were posted publicly before the game started. This is a sample, not a full record."
   },
   "glance": [
     [
@@ -42,6 +42,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "15 plays posted before the start, 14 Sep 2026 to 19 Nov 2026: 6 won, 9 lost, -3.96 units"
     ]
   ],
   "short_answer": [
@@ -186,13 +190,16 @@
     "Other figures still disagree with each other. On the profile we read on 20 Nov 2026 the soccer season appears as +16,170, +16,600 and +17,200 in different boxes, and the NBA season shows as \"+2000 YEAR\" in one place and \"+2500\" in another. His X posts list last NBA season as \"2026 NBA: +4376\" and the year before as \"2025 NBA: +2156\", while the profile lists \"2025: +4500\" and \"2024: 2500\". His YouTube description says \"over 15,000 Subscribers\" and \"Over 4 Million Views\"; the channel itself showed 88K subscribers, so that text is simply out of date."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Indian Cowboy does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Indian Cowboy most often were IndianCowboyPix, 1218Sports, TheGodOfCappers, EZMSports. From 14 Sep 2026 to 19 Nov 2026 we took every play our parser could read inside a Indian Cowboy block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 15 plays, 6 won, 9 lost, -3.96 units, a return of -26.4% per unit risked. By sport: NCAAF 2 won, 4 lost, -2.18 units; NFL 0 won, 3 lost, -3.00 units. By month: September 3 won, 4 lost, -1.42 units; October 2 won, 4 lost, -2.45 units; November 1 won, 1 lost, -0.09 units.",
+    "What it means: a 40% win rate on 15 decided plays has a 95% range of about 20% to 64%, and at the prices in this sample a bettor needed about 53% to break even. That range includes break even, so this sample cannot show whether they win or lose over time. The sample covers only the plays that others chose to post, which is not the full card a subscriber receives, and stakes are counted flat even where the seller rates plays differently.",
     "What a buyer can verify independently: Doc's results pages are published by the seller and graded by the seller, at the lines Doc's records. We found no outside service that tracks every Indian Cowboy play with the line and the time it was released. We did one small independent spot check: on 24 Sep 2026 a TheRX member posted two of his plays before the games, a 4 unit Phoenix Mercury +10 and a 4 unit Phillies moneyline. Both appear in the Doc's logs for that date as 4 unit losses, at minus $440 and minus $520. Two picks prove little, but they are losers that the log did not hide.",
     "What the seller publishes: season logs for the sports it chooses to link, season totals, streaks such as a \"9-3 RUN\", and a table of the previous day's results by handicapper. On the NHL expert page we read on 20 Nov 2026 his line in that table showed a 7 unit loss, minus $735. The logs show real losing stretches as well as winning ones.",
     "What the numbers mean: a 59% to 61% hit rate at about -110 over a full season, as these logs show, would be a very good result if it held up and if a buyer could get the same lines. Doc's quotes a free $60 trial and says \"91 out of 100 free trial accounts remain with us long term\"; we could not check that. The NHL figures (\"61%, +8,700\" in one of two winning seasons in 2020 and 2021) and the 2013 to 2017 NBA figures have no log we could open."
   ],
   "our_data": {
-    "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Indian Cowboy pick history is matched to a Watchdog graded record, so we make no claim about how Indian Cowboy performs.",
+    "matched": true,
+    "text": "Watchdog graded 15 Indian Cowboy plays posted before the start, 14 Sep 2026 to 19 Nov 2026: 6 won, 9 lost, -3.96 units at one unit each. A sample of what was posted publicly, not a full record.",
     "context": "For scale: the seasons Doc's logs for him sit between 56% and 61% winners. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
   "customers_intro": "Independent buyer evidence on Indian Cowboy is thin. We searched TheRX, Covers, Sportsbook Review, Reddit (our saved archive plus thread lookups), BBB and news. Below is everything we found and how much weight it can carry.",
@@ -315,6 +322,10 @@
     [
       "Is Indian Cowboy legit?",
       "He is a real, active handicapper named Arun Shiva whose picks are sold on Doc's Sports at published prices, and Doc's publishes pick by pick logs for several of his seasons. Those logs are graded by the seller, not by an outside tracker, and we found no court or regulator action involving him."
+    ],
+    [
+      "What does the Watchdog sample of Indian Cowboy show?",
+      "We graded 15 of their plays that were posted publicly before the game started, 14 Sep 2026 to 19 Nov 2026: 6 won, 9 lost, -3.96 units at one unit each. The 95% range of the win rate is about 20% to 64%, against about 53% needed to break even."
     ],
     [
       "How much does Indian Cowboy cost?",
@@ -446,5 +457,154 @@
       "accessed": "20 Nov 2026"
     }
   ],
-  "pricing_source": 0
+  "pricing_source": 0,
+  "record_table": {
+    "caption": "Every Indian Cowboy play in the Watchdog sample, 14 Sep 2026 to 19 Nov 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "14 Sep 11:24 AM",
+        "LALIGA",
+        "Real Betis +0.5",
+        "-120",
+        "Won",
+        "+0.83",
+        "onetrikpony"
+      ],
+      [
+        "21 Sep 01:18 PM",
+        "WNBA",
+        "Atlanta Dream ML",
+        "-120",
+        "Won",
+        "+0.83",
+        "EDMrager"
+      ],
+      [
+        "26 Sep 07:33 AM",
+        "NCAAF",
+        "Auburn Tigers -9.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EDMrager"
+      ],
+      [
+        "26 Sep 07:33 AM",
+        "NCAAF",
+        "Oklahoma Sooners +13.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EDMrager"
+      ],
+      [
+        "26 Sep 07:33 AM",
+        "NCAAF",
+        "Boise State Broncos -7",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EDMrager"
+      ],
+      [
+        "30 Sep 03:26 PM",
+        "NFL",
+        "Pittsburgh Steelers ML",
+        "+120",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ],
+      [
+        "30 Sep 03:56 PM",
+        "WNBA",
+        "Washington Mystics +3",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "onetrikpony"
+      ],
+      [
+        "9 Oct 09:37 PM",
+        "NCAAF",
+        "Central Michigan Chippewas +3",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ],
+      [
+        "9 Oct 09:37 PM",
+        "NCAAF",
+        "LSU Tigers -8.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ],
+      [
+        "9 Oct 09:37 PM",
+        "NCAAF",
+        "Wake Forest Demon Deacons -3.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ],
+      [
+        "11 Oct 08:00 AM",
+        "NFL",
+        "Under 44",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EDMrager"
+      ],
+      [
+        "18 Oct 07:28 AM",
+        "EPL",
+        "Arsenal ML",
+        "-155",
+        "Won",
+        "+0.65",
+        "bmd1803"
+      ],
+      [
+        "18 Oct 09:02 AM",
+        "NFL",
+        "Dallas Cowboys +1.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EZMSports"
+      ],
+      [
+        "11 Nov 02:54 PM",
+        "NBA",
+        "Over 228.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "1218Sports"
+      ],
+      [
+        "19 Nov 01:39 PM",
+        "NHL",
+        "Pittsburgh Penguins ML",
+        "-105",
+        "Lost",
+        "-1.00",
+        "CappersVault"
+      ]
+    ]
+  }
 }

@@ -5,7 +5,7 @@
   "kind": "Pick seller sold on two networks: the WagerTalk Media stores (StatSalt, Picks and Parlays) and the SportsCapping stores (CappersPicks, SportsCapping), plus a daily betting podcast",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Sean Higgs Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Sean Higgs review, checked 20 Nov 2026: prices on four stores, all sales final or credit only terms, claims checked against network records.",
   "h1": "Sean Higgs review",
@@ -42,6 +42,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "7 plays posted before the start, 24 Sep 2026 to 24 Oct 2026: 4 won, 3 lost, +0.46 units"
     ]
   ],
   "short_answer": [
@@ -155,6 +159,9 @@
     "His experience claims differ by page: early 1990s, on sites since 2006, an original 2008 member of Picks and Parlays, and over 17 years on betting sites. His own saved site confirms he was selling picks by 2013. None of this proves anything about current results."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Sean Higgs does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Sean Higgs most often were TheGodOfCappers, ryangenero, 1218Sports, Hottie4Sports. From 24 Sep 2026 to 24 Oct 2026 we took every play our parser could read inside a Sean Higgs block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 7 plays, 4 won, 3 lost, +0.46 units, a return of +6.5% per unit risked. By sport: NCAAF 3 won, 1 lost, +1.71 units. By month: September 0 won, 2 lost, -2.00 units; October 4 won, 1 lost, +2.46 units.",
+    "What it means: 7 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
     "What a buyer can verify independently: nothing that we could find. We found no full, time stamped log of every Sean Higgs pick kept outside the networks selling him, and no court or regulator record about him.",
     "What the sellers publish: StatSalt shows recent results (on 20 Nov 2026, four wins and one loss across 18 and 19 Nov), a 14-9 NFL leaderboard line and a rolling record box. CappersPicks showed his 19 Nov plays at three wins and one loss and lists his money leader spots. SportsCapping's 2026 tables put him second overall (843-738-33, +$5,033), second in college football (87-60-1, +$1,918), third in MLB (387-348-21, +$2,922), fifth in college basketball (33-22-1, +$871) and 37th of 38 in the NFL (41-36-2, +$15). All of these are kept by companies that sell his picks.",
     "A TheRX member reposted his Saturday college football plays on 8 Nov 2026 with the line \"CFB picks 2026 43-35\", a far lower figure than any network shows. The post gives no source for that record, so we report it only as another number that does not match.",
@@ -242,6 +249,10 @@
     [
       "Is Sean Higgs legit?",
       "He is a real, active seller with a public trail back to his own picks site in 2013, packages on four stores and a daily betting podcast. We found no complaints, court cases or regulator actions about him. We could not verify that his picks win over time, because the only records come from the networks that sell them, and those disagree."
+    ],
+    [
+      "What does the Watchdog sample of Sean Higgs show?",
+      "We graded 7 of their plays that were posted publicly before the game started, 24 Sep 2026 to 24 Oct 2026: 4 won, 3 lost, +0.46 units at one unit each. That is too few plays to judge."
     ],
     [
       "How much does Sean Higgs cost?",
@@ -398,5 +409,82 @@
       "accessed": "20 Nov 2026"
     }
   ],
-  "pricing_source": 0
+  "pricing_source": 0,
+  "record_table": {
+    "caption": "Every Sean Higgs play in the Watchdog sample, 24 Sep 2026 to 24 Oct 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "24 Sep 06:38 AM",
+        "NFL",
+        "Green Bay Packers -6.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EDMrager"
+      ],
+      [
+        "24 Sep 07:17 AM",
+        "NFL",
+        "Under 46.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ],
+      [
+        "2 Oct 10:26 PM",
+        "MLB",
+        "Tampa Bay Rays ML",
+        "-134",
+        "Won",
+        "+0.75",
+        "EZMSports"
+      ],
+      [
+        "16 Oct 03:51 PM",
+        "NCAAF",
+        "Ohio State Buckeyes -3.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "1218Sports"
+      ],
+      [
+        "23 Oct 08:54 PM",
+        "NCAAF",
+        "Iowa State Cyclones +10",
+        "-108",
+        "Lost",
+        "-1.00",
+        "ryangenero"
+      ],
+      [
+        "23 Oct 08:54 PM",
+        "NCAAF",
+        "Nevada Wolf Pack -6",
+        "-112",
+        "Won",
+        "+0.89",
+        "ryangenero"
+      ],
+      [
+        "23 Oct 08:54 PM",
+        "NCAAF",
+        "Wisconsin Badgers +3",
+        "-110",
+        "Won",
+        "+0.91",
+        "ryangenero"
+      ]
+    ]
+  }
 }

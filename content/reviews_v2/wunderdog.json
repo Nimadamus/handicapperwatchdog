@@ -5,7 +5,7 @@
   "kind": "Single handicapper pick service",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Wunderdog Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Wunderdog review, checked 20 Nov 2026: prices from $15 to $5,499, the free package guarantee, its own pick log checked, and what buyers say.",
   "h1": "Wunderdog Sports review",
@@ -46,6 +46,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "3 plays posted before the start, 26 Sep 2026 to 9 Oct 2026: 0 won, 3 lost, -3.00 units"
     ]
   ],
   "short_answer": [
@@ -168,6 +172,9 @@
     "To its credit, the long run totals Wunderdog advertises are modest and close to break even, not the 70% claims common in this business. Its about page says outright: \"No one hits 80%, or 70% or even 60% long term.\""
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Wunderdog Sports does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Wunderdog Sports most often were WunderdogSports, VSiNLive, offshoreinsider. From 26 Sep 2026 to 9 Oct 2026 we took every play our parser could read inside a Wunderdog Sports block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 3 plays, 0 won, 3 lost, -3.00 units, a return of -100.0% per unit risked. By sport: NCAAF 0 won, 3 lost, -3.00 units. By month: September 0 won, 1 lost, -1.00 units; October 0 won, 2 lost, -2.00 units.",
+    "What it means: 3 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
     "What a buyer can verify independently: very little. We found no full, time stamped log kept by a third party, no contest results from an outside organizer that we opened, and no regulator or court record. The awards on the about page were not checked.",
     "What Wunderdog itself publishes: sport archive pages list past Pro Picks back to 2001 for the NFL, by season and week, and each past pick page shows the write up, the units, the line, the price, the release time and a graded result. That is far more than most pick sellers show. But the archive is kept and graded by the seller, and we could not confirm that no pick is missing or changed.",
     "What the seller's own numbers say: across its three biggest sports the paid card wins about 52% to 53% and makes roughly 0.02 to 0.03 units per decided pick. If those numbers are complete and accurate, they describe a small edge with long losing stretches, not a fast way to make money. A buyer who pays for picks and gets worse prices than the posted lines could easily end up behind.",
@@ -356,6 +363,10 @@
       "It is a real business, Wunderdog Sports Picks LLC, selling picks since 2001 with published prices and a public archive of past picks. We could not independently verify that its picks win over time, because that archive is kept and graded by Wunderdog itself, and its own long run totals sit just above break even."
     ],
     [
+      "What does the Watchdog sample of Wunderdog Sports show?",
+      "We graded 3 of their plays that were posted publicly before the game started, 26 Sep 2026 to 9 Oct 2026: 0 won, 3 lost, -3.00 units at one unit each. That is too few plays to judge."
+    ],
+    [
       "Who runs Wunderdog?",
       "A handicapper named Geoff, who writes the picks and the analysis. The site gives only his first name; a 2011 betting blog named him as Geoff Kulesa, founder of Wunderdog Sports Picks. The company is Wunderdog Sports Picks LLC, and its terms are governed by Colorado law."
     ],
@@ -510,5 +521,46 @@
       "accessed": "20 Nov 2026"
     }
   ],
-  "pricing_source": 3
+  "pricing_source": 3,
+  "record_table": {
+    "caption": "Every Wunderdog Sports play in the Watchdog sample, 26 Sep 2026 to 9 Oct 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "25 Sep 05:08 PM",
+        "NCAAF",
+        "Under 59.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "VSiNLive"
+      ],
+      [
+        "2 Oct 05:42 PM",
+        "NCAAF",
+        "Over 45",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "VSiNLive"
+      ],
+      [
+        "9 Oct 04:22 PM",
+        "NCAAF",
+        "Duke Blue Devils -6.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "VSiNLive"
+      ]
+    ]
+  }
 }

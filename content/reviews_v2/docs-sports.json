@@ -5,7 +5,7 @@
   "kind": "Pick service with a roster of handicappers",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Doc's Sports Review 2026: Prices, Guarantee, Record Claims",
   "description": "Doc's Sports review, checked 20 Nov 2026: every package price, the credit and extension guarantee, its posted records checked, and what buyers report.",
   "h1": "Doc's Sports review",
@@ -46,6 +46,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "3 plays posted before the start, 24 Oct 2026 to 30 Oct 2026: 0 won, 3 lost, -3.00 units"
     ]
   ],
   "short_answer": [
@@ -160,6 +164,9 @@
     "The founding story does not hold one number. The homepage says 54 years, the house page says 55 years, the service page says almost 50 years and the roster page says the unit system was developed \"over 38 years ago\" and that the founder \"has been the sole owner\" since 1971. Gambling911 reported in December 2012 that Morris \"Doc\" Moseman had died and that his son had been heavily involved in running the service. None of this proves anything about the picks, but it shows how little the marketing copy is kept up to date."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Doc's Sports does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Doc's Sports most often were vcsports, tgeorgecapper, IndianCowboyPix, BuzzKill (TheRX newsletters thread). From 24 Oct 2026 to 30 Oct 2026 we took every play our parser could read inside a Doc's Sports block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 3 plays, 0 won, 3 lost, -3.00 units, a return of -100.0% per unit risked. By sport: too few per sport to split. By month: October 0 won, 3 lost, -3.00 units.",
+    "What it means: 3 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
     "Doc's Sports does not publish a full, time stamped log of every pick with the line, the price and the post time, at least not on any page we could open without paying. The roster shows short runs and season totals chosen by the seller, and each handicapper's blurb is rewritten as runs change, so the set of numbers we saw on 20 Nov 2026 will not be the set a reader sees next month.",
     "The only outside grading we came across was not a full record either. A Wayback Machine copy of the old OddsShark NFL computer picks page from 16 Jan 2025 carried boxes labelled \"Sponsored Picks\" from \"Doc's Premium Picks\", which means Doc's paid or partnered for that placement, not that anyone graded it. In 2021 a press release said Doc's had relaunched its text based Consensus Picks service \"with new management\" and claimed eight straight winning days and 43 units; today the same product is advertised as \"23-8 +$3,500 Consensus run!\". Neither figure comes with a log.",
     "Posting times on the site do not agree. The FAQ says picks post \"at 1 pm pacific on Fridays\" with top college and NFL games on weekend mornings, while the current weekly football package says selections post Thursday at 6 p.m. Eastern. The FAQ appears out of date."
@@ -339,6 +346,10 @@
       "It is a real business, founded in 1971 by Morris \"Doc\" Moseman and still selling picks under a named operator with published prices and a phone line. We could not verify that its handicappers win over time, because it does not publish a full record of every pick, and the independent buyer posts we found are mostly negative."
     ],
     [
+      "What does the Watchdog sample of Doc's Sports show?",
+      "We graded 3 of their plays that were posted publicly before the game started, 24 Oct 2026 to 30 Oct 2026: 0 won, 3 lost, -3.00 units at one unit each. That is too few plays to judge."
+    ],
+    [
       "How much does Doc's Sports cost?",
       "On 20 Nov 2026 the house handicapper sold one day packages for $25 to $30, weekly packages for $89 to $99, monthly packages for $279 to $325, and season packages from $495 (rest of football season) to $850 (NBA). The 365 day soccer package was $795."
     ],
@@ -478,5 +489,46 @@
       "accessed": "20 Nov 2026"
     }
   ],
-  "pricing_source": 1
+  "pricing_source": 1,
+  "record_table": {
+    "caption": "Every Doc's Sports play in the Watchdog sample, 24 Oct 2026 to 30 Oct 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "23 Oct 09:34 PM",
+        "NCAAF",
+        "Michigan State Spartans +14",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ],
+      [
+        "27 Oct 01:43 PM",
+        "MLB",
+        "Milwaukee Brewers ML",
+        "-125",
+        "Lost",
+        "-1.00",
+        "EDMrager"
+      ],
+      [
+        "30 Oct 03:26 PM",
+        "NHL",
+        "Seattle Kraken ML",
+        "-110",
+        "Lost",
+        "-1.00",
+        "cpawsports"
+      ]
+    ]
+  }
 }

@@ -5,14 +5,14 @@
   "kind": "Professional bettor and contest player who sells NFL and college football picks",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Steve Fezzik Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Steve Fezzik review, checked 20 Nov 2026: SIC Picks prices, contest wins checked on official standings, his 2026 SuperContest entries, and buyer posts.",
   "h1": "Steve Fezzik review",
   "dek": "A two time SuperContest champion who left Pregame.com in 2026 and now sells NFL and college football picks through SIC Picks, from $79 a week to $1,199 a season. Several of his contest finishes are on the organizers' own standings, including a 2025 win. His paid pick record is not public, his unit totals differ from page to page, and buyers have argued about his paid results since 2009.",
   "status": {
-    "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Steve Fezzik's paid picks. Some of his contest results are on official standings we opened on 20 Nov 2026; everything else on this page is labeled as a seller claim or a report."
+    "label": "Partly graded",
+    "note": "Steve Fezzik publishes no complete log we can audit. Watchdog graded 20 of their plays that were posted publicly before the game started. This is a sample, not a full record."
   },
   "glance": [
     [
@@ -42,6 +42,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "20 plays posted before the start, 26 Sep 2026 to 31 Oct 2026: 11 won, 7 lost, 2 push, +3.00 units"
     ]
   ],
   "short_answer": [
@@ -131,6 +135,9 @@
     "The 2026 season so far: Westgate's full season standings after Week 10 list 596 entries. FEZZIK-1 was tied for 570th at 18-31-1 and FEZZIK-2 tied for 327th at 24-26, a combined 42-57-1. Its Weeks 1 to 9 contest, already final, had them tied 503rd and 270th. We do not know for certain that these aliases are his, but they match the ones in his 2025 claims. His SIC page does not mention 2026 contest results."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Steve Fezzik does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Steve Fezzik most often were BuzzKill (TheRX newsletters thread), SICscore, PodPicksTracker, southbeachscalp. From 26 Sep 2026 to 31 Oct 2026 we took every play our parser could read inside a Steve Fezzik block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 20 plays, 11 won, 7 lost, 2 push, +3.00 units, a return of +15.0% per unit risked. By sport: NCAAF 10 won, 6 lost, 2 push, +3.09 units. By month: September 1 won, 2 lost, -1.09 units; October 10 won, 5 lost, 2 push, +4.09 units.",
+    "What it means: a 61% win rate on 18 decided plays has a 95% range of about 39% to 80%, and at the prices in this sample a bettor needed about 52% to break even. That range includes break even, so this sample cannot show whether they win or lose over time. The sample covers only the plays that others chose to post, which is not the full card a subscriber receives, and stakes are counted flat even where the seller rates plays differently.",
     "What a buyer can verify independently: contest results published by the organizers. We opened the Westgate 2025 SuperContest standings, which show FEZZIK-1 first in the Weeks 10 to 18 contest at 34-10-1 with a $50,000 prize, and the Circa Sports Million VII full season standings, which show FEZZIK-3 tied for 9th at 56-31-3 with a $70,000 prize. The standings list aliases, not legal names, but the aliases and results match what Fezzik advertises. The Las Vegas Sun reported on 16 Jan 2010 that he won the 2009 Hilton Supercontest at 52-29-3 for $196,800, after cashing for $210,000 the year before, and called it the first back to back title in the contest's 20 year history. We did not open organizer standings for 2008 or 2009.",
     "Those contests are a different product from the paid picks. Contest entries are five NFL sides a week against fixed lines; the packages at SIC Picks include futures, totals and props at market prices. A strong contest finish does not tell you how the paid picks did. As one Sportsbook Review member put it in 2010, winning a contest takes a very different approach from picking winners against real lines.",
     "What the seller side publishes: the SIC FAQ says results are \"updated daily and available on the website\", but the link goes to a picks dashboard that asks you to sign in, and we found no public log of Fezzik's SIC picks. An undated update on his SIC page claimed \"CFB 8-0-1 & NFL 8-4 for +22 units\". Pregame.com still shows a profile and archive of his Pregame picks, last seen by us with picks dated to 5 Apr 2026. That archive was graded by the company that sold his picks, and we did not total it. In 2015 Pregame announced that a tracker would log his Bet Like a Pro program in a forum thread; we opened only the first page of that thread and make no claim about its totals.",
@@ -138,8 +145,8 @@
     "Background: a Los Angeles Times profile from 2006, reposted in full on TheRX, said Fezzik is a pen name, that he grew up in Dayton, Ohio, graduated from Northwestern in 1986, became an actuary and rose to vice president at Transamerica Asset Management before moving to Las Vegas in 2001, and that he gave the paper his real name so his story could be confirmed. It also said he then wagered about $60,000 a day with a small crew of partners."
   ],
   "our_data": {
-    "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Steve Fezzik pick record is matched to a Watchdog graded record, so we make no claim about how his paid picks perform.",
+    "matched": true,
+    "text": "Watchdog graded 20 Steve Fezzik plays posted before the start, 26 Sep 2026 to 31 Oct 2026: 11 won, 7 lost, 2 push, +3.00 units at one unit each. A sample of what was posted publicly, not a full record.",
     "context": "For scale: Fezzik told the Las Vegas Sun in 2010 that hitting 57% over a contest season is improbable, and his five 2025 Circa entries together hit 55.3%. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
   "customers_intro": "Independent customer evidence on Steve Fezzik runs from 2009 to 2026 and sits mostly on forums: the Las Vegas Advisor forum where he once posted paid plays, Sportsbook Review, TheRX, Reddit and Pregame's own forum. We found no reviews of his new SIC Picks packages. Below is what we read and how much weight it can carry.",
@@ -269,6 +276,10 @@
     [
       "Is Steve Fezzik legit?",
       "Yes, he is a real Las Vegas bettor with contest wins reported by the Las Vegas Sun and shown on Westgate and Circa Sports standings. That proves contest success, not that his paid picks make money for buyers."
+    ],
+    [
+      "What does the Watchdog sample of Steve Fezzik show?",
+      "We graded 20 of their plays that were posted publicly before the game started, 26 Sep 2026 to 31 Oct 2026: 11 won, 7 lost, 2 push, +3.00 units at one unit each. The 95% range of the win rate is about 39% to 80%, against about 52% needed to break even."
     ],
     [
       "Is Steve Fezzik his real name?",
@@ -440,5 +451,199 @@
       "accessed": "20 Nov 2026"
     }
   ],
-  "pricing_source": 0
+  "pricing_source": 0,
+  "record_table": {
+    "caption": "Every Steve Fezzik play in the Watchdog sample, 26 Sep 2026 to 31 Oct 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "25 Sep 07:42 PM",
+        "NCAAF",
+        "Delaware Blue Hens +19.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "BuzzKill (TheRX newsletters thread)"
+      ],
+      [
+        "25 Sep 07:42 PM",
+        "NCAAF",
+        "Purdue Boilermakers +28",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "BuzzKill (TheRX newsletters thread)"
+      ],
+      [
+        "25 Sep 07:42 PM",
+        "NCAAF",
+        "Tennessee Volunteers +5.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "BuzzKill (TheRX newsletters thread)"
+      ],
+      [
+        "2 Oct 08:22 PM",
+        "NCAAF",
+        "Georgia Southern Eagles -2",
+        "not shown",
+        "Won",
+        "+0.91",
+        "BuzzKill (TheRX newsletters thread)"
+      ],
+      [
+        "2 Oct 08:22 PM",
+        "NCAAF",
+        "Louisiana Ragin' Cajuns -6",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "BuzzKill (TheRX newsletters thread)"
+      ],
+      [
+        "2 Oct 08:22 PM",
+        "NCAAF",
+        "USC Trojans -9.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "BuzzKill (TheRX newsletters thread)"
+      ],
+      [
+        "2 Oct 08:22 PM",
+        "NCAAF",
+        "Utah State Aggies +19",
+        "not shown",
+        "Push",
+        "+0.00",
+        "BuzzKill (TheRX newsletters thread)"
+      ],
+      [
+        "9 Oct 08:18 PM",
+        "NCAAF",
+        "Akron Zips +7",
+        "not shown",
+        "Won",
+        "+0.91",
+        "BuzzKill (TheRX newsletters thread)"
+      ],
+      [
+        "9 Oct 08:18 PM",
+        "NCAAF",
+        "Buffalo Bulls +21",
+        "not shown",
+        "Won",
+        "+0.91",
+        "BuzzKill (TheRX newsletters thread)"
+      ],
+      [
+        "9 Oct 08:18 PM",
+        "NFL",
+        "Pittsburgh Steelers -2.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "BuzzKill (TheRX newsletters thread)"
+      ],
+      [
+        "9 Oct 08:18 PM",
+        "NFL",
+        "Tennessee Titans +7.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "BuzzKill (TheRX newsletters thread)"
+      ],
+      [
+        "16 Oct 09:20 PM",
+        "NCAAF",
+        "Charlotte 49ers +21",
+        "not shown",
+        "Won",
+        "+0.91",
+        "BuzzKill (TheRX newsletters thread)"
+      ],
+      [
+        "16 Oct 09:20 PM",
+        "NCAAF",
+        "Kansas Jayhawks +4.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "BuzzKill (TheRX newsletters thread)"
+      ],
+      [
+        "16 Oct 09:20 PM",
+        "NCAAF",
+        "Michigan State Spartans +7",
+        "not shown",
+        "Won",
+        "+0.91",
+        "BuzzKill (TheRX newsletters thread)"
+      ],
+      [
+        "16 Oct 09:20 PM",
+        "NCAAF",
+        "Oregon State Beavers -18",
+        "not shown",
+        "Push",
+        "+0.00",
+        "BuzzKill (TheRX newsletters thread)"
+      ],
+      [
+        "16 Oct 09:20 PM",
+        "NCAAF",
+        "SMU Mustangs -9.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "BuzzKill (TheRX newsletters thread)"
+      ],
+      [
+        "16 Oct 09:20 PM",
+        "NCAAF",
+        "San José State Spartans -6.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "BuzzKill (TheRX newsletters thread)"
+      ],
+      [
+        "31 Oct 09:27 AM",
+        "NCAAF",
+        "Northern Illinois Huskies +24",
+        "not shown",
+        "Won",
+        "+0.91",
+        "cpawsports"
+      ],
+      [
+        "31 Oct 09:27 AM",
+        "NCAAF",
+        "Nebraska Cornhuskers -7",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "cpawsports"
+      ],
+      [
+        "31 Oct 09:27 AM",
+        "NCAAF",
+        "San Diego State Aztecs -2.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "cpawsports"
+      ]
+    ]
+  }
 }

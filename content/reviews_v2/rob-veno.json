@@ -5,7 +5,7 @@
   "kind": "Single handicapper on a pick marketplace",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Rob Veno Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Rob Veno review, checked 20 Nov 2026: WagerTalk passes from $39 to $1,999, the credit guarantee, his unit runs checked and what buyers say.",
   "h1": "Rob Veno review",
@@ -46,6 +46,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "1 plays posted before the start, 20 Sep 2026 to 20 Sep 2026: 1 won, 0 lost, +0.91 units"
     ]
   ],
   "short_answer": [
@@ -153,6 +157,9 @@
     "The bio says he was invited to the Stardust Invitational in 1996 and 2004 and the Sunset Station Invitational in 2000, and that his 1990s newsletter was carried by over 30 sportsbooks and the Gambler's Book Club. We did not find outside records to check these."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Rob Veno does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Rob Veno most often were BuzzKill (TheRX newsletters thread), WagerTalkPicks, EZMSports, Skidsteer. From 20 Sep 2026 to 20 Sep 2026 we took every play our parser could read inside a Rob Veno block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 1 plays, 1 won, 0 lost, +0.91 units, a return of +90.9% per unit risked. By sport: too few per sport to split. By month: September 1 won, 0 lost, +0.91 units.",
+    "What it means: 1 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
     "What a buyer can verify independently: very little. We found no full, time stamped log of every Rob Veno pick kept by a third party, no contest results we could open, and no court or regulator record about him.",
     "What the seller publishes: a Last 20 table, a Hot Streaks box and Who's Hot leaderboards, all graded by WagerTalk, the company that sells the picks. On 20 Nov 2026 the Last 20 table showed 16 wins and 4 losses for 15 to 19 Nov. The all sports Who's Hot board ranked him first over 30 days at 87-66-2 and +$4,500 at $100 a play, and second over 3 days at 9-3. The NFL board showed him 16-8 over 30 days and 5-1 over 7 days, and the college basketball board 5-1 over 3 days.",
     "One outside tracker: SportsHub, a pick tracking site that says it takes no sportsbook advertising, logs the free picks he posts on WagerTalk. On 20 Nov 2026 it showed 6 wins and 0 losses over the last 30 days (+$600 at $100 a pick), across college football, college basketball, the NBA, the WNBA and the CFL. Six free picks is far too few to judge anything, and free picks are not the paid card.",
@@ -250,6 +257,10 @@
     [
       "Is Rob Veno legit?",
       "He is a real, active WagerTalk handicapper with published prices, free picks and a company address behind the sales, and a long history on Las Vegas betting radio. We could not verify that his picks win over time, because the only full figures on show are graded by WagerTalk itself, and we found no court or regulator action involving him."
+    ],
+    [
+      "What does the Watchdog sample of Rob Veno show?",
+      "We graded 1 of their plays that were posted publicly before the game started, 20 Sep 2026 to 20 Sep 2026: 1 won, 0 lost, +0.91 units at one unit each. That is too few plays to judge."
     ],
     [
       "Who is Rob Veno?",

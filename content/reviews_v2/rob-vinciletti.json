@@ -5,7 +5,7 @@
   "kind": "All sports pick seller sold through two reseller networks, with no store of his own that we found",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Rob Vinciletti Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Rob Vinciletti review, checked 20 Nov 2026: prices from $25 to $1,699.99 on two networks, credit only guarantees, a moving profile record and what bettors post.",
   "h1": "Rob Vinciletti review",
@@ -46,6 +46,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "7 plays posted before the start, 20 Sep 2026 to 24 Oct 2026: 3 won, 4 lost, -1.27 units"
     ]
   ],
   "short_answer": [
@@ -204,6 +208,9 @@
     "Every title and ranking we saw is measured inside the network that sells the picks. None names an outside contest or an independent grader. The claims also shift from page to page: StatSalt says \"The Network Since 2007\"; a compensated review on RideTheHotHand says he has been \"handicapping and betting for 25 years\"; Capper Picks calls him \"2022/2016 WORLD CHAMPION\" while StatSalt calls him the \"2022 MLB WORLD CHAMPION\"."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Rob Vinciletti does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Rob Vinciletti most often were TheGodOfCappers, EZMSports, PicksParlays, 1218Sports. From 20 Sep 2026 to 24 Oct 2026 we took every play our parser could read inside a Rob Vinciletti block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 7 plays, 3 won, 4 lost, -1.27 units, a return of -18.2% per unit risked. By sport: NCAAF 2 won, 2 lost, -0.18 units. By month: September 1 won, 1 lost, -0.09 units; October 2 won, 3 lost, -1.18 units.",
+    "What it means: 7 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
     "What a buyer can verify independently: nothing that we could find. We found no full, time stamped log of every Rob Vinciletti pick with the line, the odds and the release time, and no outside contest results we could open.",
     "What the networks publish: StatSalt, Winners and Whiners and Picks and Parlays show 74 wins, 50 losses and 2 pushes, plus 59.75 units, with no date range, and that total moves as old plays drop out. Boyd's Bets carries an all sports streak of 879 wins and 703 losses since May 2015, about 56%, and a 30 day ranking of 81 and 57. Capper Picks and Capper Reviews show the previous day's plays with wins and losses; on 20 Nov that was two wins and two losses.",
     "On TheRX, a Golden Contender account has posted free picks and package offers in a seller run thread since 2 Mar 2009. It runs to 233 pages. The pages we read from 2009, 2015 and 2023 to 2024 hold seller posts only, apart from one short thank you reply in August 2024. RideTheHotHand, a paid review site, adds older claims such as top 10 finishes in 2008 and 2010 and 56% in the NFL since 2009, without a source."
@@ -329,6 +336,10 @@
       "He is a real, long running seller whose packages are on sale through the SportsCapping and Winners and Whiners networks, and he has posted under the Golden Contender name on TheRX since 2009. We could not verify that his picks win over time, because no full record is published, and we found no court or regulator action involving him."
     ],
     [
+      "What does the Watchdog sample of Rob Vinciletti show?",
+      "We graded 7 of their plays that were posted publicly before the game started, 20 Sep 2026 to 24 Oct 2026: 3 won, 4 lost, -1.27 units at one unit each. That is too few plays to judge."
+    ],
+    [
       "How much does Rob Vinciletti cost?",
       "On 20 Nov 2026 Capper Picks listed single plays at $29.99 and $49.99 and subscriptions from $69.99 for a day to $1,699.99 for a year of all sports. Winners and Whiners sold $49 three day passes, a seven day package at $99, a month at $299 and an All Access pass through the end of 2026 for $299."
     ],
@@ -433,5 +444,82 @@
       "accessed": "20 Nov 2026"
     }
   ],
-  "pricing_source": 0
+  "pricing_source": 0,
+  "record_table": {
+    "caption": "Every Rob Vinciletti play in the Watchdog sample, 20 Sep 2026 to 24 Oct 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "20 Sep 06:37 AM",
+        "NFL",
+        "Atlanta Falcons +3",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EZMSports"
+      ],
+      [
+        "24 Sep 08:37 AM",
+        "NCAAF",
+        "Liberty Flames -2.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ],
+      [
+        "21 Oct 11:07 AM",
+        "UCL",
+        "Bayern Munich ML",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ],
+      [
+        "21 Oct 11:07 AM",
+        "NCAAF",
+        "New Mexico State Aggies ML",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ],
+      [
+        "21 Oct 11:07 AM",
+        "NBA",
+        "Atlanta Hawks +3.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ],
+      [
+        "23 Oct 08:16 AM",
+        "NCAAF",
+        "Tulsa Golden Hurricane -2",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ],
+      [
+        "23 Oct 09:28 PM",
+        "NCAAF",
+        "BYU Cougars -7.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ]
+    ]
+  }
 }

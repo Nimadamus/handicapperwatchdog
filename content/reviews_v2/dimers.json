@@ -5,7 +5,7 @@
   "kind": "Betting data and picks site with a paid subscription",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Dimers Review 2026: Pro Prices, Refunds, Record Claims",
   "description": "Dimers review, checked 20 Nov 2026: Black Friday and regular Pro prices, no refund terms, Platinum results recounted, and what bettors say.",
   "h1": "Dimers review",
@@ -46,6 +46,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "None found in a search of about 1.37 million captured posts (22 Nov 2026)"
     ]
   ],
   "short_answer": [
@@ -145,6 +149,7 @@
     "The \"15 Years building betting models\" badge runs ahead of the company history. Dimers launched in August 2020; Wikipedia says one of the two founding firms, Hypometer Technologies, was established in 2015, which is about 11 years. The \"10M+\" user figure may count website visitors, but the Android app shows 5K+ downloads and the iPhone app 236 ratings, so most users are not paying app subscribers."
   ],
   "record": [
+    "Watchdog search, 22 Nov 2026: we searched about 1.37 million captured public posts from X, Reddit, Covers, TheRX and other forums for Dimers plays that were posted or reposted before a game started. We found 27 posts naming Dimers, but none carried a play we could match to a game and grade.",
     "For Dimers Pro, the main product, we found no full public record of every pick with the date, the line, the odds and the result. On 20 Nov 2026 the best bets page showed 250 current bets, said \"Unlock 247 more bets with up to an 18% edge\", and showed no past results. It describes a \"Sweet Spot\" signal that \"tracks markets and edge ranges that are producing ROI\" without saying what that ROI is, and adds that \"A positive edge describes the price, and any single bet can lose.\"",
     "The separate Platinum product has the results page recounted above: 315 picks over the 2024 and 2025 college football seasons, each with a team, a mostly first quarter spread and a win or loss mark, but no dates and no odds.",
     "Outside grading is scattered. One independent consensus site, DailyOverlay, includes a \"Dimers Model\" among the sources it grades day by day at the posted line, for example 9-4 for +4.36 units on NBA picks on 2 Nov 2026. We found only single day recaps there, not a season total, and a few good days say nothing about the long run."

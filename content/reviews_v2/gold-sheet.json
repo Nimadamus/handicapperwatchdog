@@ -5,14 +5,14 @@
   "kind": "Football and basketball betting newsletter, plus a picks service sold on WagerTalk",
   "checked": "17 Nov 2026",
   "checked_iso": "2026-11-17",
-  "updated_iso": "2026-11-17",
+  "updated_iso": "2026-11-22",
   "title": "The Gold Sheet Review 2026: Pricing, Record, Is It Worth It?",
   "description": "The Gold Sheet review, checked 17 Nov 2026: newsletter and pick prices on WagerTalk, the credit only guarantee, the Last 20 record and what bettors say.",
   "h1": "The Gold Sheet review",
   "dek": "A betting newsletter that says it dates to 1957, now sold only through WagerTalk. The football paper costs $79 a season or $19 an issue, separate LTS picks run $5 to $38 a play and passes go up to $1,999 a year. The only public pick record is WagerTalk's own Last 20 list, and a forum member's tally of this season's newsletter Key Releases is under 50%.",
   "status": {
-    "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record for The Gold Sheet. This page reports what we could check and labels everything else."
+    "label": "Partly graded",
+    "note": "The Gold Sheet publishes no complete log we can audit. Watchdog graded 25 of their plays that were posted publicly before the game started. This is a sample, not a full record."
   },
   "glance": [
     [
@@ -42,6 +42,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "25 plays posted before the start, 19 Sep 2026 to 21 Nov 2026: 16 won, 9 lost, +5.19 units"
     ]
   ],
   "short_answer": [
@@ -159,13 +163,16 @@
     "The ads quote records over windows that change from ad to ad (last 13, last 77, last 145, last 185, since October, since last September). Picking the window after the fact is a common way to make a record look better. Ask for the full log instead."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. The Gold Sheet does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming The Gold Sheet most often were BuzzKill (TheRX newsletters thread), jillmark, WagerTalkPicks, 1218Sports. From 19 Sep 2026 to 21 Nov 2026 we took every play our parser could read inside a The Gold Sheet block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 25 plays, 16 won, 9 lost, +5.19 units, a return of +20.7% per unit risked. By sport: NCAAF 12 won, 8 lost, +2.87 units; NBA 2 won, 1 lost, +0.50 units. By month: September 3 won, 0 lost, +2.73 units; October 8 won, 5 lost, +2.23 units; November 5 won, 4 lost, +0.22 units.",
+    "What it means: a 64% win rate on 25 decided plays has a 95% range of about 45% to 80%, and at the prices in this sample a bettor needed about 53% to break even. That range includes break even, so this sample cannot show whether they win or lose over time. The sample covers only the plays that others chose to post, which is not the full card a subscriber receives, and stakes are counted flat even where the seller rates plays differently.",
     "What is independently verifiable: nothing complete. We found no third party log of every LTS pick, no contest standings and no regulator or court record in our searches. The closest thing is a member of TheRX forum who grades many newsletters each week at the line printed in the paper, not the closing line. On 9 Nov 2026 that tally had The Gold Sheet's Key Releases at 17-27 in college football and 21-20-1 in the NFL, a combined 38-47-1 (44.7%). It had college Tech Plays at 5-6-1, NFL Tech Plays at 7-2, and Priority Picks at 2-4 (college) and 3-1 (NFL). The same tally listed last season's college Tech Plays at 14-3 among its best records. We did not check these numbers against the papers.",
     "What the seller itself publishes: WagerTalk's Last 20 list for GoldSheet showed date, sport, pick, price and result for 20 plays from 11 to 16 Nov 2026. We counted 12 wins and 8 losses (60%): 8-3 in football (6-0 college, 2-3 NFL) and 4-5 in basketball. Risking one unit on every play at the listed prices, our count comes to about +1.94 units. The page says +12.23 units, so plays must be sized differently, but the list does not say how. The same list shows the losses, which is more than many sellers show.",
     "WagerTalk is both the store and the scorekeeper for these picks, so every number above except the forum tally comes from the company that sells them."
   ],
   "our_data": {
-    "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Gold Sheet pick is matched to a Watchdog graded record, so we make no claim about how Gold Sheet performs.",
+    "matched": true,
+    "text": "Watchdog graded 25 The Gold Sheet plays posted before the start, 19 Sep 2026 to 21 Nov 2026: 16 won, 9 lost, +5.19 units at one unit each. A sample of what was posted publicly, not a full record.",
     "context": "For scale: on the Watchdog board on 17 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
   "customers_intro": "Most of what we found is forum talk among long time newsletter readers on Sportsbook Review, Covers and TheRX, plus a forum member's weekly tally. We found no review site sample we could count, and our Reddit search was partial because the archive we use kept timing out.",
@@ -282,6 +289,10 @@
     [
       "Is The Gold Sheet legit?",
       "It is a real, long running newsletter, founded in 1957 according to WagerTalk and a 2019 press release, and now sold by WagerTalk Media. That makes it a legitimate business. Whether its picks win over time is not shown: the only record we could open is WagerTalk's own Last 20 list."
+    ],
+    [
+      "What does the Watchdog sample of The Gold Sheet show?",
+      "We graded 25 of their plays that were posted publicly before the game started, 19 Sep 2026 to 21 Nov 2026: 16 won, 9 lost, +5.19 units at one unit each. The 95% range of the win rate is about 45% to 80%, against about 53% needed to break even."
     ],
     [
       "How much does The Gold Sheet cost?",
@@ -403,5 +414,244 @@
       "accessed": "17 Nov 2026"
     }
   ],
-  "pricing_source": 1
+  "pricing_source": 1,
+  "record_table": {
+    "caption": "Every The Gold Sheet play in the Watchdog sample, 19 Sep 2026 to 21 Nov 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "19 Sep 09:48 AM",
+        "NCAAF",
+        "Marshall Thundering Herd -4.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "19 Sep 09:48 AM",
+        "NCAAF",
+        "Over 59.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "20 Sep 06:37 AM",
+        "NFL",
+        "Carolina Panthers -2.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "2 Oct 10:21 PM",
+        "NCAAF",
+        "Under 46.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "2 Oct 10:21 PM",
+        "NCAAF",
+        "Louisiana Ragin' Cajuns -6.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EZMSports"
+      ],
+      [
+        "23 Oct 11:49 AM",
+        "NCAAF",
+        "Arizona Wildcats -9.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "dough"
+      ],
+      [
+        "23 Oct 08:53 PM",
+        "NCAAF",
+        "Miami Hurricanes -19.5",
+        "-115",
+        "Won",
+        "+0.87",
+        "ryangenero"
+      ],
+      [
+        "23 Oct 09:30 PM",
+        "NCAAF",
+        "Arkansas State Red Wolves +2",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ],
+      [
+        "24 Oct 08:12 AM",
+        "NCAAF",
+        "Under 50.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "25 Oct 08:17 AM",
+        "NFL",
+        "Miami Dolphins +5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "29 Oct 10:29 PM",
+        "NCAAF",
+        "4%   PROP pick  Kent State TEAM Total Over 27.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "ryangenero"
+      ],
+      [
+        "30 Oct 08:08 AM",
+        "NCAAF",
+        "Pittsburgh Panthers -7.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "ziggym97"
+      ],
+      [
+        "30 Oct 03:17 PM",
+        "NBA",
+        "Washington Wizards -1",
+        "not shown",
+        "Won",
+        "+0.91",
+        "cpawsports"
+      ],
+      [
+        "30 Oct 03:17 PM",
+        "NBA",
+        "Over 222",
+        "-110",
+        "Lost",
+        "-1.00",
+        "cpawsports"
+      ],
+      [
+        "31 Oct 06:19 AM",
+        "NCAAF",
+        "Nevada Wolf Pack +22.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ],
+      [
+        "31 Oct 06:19 AM",
+        "NCAAF",
+        "Washington State Cougars +2.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ],
+      [
+        "3 Nov 10:13 AM",
+        "NCAAF",
+        "Buffalo Bulls +6.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "wildbillpicks"
+      ],
+      [
+        "3 Nov 10:13 AM",
+        "NCAAF",
+        "Akron Zips +7.5 (1h)",
+        "not shown",
+        "Won",
+        "+0.91",
+        "wildbillpicks"
+      ],
+      [
+        "7 Nov 06:49 AM",
+        "NCAAF",
+        "UConn Huskies +10",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "vegassahara"
+      ],
+      [
+        "10 Nov 08:39 AM",
+        "NCAAF",
+        "Ohio Bobcats -1.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "wildbillpicks"
+      ],
+      [
+        "10 Nov 08:39 AM",
+        "NCAAF",
+        "Under 44.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "wildbillpicks"
+      ],
+      [
+        "10 Nov 08:39 AM",
+        "NCAAF",
+        "Western Michigan Broncos -14",
+        "not shown",
+        "Won",
+        "+0.91",
+        "wildbillpicks"
+      ],
+      [
+        "11 Nov 12:25 PM",
+        "NBA",
+        "Denver Nuggets ML",
+        "-170",
+        "Won",
+        "+0.59",
+        "1218Sports"
+      ],
+      [
+        "14 Nov 06:50 AM",
+        "NCAAF",
+        "Washington State Cougars -8.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "Thecappershub"
+      ],
+      [
+        "21 Nov 03:08 PM",
+        "NCAAF",
+        "Over 56",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "1218Sports"
+      ]
+    ]
+  }
 }

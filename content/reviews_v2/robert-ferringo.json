@@ -5,7 +5,7 @@
   "kind": "Handicapper selling picks through Doc's Sports",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Robert Ferringo Review 2026: Pricing, Record, Worth It?",
   "description": "Robert Ferringo review, checked 20 Nov 2026: Doc's Sports prices, the credit guarantee, his own posted logs recounted, and what buyers say.",
   "h1": "Robert Ferringo review",
@@ -42,6 +42,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "4 plays posted before the start, 16 Oct 2026 to 21 Nov 2026: 3 won, 0 lost, 1 push, +2.73 units"
     ]
   ],
   "short_answer": [
@@ -146,6 +150,9 @@
     "Other numbers do not hold together across copies of his own page. The bankroll paragraph, first written around 2014, still says \"now\" in 2026 and promises over $100,000 from $10,000 in under four years, while his own 2014 article said the same bettor would have \"nearly $57,000\". In August 2025 the header said \"11 OF 16 WINNING FB YRS\"; today it says \"11 OF 17\", so by the seller's own count the 2025 football season was not a winning one. The same check on hockey is consistent: \"11 OF 16\" in March 2026 became \"12 OF 17\", which fits the winning 2025 to 2026 hockey season in the log. College basketball is not consistent: the bio said \"13 of 17\" in August 2025 and March 2026 and says \"15 of 20\" now, while the header says \"14 OF 20\". The season special page still gives his top rated college basketball record as 599-398 where his page says 588-392, and puts last season's closing run at +7,910 where his page says +6,780."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Robert Ferringo does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Robert Ferringo most often were 1218Sports, BuzzKill (TheRX newsletters thread), Hottie4Sports, TheGodOfCappers. From 16 Oct 2026 to 21 Nov 2026 we took every play our parser could read inside a Robert Ferringo block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 4 plays, 3 won, 0 lost, 1 push, +2.73 units, a return of +68.2% per unit risked. By sport: NCAAF 3 won, 0 lost, +2.73 units. By month: October 2 won, 0 lost, 1 push, +1.82 units; November 1 won, 0 lost, +0.91 units.",
+    "What it means: 3 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
     "What a buyer can verify independently: nothing that covers his full history. We found no full, time stamped log of every Ferringo pick held by a third party, no outside monitor record and no contest results run by an outside organizer. Our searches found no court or regulator action involving him.",
     "What the seller publishes: runs, subsets and counts of winning seasons on his page, plus a few linked logs for date ranges Doc's chose. The logs show the pick, the result, the units and the dollar result, but no odds column for most picks, no post time and no proof of when each pick was released. The Doc's FAQ says it grades with \"the line that is the general consensus at the time of posting\", which may not be the line a buyer actually gets.",
     "What the logs we recounted show: a volume service. One football day had 22 plays and another 27. Most plays are 1 or 2 units, and the result swings on a handful of 6 to 8 unit plays. A buyer who bets everything at a flat stake would see a very different record from the unit weighted totals on the page, and the hockey log shows that the small plays lost money over 16 months while the big ones carried the run.",
@@ -276,6 +283,10 @@
     [
       "Is Robert Ferringo legit?",
       "He is a real handicapper and longtime Doc's Sports writer who sells picks through a store with published prices and a named operator. We could not verify that his picks win over time. Doc's publishes only selected runs and a few linked logs, and two of the three logs we recounted came out lower than the advertised totals."
+    ],
+    [
+      "What does the Watchdog sample of Robert Ferringo show?",
+      "We graded 4 of their plays that were posted publicly before the game started, 16 Oct 2026 to 21 Nov 2026: 3 won, 0 lost, 1 push, +2.73 units at one unit each. That is too few plays to judge."
     ],
     [
       "How much does Robert Ferringo cost?",
@@ -422,5 +433,55 @@
       "accessed": "20 Nov 2026"
     }
   ],
-  "pricing_source": 0
+  "pricing_source": 0,
+  "record_table": {
+    "caption": "Every Robert Ferringo play in the Watchdog sample, 16 Oct 2026 to 21 Nov 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "16 Oct 03:11 PM",
+        "NCAAF",
+        "App State Mountaineers -1",
+        "not shown",
+        "Won",
+        "+0.91",
+        "Hottie4Sports"
+      ],
+      [
+        "18 Oct 09:03 AM",
+        "NFL",
+        "New England Patriots -7",
+        "not shown",
+        "Push",
+        "+0.00",
+        "EZMSports"
+      ],
+      [
+        "24 Oct 08:00 AM",
+        "NCAAF",
+        "South Carolina Gamecocks -2",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ],
+      [
+        "21 Nov 10:48 AM",
+        "NCAAF",
+        "Louisville Cardinals -13.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "YankeesRule"
+      ]
+    ]
+  }
 }

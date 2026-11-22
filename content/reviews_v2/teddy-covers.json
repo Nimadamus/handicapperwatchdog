@@ -5,7 +5,7 @@
   "kind": "Handicapper selling through StatSalt and WagerTalk",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Teddy Covers Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Teddy Covers review, checked 20 Nov 2026: picks from $35, passes to $1,999 a year, a store credit guarantee, and his streaks checked against his own Last 20.",
   "h1": "Teddy Covers review",
@@ -42,6 +42,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "6 plays posted before the start, 14 Sep 2026 to 24 Oct 2026: 3 won, 3 lost, -0.27 units"
     ]
   ],
   "short_answer": [
@@ -147,6 +151,9 @@
     "Package titles also change daily. On 20 Nov StatSalt advertised the 5% Big Ticket as \"75% YTD\" in the title, while the same page showed 2 wins and 3 losses in its five latest picks."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Teddy Covers does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Teddy Covers most often were WagerTalkPicks, BuzzKill (TheRX newsletters thread), TheGodOfCappers, EZMSports. From 14 Sep 2026 to 24 Oct 2026 we took every play our parser could read inside a Teddy Covers block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 6 plays, 3 won, 3 lost, -0.27 units, a return of -4.5% per unit risked. By sport: NFL 2 won, 2 lost, -0.18 units. By month: September 2 won, 2 lost, -0.18 units; October 1 won, 1 lost, -0.09 units.",
+    "What it means: 6 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
     "What is independently verifiable: nothing we found today. We found no full, time stamped log of every Teddy Covers pick kept by a third party, no published contest results, and no court or regulator records about his picks.",
     "What the seller publishes: a Last 20 list on WagerTalk with date, side, line, price and result (7-13 on 20 Nov 2026, 10-10 on 7 Nov), a shorter Latest Picks list on StatSalt with no price, and a Hot Streaks box. All are graded by Wager Talk Media, the company that sells his picks. A Reddit commenter in Dec 2025 alleged that WagerTalk's yesterday's plays list leaves out some client plays; we could not check that claim.",
     "Older outside tallies point both ways. On the Las Vegas Advisor forum in Nov 2010, one member posted his record as 378-342 (+5.70 units) for Feb to Dec 2009 and 433-345 (+69.75 units) for Jan to mid Nov 2010, while another posted losing football records for both years. In 2013 a Sportsbook Review member posted tallies he said he tracked for the 2012 to 2013 season showing losses in all four sports, and another tracked his free plays at 7 and 11. None cited a log we could check.",
@@ -279,6 +286,10 @@
       "Yes in the sense that Ted Sevransky is a real, long time Las Vegas bettor whose picks are sold by a named company with an address and written terms. We could not verify that his picks win over time, because no full record of every pick is published, and his own Last 20 list was 7 and 13 on 20 Nov 2026."
     ],
     [
+      "What does the Watchdog sample of Teddy Covers show?",
+      "We graded 6 of their plays that were posted publicly before the game started, 14 Sep 2026 to 24 Oct 2026: 3 won, 3 lost, -0.27 units at one unit each. That is too few plays to judge."
+    ],
+    [
       "Who is Teddy Covers?",
       "Teddy Covers is the selling name of Ted Sevransky, a University of Michigan graduate who says he moved to Las Vegas to bet full time in 1998. He was a central figure in the 2013 documentary Life on the Line and was interviewed by PBS NewsHour in 2015. He now sells picks and appears on shows for WagerTalk."
     ],
@@ -398,5 +409,73 @@
       "accessed": "20 Nov 2026"
     }
   ],
-  "pricing_source": 1
+  "pricing_source": 1,
+  "record_table": {
+    "caption": "Every Teddy Covers play in the Watchdog sample, 14 Sep 2026 to 24 Oct 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "14 Sep 12:05 PM",
+        "NFL",
+        "Denver Broncos +3",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "allcappersfreee"
+      ],
+      [
+        "20 Sep 06:39 AM",
+        "NFL",
+        "Cincinnati Bengals +2.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "20 Sep 06:39 AM",
+        "NFL",
+        "Over 46.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "20 Sep 06:39 AM",
+        "NFL",
+        "Green Bay Packers -2.5 (1h)",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EZMSports"
+      ],
+      [
+        "9 Oct 09:37 PM",
+        "NCAAF",
+        "Under 54.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ],
+      [
+        "24 Oct 05:03 AM",
+        "NCAAF",
+        "Indiana Hoosiers -7.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ]
+    ]
+  }
 }

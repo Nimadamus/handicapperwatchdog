@@ -5,7 +5,7 @@
   "kind": "Individual handicapper sold through the WagerTalk store",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Bryan Leonard Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Bryan Leonard review, checked 20 Nov 2026: WagerTalk prices from $39 to $1,999, a store credit guarantee, contest history we confirmed and what bettors say.",
   "h1": "Bryan Leonard review",
@@ -42,6 +42,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "6 plays posted before the start, 15 Sep 2026 to 1 Oct 2026: 5 won, 1 lost, +3.33 units"
     ]
   ],
   "short_answer": [
@@ -142,6 +146,9 @@
     "An older BetFirm profile, now marked \"Capper not found,\" described him as running Bryan Leonard Sports for 31 years and gave a 32 and 17 NFL run since late 2014 (65.3%). It is another seller page, not an audit, and it is old."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Bryan Leonard does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Bryan Leonard most often were BuzzKill (TheRX newsletters thread), 1218Sports, WagerTalkPicks, TheGodOfCappers. From 15 Sep 2026 to 1 Oct 2026 we took every play our parser could read inside a Bryan Leonard block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 6 plays, 5 won, 1 lost, +3.33 units, a return of +55.4% per unit risked. By sport: too few per sport to split. By month: September 4 won, 1 lost, +2.64 units; October 1 won, 0 lost, +0.69 units.",
+    "What it means: 6 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
     "What a buyer can verify independently: his contest appearances in the 2000s, through Daily Racing Form reports. For his paid picks we found no full, time stamped log of every play with the line, the odds and the release time, and no court or regulator record about him.",
     "What the seller publishes: WagerTalk lists his last 20 graded picks with odds and a result. On 20 Nov 2026 those 20 picks, from 15 to 19 Nov, went 9 wins and 11 losses: 3 and 5 in the NHL, 5 and 4 in college basketball, 1 and 1 in the NBA and 0 and 1 in the NFL. Three days earlier the same list read 11 and 9. The Who's Hot board showed him at 11 and 8 over the last 7 days and 22 and 14 over the last 30 days in college basketball. These are graded by the store that sells the picks, so they are marketing, not an audit.",
     "His plays are copied by users into forum threads, but nobody we found keeps a long running independent tally."
@@ -228,6 +235,10 @@
     [
       "Is Bryan Leonard legit?",
       "He is a real handicapper with a long career, sold through WagerTalk, which publishes terms and a Las Vegas address, and news reports confirm his contest play in Las Vegas in the 2000s. We could not verify that his paid picks win over time, because no full record of every pick is public, and we found no court or regulator action involving him."
+    ],
+    [
+      "What does the Watchdog sample of Bryan Leonard show?",
+      "We graded 6 of their plays that were posted publicly before the game started, 15 Sep 2026 to 1 Oct 2026: 5 won, 1 lost, +3.33 units at one unit each. That is too few plays to judge."
     ],
     [
       "How much does Bryan Leonard cost?",
@@ -334,5 +345,73 @@
       "accessed": "20 Nov 2026"
     }
   ],
-  "pricing_source": 0
+  "pricing_source": 0,
+  "record_table": {
+    "caption": "Every Bryan Leonard play in the Watchdog sample, 15 Sep 2026 to 1 Oct 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "15 Sep 01:43 PM",
+        "MLB",
+        "4% Rockies TT o4.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EDMrager"
+      ],
+      [
+        "18 Sep 09:27 AM",
+        "NCAAF",
+        "Wake Forest Demon Deacons +20.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EDMrager"
+      ],
+      [
+        "19 Sep 09:45 AM",
+        "NCAAF",
+        "USC Trojans ML",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "24 Sep 10:25 AM",
+        "MLB",
+        "Milwaukee Brewers ML",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ],
+      [
+        "27 Sep 08:09 AM",
+        "NFL",
+        "New York Jets +6.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "1218Sports"
+      ],
+      [
+        "1 Oct 02:01 PM",
+        "NHL",
+        "Minnesota Wild ML",
+        "-145",
+        "Won",
+        "+0.69",
+        "MGMan"
+      ]
+    ]
+  }
 }

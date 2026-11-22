@@ -5,7 +5,7 @@
   "kind": "Handicapper and self described sports betting consultant",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Vegas Dave Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Vegas Dave review, checked 20 Nov 2026: no public price page, no verified record, his own claims tested, buyer posts, and his 2026 court warrants.",
   "h1": "Vegas Dave review",
@@ -50,6 +50,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "1 plays posted before the start, 6 Nov 2026 to 6 Nov 2026: 1 won, 0 lost, +0.91 units"
     ]
   ],
   "short_answer": [
@@ -146,6 +150,9 @@
     "His famous wins, such as the 2015 Kansas City Royals World Series future that Larry Brown Sports said won him around $2.5 million, are big single bets. A few huge tickets do not show that a stream of paid picks wins over time."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Vegas Dave does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Vegas Dave most often were kyhawk, stevenash, CobyValentine24, BeatinTheBookie. From 6 Nov 2026 to 6 Nov 2026 we took every play our parser could read inside a Vegas Dave block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 1 plays, 1 won, 0 lost, +0.91 units, a return of +90.9% per unit risked. By sport: too few per sport to split. By month: November 1 won, 0 lost, +0.91 units.",
+    "What it means: 1 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
     "What a buyer can verify independently about his picks: nothing we could find. He does not publish a full, time stamped log of every pick with the line, the odds and the release time, and his old sales site no longer loads. Casino.org wrote in Dec 2024 that he \"rarely shows evidence\" of his own success rate. Everything else is his own marketing.",
     "Court record, federal case: the U.S. Attorney's Office for Nevada announced on 14 Apr 2017 that a grand jury had indicted him on nine counts of misuse of Social Security numbers and 10 counts of causing false currency transaction reports, alleging he opened casino player accounts with numbers that were not his. He pleaded not guilty at his arraignment, the Review-Journal reported. The Review-Journal reported in Jan 2019 that he pleaded guilty to a single misdemeanor and agreed to a $550,000 civil forfeiture, and in May 2019 that U.S. District Judge Jennifer Dorsey sentenced him to three years of probation, problem gambling counseling and 150 hours of community service, and ordered him to stay out of Nevada sportsbooks for three years.",
     "Court record, civil case: the Review-Journal reported on 14 Nov 2025 that a district judge had ordered him in July 2025 to pay $30.2 million to Cabo Platinum, a vacation rental company in Cabo San Lucas that said he sabotaged bookings at villas tied to him. Casino.org reported on 21 Jul 2026 that, after a six day evidentiary hearing, District Judge Tara Clark Newberry held him in contempt, writing \"This court finds that Mr. Oancea was not a credible witness\" and calling his claimed inability to comply \"self-created, strategic\". He had been ordered in September 2025 to hand over three Mexican properties, about $375,000 in cryptocurrency, a Richard Mille watch and several Hermès Birkin bags, and court records showed he had not. He was also ordered to pay nearly $294,000 in attorney fees.",
@@ -290,6 +297,10 @@
     [
       "Is Vegas Dave legit?",
       "He is a real person with a registered business, Vegas Dave Consulting L.L.C., and he still markets picks on Instagram. We could not verify that his picks win. He pleaded guilty to a federal misdemeanor in 2019, and in 2026 a Nevada judge found him not a credible witness in a civil contempt case in which two bench warrants were later reported."
+    ],
+    [
+      "What does the Watchdog sample of Vegas Dave show?",
+      "We graded 1 of their plays that were posted publicly before the game started, 6 Nov 2026 to 6 Nov 2026: 1 won, 0 lost, +0.91 units at one unit each. That is too few plays to judge."
     ],
     [
       "How much does Vegas Dave cost?",

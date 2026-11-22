@@ -5,7 +5,7 @@
   "kind": "Handicapper marketplace",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "SportsCapping Review 2026: Pricing, Record, Is It Worth It?",
   "description": "SportsCapping review, checked 20 Nov 2026: a 76 handicapper pick marketplace, picks from $25 to $50, $199 Monthly Club, replacement guarantee, records checked.",
   "h1": "SportsCapping review",
@@ -42,6 +42,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "2 plays posted before the start, 20 Nov 2026 to 20 Nov 2026: 2 won, 0 lost, +1.83 units"
     ]
   ],
   "short_answer": [
@@ -138,6 +142,9 @@
     "Profit is shown in dollars on $100 bets. The pages we read did not say whether that figure is net of the price of the picks, which a buyer pays on top."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. SportsCapping does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming SportsCapping most often were betfirmsjack, EDMrager, mma-expert, TheGodOfCappers. From 20 Nov 2026 to 20 Nov 2026 we took every play our parser could read inside a SportsCapping block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 2 plays, 2 won, 0 lost, +1.83 units, a return of +91.3% per unit risked. By sport: too few per sport to split. By month: November 2 won, 0 lost, +1.83 units.",
+    "What it means: 2 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
     "What a buyer can verify independently: nothing we could find. We found no full, time stamped pick log kept by an outside party and no monitoring service result for the marketplace as a whole.",
     "What SportsCapping publishes: the FAQ says every pick is graded automatically against final scores and that a full history is on each handicapper profile. Its 2026 season board on 20 Nov 2026 listed 31 handicappers, every one of them in profit, with 34,488 picks between them. A board that shows only winners does not tell you how many of the 76 handicappers on the roster are behind.",
     "The same grading appears on other storefronts. BetFirm's leaderboard uses the SportsCapping \"Sc Score\" column and its buy buttons go to the SportsCapping cart with an affiliate code. CappersPicks sends account sign ups to SportsCapping with a referral code. PicksDepot, the sister site of OffshoreInsiders, shows a leaderboard whose top five rows matched SportsCapping's exactly on 20 Nov 2026. None of these is a second, independent check.",
@@ -253,6 +260,10 @@
     [
       "Is SportsCapping legit?",
       "It is a real marketplace that delivers the picks it sells, posts every price and names Boyd Information Group as the company behind it. We could not verify that its handicappers win over time, because every record is graded by SportsCapping itself."
+    ],
+    [
+      "What does the Watchdog sample of SportsCapping show?",
+      "We graded 2 of their plays that were posted publicly before the game started, 20 Nov 2026 to 20 Nov 2026: 2 won, 0 lost, +1.83 units at one unit each. That is too few plays to judge."
     ],
     [
       "How much does SportsCapping cost?",

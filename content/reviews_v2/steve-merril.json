@@ -5,7 +5,7 @@
   "kind": "Individual handicapper sold through the WagerTalk and StatSalt pick networks",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Steve Merril Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Steve Merril review, checked 20 Nov 2026: $39 days to a $1,999 year, no refunds, ranking claims recomputed, and what four Reddit buyers reported.",
   "h1": "Steve Merril review",
@@ -46,6 +46,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "8 plays posted before the start, 14 Sep 2026 to 23 Oct 2026: 6 won, 2 lost, +3.12 units"
     ]
   ],
   "short_answer": [
@@ -140,6 +144,9 @@
     "The last 20 results on WagerTalk, read on 20 Nov 2026, covered NFL, college football, NBA, college basketball and NHL plays from 7 to 18 Nov 2026. At the odds listed, the 8 wins returned about 7 units and the 11 losses cost 11 units. StatSalt showed only the latest five of those, 1 win and 4 losses."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Steve Merril does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Steve Merril most often were BuzzKill (TheRX newsletters thread), WagerTalkPicks, TheGodOfCappers, EZMSports. From 14 Sep 2026 to 23 Oct 2026 we took every play our parser could read inside a Steve Merril block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 8 plays, 6 won, 2 lost, +3.12 units, a return of +38.9% per unit risked. By sport: MLB 5 won, 2 lost, +2.21 units. By month: September 5 won, 2 lost, +2.21 units; October 1 won, 0 lost, +0.91 units.",
+    "What it means: 8 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
     "What a buyer can verify independently: nothing that we could find. We found no full, time stamped log of every Steve Merril pick with the line, the odds, the stake and the release time, and no third party tracking we could open.",
     "What the seller's network publishes: the last 20 graded picks on WagerTalk (8-11-1 on 20 Nov 2026), a shorter list on StatSalt, and a set of first place rankings and unit totals over chosen periods.",
     "A buyer on Reddit in February 2025 said the site only showed about a month of his past plays and asked if a separate tracker existed. Nobody answered.",
@@ -241,6 +248,10 @@
     [
       "Is Steve Merril legit?",
       "He is a real, long running handicapper whose picks are sold through WagerTalk and StatSalt, both run by Wager Talk Media, LP of Las Vegas. We could not verify that his picks win over time, because no full record is published, and three of the four Reddit buyers we found said a paid subscription lost money. We found no court or regulator action involving him."
+    ],
+    [
+      "What does the Watchdog sample of Steve Merril show?",
+      "We graded 8 of their plays that were posted publicly before the game started, 14 Sep 2026 to 23 Oct 2026: 6 won, 2 lost, +3.12 units at one unit each. That is too few plays to judge."
     ],
     [
       "Who is Steve Merril?",
@@ -362,5 +373,91 @@
       "accessed": "20 Nov 2026"
     }
   ],
-  "pricing_source": 11
+  "pricing_source": 11,
+  "record_table": {
+    "caption": "Every Steve Merril play in the Watchdog sample, 14 Sep 2026 to 23 Oct 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "14 Sep 11:11 AM",
+        "MLB",
+        "Los Angeles Dodgers -1.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "14 Sep 02:17 PM",
+        "MLB",
+        "St. Louis Cardinals ML",
+        "-142",
+        "Won",
+        "+0.70",
+        "ZIGGYBALLS13"
+      ],
+      [
+        "14 Sep 02:17 PM",
+        "MLB",
+        "Arizona Diamondbacks ML",
+        "-129",
+        "Won",
+        "+0.78",
+        "ZIGGYBALLS13"
+      ],
+      [
+        "14 Sep 02:17 PM",
+        "MLB",
+        "Colorado Rockies +2.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "ZIGGYBALLS13"
+      ],
+      [
+        "14 Sep 02:17 PM",
+        "MLB",
+        "Under 7",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "ZIGGYBALLS13"
+      ],
+      [
+        "17 Sep 09:19 AM",
+        "MLB",
+        "New York Mets ML",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EZMSports"
+      ],
+      [
+        "22 Sep 09:29 AM",
+        "MLB",
+        "Philadelphia Phillies ML",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "23 Oct 08:20 AM",
+        "NCAAF",
+        "Army Black Knights +1.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ]
+    ]
+  }
 }

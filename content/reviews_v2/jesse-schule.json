@@ -5,14 +5,14 @@
   "kind": "Individual handicapper sold through the WagerTalk network",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Jesse Schule Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Jesse Schule review, checked 20 Nov 2026: WagerTalk prices from $35, a credit only guarantee, claims we checked and what bettors report.",
   "h1": "Jesse Schule review",
   "dek": "A handicapper known as \"The Iceman\" who has sold picks online since at least 2014 and now sells only through WagerTalk and its sister stores. Passes run from $39 a day to $1,999 a year. The guarantee pays in site credit, and every big record on his page is graded by the network that sells him.",
   "status": {
-    "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Jesse Schule picks. This page reports what we could check on 20 Nov 2026 and labels everything else."
+    "label": "Partly graded",
+    "note": "Jesse Schule publishes no complete log we can audit. Watchdog graded 10 of their plays that were posted publicly before the game started. This is a sample, not a full record."
   },
   "glance": [
     [
@@ -42,6 +42,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "10 plays posted before the start, 14 Sep 2026 to 24 Oct 2026: 7 won, 3 lost, +3.30 units"
     ]
   ],
   "short_answer": [
@@ -146,14 +150,17 @@
     "Older review sites that praise him, such as RideTheHotHand and Boyd's Bets, repeat percentages without a full log. RideTheHotHand states it is \"compensated by some of the services that the handicappers work with\", and Boyd's Bets sells picks itself."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Jesse Schule does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Jesse Schule most often were WagerTalkPicks, TheGodOfCappers, EZMSports, EDMrager. From 14 Sep 2026 to 24 Oct 2026 we took every play our parser could read inside a Jesse Schule block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 10 plays, 7 won, 3 lost, +3.30 units, a return of +33.0% per unit risked. By sport: NFL 5 won, 2 lost, +2.48 units; NCAAF 2 won, 1 lost, +0.82 units. By month: September 5 won, 1 lost, +3.48 units; October 2 won, 2 lost, -0.18 units.",
+    "What it means: a 70% win rate on 10 decided plays has a 95% range of about 40% to 89%, and at the prices in this sample a bettor needed about 53% to break even. That range includes break even, so this sample cannot show whether they win or lose over time. The sample covers only the plays that others chose to post, which is not the full card a subscriber receives, and stakes are counted flat even where the seller rates plays differently.",
     "What a buyer can verify independently: very little. We found no full, time stamped log of every Jesse Schule pick kept by someone other than a seller, and no court or regulator record about him.",
     "What the seller publishes: the WagerTalk profile shows a Last 20 table. On 20 Nov 2026 it ran from 11 Nov to 19 Nov 2026 and, by our count, went 12 wins and 8 losses. We priced each play at the odds shown: risking one unit per play, the 20 plays came out about 1.74 units ahead; risking enough to win one unit per play, about 0.90 units ahead. On 16 Nov the same table showed 11 wins and 9 losses. These are graded by WagerTalk on the odds it records.",
     "Third party trackers show only fragments. SportsHub listed his last 30 days at 9-6, plus $134 and a 7.5% return on 15 graded picks, after showing 10-8 on 16 Nov. HiddenBag, a pick site that logs some capper plays, showed five graded Jesse Schule picks from February to June 2026, all losses (four NBA, one MLB), with many more marked cancelled. Neither explains how it captures picks, and both samples are far too small to judge him.",
     "Background: in 2014 SBC News interviewed him as a member of Bet Advisor, a tipster site, where he said his father was a professional poker player and that social media built his following from 2011. His YouTube channel describes him as \"AKA The Iceman\" and as a writer and analyst at Covers and Don Best; it had 875 subscribers on 20 Nov 2026. Saved copies of JesseSchule.com from 2016 and 2021 show a storefront selling his picks and those of dozens of other SportsCapping network handicappers, and SportsCapping's old page for him now says he \"is no longer actively selling picks on our site.\" Today he sells through WagerTalk, which was founded in July 2015, bought Sportsmemo in 2018, formed the parent company WagerTalk Media in 2020 and partnered with Picks and Parlays in 2025. His profile appears on WagerTalk, StatSalt and Picks and Parlays, all of which bill through Wager Talk Media, LP."
   ],
   "our_data": {
-    "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Jesse Schule pick history is matched to a Watchdog graded record, so we make no claim about how Jesse Schule performs.",
+    "matched": true,
+    "text": "Watchdog graded 10 Jesse Schule plays posted before the start, 14 Sep 2026 to 24 Oct 2026: 7 won, 3 lost, +3.30 units at one unit each. A sample of what was posted publicly, not a full record.",
     "context": "For scale: the records on his page run from about 57% to 80% winners. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
   "customers_intro": "Independent buyer evidence about Jesse Schule himself is close to nonexistent. Most of what exists is about WagerTalk in general, or comes from sites with a stake in selling picks. Below is everything we found and how much weight it can carry.",
@@ -240,6 +247,10 @@
     [
       "Is Jesse Schule legit?",
       "He is a real, active handicapper who has sold picks online since at least 2014 and now sells through WagerTalk at published prices. We could not verify that his picks win over time, because the only long records come from the network that sells them, and we found no court or regulator action involving him."
+    ],
+    [
+      "What does the Watchdog sample of Jesse Schule show?",
+      "We graded 10 of their plays that were posted publicly before the game started, 14 Sep 2026 to 24 Oct 2026: 7 won, 3 lost, +3.30 units at one unit each. The 95% range of the win rate is about 40% to 89%, against about 53% needed to break even."
     ],
     [
       "How much does Jesse Schule cost?",
@@ -396,5 +407,109 @@
       "accessed": "20 Nov 2026"
     }
   ],
-  "pricing_source": 0
+  "pricing_source": 0,
+  "record_table": {
+    "caption": "Every Jesse Schule play in the Watchdog sample, 14 Sep 2026 to 24 Oct 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "14 Sep 06:04 AM",
+        "NFL",
+        "Kansas City Chiefs -2.5",
+        "-118",
+        "Won",
+        "+0.85",
+        "EDMrager"
+      ],
+      [
+        "20 Sep 06:38 AM",
+        "NFL",
+        "Cowboys TT o27.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "20 Sep 06:38 AM",
+        "NFL",
+        "New York Jets +3.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "20 Sep 06:38 AM",
+        "NFL",
+        "Seattle Seahawks -3.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "20 Sep 06:38 AM",
+        "NFL",
+        "Seattle Seahawks ML",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "20 Sep 06:38 AM",
+        "NFL",
+        "Houston Texans ML",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EZMSports"
+      ],
+      [
+        "2 Oct 10:28 PM",
+        "NCAAF",
+        "Iowa Hawkeyes +14.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EZMSports"
+      ],
+      [
+        "11 Oct 05:27 AM",
+        "NFL",
+        "Las Vegas Raiders +3.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EZMSports"
+      ],
+      [
+        "24 Oct 05:02 AM",
+        "NCAAF",
+        "Michigan Wolverines +7.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ],
+      [
+        "24 Oct 05:02 AM",
+        "NCAAF",
+        "South Carolina Gamecocks ML",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ]
+    ]
+  }
 }

@@ -5,7 +5,7 @@
   "kind": "Professional bettor selling picks on WagerTalk and through a subscription app first sold as KrackWins, now branded The Hot Picks",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Bill Krackomberger Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Bill Krackomberger review, checked 20 Nov 2026: WagerTalk prices from $39, an app now branded The Hot Picks, store chosen streaks and buyer reports.",
   "h1": "Bill Krackomberger review",
@@ -42,6 +42,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "1 plays posted before the start, 1 Oct 2026 to 1 Oct 2026: 1 won, 0 lost, +0.80 units"
     ]
   ],
   "short_answer": [
@@ -153,6 +157,9 @@
     "In 2020 he publicly accused William Hill of delaying in game bets, which the book called \"absolutely outrageous.\" That, and his bans at some books, show he is an active bettor; it does not show how his paid picks perform."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Bill Krackomberger does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Bill Krackomberger most often were Hottie4Sports, EZMSports, EDMrager, TheGodOfCappers. From 1 Oct 2026 to 1 Oct 2026 we took every play our parser could read inside a Bill Krackomberger block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 1 plays, 1 won, 0 lost, +0.80 units, a return of +80.0% per unit risked. By sport: too few per sport to split. By month: October 1 won, 0 lost, +0.80 units.",
+    "What it means: 1 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
     "What a buyer can verify independently: nothing complete that we could find. We found no full, time stamped log of every pick he sold with the line and odds, kept by an outside party, and no court or regulator action about his pick service in what we could open.",
     "What WagerTalk shows: a Last 20 table, Hot Streaks and a Who's Hot board, all graded by the store that sells his picks. On 20 Nov 2026 the Last 20 was 10 and 10, mostly college basketball sides and NFL player props. The Who's Hot board listed him at 23-20-0 for $1,629 over the last 7 days in one table and 12-3-0 for $2,883 in another sport tab. On 16 Nov 2026 the same Last 20 table had shown 16 wins, 3 losses and 1 no play, which shows how fast a 20 play window swings.",
     "Forum users quoted different numbers: a TheRX post in Dec 2025 put his 2025 college football record at 70-56, while WagerTalk shows 91-69-2 for the 2025/26 college football season. The windows may differ, but neither is an audited log.",
@@ -282,6 +289,10 @@
     [
       "Is Bill Krackomberger legit?",
       "He is a real, well known professional bettor in Las Vegas who sells picks on WagerTalk and fronted the KrackWins app, now branded The Hot Picks. Prices are published. We could not verify that his paid picks win over time, because the records we saw are kept or chosen by the seller, and we found no court or regulator action involving his pick service."
+    ],
+    [
+      "What does the Watchdog sample of Bill Krackomberger show?",
+      "We graded 1 of their plays that were posted publicly before the game started, 1 Oct 2026 to 1 Oct 2026: 1 won, 0 lost, +0.80 units at one unit each. That is too few plays to judge."
     ],
     [
       "How much does Bill Krackomberger cost?",

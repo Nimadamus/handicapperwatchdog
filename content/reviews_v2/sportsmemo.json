@@ -5,7 +5,7 @@
   "kind": "Pick marketplace selling plays from a stable of paid handicappers",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "SportsMemo Review 2026: Pricing, Record, Is It Worth It?",
   "description": "SportsMemo review, checked 20 Nov 2026: $7 single plays, all sales final, its leaderboard and expert runs checked, and 17 years of buyer posts.",
   "h1": "SportsMemo review",
@@ -42,6 +42,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "1 plays posted before the start, 6 Oct 2026 to 6 Oct 2026: 0 won, 1 lost, -1.00 units"
     ]
   ],
   "short_answer": [
@@ -133,6 +137,9 @@
     "Several cards cite rankings on \"P&P + W&W\", meaning Picks and Parlays and Winners and Whiners. In August 2025 WagerTalk Media announced a partnership with both sites, so those rankings are not independent of SportsMemo."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. SportsMemo does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming SportsMemo most often were TheBuddah, AdamTriggerWT, tepicks. From 6 Oct 2026 to 6 Oct 2026 we took every play our parser could read inside a SportsMemo block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 1 plays, 0 won, 1 lost, -1.00 units, a return of -100.0% per unit risked. By sport: too few per sport to split. By month: October 0 won, 1 lost, -1.00 units.",
+    "What it means: 1 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
     "What a buyer can verify independently: nothing that we could find. We found no full, time stamped log of every SportsMemo pick with the line, odds and release time, and no third party audit.",
     "What the seller publishes: a profit leaderboard, expert cards and bios with selected runs, and a Yesterday's Plays page. When we opened Yesterday's Plays on 20 Nov 2026 it sent us to identity.wagertalk.com to log in, the same result as on 17 Nov.",
     "Older figures exist only as forum posts. In September and November 2009 an account posting as SportsMemo on the Las Vegas Advisor forum listed yearly newsletter records and multi year records for two handicappers, for example 268-210 (56.1%) on football for one of them from 2006 to September 2009. Those are the seller's own numbers and we could not check them.",
@@ -264,6 +271,10 @@
     [
       "Is SportsMemo legit?",
       "It is a real business founded in 2004, owned since 2018 by WagerTalk, with a named parent company, a Las Vegas address and written terms. We could not verify that its experts win over time, because the site does not publish a full, time stamped record of every pick, and we found no court or regulator action involving it."
+    ],
+    [
+      "What does the Watchdog sample of SportsMemo show?",
+      "We graded 1 of their plays that were posted publicly before the game started, 6 Oct 2026 to 6 Oct 2026: 0 won, 1 lost, -1.00 units at one unit each. That is too few plays to judge."
     ],
     [
       "Who owns SportsMemo?",

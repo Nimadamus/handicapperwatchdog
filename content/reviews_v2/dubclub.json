@@ -5,7 +5,7 @@
   "kind": "Marketplace where handicappers sell picks by subscription",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "DubClub Review 2026: Pricing, Record, Is It Worth It?",
   "description": "DubClub review, checked 20 Nov 2026: what clubs cost, the no refund rule, auto renewal complaints, how seller records can be hidden, and its own claims tested.",
   "h1": "DubClub review",
@@ -46,6 +46,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "None found in a search of about 1.37 million captured posts (22 Nov 2026)"
     ]
   ],
   "short_answer": [
@@ -149,6 +153,7 @@
     "Seller pages lean on streaks and nicknames. A unit total such as 1700U means little without the unit size, the prices taken and every losing run, and a claim like \"5+ year profitable bettor\" comes with no log at all on the club page we opened. The 8 and 46 Hotzone shows that a strongly positive unit total can come from a small number of long shot hits; a buyer who joined after the hits would need more of them to break even."
   ],
   "record": [
+    "Watchdog search, 22 Nov 2026: we searched about 1.37 million captured public posts from X, Reddit, Covers, TheRX and other forums for DubClub plays that were posted or reposted before a game started. We found none, so there is no Watchdog graded sample for this seller yet.",
     "What DubClub shows is controlled by the seller. The help center calls the Hotzone a \"highlight reel\" of where a seller is \"on fire,\" and a seller can switch it off so it disappears from the profile, Discover, leaderboards and share graphics. It only counts plays that include odds. In the app, sellers can mark a post as Recap or Info so it is not graded, and public play history shows \"when a capper chooses to share it.\" Free plays are graded automatically, with a form to report a wrong grade.",
     "The \"Third-Party Tracked\" badge means the seller added a link to a tracking page. DubClub's badge text says the partner \"tracks their performance on a third-party platform.\" We found no DubClub page saying it checks that the linked tracker holds every paid play, posted before the game. That part a buyer has to check personally. The Oct 2025 release presented tracking links and a \"Winner's Feed\" of winning plays as transparency features; a feed of winners is marketing, not a record.",
     "What would be independently verifiable: a third party log of every paid play with the line, the price and a time stamp before the game, covering the whole history rather than a chosen run. We found no court or regulator record about DubClub, no Better Business Bureau profile we could confirm, and no platform wide audited record of its sellers. Its terms send disputes to binding arbitration under Delaware law. Everything else on a club page, including streaks, unit totals and reviews, is the seller's own marketing."

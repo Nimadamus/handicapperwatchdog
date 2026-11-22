@@ -5,7 +5,7 @@
   "kind": "Single handicapper on a small pick site",
   "checked": "17 Nov 2026",
   "checked_iso": "2026-11-17",
-  "updated_iso": "2026-11-17",
+  "updated_iso": "2026-11-22",
   "title": "Paul Leiner Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Paul Leiner review, checked 17 Nov 2026: PlayersInsider prices from $29 to $1,599, free days guarantee, his record checked against his own page.",
   "h1": "Paul Leiner review",
@@ -46,6 +46,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "1 plays posted before the start, 13 Nov 2026 to 13 Nov 2026: 1 won, 0 lost, +0.91 units"
     ]
   ],
   "short_answer": [
@@ -148,6 +152,9 @@
     "To his credit, the page does post some losing figures: 42-44-1 on 3000* NBA plays and the losing months above. The 168 entry top play list and the 10 listed UFC plays, however, show wins only; the word loss does not appear anywhere on the page."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Paul Leiner does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Paul Leiner most often were 1218Sports, bmd1803, mma-expert, steelerfan. From 13 Nov 2026 to 13 Nov 2026 we took every play our parser could read inside a Paul Leiner block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 1 plays, 1 won, 0 lost, +0.91 units, a return of +90.9% per unit risked. By sport: too few per sport to split. By month: November 1 won, 0 lost, +0.91 units.",
+    "What it means: 1 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
     "What a buyer can verify independently: nothing that we could find. We found no full, time stamped log of his picks kept by a third party, no contest results, and no court or regulator record.",
     "What the seller publishes: totals by sport and star rating, a 168 entry list of winning top plays running from 4 Jan to 16 Nov 2026, monthly counts of winning days, and the day's free 100* play (on 17 Nov 2026, Over 44.5 in Kent State at Miami Ohio). The site does not say who grades these or how, and it shows no list of losing plays alongside the winners.",
     "The About page says the site's handicappers \"have been TRACKED and MONITORED for all plays,\" but names no tracking service and links to no outside record.",
@@ -228,6 +235,10 @@
     [
       "Is Paul Leiner legit?",
       "His page is real, long running and sells dated daily picks at posted prices. But the site that sells them names no company or address, says most of its handicappers' identities are protected, keeps every record itself, and we found no buyer posts about him either way. We also found no court or regulator action involving him."
+    ],
+    [
+      "What does the Watchdog sample of Paul Leiner show?",
+      "We graded 1 of their plays that were posted publicly before the game started, 13 Nov 2026 to 13 Nov 2026: 1 won, 0 lost, +0.91 units at one unit each. That is too few plays to judge."
     ],
     [
       "Who is Paul Leiner?",

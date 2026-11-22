@@ -5,14 +5,14 @@
   "kind": "Veteran internet handicapper selling picks and passes through the WagerTalk network",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Ben Burns Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Ben Burns review, checked 20 Nov 2026: WagerTalk prices, a credit only guarantee, #1 claims next to a 6-14 last 20, and what bettors say.",
   "h1": "Ben Burns review",
   "dek": "One of the first internet handicappers, selling picks to the public since 1998 and for years a top seller on Covers, now sold on WagerTalk. Single plays cost $25 and passes run to $1,999 a year. The guarantee pays in credit. His profile claims #1 records, while its own last 20 table read 6-14 on 20 Nov 2026, and the little bettor talk we found leans skeptical.",
   "status": {
-    "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Ben Burns picks. This page reports what we could check on 20 Nov 2026, including the figures WagerTalk and one outside tracker publish, and labels everything else."
+    "label": "Partly graded",
+    "note": "Ben Burns publishes no complete log we can audit. Watchdog graded 34 of their plays that were posted publicly before the game started. This is a sample, not a full record."
   },
   "glance": [
     [
@@ -46,6 +46,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "34 plays posted before the start, 14 Sep 2026 to 26 Oct 2026: 20 won, 14 lost, +3.17 units"
     ]
   ],
   "short_answer": [
@@ -146,6 +150,9 @@
     "The 2023 Gambling911 article that praises his NBA start links to his paid picks and carries sportsbook ads, and it does not show a pick log. We treat it as promotion, not proof."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Ben Burns does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Ben Burns most often were TheGodOfCappers, WagerTalkPicks, EZMSports, 1218Sports. From 14 Sep 2026 to 26 Oct 2026 we took every play our parser could read inside a Ben Burns block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 34 plays, 20 won, 14 lost, +3.17 units, a return of +9.3% per unit risked. By sport: MLB 6 won, 6 lost, -1.05 units; NCAAF 7 won, 4 lost, +2.22 units; NFL 5 won, 4 lost, +0.47 units. By month: September 18 won, 10 lost, +5.63 units; October 2 won, 4 lost, -2.46 units.",
+    "What it means: a 59% win rate on 34 decided plays has a 95% range of about 42% to 74%, and at the prices in this sample a bettor needed about 54% to break even. That range includes break even, so this sample cannot show whether they win or lose over time. The sample covers only the plays that others chose to post, which is not the full card a subscriber receives, and stakes are counted flat even where the seller rates plays differently.",
     "What a buyer can verify independently: very little. We found no full, time stamped log of every Ben Burns pick, no third party audit, and no court or regulator record about him.",
     "What the seller publishes: the WagerTalk profile shows headline #1 claims and a table of his last 20 plays. On 20 Nov 2026 that table covered 12 to 19 Nov and read 6 wins and 14 losses. He did not appear on any WagerTalk Who's Hot board that day. A single bad week means little, but it shows how far a short sample can sit from the headline claims.",
     "One outside tracker: SportsHub, which says it takes no sportsbook advertising, logs the free picks he posts on WagerTalk. On 20 Nov 2026 it showed 14 wins and 8 losses over the last 30 days, +$507 at $100 a pick and a 20.6% return. That is a better picture than the paid table, but it is free picks only and a small sample.",
@@ -153,8 +160,8 @@
     "Free plays posted on forums long ago give a flavor but not a record. In August 2006 Sportsbook Review staff posted one of his baseball unders, and the game went well over the total."
   ],
   "our_data": {
-    "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Ben Burns pick history is matched to a Watchdog graded record, so we make no claim about how Ben Burns performs.",
+    "matched": true,
+    "text": "Watchdog graded 34 Ben Burns plays posted before the start, 14 Sep 2026 to 26 Oct 2026: 20 won, 14 lost, +3.17 units at one unit each. A sample of what was posted publicly, not a full record.",
     "context": "For scale: his last 20 table on 20 Nov 2026 read 6-14, while his headlines claim #1 records. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
   "customers_intro": "We found almost no independent buyer reports about Ben Burns. Public talk is mostly bettors sharing, ranking or fading his plays. Below is everything we found and how much weight it can carry.",
@@ -262,6 +269,10 @@
     [
       "Is Ben Burns legit?",
       "He is a real, long known handicapper whose picks are sold through WagerTalk, a network with published prices and a Las Vegas address. We could not verify that his picks win over time, because no full record is published, and we found no court or regulator action involving him."
+    ],
+    [
+      "What does the Watchdog sample of Ben Burns show?",
+      "We graded 34 of their plays that were posted publicly before the game started, 14 Sep 2026 to 26 Oct 2026: 20 won, 14 lost, +3.17 units at one unit each. The 95% range of the win rate is about 42% to 74%, against about 54% needed to break even."
     ],
     [
       "Who is Ben Burns?",
@@ -388,5 +399,325 @@
       "accessed": "20 Nov 2026"
     }
   ],
-  "pricing_source": 0
+  "pricing_source": 0,
+  "record_table": {
+    "caption": "Every Ben Burns play in the Watchdog sample, 14 Sep 2026 to 26 Oct 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "14 Sep 10:07 AM",
+        "MLB",
+        "Under 4.5 (f5)",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EDMrager"
+      ],
+      [
+        "14 Sep 10:41 AM",
+        "MLB",
+        "San Diego Padres ML",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "14 Sep 01:23 PM",
+        "MLB",
+        "Texas Rangers ML",
+        "-142",
+        "Won",
+        "+0.70",
+        "cappers_daily"
+      ],
+      [
+        "15 Sep 08:44 AM",
+        "MLB",
+        "Cleveland Guardians ML",
+        "-125",
+        "Won",
+        "+0.80",
+        "EZMSports"
+      ],
+      [
+        "15 Sep 11:08 PM",
+        "MLB",
+        "Cleveland Guardians ML",
+        "-170",
+        "Won",
+        "+0.59",
+        "DeParlayKing001"
+      ],
+      [
+        "16 Sep 09:49 AM",
+        "MLB",
+        "Chicago Cubs ML",
+        "-132",
+        "Won",
+        "+0.76",
+        "allpicksarefree"
+      ],
+      [
+        "16 Sep 09:49 AM",
+        "MLB",
+        "Miami Marlins ML",
+        "+119",
+        "Won",
+        "+1.19",
+        "allpicksarefree"
+      ],
+      [
+        "17 Sep 05:28 AM",
+        "MLB",
+        "New York Mets ML (f5)",
+        "-145",
+        "Lost",
+        "-1.00",
+        "DeParlayKing001"
+      ],
+      [
+        "17 Sep 05:33 AM",
+        "NFL",
+        "Detroit Lions +4.5",
+        "-110",
+        "Lost",
+        "-1.00",
+        "EDMrager"
+      ],
+      [
+        "17 Sep 01:31 PM",
+        "NFL",
+        "Over 53.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "Cappers_Tracked"
+      ],
+      [
+        "18 Sep 07:12 AM",
+        "MLB",
+        "Toronto Blue Jays ML",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "ItsCappersPicks"
+      ],
+      [
+        "18 Sep 07:12 AM",
+        "NCAAF",
+        "Liberty Flames -14",
+        "not shown",
+        "Won",
+        "+0.91",
+        "ItsCappersPicks"
+      ],
+      [
+        "18 Sep 09:27 AM",
+        "NCAAF",
+        "Texas Tech Red Raiders -8.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EDMrager"
+      ],
+      [
+        "18 Sep 10:36 PM",
+        "NCAAF",
+        "Texas State Bobcats ML",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ],
+      [
+        "18 Sep 10:36 PM",
+        "NCAAF",
+        "Clemson Tigers -4.5",
+        "-115",
+        "Won",
+        "+0.87",
+        "TheGodOfCappers"
+      ],
+      [
+        "20 Sep 05:15 AM",
+        "NFL",
+        "Denver Broncos ML",
+        "not shown",
+        "Won",
+        "+0.91",
+        "DeParlayKing001"
+      ],
+      [
+        "20 Sep 05:15 AM",
+        "NFL",
+        "Under 21.5 (1h)",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "DeParlayKing001"
+      ],
+      [
+        "20 Sep 05:15 AM",
+        "MLB",
+        "Houston Astros ML",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "DeParlayKing001"
+      ],
+      [
+        "20 Sep 05:15 AM",
+        "NFL",
+        "Los Angeles Chargers -6.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "DeParlayKing001"
+      ],
+      [
+        "20 Sep 10:11 PM",
+        "NFL",
+        "Los Angeles Rams -6.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ],
+      [
+        "22 Sep 09:12 AM",
+        "MLB",
+        "Texas Rangers ML",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "cappers_daily"
+      ],
+      [
+        "22 Sep 04:06 PM",
+        "MLB",
+        "Anthony Molina over 4.5 hits allowed",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "parlaybaby002"
+      ],
+      [
+        "24 Sep 06:38 AM",
+        "NCAAF",
+        "Liberty Flames ML",
+        "-125",
+        "Won",
+        "+0.80",
+        "EDMrager"
+      ],
+      [
+        "25 Sep 09:39 AM",
+        "NCAAF",
+        "Army Black Knights ML",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ],
+      [
+        "26 Sep 07:35 AM",
+        "NCAAF",
+        "Arkansas Razorbacks -7",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EDMrager"
+      ],
+      [
+        "26 Sep 07:35 AM",
+        "NCAAF",
+        "Texas Tech Red Raiders -34",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EDMrager"
+      ],
+      [
+        "27 Sep 09:07 AM",
+        "NFL",
+        "Under 46.5",
+        "-115",
+        "Won",
+        "+0.87",
+        "EZMSports"
+      ],
+      [
+        "27 Sep 09:07 AM",
+        "NFL",
+        "Washington Commanders +7.5",
+        "-115",
+        "Won",
+        "+0.87",
+        "EZMSports"
+      ],
+      [
+        "2 Oct 10:20 PM",
+        "NCAAF",
+        "South Carolina Gamecocks ML",
+        "-150",
+        "Lost",
+        "-1.00",
+        "EZMSports"
+      ],
+      [
+        "8 Oct 10:30 PM",
+        "NCAAF",
+        "Washington Huskies ML",
+        "-139",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ],
+      [
+        "18 Oct 04:48 AM",
+        "NFL",
+        "Los Angeles Chargers +7.5",
+        "-115",
+        "Lost",
+        "-1.00",
+        "Cappers_Tracked"
+      ],
+      [
+        "23 Oct 09:33 PM",
+        "NCAAF",
+        "Florida Atlantic Owls -9.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ],
+      [
+        "26 Oct 12:26 PM",
+        "NBA",
+        "Cleveland Cavaliers ML",
+        "-150",
+        "Won",
+        "+0.67",
+        "bmd1803"
+      ],
+      [
+        "26 Oct 12:26 PM",
+        "WNBA",
+        "Golden State Valkyries ML",
+        "-114",
+        "Won",
+        "+0.88",
+        "bmd1803"
+      ]
+    ]
+  }
 }

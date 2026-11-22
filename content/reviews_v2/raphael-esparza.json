@@ -5,7 +5,7 @@
   "kind": "Single handicapper sold through a long running pick network (Doc's Sports), under the name The Vegas Sports Informer (VSI)",
   "checked": "17 Nov 2026",
   "checked_iso": "2026-11-17",
-  "updated_iso": "2026-11-17",
+  "updated_iso": "2026-11-22",
   "title": "Raphael Esparza Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Raphael Esparza (VSI) review, checked 17 Nov 2026: Doc's Sports prices from $30 a day, credit and extension guarantees, seller picked runs and buyer posts.",
   "h1": "Raphael Esparza review",
@@ -42,6 +42,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "4 plays posted before the start, 22 Sep 2026 to 24 Sep 2026: 2 won, 2 lost, -0.18 units"
     ]
   ],
   "short_answer": [
@@ -169,6 +173,9 @@
     "The older 2015 to 2017 totals reprinted by Gambling911 show percentages that do not match their own win loss counts: 121-94 is 56.3%, not 55%, and 135-75 is 64.3%, not 65%. The gaps are small, but they show the figures were not checked before they were published."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Raphael Esparza does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Raphael Esparza most often were TheGodOfCappers, EZMSports, Nonagon. From 22 Sep 2026 to 24 Sep 2026 we took every play our parser could read inside a Raphael Esparza block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 4 plays, 2 won, 2 lost, -0.18 units, a return of -4.5% per unit risked. By sport: too few per sport to split. By month: September 2 won, 2 lost, -0.18 units.",
+    "What it means: 4 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
     "What a buyer can verify independently: nothing that we could find. We found no full, time stamped log of every Esparza pick with line, odds and release time, no third party contest results, and no court or regulator record about him or his service.",
     "What the seller publishes: runs, dollar totals and counts of winning seasons by sport, plus a list of recent winners such as \"UFC 333 6U Winner\" and \"2025 Belmont Stakes Winner $429\". On 17 Nov 2026 the Doc's Sports roster page said he had \"cashed 4 of 6 NHL plays\". These are graded by the network that sells the picks and show no losing plays alongside the winners.",
     "What buyers post: one TheRX member wrote in January 2026 that he tracks Doc's Sports plays the day after release and that fading Esparza's NBA plays was up about 30 units and his college basketball plays about 20 units. He shared no log, so this is one person's unverified count."
@@ -252,6 +259,10 @@
     [
       "Is Raphael Esparza legit?",
       "He is a real person sold by a real company. Doc's Sports names its business, lists a mailing address and phone number, and his page was selling dated plays on 17 Nov 2026. What is not established is that his picks win: every record comes from the seller, and we found no independent full log and no court or regulator action."
+    ],
+    [
+      "What does the Watchdog sample of Raphael Esparza show?",
+      "We graded 4 of their plays that were posted publicly before the game started, 22 Sep 2026 to 24 Sep 2026: 2 won, 2 lost, -0.18 units at one unit each. That is too few plays to judge."
     ],
     [
       "How much does Raphael Esparza cost?",
@@ -348,5 +359,55 @@
       "accessed": "17 Nov 2026"
     }
   ],
-  "pricing_source": 0
+  "pricing_source": 0,
+  "record_table": {
+    "caption": "Every Raphael Esparza play in the Watchdog sample, 22 Sep 2026 to 24 Sep 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "22 Sep 08:39 AM",
+        "MLB",
+        "Over 11",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ],
+      [
+        "24 Sep 08:40 AM",
+        "NCAAF",
+        "Liberty > team total Over 26.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ],
+      [
+        "24 Sep 08:40 AM",
+        "NCAAF",
+        "Over 50.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ],
+      [
+        "24 Sep 08:40 AM",
+        "MLB",
+        "Over 7.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ]
+    ]
+  }
 }

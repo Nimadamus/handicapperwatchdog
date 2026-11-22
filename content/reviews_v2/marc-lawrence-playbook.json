@@ -5,7 +5,7 @@
   "kind": "Handicapper and newsletter publisher with a roster of handicappers",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Marc Lawrence Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Marc Lawrence Playbook review, checked 20 Nov 2026: real prices, pay after you win, his report card recounted, and a forum tracker's newsletter records.",
   "h1": "Marc Lawrence (Playbook Sports) review",
@@ -42,6 +42,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "5 plays posted before the start, 14 Sep 2026 to 14 Nov 2026: 3 won, 2 lost, +0.71 units"
     ]
   ],
   "short_answer": [
@@ -166,6 +170,9 @@
     "The experience figures shift by page: 1975 on the profile, Est. 1984 on the homepage, \"Over 40 years\" in the banner. None of that is proof of results either way."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Marc Lawrence does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Marc Lawrence most often were BuzzKill (TheRX newsletters thread), jillmark, 1218Sports, mendozaline. From 14 Sep 2026 to 14 Nov 2026 we took every play our parser could read inside a Marc Lawrence block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 5 plays, 3 won, 2 lost, +0.71 units, a return of +14.2% per unit risked. By sport: NFL 2 won, 1 lost, +0.82 units. By month: September 3 won, 0 lost, +2.71 units; October 0 won, 1 lost, -1.00 units; November 0 won, 1 lost, -1.00 units.",
+    "What it means: 5 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
     "What is independently verifiable: no full, time stamped log of Marc's paid picks kept by a third party, no contest standings we could open, and no court or regulator record involving Marc Lawrence or Playbook in our searches. A forum member said Marc placed 7th in the Westgate SuperContest a few years ago, but we could not find the standings to confirm it.",
     "The closest thing to an outside record covers the newsletter, not the paid phone plays. A TheRX member posts weekly \"Newsletter Tracking\" that grades the rated plays \"at the lines listed in the newsletters at the time the plays were published.\" For the 2025 season (through 25 Jan 2026) that tracker had Playbook NFL 5 star plays at 7-11, 4 star at 9-9 and 3 star at 10-7-1, so 26-27-1 on all NFL star plays, and college 5, 4 and 3 star plays at 21-23-1. The Awesome Angle feature was the bright spot at 17-6-1. For 2026 through 9 Nov the tracker had college 5 star plays at 9-1, 4 star 7-3 and 3 star 3-7 (19-11 in all), and NFL star plays at 14-13. These are one forum member's counts that we did not regrade, but they use a clear method and include losing categories.",
     "What is the seller's own marketing: Playbook grades its own experts on an Experts Report Card. Each entry shows only the date, the package title and W, L or T. There is no team, side, line, odds, star rating or units won, so a buyer cannot tell whether those wins made money at the prices they could get.",
@@ -311,6 +318,10 @@
     [
       "Is Marc Lawrence legit?",
       "Playbook Sports is a real business run by Playbook Enterprises Inc., with phone lines, published prices and decades of football publications. We could not verify that Marc's paid picks win over time, because his only record is a report card the seller grades itself, without lines or odds."
+    ],
+    [
+      "What does the Watchdog sample of Marc Lawrence show?",
+      "We graded 5 of their plays that were posted publicly before the game started, 14 Sep 2026 to 14 Nov 2026: 3 won, 2 lost, +0.71 units at one unit each. That is too few plays to judge."
     ],
     [
       "How much does Marc Lawrence cost?",
@@ -522,5 +533,64 @@
       "accessed": "20 Nov 2026"
     }
   ],
-  "pricing_source": 6
+  "pricing_source": 6,
+  "record_table": {
+    "caption": "Every Marc Lawrence play in the Watchdog sample, 14 Sep 2026 to 14 Nov 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "14 Sep 06:20 AM",
+        "NFL",
+        "Kansas City Chiefs -2.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EDMrager"
+      ],
+      [
+        "25 Sep 07:43 PM",
+        "NCAAF",
+        "Tennessee Volunteers +4.5",
+        "-112",
+        "Won",
+        "+0.89",
+        "BuzzKill (TheRX newsletters thread)"
+      ],
+      [
+        "27 Sep 09:04 AM",
+        "NFL",
+        "Pittsburgh Steelers +3.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "18 Oct 08:17 AM",
+        "NFL",
+        "Los Angeles Chargers +8",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "bmd1803"
+      ],
+      [
+        "13 Nov 11:58 PM",
+        "NCAAF",
+        "Georgia State Panthers ML",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "bimmercando"
+      ]
+    ]
+  }
 }

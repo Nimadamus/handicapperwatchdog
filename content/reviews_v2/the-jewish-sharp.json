@@ -5,7 +5,7 @@
   "kind": "Social media pick seller (X, Instagram) with a team it says has 5 members",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "The Jewish Sharp Review 2026: Pricing, Record, Worth It?",
   "description": "The Jewish Sharp review, checked 20 Nov 2026: $39.95 to $19,995 packages, a no refund rule, seller made spreadsheets and split Reddit buyer reports.",
   "h1": "The Jewish Sharp review",
@@ -46,6 +46,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "4 plays posted before the start, 23 Sep 2026 to 10 Nov 2026: 3 won, 1 lost, +1.44 units"
     ]
   ],
   "short_answer": [
@@ -154,6 +158,9 @@
     "The About Us page is written as an essay (\"In this essay, I will outline why...\") praising the team in the third person, and its sign in area still shows the website builder placeholder address filler@godaddy.com. Many X posts from 2020 and 2021 offered a free pick only if a post reached a set number of likes and retweets. That is a growth tactic, not evidence of skill."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. The Jewish Sharp does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming The Jewish Sharp most often were TheCappersHub__, dacapperclub, JameslockZ__, ItsCappersPicks. From 23 Sep 2026 to 10 Nov 2026 we took every play our parser could read inside a The Jewish Sharp block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 4 plays, 3 won, 1 lost, +1.44 units, a return of +36.1% per unit risked. By sport: too few per sport to split. By month: September 0 won, 1 lost, -1.00 units; October 2 won, 0 lost, +1.82 units; November 1 won, 0 lost, +0.62 units.",
+    "What it means: 4 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
     "Independently verifiable: nothing we could find. There is no full, time stamped log of every pick with the line, odds and send time on a third party site, no contest results run by a third party, and no regulator or court record. Picks go out by email and DM, and the store says they do not appear on the buyer's account page, so even buyers get no site record.",
     "Seller marketing: half month spreadsheets with records like 28-4 and 24-4, photos of winning tickets, and streak posts on X. These are made and chosen by the seller. Losing days appear in customer complaints (see below) but not in the posts we read. A Reddit buyer in June 2025 alleged that picks sent in an app were edited after games ended, giving the example of a spread changed from 3 points to 2 after the team won by 2. We could not check this.",
     "CapperTek lists the site as a \"Pro Featured Verified Service\". CapperTek's own page says verification is \"100% free\" and that it will \"improve your service legitimacy\" and bring more traffic through its directory. It is not an audit of results."
@@ -293,6 +300,10 @@
       "It is a working pick seller with a store, posted prices and social accounts going back to 2020, and it delivers picks by email and DM. It names no owner or address, and we could not verify that its picks win, because there is no full third party record. Buyer reports on Reddit are split, with repeated complaints about losing runs."
     ],
     [
+      "What does the Watchdog sample of The Jewish Sharp show?",
+      "We graded 4 of their plays that were posted publicly before the game started, 23 Sep 2026 to 10 Nov 2026: 3 won, 1 lost, +1.44 units at one unit each. That is too few plays to judge."
+    ],
+    [
       "How much does The Jewish Sharp cost?",
       "On 20 Nov 2026 the site listed a day pass at $39.95, a week at $795.95, monthly packages from $2,995 to $9,995, and a hockey season at $19,995."
     ],
@@ -392,5 +403,55 @@
       "accessed": "20 Nov 2026"
     }
   ],
-  "pricing_source": 0
+  "pricing_source": 0,
+  "record_table": {
+    "caption": "Every The Jewish Sharp play in the Watchdog sample, 23 Sep 2026 to 10 Nov 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "23 Sep 03:48 PM",
+        "MLB",
+        "Under 6.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "dacapperclub"
+      ],
+      [
+        "19 Oct 04:41 PM",
+        "NFL",
+        "Washington Commanders +9.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheCappersHub__"
+      ],
+      [
+        "29 Oct 04:41 PM",
+        "NBA",
+        "Under 239.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "dacapperclub"
+      ],
+      [
+        "10 Nov 03:41 PM",
+        "NCAAB",
+        "Wyoming Cowboys +15.5",
+        "-160",
+        "Won",
+        "+0.62",
+        "TheCappersHub__"
+      ]
+    ]
+  }
 }

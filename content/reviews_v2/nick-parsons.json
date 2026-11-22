@@ -5,7 +5,7 @@
   "kind": "Handicapper sold on a network of pick marketplaces",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Nick Parsons Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Nick Parsons review, checked 20 Nov 2026: $25 plays to a $1,999 year, all sales final, and his No. 1 ranking and runs checked against his own pages.",
   "h1": "Nick Parsons review",
@@ -42,6 +42,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "4 plays posted before the start, 17 Sep 2026 to 23 Oct 2026: 2 won, 2 lost, -0.18 units"
     ]
   ],
   "short_answer": [
@@ -152,6 +156,9 @@
     "Each run starts on a date the seller picked: since 2023, since last year, year to date, one week in 2014. A window picked after the fact tells you little."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Nick Parsons does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Nick Parsons most often were TheGodOfCappers, 1218Sports, EZMSports, EDMrager. From 17 Sep 2026 to 23 Oct 2026 we took every play our parser could read inside a Nick Parsons block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 4 plays, 2 won, 2 lost, -0.18 units, a return of -4.5% per unit risked. By sport: MLB 1 won, 2 lost, -1.09 units. By month: September 1 won, 2 lost, -1.09 units; October 1 won, 0 lost, +0.91 units.",
+    "What it means: 4 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
     "What a buyer can verify independently: nothing that we could find. We found no full, time stamped log of every Nick Parsons pick from an outside tracker, and no court or regulator record about him.",
     "What the marketplaces publish: a headline badge, sport badges and a latest picks list. The five picks visible on 17 Nov 2026 (from 15 and 16 Nov) went 2 and 3; the five visible on 20 Nov (from 18 and 19 Nov) went 3 and 2. These are graded by the company that sells the picks, so they are marketing, not an audit. The latest picks list shows only results, not the price taken or the time the pick was released.",
     "History we could confirm: a Covers forum post of 2 Oct 2014 advertised him on Covers' Steamwire subscription, then $19.99 a month, as a leader in first half, second half and in game bets. TheRX members reposted his plays in September 2025. His WagerTalk profile address opened the general experts page on 17 Nov, and on 20 Nov that page still did not list him.",
@@ -240,6 +247,10 @@
     [
       "Is Nick Parsons legit?",
       "He is a real handicapper sold on three established pick marketplaces, with a public X account and a history back to at least 2014. We could not verify that his picks win over time, because the only records are graded by the business network that sells them, and we found no court or regulator action involving him."
+    ],
+    [
+      "What does the Watchdog sample of Nick Parsons show?",
+      "We graded 4 of their plays that were posted publicly before the game started, 17 Sep 2026 to 23 Oct 2026: 2 won, 2 lost, -0.18 units at one unit each. That is too few plays to judge."
     ],
     [
       "How much does Nick Parsons cost?",
@@ -351,5 +362,55 @@
       "accessed": "20 Nov 2026"
     }
   ],
-  "pricing_source": 0
+  "pricing_source": 0,
+  "record_table": {
+    "caption": "Every Nick Parsons play in the Watchdog sample, 17 Sep 2026 to 23 Oct 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "17 Sep 09:28 AM",
+        "MLB",
+        "Under 7.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EZMSports"
+      ],
+      [
+        "22 Sep 09:30 AM",
+        "MLB",
+        "Seattle Mariners ML",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EZMSports"
+      ],
+      [
+        "25 Sep 08:07 AM",
+        "NCAAF",
+        "Army Black Knights ML",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EDMrager"
+      ],
+      [
+        "23 Oct 08:23 AM",
+        "MLB",
+        "Tampa Bay Rays +1.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ]
+    ]
+  }
 }

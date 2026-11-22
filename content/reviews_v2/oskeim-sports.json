@@ -5,14 +5,14 @@
   "kind": "Single handicapper pick service sold through the WagerTalk and StatSalt marketplaces",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Oskeim Sports Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Oskeim Sports review, checked 20 Nov 2026: WagerTalk prices $29 to $1,999, a credit only guarantee, its posted records checked and what buyers say.",
   "h1": "Oskeim Sports review",
   "dek": "A pick service run by Jeffrey Keim, a former lawyer, which says it was founded in 2007. Its own site now only forwards buyers to WagerTalk, where plays and passes run from $29 to $1,999 a year. The guarantee pays in site credit, the records we checked change from line to line on the same page, and the buyer posts we found split between loyal long term clients and people who say they lost money.",
   "status": {
-    "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Oskeim Sports picks. This page reports what we could check on 20 Nov 2026 and labels everything else."
+    "label": "Partly graded",
+    "note": "Oskeim Sports publishes no complete log we can audit. Watchdog graded 12 of their plays that were posted publicly before the game started. This is a sample, not a full record."
   },
   "glance": [
     [
@@ -46,6 +46,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "12 plays posted before the start, 14 Sep 2026 to 31 Oct 2026: 8 won, 4 lost, +3.27 units"
     ]
   ],
   "short_answer": [
@@ -157,13 +161,16 @@
     "We did not check the award count with The Sports Monitor, and the media mentions are not linked to any article."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Oskeim Sports does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Oskeim Sports most often were WagerTalkPicks, BuzzKill (TheRX newsletters thread), TheGodOfCappers, EZMSports. From 14 Sep 2026 to 31 Oct 2026 we took every play our parser could read inside a Oskeim Sports block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 12 plays, 8 won, 4 lost, +3.27 units, a return of +27.3% per unit risked. By sport: NCAAF 3 won, 3 lost, -0.27 units; NFL 3 won, 0 lost, +2.73 units; NHL 2 won, 1 lost, +0.82 units. By month: September 1 won, 0 lost, +0.91 units; October 7 won, 4 lost, +2.36 units.",
+    "What it means: a 67% win rate on 12 decided plays has a 95% range of about 39% to 86%, and at the prices in this sample a bettor needed about 52% to break even. That range includes break even, so this sample cannot show whether they win or lose over time. The sample covers only the plays that others chose to post, which is not the full card a subscriber receives, and stakes are counted flat even where the seller rates plays differently.",
     "What a buyer can verify independently: nothing long term that we could find. We found no full, time stamped log of every Oskeim pick kept by an outside party, and no court or regulator record about the service.",
     "What the seller publishes: the WagerTalk profile shows streaks, rankings and a last 20 table, which we counted as 11 wins, 8 losses and 1 no play on 20 Nov 2026. The StatSalt profile listed the five most recent plays as 3 wins and 2 losses, and a bio line of 48-34 (58.5%, +18.52 units) with no time frame. A third party reseller calling itself CBS Sports Picks, which describes itself as a Canadian betting syndicate and not CBS Sports, ranked Oskeim second on a one day hockey board at 2-0. All of these are kept by sites that sell or promote the picks.",
     "Older history: in a 2014 Sportsbook Review thread, members said the service then released its picks at game time on its own site and that some rated plays were tracked by a third party. CapperTek reviewers in 2014 and 2022 said records, and in one case tax returns, were posted publicly. That describes the old site, which no longer shows picks and did not load on 20 Nov 2026."
   ],
   "our_data": {
-    "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Oskeim Sports pick history is matched to a Watchdog graded record, so we make no claim about how Oskeim performs.",
+    "matched": true,
+    "text": "Watchdog graded 12 Oskeim Sports plays posted before the start, 14 Sep 2026 to 31 Oct 2026: 8 won, 4 lost, +3.27 units at one unit each. A sample of what was posted publicly, not a full record.",
     "context": "For scale: the runs on the WagerTalk page show 57% to 65% winners, and our own count of the last 20 table was 11-8. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
   "customers_intro": "Independent buyer evidence on Oskeim Sports exists but is old: five CapperTek reviews from 2014 to 2022 and one long Sportsbook Review thread from 2014. Below is everything we found and how much weight it can carry.",
@@ -282,6 +289,10 @@
       "It is a real business run by Jeffrey Keim, with a registered company, three BBB listings with no complaints shown, and published prices on WagerTalk and StatSalt. We could not verify that the picks win over time, because there is no full, independently kept record, and we found no court or regulator action involving the service."
     ],
     [
+      "What does the Watchdog sample of Oskeim Sports show?",
+      "We graded 12 of their plays that were posted publicly before the game started, 14 Sep 2026 to 31 Oct 2026: 8 won, 4 lost, +3.27 units at one unit each. The 95% range of the win rate is about 39% to 86%, against about 52% needed to break even."
+    ],
+    [
       "How much does Oskeim Sports cost?",
       "On 20 Nov 2026 WagerTalk listed a two play Friday pack at $29.00, a game of the week at $35.00, three day sport passes at $49.00, day passes from $39.00, 30 days at $299.00, season passes from $259.00 to $719.00 and a full year at $1,188.00 on sale ($1,999.00 retail)."
     ],
@@ -375,5 +386,127 @@
       "accessed": "20 Nov 2026"
     }
   ],
-  "pricing_source": 0
+  "pricing_source": 0,
+  "record_table": {
+    "caption": "Every Oskeim Sports play in the Watchdog sample, 14 Sep 2026 to 31 Oct 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "14 Sep 10:41 AM",
+        "NFL",
+        "Kansas City Chiefs -2.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "2 Oct 10:23 PM",
+        "NCAAF",
+        "Indiana Hoosiers -24.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "5 Oct 11:31 AM",
+        "NHL",
+        "Pittsburgh Penguins ML",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EZMSports"
+      ],
+      [
+        "6 Oct 01:03 PM",
+        "NHL",
+        "Vegas Golden Knights ML",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "6 Oct 01:03 PM",
+        "NHL",
+        "Carolina Hurricanes ML",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "11 Oct 12:13 AM",
+        "NFL",
+        "Detroit Lions -5.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "11 Oct 12:13 AM",
+        "NFL",
+        "Green Bay Packers +1.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "24 Oct 08:12 AM",
+        "NCAAF",
+        "Under 61",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "30 Oct 10:48 AM",
+        "NCAAF",
+        "Tulane Green Wave -10",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ],
+      [
+        "31 Oct 06:22 AM",
+        "NCAAF",
+        "Florida International Panthers +14",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ],
+      [
+        "31 Oct 06:22 AM",
+        "NCAAF",
+        "Temple Owls +6",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ],
+      [
+        "31 Oct 06:22 AM",
+        "NCAAF",
+        "UTEP Miners +24.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ]
+    ]
+  }
 }

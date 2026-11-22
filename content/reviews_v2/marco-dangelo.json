@@ -5,7 +5,7 @@
   "kind": "Las Vegas handicapper sold on the WagerTalk marketplace, which he co founded",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Marco D'Angelo Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Marco D'Angelo review, checked 20 Nov 2026: WagerTalk passes from $39 to $1,999, a credit only guarantee, and his runs checked against his own Last 20.",
   "h1": "Marco D'Angelo review",
@@ -42,6 +42,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "2 plays posted before the start, 17 Oct 2026 to 24 Oct 2026: 1 won, 1 lost, -0.09 units"
     ]
   ],
   "short_answer": [
@@ -148,6 +152,9 @@
     "The 2010 baseball streak note says he never laid more than -120 in the 25 plays. We could not open any Sports Monitor record to confirm it."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Marco D'Angelo does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Marco D'Angelo most often were BuzzKill (TheRX newsletters thread), WagerTalkPicks, 1218Sports, TheGodOfCappers. From 17 Oct 2026 to 24 Oct 2026 we took every play our parser could read inside a Marco D'Angelo block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 2 plays, 1 won, 1 lost, -0.09 units, a return of -4.5% per unit risked. By sport: too few per sport to split. By month: October 1 won, 1 lost, -0.09 units.",
+    "What it means: 2 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
     "What a buyer can verify independently: nothing that we could find. We found no full, time stamped log of every Marco D'Angelo pick from an outside tracker, and no court or regulator record about him.",
     "What WagerTalk publishes: a Last 20 list on his profile, which we counted at 13 wins, 6 losses and 1 no play on 20 Nov 2026 (12, 7 and 1 on 17 Nov), plus 3, 7 and 30 day Who's Hot boards. On 20 Nov he led the all sports 7 day board at 11-6-0 for $1,887 and also showed on two sport boards at 3-1 and 2-1. These are graded by the company that sells the picks, so they are marketing, not an audit.",
     "Background: WagerTalk's August 2019 release describes him as \"a professional sports handicapper and bettor since 1980\" and a WagerTalk co founder who makes regional and national media appearances. His bio says he moved to Las Vegas in 2008 and co hosted a Las Vegas radio show. On 17 Nov 2026 SportsMemo, also owned by WagerTalk, sold his game of the week and a 7 day pass; on 20 Nov he was not on the SportsMemo experts list."
@@ -249,6 +256,10 @@
     [
       "Is Marco D'Angelo legit?",
       "He is a real, long running Las Vegas handicapper who sells through WagerTalk, a company its own press releases say he co founded. We could not verify that his picks win over time, because the only records are graded by the company that sells them, and we found no court or regulator action involving him."
+    ],
+    [
+      "What does the Watchdog sample of Marco D'Angelo show?",
+      "We graded 2 of their plays that were posted publicly before the game started, 17 Oct 2026 to 24 Oct 2026: 1 won, 1 lost, -0.09 units at one unit each. That is too few plays to judge."
     ],
     [
       "Is Marco D'Angelo a WagerTalk co founder?",

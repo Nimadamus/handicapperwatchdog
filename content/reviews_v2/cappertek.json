@@ -7,7 +7,7 @@
   "legal_name": "Sports Media, LLC (site terms); the App Store lists the seller as MO Sports Media LLC. BBB has files in Philadelphia, PA and Scottsdale, AZ",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "description": "CapperTek review, checked 20 Nov 2026: how the pick marketplace works, who sets prices, refund terms, its leaderboards recounted, and user reports.",
   "dek": "A US pick marketplace and tracking site where any handicapper can list for free, set a price and post graded picks. CapperTek sells no picks of its own. Its records are more open than most tout pages and its own headline numbers check out, but \"Verified\" is a banner deal, not an audit, the leaderboards have no minimum sample, and its fees are non refundable.",
   "status": {
@@ -42,6 +42,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "None found in a search of about 1.37 million captured posts (22 Nov 2026)"
     ]
   ],
   "short_answer": [
@@ -152,6 +156,7 @@
     "In a 2014 TheRX post, the CapperTek account described the company as a web development and marketing firm that works \"together with many of the top name handicappers in the industry\" on their IT and marketing, alongside running the directory. A tracker that also builds and markets for sellers has a reason to keep them happy."
   ],
   "record": [
+    "Watchdog search, 22 Nov 2026: we searched about 1.37 million captured public posts from X, Reddit, Covers, TheRX and other forums for CapperTek plays that were posted or reposted before a game started. We found 44 posts naming CapperTek, but none carried a play we could match to a game and grade.",
     "CapperTek is a platform, so it has no single record. Each seller has a record kept by CapperTek, with picks revealed 30 minutes after the start. Here is what its own leaderboards showed on 20 Nov 2026, counted by us.",
     "Last 30 days: 231 handicappers with picks, 104 (45%) up in units, median ROI -1.42%. Only 2 had 250 or more picks in the window, and both were down. 50 had fewer than 20 picks.",
     "Last 365 days: 508 handicappers, 209 (41%) up in units, median ROI -1.6%. The longer the record, the better the odds a seller was up: of the 132 sellers with 500 or more picks, 77 were up, with a median ROI of +0.76%. That fits sellers who lose dropping out, as much as sellers who win staying. Sorted by ROI, the top five over 365 days had 9, 1, 1, 1 and 1 picks. The leaderboard sets no minimum, so sort by units and check the pick count.",

@@ -5,7 +5,7 @@
   "kind": "Single handicapper sold through reseller storefronts",
   "checked": "17 Nov 2026",
   "checked_iso": "2026-11-17",
-  "updated_iso": "2026-11-17",
+  "updated_iso": "2026-11-22",
   "title": "Sean Murphy Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Sean Murphy review, checked 17 Nov 2026: prices on two storefronts, credit or free time guarantees, and 1,550 of his posted picks counted by us.",
   "h1": "Sean Murphy review",
@@ -38,6 +38,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "6 plays posted before the start, 20 Sep 2026 to 7 Nov 2026: 4 won, 2 lost, +1.64 units"
     ]
   ],
   "short_answer": [
@@ -144,6 +148,9 @@
     "The college football side run of 351-272 is about 56.3% winners and the totals run of 294-243 about 54.7%. The all time network figure of 694-576-22 is 54.7%. College football is the one sport where every source we checked agrees he has been profitable."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Sean Murphy does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Sean Murphy most often were BuzzKill (TheRX newsletters thread), Churchillsprts, TheGodOfCappers, EZMSports. From 20 Sep 2026 to 7 Nov 2026 we took every play our parser could read inside a Sean Murphy block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 6 plays, 4 won, 2 lost, +1.64 units, a return of +27.3% per unit risked. By sport: too few per sport to split. By month: September 1 won, 0 lost, +0.91 units; October 3 won, 1 lost, +1.73 units; November 0 won, 1 lost, -1.00 units.",
+    "What it means: 6 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
     "What a buyer can verify independently: no third party log. We found no outside tracker, contest record, court case or regulator action about him.",
     "What the sellers publish, and what it shows: PickDawgz posts his complete graded pick history, which is more than most storefronts do. Our count of the last 12 months of it is 738-706-12, 51.1% winners and about 22.7 units down at one unit a pick. At -110 odds a bettor needs about 52.4% to break even.",
     "The SportsCapping leaderboard, kept by the network that sells him, showed him 694-576-22 all time in college football, 54-35-2 in college football this season, and 172-154-3 across all sports over the last 90 days. SportsCapping's own method note says a \"Best Run\" or \"since\" figure is \"a window starting on the date shown, not a lifetime record.\"",
@@ -232,6 +239,10 @@
     [
       "Is Sean Murphy legit?",
       "He is a real, active handicapper whose packages have published prices on established storefronts, and one of them posts his full graded pick history. That history does not show a winning last 12 months overall: we counted 738-706-12, about 22.7 units down. We found no court or regulator action involving him."
+    ],
+    [
+      "What does the Watchdog sample of Sean Murphy show?",
+      "We graded 6 of their plays that were posted publicly before the game started, 20 Sep 2026 to 7 Nov 2026: 4 won, 2 lost, +1.64 units at one unit each. That is too few plays to judge."
     ],
     [
       "Who is Sean Murphy?",
@@ -343,5 +354,73 @@
       "accessed": "17 Nov 2026"
     }
   ],
-  "pricing_source": 0
+  "pricing_source": 0,
+  "record_table": {
+    "caption": "Every Sean Murphy play in the Watchdog sample, 20 Sep 2026 to 7 Nov 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "20 Sep 06:37 AM",
+        "NFL",
+        "Under 48.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "21 Oct 11:23 AM",
+        "NHL",
+        "Ottawa Senators ML",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ],
+      [
+        "21 Oct 09:21 PM",
+        "NCAAF",
+        "Kennesaw State Owls +10",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ],
+      [
+        "25 Oct 07:35 AM",
+        "NBA",
+        "Los Angeles Lakers -6",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ],
+      [
+        "28 Oct 09:33 AM",
+        "NHL",
+        "Seattle Kraken ML",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ],
+      [
+        "7 Nov 07:03 AM",
+        "NCAAF",
+        "Over 49",
+        "-110",
+        "Lost",
+        "-1.00",
+        "offshoreinsider"
+      ]
+    ]
+  }
 }

@@ -5,7 +5,7 @@
   "kind": "Betting data and picks subscription (model ratings on props and games, expert picks, tools)",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "BettingPros Review 2026: Pricing, Record, Is It Worth It?",
   "description": "BettingPros review, checked 20 Nov 2026: Plus and Elite prices, billing and cancelling, and its own posted prop record recounted by star rating.",
   "h1": "BettingPros review",
@@ -42,6 +42,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "None found in a search of about 1.37 million captured posts (22 Nov 2026)"
     ]
   ],
   "short_answer": [
@@ -125,6 +129,7 @@
     "The weekly strip changes. On 16 Nov 2026 it showed NBA, \"71%\" and \"+10u\"; on 20 Nov 2026 it showed NFL, \"85%\" and \"+8u\". At about -110 odds, 85% and +8 units together imply only about 13 decided picks, and 71% with +10 units about 28. These are short samples picked for display."
   ],
   "record": [
+    "Watchdog search, 22 Nov 2026: we searched about 1.37 million captured public posts from X, Reddit, Covers, TheRX and other forums for BettingPros plays that were posted or reposted before a game started. We found 19 posts naming BettingPros, but none carried a play we could match to a game and grade.",
     "What a buyer can verify independently: nothing that an outside party has audited. We found no third party tracker of the star ratings.",
     "What the seller publishes: prop record pages for each sport, with wins, losses, pushes, units and ROI, split by star rating, cover probability band and expected value band, plus weekly or daily results. This is more than most pick sellers publish, and it includes the losing tiers. It is still graded by BettingPros.",
     "What it shows for this season: the NFL ratings are slightly profitable overall and the 5 star NFL tier is up about 45 units. The NBA ratings are losing overall and the 5 star NBA tier is down about 177 units, though the count and result changed after 6 Nov 2026. Accuracy and leaderboard pages for writers and community members also exist; they rank people, not the paid model."

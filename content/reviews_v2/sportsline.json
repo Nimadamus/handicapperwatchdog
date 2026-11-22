@@ -5,14 +5,14 @@
   "kind": "Subscription picks site with a roster of experts and a simulation model",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "SportsLine Review 2026: Prices, Refunds, Expert Records",
   "description": "SportsLine review, checked 20 Nov 2026: $13.99 to $139.99 plans, no refunds on auto renewal, expert records checked by hand, and what users report.",
   "h1": "SportsLine review",
   "dek": "The CBS Sports picks subscription: a roster of about 38 named experts plus a computer model that it says simulates every game 10,000 times, for $13.99 a month to $139.99 a year. Plans renew automatically and cancelling never returns money. The long records quoted in expert bios mostly land between 51% and 55% winners when you do the math, close to the 52.4% break even line, and the hot lists on the homepage are short streaks.",
   "status": {
-    "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record for any SportsLine expert or for the SportsLine model. This page reports what we could check on 20 Nov 2026, including our own arithmetic on the records SportsLine publishes, and labels everything else."
+    "label": "Partly graded",
+    "note": "SportsLine publishes no complete log we can audit. Watchdog graded 14 of their plays that were posted publicly before the game started. This is a sample, not a full record."
   },
   "glance": [
     [
@@ -46,6 +46,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "14 plays posted before the start, 11 Oct 2026 to 21 Nov 2026: 7 won, 7 lost, -0.67 units"
     ]
   ],
   "short_answer": [
@@ -137,14 +141,17 @@
     "Of the roughly 38 experts listed, about 10 give no record in their bio at all, and two (Brandt Sutton and Scott Erskine) say only that they were \"profitable\" without numbers."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. SportsLine does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming SportsLine most often were BuzzKill (TheRX newsletters thread), Thecappershub, TheCappersHub__, PickRating. From 11 Oct 2026 to 21 Nov 2026 we took every play our parser could read inside a SportsLine block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 14 plays, 7 won, 7 lost, -0.67 units, a return of -4.8% per unit risked. By sport: NCAAF 4 won, 6 lost, -2.34 units; NFL 3 won, 1 lost, +1.67 units. By month: October 2 won, 2 lost, -0.26 units; November 5 won, 5 lost, -0.41 units.",
+    "What it means: a 50% win rate on 14 decided plays has a 95% range of about 27% to 73%, and at the prices in this sample a bettor needed about 51% to break even. That range includes break even, so this sample cannot show whether they win or lose over time. The sample covers only the plays that others chose to post, which is not the full card a subscriber receives, and stakes are counted flat even where the seller rates plays differently.",
     "SportsLine shows more than most pick sellers. Each expert page lists past picks with the game, the market, the odds taken, the unit size, the time the pick was made, the sportsbook the price came from and a WIN or LOSS grade, with a \"Load More Picks\" button. On R.J. White's page on 20 Nov 2026, the 7 visible NFL picks ran from 15 to 19 Nov at prices from -102 to -123 at Caesars, FanDuel, BetRivers, DraftKings and MGM, made between one hour and six days before kickoff.",
     "What we could not confirm: that the list is complete, how far back it goes, or how the headline streaks are chosen. We found no single page with every pick for an expert or for the model, totaled in units, by sport. An App Store reviewer asked for exactly that in 2024, and a Sportsbook Review member complained in 2016 that picks vanished after each day.",
     "Company background: SportsLine USA was founded in February 1994 by Mike Levy, took CBS Sports as a partner in March 1997 (the site became CBS SportsLine), listed on NASDAQ in November 1997 and was acquired by CBS in December 2004. The subscription terms now name CBS Interactive Inc.; the site footer says \"SportsLine and SportsLine PRO are registered trademarks of SportsLine.com, Inc.\" and that SportsLine is in the Paramount family of companies.",
     "We found no court case, regulator action or major news report about SportsLine subscriptions."
   ],
   "our_data": {
-    "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no SportsLine expert or model is matched to a Watchdog graded record, so we make no claim about how SportsLine picks perform.",
+    "matched": true,
+    "text": "Watchdog graded 14 SportsLine plays posted before the start, 11 Oct 2026 to 21 Nov 2026: 7 won, 7 lost, -0.67 units at one unit each. A sample of what was posted publicly, not a full record.",
     "context": "For scale: the long records in SportsLine expert bios mostly sit between 51% and 55% winners, while the homepage hot streaks run from 60% to 100%. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
   "customers_intro": "Customer evidence on SportsLine is split by where you look. The iPhone app is rated highly; Trustpilot, Reddit and complaint sites lean negative, mostly about cancelling. Forum discussion of the picks themselves is thin. Below is everything we found and how much weight it can carry.",
@@ -297,6 +304,10 @@
       "It is a real service with a 30 year history, run by CBS Interactive, the company behind CBS Sports, with published prices and named experts. The long records in its expert bios check out arithmetically but mostly show thin edges of 51% to 55% winners, and we found no complete, audited record for any expert or the model."
     ],
     [
+      "What does the Watchdog sample of SportsLine show?",
+      "We graded 14 of their plays that were posted publicly before the game started, 11 Oct 2026 to 21 Nov 2026: 7 won, 7 lost, -0.67 units at one unit each. The 95% range of the win rate is about 27% to 73%, against about 51% needed to break even."
+    ],
+    [
       "How much does SportsLine cost?",
       "On 20 Nov 2026 the join page listed SportsLine Pro at $13.99 a month, $39.99 for 3 months or $139.99 a year, with taxes possibly added. New Pro members also get Paramount+ Premium. Users report frequent promo and retention prices well below these."
     ],
@@ -421,5 +432,145 @@
       "accessed": "20 Nov 2026"
     }
   ],
-  "pricing_source": 0
+  "pricing_source": 0,
+  "record_table": {
+    "caption": "Every SportsLine play in the Watchdog sample, 11 Oct 2026 to 21 Nov 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "11 Oct 05:54 AM",
+        "NFL",
+        "Pittsburgh Steelers -2.5",
+        "-115",
+        "Won",
+        "+0.87",
+        "EDMrager"
+      ],
+      [
+        "11 Oct 08:57 AM",
+        "NFL",
+        "Green Bay Packers +3",
+        "-115",
+        "Won",
+        "+0.87",
+        "TheCappersHub__"
+      ],
+      [
+        "16 Oct 09:25 AM",
+        "NCAAF",
+        "Memphis Tigers -6.5",
+        "-122",
+        "Lost",
+        "-1.00",
+        "1218Sports"
+      ],
+      [
+        "23 Oct 03:19 PM",
+        "NCAAF",
+        "Tulsa Golden Hurricane -1.5",
+        "-110",
+        "Lost",
+        "-1.00",
+        "Thecappershub"
+      ],
+      [
+        "9 Nov 02:03 PM",
+        "NFL",
+        "Minnesota Vikings +3.5",
+        "-126",
+        "Lost",
+        "-1.00",
+        "TitanSportsCo"
+      ],
+      [
+        "16 Nov 02:31 PM",
+        "NFL",
+        "Los Angeles Chargers +4.5",
+        "-108",
+        "Won",
+        "+0.93",
+        "TheCappersHub__"
+      ],
+      [
+        "21 Nov 07:20 AM",
+        "NCAAF",
+        "Fresno State Bulldogs -19.5",
+        "-115",
+        "Lost",
+        "-1.00",
+        "Thecappershub"
+      ],
+      [
+        "21 Nov 07:20 AM",
+        "NCAAF",
+        "Georgia Bulldogs -14.5",
+        "-112",
+        "Won",
+        "+0.89",
+        "Thecappershub"
+      ],
+      [
+        "21 Nov 07:20 AM",
+        "NCAAF",
+        "Illinois Fighting Illini ML",
+        "+205",
+        "Lost",
+        "-1.00",
+        "Thecappershub"
+      ],
+      [
+        "21 Nov 07:20 AM",
+        "NCAAF",
+        "Illinois Fighting Illini +6.5",
+        "-110",
+        "Lost",
+        "-1.00",
+        "Thecappershub"
+      ],
+      [
+        "21 Nov 07:20 AM",
+        "NCAAF",
+        "Minnesota Golden Gophers +2.5",
+        "-105",
+        "Won",
+        "+0.95",
+        "Thecappershub"
+      ],
+      [
+        "21 Nov 07:20 AM",
+        "NCAAF",
+        "Nevada Wolf Pack -5.5",
+        "-110",
+        "Won",
+        "+0.91",
+        "Thecappershub"
+      ],
+      [
+        "21 Nov 07:20 AM",
+        "NCAAF",
+        "TCU Horned Frogs +6.5",
+        "+101",
+        "Lost",
+        "-1.00",
+        "Thecappershub"
+      ],
+      [
+        "21 Nov 08:35 AM",
+        "NCAAF",
+        "Iowa Hawkeyes -8.5",
+        "-110",
+        "Won",
+        "+0.91",
+        "Thecappershub"
+      ]
+    ]
+  }
 }

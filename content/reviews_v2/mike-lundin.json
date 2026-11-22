@@ -5,7 +5,7 @@
   "kind": "Individual handicapper sold through StatSalt, part of the WagerTalk network",
   "checked": "17 Nov 2026",
   "checked_iso": "2026-11-17",
-  "updated_iso": "2026-11-17",
+  "updated_iso": "2026-11-22",
   "title": "Mike Lundin Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Mike Lundin review, checked 17 Nov 2026: StatSalt prices from $5 to $299, all sales final, his last 20 plays and free picks counted, and what bettors say.",
   "h1": "Mike Lundin review",
@@ -38,6 +38,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "6 plays posted before the start, 22 Sep 2026 to 31 Oct 2026: 4 won, 2 lost, +1.64 units"
     ]
   ],
   "short_answer": [
@@ -126,6 +130,9 @@
     "The NBA claim names no seasons, units or prices, and we could find no trace of him selling picks anywhere before late 2025. The poker career is not backed by any name, event or result we could check."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Mike Lundin does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Mike Lundin most often were TheGodOfCappers, EZMSports, parlaybaby002, CashoutClubX. From 22 Sep 2026 to 31 Oct 2026 we took every play our parser could read inside a Mike Lundin block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 6 plays, 4 won, 2 lost, +1.64 units, a return of +27.3% per unit risked. By sport: too few per sport to split. By month: September 0 won, 1 lost, -1.00 units; October 4 won, 1 lost, +2.64 units.",
+    "What it means: 6 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
     "What a buyer can verify independently: no full, time stamped log of every paid Mike Lundin pick kept by anyone other than the seller, and no court or regulator record about him.",
     "What the seller publishes: a last 20 list on the StatSalt profile. On 17 Nov 2026 it covered 12 to 16 Nov 2026 and went 13 wins and 7 losses by our count, every play rated 3 or 4. He did not appear in the top lists of the StatSalt last 365 days leaderboard when we checked it.",
     "A third party: GameAdvisers, a site that says it may earn sportsbook commissions, tracks his free picks. On 17 Nov 2026 it showed 11 wins and 11 losses, minus $124 and a minus 5.0% return over the last 30 days, with totals at 1 and 4. Its page labels him as part of a different network, SportsCapping Group, so its labels may not be reliable, and it covers free picks only."
@@ -198,6 +205,10 @@
     [
       "Is Mike Lundin legit?",
       "He is a real, active handicapper whose picks are sold on StatSalt at published prices, and his profile has existed since at least November 2025. We could not verify that his picks win over time, because the only full lists come from the site that sells them, and we found no court or regulator action involving him."
+    ],
+    [
+      "What does the Watchdog sample of Mike Lundin show?",
+      "We graded 6 of their plays that were posted publicly before the game started, 22 Sep 2026 to 31 Oct 2026: 4 won, 2 lost, +1.64 units at one unit each. That is too few plays to judge."
     ],
     [
       "How much does Mike Lundin cost?",
@@ -289,5 +300,73 @@
       "accessed": "17 Nov 2026"
     }
   ],
-  "pricing_source": 0
+  "pricing_source": 0,
+  "record_table": {
+    "caption": "Every Mike Lundin play in the Watchdog sample, 22 Sep 2026 to 31 Oct 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "22 Sep 09:29 AM",
+        "MLB",
+        "Texas Rangers ML",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EZMSports"
+      ],
+      [
+        "21 Oct 11:14 AM",
+        "NBA",
+        "Memphis Grizzlies ML",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ],
+      [
+        "22 Oct 10:15 AM",
+        "NHL",
+        "San Jose Sharks ML",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ],
+      [
+        "22 Oct 10:15 AM",
+        "NFL",
+        "Chicago Bears -1.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ],
+      [
+        "23 Oct 08:20 AM",
+        "NBA",
+        "Toronto Raptors -6.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ],
+      [
+        "31 Oct 06:26 AM",
+        "NCAAF",
+        "Nevada Wolf Pack +22.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ]
+    ]
+  }
 }

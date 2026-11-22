@@ -5,7 +5,7 @@
   "kind": "Handicapper storefront and betting content site",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "BetFirm Review 2026: Pricing, Record, Is It Worth It?",
   "description": "BetFirm review, checked 20 Nov 2026: Jack Jones's pick storefront, prices from $29.99 to $1,999.95 a year, its own leaderboards checked, and buyer reports.",
   "h1": "BetFirm review",
@@ -42,6 +42,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "1 plays posted before the start, 21 Oct 2026 to 21 Oct 2026: 1 won, 0 lost, +0.91 units"
     ]
   ],
   "short_answer": [
@@ -151,6 +155,9 @@
     "The runs move by the day. The headline run changed between our 17 Nov and 20 Nov visits, and the window (\"L3357 Days\") is chosen by the seller. A record that begins on a chosen date can always be made to look good."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. BetFirm does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming BetFirm most often were AA_PocketRockets, gojuicd. From 21 Oct 2026 to 21 Oct 2026 we took every play our parser could read inside a BetFirm block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 1 plays, 1 won, 0 lost, +0.91 units, a return of +90.9% per unit risked. By sport: too few per sport to split. By month: October 1 won, 0 lost, +0.91 units.",
+    "What it means: 1 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
     "What a buyer can verify independently: nothing we could find. We found no full, time stamped log kept by an outside monitor and no contest result we could open.",
     "What BetFirm publishes: leaderboards by sport, each with a current season table and an all time table, plus a yesterday's plays table on each handicapper page. On 20 Nov 2026 Jones's table showed his 20* Texans -11.5 play from the night before as a win. The tables use the SportsCapping \"Sc Score\" column, so the numbers come from the selling network.",
     "Taken at face value, the network's own numbers show thin margins. Jones's all time line, 10,557-9,364, is 53.0% winners and a 1.83% return. On the current overall table the 29 handicappers shown range from 48.0% to 57.5% winners, and only 3 of them return more than 5%.",
@@ -233,6 +240,10 @@
     [
       "Is BetFirm legit?",
       "It is a long running storefront that delivers picks through the SportsCapping.com checkout, and it says Jack Jones founded it in 2003. It names no company of its own, and we could not verify that its handicappers win over time, because the records come from the network that sells the picks."
+    ],
+    [
+      "What does the Watchdog sample of BetFirm show?",
+      "We graded 1 of their plays that were posted publicly before the game started, 21 Oct 2026 to 21 Oct 2026: 1 won, 0 lost, +0.91 units at one unit each. That is too few plays to judge."
     ],
     [
       "How much does BetFirm cost?",

@@ -5,14 +5,14 @@
   "kind": "Handicapper selling picks through OffshoreInsiders.com",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Joe Duffy Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Joe Duffy review, checked 20 Nov 2026: OffshoreInsiders prices from $21 a day to $1,249 a year, no refunds, and his 2026 record on outside leaderboards.",
   "h1": "Joe Duffy review",
   "dek": "Joe Duffy says he has sold picks since 1988 and runs OffshoreInsiders.com, where packages cost $21 for a day to $1,249 for a year with no refunds. The site claims \"the most units won of all time\" and a win rate near 60%, but posts no record. The marketplace boards that sell his picks showed him at about 51.8% and a 0.5% return for 2026.",
   "status": {
-    "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record for Joe Duffy. This page reports what we could check on 20 Nov 2026 and labels everything else."
+    "label": "Partly graded",
+    "note": "Joe Duffy publishes no complete log we can audit. Watchdog graded 30 of their plays that were posted publicly before the game started. This is a sample, not a full record."
   },
   "glance": [
     [
@@ -42,6 +42,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "30 plays posted before the start, 15 Sep 2026 to 21 Nov 2026: 11 won, 17 lost, 2 push, -6.16 units"
     ]
   ],
   "short_answer": [
@@ -168,14 +172,17 @@
     "The biographies disagree with each other. OffshoreInsiders and a 2016 press release say full time since 1988, while a StatsAlt pick listing on 20 Nov 2026 said \"professionally since 1985.\" One bio says a winning March Madness every year since 1998, another says since 1988. None of this proves anything about results, but it is a reason to treat the career claims as marketing copy."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Joe Duffy does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Joe Duffy most often were offshoreinsider, TheGodOfCappers, EZMSports, parlaybaby002. From 15 Sep 2026 to 21 Nov 2026 we took every play our parser could read inside a Joe Duffy block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 30 plays, 11 won, 17 lost, 2 push, -6.16 units, a return of -20.5% per unit risked. By sport: NCAAF 4 won, 9 lost, -5.36 units; MLB 4 won, 4 lost, 1 push, +0.48 units; NFL 1 won, 3 lost, 1 push, -2.09 units. By month: September 4 won, 6 lost, 1 push, -1.52 units; October 4 won, 4 lost, 1 push, -0.36 units; November 3 won, 7 lost, -4.27 units.",
+    "What it means: a 39% win rate on 28 decided plays has a 95% range of about 24% to 58%, and at the prices in this sample a bettor needed about 51% to break even. That range includes break even, so this sample cannot show whether they win or lose over time. The sample covers only the plays that others chose to post, which is not the full card a subscriber receives, and stakes are counted flat even where the seller rates plays differently.",
     "What a buyer can check outside OffshoreInsiders: three marketplaces that sell his picks publish numbers. SportsCapping's 2026 season board had him at 722-673-18, 51.8%, $759 profit and 0.5% return on 20 Nov 2026, ranked 20th of the 31 handicappers shown. StatsAlt showed 84-79-1, 51.53%, +2.00 units and +$200 profit, without naming the period. CappersPicks showed 47-37 and +$627 in college football over the past 60 days. These sites earn money when his picks sell, and we could not open the full pick logs behind any of them, so they are third party figures, not audits.",
     "PicksDepot, the sister site OffshoreInsiders launched, shows a leaderboard with the same top rows and the same \"Sc Score\" column as SportsCapping, so it appears to draw on the same grading system rather than a separate one. Its leaderboard page says \"Joe Duffy is the industry standard,\" yet he did not appear in the top five rows it displayed.",
     "What is the seller's own marketing: every claim on OffshoreInsiders.com, from \"most units won of all time\" to the 60% target. The site has no results page we could find. Its FAQ says it is not set up to post plays after they start, criticises other sites for grading at the best line ever available, and says it grades its own plays strictly, but it does not publish those grades.",
     "We found no court or regulator action involving Joe Duffy or OffshoreInsiders in our searches, and the Better Business Bureau returned no business profile for OffshoreInsiders."
   ],
   "our_data": {
-    "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition Joe Duffy is not matched to a Watchdog graded record, so we make no claim about how his picks perform.",
+    "matched": true,
+    "text": "Watchdog graded 30 Joe Duffy plays posted before the start, 15 Sep 2026 to 21 Nov 2026: 11 won, 17 lost, 2 push, -6.16 units at one unit each. A sample of what was posted publicly, not a full record.",
     "context": "For scale: the OffshoreInsiders FAQ says he will hit near or above 60% over time. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
   "customers_intro": "Independent buyer evidence on Joe Duffy is very thin for a seller this old. We searched TheRX, Sportsbook Review, Covers, our saved library of Reddit and forum posts, CapperTek reviews and the BBB. Most mentions are reposted plays or the company's own promotion. Below is everything we found and how much weight it can carry. Unhappy buyers are the likeliest to write, so this shows what has gone wrong for some buyers, not how many.",
@@ -255,6 +262,10 @@
     [
       "Is Joe Duffy legit?",
       "OffshoreInsiders is a real, long running business with a mailing address, published prices and PayPal checkout. We could not verify his big claims, such as the most units won of all time, because his site publishes no record, and the outside boards we checked show him close to break even in 2026."
+    ],
+    [
+      "What does the Watchdog sample of Joe Duffy show?",
+      "We graded 30 of their plays that were posted publicly before the game started, 15 Sep 2026 to 21 Nov 2026: 11 won, 17 lost, 2 push, -6.16 units at one unit each. The 95% range of the win rate is about 24% to 58%, against about 51% needed to break even."
     ],
     [
       "How much does Joe Duffy cost?",
@@ -396,5 +407,289 @@
       "accessed": "20 Nov 2026"
     }
   ],
-  "pricing_source": 0
+  "pricing_source": 0,
+  "record_table": {
+    "caption": "Every Joe Duffy play in the Watchdog sample, 15 Sep 2026 to 21 Nov 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "15 Sep 07:21 AM",
+        "MLB",
+        "Detroit Tigers ML",
+        "+131",
+        "Won",
+        "+1.31",
+        "EDMrager"
+      ],
+      [
+        "16 Sep 07:38 AM",
+        "MLB",
+        "Chicago Cubs ML",
+        "-134",
+        "Won",
+        "+0.75",
+        "offshoreinsider"
+      ],
+      [
+        "17 Sep 05:33 AM",
+        "NFL",
+        "Detroit Lions +4.5",
+        "-110",
+        "Lost",
+        "-1.00",
+        "EDMrager"
+      ],
+      [
+        "20 Sep 04:50 AM",
+        "NFL",
+        "Green Bay Packers -3",
+        "not shown",
+        "Push",
+        "+0.00",
+        "offshoreinsider"
+      ],
+      [
+        "21 Sep 06:54 AM",
+        "MLB",
+        "Toronto Blue Jays ML",
+        "-105",
+        "Lost",
+        "-1.00",
+        "offshoreinsider"
+      ],
+      [
+        "22 Sep 08:45 AM",
+        "MLB",
+        "Tampa Bay Rays ML",
+        "+112",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ],
+      [
+        "23 Sep 06:12 AM",
+        "MLB",
+        "Washington Nationals ML",
+        "+151",
+        "Won",
+        "+1.51",
+        "offshoreinsider"
+      ],
+      [
+        "23 Sep 07:48 AM",
+        "MLB",
+        "Tampa Bay Rays ML",
+        "+140",
+        "Lost",
+        "-1.00",
+        "EDMrager"
+      ],
+      [
+        "25 Sep 09:38 AM",
+        "NCAAF",
+        "California Golden Bears +1.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ],
+      [
+        "25 Sep 09:38 AM",
+        "NCAAF",
+        "Over 55.5",
+        "-110",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ],
+      [
+        "25 Sep 01:52 PM",
+        "NCAAF",
+        "Over 50",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "offshoreinsider"
+      ],
+      [
+        "2 Oct 10:23 PM",
+        "MLB",
+        "Cleveland Guardians ML",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EZMSports"
+      ],
+      [
+        "5 Oct 07:27 AM",
+        "NFL",
+        "Atlanta Falcons +1.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "offshoreinsider"
+      ],
+      [
+        "6 Oct 07:37 AM",
+        "MLB",
+        "Under 7",
+        "not shown",
+        "Push",
+        "+0.00",
+        "offshoreinsider"
+      ],
+      [
+        "10 Oct 06:44 AM",
+        "NCAAF",
+        "Oklahoma Sooners +7.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "offshoreinsider"
+      ],
+      [
+        "14 Oct 06:48 AM",
+        "NHL",
+        "Over 5.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "offshoreinsider"
+      ],
+      [
+        "16 Oct 09:05 PM",
+        "NCAAF",
+        "Georgia State Panthers +10",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "offshoreinsider"
+      ],
+      [
+        "18 Oct 05:48 AM",
+        "NFL",
+        "New York Giants +1.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "offshoreinsider"
+      ],
+      [
+        "19 Oct 06:08 AM",
+        "MLB",
+        "Over 6.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "offshoreinsider"
+      ],
+      [
+        "29 Oct 09:40 AM",
+        "NCAAF",
+        "Troy Trojans +20.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "offshoreinsider"
+      ],
+      [
+        "7 Nov 07:24 AM",
+        "NCAAF",
+        "Missouri Tigers +2.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "offshoreinsider"
+      ],
+      [
+        "7 Nov 09:34 AM",
+        "NBA",
+        "Brooklyn Nets +6.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "offshoreinsider"
+      ],
+      [
+        "7 Nov 12:33 PM",
+        "NFL",
+        "New York Jets +9.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "offshoreinsider"
+      ],
+      [
+        "10 Nov 09:04 AM",
+        "NCAAF",
+        "Under 49.5",
+        "-110",
+        "Lost",
+        "-1.00",
+        "offshoreinsider"
+      ],
+      [
+        "11 Nov 05:29 AM",
+        "NCAAF",
+        "Massachusetts Minutemen +14.5",
+        "-112",
+        "Lost",
+        "-1.00",
+        "offshoreinsider"
+      ],
+      [
+        "11 Nov 02:36 PM",
+        "NCAAF",
+        "South Florida Bulls +3.5",
+        "-105",
+        "Lost",
+        "-1.00",
+        "offshoreinsider"
+      ],
+      [
+        "13 Nov 07:36 AM",
+        "NCAAF",
+        "Illinois Fighting Illini +10",
+        "-110",
+        "Won",
+        "+0.91",
+        "offshoreinsider"
+      ],
+      [
+        "13 Nov 06:50 PM",
+        "NCAAF",
+        "New Mexico Lobos -14.5",
+        "-105",
+        "Lost",
+        "-1.00",
+        "offshoreinsider"
+      ],
+      [
+        "17 Nov 10:33 AM",
+        "NCAAB",
+        "Bellarmine Knights +18.5",
+        "-110",
+        "Won",
+        "+0.91",
+        "offshoreinsider"
+      ],
+      [
+        "20 Nov 06:59 PM",
+        "NCAAF",
+        "Syracuse Orange -2.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "offshoreinsider"
+      ]
+    ]
+  }
 }

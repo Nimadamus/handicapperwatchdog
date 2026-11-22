@@ -5,7 +5,7 @@
   "kind": "Pick marketplace selling plays from many handicappers",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Pregame.com Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Pregame.com review, checked 20 Nov 2026: prices from $6 picks to $1,995 a year, pro streak lines checked against Pregame's own records, the Deadspin dispute.",
   "h1": "Pregame.com review",
@@ -42,6 +42,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "None found in a search of about 1.37 million captured posts (22 Nov 2026)"
     ]
   ],
   "short_answer": [
@@ -156,6 +160,7 @@
     "The streak lines are chosen by each pro and change often. Under each pro the page offers \"more streaks\", which means more lines the pro selected, not a full record. Some pros do post losing lines too: sleepyj showed \"2026-27 CFB / 68-76 -36.41 Units\" beside his winning golf line, which is more honest than most marketing in this business."
   ],
   "record": [
+    "Watchdog search, 22 Nov 2026: we searched about 1.37 million captured public posts from X, Reddit, Covers, TheRX and other forums for Pregame.com plays that were posted or reposted before a game started. We found none, so there is no Watchdog graded sample for this seller yet.",
     "What a buyer can verify independently: very little. We found no full log of Pregame picks kept by an outside party that we could open, and no regulator record. In 2015 Pregame announced that a forum member would track Steve Fezzik's Bet Like a Pro service as an \"impartial third party\", but that tracking lives in a thread on Pregame's own forum and we did not audit it.",
     "What Pregame itself publishes: an \"Every Pro Pick Ever\" page that lists pro picks with a date and time, the pro, the pick, the final score, the odds, the size, win or loss, and the dollar result. On 20 Nov 2026 its date menu went back to 22 Oct 2026, about 30 days, and showed 33 graded picks for the previous day. Each profile shows the last 10 picks (Essler's last 10 were 7 wins and 3 losses, up $490 by our sum), best records chosen by size and sport, and a link to the win and loss page described above. This is more than most pick sellers show. But Pregame grades and stores all of it, the times shown appear to be game times rather than release times, and in a 2019 response the founder said picks enter the archive \"soon after the game starts\".",
     "The archive has been tested once in public. On 23 Jun 2016 Deadspin published an analysis of Pregame's archive by two bettors who scraped it. It reported that picks sold from 1 Jan 2011 through May 2016 added up to a loss of nearly $310,000 by Pregame's own grading, that a buyer who had bought and played every pick would be down $1,359,432 once the cost of the picks is counted, and that 11 of 49 pros showed a profit. It also said three pros, including Stan Sharp, had been removed from the archive. Bell told Deadspin they were deleted because their inactive pages drew search traffic, and released their histories, which Deadspin said showed one up 28 units and the other two down a combined 179 units. By Deadspin's count the roster as a whole picked about 51.67% against the spread.",

@@ -5,7 +5,7 @@
   "kind": "Single handicapper with his own site, also sold through several reseller storefronts",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Matt Fargo Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Matt Fargo review, checked 20 Nov 2026: a $1,299 year on his own site vs $1,999.95 elsewhere, credit only guarantees, and his records checked.",
   "h1": "Matt Fargo review",
@@ -42,6 +42,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "2 plays posted before the start, 25 Oct 2026 to 25 Oct 2026: 2 won, 0 lost, +1.87 units"
     ]
   ],
   "short_answer": [
@@ -157,6 +161,9 @@
     "The contest claims name Sports Watch Monitor. Its home page, at a Las Vegas mail suite address, offers \"Guaranteed Picks,\" pick packages and a \"Become A Capper\" sign up, which suggests it sells the handicappers it ranks. We did not find a results page we could open."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Matt Fargo does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Matt Fargo most often were BuzzKill (TheRX newsletters thread), Churchillsprts, 1218Sports, Hottie4Sports. From 25 Oct 2026 to 25 Oct 2026 we took every play our parser could read inside a Matt Fargo block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 2 plays, 2 won, 0 lost, +1.87 units, a return of +93.5% per unit risked. By sport: too few per sport to split. By month: October 2 won, 0 lost, +1.87 units.",
+    "What it means: 2 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
     "What a buyer can verify independently: very little. We found no full, time stamped log of every Matt Fargo pick with line, odds and release time, and no court or regulator record about him.",
     "What the sellers publish: year to date totals, selected runs and short recent lists. On 20 Nov 2026 PickDawgz listed his last 10 plays, 14 to 19 Nov, as 5 wins and 5 losses, including 1 win and 4 losses on the NFL card of 15 Nov. On 16 Nov the same list showed 2 and 8. WinningCappers showed him 47-30 over the past 30 days in all sports and 31-18 in college football. Each of these is graded by a site that sells the picks.",
     "The only outside tally we found is old: in March 2013 a Sportsbook Review member tracked his free picks over a few weeks at 8 wins and 9 losses, about 2 units down. That is a tiny sample of free plays, not his paid card.",
@@ -252,6 +259,10 @@
     [
       "Is Matt Fargo legit?",
       "He is a real handicapper who has sold picks since the early 2000s, through his own site and well known storefronts with published prices. We could not verify that his picks win over time, because no site shows a full record of every pick, and we found no court or regulator action involving him."
+    ],
+    [
+      "What does the Watchdog sample of Matt Fargo show?",
+      "We graded 2 of their plays that were posted publicly before the game started, 25 Oct 2026 to 25 Oct 2026: 2 won, 0 lost, +1.87 units at one unit each. That is too few plays to judge."
     ],
     [
       "Who is Matt Fargo?",

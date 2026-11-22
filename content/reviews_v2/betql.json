@@ -5,7 +5,7 @@
   "kind": "Betting data and computer model picks, sold by subscription",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "BetQL Review 2026: Prices, Refunds, Model Claims",
   "description": "BetQL review, checked 20 Nov 2026: weekly, monthly and annual prices, trial and refund terms, its own posted model records and 200 App Store reviews.",
   "h1": "BetQL review",
@@ -46,6 +46,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "None found in a search of about 1.37 million captured posts (22 Nov 2026)"
     ]
   ],
   "short_answer": [
@@ -150,6 +154,7 @@
     "The badges on the subscribe page do not match the stores. The page shows \"4.8 App Store\" while Apple showed 4.3 and Google Play showed 3.1. The page shows \"200k+ active bettors\" while the affiliate page speaks of 10,000 paying customers converted from 300,000 free users over an unstated 18 months."
   ],
   "record": [
+    "Watchdog search, 22 Nov 2026: we searched about 1.37 million captured public posts from X, Reddit, Covers, TheRX and other forums for BetQL plays that were posted or reposted before a game started. We found none, so there is no Watchdog graded sample for this seller yet.",
     "BetQL does not publish a full, time stamped log of every model bet with the star rating, the line, the price and the post time, at least not on any page we could open without paying. The homepage says star ratings are updated \"throughout the day\" as lines move, so a buyer cannot check a rating after the fact unless they saved it at the time. A one star App Store reviewer in 2022 alleged that ratings were changed after games started; we could not test that.",
     "What the seller publishes instead is the trend card carousel described above, profit figures per card in $100 units, and articles such as daily computer picks. The cards are recalculated as results come in, so the set we saw on 20 Nov 2026 will not be the set a reader sees next week.",
     "Every BetQL page we opened carried the disclaimer that the site is \"100% for entertainment purposes only\". The terms add that it \"does not involve real money betting or prizes\". That sits beside a homepage pitch to find mispriced lines and an offers page full of real money sportsbook, prediction market and pick em sign up bonuses."

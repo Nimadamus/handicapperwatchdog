@@ -5,7 +5,7 @@
   "kind": "Bet tracking app with a marketplace of paid pick sellers",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Juice Reel Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Juice Reel review, checked 20 Nov 2026: seller prices, how synced records and auto tail work, no refund terms, and what app users and Reddit report.",
   "h1": "Juice Reel review",
@@ -46,6 +46,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "9 plays posted before the start, 27 Sep 2026 to 31 Oct 2026: 6 won, 3 lost, +2.58 units"
     ]
   ],
   "short_answer": [
@@ -149,6 +153,9 @@
     "The usage numbers have grown fast and cannot be checked. The September 2022 press release spoke of 20K downloads, about 1,700 daily active users and over $300M in synced handle. In November 2026 the App Store text said over $4,000,000,000 and the homepage said 250K+ bettors."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Juice Reel does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Juice Reel most often were CapperLedger, AxiomHQPicks, IainMacBets, TShoeIndex. From 27 Sep 2026 to 31 Oct 2026 we took every play our parser could read inside a Juice Reel block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 9 plays, 6 won, 3 lost, +2.58 units, a return of +28.6% per unit risked. By sport: NCAAF 3 won, 2 lost, +0.73 units; NFL 3 won, 1 lost, +1.85 units. By month: September 1 won, 1 lost, -0.02 units; October 5 won, 2 lost, +2.60 units.",
+    "What it means: 9 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
     "What Juice Reel says: seller stats and open bets are imported from connected sportsbook accounts, every pick is timestamped, and a seller cannot edit or delete a losing bet. If that works as described, it is a better record than most pick sellers offer, because losses stay on the page.",
     "What users add: in the 2025 AMA thread a user said they asked the team to remove a personal bet before the game started and were refused, and that stats are kept even if an account is cancelled. In 2026 Reddit members cited one tout's Juice Reel record (down over 300 units, they said) to dispute claims he made elsewhere. Those are signs the records are hard to edit, though they are user statements, not an audit.",
     "What we could not verify: we found no third party audit, contest or regulator record behind the sync. The terms say \"Juice is not responsible for the accuracy, reliability or legality of User Content or Profile Content.\" Users report books that will not sync, such as bet365 on Android in 2025 and bet365 in general in February 2026. A seller's record is the platform's own data, not an independently verified log. It is still worth reading, because you can see bet volume, ROI and history before you pay."
@@ -329,6 +336,10 @@
       "Yes, it is a real company. Juice Integration, Inc. of New York runs it, the founder has answered questions publicly under his own name, and the app is on the Apple App Store and Google Play. Whether any seller on it wins over time is a separate question that we could not verify."
     ],
     [
+      "What does the Watchdog sample of Juice Reel show?",
+      "We graded 9 of their plays that were posted publicly before the game started, 27 Sep 2026 to 31 Oct 2026: 6 won, 3 lost, +2.58 units at one unit each. That is too few plays to judge."
+    ],
+    [
       "How much does Juice Reel cost?",
       "The bet tracker is free. On 20 Nov 2026 seller subscriptions on the marketplace page ran from $0.77 to $38.46 a week, and the App Store listed in app purchases from $1.99 to $49.99, including Juice Plus at $8.99. Subscriptions auto renew and payments are non refundable."
     ],
@@ -468,5 +479,100 @@
       "accessed": "20 Nov 2026"
     }
   ],
-  "pricing_source": 0
+  "pricing_source": 0,
+  "record_table": {
+    "caption": "Every Juice Reel play in the Watchdog sample, 27 Sep 2026 to 31 Oct 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "27 Sep 09:05 AM",
+        "NFL",
+        "Over 44.5",
+        "-102",
+        "Won",
+        "+0.98",
+        "AxiomHQPicks"
+      ],
+      [
+        "27 Sep 09:05 AM",
+        "NFL",
+        "Seattle Seahawks -9.5",
+        "+124",
+        "Lost",
+        "-1.00",
+        "AxiomHQPicks"
+      ],
+      [
+        "4 Oct 08:11 AM",
+        "NFL",
+        "Under 42.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TShoeIndex"
+      ],
+      [
+        "5 Oct 04:13 PM",
+        "NFL",
+        "Atlanta Falcons +2.5",
+        "-104",
+        "Won",
+        "+0.96",
+        "AxiomHQPicks"
+      ],
+      [
+        "24 Oct 09:09 AM",
+        "NCAAF",
+        "BYU Cougars -6.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "AxiomHQPicks"
+      ],
+      [
+        "24 Oct 09:09 AM",
+        "NCAAF",
+        "Iowa Hawkeyes -7.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "AxiomHQPicks"
+      ],
+      [
+        "24 Oct 09:09 AM",
+        "NCAAF",
+        "Kentucky Wildcats -8.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "AxiomHQPicks"
+      ],
+      [
+        "24 Oct 09:09 AM",
+        "NCAAF",
+        "Texas Longhorns -2.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "AxiomHQPicks"
+      ],
+      [
+        "31 Oct 06:43 AM",
+        "NCAAF",
+        "Georgia Bulldogs -11.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "AxiomHQPicks"
+      ]
+    ]
+  }
 }

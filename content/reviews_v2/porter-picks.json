@@ -5,14 +5,14 @@
   "kind": "Paid Discord pick group sold by monthly subscription, promoted on X and a free Substack",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Porter Picks Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Porter Picks review, checked 20 Nov 2026: VIP Discord from $75 a month to $750 a year, self reported unit totals, no refunds, no independent reviews.",
   "h1": "Porter Picks review",
   "dek": "A sports pick group that sells a VIP Discord through DubClub and LaunchPass, from $75 a month to $750 a year, and posts free daily selections on Substack. Every record we saw is a unit total reported by the seller, the totals do not always agree, a promised public spreadsheet was not linked anywhere we looked, and we found no independent buyer reviews.",
   "status": {
-    "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Porter Picks plays. This page reports what we could check on 20 Nov 2026 and labels everything else."
+    "label": "Partly graded",
+    "note": "Porter Picks publishes no complete log we can audit. Watchdog graded 73 of their plays that were posted publicly before the game started. This is a sample, not a full record."
   },
   "glance": [
     [
@@ -38,6 +38,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "73 plays posted before the start, 14 Sep 2026 to 18 Nov 2026: 41 won, 31 lost, 1 push, +7.52 units"
     ]
   ],
   "short_answer": [
@@ -146,14 +150,17 @@
     "The free picks FAQ says results are tracked by a third party and kept in a public spreadsheet. We looked for a link on the posts, the About page, the Substack profile, DubClub and the LaunchPass page and found none. If the spreadsheet exists, ask for the link before paying: it would be the single most useful thing the seller could show."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Porter Picks does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Porter Picks most often were TheGodOfCappers, Porter_Picks, Thecappershub, EZMSports. From 14 Sep 2026 to 18 Nov 2026 we took every play our parser could read inside a Porter Picks block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 73 plays, 41 won, 31 lost, 1 push, +7.52 units, a return of +10.3% per unit risked. By sport: NCAAF 16 won, 13 lost, +1.41 units; NFL 12 won, 7 lost, 1 push, +3.97 units; NHL 6 won, 4 lost, +1.49 units; MLB 4 won, 5 lost, -0.17 units. By month: September 23 won, 17 lost, 1 push, +5.12 units; October 12 won, 6 lost, +4.98 units; November 6 won, 8 lost, -2.58 units.",
+    "What it means: a 57% win rate on 72 decided plays has a 95% range of about 45% to 68%, and at the prices in this sample a bettor needed about 52% to break even. That range includes break even, so this sample cannot show whether they win or lose over time. The sample covers only the plays that others chose to post, which is not the full card a subscriber receives, and stakes are counted flat even where the seller rates plays differently.",
     "What a buyer can verify independently: nothing that we could find. We found no full, time stamped log of every Porter Picks play with the line, the odds, the stake and the release time, and no third party tracking we could open.",
     "What the seller publishes: running records per sport at the top of each free Substack pick (NFL, NHL and college football runs in Nov 2026), unit totals on the Substack profile, Reletter, LaunchPass and X, and occasional daily recaps. A 30 May 2025 recap listed seven picks with five winners, matching its headline, but did not show the stake on each pick, so its +13.70 unit total could not be checked pick by pick.",
     "The free Substack picks are the best starting point for a buyer. Each one gives the team, the line, the odds and a start time, posted before the game. Write each one down and grade it yourself for a few weeks; that is the only record of this service you can fully trust.",
     "The DubClub page states no win rate, record or units at all."
   ],
   "our_data": {
-    "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Porter Picks history is matched to a Watchdog graded record, so we make no claim about how Porter Picks performs.",
+    "matched": true,
+    "text": "Watchdog graded 73 Porter Picks plays posted before the start, 14 Sep 2026 to 18 Nov 2026: 41 won, 31 lost, 1 push, +7.52 units at one unit each. A sample of what was posted publicly, not a full record.",
     "context": "For scale: the seller advertises a 55.6% win rate over 3,700+ picks and runs such as +54.90 units in 22 days. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard odds of 110 to win 100 a bettor needs about 52.4% to break even."
   },
   "customers_intro": "We found no independent customer reviews of Porter Picks. Below is what we checked, the testimonials the seller posts itself, and the one outside mention we found.",
@@ -238,6 +245,10 @@
     [
       "Is Porter Picks legit?",
       "It is a real, active pick service with published DubClub prices, about 700 DubClub subscribers and daily posts. We could not verify that its picks win over time, because it does not publish a full checkable record, no person or company is named, and we found no independent buyer reports."
+    ],
+    [
+      "What does the Watchdog sample of Porter Picks show?",
+      "We graded 73 of their plays that were posted publicly before the game started, 14 Sep 2026 to 18 Nov 2026: 41 won, 31 lost, 1 push, +7.52 units at one unit each. The 95% range of the win rate is about 45% to 68%, against about 52% needed to break even."
     ],
     [
       "How much does Porter Picks cost?",
@@ -354,5 +365,676 @@
       "accessed": "20 Nov 2026"
     }
   ],
-  "pricing_source": 0
+  "pricing_source": 0,
+  "record_table": {
+    "caption": "Every Porter Picks play in the Watchdog sample, 14 Sep 2026 to 18 Nov 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "14 Sep 01:13 PM",
+        "MLB",
+        "San Diego Padres -2.5",
+        "+105",
+        "Lost",
+        "-1.00",
+        "allpicksarefree"
+      ],
+      [
+        "14 Sep 01:18 PM",
+        "NFL",
+        "Kansas City Chiefs -2.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "15 Sep 02:06 PM",
+        "MLB",
+        "Baltimore Orioles ML",
+        "+118",
+        "Won",
+        "+1.18",
+        "Thecappershub"
+      ],
+      [
+        "15 Sep 02:08 PM",
+        "MLB",
+        "Houston Astros -1.5",
+        "+130",
+        "Won",
+        "+1.30",
+        "allpicksarefree"
+      ],
+      [
+        "15 Sep 02:08 PM",
+        "MLB",
+        "San Diego Padres -1.5",
+        "-125",
+        "Lost",
+        "-1.00",
+        "allpicksarefree"
+      ],
+      [
+        "16 Sep 09:49 AM",
+        "MLB",
+        "Boston Red Sox ML",
+        "+102",
+        "Lost",
+        "-1.00",
+        "allpicksarefree"
+      ],
+      [
+        "16 Sep 09:52 AM",
+        "MLB",
+        "Under 8",
+        "-105",
+        "Lost",
+        "-1.00",
+        "TitanSportsCo"
+      ],
+      [
+        "16 Sep 03:15 PM",
+        "MLB",
+        "Pittsburgh Pirates ML",
+        "+110",
+        "Lost",
+        "-1.00",
+        "Thecappershub"
+      ],
+      [
+        "17 Sep 09:30 AM",
+        "NFL",
+        "Over 54",
+        "-110",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "17 Sep 01:39 PM",
+        "MLB",
+        "Houston Astros -1.5",
+        "+140",
+        "Won",
+        "+1.40",
+        "AllCapperLeaked"
+      ],
+      [
+        "18 Sep 10:22 AM",
+        "MLB",
+        "Washington Nationals ML",
+        "-105",
+        "Won",
+        "+0.95",
+        "TheGodOfCappers"
+      ],
+      [
+        "18 Sep 11:43 AM",
+        "NCAAF",
+        "Under 53",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "BettingBuddyy"
+      ],
+      [
+        "19 Sep 07:18 AM",
+        "NCAAF",
+        "Coastal Carolina Chanticleers +5.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "allpicksarefree"
+      ],
+      [
+        "19 Sep 07:18 AM",
+        "NCAAF",
+        "Over 62.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "allpicksarefree"
+      ],
+      [
+        "19 Sep 07:18 AM",
+        "NCAAF",
+        "Louisville Cardinals ML",
+        "not shown",
+        "Won",
+        "+0.91",
+        "allpicksarefree"
+      ],
+      [
+        "19 Sep 07:18 AM",
+        "NCAAF",
+        "Over 58.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "allpicksarefree"
+      ],
+      [
+        "19 Sep 07:18 AM",
+        "NCAAF",
+        "Virginia Tech Hokies -2.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "allpicksarefree"
+      ],
+      [
+        "20 Sep 03:10 AM",
+        "NFL",
+        "Denver Broncos -2.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "carl2_r"
+      ],
+      [
+        "20 Sep 03:10 AM",
+        "NFL",
+        "Indianapolis Colts +7",
+        "not shown",
+        "Won",
+        "+0.91",
+        "carl2_r"
+      ],
+      [
+        "20 Sep 03:10 AM",
+        "NFL",
+        "Over 50.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "carl2_r"
+      ],
+      [
+        "20 Sep 03:10 AM",
+        "NFL",
+        "Tennessee Titans +7.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "carl2_r"
+      ],
+      [
+        "20 Sep 03:10 AM",
+        "NFL",
+        "Minnesota Vikings +5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "carl2_r"
+      ],
+      [
+        "21 Sep 01:33 PM",
+        "NFL",
+        "Los Angeles Rams -6.5",
+        "-120",
+        "Won",
+        "+0.83",
+        "Thecappershub"
+      ],
+      [
+        "22 Sep 02:07 PM",
+        "WNBA",
+        "Indiana Fever ML",
+        "+100",
+        "Won",
+        "+1.00",
+        "Thecappershub"
+      ],
+      [
+        "25 Sep 02:53 PM",
+        "NCAAF",
+        "Clemson Tigers ML",
+        "-130",
+        "Won",
+        "+0.77",
+        "TheGodOfCappers"
+      ],
+      [
+        "25 Sep 02:53 PM",
+        "NCAAF",
+        "Navy Midshipmen -6.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ],
+      [
+        "25 Sep 08:27 PM",
+        "NCAAF",
+        "Auburn Tigers -9.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "JameslockZ__"
+      ],
+      [
+        "25 Sep 08:27 PM",
+        "NCAAF",
+        "Boise State Broncos -7",
+        "not shown",
+        "Won",
+        "+0.91",
+        "JameslockZ__"
+      ],
+      [
+        "25 Sep 08:27 PM",
+        "NCAAF",
+        "Florida Gators -3",
+        "not shown",
+        "Won",
+        "+0.91",
+        "JameslockZ__"
+      ],
+      [
+        "25 Sep 08:27 PM",
+        "NCAAF",
+        "LSU Tigers -9",
+        "not shown",
+        "Won",
+        "+0.91",
+        "JameslockZ__"
+      ],
+      [
+        "25 Sep 08:27 PM",
+        "NCAAF",
+        "Maryland Terrapins ML",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "JameslockZ__"
+      ],
+      [
+        "25 Sep 08:27 PM",
+        "NCAAF",
+        "Under 44.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "JameslockZ__"
+      ],
+      [
+        "25 Sep 08:27 PM",
+        "NCAAF",
+        "Oregon Ducks -2.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "JameslockZ__"
+      ],
+      [
+        "25 Sep 08:27 PM",
+        "NCAAF",
+        "Tennessee Volunteers +5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "JameslockZ__"
+      ],
+      [
+        "25 Sep 08:27 PM",
+        "NCAAF",
+        "West Virginia Mountaineers ML",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "JameslockZ__"
+      ],
+      [
+        "26 Sep 07:48 PM",
+        "NFL",
+        "Baltimore Ravens -3.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "GOLFHUBPICKS"
+      ],
+      [
+        "26 Sep 07:48 PM",
+        "NFL",
+        "Houston Texans ML",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "GOLFHUBPICKS"
+      ],
+      [
+        "26 Sep 07:48 PM",
+        "NFL",
+        "Los Angeles Chargers +7.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "GOLFHUBPICKS"
+      ],
+      [
+        "26 Sep 07:48 PM",
+        "NFL",
+        "New Orleans Saints -3",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "GOLFHUBPICKS"
+      ],
+      [
+        "26 Sep 07:48 PM",
+        "NFL",
+        "New York Jets +7",
+        "not shown",
+        "Push",
+        "+0.00",
+        "GOLFHUBPICKS"
+      ],
+      [
+        "27 Sep 04:56 PM",
+        "NFL",
+        "Denver Broncos ML",
+        "+105",
+        "Won",
+        "+1.05",
+        "Thecappershub"
+      ],
+      [
+        "2 Oct 07:11 PM",
+        "NCAAF",
+        "Missouri Tigers +5.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "DeParlayKing001"
+      ],
+      [
+        "6 Oct 01:55 PM",
+        "NHL",
+        "Utah Mammoth ML",
+        "+105",
+        "Won",
+        "+1.05",
+        "Thecappershub"
+      ],
+      [
+        "9 Oct 02:21 PM",
+        "NCAAF",
+        "Over 59.5",
+        "-110",
+        "Won",
+        "+0.91",
+        "BettingBuddyy"
+      ],
+      [
+        "13 Oct 12:51 PM",
+        "NCAAF",
+        "Under 44",
+        "-110",
+        "Lost",
+        "-1.00",
+        "Hottie4Sports"
+      ],
+      [
+        "13 Oct 03:10 PM",
+        "NHL",
+        "Edmonton Oilers ML",
+        "-125",
+        "Won",
+        "+0.80",
+        "EZMSports"
+      ],
+      [
+        "13 Oct 04:08 PM",
+        "NHL",
+        "St. Louis Blues ML",
+        "-105",
+        "Won",
+        "+0.95",
+        "Judgementmafia"
+      ],
+      [
+        "14 Oct 12:57 PM",
+        "NHL",
+        "Over 6.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "blessings154857"
+      ],
+      [
+        "14 Oct 02:31 PM",
+        "NCAAF",
+        "Over 52.5",
+        "-110",
+        "Lost",
+        "-1.00",
+        "EZMSports"
+      ],
+      [
+        "15 Oct 10:29 AM",
+        "NFL",
+        "Seattle Seahawks -2.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ],
+      [
+        "15 Oct 02:57 PM",
+        "NCAAF",
+        "Tulane Green Wave +7",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EliteFreePlays"
+      ],
+      [
+        "16 Oct 06:43 AM",
+        "NFL",
+        "Cleveland Browns +4.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "cappers_daily"
+      ],
+      [
+        "16 Oct 06:43 AM",
+        "NFL",
+        "Las Vegas Raiders +5.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "cappers_daily"
+      ],
+      [
+        "16 Oct 06:43 AM",
+        "NFL",
+        "New York Jets +7.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "cappers_daily"
+      ],
+      [
+        "16 Oct 12:40 PM",
+        "NCAAF",
+        "Wisconsin Badgers +3",
+        "-120",
+        "Lost",
+        "-1.00",
+        "Hottie4Sports"
+      ],
+      [
+        "16 Oct 02:25 PM",
+        "NCAAF",
+        "Air Force Falcons ML",
+        "-110",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "16 Oct 02:25 PM",
+        "NCAAF",
+        "Over 58.5",
+        "-110",
+        "Lost",
+        "-1.00",
+        "EZMSports"
+      ],
+      [
+        "16 Oct 02:25 PM",
+        "NCAAF",
+        "Under 51",
+        "-110",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "16 Oct 02:25 PM",
+        "NCAAF",
+        "Texas Longhorns -11",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EZMSports"
+      ],
+      [
+        "3 Nov 01:38 PM",
+        "NHL",
+        "Columbus Blue Jackets ML",
+        "not shown",
+        "Won",
+        "+0.91",
+        "1313"
+      ],
+      [
+        "3 Nov 01:38 PM",
+        "NHL",
+        "St. Louis Blues ML",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "1313"
+      ],
+      [
+        "3 Nov 01:38 PM",
+        "NHL",
+        "Over 6.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "1313"
+      ],
+      [
+        "4 Nov 03:19 PM",
+        "NCAAF",
+        "Central Michigan Chippewas +1.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "Gabbypicks"
+      ],
+      [
+        "14 Nov 11:59 AM",
+        "NCAAB",
+        "LSU Tigers +5.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "CappersCashB"
+      ],
+      [
+        "15 Nov 09:14 AM",
+        "NFL",
+        "Atlanta Falcons +3.5",
+        "-120",
+        "Lost",
+        "-1.00",
+        "CappersCashB"
+      ],
+      [
+        "15 Nov 09:14 AM",
+        "NFL",
+        "Dallas Cowboys +4.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "CappersCashB"
+      ],
+      [
+        "16 Nov 12:52 PM",
+        "NHL",
+        "Montreal Canadiens ML",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "ItsCappersPicks"
+      ],
+      [
+        "16 Nov 03:38 PM",
+        "NBA",
+        "Miami Heat +2.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "CappersCashB"
+      ],
+      [
+        "18 Nov 03:49 PM",
+        "NCAAF",
+        "Over 47.5",
+        "-110",
+        "Won",
+        "+0.91",
+        "CappersCashB"
+      ],
+      [
+        "18 Nov 03:49 PM",
+        "NBA",
+        "Brooklyn Nets -2.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "CappersCashB"
+      ],
+      [
+        "18 Nov 03:49 PM",
+        "NBA",
+        "New Orleans Pelicans +5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "CappersCashB"
+      ],
+      [
+        "18 Nov 03:50 PM",
+        "NHL",
+        "Over 6",
+        "-105",
+        "Lost",
+        "-1.00",
+        "CappersCashB"
+      ],
+      [
+        "18 Nov 03:50 PM",
+        "NHL",
+        "Utah Mammoth ML",
+        "-115",
+        "Won",
+        "+0.87",
+        "CappersCashB"
+      ]
+    ]
+  }
 }

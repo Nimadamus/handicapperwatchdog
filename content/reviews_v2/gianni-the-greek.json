@@ -5,14 +5,14 @@
   "kind": "Pick seller on the WagerTalk marketplace, formerly sold on Pregame as Vegas-Runner",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Gianni the Greek Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Gianni the Greek review, checked 20 Nov 2026: WagerTalk prices, a credit only guarantee, his own posted records checked, and the Vegas-Runner years.",
   "h1": "Gianni the Greek review",
   "dek": "A Las Vegas betting personality who sells picks on WagerTalk and was known on Pregame as Vegas-Runner. Daily passes ran $26 to $39 when we checked, and a year was $1,188 on sale. The guarantee pays in site credit, the records are seller picked streaks, and older forum posts and a 2016 news report raise questions we could not settle.",
   "status": {
-    "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Gianni the Greek picks. This page reports what we could check on 20 Nov 2026 and labels everything else."
+    "label": "Partly graded",
+    "note": "Gianni the Greek publishes no complete log we can audit. Watchdog graded 14 of their plays that were posted publicly before the game started. This is a sample, not a full record."
   },
   "glance": [
     [
@@ -46,6 +46,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "14 plays posted before the start, 19 Sep 2026 to 21 Nov 2026: 11 won, 3 lost, +6.60 units"
     ]
   ],
   "short_answer": [
@@ -153,14 +157,18 @@
     "The media claims are real in the sense that the press release lists them: a CNBC sports betting special, a New York Times Magazine piece, the documentary \"The Best of It\" and radio appearances. He also appeared in a 2016 Deadspin investigation of Pregame, described below. Media exposure shows he is well known. It is not evidence that his picks win."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Gianni the Greek does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Gianni the Greek most often were WagerTalkPicks, 1218Sports, TheGodOfCappers, EZMSports. From 19 Sep 2026 to 21 Nov 2026 we took every play our parser could read inside a Gianni the Greek block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 14 plays, 11 won, 3 lost, +6.60 units, a return of +47.1% per unit risked. By sport: NCAAF 5 won, 2 lost, +2.40 units; NFL 3 won, 1 lost, +1.62 units. By month: September 4 won, 1 lost, +2.39 units; October 5 won, 1 lost, +3.40 units; November 2 won, 1 lost, +0.82 units.",
+    "What it means: a 79% win rate on 14 decided plays has a 95% range of about 52% to 92%, and at the prices in this sample a bettor needed about 54% to break even. That range includes break even, so this sample cannot show whether they win or lose over time. The sample covers only the plays that others chose to post, which is not the full card a subscriber receives, and stakes are counted flat even where the seller rates plays differently.",
+    "Another 1 plays naming Gianni the Greek first appeared after the game had started, so they are not counted; they went 0 won, 1 lost, -1.00 units.",
     "What a buyer can verify independently: nothing that we could find. We found no full, time stamped log of every pick with the line and release time, and no third party audit.",
     "What the seller publishes: streak totals, leaderboards and a Last 20 table of recent plays. On 20 Nov 2026 we counted 13 wins and 7 losses in that table, covering 14 to 19 Nov. Risking one unit on each of the 19 plays that showed a price, at the prices shown, would have won about 2.8 units, plus a winning six point teaser with no price shown. That is a good week, and a week is all it is. WagerTalk grades these plays itself and also sells them.",
     "The longer history comes from outside WagerTalk. A June 2016 Deadspin investigation of the Pregame network reported, citing a 2012 contract, that Pregame paid \"Vegas Runner\" a 33 percent commission on his sales. The reporter wrote that in an hour long interview Karalis talked about being Pregame's biggest seller and never mentioned winning, and that he described company meetings focused on how to sell. The article also reported a lawsuit in Clark County, Nevada between Pregame's founder and Karalis over a non compete clause and the Vegas Runner name, in which the founder won a preliminary injunction over the name; it did not report the final outcome. Pregame's founder later sued Deadspin over the article and the case settled in 2019, with Deadspin saying it stood by its reporting.",
     "Forum posters in 2009 to 2011 said his paid plays on Pregame lost heavily in some seasons, one claiming over 100 units lost in 2011. We could not check those figures."
   ],
   "our_data": {
-    "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Gianni the Greek pick history is matched to a Watchdog graded record, so we make no claim about how Gianni the Greek performs.",
+    "matched": true,
+    "text": "Watchdog graded 14 Gianni the Greek plays posted before the start, 19 Sep 2026 to 21 Nov 2026: 11 won, 3 lost, +6.60 units at one unit each. A sample of what was posted publicly, not a full record.",
     "context": "For scale: the streaks on his page run from about 65% to 92% winners, while his own 2026 college football premium record was 51%. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
   "customers_intro": "Most independent comment on this seller is old and was written about Vegas-Runner, his name on Pregame. Recent comment is thinner: a CapperTek review, a few Reddit threads and forum reposts of his plays. Below is the whole pattern, then each post and how much weight it can carry.",
@@ -284,6 +292,10 @@
       "He is a real, well known Las Vegas betting personality who sells picks through WagerTalk, which has written terms and a Las Vegas address. We could not verify that his picks win over time. Forum posters from 2009 to 2011 made serious allegations about his Pregame era, which we could not verify, and we found no court or regulator action about his picks."
     ],
     [
+      "What does the Watchdog sample of Gianni the Greek show?",
+      "We graded 14 of their plays that were posted publicly before the game started, 19 Sep 2026 to 21 Nov 2026: 11 won, 3 lost, +6.60 units at one unit each. The 95% range of the win rate is about 52% to 92%, against about 54% needed to break even."
+    ],
+    [
       "How much does Gianni the Greek cost?",
       "On 20 Nov 2026 single day passes were $26.00 to $39.00 ($39.00 to $59.00 with the credit guarantee), three day sport passes were $49.00, All Access passes ran from $39.00 for a day to $1,999.00 for a year, and a one payment year pass was on sale at $1,188.00."
     ],
@@ -383,5 +395,145 @@
       "accessed": "20 Nov 2026"
     }
   ],
-  "pricing_source": 0
+  "pricing_source": 0,
+  "record_table": {
+    "caption": "Every Gianni the Greek play in the Watchdog sample, 19 Sep 2026 to 21 Nov 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "19 Sep 09:51 AM",
+        "NCAAF",
+        "Ole Miss Rebels +3",
+        "-125",
+        "Won",
+        "+0.80",
+        "EZMSports"
+      ],
+      [
+        "19 Sep 09:01 PM",
+        "NFL",
+        "Cleveland Browns +9",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ],
+      [
+        "23 Sep 09:42 AM",
+        "MLB",
+        "Minnesota Twins ML",
+        "-150",
+        "Won",
+        "+0.67",
+        "TheGodOfCappers"
+      ],
+      [
+        "24 Sep 02:46 PM",
+        "NCAAF",
+        "Coastal Carolina Chanticleers +3",
+        "-125",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ],
+      [
+        "25 Sep 09:39 AM",
+        "MLB",
+        "Minnesota Twins ML",
+        "+101",
+        "Won",
+        "+1.01",
+        "TheGodOfCappers"
+      ],
+      [
+        "30 Sep 11:43 PM",
+        "NCAAF",
+        "Missouri Tigers +6",
+        "-115",
+        "Won",
+        "+0.87",
+        "ryangenero"
+      ],
+      [
+        "15 Oct 11:35 AM",
+        "NFL",
+        "Denver Broncos +3",
+        "-125",
+        "Won",
+        "+0.80",
+        "TheGodOfCappers"
+      ],
+      [
+        "22 Oct 10:05 AM",
+        "NBA",
+        "Oklahoma City Thunder -8.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ],
+      [
+        "24 Oct 10:24 PM",
+        "NFL",
+        "Houston Texans -6 (1h)",
+        "-115",
+        "Lost",
+        "-1.00",
+        "ryangenero"
+      ],
+      [
+        "30 Oct 10:16 PM",
+        "NCAAF",
+        "Kansas Jayhawks +7",
+        "not shown",
+        "Won",
+        "+0.91",
+        "kobebean"
+      ],
+      [
+        "30 Oct 10:16 PM",
+        "NCAAF",
+        "Utah Utes -6.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "kobebean"
+      ],
+      [
+        "3 Nov 07:35 PM",
+        "NCAAF",
+        "Massachusetts Minutemen -3",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "ryangenero"
+      ],
+      [
+        "15 Nov 04:59 PM",
+        "NFL",
+        "Over 49",
+        "not shown",
+        "Won",
+        "+0.91",
+        "ryangenero"
+      ],
+      [
+        "21 Nov 06:20 AM",
+        "NCAAF",
+        "Nebraska Cornhuskers +4",
+        "not shown",
+        "Won",
+        "+0.91",
+        "stoopid"
+      ]
+    ]
+  }
 }

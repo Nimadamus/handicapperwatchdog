@@ -5,7 +5,7 @@
   "kind": "Pick service sold under one famous name, through its own store and the SportsCapping reseller network",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Jim Feist Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Jim Feist review, checked 20 Nov 2026: $149 for 30 days on his store, $30 to $1,999.95 on the network, credit only guarantee, court and buyer history.",
   "h1": "Jim Feist review",
@@ -46,6 +46,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "3 plays posted before the start, 1 Nov 2026 to 1 Nov 2026: 2 won, 1 lost, +0.82 units"
     ]
   ],
   "short_answer": [
@@ -172,6 +176,9 @@
     "The \"Yesterday's plays\" table on the network pages showed 1 win and 2 losses on 20 Nov 2026 (Colts and Texans over 44 lost, Clippers and Spurs over 225.5 won, Temple minus 2.5 lost), so losing days are shown, which is fair to note."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Jim Feist does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Jim Feist most often were Churchillsprts, TheGodOfCappers, 1218Sports, EZMSports. From 1 Nov 2026 to 1 Nov 2026 we took every play our parser could read inside a Jim Feist block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 3 plays, 2 won, 1 lost, +0.82 units, a return of +27.3% per unit risked. By sport: NFL 2 won, 1 lost, +0.82 units. By month: November 2 won, 1 lost, +0.82 units.",
+    "What it means: 3 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
     "What a buyer can verify independently: nothing that we could find. We found no full, time stamped log of every Jim Feist pick with the line, the odds and the release time kept by an outside party.",
     "What the seller side publishes: the network leaderboard by sport and period, streak lines and a yesterday table on the storefronts. These are graded by the same network that sells the picks, on the odds the handicapper selected, so they are the seller's own figures, not an audit. CappersPicks calls its figures documented, and its footer says the storefront is \"located in Antigua, West Indies.\"",
     "jimfeist.com itself shows no record on the pages we read. Its picks area lists categories for Jim's picks and for \"Big Mike's Picks,\" a second capper the site says has worked in the industry since 1986, starting at National Sports Services.",
@@ -312,6 +319,10 @@
     [
       "Is Jim Feist legit?",
       "He is a real, long running seller with a named Las Vegas address, published prices, his own store and a reseller network behind him. We could not verify that his picks win over time, because no independent full record exists. The one federal buyer suit we found ended in judgment for the defendants, and we found no FTC or state regulator action."
+    ],
+    [
+      "What does the Watchdog sample of Jim Feist show?",
+      "We graded 3 of their plays that were posted publicly before the game started, 1 Nov 2026 to 1 Nov 2026: 2 won, 1 lost, +0.82 units at one unit each. That is too few plays to judge."
     ],
     [
       "Who is Jim Feist and what was National Sports Services?",
@@ -458,5 +469,46 @@
       "accessed": "20 Nov 2026"
     }
   ],
-  "pricing_source": 2
+  "pricing_source": 2,
+  "record_table": {
+    "caption": "Every Jim Feist play in the Watchdog sample, 1 Nov 2026 to 1 Nov 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "1 Nov 05:39 AM",
+        "NFL",
+        "Miami Dolphins +7",
+        "not shown",
+        "Won",
+        "+0.91",
+        "1218Sports"
+      ],
+      [
+        "1 Nov 07:03 AM",
+        "NFL",
+        "Over 45",
+        "not shown",
+        "Won",
+        "+0.91",
+        "cpawsports"
+      ],
+      [
+        "1 Nov 07:03 AM",
+        "NFL",
+        "Kansas City Chiefs ML",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "cpawsports"
+      ]
+    ]
+  }
 }

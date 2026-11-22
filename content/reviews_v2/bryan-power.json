@@ -5,7 +5,7 @@
   "kind": "Pick seller on the WagerTalk marketplace since 2022, previously at Covers Experts per his bio",
   "checked": "17 Nov 2026",
   "checked_iso": "2026-11-17",
-  "updated_iso": "2026-11-17",
+  "updated_iso": "2026-11-22",
   "title": "Bryan Power Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Bryan Power review, checked 17 Nov 2026: $5 plays and $49 passes on WagerTalk, a credit only guarantee, his Last 20 counted and what bettors posted.",
   "h1": "Bryan Power review",
@@ -38,6 +38,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "6 plays posted before the start, 22 Sep 2026 to 14 Nov 2026: 3 won, 3 lost, -0.24 units"
     ]
   ],
   "short_answer": [
@@ -125,6 +129,9 @@
     "Each streak starts on a date the seller chose, and the dollar figures assume a stake the page does not explain."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Bryan Power does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Bryan Power most often were WagerTalkPicks, TheGodOfCappers, 1218Sports, EZMSports. From 22 Sep 2026 to 14 Nov 2026 we took every play our parser could read inside a Bryan Power block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 6 plays, 3 won, 3 lost, -0.24 units, a return of -4.0% per unit risked. By sport: NCAAF 1 won, 3 lost, -2.06 units. By month: September 1 won, 0 lost, +0.91 units; October 1 won, 1 lost, -0.09 units; November 1 won, 2 lost, -1.06 units.",
+    "What it means: 6 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
     "What a buyer can verify independently: no full, time stamped log of every paid pick that we could find.",
     "What the seller publishes: streak totals, leaderboard entries such as 33 and 22 and 2 over the last 30 days, and a Last 20 table with odds. On 17 Nov 2026 the Last 20 table had 9 wins and 11 losses, including two six point teasers that won and a three team parlay that lost. At one unit a play and the listed odds, that comes to about minus 3.5 units. WagerTalk grades these itself and also sells the picks.",
     "A third party: GameAdvisers, a site that says it may earn sportsbook commissions, tracks his free WagerTalk picks. On 17 Nov 2026 it showed 9 and 6 and plus $246 over the last 30 days, while another box on the same page said 9 and 7. That covers free picks only, a sample of about 15 plays, and the profit figures assume a flat $100 bet."
@@ -197,6 +204,10 @@
     [
       "Is Bryan Power legit?",
       "He is a real, active seller on WagerTalk, a Las Vegas marketplace with written terms, and he has sold there since at least 2022. We could not verify that his paid picks win over time, because no full record is published, and we found no court or regulator action involving him."
+    ],
+    [
+      "What does the Watchdog sample of Bryan Power show?",
+      "We graded 6 of their plays that were posted publicly before the game started, 22 Sep 2026 to 14 Nov 2026: 3 won, 3 lost, -0.24 units at one unit each. That is too few plays to judge."
     ],
     [
       "How much does Bryan Power cost?",
@@ -283,5 +294,73 @@
       "accessed": "17 Nov 2026"
     }
   ],
-  "pricing_source": 0
+  "pricing_source": 0,
+  "record_table": {
+    "caption": "Every Bryan Power play in the Watchdog sample, 22 Sep 2026 to 14 Nov 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "22 Sep 09:33 AM",
+        "MLB",
+        "Over 7.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "23 Oct 08:21 AM",
+        "NCAAF",
+        "Tulsa Golden Hurricane ML",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ],
+      [
+        "25 Oct 07:26 AM",
+        "BUNDESLIGA",
+        "Bayern Munich -1",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ],
+      [
+        "14 Nov 05:44 AM",
+        "NCAAF",
+        "Texas A&M Aggies +2.5",
+        "-105",
+        "Lost",
+        "-1.00",
+        "1218Sports"
+      ],
+      [
+        "14 Nov 05:44 AM",
+        "NCAAF",
+        "SMU Mustangs ML",
+        "-113",
+        "Lost",
+        "-1.00",
+        "1218Sports"
+      ],
+      [
+        "14 Nov 05:44 AM",
+        "NCAAF",
+        "Arkansas Razorbacks +7.5",
+        "-106",
+        "Won",
+        "+0.94",
+        "1218Sports"
+      ]
+    ]
+  }
 }

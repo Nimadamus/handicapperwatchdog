@@ -5,7 +5,7 @@
   "kind": "Long running pick seller with his own site, also sold through partner sites",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Tom Stryker Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Tom Stryker review, checked 20 Nov 2026: prices from $125 a week to $2,295 a year, all sales final, his record claims checked and what bettors say.",
   "h1": "Tom Stryker review",
@@ -42,6 +42,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "3 plays posted before the start, 22 Sep 2026 to 23 Oct 2026: 2 won, 1 lost, +0.82 units"
     ]
   ],
   "short_answer": [
@@ -165,6 +169,9 @@
     "Dollar figures such as $44,550 assume a stake per rating that a buyer may not use. A 22 and 5 run on $2,000 plays is 27 bets, too few to judge anyone."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Tom Stryker does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Tom Stryker most often were BuzzKill (TheRX newsletters thread), Churchillsprts, TheGodOfCappers, EZMSports. From 22 Sep 2026 to 23 Oct 2026 we took every play our parser could read inside a Tom Stryker block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 3 plays, 2 won, 1 lost, +0.82 units, a return of +27.3% per unit risked. By sport: too few per sport to split. By month: September 1 won, 1 lost, -0.09 units; October 1 won, 0 lost, +0.91 units.",
+    "What it means: 3 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
     "What a buyer can verify independently: very little. We found no full, time stamped log of every Tom Stryker pick with the line, the odds and the release time, no Sports Monitor results we could open, and no court, regulator or Better Business Bureau record about the service.",
     "What we could confirm from outside his own sites: the 2010 ESPN The Magazine feature by Chad Millman describes Stryker as a man in his mid 40s living in Granger who played baseball at Indiana in the early 1980s, who entered most of the 600,000 plus data points in the Buckeye Database built by Tom Scott. ESPN says the database cost $15,000, had only nine owners, and covered NFL and college football from 1980 and pro and college basketball from 1990. The article also warns that a database \"cannot answer a question it isn't asked\" and that past results do not guarantee future ones. It reports no win and loss record for Stryker himself.",
     "What sellers publish: product titles with ATS runs on teamstryker.com and BigAl.com, bios repeating the Sports Monitor titles, and a Playbook page with a \"Tom's Last 10 Results\" heading that showed no numbers when we looked on 20 Nov 2026. The homepage lists about 130 free plays from 8 Aug to 19 Nov 2026 with write ups but no graded results, so a buyer could grade them, though free plays may not match paid ones.",
@@ -274,6 +281,10 @@
     [
       "Is Tom Stryker legit?",
       "He is a real, long running seller with a named company, an Indiana mailing address, a phone number and published prices, and ESPN The Magazine profiled his work on a well known betting database in 2010. We could not verify that his picks win over time, because he does not publish a full record of every pick, and we found no court or regulator action involving him."
+    ],
+    [
+      "What does the Watchdog sample of Tom Stryker show?",
+      "We graded 3 of their plays that were posted publicly before the game started, 22 Sep 2026 to 23 Oct 2026: 2 won, 1 lost, +0.82 units at one unit each. That is too few plays to judge."
     ],
     [
       "How much does Tom Stryker cost?",
@@ -405,5 +416,46 @@
       "accessed": "20 Nov 2026"
     }
   ],
-  "pricing_source": 3
+  "pricing_source": 3,
+  "record_table": {
+    "caption": "Every Tom Stryker play in the Watchdog sample, 22 Sep 2026 to 23 Oct 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "22 Sep 09:31 AM",
+        "MLB",
+        "Chicago White Sox ML",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "24 Sep 09:54 AM",
+        "MLB",
+        "Philadelphia Phillies ML",
+        "-131",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ],
+      [
+        "23 Oct 08:21 AM",
+        "NCAAF",
+        "Army Black Knights +2",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ]
+    ]
+  }
 }

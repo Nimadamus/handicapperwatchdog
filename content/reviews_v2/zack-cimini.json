@@ -5,7 +5,7 @@
   "kind": "Media handicapper whose picks are sold inside subscription sites and on the SportsCapping network",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Zack Cimini Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Zack Cimini review, checked 20 Nov 2026: $13.99 a month on SportsLine or $99 to $1,999.95 on CappersPicks, his records checked, and what bettors say.",
   "h1": "Zack Cimini review",
@@ -38,6 +38,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "2 plays posted before the start, 26 Sep 2026 to 10 Nov 2026: 2 won, 0 lost, +1.80 units"
     ]
   ],
   "short_answer": [
@@ -149,6 +153,9 @@
     "Same plays, different prices: CappersPicks' yesterday table for 19 Nov 2026 listed Tulane +2.5 at -115 (a loss) and the Knicks at -102 (a win). SportsLine listed Tulane +2.5 at -115 and the Knicks -1.5 at +100 the same night. A buyer paying $99 for 3 days on CappersPicks may be getting plays that a $13.99 SportsLine month also includes."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Zack Cimini does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Zack Cimini most often were TheGodOfCappers, BettingBuddyy, 1218Sports, EZMSports. From 26 Sep 2026 to 10 Nov 2026 we took every play our parser could read inside a Zack Cimini block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 2 plays, 2 won, 0 lost, +1.80 units, a return of +90.1% per unit risked. By sport: too few per sport to split. By month: September 1 won, 0 lost, +0.89 units; November 1 won, 0 lost, +0.91 units.",
+    "What it means: 2 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
     "What a buyer can verify independently: nothing that we could find. We found no third party tracker or contest record covering a long run of his picks, and no court or regulator record about him.",
     "What the sellers publish: SportsLine lists his recent picks with the date, the bet, the odds, the unit size and the result, plus a last 60 MLB money line widget showing 34-26-0. CappersPicks shows a yesterday table and a 7 day board that had him at 8-3 for $463 on 20 Nov 2026. VegasInsider shows leaderboard finishes for selected seasons. Each site sells the picks it grades.",
     "Background: VegasInsider and CappersPicks say he began in 2000 as a freelance ghost writer for a Las Vegas based company, at 16 by the CappersPicks account, and became a handicapper in 2009. CappersPicks credits him with futures winners such as UConn at 40 to 1 in February 2011 and the Giants at 40 to 1 in November 2010; we could not check these. CBS Sports cited a 132-100 baseball run for him in September 2018. VegasInsider was bought by Better Collective, a sports betting affiliate company, in July 2019 for $20 million."
@@ -230,6 +237,10 @@
     [
       "Is Zack Cimini legit?",
       "He is a real, active handicapper whose picks are sold through SportsLine, part of CBS, VegasInsider and CappersPicks. We found no complaints, court cases or regulator actions about him. We could not verify that his picks win over time, because the only records come from the sites that sell them."
+    ],
+    [
+      "What does the Watchdog sample of Zack Cimini show?",
+      "We graded 2 of their plays that were posted publicly before the game started, 26 Sep 2026 to 10 Nov 2026: 2 won, 0 lost, +1.80 units at one unit each. That is too few plays to judge."
     ],
     [
       "How much does Zack Cimini cost?",

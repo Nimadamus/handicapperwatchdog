@@ -5,14 +5,14 @@
   "kind": "Handicapper persona sold through the WagerTalk pick marketplace, which its own copy says he co-founded",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "The Prez Review 2026: Pricing, Record, Is It Worth It?",
   "description": "The Prez (WagerTalk) review, checked 20 Nov 2026: prices from $25 to $1,999, a credit only guarantee, streak claims checked and what bettors say.",
   "h1": "The Prez review",
   "dek": "A WagerTalk handicapper who goes only by \"The Prez\", sold picks on Who2BetOn.com as far back as 2005, and is described by WagerTalk as one of its co-founders. Packages run from $25 a play to $1,999 for a year. The guarantee pays in site credit, and the records on show are streaks chosen and graded by the seller.",
   "status": {
-    "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of The Prez picks. This page reports what we could check on 20 Nov 2026 and labels everything else."
+    "label": "Partly graded",
+    "note": "The Prez publishes no complete log we can audit. Watchdog graded 13 of their plays that were posted publicly before the game started. This is a sample, not a full record."
   },
   "glance": [
     [
@@ -42,6 +42,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "13 plays posted before the start, 20 Sep 2026 to 17 Nov 2026: 7 won, 6 lost, +0.13 units"
     ]
   ],
   "short_answer": [
@@ -134,14 +138,18 @@
     "No real name appears on the profile. A WagerTalk bio for another handicapper calls The Prez \"one of our co-founders at Wagertalk.\" WagerTalk press releases name Lawrence Prezman as a co-founder (2018), as \"WagerTalk President\" (2019) and as continuing in a business development role when WagerTalk Media was formed (2020). The nickname fits, but we have no statement tying the two together, so we treat it as a likely link, not a fact."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. The Prez does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming The Prez most often were WagerTalkPicks, SteveMerril, teddy_covers, BuzzKill (TheRX newsletters thread). From 20 Sep 2026 to 17 Nov 2026 we took every play our parser could read inside a The Prez block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 13 plays, 7 won, 6 lost, +0.13 units, a return of +1.0% per unit risked. By sport: NHL 1 won, 4 lost, -3.09 units; NFL 3 won, 1 lost, +1.73 units; NCAAF 3 won, 1 lost, +1.49 units. By month: September 5 won, 0 lost, +4.31 units; October 2 won, 2 lost, -0.18 units; November 0 won, 4 lost, -4.00 units.",
+    "What it means: a 54% win rate on 13 decided plays has a 95% range of about 29% to 77%, and at the prices in this sample a bettor needed about 53% to break even. That range includes break even, so this sample cannot show whether they win or lose over time. The sample covers only the plays that others chose to post, which is not the full card a subscriber receives, and stakes are counted flat even where the seller rates plays differently.",
+    "Another 1 plays naming The Prez first appeared after the game had started, so they are not counted; they went 0 won, 1 lost, -1.00 units.",
     "What a buyer can verify independently: nothing that we could find. We found no full, time stamped log of every pick by The Prez kept by a third party, no contest results, and no court or regulator record about him.",
     "What the seller publishes: a Last 20 table, a Hot Streaks box and a Who's Hot leaderboard. On 20 Nov 2026 the Last 20 table covered plays from 14 to 19 Nov and showed 9 wins and 11 losses. Leaving out the parlay, whose price is not shown, we priced the other 19 plays at the odds listed: 8 wins and 11 losses, about 4 units behind if each risked one unit. The Who's Hot boxes put him first in college basketball for the last 30 days (10-3, +$2,046) and third in the NFL (16-6, +$2,051). All of these are graded by WagerTalk, the company that sells the picks and that its own copy says he helped found.",
     "He also posts free picks with written analysis on the profile, and WagerTalk's social accounts announce them several times a week. Free picks are a fair way to judge his reasoning, but a handful of them is not a record.",
     "Background: who2beton.com was registered on 9 Mar 2000. A saved copy from 1 Jan 2005 lists The Prez first among about twenty handicappers, with an \"Ask The Prez\" page, a 24 hour support line and a record line for him of 65-50 (56.5%) +31.2. A January 2010 copy advertised his college basketball card for $29, and a 2013 copy still lists him among the experts. By January 2020 the site read \"We're currently rebuilding Who2BetOn, big things are on the way but for now, please visit www.wagertalk.com\", and a July 2026 copy says the same. WagerTalk was founded in July 2015, bought Sportsmemo in 2018 and The Gold Sheet newsletter in 2019, formed WagerTalk Media in 2020 under chief executive Rick Allec, and partnered with Picks and Parlays and WinnersAndWhiners in 2025. The Prez profile is also listed on the Picks and Parlays store."
   ],
   "our_data": {
-    "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no pick history from The Prez is matched to a Watchdog graded record, so we make no claim about how The Prez performs.",
+    "matched": true,
+    "text": "Watchdog graded 13 The Prez plays posted before the start, 20 Sep 2026 to 17 Nov 2026: 7 won, 6 lost, +0.13 units at one unit each. A sample of what was posted publicly, not a full record.",
     "context": "For scale: the streaks on his WagerTalk page run from 63% to 80% winners, while his Last 20 table stood at 45%. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
   "customers_intro": "Independent customer evidence about The Prez is close to nonexistent. Most public posts that mention him are WagerTalk's own free pick announcements. Below is everything we found and how much weight it can carry.",
@@ -241,6 +249,10 @@
     [
       "Is The Prez legit?",
       "He is a real, long running WagerTalk handicapper with published prices, daily picks and a company address behind the sales, and saved copies show him selling picks on Who2beton.com since at least 2005. We could not verify that his picks win over time, because the only records on show are graded by WagerTalk itself, and we found no court or regulator action involving him."
+    ],
+    [
+      "What does the Watchdog sample of The Prez show?",
+      "We graded 13 of their plays that were posted publicly before the game started, 20 Sep 2026 to 17 Nov 2026: 7 won, 6 lost, +0.13 units at one unit each. The 95% range of the win rate is about 29% to 77%, against about 53% needed to break even."
     ],
     [
       "How much does The Prez cost?",
@@ -392,5 +404,136 @@
       "accessed": "20 Nov 2026"
     }
   ],
-  "pricing_source": 0
+  "pricing_source": 0,
+  "record_table": {
+    "caption": "Every The Prez play in the Watchdog sample, 20 Sep 2026 to 17 Nov 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "20 Sep 06:24 AM",
+        "NFL",
+        "New York Jets +3.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "20 Sep 06:24 AM",
+        "NFL",
+        "Carolina Panthers -2.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "26 Sep 07:32 AM",
+        "NCAAF",
+        "Illinois Fighting Illini +27.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EDMrager"
+      ],
+      [
+        "26 Sep 07:32 AM",
+        "NCAAF",
+        "Utah State Aggies ML",
+        "-148",
+        "Won",
+        "+0.68",
+        "EDMrager"
+      ],
+      [
+        "26 Sep 07:32 AM",
+        "NCAAF",
+        "Under 55.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EDMrager"
+      ],
+      [
+        "11 Oct 05:28 AM",
+        "NFL",
+        "Under 43",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EZMSports"
+      ],
+      [
+        "21 Oct 12:21 PM",
+        "NHL",
+        "Under 5.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EZMSports"
+      ],
+      [
+        "22 Oct 10:16 AM",
+        "NHL",
+        "Pittsburgh Penguins ML",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ],
+      [
+        "22 Oct 12:11 PM",
+        "NFL",
+        "Over 50.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "2 Nov 10:50 AM",
+        "NHL",
+        "San Jose Sharks ML",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EZMSports"
+      ],
+      [
+        "14 Nov 06:32 AM",
+        "NHL",
+        "Montreal Canadiens ML",
+        "+105",
+        "Lost",
+        "-1.00",
+        "EZMSports"
+      ],
+      [
+        "14 Nov 11:45 AM",
+        "NCAAF",
+        "Over 74",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "ItsCappersPicks"
+      ],
+      [
+        "17 Nov 09:20 AM",
+        "NHL",
+        "San Jose Sharks ML",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "CappersVault"
+      ]
+    ]
+  }
 }

@@ -5,7 +5,7 @@
   "kind": "Handicapper selling picks through his own site, BoydsBets.com, with checkout on SportsCapping.com",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Jimmy Boyd Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Jimmy Boyd review, checked 20 Nov 2026: current BoydsBets prices, the new guarantee terms, his network graded record and what buyers report.",
   "h1": "Jimmy Boyd review",
@@ -42,6 +42,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "8 plays posted before the start, 20 Sep 2026 to 6 Nov 2026: 3 won, 5 lost, -2.27 units"
     ]
   ],
   "short_answer": [
@@ -154,6 +158,9 @@
     "\"Dime bettors\" means $1,000 a pick, ten times the archive's $100, so every dollar figure in his sales copy is ten times the archive figure. The page also sells off season products: on 20 Nov 2026 a WNBA pass was still for sale through 1 Dec and an MLB pass was listed weeks after the World Series."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Jimmy Boyd does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Jimmy Boyd most often were TheGodOfCappers, EZMSports, offshoreinsider. From 20 Sep 2026 to 6 Nov 2026 we took every play our parser could read inside a Jimmy Boyd block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 8 plays, 3 won, 5 lost, -2.27 units, a return of -28.4% per unit risked. By sport: NFL 2 won, 1 lost, +0.82 units; NCAAF 0 won, 3 lost, -3.00 units. By month: September 2 won, 0 lost, +1.82 units; October 1 won, 4 lost, -3.09 units; November 0 won, 1 lost, -1.00 units.",
+    "What it means: 8 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
     "What a buyer can verify independently: nothing complete. We found no pick log kept by a grader with no tie to the seller, and no court or regulator record about Jimmy Boyd or Boyd Information Group.",
     "What the seller's network publishes: SportsCapping shows a Jimmy Boyd archive with the date, pick, line, odds, score, result and profit for each pick, losses included. On 20 Nov 2026 its all sports row read 5,855 wins and 5,324 losses since 20 Jan 2018, with 240 pushes, 52.4%, +$20,532.50 at $100 a pick and a return of 1.65% of money risked. His top plays row read 2,813 and 2,542 since 12 Aug 2017, 52.5%. By sport, MLB (1,497 and 1,313, +$17,841 since 2017) carries most of the profit; NBA (+$14 since March 2025), NHL (+$208 since 2019) and college football (+$1,624 since 2012) are close to flat.",
     "Put in a buyer's terms: 20 Jan 2018 to 19 Nov 2026 is about 8.8 years, so the archive's profit averages about $2,300 a year at $100 a pick. A 365 day pass costs $1,999.95. At $100 a pick, the pass would have taken almost all of the average year's profit, before any line you got that was worse than his.",
@@ -328,6 +335,10 @@
       "He runs a real business with a named operator, a public price list, a working checkout and a dated pick archive, and BBB lists one complaint, resolved. What is not independent is the record: SportsCapping, which grades it, names Boyd Information Group as the company behind it."
     ],
     [
+      "What does the Watchdog sample of Jimmy Boyd show?",
+      "We graded 8 of their plays that were posted publicly before the game started, 20 Sep 2026 to 6 Nov 2026: 3 won, 5 lost, -2.27 units at one unit each. That is too few plays to judge."
+    ],
+    [
       "How much does Jimmy Boyd cost?",
       "On 20 Nov 2026 single best bets cost $29.99 to $74.96, day packs $49.97 to $99.97, all sports passes $99.95 for 3 days up to $1,999.95 for 365 days, and season passes $450 to $999.97."
     ],
@@ -482,5 +493,91 @@
       "accessed": "20 Nov 2026"
     }
   ],
-  "pricing_source": 0
+  "pricing_source": 0,
+  "record_table": {
+    "caption": "Every Jimmy Boyd play in the Watchdog sample, 20 Sep 2026 to 6 Nov 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "20 Sep 06:39 AM",
+        "NFL",
+        "Las Vegas Raiders +7",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "20 Sep 10:14 PM",
+        "NFL",
+        "Under 48",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ],
+      [
+        "21 Oct 11:06 AM",
+        "NBA",
+        "Charlotte Hornets ML",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ],
+      [
+        "21 Oct 09:19 PM",
+        "NFL",
+        "New England Patriots +3",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ],
+      [
+        "23 Oct 08:16 AM",
+        "NCAAF",
+        "NC State Wolfpack -6.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ],
+      [
+        "23 Oct 08:16 AM",
+        "LALIGA",
+        "Valencia -4.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ],
+      [
+        "23 Oct 09:29 PM",
+        "NCAAF",
+        "Iowa Hawkeyes -5.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ],
+      [
+        "6 Nov 09:07 AM",
+        "NCAAF",
+        "Over 38",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "offshoreinsider"
+      ]
+    ]
+  }
 }

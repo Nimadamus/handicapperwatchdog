@@ -5,7 +5,7 @@
   "kind": "AI sports pick subscription (model called Remi)",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Leans AI Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Leans AI review, checked 20 Nov 2026: Remi plan prices from $49 a month to $27,500 a year, no refunds, a scorecard that changed in 13 days, buyer reports.",
   "h1": "Leans AI review",
@@ -46,6 +46,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "None found in a search of about 1.37 million captured posts (22 Nov 2026)"
     ]
   ],
   "short_answer": [
@@ -140,6 +144,7 @@
     "The homepage banner is the plainest problem. A lifetime record can only add games, but on 7 Nov 2026 it read 2,670-2,312 and on 20 Nov 2026 it read 2,658-2,324: the same 4,982 games with 12 wins turned into losses. That is a correction or a regrading, and the site did not say which. Every win is also graded at a flat -110 from \"the best line available at the time a pick is released\", so a buyer who gets a worse number later will not match the scorecard, and the August 2025 retirement of \"over 1,058 games worth\" of v1 and pre release data means the scorecard is not the whole history since tracking began."
   ],
   "record": [
+    "Watchdog search, 22 Nov 2026: we searched about 1.37 million captured public posts from X, Reddit, Covers, TheRX and other forums for Leans AI plays that were posted or reposted before a game started. We found none, so there is no Watchdog graded sample for this seller yet.",
     "Independently verifiable: nothing we found. We found no time stamped log of every pick held by a third party, no contest run by someone else, and no regulator or court record about results.",
     "Seller's own marketing: a live scorecard by sport and unit size, computed by Leans AI at a flat -110 and limited to v2 and v3 picks, plus a \"Recent AI Picks\" list of about the last 20 picks per sport. That list shows the matchup, the pick, Remi's win probability, units and result, but no date, post time or odds, and the page itself calls it a weaker gauge than the scorecard.",
     "The scorecard is not useless. It is detailed, it shows a losing sport (NHL is negative on both tables, 308-296 and -52.8 units on Executive), and its unit table shows Remi's expected win rate for each unit size beside the actual rate, which mostly track each other from 2 to 6 units. But a bettor cannot rebuild it from the picks, and it changed between our two checks in ways the site did not explain, so it is a claim, not a verified record."

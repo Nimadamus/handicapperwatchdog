@@ -5,7 +5,7 @@
   "kind": "Individual pick seller and podcast regular on the Pregame.com marketplace",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Dave Essler Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Dave Essler review, checked 20 Nov 2026: Pregame prices from $25 a pick to $1,995 a year, his graded record this season, and what bettors posted.",
   "h1": "Dave Essler review",
@@ -42,6 +42,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "1 plays posted before the start, 20 Sep 2026 to 20 Sep 2026: 1 won, 0 lost, +0.91 units"
     ]
   ],
   "short_answer": [
@@ -165,6 +169,9 @@
     "The bio does not claim a long record or big winnings. In it he writes that few bettors make a living, that he \"made my living in a former life,\" and that he tells long term clients \"we are not going to retire betting on sports.\" That is more modest than most sales pages in this business."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Dave Essler does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Dave Essler most often were 1218Sports, TheGodOfCappers, PregameNow, EZMSports. From 20 Sep 2026 to 20 Sep 2026 we took every play our parser could read inside a Dave Essler block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 1 plays, 1 won, 0 lost, +0.91 units, a return of +90.9% per unit risked. By sport: too few per sport to split. By month: September 1 won, 0 lost, +0.91 units.",
+    "What it means: 1 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
     "What a buyer can check: Pregame shows an Every Pick Ever archive for him, split into monitored picks that count in the W/L records and unmonitored picks that count for contests only. When we opened it on 20 Nov 2026 the page asked for a captcha, so we did not read the full log. The Win/Loss page can be switched between yesterday, last 7 days, last 30 days and current season, by bet type and by rated, top or all picks.",
     "What we saw on 20 Nov 2026: the default view (last 30 days, rated picks) showed CBB 2-2, CFB 18-9, CFL 1-0, MLB 1-0, NBA 16-10, NFL 6-9 and NHL 3-2, which we add to 47 wins, 32 losses and plus $1,643, with NFL the one big loser at minus $940. The Current Season view is negative overall, as set out above. His Last 10 Picks showed recent results such as wins on two NBA unders on 17 and 19 Nov and losses on a 76ers and Magic under and a college basketball under on 18 Nov.",
     "Members have tracked some of his free picks themselves. A 2018 Pregame forum tracker of the college football picks made on Pregame's \"Dream Pod\" podcast credited him with 9 wins and 8 losses for the season, against 11-6, 10-6 and 13-5 for the other three hosts. These were free podcast picks, not his paid card.",
@@ -273,6 +280,10 @@
     [
       "Is Dave Essler legit?",
       "He is a real, long running seller on Pregame.com with published prices and a pick record graded by Pregame. We could not verify that his picks win over time, and we found no court or regulator action involving him. Pregame suspended him for 10 days in 2015 over a tweet about a college player."
+    ],
+    [
+      "What does the Watchdog sample of Dave Essler show?",
+      "We graded 1 of their plays that were posted publicly before the game started, 20 Sep 2026 to 20 Sep 2026: 1 won, 0 lost, +0.91 units at one unit each. That is too few plays to judge."
     ],
     [
       "How much does Dave Essler cost?",

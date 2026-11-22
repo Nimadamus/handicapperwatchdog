@@ -5,14 +5,14 @@
   "kind": "Single handicapper pick service sold through the SportsCapping network and PickDawgz",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "Kyle Hunter Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Kyle Hunter review, checked 20 Nov 2026: prices from $29.99 to $1,799, credit only guarantees, a 53.1% all time record on his own site, and buyer posts.",
   "h1": "Kyle Hunter review",
   "dek": "A totals focused handicapper who says he has sold picks since 2010. His packages are sold through the SportsCapping network and PickDawgz at $29.99 for one play up to $1,799 for a year, and he also writes free articles for Action Network. The hot runs on the sales pages sit around 60% to 63%, but the all time table on a site carrying his name shows 9,241 wins and 8,174 losses, which is 53.1%.",
   "status": {
-    "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Kyle Hunter picks. This page reports what we could check on 20 Nov 2026 and labels everything else."
+    "label": "Partly graded",
+    "note": "Kyle Hunter publishes no complete log we can audit. Watchdog graded 28 of their plays that were posted publicly before the game started. This is a sample, not a full record."
   },
   "glance": [
     [
@@ -42,6 +42,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "28 plays posted before the start, 14 Sep 2026 to 17 Oct 2026: 16 won, 11 lost, 1 push, +3.51 units"
     ]
   ],
   "short_answer": [
@@ -148,14 +152,17 @@
     "Two of the money claims do not fit together: football overall is said to be up $130,690 for $1,000 bettors, while college football alone is said to be up $188,220. The career story also varies: the bios say \"more than 15 years\", Action Network says he has bet for 20 years and worked full time in the industry since 2010, and the 2021 press release says late 2009."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Kyle Hunter does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Kyle Hunter most often were BuzzKill (TheRX newsletters thread), 1218Sports, Churchillsprts, TheGodOfCappers. From 14 Sep 2026 to 17 Oct 2026 we took every play our parser could read inside a Kyle Hunter block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 28 plays, 16 won, 11 lost, 1 push, +3.51 units, a return of +12.5% per unit risked. By sport: MLB 6 won, 5 lost, +0.45 units; NCAAF 7 won, 2 lost, +4.36 units; NFL 2 won, 4 lost, 1 push, -2.18 units. By month: September 14 won, 10 lost, 1 push, +2.73 units; October 2 won, 1 lost, +0.78 units.",
+    "What it means: a 59% win rate on 27 decided plays has a 95% range of about 41% to 75%, and at the prices in this sample a bettor needed about 52% to break even. That range includes break even, so this sample cannot show whether they win or lose over time. The sample covers only the plays that others chose to post, which is not the full card a subscriber receives, and stakes are counted flat even where the seller rates plays differently.",
     "What a buyer can verify independently: nothing that we could find. We found no full, time stamped log of every Kyle Hunter pick kept by an outside party, and no court or regulator record about him.",
     "What the network publishes: the all time table on huntersportspicks.com gives 9,241 wins and 8,174 losses (53.1%) and $41,096 profit since 13 Jan 2010. Capper Reviews shows 15 season rows where he finished first or second on the network leaderboard between 2009 and 2026, and says he has 56 top 10 finishes. These are totals, not a list of picks you can check line by line.",
     "What PickDawgz publishes: a pick history that, on 20 Nov 2026, ran seven pages back only to 27 Oct 2026. We counted all 64 graded plays: 37 wins and 27 losses (57.8%). Using the odds shown and one unit risked per play, that is about +6.5 units. By sport it was 14 and 6 in college football, 5 and 2 in the NFL, 14 and 13 in college basketball, 3 and 4 in the NBA and 1 and 2 in the NHL. Its summary boxes showed +681 for each of the last 30, 60 and 90 days and 12 months, while its own season table showed +730 in college football and +285 in the NFL, so the boxes do not add up.",
     "Forum members on TheRX repost his plays in daily service play threads, but nobody we found keeps a long running tally of them."
   ],
   "our_data": {
-    "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Kyle Hunter pick history is matched to a Watchdog graded record, so we make no claim about how Kyle Hunter performs.",
+    "matched": true,
+    "text": "Watchdog graded 28 Kyle Hunter plays posted before the start, 14 Sep 2026 to 17 Oct 2026: 16 won, 11 lost, 1 push, +3.51 units at one unit each. A sample of what was posted publicly, not a full record.",
     "context": "For scale: the runs on the sales pages show about 58% to 63% winners, while the network's own all time table shows 53.1%. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
   },
   "customers_intro": "Independent buyer evidence on Kyle Hunter is thin. The largest pool of comments sits on a site that is part of the network selling his picks. Outside it, we found forum members reposting his plays and a few short comments. Below is everything we found and how much weight it can carry.",
@@ -236,6 +243,10 @@
     [
       "Is Kyle Hunter legit?",
       "He is a real, long running handicapper whose picks are sold with published prices on SportsCapping network sites and PickDawgz, and who also writes for Action Network. We could not verify that his picks win over time, because no outside party keeps a full record, and we found no court or regulator action involving him."
+    ],
+    [
+      "What does the Watchdog sample of Kyle Hunter show?",
+      "We graded 28 of their plays that were posted publicly before the game started, 14 Sep 2026 to 17 Oct 2026: 16 won, 11 lost, 1 push, +3.51 units at one unit each. The 95% range of the win rate is about 41% to 75%, against about 52% needed to break even."
     ],
     [
       "How much does Kyle Hunter cost?",
@@ -357,5 +368,271 @@
       "accessed": "20 Nov 2026"
     }
   ],
-  "pricing_source": 2
+  "pricing_source": 2,
+  "record_table": {
+    "caption": "Every Kyle Hunter play in the Watchdog sample, 14 Sep 2026 to 17 Oct 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "14 Sep 10:10 AM",
+        "MLB",
+        "Under 8",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EDMrager"
+      ],
+      [
+        "14 Sep 11:12 AM",
+        "MLB",
+        "Cleveland Guardians ML",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EZMSports"
+      ],
+      [
+        "15 Sep 11:26 AM",
+        "MLB",
+        "Over 8",
+        "not shown",
+        "Won",
+        "+0.91",
+        "allcappersfreee"
+      ],
+      [
+        "16 Sep 12:19 PM",
+        "MLB",
+        "Los Angeles Dodgers -1.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "cappers_daily"
+      ],
+      [
+        "17 Sep 04:23 PM",
+        "NFL",
+        "Detroit Lions +5.5",
+        "-110",
+        "Lost",
+        "-1.00",
+        "offshoreinsider"
+      ],
+      [
+        "18 Sep 09:27 AM",
+        "MLB",
+        "San Diego Padres -1.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EDMrager"
+      ],
+      [
+        "19 Sep 08:06 AM",
+        "NCAAF",
+        "Over 58",
+        "not shown",
+        "Won",
+        "+0.91",
+        "offshoreinsider"
+      ],
+      [
+        "19 Sep 08:06 AM",
+        "NCAAF",
+        "South Alabama Jaguars +2.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "offshoreinsider"
+      ],
+      [
+        "19 Sep 09:01 PM",
+        "NFL",
+        "Green Bay Packers -3",
+        "not shown",
+        "Push",
+        "+0.00",
+        "TheGodOfCappers"
+      ],
+      [
+        "20 Sep 05:51 AM",
+        "NFL",
+        "Seattle Seahawks -3.5",
+        "-110",
+        "Won",
+        "+0.91",
+        "offshoreinsider"
+      ],
+      [
+        "20 Sep 05:51 AM",
+        "NFL",
+        "Jacksonville Jaguars +2.5",
+        "+100",
+        "Lost",
+        "-1.00",
+        "offshoreinsider"
+      ],
+      [
+        "20 Sep 06:22 AM",
+        "NFL",
+        "Denver Broncos -2.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "22 Sep 07:20 AM",
+        "MLB",
+        "Over 7.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "1218Sports"
+      ],
+      [
+        "22 Sep 09:32 AM",
+        "MLB",
+        "Under 7",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "23 Sep 07:48 AM",
+        "NCAAF",
+        "Liberty Flames -1.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EDMrager"
+      ],
+      [
+        "24 Sep 06:40 AM",
+        "MLB",
+        "Under 7.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EDMrager"
+      ],
+      [
+        "25 Sep 09:39 AM",
+        "MLB",
+        "Los Angeles Angels ML",
+        "not shown",
+        "Won",
+        "+0.91",
+        "TheGodOfCappers"
+      ],
+      [
+        "25 Sep 01:22 PM",
+        "MLB",
+        "Dodgers TT o4.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EZMSports"
+      ],
+      [
+        "26 Sep 06:58 AM",
+        "NCAAF",
+        "Over 53.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "1218Sports"
+      ],
+      [
+        "26 Sep 06:58 AM",
+        "NCAAF",
+        "Over 57",
+        "not shown",
+        "Won",
+        "+0.91",
+        "1218Sports"
+      ],
+      [
+        "26 Sep 07:33 AM",
+        "NCAAF",
+        "Under 45.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EDMrager"
+      ],
+      [
+        "26 Sep 08:45 AM",
+        "NCAAF",
+        "Over 55",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "allcappersfreee"
+      ],
+      [
+        "26 Sep 02:57 PM",
+        "NFL",
+        "Under 42.5",
+        "-105",
+        "Lost",
+        "-1.00",
+        "1218Sports"
+      ],
+      [
+        "27 Sep 09:06 AM",
+        "NFL",
+        "Under 40",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EZMSports"
+      ],
+      [
+        "29 Sep 07:31 AM",
+        "MLB",
+        "Under 6.5",
+        "-115",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ],
+      [
+        "6 Oct 09:53 AM",
+        "NHL",
+        "Florida Panthers ML",
+        "-115",
+        "Won",
+        "+0.87",
+        "EDMrager"
+      ],
+      [
+        "7 Oct 08:32 AM",
+        "NCAAF",
+        "Under 50.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EDMrager"
+      ],
+      [
+        "17 Oct 07:47 AM",
+        "NCAAF",
+        "Over 54.5",
+        "not shown",
+        "Won",
+        "+0.91",
+        "offshoreinsider"
+      ]
+    ]
+  }
 }

@@ -5,7 +5,7 @@
   "kind": "Handicapper marketplace and betting media site",
   "checked": "20 Nov 2026",
   "checked_iso": "2026-11-20",
-  "updated_iso": "2026-11-20",
+  "updated_iso": "2026-11-22",
   "title": "WagerTalk Review 2026: Pricing, Record, Is It Worth It?",
   "description": "WagerTalk review, checked 20 Nov 2026: prices from $15 picks to $1,999 a year, the store credit guarantee, sales claims checked against its own Last 20 lists.",
   "h1": "WagerTalk review",
@@ -38,6 +38,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "1 plays posted before the start, 14 Nov 2026 to 14 Nov 2026: 0 won, 1 lost, -1.00 units"
     ]
   ],
   "short_answer": [
@@ -136,6 +140,9 @@
     "Some sellers do show losing totals beside winning slices. Gianni the Greek's 51% season line next to his 55% thirty day line is the clearest example, and it is more honest than a slice alone. The figures are still marketing copy, not an audited statement."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. WagerTalk does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming WagerTalk most often were WagerTalkPicks, SteveMerril, teddy_covers, BuzzKill (TheRX newsletters thread). From 14 Nov 2026 to 14 Nov 2026 we took every play our parser could read inside a WagerTalk block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 1 plays, 0 won, 1 lost, -1.00 units, a return of -100.0% per unit risked. By sport: too few per sport to split. By month: November 0 won, 1 lost, -1.00 units.",
+    "What it means: 1 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
     "What a buyer can verify independently: nothing we could find. We found no full, time stamped log of every pick kept by a third party, no contest results run by an outside organizer that we opened, and no regulator or court record. Oskeim Sports cites awards from The Sports Monitor, a monitoring service, but we did not open those results and make no claim about them.",
     "What WagerTalk itself publishes: each handicapper profile shows a Last 20 list with the date, sport, pick, price and a win or loss. That is more than many pick sellers show, but it is 20 picks, it gives no release time and no play size, and it is kept by the company that sells the picks. Season and streak totals in the sales copy come from the same source.",
     "A CapperTek reviewer in December 2021 alleged that WagerTalk changes results and removes losses from profiles. We could not check that claim and do not repeat it as fact. It is one more reason to keep your own log.",
@@ -274,6 +281,10 @@
     [
       "Is WagerTalk legit?",
       "It is a real business, Wager Talk Media, LP, with a Las Vegas address, published prices and a roster of about 30 named handicappers, and it says it was founded in July 2015. We could not verify that its handicappers win over time, because the only records come from WagerTalk itself, and every buyer account we found off the site described losses."
+    ],
+    [
+      "What does the Watchdog sample of WagerTalk show?",
+      "We graded 1 of their plays that were posted publicly before the game started, 14 Nov 2026 to 14 Nov 2026: 0 won, 1 lost, -1.00 units at one unit each. That is too few plays to judge."
     ],
     [
       "Who runs WagerTalk?",

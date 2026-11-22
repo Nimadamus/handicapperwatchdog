@@ -5,7 +5,7 @@
   "kind": "Pick seller on the WagerTalk marketplace, with the same listing on its sister site StatSalt",
   "checked": "17 Nov 2026",
   "checked_iso": "2026-11-17",
-  "updated_iso": "2026-11-17",
+  "updated_iso": "2026-11-22",
   "title": "Will Rogers Review 2026: Pricing, Record, Is It Worth It?",
   "description": "Will Rogers review, checked 17 Nov 2026: $5 single plays and $49 passes on WagerTalk, a credit only guarantee, his Last 20 counted and buyer posts.",
   "h1": "Will Rogers review",
@@ -38,6 +38,10 @@
     [
       "Watchdog graded record",
       "None yet"
+    ],
+    [
+      "Watchdog graded sample",
+      "4 plays posted before the start, 15 Sep 2026 to 23 Oct 2026: 1 won, 2 lost, 1 push, -1.09 units"
     ]
   ],
   "short_answer": [
@@ -125,6 +129,9 @@
     "The StatSalt Last 20 table, which shows ratings, went 9 and 11 from 8 to 16 Nov 2026 and included at least seven losses in a row from 10 to 14 Nov. The WagerTalk version of the same table, which already had two newer pending plays, showed 8 and 10. A small sample, but it shows how far a hand picked streak can sit from the most recent plays."
   ],
   "record": [
+    "Watchdog graded sample, new 22 Nov 2026. Will Rogers does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Will Rogers most often were BuzzKill (TheRX newsletters thread), WagerTalkPicks, TheGodOfCappers, EZMSports. From 15 Sep 2026 to 23 Oct 2026 we took every play our parser could read inside a Will Rogers block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
+    "Result: 4 plays, 1 won, 2 lost, 1 push, -1.09 units, a return of -27.3% per unit risked. By sport: too few per sport to split. By month: September 1 won, 1 lost, -0.09 units; October 0 won, 1 lost, 1 push, -1.00 units.",
+    "What it means: 3 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
     "What a buyer can verify independently: nothing that we could find. We found no full, time stamped log of every paid Will Rogers pick with the line and release time kept by anyone other than the seller.",
     "What the seller publishes: streak totals, a three day leaderboard entry showing 6 and 2 and $1,168 profit, and a Last 20 table of recent plays with results. WagerTalk grades these itself, and its parent company also sells the picks on StatSalt.",
     "A third party: GameAdvisers, a site that says it may earn sportsbook commissions, has a Will Rogers page showing 13 and 7, plus $497 and a 19.5% return over the last 30 days on 20 graded picks at a flat $100. Its page says those picks \"can be found on BestBettor, part of SportsCapping Group,\" not WagerTalk, so it may be tracking free picks or a different seller using the same name. We give it little weight."
@@ -204,6 +211,10 @@
     [
       "Is Will Rogers legit?",
       "He is a real, active seller on WagerTalk, a Las Vegas marketplace with written terms, and his page was updated on 17 Nov 2026. We could not verify that his picks win over time, because no full record of every pick is published, and we found no court or regulator action involving him."
+    ],
+    [
+      "What does the Watchdog sample of Will Rogers show?",
+      "We graded 4 of their plays that were posted publicly before the game started, 15 Sep 2026 to 23 Oct 2026: 1 won, 2 lost, 1 push, -1.09 units at one unit each. That is too few plays to judge."
     ],
     [
       "How much does Will Rogers cost?",
@@ -295,5 +306,55 @@
       "accessed": "17 Nov 2026"
     }
   ],
-  "pricing_source": 0
+  "pricing_source": 0,
+  "record_table": {
+    "caption": "Every Will Rogers play in the Watchdog sample, 15 Sep 2026 to 23 Oct 2026 (date and time of the first post we captured, Pacific)",
+    "head": [
+      "Posted",
+      "League",
+      "Play",
+      "Odds",
+      "Result",
+      "Units",
+      "Posted by"
+    ],
+    "rows": [
+      [
+        "15 Sep 01:43 PM",
+        "MLB",
+        "San Diego Padres -1.5",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "EDMrager"
+      ],
+      [
+        "19 Sep 09:46 AM",
+        "MLB",
+        "Chicago Cubs ML",
+        "not shown",
+        "Won",
+        "+0.91",
+        "EZMSports"
+      ],
+      [
+        "11 Oct 09:44 AM",
+        "NFL",
+        "Cincinnati Bengals -7",
+        "not shown",
+        "Push",
+        "+0.00",
+        "Hottie4Sports"
+      ],
+      [
+        "23 Oct 08:21 AM",
+        "NCAAF",
+        "Virginia Cavaliers ML",
+        "not shown",
+        "Lost",
+        "-1.00",
+        "TheGodOfCappers"
+      ]
+    ]
+  }
 }
