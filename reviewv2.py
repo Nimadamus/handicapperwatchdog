@@ -28,6 +28,16 @@ def paras(items):
     return ''.join('<p>%s</p>' % E(x) for x in items)
 
 
+def record_table(t):
+    """Optional graded play log under the record section (first used on kingcap-sports, 22 Nov 2026)."""
+    if not t:
+        return ''
+    head = ''.join('<th class="l">%s</th>' % E(h) for h in t['head'])
+    body = ''.join('<tr>%s</tr>' % ''.join('<td data-k="%s">%s</td>' % (E(h), E(v)) for h, v in zip(t['head'], r)) for r in t['rows'])
+    return ('<details class="rtab"><summary>%s (%d plays)</summary><div class="tw"><table class="ptab"><thead><tr>%s</tr></thead>'
+            '<tbody>%s</tbody></table></div></details>') % (E(t['caption']), len(t['rows']), head, body)
+
+
 def tag(kind):
     k = kind.lower()
     if k.startswith(('confirmed', 'win confirmed', 'reported by', 'verified')):
@@ -86,8 +96,8 @@ def render(rev, st, names, document):
         E(rev['name']), E(rev['checked']), crow, paras(rev['claims_note']))
     od = rev['our_data']
     record = ('<section class="panel edcard essay" id="record"><h2>Track record: what can be verified</h2><div class="prose">%s'
-              '<div class="ourdata"><p class="plate-k">Watchdog graded data</p><p><b>%s</b></p><p>%s</p></div></div></section>') % (
-        paras(rev['record']), E(od['text']), E(fill(od['context'], st)))
+              '<div class="ourdata"><p class="plate-k">Watchdog graded data</p><p><b>%s</b></p><p>%s</p></div></div>%s</section>') % (
+        paras(rev['record']), E(od['text']), E(fill(od['context'], st)), record_table(rev.get('record_table')))
     cust = ''.join('<li class="cr %s"><div class="crh">%s<span class="muted small">%s</span></div><p>%s</p>%s</li>' % (
         't-neg' if c['tone'] == 'Negative' else 't-pos' if c['tone'] == 'Positive' else 't-neu', tag(c['type']), E(c['date']), E(c['text']),
         '<p class="small"><a href="%s" rel="nofollow noopener">%s</a></p>' % (E(src[c['source']]['url']), E(src[c['source']]['title'])) if c['source'] is not None else '')
