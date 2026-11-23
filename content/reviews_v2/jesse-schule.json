@@ -12,7 +12,7 @@
   "dek": "A handicapper known as \"The Iceman\" who has sold picks online since at least 2014 and now sells only through WagerTalk and its sister stores. Passes run from $39 a day to $1,999 a year. The guarantee pays in site credit, and every big record on his page is graded by the network that sells him.",
   "status": {
     "label": "Partly graded",
-    "note": "Jesse Schule publishes no complete log we can audit. Watchdog graded 10 of their plays that were posted publicly before the game started. This is a sample, not a full record."
+    "note": "Jesse Schule publishes no complete log we can audit. Watchdog graded 10 of their plays that were posted publicly before the game started. Ten plays make a sample, not a full record of his work."
   },
   "glance": [
     [
@@ -50,7 +50,7 @@
   ],
   "short_answer": [
     "Jesse Schule is a real, long running handicapper. His YouTube channel dates from September 2010, a 2014 SBC News interview profiled him as an NFL tipster on Bet Advisor, and saved copies of his own site, JesseSchule.com, show him selling picks there from at least 2016 to 2021 on the SportsCapping network. That site now says his premium picks \"can now exclusively be found at Wagertalk.\" On 20 Nov 2026 his WagerTalk profile listed plays graded through 19 Nov 2026 and sold daily, monthly, seasonal and yearly passes.",
-    "Whether his picks make money over time is a separate question. His page leads with runs such as \"861-586-63 ( +122 UNITS )\" for moneyline sides since 2022 and \"95-62 ( +72 UNITS )\" for team totals, each labeled \"#1\" within the network. The arithmetic inside those runs adds up when we check it, but they are slices chosen and graded by the company that sells the picks. We found no independent, full, time stamped log.",
+    "Long run profit from his picks is a different matter. His page leads with runs such as \"861-586-63 ( +122 UNITS )\" for moneyline sides since 2022 and \"95-62 ( +72 UNITS )\" for team totals, each labeled \"#1\" within the network. The arithmetic inside those runs adds up when we check it, but they are slices chosen and graded by the company that sells the picks. We found no independent, full, time stamped log.",
     "The most complete seller figure we found is in his WagerTalk bio: 1783 wins, 1356 losses and 64 pushes at Sportsmemo from 1 June 2021 to 1 June 2024, about 56.8% winners and +198.62 units over 3,203 plays. That is a real sample size, but Sportsmemo is owned by the same company. The Last 20 table on 20 Nov 2026 was 12 wins and 8 losses, roughly 1.7 units ahead if every play risked one unit.",
     "Independent buyer talk about him is almost nonexistent. Treat him as an established network handicapper whose long numbers come from the seller's side. The guarantee returns credit, never cash, so record every pick yourself with the line and time you got it."
   ],
@@ -73,13 +73,13 @@
     ],
     [
       "Football seasons",
-      "NFL + CFB through Super Bowl $529.00 (was $579.00); NFL through Super Bowl $339.00 (was $369.00); CFB through Championship Game $259.00 (was $299.00)",
+      "$529.00 for NFL and CFB through the Super Bowl (list $579.00); $339.00 for the NFL through the Super Bowl (list $369.00); $259.00 for CFB through the Championship Game (list $299.00)",
       "Through the end of each season"
     ],
     [
       "Basketball seasons",
       "NBA through All Star Game $389.00 (was $414.00); NBA through Finals $719.00 (was $739.00); CBB through March Madness $639.00 (was $669.00)",
-      "Sale prices shown beside higher crossed out prices"
+      "Each sale price sat next to a higher struck price"
     ],
     [
       "Hockey seasons",
@@ -152,15 +152,15 @@
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. Jesse Schule does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Jesse Schule most often were WagerTalkPicks, TheGodOfCappers, EZMSports, EDMrager. From 14 Sep 2026 to 24 Oct 2026 we took every play our parser could read inside a Jesse Schule block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
     "Result: 10 plays, 7 won, 3 lost, +3.30 units, a return of +33.0% per unit risked. By sport: NFL 5 won, 2 lost, +2.48 units; NCAAF 2 won, 1 lost, +0.82 units. By month: September 5 won, 1 lost, +3.48 units; October 2 won, 2 lost, -0.18 units.",
-    "What it means: a 70% win rate on 10 decided plays has a 95% range of about 40% to 89%, and at the prices in this sample a bettor needed about 53% to break even. That range includes break even, so this sample cannot show whether they win or lose over time. The sample covers only the plays that others chose to post, which is not the full card a subscriber receives, and stakes are counted flat even where the seller rates plays differently.",
-    "What a buyer can verify independently: very little. We found no full, time stamped log of every Jesse Schule pick kept by someone other than a seller, and no court or regulator record about him.",
+    "What it means: a 70% win rate on 10 decided plays has a 95% range of about 40% to 89%, and at the prices in this sample a bettor needed about 53% to break even. With 53% inside that band, ten plays cannot settle whether he wins long term. The count also leaves out everything nobody reposted, so it is not the card a subscriber gets, and it grades each play at one unit whatever rating he gave it.",
+    "What a buyer can check without the seller's help: very little. We found no full, time stamped log of every Jesse Schule pick kept by someone other than a seller, and no court or regulator record about him.",
     "What the seller publishes: the WagerTalk profile shows a Last 20 table. On 20 Nov 2026 it ran from 11 Nov to 19 Nov 2026 and, by our count, went 12 wins and 8 losses. We priced each play at the odds shown: risking one unit per play, the 20 plays came out about 1.74 units ahead; risking enough to win one unit per play, about 0.90 units ahead. On 16 Nov the same table showed 11 wins and 9 losses. These are graded by WagerTalk on the odds it records.",
     "Third party trackers show only fragments. SportsHub listed his last 30 days at 9-6, plus $134 and a 7.5% return on 15 graded picks, after showing 10-8 on 16 Nov. HiddenBag, a pick site that logs some capper plays, showed five graded Jesse Schule picks from February to June 2026, all losses (four NBA, one MLB), with many more marked cancelled. Neither explains how it captures picks, and both samples are far too small to judge him.",
     "Background: in 2014 SBC News interviewed him as a member of Bet Advisor, a tipster site, where he said his father was a professional poker player and that social media built his following from 2011. His YouTube channel describes him as \"AKA The Iceman\" and as a writer and analyst at Covers and Don Best; it had 875 subscribers on 20 Nov 2026. Saved copies of JesseSchule.com from 2016 and 2021 show a storefront selling his picks and those of dozens of other SportsCapping network handicappers, and SportsCapping's old page for him now says he \"is no longer actively selling picks on our site.\" Today he sells through WagerTalk, which was founded in July 2015, bought Sportsmemo in 2018, formed the parent company WagerTalk Media in 2020 and partnered with Picks and Parlays in 2025. His profile appears on WagerTalk, StatSalt and Picks and Parlays, all of which bill through Wager Talk Media, LP."
   ],
   "our_data": {
     "matched": true,
-    "text": "Watchdog graded 10 Jesse Schule plays posted before the start, 14 Sep 2026 to 24 Oct 2026: 7 won, 3 lost, +3.30 units at one unit each. A sample of what was posted publicly, not a full record.",
+    "text": "Watchdog graded 10 Jesse Schule plays posted before the start, 14 Sep 2026 to 24 Oct 2026: 7 won, 3 lost, +3.30 units at one unit each. Reposted public plays only; this is not his complete record.",
     "context": "For scale: the records on his page run from about 57% to 80% winners."
   },
   "customers_intro": "Independent buyer evidence about Jesse Schule himself is close to nonexistent. Most of what exists is about WagerTalk in general, or comes from sites with a stake in selling picks.",
@@ -169,7 +169,7 @@
       "type": "Our summary",
       "tone": "Neutral",
       "date": "Read 20 Nov 2026",
-      "text": "Across Reddit, TheRX, Covers, Sportsbook Review, CapperTek and general web searches we found no buyer who posted a review or a tracked result of Jesse Schule's paid picks, good or bad. The only post that names him is a March 2026 Reddit post in which a user lists him among four WagerTalk handicappers whose free plays they check, inside a post promoting their own app. Two Reddit posts from November 2024 complain about WagerTalk handicappers in general (one says several cappers never topped 50% over about a year and a half, the other names two other WagerTalk handicappers), but neither names him. TheRX has barred all WagerTalk handicappers from its free service play threads since at least March 2023, without giving a reason. Review pages that praise him are run by sites that sell picks or say they are paid by pick services. One post is not a pattern, so there is no smoke here either way, just very little to go on. Our Reddit coverage is partial: the Reddit archive's full text search timed out on 20 Nov 2026, so we relied on our saved copy of several betting subreddits plus direct archive reads of the threads below.",
+      "text": "Across Reddit, TheRX, Covers, Sportsbook Review, CapperTek and general web searches we found no buyer who posted a review or a tracked result of Jesse Schule's paid picks, good or bad. The only post that names him is a March 2026 Reddit post in which a user lists him among four WagerTalk handicappers whose free plays they check, inside a post promoting their own app. Two Reddit posts from November 2024 complain about WagerTalk handicappers in general (one says several cappers never topped 50% over about a year and a half, the other names two other WagerTalk handicappers), but neither names him. TheRX has barred all WagerTalk handicappers from its free service play threads since at least March 2023, without giving a reason. Review pages that praise him are run by sites that sell picks or say they are paid by pick services. A single mention is not a pattern, so the evidence points neither way; there is simply very little of it. Our Reddit coverage is partial: the Reddit archive's full text search timed out on 20 Nov 2026, so we relied on our saved copy of several betting subreddits plus direct archive reads of the threads below.",
       "source": null
     },
     {
@@ -226,7 +226,7 @@
     "Every price is published on his profile, and a Last 20 table with losses as well as wins is shown.",
     "The seller published a long record (3,203 Sportsmemo plays from 2021 to 2024), not only short streaks, and the percentages printed beside his records were arithmetically correct when we checked.",
     "WagerTalk posts his free picks with written reasoning, so a bettor can follow and track them before paying.",
-    "We found no complaints, court cases or regulator actions that name him."
+    "No complaint, court case or regulator action naming him turned up."
   ],
   "concerns": [
     "No independent full record. The large unit totals are graded by the network that sells the picks.",
@@ -236,9 +236,9 @@
     "Almost no independent buyer posts exist about him, positive or negative, so there is no outside check on the numbers."
   ],
   "checklist": [
-    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
-    "Count units, not wins. A 60% record at heavy favorites can still lose money.",
-    "Read the guarantee for the words refund, credit and extension. On WagerTalk the guarantee is a credit for a future purchase.",
+    "Get the last 12 months of Jesse Schule's plays, all of them, with line, odds and the hour each was sent. Runs like 861-586-63 on moneyline sides are slices of a record, not the record.",
+    "Count units, not wins. Moneyline sides can win often and still lose money when the prices are steep.",
+    "Look at whether a guarantee pays back cash, credit or extra time. On WagerTalk it returns credit toward a later purchase.",
     "Follow his free picks for a few weeks and grade them yourself at the price you could actually get.",
     "Write down each paid pick the moment you receive it, with the line you can actually get."
   ],
@@ -257,7 +257,7 @@
     ],
     [
       "Does Jesse Schule have a verified record?",
-      "No. His page shows runs such as 861-586-63 on moneyline sides since 2022 and a Sportsmemo record of 1783-1356-64 from 2021 to 2024, all graded by the selling network. We found no independent, time stamped log of every pick."
+      "No. His page shows runs such as 861-586-63 on moneyline sides since 2022 and a Sportsmemo record of 1783-1356-64 from 2021 to 2024, all graded by the selling network. Nothing outside the network logs each of his picks with a time stamp, as far as we found."
     ],
     [
       "What does the Jesse Schule guarantee cover?",

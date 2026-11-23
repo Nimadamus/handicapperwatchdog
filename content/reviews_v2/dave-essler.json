@@ -45,7 +45,7 @@
     ],
     [
       "Watchdog graded sample",
-      "1 plays posted before the start, 20 Sep 2026 to 20 Sep 2026: 1 won, 0 lost, +0.91 units"
+      "A single play posted before the start on 20 Sep 2026, which won for +0.91 units"
     ]
   ],
   "short_answer": [
@@ -63,7 +63,7 @@
     [
       "Dave Essler's Weekender ALL-ACCESS!",
       "only $89.00",
-      "Every pick in every sport through Monday Night Football"
+      "All of his picks, every sport, until Monday Night Football"
     ],
     [
       "Dave Essler's 7 DAY ALL ACCESS!",
@@ -98,7 +98,7 @@
     [
       "CFB Rest of Season Access!",
       "$175.00 (shown against $500)",
-      "Every college football pick through the championship game"
+      "His college football picks through the title game, all of them"
     ],
     [
       "NFL Rest of Season Access!",
@@ -123,7 +123,7 @@
   ],
   "guarantee": [
     "None of the packages on the Dave Essler page mentions a guarantee, a refund or free extra time. The Pregame FAQ we read covers purchased picks, discounts and forum moderation, and the only protection it describes is an \"opposite side insurance\" program for buyers who bought two pros on opposite sides of the same game.",
-    "The Pregame terms say \"PREGAME DOES NOT WARRANT, ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR ANY PRODUCT OR SERVICE ADVERTISED OR OFFERED BY A THIRD PARTY THROUGH THE SERVICE.\" Read the checkout terms before you pay, and note that the Flex Access package rebills every month at $195 until you cancel by email. Losses on the bets themselves are never covered."
+    "The Pregame terms say \"PREGAME DOES NOT WARRANT, ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR ANY PRODUCT OR SERVICE ADVERTISED OR OFFERED BY A THIRD PARTY THROUGH THE SERVICE.\" Read the checkout terms before you pay, and note that the Flex Access package rebills every month at $195 until you cancel by email. Neither Pregame nor Essler covers what you lose on the bets."
   ],
   "claims": [
     {
@@ -170,8 +170,8 @@
   ],
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. Dave Essler does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Dave Essler most often were 1218Sports, TheGodOfCappers, PregameNow, EZMSports. From 20 Sep 2026 to 20 Sep 2026 we took every play our parser could read inside a Dave Essler block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
-    "Result: 1 plays, 1 won, 0 lost, +0.91 units, a return of +90.9% per unit risked. By month: September 1 won, 0 lost, +0.91 units.",
-    "What it means: 1 decided plays is far too few to judge.",
+    "Result: a single Essler play, which won, for +0.91 units, a +90.9% return per unit risked. All of it came in September.",
+    "What it means: one decided play tells a buyer nothing about Dave Essler's long run results.",
     "What a buyer can check: Pregame shows an Every Pick Ever archive for him, split into monitored picks that count in the W/L records and unmonitored picks that count for contests only. When we opened it on 20 Nov 2026 the page asked for a captcha, so we did not read the full log. The Win/Loss page can be switched between yesterday, last 7 days, last 30 days and current season, by bet type and by rated, top or all picks.",
     "What we saw on 20 Nov 2026: the default view (last 30 days, rated picks) showed CBB 2-2, CFB 18-9, CFL 1-0, MLB 1-0, NBA 16-10, NFL 6-9 and NHL 3-2, which we add to 47 wins, 32 losses and plus $1,643, with NFL the one big loser at minus $940. The Current Season view is negative overall, as set out above. His Last 10 Picks showed recent results such as wins on two NBA unders on 17 and 19 Nov and losses on a 76ers and Magic under and a college basketball under on 18 Nov.",
     "Members have tracked some of his free picks themselves. A 2018 Pregame forum tracker of the college football picks made on Pregame's \"Dream Pod\" podcast credited him with 9 wins and 8 losses for the season, against 11-6, 10-6 and 13-5 for the other three hosts. These were free podcast picks, not his paid card.",
@@ -270,10 +270,10 @@
   ],
   "checklist": [
     "Open his Win/Loss Record, switch it to Current Season and All Picks, and look at the sport you want before you pay.",
-    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
+    "Ask Pregame for Dave Essler's last 12 months of picks, listing the number, the odds and when each was released. The streaks at the top of his sales page are not a record.",
     "Count stars and dollars, not wins. A 3 star loss costs more than a 1 star win pays.",
     "If you take Flex Access, put a reminder in your calendar to cancel by email before it rebills.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get."
+    "Record each Essler pick on arrival, along with the number you could actually bet."
   ],
   "faq": [
     [
@@ -282,7 +282,7 @@
     ],
     [
       "What does the Watchdog sample of Dave Essler show?",
-      "We graded 1 of their plays that were posted publicly before the game started, 20 Sep 2026 to 20 Sep 2026: 1 won, 0 lost, +0.91 units at one unit each. That is too few plays to judge."
+      "Just one Essler play turned up posted publicly before its game, on 20 Sep 2026. It won, for +0.91 units at one unit. That is too few plays to judge."
     ],
     [
       "How much does Dave Essler cost?",

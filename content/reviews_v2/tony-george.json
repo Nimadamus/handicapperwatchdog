@@ -12,7 +12,7 @@
   "dek": "A radio host and Doc's Sports handicapper who says he has 35 years in the business. Packages run from $25 for a day of props to $850 for an NBA season. The guarantee pays in credit or extra time, the record on the sales page is a set of chosen runs, and his one public contest record this fall was close to even. We found no buyer posts outside the seller's own review page.",
   "status": {
     "label": "Partly graded",
-    "note": "Tony George publishes no complete log we can audit. Watchdog graded 14 of their plays that were posted publicly before the game started. This is a sample, not a full record."
+    "note": "Tony George publishes no complete log we can audit. We could grade just 14 Tony George plays that were public before game time, which is a narrow slice of what he releases."
   },
   "glance": [
     [
@@ -49,7 +49,7 @@
     ]
   ],
   "short_answer": [
-    "Tony George is a real, long running handicapper and radio host. VSiN named him in the invited field of its 2026 Circa Friday Football Invitational as a Las Vegas handicapper for Doc's Sports with more than 25 years in sports broadcasting, and a 2017 press release describes a renewed SB Nation Radio show under Tony George Sports LLC. He sells picks through Doc's Sports, a store that names its company and gives a phone number and email. In that narrow sense the service is legitimate.",
+    "Tony George is a real, long running handicapper and radio host. VSiN named him in the invited field of its 2026 Circa Friday Football Invitational as a Las Vegas handicapper for Doc's Sports with more than 25 years in sports broadcasting, and a 2017 press release describes a renewed SB Nation Radio show under Tony George Sports LLC. He sells picks through Doc's Sports, a store that names its company and gives a phone number and email. On identity and track history he is a legitimate seller; that alone says nothing about profit.",
     "Whether his paid picks make money is a separate question. The Doc's Sports page, updated 20 Nov 2026, lists rankings and runs such as \"CBB 13-3 run / +48U YTD!\" and \"+44 Units YTD,\" all chosen and graded by the store that sells the picks. We checked several of his headline numbers against the page's own figures and found one that does not add up: a 34-12 March Madness record is 73.9%, not the 72% the page states.",
     "The only third party number we found is his entry in the Circa Invitational contest, reposted on a forum on 7 Nov 2026 at 28-25-3, 17th of 25, while the leader was 38-18. That is a small sample of football sides, not his paid card, but it sits much closer to break even than the sales page story.",
     "We found no independent buyer reviews at all. Doc's Sports' own review page carries nine favorable notes that mention him, and TheRX forum lists both Doc's Sports and his write ups among material members should not post. No complaints, no outside praise: buyer evidence is simply missing."
@@ -64,7 +64,7 @@
     [
       "Football Monthly (4 full weekends)",
       "$325.00",
-      "Self extend if the package does not produce a profit"
+      "Can be self extended for free when the four weekends finish without a profit"
     ],
     [
       "Remainder of the Season Football",
@@ -97,7 +97,7 @@
       "2026 to 2027 season including playoffs; regular $950"
     ],
     [
-      "NHL One Day / One Week / One Month",
+      "NHL packages (day, week, month)",
       "$30.00 / $89.00 / $279.00",
       "Day: $30 credit if a loss or profit under $35; week and month: free self extend"
     ],
@@ -120,7 +120,7 @@
   "guarantee": [
     "The page sells a \"profit guarantee,\" but the remedy is never cash. On the college basketball day package, \"If the package does not produce at least $40 in profit across all plays, a $30 account credit will be applied,\" so a small winning day still counts as a failure. The NHL day package uses a $35 bar the same way. The daily props package says \"We guarantee you a daily profit with this package or you will receive a $30 credit put into your account.\"",
     "On football, NBA, NHL and college basketball packages of a week or a month, a losing package can be extended for free through the store's self extend program. The season packages, from $495 to $850, carry no guarantee wording at all.",
-    "We found no separate guarantee or refund policy page linked from his profile, and no cash refund terms. A buyer who loses money betting the picks gets more picks or store credit. Losses on the bets themselves are never covered, and they are usually far larger than the package price."
+    "We found no separate guarantee or refund policy page linked from his profile, and no cash refund terms. When his plays lose, the Doc's Sports remedy is extra days or a $30 credit; the stakes a bettor puts down are not covered, and those can run well past a $99 weekly package."
   ],
   "claims": [
     {
@@ -178,7 +178,7 @@
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. Tony George does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Tony George most often were BuzzKill (TheRX newsletters thread), tgeorgecapper, 1218Sports, bluelouboyle. From 26 Sep 2026 to 17 Oct 2026 we took every play our parser could read inside a Tony George block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
     "Result: 14 plays, 7 won, 7 lost, -0.64 units, a return of -4.5% per unit risked. By sport: NCAAF 6 won, 5 lost, +0.45 units; NFL 1 won, 2 lost, -1.09 units. By month: September 1 won, 1 lost, -0.09 units; October 6 won, 6 lost, -0.55 units.",
-    "What it means: a 50% win rate on 14 decided plays has a 95% range of about 27% to 73%, and at the prices in this sample a bettor needed about 52% to break even. That range includes break even, so this sample cannot show whether they win or lose over time. The sample covers only the plays that others chose to post, which is not the full card a subscriber receives, and stakes are counted flat even where the seller rates plays differently.",
+    "What it means: a 50% win rate on 14 decided plays has a 95% range of about 27% to 73%, and at the prices in this sample a bettor needed about 52% to break even. With 52% inside that 27% to 73% span, his 7 and 7 split points neither way. These 14 are plays other people reposted, not his complete paid card, and we scored all of them at one unit regardless of how he rated them.",
     "What a buyer can verify independently: one contest. VSiN lists Tony George in the 2026 Circa Friday Football Invitational field, a free 25 handicapper contest with seven college and NFL plays a week and $30,000 in prizes. A standings table reposted on TheRX on 7 Nov 2026 showed him at 28-25-3, 17th of 25 entries, while the leader was 38-18. That is about 53% against the spread on a small sample. On 20 Nov 2026 VSiN's contest page showed the leader at 47-23 entering week 11; George's own line was behind a login, so we could not update it.",
     "Contest rules matter for reading that number: the field shrinks through elimination rounds after NFL week 16, so the standings will tell a reader by January whether he survived the cut.",
     "What the seller publishes: the Doc's Sports page shows yearly rankings, chosen runs and member notes such as a \"4-3 last 7\" NBA note marked \"Not good enough\" and a missed Wednesday play. To its credit the page does post some losses in these notes, but they are graded by the store that sells the picks, so they are marketing, not an audit.",
@@ -186,7 +186,7 @@
   ],
   "our_data": {
     "matched": true,
-    "text": "Watchdog graded 14 Tony George plays posted before the start, 26 Sep 2026 to 17 Oct 2026: 7 won, 7 lost, -0.64 units at one unit each. A sample of what was posted publicly, not a full record.",
+    "text": "Watchdog graded 14 Tony George plays posted before the start, 26 Sep 2026 to 17 Oct 2026: 7 won, 7 lost, -0.64 units at one unit each. That is three weeks of public plays, far short of a full record.",
     "context": "For scale: his contest entry was 28-25-3 in the reposted table."
   },
   "customers_intro": "We found no independent buyer reviews of Tony George. Below is what does exist, including the seller's own review page, and how much weight each piece can carry.",
@@ -262,10 +262,10 @@
     "An older CappersPicks listing sells his picks at different prices despite the \"exclusively\" Doc's claim."
   ],
   "checklist": [
-    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
+    "Ask Doc's Sports for a full year of Tony George releases, each with time sent, line and odds. Circa contest standings and radio highlights do not replace that list.",
     "Check his Circa Invitational standing on VSiN before buying football; it is the one record he does not grade himself.",
     "Count units, not wins. Many of his plays are 4 or 5 units, so one loss can erase several small wins.",
-    "Read the guarantee for the words refund, credit and extension. Here the day packages pay credit, week and month packages extend, and season packages have nothing.",
+    "Look past the words \"profit guarantee\" to the actual remedy. For him the day packages pay credit, week and month packages extend, and season packages have nothing.",
     "Buy from one store only and keep the receipt; Doc's Sports and CappersPicks list different prices."
   ],
   "faq": [
@@ -295,7 +295,7 @@
     ],
     [
       "Is Tony George worth it?",
-      "You get a known name with a long radio career and a credit or extension if a short package loses. What is unproven is whether his picks beat the roughly 52.4% needed at -110 over hundreds of plays, and nothing refunds the package or your betting losses. His free videos and the Circa standings let you judge him before you pay."
+      "You get a known name with a long radio career and a credit or extension if a short package loses. Still missing is proof that he tops the roughly 52.4% a -110 bettor needs over hundreds of plays, and no package term returns your fee or what you lose betting. His free videos and the Circa standings let you judge him before you pay."
     ]
   ],
   "related": [

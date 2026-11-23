@@ -12,7 +12,7 @@
   "dek": "A WagerTalk handicapper who goes only by \"The Prez\", sold picks on Who2BetOn.com as far back as 2005, and is described by WagerTalk as one of its co-founders. Packages run from $25 a play to $1,999 for a year. The guarantee pays in site credit, and the records on show are streaks chosen and graded by the seller.",
   "status": {
     "label": "Partly graded",
-    "note": "The Prez publishes no complete log we can audit. Watchdog graded 13 of their plays that were posted publicly before the game started. This is a sample, not a full record."
+    "note": "The Prez publishes no complete log we can audit. Watchdog graded 13 of their plays that were posted publicly before the game started. Those 13 plays are a sample only."
   },
   "glance": [
     [
@@ -37,7 +37,7 @@
     ],
     [
       "Full public record",
-      "Not found. Streaks, a Last 20 table and short leaderboards only"
+      "Not found. The profile offers streaks, short leaderboards and a Last 20 table, nothing more"
     ],
     [
       "Watchdog graded record",
@@ -50,8 +50,8 @@
   ],
   "short_answer": [
     "The Prez is a real, long running handicapper brand. Saved copies of Who2beton.com show him selling picks there in 2005, 2010 and 2013, with an \"Ask The Prez\" page, and his WagerTalk bio calls him \"The Founder and CEO of Who2beton.\" Since about 2020 that site has said it is \"rebuilding\" and sends visitors to WagerTalk, where on 20 Nov 2026 his profile posted daily picks, priced every package and showed a table of his last 20 graded plays.",
-    "Whether the picks make money over time is a separate question, and nothing we could open answers it. The sales copy leads with runs such as \"77-38 (67%)\" on totals and \"72-39\" in the NHL, each starting where the seller chose. The Last 20 table on the same profile showed 9 wins and 11 losses on 20 Nov 2026, the same as on 16 Nov, and his five NHL plays in it went one and four.",
-    "WagerTalk's own copy calls The Prez one of its co-founders, and its press releases name Lawrence Prezman as co-founder and, in 2019, its President. The profile never says the two are the same person, but either way the company that grades and promotes his record is not a neutral party. We found almost no independent buyer posts about him. Treat the numbers as marketing until you have tracked his picks yourself."
+    "Nothing we could open shows whether his picks earn money over time. The sales copy leads with runs such as \"77-38 (67%)\" on totals and \"72-39\" in the NHL, each starting where the seller chose. The Last 20 table on the same profile showed 9 wins and 11 losses on 20 Nov 2026, the same as on 16 Nov, and his five NHL plays in it went one and four.",
+    "WagerTalk's own copy calls The Prez one of its co-founders, and its press releases name Lawrence Prezman as co-founder and, in 2019, its President. The profile never says the two are the same person, but either way the company that grades and promotes his record is not a neutral party. We found almost no independent buyer posts about him. Read every number on his profile as company advertising until your own tracking says otherwise."
   ],
   "pricing_intro": "All prices below were on The Prez profile at WagerTalk on 20 Nov 2026. The two pass tables were unchanged from 16 Nov 2026; the single plays change daily, and the $29.00 Monday card and the $299.00 NHL special we saw on 16 Nov were no longer listed. Several items show a crossed out \"regular\" price; we list the price you would pay that day.",
   "pricing": [
@@ -61,12 +61,12 @@
       "Guaranteed version returns site credit if the day loses overall"
     ],
     [
-      "1 Day / 3 Day / 7 Day Pass",
+      "1, 3 and 7 Day Passes",
       "$39.00 / $69.00 / $99.00",
       "All of his plays for the period; 3 and 7 day options said \"Currently 2 Pick(s) Included!\""
     ],
     [
-      "30 Day / 90 Day / 1 Year Pass",
+      "30 Day, 90 Day and 1 Year Passes",
       "$299.00 / $749.00 / $1,999.00",
       "Long term all access"
     ],
@@ -77,13 +77,13 @@
     ],
     [
       "Football seasons",
-      "NFL + CFB through Super Bowl $529.00 (was $579.00); NFL through Super Bowl $339.00 (was $369.00); CFB through Championship Game $259.00 (was $299.00)",
+      "Football season: NFL and CFB to the Super Bowl $529.00 (was $579.00); NFL to the Super Bowl $339.00 (was $369.00); CFB to the Championship Game $259.00 (was $299.00)",
       "Through the end of each season"
     ],
     [
       "Basketball and hockey seasons",
       "NBA through All Star Game $389.00; NBA through Finals $719.00; CBB through March Madness $639.00; NHL through All Star Game $324.00; NHL through Stanley Cup Finals $639.00",
-      "Sale prices shown beside higher crossed out prices"
+      "Each sale price sat next to a struck through higher one"
     ],
     [
       "Three day sport passes and Weekend Warrior",
@@ -93,7 +93,7 @@
   ],
   "guarantee": [
     "WagerTalk sells most daily plays in two versions: a plain price and a higher \"Guaranteed\" price ($25.00 versus $38.00 on 20 Nov 2026). The terms box says the option \"backs your purchase with 100% in credits. If your daily pick(s) package does not result in an overall profit across all included plays, the paid cash value of a guaranteed pick will be credited back to your account to be used on a future purchase.\" It is not cash back, and it costs about 50% more.",
-    "The WagerTalk refund policy says \"All Sales are Final and products are sold \"as is\"\", with no refund once a product is purchased, delivered or viewed. The terms say the company's entire liability is \"a refund of the price paid or replacement of our products, at our option.\" We saw no guarantee attached to the multi day or season passes. Nothing covers losses on the bets themselves, which are usually far larger than the package price."
+    "The WagerTalk refund policy says \"All Sales are Final and products are sold \"as is\"\", with no refund once a product is purchased, delivered or viewed. The terms say the company's entire liability is \"a refund of the price paid or replacement of our products, at our option.\" We saw no guarantee attached to the multi day or season passes. Losing wagers placed on his plays are not covered by anything, and they usually cost far more than any pass."
   ],
   "claims": [
     {
@@ -140,16 +140,16 @@
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. The Prez does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming The Prez most often were WagerTalkPicks, SteveMerril, teddy_covers, BuzzKill (TheRX newsletters thread). From 20 Sep 2026 to 17 Nov 2026 we took every play our parser could read inside a The Prez block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
     "Result: 13 plays, 7 won, 6 lost, +0.13 units, a return of +1.0% per unit risked. By sport: NHL 1 won, 4 lost, -3.09 units; NFL 3 won, 1 lost, +1.73 units; NCAAF 3 won, 1 lost, +1.49 units. By month: September 5 won, 0 lost, +4.31 units; October 2 won, 2 lost, -0.18 units; November 0 won, 4 lost, -4.00 units.",
-    "What it means: a 54% win rate on 13 decided plays has a 95% range of about 29% to 77%, and at the prices in this sample a bettor needed about 53% to break even. That range includes break even, so this sample cannot show whether they win or lose over time. The sample covers only the plays that others chose to post, which is not the full card a subscriber receives, and stakes are counted flat even where the seller rates plays differently.",
+    "What it means: a 54% win rate on 13 decided plays has a 95% range of about 29% to 77%, and at the prices in this sample a bettor needed about 53% to break even. Break even sits inside that range, so 13 plays cannot say whether The Prez wins or loses in the long run. It also holds only plays that other people chose to post, not his full paid card, and each is counted at one unit whatever rating the seller gave it.",
     "Another 1 plays naming The Prez first appeared after the game had started, so they are not counted; they went 0 won, 1 lost, -1.00 units.",
-    "What a buyer can verify independently: nothing that we could find. We found no full, time stamped log of every pick by The Prez kept by a third party, no contest results, and no court or regulator record about him.",
+    "What a buyer can verify independently about The Prez: nothing we could locate. We found no full, time stamped log of every pick by The Prez kept by a third party, no contest results, and no court or regulator record about him.",
     "What the seller publishes: a Last 20 table, a Hot Streaks box and a Who's Hot leaderboard. On 20 Nov 2026 the Last 20 table covered plays from 14 to 19 Nov and showed 9 wins and 11 losses. Leaving out the parlay, whose price is not shown, we priced the other 19 plays at the odds listed: 8 wins and 11 losses, about 4 units behind if each risked one unit. The Who's Hot boxes put him first in college basketball for the last 30 days (10-3, +$2,046) and third in the NFL (16-6, +$2,051). All of these are graded by WagerTalk, the company that sells the picks and that its own copy says he helped found.",
     "He also posts free picks with written analysis on the profile, and WagerTalk's social accounts announce them several times a week. Free picks are a fair way to judge his reasoning, but a handful of them is not a record.",
     "Background: who2beton.com was registered on 9 Mar 2000. A saved copy from 1 Jan 2005 lists The Prez first among about twenty handicappers, with an \"Ask The Prez\" page, a 24 hour support line and a record line for him of 65-50 (56.5%) +31.2. A January 2010 copy advertised his college basketball card for $29, and a 2013 copy still lists him among the experts. By January 2020 the site read \"We're currently rebuilding Who2BetOn, big things are on the way but for now, please visit www.wagertalk.com\", and a July 2026 copy says the same. WagerTalk was founded in July 2015, bought Sportsmemo in 2018 and The Gold Sheet newsletter in 2019, formed WagerTalk Media in 2020 under chief executive Rick Allec, and partnered with Picks and Parlays and WinnersAndWhiners in 2025. The Prez profile is also listed on the Picks and Parlays store."
   ],
   "our_data": {
     "matched": true,
-    "text": "Watchdog graded 13 The Prez plays posted before the start, 20 Sep 2026 to 17 Nov 2026: 7 won, 6 lost, +0.13 units at one unit each. A sample of what was posted publicly, not a full record.",
+    "text": "Watchdog graded 13 The Prez plays posted before the start, 20 Sep 2026 to 17 Nov 2026: 7 won, 6 lost, +0.13 units at one unit each. That is only the public slice of his card, not a complete record.",
     "context": "For scale: the streaks on his WagerTalk page run from 63% to 80% winners, while his Last 20 table stood at 45%."
   },
   "customers_intro": "Independent customer evidence about The Prez is close to nonexistent. Most public posts that mention him are WagerTalk's own free pick announcements.",
@@ -219,16 +219,16 @@
     }
   ],
   "conflicts": [
-    "WagerTalk grades The Prez's picks, ranks him on its own leaderboards and sells his packages. A WagerTalk bio for another handicapper calls him one of the company's co-founders. The records on his profile therefore come from the seller's side of the deal.",
+    "WagerTalk grades The Prez's picks, ranks him on its own leaderboards and sells his packages. A WagerTalk bio for another handicapper calls him one of the company's co-founders. Any record on his profile is, in other words, produced by the company selling him.",
     "TheRX's free pick threads bar all WagerTalk handicappers and The Prez by name, so the usual way buyers compare paid plays in public is closed for him.",
-    "The free picks he posts double as advertising for paid packages, and the WagerTalk site also runs sportsbook promo code pages. That proves nothing about his picks, but it is a financial interest a buyer should know about."
+    "The free picks he posts double as advertising for paid packages, and the WagerTalk site also runs sportsbook promo code pages. None of this says his picks are good or bad, but buyers should weigh that commercial interest."
   ],
   "strengths": [
     "Sold through a company with a Las Vegas mailing address, written terms and a public corporate history in press releases.",
     "A long public trail: listed on Who2beton.com by January 2005, so he is not a new name.",
     "Every package has a published price, and daily plays come with an optional credit guarantee.",
     "He posts free picks with full written reasoning, and the profile shows a Last 20 table that includes losses.",
-    "We found no complaints, court cases or regulator actions that name him."
+    "No complaint, lawsuit or regulator action naming The Prez turned up in our searches."
   ],
   "concerns": [
     "No full public record. Every number we saw is a streak, a short window or a total chosen by the seller.",
@@ -238,16 +238,16 @@
     "The bio says two decades on one page and one decade on another, the profile gives no real name, and we found almost no independent buyer reports about his paid picks."
   ],
   "checklist": [
-    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
+    "Ask WagerTalk for a year of The Prez's plays with line, odds and release time on each. Streak banners are not a record.",
     "Check the date on any streak box against the Last 20 table; recent losses may not be in the streak yet.",
-    "Count units, not wins. A 60% record at heavy favorites can still lose money.",
-    "Read the guarantee for the words refund, credit and extension. On WagerTalk the guarantee is a credit for a future purchase.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get."
+    "Count units, not wins. Win 60% while laying heavy favorite prices and you can still finish in the red.",
+    "Find out whether the guarantee means refund, credit or extension. For The Prez it is credit toward a later WagerTalk purchase.",
+    "Keep your own log: record every Prez play on arrival with the price you could really bet."
   ],
   "faq": [
     [
       "Is The Prez legit?",
-      "He is a real, long running WagerTalk handicapper with published prices, daily picks and a company address behind the sales, and saved copies show him selling picks on Who2beton.com since at least 2005. We could not verify that his picks win over time, because the only records on show are graded by WagerTalk itself, and we found no court or regulator action involving him."
+      "He is a real, long running WagerTalk handicapper with published prices, daily picks and a company address behind the sales, and saved copies show him selling picks on Who2beton.com since at least 2005. Long run winning is unproven, since WagerTalk grades every record on show; we also found no court or regulator action involving him."
     ],
     [
       "What does the Watchdog sample of The Prez show?",
@@ -259,7 +259,7 @@
     ],
     [
       "Does The Prez have a verified record?",
-      "No. His profile shows streaks such as 77-38 on totals and 72-39 in the NHL, leaderboard ranks, and a Last 20 table that stood at 9 wins and 11 losses on 20 Nov 2026, all graded by WagerTalk. We found no independent, time stamped log of every pick."
+      "No. His profile shows streaks such as 77-38 on totals and 72-39 in the NHL, leaderboard ranks, and a Last 20 table that stood at 9 wins and 11 losses on 20 Nov 2026, all graded by WagerTalk. No third party log of all his plays, with time stamps, turned up anywhere we looked."
     ],
     [
       "Who is The Prez?",
@@ -271,7 +271,7 @@
     ],
     [
       "Is The Prez worth it?",
-      "For the money you get every play he releases in the period you buy, with written analysis, and on guaranteed daily plays a credit if the day loses. What is unproven is whether his picks beat the roughly 52.4% needed at -110 over hundreds of plays, and nothing refunds your betting losses."
+      "For the money you get every play he releases in the period you buy, with written analysis, and on guaranteed daily plays a credit if the day loses. Over hundreds of plays at -110 he would need roughly 52.4% to break even, which nothing proves, and betting losses are never refunded."
     ]
   ],
   "related": [

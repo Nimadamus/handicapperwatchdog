@@ -29,11 +29,11 @@
     ],
     [
       "Price range seen",
-      "$5.00 single play (shown against $25.00) to $1,999.00 for a one year all access pass"
+      "From $5.00 a single play (list $25.00) up to $1,999.00 for a full year of all access"
     ],
     [
       "Guarantee",
-      "Optional paid add on that returns site credit, not cash. All sales final"
+      "Costs extra and repays only in WagerTalk credit, not cash. All sales final"
     ],
     [
       "Watchdog graded record",
@@ -46,14 +46,14 @@
   ],
   "short_answer": [
     "Will Rogers is a handicapper name sold through WagerTalk, a Las Vegas pick marketplace founded in July 2015, and through StatSalt, whose refund policy says purchases are made from the same parent company, Wager Talk Media, LP. WagerTalk introduced him in October 2025 as its \"newest handicapper.\" His page was active on 17 Nov 2026, with dated plays for that week and a daily report.",
-    "Whether the picks make money over time is a separate question. The page shows streaks such as \"17-4 (+61.35u) RECORD WITH NFL MAX PLAYS!\" and \"59-44 (+39.72 units) with his last 103 NFL releases.\" Each starts and stops where the seller chose. The Last 20 table on StatSalt, which shows ratings, was 9 wins and 11 losses by our count, about 13 units down if each rating is the amount risked.",
+    "Whether his plays earn money over time is another matter. The page shows streaks such as \"17-4 (+61.35u) RECORD WITH NFL MAX PLAYS!\" and \"59-44 (+39.72 units) with his last 103 NFL releases.\" Each starts and stops where the seller chose. The Last 20 table on StatSalt, which shows ratings, was 9 wins and 11 losses by our count, about 13 units down if each rating is the amount risked.",
     "His bio gives no real name, no city and no years, only that he has \"rubbed shoulders with the rich and big players\" and had \"stellar results over the past decade.\" We found no buyer reviews or complaints about him. Treat him as an unproven seller and record every pick yourself."
   ],
-  "pricing_intro": "All prices below were on the Will Rogers WagerTalk page on 17 Nov 2026; StatSalt showed the same single play and pass prices. WagerTalk shows a higher list price next to most sale prices; we give both. When he was introduced in October 2025, the page offered 7 days for $77, 90 days plus 30 free for $849, and a year for $1,499.",
+  "pricing_intro": "All prices below were on the Will Rogers WagerTalk page on 17 Nov 2026; StatSalt showed the same single play and pass prices. Most Rogers prices appear as a sale figure beside a higher list figure, and the table shows both. When he was introduced in October 2025, the page offered 7 days for $77, 90 days plus 30 free for $849, and a year for $1,499.",
   "pricing": [
     [
       "Single plays (for example \"ROGERS THURSDAY NIGHT NFL BIG HITTER!\")",
-      "$5.00 (shown against $25.00); $8.00 with the guarantee (shown against $38.00)",
+      "$5.00, marked down from $25.00; with the guarantee $8.00, marked down from $38.00",
       "One pick"
     ],
     [
@@ -62,19 +62,19 @@
       "Weekend football plays, including 5% max plays"
     ],
     [
-      "NBA Full-Court Pass / College Basketball Full-Court Pass / NHL Hat-Trick All-Access Pass",
+      "Full-Court Pass (NBA or College Basketball) / NHL Hat-Trick All-Access Pass",
       "$49.00 each (shown against $100.00)",
       "Three days of plays in that sport"
     ],
     [
       "1-Year All-Inclusive Pass",
       "$1,188.00 (shown against $1,999.00), advertised as \"Just $99/Month\"",
-      "One time payment for a year of picks"
+      "Paid once, covers twelve months of picks"
     ],
     [
       "All Access passes",
-      "1 Day $39.00, 3 Day $69.00, 7 Day $99.00, 30 Day $299.00, 90 Day $749.00, 1 Year $1,999.00",
-      "Every pick in every sport for the period"
+      "$39.00 (1 day), $69.00 (3 days), $99.00 (7 days), $299.00 (30 days), $749.00 (90 days), $1,999.00 (1 year)",
+      "All his plays, all sports, for the length of the pass"
     ],
     [
       "Season passes",
@@ -83,8 +83,8 @@
     ]
   ],
   "guarantee": [
-    "The guarantee is an extra you pay for. A $5.00 play costs $8.00 with it. WagerTalk says the option \"backs your purchase with 100% in credits\" and the refund policy explains: \"If your daily pick(s) package does not result in an overall profit across all included plays, the paid cash value of a guaranteed pick will be credited back to your account to be used on a future purchase.\" The paid amount comes back as account credit, not as cash.",
-    "The WagerTalk refund policy also says \"All Sales are Final and products are sold \"as is\"\" and \"Once a product or service has been purchased, delivered, and/ or viewed, no refunds will be issued.\" The StatSalt policy uses the same words. The site terms say the content is \"for entertainment and amusement purposes only\" and that \"the purchaser's exclusive remedy, shall be a refund of the price paid\" or replacement, at the seller's option. Losses on the bets themselves are never covered."
+    "Rogers buyers pay more to add the guarantee. A $5.00 play costs $8.00 with it. WagerTalk says the option \"backs your purchase with 100% in credits\" and the refund policy explains: \"If your daily pick(s) package does not result in an overall profit across all included plays, the paid cash value of a guaranteed pick will be credited back to your account to be used on a future purchase.\" The paid amount comes back as account credit, not as cash.",
+    "The WagerTalk refund policy also says \"All Sales are Final and products are sold \"as is\"\" and \"Once a product or service has been purchased, delivered, and/ or viewed, no refunds will be issued.\" The StatSalt policy uses the same words. The site terms say the content is \"for entertainment and amusement purposes only\" and that \"the purchaser's exclusive remedy, shall be a refund of the price paid\" or replacement, at the seller's option. No policy wording covers what a buyer loses on the wagers."
   ],
   "claims": [
     {
@@ -131,8 +131,8 @@
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. Will Rogers does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Will Rogers most often were BuzzKill (TheRX newsletters thread), WagerTalkPicks, TheGodOfCappers, EZMSports. From 15 Sep 2026 to 23 Oct 2026 we took every play our parser could read inside a Will Rogers block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
     "Result: 4 plays, 1 won, 2 lost, 1 push, -1.09 units, a return of -27.3% per unit risked. By month: September 1 won, 1 lost, -0.09 units; October 0 won, 1 lost, 1 push, -1.00 units.",
-    "What it means: 3 decided plays is far too few to judge.",
-    "What a buyer can verify independently: nothing that we could find. We found no full, time stamped log of every paid Will Rogers pick with the line and release time kept by anyone other than the seller.",
+    "What it means: with only three graded plays, no conclusion about Rogers is possible.",
+    "What a buyer can verify independently: no Rogers record kept outside the seller, as far as we found. We found no full, time stamped log of every paid Will Rogers pick with the line and release time kept by anyone other than the seller.",
     "What the seller publishes: streak totals, a three day leaderboard entry showing 6 and 2 and $1,168 profit, and a Last 20 table of recent plays with results. WagerTalk grades these itself, and its parent company also sells the picks on StatSalt.",
     "A third party: GameAdvisers, a site that says it may earn sportsbook commissions, has a Will Rogers page showing 13 and 7, plus $497 and a 19.5% return over the last 30 days on 20 graded picks at a flat $100. Its page says those picks \"can be found on BestBettor, part of SportsCapping Group,\" not WagerTalk, so it may be tracking free picks or a different seller using the same name. We give it little weight."
   ],
@@ -180,14 +180,14 @@
     }
   ],
   "conflicts": [
-    "WagerTalk sells his picks, grades his record, writes his bio and runs the leaderboard that ranks him. StatSalt, which shows the same bio and streaks, belongs to the same parent company. None of those numbers is independent of the seller.",
+    "His bio, his graded record, his leaderboard rank and his sales all come from WagerTalk. StatSalt, which shows the same bio and streaks, belongs to the same parent company. So not one Rogers figure comes from outside the company selling him.",
     "TheRX, a large betting forum, lists \"Will Rogers\" and \"All Wagertalk Cappers\" among the services members may not post. The rule does not say why, and it says nothing about the quality of the picks, but it means paid plays are rarely shared and checked there.",
     "The outside tracker we found, GameAdvisers, credits its Will Rogers picks to a different network and earns sportsbook commissions, so its numbers cannot be tied firmly to this seller.",
     "WagerTalk's terms describe the site content as for entertainment and amusement purposes only and make no promise about results."
   ],
   "strengths": [
-    "Sold through a marketplace with a named Las Vegas seller address, written terms and a refund policy.",
-    "Prices are published for every play and pass, and single plays were on sale for $5.",
+    "His picks are sold by a marketplace that lists a Las Vegas address, written terms and a refund policy.",
+    "Every play and pass has a posted price, with single plays on sale for $5 when we checked.",
     "The Last 20 table shows losses as well as wins, with odds, and on StatSalt with ratings too.",
     "Each play comes with a written explanation, and a daily report says how many plays are coming.",
     "A $49 three day pass lets a buyer test him without a long commitment."
@@ -195,16 +195,16 @@
   "concerns": [
     "No full public record. Every headline number is a streak chosen by the seller, and the windows change from day to day.",
     "His own Last 20 table was 9 and 11 and about 13 units down, against streak banners of 70% and more.",
-    "The guarantee costs extra and pays in site credit, never cash. All sales are final.",
+    "Adding the guarantee raises the price, and any payout is WagerTalk credit rather than cash. All sales are final.",
     "The bio gives no real name, place or history that a buyer could check, and his WagerTalk record covers only about a year.",
     "No independent buyer posts exist, good or bad."
   ],
   "checklist": [
-    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
-    "Open the Last 20 tab before you buy. On the day we checked it told a different story from the streak banners.",
+    "Request every Rogers release from the past year, each with line, odds and send time. Hot streaks pulled from that year do not make a record.",
+    "Check his Last 20 tab before paying. When we looked, it disagreed with the streak banners at the top of the page.",
     "Count units, not wins. Several of his recent plays were favorites at minus 150 to minus 230, which need a high win rate to profit.",
-    "Read the guarantee for the words refund, credit and extension. Here it is credit only.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get."
+    "See whether the guarantee offers a refund, credit or extension. Here it is credit only.",
+    "Write each Rogers play into your own log as soon as it arrives, with the line actually on offer to you."
   ],
   "faq": [
     [
@@ -217,7 +217,7 @@
     ],
     [
       "How much does Will Rogers cost?",
-      "On 17 Nov 2026 single plays were $5.00 ($8.00 with the guarantee), three day sport passes and the Weekend Warrior were $49.00, and a one year all inclusive pass was $1,188.00. All access passes ran from $39.00 for a day to $1,999.00 for a year."
+      "On 17 Nov 2026 single plays were $5.00 ($8.00 with the guarantee), three day sport passes and the Weekend Warrior were $49.00, and a one year all inclusive pass was $1,188.00. The all access range was $39.00 for one day up to $1,999.00 for twelve months."
     ],
     [
       "Does Will Rogers have a verified record?",
@@ -233,7 +233,7 @@
     ],
     [
       "Is Will Rogers worth it?",
-      "At $5 a play the price is low, but nothing shows the picks beat the roughly 52.4% needed at -110 over hundreds of plays. The guarantee only returns site credit, and your betting losses are never covered."
+      "At $5 a play the price is low, but nothing shows the picks beat the roughly 52.4% needed at -110 over hundreds of plays. Any guarantee payout is site credit, and nothing pays back what you lose betting."
     ]
   ],
   "related": [

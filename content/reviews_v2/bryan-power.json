@@ -29,11 +29,11 @@
     ],
     [
       "Price range seen",
-      "$5.00 single play (shown against $25.00) to $1,999.00 for a one year all access pass"
+      "From $5.00 a single play (list $25.00) up to $1,999.00 for a year of all access"
     ],
     [
       "Guarantee",
-      "Optional paid add on that returns site credit, not cash. All sales final"
+      "Costs extra and pays back site credit only, never cash. All sales final"
     ],
     [
       "Watchdog graded record",
@@ -49,11 +49,11 @@
     "Whether the picks make money over time is not shown in any full record we could open. The page leads with \"NOW UP 93.1 UNITS ~ IN ALL SPORTS ~ SINCE APRIL!\" and \"24-10 (70%) RUN WITH ALL FOOTBALL!\", streaks that start where the seller chose. The Last 20 table on the same page showed 9 wins and 11 losses, about 3.5 units down at one unit a play, and its 16 football plays went 8 and 8. The site's own 30 day leaderboard, by contrast, had him at 33 wins, 22 losses and 2 pushes.",
     "We found very few independent posts about him. The few we found were neutral or mildly positive, and none came from a paying customer describing results. Treat him as an established but unproven seller and record every pick yourself."
   ],
-  "pricing_intro": "All prices below were on the Bryan Power WagerTalk page on 17 Nov 2026. WagerTalk shows a higher list price next to most sale prices; we give both. The All Access passes on the page are sold from his page and the 3 and 7 day passes said \"Currently 1 Pick(s) Included!\", so check how many plays a pass will actually cover before buying. In July 2022 the same page sold a 3 Day Pass for $59 and NFL plus CFB through the Super Bowl for $899.",
+  "pricing_intro": "All prices below were on the Bryan Power WagerTalk page on 17 Nov 2026. Most sale prices sat next to a higher list price, and both appear below. The All Access passes on the page are sold from his page and the 3 and 7 day passes said \"Currently 1 Pick(s) Included!\", so check how many plays a pass will actually cover before buying. In July 2022 the same page sold a 3 Day Pass for $59 and NFL plus CFB through the Super Bowl for $899.",
   "pricing": [
     [
       "Single plays (for example \"4% WEEKDAY MACTION BEST BET\")",
-      "$5.00 (shown against $25.00); $8.00 with the guarantee (shown against $38.00)",
+      "$5.00 (list $25.00), or $8.00 guaranteed (list $38.00)",
       "One pick"
     ],
     [
@@ -69,12 +69,12 @@
     [
       "1-Year All-Inclusive Pass",
       "$1,188.00 (shown against $1,999.00), advertised as \"Just $99/Month + 25% Bonus Coupon\"",
-      "One time payment for a year of picks"
+      "Paid once, covers twelve months of picks"
     ],
     [
       "All Access passes",
-      "1 Day $39.00, 3 Day $69.00, 7 Day $99.00, 30 Day $299.00, 90 Day $749.00, 1 Year $1,999.00",
-      "Every pick in every sport for the period"
+      "$39.00 for 1 day, $69.00 for 3, $99.00 for 7, $299.00 for 30, $749.00 for 90, $1,999.00 for a year",
+      "All his picks across every sport during the pass"
     ],
     [
       "Season passes",
@@ -83,8 +83,8 @@
     ]
   ],
   "guarantee": [
-    "The guarantee is an extra you pay for. A $5.00 play costs $8.00 with it. WagerTalk says the option \"backs your purchase with 100% in credits.\" The refund policy explains: \"If your daily pick(s) package does not result in an overall profit across all included plays, the paid cash value of a guaranteed pick will be credited back to your account to be used on a future purchase.\" The paid amount comes back as account credit, not as cash.",
-    "The WagerTalk refund policy also says \"All Sales are Final and products are sold \"as is\"\" and \"Once a product or service has been purchased, delivered, and/ or viewed, no refunds will be issued.\" The site terms say the content is \"for entertainment and amusement purposes only\" and that \"the purchaser's exclusive remedy, shall be a refund of the price paid\" or replacement of the product, at WagerTalk's option. Losses on the bets themselves are never covered."
+    "On Bryan Power plays the guarantee is a paid upgrade. A $5.00 play costs $8.00 with it. WagerTalk says the option \"backs your purchase with 100% in credits.\" The refund policy explains: \"If your daily pick(s) package does not result in an overall profit across all included plays, the paid cash value of a guaranteed pick will be credited back to your account to be used on a future purchase.\" The paid amount comes back as account credit, not as cash.",
+    "The WagerTalk refund policy also says \"All Sales are Final and products are sold \"as is\"\" and \"Once a product or service has been purchased, delivered, and/ or viewed, no refunds will be issued.\" The site terms say the content is \"for entertainment and amusement purposes only\" and that \"the purchaser's exclusive remedy, shall be a refund of the price paid\" or replacement of the product, at WagerTalk's option. Money lost on the wagers themselves is not covered."
   ],
   "claims": [
     {
@@ -131,7 +131,7 @@
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. Bryan Power does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Bryan Power most often were WagerTalkPicks, TheGodOfCappers, 1218Sports, EZMSports. From 22 Sep 2026 to 14 Nov 2026 we took every play our parser could read inside a Bryan Power block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
     "Result: 6 plays, 3 won, 3 lost, -0.24 units, a return of -4.0% per unit risked. By sport: NCAAF 1 won, 3 lost, -2.06 units. By month: September 1 won, 0 lost, +0.91 units; October 1 won, 1 lost, -0.09 units; November 1 won, 2 lost, -1.06 units.",
-    "What it means: 6 decided plays is far too few to judge.",
+    "What it means: with only 6 decided plays, the sample says almost nothing about Bryan Power.",
     "What a buyer can verify independently: no full, time stamped log of every paid pick that we could find.",
     "What the seller publishes: streak totals, leaderboard entries such as 33 and 22 and 2 over the last 30 days, and a Last 20 table with odds. On 17 Nov 2026 the Last 20 table had 9 wins and 11 losses, including two six point teasers that won and a three team parlay that lost. At one unit a play and the listed odds, that comes to about minus 3.5 units. WagerTalk grades these itself and also sells the picks.",
     "A third party: GameAdvisers, a site that says it may earn sportsbook commissions, tracks his free WagerTalk picks. On 17 Nov 2026 it showed 9 and 6 and plus $246 over the last 30 days, while another box on the same page said 9 and 7. That covers free picks only, a sample of about 15 plays, and the profit figures assume a flat $100 bet."
@@ -173,14 +173,14 @@
     }
   ],
   "conflicts": [
-    "WagerTalk sells his picks, grades his record, writes his bio and runs the leaderboard that ranks him. None of those numbers is independent of the seller.",
+    "His picks, his graded record, his bio and the leaderboard ranking him all come from WagerTalk. So every number shown traces back to the business selling him.",
     "WagerTalk also produces the video and podcast shows where he gives picks, so the publicity and the sales come from the same company.",
     "GameAdvisers, the only outside tracker we found, describes him as part of the WagerTalk Group and carries an affiliate disclosure for sportsbook partners.",
-    "TheRX lists \"All Wagertalk Cappers\" among the services members may not post in its daily service play threads. The rule does not say why, and it says nothing about the quality of the picks."
+    "TheRX bans posts from \"All Wagertalk Cappers\" in its daily service play threads, which covers Bryan Power. The forum gives no reason and makes no judgment on pick quality."
   ],
   "strengths": [
-    "Sold through a marketplace with a named Las Vegas seller address, written terms and a refund policy.",
-    "Prices are published for every play and pass, and single plays were on sale for $5.",
+    "WagerTalk, the marketplace selling him, lists a Las Vegas address, written terms and a refund policy.",
+    "Every play and pass has a posted price, and his single plays were down to $5 when checked.",
     "The page shows a Last 20 table with odds and losses as well as wins, and on 17 Nov 2026 it was a losing stretch that the page did not hide.",
     "His free picks are tracked by an outside site, and an old forum tally from 2013 had his free picks ahead of the group.",
     "He has a long public history: an archived WagerTalk page from 2022 and a forum mention from 2013."
@@ -188,15 +188,15 @@
   "concerns": [
     "No full public record of paid picks. Every headline number is a streak chosen by the seller.",
     "His own Last 20 table was 9 and 11, and its football plays were 8 and 8, against a headline \"24-10\" football run.",
-    "The guarantee costs extra and pays in site credit, never cash. All sales are final.",
+    "Paying for the guarantee gets you site credit at best, never cash. All sales are final.",
     "Some bio numbers are years old, such as the \"this year (2022)\" run, and the bio has described his past differently over time.",
     "Very few independent buyer posts exist, good or bad."
   ],
   "checklist": [
-    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
-    "Open the Last 20 tab before you buy. On the day we checked it told a different story from the streak banners.",
+    "Before buying a $5 play, get a year of Bryan Power's picks in writing, every one with line, odds and timestamp. A streak banner is a highlight, not a record.",
+    "Check his Last 20 tab ahead of any purchase. When we looked, it did not match the streak banners.",
     "Count units, not wins. A 60% record at heavy favorites can still lose money, and parlays and teasers change the math.",
-    "Read the guarantee for the words refund, credit and extension. Here it is credit only.",
+    "Check if the guarantee on a $5 play promises a refund, a credit or an extension. Here it is credit only.",
     "Check how many plays a pass includes; the short passes said \"Currently 1 Pick(s) Included!\""
   ],
   "faq": [
@@ -210,7 +210,7 @@
     ],
     [
       "How much does Bryan Power cost?",
-      "On 17 Nov 2026 single plays were $5.00 ($8.00 with the guarantee), short passes were $49.00, and a one year all inclusive pass was $1,188.00. All access passes ran from $39.00 for a day to $1,999.00 for a year."
+      "On 17 Nov 2026 single plays were $5.00 ($8.00 with the guarantee), short passes were $49.00, and a one year all inclusive pass was $1,188.00. His all access passes cost $39.00 for one day and up to $1,999.00 for a full year."
     ],
     [
       "Does Bryan Power have a verified record?",
@@ -226,7 +226,7 @@
     ],
     [
       "Is Bryan Power worth it?",
-      "Plays are cheap at $5, but nothing shows the paid picks beat the roughly 52.4% needed at -110 over hundreds of plays. The guarantee only returns site credit, and your betting losses are never covered."
+      "Plays are cheap at $5, but nothing shows the paid picks beat the roughly 52.4% needed at -110 over hundreds of plays. Any guarantee comes back as site credit, and no one repays your losing bets."
     ]
   ],
   "related": [

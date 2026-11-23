@@ -12,7 +12,7 @@
   "dek": "A Las Vegas betting personality who sells picks on WagerTalk and was known on Pregame as Vegas-Runner. Daily passes ran $26 to $39 when we checked, and a year was $1,188 on sale. The guarantee pays in site credit, the records are seller picked streaks, and older forum posts and a 2016 news report raise questions we could not settle.",
   "status": {
     "label": "Partly graded",
-    "note": "Gianni the Greek publishes no complete log we can audit. Watchdog graded 14 of their plays that were posted publicly before the game started. This is a sample, not a full record."
+    "note": "Gianni the Greek publishes no complete log we can audit. Watchdog found and graded 14 Gianni plays that appeared in public posts before their games began. Fourteen plays are a sample, nowhere near a full record."
   },
   "glance": [
     [
@@ -41,7 +41,7 @@
     ],
     [
       "Guarantee",
-      "Optional paid add on that returns site credit, not cash. All sales final"
+      "An optional extra; a losing daily package earns site credit, not cash. All sales final"
     ],
     [
       "Watchdog graded record",
@@ -57,7 +57,7 @@
     "Whether the picks make money over time is not shown anywhere we could open. The page leads with streaks such as \"FOOTBALL 5% ARE 12-1 (92%)\", all chosen and graded by the selling site. The same page also says he was \"56-54-1 (51%)\" on 2026 college football premium plays, which by our arithmetic is below the 52.4% needed to break even at standard odds. One streak, \"19-7 (79%)\", is really 73%.",
     "Under the name Vegas-Runner he drew strong criticism on forums between 2009 and 2011, including claims of losing runs, renamed packages and alias accounts, and a 2016 Deadspin investigation of Pregame quoted him describing a business built around selling. Those forum claims are allegations by anonymous posters that we could not verify, and a few members defended him. Treat him as a known media name with an unproven pick record."
   ],
-  "pricing_intro": "All prices below were on the Gianni the Greek WagerTalk page on 20 Nov 2026. WagerTalk shows a higher list price next to most sale prices; we give both. The Steam Sheet we saw on 17 Nov was not listed on 20 Nov. The All Access and season passes are WagerTalk passes for this handicapper's plays.",
+  "pricing_intro": "All prices below were on the Gianni the Greek WagerTalk page on 20 Nov 2026. Where his page paired a sale price with a higher list price, we show the two together. The Steam Sheet we saw on 17 Nov was not listed on 20 Nov. The All Access and season passes are WagerTalk passes for this handicapper's plays.",
   "pricing": [
     [
       "SUN WK11 NFL PASS: 5% BIG MOVE & MORE (5 picks, 22 Nov)",
@@ -75,12 +75,12 @@
       "The description says \"Only $29\" while the cart button showed $26.00"
     ],
     [
-      "Weekend Warrior (every CFB play Saturday and NFL play Sunday)",
+      "Weekend Warrior pass (all Saturday college football and Sunday NFL plays)",
       "$49.00 (shown against $78.00)",
       "WagerTalk promotion"
     ],
     [
-      "NBA Full-Court Pass / College Basketball Full-Court Pass / NHL Hat-Trick All-Access Pass",
+      "NBA Full-Court, College Basketball Full-Court or NHL Hat-Trick All-Access pass",
       "$49.00 each for 3 days (shown against $100.00)",
       "WagerTalk promotions"
     ],
@@ -106,8 +106,8 @@
     ]
   ],
   "guarantee": [
-    "The guarantee is an extra you pay for. The $39.00 NFL pass costs $59.00 with it, and the $29.00 college football pass costs $44.00. WagerTalk says the option \"backs your purchase with 100% in credits\" and applies \"If your daily pick(s) package does not result in an overall profit across all included plays.\" In that case \"the paid cash value of a guaranteed pick will be credited back to your account to be used on a future purchase.\" It comes back as account credit, not cash, and only on daily packages.",
-    "The WagerTalk refund policy says \"All Sales are Final and products are sold “as is”\" and \"Once a product or service has been purchased, delivered, and/ or viewed, no refunds will be issued.\" It also lists cases where no refund is given, such as in state college and pro games a buyer cannot legally bet and undelivered email or text alerts. The site terms say the buyer's \"exclusive remedy, shall be a refund of the price paid\" or replacement, at WagerTalk's option, that the content is \"for entertainment and amusement purposes only\", that Nevada law governs, and that any claim must be filed within one year. Losses on the bets themselves are never covered."
+    "Gianni's guarantee is not free; it is added to the price. The $39.00 NFL pass costs $59.00 with it, and the $29.00 college football pass costs $44.00. WagerTalk says the option \"backs your purchase with 100% in credits\" and applies \"If your daily pick(s) package does not result in an overall profit across all included plays.\" In that case \"the paid cash value of a guaranteed pick will be credited back to your account to be used on a future purchase.\" It comes back as account credit, not cash, and only on daily packages.",
+    "The WagerTalk refund policy says \"All Sales are Final and products are sold “as is”\" and \"Once a product or service has been purchased, delivered, and/ or viewed, no refunds will be issued.\" It also lists cases where no refund is given, such as in state college and pro games a buyer cannot legally bet and undelivered email or text alerts. The site terms say the buyer's \"exclusive remedy, shall be a refund of the price paid\" or replacement, at WagerTalk's option, that the content is \"for entertainment and amusement purposes only\", that Nevada law governs, and that any claim must be filed within one year. None of this touches what you lose at the sportsbook."
   ],
   "claims": [
     {
@@ -159,19 +159,19 @@
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. Gianni the Greek does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Gianni the Greek most often were WagerTalkPicks, 1218Sports, TheGodOfCappers, EZMSports. From 19 Sep 2026 to 21 Nov 2026 we took every play our parser could read inside a Gianni the Greek block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
     "Result: 14 plays, 11 won, 3 lost, +6.60 units, a return of +47.1% per unit risked. By sport: NCAAF 5 won, 2 lost, +2.40 units; NFL 3 won, 1 lost, +1.62 units. By month: September 4 won, 1 lost, +2.39 units; October 5 won, 1 lost, +3.40 units; November 2 won, 1 lost, +0.82 units.",
-    "What it means: a 79% win rate on 14 decided plays has a 95% range of about 52% to 92%, and at the prices in this sample a bettor needed about 54% to break even. That range includes break even, so this sample cannot show whether they win or lose over time. The sample covers only the plays that others chose to post, which is not the full card a subscriber receives, and stakes are counted flat even where the seller rates plays differently.",
+    "What it means: a 79% win rate on 14 decided plays has a 95% range of about 52% to 92%, and at the prices in this sample a bettor needed about 54% to break even. Because 54% falls inside that band, 14 plays cannot settle whether he beats the market. It also counts only plays that third parties chose to repost, not everything a paying customer gets, and every play is scored at one unit even when he sells it as a 5% play.",
     "Another 1 plays naming Gianni the Greek first appeared after the game had started, so they are not counted; they went 0 won, 1 lost, -1.00 units.",
-    "What a buyer can verify independently: nothing that we could find. We found no full, time stamped log of every pick with the line and release time, and no third party audit.",
+    "What a buyer could check on his own: nothing we located. We found no full, time stamped log of every pick with the line and release time, and no third party audit.",
     "What the seller publishes: streak totals, leaderboards and a Last 20 table of recent plays. On 20 Nov 2026 we counted 13 wins and 7 losses in that table, covering 14 to 19 Nov. Risking one unit on each of the 19 plays that showed a price, at the prices shown, would have won about 2.8 units, plus a winning six point teaser with no price shown. That is a good week, and a week is all it is. WagerTalk grades these plays itself and also sells them.",
     "The longer history comes from outside WagerTalk. A June 2016 Deadspin investigation of the Pregame network reported, citing a 2012 contract, that Pregame paid \"Vegas Runner\" a 33 percent commission on his sales. The reporter wrote that in an hour long interview Karalis talked about being Pregame's biggest seller and never mentioned winning, and that he described company meetings focused on how to sell. The article also reported a lawsuit in Clark County, Nevada between Pregame's founder and Karalis over a non compete clause and the Vegas Runner name, in which the founder won a preliminary injunction over the name; it did not report the final outcome. Pregame's founder later sued Deadspin over the article and the case settled in 2019, with Deadspin saying it stood by its reporting.",
     "Forum posters in 2009 to 2011 said his paid plays on Pregame lost heavily in some seasons, one claiming over 100 units lost in 2011. We could not check those figures."
   ],
   "our_data": {
     "matched": true,
-    "text": "Watchdog graded 14 Gianni the Greek plays posted before the start, 19 Sep 2026 to 21 Nov 2026: 11 won, 3 lost, +6.60 units at one unit each. A sample of what was posted publicly, not a full record.",
+    "text": "Watchdog graded 14 Gianni the Greek plays posted before the start, 19 Sep 2026 to 21 Nov 2026: 11 won, 3 lost, +6.60 units at one unit each. It reflects public reposts only, so it is no substitute for his full card.",
     "context": "For scale: the streaks on his page run from about 65% to 92% winners, while his own 2026 college football premium record was 51%."
   },
-  "customers_intro": "Most independent comment on this seller is old and was written about Vegas-Runner, his name on Pregame. Recent comment is thinner: a CapperTek review, a few Reddit threads and forum reposts of his plays. Below is the whole pattern, then each post and how much weight it can carry.",
+  "customers_intro": "Most independent comment on this seller is old and was written about Vegas-Runner, his name on Pregame. Recent comment is thinner: a CapperTek review, a few Reddit threads and forum reposts of his plays. The overall picture comes first, followed by each post and the weight it deserves.",
   "customers": [
     {
       "type": "Our summary",
@@ -248,7 +248,7 @@
       "tone": "Neutral",
       "date": "3 Oct 2021",
       "source": 13,
-      "text": "An r/sportsbetting post collecting paid service plays from dozens of sellers included plays credited to him. Posts like this pass paid picks around for free and do not grade them."
+      "text": "Some of his plays showed up in an r/sportsbetting roundup of paid picks from dozens of sellers. Posts like this pass paid picks around for free and do not grade them."
     },
     {
       "type": "Not found",
@@ -259,9 +259,9 @@
     }
   ],
   "conflicts": [
-    "WagerTalk sells his picks, grades his record, ranks him on its own leaderboards, writes his bio and published the 2018 press release about him. None of those numbers is independent of the seller.",
+    "WagerTalk sells his picks, grades his record, ranks him on its own leaderboards, writes his bio and published the 2018 press release about him. Not one of those figures comes from outside the company that profits from his sales.",
     "Pregame, where he sold as Vegas-Runner, also ran the forum where much of the old praise and criticism appeared, and according to Deadspin paid him a commission on what he sold rather than on how he did. Posters on ComplaintsBoard and TheRX alleged that critical posts were removed and that some praise came from alias accounts. We could not verify either claim.",
-    "TheRX lists \"All Wagertalk Cappers\" among the services members may not post in its daily service play threads. The rule does not say why, and it says nothing about the quality of the picks."
+    "TheRX also bars members from reposting any WagerTalk handicapper, him included, in its daily service play threads. It gives no reason, and the ban is not a verdict on his picks."
   ],
   "strengths": [
     "A named person with a long, public career in Las Vegas betting media, using his real name on the selling page.",
@@ -273,22 +273,22 @@
   "concerns": [
     "No full public record. Every headline number is a streak chosen and graded by the seller, and one of them is miscalculated.",
     "His own 2026 college football premium record, 56-54-1, loses money at standard odds.",
-    "The guarantee costs extra and pays in site credit, never cash. All sales are final.",
+    "The guarantee is an added cost and refunds only in site credit. All sales are final.",
     "Serious allegations from 2009 to 2011 forum posters about losses, renamed packages and alias accounts, never tested in any court or regulator record we found.",
     "A 2016 news investigation described his Pregame era as sales driven, with commission tied to sales.",
     "Claims such as \"a mathematical certainty\" of long term winning cannot be true for any betting product."
   ],
   "checklist": [
-    "Ask for every pick from the last 12 months with the line, the odds, the unit size and the time it was sent. A list of hot runs is not a record.",
+    "Ask for Gianni the Greek's full year of plays with line, odds, unit size and the time each one went out. A 12-1 run on 5% plays is a highlight reel, not a record.",
     "Look for the full season number inside the sales copy, like the 56-54-1 here, not just the streak in the headline.",
     "Count units, not wins. A 60% record at heavy favorites can still lose money, and multi unit plays magnify both sides.",
-    "Read the guarantee for the words refund, credit and extension. Here it is a credit, and only on daily packages.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get."
+    "See which word the guarantee uses: refund, credit or extension. Here it is a credit, and only on daily packages.",
+    "Track his plays yourself as they come in, noting the line your sportsbook was really offering."
   ],
   "faq": [
     [
       "Is Gianni the Greek legit?",
-      "He is a real, well known Las Vegas betting personality who sells picks through WagerTalk, which has written terms and a Las Vegas address. We could not verify that his picks win over time. Forum posters from 2009 to 2011 made serious allegations about his Pregame era, which we could not verify, and we found no court or regulator action about his picks."
+      "He is a real, well known Las Vegas betting personality who sells picks through WagerTalk, which has written terms and a Las Vegas address. Whether his picks win over time is something we could not confirm. Forum posters from 2009 to 2011 made serious allegations about his Pregame era, which we could not verify, and we found no court or regulator action about his picks."
     ],
     [
       "What does the Watchdog sample of Gianni the Greek show?",
@@ -300,7 +300,7 @@
     ],
     [
       "Does Gianni the Greek have a verified record?",
-      "No. The page shows streaks such as 12-1 on football 5% plays, graded by WagerTalk. The same page lists him at 56-54-1 on 2026 college football premium plays. We found no independent, time stamped log of every pick."
+      "No. The page shows streaks such as 12-1 on football 5% plays, graded by WagerTalk. The same page lists him at 56-54-1 on 2026 college football premium plays. Nobody independent keeps a time stamped log of all his picks that we could find."
     ],
     [
       "Is Gianni the Greek the same person as Vegas-Runner?",
@@ -312,7 +312,7 @@
     ],
     [
       "Does Watchdog track Gianni the Greek?",
-      "Not yet. No Gianni the Greek pick history is matched to a Watchdog graded record in this edition. If that changes, this page will say so and show the record."
+      "Not yet. No Gianni the Greek pick history is matched to a Watchdog graded record in this edition. Should a graded record appear, it will be posted here."
     ]
   ],
   "related": [

@@ -50,7 +50,7 @@
   ],
   "short_answer": [
     "Scott Spreitzer is a real, named handicapper with a long Las Vegas media history, and he has sold picks for at least 24 years. A saved copy of ScottWins.com from November 2002 forwards to his page on the Jim Feist network, selling three play packages for $10 on 1 900 phone lines. By 2012 ScottWins.com was his own storefront, and in April 2018 Doc's Sports announced he would sell exclusively through its site. Doc's names its operator, publishes its prices and has sold picks since 1971. In that narrow sense, buying his picks is a legitimate transaction.",
-    "Whether his picks make money is a different question. His Doc's page shows about 30 runs and totals, all chosen by the seller, and no full log. We checked them by hand. Most percentages match their win and loss counts, but \"NFL: 414-367, 58%\" is 53.0%, barely above the 52.4% needed at -110. Comparing the same page on 7 Nov and 20 Nov 2026, his running football total fell from +15,360 to +14,820, his NBA total from +21,405 to +20,895, and his props total by about $550, while the page led with a 63% run over the last seven weeks.",
+    "Whether Spreitzer's picks actually make money is a separate matter. His Doc's page shows about 30 runs and totals, all chosen by the seller, and no full log. We checked them by hand. Most percentages match their win and loss counts, but \"NFL: 414-367, 58%\" is 53.0%, barely above the 52.4% needed at -110. Comparing the same page on 7 Nov and 20 Nov 2026, his running football total fell from +15,360 to +14,820, his NBA total from +21,405 to +20,895, and his props total by about $550, while the page led with a 63% run over the last seven weeks.",
     "Independent buyer talk is close to nil: two short critical forum remarks from 2005 and 2011, one 2014 comment on his radio sales style, and 2026 forum members reposting his plays without results. We found no complaints about billing or refunds, and no praise from buyers. Treat him as a seller with marketing records, not a proven winner. If you buy, buy short, record every pick yourself, and judge it over a few hundred picks."
   ],
   "pricing_intro": "Prices below were on Scott Spreitzer's Doc's Sports page on 20 Nov 2026 (page marked \"Updated November 20, 2026 @ 6:00 AM CST\"). They are Doc's house prices, the same across its roster. The CFL and NASCAR day packages listed on 7 Nov were no longer on the page. Checkout is through Doc's Sports; we found no other current store selling his picks.",
@@ -72,8 +72,8 @@
     ],
     [
       "College basketball",
-      "Day $30 · week $99 · month $299 · full season $849 (Early Bird, \"Reg. $950\")",
-      "Day: $30 credit unless the day makes at least $40. Week and month: self extend on a loss. Season: no guarantee wording"
+      "Single day $30, week $99, month $299, full season $849 (Early Bird, \"Reg. $950\")",
+      "Day: profit under $40 brings a $30 credit. Week and month: self extend on a loss. Season: no guarantee wording"
     ],
     [
       "NBA",
@@ -82,8 +82,8 @@
     ],
     [
       "NHL",
-      "Day $30 · week $89 · month $279 · complete season $795 (\"Normally $950\")",
-      "Day: $30 credit on a loss or a profit under $35. Week and month: self extend. Season: no guarantee wording"
+      "Single day $30, week $89, month $279, complete season $795 (\"Normally $950\")",
+      "Day: a loss, or a win of less than $35, earns a $30 credit. Week and month: self extend. Season: no guarantee wording"
     ],
     [
       "Soccer",
@@ -93,7 +93,7 @@
     [
       "Daily props",
       "$25",
-      "\"We guarantee you a daily profit with this package or you will receive a $30 credit\""
+      "Promises a daily profit, otherwise a $30 credit"
     ]
   ],
   "pricing_source": 0,
@@ -158,8 +158,8 @@
   ],
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. Scott Spreitzer does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Scott Spreitzer most often were BuzzKill (TheRX newsletters thread), 1218Sports, TheGodOfCappers, EZMSports. From 22 Sep 2026 to 15 Nov 2026 we took every play our parser could read inside a Scott Spreitzer block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
-    "Result: 8 plays, 3 won, 5 lost, -2.27 units, a return of -28.4% per unit risked. By sport: NFL 2 won, 2 lost, -0.18 units. By month: September 0 won, 1 lost, -1.00 units; October 3 won, 2 lost, +0.73 units; November 0 won, 2 lost, -2.00 units.",
-    "What it means: 8 decided plays is far too few to judge.",
+    "Result: 3 wins and 5 losses on 8 plays, -2.27 units, or -28.4% per unit risked. By sport: the NFL plays split 2 and 2, -0.18 units. By month: September 0 won, 1 lost, -1.00 units; October 3 won, 2 lost, +0.73 units; November 0 won, 2 lost, -2.00 units.",
+    "What it means: eight graded Spreitzer plays are far short of a sample that could settle anything.",
     "What a buyer can verify independently: nothing current. A third party contest result would count, and his bio cites two, but we found no casino or news page confirming either. We found no court or regulator record involving him.",
     "What Spreitzer and Doc's publish: runs and totals by sport, chosen by the seller, and a daily note on whether yesterday won (for example \"Scott Spreitzer went 0-1 Thursday\" in the NHL and \"0-1 in MLS Thursday\" on 20 Nov 2026). We found no full, time stamped log of every paid pick with the line, the odds and the release time. His free picks are posted one at a time, each listed as \"Offered at: BookMaker.\"",
     "History we could confirm from saved pages: in November 2002 scottwins.com forwarded to his handicapper page on jimfeist.com, which sold \"all 3 releases\" for $10 on 1 900 and 1 800 numbers and promoted a \"perfect 6-0\" weekend. In January 2012 ScottWins.com was his own store (phone 1 866 439 6758) with a roster of other handicappers. On 1 Jan 2018 it still sold his plays by email and claimed a \"15-2-2, 87% winning run.\" Doc's announced him on 11 Apr 2018 as its new handicapper, with service from 12 Apr. By April 2022 the scottwins.com domain was listed for sale, and a 2021 copy showed unrelated content.",
@@ -238,7 +238,7 @@
   ],
   "conflicts": [
     "Spreitzer's free pick on his page on 20 Nov 2026 listed the line as \"Offered at: BookMaker,\" an offshore sportsbook, next to a \"Free $60 Account Sign Up\" offer. The Doc's FAQ says: \"We have a list of offshore sports book that we have complete confidence in.\" We did not see the terms of any deal between Doc's and BookMaker. Pointing buyers to one named sportsbook is still a possible financial interest a buyer should keep in mind.",
-    "Offshore sportsbooks are not licensed by U.S. state regulators. Check the law where you live before you follow that advice.",
+    "Offshore sportsbooks are not licensed by U.S. state regulators. Before using the BookMaker link on his page, confirm what the law allows where you live.",
     "Every record on his page is published by the store that sells his picks. Doc's does not name an outside monitor."
   ],
   "strengths": [
@@ -257,11 +257,11 @@
     "His free picks name an offshore sportsbook, and the store's FAQ recommends offshore books."
   ],
   "checklist": [
-    "Ask for every pick from the last 12 months with the line, the odds, the unit size and the time it was sent. A list of hot runs is not a record.",
+    "Request twelve months of Spreitzer releases with line, odds, unit size and send time for each. His page's hand picked runs are not a record.",
     "Do the math on any record: divide wins by wins plus losses. His NFL line labeled 58% is 53%.",
     "Note the running totals on his page the day you buy and check them again when your package ends. They show whether the period you paid for won.",
     "Count units, not wins. With plays from 2 to 7 units, a few big losers can sink a good win rate.",
-    "Read the guarantee for the words refund, credit and extension. Here every version is more picks or credit, and season packages have no guarantee.",
+    "Scan each guarantee for refund, credit or extension wording. Here every version is more picks or credit, and season packages have no guarantee.",
     "Write down each pick yourself the moment you receive it, with the line you can actually get at a licensed sportsbook."
   ],
   "faq": [
@@ -279,7 +279,7 @@
     ],
     [
       "Does Scott Spreitzer offer refunds?",
-      "No cash refunds. Doc's terms say there are no refunds once a product is delivered or viewed. Losing weekly and monthly packages can be extended for free, losing day packages earn a $30 account credit, and season packages carry no guarantee."
+      "No cash refunds. Doc's Sports rules out refunds after a package has been delivered or viewed. Losing weekly and monthly packages can be extended for free, losing day packages earn a $30 account credit, and season packages carry no guarantee."
     ],
     [
       "Does Scott Spreitzer have a verified record?",

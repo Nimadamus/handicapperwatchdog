@@ -12,7 +12,7 @@
   "dek": "One of the first internet handicappers, selling picks to the public since 1998 and for years a top seller on Covers, now sold on WagerTalk. Single plays cost $25 and passes run to $1,999 a year. The guarantee pays in credit. His profile claims #1 records, while its own last 20 table read 6-14 on 20 Nov 2026, and the little bettor talk we found leans skeptical.",
   "status": {
     "label": "Partly graded",
-    "note": "Ben Burns publishes no complete log we can audit. Watchdog graded 34 of their plays that were posted publicly before the game started. This is a sample, not a full record."
+    "note": "Ben Burns publishes no complete log we can audit. Watchdog graded 34 of their plays that were posted publicly before the game started. These 34 plays are a slice of his card, not his whole history."
   },
   "glance": [
     [
@@ -77,13 +77,13 @@
     ],
     [
       "Football season passes",
-      "NFL + CFB through Super Bowl $529.00 · NFL through Super Bowl $339.00 · CFB through Championship Game $259.00",
-      "Shown as down from $579.00, $369.00 and $299.00"
+      "$529.00 covers NFL and CFB to the Super Bowl, $339.00 the NFL alone to the Super Bowl, $259.00 CFB alone to the Championship Game",
+      "His page struck through list prices of $579.00, $369.00 and $299.00 beside them"
     ],
     [
       "Basketball season passes",
-      "NBA through All Star Game $389.00 · NBA through Finals $719.00 · CBB through March Madness $639.00",
-      "Shown as down from $414.00, $739.00 and $669.00"
+      "$389.00 runs the NBA to the All Star Game, $719.00 the NBA through the Finals, $639.00 CBB through March Madness",
+      "Listed against struck prices of $414.00, $739.00 and $669.00"
     ],
     [
       "NBA, College Basketball or NHL three day sport pass; Weekend Warrior football pass",
@@ -152,8 +152,8 @@
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. Ben Burns does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Ben Burns most often were TheGodOfCappers, WagerTalkPicks, EZMSports, 1218Sports. From 14 Sep 2026 to 26 Oct 2026 we took every play our parser could read inside a Ben Burns block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
     "Result: 34 plays, 20 won, 14 lost, +3.17 units, a return of +9.3% per unit risked. By sport: MLB 6 won, 6 lost, -1.05 units; NCAAF 7 won, 4 lost, +2.22 units; NFL 5 won, 4 lost, +0.47 units. By month: September 18 won, 10 lost, +5.63 units; October 2 won, 4 lost, -2.46 units.",
-    "What it means: a 59% win rate on 34 decided plays has a 95% range of about 42% to 74%, and at the prices in this sample a bettor needed about 54% to break even. That range includes break even, so this sample cannot show whether they win or lose over time. The sample covers only the plays that others chose to post, which is not the full card a subscriber receives, and stakes are counted flat even where the seller rates plays differently.",
-    "What a buyer can verify independently: very little. We found no full, time stamped log of every Ben Burns pick, no third party audit, and no court or regulator record about him.",
+    "What it means: a 59% win rate on 34 decided plays has a 95% range of about 42% to 74%, and at the prices in this sample a bettor needed about 54% to break even. Since 54% sits inside that range, 34 plays cannot tell a winning bettor from a losing one. It also counts only the Burns plays that X accounts and forums chose to repost, not his full paid card, and grades every play at one unit even when he labels some 4% or 5%.",
+    "How much of this a Ben Burns buyer can check alone: very little. We found no full, time stamped log of every Ben Burns pick, no third party audit, and no court or regulator record about him.",
     "What the seller publishes: the WagerTalk profile shows headline #1 claims and a table of his last 20 plays. On 20 Nov 2026 that table covered 12 to 19 Nov and read 6 wins and 14 losses. He did not appear on any WagerTalk Who's Hot board that day. A single bad week means little, but it shows how far a short sample can sit from the headline claims.",
     "One outside tracker: SportsHub, which says it takes no sportsbook advertising, logs the free picks he posts on WagerTalk. On 20 Nov 2026 it showed 14 wins and 8 losses over the last 30 days, +$507 at $100 a pick and a 20.6% return. That is a better picture than the paid table, but it is free picks only and a small sample.",
     "History: BenBurns.com was saved as early as 2001 and by 2007 sold his NFL, college, NBA and NHL picks, listing a string of #1 titles from 1998 onward. A VerifiedCappers profile from the 2006 to 2016 era says he first made picks public in 1998, sold through Don Best and Covers, and describes a childhood mention in the Toronto Star for predicting a baseball trade. In March 2012 Gambling911 reported that he chose Covers over Pregame when both networks asked shared handicappers to pick one.",
@@ -161,7 +161,7 @@
   ],
   "our_data": {
     "matched": true,
-    "text": "Watchdog graded 34 Ben Burns plays posted before the start, 14 Sep 2026 to 26 Oct 2026: 20 won, 14 lost, +3.17 units at one unit each. A sample of what was posted publicly, not a full record.",
+    "text": "Watchdog graded 34 Ben Burns plays posted before the start, 14 Sep 2026 to 26 Oct 2026: 20 won, 14 lost, +3.17 units at one unit each. Those are reposted public plays only, so they do not stand in for his full paid record.",
     "context": "For scale: his last 20 table on 20 Nov 2026 read 6-14, while his headlines claim #1 records."
   },
   "customers_intro": "We found almost no independent buyer reports about Ben Burns. Public talk is mostly bettors sharing, ranking or fading his plays.",
@@ -258,16 +258,16 @@
     "Very few independent buyer reports, and the bettor chatter we found leans skeptical."
   ],
   "checklist": [
-    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of #1 titles is not a record.",
+    "Ask WagerTalk or Burns for a full 12 month list of his paid plays, each with its line, odds and release time. A list of #1 titles is not a record.",
     "Ask which leaderboard each #1 claim refers to and over what dates.",
     "Count units, not wins. A 60% record at heavy favorites can still lose money; check what prices his moneyline plays carry.",
-    "Read the guarantee for the words refund, credit and extension. Here it is site credit, and it costs extra.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get."
+    "Before paying $13 extra for the guarantee, see whether its terms say refund, credit or extension. On his plays it is site credit.",
+    "Log every Burns play yourself when it arrives, at the price your own book offers."
   ],
   "faq": [
     [
       "Is Ben Burns legit?",
-      "He is a real, long known handicapper whose picks are sold through WagerTalk, a network with published prices and a Las Vegas address. We could not verify that his picks win over time, because no full record is published, and we found no court or regulator action involving him."
+      "He is a real, long known handicapper whose picks are sold through WagerTalk, a network with published prices and a Las Vegas address. No full record is published, so whether his picks win over time stays unverified; no court or regulator action naming him turned up either."
     ],
     [
       "What does the Watchdog sample of Ben Burns show?",
@@ -283,11 +283,11 @@
     ],
     [
       "Does Ben Burns offer refunds?",
-      "No cash refunds. WagerTalk says all sales are final once a product is purchased, delivered or viewed. A guaranteed daily package that loses returns the price as site credit."
+      "No cash refunds. Under WagerTalk's policy, a Burns play cannot be refunded after it is bought, delivered or viewed. A guaranteed daily package that loses returns the price as site credit."
     ],
     [
       "Does Ben Burns have a verified record?",
-      "No. His profile shows #1 record claims and a last 20 table, which read 6-14 on 20 Nov 2026. An outside tracker of his free picks showed 14-8 over 30 days. We found no independent, time stamped log of every paid pick."
+      "No. His profile shows #1 record claims and a last 20 table, which read 6-14 on 20 Nov 2026. An outside tracker of his free picks showed 14-8 over 30 days. No independent log with a timestamp on each paid Burns pick turned up."
     ],
     [
       "Is Ben Burns worth it?",

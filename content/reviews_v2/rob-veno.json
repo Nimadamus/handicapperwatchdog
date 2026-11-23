@@ -49,24 +49,24 @@
     ],
     [
       "Watchdog graded sample",
-      "1 plays posted before the start, 20 Sep 2026 to 20 Sep 2026: 1 won, 0 lost, +0.91 units"
+      "A single pregame play on 20 Sep 2026, graded a win for +0.91 units"
     ]
   ],
   "short_answer": [
-    "Rob Veno is a real, long running name in Las Vegas betting media. His WagerTalk bio says he started co hosting a betting radio show in 1992, was part of Sportsmemo radio from 1998 and joined WagerTalk in the summer of 2020. A saved copy of his own site, RobVenoSports.com, shows it selling his plays from a Denver mailing address around 2020. Today he sells through WagerTalk, a Las Vegas pick marketplace with written terms and a street address. In that narrow sense the service is legitimate.",
+    "Rob Veno is a real, long running name in Las Vegas betting media. His WagerTalk bio says he started co hosting a betting radio show in 1992, was part of Sportsmemo radio from 1998 and joined WagerTalk in the summer of 2020. A saved copy of his own site, RobVenoSports.com, shows it selling his plays from a Denver mailing address around 2020. Today he sells through WagerTalk, a Las Vegas pick marketplace with written terms and a street address. As a real person selling through a real, addressed company, he passes that basic test.",
     "Whether his picks make money over time is a separate question, and nothing we could open answers it. The sales copy leads with runs such as \"CFB + NFL L9W = +71.7 units, 59.7% (83-56-0)\" and \"NFL Playoffs L3Y = OUTSTANDING 45-25\". We checked the arithmetic on each one and it adds up, but each covers a window the seller chose. His Last 20 table was very strong on 20 Nov 2026 at 16 wins and 4 losses, almost all of them overs, but it covers only five days.",
     "An outside site, SportsHub, tracks the free picks he gives away on WagerTalk and showed them 6 and 0 over the last 30 days. That is encouraging but tiny, and it covers free plays only.",
-    "We found no independent post from anyone who bought his picks, good or bad, on any forum, review site or Reddit copy we checked. The CapperTek reviews of WagerTalk describe buyers losing after purchase, but none of them names him. Treat the numbers as marketing until you have tracked his picks yourself."
+    "We found no independent post from anyone who bought his picks, good or bad, on any forum, review site or Reddit copy we checked. The CapperTek reviews of WagerTalk describe buyers losing after purchase, but none of them names him. Until you have logged his plays on your own, read his WagerTalk numbers as advertising."
   ],
-  "pricing_intro": "All prices below were on the Rob Veno profile at WagerTalk on 20 Nov 2026 and matched what we saw on 17 Nov. No single picks were for sale on either day, so only passes are listed. Several show a crossed out \"regular\" price next to a sale price; we list the price you would pay that day.",
+  "pricing_intro": "All prices below were on the Rob Veno profile at WagerTalk on 20 Nov 2026 and matched what we saw on 17 Nov. No single picks were for sale on either day, so only passes are listed. Where WagerTalk struck through a \"regular\" price, the table gives the lower price a Veno buyer would have paid on those dates.",
   "pricing": [
     [
-      "1 Day / 3 Day / 7 Day Pass",
+      "Veno short passes (1, 3 or 7 days)",
       "$39.00 / $69.00 / $99.00",
       "All of his plays for the period; the page says \"Just $23 a day\" for 3 days"
     ],
     [
-      "30 Day / 90 Day / 1 Year Pass",
+      "Veno long passes (30 or 90 days, or a year)",
       "$299.00 / $749.00 / $1,999.00",
       "Long term all access; the page says these save 74%, 78% and 85% over the daily price"
     ],
@@ -77,13 +77,13 @@
     ],
     [
       "Football season passes",
-      "NFL + CFB through Super Bowl $529.00 · NFL through Super Bowl $339.00 · CFB through Championship Game $259.00",
-      "Shown as down from $579.00, $369.00 and $299.00"
+      "$529.00 NFL and college football to the Super Bowl · $339.00 NFL only to the Super Bowl · $259.00 college football to the Championship Game",
+      "Listed regular prices: $579.00, $369.00, $299.00"
     ],
     [
       "Basketball season passes",
-      "NBA through All Star Game $389.00 · NBA through Finals $719.00 · CBB through March Madness $639.00",
-      "Shown as down from $414.00, $739.00 and $669.00"
+      "$389.00 NBA to the All Star Game · $719.00 NBA to the Finals · $639.00 college basketball to March Madness",
+      "Listed regular prices: $414.00, $739.00, $669.00"
     ],
     [
       "Two for one 3 day passes",
@@ -105,7 +105,7 @@
     "WagerTalk sells many daily picks in two versions: a plain price and a higher \"Guaranteed\" price. The same site rule would apply to his daily picks, though none was on sale on 17 or 20 Nov 2026. The box on his profile says the guarantee \"backs your purchase with 100% in credits.\" In its words, if your daily package \"does not result in an overall profit across all included plays, the paid cash value of a guaranteed pick will be credited back to your account to be used on a future purchase.\" The credit can be spent on a daily package, a daily guaranteed package or any multiple day package. It is not cash back.",
     "The WagerTalk refund policy names Wager Talk Media, LP as \"the parent company of WagerTalk\" and says \"All Sales are Final and products are sold “as is”.\" It adds: \"Once a product or service has been purchased, delivered, and/ or viewed, no refunds will be issued.\"",
     "The terms say the seller is located at 11035 Lavender Hill Dr in Las Vegas, NV 89135, that the contract is governed by Nevada law, and that \"Our company's entire liability, and the purchaser's exclusive remedy, shall be a refund of the price paid or replacement of our products\" at the company's option. They also call the content \"for entertainment and amusement purposes only.\"",
-    "We saw no guarantee on the multi day or season passes. Nothing covers losses on the bets themselves, which are usually far larger than the package price."
+    "None of Veno's multi day or season passes showed a guarantee on our visits. No part of WagerTalk's policy covers the money lost on the wagers themselves, which usually dwarfs the pass price."
   ],
   "claims": [
     {
@@ -158,9 +158,9 @@
   ],
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. Rob Veno does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Rob Veno most often were BuzzKill (TheRX newsletters thread), WagerTalkPicks, EZMSports, Skidsteer. From 20 Sep 2026 to 20 Sep 2026 we took every play our parser could read inside a Rob Veno block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
-    "Result: 1 plays, 1 won, 0 lost, +0.91 units, a return of +90.9% per unit risked. By month: September 1 won, 0 lost, +0.91 units.",
-    "What it means: 1 decided plays is far too few to judge.",
-    "What a buyer can verify independently: very little. We found no full, time stamped log of every Rob Veno pick kept by a third party, no contest results we could open, and no court or regulator record about him.",
+    "Result: one play, a win, +0.91 units, or +90.9% per unit risked. It came in September.",
+    "What it means: a single graded play says nothing about Veno's skill either way.",
+    "What a buyer can verify independently about Veno: very little. We found no full, time stamped log of every Rob Veno pick kept by a third party, no contest results we could open, and no court or regulator record about him.",
     "What the seller publishes: a Last 20 table, a Hot Streaks box and Who's Hot leaderboards, all graded by WagerTalk, the company that sells the picks. On 20 Nov 2026 the Last 20 table showed 16 wins and 4 losses for 15 to 19 Nov. The all sports Who's Hot board ranked him first over 30 days at 87-66-2 and +$4,500 at $100 a play, and second over 3 days at 9-3. The NFL board showed him 16-8 over 30 days and 5-1 over 7 days, and the college basketball board 5-1 over 3 days.",
     "One outside tracker: SportsHub, a pick tracking site that says it takes no sportsbook advertising, logs the free picks he posts on WagerTalk. On 20 Nov 2026 it showed 6 wins and 0 losses over the last 30 days (+$600 at $100 a pick), across college football, college basketball, the NBA, the WNBA and the CFL. Six free picks is far too few to judge anything, and free picks are not the paid card.",
     "History: a saved copy of RobVenoSports.com from August 2020 called him one of the nation's elite \"Big Play\" handicappers, advertised \"29 YEARS of SPORTS BETTING SUCCESS\" and listed a Denver mailing address and an 800 number, with a 2019 copyright shared with a company called Sports Betting Today. The site answered until early 2023 and returned an error by January 2024. CapperTek still keeps an unclaimed, empty review page for RobVenoSports.com.",
@@ -191,7 +191,7 @@
       "type": "Forum post",
       "tone": "Neutral",
       "date": "14 Nov 2026",
-      "text": "TheRX daily service play threads tell members not to post picks from a list of services. The list starts with \"All Wagertalk Cappers\" and also names him. The thread gives no reason, and it is a forum rule, not a judgment on any one handicapper.",
+      "text": "TheRX daily service play threads tell members not to post picks from a list of services. The list starts with \"All Wagertalk Cappers\" and also names him. No reason is stated; the ban covers every WagerTalk capper as a forum policy and says nothing about Veno himself.",
       "source": 5
     },
     {
@@ -224,7 +224,7 @@
     }
   ],
   "conflicts": [
-    "WagerTalk grades his picks, ranks him on its own leaderboards and sells his packages. The records on his profile therefore come from the seller's side of the deal.",
+    "His packages are sold by WagerTalk, which also grades his plays and places him on its leaderboards. That makes each Veno record on the profile a count kept by the seller itself.",
     "He co hosts WagerTalk shows and podcasts, such as Full Court Press with Adam Trigger, and the free picks and shows double as advertising for paid passes.",
     "WagerTalk's footer says it \"participates in affiliate marketing programs\" with gaming platforms and may be paid when readers use partner links or promo codes. It says this does not influence its picks.",
     "Sportsmemo.com, which still lists him with copy from the 2018 to 2019 football season, uses the same WagerBuxx credits and Power Pass products as WagerTalk, so it is a sister storefront, not an independent source."
@@ -238,7 +238,7 @@
   ],
   "concerns": [
     "No full public record. Every number we saw is a run over a window chosen by the seller, or a ranking on WagerTalk's own board.",
-    "The guarantee pays in site credit, only on daily packages, never in cash. All sales are final.",
+    "Only daily packages carry a guarantee, and it repays site credit rather than cash. All sales are final.",
     "We found no independent buyer reports, positive or negative, about his paid picks.",
     "His years in the business are stated differently on different pages (29, 31 and 33), and a sister storefront still shows years old copy.",
     "His recent card leans heavily on overs, so results can swing together when totals go cold.",
@@ -246,9 +246,9 @@
   ],
   "checklist": [
     "Check the Last 20 table and the Who's Hot boards on the day you buy, and note how they change over the next week.",
-    "Count units, not wins. A 60% record at heavy favorites can still lose money.",
-    "Read the guarantee for the words refund, credit and free days. Here it is site credit, only on daily packages.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get. Totals move fast.",
+    "Count units, not wins. Laying big prices, even a 60% hit rate can leave a bettor behind.",
+    "Check whether a guarantee means a refund, credit or free days. For Veno it is site credit, only on daily packages.",
+    "Note every Veno play and the total you can actually bet the second it lands. Totals move fast.",
     "Start with the cheapest pass that covers the sport you want rather than a year up front."
   ],
   "faq": [
@@ -258,7 +258,7 @@
     ],
     [
       "What does the Watchdog sample of Rob Veno show?",
-      "We graded 1 of their plays that were posted publicly before the game started, 20 Sep 2026 to 20 Sep 2026: 1 won, 0 lost, +0.91 units at one unit each. That is too few plays to judge."
+      "Our sample holds just one Veno play posted publicly before the game started, on 20 Sep 2026; it won for +0.91 units at one unit. That is too few plays to judge."
     ],
     [
       "Who is Rob Veno?",
@@ -270,15 +270,15 @@
     ],
     [
       "Does Rob Veno offer refunds?",
-      "No cash refunds. WagerTalk says all sales are final once a product is purchased, delivered or viewed. Guaranteed daily packages that do not profit return the price as site credit, and his passes carry no guarantee."
+      "No cash refunds. Under WagerTalk's policy, a pass is final from the moment it is bought, delivered or viewed. Guaranteed daily packages that do not profit return the price as site credit, and his passes carry no guarantee."
     ],
     [
       "Does Rob Veno have a verified record?",
-      "No. His profile shows runs such as +71.7 units at 83-56-0 over nine weeks and a Last 20 table of 16 wins and 4 losses on 20 Nov 2026, all graded by WagerTalk. An outside tracker of his free picks showed 6 and 0 over 30 days. We found no independent, time stamped log of every paid pick."
+      "No. His profile shows runs such as +71.7 units at 83-56-0 over nine weeks and a Last 20 table of 16 wins and 4 losses on 20 Nov 2026, all graded by WagerTalk. An outside tracker of his free picks showed 6 and 0 over 30 days. No outside party keeps a time stamped record of all his paid plays that we could find."
     ],
     [
       "Is Rob Veno worth it?",
-      "For the money you get every play he releases in the period you buy, with written analysis, and his recent seller side numbers are good. What is unproven is whether his picks beat the roughly 52.4% needed at -110 over hundreds of plays. The guarantee only gives site credit on daily picks, and nothing refunds your betting losses."
+      "For the money you get every play he releases in the period you buy, with written analysis, and his recent seller side numbers are good. Nobody has shown that his plays clear the roughly 52.4% break even at -110 across hundreds of picks. The guarantee only gives site credit on daily picks, and nothing refunds your betting losses."
     ]
   ],
   "related": [

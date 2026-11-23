@@ -12,7 +12,7 @@
   "dek": "A handicapper who says he was a private consultant before taking his picks public in 2008 under the BetFirm name. His packages run from a $59.95 day pass to a $1,999.95 year pass on the SportsCapping network. The guarantee pays in free time, not cash. The network's own all time leaderboard puts him at 52.5% winners over 24,739 picks, a return of about 1%.",
   "status": {
     "label": "Partly graded",
-    "note": "Jack Jones publishes no complete log we can audit. Watchdog graded 30 of their plays that were posted publicly before the game started. This is a sample, not a full record."
+    "note": "Jack Jones publishes no complete log we can audit. Our count rests on 30 Jack Jones plays that appeared in public before kickoff or tipoff, a partial view of his card rather than his full output."
   },
   "glance": [
     [
@@ -52,7 +52,7 @@
     "Jack Jones is a real, long running name in the pick selling business. Saved copies of BetFirms.com show him posting free picks there in 2009 and 2011, and on 17 Nov 2026 BetFirm.com, CappersPicks, Capper Reviews and SportsCapping all sold or promoted his packages. We found no street address or company filing for him.",
     "The sales pages lead with a run of \"7314-6415\" over the last 3,354 days, about 53.3% winners. The network that sells him also publishes a leaderboard, and its all time line for him is 12,722 wins and 11,505 losses, 52.5%, with a return of about 1% on money risked. In 2026 so far it shows him 904-811-37, 52.7%, roughly break even. The advertised \"757-648 Run\" since 11 Feb 2026 skips a 147-163 start to the year.",
     "His strongest area on that leaderboard is the NBA, where he ranks first all time at 3,445-2,959-100, 53.8%. Some ranking claims on the sales pages do not match the leaderboard on the same day: \"No. 2\" overall shows as No. 3, and \"No. 2 NFL\" shows as No. 5.",
-    "Buyer talk outside the network is thin: one 2026 forum exchange shows one member praising a hot NBA day and another calling him mediocre over time. We found no complaints about billing or refunds."
+    "Buyer talk outside the network is thin: one 2026 forum exchange shows one member praising a hot NBA day and another calling him mediocre over time. Billing and refund disputes with his SportsCapping packages did not turn up in our searches."
   ],
   "pricing_intro": "All rows were on the CappersPicks Jack Jones page on 17 Nov 2026, and the same prices showed on Capper Reviews. An undated BetFirms profile on CappersPicks lists much lower prices ($19.95 to $34.95 daily, $999.95 a year), so it is likely out of date.",
   "pricing": [
@@ -106,7 +106,7 @@
     "The CappersPicks page says most day passes are \"GUARANTEED PROFITS\" or the next period of picks \"is ON JACK.\" That means more picks, not money. The 3 day pass and the season passes carry no guarantee wording.",
     "SportsCapping, which runs checkout, says on its current Profit Guarantee page that a guaranteed package finishing at zero profit or less (\"breaking even counts\") earns the next day of picks free, a guaranteed subscription \"is automatically extended by its original length,\" some accounts get account credit instead, \"Season and rest-of-season passes are not guaranteed,\" and \"Guarantees apply once per purchase.\"",
     "The older policy page on Capper Reviews, part of the same network, adds grading on 100 unit intervals whatever the star rating, and says: \"We do not offer a money back policy like some services do.\"",
-    "Losses on the bets themselves are never covered, and they are usually far larger than the package price."
+    "Whatever a Jack Jones pass promises, the money lost on his plays at the sportsbook stays with the buyer, and that sum can easily exceed even the $1,999.95 annual pass."
   ],
   "claims": [
     {
@@ -159,15 +159,15 @@
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. Jack Jones does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Jack Jones most often were 1218Sports, TheGodOfCappers, EZMSports, Hottie4Sports. From 14 Sep 2026 to 7 Nov 2026 we took every play our parser could read inside a Jack Jones block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
     "Result: 30 plays, 19 won, 10 lost, 1 push, +7.03 units, a return of +23.4% per unit risked. By sport: NFL 11 won, 5 lost, 1 push, +4.96 units; NCAAF 5 won, 3 lost, +1.51 units; MLB 3 won, 2 lost, +0.56 units. By month: September 13 won, 7 lost, +4.57 units; October 5 won, 2 lost, 1 push, +2.55 units; November 1 won, 1 lost, -0.09 units.",
-    "What it means: a 66% win rate on 29 decided plays has a 95% range of about 47% to 80%, and at the prices in this sample a bettor needed about 52% to break even. That range includes break even, so this sample cannot show whether they win or lose over time. The sample covers only the plays that others chose to post, which is not the full card a subscriber receives, and stakes are counted flat even where the seller rates plays differently.",
-    "What a buyer can verify independently: no third party log. We found no outside tracker, contest record, court case or regulator action about him.",
+    "What it means: a 66% win rate on 29 decided plays has a 95% range of about 47% to 80%, and at the prices in this sample a bettor needed about 52% to break even. Because 52% sits inside that 47% to 80% band, his 30 public plays do not settle whether he wins long term. They are also the plays other people chose to repost, not his whole paid card, and we scored each at one unit even when he labeled it 15* or 20*.",
+    "Independent checks for Jack Jones came up empty: no third party log, and no outside tracker, contest standing, lawsuit or regulator action in his name.",
     "What the seller side publishes: long runs by sport, rankings and a yesterday table on the storefronts, plus a leaderboard on SportsCapping. The leaderboard is kept by the network that sells his picks, so it is not an audit, but it is more complete than the runs: 24,739 graded picks all time at 52.5% and about 1% ROI.",
     "CappersPicks labels the network's figures \"3RD PARTY DOCUMENTED STATS,\" but SportsCapping sells his packages and grades them, so they are not third party in the usual sense.",
     "Background: CappersPicks lists his company as Betfirms with the phone line 877-OUR-PICK. The betfirms.com domain was registered on 27 Dec 2003; saved copies from 2009 and 2011 show Jack Jones writing daily free picks there, and it now forwards to BetFirm.com, which on 17 Nov 2026 led with \"IF YOU AREN'T WINNING, YOU DON'T KNOW JACK\" and linked to the SportsCapping podcast. The CappersPicks footer says the storefront is \"located in Antigua, West Indies.\""
   ],
   "our_data": {
     "matched": true,
-    "text": "Watchdog graded 30 Jack Jones plays posted before the start, 14 Sep 2026 to 7 Nov 2026: 19 won, 10 lost, 1 push, +7.03 units at one unit each. A sample of what was posted publicly, not a full record.",
+    "text": "Watchdog graded 30 Jack Jones plays posted before the start, 14 Sep 2026 to 7 Nov 2026: 19 won, 10 lost, 1 push, +7.03 units at one unit each. Treat it as a window onto his public plays, not his complete history.",
     "context": "For scale: the selling network's all time line for him is 52.5% winners and its 2026 line 52.7%."
   },
   "customers_intro": "Independent customer evidence on Jack Jones is thin. The largest set of comments sits on a site that says it is part of the network selling his picks.",
@@ -224,7 +224,7 @@
   ],
   "conflicts": [
     "Capper Reviews, which hosts the star rating and comments, and the leaderboard that ranks him are both run by the SportsCapping network that sells his packages and takes a share of each sale.",
-    "The Capper Reviews page carried a \"$1,000 Free Play at MyBookie\" banner linked through an affiliate tracking address. MyBookie is an offshore sportsbook, not licensed by U.S. state regulators. Affiliate deals usually pay the referrer when referred customers sign up or lose.",
+    "On the Capper Reviews page that praised Jack Jones sat a \"$1,000 Free Play at MyBookie\" banner with an affiliate tracking link. No U.S. state regulator licenses MyBookie, which operates offshore. Referrers on deals like that typically earn when the people they send open accounts or lose money.",
     "CappersPicks calls the network's figures third party documented stats, and its footer says the site is \"located in Antigua, West Indies.\"",
     "SportsCapping's About page says \"No cherry-picked highlights,\" while the package copy it sells leads with runs whose start dates are chosen."
   ],
@@ -245,10 +245,10 @@
   ],
   "checklist": [
     "Open the SportsCapping leaderboard, set it to All Time and This Season, and compare with the runs on the package you are about to buy.",
-    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A long run on a sales page is not a record.",
+    "Before paying for a Jack Jones pass, request his full 12 month pick history, each play stamped with its send time, line and price. A long run on a sales page is not a record.",
     "Count units, not wins. About 52.5% winners is close to break even once you bet at worse lines than the page uses.",
-    "Read the guarantee for the words refund, credit and extension. Here every version is free time or credit, and season passes have none.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get."
+    "Check what his \"GUARANTEED\" labels actually pay out: on his passes it is more free days or a credit, never cash, and the NFL, CFB, NBA and college hoops season passes carry no guarantee at all.",
+    "Log every Jack Jones play on arrival next to the number your own sportsbook offers at that moment."
   ],
   "faq": [
     [

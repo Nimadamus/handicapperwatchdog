@@ -49,8 +49,8 @@
     ]
   ],
   "short_answer": [
-    "Marco D'Angelo is a real, well known Las Vegas name. WagerTalk's own press releases call him a co founder of WagerTalk: in August 2018 he was quoted as \"Co-Founder, WagerTalk.com\" when WagerTalk bought SportsMemo, and in August 2019 as one of three hosts of its Bet On It football podcast. He sells his picks through WagerTalk and the partner site StatSalt. In that narrow sense the service is legitimate.",
-    "Whether the picks make money is a separate question. His profile leads with \"#1 NBA CAPPER SINCE 2020 AT WAGERTALK\" and \"58-36 ON 5% MAJOR WAGERS SINCE 2024\", but those rankings and records come from the company he helped start, which also sells the picks. WagerTalk's public leaderboard address returned an error, so we could not check the long term rankings at all.",
+    "Marco D'Angelo is a real, well known Las Vegas name. WagerTalk's own press releases call him a co founder of WagerTalk: in August 2018 he was quoted as \"Co-Founder, WagerTalk.com\" when WagerTalk bought SportsMemo, and in August 2019 as one of three hosts of its Bet On It football podcast. He sells his picks through WagerTalk and the partner site StatSalt. That much makes the service legitimate, in a narrow sense.",
+    "Whether his picks turn a profit is another question. His profile leads with \"#1 NBA CAPPER SINCE 2020 AT WAGERTALK\" and \"58-36 ON 5% MAJOR WAGERS SINCE 2024\", but those rankings and records come from the company he helped start, which also sells the picks. WagerTalk's public leaderboard address returned an error, so we could not check the long term rankings at all.",
     "What we could check came out mixed. His Last 20 on 20 Nov 2026 counted to 13 wins, 6 losses and 1 no play. His 5% Major Wager line, compared with an earlier WagerTalk figure reposted in April 2026, suggests those plays have been roughly even since then. The same 7 day record showed different dollar figures on WagerTalk and StatSalt on the same day.",
     "Independent buyer talk is close to nonexistent. A Reddit member listed him among paid picks he follows in 2025, and TheRX lists him by name among services members should not post. Treat him as an established seller with in house rankings, not a proven winner, and record every pick yourself before buying a long pass."
   ],
@@ -148,15 +148,15 @@
   "claims_note": [
     "How we checked: we read his WagerTalk profile, the WagerTalk experts page and StatSalt on 20 Nov 2026, counted the Last 20 results ourselves, recomputed every percentage from the wins and losses shown, and compared the 5% Major Wager line with the figure WagerTalk promoted in April 2026.",
     "The rankings measure him against other WagerTalk sellers, on WagerTalk's own grading. WagerTalk's 2018 and 2019 press releases name him a co founder, so the board that ranks him belongs to a company he helped start.",
-    "Each run starts on a date chosen by the seller: since 2020, since 2021, since 2024, the last 17 college football 5% plays. A window picked after the fact tells you little. Where we could compare two seller figures for the same plays, the more recent stretch was weaker than the headline.",
+    "Each run starts on a date chosen by the seller: since 2020, since 2021, since 2024, the last 17 college football 5% plays. A start date chosen in hindsight says little about future results. Where we could compare two seller figures for the same plays, the more recent stretch was weaker than the headline.",
     "The 2010 baseball streak note says he never laid more than -120 in the 25 plays. We could not open any Sports Monitor record to confirm it."
   ],
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. Marco D'Angelo does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Marco D'Angelo most often were BuzzKill (TheRX newsletters thread), WagerTalkPicks, 1218Sports, TheGodOfCappers. From 17 Oct 2026 to 24 Oct 2026 we took every play our parser could read inside a Marco D'Angelo block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
     "Result: 2 plays, 1 won, 1 lost, -0.09 units, a return of -4.5% per unit risked. By month: October 1 won, 1 lost, -0.09 units.",
-    "What it means: 2 decided plays is far too few to judge.",
-    "What a buyer can verify independently: nothing that we could find. We found no full, time stamped log of every Marco D'Angelo pick from an outside tracker, and no court or regulator record about him.",
-    "What WagerTalk publishes: a Last 20 list on his profile, which we counted at 13 wins, 6 losses and 1 no play on 20 Nov 2026 (12, 7 and 1 on 17 Nov), plus 3, 7 and 30 day Who's Hot boards. On 20 Nov he led the all sports 7 day board at 11-6-0 for $1,887 and also showed on two sport boards at 3-1 and 2-1. These are graded by the company that sells the picks, so they are marketing, not an audit.",
+    "What it means: two decided plays are nowhere near enough to judge him.",
+    "Independent checks open to a buyer: none that turned up. We found no full, time stamped log of every Marco D'Angelo pick from an outside tracker, and no court or regulator record about him.",
+    "What WagerTalk publishes: a Last 20 list on his profile, which we counted at 13 wins, 6 losses and 1 no play on 20 Nov 2026 (12, 7 and 1 on 17 Nov), plus 3, 7 and 30 day Who's Hot boards. On 20 Nov he led the all sports 7 day board at 11-6-0 for $1,887 and also showed on two sport boards at 3-1 and 2-1. Since WagerTalk both grades and sells these picks, the boards are marketing rather than an audit.",
     "Background: WagerTalk's August 2019 release describes him as \"a professional sports handicapper and bettor since 1980\" and a WagerTalk co founder who makes regional and national media appearances. His bio says he moved to Las Vegas in 2008 and co hosted a Las Vegas radio show. On 17 Nov 2026 SportsMemo, also owned by WagerTalk, sold his game of the week and a 7 day pass; on 20 Nov he was not on the SportsMemo experts list."
   ],
   "our_data": {
@@ -236,7 +236,7 @@
     "We found no complaints about billing, refunds or conduct naming him."
   ],
   "concerns": [
-    "No full public record from an outside tracker. Every ranking is WagerTalk's own, and we could not open any long term board.",
+    "No outside tracker publishes a full record of his picks. Every ranking is WagerTalk's own, and we could not open any long term board.",
     "He is a co founder of the company that ranks him and sells his picks.",
     "Seller figures move: the 5% plays appear roughly even since April 2026 against a 61.7% headline, and the same 7 day record showed $1,887 on one site and $1,787 on another.",
     "The guarantee costs extra and pays credit, not cash, and covers daily packages only.",
@@ -244,10 +244,10 @@
     "His plays are on TheRX's do not post list, which limits outside tracking."
   ],
   "checklist": [
-    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
+    "Ask for Marco D'Angelo's complete pick list for the past year, with line, odds and send time on every play. A run that starts on a date he picked is not a record.",
     "Compare the headline run with the Last 20 list and with any earlier figure for the same plays; the gap tells you how the recent stretch went.",
-    "Count units, not wins. A 60% record at heavy favorites can still lose money.",
-    "Read the guarantee for the words refund, credit and extension. WagerTalk's guarantee is credit only and costs extra.",
+    "Count units, not wins. A high win rate built on expensive favorites can still finish in the red.",
+    "Before adding the guarantee, learn whether it returns money, credit or extra days. WagerTalk's guarantee is credit only and costs extra.",
     "Try a 1 day or 3 day pass before a season or year pass."
   ],
   "faq": [
@@ -273,7 +273,7 @@
     ],
     [
       "Does Marco D'Angelo have a verified record?",
-      "No. WagerTalk shows a Last 20 list, short leaderboards and runs such as 58 and 36 on 5% plays since 2024, all graded by WagerTalk. We found no independent, time stamped log of every pick."
+      "No. WagerTalk shows a Last 20 list, short leaderboards and runs such as 58 and 36 on 5% plays since 2024, all graded by WagerTalk. An independent, time stamped log of all his picks did not turn up."
     ],
     [
       "Is Marco D'Angelo worth it?",
