@@ -1365,7 +1365,7 @@ def _write_sport_pages(site, cappers):
         slug = _sport_slug(sport)
         keep.add(slug + '.html')
         leaders = _sport_leaders(cappers, sport)
-        title = '%s Handicapper Records | Handicapper Watchdog' % sport
+        title = 'Top %s Handicappers %d: Graded Records Ranked by Units' % (sport, datetime.now(PT).year)
         desc = 'Graded %s records for public handicappers, shown by name. Ranked by units, %d or more %s picks.' % (
             sport, _SPORT_MIN, sport)
         body = '''<div class="sportband s-%s" aria-hidden="true"></div>
@@ -1956,7 +1956,7 @@ def _write_weekly(site, meta, cappers, snaps, man, now):
         + _research_paths(cappers, kind='best') +
         '</div>\n<p class="muted small">21+. Gambling problem? Call 1 800 GAMBLER.</p>')
     with open(os.path.join(folder, 'weekly-%s.html' % key), 'w', encoding='utf-8', newline='\n') as f:
-        f.write(_document(1, 'research/', 'Handicapper Report: Week Ending %s | Handicapper Watchdog' % label,
+        f.write(_document(1, 'research/', 'Handicapper Report: Week Ending %s' % label,
                           '%s picks graded from %s public handicapper accounts in the week ending %s: league results, best and worst weeks, ranking moves.' % ('{:,}'.format(graded), '{:,}'.format(len(act)), label),
                           url, body))
     os.makedirs(SNAP_CACHE, exist_ok=True)
