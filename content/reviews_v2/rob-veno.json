@@ -158,8 +158,8 @@
   ],
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. Rob Veno does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Rob Veno most often were BuzzKill (TheRX newsletters thread), WagerTalkPicks, EZMSports, Skidsteer. From 20 Sep 2026 to 20 Sep 2026 we took every play our parser could read inside a Rob Veno block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
-    "Result: 1 plays, 1 won, 0 lost, +0.91 units, a return of +90.9% per unit risked. By sport: too few per sport to split. By month: September 1 won, 0 lost, +0.91 units.",
-    "What it means: 1 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
+    "Result: 1 plays, 1 won, 0 lost, +0.91 units, a return of +90.9% per unit risked. By month: September 1 won, 0 lost, +0.91 units.",
+    "What it means: 1 decided plays is far too few to judge.",
     "What a buyer can verify independently: very little. We found no full, time stamped log of every Rob Veno pick kept by a third party, no contest results we could open, and no court or regulator record about him.",
     "What the seller publishes: a Last 20 table, a Hot Streaks box and Who's Hot leaderboards, all graded by WagerTalk, the company that sells the picks. On 20 Nov 2026 the Last 20 table showed 16 wins and 4 losses for 15 to 19 Nov. The all sports Who's Hot board ranked him first over 30 days at 87-66-2 and +$4,500 at $100 a play, and second over 3 days at 9-3. The NFL board showed him 16-8 over 30 days and 5-1 over 7 days, and the college basketball board 5-1 over 3 days.",
     "One outside tracker: SportsHub, a pick tracking site that says it takes no sportsbook advertising, logs the free picks he posts on WagerTalk. On 20 Nov 2026 it showed 6 wins and 0 losses over the last 30 days (+$600 at $100 a pick), across college football, college basketball, the NBA, the WNBA and the CFL. Six free picks is far too few to judge anything, and free picks are not the paid card.",
@@ -168,10 +168,10 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no pick history from Rob Veno is matched to a Watchdog graded record, so we make no claim about how Rob Veno performs.",
-    "context": "For scale: the runs on his WagerTalk profile sit at about 57% to 64% winners. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no pick history from Rob Veno is matched to a Watchdog graded record, so we make no claim about how Rob Veno performs.",
+    "context": "For scale: the runs on his WagerTalk profile sit at about 57% to 64% winners."
   },
-  "customers_intro": "Independent customer evidence about Rob Veno is close to nonexistent. Most public posts that name him are WagerTalk's own announcements or forum rules. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent customer evidence about Rob Veno is close to nonexistent. Most public posts that name him are WagerTalk's own announcements or forum rules.",
   "customers": [
     {
       "type": "Our summary",
@@ -245,13 +245,11 @@
     "TheRX bars members from reposting his plays, which removes one of the few places buyers might otherwise compare notes in public."
   ],
   "checklist": [
-    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
     "Check the Last 20 table and the Who's Hot boards on the day you buy, and note how they change over the next week.",
     "Count units, not wins. A 60% record at heavy favorites can still lose money.",
     "Read the guarantee for the words refund, credit and free days. Here it is site credit, only on daily packages.",
     "Write down each pick yourself the moment you receive it, with the line you can actually get. Totals move fast.",
-    "Start with the cheapest pass that covers the sport you want rather than a year up front.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Start with the cheapest pass that covers the sport you want rather than a year up front."
   ],
   "faq": [
     [

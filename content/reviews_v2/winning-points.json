@@ -12,7 +12,7 @@
   "dek": "A New York football newsletter that dates itself to 1970. On 20 Nov 2026 its signup page still listed no products, its home page pointed readers to a phone line about 2025 football, and the forum trackers we read had no Winning Points plays to grade in 2025 or 2026. Every multi season tally we found lands near break even before the vig.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Winning Points picks. This page reports what we could check on 20 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record of Winning Points picks."
   },
   "glance": [
     [
@@ -133,8 +133,8 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Winning Points pick history is matched to a Watchdog graded record, so we make no claim about how Winning Points performs.",
-    "context": "For scale: the outside tallies we found put Winning Points near 48% to 50% on its top plays. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no Winning Points pick history is matched to a Watchdog graded record, so we make no claim about how Winning Points performs.",
+    "context": "For scale: the outside tallies we found put Winning Points near 48% to 50% on its top plays."
   },
   "customers_intro": "We found no buyer reviews of Winning Points on review sites. What exists is forum talk from readers who follow football newsletters, plus forum trackers that grade its plays. Below is everything we found, oldest patterns first in the summary, and how much weight each item can carry.",
   "customers": [

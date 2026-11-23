@@ -135,10 +135,10 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Payne Insider pick history is matched to a Watchdog graded record, so we make no claim about how Payne Insider performs beyond our recount of the seller's own season totals.",
-    "context": "For scale: the seller's football lines sit at 51% to 61% in recent seasons and 57.1% lifetime by our sum. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no Payne Insider pick history is matched to a Watchdog graded record, so we make no claim about how Payne Insider performs beyond our recount of the seller's own season totals.",
+    "context": "For scale: the seller's football lines sit at 51% to 61% in recent seasons and 57.1% lifetime by our sum."
   },
-  "customers_intro": "Independent customer evidence on Payne Insider is almost nonexistent. The only buyer comments we found sit on the seller's own pages. Listener reviews of his free podcast are plentiful and warm, but they are about the show, not the paid picks. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent customer evidence on Payne Insider is almost nonexistent. The only buyer comments we found sit on the seller's own pages. Listener reviews of his free podcast are plentiful and warm, but they are about the show, not the paid picks.",
   "customers": [
     {
       "type": "Our summary",
@@ -202,7 +202,6 @@
     "Count units, not wins. Ask what one DIME means in dollars before you size bets off it, and work out how many units you need just to cover $579.99 a month.",
     "Read the terms before you pay: all sales are final, and payment is earned the moment you log in.",
     "Compare the current season line on the records page with what you actually receive, and keep the emails or texts with their time stamps.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
     "Give any handicapper a few hundred picks before you call them a winner. With under 100 plays a season, one season proves little."
   ],
   "faq": [

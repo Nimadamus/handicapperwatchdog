@@ -161,9 +161,9 @@
   "our_data": {
     "matched": true,
     "text": "Watchdog graded 10 Jesse Schule plays posted before the start, 14 Sep 2026 to 24 Oct 2026: 7 won, 3 lost, +3.30 units at one unit each. A sample of what was posted publicly, not a full record.",
-    "context": "For scale: the records on his page run from about 57% to 80% winners. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "context": "For scale: the records on his page run from about 57% to 80% winners."
   },
-  "customers_intro": "Independent buyer evidence about Jesse Schule himself is close to nonexistent. Most of what exists is about WagerTalk in general, or comes from sites with a stake in selling picks. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent buyer evidence about Jesse Schule himself is close to nonexistent. Most of what exists is about WagerTalk in general, or comes from sites with a stake in selling picks.",
   "customers": [
     {
       "type": "Our summary",
@@ -240,8 +240,7 @@
     "Count units, not wins. A 60% record at heavy favorites can still lose money.",
     "Read the guarantee for the words refund, credit and extension. On WagerTalk the guarantee is a credit for a future purchase.",
     "Follow his free picks for a few weeks and grade them yourself at the price you could actually get.",
-    "Write down each paid pick the moment you receive it, with the line you can actually get.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Write down each paid pick the moment you receive it, with the line you can actually get."
   ],
   "faq": [
     [

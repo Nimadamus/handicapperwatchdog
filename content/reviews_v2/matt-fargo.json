@@ -12,7 +12,7 @@
   "dek": "A football focused handicapper from Fairport, New York, selling picks since the early 2000s. He runs his own site, mattfargo.com, and is also sold through Big Al, PickDawgz, WinningCappers and the SportsCapping network. The same annual pass cost $1,299 on his own site and $1,999.95 on a network storefront on the same day. Every record we saw is published by a site that sells him, the sellers' own five year figure is about 52.7% winners, and the guarantees pay in credit or free picks, not cash.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Matt Fargo picks. This page reports what we could check on 20 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record of Matt Fargo picks."
   },
   "glance": [
     [
@@ -162,8 +162,8 @@
   ],
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. Matt Fargo does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Matt Fargo most often were BuzzKill (TheRX newsletters thread), Churchillsprts, 1218Sports, Hottie4Sports. From 25 Oct 2026 to 25 Oct 2026 we took every play our parser could read inside a Matt Fargo block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
-    "Result: 2 plays, 2 won, 0 lost, +1.87 units, a return of +93.5% per unit risked. By sport: too few per sport to split. By month: October 2 won, 0 lost, +1.87 units.",
-    "What it means: 2 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
+    "Result: 2 plays, 2 won, 0 lost, +1.87 units, a return of +93.5% per unit risked. By month: October 2 won, 0 lost, +1.87 units.",
+    "What it means: 2 decided plays is far too few to judge.",
     "What a buyer can verify independently: very little. We found no full, time stamped log of every Matt Fargo pick with line, odds and release time, and no court or regulator record about him.",
     "What the sellers publish: year to date totals, selected runs and short recent lists. On 20 Nov 2026 PickDawgz listed his last 10 plays, 14 to 19 Nov, as 5 wins and 5 losses, including 1 win and 4 losses on the NFL card of 15 Nov. On 16 Nov the same list showed 2 and 8. WinningCappers showed him 47-30 over the past 30 days in all sports and 31-18 in college football. Each of these is graded by a site that sells the picks.",
     "The only outside tally we found is old: in March 2013 a Sportsbook Review member tracked his free picks over a few weeks at 8 wins and 9 losses, about 2 units down. That is a tiny sample of free plays, not his paid card.",
@@ -171,10 +171,10 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Matt Fargo pick history is matched to a Watchdog graded record, so we make no claim about how Matt Fargo performs.",
-    "context": "For scale: the sellers advertise 61% on football this season but about 52.7% over five years. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no Matt Fargo pick history is matched to a Watchdog graded record, so we make no claim about how Matt Fargo performs.",
+    "context": "For scale: the sellers advertise 61% on football this season but about 52.7% over five years."
   },
-  "customers_intro": "Independent customer evidence on Matt Fargo is thin. The largest set of comments sits on a site that says it is part of the network selling his picks, and one of those commenters noted how little forum talk about him exists. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent customer evidence on Matt Fargo is thin. The largest set of comments sits on a site that says it is part of the network selling his picks, and one of those commenters noted how little forum talk about him exists.",
   "customers": [
     {
       "type": "Our summary",
@@ -252,8 +252,7 @@
     "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A year to date headline is not a record.",
     "Add up the records on the page. If the parts do not make the total, ask why before you buy.",
     "Count units, not wins. A 61% stretch at the wrong prices can still lose money, and the sellers' own five year figure is 52.7%.",
-    "Read the guarantee for the words refund, credit and extension. Here every version is credit or more picks.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get."
+    "Read the guarantee for the words refund, credit and extension. Here every version is credit or more picks."
   ],
   "faq": [
     [

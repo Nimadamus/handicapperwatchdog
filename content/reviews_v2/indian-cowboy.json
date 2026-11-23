@@ -200,9 +200,9 @@
   "our_data": {
     "matched": true,
     "text": "Watchdog graded 15 Indian Cowboy plays posted before the start, 14 Sep 2026 to 19 Nov 2026: 6 won, 9 lost, -3.96 units at one unit each. A sample of what was posted publicly, not a full record.",
-    "context": "For scale: the seasons Doc's logs for him sit between 56% and 61% winners. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "context": "For scale: the seasons Doc's logs for him sit between 56% and 61% winners."
   },
-  "customers_intro": "Independent buyer evidence on Indian Cowboy is thin. We searched TheRX, Covers, Sportsbook Review, Reddit (our saved archive plus thread lookups), BBB and news. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent buyer evidence on Indian Cowboy is thin. We searched TheRX, Covers, Sportsbook Review, Reddit (our saved archive plus thread lookups), BBB and news.",
   "customers": [
     {
       "type": "Our summary",

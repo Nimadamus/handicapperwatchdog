@@ -12,7 +12,7 @@
   "dek": "An AI pick service whose model, Remi, covers six US sports. Plans run from $49 a month to $27,500 a year, every sale is final, and the record on its site is a scorecard the seller computes itself at a flat -110 price. Between our checks on 7 and 20 Nov 2026 its lifetime banner turned 12 wins into losses and its Vault units fell by more than 100.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Leans AI picks. This page reports what we could check on 20 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record of Leans AI picks."
   },
   "glance": [
     [
@@ -151,8 +151,8 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Leans AI pick feed is matched to a Watchdog graded record, so we make no claim about how Remi's picks perform.",
-    "context": "For scale: Leans AI's own Executive scorecard shows 53.7% winners, and its spokesman told Vice the product is \"just barely above\" break even. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no Leans AI pick feed is matched to a Watchdog graded record, so we make no claim about how Remi's picks perform.",
+    "context": "For scale: Leans AI's own Executive scorecard shows 53.7% winners, and its spokesman told Vice the product is \"just barely above\" break even."
   },
   "customers_intro": "Independent customer evidence on Leans AI is small and split. Trustpilot had the largest sample we could read, 43 reviews, and it was mixed. RealReviews.io adds 12 mostly positive reviews, Vice tested it for a week, and two Reddit posts in 2026 attacked it. The testimonials on the Leans AI site are chosen by Leans AI. Below is what we found and how much weight it can carry.",
   "customers": [

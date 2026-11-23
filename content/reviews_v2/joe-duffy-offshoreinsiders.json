@@ -183,9 +183,9 @@
   "our_data": {
     "matched": true,
     "text": "Watchdog graded 30 Joe Duffy plays posted before the start, 15 Sep 2026 to 21 Nov 2026: 11 won, 17 lost, 2 push, -6.16 units at one unit each. A sample of what was posted publicly, not a full record.",
-    "context": "For scale: the OffshoreInsiders FAQ says he will hit near or above 60% over time. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "context": "For scale: the OffshoreInsiders FAQ says he will hit near or above 60% over time."
   },
-  "customers_intro": "Independent buyer evidence on Joe Duffy is very thin for a seller this old. We searched TheRX, Sportsbook Review, Covers, our saved library of Reddit and forum posts, CapperTek reviews and the BBB. Most mentions are reposted plays or the company's own promotion. Below is everything we found and how much weight it can carry. Unhappy buyers are the likeliest to write, so this shows what has gone wrong for some buyers, not how many.",
+  "customers_intro": "Independent buyer evidence on Joe Duffy is very thin for a seller this old. We searched TheRX, Sportsbook Review, Covers, our saved library of Reddit and forum posts, CapperTek reviews and the BBB. Most mentions are reposted plays or the company's own promotion. Unhappy buyers are the likeliest to write, so this shows what has gone wrong for some buyers, not how many.",
   "customers": [
     {
       "type": "Our summary",
@@ -255,8 +255,7 @@
     "Compare the same handicapper across sites. His 2026 numbers on SportsCapping are a better guide than any line on OffshoreInsiders.",
     "Count units, not wins. A 60% record at heavy favorites can still lose money, and 52% at -110 loses.",
     "Pay by card through PayPal rather than Western Union, so you keep a dispute route.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Write down each pick yourself the moment you receive it, with the line you can actually get."
   ],
   "faq": [
     [

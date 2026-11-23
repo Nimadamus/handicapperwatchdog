@@ -149,8 +149,8 @@
   ],
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. Sean Murphy does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Sean Murphy most often were BuzzKill (TheRX newsletters thread), Churchillsprts, TheGodOfCappers, EZMSports. From 20 Sep 2026 to 7 Nov 2026 we took every play our parser could read inside a Sean Murphy block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
-    "Result: 6 plays, 4 won, 2 lost, +1.64 units, a return of +27.3% per unit risked. By sport: too few per sport to split. By month: September 1 won, 0 lost, +0.91 units; October 3 won, 1 lost, +1.73 units; November 0 won, 1 lost, -1.00 units.",
-    "What it means: 6 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
+    "Result: 6 plays, 4 won, 2 lost, +1.64 units, a return of +27.3% per unit risked. By month: September 1 won, 0 lost, +0.91 units; October 3 won, 1 lost, +1.73 units; November 0 won, 1 lost, -1.00 units.",
+    "What it means: 6 decided plays is far too few to judge.",
     "What a buyer can verify independently: no third party log. We found no outside tracker, contest record, court case or regulator action about him.",
     "What the sellers publish, and what it shows: PickDawgz posts his complete graded pick history, which is more than most storefronts do. Our count of the last 12 months of it is 738-706-12, 51.1% winners and about 22.7 units down at one unit a pick. At -110 odds a bettor needs about 52.4% to break even.",
     "The SportsCapping leaderboard, kept by the network that sells him, showed him 694-576-22 all time in college football, 54-35-2 in college football this season, and 172-154-3 across all sports over the last 90 days. SportsCapping's own method note says a \"Best Run\" or \"since\" figure is \"a window starting on the date shown, not a lifetime record.\"",
@@ -158,10 +158,10 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Sean Murphy pick history is matched to a Watchdog graded record, so we make no claim about how Sean Murphy performs beyond our count of the history the seller posts.",
-    "context": "For scale: our count of his last 12 months on PickDawgz is 51.1% winners. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no Sean Murphy pick history is matched to a Watchdog graded record, so we make no claim about how Sean Murphy performs beyond our count of the history the seller posts.",
+    "context": "For scale: our count of his last 12 months on PickDawgz is 51.1% winners."
   },
-  "customers_intro": "Independent customer evidence on Sean Murphy is close to nil. The only buyer comments we found sit on a site that says it is part of the network selling his picks. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent customer evidence on Sean Murphy is close to nil. The only buyer comments we found sit on a site that says it is part of the network selling his picks.",
   "customers": [
     {
       "type": "Our summary",

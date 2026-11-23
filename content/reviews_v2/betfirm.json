@@ -156,8 +156,8 @@
   ],
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. BetFirm does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming BetFirm most often were AA_PocketRockets, gojuicd. From 21 Oct 2026 to 21 Oct 2026 we took every play our parser could read inside a BetFirm block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
-    "Result: 1 plays, 1 won, 0 lost, +0.91 units, a return of +90.9% per unit risked. By sport: too few per sport to split. By month: October 1 won, 0 lost, +0.91 units.",
-    "What it means: 1 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
+    "Result: 1 plays, 1 won, 0 lost, +0.91 units, a return of +90.9% per unit risked. By month: October 1 won, 0 lost, +0.91 units.",
+    "What it means: 1 decided plays is far too few to judge.",
     "What a buyer can verify independently: nothing we could find. We found no full, time stamped log kept by an outside monitor and no contest result we could open.",
     "What BetFirm publishes: leaderboards by sport, each with a current season table and an all time table, plus a yesterday's plays table on each handicapper page. On 20 Nov 2026 Jones's table showed his 20* Texans -11.5 play from the night before as a win. The tables use the SportsCapping \"Sc Score\" column, so the numbers come from the selling network.",
     "Taken at face value, the network's own numbers show thin margins. Jones's all time line, 10,557-9,364, is 53.0% winners and a 1.83% return. On the current overall table the 29 handicappers shown range from 48.0% to 57.5% winners, and only 3 of them return more than 5%.",
@@ -165,8 +165,8 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no BetFirm handicapper is matched to a Watchdog graded record, so we make no claim about how these handicappers perform.",
-    "context": "For scale: BetFirm's own current year overall table tops out at 57.5% for the handicappers shown. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no BetFirm handicapper is matched to a Watchdog graded record, so we make no claim about how these handicappers perform.",
+    "context": "For scale: BetFirm's own current year overall table tops out at 57.5% for the handicappers shown."
   },
   "customers_intro": "We found almost no independent buyer review of BetFirm. CapperTek lists both BetFirm.com and BetFirms.com with no reviews, re-checked on 20 Nov 2026. A Reddit archive search of r/sportsbetting on 20 Nov 2026 returned one post, which used the word in an unrelated question; other subreddit queries timed out, so we also relied on our earlier Reddit downloads. Web searches of Sportsbook Review, Covers and TheRX found two relevant posts. The entries below are what exists.",
   "customers": [
@@ -232,9 +232,7 @@
     "Subtract the price of the picks from any profit figure before you compare. At $100 a game, most rows shown earn less than a yearly pass costs.",
     "Ask for every pick from the last 12 months with the line, odds and send time. A long run with a chosen start date is not a record.",
     "Read each package's guarantee line. Not every pass has one, and none pays cash.",
-    "Know that your card statement and any dispute go through SportsCapping and Boyd Information Group, not BetFirm.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
-    "Give any handicapper a few hundred picks before you call them a winner."
+    "Know that your card statement and any dispute go through SportsCapping and Boyd Information Group, not BetFirm."
   ],
   "faq": [
     [

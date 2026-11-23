@@ -12,7 +12,7 @@
   "dek": "A one man pick service run by a handicapper called Geoff, who sells as the Wunderdog and has posted picks since 2001. Packages run from $15 to $5,499 a year, and a losing package earns a free replacement package, never cash. The site keeps and grades its own public pick log; its long run totals show small profits at about 52% to 53% winners, while the free picks it gives away show a better record than the paid card as a whole.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record for Wunderdog. Its pick archive is published and graded by Wunderdog itself. This page reports what we could check and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record for Wunderdog. Its pick archive is published and graded by Wunderdog itself."
   },
   "glance": [
     [
@@ -174,7 +174,7 @@
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. Wunderdog Sports does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Wunderdog Sports most often were WunderdogSports, VSiNLive, offshoreinsider. From 26 Sep 2026 to 9 Oct 2026 we took every play our parser could read inside a Wunderdog Sports block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
     "Result: 3 plays, 0 won, 3 lost, -3.00 units, a return of -100.0% per unit risked. By sport: NCAAF 0 won, 3 lost, -3.00 units. By month: September 0 won, 1 lost, -1.00 units; October 0 won, 2 lost, -2.00 units.",
-    "What it means: 3 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
+    "What it means: 3 decided plays is far too few to judge.",
     "What a buyer can verify independently: very little. We found no full, time stamped log kept by a third party, no contest results from an outside organizer that we opened, and no regulator or court record. The awards on the about page were not checked.",
     "What Wunderdog itself publishes: sport archive pages list past Pro Picks back to 2001 for the NFL, by season and week, and each past pick page shows the write up, the units, the line, the price, the release time and a graded result. That is far more than most pick sellers show. But the archive is kept and graded by the seller, and we could not confirm that no pick is missing or changed.",
     "What the seller's own numbers say: across its three biggest sports the paid card wins about 52% to 53% and makes roughly 0.02 to 0.03 units per decided pick. If those numbers are complete and accurate, they describe a small edge with long losing stretches, not a fast way to make money. A buyer who pays for picks and gets worse prices than the posted lines could easily end up behind.",
@@ -182,10 +182,10 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition Wunderdog is not matched to a Watchdog graded record, so we make no claim about how its picks perform beyond what the seller publishes.",
-    "context": "For scale: Wunderdog's own NFL archive shows 52.9% winners over 25 years. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition Wunderdog is not matched to a Watchdog graded record, so we make no claim about how its picks perform beyond what the seller publishes.",
+    "context": "For scale: Wunderdog's own NFL archive shows 52.9% winners over 25 years."
   },
-  "customers_intro": "Independent customer evidence on Wunderdog is thin for a service this old. We found 10 Trustpilot reviews, a handful of short forum threads and posts on Sportsbook Review and TheRX, two Reddit posts, a store listing rating and seller chosen testimonials. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent customer evidence on Wunderdog is thin for a service this old. We found 10 Trustpilot reviews, a handful of short forum threads and posts on Sportsbook Review and TheRX, two Reddit posts, a store listing rating and seller chosen testimonials.",
   "customers": [
     {
       "type": "Our summary",
@@ -354,8 +354,7 @@
     "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
     "Count units, not wins. A 78% parlay record at -300 prices is close to break even.",
     "Read the guarantee for the words refund, credit and extension. Here a losing package earns another package, never money.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get, and compare it with the posted line.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Write down each pick yourself the moment you receive it, with the line you can actually get, and compare it with the posted line."
   ],
   "faq": [
     [

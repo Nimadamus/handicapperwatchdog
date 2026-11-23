@@ -12,7 +12,7 @@
   "dek": "A Beverly Hills pick service built around lead handicapper Jon Price. The site shows no prices, only a \"50% NFL Season Special\" and a \"Call For Details\" investor group. The terms say all sales are final with no guarantees, every record we saw came from Price or from promotional articles, and the start date of the business changes from one profile to the next.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Sports Information Traders picks. This page reports what we could check on 20 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record of Sports Information Traders picks."
   },
   "glance": [
     [
@@ -126,10 +126,10 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Sports Information Traders pick history is matched to a Watchdog graded record, so we make no claim about how Sports Information Traders performs.",
-    "context": "For scale: SIT marketing talks about 60 to 65% winners and spring runs above 80%. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard odds of 110 to win 100 a bettor needs about 52.4% to break even."
+    "text": "In this edition no Sports Information Traders pick history is matched to a Watchdog graded record, so we make no claim about how Sports Information Traders performs.",
+    "context": "For scale: SIT marketing talks about 60 to 65% winners and spring runs above 80%. At standard odds of 110 to win 100 a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "Independent customer evidence on Sports Information Traders is thin. Most pages about the service are interviews and features built around Jon Price. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent customer evidence on Sports Information Traders is thin. Most pages about the service are interviews and features built around Jon Price.",
   "customers": [
     {
       "type": "Our summary",
@@ -239,8 +239,7 @@
     "Get the price, what it covers and the terms in writing before you give a card number. These terms say all sales are final and fees are earned on payment.",
     "Do not raise your bet size because a salesperson calls it an investment. The terms call the service entertainment only.",
     "Count units, not wins. A 60% record at heavy favorites can still lose money.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Write down each pick yourself the moment you receive it, with the line you can actually get."
   ],
   "faq": [
     [

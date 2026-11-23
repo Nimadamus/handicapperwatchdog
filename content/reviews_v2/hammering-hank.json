@@ -153,9 +153,9 @@
   "our_data": {
     "matched": true,
     "text": "Watchdog graded 76 Hammering Hank plays posted before the start, 14 Sep 2026 to 21 Nov 2026: 38 won, 37 lost, 1 push, -2.20 units at one unit each. A sample of what was posted publicly, not a full record.",
-    "context": "For scale: the win rates we saw on his own pages run from 50.6% in his October 2026 recap to 57% in a 90 day NFL window. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "context": "For scale: the win rates we saw on his own pages run from 50.6% in his October 2026 recap to 57% in a 90 day NFL window."
   },
-  "customers_intro": "Independent customer evidence on Hammering Hank is thin: a handful of short Reddit posts from 2025 and 2026, plus pick sharing accounts that repost his plays. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent customer evidence on Hammering Hank is thin: a handful of short Reddit posts from 2025 and 2026, plus pick sharing accounts that repost his plays.",
   "customers": [
     {
       "type": "Our summary",
@@ -245,7 +245,6 @@
   "checklist": [
     "Turn off automatic renewal the day you subscribe if you only want to try one week.",
     "Read his latest monthly recap and add up the lines yourself before trusting the yearly totals.",
-    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
     "Count units, not wins. October 2026 was 90-88 and still lost money.",
     "Size bets in dollars you can lose; at his 5 unit max bet a short losing run costs a large share of a bankroll.",
     "Write down each pick yourself the moment you receive it, with the line you can actually get, and give it a few hundred picks before judging."

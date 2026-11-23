@@ -12,7 +12,7 @@
   "dek": "OddsShark.com now redirects to Covers, part of the Genius Sports group, where its model runs as \"Computer Picks powered by Odds Shark.\" The picks are free. The live page shows no results table, but archived 2025 copies did, and our check of those numbers found winning and losing columns side by side, with prediction market and sportsbook links next to every pick.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded OddsShark's computer picks or any Covers analyst. This page reports what we could check on 20 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded OddsShark's computer picks or any Covers analyst."
   },
   "glance": [
     [
@@ -135,8 +135,8 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition neither the OddsShark computer nor any Covers analyst is matched to a Watchdog graded record, so we make no claim about how these picks perform.",
-    "context": "For scale: free computer picks on spreads and totals have to clear the same bar as paid ones. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition neither the OddsShark computer nor any Covers analyst is matched to a Watchdog graded record, so we make no claim about how these picks perform.",
+    "context": "For scale: free computer picks on spreads and totals have to clear the same bar as paid ones."
   },
   "customers_intro": "OddsShark itself has almost no customer footprint we could find: its Trustpilot page had no reviews and it has no app of its own in the US App Store. Because its picks now live on Covers, we also read Covers reviews. Those mostly praise the free contests and research tools, and only one we found speaks to whether the picks win.",
   "customers": [

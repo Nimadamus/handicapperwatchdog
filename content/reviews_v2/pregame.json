@@ -163,10 +163,10 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Pregame.com handicapper is matched to a Watchdog graded record, so we make no claim about how these handicappers perform beyond what Pregame's own pages show.",
-    "context": "For scale: Pregame's founder has written that 55% winners is the best a professional can hope for over the long run, and the six pros we checked ranged from 50.1% to 55.7% this season. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no Pregame.com handicapper is matched to a Watchdog graded record, so we make no claim about how these handicappers perform beyond what Pregame's own pages show.",
+    "context": "For scale: Pregame's founder has written that 55% winners is the best a professional can hope for over the long run, and the six pros we checked ranged from 50.1% to 55.7% this season."
   },
-  "customers_intro": "Independent customer evidence on Pregame spans 2009 to 2026 but is thin, and much of it is about individual pros rather than the store. A lot of the talk happens on Pregame's own forum, which the company hosts and moderates. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent customer evidence on Pregame spans 2009 to 2026 but is thin, and much of it is about individual pros rather than the store. A lot of the talk happens on Pregame's own forum, which the company hosts and moderates.",
   "customers": [
     {
       "type": "Our summary",
@@ -271,9 +271,7 @@
     "Compare the streak line on the package with that page. A run that starts on a chosen date is not a record.",
     "Count units and dollars, not wins. Goodfella won 55.7% of his graded picks this season and still showed a loss of $4,944.",
     "If you take Flex Access, put a reminder in your calendar: it rebills at $195 a month until you cancel by email.",
-    "If two pros you bought land on opposite sides, email support the same day to claim the opposite side credit.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "If two pros you bought land on opposite sides, email support the same day to claim the opposite side credit."
   ],
   "faq": [
     [

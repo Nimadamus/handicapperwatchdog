@@ -12,7 +12,7 @@
   "dek": "A handicapper who says he has beaten the books since the early 1990s and ran his own picks site by 2013. Today his picks are sold through two rival networks at very different prices. The two networks' own 2026 numbers for him do not agree, and we found no independent buyer reviews.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Sean Higgs picks. This page reports what we could check on 20 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record of Sean Higgs picks."
   },
   "glance": [
     [
@@ -161,7 +161,7 @@
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. Sean Higgs does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Sean Higgs most often were TheGodOfCappers, ryangenero, 1218Sports, Hottie4Sports. From 24 Sep 2026 to 24 Oct 2026 we took every play our parser could read inside a Sean Higgs block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
     "Result: 7 plays, 4 won, 3 lost, +0.46 units, a return of +6.5% per unit risked. By sport: NCAAF 3 won, 1 lost, +1.71 units. By month: September 0 won, 2 lost, -2.00 units; October 4 won, 1 lost, +2.46 units.",
-    "What it means: 7 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
+    "What it means: 7 decided plays is far too few to judge.",
     "What a buyer can verify independently: nothing that we could find. We found no full, time stamped log of every Sean Higgs pick kept outside the networks selling him, and no court or regulator record about him.",
     "What the sellers publish: StatSalt shows recent results (on 20 Nov 2026, four wins and one loss across 18 and 19 Nov), a 14-9 NFL leaderboard line and a rolling record box. CappersPicks showed his 19 Nov plays at three wins and one loss and lists his money leader spots. SportsCapping's 2026 tables put him second overall (843-738-33, +$5,033), second in college football (87-60-1, +$1,918), third in MLB (387-348-21, +$2,922), fifth in college basketball (33-22-1, +$871) and 37th of 38 in the NFL (41-36-2, +$15). All of these are kept by companies that sell his picks.",
     "A TheRX member reposted his Saturday college football plays on 8 Nov 2026 with the line \"CFB picks 2026 43-35\", a far lower figure than any network shows. The post gives no source for that record, so we report it only as another number that does not match.",
@@ -169,10 +169,10 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Sean Higgs pick history is matched to a Watchdog graded record, so we make no claim about how Sean Higgs performs.",
-    "context": "For scale: SportsCapping's 2026 figure of 843-738-33 is about 53% winners, and the StatSalt record box of 72-53-1 is about 58%. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no Sean Higgs pick history is matched to a Watchdog graded record, so we make no claim about how Sean Higgs performs.",
+    "context": "For scale: SportsCapping's 2026 figure of 843-738-33 is about 53% winners, and the StatSalt record box of 72-53-1 is about 58%."
   },
-  "customers_intro": "Independent customer evidence on Sean Higgs is almost absent. The few outside mentions are reposts of his picks, and the only glowing write up we found reads as promotion. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent customer evidence on Sean Higgs is almost absent. The few outside mentions are reposts of his picks, and the only glowing write up we found reads as promotion.",
   "customers": [
     {
       "type": "Our summary",
@@ -238,7 +238,6 @@
     "The same one day pass costs $39 on StatSalt and $99.99 on CappersPicks, and no independent buyer feedback exists either way."
   ],
   "checklist": [
-    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
     "Compare the same sport on both networks. If one says +125 units and the other says +19, ask why before you pay.",
     "Count units, not wins, and check whether units are weighted by stake size.",
     "Read the guarantee for the words refund, credit and extension. Here it is either no refund or site credit.",

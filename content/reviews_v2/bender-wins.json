@@ -12,7 +12,7 @@
   "dek": "Bender Wins is Ryan Bender's pick service, sold on Winible from $129.99 a month to $2,999.99 a year. It advertises 7 straight winning years but shows no pick record. Buyer evidence is split: kind CapperTek reviews, partly from one account, against Reddit posters whose own counts put his card well down in 2025 and 2026.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record for Bender Wins. This page reports what we could check on 20 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record for Bender Wins."
   },
   "glance": [
     [
@@ -143,8 +143,8 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition Bender Wins is not matched to a Watchdog graded record, so we make no claim about how its picks perform.",
-    "context": "For scale: Bender Wins advertises winning years rather than a win rate, and the one buyer count with wins and losses put the 2025 Masterclass at 52.5%. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition Bender Wins is not matched to a Watchdog graded record, so we make no claim about how its picks perform.",
+    "context": "For scale: Bender Wins advertises winning years rather than a win rate, and the one buyer count with wins and losses put the 2025 Masterclass at 52.5%."
   },
   "customers_intro": "Customer evidence on Bender Wins comes from two places that disagree: six CapperTek reviews from 2022 to 2026, three of them from one account, and Reddit threads from May 2025 to Nov 2026. We found no Trustpilot page, no BBB listing and no reviews on the Winible store. Below is everything we found, positive and negative.",
   "customers": [
@@ -286,8 +286,7 @@
     "Count units, not wins or winning weeks. A card at 52.5% winners lost 66 units in one buyer's count because prices matter.",
     "Check the line you can actually get within a minute of each release and record that price, not the posted one.",
     "Use the free plan for a few weeks and track every free pick before paying.",
-    "Remember Winible sales are final: start with one month, not a year, and set a reminder to cancel.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Remember Winible sales are final: start with one month, not a year, and set a reminder to cancel."
   ],
   "faq": [
     [

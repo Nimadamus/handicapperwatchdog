@@ -12,7 +12,7 @@
   "dek": "A pick shop founded in 1971 by Morris \"Doc\" Moseman, now selling a roster of more than a dozen handicappers and computer systems. Packages ran from $25 a day to $850 a season on 20 Nov 2026. Its guarantee pays in more picks or store credit, never cash, and every record on its site is a run or total the seller chose.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record for any Doc's Sports handicapper. This page reports what we could check on 20 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record for any Doc's Sports handicapper."
   },
   "glance": [
     [
@@ -165,16 +165,16 @@
   ],
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. Doc's Sports does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Doc's Sports most often were vcsports, tgeorgecapper, IndianCowboyPix, BuzzKill (TheRX newsletters thread). From 24 Oct 2026 to 30 Oct 2026 we took every play our parser could read inside a Doc's Sports block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
-    "Result: 3 plays, 0 won, 3 lost, -3.00 units, a return of -100.0% per unit risked. By sport: too few per sport to split. By month: October 0 won, 3 lost, -3.00 units.",
-    "What it means: 3 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
+    "Result: 3 plays, 0 won, 3 lost, -3.00 units, a return of -100.0% per unit risked. By month: October 0 won, 3 lost, -3.00 units.",
+    "What it means: 3 decided plays is far too few to judge.",
     "Doc's Sports does not publish a full, time stamped log of every pick with the line, the price and the post time, at least not on any page we could open without paying. The roster shows short runs and season totals chosen by the seller, and each handicapper's blurb is rewritten as runs change, so the set of numbers we saw on 20 Nov 2026 will not be the set a reader sees next month.",
     "The only outside grading we came across was not a full record either. A Wayback Machine copy of the old OddsShark NFL computer picks page from 16 Jan 2025 carried boxes labelled \"Sponsored Picks\" from \"Doc's Premium Picks\", which means Doc's paid or partnered for that placement, not that anyone graded it. In 2021 a press release said Doc's had relaunched its text based Consensus Picks service \"with new management\" and claimed eight straight winning days and 43 units; today the same product is advertised as \"23-8 +$3,500 Consensus run!\". Neither figure comes with a log.",
     "Posting times on the site do not agree. The FAQ says picks post \"at 1 pm pacific on Fridays\" with top college and NFL games on weekend mornings, while the current weekly football package says selections post Thursday at 6 p.m. Eastern. The FAQ appears out of date."
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Doc's Sports handicapper is matched to a Watchdog graded record, so we make no claim about how these handicappers perform.",
-    "context": "For scale: the Doc's FAQ sets a goal of 60% winners. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no Doc's Sports handicapper is matched to a Watchdog graded record, so we make no claim about how these handicappers perform.",
+    "context": "For scale: the Doc's FAQ sets a goal of 60% winners."
   },
   "customers_intro": "Independent buyer evidence on Doc's Sports is spread thin over almost twenty years: one Covers thread that started in 2008, two SBR threads from 2013 and 2017, a TheRX thread from 2025 and 2026, three Reddit posts and one PissedConsumer review. The testimonials on the Doc's site are chosen by Doc's. Below is everything we found and how much weight each piece can carry.",
   "customers": [
@@ -337,8 +337,7 @@
     "Count units and dollars, not wins. Our math shows 248-223 at flat stakes is close to break even, even when it is advertised as +3,245.",
     "Read the guarantee for your exact package. Day packages pay a credit, longer packages extend, and season packages carry no guarantee.",
     "Write down each pick yourself the moment you receive it, with the line you can actually get at a licensed book where you live.",
-    "Do not follow the FAQ's advice about offshore sportsbooks without checking your local law.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Do not follow the FAQ's advice about offshore sportsbooks without checking your local law."
   ],
   "faq": [
     [

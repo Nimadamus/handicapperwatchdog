@@ -12,7 +12,7 @@
   "dek": "A Las Vegas handicapper and author whose first betting book came out from Harper & Row in 1974. On 20 Nov 2026 none of his sales sites worked, and the last archived copy of his sales page is from February 2023. Buyer posts we found, from 2009 to 2022, are mostly negative, with a few positive voices.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Kelso Sturgeon picks. This page reports what we could check on 20 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record of Kelso Sturgeon picks."
   },
   "glance": [
     [
@@ -130,10 +130,10 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Kelso Sturgeon pick history is matched to a Watchdog graded record, so we make no claim about how Kelso Sturgeon performs.",
-    "context": "For scale: on the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no Kelso Sturgeon pick history is matched to a Watchdog graded record, so we make no claim about how Kelso Sturgeon performs.",
+    "context": ""
   },
-  "customers_intro": "Independent buyer evidence on Kelso Sturgeon is mostly on one review site and two forum threads, and none of it is newer than 2022. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent buyer evidence on Kelso Sturgeon is mostly on one review site and two forum threads, and none of it is newer than 2022.",
   "customers": [
     {
       "type": "Our summary",
@@ -278,8 +278,7 @@
     "Confirm you are dealing with the real seller. Several old domains under his name now show other content.",
     "Get refund or guarantee terms in writing before you pay. The last policy we found offered replacement picks, not cash.",
     "Count units, not wins. A 100 unit loss can wipe out many 15 unit winners.",
-    "Say no to upgrades until your current package has ended and you have graded it.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get."
+    "Say no to upgrades until your current package has ended and you have graded it."
   ],
   "faq": [
     [

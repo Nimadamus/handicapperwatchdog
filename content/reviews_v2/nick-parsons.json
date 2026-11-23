@@ -158,7 +158,7 @@
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. Nick Parsons does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Nick Parsons most often were TheGodOfCappers, 1218Sports, EZMSports, EDMrager. From 17 Sep 2026 to 23 Oct 2026 we took every play our parser could read inside a Nick Parsons block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
     "Result: 4 plays, 2 won, 2 lost, -0.18 units, a return of -4.5% per unit risked. By sport: MLB 1 won, 2 lost, -1.09 units. By month: September 1 won, 2 lost, -1.09 units; October 1 won, 0 lost, +0.91 units.",
-    "What it means: 4 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
+    "What it means: 4 decided plays is far too few to judge.",
     "What a buyer can verify independently: nothing that we could find. We found no full, time stamped log of every Nick Parsons pick from an outside tracker, and no court or regulator record about him.",
     "What the marketplaces publish: a headline badge, sport badges and a latest picks list. The five picks visible on 17 Nov 2026 (from 15 and 16 Nov) went 2 and 3; the five visible on 20 Nov (from 18 and 19 Nov) went 3 and 2. These are graded by the company that sells the picks, so they are marketing, not an audit. The latest picks list shows only results, not the price taken or the time the pick was released.",
     "History we could confirm: a Covers forum post of 2 Oct 2014 advertised him on Covers' Steamwire subscription, then $19.99 a month, as a leader in first half, second half and in game bets. TheRX members reposted his plays in September 2025. His WagerTalk profile address opened the general experts page on 17 Nov, and on 20 Nov that page still did not list him.",
@@ -166,10 +166,10 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Nick Parsons pick history is matched to a Watchdog graded record, so we make no claim about how he performs.",
-    "context": "For scale: the badges and runs on his profiles range from 52.2% (college basketball since last year) to 63.1% (soccer this year), with a headline 56.6%. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no Nick Parsons pick history is matched to a Watchdog graded record, so we make no claim about how he performs.",
+    "context": "For scale: the badges and runs on his profiles range from 52.2% (college basketball since last year) to 63.1% (soccer this year), with a headline 56.6%."
   },
-  "customers_intro": "Independent buyer evidence on Nick Parsons is close to nil. We found no buyer review of a paid package, good or bad, on any site we searched. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent buyer evidence on Nick Parsons is close to nil. We found no buyer review of a paid package, good or bad, on any site we searched.",
   "customers": [
     {
       "type": "Our summary",
@@ -240,8 +240,7 @@
     "Divide wins by wins plus losses on any run, and ask how a 52% record became +31 units.",
     "Count units, not wins. A 60% record at heavy favorites can still lose money.",
     "Read the refund policy before paying: all sales are final, and a refund is only at the seller's option.",
-    "If you buy, start with a $39 day or $49 special, not a season or year pass.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "If you buy, start with a $39 day or $49 special, not a season or year pass."
   ],
   "faq": [
     [

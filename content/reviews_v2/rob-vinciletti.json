@@ -12,7 +12,7 @@
   "dek": "A long running all sports handicapper, once branded Golden Contender, sold through the SportsCapping network and the Winners and Whiners network. Packages run from a $25 single play to $1,699.99 a year. The records and titles we saw are published by the networks that sell his picks, and the profile record changed by 37 units in four days.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Rob Vinciletti picks. This page reports what we could check on 20 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record of Rob Vinciletti picks."
   },
   "glance": [
     [
@@ -210,17 +210,17 @@
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. Rob Vinciletti does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Rob Vinciletti most often were TheGodOfCappers, EZMSports, PicksParlays, 1218Sports. From 20 Sep 2026 to 24 Oct 2026 we took every play our parser could read inside a Rob Vinciletti block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
     "Result: 7 plays, 3 won, 4 lost, -1.27 units, a return of -18.2% per unit risked. By sport: NCAAF 2 won, 2 lost, -0.18 units. By month: September 1 won, 1 lost, -0.09 units; October 2 won, 3 lost, -1.18 units.",
-    "What it means: 7 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
+    "What it means: 7 decided plays is far too few to judge.",
     "What a buyer can verify independently: nothing that we could find. We found no full, time stamped log of every Rob Vinciletti pick with the line, the odds and the release time, and no outside contest results we could open.",
     "What the networks publish: StatSalt, Winners and Whiners and Picks and Parlays show 74 wins, 50 losses and 2 pushes, plus 59.75 units, with no date range, and that total moves as old plays drop out. Boyd's Bets carries an all sports streak of 879 wins and 703 losses since May 2015, about 56%, and a 30 day ranking of 81 and 57. Capper Picks and Capper Reviews show the previous day's plays with wins and losses; on 20 Nov that was two wins and two losses.",
     "On TheRX, a Golden Contender account has posted free picks and package offers in a seller run thread since 2 Mar 2009. It runs to 233 pages. The pages we read from 2009, 2015 and 2023 to 2024 hold seller posts only, apart from one short thank you reply in August 2024. RideTheHotHand, a paid review site, adds older claims such as top 10 finishes in 2008 and 2010 and 56% in the NFL since 2009, without a source."
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Rob Vinciletti pick history is matched to a Watchdog graded record, so we make no claim about how Rob Vinciletti performs.",
-    "context": "For scale: the network profile shows 59.68% on a moving window and the Boyd's Bets streak works out to about 56%. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no Rob Vinciletti pick history is matched to a Watchdog graded record, so we make no claim about how Rob Vinciletti performs.",
+    "context": "For scale: the network profile shows 59.68% on a moving window and the Boyd's Bets streak works out to about 56%."
   },
-  "customers_intro": "Independent customer evidence on Rob Vinciletti is thin. The biggest pool of comments sits on Capper Reviews, a site that says it is part of the network selling his picks. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent customer evidence on Rob Vinciletti is thin. The biggest pool of comments sits on Capper Reviews, a site that says it is part of the network selling his picks.",
   "customers": [
     {
       "type": "Our summary",
@@ -326,9 +326,7 @@
     "Screenshot the profile record the day you buy and again a week later; it is a moving window.",
     "Compare the same access on both networks before you pay; the prices are far apart.",
     "Read the guarantee for the words refund, credit and extension. On SportsCapping the guarantee is site credit only.",
-    "Ask how many units each play is worth. Unit totals like +60 on a 25 and 7 run mean the plays are not all the same size.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Ask how many units each play is worth. Unit totals like +60 on a 25 and 7 run mean the plays are not all the same size."
   ],
   "faq": [
     [

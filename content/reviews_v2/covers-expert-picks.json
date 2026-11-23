@@ -12,7 +12,7 @@
   "dek": "Covers is a betting media site founded in 1995 that gives away analyst and computer picks for free and runs free contests with cash prizes. It sells no picks package. It earns from sportsbook and prediction market offers placed beside the picks, and since May 2026 it belongs to Genius Sports, the sports data company. Some analyst articles now carry a small 2026 record box, but no full pick log sits behind it.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record for any Covers analyst or for the Covers computer picks. This page reports what we could check and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record for any Covers analyst or for the Covers computer picks."
   },
   "glance": [
     [
@@ -141,8 +141,8 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Covers analyst or Covers computer pick is matched to a Watchdog graded record, so we make no claim about how Covers picks perform.",
-    "context": "For scale: the Covers boxes we read ranged from 5-5 to 58-38 on top picks this year. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even, so free picks still need a full record before they mean much."
+    "text": "In this edition no Covers analyst or Covers computer pick is matched to a Watchdog graded record, so we make no claim about how Covers picks perform.",
+    "context": "For scale: the Covers boxes we read ranged from 5-5 to 58-38 on top picks this year. At standard -110 odds a bettor needs about 52.4% to break even, so free picks still need a full record before they mean much."
   },
   "customers_intro": "Customer evidence on Covers is mostly about the site and its free contests, not about whether the analyst picks win. Below is what we read and how much weight it carries.",
   "customers": [

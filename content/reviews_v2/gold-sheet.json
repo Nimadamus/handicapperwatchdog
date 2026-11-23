@@ -173,7 +173,7 @@
   "our_data": {
     "matched": true,
     "text": "Watchdog graded 25 The Gold Sheet plays posted before the start, 19 Sep 2026 to 21 Nov 2026: 16 won, 9 lost, +5.19 units at one unit each. A sample of what was posted publicly, not a full record.",
-    "context": "For scale: on the Watchdog board on 17 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "context": ""
   },
   "customers_intro": "Most of what we found is forum talk among long time newsletter readers on Sportsbook Review, Covers and TheRX, plus a forum member's weekly tally. We found no review site sample we could count, and our Reddit search was partial because the archive we use kept timing out.",
   "customers": [
@@ -520,7 +520,7 @@
       [
         "29 Oct 10:29 PM",
         "NCAAF",
-        "4%   PROP pick  Kent State TEAM Total Over 27.5",
+        "4% PROP pick Kent State TEAM Total Over 27.5",
         "not shown",
         "Lost",
         "-1.00",

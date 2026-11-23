@@ -142,7 +142,7 @@
   "our_data": {
     "matched": true,
     "text": "Watchdog graded 36 Pickswise plays posted before the start, 21 Sep 2026 to 18 Nov 2026: 17 won, 19 lost, -3.69 units at one unit each. A sample of what was posted publicly, not a full record.",
-    "context": "Free picks still cost money when they lose: at standard -110 odds a bettor needs about 52.4% to break even. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks."
+    "context": "Free picks still cost money when they lose: at standard -110 odds a bettor needs about 52.4% to break even."
   },
   "customers_intro": "Pickswise users are readers of free picks, not paying buyers, so complaints are about losses and the app, not billing. We read every App Store review in Apple's public feed (71 written reviews from 2021 to 2026), a long running Reddit thread with about 30 replies from 2023 to 2026, and the forum threads we could find. Trustpilot had no reviews and BBB had no profile. Below is what we read and how much weight it carries.",
   "customers": [
@@ -276,8 +276,7 @@
     "Pick one writer and grade their last 100 picks yourself from the dated articles before following them.",
     "Count units, not wins. A count of winning picks without the losses tells you nothing.",
     "Free picks can still cost you. Your losses on the bets are the real price.",
-    "If you sign up for an operator through a Pickswise link, read that operator's bonus terms; most need a deposit or first bet.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "If you sign up for an operator through a Pickswise link, read that operator's bonus terms; most need a deposit or first bet."
   ],
   "faq": [
     [

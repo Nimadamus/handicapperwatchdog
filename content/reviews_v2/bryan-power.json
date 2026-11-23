@@ -12,7 +12,7 @@
   "dek": "A WagerTalk handicapper who says he has been winning since 2011 and spent a decade at Covers Experts before joining WagerTalk in 2022. Single plays were on sale for $5 when we checked. The guarantee pays in site credit, the headline records are seller picked streaks, his own Last 20 table was 9 and 11, and independent buyer posts are scarce.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Bryan Power picks. This page reports what we could check on 17 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record of Bryan Power picks."
   },
   "glance": [
     [
@@ -131,17 +131,17 @@
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. Bryan Power does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Bryan Power most often were WagerTalkPicks, TheGodOfCappers, 1218Sports, EZMSports. From 22 Sep 2026 to 14 Nov 2026 we took every play our parser could read inside a Bryan Power block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
     "Result: 6 plays, 3 won, 3 lost, -0.24 units, a return of -4.0% per unit risked. By sport: NCAAF 1 won, 3 lost, -2.06 units. By month: September 1 won, 0 lost, +0.91 units; October 1 won, 1 lost, -0.09 units; November 1 won, 2 lost, -1.06 units.",
-    "What it means: 6 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
+    "What it means: 6 decided plays is far too few to judge.",
     "What a buyer can verify independently: no full, time stamped log of every paid pick that we could find.",
     "What the seller publishes: streak totals, leaderboard entries such as 33 and 22 and 2 over the last 30 days, and a Last 20 table with odds. On 17 Nov 2026 the Last 20 table had 9 wins and 11 losses, including two six point teasers that won and a three team parlay that lost. At one unit a play and the listed odds, that comes to about minus 3.5 units. WagerTalk grades these itself and also sells the picks.",
     "A third party: GameAdvisers, a site that says it may earn sportsbook commissions, tracks his free WagerTalk picks. On 17 Nov 2026 it showed 9 and 6 and plus $246 over the last 30 days, while another box on the same page said 9 and 7. That covers free picks only, a sample of about 15 plays, and the profit figures assume a flat $100 bet."
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Bryan Power pick history is matched to a Watchdog graded record, so we make no claim about how Bryan Power performs.",
-    "context": "For scale: the streaks on his page run from about 60% to 82% winners, while his Last 20 table showed 45%. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no Bryan Power pick history is matched to a Watchdog graded record, so we make no claim about how Bryan Power performs.",
+    "context": "For scale: the streaks on his page run from about 60% to 82% winners, while his Last 20 table showed 45%."
   },
-  "customers_intro": "Independent buyer evidence on Bryan Power is thin. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent buyer evidence on Bryan Power is thin.",
   "customers": [
     {
       "type": "Our summary",
@@ -197,8 +197,7 @@
     "Open the Last 20 tab before you buy. On the day we checked it told a different story from the streak banners.",
     "Count units, not wins. A 60% record at heavy favorites can still lose money, and parlays and teasers change the math.",
     "Read the guarantee for the words refund, credit and extension. Here it is credit only.",
-    "Check how many plays a pass includes; the short passes said \"Currently 1 Pick(s) Included!\"",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get."
+    "Check how many plays a pass includes; the short passes said \"Currently 1 Pick(s) Included!\""
   ],
   "faq": [
     [

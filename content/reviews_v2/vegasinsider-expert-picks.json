@@ -12,7 +12,7 @@
   "dek": "A long running odds site, founded in 1997 and owned by Better Collective since 2019, that sells one subscription to every pick from its roster of experts for $19.99 a month or $119.99 a year. VegasInsider grades its own experts and shows leaderboards, but we could not open a full pick log without paying, and the subscription has no refunds.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record for any VegasInsider expert. This page reports what we could check and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record for any VegasInsider expert."
   },
   "glance": [
     [
@@ -138,10 +138,10 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no VegasInsider expert is matched to a Watchdog graded record, so we make no claim about how these experts perform.",
-    "context": "For scale: VegasInsider says a handicapper needs to be right 55% of the time, and its leading experts this year sit between 53% and 56%. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no VegasInsider expert is matched to a Watchdog graded record, so we make no claim about how these experts perform.",
+    "context": "For scale: VegasInsider says a handicapper needs to be right 55% of the time, and its leading experts this year sit between 53% and 56%."
   },
-  "customers_intro": "Independent customer evidence on VegasInsider Premium is thin. The largest sample is the iPhone app rating, which covers the whole app, not just the picks. Forum bettors talk about VegasInsider mostly as an odds and data site. We found no Reddit thread or forum post from a paying Premium buyer describing the picks. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent customer evidence on VegasInsider Premium is thin. The largest sample is the iPhone app rating, which covers the whole app, not just the picks. Forum bettors talk about VegasInsider mostly as an odds and data site. We found no Reddit thread or forum post from a paying Premium buyer describing the picks.",
   "customers": [
     {
       "type": "Our summary",

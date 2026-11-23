@@ -96,8 +96,8 @@ def render(rev, st, names, document):
         E(rev['name']), E(rev['checked']), crow, paras(rev['claims_note']))
     od = rev['our_data']
     record = ('<section class="panel edcard essay" id="record"><h2>Track record: what can be verified</h2><div class="prose">%s'
-              '<div class="ourdata"><p class="plate-k">Watchdog graded data</p><p><b>%s</b></p><p>%s</p></div></div>%s</section>') % (
-        paras(rev['record']), E(od['text']), E(fill(od['context'], st)), record_table(rev.get('record_table')))
+              '<div class="ourdata"><p class="plate-k">Watchdog graded data</p><p><b>%s</b></p>%s</div></div>%s</section>') % (
+        paras(rev['record']), E(od['text']), '<p>%s</p>' % E(fill(od['context'], st)) if od.get('context') else '', record_table(rev.get('record_table')))
     cust = ''.join('<li class="cr %s"><div class="crh">%s<span class="muted small">%s</span></div><p>%s</p>%s</li>' % (
         't-neg' if c['tone'] == 'Negative' else 't-pos' if c['tone'] == 'Positive' else 't-neu', tag(c['type']), E(c['date']), E(c['text']),
         '<p class="small"><a href="%s" rel="nofollow noopener">%s</a></p>' % (E(src[c['source']]['url']), E(src[c['source']]['title'])) if c['source'] is not None else '')

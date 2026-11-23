@@ -12,7 +12,7 @@
   "dek": "SportsCapPro sells 1 to 4 star rated picks with written analysis. Its own site was offline on 20 Nov 2026, so buyers now meet it on CapperTek, where a pass costs $15 for a day to $325 for 60 days. The only full record we could open, its CapperTek log, shows 118-143-2 and -93.01 units from Feb 2025 to Feb 2026, with nothing new logged since.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded SportsCapPro. The record below is CapperTek's log, which we downloaded and recounted ourselves on 20 Nov 2026 but did not audit against the games. This page reports what we could check and labels everything else."
+    "note": "Watchdog has not graded SportsCapPro. The record below is CapperTek's log, which we downloaded and recounted ourselves on 20 Nov 2026 but did not audit against the games."
   },
   "glance": [
     [
@@ -164,8 +164,8 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition SportsCapPro is not matched to a Watchdog graded record, so we make no claim about its picks beyond the CapperTek log described above.",
-    "context": "For scale: SportsCapPro's reviewers describe seasons in the mid to high 50s by win rate, while its CapperTek log sits at 45%. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition SportsCapPro is not matched to a Watchdog graded record, so we make no claim about its picks beyond the CapperTek log described above.",
+    "context": "For scale: SportsCapPro's reviewers describe seasons in the mid to high 50s by win rate, while its CapperTek log sits at 45%."
   },
   "customers_intro": "Every independent buyer review we found sits on CapperTek, a site SportsCapPro pays for featured placement and where it replies to reviews. We re-read all of them on 20 Nov 2026: six posts from five accounts, all from 2025, and nothing new since June 2025. We searched Reddit (through the Arctic Shift archive), Sportsbook Review, Covers, TheRX, BBB and the open web and found no other buyer talk about SportsCapPro.",
   "customers": [
@@ -258,9 +258,7 @@
     "Ask whether subscribers get the same plays as the CapperTek log, and whether 4* ELITE plays arrive as straight bets or parlays.",
     "Open the CapperTek pick history with the \"all time\" filter, not the default 60 days, before you pay.",
     "Count units and ROI, not wins. Check how much of the record is parlays.",
-    "Read any guarantee for the words refund, credit and extension. This one is an extension.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Read any guarantee for the words refund, credit and extension. This one is an extension."
   ],
   "faq": [
     [

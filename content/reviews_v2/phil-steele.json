@@ -12,7 +12,7 @@
   "dek": "The college football magazine writer from Westlake, Ohio, best known for his preseason preview. He also sells Inside the Pressbox, a weekly newsletter with a pick on every game and a few Best Bets, $169 a season before kickoff and marked down as the season runs. Bettors praise the magazine; the few who tracked the picks report mixed to losing results.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Phil Steele picks. This page reports what we could check on 20 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record of Phil Steele picks."
   },
   "glance": [
     [
@@ -161,10 +161,10 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Phil Steele pick history is matched to a Watchdog graded record, so we make no claim about how Phil Steele performs.",
-    "context": "For scale: the seller's own 2024 Best Bets claims add up to 58% winners. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no Phil Steele pick history is matched to a Watchdog graded record, so we make no claim about how Phil Steele performs.",
+    "context": "For scale: the seller's own 2024 Best Bets claims add up to 58% winners."
   },
-  "customers_intro": "Most of what bettors write about Phil Steele is about the preseason magazine, not the paid picks. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Most of what bettors write about Phil Steele is about the preseason magazine, not the paid picks.",
   "customers": [
     {
       "type": "Our summary",
@@ -268,8 +268,7 @@
     "Ask for every Best Bet from the last season with the line, the odds and the date. Season totals are not a record.",
     "Count units, not wins. A 57% record can still lose money at bad odds.",
     "Look for a refund policy before you pay. We did not find one.",
-    "Check whether you are buying Inside the Pressbox or a Northcoast package before you pay; they are different products.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Check whether you are buying Inside the Pressbox or a Northcoast package before you pay; they are different products."
   ],
   "faq": [
     [

@@ -159,7 +159,7 @@
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. Scott Spreitzer does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Scott Spreitzer most often were BuzzKill (TheRX newsletters thread), 1218Sports, TheGodOfCappers, EZMSports. From 22 Sep 2026 to 15 Nov 2026 we took every play our parser could read inside a Scott Spreitzer block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
     "Result: 8 plays, 3 won, 5 lost, -2.27 units, a return of -28.4% per unit risked. By sport: NFL 2 won, 2 lost, -0.18 units. By month: September 0 won, 1 lost, -1.00 units; October 3 won, 2 lost, +0.73 units; November 0 won, 2 lost, -2.00 units.",
-    "What it means: 8 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
+    "What it means: 8 decided plays is far too few to judge.",
     "What a buyer can verify independently: nothing current. A third party contest result would count, and his bio cites two, but we found no casino or news page confirming either. We found no court or regulator record involving him.",
     "What Spreitzer and Doc's publish: runs and totals by sport, chosen by the seller, and a daily note on whether yesterday won (for example \"Scott Spreitzer went 0-1 Thursday\" in the NHL and \"0-1 in MLS Thursday\" on 20 Nov 2026). We found no full, time stamped log of every paid pick with the line, the odds and the release time. His free picks are posted one at a time, each listed as \"Offered at: BookMaker.\"",
     "History we could confirm from saved pages: in November 2002 scottwins.com forwarded to his handicapper page on jimfeist.com, which sold \"all 3 releases\" for $10 on 1 900 and 1 800 numbers and promoted a \"perfect 6-0\" weekend. In January 2012 ScottWins.com was his own store (phone 1 866 439 6758) with a roster of other handicappers. On 1 Jan 2018 it still sold his plays by email and claimed a \"15-2-2, 87% winning run.\" Doc's announced him on 11 Apr 2018 as its new handicapper, with service from 12 Apr. By April 2022 the scottwins.com domain was listed for sale, and a 2021 copy showed unrelated content.",
@@ -167,10 +167,10 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Scott Spreitzer pick account is matched to a Watchdog graded record, so we make no claim about how his picks perform.",
-    "context": "For scale: his page advertises runs from 53% (NFL, by our math) to 63% (last seven weeks), and Doc's own FAQ sets a goal of 60% winners. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no Scott Spreitzer pick account is matched to a Watchdog graded record, so we make no claim about how his picks perform.",
+    "context": "For scale: his page advertises runs from 53% (NFL, by our math) to 63% (last seven weeks), and Doc's own FAQ sets a goal of 60% winners."
   },
-  "customers_intro": "Independent customer evidence on Scott Spreitzer is close to nonexistent. We found no buyer describing a purchase, good or bad, on any site. What exists is a handful of forum remarks over 21 years. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent customer evidence on Scott Spreitzer is close to nonexistent. We found no buyer describing a purchase, good or bad, on any site. What exists is a handful of forum remarks over 21 years.",
   "customers": [
     {
       "type": "Our summary",
@@ -262,8 +262,7 @@
     "Note the running totals on his page the day you buy and check them again when your package ends. They show whether the period you paid for won.",
     "Count units, not wins. With plays from 2 to 7 units, a few big losers can sink a good win rate.",
     "Read the guarantee for the words refund, credit and extension. Here every version is more picks or credit, and season packages have no guarantee.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get at a licensed sportsbook.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Write down each pick yourself the moment you receive it, with the line you can actually get at a licensed sportsbook."
   ],
   "faq": [
     [

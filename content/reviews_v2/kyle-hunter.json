@@ -163,9 +163,9 @@
   "our_data": {
     "matched": true,
     "text": "Watchdog graded 28 Kyle Hunter plays posted before the start, 14 Sep 2026 to 17 Oct 2026: 16 won, 11 lost, 1 push, +3.51 units at one unit each. A sample of what was posted publicly, not a full record.",
-    "context": "For scale: the runs on the sales pages show about 58% to 63% winners, while the network's own all time table shows 53.1%. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "context": "For scale: the runs on the sales pages show about 58% to 63% winners, while the network's own all time table shows 53.1%."
   },
-  "customers_intro": "Independent buyer evidence on Kyle Hunter is thin. The largest pool of comments sits on a site that is part of the network selling his picks. Outside it, we found forum members reposting his plays and a few short comments. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent buyer evidence on Kyle Hunter is thin. The largest pool of comments sits on a site that is part of the network selling his picks. Outside it, we found forum members reposting his plays and a few short comments.",
   "customers": [
     {
       "type": "Our summary",
@@ -232,7 +232,6 @@
     "Almost no independent buyer feedback exists, and the main forum that reposts his plays now bans posting them."
   ],
   "checklist": [
-    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
     "Compare any run you are shown with his 53.1% all time rate. A short run well above it is the exception, not the norm.",
     "Count units, not wins. A small edge spread over thousands of plays can vanish if you get a worse line than his.",
     "Read the guarantee for the words refund, credit and extension. Both storefronts pay credit or extra time.",

@@ -12,7 +12,7 @@
   "dek": "Barstool Sports personality Stu \"The Source\" Feiner sells his own picks through stufeiner.com, from a $55 five pick special to $50,000 season passes, paid through PayPal. We found no guarantee and no full record. His own tier records work out to 52% to 58% winners with no odds shown, the only outside test we could open is a 1991 Sports Illustrated check he lost 19-32, and buyer posts from 2004 to 2025 are mostly negative.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Stu Feiner's paid picks. This page reports what we could check and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record of Stu Feiner's paid picks."
   },
   "glance": [
     [
@@ -156,8 +156,8 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Stu Feiner pick account is matched to a Watchdog graded record, so we make no claim about how his picks perform.",
-    "context": "For scale: Stu's own homepage tier records range from about 52% to 58% winners, 54.2% combined, with no odds shown. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no Stu Feiner pick account is matched to a Watchdog graded record, so we make no claim about how his picks perform.",
+    "context": "For scale: Stu's own homepage tier records range from about 52% to 58% winners, 54.2% combined, with no odds shown."
   },
   "customers_intro": "Independent customer evidence on Stu Feiner's paid picks is thin and mostly old. He is far better known as a media personality than as a reviewed service, and most of what we found is opinion rather than buyer experience. A few people say they bought his picks; their reports are below, along with forum opinion and how much weight each can carry.",
   "customers": [
@@ -319,9 +319,7 @@
     "Ask what period the homepage tier records cover and at what odds, and whether every best bet sold is counted.",
     "Before paying, confirm in writing which plays a package includes. The daily passes exclude the bigger best bets.",
     "Decide your limit before you call. Several buyers describe being pushed toward bigger packages on the phone.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
-    "Count units, not wins. A 54% record at heavy favorites can still lose money.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Count units, not wins. A 54% record at heavy favorites can still lose money."
   ],
   "faq": [
     [

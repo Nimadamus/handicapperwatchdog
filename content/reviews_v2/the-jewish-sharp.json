@@ -12,7 +12,7 @@
   "dek": "A pick seller built on X and Instagram that sells a $39.95 day pass, a $795.95 week, and monthly packages from $2,995 to $9,995. Its records are half month spreadsheets and winning tickets it publishes itself. On 20 Nov 2026 its terms said only that \"refunds are not available for any reason\"; the 30 day money back wording we quoted on 7 Nov was gone.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record for The Jewish Sharp. This page reports what we could check on 20 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record for The Jewish Sharp."
   },
   "glance": [
     [
@@ -159,16 +159,16 @@
   ],
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. The Jewish Sharp does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming The Jewish Sharp most often were TheCappersHub__, dacapperclub, JameslockZ__, ItsCappersPicks. From 23 Sep 2026 to 10 Nov 2026 we took every play our parser could read inside a The Jewish Sharp block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
-    "Result: 4 plays, 3 won, 1 lost, +1.44 units, a return of +36.1% per unit risked. By sport: too few per sport to split. By month: September 0 won, 1 lost, -1.00 units; October 2 won, 0 lost, +1.82 units; November 1 won, 0 lost, +0.62 units.",
-    "What it means: 4 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
+    "Result: 4 plays, 3 won, 1 lost, +1.44 units, a return of +36.1% per unit risked. By month: September 0 won, 1 lost, -1.00 units; October 2 won, 0 lost, +1.82 units; November 1 won, 0 lost, +0.62 units.",
+    "What it means: 4 decided plays is far too few to judge.",
     "Independently verifiable: nothing we could find. There is no full, time stamped log of every pick with the line, odds and send time on a third party site, no contest results run by a third party, and no regulator or court record. Picks go out by email and DM, and the store says they do not appear on the buyer's account page, so even buyers get no site record.",
     "Seller marketing: half month spreadsheets with records like 28-4 and 24-4, photos of winning tickets, and streak posts on X. These are made and chosen by the seller. Losing days appear in customer complaints (see below) but not in the posts we read. A Reddit buyer in June 2025 alleged that picks sent in an app were edited after games ended, giving the example of a spread changed from 3 points to 2 after the team won by 2. We could not check this.",
     "CapperTek lists the site as a \"Pro Featured Verified Service\". CapperTek's own page says verification is \"100% free\" and that it will \"improve your service legitimacy\" and bring more traffic through its directory. It is not an audit of results."
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no The Jewish Sharp account is matched to a Watchdog graded record, so we make no claim about how its picks perform.",
-    "context": "For scale: the seller's spreadsheet headlines, such as 28-4, imply winning close to 88% of plays, while Reddit buyers who posted counts reported under 50%. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no The Jewish Sharp account is matched to a Watchdog graded record, so we make no claim about how its picks perform.",
+    "context": "For scale: the seller's spreadsheet headlines, such as 28-4, imply winning close to 88% of plays, while Reddit buyers who posted counts reported under 50%."
   },
   "customers_intro": "Customer evidence on The Jewish Sharp is split and contested. Every review on CapperTek is glowing, while three Reddit threads mix praise with sharp complaints, and Reddit moderators said one thread had likely been manipulated. None of it includes a full record, and we could not confirm who any reviewer is.",
   "customers": [
@@ -291,8 +291,7 @@
     "Screenshot or photograph every pick the moment it arrives, with the time, before the game starts.",
     "Ask in writing whether the record you were shown includes the regular plays, the extra plays or both.",
     "Count units, not wins. A 60% record at heavy favorites can still lose money.",
-    "Be wary of glowing reviews posted in clusters or with identical wording.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Be wary of glowing reviews posted in clusters or with identical wording."
   ],
   "faq": [
     [

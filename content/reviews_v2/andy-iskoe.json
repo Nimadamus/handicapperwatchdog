@@ -12,7 +12,7 @@
   "dek": "A Las Vegas handicapper who says he founded Logical Approach in 1982 and still runs it alone. He sells football newsletters and a Premium Selections Service for the rest of the season, from $75 to $425, through a plain old style website. He makes no lock claims and admits losing seasons, but the only full season figure he posts is from 2008, and the best known outside record of him is a 0 and 10 contest start in 2003.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Andy Iskoe or Logical Approach picks. This page reports what we could check on 20 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record of Andy Iskoe or Logical Approach picks."
   },
   "glance": [
     [
@@ -154,8 +154,8 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Andy Iskoe or Logical Approach pick history is matched to a Watchdog graded record, so we make no claim about how Andy Iskoe performs.",
-    "context": "For scale: the only season figure on his site is 59.1% from 2008, and the only outside figure we saw is an unsourced 51% lifetime claim from a 2010 forum post. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no Andy Iskoe or Logical Approach pick history is matched to a Watchdog graded record, so we make no claim about how Andy Iskoe performs.",
+    "context": "For scale: the only season figure on his site is 59.1% from 2008, and the only outside figure we saw is an unsourced 51% lifetime claim from a 2010 forum post."
   },
   "customers_intro": "Independent customer evidence on Andy Iskoe is thin and mostly old. Below is everything we found, in date order after our summary, and how much weight it can carry.",
   "customers": [
@@ -250,7 +250,6 @@
     "If you buy the teaser newsletter, track each leg. Two team, 6 point teasers at -110 need about 72.4% per leg to break even.",
     "Ask in writing what happens if you are unhappy, since the order form states no refund terms. Ask for a sample file before buying any data base.",
     "Follow the free daily selection for a few weeks and log it yourself before paying for a season.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
     "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways, as his own 0 and 10 start in 2003 shows."
   ],
   "faq": [

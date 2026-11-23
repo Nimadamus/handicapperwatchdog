@@ -178,7 +178,7 @@
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. Jim Feist does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Jim Feist most often were Churchillsprts, TheGodOfCappers, 1218Sports, EZMSports. From 1 Nov 2026 to 1 Nov 2026 we took every play our parser could read inside a Jim Feist block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
     "Result: 3 plays, 2 won, 1 lost, +0.82 units, a return of +27.3% per unit risked. By sport: NFL 2 won, 1 lost, +0.82 units. By month: November 2 won, 1 lost, +0.82 units.",
-    "What it means: 3 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
+    "What it means: 3 decided plays is far too few to judge.",
     "What a buyer can verify independently: nothing that we could find. We found no full, time stamped log of every Jim Feist pick with the line, the odds and the release time kept by an outside party.",
     "What the seller side publishes: the network leaderboard by sport and period, streak lines and a yesterday table on the storefronts. These are graded by the same network that sells the picks, on the odds the handicapper selected, so they are the seller's own figures, not an audit. CappersPicks calls its figures documented, and its footer says the storefront is \"located in Antigua, West Indies.\"",
     "jimfeist.com itself shows no record on the pages we read. Its picks area lists categories for Jim's picks and for \"Big Mike's Picks,\" a second capper the site says has worked in the industry since 1986, starting at National Sports Services.",
@@ -186,10 +186,10 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Jim Feist pick history is matched to a Watchdog graded record, so we make no claim about how Jim Feist performs beyond what the selling network publishes.",
-    "context": "For scale: his best board on the selling network is 61.4% winners in one WNBA season, and his NFL line this season is 54.3%. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no Jim Feist pick history is matched to a Watchdog graded record, so we make no claim about how Jim Feist performs beyond what the selling network publishes.",
+    "context": "For scale: his best board on the selling network is 61.4% winners in one WNBA season, and his NFL line this season is 54.3%."
   },
-  "customers_intro": "Independent customer evidence on Jim Feist is old, spread over four decades, and mostly about the sales process rather than results. The largest pool of current comments sits on a site that is part of the network selling his picks. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent customer evidence on Jim Feist is old, spread over four decades, and mostly about the sales process rather than results. The largest pool of current comments sits on a site that is part of the network selling his picks.",
   "customers": [
     {
       "type": "Our summary",

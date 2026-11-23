@@ -12,7 +12,7 @@
   "dek": "A Las Vegas handicapper who says he has been a professional since 1984. Old Daily Racing Form reports confirm he was a regular in Las Vegas handicapping contests in the 2000s. Today he sells through WagerTalk at $39 a day up to $1,999 a year. The guarantee pays store credit, the record shown is streaks and a last 20 list, and we found almost no buyer comment about him by name.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Bryan Leonard picks. This page reports what we could check on 20 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record of Bryan Leonard picks."
   },
   "glance": [
     [
@@ -147,18 +147,18 @@
   ],
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. Bryan Leonard does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Bryan Leonard most often were BuzzKill (TheRX newsletters thread), 1218Sports, WagerTalkPicks, TheGodOfCappers. From 15 Sep 2026 to 1 Oct 2026 we took every play our parser could read inside a Bryan Leonard block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
-    "Result: 6 plays, 5 won, 1 lost, +3.33 units, a return of +55.4% per unit risked. By sport: too few per sport to split. By month: September 4 won, 1 lost, +2.64 units; October 1 won, 0 lost, +0.69 units.",
-    "What it means: 6 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
+    "Result: 6 plays, 5 won, 1 lost, +3.33 units, a return of +55.4% per unit risked. By month: September 4 won, 1 lost, +2.64 units; October 1 won, 0 lost, +0.69 units.",
+    "What it means: 6 decided plays is far too few to judge.",
     "What a buyer can verify independently: his contest appearances in the 2000s, through Daily Racing Form reports. For his paid picks we found no full, time stamped log of every play with the line, the odds and the release time, and no court or regulator record about him.",
     "What the seller publishes: WagerTalk lists his last 20 graded picks with odds and a result. On 20 Nov 2026 those 20 picks, from 15 to 19 Nov, went 9 wins and 11 losses: 3 and 5 in the NHL, 5 and 4 in college basketball, 1 and 1 in the NBA and 0 and 1 in the NFL. Three days earlier the same list read 11 and 9. The Who's Hot board showed him at 11 and 8 over the last 7 days and 22 and 14 over the last 30 days in college basketball. These are graded by the store that sells the picks, so they are marketing, not an audit.",
     "His plays are copied by users into forum threads, but nobody we found keeps a long running independent tally."
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Bryan Leonard pick history is matched to a Watchdog graded record, so we make no claim about how Bryan Leonard performs.",
-    "context": "For scale: the streaks on his WagerTalk profile run from about 56% to 61% winners, and his last 20 picks on 20 Nov 2026 were 45%. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no Bryan Leonard pick history is matched to a Watchdog graded record, so we make no claim about how Bryan Leonard performs.",
+    "context": "For scale: the streaks on his WagerTalk profile run from about 56% to 61% winners, and his last 20 picks on 20 Nov 2026 were 45%."
   },
-  "customers_intro": "Independent customer evidence on Bryan Leonard is very thin. We found forum posts that copy his plays, contest coverage from the 2000s, and reviews that criticize the WagerTalk store in general. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent customer evidence on Bryan Leonard is very thin. We found forum posts that copy his plays, contest coverage from the 2000s, and reviews that criticize the WagerTalk store in general.",
   "customers": [
     {
       "type": "Our summary",
@@ -228,8 +228,7 @@
     "Ask when each Hot Streak started. A run without a start date tells you little.",
     "Count units, not wins. A 60% record at heavy favorites can still lose money.",
     "Read the guarantee for the words refund, credit and extension. WagerTalk's guarantee is store credit.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Write down each pick yourself the moment you receive it, with the line you can actually get."
   ],
   "faq": [
     [

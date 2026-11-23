@@ -136,10 +136,10 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no BettingPros pick history is matched to a Watchdog graded record, so we make no claim about how BettingPros performs.",
-    "context": "For scale: BettingPros' own NBA record shows 5 star props at 48.2% this season and the sales strip showed 85% for one NFL week. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. Many props are priced well past -110, so a hit rate alone does not show profit."
+    "text": "In this edition no BettingPros pick history is matched to a Watchdog graded record, so we make no claim about how BettingPros performs.",
+    "context": "For scale: BettingPros' own NBA record shows 5 star props at 48.2% this season and the sales strip showed 85% for one NFL week. Many props are priced well past -110, so a hit rate alone does not show profit."
   },
-  "customers_intro": "Independent buyer evidence on BettingPros is spread over several years but mostly light. It is App Store reviews and Reddit threads where bettors compare prop research tools. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent buyer evidence on BettingPros is spread over several years but mostly light. It is App Store reviews and Reddit threads where bettors compare prop research tools.",
   "customers": [
     {
       "type": "Our summary",

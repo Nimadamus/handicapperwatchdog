@@ -12,7 +12,7 @@
   "dek": "A handicapper known from Proline, Sports Central radio and The Winning Edge who sold picks from 1982 until 2022. He died on 7 Sep 2022 at 68. His last sales page, on Big Al, is gone; we found no Larry Ness package on sale today, no full record of his picks, and forum opinion that splits between respect and distrust.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Larry Ness picks. This page reports what we could check on 20 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record of Larry Ness picks."
   },
   "glance": [
     [
@@ -138,8 +138,8 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Larry Ness pick history is matched to a Watchdog graded record, so we make no claim about how Larry Ness performed.",
-    "context": "For scale: the seasons listed on his last sales page ran from about 56% to 58% winners. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no Larry Ness pick history is matched to a Watchdog graded record, so we make no claim about how Larry Ness performed.",
+    "context": "For scale: the seasons listed on his last sales page ran from about 56% to 58% winners."
   },
   "customers_intro": "Independent comment on Larry Ness comes from three forum threads, one from 2007 and two written the week he died in 2022. None includes a receipt or a full record. Below is what we found, positive and negative, and how much weight it can carry.",
   "customers": [
@@ -238,8 +238,7 @@
     "Ask any seller for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
     "When a record is shown in dollars, ask what stake each star rating means and work out the flat stake result yourself.",
     "Read the guarantee for the words refund, credit and extension. Most \"guarantees\" in this business are credits.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Write down each pick yourself the moment you receive it, with the line you can actually get."
   ],
   "faq": [
     [

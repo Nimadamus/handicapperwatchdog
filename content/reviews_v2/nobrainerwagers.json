@@ -140,8 +140,8 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition NoBrainerWagers is not matched to a Watchdog graded record, so we make no claim about how its picks perform beyond our count of the seller's own log.",
-    "context": "For scale: NoBrainerWagers advertises a ten year win rate of 63.9%, and its 2026 log wins 58.6% of decided picks at mostly favorite prices. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even, and at -120 about 54.5%."
+    "text": "In this edition NoBrainerWagers is not matched to a Watchdog graded record, so we make no claim about how its picks perform beyond our count of the seller's own log.",
+    "context": "For scale: NoBrainerWagers advertises a ten year win rate of 63.9%, and its 2026 log wins 58.6% of decided picks at mostly favorite prices. At standard -110 odds a bettor needs about 52.4% to break even, and at -120 about 54.5%."
   },
   "customers_intro": "NoBrainerWagers has a large review file, and most of it is five stars on pages the seller can influence. The file also shows reviews arriving in bursts on single days, five star Whop reviews written minutes after purchase, a burst of removed Reddit comments in Feb 2024, and a steady line of complaints about refunds and upsells. Below is what we read and how much weight it can carry.",
   "customers": [
@@ -309,12 +309,10 @@
   ],
   "checklist": [
     "Download the bet history feed and check that new picks are being added, with odds, before you pay.",
-    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
     "Count units, not wins. A 60% record at -150 favorites loses money; at -120 you need about 54.5% just to break even.",
     "Get any refund or guarantee promise in writing before you pay, and pay by a method with buyer protection; avoid sending money by Zelle.",
     "Note the renewal date. Memberships renew automatically until you email support to cancel.",
-    "Size bets yourself. Do not put 6% to 12% of a bankroll on one game because a package says so.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get."
+    "Size bets yourself. Do not put 6% to 12% of a bankroll on one game because a package says so."
   ],
   "faq": [
     [

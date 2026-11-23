@@ -12,7 +12,7 @@
   "dek": "David Oancea, known as Vegas Dave, sells picks to his 9.1 million Instagram followers by email, not from a public price page. His old site is parked for sale, his last reported prices date from 2024, he has a 2019 federal misdemeanor plea, and in 2026 Las Vegas judges issued two arrest warrants after he did not comply with a contempt order in a $30.2 million civil case.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Vegas Dave's paid picks. This page reports what we could check and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record of Vegas Dave's paid picks."
   },
   "glance": [
     [
@@ -151,8 +151,8 @@
   ],
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. Vegas Dave does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Vegas Dave most often were kyhawk, stevenash, CobyValentine24, BeatinTheBookie. From 6 Nov 2026 to 6 Nov 2026 we took every play our parser could read inside a Vegas Dave block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
-    "Result: 1 plays, 1 won, 0 lost, +0.91 units, a return of +90.9% per unit risked. By sport: too few per sport to split. By month: November 1 won, 0 lost, +0.91 units.",
-    "What it means: 1 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
+    "Result: 1 plays, 1 won, 0 lost, +0.91 units, a return of +90.9% per unit risked. By month: November 1 won, 0 lost, +0.91 units.",
+    "What it means: 1 decided plays is far too few to judge.",
     "What a buyer can verify independently about his picks: nothing we could find. He does not publish a full, time stamped log of every pick with the line, the odds and the release time, and his old sales site no longer loads. Casino.org wrote in Dec 2024 that he \"rarely shows evidence\" of his own success rate. Everything else is his own marketing.",
     "Court record, federal case: the U.S. Attorney's Office for Nevada announced on 14 Apr 2017 that a grand jury had indicted him on nine counts of misuse of Social Security numbers and 10 counts of causing false currency transaction reports, alleging he opened casino player accounts with numbers that were not his. He pleaded not guilty at his arraignment, the Review-Journal reported. The Review-Journal reported in Jan 2019 that he pleaded guilty to a single misdemeanor and agreed to a $550,000 civil forfeiture, and in May 2019 that U.S. District Judge Jennifer Dorsey sentenced him to three years of probation, problem gambling counseling and 150 hours of community service, and ordered him to stay out of Nevada sportsbooks for three years.",
     "Court record, civil case: the Review-Journal reported on 14 Nov 2025 that a district judge had ordered him in July 2025 to pay $30.2 million to Cabo Platinum, a vacation rental company in Cabo San Lucas that said he sabotaged bookings at villas tied to him. Casino.org reported on 21 Jul 2026 that, after a six day evidentiary hearing, District Judge Tara Clark Newberry held him in contempt, writing \"This court finds that Mr. Oancea was not a credible witness\" and calling his claimed inability to comply \"self-created, strategic\". He had been ordered in September 2025 to hand over three Mexican properties, about $375,000 in cryptocurrency, a Richard Mille watch and several Hermès Birkin bags, and court records showed he had not. He was also ordered to pay nearly $294,000 in attorney fees.",
@@ -161,10 +161,10 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Vegas Dave pick service is matched to a Watchdog graded record, so we make no claim about how his picks perform.",
-    "context": "For scale: he has claimed to be right 90 percent of the time. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no Vegas Dave pick service is matched to a Watchdog graded record, so we make no claim about how his picks perform.",
+    "context": "For scale: he has claimed to be right 90 percent of the time."
   },
-  "customers_intro": "Independent buyer evidence on Vegas Dave is thin for someone so famous. Across TheRX, Sportsbook Review, Covers and Reddit from 2017 to 2026 we found many opinions about him but very few first hand accounts of buying a package, and none with a full record of what a package returned. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent buyer evidence on Vegas Dave is thin for someone so famous. Across TheRX, Sportsbook Review, Covers and Reddit from 2017 to 2026 we found many opinions about him but very few first hand accounts of buying a package, and none with a full record of what a package returned.",
   "customers": [
     {
       "type": "Our summary",
@@ -290,8 +290,7 @@
     "Get the package terms, including any guarantee, in writing before paying, since there is no public terms page.",
     "Ask what stake size any weekly profit figure assumes, and whether you could afford a losing week at that stake.",
     "Be wary of third party accounts reselling his picks; there is no way to know where the picks came from.",
-    "Read the current court coverage before sending money to anyone under an active warrant.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Read the current court coverage before sending money to anyone under an active warrant."
   ],
   "faq": [
     [

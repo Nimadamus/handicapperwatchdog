@@ -12,7 +12,7 @@
   "dek": "VegasWinners.com is the pick store built around Wayne Allyn Root. On 20 Nov 2026 it had one fresh pick for sale, Root's, at $30. The refund policy says no refunds, the site publishes no full pick log, and its parent company told the SEC in October 2026 that it earned $594 in the first half of 2026 and is now focused on a prediction market product.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record for Vegas Winners or any of its handicappers. This page reports what we could check on 20 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record for Vegas Winners or any of its handicappers."
   },
   "glance": [
     [
@@ -136,8 +136,8 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Vegas Winners handicapper is matched to a Watchdog graded record, so we make no claim about how these handicappers perform.",
-    "context": "For scale: Vegas Winners copy cites runs of 68% to 75%. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no Vegas Winners handicapper is matched to a Watchdog graded record, so we make no claim about how these handicappers perform.",
+    "context": "For scale: Vegas Winners copy cites runs of 68% to 75%."
   },
   "customers_intro": "Buyer evidence on Vegas Winners as a store is very thin. CapperTek lists it with no reviews and the Better Business Bureau has no listing. The main material is a 2023 TheRX thread where subscribers discussed Root's plays, a 2025 TheSpread comment, and older forum talk about Root himself from before Vegas Winners existed. Our Reddit search was partial: the Reddit archive's full text search timed out or refused requests on 17 and 20 Nov 2026, and our saved copy of r/sportsbook and r/sportsbetting posts from 2024 to 2026 had no mention of Vegas Winners.",
   "customers": [
@@ -224,9 +224,7 @@
     "Before you prepay for a month or season by email, get the price, the start and end dates and the refund terms in writing.",
     "Ask which \"specific individual cases\" earn a credit before you buy.",
     "Count units, not wins. A 70% run over a few weeks means little.",
-    "Read the parent company's latest SEC filing; a seller in financial trouble may not be around to deliver a season package.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
-    "Give any handicapper a few hundred picks before you call them a winner."
+    "Read the parent company's latest SEC filing; a seller in financial trouble may not be around to deliver a season package."
   ],
   "faq": [
     [

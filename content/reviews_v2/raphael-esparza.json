@@ -12,7 +12,7 @@
   "dek": "A former Las Vegas sportsbook manager who sells picks on Doc's Sports as The Vegas Sports Informer. Packages run from $30 for one day to $850 for an NBA season. Losing packages earn credit or extra days, never cash, and every record we saw is a run chosen by the seller.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Raphael Esparza picks. This page reports what we could check on 17 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record of Raphael Esparza picks."
   },
   "glance": [
     [
@@ -174,18 +174,18 @@
   ],
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. Raphael Esparza does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Raphael Esparza most often were TheGodOfCappers, EZMSports, Nonagon. From 22 Sep 2026 to 24 Sep 2026 we took every play our parser could read inside a Raphael Esparza block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
-    "Result: 4 plays, 2 won, 2 lost, -0.18 units, a return of -4.5% per unit risked. By sport: too few per sport to split. By month: September 2 won, 2 lost, -0.18 units.",
-    "What it means: 4 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
+    "Result: 4 plays, 2 won, 2 lost, -0.18 units, a return of -4.5% per unit risked. By month: September 2 won, 2 lost, -0.18 units.",
+    "What it means: 4 decided plays is far too few to judge.",
     "What a buyer can verify independently: nothing that we could find. We found no full, time stamped log of every Esparza pick with line, odds and release time, no third party contest results, and no court or regulator record about him or his service.",
     "What the seller publishes: runs, dollar totals and counts of winning seasons by sport, plus a list of recent winners such as \"UFC 333 6U Winner\" and \"2025 Belmont Stakes Winner $429\". On 17 Nov 2026 the Doc's Sports roster page said he had \"cashed 4 of 6 NHL plays\". These are graded by the network that sells the picks and show no losing plays alongside the winners.",
     "What buyers post: one TheRX member wrote in January 2026 that he tracks Doc's Sports plays the day after release and that fading Esparza's NBA plays was up about 30 units and his college basketball plays about 20 units. He shared no log, so this is one person's unverified count."
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Raphael Esparza pick history is matched to a Watchdog graded record, so we make no claim about how Raphael Esparza performs.",
-    "context": "For scale: the runs on his Doc's Sports page that show a win loss count range from 61.9% to 77.1% winners. On the Watchdog board on 17 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no Raphael Esparza pick history is matched to a Watchdog graded record, so we make no claim about how Raphael Esparza performs.",
+    "context": "For scale: the runs on his Doc's Sports page that show a win loss count range from 61.9% to 77.1% winners."
   },
-  "customers_intro": "Independent customer evidence about Raphael Esparza is very thin. Most forum mentions only pass his picks along. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent customer evidence about Raphael Esparza is very thin. Most forum mentions only pass his picks along.",
   "customers": [
     {
       "type": "Our summary",
@@ -252,8 +252,7 @@
     "Convert the dollar figures into units and check the odds. A run that looks big in dollars can come from a few large unit plays.",
     "Read the guarantee for the words refund, credit and extend. Here a loss earns credit or more days, and season packages have no guarantee wording.",
     "Start with a one day or one week package in a single sport before paying for a season.",
-    "Record every pick yourself the moment you get it, with the line you can actually bet.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Record every pick yourself the moment you get it, with the line you can actually bet."
   ],
   "faq": [
     [

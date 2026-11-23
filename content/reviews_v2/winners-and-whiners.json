@@ -12,7 +12,7 @@
   "dek": "A pick marketplace with 35 handicappers selling single plays from $15 to $35, three day passes from $49 to $69, Flex Picks from $39 a day and a Power Pass at $199 a day for every handicapper. Its refund policy names WagerTalk's parent company as the seller, and every record on the site is graded and displayed by the network itself.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record for Winners and Whiners or any handicapper who sells on it. This page reports what we could check on 20 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record for Winners and Whiners or any handicapper who sells on it."
   },
   "glance": [
     [
@@ -159,8 +159,8 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Winners and Whiners handicapper is matched to a Watchdog graded record, so we make no claim about how these handicappers perform.",
-    "context": "For scale: the best year to date record on the Winners and Whiners leaderboard on 20 Nov 2026 was 53.69% winners. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no Winners and Whiners handicapper is matched to a Watchdog graded record, so we make no claim about how these handicappers perform.",
+    "context": "For scale: the best year to date record on the Winners and Whiners leaderboard on 20 Nov 2026 was 53.69% winners."
   },
   "customers_intro": "Independent customer evidence on Winners and Whiners is thin. We found no review profile with reviews and no buyer describing its paid picks. What exists is a handful of Reddit and Covers posts, almost all about its free predictions. Below is everything we found.",
   "customers": [
@@ -273,8 +273,7 @@
     "Compare any record in a sales blurb with the handicapper's line on the Last 365 leaderboard before buying.",
     "Count units, not wins. A 60% record at heavy favorites can still lose money.",
     "Read the guarantee for the words refund, credit and extension. This one is store credit you pay extra for.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Write down each pick yourself the moment you receive it, with the line you can actually get."
   ],
   "faq": [
     [

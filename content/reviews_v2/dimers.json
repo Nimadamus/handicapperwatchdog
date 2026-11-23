@@ -156,8 +156,8 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Dimers model or pick feed is matched to a Watchdog graded record, so we make no claim about how Dimers picks perform.",
-    "context": "For scale: Dimers advertises strike rates near 60% to 75% on several markets. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even, and on favorites the break even rate is higher."
+    "text": "In this edition no Dimers model or pick feed is matched to a Watchdog graded record, so we make no claim about how Dimers picks perform.",
+    "context": "For scale: Dimers advertises strike rates near 60% to 75% on several markets. At standard -110 odds a bettor needs about 52.4% to break even, and on favorites the break even rate is higher."
   },
   "customers_intro": "Independent bettor evidence on Dimers is spread thin across Reddit, two app stores and one small review site. Most of it treats Dimers as a free research tool rather than a paid pick service. Below is everything we read and how much weight it can carry.",
   "customers": [

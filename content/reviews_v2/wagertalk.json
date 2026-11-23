@@ -141,8 +141,8 @@
   ],
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. WagerTalk does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming WagerTalk most often were WagerTalkPicks, SteveMerril, teddy_covers, BuzzKill (TheRX newsletters thread). From 14 Nov 2026 to 14 Nov 2026 we took every play our parser could read inside a WagerTalk block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
-    "Result: 1 plays, 0 won, 1 lost, -1.00 units, a return of -100.0% per unit risked. By sport: too few per sport to split. By month: November 0 won, 1 lost, -1.00 units.",
-    "What it means: 1 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
+    "Result: 1 plays, 0 won, 1 lost, -1.00 units, a return of -100.0% per unit risked. By month: November 0 won, 1 lost, -1.00 units.",
+    "What it means: 1 decided plays is far too few to judge.",
     "What a buyer can verify independently: nothing we could find. We found no full, time stamped log of every pick kept by a third party, no contest results run by an outside organizer that we opened, and no regulator or court record. Oskeim Sports cites awards from The Sports Monitor, a monitoring service, but we did not open those results and make no claim about them.",
     "What WagerTalk itself publishes: each handicapper profile shows a Last 20 list with the date, sport, pick, price and a win or loss. That is more than many pick sellers show, but it is 20 picks, it gives no release time and no play size, and it is kept by the company that sells the picks. Season and streak totals in the sales copy come from the same source.",
     "A CapperTek reviewer in December 2021 alleged that WagerTalk changes results and removes losses from profiles. We could not check that claim and do not repeat it as fact. It is one more reason to keep your own log.",
@@ -150,8 +150,8 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no WagerTalk handicapper is matched to a Watchdog graded record, so we make no claim about how these handicappers perform.",
-    "context": "For scale: WagerTalk sales copy features short runs at 70% and higher, while the four Last 20 lists we added up came to 39-40-1 combined. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no WagerTalk handicapper is matched to a Watchdog graded record, so we make no claim about how these handicappers perform.",
+    "context": "For scale: WagerTalk sales copy features short runs at 70% and higher, while the four Last 20 lists we added up came to 39-40-1 combined."
   },
   "customers_intro": "Independent customer evidence on WagerTalk is thin and one sided. CapperTek lists 14 reviews from March 2021 to July 2026, and none we read was positive; one has no text. Reddit, TheRX and Sportsbook Review add a handful of buyer posts from 2024 to 2026, all describing losses. Trustpilot had no reviews when we checked. Unhappy buyers are the likeliest to write, so this tells you what goes wrong for some buyers, not how many. CapperTek says its reviews are user generated and it does not guarantee their accuracy.",
   "customers": [
@@ -273,9 +273,7 @@
     "Ask for every pick from the last 12 months with the line, the odds, the size and the time it was sent. A slice is not a record.",
     "Count units, not wins. Many WagerTalk plays are favorites and parlays where a winning percentage hides the price.",
     "Skip the guarantee unless store credit is worth the extra $15 or so to you; it never returns cash.",
-    "Start with a day or a $49 three day pass, not a year.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Start with a day or a $49 three day pass, not a year."
   ],
   "faq": [
     [

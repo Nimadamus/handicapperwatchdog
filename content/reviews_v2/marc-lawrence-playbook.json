@@ -12,7 +12,7 @@
   "dek": "A long running football newsletter and pick business. Single picks cost $40 to $60 on a pay after you win basis, newsletters run $11 an issue to $65 a season, and pick specials run $99 to $199. The seller grades its own report card, and its headline records did not match our count. An independent forum tracker that grades the newsletter plays at the printed lines shows 2025 NFL star plays at 26-27-1.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record for Marc Lawrence or any Playbook handicapper. This page reports what we could check and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record for Marc Lawrence or any Playbook handicapper."
   },
   "glance": [
     [
@@ -172,7 +172,7 @@
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. Marc Lawrence does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Marc Lawrence most often were BuzzKill (TheRX newsletters thread), jillmark, 1218Sports, mendozaline. From 14 Sep 2026 to 14 Nov 2026 we took every play our parser could read inside a Marc Lawrence block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
     "Result: 5 plays, 3 won, 2 lost, +0.71 units, a return of +14.2% per unit risked. By sport: NFL 2 won, 1 lost, +0.82 units. By month: September 3 won, 0 lost, +2.71 units; October 0 won, 1 lost, -1.00 units; November 0 won, 1 lost, -1.00 units.",
-    "What it means: 5 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
+    "What it means: 5 decided plays is far too few to judge.",
     "What is independently verifiable: no full, time stamped log of Marc's paid picks kept by a third party, no contest standings we could open, and no court or regulator record involving Marc Lawrence or Playbook in our searches. A forum member said Marc placed 7th in the Westgate SuperContest a few years ago, but we could not find the standings to confirm it.",
     "The closest thing to an outside record covers the newsletter, not the paid phone plays. A TheRX member posts weekly \"Newsletter Tracking\" that grades the rated plays \"at the lines listed in the newsletters at the time the plays were published.\" For the 2025 season (through 25 Jan 2026) that tracker had Playbook NFL 5 star plays at 7-11, 4 star at 9-9 and 3 star at 10-7-1, so 26-27-1 on all NFL star plays, and college 5, 4 and 3 star plays at 21-23-1. The Awesome Angle feature was the bright spot at 17-6-1. For 2026 through 9 Nov the tracker had college 5 star plays at 9-1, 4 star 7-3 and 3 star 3-7 (19-11 in all), and NFL star plays at 14-13. These are one forum member's counts that we did not regrade, but they use a clear method and include losing categories.",
     "What is the seller's own marketing: Playbook grades its own experts on an Experts Report Card. Each entry shows only the date, the package title and W, L or T. There is no team, side, line, odds, star rating or units won, so a buyer cannot tell whether those wins made money at the prices they could get.",
@@ -180,8 +180,8 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Marc Lawrence or Playbook Sports pick is matched to a Watchdog graded record, so we make no claim about how Marc Lawrence or the Playbook experts perform.",
-    "context": "For scale: Playbook's own report card put Marc at 62% over 90 days, while a forum tracker had his 2025 NFL newsletter star plays at 26-27-1. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no Marc Lawrence or Playbook Sports pick is matched to a Watchdog graded record, so we make no claim about how Marc Lawrence or the Playbook experts perform.",
+    "context": "For scale: Playbook's own report card put Marc at 62% over 90 days, while a forum tracker had his 2025 NFL newsletter star plays at 26-27-1."
   },
   "customers_intro": "Independent evidence on Playbook Sports is mostly forum talk, plus one forum member's weekly grading of the newsletter plays. We found no review site sample we could count. Comments split between readers who value the magazine and data and bettors who doubt the paid picks.",
   "customers": [
@@ -310,9 +310,7 @@
     "Prefer Pay After You Win over Discount Pre Paid unless you are sure you want makeup tokens instead of cash back.",
     "Read the play name as an advert. A \"100% ATS\" angle is about past games, not about Marc's results.",
     "If you buy for research, try one newsletter issue ($11 to $15) before a season, and compare its rated plays with the forum tracker's totals.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
-    "Count units, not wins. A 60% record at heavy favorites can still lose money.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Count units, not wins. A 60% record at heavy favorites can still lose money."
   ],
   "faq": [
     [

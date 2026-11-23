@@ -12,7 +12,7 @@
   "dek": "Bob Stoll has sold model based picks as Dr. Bob since 1987. This season he sells only NFL plays, at $825 for the rest of the season or $375 for four weeks, with no refund if they lose. He publishes far more record detail than most sellers, and most of it adds up when we recompute it, but he keeps the books himself and a few totals are one game off.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Dr. Bob's plays. The records on this page are the ones his own site publishes. This page reports what we could check and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record of Dr. Bob's plays. The records on this page are the ones his own site publishes."
   },
   "glance": [
     [
@@ -151,8 +151,8 @@
   ],
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. Dr. Bob Sports does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Dr. Bob Sports most often were BuzzKill (TheRX newsletters thread), VSiNLive, Track, steelerfan. From 26 Sep 2026 to 26 Sep 2026 we took every play our parser could read inside a Dr. Bob Sports block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
-    "Result: 1 plays, 0 won, 1 lost, -1.00 units, a return of -100.0% per unit risked. By sport: too few per sport to split. By month: September 0 won, 1 lost, -1.00 units.",
-    "What it means: 1 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
+    "Result: 1 plays, 0 won, 1 lost, -1.00 units, a return of -100.0% per unit risked. By month: September 0 won, 1 lost, -1.00 units.",
+    "What it means: 1 decided plays is far too few to judge.",
     "What is independently verifiable: we found no third party that holds a time stamped log of Dr. Bob's paid plays, no contest results run by an organizer, and no regulator or court record about the business. What outside reporting does confirm is his influence on lines in the mid 2000s. The Daily Racing Form reported on 19 Oct 2006 that he emailed college picks to clients at 10 a.m. Pacific on Thursdays, that Pinnacle took his games off the board within minutes, and that eight games moved at least a point within half an hour. A Wall Street Journal profile of 5 Jan 2007, reposted on TheRX, said packages then ran from $25 to $2,495 and that 10 casinos moved one bowl line by up to two points within 78 seconds.",
     "What the seller publishes, and how a buyer could check it: the past performance page has season by season tables (wins, losses, pushes and stars, split by star rating for college football and basketball), and the NFL page posts a recap of the week's paid plays with the side or total, the line and the result. On 20 Nov 2026 the week 10 recap listed five plays: Washington +2.5, Kansas City and Atlanta over 45.5, Houston and Cleveland under 41.5 at -115 (a loss), Minnesota and Green Bay under 41.5, and Carolina +2.5. This is more detail than most pick sellers show. But we saw only the current week's recap and season totals, not a complete dated archive of every play with its release time and line, and the release page is locked to subscribers.",
     "Line movement cuts both ways for a buyer. The 2006 article said plays bet after the line moved still went 40 and 24 and 7 that season, but a buyer who gets a worse number than the posted line will not match the posted record. Several reviewers on HandicappingReviews.org between 2015 and 2021 complained about exactly that.",
@@ -160,8 +160,8 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition Dr. Bob Sports is not matched to a Watchdog graded record, so we make no claim about how its plays perform.",
-    "context": "For scale: Dr. Bob's NFL page claims 57.5% on Best Bets since 2016, and his 2026 Best Bets stood at 11 and 10 and 1 on 20 Nov 2026. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition Dr. Bob Sports is not matched to a Watchdog graded record, so we make no claim about how its plays perform.",
+    "context": "For scale: Dr. Bob's NFL page claims 57.5% on Best Bets since 2016, and his 2026 Best Bets stood at 11 and 10 and 1 on 20 Nov 2026."
   },
   "customers_intro": "Independent customer evidence on Dr. Bob Sports is thin and mostly old. Over about 20 years we found one review site with buyer comments, two Sportsbook Review threads, two Las Vegas Advisor discussions and two TheRX threads. We found no Reddit discussion of the service in our archive searches, and no Trustpilot or BBB profile we could confirm. Below is all of it and how much weight it can carry.",
   "customers": [
@@ -263,8 +263,7 @@
     "Check his posted season totals against his past performance tables yourself; it takes ten minutes and shows whether the books still agree.",
     "Size bets the way he does: his units are amounts to win, so a 1 unit play at -115 risks 1.15 units.",
     "Buy late in the season only if the lower price still makes sense for the number of games left.",
-    "Remember there is no refund for losses and no refund of prepaid fees if you cancel.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Remember there is no refund for losses and no refund of prepaid fees if you cancel."
   ],
   "faq": [
     [

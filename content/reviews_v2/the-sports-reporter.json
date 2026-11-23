@@ -12,7 +12,7 @@
   "dek": "A betting newsletter founded in 1975 and nicknamed the Blue Sheet, now online only and edited by Bobby Smith. Online access costs $10.95 a day to $249.95 a year, and a six month VIP picks package costs $1,195. The site publishes no running record. The only outside numbers are a forum member's partial tallies of its Best Bets, near even over the seasons we found.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record for Sports Reporter. This page reports what we could check and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record for Sports Reporter."
   },
   "glance": [
     [
@@ -140,8 +140,8 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Sports Reporter pick is matched to a Watchdog graded record, so we make no claim about how Sports Reporter performs.",
-    "context": "For scale: on the Watchdog board on 17 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no Sports Reporter pick is matched to a Watchdog graded record, so we make no claim about how Sports Reporter performs.",
+    "context": ""
   },
   "customers_intro": "Independent buyer evidence is thin and comes from two forums. On TheRX the paper was shared and graded weekly until 2025; on Sportsbook Review one long time reader commented on it in 2020. We found no review site sample we could count, and our Reddit search was partial because the archive we use kept timing out.",
   "customers": [

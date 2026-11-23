@@ -12,7 +12,7 @@
   "dek": "The paid tier of Action Network, a betting media site that Better Collective bought for $240 million in 2021. PRO costs $14.99 a week to $119.99 a year on the web and sells faster pick alerts, projections, money percentages and system picks. Its terms say payments are nonrefundable, its expert picks are free anyway, and the business also earns commissions from sportsbooks. Users mostly praise the data and the bet tracker and criticize the picks.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record for Action Network PRO or for any Action Network expert. This page reports what we could check on 20 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record for Action Network PRO or for any Action Network expert."
   },
   "glance": [
     [
@@ -131,18 +131,18 @@
   ],
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. Action Network PRO does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Action Network PRO most often were ActionNetworkHQ, ParlayScience, foxedgeai, ShatearyaT8m8q. From 30 Sep 2026 to 30 Sep 2026 we took every play our parser could read inside a Action Network PRO block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
-    "Result: 1 plays, 0 won, 1 lost, -1.00 units, a return of -100.0% per unit risked. By sport: too few per sport to split. By month: September 0 won, 1 lost, -1.00 units.",
-    "What it means: 1 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
+    "Result: 1 plays, 0 won, 1 lost, -1.00 units, a return of -100.0% per unit risked. By month: September 0 won, 1 lost, -1.00 units.",
+    "What it means: 1 decided plays is far too few to judge.",
     "The free picks page lists each expert's latest picks with the line, the odds, the units and the game time, plus a last 30 day record in wins, losses and units. On 20 Nov 2026 the ten experts shown went a combined 1,267 and 1,234 (50.7%) for +41.4 units. On 7 Nov 2026 the records we saw ranged from 77 and 79 (minus 9.2 units) to 403 and 339 (+44.4 units). That is more than most pick sellers show, and it includes losing records. But we did not find a full, time stamped history for the experts or for the PRO system picks on any page we opened.",
     "The PRO page itself shows no record at all. Its feature table lists Expert Picks as free and Instant Expert Pick Alerts, PRO System Picks, Money Percentages, Prop Projections, Betting Projections and the Sharp Action Report as PRO only. So what PRO mainly sells for picks is speed and data, not access.",
     "Users have tried to keep their own score. In the forum threads we read, one Reddit user in 2021 said they had started recording PRO projections against Vegas lines and found them close so far, and another in 2023 said their trial days went well following PRO signals, then reported a few weeks later that the sharp betting signal had been losing on baseball moneylines. No user posted a long term tally."
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Action Network expert or PRO system is matched to a Watchdog graded record, so we make no claim about how these picks perform.",
-    "context": "For scale: Action Network shows its experts' records over 30 days only, and the ten shown on 20 Nov 2026 combined to 50.7%. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no Action Network expert or PRO system is matched to a Watchdog graded record, so we make no claim about how these picks perform.",
+    "context": "For scale: Action Network shows its experts' records over 30 days only, and the ten shown on 20 Nov 2026 combined to 50.7%."
   },
-  "customers_intro": "There is a lot of feedback on Action Network, and more of it is about PRO than for most services, because Reddit, Covers and Sportsbook Review members have asked \"is PRO worth it?\" many times since 2018. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "There is a lot of feedback on Action Network, and more of it is about PRO than for most services, because Reddit, Covers and Sportsbook Review members have asked \"is PRO worth it?\" many times since 2018.",
   "customers": [
     {
       "type": "Our summary",

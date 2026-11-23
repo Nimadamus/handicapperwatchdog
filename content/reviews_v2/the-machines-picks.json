@@ -12,7 +12,7 @@
   "dek": "The Machine's Picks sells memberships from a $99 day pass to $5,895 for two years and advertises 15 straight profitable years at a 62.3% win rate. We added up its own tables: the totals are consistent, but they are yearly sums with no pick log behind them, and the only individual plays shown are a three month sample it chose. Buyer reviews are few, mostly positive and short term.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record for The Machine's Picks. This page reports what we could check on 20 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record for The Machine's Picks."
   },
   "glance": [
     [
@@ -170,8 +170,8 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition The Machine's Picks is not matched to a Watchdog graded record, so we make no claim about how its picks perform.",
-    "context": "For scale: The Machine's Picks advertises 62.3% over 16,250 picks. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition The Machine's Picks is not matched to a Watchdog graded record, so we make no claim about how its picks perform.",
+    "context": "For scale: The Machine's Picks advertises 62.3% over 16,250 picks."
   },
   "customers_intro": "Customer evidence on The Machine's Picks spans 2014 to 2026 but is small: 19 Trustpilot reviews on an unclaimed profile and a handful on CapperTek. Most are positive and describe short runs or single big plays. The seller quotes several of these reviews on its own site. We found no forum thread about the service on Reddit, Sportsbook Review, TheRX or Covers. Below is everything we read and how much weight it can carry.",
   "customers": [
@@ -314,8 +314,7 @@
     "Count units, not wins. At 5 and 10 unit plays on favorites, a 60% record can still lose money.",
     "Start with the 1 Day or 3 Day pass and compare the line you can actually get with the line listed.",
     "Save your receipt and checkout email; the terms only offer remedies for delivery problems, not results.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Write down each pick yourself the moment you receive it, with the line you can actually get."
   ],
   "faq": [
     [

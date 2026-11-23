@@ -12,7 +12,7 @@
   "dek": "A betting tools company built around an odds screen, a no vig market price it calls the Unabated Line, simulators and education led by professional bettor Captain Jack Andrews. It does not sell picks. Plans run from $99 to $799 a month, new monthly Props+ and Premium members get a 14 day money back window, and in March 2026 it merged with the betslip company Gambly.",
   "status": {
     "label": "Not verified",
-    "note": "Unabated sells tools, not picks, so there is no pick record to grade. Watchdog has not checked its member profit claim. This page reports what we could check on 20 Nov 2026 and labels everything else."
+    "note": "Unabated sells tools, not picks, so there is no pick record to grade. Watchdog has not checked its member profit claim."
   },
   "glance": [
     [
@@ -158,10 +158,10 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. Unabated sells tools rather than picks, so there is no Unabated pick history to match to a Watchdog graded record, and we make no claim about how its members perform.",
-    "context": "For scale: Unabated says 96% of members report being profitable. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "Unabated sells tools rather than picks, so there is no Unabated pick history to match to a Watchdog graded record, and we make no claim about how its members perform.",
+    "context": "For scale: Unabated says 96% of members report being profitable."
   },
-  "customers_intro": "Independent posts about Unabated are fewer than for most pick sellers, and many are questions rather than reviews. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent posts about Unabated are fewer than for most pick sellers, and many are questions rather than reviews.",
   "customers": [
     {
       "type": "Our summary",

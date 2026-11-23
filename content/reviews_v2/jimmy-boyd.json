@@ -12,7 +12,7 @@
   "dek": "A handicapper who says he has sold picks since November 2002, with single picks from $29.99 and passes up to $1,999.95 a year. His record is graded by SportsCapping.com, whose own help page says Boyd Information Group, the company named on his site, is the company behind SportsCapping.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record for Jimmy Boyd. This page reports what we could check on 20 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record for Jimmy Boyd."
   },
   "glance": [
     [
@@ -160,7 +160,7 @@
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. Jimmy Boyd does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Jimmy Boyd most often were TheGodOfCappers, EZMSports, offshoreinsider. From 20 Sep 2026 to 6 Nov 2026 we took every play our parser could read inside a Jimmy Boyd block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
     "Result: 8 plays, 3 won, 5 lost, -2.27 units, a return of -28.4% per unit risked. By sport: NFL 2 won, 1 lost, +0.82 units; NCAAF 0 won, 3 lost, -3.00 units. By month: September 2 won, 0 lost, +1.82 units; October 1 won, 4 lost, -3.09 units; November 0 won, 1 lost, -1.00 units.",
-    "What it means: 8 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
+    "What it means: 8 decided plays is far too few to judge.",
     "What a buyer can verify independently: nothing complete. We found no pick log kept by a grader with no tie to the seller, and no court or regulator record about Jimmy Boyd or Boyd Information Group.",
     "What the seller's network publishes: SportsCapping shows a Jimmy Boyd archive with the date, pick, line, odds, score, result and profit for each pick, losses included. On 20 Nov 2026 its all sports row read 5,855 wins and 5,324 losses since 20 Jan 2018, with 240 pushes, 52.4%, +$20,532.50 at $100 a pick and a return of 1.65% of money risked. His top plays row read 2,813 and 2,542 since 12 Aug 2017, 52.5%. By sport, MLB (1,497 and 1,313, +$17,841 since 2017) carries most of the profit; NBA (+$14 since March 2025), NHL (+$208 since 2019) and college football (+$1,624 since 2012) are close to flat.",
     "Put in a buyer's terms: 20 Jan 2018 to 19 Nov 2026 is about 8.8 years, so the archive's profit averages about $2,300 a year at $100 a pick. A 365 day pass costs $1,999.95. At $100 a pick, the pass would have taken almost all of the average year's profit, before any line you got that was worse than his.",
@@ -168,10 +168,10 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition Jimmy Boyd is not matched to a Watchdog graded record, so we make no claim about how his picks perform.",
-    "context": "For scale: his SportsCapping all sports row since 20 Jan 2018 shows 52.4% winners. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition Jimmy Boyd is not matched to a Watchdog graded record, so we make no claim about how his picks perform.",
+    "context": "For scale: his SportsCapping all sports row since 20 Jan 2018 shows 52.4% winners."
   },
-  "customers_intro": "Independent customer evidence on Jimmy Boyd is thin and mostly old. We found one BBB complaint, nine buyer comments from 2013 to 2017 on HandicappingReviews.org that lean negative, a few TheRX posts, and a comment section on a review site that belongs to his own sales network. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent customer evidence on Jimmy Boyd is thin and mostly old. We found one BBB complaint, nine buyer comments from 2013 to 2017 on HandicappingReviews.org that lean negative, a few TheRX posts, and a comment section on a review site that belongs to his own sales network.",
   "customers": [
     {
       "type": "Our summary",
@@ -326,8 +326,7 @@
     "Add up what you would pay in a year and compare it with the archive's profit at your bet size. A small edge can be smaller than the subscription.",
     "Read the guarantee badge on the exact package. Season and rest of season passes are not covered, and replacement days carry no guarantee of their own.",
     "Write down each pick the moment you receive it, with the line you can actually get, not the posted line.",
-    "Do not deposit at an offshore sportsbook to get a free trial.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Do not deposit at an offshore sportsbook to get a free trial."
   ],
   "faq": [
     [

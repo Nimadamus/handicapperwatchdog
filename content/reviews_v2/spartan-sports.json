@@ -12,7 +12,7 @@
   "dek": "A Missouri handicapper who sells under the name Spartan on Pregame and says he spent over a decade as a local bookie. Pregame grades his picks in public. On 20 Nov 2026 his rated picks this season were 495 wins and 493 losses with a weighted dollar loss, while his top rated picks were up and his sales page leads with a long NFL Triple Star run.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Spartan picks. This page reports what we could check on 20 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record of Spartan picks."
   },
   "glance": [
     [
@@ -167,7 +167,7 @@
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. Spartan does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Spartan most often were EZMSports, MichaelMaierMD, EDMrager, 1218Sports. From 14 Sep 2026 to 14 Nov 2026 we took every play our parser could read inside a Spartan block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
     "Result: 9 plays, 8 won, 1 lost, +5.49 units, a return of +61.0% per unit risked. By sport: MLB 4 won, 0 lost, +3.53 units; NFL 2 won, 1 lost, +0.82 units. By month: September 6 won, 0 lost, +5.34 units; October 1 won, 1 lost, -0.76 units; November 1 won, 0 lost, +0.91 units.",
-    "What it means: 9 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
+    "What it means: 9 decided plays is far too few to judge.",
     "What a buyer can check: Pregame grades every rated pick and shows tables by sport and period. On 20 Nov 2026 the current season table for rated picks showed MLB 351 and 345 with 2 ties (weighted minus $2,363), college football 56 and 62 with 5 ties (minus $2,913), NFL 47 and 43 with 3 ties (plus $319), NBA 23 and 17 (plus $807), NHL 11 and 12 (minus $312), college basketball 3 and 6 (minus $360), CFL 4 and 3 (plus $38) and UFL 0 and 5 (minus $1,034). Added up, that is 495 wins and 493 losses with a weighted loss of about $5,818.",
     "His top rated picks tell a different story. With the Top Picks Only setting the current season showed MLB 61 and 44 (plus $2,346), NFL 13 and 12 with 1 tie (minus $135), college football 7 and 10 (minus $1,221) and NBA 2 and 1 (plus $270). That is 83 and 67 with 1 tie and a weighted gain of about $1,260, almost all from baseball. A buyer who only played his top picks did better than one who played everything.",
     "Recent form is flat. The last 30 days, rated picks only, were 78 wins, 71 losses and 1 tie, with a weighted loss of about $222: NBA 23 and 16 (plus $909) and college football 26 and 18 with 1 tie (plus $161) were offset by baseball 1 and 5 (minus $894), college basketball 3 and 6 (minus $360) and NHL 7 and 7 (minus $128). Pregame does not say what one unit equals in dollars, so read the dollar figures as Pregame's scale, not your own money. On 17 Nov 2026 the season table read 488 and 492 with a loss of about $6,808, so the last few days were good ones.",
@@ -175,10 +175,10 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Spartan pick history is matched to a Watchdog graded record, so we make no claim about how Spartan performs.",
-    "context": "For scale: his marketed NFL Triple Star run is about 60% winners, while Pregame's current season table for all his rated picks is about 50.1%. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard odds of 110 to win 100 a bettor needs about 52.4% to break even."
+    "text": "In this edition no Spartan pick history is matched to a Watchdog graded record, so we make no claim about how Spartan performs.",
+    "context": "For scale: his marketed NFL Triple Star run is about 60% winners, while Pregame's current season table for all his rated picks is about 50.1%. At standard odds of 110 to win 100 a bettor needs about 52.4% to break even."
   },
-  "customers_intro": "Independent customer evidence on Spartan is very thin. The comments we found sit on the store that sells him or simply copy his plays. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent customer evidence on Spartan is very thin. The comments we found sit on the store that sells him or simply copy his plays.",
   "customers": [
     {
       "type": "Our summary",
@@ -248,8 +248,7 @@
     "Look at the sport you want to bet, not the category in the headline. This season his baseball top picks carried the record while college football lost.",
     "Count units, not wins. A 60% record at heavy favorites can still lose money.",
     "If you take Flex Access, put a reminder in your calendar and cancel by email before the next $195 rebill.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Write down each pick yourself the moment you receive it, with the line you can actually get."
   ],
   "faq": [
     [

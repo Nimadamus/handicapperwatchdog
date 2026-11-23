@@ -12,7 +12,7 @@
   "dek": "Warren Sharp sells NFL and college football betting picks, props, futures and fantasy content, from $9.99 for a one week fantasy draft kit to $899 for an All Access season, with no refunds. The site posts yearly win and loss totals back to 2006, all kept by the seller, and buyer reports over twelve years are split between happy totals bettors and people who lost or struggled to cancel.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Warren Sharp's picks. This page reports what we could check and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record of Warren Sharp's picks."
   },
   "glance": [
     [
@@ -162,10 +162,10 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Sharp Football Analysis pick feed is matched to a Watchdog graded record, so we make no claim about how Warren Sharp's picks perform.",
-    "context": "For scale: the site advertises a 63% lifetime record on computer totals and 55% on all 2026 bets. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no Sharp Football Analysis pick feed is matched to a Watchdog graded record, so we make no claim about how Warren Sharp's picks perform.",
+    "context": "For scale: the site advertises a 63% lifetime record on computer totals and 55% on all 2026 bets."
   },
-  "customers_intro": "Independent customer evidence on Sharp Football Analysis spans 2009 to 2026 and is split. We found buyer posts on Reddit, Covers, TheRX and Sportsbook Review, six Trustpilot reviews, seven App Store ratings, and seller chosen testimonials. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent customer evidence on Sharp Football Analysis spans 2009 to 2026 and is split. We found buyer posts on Reddit, Covers, TheRX and Sportsbook Review, six Trustpilot reviews, seven App Store ratings, and seller chosen testimonials.",
   "customers": [
     {
       "type": "Our summary",
@@ -320,8 +320,7 @@
     "Check how fast you can bet after an alert. If the total has already moved a point, record the line you actually got, not the one in the alert.",
     "Start with a single week in the market you care most about, such as NFL totals, before paying for a bundle that adds college, props and fantasy.",
     "Before you buy a weekly or monthly plan, read the cancelation page and save a copy. Cancel in writing and keep the confirmation.",
-    "Count units, not wins. A 55% record on mixed bets at varying prices can still lose money.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Count units, not wins. A 55% record on mixed bets at varying prices can still lose money."
   ],
   "faq": [
     [

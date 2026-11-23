@@ -12,7 +12,7 @@
   "dek": "A pick service that says it has served 125,000 members since 2013 and wins 64% of its picks. It sells passes from $100 a day to $4,999 a year, plus processing fees, all final sale. We found no public record of its picks, and its CapperTek listing still showed no documented record on 20 Nov 2026.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a record for Dynamic Sports Plays, and we found no full, time stamped log of its picks anywhere. This page reports what we could check and labels everything else."
+    "note": "Watchdog has not graded a record for Dynamic Sports Plays, and we found no full, time stamped log of its picks anywhere."
   },
   "glance": [
     [
@@ -141,8 +141,8 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition Dynamic Sports Plays is not matched to a Watchdog graded record, so we make no claim about how its picks perform.",
-    "context": "For scale: the FAQ claims a 64% win rate since 2013. On the Watchdog board on 20 Nov 2026, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition Dynamic Sports Plays is not matched to a Watchdog graded record, so we make no claim about how its picks perform.",
+    "context": "For scale: the FAQ claims a 64% win rate since 2013."
   },
   "customers_intro": "The only buyer reviews we found are seven on CapperTek, all positive, from six usernames, posted between Nov 2023 and Apr 2025. Most reviewers had been with the service for days or weeks, and several quote unit totals that no record we could open supports. Outside CapperTek we found one Reddit question about the service, removed before anyone answered, and nothing on BBB, SmartCustomer or the betting forums.",
   "customers": [
@@ -236,8 +236,7 @@
     "Count units, not wins. With a 5 to 25 unit scale, one losing 25 unit play wipes out five winning 5 unit plays.",
     "Read the refund terms first: every purchase is final, so a one day pass at $104 is the most you should risk to try it.",
     "Write down each pick yourself the moment you receive it, with the line you can actually get.",
-    "Ignore media logos that are not linked to an article you can open.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Ignore media logos that are not linked to an article you can open."
   ],
   "faq": [
     [

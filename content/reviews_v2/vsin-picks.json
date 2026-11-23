@@ -12,7 +12,7 @@
   "dek": "A Las Vegas sports betting radio and video network that sells VSiN Pro, a subscription with daily picks from dozens of hosts and guests, betting splits, guides and video. Its subscribe page did not show prices when we checked, its FAQ says the annual plan costs half the monthly rate, and it publishes no combined win rate. Hosts' own season records in their columns ranged from below to just above break even.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of VSiN Pro picks. This page reports what we could check on 16 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record of VSiN Pro picks."
   },
   "glance": [
     [
@@ -141,8 +141,8 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no VSiN Pro pick history is matched to a Watchdog graded record, so we make no claim about how VSiN Pro picks perform.",
-    "context": "For scale: VSiN makes no overall win rate claim, and the host records we read ran from 48.1% to 51.7% against the spread. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no VSiN Pro pick history is matched to a Watchdog graded record, so we make no claim about how VSiN Pro picks perform.",
+    "context": "For scale: VSiN makes no overall win rate claim, and the host records we read ran from 48.1% to 51.7% against the spread."
   },
   "customers_intro": "Independent posts about VSiN are mostly about the shows, the app and the betting splits, not about buying the picks. Below is what we found and how much weight it can carry.",
   "customers": [
@@ -256,7 +256,6 @@
     "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
     "Count units, not wins. A 46% record on plus money props can be up, and a 52% record at -110 is not.",
     "Check the price at checkout and whether the plan renews automatically; set a reminder to turn off auto renew.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
     "Try the free tier and any free trial first, and give any host a few hundred picks before you call them a winner."
   ],
   "faq": [

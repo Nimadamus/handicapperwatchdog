@@ -12,7 +12,7 @@
   "dek": "A free app that syncs your sportsbook accounts to track your bets, plus a marketplace where other users sell their picks, mostly for a few dollars a week. Seller records come from synced sportsbook accounts, according to Juice Reel. Nobody outside the company audits that sync, and payments are not refunded.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record for any Juice Reel seller. This page reports what we could check on 20 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record for any Juice Reel seller."
   },
   "glance": [
     [
@@ -155,17 +155,17 @@
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. Juice Reel does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Juice Reel most often were CapperLedger, AxiomHQPicks, IainMacBets, TShoeIndex. From 27 Sep 2026 to 31 Oct 2026 we took every play our parser could read inside a Juice Reel block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
     "Result: 9 plays, 6 won, 3 lost, +2.58 units, a return of +28.6% per unit risked. By sport: NCAAF 3 won, 2 lost, +0.73 units; NFL 3 won, 1 lost, +1.85 units. By month: September 1 won, 1 lost, -0.02 units; October 5 won, 2 lost, +2.60 units.",
-    "What it means: 9 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
+    "What it means: 9 decided plays is far too few to judge.",
     "What Juice Reel says: seller stats and open bets are imported from connected sportsbook accounts, every pick is timestamped, and a seller cannot edit or delete a losing bet. If that works as described, it is a better record than most pick sellers offer, because losses stay on the page.",
     "What users add: in the 2025 AMA thread a user said they asked the team to remove a personal bet before the game started and were refused, and that stats are kept even if an account is cancelled. In 2026 Reddit members cited one tout's Juice Reel record (down over 300 units, they said) to dispute claims he made elsewhere. Those are signs the records are hard to edit, though they are user statements, not an audit.",
     "What we could not verify: we found no third party audit, contest or regulator record behind the sync. The terms say \"Juice is not responsible for the accuracy, reliability or legality of User Content or Profile Content.\" Users report books that will not sync, such as bet365 on Android in 2025 and bet365 in general in February 2026. A seller's record is the platform's own data, not an independently verified log. It is still worth reading, because you can see bet volume, ROI and history before you pay."
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Juice Reel seller is matched to a Watchdog graded record, so we make no claim about how Juice Reel sellers perform.",
-    "context": "For scale: Juice Reel ranks sellers by synced profit and ROI. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no Juice Reel seller is matched to a Watchdog graded record, so we make no claim about how Juice Reel sellers perform.",
+    "context": "For scale: Juice Reel ranks sellers by synced profit and ROI."
   },
-  "customers_intro": "Buyer evidence on Juice Reel comes from app store reviews, a busy run of Reddit threads from 2025 and 2026, and one Covers post. Much of it is about the free tracker; the threads about auto tail and paid sellers are newer. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Buyer evidence on Juice Reel comes from app store reviews, a busy run of Reddit threads from 2025 and 2026, and one Covers post. Much of it is about the free tracker; the threads about auto tail and paid sellers are newer.",
   "customers": [
     {
       "type": "Our summary",

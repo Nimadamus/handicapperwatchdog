@@ -12,7 +12,7 @@
   "dek": "An Indiana handicapper who started in the business in 1984 under a pen name and has run his own service, Team Stryker Sports, since 1999. His site sells football and basketball packages from $125 a week to $2,295 a year. All sales are final, and every record we found is a run chosen by the seller.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Tom Stryker picks. This page reports what we could check on 20 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record of Tom Stryker picks."
   },
   "glance": [
     [
@@ -170,8 +170,8 @@
   ],
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. Tom Stryker does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Tom Stryker most often were BuzzKill (TheRX newsletters thread), Churchillsprts, TheGodOfCappers, EZMSports. From 22 Sep 2026 to 23 Oct 2026 we took every play our parser could read inside a Tom Stryker block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
-    "Result: 3 plays, 2 won, 1 lost, +0.82 units, a return of +27.3% per unit risked. By sport: too few per sport to split. By month: September 1 won, 1 lost, -0.09 units; October 1 won, 0 lost, +0.91 units.",
-    "What it means: 3 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
+    "Result: 3 plays, 2 won, 1 lost, +0.82 units, a return of +27.3% per unit risked. By month: September 1 won, 1 lost, -0.09 units; October 1 won, 0 lost, +0.91 units.",
+    "What it means: 3 decided plays is far too few to judge.",
     "What a buyer can verify independently: very little. We found no full, time stamped log of every Tom Stryker pick with the line, the odds and the release time, no Sports Monitor results we could open, and no court, regulator or Better Business Bureau record about the service.",
     "What we could confirm from outside his own sites: the 2010 ESPN The Magazine feature by Chad Millman describes Stryker as a man in his mid 40s living in Granger who played baseball at Indiana in the early 1980s, who entered most of the 600,000 plus data points in the Buckeye Database built by Tom Scott. ESPN says the database cost $15,000, had only nine owners, and covered NFL and college football from 1980 and pro and college basketball from 1990. The article also warns that a database \"cannot answer a question it isn't asked\" and that past results do not guarantee future ones. It reports no win and loss record for Stryker himself.",
     "What sellers publish: product titles with ATS runs on teamstryker.com and BigAl.com, bios repeating the Sports Monitor titles, and a Playbook page with a \"Tom's Last 10 Results\" heading that showed no numbers when we looked on 20 Nov 2026. The homepage lists about 130 free plays from 8 Aug to 19 Nov 2026 with write ups but no graded results, so a buyer could grade them, though free plays may not match paid ones.",
@@ -179,10 +179,10 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Tom Stryker pick history is matched to a Watchdog graded record, so we make no claim about how Tom Stryker performs.",
-    "context": "For scale: the runs in Tom Stryker sales copy go from 59.6% (124 and 84 for Lee's club) up to 81.5% on 27 whale plays. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no Tom Stryker pick history is matched to a Watchdog graded record, so we make no claim about how Tom Stryker performs.",
+    "context": "For scale: the runs in Tom Stryker sales copy go from 59.6% (124 and 84 for Lee's club) up to 81.5% on 27 whale plays."
   },
-  "customers_intro": "Independent buyer evidence on Tom Stryker is close to nil. We found no buyer review of a paid package, good or bad, on any forum, review site or app store. Our Reddit search was partial: the Reddit archive's full text search timed out or refused requests all day on 20 Nov 2026, as it had on 17 Nov, so we relied on our saved copy of r/sportsbook and r/sportsbetting posts from January 2024 to November 2026 and the comments of saved threads, which had nothing on him. Below is everything we found and how much weight it can carry.",
+  "customers_intro": "Independent buyer evidence on Tom Stryker is close to nil. We found no buyer review of a paid package, good or bad, on any forum, review site or app store. Our Reddit search was partial: the Reddit archive's full text search timed out or refused requests all day on 20 Nov 2026, as it had on 17 Nov, so we relied on our saved copy of r/sportsbook and r/sportsbetting posts from January 2024 to November 2026 and the comments of saved threads, which had nothing on him.",
   "customers": [
     {
       "type": "Our summary",
@@ -273,9 +273,7 @@
     "Ask for the 17 NFL Games of the Year behind the 15 and 2 claim, with the line taken each year.",
     "Grade the free homepage plays for a few weeks before you buy, using the line available when each was posted.",
     "Count units, not wins. A 60% record at heavy favorites can still lose money, and dollar totals depend on the stake per star.",
-    "Start with the $125 week, not a season or year. All sales are final and partial periods are not refunded.",
-    "Write down each pick yourself the moment you receive it, with the line you can actually get.",
-    "Give any handicapper a few hundred picks before you call them a winner. Short runs swing hard both ways."
+    "Start with the $125 week, not a season or year. All sales are final and partial periods are not refunded."
   ],
   "faq": [
     [

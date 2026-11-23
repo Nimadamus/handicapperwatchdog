@@ -12,7 +12,7 @@
   "dek": "A Las Vegas professional bettor known as Krackman, seen on Showtime's Action, VSiN and FOX Sports Radio. He sells picks on WagerTalk from $39 a day to $1,999 a year, and his app, first sold as KrackWins, now runs as The Hot Picks at $99 to $499 a month. The guarantee pays store credit, every record we saw is kept or chosen by the seller, and buyer posts are few and split.",
   "status": {
     "label": "Not verified",
-    "note": "Watchdog has not graded a full, time stamped record of Bill Krackomberger picks. This page reports what we could check on 20 Nov 2026 and labels everything else."
+    "note": "Watchdog has not graded a full, time stamped record of Bill Krackomberger picks."
   },
   "glance": [
     [
@@ -158,8 +158,8 @@
   ],
   "record": [
     "Watchdog graded sample, new 22 Nov 2026. Bill Krackomberger does not publish a complete, time stamped log we can audit, so we built a sample from public posts that carry their plays. Watchdog captures X accounts and forum threads that post or repost picks; the ones naming Bill Krackomberger most often were Hottie4Sports, EZMSports, EDMrager, TheGodOfCappers. From 1 Oct 2026 to 1 Oct 2026 we took every play our parser could read inside a Bill Krackomberger block, kept only those posted before the game started, removed repeats, and graded each one against the final score at one unit risked, at the odds shown or -110 when none were shown.",
-    "Result: 1 plays, 1 won, 0 lost, +0.80 units, a return of +80.0% per unit risked. By sport: too few per sport to split. By month: October 1 won, 0 lost, +0.80 units.",
-    "What it means: 1 decided plays is far too few to judge. We list them so readers can see what was posted and how it did; the sample covers only plays others chose to post, not the full card a subscriber receives.",
+    "Result: 1 plays, 1 won, 0 lost, +0.80 units, a return of +80.0% per unit risked. By month: October 1 won, 0 lost, +0.80 units.",
+    "What it means: 1 decided plays is far too few to judge.",
     "What a buyer can verify independently: nothing complete that we could find. We found no full, time stamped log of every pick he sold with the line and odds, kept by an outside party, and no court or regulator action about his pick service in what we could open.",
     "What WagerTalk shows: a Last 20 table, Hot Streaks and a Who's Hot board, all graded by the store that sells his picks. On 20 Nov 2026 the Last 20 was 10 and 10, mostly college basketball sides and NFL player props. The Who's Hot board listed him at 23-20-0 for $1,629 over the last 7 days in one table and 12-3-0 for $2,883 in another sport tab. On 16 Nov 2026 the same Last 20 table had shown 16 wins, 3 losses and 1 no play, which shows how fast a 20 play window swings.",
     "Forum users quoted different numbers: a TheRX post in Dec 2025 put his 2025 college football record at 70-56, while WagerTalk shows 91-69-2 for the 2025/26 college football season. The windows may differ, but neither is an audited log.",
@@ -167,8 +167,8 @@
   ],
   "our_data": {
     "matched": false,
-    "text": "Watchdog grades picks captured from public posts before the game starts. In this edition no Bill Krackomberger pick history is matched to a Watchdog graded record, so we make no claim about how Bill Krackomberger performs.",
-    "context": "For scale: the streaks on his WagerTalk profile run from about 57% to 60% winners, and his Last 20 on 20 Nov 2026 was 50%. On the Watchdog board, {{over60}} of {{established}} established accounts (100 or more graded picks) were at 60% or better, and the median established account won {{median_win}}% of its picks. At standard -110 odds a bettor needs about 52.4% to break even."
+    "text": "In this edition no Bill Krackomberger pick history is matched to a Watchdog graded record, so we make no claim about how Bill Krackomberger performs.",
+    "context": "For scale: the streaks on his WagerTalk profile run from about 57% to 60% winners, and his Last 20 on 20 Nov 2026 was 50%."
   },
   "customers_intro": "Independent buyer evidence on Bill Krackomberger is thin. Most of it is app store reviews and forum users sharing his plays. Below is everything we found, positive and negative, and how much weight it can carry.",
   "customers": [
@@ -278,7 +278,6 @@
     "Few independent buyer posts. Of the detailed ones outside the curated app store reviews, most were negative or mixed, including a 2021 buyer who said the recap did not match the plays he received."
   ],
   "checklist": [
-    "Ask for every pick from the last 12 months with the line, the odds and the time it was sent. A list of hot runs is not a record.",
     "Count units, not wins. Player prop unders at -115 need more than 53% to break even, and a 1% to 2% edge disappears if you get a worse number.",
     "Before buying the app, ask who makes the picks today and whether they are the same plays sold on WagerTalk.",
     "Read the guarantee for the words refund, credit and extension. WagerTalk's guarantee is account credit.",
