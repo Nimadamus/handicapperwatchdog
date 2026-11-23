@@ -9,6 +9,9 @@ Work from worktree `~/hwd-names-1114` (branch names-1114, push `HEAD:main`; main
   "where there is smoke", why trust us, right of reply, how to use, FAQ. Live counts filled from meta. Every v2
   review page's "What customers say" now links to it (reviewv2.py).
 
+## 23 Nov SEO (owner: "focus on SEO, do schema/meta titles, be careful")
+Live crawl of 140 sitemap pages: all 200, 1 canonical/title/desc each, no dup titles/descs, JSON-LD valid. Fixed (main f63f4b8, live 5:0x AM PST, IndexNow 140 ok): FAQPage schema on all 95 v2 reviews (was 10 pages), Article image, null legalName dropped, KingCap title 77->55 chars. Audit tools ~/hwd_seo_1123 (crawl.py, render_test.py). Left alone: weekly report titles 72 chars (only truncation). Offered owner: faster review queue pace (5/wk now).
+
 ## Resume here
 1. DONE 16 Nov 10:55 AM PST (main c36f175): 15 new reviews LIVE + IndexNow ok (102 URLs). Prez slug = the-prez-wagertalk
    (Kevin O'Neill name unsourced, removed). larry-ness held in ~/hwd_testimonials/new_reviews_1115/_hold (died 2022; owner to decide).
