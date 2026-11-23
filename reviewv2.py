@@ -135,7 +135,11 @@ def render(rev, st, names, document):
             {'@type': 'ListItem', 'position': 3, 'name': rev['name'], 'item': url}]},
         {'@type': 'Article', 'headline': rev['title'], 'description': rev['description'], 'url': url, 'mainEntityOfPage': url,
          'datePublished': rev['checked_iso'], 'dateModified': rev['updated_iso'], 'author': org, 'publisher': org,
-         'about': {'@type': 'Organization', 'name': rev['name'], 'legalName': rev.get('legal_name')}}]}
+         'image': 'https://handicapperwatchdog.com/og-card.png',
+         'about': {k: v for k, v in (('@type', 'Organization'), ('name', rev['name']), ('legalName', rev.get('legal_name'))) if v}}]}
+    if rev.get('faq'):   # the same questions and answers shown in the "Common questions" section, word for word
+        ld['@graph'].append({'@type': 'FAQPage', 'mainEntity': [
+            {'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in rev['faq']]})
     html = document(1, 'reviews/index.html', rev['title'], rev['description'], url, body)
     html = html.replace('</head>', '<link rel="stylesheet" href="../review2.css">\n<script type="application/ld+json">%s</script>\n</head>' % (
         json.dumps(ld, ensure_ascii=True).replace('<', '\\u003c')), 1)
