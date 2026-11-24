@@ -109,3 +109,6 @@ Nov 9 funnel 7d: 148 visits (chatgpt.com 91, google 10), 23 pricing views, 0 che
 Names PUBLIC (HWD_NAMES=0 off). NO pending picks on this site (TMR Pro board only; HWD_PENDING_FEED=1 restores).
 Never publish th- slugs, post text or post links. No test emails to Nima. No regrades without per pick approval.
 No dashes in published text. Watchdog deploy only via wd_code_deploy.py. Reddit readable via Arctic Shift.
+
+## 24 Nov profiles (owner go)
+All analytics FREE on every profile (live 8:42 AM PST, main 954bc81). Pro = full pick log + drilldown (click any stat row -> picks behind it, sealed in data/x drill map, only rows that reconcile exactly). Pricing/cappers/sample copy updated. Phone width drill dialog not yet eyeballed.
