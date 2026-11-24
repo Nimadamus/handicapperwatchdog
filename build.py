@@ -2108,9 +2108,7 @@ def _write_research(site, meta, cappers):
         _esc(sp), n, pct(up), sg(m), sg(a), sg(z)) for sp, n, up, m, a, z in st['sports'][:8])
     ldj = json.dumps({'@context': 'https://schema.org', '@graph': [
         {'@type': 'Article', 'headline': "How much does a handicapper's ROI mean after 30 picks?", 'url': url, 'dateModified': built,
-         'author': org, 'publisher': org, 'isBasedOn': 'https://handicapperwatchdog.com/data/index.json'},
-        {'@type': 'Dataset', 'name': 'Handicapper Watchdog public board', 'url': 'https://handicapperwatchdog.com/data/index.json',
-         'description': 'Independently graded records of public handicapper accounts shown by account name.', 'creator': org, 'dateModified': built}]}).replace('<', '\\u003c')
+         'author': org, 'publisher': org, 'isBasedOn': 'https://handicapperwatchdog.com/data/index.json'}]})  # Dataset item dropped 2026-11-24 (no license chosen; GSC warning).replace('<', '\\u003c')
     body = (
         '<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span><a href="./">Research</a><span aria-hidden="true">/</span><span aria-current="page">ROI and sample size</span></nav>\n'
         '<div class="pagehead"><div><div class="eyebrow">Watchdog research</div><h1>How much does a handicapper&rsquo;s ROI mean after 30 picks?</h1>\n'
