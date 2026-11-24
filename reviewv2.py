@@ -74,7 +74,7 @@ def render(rev, st, names, document):
               '<span class="evt alleg">Allegation</span> an unproven accusation by someone else</div>')
     glance = ''.join('<li><span>%s</span><b>%s</b></li>' % (E(k), E(v)) for k, v in rev['glance'])
     hero = ('<nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span aria-hidden="true">/</span>'
-            '<a href="./">Reviews</a><span aria-hidden="true">/</span><span aria-current="page">%s</span></nav>'
+            '<a href="index.html">Reviews</a><span aria-hidden="true">/</span><span aria-current="page">%s</span></nav>'
             '<section class="edhero"><div class="herol"><div><p class="eyebrow">%s</p><h1>%s</h1><p class="lede">%s</p>'
             '<p class="byline">By the Handicapper Watchdog editorial desk · Checked %s · <a href="#standards">How we review</a></p></div>' + legend + '</div>'
             '<aside class="plate"><div class="seal" aria-hidden="true"><b>NV</b><span>%s</span></div>'

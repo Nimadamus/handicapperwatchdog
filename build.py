@@ -2641,7 +2641,7 @@ document.getElementById('revq').addEventListener('input', function () {
 %s
 </section>
 <section class="panel srcpanel"><div class="pb prose"><h2>Sources</h2>%s
-<p><a href="index.html">Sportsbook research</a> is the wider section. This page does not link a signup. JustBet's own new account form was still up on 28 Oct 2026.</p>
+<p><a href="./">Sportsbook research</a> is the wider section. This page does not link a signup. JustBet's own new account form was still up on 28 Oct 2026.</p>
 <p class="muted small">This page is not a handicapper rating and it is not legal advice. 21+. Gambling problem? Call 1 800 GAMBLER.</p></div></section>''' % (
         _esc(book['dek']), cta, _esc(cta_note), _esc(book['disclosure']), paras(book['overview']), feature_rows, offer_rows,
         paras(book['pros']), paras(book['cons']), _esc(book['jurisdictions']),
@@ -3392,10 +3392,12 @@ def _write_profile_pages(site, index):
                      {'@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': root},
                      {'@type': 'ListItem', 'position': 2, 'name': 'Handicappers', 'item': root + 'handicappers/'},
                      {'@type': 'ListItem', 'position': 3, 'name': w, 'item': url}]}]
+        # ProfilePage wants full ISO 8601 date-times; a bare date is flagged "Invalid datetime value" in GSC (2026-11-24).
+        _dt = lambda v: v + 'T00:00:00-08:00' if re.fullmatch(r'\d{4}-\d{2}-\d{2}', str(v)) else v
         if r.get('last_pick'):
-            graph[0]['dateModified'] = r['last_pick']
+            graph[0]['dateModified'] = _dt(r['last_pick'])
         if r.get('first_pick'):
-            graph[0]['dateCreated'] = r['first_pick']
+            graph[0]['dateCreated'] = _dt(r['first_pick'])
         ld = '<script type="application/ld+json">%s</script>' % json.dumps({'@context': 'https://schema.org', '@graph': graph}, ensure_ascii=True).replace('<', '\\u003c')
         robots = '' if r['picks'] >= PROFILE_INDEX_MIN else '<meta name="robots" content="noindex,follow">\n'
         page = shell
