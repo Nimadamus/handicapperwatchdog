@@ -334,8 +334,8 @@
       rows.forEach(function (x) { if (x.r === 'W') w++; else if (x.r === 'L') l++; else pu++; net += +x.pl || 0; rk += +x.u || 0; });
       var res = { W: '<span class="st pos">Win</span>', L: '<span class="st neg">Loss</span>', P: '<span class="dim">Push</span>' };
       dlg.innerHTML = head + '<div class="db"><p class="muted small" style="margin:0 0 10px">' + fmt(rows.length) + ' graded picks · ' + w + '-' + l + (pu ? '-' + pu : '') + ' · ' + sgn(net, 2) + ' units' + (rk ? ' · ' + sgn(100 * net / rk, 1, '%') + ' ROI' : '') + '</p>' +
-        '<div class="tw"><table class="mini ledger"><thead><tr><th class="l">Date</th><th class="l">Pick</th><th>Odds</th><th>Result</th><th class="hm">Final</th><th>Units</th></tr></thead><tbody>' +
-        rows.map(function (x) { return '<tr><td class="l nowrap">' + esc(x.d || '') + '</td><td class="l"><b>' + esc(x.pk) + '</b> <span class="dim small">' + esc(x.mk) + '</span><span class="sg dim small" style="display:block">' + esc(x.sp) + ' &middot; ' + esc(x.m) + '</span></td><td>' + odds(x.o) + '</td><td>' + (res[x.r] || esc(x.r)) + '</td><td class="hm">' + esc(x.f || '') + '</td><td>' + (x.u ? sgn(x.pl, 2) : '<span class="dim">0</span>') + '</td></tr>'; }).join('') +
+        '<div class="tw"><table class="mini ledger"><thead><tr><th class="l">Date</th><th class="l">Pick</th><th>Odds</th><th class="dres">Result</th><th class="hm">Final</th><th>Units</th></tr></thead><tbody>' +
+        rows.map(function (x) { return '<tr><td class="l nowrap">' + esc(x.d ? (+x.d.slice(5, 7)) + '/' + (+x.d.slice(8, 10)) + '/' + x.d.slice(2, 4) : '') + '</td><td class="l"><b>' + esc(x.pk) + '</b> <span class="dim small">' + esc(x.mk) + '</span><span class="sg dim small" style="display:block">' + esc(x.sp) + ' &middot; ' + esc(x.m) + '</span></td><td>' + odds(x.o) + '</td><td class="dres">' + (res[x.r] || esc(x.r)) + '</td><td class="hm">' + esc(x.f || '') + '</td><td>' + (x.u ? sgn(x.pl, 2) : '<span class="dim">0</span>') + '</td></tr>'; }).join('') +
         '</tbody></table></div></div>';
     }
     if (dlg.showModal) dlg.showModal(); else dlg.setAttribute('open', '');

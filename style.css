@@ -653,8 +653,9 @@ table.mini tr.drill{cursor:pointer}
 table.mini tr.drill:hover td,table.mini tr.drill:focus-visible td{background:rgba(228,195,122,.06)}
 table.mini tr.drill td.l:first-child::after{content:"\203A";margin-left:6px;color:var(--muted);opacity:0;transition:opacity .15s}
 table.mini tr.drill:hover td.l:first-child::after,table.mini tr.drill:focus-visible td.l:first-child::after{opacity:1}
-.drill-dlg{width:min(760px,calc(100vw - 24px));max-height:min(80vh,760px);padding:0;border:1px solid var(--line);border-radius:16px;background:var(--s1);color:var(--ink)}
+.drill-dlg{width:min(760px,calc(100% - 16px));max-width:none;max-height:min(80vh,760px);padding:0;border:1px solid var(--line);border-radius:16px;background:var(--s1);color:var(--ink)}
 .drill-dlg::backdrop{background:rgba(0,0,0,.6)}
 .drill-dlg .dh{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:16px 18px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--s1)}
 .drill-dlg .dh h3{margin:6px 0 0;font-size:17px}
 .drill-dlg .db{padding:14px 18px 18px}
+@media (max-width:560px){.drill-dlg .dres{display:none}.drill-dlg .db{padding:10px 10px 14px}.drill-dlg .dh{padding:12px}.drill-dlg table.mini th,.drill-dlg table.mini td{padding-left:5px;padding-right:5px}}
