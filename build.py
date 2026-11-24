@@ -381,9 +381,63 @@ def build_profile(row, research):
     # Reconcile: the pick history must reproduce TMR's headline record, or the profile is not published.
     ov, a = research.get('overview') or {}, agg(hist)
     prof['_hist'] = hist
+    prof['_drill'] = drill_map(prof, research, hist)
     prof['reconciled'] = bool(ov) and (a['w'], a['l'], a['p']) == (ov.get('w'), ov.get('l'), ov.get('p')) and \
         abs(a['net'] - float(ov.get('net') or 0)) < 0.05
     return prof
+
+
+def drill_map(prof, research, hist):
+    """Pro drilldown: drill key -> positions in the full Pro ledger (newest first). A table row gets a drill key only when the
+    picks behind it reproduce its record and units exactly, so a drilldown can never list picks that disagree with the row."""
+    newest = hist[::-1]
+    pos = {id(h): i for i, h in enumerate(newest)}
+    asof = _ts(research.get('generated_at')) or datetime.now(timezone.utc)
+    out = {}
+
+    def keep(dk, idx, row):
+        if not idx:
+            return
+        a = agg([newest[i] for i in idx])
+        if (a['w'], a['l'], a['p']) == (row.get('w'), row.get('l'), row.get('p')) and abs(a['net'] - float(row.get('net') or 0)) < 0.05:
+            out[dk] = idx
+            row['dk'] = dk
+
+    def member(x, ki):
+        return x == ki or (isinstance(x, list) and ki in x)
+    for k in KEEP:
+        src, pub = research.get(k), prof.get(k)
+        if not isinstance(src, list) or not isinstance(pub, list) or len(src) != len(pub):
+            continue
+        for r, pr in zip(src, pub):
+            if not isinstance(r, dict) or not isinstance(pr, dict) or r.get('dim') is None:
+                continue
+            dim, ki = r['dim'], r.get('ki')
+            if dim == 'all':
+                idx = list(range(len(newest)))
+            elif dim == 'n':
+                idx = list(range(min(int(ki or 0), len(newest))))
+            elif dim == 'd':
+                cut = asof - timedelta(days=int(ki or 0))
+                idx = [i for i, h in enumerate(newest) if (_ts(h.get('game')) or asof) >= cut]
+            else:
+                idx = [i for i, h in enumerate(newest) if member((h.get('b') or {}).get(dim), ki)]
+            keep('%s:%s' % (dim, ki), idx, pr)
+    fns = {'markets': lambda h: h.get('market'),
+           'fav_dog': lambda h: None if h.get('odds') is None else ('Favorite' if h['odds'] < 0 else 'Underdog'),
+           'odds': lambda h: odds_bucket(h.get('odds')), 'over_under': side,
+           'weekday': lambda h: when(h) and DAYS[when(h).weekday()], 'month': lambda h: when(h) and when(h).strftime('%Y-%m')}
+    for si, (sport, d) in enumerate((prof.get('sport_detail') or {}).items()):
+        rows = [h for h in hist if (h.get('sport') or 'Other') == sport]
+        keep('s%d:all' % si, [pos[id(h)] for h in rows], d.get('overall') or {})
+        for t, f in fns.items():
+            for r in d.get(t) or []:
+                keep('s%d:%s:%s' % (si, t, r.get('key')), [pos[id(h)] for h in rows if f(h) == r.get('key')], r)
+        recent = sorted(rows, key=lambda r: r.get('game') or '')[::-1]
+        for r in d.get('form') or []:
+            n = int(str(r.get('key')).split()[1])
+            keep('s%d:form:%d' % (si, n), [pos[id(h)] for h in recent[:n]], r)
+    return out
 
 
 # ---------- extra analytics computed from the graded history ----------
@@ -1252,11 +1306,11 @@ def _write_guides(site, meta, cappers):
                  qual_pct, f'{prof:,}', f'{qual:,}', med_txt, _board_analysis(cappers)))
     price = _document(0, 'pricing.html',
                       'Watchdog Pro Pricing | Handicapper Watchdog',
-                      'Watchdog Pro is $49.99 a month or $499 a year: full graded pick logs, profile breakdowns and research tools.',
+                      'Watchdog Pro is $49.99 a month or $499 a year: complete graded pick logs and the exact picks behind every profile stat.',
                       'https://handicapperwatchdog.com/pricing.html',
                       '''<nav class="crumbs" aria-label="Breadcrumb"><a href="./">Home</a><span aria-hidden="true">/</span><span aria-current="page">Pricing</span></nav>
 <div class="pagehead"><div><div class="eyebrow">Watchdog Pro</div><h1>Research the record, then see what comes next</h1>
-<p class="muted">The free site shows every ranking and each account&rsquo;s headline record. Watchdog Pro adds the complete graded pick log and the full breakdowns behind every profile. Both plans include the same features.</p>
+<p class="muted">The free site shows every ranking and every profile&rsquo;s full analytics: charts, sport and market breakdowns, prices, teams and calendar. Watchdog Pro adds the complete graded pick log and the exact picks behind every stat. Both plans include the same features.</p>
 <p class="pcnote" style="margin:10px 0 0"><span class="statusdot"></span><span id="planNote">Secure checkout by Stripe. Cancel any time from your account page.</span></p></div></div>
 <p class="disclosure" id="notice" hidden></p>
 <div class="fld" id="buyerBox" style="display:none;max-width:360px;margin:0 0 14px"><label for="buyerEmail">Email for your Watchdog Pro account</label><input id="buyerEmail" type="email" autocomplete="email" placeholder="you@example.com"></div>
@@ -1272,15 +1326,15 @@ def _write_guides(site, meta, cappers):
 <div class="tw"><table class="mini plancmp"><thead><tr><th class="l">Feature</th><th>Free</th><th>Pro</th></tr></thead><tbody>
 <tr><td class="l">Rank, record, units, ROI, win rate, streak</td><td>Yes</td><td>Yes</td></tr>
 <tr><td class="l">Every ranking list, last 7 and 30 day form, the 10 most recent graded picks</td><td>Yes</td><td>Yes</td></tr>
-<tr><td class="l">Sport and market breakdowns, advanced metrics, teams, prices, sides and calendar on every profile</td><td>No</td><td>Yes</td></tr>
-<tr><td class="l">Performance charts, trends and every time window on every profile</td><td>No</td><td>Yes</td></tr>
+<tr><td class="l">Sport and market breakdowns, advanced metrics, teams, prices, sides and calendar on every profile</td><td>Yes</td><td>Yes</td></tr>
+<tr><td class="l">Performance charts, trends and every time window on every profile</td><td>Yes</td><td>Yes</td></tr><tr><td class="l">Click any stat row to see the exact graded picks behind it</td><td>No</td><td>Yes</td></tr>
 <tr><td class="l">Complete graded pick log: game, pick, odds, result, units, post time</td><td>No</td><td>Yes</td></tr>
 <tr><td class="l">Advanced filters, and compare up to four records</td><td>No</td><td>Yes</td></tr>
 <tr><td class="l">Handicapper names and links to their public accounts</td><td>Yes</td><td>Yes</td></tr>
 </tbody></table></div></section>
 <section class="panel" style="margin-bottom:28px"><div class="pb">
 <h2>Names are public</h2>
-<p>Every record shows the account name and a link to the public account it was captured from. Names are free for everyone. Pro adds the deeper research on those accounts.</p>
+<p>Every record shows the account name and a link to the public account it was captured from. Names and every profile breakdown are free for everyone. Pro adds the complete pick logs behind them.</p>
 <p>%s</p>
 <p>Watchdog Pro is not a verified badge. A handicapper cannot pay to be ranked higher, to be featured, or to receive a label that the record is legitimate.</p>
 <p class="billnote"><b>Who bills you:</b> Handicapper Watchdog is operated by TrustMyRecord. Stripe receipts and the billing portal show the TrustMyRecord business name, and it may appear on your card statement.</p>
@@ -3444,7 +3498,7 @@ SEO_TITLES = {
 SEO_DESCRIPTIONS = {
     'index.html': 'Before you pay for picks, verify the record. Handicapper Watchdog captures public picks before games start, grades them and keeps the full history.',
     'cappers.html': 'Handicapper rankings by units won, ROI, win rate and recent form. Every record shows the account name. Filter by sport, timeframe and sample size.',
-    'pricing.html': 'Watchdog Pro is $49.99 a month or $499 a year: full graded pick logs, profile breakdowns and research tools.',
+    'pricing.html': 'Watchdog Pro is $49.99 a month or $499 a year: complete graded pick logs and the exact picks behind every profile stat.',
     'learn/index.html': 'Plain guides to judging a sports handicapper: break even win rates, units and ROI, sample size, closing line value, verified records and scam red flags.',
     'reviews/index.html': 'Reviews of named handicappers and pick marketplaces: what they advertise, prices we could read, what customers say, and why Watchdog has not scored them.',
     'sportsbooks/index.html': 'Original sportsbook research for DraftKings, FanDuel, bet365, Fanatics and BetMGM. Findings only where a source was checked. No scores and no signup links.',
@@ -3639,18 +3693,19 @@ def main():
                     h1, h2 = agg(hist[:len(hist) // 2]), agg(hist[len(hist) // 2:])
                     if h1['roi'] is not None and h2['roi'] is not None:
                         halves.append([h1['roi'], h2['roi']])
-                deep = {k: prof.pop(k) for k in DEEP_KEYS if k in prof}
+                drill = prof.pop('_drill', None) or {}
+                # 24 Nov 2026 (owner): every analytic is public on every profile, as on TrustMyRecord. Pro keeps the full
+                # graded log and the drilldown (the exact picks behind any stat row).
+                deep = {k: prof[k] for k in DEEP_KEYS if k in prof}
                 if s['picks'] >= 100 and (sample_full is None or (s['units'] or 0) > sample_full['summary']['units']):
                     sample_full = dict(prof, **deep)
                     sample_full['ledger'] = (prof.get('ledger') or [])[:LEDGER_N]
                 deep['summary'], deep['windows'] = prof['summary'], prof.get('windows')
                 prof['gated'] = True
                 prof['ledger'] = (prof.get('ledger') or [])[:LEDGER_N]
-                prof['summary'] = {k: prof['summary'].get(k) for k in FREE_SUMMARY if k in prof['summary'] or k not in ('name', 'src', 'link')}
-                prof['windows'] = {k: v for k, v in (prof.get('windows') or {}).items() if k in ('r7', 'r30')}
                 if PRO_KEY:
                     with open(os.path.join(SITE, 'data', 'x', s['id'] + '.bin'), 'w') as f:
-                        f.write(seal('capper:' + s['id'], {'ledger': [ledger_row(h) for h in hist[::-1]], 'deep': deep}))
+                        f.write(seal('capper:' + s['id'], {'ledger': [ledger_row(h) for h in hist[::-1]], 'deep': deep, 'drill': drill}))
                     sealed += 1
                 with open(os.path.join(SITE, 'data', 'p', s['id'] + '.json'), 'w', encoding='utf-8') as f:
                     json.dump(prof, f, separators=(',', ':'))

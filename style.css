@@ -648,3 +648,13 @@ body{background:#0a1120}
 .btn:not(.ghost):not(.pro):not(.sm.ghost){background:#1c2a40;border-color:rgba(217,184,113,.5);color:#f0d48f}
 .btn:not(.ghost):not(.pro):hover{background:#24344f}
 .billnote{margin:0 0 12px;padding:12px 14px;border-radius:10px;background:var(--s1);border:1px solid rgba(217,184,113,.3);color:var(--ink2);font-size:14px;line-height:1.5}
+/* Pro drilldown (24 Nov 2026): any stat row opens the graded picks behind it */
+table.mini tr.drill{cursor:pointer}
+table.mini tr.drill:hover td,table.mini tr.drill:focus-visible td{background:rgba(228,195,122,.06)}
+table.mini tr.drill td.l:first-child::after{content:"\203A";margin-left:6px;color:var(--muted);opacity:0;transition:opacity .15s}
+table.mini tr.drill:hover td.l:first-child::after,table.mini tr.drill:focus-visible td.l:first-child::after{opacity:1}
+.drill-dlg{width:min(760px,calc(100vw - 24px));max-height:min(80vh,760px);padding:0;border:1px solid var(--line);border-radius:16px;background:var(--s1);color:var(--ink)}
+.drill-dlg::backdrop{background:rgba(0,0,0,.6)}
+.drill-dlg .dh{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:16px 18px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--s1)}
+.drill-dlg .dh h3{margin:6px 0 0;font-size:17px}
+.drill-dlg .db{padding:14px 18px 18px}

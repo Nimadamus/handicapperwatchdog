@@ -103,7 +103,7 @@
           fact('Max drawdown', sgn(a.max_drawdown, 2, 'u')) + fact('Peak units', sgn(a.peak_units, 2, 'u')) + fact('Volatility', a.volatility == null ? 'n/a' : (+a.volatility).toFixed(2)) +
           fact('Longest win streak', fmt(st.longest_win)) + fact('Longest losing streak', fmt(st.longest_loss)) + fact('Picks per week', p.per_week == null ? 'n/a' : (+p.per_week).toFixed(1)) + '</div>' +
           tbl('After a win or a loss', p.after, 6) + tbl('By weekday', p.weekday, 7)],
-        ['Pro only', '<div class="slock"><div><span class="lock">Watchdog Pro</span><h4>Every breakdown</h4><p>Sport, market, price, team and calendar splits, charts and every time window for this account.</p></div>' +
+        ['Pro only', '<div class="slock"><div><span class="lock">Watchdog Pro</span><h4>The picks behind every stat</h4><p>Click any row on a profile, like a sport, a price range or a weekday, to see the exact graded picks behind it.</p></div>' +
           '<div><span class="lock">Watchdog Pro</span><h4>The complete pick log</h4><p>All ' + fmt(o.picks || r.picks) + ' graded picks with game, pick, odds, result, units and post time. Free profiles show the latest 10.</p><a class="btn pro" href="pricing.html">View Watchdog Pro</a></div></div>']];
       box.innerHTML = '<div class="shead"><div><span class="eyebrow">Sample profile</span><b class="sid">' + esc(who(r)) + '</b></div>' +
         '<div class="skpi">' + fact('Record', recTxt(o)) + fact('Units', sgn(o.net, 2)) + fact('ROI', sgn(o.roi, 1, '%')) + fact('Win rate', pct(o.win_pct)) + fact('Avg odds', o.avg_odds == null ? 'n/a' : (o.avg_odds > 0 ? '+' : '') + o.avg_odds) + '</div></div>' +

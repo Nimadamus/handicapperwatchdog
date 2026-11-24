@@ -43,7 +43,7 @@
     return '<div class="tw"><table class="mini"><thead><tr><th class="l">' + first + '</th><th>Picks</th><th>Record</th><th class="hm">Win %</th><th>Units</th><th>ROI</th><th class="hm bc"></th><th class="hm ao">Avg odds</th></tr></thead><tbody>' +
       rows.map(function (r) {
         var small = r.picks < 10;
-        return '<tr' + (small ? ' style="opacity:.62"' : '') + '><td class="l">' + label(r.key) + (small ? ' <span class="badge sm" title="Fewer than 10 picks">small</span>' : '') + '</td><td>' + fmt(r.picks) + '</td><td>' + rec(r) +
+        return '<tr' + (r.dk ? ' class="drill" data-dk="' + esc(r.dk) + '" data-lab="' + esc(first + ': ' + String(r.key).replace('|', ' · ')) + '" tabindex="0" title="See the picks behind this row"' : '') + (small ? ' style="opacity:.62"' : '') + '><td class="l">' + label(r.key) + (small ? ' <span class="badge sm" title="Fewer than 10 picks">small</span>' : '') + '</td><td>' + fmt(r.picks) + '</td><td>' + rec(r) +
           '</td><td class="hm">' + pct(r.win_pct) + '</td><td>' + sgn(r.net, 2) + '</td><td>' + sgn(r.roi, 1, '%') + '</td><td class="hm bc" style="padding-left:0">' + roiBar(r.roi) + '</td><td class="hm ao">' + odds(r.avg_odds) + '</td></tr>';
       }).join('') + '</tbody></table></div>';
   }
@@ -164,7 +164,7 @@
   }
   function render(p) {
     if (p.detail === false) return renderBasic(p);
-    if (p.gated && !p.unlocked) { Object.keys(DEEP_DEFAULTS).forEach(function (k) { if (p[k] == null) p[k] = DEEP_DEFAULTS[k]; }); p.locked = true; }
+    Object.keys(DEEP_DEFAULTS).forEach(function (k) { if (p[k] == null) p[k] = DEEP_DEFAULTS[k]; });
     var s = p.summary, o = p.overview || {}, a = p.advanced || {}, c = s.id.slice(0, 6).toUpperCase(), w = s.name || '#' + c, t = TIER[s.tier] || TIER.small;
     var z = a.z || {}, be = a.break_even || {}, clv = a.clv || {}, ost = o.streaks || {};
     document.title = (s.name ? s.name + ' Record' : 'Handicapper #' + c) + ': ' + rec(o) + ', ' + (o.net > 0 ? '+' : '') + (+o.net).toFixed(2) + ' Units | Handicapper Watchdog';
@@ -182,7 +182,7 @@
       '<div class="pmeta"><span class="badge ' + t[0] + '" title="' + t[2] + '">' + t[1] + '</span>' +
       (s.sports || []).slice(0, 4).map(function (x) { return '<a class="badge" href="' + sportHref(x) + '">' + esc(x) + '</a>'; }).join('') + '</div>' +
       '<p class="muted small" style="margin:8px 0 0">' + statusTag(p.status) + ' Tracked since ' + day(s.first_pick) + ' · last graded game ' + day(p.last_game || s.last_pick) + ' · verified through ' + day(p.generated_at) + (p.newer > 0 ? ' · ' + fmt(p.newer) + ' newer graded pick' + (p.newer === 1 ? '' : 's') + ' in the rankings join this breakdown at a coming update' : '') + '</p></div></div></div>' +
-      '<div class="unl"><span class="lock">Watchdog Pro</span><b>See this account&rsquo;s full record</b><p>Free: the headline record, recent form and the latest 10 graded picks. Watchdog Pro adds:</p><ul><li>The complete log of all ' + fmt(o.picks) + ' graded picks</li><li>Every breakdown by sport, market, price and team</li><li>Charts and every time window</li></ul><p>$49.99 a month or $499 a year.</p><a class="btn pro" style="width:100%" href="' + PRO + '">View Watchdog Pro</a></div></section>';
+      '<div class="unl"><span class="lock">Watchdog Pro</span><b>See every pick behind these numbers</b><p>Every chart and breakdown on this page is free. Watchdog Pro adds:</p><ul><li>The complete log of all ' + fmt(o.picks) + ' graded picks</li><li>Click any stat row to see the exact picks behind it</li><li>Search and filter the full history</li></ul><p>$49.99 a month or $499 a year.</p><a class="btn pro" style="width:100%" href="' + PRO + '">View Watchdog Pro</a></div></section>';
 
     h += kpis([[rec(o), 'Record'], [sgn(o.net, 2), 'Units won'], [sgn(o.roi, 1, '%'), 'ROI'], [pct(o.win_pct), 'Win %'], [fmt(o.picks), 'Graded picks'],
       [odds(o.avg_odds), 'Avg odds'], [strk(ost.current), 'Current streak'], [s.r30 ? sgn(s.r30.net, 2) : '<span class="dim">n/a</span>', 'Last 30 days']]);
@@ -242,15 +242,17 @@
         '<div class="tw"><table class="mini ledger"><thead><tr><th class="l">Date</th><th class="l hg">Sport</th><th class="l hg">Game</th><th class="l">Pick</th><th>Odds</th><th class="hm">Risk</th><th>Result</th><th class="hm">Final</th><th>Units</th><th class="hm">Before start</th></tr></thead><tbody id="lrows"></tbody></table></div>' +
         '<div class="tfoot"><span id="lcount" class="muted small"></span><div class="pager"><button class="btn sm ghost" id="lprev" type="button">Previous</button><span id="lpg"></span><button class="btn sm ghost" id="lnext" type="button">Next</button></div></div>'
         : '<div class="empty small">No graded picks to list yet.</div>') +
-      '<div class="lockfoot" id="lockfoot"><span class="lock">Watchdog Pro</span><span>The complete log of all ' + fmt(o.picks) + ' graded picks is in Watchdog Pro.</span><a class="btn sm pro" href="' + PRO + '">View Watchdog Pro</a></div></div>' +
+      '<div class="lockfoot" id="lockfoot"><span class="lock">Watchdog Pro</span><span>The complete log of all ' + fmt(o.picks) + ' graded picks, and the picks behind every stat row, are in Watchdog Pro.</span><a class="btn sm pro" href="' + PRO + '">View Watchdog Pro</a></div></div>' +
       '<p class="note">Posted shows how long before the start the pick was captured. Odds are the posted price when the post had one; picks without a price count in the record but not in units.</p></section>';
 
     root.innerHTML = h;
     hookCharts();
     ledger(L);
     afterRender(p);
-    if (window.HWD) HWD.ready.then(function (st) { if (st.pro) unlock(s, o); if (st.api) HWD.followButton(id, st.pro); });
+    if (window.HWD) HWD.ready.then(function (st) { if (st.pro) { PRO_ON = true; unlock(s, o); } if (st.api) HWD.followButton(id, st.pro); });
+    root.addEventListener('keydown', function (e) { var tr = e.target.closest && e.target.closest('tr.drill'); if (tr && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); drillOpen(tr); } });
     root.addEventListener('click', function (e) {
+      var dtr = e.target.closest && e.target.closest('tr.drill'); if (dtr) { drillOpen(dtr); return; }
       var b = e.target.closest('button.tab'); if (!b) return;
       var box = b.parentNode, name = box.getAttribute('data-tabs'), i = b.getAttribute('data-i');
       box.querySelectorAll('.tab').forEach(function (x) { x.classList.toggle('on', x === b); });
@@ -318,8 +320,29 @@
     draw();
   }
   // Watchdog Pro: the full ledger, decrypted in the browser
+  var FULL = null, DRILL = null, PRO_ON = false;
+  function drillOpen(tr) {
+    var dk = tr.getAttribute('data-dk'), lab = tr.getAttribute('data-lab') || '', dlg = document.getElementById('drill');
+    if (!dlg) { dlg = document.createElement('dialog'); dlg.id = 'drill'; dlg.className = 'drill-dlg'; document.body.appendChild(dlg); dlg.addEventListener('click', function (e) { if (e.target === dlg || e.target.closest('[data-close]')) dlg.close(); }); }
+    var head = '<div class="dh"><div><span class="lock">Watchdog Pro</span><h3>' + esc(lab) + '</h3></div><button class="btn sm ghost" data-close type="button" aria-label="Close">Close</button></div>';
+    var idx = DRILL && DRILL[dk];
+    if (!FULL || !idx) {
+      dlg.innerHTML = head + '<div class="db"><p class="muted">' + (PRO_ON ? 'The pick list for this row is still loading. Try again in a moment.' : 'See the exact graded picks behind this row, and behind every other row on this page, with Watchdog Pro. The charts and breakdowns stay free.') + '</p>' +
+        (PRO_ON ? '' : '<a class="btn pro" href="' + PRO + '">View Watchdog Pro</a>') + '</div>';
+    } else {
+      var rows = idx.map(function (i) { return FULL[i]; }).filter(Boolean), w = 0, l = 0, pu = 0, net = 0, rk = 0;
+      rows.forEach(function (x) { if (x.r === 'W') w++; else if (x.r === 'L') l++; else pu++; net += +x.pl || 0; rk += +x.u || 0; });
+      var res = { W: '<span class="st pos">Win</span>', L: '<span class="st neg">Loss</span>', P: '<span class="dim">Push</span>' };
+      dlg.innerHTML = head + '<div class="db"><p class="muted small" style="margin:0 0 10px">' + fmt(rows.length) + ' graded picks · ' + w + '-' + l + (pu ? '-' + pu : '') + ' · ' + sgn(net, 2) + ' units' + (rk ? ' · ' + sgn(100 * net / rk, 1, '%') + ' ROI' : '') + '</p>' +
+        '<div class="tw"><table class="mini ledger"><thead><tr><th class="l">Date</th><th class="l">Pick</th><th>Odds</th><th>Result</th><th class="hm">Final</th><th>Units</th></tr></thead><tbody>' +
+        rows.map(function (x) { return '<tr><td class="l nowrap">' + esc(x.d || '') + '</td><td class="l"><b>' + esc(x.pk) + '</b> <span class="dim small">' + esc(x.mk) + '</span><span class="sg dim small" style="display:block">' + esc(x.sp) + ' &middot; ' + esc(x.m) + '</span></td><td>' + odds(x.o) + '</td><td>' + (res[x.r] || esc(x.r)) + '</td><td class="hm">' + esc(x.f || '') + '</td><td>' + (x.u ? sgn(x.pl, 2) : '<span class="dim">0</span>') + '</td></tr>'; }).join('') +
+        '</tbody></table></div></div>';
+    }
+    if (dlg.showModal) dlg.showModal(); else dlg.setAttribute('open', '');
+  }
   function unlock(s, o) {
     HWD.capper(s.id).then(function (d) {
+      FULL = d.ledger || []; DRILL = d.drill || null;
       ledger(d.ledger || []);
       var hd = document.getElementById('lhead'); if (hd) hd.textContent = 'All ' + fmt((d.ledger || []).length) + ' graded picks';
       var lf = document.getElementById('lockfoot'); if (lf) lf.innerHTML = '<span class="lock">Watchdog Pro</span><span>Full graded log unlocked for your account.</span>';
