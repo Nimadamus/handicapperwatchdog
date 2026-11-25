@@ -3,7 +3,12 @@
 Work from worktree `~/hwd-names-1114` (branch names-1114, push `HEAD:main`; main = deploy, site rebuilds every 30 min).
 
 
-## 25 Nov HOMEPAGE A+ REDESIGN (awaiting Nima approval, NOT deployed)
+## 25 Nov SEO DIAGNOSIS (read only, nothing changed) — BREAK 25 Nov
+- Report: Desktop\HWD_SEO_Diagnosis_2026-11-25.md. Key review pages "Crawled - currently not indexed" (crawls Nov 19-22); impressions 0 on Nov 16, 2-15/day since.
+- Causes: 1 external link (own TMR) on 1-month domain, Nov 13-16 sitewide churn, scaled profiles/thin hubs, 30-min refresh rewrites every Last-Modified + sitemap lastmod, weak internal links to reviews.
+- NEXT (each needs his OK): backlinks plan, freeze sitewide rewrites, refresh only changed pages + honest lastmod, strengthen/interlink dropped reviews, recheck GSC Dec 1-8.
+
+## 25 Nov HOMEPAGE A+ REDESIGN (LIVE main bd6502b 10:44 AM PST; css/js versioned ?v=20261125a)
 - Branch home-aplus-1125 (453685e) on top of names-1114; rollback tag hwd-pre-home-redesign-1125 (11514ae).
   Deploy only on his word: merge to names-1114 and push HEAD:main.
 - Report: ~/coordinator-bridge/reports/hwd_home_aplus_1125.md (tests, limits, FourthAndLucky odds sign bug).
