@@ -2,6 +2,12 @@
 
 Work from worktree `~/hwd-names-1114` (branch names-1114, push `HEAD:main`; main = deploy, site rebuilds every 30 min).
 
+
+## 25 Nov HOMEPAGE A+ REDESIGN (awaiting Nima approval, NOT deployed)
+- Branch home-aplus-1125 (453685e) on top of names-1114; rollback tag hwd-pre-home-redesign-1125 (11514ae).
+  Deploy only on his word: merge to names-1114 and push HEAD:main.
+- Report: ~/coordinator-bridge/reports/hwd_home_aplus_1125.md (tests, limits, FourthAndLucky odds sign bug).
+
 ## Done 15 Nov
 - Names refresh: 60 accounts showed #ID; refreshed (4290 names, main 2957095). Now automatic: scheduled task
   "HWD Names Refresh" daily 5:40 AM, hidden, log tools/refresh_names_daily.log (script pulls main before pushing).
