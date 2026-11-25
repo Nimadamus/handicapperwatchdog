@@ -142,7 +142,9 @@
     if (!cta) return;
     if (s.pro) { cta.textContent = 'Pro account'; cta.href = 'account.html'; }
     else { cta.textContent = 'Watchdog Pro'; cta.href = 'pricing.html'; }
-    if (s.api && !s.pro) {
+    var sig = nav.querySelector('.signin');
+    if (sig) { if (s.pro) sig.hidden = true; else if (s.signed_in) sig.textContent = 'Account'; }
+    else if (s.api && !s.pro) {
       var a = document.createElement('a'); a.href = 'account.html'; a.className = 'btn sm ghost'; a.textContent = s.signed_in ? 'Account' : 'Sign in';
       nav.insertBefore(a, cta);
     }

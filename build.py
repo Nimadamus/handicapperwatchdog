@@ -38,7 +38,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CACHE = os.path.join(HERE, '.cache', 'profiles')
 SITE = os.path.join(HERE, '_site')
 STATIC = ('index.html', 'home.css', 'husky.webp', 'husky-sm.webp', 'shield.webp', 'logo-draftkings.svg', 'logo-fanduel.svg', 'logo-bet365.svg', 'logo-fanatics.svg', 'sportsbook-bg.jpg', 'sportsbook-bg-sm.jpg', 'capper.html', 'cappers.html', 'account.html', 'compare.html', 'picks.html', 'style.css', 'app.js', 'capper.js',
-          'pro.js', 'track.js', 'compare.js', 'pricing.js', 'account.js', 'picks.js', 'contact.js', 'favicon.svg', 'stadium.svg', 'og-card.png', 'review2.css', 'CNAME', 'robots.txt', 'sitemap.xml', '4c45f2077ce94c47a172151ef2939df2.txt')
+          'pro.js', 'track.js', 'compare.js', 'pricing.js', 'account.js', 'picks.js', 'contact.js', 'favicon.svg', 'stadium.svg', 'hero-stadium.svg', 'og-card.png', 'review2.css', 'CNAME', 'robots.txt', 'sitemap.xml', '4c45f2077ce94c47a172151ef2939df2.txt')
 PROFILE_TTL = int(os.environ.get('HWD_PROFILE_TTL', str(6 * 3600)))
 MAX_FETCH = int(os.environ.get('HWD_MAX_FETCH', '400'))
 try:  # Pacific time with daylight saving; the fixed offset is a fallback only
@@ -615,7 +615,7 @@ _SITEMAP = (
     ('contact.html', 'https://handicapperwatchdog.com/contact.html', 'yearly', '0.3'),
 )
 _MARKERS = {
-    'index.html': ('board', 'pending', 'jsonld', 'top', 'books', 'recent', 'stats', 'bookdate'),
+    'index.html': ('board', 'pending', 'jsonld', 'top', 'books', 'recent', 'stats', 'bookdate', 'top3', 'books3', 'bookchk', 'sportbar'),
     'cappers.html': ('fresh', 'rows', 'pending', 'jsonld', 'sportnav'),
 }
 # Sport pages need a real sample. A 21 pick hot streak never leads a sport page.
@@ -776,6 +776,62 @@ def _home_book_date():
     except (OSError, ValueError):
         checked = None
     return 'Checked %s. ' % _esc(checked) if checked else ''
+
+
+def _home_top3(cappers, limit=3):
+    """First screen ranking card: the same established ranking as the board (100 or more graded picks, by units won).
+    The check mark states that one criterion and nothing else."""
+    rows = []
+    for i, r in enumerate(_established(cappers)[:limit], 1):
+        who = _esc(_who(r))
+        name = '<a href="handicappers/%s.html">%s</a>' % (r['id'], who) if r.get('profile') else who
+        roi = _num(r.get('roi'))
+        rows.append('<li><span class="medal m%d" aria-label="Rank %d">%d</span>'
+                    '<span class="t3n"><span class="t3w">%s<span class="ck" role="img" aria-label="Established record: 100 or more graded picks" '
+                    'title="Established record: 100 or more graded picks, each captured before the game"></span></span>'
+                    '<small>%s graded picks</small></span>'
+                    '<span class="t3r"><b>%s</b><small>Record</small></span>'
+                    '<span class="t3roi%s"><b>%s</b><small>ROI</small></span></li>' % (
+                        i, i, i, name, f'{int(r.get("picks") or 0):,}', _record(r),
+                        '' if roi is None else (' neg' if roi < 0 else ''),
+                        'n/a' if roi is None else ('%+.1f%%' % roi)))
+    return ''.join(rows) or '<li class="t3none">No established records with 100 or more graded picks yet.</li>'
+
+
+def _home_books3(limit=3):
+    """First screen review card: the first sportsbook research pages, status facts only. No score or stars, this edition has none."""
+    try:
+        with open(os.path.join(HERE, 'content', 'sportsbooks.json'), encoding='utf-8') as f:
+            doc = json.load(f)
+    except (OSError, ValueError):
+        return ''
+    rows = []
+    for b in [b for b in (doc.get('books') or []) if b.get('kind') == 'review'][:limit]:
+        head, _, tail = str(b.get('status') or '').partition('. ')
+        live = head == 'Operating'
+        note = ('%d jurisdictions named.' % len(b['states'])) if b.get('states_complete') and b.get('states') else (tail if live and tail else (b.get('status') or ''))
+        rows.append('<li><a href="sportsbooks/%s/"><span class="blogo b-%s" aria-hidden="true">%s</span>'
+                    '<span class="b3m"><span class="b3t"><b>%s</b><span class="bstat%s">%s</span></span>'
+                    '<small>%s <span class="go">Full review <span aria-hidden="true">&rarr;</span></span></small></span></a></li>' % (
+                        _esc(b['slug']), _esc(b['slug']), _BOOK_TILES.get(b['slug']) or _esc(b.get('mark') or b['name'][:2]), _esc(b['name']),
+                        '' if live else ' warn', 'Operating' if live else 'Status check', _esc(note)))
+    return ''.join(rows)
+
+
+_SPORT_ORDER = ('NFL', 'NBA', 'MLB', 'NHL', 'NCAAF', 'NCAAB')
+_SI = '<svg width="30" height="30" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">%s</svg>'
+_FOOTBALL = _SI % '<path d="M5 27C4 16 10 5 27 5c1 11-5 22-22 22z"/><path d="m11 21 10-10M13 15l4 4M15.5 12.5l4 4M10.5 17.5l4 4"/>'
+_HOOPS = _SI % '<circle cx="16" cy="16" r="12"/><path d="M4 16h24M16 4v24M7.5 7.5c4.500 4.500 4.500 12.500 0 17M24.500 7.500c-4.500 4.500-4.500 12.500 0 17"/>'
+_SPORT_ICONS = {'NFL': _FOOTBALL, 'NCAAF': _FOOTBALL, 'NBA': _HOOPS, 'NCAAB': _HOOPS,
+                'MLB': _SI % '<circle cx="16" cy="16" r="12"/><path d="M9.500 6c3.500 4 3.500 16 0 20M22.500 6c-3.500 4-3.500 16 0 20"/>',
+                'NHL': _SI % '<path d="M8 4l12 19h6M24 4 12 23H6"/><ellipse cx="16" cy="27.500" rx="4.500" ry="1.800"/>'}
+
+
+def _home_sportbar(cappers):
+    """Sport links for the first screen: only sport pages this build writes, in a fixed league order."""
+    have = _sport_pages(cappers)
+    order = [s for s in _SPORT_ORDER if s in have] + [s for s in have if s not in _SPORT_ORDER]
+    return ''.join('<a href="sports/%s.html">%s<span>%s</span></a>' % (_sport_slug(s), _SPORT_ICONS.get(s, _HOOPS), _esc(s)) for s in order)
 
 
 def _home_reviews(limit=3):
@@ -3124,6 +3180,7 @@ def stamp_public_pages(site):
             'reality': _reality(meta, cappers), 'pending': _esc(_pending(meta)),
             'jsonld': _itemlist(cappers, 'https://handicapperwatchdog.com/', 'Top established handicappers by units'),
             'top': _home_top(cappers), 'books': _home_books(), 'bookdate': _home_book_date(), 'recent': _home_reviews(), 'stats': _home_stats(meta, cappers),
+            'top3': _home_top3(cappers), 'books3': _home_books3(), 'bookchk': _home_book_date().strip().rstrip('.'), 'sportbar': _home_sportbar(cappers),
         },
         'cappers.html': {
             'fresh': _fresh(meta), 'rows': _ranked(cappers, 50), 'pending': _esc(_pending(meta)),
